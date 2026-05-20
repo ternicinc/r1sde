@@ -1,8 +1,9 @@
-[COPY] --- T2-COPYRIGHT-BEGIN ---
-[COPY] t2/package/*/zig/zig.desc
-[COPY] Copyright (C) 2020 - 2026 The T2 SDE Project
-[COPY] SPDX-License-Identifier: GPL-2.0
-[COPY] --- T2-COPYRIGHT-END ---
+# --- R1-COPYRIGHT-BEGIN ---
+# r1/package/*/zig/zig.desc
+# Copyright (C) 2004-2026 The T2 SDE Project
+# Copyright (C) 2026 The R1 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- R1-COPYRIGHT-END ------
 
 [I] General-purpose programming language and toolchain
 
@@ -12,7 +13,7 @@
 [U] https://ziglang.org
 
 [A] Andrew Kelley
-[M] René Rebe <rene@exactco.de>
+[M] Allexander Bergmans <abm@libregrad.pp.ua>
 
 [C] extra/development
 [F] CROSS OBJDIR NO-LTO
@@ -21,7 +22,7 @@
 [V] 0.17.0-dev.313+27be3b069
 [P] X ?----5---9 109.300
 
-[D] 6c8970be1121721b01b84b84fad104247306129657b382f3d04478154f9603c3 zig-0.17.0-dev.313+27be3b069.tar.xz  https://ziglang.org/builds/
+[D] 263345fc6b28a27d5446e188d6d5d78cd5cd3e3823123626fa374c1c4146c202 zig-0.17.0-dev.313+27be3b069.tar.xz  https://ziglang.org/builds/
 
 export ZIG_LOCAL_CACHE_DIR=$builddir/$pkg-$ver/.cache
 export ZIG_GLOBAL_CACHE_DIR=$builddir/$pkg-$ver/.cache
