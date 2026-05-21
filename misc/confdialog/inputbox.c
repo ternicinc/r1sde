@@ -142,8 +142,9 @@ dialog_inputbox (const char *title, const char *prompt, int height, int width,
 
     wrefresh (dialog);
 
+	/* while the key is not escape */
     while (key != ESC) {
-	key = wgetch (dialog);
+	key = wgetch (dialog);	// We do whatever this is.
 
 	if (button == -1) {	/* Input box selected */
 	    switch (key) {
