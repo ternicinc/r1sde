@@ -51,7 +51,10 @@ print_buttons(WINDOW *dialog, int height, int width, int selected)
 }
 
 /*
- * Display a dialog box for inputing a string
+ * Display a dialog box for inputing a string.
+ * For example a config name. This is only used
+ * When actually inserting/inputing a string within
+ * A dialog.
  */
 int
 dialog_inputbox (const char *title, const char *prompt, int height, int width,
@@ -67,6 +70,8 @@ dialog_inputbox (const char *title, const char *prompt, int height, int width,
     y = (LINES - height) / 2;
 
 
+	// We draw the shadow. Isn't this only used when
+	// the bool in the other file is set to true?
     draw_shadow (stdscr, y, x, height, width);
 
     dialog = newwin (height, width, y, x);
@@ -80,6 +85,9 @@ dialog_inputbox (const char *title, const char *prompt, int height, int width,
     wattrset (dialog, dialog_attr);
     waddch (dialog, ACS_RTEE);
 
+	/* If the title is not NULL, and the strlen9(title). 
+	 * Then:
+	 */
     if (title != NULL && strlen(title) >= width-2 ) {
 	/* truncate long title -- mec */
 	char * title2 = malloc(width-2+1);
