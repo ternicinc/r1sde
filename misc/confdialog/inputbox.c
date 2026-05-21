@@ -1,10 +1,11 @@
 /*
- * --- T2-COPYRIGHT-BEGIN ---
- * t2/misc/confdialog/inputbox.c
+ * --- R1-COPYRIGHT-BEGIN ---
+ * r1/misc/confdialog/inputbox.c
+ * Copyright (C) 2026 - 2026 The R1 SDE Project
  * Copyright (C) 2004 - 2026 The T2 SDE Project
  * Copyright (C) 1998 - 2003 ROCK Linux Project
  * SPDX-License-Identifier: GPL-2.0
- * --- T2-COPYRIGHT-END ---
+ * --- R1-COPYRIGHT-END ---
  */
 /*
  *  inputbox.c -- implements the input box
@@ -28,12 +29,13 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
+/* We include the header. */
 #include "dialog.h"
 
 char dialog_input_result[MAX_LEN + 1];
 
 /*
- *  Print the termination buttons
+ *  Print the termination buttons.
  */
 static void
 print_buttons(WINDOW *dialog, int height, int width, int selected)
@@ -49,7 +51,10 @@ print_buttons(WINDOW *dialog, int height, int width, int selected)
 }
 
 /*
- * Display a dialog box for inputing a string
+ * Display a dialog box for inputing a string.
+ * For example a config name. This is only used
+ * When actually inserting/inputing a string within
+ * A dialog.
  */
 int
 dialog_inputbox (const char *title, const char *prompt, int height, int width,
@@ -65,6 +70,8 @@ dialog_inputbox (const char *title, const char *prompt, int height, int width,
     y = (LINES - height) / 2;
 
 
+	// We draw the shadow. Isn't this only used when
+	// the bool in the other file is set to true?
     draw_shadow (stdscr, y, x, height, width);
 
     dialog = newwin (height, width, y, x);
@@ -78,6 +85,9 @@ dialog_inputbox (const char *title, const char *prompt, int height, int width,
     wattrset (dialog, dialog_attr);
     waddch (dialog, ACS_RTEE);
 
+	/* If the title is not NULL, and the strlen9(title). 
+	 * Then:
+	 */
     if (title != NULL && strlen(title) >= width-2 ) {
 	/* truncate long title -- mec */
 	char * title2 = malloc(width-2+1);
@@ -104,9 +114,12 @@ dialog_inputbox (const char *title, const char *prompt, int height, int width,
     draw_box (dialog, y + 1, box_x - 1, 3, box_width + 2,
 	      border_attr, dialog_attr);
 
+	/* print the buttons in the dialog, at the given
+	 * height and width.
+	 */
     print_buttons(dialog, height, width, 0);
 
-    /* Set up the initial value */
+    /* Set up the initial value(s) */
     wmove (dialog, box_y, box_x);
     wattrset (dialog, inputbox_attr);
 
@@ -129,21 +142,23 @@ dialog_inputbox (const char *title, const char *prompt, int height, int width,
 
     wrefresh (dialog);
 
+	/* while the key is not escape */
     while (key != ESC) {
-	key = wgetch (dialog);
+	key = wgetch (dialog);	// We do whatever this is.
 
 	if (button == -1) {	/* Input box selected */
 	    switch (key) {
 	    case TAB:
 	    case KEY_UP:
 	    case KEY_DOWN:
-		break;
+		break;	// break when the three above
+				// cases are the case.
 	    case KEY_LEFT:
 		continue;
 	    case KEY_RIGHT:
 		continue;
-	    case KEY_BACKSPACE:
-	    case 127:
+	    case KEY_BACKSPACE:	// If the key = backspace:
+	    case 127:			// We give it the case 127.
 		if (input_x || scroll) {
 		    wattrset (dialog, inputbox_attr);
 		    if (!input_x) {

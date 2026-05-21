@@ -1,9 +1,10 @@
-# --- T2-COPYRIGHT-BEGIN ---
-# t2/misc/confdialog/Makefile
+# --- R1-COPYRIGHT-BEGIN ---
+# r1/misc/confdialog/Makefile
+# Copyright (C) 2026 - 2026 The R1 SDE Project
 # Copyright (C) 2004 - 2026 The T2 SDE Project
 # Copyright (C) 1998 - 2003 ROCK Linux Project
 # SPDX-License-Identifier: GPL-2.0
-# --- T2-COPYRIGHT-END ---
+# --- R1-COPYRIGHT-END ---
 
 OBJS = checklist.o menubox.o textbox.o yesno.o inputbox.o \
        util.o confdialog.o msgbox.o

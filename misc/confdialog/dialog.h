@@ -1,10 +1,11 @@
 /*
- * --- T2-COPYRIGHT-BEGIN ---
- * t2/misc/confdialog/dialog.h
+ * --- R1-COPYRIGHT-BEGIN ---
+ * r1/misc/confdialog/dialog.h
+ * Copyright (C) 2026 - 2026 The R1 SDE Project
  * Copyright (C) 2004 - 2026 The T2 SDE Project
  * Copyright (C) 1998 - 2003 ROCK Linux Project
  * SPDX-License-Identifier: GPL-2.0
- * --- T2-COPYRIGHT-END ---
+ * --- R1-COPYRIGHT-END ---
  */
 
 /*
@@ -132,8 +133,8 @@
 /*
  * Global variables
  */
-extern bool use_colors;
-extern bool use_shadow;
+extern bool use_colors;	// Do we use the colors?
+extern bool use_shadow;	// Do we use the shadow?
 
 extern chtype attributes[];
 
