@@ -151,7 +151,8 @@ dialog_inputbox (const char *title, const char *prompt, int height, int width,
 	    case TAB:
 	    case KEY_UP:
 	    case KEY_DOWN:
-		break;
+		break;	// break when the three above
+				// cases are the case.
 	    case KEY_LEFT:
 		continue;
 	    case KEY_RIGHT:
