@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libosip2/libosip2.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The GNU oSIP2 library is used in VoIP applications
+
+[T] oSIP2, the successor of oSIP, is an implementation of SIP.
+[T] SIP stands for the Session Initiation Protocol and is described by
+[T] the RFC3261. This library aims to provide multimedia and telecom
+[T] software developers an easy and powerful interface to initiate and
+[T] control SIP based sessions in their applications.
+[T] SIP is a open standard replacement from IETF for H.323.
+
+[U] https://www.gnu.org/software/osip/ oSIP Homepage
+
+[A] Aymeric MOIZARD <jack@atosc.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[F] CROSS DIETLIBC
+
+[L] GPL
+[V] 5.3.1
+[P] X -----5---9 209.900
+
+[D] f45a603e80b20366ff1f479e09dd983f60c2e566c3249a73d673246a libosip2-5.3.1.tar.gz https://ftp.gnu.org/gnu/osip/
+
+var_append confopt ' ' '--enable-mt --enable-md5 --enable-gperf'
+var_append INSTALL_WRAPPER_FILTER '|' "sed -e 's,usr/man/man1/osip.1,usr/man/man1/osip2.1,'"

@@ -1,0 +1,44 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/python-certifi/use-system-certs.patch
+# Copyright (C) 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- python-certifi-2025.06.15/certifi/core.py.vanilla	2025-06-30 00:59:14.542064416 +0200
++++ python-certifi-2025.06.15/certifi/core.py	2025-06-30 01:01:40.955000000 +0200
+@@ -7,6 +7,8 @@
+ import sys
+ import atexit
+ 
++SYSTEM_CA_CERTS_PATH = '/etc/ssl/certs/ca-certificates.crt'
++
+ def exit_cacert_ctx() -> None:
+     _CACERT_CTX.__exit__(None, None, None)  # type: ignore[union-attr]
+ 
+@@ -15,8 +17,7 @@
+ 
+     from importlib.resources import as_file, files
+ 
+-    _CACERT_CTX = None
+-    _CACERT_PATH = None
++    _CACERT_PATH = SYSTEM_CA_CERTS_PATH
+ 
+     def where() -> str:
+         # This is slightly terrible, but we want to delay extracting the file
+@@ -50,8 +51,7 @@
+ 
+     from importlib.resources import path as get_path, read_text
+ 
+-    _CACERT_CTX = None
+-    _CACERT_PATH = None
++    _CACERT_PATH = SYSTEM_CA_CERTS_PATH
+ 
+     def where() -> str:
+         # This is slightly terrible, but we want to delay extracting the
+@@ -80,4 +80,5 @@
+         return _CACERT_PATH
+ 
+     def contents() -> str:
+-        return read_text("certifi", "cacert.pem", encoding="ascii")
++        with open(where(), "r", encoding="ascii") as data:
++            return data.read()

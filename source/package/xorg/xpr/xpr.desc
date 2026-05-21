@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xpr/xpr.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Print an X window dump
+
+[T] Xpr prints a window dump file produced by xwd.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.2.0
+
+[D] fe6e9ceb1c460a5c8ba8aeb073fb46c3e9d2bc768e82c2db2b906bc4 xpr-1.2.0.tar.xz http://xorg.freedesktop.org/releases/individual/app/
+
+. package/*/*/modular-x-conf.in

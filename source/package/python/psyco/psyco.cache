@@ -1,0 +1,16 @@
+
+[TIMESTAMP] 1279731265 Wed Jul 21 18:54:25 2010
+[BUILDTIME] 5 (5)
+[SIZE] 0.36 MB, 22 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] grep
+[DEP] linux-header
+[DEP] python
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar

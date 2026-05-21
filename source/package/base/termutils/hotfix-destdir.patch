@@ -1,0 +1,32 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/termutils/hotfix-destdir.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./Makefile.in.orig	1995-12-01 15:39:01.000000000 +0000
++++ ./Makefile.in	2006-06-17 21:24:10.000000000 +0000
+@@ -103,9 +103,9 @@
+ install:: install-programs
+ 
+ install-programs: $(PROGRAMS) $(SCRIPTS)
+-	$(top_srcdir)/mkinstalldirs $(bindir)
++	$(top_srcdir)/mkinstalldirs $(DESTDIR)$(bindir)
+ 	for p in $(PROGRAMS) $(SCRIPTS); do \
+-	  $(INSTALL_PROGRAM) $$p $(bindir)/`echo $$p|sed '$(transform)'`; \
++	  $(INSTALL_PROGRAM) $$p $(DESTDIR)$(bindir)/`echo $$p|sed '$(transform)'`; \
+ 	done
+ 
+ uninstall:: uninstall-programs
+@@ -149,9 +149,9 @@
+ install:: install-info
+ 
+ install-info: $(INFO_DEPS)
+-	$(top_srcdir)/mkinstalldirs $(infodir)
++	$(top_srcdir)/mkinstalldirs $(DESTDIR)$(infodir)
+ 	cd $(srcdir); for file in *.info*; do \
+-	  $(INSTALL_DATA) $$file $(infodir)/$$file; \
++	  $(INSTALL_DATA) $$file $(DESTDIR)$(infodir)/$$file; \
+ 	done
+ 
+ uninstall:: uninstall-info

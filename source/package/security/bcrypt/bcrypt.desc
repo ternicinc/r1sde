@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/bcrypt/bcrypt.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A utility to encrypt files
+
+[T] Bcrypt is a cross platform file encryption utility. Encrypted files are
+[T] portable across all supported operating systems and processors. Passphrases
+[T] are between 8 and 56 characters and are hashed internally to a 448 bit
+[T] key. However, all characters supplied are significant. The stronger your
+[T] passphrase, the more secure your data.
+
+[U] https://bcrypt.sourceforge.net/
+
+[A] Johnny Shelley <jshelley@cahaus.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+
+[L] BSD
+[V] 1.1
+
+[D] a824b4d628885c16fda9a39b09fe489460e7aa94cdad9abc8e304ea1 bcrypt-1.1.tar.gz https://bcrypt.sourceforge.net/
+
+runconf=0
+hook_add premake 5 "sed -i -e 's%/usr/local%/usr%' Makefile"

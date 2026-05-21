@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pstoedit/pstoedit.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Converts Postscript(TM) and PDF files to other vector formats
+
+[T] Pstoedit converts Postscript(TM) and PDF files to other vector graphic
+[T] formats so that they can be edited graphically.
+
+[U] http://pstoedit.net/
+
+[A] Dr. Wolfgang Glunz
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[E] opt qt6base
+
+[L] GPL
+[V] 4.3
+[P] X -----5---9 200.000
+
+[D] 371628c466ed7af2bd0b61e23d3fcee35cb81d4cfba170134056fe07 pstoedit-4.3.tar.gz https://github.com/woglu/pstoedit/archive/v4.3/
+
+hook_add preconf 5 ./autogen.sh
+pkginstalled imagemagick || var_append confopt ' ' --without-magick
+pkginstalled texlive || hook_add preconf 4 'sed -i "/SUBDIRS.*doc/ s/doc//" Makefile.am'

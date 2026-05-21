@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/partimage/partimage.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A utility to save partitions into an image file
+
+[T] Partition Image is a utility to save partitions (ext2/3fs, reiserfs,
+[T] fat16, fat32, hpfs, ntfs) into an image file. Only used blocks of the
+[T] partition are saved, and the image can be compressed in gzip or bzip2
+[T] format. You can split the image into small files.
+
+[U] https://www.partimage.org
+
+[A] Francois Dupoux
+[A] Franck Ladurelle <ladurelf@partimage.org>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/tool
+
+[L] GPL
+[V] 0.6.9
+
+[D] 2287a62776d965ed2ce6d2f5a455f2218bc4a4dc21bc8234cb562c6a partimage-0.6.9.tar.bz2 https://download.sourceforge.net/project/regexxer/regexxer/0.10/
+
+[ $prefix_auto = 1 ] && prefix="opt/partimage" && set_confopt
+var_append confopt ' ' --disable-ssl

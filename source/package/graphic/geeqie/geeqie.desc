@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/geeqie/geeqie.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A graphics file viewer, forked from GQView
+
+[T] Geeqie is a lightweiht Gtk+ based image viewer for Unix like operating
+[T] systems. It has been forked from the GQView project, because it was not
+[T] possible to contact gqview author and the only maintainer. Geeqie project
+[T] goal is to move the development forward and also integrate the existing
+[T] patches. Has EXIF, IPTC, and XMP metadata browsing and editing, includes
+[T] preview for many RAW image formats, and tools for image comparision,
+[T] sorting, and photo collection management, as well as color management via
+[T] LittleCMS.
+
+[U] https://geeqie.sourceforge.net
+
+[A] John Ellis <johne@bellatlantic.net>
+[A] Vladimir Nadvornik <nadvornik@suse.cz>
+[A] Petr ostadal <postadal@suse.cz>
+[A] Laurent Monin <zaz@norz.org>
+[M] LuisF <luisbf@megamail.pt>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 2.7
+
+[D] 400d5b701cdef19bb3472f6b95e2f948b2ddca422bc726c8667c5198 geeqie-2.7.tar.xz https://github.com/BestImageViewer/geeqie/releases/download/v2.7/
+
+var_append GCC_WRAPPER_APPEND ' ' -llua

@@ -1,0 +1,27 @@
+[TIMESTAMP] 1760306317 Sun Oct 12 23:58:37 2025
+[BUILDTIME] 6 (9)
+[SIZE] 1.31 MB, 77 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] duktape
+[DEP] gawk
+[OPT] gi-docgen
+[DEP] glib
+[OPT] gobject-introspection
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] smartypants
+[DEP] tar
+[OPT] vala

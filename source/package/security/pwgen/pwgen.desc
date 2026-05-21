@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pwgen/pwgen.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2005 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Pronounceable password generator
+
+[T] pwgen generates passwords which are designed to be easily memorized by
+[T] humans, while being as secure as possible. Used interactively, pwgen will
+[T] display a screenful of passwords, allowing the user to pick a single
+[T] password, and then quickly erase the screen. When standard output is not a
+[T] tty, pwgen will only generate one password.
+
+[U] https://sourceforge.net/projects/pwgen/
+
+[A] Theodore Ts'o <tytso@mit.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 2.08
+
+[D] 10eb153e41a3d3393eaae3d95f987b4bbc90a1eb009c659da15c3a83 pwgen-2.08.tar.gz https://prdownloads.sourceforge.net/sourceforge/pwgen/

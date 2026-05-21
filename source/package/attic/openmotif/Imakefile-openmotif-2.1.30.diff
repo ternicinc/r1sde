@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/openmotif/Imakefile-openmotif-2.1.30.diff
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+diff -Nur motif-vanilla/config/Imakefile motif/config/Imakefile
+--- motif-vanilla/config/Imakefile	2003-11-22 15:54:21.032310256 +0100
++++ motif/config/Imakefile	2003-11-22 15:55:04.876644904 +0100
+@@ -5,8 +5,7 @@
+ #undef BootstrapCleanSubdirs
+ #define BootstrapCleanSubdirs BOOTSTRAPSUBDIRS="$(BOOTSTRAPSUBDIRS)"
+ 
+-BOOTSTRAPSUBDIRS = imake makedepend
+-SUBDIRS = cf $(BOOTSTRAPSUBDIRS) util
++SUBDIRS = 
+ 
+ MakeSubdirs($(SUBDIRS))
+ DependSubdirs($(SUBDIRS))

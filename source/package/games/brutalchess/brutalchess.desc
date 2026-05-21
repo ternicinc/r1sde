@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/brutalchess/brutalchess.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A 3D chess game with several levels of AI inspired by Battle Chess
+
+[T] Brutal Chess features full 3D graphics, an advanced particle engine,
+[T] and several different levels of intelligent AI, inspired by the once
+[T] popular Battle Chess released by Interplay anno 1988.
+
+[U] https://brutalchess.sourceforge.net
+
+[A] Mike Cook <gauntalus@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+
+[L] GPL
+[V] 0.5.2
+
+[D] dd67bdb3e094763d0beb4c1ba27c5234bbf2ab6ac3368987492c1762 brutalchess-alpha-0.5.2-src.tar.gz https://prdownloads.sourceforge.net/sourceforge/brutalchess/

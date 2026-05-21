@@ -1,0 +1,32 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dietlibc/gets.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+This implements gets for "minised".
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- /dev/null	1970-01-01 01:00:00.000000000 +0100
++++ dietlibc-0.28/libstdio/gets.c	2005-02-02 16:41:10.406257872 +0100
+@@ -0,0 +1,19 @@
++#include "dietstdio.h"
++#include "dietwarning.h"
++
++char *gets_unlocked(char *s) {
++  char *orig=s;
++  register int c;
++  for (;;) {
++    c=fgetc_unlocked(stdin);
++    if (c==EOF || c=='\n') break;
++    *s++=c;
++  }
++  if (c==EOF || ferror_unlocked(stdin))
++    return 0;
++  *s=0;
++  return orig;
++}
++
++char*gets(char*s) __attribute__((weak,alias("gets_unlocked")));
++link_warning("gets","warning: Avoid gets, it is insecure.")

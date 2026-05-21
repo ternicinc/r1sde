@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ripmime/ripmime.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] MIME file extractor
+
+[T] ripMIME has been written as part of the (commercial) Xamime package, but
+[T] because there was such a problem trying to attain a easy to use, openSource
+[T] MIME decoder which the everyday person with some limited C skills could try
+[T] and play with, we decided to release the MIME decoding components of Xamime
+[T] as its own package which you are now seeing as "ripMIME".
+[T]
+[T] ripMIME has a single sole pupose, to extract the attached files out of a
+[T] MIME package (as say produced by programs such as AMaViS, Inflex and
+[T] Xamime). ripMIME deliberately has no other operating purpose (if you
+[T] find another use, then that's great).
+[T]
+[T] ripMIME has been written (at this point) purely by Paul L Daniels, it is
+[T] being released under a BSD style licence so that other commercial ventures
+[T] may if they so desire use this product without the headaches normally
+[T] associated with using GPL software.
+
+[U] https://www.pldaniels.com/ripmime/
+
+[A] Paul L Daniels <pldaniels@pldaniels.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] BSD
+[V] 1.4.1.0
+
+[D] ff74c3d32aeb8142045931b5549a67aa1d2d358010f5cbf327eee0e1 ripmime-1.4.1.0.tar.gz https://github.com/inflex/ripMIME/archive/refs/tags/1.4.1.0/
+
+var_append makeinstopt ' ' LOCATION=$root/$prefix

@@ -1,0 +1,30 @@
+[TIMESTAMP] 1760539267 Wed Oct 15 16:41:07 2025
+[BUILDTIME] 370 (9)
+[SIZE] 4.05 MB, 171 files
+
+[DEP] abseil-cpp
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] gawk
+[DEP] gettext
+[DEP] glib
+[DEP] grep
+[DEP] ki18n
+[DEP] linux-header
+[DEP] make
+[DEP] networkmanager
+[DEP] networkmanager-qt
+[DEP] pkgconfig
+[DEP] procps
+[DEP] protobuf
+[DEP] qt6base
+[DEP] qt6declarative
+[DEP] sed
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] xz
+[DEP] zlib

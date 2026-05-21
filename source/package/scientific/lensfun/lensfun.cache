@@ -1,0 +1,21 @@
+[TIMESTAMP] 1745226564 Mon Apr 21 11:09:24 2025
+[BUILDTIME] 3 (9)
+[SIZE] 4.30 MB, 73 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar

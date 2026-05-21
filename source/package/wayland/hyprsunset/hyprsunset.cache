@@ -1,0 +1,22 @@
+[TIMESTAMP] 1753445753 Fri Jul 25 15:15:53 2025
+[BUILDTIME] 2 (9)
+[SIZE] 0.36 MB, 10 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] hyprland-protocols
+[DEP] hyprlang
+[DEP] hyprutils
+[DEP] hyprwayland-scanner
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] wayland

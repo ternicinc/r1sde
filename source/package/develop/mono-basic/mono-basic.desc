@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mono-basic/mono-basic.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Visual Basic Compiler and Runtime
+
+[T] Visual Basic Compiler and Runtime.
+
+[U] https://www.mono-project.com/
+
+[A] Rolf Bjarne Kvinge <RKvinge@novell.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] GPL
+[V] 4.8
+
+[D] 3d4ce37c148599d20502897b8e58ea41cd4caf84311c72fd116202c5 mono-basic-4.8.tar.gz https://github.com/mono/mono-basic/archive/4.8/
+
+. $base/package/*/mono/mono.in

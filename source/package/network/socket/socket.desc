@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/socket/socket.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Program to access TCP sockets at shell level
+
+[T] Socket(1) implements an interface to TCP sockets at shell level. Client and
+[T] server sockets can be used from shell scripts or interactively. Socket can
+[T] also run a program with stdin, stdout, and stderr connected to the socket
+[T] connection.
+
+[U] https://www.jnickelsen.de/socket/socket-1.2.html
+
+[A] Juergen Nickelsen <jnickelsen@acm.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] BSD
+[V] 1.5
+[P] O -----5---9 195.500
+
+[D] ffe132e8fbd412e78f88bf4febe7b06c4b629224151adedf4783359b socket-1.5p4.tar.bz2 https://w21.org/jnickelsen/socket/

@@ -1,0 +1,19 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/misc/output/config-100.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+comment '- Build Output (terminal and others) Configuration'
+block_begin 3
+	bool 'Use ANSI colors for terminal output' \
+		SDECFG_OUTPUT_TERM_COLOR 1
+	bool 'Print Build-Output to terminal while building' \
+		SDECFG_VERBOSE 0
+
+	for x in misc/output/*/config.in; do
+		[ -f $x ] && . $x
+	done
+block_end
+comment ' '

@@ -1,0 +1,21 @@
+[TIMESTAMP] 1739186601 Mon Feb 10 12:23:21 2025
+[BUILDTIME] 6 (5)
+[SIZE] 0.60 MB, 15 files
+
+[DEP] audit
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gperf
+[DEP] grep
+[DEP] gzip
+[DEP] libcap
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] python
+[DEP] sed
+[DEP] tar

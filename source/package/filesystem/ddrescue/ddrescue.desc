@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ddrescue/ddrescue.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Data recovery tool
+
+[T] GNU ddrescue is a data recovery tool. It copies data from one file or
+[T] block device (hard disc, cdrom, etc) to another, trying to rescue the
+[T] good parts first in case of read errors.
+
+[U] https://www.gnu.org/software/ddrescue/
+
+[A] Antonio Diaz Diaz
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+
+[L] GPL
+[V] 1.30
+
+[D] 2104a5332436f2ac0ff2450fb9234d23e58ac2d80641eae8ea973e9d ddrescue-1.30.tar.lz https://ftp.gnu.org/gnu/ddrescue/

@@ -1,0 +1,39 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/target/test/config.in
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+#Description: T2 Test
+
+SDECFGSET_PKGFILE_TYPE='none'
+SDECFGSET_IMAGE=initrd
+
+SDECFGSET_DO_REBUILD_STAGE=0
+SDECFGSET_DISABLE_NLS=1
+
+# space saving
+SDECFGSET_OPT='size'
+SDECFGSET_LIBC='glibc'
+SDECFGSET_INIT='minit'
+
+SDECFGSET_DIETLIBC_fgetty='1'
+SDECFGSET_DIETLIBC_mininet='1'
+
+cust_pkgfilter() {
+	sed -e "
+# mangle all packages to only build them in the cross stage (1)
+#s,^. \(.\)[^ ]*,X \11--------,;
+
+# and the toolchain just very selective
+#/ automake /		{ s,^. [^ ]*,X 0---------,; p; d; }
+#/ libtool /		{ s,^. [^ ]*,X 0---------,; p; d; }
+/ texinfo /		{ s,^. [^ ]*,X 0---------,; p; d; }
+/ binutils /		{ s,^. [^ ]*,X 01--------,; p; d; }
+/ gcc /			{ s,^. [^ ]*,X 01--------,; p; d; }
+/ dietlibc /		{ s,^. [^ ]*,X 01--------,; p; d; }
+
+# the rest as selected via pkgsel rules
+"
+}
+pkgfilter cust_pkgfilter

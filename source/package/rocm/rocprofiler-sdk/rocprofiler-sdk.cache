@@ -1,0 +1,24 @@
+[TIMESTAMP] 1743545371 Wed Apr  2 00:09:31 2025
+[BUILDTIME] 2 (9) ERROR
+[SIZE] 0.00 MB, 6 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] gzip
+[DEP] hip-rocclr
+[DEP] hipcc
+[DEP] make
+[DEP] pkgconfig
+[DEP] rocgdb
+[DEP] rocm-core
+[DEP] rocm-llvm
+[DEP] rocr-runtime
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar

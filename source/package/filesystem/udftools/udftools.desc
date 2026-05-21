@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/udftools/udftools.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Filesystem utilities for UDF
+
+[T] The filesystem utilities for the UDF (Universal Disk Format) filesystem.
+
+[U] https://sourceforge.net/projects/linux-udf/
+
+[A] Ben Fennema <bfennema@falcon.csc.calpoly.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system extra/filesystem
+[F] CROSS
+
+[L] GPL
+[V] 2.3
+
+[D] 9b28c26c2729a81c620f158a528b5431fa36094dda47e2f11665869b udftools-2.3.tar.gz https://github.com/pali/udftools/releases/download/2.3/

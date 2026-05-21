@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/appstream/appstream.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library providing methods for reading and writing AppStream metadata
+
+[T] This library provides GObjects and helper methods to make it easy to read
+[T] and write AppStream metadata.
+
+[U] https://distributions.freedesktop.org/wiki/AppStream
+
+[A] Matthias Klumpp <matthias@tenstral.net>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/game extra/desktop/gnome
+
+[L] GPL
+[V] 1.1.2
+[P] X -----5---9 161.650
+
+[D] 9a4088f6badb8fbb0a6924171f02000beccc93110b7fde40e20c840c AppStream-1.1.2.tar.xz https://www.freedesktop.org/software/appstream/releases/
+
+. $base/package/*/*/gnome-conf.in
+
+hook_add prepatch 5 "rm -rvf $builddir/AppStream-$ver/subprojects"
+var_append mesonopt ' ' -Ddocs=false
+
+pkginstalled gobject-introspection || var_append mesonopt ' ' -Dgir=false
+pkginstalled bash-completion || var_append mesonopt ' ' -Dbash-completion=false
+pkginstalled libstemmer || var_append mesonopt ' ' -Dstemming=false
+pkginstalled systemd || var_append mesonopt ' ' -Dsystemd=false

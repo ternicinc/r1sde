@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/monotone/monotone.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A distributed version control system
+
+[T] monotone is a distributed version control system with a flat
+[T] peer model, cryptographic version naming, meta-data certificates,
+[T] decentralized authority, and overlapping branches. It works out of
+[T] a transactional version database stored in a regular file, and uses
+[T] a custom network protocol for efficient database synchronization.
+
+[U] https://www.monotone.ca/
+
+[A] Graydon <graydon@pobox.com>
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/development
+
+[L] GPL
+[V] 1.1
+
+[D] 1bf218f653d25d9f89cca12be2a5d2895f59d5ad20f4674e29721e98 monotone-1.1.tar.bz2 https://www.monotone.ca/downloads/1.1/

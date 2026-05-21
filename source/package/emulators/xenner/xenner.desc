@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xenner/xenner.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A utility to run paravirtualized Xen kernels in KVM
+
+[T] Xenner is a utility which is able to run xen paravirtualized
+[T] kernels as guests on linux hosts, without the xen hypervisor,
+[T] using kvm instead.
+
+[U] http://kraxel.fedorapeople.org/xenner/
+
+[A] Gerd Hoffmann <kraxel@redhat.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/emulator
+
+[L] GPL
+[V] 0.48
+[P] O -----5---9 210.000
+
+[R] + x86 x86-64 ia64
+
+[D] 3e4065ac6bcb5dcfe63765e7b34973d7100336a13a265fc3b27629d4 xenner-0.48.tar.gz http://dl.bytesex.org/releases/xenner/

@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/bmon/bmon.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Portable bandwidth monitor and rate estimator
+
+[T] Bmon is a portable bandwidth monitor and rate estimator running
+[T] on various operating systems. It supports various input methods
+[T] for different architectures. Variout output modes exist including
+[T] an interactive curses interface, lightweight HTML output but also
+[T] formatable ASCII output.
+[T]
+[T] Statistics may be distributed over a network using multicast or
+[T] unicast and collected at some point to generate a summary of
+[T] statistics for a set of nodes.
+
+[U] https://github.com/tgraf/bmon
+
+[A] Thomas Graf
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] MIT
+[V] 4.0
+
+[D] 3220c8befad99bf3e4bf0e48ff63de8d78a5a6fa529d760db8f60e22 bmon-4.0.tar.gz https://github.com/tgraf/bmon/archive/refs/tags/v4.0/
+
+autogen=1

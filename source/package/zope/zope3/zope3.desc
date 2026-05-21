@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/zope3/zope3.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Zope application server
+
+[T] Zope is an open source application server for building content
+[T] management systems, intranets, portals, and custom applications.
+
+[U] https://www.zope.org/Products/ZopeX3/
+
+[A] Zope Corporation <www.zope.com>
+[A] Zope Community <http://www.zope.org/>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/server
+
+[E] add python
+
+[L] OpenSource
+
+[V] 3.4.1
+
+[D] 1271b3c73817c3a287493d3f535a7c7d5cfe6b26b7739c2b126f6257 Zope-3.4.1.tgz http://www.zope.org/Products/Zope3/3.4.1/
+
+prefix=opt/zope3
+set_confopt
+
+var_append confopt ' ' --force
+
+pkgprefix -t python
+var_append confopt ' ' "--with-python=$(pkgprefix bindir python)/python"

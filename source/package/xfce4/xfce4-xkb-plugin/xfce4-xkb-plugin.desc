@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfce4-xkb-plugin/xfce4-xkb-plugin.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Xfce4 XKB Layout Switch panel plugin
+
+[T] Xfce4 XKB keyboard layout indicator/switch panel plugin. It cannot be
+[T] used for defining the keyboard layouts, this is done the XKB way.
+
+[U] https://docs.xfce.org/panel-plugins/xfce4-xkb-plugin/start
+
+[A] Benedikt Meurer <benedikt.meurer@unix-ag.uni-siegen.de>
+[A] Alexander Iliev <sasoiliev@mail.bg>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/xfce
+[F] CROSS
+
+[L] BSD
+[V] 0.9.0
+
+[D] 83b991df0bc4bf6995880268134614379f765ef1eeb199643b50236b xfce4-xkb-plugin-0.9.0.tar.xz https://archive.xfce.org/src/panel-plugins/xfce4-xkb-plugin/0.9/
+
+. $base/package/xfce4/*/xfce4-conf.in
+var_append GCC_WRAPPER_APPEND ' ' "$(pkg-config x11 --libs-only-L)"
+var_append INSTALL_WRAPPER_FILTER '|' 'sed s,gr\.png,el.png,'

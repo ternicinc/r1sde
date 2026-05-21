@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/orc/orc.desc
+[COPY] Copyright (C) 2011 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Oil Runtime Compiler
+
+[T] Orc is a library and set of tools for compiling and executing
+[T] very simple programs that operate on arrays of data. The "language"
+[T] is a generic assembly language that represents many of the features
+[T] available in SIMD architectures, including saturated addition and
+[T] subtraction, and many arithmetic operations.
+
+[U] http://www.schleef.org/orc/documentation/
+
+[A] David Schleef <ds@schleef.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[E] opt gtk-doc docbook-xml docbook-xsl
+
+[L] OpenSource
+[V] 0.4.42
+[P] X -----5---9 126.300
+
+[D] 9496548b34742f9283f01e256b9ce2dca4472946ad79b3f63f93f824 orc-0.4.42.tar.xz https://gstreamer.freedesktop.org/src/orc/

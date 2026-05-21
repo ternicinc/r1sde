@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libconfuse/libconfuse.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A configuration file parser library
+
+[T] LibConfuse is a configuration file parser library written
+[T] in C. It's goal is to be easy to use and quick to integrate
+[T] into existing code. It supports sections and (lists of) values
+[T] (strings, integers, floats, booleans, or other sections), as
+[T] well as some other features (such as single/double-quoted
+[T] strings, environment variable expansion, functions, and nested
+[T] include statements). It makes it very easy to add configuration
+[T] file capability to a program using a simple API.
+
+[U] https://github.com/martinh/libconfuse/
+
+[A] Martin Hedenfalk <mhe@home.se>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+
+[L] ISC
+[V] 3.3
+[P] X -----5---9 126.790
+
+[D] 9a5748e69ed2395214a75053154e47b62be7b7d5c0a02f39de3547f8 confuse-3.3.tar.xz https://github.com/martinh/libconfuse/releases/download/v3.3/

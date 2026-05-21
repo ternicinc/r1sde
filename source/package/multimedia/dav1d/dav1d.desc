@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dav1d/dav1d.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A open-source AV1 decoder
+
+[T] dav1d is a new open-source AV1 decoder developed by the VideoLAN and
+[T] FFmpeg communities. As of October 2019, Dav1d is the fastest AV1
+[T] software decoder.
+
+[U] https://www.videolan.org/projects/dav1d.html
+
+[A] VideoLAN and FFmpeg communities.
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS NO-LTO.gcc
+
+[L] BSD
+[V] 1.5.3
+[P] X -----5---9 124.600
+
+[CV-URL] https://downloads.videolan.org/pub/videolan/dav1d/last/
+[D] 00fd42778d709216cae2d08cdd1a772df2feb174327f4a7569261923 dav1d-1.5.3.tar.xz https://downloads.videolan.org/pub/videolan/dav1d/1.5.3/

@@ -1,0 +1,24 @@
+[TIMESTAMP] 1739235104 Tue Feb 11 01:51:44 2025
+[BUILDTIME] 4 (5)
+[SIZE] 1.53 MB, 7 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] gst-plugins-base
+[DEP] gstreamer
+[DEP] libdrm
+[DEP] libglvnd
+[DEP] libpng
+[DEP] linux-header
+[DEP] mesa
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] sed
+[DEP] tar
+[DEP] zstd

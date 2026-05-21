@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/adwaita-icon-theme/adwaita-icon-theme.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome adwaita-icon-theme package
+
+[T] Core Gnome adwaita-icon-theme package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+[F] CROSS
+
+[L] LGPL
+[V] 50.0
+
+[CV-URL] https://download.gnome.org/sources/adwaita-icon-theme/cache.json
+[D] 7f679d710f4d2272abc6aae9db0b10bb8c02d9eefa6c23a749c19b1c adwaita-icon-theme-50.0.tar.xz https://download.gnome.org/sources/adwaita-icon-theme/50/
+
+. $base/package/*/*/gnome-conf.in

@@ -1,0 +1,43 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/isakmpd/isakmpd.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An ISAKMP/Oakley (a.k.a. IKE) implementation
+
+[T] This package contains isakmpd, a BSD-licensed ISAKMP/Oakley (a.k.a. IKE)
+[T] implementation. It is written by Niklas Hallqvist and Niels Provos, funded
+[T] by Ericsson Radio Systems AB.
+
+[U] https://www.openbsd.org/
+
+[A] Niklas Hallqvist <niklas@openbsd.org>
+[A] Niels Provos <provos@openbsd.org>
+[A] Hkan Olsson <ho@openbsd.org>
+
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS NOPARALLEL
+[C] extra/security
+
+[L] BSD
+[V] 20041012
+
+[D] ad11803b4ce4e17dc8e239eb78f96062d95b4facdd262417d826eb2e isakmpd_20041012.orig.tar.gz http://ftp.debian.org/debian/pool/main/i/isakmpd/
+
+var_append makeopt ' ' OS=linux
+
+if [[ $libdir ==  *lib64 ]]; then
+	var_append makeopt ' ' LIBGMP=/usr/lib64/libgmp.a
+fi
+
+makeinstopt=
+isakmpd_pm() {
+	mkdir -p $root$sysconfdir/isakmpd/{keynote,policy}
+
+	install isakmpd $root$sbindir/
+	cp -fv *.5 $root$mandir/man5/
+	cp -fv *.8 $root$mandir/man8/
+}
+hook_add postmake 3 isakmpd_pm

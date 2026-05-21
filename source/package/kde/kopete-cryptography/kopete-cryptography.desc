@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kopete-cryptography/kopete-cryptography.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Message encryption and signing for Kopete
+
+[T] It encrypts and signs messages using the OpenPGP standard. It also
+[T] handles incoming messages that are encrypted or signed.
+[T] * Encrypt messages to one or more chat companions
+[T] * Encrypt to self so you can read your messages later
+[T] * Sign messages so message recipients know that you really sent a
+[T] message
+[T] * Automatically decrypt incoming encrypted messages if the key is in
+[T] the keyring
+[T] * Automatically verify signatures on incoming messages if the key is
+[T] in the keyring
+[T] * Use gpg-agent/pinentry for secure passphrase handling
+[T] * Integrates with KDE addressbook
+
+[U] https://apps.kde.org/kopete/
+
+[A] Charles Connell <charles@connels.org>
+[A] Olivier Goffart
+[M] Gerhard Weis <gweis@gmx.at>
+
+[C] extra/network extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 1.3.0
+
+[D] fee8c2bdd745dc113ba4e5c44b06b9e52b926434d123819aa2135b6e kopete-cryptography-1.3.0-kde4.2.0.tar.bz2 ftp://ftp.kde.org/pub/kde/stable/4.2.0/src/extragear/
+
+. $base/package/*/*/kde-conf.in

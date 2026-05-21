@@ -1,0 +1,19 @@
+[TIMESTAMP] 1744317741 Thu Apr 10 22:42:21 2025
+[BUILDTIME] 1 (9)
+[SIZE] 0.13 MB, 8 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] imlib2
+[DEP] libx11
+[DEP] libxinerama
+[DEP] make
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

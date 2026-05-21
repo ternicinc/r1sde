@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-video-geode/xf86-video-geode.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Xorg driver for AMD Geode integrated video chips
+
+[T] This driver supports the Advanced Micro Devices, formerly National
+[T] Semiconductors, Geode integrated video chips. Supported chipsets: Geode LX
+[T] (a.k.a. GX3) PCI ID 0x1022:0x2081, Geode GX (a.k.a. GX2) PCI ID
+[T] 0x100B:0x0030 (re-branded GX2).
+
+[U] https://www.x.org/wiki/GeodeDriver/
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS FCOMMON
+
+[L] OpenSource
+[V] 2.18.2
+[R] + x86
+
+[D] 6584641788d18b438f64a0bb83e44ef63dc6f2a12caad001133dea60 xf86-video-geode-2.18.2.tar.xz http://xorg.freedesktop.org/releases/individual/driver/
+
+. package/*/*/modular-x-conf.in

@@ -1,0 +1,57 @@
+[TIMESTAMP] 1769206339 Fri Jan 23 23:12:19 2026
+[BUILDTIME] 1650 (9)
+[SIZE] 1570.24 MB, 3682 files
+
+[DEP] alsa-lib
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] bison
+[DEP] bluez
+[DEP] clang
+[DEP] coreutils
+[DEP] cups
+[DEP] dbus
+[DEP] diffutils
+[OPT] ffmpeg
+[DEP] findutils
+[DEP] flex
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] gettext
+[DEP] glib
+[DEP] gnutls
+[DEP] grep
+[DEP] gst-plugins-base
+[DEP] gstreamer
+[OPT] krb5
+[DEP] libgphoto
+[DEP] libpcap
+[OPT] libsdl2
+[DEP] libusb
+[DEP] libx11
+[DEP] libxcomposite
+[DEP] libxcursor
+[DEP] libxext
+[DEP] libxfixes
+[DEP] libxi
+[DEP] libxinerama
+[DEP] libxrandr
+[DEP] libxrender
+[DEP] libxxf86vm
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] opencl-headers
+[DEP] pkgconfig
+[DEP] pulseaudio
+[DEP] sane-backends
+[DEP] sed
+[DEP] tar
+[DEP] udev
+[DEP] util-linux
+[DEP] wayland
+[DEP] xkbcommon
+[DEP] xorgproto
+[DEP] xz

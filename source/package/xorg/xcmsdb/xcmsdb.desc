@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xcmsdb/xcmsdb.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Device Color Characterization utility for X Color Management System
+
+[T] Xmsdb is used to load, query, or remove Device Color Characterization
+[T] data stored in properties on the root window of the screen as specified
+[T] in section 7, Device Color Characterization, of the ICCCM.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.0.7
+
+[D] 98d99675aa0225f9e67e93181e45d9d2e66b139fd5f5de48ab6d6de5 xcmsdb-1.0.7.tar.xz http://xorg.freedesktop.org/releases/individual/app/
+
+. package/*/*/modular-x-conf.in

@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/slim/slim.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A simple desktop-independent graphical login manager for X11
+
+[T] A simple but completely configurable desktop-independent graphical login
+[T] manager for X11, derived from Login.app.
+
+[U] http://slim.berlios.de/
+
+[A] Simone Rota <sip@varlock.com>
+[M] Koen Vervloesem <koen@vervloesem.eu>
+
+[C] extra/login
+
+[L] GPL
+[V] 1.4.1
+
+[D] 522d6b73607348587b3525bd720926018b5693b99651093a70211d06 slim-1.4.1.tar.gz https://download.sourceforge.net/project/slim-fork/
+
+var_append cmakeopt ' ' -DCMAKE_POLICY_VERSION_MINIMUM=3.5

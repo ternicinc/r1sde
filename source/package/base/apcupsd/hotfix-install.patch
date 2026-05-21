@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/apcupsd/hotfix-install.patch
+# Copyright (C) 2011 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- apcupsd-3.14.8/autoconf/targets.mak.vanilla	2011-01-29 15:45:07.160000006 +0100
++++ apcupsd-3.14.8/autoconf/targets.mak	2011-01-29 15:45:18.644000005 +0100
+@@ -189,7 +189,7 @@
+ # Install a program file, given mode, src, and dest
+ define INSTPROG
+    @$(ECHO) "  COPY " $(2) =\> $(DESTDIR)$(3)
+-   $(V)$(INSTALL_PROGRAM) $(STRIP) -m $(1) $(2) $(DESTDIR)$(3)
++   $(V)$(INSTALL_PROGRAM)  -m $(1) $(2) $(DESTDIR)$(3)
+ endef
+ 
+ # Install a data file, given mode, src, and dest

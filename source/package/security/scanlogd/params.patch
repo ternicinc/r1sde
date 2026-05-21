@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/scanlogd/params.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2004 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- scanlogd-2.2.4/params.h
++++ scanlogd-2.2.4/params.h
+18c18
+< 
+---
+> #undef SCANLOGD_USER /* just for now */
+24c24
+< 
+---
+> #undef SCANLOGD_CHROOT /* just for now */
+

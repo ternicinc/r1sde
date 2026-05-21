@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/zathura-cb/zathura-cb.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Plugin adds comic book support to zathura
+
+[T] Plugin adds comic book support to zathura.
+
+[U] https://pwmt.org/projects/zathura-cb/
+
+[A] pwmt
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/office
+[F] CROSS
+
+[L] ZLIB
+[V] 2026.05.10
+
+[D] 3b62c1eee836c3d87e86c47ebf22454db16a4f541b6d13340f9164c3 zathura-cb-2026.05.10.tar.xz https://pwmt.org/projects/zathura-cb/download/

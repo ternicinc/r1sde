@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/docker-compose/docker-compose.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Define and run multi-container applications with Docker
+
+[T] Docker Compose is a tool for running multi-container applications on
+[T] Docker defined using the Compose file format. A Compose file is used
+[T] to define how one or more containers that make up your application
+[T] are configured. Once you have a Compose file, you can create and
+[T] start your application with a single command
+
+[U] https://docs.docker.com/compose/
+
+[A] Docker compose contributors
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/emulator
+[F] CROSS
+
+[E] add containerd docker-engine docker-buildx docker-cli
+
+[L] APL
+[V] 5.1.4
+
+[D] 09b4a0e57c01c841ec60c6ebda989038ada2514f6cc78315bb959986 docker-compose-v5.1.4.tar.gz https://github.com/docker/compose/archive/v5.1.4/
+
+. $base/package/*/*/go-conf.in
+rungo=
+makeinstopt=
+
+hook_add postmake 5 docker-compose-pm
+docker-compose-pm() {
+	install -m 755 bin/build/docker-compose $root$bindir
+	ln -sf $root$bindir/docker-compose $root$libexecdir/docker/cli-plugins/compose
+}

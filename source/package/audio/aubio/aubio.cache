@@ -1,0 +1,29 @@
+[TIMESTAMP] 1774207585 Sun Mar 22 20:26:25 2026
+[BUILDTIME] 20 (9)
+[SIZE] 1.59 MB, 84 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[OPT] doxygen
+[OPT] ffmpeg
+[DEP] file
+[DEP] flac
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[OPT] jack
+[DEP] libogg
+[OPT] libsamplerate
+[OPT] libsndfile
+[DEP] libvorbis
+[DEP] linux-header
+[DEP] openssl
+[DEP] python
+[DEP] rubberband
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

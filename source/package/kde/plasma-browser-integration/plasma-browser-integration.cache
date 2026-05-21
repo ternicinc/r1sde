@@ -1,0 +1,38 @@
+[TIMESTAMP] 1760525751 Wed Oct 15 12:55:51 2025
+[BUILDTIME] 30 (9)
+[SIZE] 0.67 MB, 124 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] freetype
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] kconfig
+[DEP] kcoreaddons
+[DEP] kcrash
+[DEP] kdbusaddons
+[DEP] kfilemetadata
+[DEP] ki18n
+[DEP] kio
+[DEP] kjobwidgets
+[DEP] krunner
+[DEP] kservice
+[DEP] kstatusnotifieritem
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] plasma-activities
+[DEP] plasma-workspace
+[DEP] procps
+[DEP] purpose
+[DEP] qt6base
+[DEP] qt6declarative
+[DEP] sed
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] xz

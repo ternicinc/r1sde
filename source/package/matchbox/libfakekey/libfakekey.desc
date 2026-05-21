@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libfakekey/libfakekey.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] X Virtual Keyboard Library
+
+[T] X Virtual Keyboard Library of the Matchbox WM project.
+
+[U] https://git.yoctoproject.org/libfakekey/
+
+[A] Matthew Allum <mallum@o-hand.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/x11
+[F] CROSS
+
+[L] GPL
+[V] 0.3
+[P] X -----5---9 400.000
+
+[D] af38853c478c097c46fc3103aae4bdeccf4668a0fff3d5ce86a47452 libfakekey-0.3.tar.gz https://git.yoctoproject.org/libfakekey/snapshot/
+
+autogen=1

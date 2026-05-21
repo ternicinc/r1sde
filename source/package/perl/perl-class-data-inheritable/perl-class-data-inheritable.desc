@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-class-data-inheritable/perl-class-data-inheritable.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module - Inheritable, overridable class data
+
+[T] Class::Data::Inheritable is for creating accessor/mutators to class
+[T] data. That is, if you want to store something about your class as a
+[T] whole (instead of about a single object). This data is then inherited by
+[T] your subclasses and can be overriden.
+
+[U] https://metacpan.org/dist/Class-Data-Inheritable
+
+[A] Damian Conway (original author)
+[A] Michael G Schwern
+[A] Tony Bowden <bug-Bit-Vector-Minimal@rt.cpan.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 0.10
+[P] X -----5---9 200.200
+
+[D] 732ee4a593664799d709139cad0a19e174deaaa05c13c7ca9039a9a8 Class-Data-Inheritable-0.10.tar.gz https://cpan.metacpan.org/authors/id/R/RS/RSHERER/

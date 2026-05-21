@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/scilab/scilab.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Free Scientific Software Package
+
+[T] Scilab (developped since 1989 by Scilab Group) is a scientific software
+[T] package for numerical computations providing a powerful open computing
+[T] environment for engineering and scientific applications.
+[T]
+[T] Scilab includes hundreds of mathematical functions with the possibility
+[T] to add interactively programs from various languages (C, Fortran...).
+[T] It has sophisticated data structures (including lists, polynomials,
+[T] rational functions, linear systems...), an interpreter and a high level
+[T] programming language.
+
+[U] https://www.scilab.org
+
+[A] inria <Scilab@inria.fr>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/scientific
+
+[L] GPL
+[V] 2026.1.0
+
+[D] 5ccb1bd0bc477f4e86c93c8e24ebb22531c3155d68a129476808f75b scilab-2026.1.0.tar.bz2 https://gitlab.com/scilab/scilab/-/archive/2026.1.0/
+
+srcdir=*/scilab
+#var_append confopt ' ' --without-javasci

@@ -1,0 +1,39 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/opengroupware/opengroupware.desc
+[COPY] Copyright (C) 2005 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Open source groupware server for SOPE
+
+[T] OpenGroupware.org is a set of applications for contact, appointment,
+[T] project, and content management. It is comparable to Exchange and
+[T] SharePoint portal servers. It is accessible using Web interfaces
+[T] and various native clients, including Outlook. Its servers run on
+[T] almost any GNU/Linux system, can synchronize with Palm PDAs, and
+[T] are completely scriptable using XML-RPC.
+
+[U] http://www.opengroupware.org/
+
+[A] SKYRIX Software AG <info@skyrix.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] NOPARALLEL
+
+[L] LGPL
+[V] 1.0beta.2-rock
+
+[D] 68ad7cc4f7dcb61cf0716122e5881b36091a4589190d87975d615a14 opengroupware.org-1.0beta.2-rock-r1412.tar.gz http://download.opengroupware.org/releases/unstable/opengroupware-1.0beta.2-rock/source/
+
+srcdir=opengroupware.org
+prefix=opt/ogo
+set_confopt
+
+confopt="--prefix=$root/$prefix --gsmake=/$(pkgprefix gnustep-make)/System"
+
+for x in openldap; do
+	pkgprefix -t $x
+	var_append GCC_WRAPPER_APPEND ' ' "-I$(pkgprefix includedir $x)"
+	var_append GCC_WRAPPER_APPEND ' ' "-L$(pkgprefix libdir $x)"
+done

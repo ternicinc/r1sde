@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dictd/dictd.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] RFC-2229 compliant dictionary server
+
+[T] Dictd implements the Dictionary Server Protocol (DICT). This is a TCP
+[T] transaction based query/response protocol that allows a client to access
+[T] dictionary definitions from a set of natural language dictionary
+[T] databases. Many bilingual databases are available from the freedict
+[T] project.
+
+[U] https://www.dict.org/
+[U] https://sourceforge.net/projects/dict/
+
+[A] Dict Development Group <dict-beta@dict.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/server
+
+[L] GPL
+[V] 1.13.3
+[P] X -----5---9 662.000
+
+[D] 132afa7d50f6a1e45e23a9c4f8e2bb21f177fba2e97176ffd73d7533 dictd-1.13.3.tar.gz https://prdownloads.sourceforge.net/sourceforge/dict/

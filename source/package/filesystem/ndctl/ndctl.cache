@@ -1,0 +1,29 @@
+[TIMESTAMP] 1778689393 Wed May 13 18:23:13 2026
+[BUILDTIME] 14 (9)
+[SIZE] 1.09 MB, 42 files
+
+[OPT] asciidoctor
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] iniparser
+[DEP] json-c
+[DEP] keyutils
+[DEP] kmod
+[DEP] libtraceevent
+[OPT] libtracefs
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] python
+[DEP] sed
+[OPT] systemd
+[DEP] tar
+[DEP] udev
+[DEP] util-linux

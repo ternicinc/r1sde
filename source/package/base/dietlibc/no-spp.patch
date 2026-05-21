@@ -1,0 +1,23 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dietlibc/no-spp.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+The dynamic flavour does not built for us due undefined __guard, but since
+we do not care for the size optimized binaries we do just do not enable it
+automatically for now.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- dietlibc-0.30/dietfeatures.h	2006-04-04 07:35:14.000000000 +0200
++++ dietlibc-0.30-fixed/dietfeatures.h	2006-06-30 15:38:05.000000000 +0200
+@@ -108,7 +107,7 @@
+  * WANT_SSP_URANDOM and then not using -fstack-protector enlarges a
+  * binary by 152 bytes. */
+ #if (__GNUC__>4) || ((__GNUC__==4) && (__GNUC_MINOR__>=1))
+-#define WANT_SSP
++//#define WANT_SSP
+ #endif
+ /* Choose which canary seeder you want you can choose
+  * both but it will check urandom first and use xor as

@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/orbit10/orbit10.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A high-performance CORBA ORB (object request broker)
+
+[T] ORBit is a high-performance CORBA (Common Object Request Broker
+[T] Architecture) ORB (object request broker). It allows programs to
+[T] send requests and receive replies from other programs, regardless
+[T] of the locations of the two programs. CORBA is an architecture that
+[T] enables communication between program objects, regardless of the
+[T] programming language they're written in or the operating system they
+[T] run on.
+[T]
+[T] You will need to install this package if you want to run programs that use
+[T] the ORBit implementation of CORBA technology. (e.g. GNOME)
+
+[A] Dick Porter <dick@acm.org>
+[A] Elliot Lee <sopwith@redhat.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development extra/desktop/gnome
+
+[F] NOPARALLEL
+
+[L] GPL
+[V] 0.5.17
+[P] X -----5---9 123.200
+
+[D] a150aa1fb1598f97483839bb9a153b40cc64ebcd8ecbb0703d236427 ORBit-0.5.17.tar.bz2 ftp://archive.progeny.com/GNOME/sources/ORBit/0.5/
+
+. $base/package/*/*/gnome1-conf.in

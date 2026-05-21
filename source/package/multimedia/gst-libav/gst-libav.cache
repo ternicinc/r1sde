@@ -1,0 +1,24 @@
+
+[TIMESTAMP] 1733931210 Wed Dec 11 16:33:30 2024
+[BUILDTIME] 3 (9)
+[SIZE] 0.27 MB, 6 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] ffmpeg
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] gst-plugins-base
+[DEP] gstreamer
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] xz

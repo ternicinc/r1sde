@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lightning/lightning.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library that generates assembly code at run time
+
+[T] GNU Lightning is a library that generates assembly language code at
+[T] run time. It is very fast, making it ideal for Just-In-Time compilers,
+[T] and it abstracts over the target CPU, as it exposes to the clients a
+[T] standardized RISC instruction set (inspired by the MIPS and SPARC chips).
+
+[U] https://www.gnu.org/software/lightning/lightning.html
+
+[A] Paolo Bonzini <bonzini@gnu.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] LGPL
+[V] 2.2.3
+
+[D] a53f70866ef462f45b483a5cf518b4a5ae6354f8962c4552fe5efeba lightning-2.2.3.tar.gz http://ftp.gnu.org/gnu/lightning/

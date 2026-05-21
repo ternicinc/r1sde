@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pcsc-lite/pcsc-lite.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Middleware to access a smart card using SCard API (PC/SC)
+
+[T] PC/SC Architecture for most Unix type operating systems. Allows
+[T] easy porting of Windows smartcard software to other operating systems.
+[T] Supports many types of serial, PCMCIA, and USB smartcard readers and
+[T] cryptographic tokens. Tested under Redhat, Suse, Solaris 2.8, Open
+[T] BSD, OS X v10.1, and HPUX.
+
+[U] https://pcsclite.apdu.fr
+
+[A] David Corcoran <corcoran@linuxnet.com>
+[M] Marian Aldenhövel <marian.aldenhoevel@mba-software.de>
+
+[C] extra/crypto
+[F] CROSS
+
+[L] GPL
+[V] 2.4.1
+[P] X -----5---9 118.000
+
+[D] 5fb583807800915885d0215ff67434350bf385b623c6ee3436e1a07f pcsc-lite-2.4.1.tar.xz https://pcsclite.apdu.fr/files/
+
+pkginstalled systemd || var_append mesonopt ' ' -Dlibsystemd=false

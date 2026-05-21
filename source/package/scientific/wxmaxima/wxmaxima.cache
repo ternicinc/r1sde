@@ -1,0 +1,19 @@
+
+[TIMESTAMP] 1706871903 Fri Feb  2 12:05:03 2024
+[BUILDTIME] 55 (9)
+[SIZE] 3.19 MB, 34 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] wxwidgets

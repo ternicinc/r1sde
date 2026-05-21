@@ -1,0 +1,31 @@
+[TIMESTAMP] 1737568160 Wed Jan 22 18:49:20 2025
+[BUILDTIME] 18 (9)
+[SIZE] 5.60 MB, 111 files
+
+[DEP] alsa-lib
+[DEP] audiofile
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] esound
+[DEP] findutils
+[DEP] gawk
+[DEP] glib12
+[DEP] grep
+[DEP] gtk+12
+[DEP] libglvnd
+[DEP] libice
+[OPT] libmikmod
+[OPT] libogg
+[DEP] libsm
+[OPT] libvorbis
+[DEP] libx11
+[DEP] libxxf86vm
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto
+[DEP] zlib

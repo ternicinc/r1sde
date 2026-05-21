@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ngrep/ngrep.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A grep for network traffic
+
+[T] ngrep strives to provide most of GNU grep's common features, applying
+[T] them to the network layer. ngrep is a pcap-aware tool that will allow
+[T] you to specify extended regular or hexadecimal expressions to match
+[T] against data payloads of packets. It currently recognizes TCP, UDP and
+[T] ICMP across Ethernet, PPP, SLIP, FDDI, Token Ring and null interfaces,
+[T] and understands bpf filter logic in the same fashion as more common
+[T] packet sniffing tools, such as tcpdump and snoop.
+
+[U] https://github.com/jpr5/ngrep/
+
+[A] Jordan Ritter <jpr5@darkridge.com>
+[M] Tobias Schmidt <tschmidt@stradego.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 1.49.0
+
+[D] c6f4d80131fe6878624da92505b936f20f75e326e3df0116dd8d5126 ngrep-1.49.0.tar.gz https://github.com/jpr5/ngrep/archive/refs/tags/v1.49.0/
+
+var_append GCC_WRAPPER_APPEND ' ' -std=gnu11

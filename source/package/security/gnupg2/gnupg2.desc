@@ -1,0 +1,50 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnupg2/gnupg2.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The GNU Privacy Guard v2
+
+[T] GnuPG is GNU's tool for secure communication and data storage.
+[T] It can be used to encrypt data and to create digital signatures.
+[T] It includes an advanced key management facility and is compliant
+[T] with the proposed OpenPGP Internet standard as described in RFC2440.
+
+[U] https://gnupg.org/
+
+[A] Werner Koch <wk@gnupg.org> et.al.
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/crypto
+[F] CROSS
+
+[E] opt tpm2-tss
+
+[L] GPL
+[V] 2.5.20
+[P] X -----5---9 118.201
+
+[CV-FLAGS] ODD-UNSTABLE
+[D] 41b4a5d7c58a52b4a73a912aa32c211ba932642ca24f07b197d421a1 gnupg-2.5.20.tar.bz2 https://www.gnupg.org/ftp/gcrypt/gnupg/
+
+var_append confopt ' ' --disable-tests
+
+pkginstalled openldap || var_append confopt ' ' --without-ldap
+if pkginstalled openldap; then
+	pkgprefix -t openldap
+	var_append configprefix ' ' 'CFLAGS="-I$(pkgprefix includedir openldap)"'
+	var_append configprefix ' ' 'LDFLAGS="-L$(pkgprefix libdir openldap)"'
+fi
+
+# fix shared files with GnuPG-1
+hook_add preconf 3 "find . -name Makefile.in -exec sed -ie 's#\(@PACKAGE@\)#\12#g' {} \;"
+
+# tests inf. loop on ppc64, ignore for now
+[ "$arch" = powerpc64 ] && var_append makeopt ' ' 'tests=' && var_append makeinstopt ' ' tests=
+
+# guide cross compiling
+var_append confopt ' ' "--with-gpg-error-prefix=$root/`pkgprefix libgpg-error`"
+var_append confopt ' ' "--with-gcrypt-prefix=$root/`pkgprefix libgcrypt`"
+var_append confopt ' ' "--with-libassuan-prefix=$root/`pkgprefix libassuan`"
+var_append confopt ' ' "--with-ksba-prefix=$root/`pkgprefix libksba`"

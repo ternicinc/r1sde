@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openzfs/openzfs.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An open-source storage platform
+
+[T] OpenZFS is an open-source storage platform. It includes the functionality
+[T] of both traditional file systems and volume manager. It has many advanced
+[T] features.
+
+[U] https://openzfs.org/
+
+[A] Sun
+[A] Oracle
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/server
+[F] CROSS
+
+[L] CDDL
+[V] 2.4.2
+
+[D] 648a44f074856c110b50b69b8b585e028b20624e749fd3026b9f35b6 zfs-2.4.2.tar.gz https://github.com/openzfs/zfs/releases/download/zfs-2.4.2/

@@ -1,0 +1,19 @@
+[TIMESTAMP] 1754237918 Sun Aug  3 19:18:38 2025
+[BUILDTIME] 3 (9) ERROR
+[SIZE] 0.00 MB, 6 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] gawk
+[OPT] glib
+[DEP] grep
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] sed
+[DEP] tar
+[DEP] xz

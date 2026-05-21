@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/moe/moe.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A powerful and user-friendly console text editor
+
+[T] GNU Moe is a powerful, 8-bit clean console text editor for ISO-8859 and
+[T] ASCII character encodings. It has a modeless, user-friendly interface,
+[T] online help, multiple windows, unlimited undo/redo capability, unlimited
+[T] line length, global search/replace (on all buffers at once), block
+[T] operations, automatic indentation, word wrapping, filename completion,
+[T] a directory browser, duplicate removal from prompt histories, and
+[T] delimiter matching.
+
+[U] https://www.gnu.org/software/moe/moe.html
+
+[A] Antonio Diaz Diaz <ant_diaz@teleline.es>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/editor
+[F] CROSS
+
+[L] GPL
+[V] 1.16
+
+[D] 2d01ae86a101e1497ce6771625ee306cb6a84a4aed9305a964a44c59 moe-1.16.tar.lz https://ftpmirror.gnu.org/gnu/moe/

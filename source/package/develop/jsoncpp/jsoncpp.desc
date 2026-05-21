@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/jsoncpp/jsoncpp.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A C++ library for interacting with JSON
+
+[T] JsonCpp is a C++ library that allows manipulating JSON values, including
+[T] serialization and deserialization to and from strings.
+
+[U] https://github.com/open-source-parsers/jsoncpp/
+
+[A] Baptiste Lepilleur
+[A] The JsonCpp Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] OBJDIR
+
+[L] MIT
+[V] 1.9.7
+
+[D] 06aeab1ae63480363e1c058881793d02a2479652c010ee2294e6c1b6 jsoncpp-1.9.7.tar.gz https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.9.7/
+
+var_append GCC_WRAPPER_APPEND ' ' -std=c++17

@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/netkit-base/hotfix-gcc4.0.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- netkit-base-0.17/inetd/servtab.c	2000-07-22 20:20:50.000000000 +0000
++++ netkit-base-0.17-fixed/inetd/servtab.c	2005-09-02 16:22:18.000000000 +0000
+@@ -771,7 +771,7 @@
+ 			return;
+ 		}
+ 		
+-#define SWAP(type, a, b) {type c=(type)a; (type)a=(type)b; (type)b=(type)c;}
++#define SWAP(type, a, b) {type c=(type)a; a=(type)b; b=(type)c;}
+ 
+ 		/*
+ 		 * sep->se_wait may be holding the pid of a daemon

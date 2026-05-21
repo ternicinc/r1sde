@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/semodule-utils/semodule-utils.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A collection of utilities for dealing with policy modules
+
+[T] Security-enhanced Linux is a patch of the Linux® kernel and a number
+[T] of utilities with enhanced security functionality designed to add
+[T] mandatory access controls to Linux. The Security-enhanced Linux
+[T] kernel contains new architectural components originally developed to
+[T] improve the security of the Flask operating system. These
+[T] architectural components provide general support for the enforcement
+[T] of many kinds of mandatory access control policies, including those
+[T] based on the concepts of Type Enforcement®, Role-based Access
+[T] Control, and Multi-level Security.
+[T] libselinux provides an API for SELinux applications to get and set
+[T] process and file security contexts and to obtain security policy
+[T] decisions. Required for any applications that use the SELinux API.
+
+[U] https://github.com/SELinuxProject/selinux
+
+[A] NSA SElinux Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+[F] CROSS
+
+[L] GPL
+[V] 3.10
+
+[CV-GROUP] selinux
+[D] 636ef650d8df6f5809d4e68b56297bc5a09dffba9b5c9ea967b85d8a semodule-utils-3.10.tar.gz https://github.com/SELinuxProject/selinux/releases/download/3.10/

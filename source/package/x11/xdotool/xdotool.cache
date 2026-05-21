@@ -1,0 +1,23 @@
+[TIMESTAMP] 1765298118 Tue Dec  9 17:35:18 2025
+[BUILDTIME] 4 (9)
+[SIZE] 0.21 MB, 11 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libx11
+[DEP] libxi
+[DEP] libxinerama
+[DEP] libxtst
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] xkbcommon
+[DEP] xorgproto

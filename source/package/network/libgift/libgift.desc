@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libgift/libgift.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Filesharing tool
+
+[T] libgift + gnutella and openFT plugin provides filesharing functionality
+[T] to programs like apollon.
+
+[A] Eelco Lempsink <eelcol@users.sourceforge.net>
+[U] https://sourceforge.net/projects/gift/
+
+[M] Tobias Schmidt <tschmidt@stradego.de>
+
+[C] extra/network
+
+[L] GPL
+[V] 0.11.8.1
+[P] X -----5---9 200.700
+
+[SRC] .
+
+[D] 2903262335 gift-0.11.8.1.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/gift/
+[D] 3133016838 gift-gnutella-0.0.11.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/gift/
+[D] 2045601365 gift-openft-0.2.1.6.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/gift/

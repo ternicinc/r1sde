@@ -1,0 +1,20 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/openldap/config.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+if pkgcheck openldap X; then
+	menu_begin MENU_PKG_OPENLDAP 'OpenLDAP Package Options'
+		bool 'Client only, no daemons.' \
+			SDECFG_PKG_OPENLDAP_CLIENTONLY 0
+		text 'Install prefix for OpenLdap  Packages' SDECFG_PKG_OPENLDAP_CORE_PREFIX "opt/openldap"
+		if pkgcheck heimdal X; then
+			# FIXME: this belongs to heimdal's config.in but i
+			# FIXME:  don't want another one-line-menu on Config
+			bool 'Use LDAP as krb5 (heimdal) backend' \
+				SDECFG_PKG_HEIMDAL_LDAP	0
+		fi
+	menu_end
+fi

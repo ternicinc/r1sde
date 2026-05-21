@@ -1,0 +1,21 @@
+[TIMESTAMP] 1737979848 Mon Jan 27 13:10:48 2025
+[BUILDTIME] 4 (9)
+[SIZE] 0.18 MB, 9 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] cyrus-sasl2
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[OPT] jasper
+[DEP] libgif
+[DEP] libjpeg
+[DEP] libpng
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] xz
+[DEP] zlib

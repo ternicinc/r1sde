@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/wayfire/wayfire.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A modular and extensible wayland compositor
+
+[T] Wayfire is a 3D Wayland compositor, inspired by Compiz and based on
+[T] wlroots. It aims to create a customizable, extendable and lightweight
+[T] environment without sacrificing its appearance.
+
+[U] https://wayfire.org/
+
+[A] Iliya Bozhinov
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/x11
+
+[L] MIT
+[V] 0.10.1
+[P] X -----5---9 700.000
+
+[CV-GROUP] wayfire
+[D] e8333868191cfc932b46a10903c434f40414273c6d6a803094b548b5 wayfire-0.10.1.tar.gz git+https://github.com/WayfireWM/wayfire.git v0.10.1
+
+var_append mesonopt ' ' "-Duse_system_wlroots=enabled -Duse_system_wfconfig=enabled"

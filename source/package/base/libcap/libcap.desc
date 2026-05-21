@@ -1,0 +1,45 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libcap/libcap.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library for getting and setting POSIX.1e capabilities
+
+[T] As of Linux 2.2.0, the power of the superuser has been partitioned
+[T] into a set of discrete capabilities (in other places, these
+[T] capabilities are know as privileges).
+[T]
+[T] The contents of the libcap package are a library and a number of
+[T] simple programs that are intended to show how an application/daemon
+[T] can be protected (with wrappers) or rewritten to take advantage of
+[T] this fine grained approach to constraining the danger to your system
+[T] from programs running as 'root'.
+
+[A] Andrew G. Morgan <morgan@linux.kernel.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS FAT-LTO.gcc
+[R] - avr32
+
+[L] GPL
+[V] 2.78
+[P] X ?-2--5---9 126.500
+
+[D] 04f3a1b4f3367670a409446401b05afa80adb9409d6500637f5f2740 libcap-2.78.tar.xz https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/
+
+# Make.rules run ldd on ld to "auto"-detect libdir :-/
+var_append makeopt ' ' "lib=${libdir##*/}"
+var_append makeinstopt ' ' "lib=${libdir##*/}"
+
+# Go stuff just fails
+var_append makeopt ' ' GOLANG=no
+var_append makeinstopt ' ' GOLANG=no
+
+atstage cross &&
+	var_append makeopt ' ' "OBJCOPY=$OBJCOPY" &&
+	var_append makeinstopt ' ' RAISE_SETFCAP=no
+var_remove_regex makeopt ' ' 'LD=.*' # for cross builds, requires gcc with flags
+var_remove_regex makeinstopt ' ' 'LD=.*'

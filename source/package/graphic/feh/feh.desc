@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/feh/feh.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A fast image viewer, indexer, and montager that uses imlib2
+
+[T] Feh is a fast, lightweight image viewer that uses imlib2. It is command
+[T] line-driven and supports multiple images through slideshows, thumbnail
+[T] browsing or multiple windows, and montages or index prints using
+[T] TrueType fonts to display file information. Advanced features include
+[T] fast dynamic zooming, progressive loading, loading via HTTP (with reload
+[T] support for watching webcams), recursive file opening (slideshow of a
+[T] directory hierarchy), and mouse wheel and keyboard control.
+
+[U] https://feh.finalrewind.org/
+
+[A] Tom <tom@linuxbrit.co.uk>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+
+[L] BSD
+[V] 3.12.2
+
+[D] fd14df984cb4f695582efca8966a7ffb6a2f33f288dd01289a607f76 feh-3.12.2.tar.bz2 https://feh.finalrewind.org/
+
+var_append GCC_WRAPPER_INSERT ' ' "-I`pkgprefix includedir imlib2` -L`pkgprefix libdir imlib2` -L`pkgprefix libdir libx11`"

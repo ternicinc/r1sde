@@ -1,0 +1,66 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/target/generic/pkgsel/99-benchmark.in
+# Copyright (C) 2004 - 2025 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+#
+# TITLE: A base selection for benchmarking purposes
+# not for real use - just for regression testing, compile time tracking
+
+O *
+
+# Add strictly required packages
+
+X 00-dirtree
+X dialog
+X autoconf
+X automake
+X bash
+X binutils
+X gcc
+X glib
+X dietlibc
+X bison
+X bzip2
+X curl
+X diffutils
+X file
+X coreutils
+X findutils
+X flex
+X gawk
+X gettext
+X grep
+X groff
+X gzip
+X less
+X libtool
+X linux
+X m4
+X make
+X man
+X modutils
+X module-init-tools
+X ncurses
+X netkit-base
+X net-tools
+X openssl
+X patch
+X perl
+X procps
+X psmisc
+X sed
+X sysfiles
+X sysklogd
+X tar
+X texinfo
+X time
+X unzip
+X util-linux
+X zlib
+
+# sysfiles split
+X stone
+X rocknet
+X mkinitrd

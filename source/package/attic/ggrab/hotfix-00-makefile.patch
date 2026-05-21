@@ -1,0 +1,26 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/ggrab/hotfix-00-makefile.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -ur ggrab-0.21/Makefile patched-ggrab-0.21/Makefile
+--- ggrab-0.21/Makefile	2003-01-06 13:09:20.000000000 +0100
++++ patched-ggrab-0.21/Makefile	2003-02-21 14:47:59.000000000 +0100
+@@ -13,12 +13,12 @@
+ #
+ #
+ 
+-CPPFLAGS=-DREENTRANT -D_LARGEFILE64_SOURCE  -Wall -Wshadow -O3
++CPPFLAGS=-DREENTRANT -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Wall -Wshadow -O3
+ 
+-LDFLAGS= -s -static
++LDFLAGS= -s
+ 
+ INSTALL=/usr/bin/install 
+-DESTDIR=/usr/local
++DESTDIR=/usr
+ 
+ TARGETS=ggrab sserver
+ 

@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/celementtree/celementtree.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A C implementation of the ElementTree API
+
+[T] The cElementTree module is a C implementation of the ElementTree API.
+[T] On typical documents, it's 15-20 times faster than the Python version
+[T] of ElementTree, and uses 2-5 times less memory. On modern hardware,
+[T] that means that documents in the 50-100 megabyte range can be
+[T] manipulated in memory, and that documents in the 0-1 megabyte
+[T] range load in zero time (0.0 seconds). This allows you to
+[T] drastically simplify many kinds of XML applications.
+
+[U] https://web.archive.org/web/20190707060854/http://effbot.org/zone/celementtree.htm
+
+[A] Fredrik Lundh <fredrik@pythonware.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+
+[L] BSD
+[V] 1.0.2-20050302
+
+[D] 08bab602d3ebc32a876965638e7f83cc4768bba4cd2c0600bca37a59 cElementTree-1.0.2-20050302.tar.gz http://effbot.org/downloads/

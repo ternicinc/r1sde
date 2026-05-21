@@ -1,0 +1,27 @@
+[TIMESTAMP] 1749546301 Tue Jun 10 11:05:01 2025
+[BUILDTIME] 8 (9)
+[SIZE] 1.09 MB, 120 files
+
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[DEP] glib
+[DEP] gobject-introspection
+[DEP] grep
+[DEP] intltool
+[DEP] json-c
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] perl-xml-parser
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar
+[DEP] xz

@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ijs/ijs.desc
+[COPY] Copyright (C) 2015 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A protocol for transmission of raster page images
+
+[T] A protocol for transmission of raster page images.
+
+[U] https://www.openprinting.org/download/ijs/
+
+[A] artofcode
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/printing
+[F] CROSS
+
+[L] GPL
+[V] 10.06.0
+
+[D] 836880cfb4ca9457197664857186e37639335b463332d0c2cc360f16 ghostscript-10.06.0.tar.xz https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10060/
+
+srcdir=*/ijs

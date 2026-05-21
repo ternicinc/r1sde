@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lua-curses/lua-curses.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] LUA (n)curses module
+
+[T] LUA modules for ncurses, includes cui (curses UI).
+
+[U] https://github.com/lcurses/lcurses/
+
+[A] lcurses Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] MIT
+[V] 9.0.0
+
+[D] 434b3da20d756f84a585b75a875f3c8a60287e858021d91a3e208bfe lua-curses-9.0.0.tar.gz https://github.com/lcurses/lcurses/archive/release-v9.0.0/

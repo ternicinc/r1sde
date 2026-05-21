@@ -1,0 +1,15 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/qscanq/loguser.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./src/conf-users.orig	2005-11-28 21:26:37.000000000 -0300
++++ ./src/conf-users	2005-11-28 21:26:44.000000000 -0300
+@@ -1,5 +1,5 @@
+ Gqscanq
+-Gqscanlog
++log
+ 
+ The first line of this file specifies the user ID that will own the virus
+ scanning queue, and as which qscanq will run. It should be a user

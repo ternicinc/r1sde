@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libwpe/libwpe.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library for the WPE-flavored port of WebKit
+
+[T] General-purpose library specifically developed for the WPE-flavored port of WebKit.
+
+[U] https://github.com/WebPlatformForEmbedded/libwpe
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+[F] CROSS
+
+[L] LGPL
+[V] 1.16.3
+[P] X -----5---9 179.200
+
+[D] b24c1fbd141185a0db0c63c12c487fb52591fa467384aaab25d71344 libwpe-1.16.3.tar.xz https://github.com/WebPlatformForEmbedded/libwpe/releases/download/1.16.3/
+
+. $base/package/*/*/gnome-conf.in

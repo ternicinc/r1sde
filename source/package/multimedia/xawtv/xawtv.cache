@@ -1,0 +1,35 @@
+[TIMESTAMP] 1750780066 Tue Jun 24 17:47:46 2025
+[BUILDTIME] 8 (9)
+[SIZE] 2.88 MB, 107 files
+
+[DEP] 00-dirtree
+[OPT] aalib
+[DEP] alsa-lib
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] help2man
+[DEP] libdv
+[DEP] libice
+[DEP] libjpeg
+[DEP] libsm
+[DEP] libv4l
+[DEP] libx11
+[DEP] libxaw
+[DEP] libxext
+[DEP] libxmu
+[DEP] libxt
+[DEP] linux-header
+[DEP] make
+[DEP] ncurses
+[DEP] perl
+[DEP] razor
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto
+[DEP] xz

@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kdf/kdf.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] View disk usage
+
+[T] KDiskFree displays the available file devices (hard drive partitions,
+[T] floppy and CD drives, etc.) along with information on their capacity, free
+[T] space, type and mount point. It also allows you to mount and unmount drives
+[T] and view them in a file manager.
+
+[U] https://apps.kde.org/kdf/
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[E] opt kdoctools docbook-xml docbook-xsl
+
+[L] GPL
+[V] 26.04.1
+[P] X -----5---9 200.400
+
+[CV-GROUP] kde-gear
+[D] b0e76b70d8ec2be6047b5f1d06d2ed95704d84f99de84dee3e158b7e kdf-26.04.1.tar.xz https://download.kde.org/stable/release-service/26.04.1/src/
+
+. $base/package/*/*/kde-conf.in

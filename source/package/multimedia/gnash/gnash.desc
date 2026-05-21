@@ -1,0 +1,44 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnash/gnash.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Free flash movie player
+
+[T] Gnash is originally based on the code of GameSWF, by Thatcher
+[T] Ulrich. GameSWF is the most advanced of the free flash movie player
+[T] projects, and implements a fairly broad set of Flash Format v7
+[T] compliance. GameSWF was unsupported public domain software though,
+[T] and not really setup to be an industrial strength project that could
+[T] be used by everyone that uses Firefox.
+[T] So in early December of 2005, GameSWF was forked, and the code
+[T] rearranged in GNU project style.
+
+[U] https://www.gnu.org/software/gnash
+[U] http://www.gnashdev.org/
+
+[A] Rob Savoye <rob@seneccas.com>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/multimedia
+[F] NOPARALLEL
+
+[L] GPL
+[V] 0.8.10
+
+[CV-URL] http://www.gnu.org/software/gnash/
+[D] 6020f1a24bf782b6bc8e69ef97ac1a1d5a5beb6db7d88c451d24905f gnash-0.8.10.tar.bz2 http://ftp.gnu.org/gnu/gnash/0.8.10/
+
+var_append confopt ' ' --enable-pthreads
+
+# xml libs
+pkginstalled libxml && var_append confopt ' ' "--with-libxml-libraries=`pkgprefix libdir libxml`"
+pkginstalled libxml && var_append confopt ' ' "--with-libxml-includes=`pkgprefix includedir libxml`/libxml2"
+var_append makeopt ' ' "LIBXML_LIBS='-lxml2 -lz -lm'"
+
+# FIXME: more options to consider maybe:
+# --enable-sdk-install
+
+# FIXME: updated this and the mozilla patches for libdir != lib (e.g. lib64)
+var_append confopt ' ' --with-plugindir=$root/usr/lib/mozilla/plugins

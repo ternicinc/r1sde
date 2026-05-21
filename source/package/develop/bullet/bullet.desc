@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/bullet/bullet.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Real-Time Physics Simulation
+
+[T] Bullet Physics SDK: real-time collision detection and multi-physics
+[T] simulation for VR, games, visual effects, robotics, machine learning etc.
+
+[U] https://bulletphysics.org/wordpress/
+
+[A] Erwin Coumans
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] OpenSource
+[V] 3.25
+
+[CV-FLAGS] NO-PREFIX
+[D] f9b1f1e3ed9c671b6ab2e66f31efd0593833edba42b6328889d4c464 bullet-3.25.tar.gz https://github.com/bulletphysics/bullet3/archive/3.25/

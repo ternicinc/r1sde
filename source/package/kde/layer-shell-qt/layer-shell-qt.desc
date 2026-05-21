@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/layer-shell-qt/layer-shell-qt.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] QT Layer Shell
+
+[T] Qt component to allow applications to make use of the Wayland wl-layer-shell protocol.
+
+[U] https://invent.kde.org/plasma/layer-shell-qt
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 6.6.5
+[P] X -----5---9 200.016
+
+[CV-GROUP] kde-plasma
+[D] 6213d75f875356e5e7da5419c0e7699757a5224c8d4fff5634019a9a layer-shell-qt-6.6.5.tar.xz https://download.kde.org/stable/plasma/6.6.5/
+
+. $base/package/*/*/kde-conf.in

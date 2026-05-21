@@ -1,0 +1,45 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lualdap/lualdap.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A simple interface from Lua to LDAP client functions
+
+[T] LuaLDAP is a simple interface from Lua to an LDAP client (in fact
+[T] it is a bind to OpenLDAP). It enables a Lua program to:
+[T] - Connect to an LDAP server
+[T] - Execute any operation (search, add, compare, delete, modify
+[T] and rename)
+[T] - Retrieve entries and references of the search result.
+
+[U] https://github.com/lualdap/lualdap/
+
+[A] Roberto Ierusalimschy
+[A] André Carregal
+[A] Tomás Guisasola
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] OpenSource
+[V] 1.4.0
+
+[D] d0277ea6d9680e44af3f5b2a1fca731a057fa974aaad5c8aaf42b9df lualdap-1.4.0.tar.gz https://github.com/lualdap/lualdap/archive/v1.4.0/
+
+# inherit some stuff like myCFLAGS, myLIBS
+. $base/package/*/*/lua-conf.in
+
+pkgprefix -t openldap
+
+OPENLDAP_INC=$(pkgprefix includedir openldap)
+OPENLDAP_LIB=$(pkgprefix libdir openldap)
+
+LUA_INC=$(pkgprefix includedir lua)
+
+var_append makeopt ' ' "LIB_OPTION='$myLIBS -lldap -shared'"
+
+WARN="-O2 -Wall -fpic -fPIC -W -Waggregate-return -Wcast-align -Wmissing-prototypes -Wnested-externs -Wshadow -Wwrite-strings -ansi"
+var_append GCC_WRAPPER_APPEND ' ' "$WARN -I$root/$LUA_INC -I$root/$OPENLDAP_INC -L$root/$OPENLDAP_LIB"
+
+var_append makeinstopt ' ' LUA_LIBDIR=$root$pkglibdir

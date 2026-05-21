@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/mysqlcc/hotfix-ed_mysql_4.1.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+--- ./shared/src/CMySQL.cpp.orig	2005-02-12 13:06:13.000000000 -0300
++++ ./shared/src/CMySQL.cpp	2005-02-12 13:07:25.842117042 -0300
+@@ -451,7 +451,7 @@
+   if (!isConnected())
+     return false;
+   
+-  if (mysql_shutdown(mysql) != 0)
++  if (mysql_shutdown(mysql, SHUTDOWN_DEFAULT) != 0)
+   {
+     if (emiterror)
+       emitError();

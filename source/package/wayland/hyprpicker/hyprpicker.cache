@@ -1,0 +1,24 @@
+[TIMESTAMP] 1739277434 Tue Feb 11 13:37:14 2025
+[BUILDTIME] 8 (5)
+[SIZE] 0.29 MB, 8 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] hyprutils
+[DEP] hyprwayland-scanner
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] wayland
+[DEP] wayland-protocols
+[DEP] xkbcommon

@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-xlib/python-xlib.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Python X Library
+
+[T] The Python X Library is intended to be a fully functional X client
+[T] library for Python programs. It is written entirely in Python, in contrast
+[T] to earlier X libraries for Python (the ancient X extension and the newer
+[T] plxlib) which were interfaces to the C Xlib.
+
+[U] https://python-xlib.sourceforge.net/
+
+[A] Jonathan Gardner <jgardn@users.sourceforge.net>
+[A] Moshe Zadka <moshez@users.sourceforge.net>
+[A] Peter Liljenberg <petli@users.sourceforge.net>
+[A] Stephen Saville <zampire@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+
+[L] GPL
+[V] 0.33
+[P] X -----5---9 192.900
+
+[D] e7ebf149f12b3903a14a19c1f29b2fd9958bdbd79dc4b3cc1d70241b python-xlib-0.33.tar.gz https://github.com/python-xlib/python-xlib/releases/download/0.33/

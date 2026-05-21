@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/baloo/baloo.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A framework for searching and managing metadata
+
+[T] Baloo is the file indexing and file search framework for KDE Plasma. It
+[T] focuses on speed and a very small memory footprint. It maintains an index
+[T] of your files and optionally their contents which you can search.
+
+[U] https://www.kde.org
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 6.26.0
+[P] X -----5---9 162.920
+
+[CV-GROUP] kde-frameworks
+[D] 7a5ad69bed4d4dc29bf36372f4f47032121d70c3500874f3b41c298f baloo-6.26.0.tar.xz https://download.kde.org/stable/frameworks/6.26/
+
+. $base/package/*/*/kde-conf.in

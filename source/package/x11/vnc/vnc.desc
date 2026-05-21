@@ -1,0 +1,52 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/vnc/vnc.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Virtual Network Computing
+
+[T] VNC stands for Virtual Network Computing. It is, in essence, a remote
+[T] display system which allows you to view a computing 'desktop' environment
+[T] not only on the machine where it is running, but from anywhere on the
+[T] Internet and from a wide variety of machine architectures.
+
+[U] https://www.realvnc.com/
+
+[A] AT&T Laboratories Cambridge
+[A] RealVNC Ltd
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] FPIC
+
+[L] GPL
+[V] 2
+[P] O -----5---9 171.900
+
+[D] 0 vnc-2-unixsrc.tar.gz http://download.lunar-linux.org/lunar/mirrors/
+[D] c7a03f2eb7748fdd4048781fa4abb79f5b04e73092f1a692127ecadf X430src-1.tgz http://ftp.xfree86.org/pub/XFree86/4.3.0/source/
+[D] b05f2431893d48310e7070acf5389635c879f83bed2e1b206194db8b X430src-2.tgz http://ftp.xfree86.org/pub/XFree86/4.3.0/source/
+[D] 230e533a483f28ca00fa738c1f06d063660d7429df386147b23177c7 X430src-3.tgz http://ftp.xfree86.org/pub/XFree86/4.3.0/source/
+
+xvnc_inject_x() {
+	cd unix
+	for x in `match_source_file -p 'X.*src'`; do
+		echo "Extracting ${x##*/} ..."
+		tar $taropt $x
+	done
+	patch -Np0 < xc.patch
+	cd ..
+}
+hook_add prepatch 5 xvnc_inject_x
+hook_add preconf 5 "cd unix"
+
+[ "$SDECFG_PKG_VNC_X_SERVER" = 1 ] &&
+	hook_add inmake 5 "cd xc; make makeopt=WORLDOPTS= World; cd .."
+
+pkginstalled zlib && var_append confopt ' ' --with-installed-zlib
+makeinstopt=
+
+hook_add postmake 5 './vncinstall $bindir $mandir'
+#hook_add postmake 6 'mkdir -p $datadir/$pkg/classes; cp -v java/* $datadir/$pkg/classes'

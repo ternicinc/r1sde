@@ -1,0 +1,71 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/libreoffice/pdfium-add-arches.patch
+# Copyright (C) 2024 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- libreoffice-24.8.2.1/external/pdfium/UnpackedTarball_pdfium.mk.vanilla	2024-10-17 20:38:57.849909718 +0200
++++ libreoffice-24.8.2.1/external/pdfium/UnpackedTarball_pdfium.mk	2024-10-17 20:43:25.246572617 +0200
+@@ -20,6 +20,8 @@
+ 
+ pdfium_patches += annot.patch.1
+ 
++pdfium_patches += arches.patch
++
+ $(eval $(call gb_UnpackedTarball_UnpackedTarball,pdfium))
+ 
+ $(eval $(call gb_UnpackedTarball_set_tarball,pdfium,$(PDFIUM_TARBALL)))
+--- libreoffice-24.8.2.1/external/pdfium/arches.patch.vanilla	2024-10-17 20:39:44.356575737 +0200
++++ libreoffice-24.8.2.1/external/pdfium/arches.patch	2024-10-17 20:42:57.249906351 +0200
+@@ -0,0 +1,51 @@
++--- ./build/build_config.h.vanilla	2024-10-17 20:17:33.036594516 +0200
+++++ ./build/build_config.h	2024-10-17 20:19:19.683259679 +0200
++@@ -328,6 +328,11 @@
++ #define ARCH_CPU_ARMEL 1
++ #define ARCH_CPU_32_BITS 1
++ #define ARCH_CPU_LITTLE_ENDIAN 1
+++#elif defined(__ARMEB__)
+++#define ARCH_CPU_ARM_FAMILY 1
+++#define ARCH_CPU_ARMEB 1
+++#define ARCH_CPU_32_BITS 1
+++#define ARCH_CPU_BIG_ENDIAN 1
++ #elif defined(__aarch64__) || defined(_M_ARM64)
++ #define ARCH_CPU_ARM_FAMILY 1
++ #define ARCH_CPU_ARM64 1
++@@ -370,6 +370,36 @@
++ #define ARCH_CPU_RISCV64 1
++ #define ARCH_CPU_64_BITS 1
++ #define ARCH_CPU_LITTLE_ENDIAN 1
+++#elif defined(__alpha)
+++#define ARCH_CPU_ALPHA_FAMILY 1
+++#define ARCH_CPU_ALPHA
+++#define ARCH_CPU_64_BITS 1
+++#define ARCH_CPU_LITTLE_ENDIAN 1
+++#elif defined(__hppa)
+++#define ARCH_CPU_HPPA_FAMILY 1
+++#define ARCH_CPU_HPPA
+++#define ARCH_CPU_32_BITS 1
+++#define ARCH_CPU_BIG_ENDIAN 1
+++#elif defined(__ia64)
+++#define ARCH_CPU_IA64_FAMILY 1
+++#define ARCH_CPU_IA64
+++#define ARCH_CPU_64_BITS 1
+++#define ARCH_CPU_LITTLE_ENDIAN 1
+++#elif defined(__m68k__)
+++#define ARCH_CPU_M68K_FAMILY 1
+++#define ARCH_CPU_M68K
+++#define ARCH_CPU_32_BITS 1
+++#define ARCH_CPU_BIG_ENDIAN 1
+++#elif defined(__sparc) && defined(__arch64__)
+++#define ARCH_CPU_SPARC_FAMILY 1
+++#define ARCH_CPU_SPARC
+++#define ARCH_CPU_64_BITS 1
+++#define ARCH_CPU_BIG_ENDIAN 1
+++#elif defined(__sparc)
+++#define ARCH_CPU_SPARC_FAMILY 1
+++#define ARCH_CPU_SPARC
+++#define ARCH_CPU_32_BITS 1
+++#define ARCH_CPU_BIG_ENDIAN 1
++ #else
++ #error Please add support for your architecture in build/build_config.h
++ #endif

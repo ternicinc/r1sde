@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/iptables/iptables.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] IP packet filter administration
+
+[T] Iptables is used to set up, maintain, and inspect the tables of
+[T] IP packet filter rules in the Linux kernel. There are several
+[T] different tables which may be defined, and each table contains a number
+[T] of built-in chains, and may contain user-defined chains.
+
+[U] https://www.netfilter.org/
+
+[A] The Netfilter Core Team
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS DIETLIBC NO-PIE NO-LTO.mips NO-LTO.mips64
+[K] + linux
+
+[L] GPL
+[V] 1.8.13
+[P] X -----5---9 189.900
+
+[D] 80903dba25676f301dccf383b77ab526cfeebf0324f88cd90651eb5f iptables-1.8.13.tar.xz https://www.netfilter.org/projects/iptables/files/
+
+var_append confopt ' ' '--enable-libipq --disable-nftables'
+var_append confopt ' ' --with-xt-lock-name=/var/run/xtables.lock

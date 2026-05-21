@@ -1,0 +1,18 @@
+[TIMESTAMP] 1739232503 Tue Feb 11 01:08:23 2025
+[BUILDTIME] 2 (5)
+[SIZE] 0.81 MB, 62 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] gzip
+[DEP] make
+[DEP] perl
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

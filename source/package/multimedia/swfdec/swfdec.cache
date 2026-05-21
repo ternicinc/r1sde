@@ -1,0 +1,53 @@
+
+[TIMESTAMP] 1158922039 Fri Sep 22 10:47:19 2006
+[BUILDTIME] 20 (5)
+[SIZE] 1.69 MB, 58 files
+
+[DEP] 00-dirtree
+[DEP] at-spi2-core
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] expat
+[DEP] findutils
+[DEP] firefox
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] gimp
+[DEP] glib
+[DEP] glitz
+[DEP] grep
+[DEP] gst-plugins-base
+[OPT] gstreamer
+[DEP] gtk+
+[DEP] xorgproto
+[DEP] libice
+[OPT] libmad
+[DEP] liboil
+[DEP] libpng
+[DEP] libsm
+[DEP] libx11
+[DEP] libxau
+[DEP] libxcursor
+[DEP] libxdmcp
+[DEP] libxext
+[DEP] libxfixes
+[DEP] libxi
+[DEP] libxinerama
+[DEP] libxml
+[DEP] libxrandr
+[DEP] libxrender
+[DEP] libxt
+[DEP] linux-header
+[DEP] make
+[DEP] pango
+[DEP] pkgconfig
+[DEP] xorgproto
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] util-linux
+[DEP] xorgproto
+[DEP] zlib

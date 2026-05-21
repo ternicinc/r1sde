@@ -1,0 +1,20 @@
+[TIMESTAMP] 1738187060 Wed Jan 29 21:44:20 2025
+[BUILDTIME] 270 (9)
+[SIZE] 5.59 MB, 294 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[OPT] libjpeg
+[OPT] libpng
+[DEP] linux-header
+[DEP] make
+[DEP] pytorch
+[DEP] sed
+[DEP] tar
+[DEP] zlib

@@ -1,0 +1,40 @@
+[TIMESTAMP] 1738697898 Tue Feb  4 20:38:18 2025
+[BUILDTIME] 280 (9)
+[SIZE] 40.19 MB, 499 files
+
+[DEP] alsa-lib
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] dos2unix
+[DEP] file
+[DEP] findutils
+[DEP] fontconfig
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glew
+[DEP] glib
+[DEP] glu
+[DEP] grep
+[DEP] gtk+
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] libcap
+[DEP] libevdev
+[DEP] libglvnd
+[DEP] libpng
+[DEP] libx11
+[DEP] linux-header
+[DEP] make
+[DEP] pango
+[DEP] perl
+[DEP] pulseaudio
+[DEP] sed
+[DEP] tar
+[DEP] xa
+[DEP] xorgproto
+[DEP] zlib

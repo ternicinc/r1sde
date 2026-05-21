@@ -1,0 +1,106 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/docbook-xml/docbook-xml.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] XML scheme for documentation
+
+[T] DocBook is a widely used XML scheme for writing documentation and help.
+[T] It has a very rich markup which allows you to use XSL stylesheets to
+[T] produce various target formats such as HTML, PostScript, PDF, RTF, and
+[T] HTMLHelp. ScrollKeeper was designed with an emphasis on DocBook, since
+[T] it has the richest markup of all commonly used documentation formats
+[T] which allows ScrollKeeper to extract the most useful information from
+[T] the document itself.
+[T]
+[T] The DocBook DTD and stylesheets are typically distributed in packages
+[T] which lack installation scripts. In the past, installation was simple
+[T] enough that users could easily just copy the files into place. Now that
+[T] modern XML libraries, such as libxml, support XML catalogs, correct
+[T] installation of DTD's and stylesheets require proper catalog
+[T] registration.
+
+[U] https://www.docbook.org/
+
+[A] Norman Walsh <ndw@nwalsh.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] OpenSource
+[V] 5.1
+[P] X -----5---9 126.600
+
+[D] 1551907286 docbkx412.zip http://www.docbook.org/xml/4.1.2/
+[D] 899705653 docbook-xml-4.2.zip http://www.docbook.org/xml/4.2/
+[D] 2215791483 docbook-xml-4.3.zip http://www.docbook.org/xml/4.3/
+[D] 1653249517 docbook-xml-4.4.zip http://www.docbook.org/xml/4.4/
+[D] 689526860 docbook-xml-4.5.zip http://www.docbook.org/xml/4.5/
+[D] 1103358257 docbook-5.0.zip http://www.docbook.org/xml/5.0/
+[D] cd94f9676567eb57cdc0dd5db6a47a87350a4a832fc1bccd6d8bb169 docbook-v5.1-os.zip https://docbook.org/xml/5.1/
+
+# TODO: this is a quickhack to have a working docbook installation to fix many packages which depend on it.
+#       the whole installation of the docbook xml-dtds and xslts should be reworked.
+#       best would be to define (or find out) how a standard docbook and xml-catalog installation should look
+#       like and the registration in the system catalog should be done in a postinstall script
+#       (other packages may also install dtds, xslts which should be registered)
+#       after this is done, it will be possible to put every docbook version and xslt and others into
+#       their own package.
+# TODO: honor prefix
+
+autoextract=0
+
+destdir=/usr/share/xml/docbook
+sysconfdir=/etc/xml
+
+systemcatalog=$sysconfdir/catalog
+dtdprefix=docbook-xml-dtd
+dtddest=$destdir/$dtdprefix
+
+register_catalog() {
+  cd $destdir
+  if [ ! -e $systemcatalog ]; then
+    xmlcatalog --noout --create $systemcatalog
+  fi
+  for catalogfile in $1; do
+    egrep -q $catalogfile $systemcatalog ||
+	xmlcatalog --noout --add nextCatalog "" file://$catalogfile $systemcatalog
+  done
+}
+
+install_412() {
+  unzip -o -d $dtddest-4.1.2 $(match_source_file -p 412)
+  cp -f $confdir/catalog-4.1.2.xml $dtddest-4.1.2/catalog.xml
+  register_catalog $dtddest-4.1.2/catalog.xml
+}
+
+install_4_x() {
+  for dtdver in 4.2 4.3 4.4 4.5; do
+    unzip -o -d $dtddest-$dtdver $(match_source_file -p xml-$dtdver)
+    register_catalog $dtddest-$dtdver/catalog.xml
+  done
+}
+
+install_5_x() {
+  for dtdver in 5.0 v5.1; do
+    unzip -o -d $dtddest-$dtdver $(match_source_file -p docbook-$dtdver)
+    register_catalog $dtddest-$dtdver/catalog.xml
+  done
+}
+
+install_xsl() {
+  cd $destdir
+  register_catalog $destdir/docbook-xsl*/catalog.xml
+}
+
+install_docbook() {
+  mkdir -p $destdir
+  mkdir -p $sysconfdir
+  install_412
+  install_4_x
+  install_5_x
+  install_xsl
+}
+mainfunction=install_docbook

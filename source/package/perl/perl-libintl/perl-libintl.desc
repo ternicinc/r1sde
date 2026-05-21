@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-libintl/perl-libintl.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An internationalization library for Perl
+
+[T] An internationalization library for Perl.
+
+[U] https://www.cpan.org
+
+[A] Guido Flohr <guido@imperia.net>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/development
+
+[L] LGPL
+[V] 1.37
+[P] X -----5---9 104.000
+
+[D] 4f52ff84b1bb6a3d0fc83a17e4be12b70ac7a399ad843e23535f3de0 libintl-perl-1.37.tar.gz http://www.cpan.org/authors/id/G/GU/GUIDO/

@@ -1,0 +1,25 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/glibc32/hotfix-make-install-lib-all.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- glibc-2.22/Makerules.vanilla	2016-01-07 20:42:32.223876834 +0000
++++ glibc-2.22/Makerules	2016-01-07 20:43:05.699877462 +0000
+@@ -917,6 +917,16 @@
+ 			     $(inst_libdir)/$(patsubst %,$(libtype$o),\
+ 						     $(libprefix)$(libc-name)))
+ 
++install-lib-all: $(inst_slibdir)/libc.so$(libc.so-version) \
++		$(inst_slibdir)/libc-$(version).so \
++		$(inst_libdir)/libc.so \
++		$(inst_libdir)/libc.a \
++		install-lib
++
++ install: $(installed-libcs)
++ $(installed-libcs): $(inst_libdir)/lib$(libprefix)%: lib $(+force)
++ 	$(make-target-directory)
++
+ .PHONY: check-install-supported
+ check-install-supported:
+ 

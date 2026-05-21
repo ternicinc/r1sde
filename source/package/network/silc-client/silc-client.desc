@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/silc-client/silc-client.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A secure chat SILC protocol client
+
+[T] A client for connecting to the SILC Network. SILC (Secure Internet
+[T] Live Conferencing) enables secured session with secured private
+[T] and channel messages.
+
+[U] http://silcnet.org
+
+[A] SILC Project
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] GPL
+[V] 1.1.11
+
+[D] 7fcc928dbcc1afaa140c958375a2010405c0d978106a41e74ec2c4c6 silc-client-1.1.11.tar.bz2 https://download.sourceforge.net/silc/
+
+[ $prefix_auto = 1 ] && prefix="opt/silc" && set_confopt
+var_append GCC_WRAPPER_APPEND ' ' -std=gnu11

@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/policycoreutils/policycoreutils.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] SELinux policy core utilities
+
+[T] Security-enhanced Linux is a patch of the Linux® kernel and a number
+[T] of utilities with enhanced security functionality designed to add
+[T] mandatory access controls to Linux. The Security-enhanced Linux
+[T] kernel contains new architectural components originally developed to
+[T] improve the security of the Flask operating system. These
+[T] architectural components provide general support for the enforcement
+[T] of many kinds of mandatory access control policies, including those
+[T] based on the concepts of Type Enforcement®, Role-based Access
+[T] Control, and Multi-level Security.
+[T] policycoreutils contains the policy core utilities that are required
+[T] for basic operation of a SELinux system. These utilities include
+[T] load_policy to load policies, setfiles to label filesystems, newrole
+[T] to switch roles, and run_init to run /etc/init.d scripts in the proper
+[T] context.
+
+[A] NSA SElinux Team
+[M] Miguel Bolanos <miguel@geekpreview.org>
+
+[C] extra/security
+
+[L] GPL
+[V] 3.10
+[P] O
+
+[CV-GROUP] selinux
+[D] 949e5ba205ac3f031bd2091ec3a6866b5b4acd36bf4f798c053b7ade policycoreutils-3.10.tar.gz https://github.com/SELinuxProject/selinux/releases/download/3.10/

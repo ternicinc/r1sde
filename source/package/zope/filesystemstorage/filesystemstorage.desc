@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/filesystemstorage/filesystemstorage.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] FileSystem storage for Archetypes
+
+[T] An Archetype storage storing data on FileSystem.
+[T] This storage is used to avoid ZODB to grow quickly when using a lot of large files.
+
+[U] https://pypi.org/project/iw.fss/
+
+[A] Ingeniweb <support@ingeniweb.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[E] add plone archetypes
+
+[L] OpenSource
+[V] 2.1rc2
+
+[D] 321fa89d5039e9bd7feb4cf6fe1b78f6de6efdb8be1893ad02969561 FileSystemStorage-2.1RC2.tar.gz https://download.sourceforge.net/ingeniweb/
+
+. $base/package/*/zope/zope-conf.in

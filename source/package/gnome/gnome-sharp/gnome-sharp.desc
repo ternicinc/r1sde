@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-sharp/gnome-sharp.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Dot Net language binding for GNOME
+
+[T] The MONO language bindings for GNOME.
+
+[A] Mike Kestner <mkestner@ximian.com>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[F] NOPARALLEL
+[C] extra/development
+
+[L] GPL
+[V] 2.24.5
+[P] X -----5---9 153.651
+
+[D] 5d82bda6c0c0d49230a3aa7bbcf83f401c00d84cad02e9b590880d06 gnome-sharp-2.24.5.tar.gz http://download.mono-project.com/sources/gnome-sharp2/
+
+. $base/package/*/mono/mono.in
+
+gtkhtml_pc() {
+    sed -i -e 's/libgtkhtml-3.8/libgtkhtml-3.14/g' \
+	-i -e "s/GTKHTML_VERSION=3.8/GTKHTML_VERSION=3.14/" \
+	-i -e "s/GTKHTML_SOVERSION=15/GTKHTML_SOVERSION=19/" configure
+}
+hook_add preconf 5 gtkhtml_pc

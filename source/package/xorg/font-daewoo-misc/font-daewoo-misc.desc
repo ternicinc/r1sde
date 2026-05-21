@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/font-daewoo-misc/font-daewoo-misc.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Daewoo Electronics font
+
+[T] A Daewoo Electronics font.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.0.4
+
+[D] 46ba1271ac7cd11b39c4cfe3dfa3ccf27b4c596b2a2a5fd7e54dc7e7 font-daewoo-misc-1.0.4.tar.xz http://xorg.freedesktop.org/releases/individual/font/
+
+. package/*/*/modular-x-conf.in

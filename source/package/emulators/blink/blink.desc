@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/blink/blink.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Tiniest x86-64-linux emulator
+
+[T] blink is a virtual machine for running statically-compiled x86-64-linux
+[T] programs on different operating systems and hardware architectures.
+[T] Blink is a great fit when you want a virtual machine that's embeddable,
+[T] readable, hackable, and easy to compile.
+
+[U] https://github.com/jart/blink
+
+[A] Justine Alexandra Roberts Tunney
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/emulator
+[F] CROSS NO-LTO
+
+[L] ISC
+[V] 1.1.0
+
+[D] adfd7a86ba14264943316d6f79480e70cc647bc3ce58eb53459bf07c blink-1.1.0.tar.gz https://github.com/jart/blink/archive/1.1.0/
+
+var_append makeopt ' ' o//blink/blink
+makeinstopt=
+hook_add postmake 5 "install o/blink/blink $root$bindir/"

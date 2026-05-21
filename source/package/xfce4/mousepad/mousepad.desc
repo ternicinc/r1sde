@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mousepad/mousepad.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A text editor for Xfce
+
+[T] Mousepad is a text editor for Xfce based on Leafpad.
+
+[U] https://docs.xfce.org/apps/mousepad/start
+
+[A] Erik Harrison <erikharrison@xfce.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/xfce
+[F] CROSS
+
+[E] opt gspell
+
+[L] GPL
+[V] 0.7.0
+
+[D] b3cd6205b7132ce8b2650bb94a18361f2480c090e560d854a33643f5 mousepad-0.7.0.tar.xz https://archive.xfce.org/src/apps/mousepad/0.7/
+
+. $base/package/xfce4/*/xfce4-conf.in

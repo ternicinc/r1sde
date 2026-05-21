@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/exiv2/exiv2.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A C++ library and a command line utility to access image metadata
+
+[T] The exiv2 library provides full read and write access to the Exif and
+[T] IPTC metadata of an image through Exiv2 keys and standard C++ iterators
+[T] The exiv2 command line utility provides some functions print Exif and
+[T] IPTC metadata, mainpulate metadata infos and manage filenames based in
+[T] Exif timestamps.
+
+[U] https://www.exiv2.org
+
+[A] Andreas Huggel <ahuggel@gmx.net>
+[M] Gerhard Weis <gweis@gmx.at>
+
+[C] extra/multimedia
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 0.28.8
+[P] X -----5---9 118.500
+
+[D] 2818e4d1b7e247484ec5aa631fc0d27ac0fc1569f12282b9a0918247 exiv2-0.28.8.tar.gz https://github.com/Exiv2/exiv2/archive/v0.28.8/
+
+runmeson=0

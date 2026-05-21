@@ -1,0 +1,12 @@
+
+[TIMESTAMP] 1133791384 Mon Dec  5 15:03:04 2005
+[BUILDTIME] 5 (5)
+[SIZE] 0.06 MB, 12 files
+
+[DEP] 00-dirtree
+[DEP] coreutils
+[DEP] diffutils
+[DEP] grep
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar

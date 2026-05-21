@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/composable_kernel/composable_kernel.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Composable Kernel (CK) library
+
+[T] The Composable Kernel (CK) library provides a programming model for writing
+[T] performance-critical kernels for machine learning workloads across multiple
+[T] architectures (GPUs, CPUs, etc.).
+
+[U] https://github.com/ROCm/composable_kernel
+
+[A] Advanced Micro Devices, Inc.
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS OBJDIR
+[C] extra/development
+
+[L] MIT
+[V] 7.2.3
+[P] X -----5---9 300.135
+
+[CV-GROUP] rocm
+[D] 8dbd07e1d5fd8ac8743fab32b39b511a5644c18e8ef9c6e6e947b36a composable_kernel-rocm-7.2.3.tar.gz https://github.com/ROCm/composable_kernel/archive/rocm-7.2.3/
+
+. $base/package/*/*/rocm-conf.in
+var_append cmakeopt ' ' -DCMAKE_C_COMPILER=/$prefix/bin/clang
+var_append cmakeopt ' ' -DCMAKE_CXX_COMPILER=/$prefix/bin/clang++
+var_append cmakeopt ' ' "-DHIP_PLATFORM=amd -DHIP_COMPILER=clang"
+var_append cmakeopt ' ' "-DCMAKE_HIP_ARCHITECTURES='$SDECFG_PKG_ROCM_ARCHS'"
+var_append cmakeopt ' ' -DBUILD_DEV=OFF

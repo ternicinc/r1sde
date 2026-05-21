@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnunet/gnunet.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A peer-to-peer framework focusing on security
+
+[T] The first andprimary application for GNUnet is anonymous file-sharing.
+[T] GNUnet is currently developed by a worldwide group of independent
+[T] free software developers and part of the GNU project.
+
+[U] https://www.gnunet.org
+
+[A] Christian Grothoff <christian@grothoff.org>
+[A] Heikki Lindholm <holindho@cs.helsinki.fi>
+[A] Nils Durner <durner@gnunet.org>
+[A] Milan Bouchet-Valat <nalimilan@club.fr>
+[M] Martin Papadopoulos <mpp@0x3381e.de>
+
+[C] extra/network
+[F] CROSS
+
+[E] opt jose
+[E] opt libopus
+[E] opt postgresql
+[E] opt pulseaudio
+
+[L] GPL
+[V] 0.27.0
+
+[D] da059119512d4176aa862cbd0884ee9c8a107e20880fc743ed2ac551 gnunet-0.27.0.tar.gz http://ftpmirror.gnu.org/gnunet/

@@ -1,0 +1,39 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/sonypid/hotfix.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+X11R6 is a relict of the past, X11R7 or better just X11 now ... also we need
+.../lib64 on many architectures and last but not least gcc-4.1 warns about
+missing sentinal due 0 vs. NULL.
+
+  - Rene Rebe <rene@exactcode.de>
+
+diff -u sonypid-1.9.1/Makefile sonypid-1.9.1-fixed/Makefile
+--- sonypid-1.9.1/Makefile	2004-02-24 11:35:13.000000000 +0100
++++ sonypid-1.9.1-fixed/Makefile	2006-03-04 23:16:26.348888000 +0100
+@@ -2,7 +2,7 @@
+ CFLAGS = -Wall -Wstrict-prototypes -O2 -pipe
+ SONYPIH = /usr/include/linux
+ LDFLAGS =
+-LIBS = -L/usr/X11R6/lib -lX11 -lXtst
++LIBS = `pkg-config x11 --cflags --libs` -lXtst
+ 
+ PREFIX = /usr/local
+ DESTBIN = $(PREFIX)/bin
+Only in sonypid-1.9.1-fixed/: sonypi.h
+Only in sonypid-1.9.1-fixed/: sonypid
+diff -u sonypid-1.9.1/sonypid.c sonypid-1.9.1-fixed/sonypid.c
+--- sonypid-1.9.1/sonypid.c	2004-02-24 11:35:13.000000000 +0100
++++ sonypid-1.9.1-fixed/sonypid.c	2006-03-04 23:15:56.855044750 +0100
+@@ -202,7 +202,7 @@
+ 				break;
+ 			case SONYPI_EVENT_CAPTURE_PRESSED:
+ 				if (!fork()) {
+-					execlp("xterm", "xterm", 0);
++					execlp("xterm", "xterm", NULL);
+ 					exit(0);
+ 				}
+ 				verboseEvent("Capture Pressed");
+Only in sonypid-1.9.1-fixed/: sonypid.o

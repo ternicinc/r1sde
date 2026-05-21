@@ -1,0 +1,26 @@
+[TIMESTAMP] 1776627190 Sun Apr 19 21:33:10 2026
+[BUILDTIME] 16 (9)
+[SIZE] 1.96 MB, 348 files
+
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] expat
+[DEP] findutils
+[DEP] freetype
+[DEP] gawk
+[DEP] gettext
+[DEP] gperf
+[DEP] grep
+[DEP] json-c
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] xorgproto
+[DEP] xz

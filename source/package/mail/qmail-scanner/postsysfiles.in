@@ -1,0 +1,8 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/qmail-scanner/postsysfiles.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+safe_groupadd qscand 28
+safe_useradd qscand 28 28 "qmail-scanner user" /var/qmail/qmailscan /bin/false "*"

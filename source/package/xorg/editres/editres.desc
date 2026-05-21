@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/editres/editres.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A dynamic resource editor for X Toolkit applications
+
+[T] Editres is a tool that allows users and application developers to view
+[T] the full widget hierarchy of any X Toolkit application that speaks the
+[T] Editres protocol.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.1.1
+
+[D] ce0be1dd1c49fd2b32a3df279be7c4bcd8c98267613b87eccb3f257a editres-1.1.1.tar.xz http://xorg.freedesktop.org/releases/individual/app/
+
+. package/*/*/modular-x-conf.in

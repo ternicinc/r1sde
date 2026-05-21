@@ -1,0 +1,23 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dietlibc/ppc-select.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+
+We must not use the old select syscall ...
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- /dev/null	2006-01-03 10:10:10.127999000 +0100
++++ dietlibc-0.29/ppc/select.S	2006-01-03 11:20:43.000000000 +0100
+@@ -0,0 +1,3 @@
++#include "syscalls.h"
++
++syscall(_newselect,select)
+--- /dev/null	2006-01-03 10:10:10.127999000 +0100
++++ dietlibc-0.29/ppc64/select.S	2006-01-03 11:16:50.000000000 +0100
+@@ -0,0 +1,3 @@
++#include "syscalls.h"
++
++syscall(_newselect,select)

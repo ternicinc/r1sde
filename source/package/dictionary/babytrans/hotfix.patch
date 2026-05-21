@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/babytrans/hotfix.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- babytrans-0.9.1/src/main.cc.vanilla	2006-10-05 10:47:43.000000000 +0000
++++ babytrans-0.9.1/src/main.cc	2006-10-05 10:47:59.000000000 +0000
+@@ -854,7 +854,7 @@
+         }
+ 
+         string              human_attrib ;
+-        assert( it->attrib.size() >= 8 ) ;
++        g_assert( it->attrib.size() >= 8 ) ;
+         if ( it->attrib[ 2 ] > '1'
+              || it->attrib[ 3 ] != '0' ) {
+             /* noun */

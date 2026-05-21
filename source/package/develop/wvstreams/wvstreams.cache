@@ -1,0 +1,25 @@
+
+[TIMESTAMP] 1280281016 Wed Jul 28 01:36:56 2010
+[BUILDTIME] 45 (5)
+[SIZE] 9.03 MB, 251 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] boost
+[DEP] coreutils
+[DEP] dbus
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] pam
+[DEP] pkgconfig
+[DEP] readline
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] tcl
+[DEP] zlib

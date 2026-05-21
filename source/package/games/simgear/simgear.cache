@@ -1,0 +1,27 @@
+[TIMESTAMP] 1744916329 Thu Apr 17 20:58:49 2025
+[BUILDTIME] 470 (9)
+[SIZE] 78.93 MB, 443 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] boost
+[DEP] bzip2
+[DEP] cmake
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] ffmpeg
+[DEP] gawk
+[DEP] grep
+[DEP] libglvnd
+[DEP] libx11
+[DEP] linux-header
+[DEP] make
+[DEP] openal
+[DEP] openscenegraph
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto
+[DEP] xz
+[DEP] zlib

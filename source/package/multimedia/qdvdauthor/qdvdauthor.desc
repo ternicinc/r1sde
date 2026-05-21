@@ -1,0 +1,51 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/qdvdauthor/qdvdauthor.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GUI frontend for dvdauthor and other related tools
+
+[T] The goal of 'Q' DVD-Author is to provide a complete
+[T] DVDAuthoring solution for Linux with the emphasis of
+[T] ease of use and a complete set of functionality.
+
+[U] https://qdvdauthor.sourceforge.net/
+
+[A] Varol Okan <qdvdauthor@sourceforge.net>
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 2.3.1
+
+[D] 58087b7d821a7a37c8368f5ebc25b2a58699c7cb58ede9bbf70eb99e qdvdauthor-2.3.1.tar.gz https://prdownloads.sourceforge.net/sourceforge/qdvdauthor/
+
+pkginstalled arts && . $base/package/*/*/kde-conf.in
+
+confopt="--prefix=$prefix"
+var_append confopt ' ' --build-qplayer
+var_append confopt ' ' --build-qslideshow
+
+pkginstalled xine-lib && var_append confopt ' ' --with-xine-support
+pkginstalled mplayer && var_append confopt ' ' --with-mplayer-support
+#pkginstalled vlc && var_append confopt ' ' --with-vlc-support
+
+runconf=0
+runmake=0
+
+qdvdauthor_make() {
+	echo Running "./configure $confopt"
+	eval "./configure $confopt"
+}
+
+qdvdauthor_install() {
+	echo "Installing qdvdauthor to $root/$prefix"
+	rm -f bin/dvdproject
+	cp -v bin/* $root$bindir/
+}
+
+hook_add premake 5 qdvdauthor_make
+hook_add postmake 5 qdvdauthor_install

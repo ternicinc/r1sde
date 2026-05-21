@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gambas/gambas.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A free development environment based on a Basic
+
+[T] Gambas is a free development environment based on a Basic interpreter with
+[T] object extensions, like Visual Basic - but it is NOT a clone!
+[T] With Gambas, you can quickly design your program GUI, access MySQL or
+[T] PostgreSQL databases, pilot KDE applications with DCOP, translate your
+[T] program into many languages, create network applications easily, and so on.
+
+[U] https://gambas.sourceforge.net/
+
+[A] Benoit Minisini
+[M] Leonel Iván Saafigueroa <leonel@saafigueroa.com.ar>
+
+[C] extra/development
+
+[L] GPL
+[V] 3.21.5
+
+[D] 4e2484a7c41d8c2fa45281b9d590a1a2cad6d4214e69e7e5e7c93ff1 gambas-3.21.5.tar.gz https://gitlab.com/gambas/gambas/-/archive/3.21.5/
+
+var_append CXX_WRAPPER_APPEND ' ' "-I$root/$(pkgprefix includedir fontconfig)"

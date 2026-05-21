@@ -1,0 +1,44 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/crimson/crimson.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A tactical war game in the tradition of Battle Isle
+
+[T] The outcome of the war lies in your hands. You decide which units
+[T] are sent to the front lines, and when to unleash the reserves. Your
+[T] mission objectives range from defending strategically vital locations
+[T] to simply destroying all enemy forces in the area. Protect supply
+[T] convoys or raid enemy facilities to uncover technological secrets or
+[T] fill your storage bays so you can repair damaged units or build new
+[T] ones in your own factories. Lead your troops to victory!
+[T]
+[T] Tools are available to create custom maps and campaigns. You can also
+[T] play the original Battle Isle maps if you have a copy of the game.
+[T]
+[T] You can pit yourself against another human player either in hot-seat
+[T] mode in front of the same machine or via e- mail, or against the
+[T] computer.
+
+[U] https://crimson.seul.org
+
+[A] Jens Granseuer <jensgr@gmx.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+#[C] extra/game/strategy
+
+[L] GPL
+[V] 0.5.3
+
+[D] e57c54e815c03e0affcc3f3d9cc3ff18a7f50890cfa7a13a6d0f6223 crimson-0.5.3.tar.bz2 https://crimson.seul.org/files/
+
+bindir=$root/$SDECFG_PKG_GAMES_BINDIR
+datadir=$root/$SDECFG_PKG_GAMES_DATADIR
+[ "$SDECFG_PKG_CRIMSON_ZLIB" == '0' ] && var_append confopt ' ' --disable-zlib
+[ "$SDECFG_PKG_CRIMSON_SOUND" == '0' ] && var_append confopt ' ' --disable-sound
+[ "$SDECFG_PKG_CRIMSON_CFED" == '1' ] && var_append confopt ' ' --enable-cfed
+[ "$SDECFG_PKG_CRIMSON_BI2CF" == '1' ] && var_append confopt ' ' --enable-bi2cf
+[ "$SDECFG_PKG_CRIMSON_COMET" == '1' ] && var_append confopt ' ' --enable-comet

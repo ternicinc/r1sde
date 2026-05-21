@@ -1,0 +1,47 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/vstserver/vstserver.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A VST Server
+
+[T] Vstserver is a program that must be running when using programs using
+[T] vstlib.
+[T]
+[T] Vstlib is a library that can be used by programs to run windows vst
+[T] audio plugins under i386linux/i386freebsd/i386solaris/i386etc. (May
+[T] require som modifications for other os-es than i386linux).
+
+[U] https://www.notam02.no/arkiv/src/
+
+[A] Kjetil S. Matheussen
+[M] René Rebe <rene@exactco.de>
+
+[F] NOPARALLEL
+[C] extra/multimedia
+
+[L] LGPL
+[V] 0.3.1
+[P] O -----5---9 177.300
+
+[D] 2d0322842954c2a2adcfba424a6514f77b29b44a1cdaed6e07c8d1a2 vstserver-0.3.1.tar.bz2 http://www.notam02.no/arkiv/src/
+
+vstpath=$root/$prefix/lib/vst
+
+var_append makeopt ' ' WINEPATH=$root/$prefix
+var_append makeopt ' ' VST_PATH=$vstpath
+var_append makeinstopt ' ' WINEPATH=$root/$prefix
+var_append makeinstopt ' ' VST_PATH=$vstpath
+
+vstserver_premake() {
+	mkdir -vp $vstpath
+}
+
+vst_server_postmake() {
+	cat <<- EOT > $root/etc/profile.d/vstserver
+export VST_PATH=$vstpath
+	EOT
+}
+
+hook_add premake 5 vstserver_premake

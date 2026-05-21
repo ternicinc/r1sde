@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gsoap/gsoap.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A cross-platform open source C and C++ software development toolkit
+
+[T] The gSOAP Toolkit for SOAP Web Services and XML-Based Applications is
+[T] a cross-platform open source C and C++ software development toolkit.
+[T] Generates C/C++ RPC code, XML data bindings, and efficient schema-specific
+[T] parsers for SOAP Web services and other applications that benefit from an
+[T] XML interface.
+
+[U] https://gsoap2.sourceforge.net
+
+[A] Robert A. van Engelen <engelen at acm dot org>
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/development
+[F] NO-LTO.gcc
+
+[E] opt wolfssl
+[E] opt gnutls
+
+[L] GPL
+[V] 2.8.141
+
+[D] af7ba203203822051be2db0f168b2810485f16442b0a47c017286469 gsoap_2.8.141.zip https://download.sourceforge.net/project/gsoap2/
+
+# -jn parallel build support
+hook_add premake 5 'eval $MAKE -C gsoap/src $makeopt soapcpp2_yacc.h'

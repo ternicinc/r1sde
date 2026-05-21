@@ -1,0 +1,29 @@
+
+[TIMESTAMP] 1709245238 Fri Mar  1 00:20:38 2024
+[BUILDTIME] 6 (9) ERROR
+[SIZE] 0.01 MB, 6 files
+
+[DEP] 00-dirtree
+[DEP] autoconf
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] intltool
+[DEP] libpng
+[DEP] libtool
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] perl
+[DEP] pstoedit
+[DEP] sed
+[DEP] tar
+[DEP] xz

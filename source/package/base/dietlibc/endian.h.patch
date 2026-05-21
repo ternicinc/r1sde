@@ -1,0 +1,31 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dietlibc/endian.h.patch
+# Copyright (C) 2011 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+fix udev:
+
+ata_id.c:(.text+0xd1): undefined reference to `le16toh'
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- dietlibc/include/endian.h.vanilla	2011-01-05 19:05:43.000000000 +0100
++++ dietlibc/include/endian.h	2011-01-05 19:08:08.000000000 +0100
+@@ -55,4 +55,16 @@
+ #define __WORDSIZE 32
+ #endif
+ 
++#ifdef _BSD_SOURCE
++/* Conversion interfaces. */
++#include <byteswap.h>
++
++#if __BYTE_ORDER == __LITTLE_ENDIAN
++#define le16toh(x) (x)
++#else
++#define le16toh(x) bswap_16 (x)
++#endif
++
++#endif
++
+ #endif

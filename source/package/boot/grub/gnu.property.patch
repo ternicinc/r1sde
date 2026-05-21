@@ -1,0 +1,22 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/grub/gnu.property.patch
+# Copyright (C) 2021 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- grub-0.97/stage2/Makefile.am.vanilla	2021-05-09 17:18:52.943421272 +0200
++++ grub-0.97/stage2/Makefile.am	2021-05-09 17:19:18.179420266 +0200
+@@ -278,4 +278,4 @@
+ # General rule for making a raw binary.
+ SUFFIXES = .exec
+ .exec:
+-	$(OBJCOPY) -R .note -R .comment -R .note.gnu.build-id -R .reginfo -R .rel.dyn -O binary $< $@
++	$(OBJCOPY) -R .note -R .comment -R .note.gnu.build-id -R .reginfo -R .rel.dyn -R .note.gnu.property -O binary $< $@
+--- grub-0.97/stage1/Makefile.am.vanilla	2021-05-09 17:18:52.941421272 +0200
++++ grub-0.97/stage1/Makefile.am	2021-05-09 17:19:07.227420703 +0200
+@@ -12,4 +12,4 @@
+ 
+ SUFFIXES = .exec
+ .exec:
+-	$(OBJCOPY) -O binary $< $@
++	$(OBJCOPY) -O binary -R .note.gnu.property $< $@

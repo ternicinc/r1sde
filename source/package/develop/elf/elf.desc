@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/elf/elf.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] ELF header analyzer and editor
+
+[T] elf is an ELF header (e_header) statistics tool. It allows you to gather
+[T] various statistics about a binary's ELF header, unlike other releases
+[T] (readelf), elf concentrates on the e_header itself.
+
+[U] http://www.kerneled.com/projects/elf/index.html
+
+[A] Samy Al Bahra <samy@kerneled.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+
+[L] GPL
+[V] 0.5.4p1
+
+[D] 2608500701f86ed410f0c95d4b2a31ef79b7e0e44c8abb8d9181518b elf-0.5.4p1.tar.gz http://www.kerneled.com/projects/elf/

@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/paraview/paraview.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Parallel Visualization Application
+
+[T] ParaView is an open-source, multi-platform data analysis and
+[T] visualization application. ParaView users can quickly build
+[T] visualizations to analyze their data using qualitative and
+[T] quantitative techniques. The data exploration can be done
+[T] interactively in 3D or programmatically using ParaView's batch
+[T] processing capabilities.
+[T] 
+[T] ParaView was developed to analyze extremely large datasets using
+[T] distributed memory computing resources. It can be run on
+[T] supercomputers to analyze datasets of terascale as well as on laptops
+[T] for smaller data.
+
+[U] https://paraview.org/
+
+[A] Kitware, Inc. See http://paraview.org/paraview/project/parti.html
+[M] Roger Mason <rmason@mun.ca>
+
+[C] extra/graphic
+[F] OBJDIR
+
+[L] OpenSource
+[V] 6.0.1
+
+[D] 9daecaa9b23f666cfbfe0817159fc2b4a7eac9a9f875d1451a5c3fd7 ParaView-v6.0.1.tar.xz !https://www.paraview.org/paraview-downloads/download.php?submit=Download&version=v6.0&type=source&os=Sources&downloadFile=ParaView-v6.0.1.tar.xz

@@ -1,0 +1,27 @@
+[TIMESTAMP] 1739138457 Sun Feb  9 23:00:57 2025
+[BUILDTIME] 2 (5)
+[SIZE] 0.32 MB, 17 files
+
+[DEP] bash
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] libx11
+[DEP] libxinerama
+[DEP] linux-header
+[DEP] make
+[DEP] ncurses
+[DEP] pango
+[DEP] pkgconfig
+[DEP] scdoc
+[DEP] sed
+[DEP] tar
+[DEP] wayland
+[DEP] wayland-protocols
+[DEP] xkbcommon
+[DEP] xorgproto

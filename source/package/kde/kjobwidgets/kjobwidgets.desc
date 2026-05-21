@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kjobwidgets/kjobwidgets.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] KDE Frameworks addon for KJobs
+
+[T] Widgets for showing progress of asynchronous jobs.
+
+[U] https://www.kde.org
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 6.26.0
+[P] X -----5---9 162.910
+
+[CV-GROUP] kde-frameworks
+[D] 256d7acd6446eb719dda60a243ad0464f7e6b826e08935cd49abe8a6 kjobwidgets-6.26.0.tar.xz https://download.kde.org/stable/frameworks/6.26/
+
+. $base/package/*/*/kde-conf.in
+var_append CXX_WRAPPER_APPEND ' ' "-I$root/$(pkgprefix includedir libxcb)"

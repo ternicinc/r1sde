@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lirc/lirc.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Linux Infrared Remote Control
+
+[T] LIRC is a package that allows you to decode and send
+[T] infra-red signals of many (but not all) commonly used
+[T] remote controls.
+
+[U] https://www.lirc.org
+
+[A] Christoph Bartelmus <lirc@bartelmus.de>
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/multimedia
+[F] CROSS
+
+[E] opt doxygen
+
+[L] GPL
+[V] 0.10.2
+[P] X -----5---9 178.000
+
+[D] 2abbe3dab15ba288cbcb837b91f2b676080256ff34dc649dfc5cc833 lirc-0.10.2.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/lirc/
+
+var_append confopt ' ' --with-driver=userspace
+var_append confopt ' ' --with-devdir=$datadir/lirc

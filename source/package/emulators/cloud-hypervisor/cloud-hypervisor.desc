@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cloud-hypervisor/cloud-hypervisor.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Virtual Machine Monitor for modern Cloud workloads
+
+[T] Cloud Hypervisor is an open source Virtual Machine Monitor (VMM) that
+[T] runs on top of KVM hypervisor and Microsoft Hypervisor (MSHV).
+[T]
+[T] The project focuses on exclusively running modern, cloud workloads, on
+[T] top of a limited set of hardware architectures and platforms.
+
+[U] https://www.cloudhypervisor.org
+
+[A] Alibaba, ARM, ByteDance, Intel and Microsoft
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/emulator
+[F] CROSS
+
+[R] + arm64 riscv64 x86-64
+
+[L] APL
+[V] 52.0
+
+[D] 61eb9cacf9fc50cdb90ead7887f7ff9d7564771fe6fc7b603eb680db cloud-hypervisor-52.0.tar.gz https://github.com/cloud-hypervisor/cloud-hypervisor/archive/v52.0/
+
+cargoinstopt=
+export OPENSSL_NO_VENDOR=true OPENSSL_DIR=$root/$(pkgprefix openssl)
+atstage cross && hook_add postmake 5 "install target/${arch_target}/*/{ch-remote,cloud-hypervisor,performance-metrics,vhost_user_block,vhost_user_net} $root$bindir"
+atstage native && hook_add postmake 5 "install target/*/{ch-remote,cloud-hypervisor,performance-metrics,vhost_user_block,vhost_user_net} $root$bindir"

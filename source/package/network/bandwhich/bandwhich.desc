@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/bandwhich/bandwhich.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Terminal bandwidth utilization tool
+
+[T] Bandwhich is a CLI utility for displaying current network utilization by
+[T] process, connection and remote IP/hostname.
+
+[U] https://github.com/imsnif/bandwhich
+
+[A] Aram Drevekenin
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] MIT
+[V] 0.23.1
+
+[D] 5b762a052d704ad493d539e62a7c7384be76b9d72df7976c9b5366da bandwhich-v0.23.1.tar.gz https://github.com/imsnif/bandwhich/archive/refs/tags/v0.23.1/

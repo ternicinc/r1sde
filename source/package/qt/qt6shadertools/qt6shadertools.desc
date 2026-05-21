@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/qt6shadertools/qt6shadertools.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Qt6 API and tools for the Quick shader pipeline
+
+[T] APIs and tools in this module provide the producer functionality for the
+[T] shader pipeline that allows Qt Quick to operate on Vulkan, Metal, and
+[T] Direct3D, in addition to OpenGL.
+
+[U] https://qt.io
+
+[A] Trolltech AS <www.trolltech.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS OBJDIR
+
+[L] LGPL
+[V] 6.11.1
+[P] X ?----5---9 140.000
+
+[CV-GROUP] qt6
+[D] 4074a8aed97c553b104855740115829b388232a8393b266f90457005 qtshadertools-everywhere-src-6.11.1.tar.xz http://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/
+
+. $base/package/*/*/qt6-conf.in

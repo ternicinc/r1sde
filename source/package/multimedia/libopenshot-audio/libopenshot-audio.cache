@@ -1,0 +1,20 @@
+[TIMESTAMP] 1737713284 Fri Jan 24 11:08:04 2025
+[BUILDTIME] 14 (9)
+[SIZE] 54.39 MB, 3222 files
+
+[DEP] alsa-lib
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[OPT] doxygen
+[DEP] gawk
+[OPT] graphviz
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] zlib

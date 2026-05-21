@@ -1,0 +1,27 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/gtkmm12/hotfix-gcc44.patch
+# Copyright (C) 2016 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- gtkmm-1.2.10/src/gtk--/base.h.orig	2016-11-18 21:44:22.283349633 +0100
++++ gtkmm-1.2.10/src/gtk--/base.h	2016-11-18 21:44:22.291349673 +0100
+@@ -29,6 +29,7 @@
+ #include <iterator>
+ //#include <list>
+ //#include <vector>
++#include <cstddef>
+ 
+ #include <gdk--.h>
+ #include <gtk--/proxy.h>
+--- gtkmm-1.2.10/src/curve.gen_h.vanilla	2016-11-18 21:44:44.739460987 +0100
++++ gtkmm-1.2.10/src/curve.gen_h	2016-11-18 21:44:50.063487388 +0100
+@@ -138,7 +138,7 @@
+ 
+   // For containers       
+   template <class Iterator>
+-  int get_vector(Iterator b,Iterator e) const
++  int get_vector(Iterator b,Iterator e)
+     {
+       int i;
+       Iterator iter;

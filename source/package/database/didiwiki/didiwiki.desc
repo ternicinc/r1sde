@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/didiwiki/didiwiki.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A small, simple, self-contained 'personal' wiki engine
+
+[T] Small, fast, and incredibly easy to setup. Has built in Webserver.
+[T] Written in C. KWiki like syntax.
+
+[U] https://ciwiki.sourceforge.net/
+
+[A] Matthew Allum, Peter Korsgaard, Amigo
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/database
+[F] CROSS
+
+[L] GPL
+[V] 3.0.5
+
+[D] 7adfb5090f33d5e87846d794b459292c51004d09d2bc0727e9d30a16 ciwiki-3.0.5.tar.gz https://download.sourceforge.net/project/ciwiki/

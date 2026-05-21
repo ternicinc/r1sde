@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/alligator/alligator.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Alligator is a mobile feed reader
+
+[T] Alligator is a Kirigami-based mobile feed reader.
+
+[U] https://apps.kde.org/alligator/
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 26.04.1
+
+[CV-GROUP] kde-gear
+[D] d4623ec34390cc305ce1feddbc8e916a642623eff028b32fc8a574d4 alligator-26.04.1.tar.xz https://download.kde.org/stable/release-service/26.04.1/src/
+
+. $base/package/*/*/kde-conf.in

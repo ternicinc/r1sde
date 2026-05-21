@@ -1,0 +1,22 @@
+
+[TIMESTAMP] 1718835622 Thu Jun 20 00:20:22 2024
+[BUILDTIME] 100 (9)
+[SIZE] 2.36 MB, 261 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] bluez
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] pkgconfig
+[DEP] qt5base
+[DEP] qt5declarative
+[DEP] sed
+[DEP] tar
+[DEP] xz

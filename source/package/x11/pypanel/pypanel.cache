@@ -1,0 +1,16 @@
+
+[TIMESTAMP] 1279641502 Tue Jul 20 17:58:22 2010
+[BUILDTIME] 5 (5)
+[SIZE] 0.01 MB, 5 files
+
+[DEP] 00-dirtree
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] freetype
+[DEP] grep
+[DEP] python
+[DEP] python-xlib
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar

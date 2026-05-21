@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/netembryo/netembryo.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Network abstraction library
+
+[T] Netembryo is a network abstraction library (originated from our
+[T] old wrapper socket) plus some misc utility functions used as
+[T] foundation for feng, libnemesi, felix.
+[T] It provides an uniform access to the following protocols:
+[T] UDP, TCP, SCTP
+
+[U] http://live.polito.it
+
+[A] Alessandro Molina <amol.wrk@gmail.com>
+[A] Dario Gallucci <dario.gallucci@polito.it>
+[A] Luca Barbato <lu_zero@gentoo.org>
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] LGPL
+[V] 0.1.1
+[P] X -----5---9 621.000
+
+[D] c07b43f7821c8f43d1ef93e63655e17fd5aeafc05dfe02696e1de798 netembryo-0.1.1.tar.bz2 https://web.archive.org/web/20110906042531/http://lscube.org/files/downloads/netembryo/
+
+hook_add preconf 3 'autoreconf -i'

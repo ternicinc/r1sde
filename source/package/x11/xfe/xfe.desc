@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfe/xfe.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A file manager for the X Window System
+
+[T] X File Explorer (Xfe) is a filemanager for X. It is based on the
+[T] popular, but discontinued, X Win Commander. Xfe is desktop independent
+[T] and is written with the C++ Fox Toolkit. It looks similar to Windows
+[T] Commander or MS-Explorer, and is very fast and simple. It features file
+[T] associations, the ability to mount/umount devices, a directory tree for
+[T] quickly changing directories, the ability to change file attributes,
+[T] automatic registry saving, the ability to view/create/extract compressed
+[T] archives, and much more.
+
+[U] http://roland65.free.fr/xfe/
+
+[A] Roland Baudin <roland.baudin@space.alcatel.fr>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/x11
+
+[L] GPL
+[V] 2.1.6
+
+[D] 7f13da69c2a1e970b06a5221e7b08ec25fb8cc3d24f86f84e1bf6fab xfe-2.1.6.tar.xz https://prdownloads.sourceforge.net/sourceforge/xfe/
+
+var_append GCC_WRAPPER_APPEND ' ' "`pkg-config x11 --cflags --libs-only-L`"

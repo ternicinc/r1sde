@@ -1,0 +1,46 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libsdl3/libsdl3.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A cross-platform Graphic API
+
+[T] Simple DirectMedia Layer is a cross-platform multimedia library
+[T] designed to provide fast access to the graphics framebuffer and
+[T] audio device. It is used by MPEG playback software, emulators, and
+[T] many popular games, including the award winning Linux port of
+[T] "Civilization: Call To Power." Simple DirectMedia Layer supports
+[T] Linux, Win32, BeOS, MacOS, Solaris, IRIX, and FreeBSD.
+[T]
+[T] SDL is written in C, but works with C++ natively, and has bindings
+[T] to several other languages, including Ada, Eiffel, Java, ML, Perl,
+[T] PHP, Pike, Python, and Ruby.
+
+[U] https://www.libsdl.org/
+
+[A] Sam Lantinga <slouken@libsdl.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[E] opt dbus
+[E] opt libdecor
+[E] opt libsamplerate
+[E] opt esound
+[E] opt ffmpeg
+[E] opt libx11 libxcb libxcursor libxext libxfixes libxi libxrandr libxrender libxscrnsaver xkbcommon
+[E] opt wayland
+[E] opt jack
+[E] opt pipewire
+[E] opt pulseaudio
+[E] opt python
+
+[L] ZLIB
+[V] 3.4.8
+[P] X -----5---9 130.000
+
+[D] 61756b24e590d14f751e64859b8c54ee912dc5d89c7b03cf5e109e5f SDL3-3.4.8.tar.gz https://www.libsdl.org/release/
+
+pkginstalled libx11 && var_append GCC_WRAPPER_INSERT ' ' "-L$root$(pkgprefix libdir libx11)"

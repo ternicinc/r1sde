@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mew/mew.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Messaging in the Emacs World
+
+[T] Mew is a user interface for text messages, multimedia messages (MIME), news
+[T] articles and security functionality including PGP, S/MIME, SSH, and TLS.
+[T] Also, Mew can work with the recent search services. Mew is an acronym for
+[T] "Messaging in the Emacs World". You should spell it with the first letter
+[T] capitalized and pronounce it as it is (i.e. the meow of cats).
+
+[U] https://www.mew.org
+
+[A] Kazu Yamamoto <kazu@mew.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] NOPARALLEL
+
+[E] del openssh
+
+[L] GPL
+[V] 6.11
+
+[D] ef8a447d65c213331d5c74423034f5c8a55fb10455660ba1abc094a5 mew-6.11.tar.gz http://www.mew.org/Release/
+
+hook_add inmake 5 '$MAKE info'
+hook_add postmake 5 '$MAKE install-info install-etc'

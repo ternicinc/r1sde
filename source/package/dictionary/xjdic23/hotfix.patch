@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/xjdic23/hotfix.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./xjdxgen.c_old	2003-02-04 17:32:52.000000000 +0100
++++ ./xjdxgen.c	2003-02-04 17:32:23.000000000 +0100
+@@ -35,7 +35,7 @@
+ #define TOKENLIM 40
+ 
+ unsigned char *db;
+-unsigned char ENVname[50];
++unsigned char ENVname[150];
+ unsigned char *dicenv;
+ struct stat *buf;
+ unsigned long dbyte;

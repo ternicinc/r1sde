@@ -1,0 +1,19 @@
+[TIMESTAMP] 1755949048 Sat Aug 23 13:37:28 2025
+[BUILDTIME] 3 (9)
+[SIZE] 0.03 MB, 13 files
+
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] file
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libx11
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

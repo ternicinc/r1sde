@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-doc-utils/gnome-doc-utils.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Documentation utilities for the Gnome project
+
+[T] gnome-doc-utils is a collection of documentation utilities for the Gnome
+[T] project. Notably, it contains utilities for building documentation and
+[T] all auxiliary files in your source tree, and it contains the DocBook
+[T] XSLT stylesheets that were once distributed with Yelp. Starting with
+[T] Gnome 2.8, Yelp will require gnome-doc-utils for the XSLT.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/desktop/gnome
+[F] CROSS
+
+[L] LGPL
+[V] 0.20.10
+[P] X -----5---9 147.301
+
+[CV-URL] https://download.gnome.org/sources/gnome-doc-utils/cache.json
+[D] a113ae03426edf54969e3347557df668bc182d68a95936d839bf5967 gnome-doc-utils-0.20.10.tar.xz https://download.gnome.org/sources/gnome-doc-utils/0.20/
+
+. $base/package/*/*/gnome-conf.in

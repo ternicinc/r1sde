@@ -1,0 +1,25 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/python2/use-hostpgen.patch.cross
+# Copyright (C) 2014 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- Python-2.7.13/Makefile.pre.in.vanilla	2018-01-16 23:02:18.066070345 +0000
++++ Python-2.7.13/Makefile.pre.in	2018-01-16 23:03:08.090068514 +0000
+@@ -231,6 +231,7 @@
+ ##########################################################################
+ # Parser
+ PGEN=		Parser/pgen$(EXE)
++HOSTPGEN=	python-pgen
+ 
+ PSRCS=		\
+ 		Parser/acceler.c \
+@@ -682,7 +682,7 @@
+ 
+ $(GRAMMAR_H): @GENERATED_COMMENT@ $(GRAMMAR_INPUT) $(PGEN)
+ 	@$(MKDIR_P) Include
+-	$(PGEN) $(GRAMMAR_INPUT) $(GRAMMAR_H) $(GRAMMAR_C)
++	$(HOSTPGEN) $(GRAMMAR_INPUT) $(GRAMMAR_H) $(GRAMMAR_C)
+ $(GRAMMAR_C): @GENERATED_COMMENT@ $(GRAMMAR_H)
+ 	touch $(GRAMMAR_C)
+ 

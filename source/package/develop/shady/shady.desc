@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/shady/shady.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Vulkan Clang Compiler
+
+[T] A proof-of-concept C and C++ compiler for Vulkan leveraging Clang as a
+[T] front-end, and Shady our own research IR and compiler. Unlike other shading
+[T] languages, Vcc aims to stick closely to standard C/C++ languages and merely
+[T] adds a few new intrinsics to cover GPU features.
+
+[U] https://shady-gang.github.io/vcc/use/
+
+[A] University of Saarland
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+[R] - alpha arc avr32 alpha blackfin cris m68k microblaze nios2
+
+[L] BSD
+[V] dd2787a
+
+[D] faaf3b5531568a839a39eefe17615892b710bf3d3058b89813059867 shady-dd2787a.tar.zst git+https://github.com/Hugobros3/shady dd2787a

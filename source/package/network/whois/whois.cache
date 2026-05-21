@@ -1,0 +1,23 @@
+[TIMESTAMP] 1774822193 Mon Mar 30 00:09:53 2026
+[BUILDTIME] 4 (9)
+[SIZE] 0.35 MB, 30 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] gzip
+[DEP] libidn2
+[DEP] libxcrypt
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

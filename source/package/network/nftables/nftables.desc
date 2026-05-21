@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/nftables/nftables.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The utility that provides a user interface to configure nftables
+
+[T] This is the command line utility that provides a user interface to
+[T] configure nftables.
+
+[U] https://nftables.org/
+
+[A] The Netfilter Core Team
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+[K] + linux
+
+[L] GPL
+[V] 1.1.6
+
+[D] 4b18a34b59ad6f08380b3717261213ecbf899d8403881c2cf3457028 nftables-1.1.6.tar.xz https://netfilter.org/pub/nftables/
+
+hook_add preconf 2 'autoreconf -vfi'

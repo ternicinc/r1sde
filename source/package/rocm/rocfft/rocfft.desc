@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rocfft/rocfft.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A software library for computing fast Fourier transforms
+
+[T] rocFFT is a software library for computing fast Fourier transforms (FFTs)
+[T] written in the HIP programming language.
+
+[U] https://github.com/ROCm/rocFFT
+
+[A] Advanced Micro Devices, Inc.
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS OBJDIR
+[C] extra/development
+
+[L] MIT
+[V] 7.2.3
+[P] X -----5---9 300.222
+
+[CV-GROUP] rocm
+[D] ff95b371db5826c11ba6c318f8b14e017af808cbb775b464c071d5c0 rocFFT-rocm-7.2.3.tar.gz https://github.com/ROCm/rocFFT/archive/rocm-7.2.3/
+
+. $base/package/*/*/rocm-conf.in
+var_append cmakeopt ' ' -DCMAKE_C_COMPILER=/$prefix/bin/clang
+var_append cmakeopt ' ' -DCMAKE_CXX_COMPILER=/$prefix/bin/clang++
+var_append cmakeopt ' ' "-DAMDGPU_TARGETS='$SDECFG_PKG_ROCM_ARCHS'"

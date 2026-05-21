@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kvirc/kvirc.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A free portable Internet Relay Chat client based Qt GUI toolkit
+
+[T] KVIrc is a free portable Internet Relay Chat client based on the excellent
+[T] Qt GUI toolkit. KVirc is being written by Szymon Stefanek and the KVIrc
+[T] Development Team with the contribution of many IRC addicted developers
+[T] around the world.
+
+[U] https://www.kvirc.net
+
+[A] Szymon Stefanek
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/network
+[F] CROSS OBJDIR
+
+[E] opt doxygen
+
+[L] GPL
+[V] 5.2.10
+
+[D] 37e6194b0fd3f79c78e87f86707c18254f188a54d214e1da55af0aa4 KVIrc-5.2.10.tar.gz https://github.com/kvirc/KVIrc/archive/refs/tags/5.2.10/
+
+. $base/package/*/*/kde-conf.in

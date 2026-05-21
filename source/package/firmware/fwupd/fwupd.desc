@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/fwupd/fwupd.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A system daemon to allow session software to update firmware
+
+[T] A system daemon to allow session software to update firmware.
+
+[U] https://fwupd.org
+
+[A] LVFS by Richard Hughes
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+
+[E] add jinja2
+[E] opt vala
+[E] opt flashrom
+[E] opt gi-docgen graphviz
+[E] opt libftdi1
+[E] opt openimageio
+[E] opt systemd
+
+[L] LGPL
+[V] 2.1.3
+
+[D] 0c55a91b8feee50166af607e6de213cc39798eaac81f46a02f36492c fwupd-2.1.3.tar.xz https://github.com/fwupd/fwupd/releases/download/2.1.3/
+
+pkginstalled gobject-introspection || var_append mesonopt ' ' -Dintrospection=disabled
+var_append mesonopt ' ' '-Defi_binary=false -Dplugin_uefi_capsule_splash=false'
+var_append mesonopt ' ' -Dtests=false

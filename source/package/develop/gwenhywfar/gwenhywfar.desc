@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gwenhywfar/gwenhywfar.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A multi-purpose system abstraction library
+
+[T] Gwenhywfar is a multi-purpose library that provides useful
+[T] functions such as configuration file handling, a full featured
+[T] message generation and parsing engine, and an operating system
+[T] abstraction layer. It is used by Libchipcard, OpenHBCI, AqMoney,
+[T] and various other projects.
+
+[U] https://www.aquamaniac.de
+
+[A] Martin Preuss <martin@libchipcard.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] GPL
+[V] 5.14.1
+[P] X -----5---9 175.000
+
+[D] fecd7abcd43acddb8b12c5aab225a9225565069e3140db367121b4ea gwenhywfar-5.14.1.tar.gz https://www.aquamaniac.de/rdm/attachments/download/630/
+
+var_append CC_WRAPPER_APPEND ' ' -std=gnu17
+guis=
+pkginstalled gtk+ && var_append guis ' ' gtk3
+pkginstalled qt4 && var_append guis ' ' qt4
+pkginstalled qt5base && var_append guis ' ' qt5
+var_append confopt ' ' "--with-guis='$guis'"

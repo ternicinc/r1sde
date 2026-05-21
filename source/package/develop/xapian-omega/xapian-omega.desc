@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xapian-omega/xapian-omega.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An extandable website search engine built upon Xapian
+
+[T] Omega is an extandable website search engine built upon Xapian.
+[T] Xapian's versatility allows you to extend Omega to meet your
+[T] needs as they grow.
+
+[U] https://www.xapian.org/
+
+[A] Olly Betts <olly@survex.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] GPL
+[V] 2.0.0
+
+[CV-URL] https://xapian.org/download
+[D] e11c757840f1f64e1e25846c422a5883462fd5d34de3335a778b5d8b xapian-omega-2.0.0.tar.xz http://www.oligarchy.co.uk/xapian/2.0.0/

@@ -1,0 +1,36 @@
+[TIMESTAMP] 1745229577 Mon Apr 21 11:59:37 2025
+[BUILDTIME] 6 (9)
+[SIZE] 2.14 MB, 82 files
+
+[DEP] appstream-glib
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] enchant
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[DEP] glib
+[DEP] grep
+[OPT] gspell
+[DEP] gtk+
+[DEP] gtksourceview4
+[DEP] harfbuzz
+[DEP] libx11
+[DEP] libxfce4ui
+[DEP] libxfce4util
+[DEP] libxml
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[DEP] polkit
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto
+[DEP] xz

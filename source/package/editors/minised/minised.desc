@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/minised/minised.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] This is a implementation of the POSIX stream editor
+
+[T] Minised is the fast, small sed originally distributed in the GNU toolkit
+[T] and still distributed with Minix. The members of the GNU Project removed
+[T] it when they built their own sed around an enhanced regexp package, but
+[T] it's still better for some uses (in particular, it's faster and less
+[T] memory-intensive).
+
+[U] https://www.exactcode.de/oss/minised/
+
+[A] Eric S. Raymond <esr@snark.thyrsus.com>
+[A] René Rebe <rene@exactco.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/development
+[F] CROSS DIETLIBC
+
+[L] BSD
+[V] 1.16
+
+[D] 66d7f1dbf7c9f2fb809962a8d2a09602500474cf68471f9e6153f0cc minised-1.16.tar.gz http://dl.exactcode.de/oss/minised/
+
+pkginstalled sed && [ $prefix_auto = 1 ] && bindir=/$prefix/embutils
+
+makeinstopt=
+hook_add postmake 5 "install minised $root$bindir/sed; cp minised.1 $root$mandir/man1/"

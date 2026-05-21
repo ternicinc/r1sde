@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pycurl/pycurl.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Python module interface to the cURL library
+
+[T] PycURL is a Python module interface to the cURL library.
+[T] PycURL can be used to fetch objects identified by an URL
+[T] within a Python program.
+
+[U] http://pycurl.io/
+
+[A] kj <kjetilja@cs.uit.no>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] GPL
+[V] 7.46.0
+
+[D] a7d9b5ff1b9b32a5303a80da54dadc2c3d4860302e1a5dadd96cf400 pycurl-7.46.0.tar.gz https://files.pythonhosted.org/packages/source/p/pycurl/

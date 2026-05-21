@@ -1,0 +1,19 @@
+[TIMESTAMP] 1760005186 Thu Oct  9 12:19:46 2025
+[BUILDTIME] 4 (9)
+[SIZE] 8.91 MB, 823 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] make
+[DEP] perl
+[DEP] perl-archive-zip
+[DEP] perl-libwww
+[DEP] perl-parse-recdescent
+[DEP] perl-uri
+[DEP] perl-xml-libxslt
+[DEP] sed
+[DEP] tar

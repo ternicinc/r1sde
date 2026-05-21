@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/avr/config.in
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+#Description: AVR (Atmel)
+
+choice SDECFG_AVR_OPT default \
+	default		"No special optimization"
+
+if [ $SDECFG_AVR_OPT != default ]; then
+	SDECFG_ID="$SDECFG_ID-$SDECFG_AVR_OPT"
+fi
+
+# Force avr-libc system library
+SDECFGSET_LIBC='avr-libc'

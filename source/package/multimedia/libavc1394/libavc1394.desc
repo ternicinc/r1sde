@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libavc1394/libavc1394.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] 1394 AV/C command set library
+
+[T] Libavc1394 is a programming interface for the 1394 Trade Association
+[T] AV/C (Audio/Video Control) Digital Interface Command Set. It is intended
+[T] for use with GNU/Linux IEEE-1394 (http://linux1394.sourceforge.net/).
+
+[U] https://sourceforge.net/projects/libavc1394/
+
+[A] Dan Dennedy <ddennedy@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 0.5.4
+[P] X -----5---9 142.591
+
+[D] aa3f4d50399e3dc3b9b045e7435e761df1405060831a46cbe20672a4 libavc1394-0.5.4.tar.gz https://prdownloads.sourceforge.net/sourceforge/libavc1394/

@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sparkey/sparkey.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Simple key/value storage library
+
+[T] Sparkey is a simple constant key/value storage library. It is mostly
+[T] suited for read heavy systems with infrequent large bulk inserts.
+
+[U] https://github.com/spotify/sparkey
+
+[A] Spotify <opensource@spotify.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/database
+
+[E] opt doxygen
+
+[L] APL
+[V] 1.1
+
+[D] cb3edadd3cf60a8e35b0298584d694b47a1ce5e785e274aa70185179 sparkey_d694f20.tar.gz https://github.com/spotify/sparkey/archive/d694f20f35caa1cb514c84f3f02e94f71248f857/
+
+hook_add preconf 5 'autoreconf --install'

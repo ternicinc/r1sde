@@ -1,0 +1,10 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/cris/gcc-options.in
+# Copyright (C) 2004 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+if [ "$SDECFG_CRIS_OPT" ]; then
+	var_append GCC_WRAPPER_INSERT " " "-mcpu=$SDECFG_CRIS_OPT"
+	var_append KCC_WRAPPER_APPEND " " "-mcpu=$SDECFG_CRIS_OPT"
+fi

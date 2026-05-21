@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libseccomp/libseccomp.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A platform independent interface to the Linux syscall filtering
+
+[T] The libseccomp library provides an easy to use, platform independent,
+[T] interface to the Linux Kernel's syscall filtering mechanism. The
+[T] libseccomp API is designed to abstract away the underlying BPF based
+[T] syscall filter language
+
+[U] https://github.com/seccomp/libseccomp
+
+[A] Paul Moore <paul@paul-moore.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS NO-LTO.gcc
+
+[L] GPL
+[V] 2.6.0
+[P] X -----5---9 177.000
+
+[D] 8e8e9d4bb019db52617199b20d2f2f9166b803ef4fad2e45bf9b7a89 libseccomp-2.6.0.tar.gz https://github.com/seccomp/libseccomp/releases/download/v2.6.0/

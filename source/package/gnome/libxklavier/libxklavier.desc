@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libxklavier/libxklavier.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Utility library to make XKB stuff easier
+
+[T] Utility library to make XKB stuff easier.
+
+[U] https://www.freedesktop.org/Software/LibXklavier
+
+[A] Sergey V. Udaltsov (svu@users.sourceforge.net)
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/tool extra/desktop/gnome
+[F] CROSS NO-LTO.clang
+
+[L] LGPL
+[V] 5.4
+[P] X -----5---9 152.000
+
+[E] add iso-codes
+
+[CV-URL] https://download.gnome.org/sources/libxklavier/cache.json
+[D] 03b33b096394f2e3a1b897b4c143842b7279b92523e0d3b84414a803 libxklavier-5.4.tar.bz2 https://people.freedesktop.org/~svu/
+
+. $base/package/*/*/gnome-conf.in

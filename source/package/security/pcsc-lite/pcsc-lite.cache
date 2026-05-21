@@ -1,0 +1,24 @@
+[TIMESTAMP] 1743711585 Thu Apr  3 22:19:45 2025
+[BUILDTIME] 3 (9)
+[SIZE] 0.41 MB, 33 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] flex
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] linux-header
+[DEP] m4
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] perl
+[DEP] polkit
+[DEP] sed
+[OPT] systemd
+[DEP] tar
+[DEP] udev
+[DEP] xz

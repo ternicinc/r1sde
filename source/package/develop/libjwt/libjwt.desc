@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libjwt/libjwt.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The C JSON Web Token Library +JWK +JWKS
+
+[T] Supporting OpenSSL, GnuTLS, MbedTLS, JSON Web Signature, Encryption, Keys
+[T] and Sets, Algorithms, Token.
+
+[U] https://libjwt.io/
+
+[A] Ben Collins
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+[F] OBJDIR CROSS
+
+[E] opt doxygen graphviz
+
+[L] MPL
+[V] 3.3.3
+[P] X -----5---9 135.800
+
+[D] 32579867a6000afabbc25636022d0d4b2d41eb177b4ad26b5d758a50 libjwt-3.3.3.tar.gz https://github.com/benmcollins/libjwt/archive/refs/tags/v3.3.3/
+
+pkginstalled doxygen || var_append cmakeopt ' ' -DBUILD_DOCS=OFF

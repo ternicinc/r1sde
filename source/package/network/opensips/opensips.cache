@@ -1,0 +1,21 @@
+[TIMESTAMP] 1740841203 Sat Mar  1 16:00:03 2025
+[BUILDTIME] 75 (9)
+[SIZE] 18.83 MB, 328 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bison
+[DEP] coreutils
+[DEP] diffutils
+[DEP] flex
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] ncurses
+[OPT] openssl
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar

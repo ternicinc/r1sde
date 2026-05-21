@@ -1,0 +1,47 @@
+[TIMESTAMP] 1747083834 Mon May 12 23:03:54 2025
+[BUILDTIME] 60 (9)
+[SIZE] 28.24 MB, 957 files
+
+[DEP] at-spi2-core
+[OPT] avahi
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] cairo
+[DEP] coreutils
+[DEP] cyrus-sasl2
+[DEP] dbus
+[DEP] dbus-glib
+[DEP] diffutils
+[OPT] evolution-data-server
+[DEP] findutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[OPT] glib
+[DEP] gnutls
+[DEP] grep
+[DEP] gstreamer
+[DEP] gtk+2
+[OPT] gtkspell
+[DEP] harfbuzz
+[DEP] intltool
+[DEP] libidn
+[DEP] libx11
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[OPT] meanwhile
+[DEP] nspr
+[DEP] nss
+[DEP] pango
+[DEP] perl
+[DEP] perl-xml-parser
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] tcl
+[OPT] tk
+[DEP] xorgproto
+[OPT] xscreensaver
+[DEP] zlib

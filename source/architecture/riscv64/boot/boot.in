@@ -1,0 +1,7 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/riscv64/boot/boot.in
+# Copyright (C) 2021 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+. $base/architecture/riscv/boot/boot.in

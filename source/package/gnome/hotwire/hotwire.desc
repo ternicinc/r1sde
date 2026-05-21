@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/hotwire/hotwire.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A replacement for the interactive command execution portion of a Unix shell
+
+[T] Hotwire is intended to replace the interactive command execution portion
+[T] of a typical Unix shell. It includes much of the functionality found in
+[T] the combination of a terminal emulator, a shell, and core utilities like
+[T] ls and grep. Most of the commands are named the same, and do basically
+[T] the same thing. Where it makes sense, Hotwire improves the commands to
+[T] have better defaults and makes things nicer by using the mouse, and so
+[T] on. For example, rm moves files to ~/. Trash on Unix and Recycle Bin
+[T] on Windows, cd automatically lists the contents of the directory you
+[T] change to, ls links are clickable (view file or cd to directory), filter
+[T] (analogous to Unix grep) shows matching text in bold, and the ps process
+[T] list has right-click menu for killing.
+
+[U] http://hotwire-shell.org
+
+[A] Colin Walters <walters@verbum.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell
+
+[L] GPL
+[V] 0.721
+
+[CV-URL] https://download.gnome.org/sources/hotwire/cache.json
+[D] 845a021166a89442355273dc496845b719fe6da45af39adbfe1ff8a6 hotwire-0.721.zip http://hotwire-shell.googlecode.com/files/
+
+. $base/package/*/*/gnome-conf.in

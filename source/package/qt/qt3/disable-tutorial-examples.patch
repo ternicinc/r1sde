@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/qt3/disable-tutorial-examples.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2004 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./Makefile.orig	Wed Apr  3 16:47:45 2002
++++ ./Makefile	Wed Apr  3 16:48:28 2002
+@@ -10,7 +10,7 @@
+ install: FORCE
+ 	@$(MAKE) qt.install
+ 
+-all: symlinks src-qmake src-moc sub-src sub-tools sub-tutorial sub-examples
++all: symlinks src-qmake src-moc sub-src sub-tools
+ 	@echo
+ 	@echo "The Qt library is now built in ./lib"
+ 	@echo "The Qt examples are built in the directories in ./examples"

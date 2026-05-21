@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/powertop/powertop.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A tool that helps you find what software is using the most power
+
+[T] A tool that helps you find what software is using the most power.
+
+[U] https://01.org/powertop/
+
+[A] Arjan van de Ven <arjan@linux.intel.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] DIETLIBC CROSS
+[R] + x86 x86-64
+
+[L] GPL
+[V] 2.15
+
+[D] 3939eb3ed2803bebbc4d16b53c8b33e012f7f9a228b8cf0f858056ad powertop-2.15.tar.gz https://github.com/fenrus75/powertop/archive/v2.15/
+
+autogen=1
+var_append makeinstopt ' ' BINDIR=$bindir

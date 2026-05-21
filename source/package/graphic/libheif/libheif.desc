@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libheif/libheif.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An ISO/IEC 23008-12:2017 HEIF and AVIF file format decoder and encoder
+
+[T] HEIF and AVIF are new image file formats employing HEVC (h.265) or AV1
+[T] image coding, respectively, for the best compression ratios currently
+[T] possible.
+
+[U] https://www.libde265.org/
+
+[A] Struktur AG, Dirk Farin <farin@struktur.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[E] opt doxygen graphviz
+[E] opt libde265
+[E] opt libwebp
+[E] opt x264
+
+[L] LGPL
+[V] 1.22.0
+[P] X -----5---9 130.301
+
+[D] fef5a41cfeb9f44b212b9af74fc787a4fadefe0a60a149a078011bef libheif-1.22.0.tar.gz https://github.com/strukturag/libheif/releases/download/v1.22.0/
+
+var_append confopt ' ' --disable-go

@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/river/river.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A dynamic tiling Wayland compositor
+
+[T] River is a dynamic tiling Wayland compositor with flexible runtime
+[T] configuration. It is free and open source software.
+
+[U] https://isaacfreund.com/software/river/
+
+[A] Isaac Freund <mail@isaacfreund.com>
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/x11
+[F] CROSS
+
+[L] GPL
+[V] 0.4.5
+
+[D] 3e417d261d8e7134d5cd4272ab017cc9869aca3f6497eb15be6a4676 river-0.4.5.tar.gz https://codeberg.org/river/river/releases/download/v0.4.5/
+
+pkginstalled xwayland && var_append zigconfopt ' ' -Dxwayland=true

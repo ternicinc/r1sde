@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/bc/bc.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GNU's numeric processing language and a calculator
+
+[T] Bc is an arbitrary precision numeric processing language. Syntax is
+[T] similar to C, but differs in many substantial areas. It supports
+[T] interactive execution of statements. Bc is a utility included in the
+[T] POSIX P1003.2/D11 draft standard.
+[T] Since the POSIX document does not specify how bc must be implemented,
+[T] this version does not use the historical method of having bc be
+[T] a compiler for the dc calculator. This version has a single
+[T] executable that both compiles the language and runs the resulting
+[T] `byte code'. The byte code is not the dc language.
+
+[U] https://www.gnu.org/software/bc/bc.html
+
+[A] The GNU Project <gnu@gnu.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+
+[L] GPL
+[V] 1.08.2
+[P] X 0----5---9 109.500
+
+[D] 76e3a9531c7764bd13c600c1e016e6760d9b8379ba06d1ecc08d5a68 bc-1.08.2.tar.gz http://ftp.gnu.org/pub/gnu/bc/
+
+var_append confopt ' ' --with-readline
+atstage cross && autogen=1

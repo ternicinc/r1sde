@@ -1,0 +1,39 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/calligra/calligra.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The office-suite of the KDE project
+
+[T] KOffice is the full-featured office-suite of the KDE project.
+[T]
+[T] This release includes the following components: KWord (a frame-based,
+[T] full-featured word processor); KPresenter (a presentation application);
+[T] KSpread (a spreadsheet application); KIllustrator (a vector-drawing
+[T] application); Krayon (a bitmap image editor); Kivio (a flowchart app-
+[T] lication); KChart (a chart drawing application); KFormula (a formula
+[T] editor); Kugar (a tool for generating business quality reports); and
+[T] filters (for importing/exporting documents).
+
+[U] http://www.koffice.org/
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[E] opt cups
+[E] opt okular
+[E] opt qt6webengine
+
+[L] GPL
+[V] 26.04.1
+
+[CV-GROUP] kde-gear
+[D] 607f372610781de8839e2f70e24f5964e5907d21d9344f42c9ed8481 calligra-26.04.1.tar.xz https://download.kde.org/stable/release-service/26.04.1/src/
+
+. $base/package/*/*/kde-conf.in
+var_append CXX_WRAPPER_APPEND ' ' "-I$root/$(pkgprefix includedir fontconfig)"

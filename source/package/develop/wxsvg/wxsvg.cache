@@ -1,0 +1,25 @@
+[TIMESTAMP] 1760016632 Thu Oct  9 15:30:32 2025
+[BUILDTIME] 135 (9)
+[SIZE] 5.84 MB, 204 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] expat
+[DEP] ffmpeg
+[DEP] findutils
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] harfbuzz
+[OPT] lame
+[DEP] libexif
+[DEP] linux-header
+[DEP] make
+[DEP] pango
+[DEP] sed
+[DEP] tar
+[DEP] wxwidgets

@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/whois/add_libintl.patch.uclibc
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+--- whois-4.6.13/Makefile.orig	2005-01-27 10:16:12.000000000 -0800
++++ whois-4.6.13/Makefile	2005-01-27 10:16:14.000000000 -0800
+@@ -6,7 +6,7 @@
+ #LDFLAGS=-lnsl -lsocket
+ 
+ # obsolete linux (libc 5)
+-#LDFLAGS=-lintl
++LDFLAGS=-lintl
+ 
+ # FreeBSD
+ #LDFLAGS=-L/usr/local/lib -lgnugetopt -lintl

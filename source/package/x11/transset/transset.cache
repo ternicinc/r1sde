@@ -1,0 +1,16 @@
+[TIMESTAMP] 1737674294 Fri Jan 24 00:18:14 2025
+[BUILDTIME] 3 (9)
+[SIZE] 0.04 MB, 6 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] libx11
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto
+[DEP] xz

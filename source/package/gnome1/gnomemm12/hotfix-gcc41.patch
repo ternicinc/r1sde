@@ -1,0 +1,30 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/gnomemm12/hotfix-gcc41.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -Nur gnomemm-1.2.4-orig/src/gnome--/app-helper.h gnomemm-1.2.4/src/gnome--/app-helper.h
+--- gnomemm-1.2.4-orig/src/gnome--/app-helper.h	2003-01-27 23:15:30.000000000 +0200
++++ gnomemm-1.2.4/src/gnome--/app-helper.h	2006-10-23 19:49:40.000000000 +0300
+@@ -75,7 +75,7 @@
+   ~Info();
+   Info& operator =(const Info&);
+ 
+-  Gtk::Widget* Info::get_widget() const;
++  Gtk::Widget* get_widget() const;
+ 
+   Type type() const
+     { return Type(GnomeUIInfo::type); }
+diff -Nur gnomemm-1.2.4-orig/src/pixmapmenuitem.gen_h gnomemm-1.2.4/src/pixmapmenuitem.gen_h
+--- gnomemm-1.2.4-orig/src/pixmapmenuitem.gen_h	2000-08-30 00:43:59.000000000 +0200
++++ gnomemm-1.2.4/src/pixmapmenuitem.gen_h	2006-10-23 19:59:45.000000000 +0300
+@@ -136,7 +136,7 @@
+   gtk_pixmap_menu_item_set_pixmap(gtkobj(), GTK_WIDGET(pixmap.gtkobj()));
+ }
+ 
+-namespace Gnome {
++namespace Gtk {
+ 
+ namespace Menu_Helpers
+ {

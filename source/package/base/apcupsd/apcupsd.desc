@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/apcupsd/apcupsd.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] UPS power management under Linux, Unix, and Win32 for APC products
+
+[T] Apcupsd provides UPS power management for APC products, including most
+[T] BackUPS series models (including USB), SmartUPS V/S, SmartUPS (NET/RM),
+[T] and Matrix series. It works under Linux and most Unix systems, as well
+[T] as Win32.
+
+[U] http://www.apcupsd.com/
+
+[A] Kern <kern@sibbald.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 3.14.14
+
+[D] cfdc38366f970fbb047f0e06b23e6c7ad8533726d9efe4434c8ef51d apcupsd-3.14.14.tar.gz https://sourceforge.net/projects/apcupsd/files/apcupsd%20-%20Stable/3.14.14/
+
+var_append confopt ' ' --enable-usb
+var_append makeopt ' ' LD=$CXX

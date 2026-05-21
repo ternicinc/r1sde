@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-gtk2/perl-gtk2.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl interface to the 2.x series of the Gimp Toolkit library
+
+[T] Perl bindings to the 2.x series of the Gtk+ widget set. This module allows
+[T] you to write graphical user interfaces in a perlish and object-oriented way,
+[T] freeing you from the casting and memory management in C, yet remaining very
+[T] close in spirit to original API.
+
+[U] https://gtk2-perl.sourceforge.net/
+
+[A] The Perl GTK2 Project
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 1.24993
+[P] X -----5---9 127.700
+
+[D] a6294df226007b8f2876ebe1de9f153fc2f1e220cd76491cfa392d90 Gtk2-1.24993.tar.gz https://cpan.metacpan.org/authors/id/X/XA/XAOC/

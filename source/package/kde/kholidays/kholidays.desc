@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kholidays/kholidays.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] KDE library for regional holiday information
+
+[T] This library provides a C++ API that determines holiday and other special
+[T] events for a geographical region.
+
+[U] https://www.kde.org
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 6.26.0
+[P] X -----5---9 162.900
+
+[CV-GROUP] kde-frameworks
+[D] a9f887dd5d5c57fe95c9c80772b3adab5fa869550ed7c34c380009c0 kholidays-6.26.0.tar.xz https://download.kde.org/stable/frameworks/6.26/
+
+. $base/package/*/*/kde-conf.in

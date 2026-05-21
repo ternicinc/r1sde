@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pymongo/pymongo.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Python driver for MongoDB
+
+[T] The PyMongo distribution contains tools for interacting with MongoDB
+[T] database from Python.
+
+[U] https://pypi.org/project/pymongo/
+
+[A] MongoDB Developers
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] APL
+[V] 4.17.0
+[P] X -----5---9 150.300
+
+[D] 5ed01940da57d0c826e4e62d1369b599caeac2abdbe0520e27c460ce pymongo-4.17.0.tar.gz https://files.pythonhosted.org/packages/source/p/pymongo/

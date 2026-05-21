@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gengetopt/gengetopt.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A getopt format generator
+
+[T] A getopt format generator.
+
+[U] https://www.gnu.org/software/gengetopt/
+
+[A] Roberto Arturo Tena Sanchez
+[A] Lorenzo Bettini
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] NOPARALLEL CROSS NO-LTO.gcc
+
+[L] GPL
+[V] 2.23
+[P] X -----5---9 112.400
+
+[D] f186e2468b212028cb39a4c6007732fdeb16fa0e4c4f7d68e057e080 gengetopt-2.23.tar.xz http://ftp.gnu.org/gnu/gengetopt/

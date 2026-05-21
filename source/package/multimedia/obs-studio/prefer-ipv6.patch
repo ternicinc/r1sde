@@ -1,0 +1,30 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/obs-studio/prefer-ipv6.patch
+# Copyright (C) 2019 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- obs-studio-23.2.1/plugins/obs-outputs/librtmp/rtmp.c.vanilla	2019-08-08 20:01:31.499928242 +0200
++++ obs-studio-23.2.1/plugins/obs-outputs/librtmp/rtmp.c	2019-08-08 20:02:02.179929514 +0200
+@@ -859,10 +859,10 @@
+         goto finish;
+     }
+ 
+-    // prefer ipv4 results, since lots of ISPs have broken ipv6 connectivity
++    // prefer ipv6 results, since lots of ISPs have broken ipv6 connectivity
+     for (ptr = result; ptr != NULL; ptr = ptr->ai_next)
+     {
+-        if (ptr->ai_family == AF_INET && (!addrlen_hint || ptr->ai_addrlen == addrlen_hint))
++        if (ptr->ai_family == AF_INET6 && (!addrlen_hint || ptr->ai_addrlen == addrlen_hint))
+         {
+             memcpy(service, ptr->ai_addr, ptr->ai_addrlen);
+             *addrlen = (socklen_t)ptr->ai_addrlen;
+@@ -874,7 +874,7 @@
+     {
+         for (ptr = result; ptr != NULL; ptr = ptr->ai_next)
+         {
+-            if (ptr->ai_family == AF_INET6 && (!addrlen_hint || ptr->ai_addrlen == addrlen_hint))
++            if (ptr->ai_family == AF_INET && (!addrlen_hint || ptr->ai_addrlen == addrlen_hint))
+             {
+                 memcpy(service, ptr->ai_addr, ptr->ai_addrlen);
+                 *addrlen = (socklen_t)ptr->ai_addrlen;

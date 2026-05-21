@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openfst/openfst.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library for constructing, combining, optimizing, and searching FSTs
+
+[T] OpenFst is a library for constructing, combining, optimizing, and
+[T] searching weighted finite-state transducers (FSTs). Weighted
+[T] finite-state transducers are automata where each transition has an
+[T] input label, an output label, and a weight.
+[T]
+[T] FSTs have key applications in speech recognition and synthesis, machine
+[T] translation, optical character recognition, pattern matching, string
+[T] processing, machine learning, information extraction and retrieval
+[T] among others.
+
+[U] https://www.openfst.org/
+
+[A] Michael Riley <riley@google.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] APL
+[V] 1.8.4
+[P] X -----5---9 199.300
+
+[D] 30a05445442861f67409b2eeac4eabb67dbfcd65a7d4397925c41ea5 openfst-1.8.4.tar.gz https://www.openfst.org/twiki/pub/FST/FstDownload/openfst-1.8.4.tar.gz

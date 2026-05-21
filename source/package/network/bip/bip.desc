@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/bip/bip.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An IRC proxy
+
+[T] Bip is an IRC proxy, which means it keeps connected to your
+[T] preferred IRC servers, can store the logs for you, and even
+[T] send them back to your IRC client(s) upon connection. You may
+[T] want to use bip to keep your logfiles (in a unique format and
+[T] on a unique computer) whatever your client is, when you connect
+[T] from multiple workstations, or when you simply want to have a
+[T] playback of what was said while you were away.
+
+[U] https://bip.milkypond.org/
+
+[A] Loïc Gomez <kyoshiro@users.berlios.de>
+[A] Arnaud Cornet <nohar@users.belios.de>
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 0.9.3
+
+[D] 6c1aff17cb3ad0c99e869c83c7f5120abfcab4b25dbcbacc2064c62c bip-0.9.3.tar.gz https://projects.duckcorp.org/attachments/download/146/

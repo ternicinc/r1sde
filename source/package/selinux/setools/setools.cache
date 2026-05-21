@@ -1,0 +1,21 @@
+
+[TIMESTAMP] 1722726110 Sun Aug  4 01:01:50 2024
+[BUILDTIME] 30 (9)
+[SIZE] 3.16 MB, 237 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] libselinux
+[DEP] libsepol
+[DEP] linux-header
+[DEP] openssl
+[DEP] python
+[DEP] python-gpep517
+[DEP] sed
+[DEP] setuptools
+[DEP] tar

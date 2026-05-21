@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/simple-scan/simple-scan.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A simple GNOME scan application
+
+[T] Simple-scan is a a smple GNOME scan application for SANE backends.
+
+[U] https://launchpad.net/simple-scan
+
+[A] Robert Ancell <robert.ancell@canonical.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office
+
+[E] opt libwebp
+
+[L] GPL3
+[V] 50.0
+
+[D] ca64f84c151d91fe8f2566628f07125097ba2dbd95846d569eab9703 simple-scan-50.0.tar.bz2 https://gitlab.gnome.org/GNOME/simple-scan/-/archive/50.0/
+
+. $base/package/*/*/gnome-conf.in

@@ -1,0 +1,52 @@
+[TIMESTAMP] 1770549269 Sun Feb  8 12:14:29 2026
+[BUILDTIME] 115 (9)
+[SIZE] 1.41 MB, 280 files
+
+[DEP] akonadi
+[DEP] akonadi-contacts
+[DEP] akonadi-mime
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] cups
+[DEP] diffutils
+[OPT] docbook-xml
+[DEP] docbook-xsl
+[DEP] extra-cmake-modules
+[DEP] freetype
+[DEP] gawk
+[DEP] gettext
+[DEP] grantleetheme
+[DEP] grep
+[DEP] karchive
+[DEP] kcompletion
+[DEP] kconfig
+[DEP] kconfigwidgets
+[DEP] kcontacts
+[DEP] kcoreaddons
+[DEP] kcrash
+[DEP] kdbusaddons
+[OPT] kdoctools
+[DEP] ki18n
+[DEP] kio
+[DEP] kmime
+[DEP] ktextaddons
+[DEP] kwidgetsaddons
+[DEP] kxmlgui
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[DEP] messagelib
+[DEP] pimcommon
+[DEP] pkgconfig
+[DEP] procps
+[DEP] python
+[DEP] qt6base
+[DEP] qt6webengine
+[DEP] sed
+[DEP] syntax-highlighting
+[DEP] tar
+[DEP] util-linux
+[DEP] vulkan-headers
+[DEP] xz

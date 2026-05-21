@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/nudelstats/nudelstats.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An irssi log beautifier
+
+[T] Nudelstats is a parser for irssi log files, producing XHTML output. It
+[T] is based on irssistats 0.44, but uses a completely different approach to
+[T] themes; they are stored outside the binary, in CSS format. This makes it
+[T] slightly less portable, but much easier to change the themes.
+
+[U] http://c7.ath.cx/nudelstats/
+
+[A] Peter "zilver" Hellberg <zilver.hellberg@home.se>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 0.5
+
+[D] 18b13341cb8179cfe3892e4ba620004795fbc0be385e503619571858 nudelstats-0.5.tar.gz http://c7.ath.cx/nudelstats/pub/releases/0.5/
+
+hook_add premake 3 "cd nudelstats-$ver"
+var_append makeopt ' ' PRE=$root/$prefix
+var_append makeinstopt ' ' PRE=$root/$prefix
+hook_add postmake 3 "cp -Rv testlog $root$docdir/"

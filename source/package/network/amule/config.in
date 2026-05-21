@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/amule/config.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+if pkgcheck amule X; then
+	menu_begin MENU_PKG_AMULE 'aMule Package Options'
+		bool "Compile aMule daemon version" SDECFG_PKG_AMULE_DAEMON 1
+		bool "Compile aMule command line client" SDECFG_PKG_AMULE_CMD 1
+		bool "Compile aMule WebServer" SDECFG_PKG_AMULE_WEBSERVER 1
+		bool "Compile aMule remote GUI" SDECFG_PKG_AMULE_REMOTEGUI 1
+		bool "Compile C aMule Statistics (CAS)" SDECFG_PKG_AMULE_CAS 1
+		bool "Compile aMuleLinkCreator" SDECFG_PKG_AMULE_ALC 1
+		bool "Compile taskbar icon with support for UTF-8 encoded strings" SDECFG_PKG_AMULE_UTF8SYSTRAY 1
+	menu_end
+fi

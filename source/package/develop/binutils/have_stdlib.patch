@@ -1,0 +1,21 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/binutils/have_stdlib.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- binutils-2.18.50.0.8/libiberty/cplus-dem.c.vanilla	2008-07-16 20:29:10.000000000 +0200
++++ binutils-2.18.50.0.8/libiberty/cplus-dem.c	2008-07-16 20:29:27.000000000 +0200
+@@ -49,12 +49,7 @@
+ #include <string.h>
+ #include <stdio.h>
+ 
+-#ifdef HAVE_STDLIB_H
+ #include <stdlib.h>
+-#else
+-void * malloc ();
+-void * realloc ();
+-#endif
+ 
+ #include <demangle.h>
+ #undef CURRENT_DEMANGLING_STYLE

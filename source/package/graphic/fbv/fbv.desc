@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/fbv/fbv.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A graphic file viewer for the Linux framebuffer device
+
+[T] Fbv is a very simple graphic file viewer for the framebuffer console,
+[T] capable of displaying GIF, JPEG, PNG and BMP files using libungif,
+[T] libjpeg, and libpng. The image can be shown either in fit-to-screen or
+[T] panning mode in 8, 15/16, and 32bpp.
+
+[U] http://s-tech.elsat.net.pl/fbv/
+
+[A] Tomasz Sterna <tomek@xiaoka.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+[F] CROSS
+
+[L] GPL
+[V] 1.0b
+
+[D] 35f911ee52cacc6dbe734c3052f2e743edbc2c6a6b2882e4ffc2d120 fbv-1.0b.tar.gz http://s-tech.elsat.net.pl/fbv/
+
+var_append confopt ' ' --cc=$CC

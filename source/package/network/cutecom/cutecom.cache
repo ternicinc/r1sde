@@ -1,0 +1,19 @@
+[TIMESTAMP] 1751149361 Sun Jun 29 00:22:41 2025
+[BUILDTIME] 12 (9)
+[SIZE] 0.69 MB, 7 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] qt5base
+[DEP] qt5serialport
+[DEP] sed
+[DEP] tar

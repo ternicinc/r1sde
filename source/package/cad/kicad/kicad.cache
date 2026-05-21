@@ -1,0 +1,54 @@
+[TIMESTAMP] 1774030752 Fri Mar 20 19:19:12 2026
+[BUILDTIME] 7100 (9)
+[SIZE] 193.17 MB, 1019 files
+
+[DEP] abseil-cpp
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] boost
+[DEP] bzip2
+[DEP] cairo
+[DEP] cmake
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[OPT] doxygen
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] git
+[DEP] glib
+[DEP] glm
+[DEP] glu
+[DEP] grep
+[DEP] gtk+
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] libgit2
+[DEP] libglvnd
+[DEP] libsecret
+[OPT] libspnav
+[DEP] libx11
+[DEP] linux-header
+[DEP] make
+[DEP] ngspice
+[DEP] nng
+[DEP] opencascade
+[DEP] pango
+[DEP] pixman
+[DEP] pkgconfig
+[OPT] poppler
+[DEP] protobuf
+[DEP] python
+[DEP] sed
+[DEP] swig
+[DEP] tar
+[DEP] unixodbc
+[DEP] util-linux
+[DEP] wayland
+[DEP] wxwidgets
+[DEP] xorgproto
+[DEP] zlib
+[DEP] zstd

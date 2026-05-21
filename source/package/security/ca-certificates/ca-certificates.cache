@@ -1,0 +1,19 @@
+[TIMESTAMP] 1769538840 Tue Jan 27 19:34:00 2026
+[BUILDTIME] 3 (9)
+[SIZE] 0.26 MB, 162 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] make
+[DEP] openssl
+[DEP] python
+[DEP] python-cryptography
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] xz

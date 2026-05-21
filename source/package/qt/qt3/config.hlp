@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/qt3/config.hlp
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+MENU_PKG_QT
+  Here you'll find options for Qt.
+
+SDECFG_PKG_QT_PREFIX
+  Please enter the prefix where you want Qt installed.
+
+SDECFG_PKG_QT_EXCEPTION
+  Whether to enable support for exceptions.
+
+SDECFG_PKG_QT_STL
+  Whether to enable support for STL data types.

@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/bcachefs-tools/bcachefs-tools.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The COW filesystem for Linux that won't eat your data
+
+[T] Bcachefs is an advanced new filesystem for Linux, with an emphasis on
+[T] reliability and robustness and the complete set of features one would
+[T] expect from a modern filesystem.
+
+[U] https://bcachefs.org/
+
+[A] Kent Overstreet <kent.overstreet@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[R] - alpha arc avr32 ia64 hppa hppa64 loongarch64 m68k microblaze nios2 openrisc superh
+
+[C] base/system extra/filesystem
+[F] CROSS
+
+[L] GPL
+[V] 1.38.3
+
+[D] bdddea1abea1202891e661b10db1dbf5d0c6830a6dc8cbb0f7f754cc bcachefs-tools-1.38.3.tar.zst https://evilpiepirate.org/bcachefs-tools/bcachefs-tools-1.38.3.tar.zst
+
+runcargo=0

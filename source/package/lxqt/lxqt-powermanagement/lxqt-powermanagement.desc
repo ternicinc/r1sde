@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lxqt-powermanagement/lxqt-powermanagement.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Power management module for LXQt
+
+[T] Power management module for LXQt.
+
+[U] https://github.com/lxqt/lxqt-powermanagement
+
+[A] Lxqt-powermanagement Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] OBJDIR
+
+[V] 2.4.0
+[L] LGPL
+
+[CV-GROUP] lxqt
+[D] fd3e3e3b91d61ff1cdb69daace44533ea58a393477856cf58bb37e2e lxqt-powermanagement-2.4.0.tar.xz https://github.com/lxqt/lxqt-powermanagement/releases/download/2.4.0/

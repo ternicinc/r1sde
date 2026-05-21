@@ -1,0 +1,17 @@
+[TIMESTAMP] 1737974746 Mon Jan 27 11:45:46 2025
+[BUILDTIME] 5 (9)
+[SIZE] 0.49 MB, 28 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] readline
+[DEP] sed
+[DEP] tar

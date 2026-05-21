@@ -1,0 +1,26 @@
+[TIMESTAMP] 1737676869 Fri Jan 24 01:01:09 2025
+[BUILDTIME] 3 (9)
+[SIZE] 0.33 MB, 40 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] docbook-xml
+[DEP] docbook-xsl
+[DEP] gawk
+[DEP] glib
+[DEP] gobject-introspection
+[DEP] grep
+[OPT] gtk-doc
+[DEP] gzip
+[DEP] libxslt
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar

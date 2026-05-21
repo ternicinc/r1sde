@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libmtp/libmtp.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An implementation of the Media Transfer Protocol
+
+[T] Libmtp is an implementation of Microsoft's Media Transfer Protocol (MTP)
+[T] in the form of a library suitable primarily for POSIX compliant operating
+[T] systems.
+
+[U] https://libmtp.sourceforge.net/
+
+[A] Richard Low <richard@wentnet.com>
+[A] Linus Walleij <triad@df.lth.se>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[E] opt doxygen
+
+[L] LGPL
+[V] 1.1.23
+[P] X -----5---9 184.800
+
+[D] 2c531a80edcf4e332b0340f614ff8d5dfc8877c7a4c40655db1e505f libmtp-1.1.23.tar.gz https://prdownloads.sourceforge.net/sourceforge/libmtp/
+
+libmtp_cross() {
+	patch -p1 < $confdir/cross.diff
+	cc -DHAVE_CONFIG_H -I. -Isrc -o mtp-hotplug util/mtp-hotplug.c
+	patch -p1 -R < $confdir/cross.diff
+}
+atstage cross && hook_add premake 5 libmtp_cross
+atstage cross && var_append makeopt ' ' MTP_HOTPLUG=./mtp-hotplug

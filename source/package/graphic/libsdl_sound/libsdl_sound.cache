@@ -1,0 +1,23 @@
+[TIMESTAMP] 1737679465 Fri Jan 24 01:44:25 2025
+[BUILDTIME] 6 (9)
+[SIZE] 0.54 MB, 12 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[OPT] flac
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libmikmod
+[DEP] libmodplug
+[DEP] libogg
+[DEP] libsdl
+[DEP] libvorbis
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[OPT] speex
+[DEP] tar

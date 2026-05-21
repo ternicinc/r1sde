@@ -1,0 +1,31 @@
+[TIMESTAMP] 1770547472 Sun Feb  8 11:44:32 2026
+[BUILDTIME] 135 (9)
+[SIZE] 6.28 MB, 54 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] cups
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] gawk
+[DEP] grep
+[DEP] kconfig
+[DEP] kconfigwidgets
+[DEP] kcoreaddons
+[DEP] kwidgetsaddons
+[DEP] kxmlgui
+[DEP] linux-header
+[DEP] make
+[DEP] qt6base
+[DEP] qt6tools
+[DEP] qt6translations
+[DEP] qt6webchannel
+[DEP] qt6webengine
+[DEP] sed
+[DEP] sonnet
+[DEP] tar
+[DEP] util-linux
+[DEP] vulkan-headers
+[DEP] xz

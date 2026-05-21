@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/wxmaxima/wxmaxima.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] WxWidgets GUI for Maxima
+
+[T] wxMaxima is a wxWidgets GUI for the computer algebra system maxima.
+[T]
+[T] Since it is written with wxWidgets, it runs on multiple platforms in
+[T] native widget sets. Most of maxima functions are accessible through
+[T] menus, some have dialogs. The input line has command history (up-key,
+[T] down-key) and completion based on previous input (tab-key). wxMaxima
+[T] provides 2d formated display of maxima output.
+
+[U] https://wxmaxima-developers.github.io/wxmaxima/
+
+[A] Andrej Vodopivec <andrejv@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/scientific
+
+[L] GPL
+[V] 26.05.0
+
+[D] cc03df40d57652c509c140fd8077d3819369d77eb94c44adea4043cf wxMaxima-26.05.0.tar.gz https://github.com/wxMaxima-developers/wxmaxima/archive/Version-26.05.0/

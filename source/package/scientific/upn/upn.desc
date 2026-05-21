@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/upn/upn.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Reverse polish notation expr like tool
+
+[T] Upn, reverse polish notation expr like tool, has support for floating
+[T] point, trigonometrics, precision setting, comparison.
+[T] Examples:
+[T] a=`upn 1 2 +`
+[T] if upn $a $b lt; then echo $b is smaller than a; fi
+
+[U] http://www.eulesoft.de/
+
+[A] J"org Weule <weule@acm.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+
+[L] GPL
+[V] 1.5
+
+[D] 6dc314dbb4beb3e9d0fd00c0053eae83971095a5b743463f3b78c910 upn-1.5.tar.gz http://www.eulesoft.de/
+
+hook_add premake 1 'rm -vf upn'
+hook_add premake 2 'sed -i "s,/usr,$root/$prefix,g" Makefile'

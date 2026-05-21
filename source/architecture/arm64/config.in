@@ -1,0 +1,32 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/arm64/config.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+#Description: ARM64 (Advanced 64 Bit RISC Machines)
+
+choice SDECFG_ARM64_ENDIANESS el \
+	eb	"Build for big endian machines" \
+	el	"Build for little endian machines"
+
+if [ $SDECFG_ARM64_ENDIANESS != el ]; then
+	SDECFG_ID="${SDECFG_ID}${SDECFG_ARM64_ENDIANESS}"
+fi
+
+choice SDECFG_ARM64_OPT generic \
+	generic		"Generic Armv8" \
+	armv8.1-a	"Armv8.1-A (+crc, +lse, +rdma)" \
+	armv8.4-a	"Armv8.4-A (+fp16fml, +dotprod)" \
+	armv8.5-a	"Armv8.5-A (+sb, +ssbs, +predres" \
+	armv8.6-a	"Armv8.6-A (+bf16, +i8mm)" \
+	armv8.7-a	"Armv8.7-A (+ls64)" \
+	armv8.8-a	"Armv8.8-A (+mops)" \
+	armv9-a		"Armv9-A (+sve, +sve2)"
+
+if [ $SDECFG_ARM64_OPT != generic ]; then
+	SDECFG_ID="$SDECFG_ID-$SDECFG_ARM64_OPT"
+fi
+
+const SDECFG_MULTILIBLIST ""
+SDECFGSET_MULTILIBLIST=""

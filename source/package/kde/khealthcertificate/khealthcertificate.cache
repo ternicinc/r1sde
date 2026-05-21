@@ -1,0 +1,26 @@
+[TIMESTAMP] 1739219747 Mon Feb 10 21:35:47 2025
+[BUILDTIME] 35 (5)
+[SIZE] 1.58 MB, 31 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] karchive
+[DEP] kcodecs
+[DEP] ki18n
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] qt6base
+[DEP] qt6declarative
+[DEP] sed
+[DEP] tar
+[DEP] xz
+[DEP] zlib

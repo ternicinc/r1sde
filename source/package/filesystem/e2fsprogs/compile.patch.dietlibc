@@ -1,0 +1,55 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/e2fsprogs/compile.patch.dietlibc
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./lib/ss/pager.c.orig	2006-06-21 15:44:59.000000000 +0200
++++ ./lib/ss/pager.c	2006-06-21 15:45:54.000000000 +0200
+@@ -36,6 +36,9 @@
+ #if (!defined(HAVE_PRCTL) && defined(linux))
+ #include <sys/syscall.h>
+ #endif
++#ifndef PR_GET_DUMPABLE
++#define PR_GET_DUMPABLE 3
++#endif
+ 
+ static char MORE[] = "more";
+ extern char *_ss_pager_name;
+--- ./lib/ext2fs/test_io.c.orig	2006-06-21 15:51:20.000000000 +0200
++++ ./lib/ext2fs/test_io.c	2006-06-21 15:51:47.000000000 +0200
+@@ -34,6 +34,10 @@
+ #include "ext2_fs.h"
+ #include "ext2fs.h"
+ 
++#ifndef PR_GET_DUMPABLE
++#define PR_GET_DUMPABLE 3
++#endif
++
+ /*
+  * For checking structure magic numbers...
+  */
+--- ./lib/blkid/cache.c.orig	2006-06-21 15:57:47.000000000 +0200
++++ ./lib/blkid/cache.c	2006-06-21 15:58:16.000000000 +0200
+@@ -28,6 +28,10 @@
+ #endif
+ #include "blkidP.h"
+ 
++#ifndef PR_GET_DUMPABLE
++#define PR_GET_DUMPABLE 3
++#endif
++
+ int blkid_debug_mask = 0;
+ 
+ 
+--- ./misc/util.c.orig	2006-07-08 00:58:39.000000000 +0000
++++ ./misc/util.c	2006-07-08 00:59:42.000000000 +0000
+@@ -79,7 +79,7 @@
+ void check_plausibility(const char *device)
+ {
+ 	int val;
+-#ifdef HAVE_OPEN64
++#ifndef __NO_STAT64
+ 	struct stat64 s;
+ 	
+ 	val = stat64(device, &s);

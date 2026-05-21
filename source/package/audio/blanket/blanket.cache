@@ -1,0 +1,28 @@
+
+[TIMESTAMP] 1704018229 Sun Dec 31 11:23:49 2023
+[BUILDTIME] 1 (9)
+[SIZE] 19.59 MB, 64 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] coreutils
+[DEP] desktop-file-utils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[DEP] glib
+[DEP] grep
+[DEP] gtk
+[DEP] gtk+
+[DEP] gtk+2
+[DEP] gzip
+[DEP] libmateweather
+[DEP] libxml
+[DEP] meson
+[DEP] ninja
+[DEP] python
+[DEP] sed
+[DEP] shared-mime-info
+[DEP] tar
+[DEP] yad

@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lxqt-session/lxqt-session.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The LXQt session manager
+
+[T] The LXQt session manager.
+
+[U] https://github.com/lxqt/lxqt-session
+
+[A] Lxqt-session Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] OBJDIR
+
+[E] add xdg-user-dirs
+
+[V] 2.4.0
+[L] LGPL
+
+[CV-GROUP] lxqt
+[D] 99682ba06e73ab8aa9357ee95dc5652c9cce03840636c0af7b8ffa95 lxqt-session-2.4.0.tar.xz https://github.com/lxqt/lxqt-session/releases/download/2.4.0/
+
+var_append GCC_WRAPPER_APPEND ' ' -I$(pkgprefix includedir layer-shell-qt)
+var_append GCC_WRAPPER_APPEND ' ' -L$(pkgprefix libdir layer-shell-qt)
+hook_add postinstall 3 "register_wm lxqt LXQt $bindir/startlxqt"

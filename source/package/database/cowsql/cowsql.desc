@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cowsql/cowsql.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Embeddable, replicated and fault tolerant SQL engine
+
+[T] cowsql (/ˈkaʊ,siːkwəl/ listen) is a C library that implements an embeddable
+[T] and replicated SQL database engine with high availability and automatic
+[T] failover.
+
+[U] https://github.com/cowsql/cowsql/
+
+[A] CowSQL contributors
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/tool
+[F] CROSS
+
+[L] LGPL3
+[V] 1.15.9
+[P] X -----5---9 201.000
+
+[D] c54ec420d2960994dad07066ab94897cf86d2a7b206960649c89c434 cowsql-1.15.9.tar.gz https://github.com/cowsql/cowsql/archive/v1.15.9/
+
+autogen=1

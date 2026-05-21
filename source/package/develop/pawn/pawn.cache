@@ -1,0 +1,17 @@
+[TIMESTAMP] 1737662468 Thu Jan 23 21:01:08 2025
+[BUILDTIME] 8 (9)
+[SIZE] 0.45 MB, 9 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] dyncall
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] ncurses
+[DEP] sed
+[DEP] unzip

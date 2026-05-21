@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/firewalk/firewalk.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A traceroute like tool to determine gateway ACL filters and to map networks
+
+[T] Firewalking is a technique developed by MDS and DHG that employs
+[T] traceroute-like techniques to analyze IP packet responses to
+[T] determine gateway ACL filters and map networks. Firewalk the tool
+[T] employs the technique to determine the filter rules in place
+[T] on a packet forwarding device. The newest version of the tool,
+[T] firewalk/GTK introduces the option of using a graphical interface
+[T] and a few bug fixes.
+
+[U] http://www.packetfactory.net/firewalk/
+
+[A] Mike D. Schiffman <mike@infonexus.com>
+[A] David Goldsmith
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] BSD
+[V] 5.0
+
+[D] 2097519129 firewalk-5.0.tgz http://www.packetfactory.net/firewalk/dist/

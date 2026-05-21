@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/secilc/secilc.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The SELinux CIL Compiler
+
+[T] The SELinux CIL Compiler is a compiler that converts the CIL language as
+[T] described on the CIL design wiki into a kernel binary policy file.
+
+[U] https://github.com/SELinuxProject/selinux
+
+[A] NSA SElinux Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+[F] CROSS
+
+[L] BSD
+[V] 3.10
+
+[CV-GROUP] selinux
+[D] 75ad608ae5bce292e6b7fa1272ae057656cdcfb3c50ab14392800a70 secilc-3.10.tar.gz https://github.com/SELinuxProject/selinux/releases/download/3.10/

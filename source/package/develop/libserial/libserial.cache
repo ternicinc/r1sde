@@ -1,0 +1,20 @@
+[TIMESTAMP] 1751036173 Fri Jun 27 16:56:13 2025
+[BUILDTIME] 4 (9) ERROR
+[SIZE] 0.00 MB, 6 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] boost
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[OPT] doxygen
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] python
+[DEP] sed
+[DEP] tar

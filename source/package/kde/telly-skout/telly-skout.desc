@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/telly-skout/telly-skout.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A convergent Kirigami TV guide
+
+[T] Telly Skout is a convergent Kirigami TV guide. It shows the TV program
+[T] for your favorite channels from TV Spielfilm or an XMLTV file.
+
+[U] https://apps.kde.org/telly-skout/
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 26.04.1
+
+[CV-GROUP] kde-gear
+[D] afd7d6330a8fe6c482d1e30da9ce147958c17db8931d1f639a1a9e91 telly-skout-26.04.1.tar.xz https://download.kde.org/stable/release-service/26.04.1/src/
+
+. $base/package/*/*/kde-conf.in

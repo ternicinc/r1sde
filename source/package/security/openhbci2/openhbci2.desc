@@ -1,0 +1,56 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openhbci2/openhbci2.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Client-side implementation of the HBCI specification
+
+[T] HBCI is a bank-independent homebanking standard used by many German
+[T] banks. This publicly available protocol describes communication,
+[T] authentification, encryption, and business transactions taking place
+[T] between a homebanking applications and any arbitrary HBCI-enabled bank
+[T] server. OpenHBCI provides an object oriented library implementing the
+[T] current client-side HBCI specification. The library is written in C++,
+[T] with C wrappers also available.
+
+[U] https://openhbci.sourceforge.net/
+
+[A] Fabian Kaiser <fabian.kaiser@gmx.de>
+[A] Martin Preuss <openhbci@aquamaniac.de>
+[A] Christian Stimming <stimming@tuhh.de>
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/crypto
+[F] FPIC
+
+[L] GPL
+[V] 2.1
+[P] O -----5---9 176.600
+
+[SRC] openhbci
+
+[D] b4b06e73e18a602636c49a9dd074d7314053643ba94a95cf73e5b0ae openhbci2-1.9.4.tar.gz https://prdownloads.sourceforge.net/sourceforge/openhbci/
+[D] 8beb8b588eb9e6ea889768955320d7c806057f296b7163b6747d54da openhbci2-plugin-ddvcard2-2.1.tar.gz https://prdownloads.sourceforge.net/sourceforge/openhbci/
+
+var_append confopt ' ' "--with-openssl-libs=$root/$(pkgprefix openssl)/${libdir##*/}"
+
+set_docdir() {
+  if [[ $xsrctar = *plugin-ddvcard* ]]; then
+    docdir=$docdir/plugin-ddvcard
+    mkdir $docdir || true
+
+#    # ??? HELLO ??? how could they ever get this compiled,
+#    # doing a openhbci check with C instead of C++ ???
+#    var_append confopt ' ' LDFLAGS=-lstdc++
+  fi
+}
+hook_add preconf 10 set_docdir
+
+# needed for $libdir != *lib
+fix_openhbci2_config() {
+	if [ -f ./src/openhbci-tng/openhbci2-config.in.in ]; then
+		sed -i "s,/lib,/${libdir##*/}," ./src/openhbci-tng/openhbci2-config.in.in
+	fi
+}
+hook_add preconf 5 fix_openhbci2_config

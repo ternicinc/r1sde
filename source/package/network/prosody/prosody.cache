@@ -1,0 +1,19 @@
+[TIMESTAMP] 1742407328 Wed Mar 19 20:02:08 2025
+[BUILDTIME] 2 (9)
+[SIZE] 2.31 MB, 304 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] icu4c
+[DEP] linux-header
+[DEP] lua
+[DEP] make
+[DEP] openssl
+[DEP] sed
+[DEP] tar

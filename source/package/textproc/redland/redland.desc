@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/redland/redland.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A set of Redland RDF (Resource Description Framework) C libraries
+
+[T] Redland is a set of C libraries providing a high-level API for
+[T] the Resource Description Framework (RDF), allowing it to be stored,
+[T] parsed, serialized, queried, and manipulated. It has an object-based,
+[T] modular design and comes with detailed reference documentation and
+[T] examples. APIs are provided in C#, C, Perl, Python, Ruby, PHP, Java,
+[T] and Tcl. Redland supports all RDF vocabularies such as FOAF, RSS 1.0,
+[T] Dublin Core, DOAP, and OWL, the query languages RDQL and SPARQL,
+[T] and all RDF syntaxes including Turtle, RDF/XML, RSS, Atom, and GRDDL.
+
+[U] https://librdf.org/
+
+[A] Dave Beckett <dave@dajobe.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/text
+[F] CROSS
+
+[E] opt gtk-doc
+[E] opt mysql
+[E] opt postgresql
+
+[L] GPL
+[V] 1.0.17
+
+[D] 8a41994b6abf9e1c5a0f2fc89959f41cd2b6179b2c0f6e22aed788f0 redland-1.0.17.tar.gz https://download.librdf.org/source/
+
+var_append confopt ' ' --with-raptor=system
+var_append confopt ' ' --with-rasqal=system

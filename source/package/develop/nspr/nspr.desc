@@ -1,0 +1,65 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/nspr/nspr.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Netscape Portable Runtime
+
+[T] Netscape Portable Runtime (NSPR) provides a platform-neutral
+[T] API for system level and libc like functions. The API is used
+[T] in the Mozilla clients and many of Red Hat's, Sun's, and other
+[T] software offerings.
+
+[U] https://www.mozilla.org/projects/nspr/
+
+[A] Netscape
+[A] The Mozilla Community <http://www.mozilla.org/about.html>
+[M] Michael Tross <michael@tross.org>
+
+[C] base/development
+[F] CROSS
+
+[L] MPL
+[V] 4.38.2
+[P] X -----5---9 111.051
+
+[D] 6a9cc5951dc0aae9af7e1cf80a3608ff8226c829021017ad35014d35 nspr-4.38.2.tar.gz http://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v4.38.2/src/
+
+srcdir="nspr*/nspr"
+
+includedir=$includedir/nspr
+libdir=$libdir/nspr
+
+[ $arch_sizeof_char_p = 8 ] && var_append confopt ' ' --enable-64bit
+[[ $arch_target = x86_64-*x32 ]] && var_append confopt ' ' --enable-x32
+
+atstage cross && hook_add premake 5 "eval $MAKE -C config"
+
+var_append makeopt ' ' AS=$CC
+
+nspr_setup() {
+	cp $confdir/nspr.pc.in ${root}$(pkgprefix libdir pkgconfig)/pkgconfig/nspr.pc
+	chmod 644 ${root}$(pkgprefix libdir pkgconfig)/pkgconfig/nspr.pc
+
+	sed -e "s,@libdir@,$libdir,g" \
+		-e "s,@prefix@,/$prefix,g" \
+		-e "s,@exec_prefix@,\$\{prefix},g" \
+		-e "s,@includedir@,\$\{prefix}/include/nspr," \
+		-e "s,@NSPR_VER@,`nspr-config --version`,g" \
+		-i ${root}$(pkgprefix libdir pkgconfig)/pkgconfig/nspr.pc
+}
+hook_add postmake 1 nspr_setup
+
+nspr_libs() {
+	# create symlinks to shared nspr libs
+	(
+	cd $root$libdir
+	for file in *.so; do
+		mv ${file} ${file}.${ver}
+		ln -sf ${file}.${ver} ${file}
+		ln -sf nspr/${file}.${ver} ../${file}
+	done
+	)
+}
+hook_add postmake 5 nspr_libs

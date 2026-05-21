@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/wf-shell/wf-shell.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A GTK3-based panel for wayfire
+
+[T] wf-shell is a repository which contains the various components needed to
+[T] built a fully functional DE based around wayfire. Currently it has only a
+[T] GTK-based panel and background client.
+
+[U] https://wayfire.org/
+
+[A] Iliya Bozhinov
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/x11
+
+[L] MIT
+[V] 0.10.0
+[P] X -----5---9 700.000
+
+[D] 768e92365930d97162e33dd82260447287a79b354cfab4bbd813cc69 wf-shell-0.10.0.tar.gz git+https://github.com/WayfireWM/wf-shell.git v0.10.0

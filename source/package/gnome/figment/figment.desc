@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/figment/figment.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An Outliner
+
+[T] An Outliner
+
+[U] https://handhelds.org/~mallum/figment/
+
+[A] Matthew Allum <mallum@handhelds.org>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/tool extra/desktop/gnome
+[F] CROSS
+
+[L] GPL
+[V] 0.3.5
+
+[CV-URL] https://download.gnome.org/sources/figment/cache.json
+[D] 5d3d710d7311743652058e451b8fd60c8ff2ccaec8e00f5e68aa13af figment-0.3.5.tar.gz http://handhelds.org/~mallum/downloadables/figment/
+
+. $base/package/*/*/gnome-conf.in

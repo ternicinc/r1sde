@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/couchdb/couchdb.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Apache couchdb server
+
+[T] Apache CouchDB is a document-oriented database that can be queried and
+[T] indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+[T] incremental replication with bi-directional conflict detection and
+[T] resolution.
+
+[U] https://couchdb.apache.org
+
+[A] Apache CouchDB
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/database
+[F] CROSS
+
+[L] APL
+[V] 3.5.2
+
+[D] 980acabf8c8cc5864dfb0b09e0eb20fbd7977895c4e8139acf6e47b4 apache-couchdb-3.5.2.tar.gz https://www.apache.org/dist/couchdb/source/3.5.2/
+
+var_append confopt ' ' --enable-js-trunk
+hook_add postmake 5 "chown -R 69.69 $root/var/lib/couchdb $root/var/log/couchdb $root/etc/couchdb"

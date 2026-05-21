@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libx11/libx11.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The X11 library
+
+[T] LibX11 is the main X11 library containing all the client-side
+[T] code to access the X11 windowing system.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.8.13
+[P] X ?----5---9 112.403
+
+[D] a27e5ef34217960503519f958c7874565c9808a554376644d214692b libX11-1.8.13.tar.xz http://xorg.freedesktop.org/releases/individual/lib/
+
+. package/*/*/modular-x-conf.in
+
+atstage cross && var_append confopt ' ' "--with-keysymdefdir=$root`pkg-config --variable=includedir xproto`/X11/"
+atstage cross && var_append SYSGCC_WRAPPER_APPEND ' ' "-I$root`pkg-config --variable=includedir xproto`" # for makekeys

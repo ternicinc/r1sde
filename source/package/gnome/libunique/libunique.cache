@@ -1,0 +1,32 @@
+[TIMESTAMP] 1759942719 Wed Oct  8 18:58:39 2025
+[BUILDTIME] 8 (9)
+[SIZE] 0.30 MB, 37 files
+
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] dbus
+[DEP] dbus-glib
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[OPT] glib
+[DEP] gobject-introspection
+[DEP] grep
+[DEP] gtk+
+[DEP] gtk-doc
+[DEP] harfbuzz
+[DEP] libx11
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] pango
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar
+[DEP] xorgproto
+[DEP] xz

@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/luajit/luajit.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Just-In-Time Compiler for the Lua programming language
+
+[T] LuaJIT is based on the Lua 5.1.x virtual machine and bytecode interpreter
+[T] from lua.org. It compiles bytecode to native x86 (i386+) machine code to
+[T] speed up the execution of Lua programs.
+[T]
+[T] An innovative trace compiler is integrated with advanced, SSA-based
+[T] optimizations and a highly tuned code generation backend. This allows a
+[T] substantial reduction of the overhead associated with dynamic language
+[T] features. It's destined to break into the performance range traditionally
+[T] reserved for offline, static language compilers.
+
+[U] https://luajit.org/
+
+[A] Mike Pall <mikelu-1105@mike.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS DIETLIBC NO-LTO
+
+[R] + arm arm64 x86 x86-64 ppc mips
+
+[L] MIT
+[V] 2.1 a4f56a4
+[P] X -----5---9 149.800
+
+[D] 279598f7f9fa3f6cdae3ea0c28d37d5fea3cee04aff6b41cf5b563a9 luajit-2.1-a4f56a4.tar.gz !https://repo.or.cz/luajit-2.0.git/snapshot/a4f56a459a588ae768801074b46ba0adcfb49eb1.tar.gz
+
+. $base/package/*/*/lua-conf.in
+var_append AR ' ' rc
+var_append makeopt ' ' "MYCFLAGS=\"$myCFLAGS\""
+var_append makeopt ' ' "MYLIBS=\"-Wl,-E $myLIBS\""

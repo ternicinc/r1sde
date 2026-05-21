@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gpsdrive/gpsdrive.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GPS Navigation Software
+
+[T] GpsDrive is a car (bike, ship, plane) navigation system. GpsDrive
+[T] displays your position provided from your NMEA capable GPS receiver on a
+[T] zoomable map, the map file is autoselected depending of the position and
+[T] prefered scale. Speech output is supported if the "festival" software is
+[T] running. The maps are autoselected for best resolution depending of your
+[T] position and can be downloaded from Internet. All Garmin GPS reveiver
+[T] with a serial output should be usable, also other GPS receiver which
+[T] supports NMEA protocol.
+[T] GpsDrive is written in C with use of the GTK+ graphic toolkit and runs
+[T] with Linux and FreeBSD.
+
+[U] http://gpsdrive.de
+
+[A] Fritz Ganter <ganter@ganter.at>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] OBJDIR
+
+[L] GPL
+[V] 2.10pre7
+
+[D] 725c9ab5552d11f9c372fcb4ef2f9f4ecef221f43d3bfe2776ab3c4f gpsdrive-2.10pre7.tar.gz http://gpsdrive.de/packages/

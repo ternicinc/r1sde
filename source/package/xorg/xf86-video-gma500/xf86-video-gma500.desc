@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-video-gma500/xf86-video-gma500.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Another Xorg driver for Intel GMA 500, Poulsbo integrated graphics
+
+[T] This is another Intel GMA 00 Xorg ddx driver, based on the Linux kernel
+[T] gma500 driver.
+
+[U] https://github.com/patjak/xf86-video-gma500
+
+[A] Patrik Jakobsson <patrik.r.jakobsson@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+[R] + x86
+
+[L] OpenSource
+[V] 11c2c93
+[P] O
+
+[D] 1480be592ab50e51cc32684b6507ba11f118f90b71f1175f48503133 xf86-video-gma-11c2c93.tar.zst git+https://github.com/patjak/xf86-video-gma500 11c2c93345737739ff58c5de4aba6a5af7342ab9
+
+. package/*/*/modular-x-conf.in
+autogen=1 # git only

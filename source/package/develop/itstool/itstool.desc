@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/itstool/itstool.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Allows you to translate your XML documents with PO files
+
+[T] ITS Tool allows you to translate your XML documents with PO files, using
+[T] rules from the W3C Internationalization Tag Set (ITS) to determine what
+[T] to translate and how to separate it into PO file messages.
+
+[U] https://itstool.org/
+
+[A] Email Shaun <shaunm@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[E] add python-libxml
+
+[L] GPL3
+[V] 2.0.7
+[P] X ?----5---9 110.100
+
+[CV-URL] https://itstool.org/download.html
+[D] 7730e2448574e88ed732da5642255b9ac69b12a8c180703fbf12f1a3 itstool-2.0.7.tar.bz2 https://files.itstool.org/itstool/
+
+runpysetup=0

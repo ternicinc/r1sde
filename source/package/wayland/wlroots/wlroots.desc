@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/wlroots/wlroots.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A modular Wayland compositor library
+
+[T] A modular Wayland compositor library.
+
+[U] https://gitlab.freedesktop.org/wlroots/wlroots/
+
+[A] Drew DeVault
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/x11
+[F] CROSS
+
+[E] opt libliftoff
+[E] opt xwayland
+
+[L] MIT
+[V] 0.20.0
+[P] X -----5---9 149.000
+
+[CV-URL] https://wayland.freedesktop.org/releases.html
+[D] e783550d28c49e41c5a99b9e37cfcc7a1006c93f077e321651d6a4d0 wlroots-0.20.0.tar.gz https://gitlab.freedesktop.org/wlroots/wlroots/-/releases/0.20.0/downloads/
+
+var_append GCC_WRAPPER_REMOVE ' ' -I//include
+var_append mesonopt ' ' -Dexamples=false

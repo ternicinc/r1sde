@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/imms/imms.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An advanced adaptive playlist framework
+
+[T] IMMS (Intelligent Multimedia Management System) is an intelligent playlist
+[T] framework that tracks your listening patterns and dynamically adapts to
+[T] your taste. It is incredibly unobtrusive and easy to use as it requires no
+[T] direct user interaction. Plugins are currently available for XMMS and BMP.
+
+[U] http://www.luminal.org/wiki/index.php/IMMS
+
+[A] Michael Grigoriev <mag@luminal.org>
+[M] Rui Andrada <shingonoide@gmail.com>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 3.0.2
+
+[D] 452f00e83abe7df2f5bb28214276affcdacfacf283e6a550678eae92 imms-3.0.2.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/imms/

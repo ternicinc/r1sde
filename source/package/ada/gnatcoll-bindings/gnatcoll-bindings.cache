@@ -1,0 +1,20 @@
+[TIMESTAMP] 1739191625 Mon Feb 10 13:47:05 2025
+[BUILDTIME] 8 (5)
+[SIZE] 0.93 MB, 110 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] clang
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gmp
+[DEP] gnatcoll-core
+[DEP] gprbuild
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] xmlada

@@ -1,0 +1,28 @@
+
+[TIMESTAMP] 1684809687 Tue May 23 02:41:27 2023
+[BUILDTIME] 5 (9)
+[SIZE] 0.57 MB, 25 files
+
+[DEP] 00-dirtree
+[DEP] autoconf
+[DEP] automake
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] libnl
+[DEP] libtool
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] ncurses
+[DEP] pciutils
+[DEP] perl
+[DEP] sed
+[DEP] tar
+[DEP] xz
+[DEP] zlib

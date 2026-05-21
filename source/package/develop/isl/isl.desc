@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/isl/isl.desc
+[COPY] Copyright (C) 2013 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library for manipulating sets and relations of integer points
+
+[T] Library for manipulating sets and relations of integer points bounded by
+[T] linear constraints
+
+[U] http://isl.gforge.inria.fr
+
+[A] Sven Verdoolaege <skimo@kotnet.org>
+[M] Gerardo Di Iorio <arete74@gmail.com>
+
+[C] base/development
+[F] CROSS
+
+[L] MIT
+[V] 0.27
+[P] X 0-2--5---9 102.250
+
+[D] 3262d47e36bbeffcda98f205bd6e99ac27ec70d691f590bedd5f3c66 isl-0.27.tar.xz https://libisl.sourceforge.io/

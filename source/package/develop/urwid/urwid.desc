@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/urwid/urwid.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A console user interface library for Python
+
+[T] Urwid is a console user interface library for Python.
+
+[U] https://urwid.org/
+
+[A] Ian Ward
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/development
+[E] add python
+
+[L] LGPL
+[V] 3.0.4
+[P] X -----5---9 180.800
+
+[D] c7feb7878b69f7822510902f34fb32cdfa23806041e16f58fc6ee9d4 urwid-3.0.4.tar.gz https://pypi.org/packages/source/u/urwid/

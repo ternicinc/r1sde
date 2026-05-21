@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dante/dante.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Socks4, socks5 and msproxy server and client
+
+[T] Dante is a free implementation of the proxy protocols socks version 4,
+[T] socks version 5 (rfc1928), and msproxy. It can be used as a firewall
+[T] between networks. The package consists of two parts, a socks server and
+[T] a proxy client which supports socks, msproxy, and HTTP proxies.
+
+[U] https://www.inet.no/dante/
+
+[A] Karls <karls@inet.no>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] BSD
+[V] 1.4.4
+
+[D] be7b1613623f982b1a4bef9f47099af48b871edd95932387035cc9cf dante-1.4.4.tar.gz ftp://ftp.inet.no/pub/socks/

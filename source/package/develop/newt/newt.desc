@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/newt/newt.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A programming library for color text mode
+
+[T] Newt is a programming library for color text mode, widget based user
+[T] interfaces. Newt can be used to add stacked windows, entry widgets,
+[T] checkboxes, radio buttons, labels, plain text fields, scrollbars, etc.
+[T] to text mode user interfaces. Newt is based on the slang library.
+
+[U] https://pagure.io/newt
+
+[A] RedHat TM {http://www.redhat.com}
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/development
+[F] CROSS NO-LTO.gcc
+
+[L] GPL
+[V] 0.52.25
+[P] X -----5---9 120.100
+
+[D] b9c30ab805c5890535b08f3cf98cf9b5c75b9a820614da27d05b0947 newt-0.52.25.tar.gz https://fedorahosted.org/releases/n/e/newt/
+
+pkginstalled tcl || var_append confopt ' ' --without-tcl
+atstage cross && var_append makeopt ' ' PYTHONVERS= && var_append makeinstopt ' ' 'PYTHONVERS= instroot=$root'

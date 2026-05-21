@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/re2c/re2c.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A tool for writing fast and flexible lexers
+
+[T] re2c is a tool for writing fast and flexible lexers. Unlike other
+[T] such tools, it concentrates solely on generating efficient code
+[T] for matching regular expressions. This make it suitable for a
+[T] wide variety of applications. The generated scanners approach
+[T] hand-crafted ones in terms of size and speed.
+
+[U] https://re2c.org/
+
+[A] Dan Nuffer <nuffer@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] MIT
+[V] 4.5.1
+
+[D] 92d8e4340e27c67d8abadd6149ed9802fe85efef7472de913e6a2508 re2c-4.5.1.tar.gz https://github.com/skvadrik/re2c/archive/4.5.1/

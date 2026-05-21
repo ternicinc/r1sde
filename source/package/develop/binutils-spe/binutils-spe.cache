@@ -1,0 +1,37 @@
+
+[TIMESTAMP] 1648152198 Thu Mar 24 20:03:18 2022
+[BUILDTIME] 30 (5) ERROR
+[SIZE] 20.23 MB, 64 files
+
+[DEP] 00-dirtree
+[DEP] automake
+[DEP] binutils
+[DEP] bison
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] file
+[DEP] findutils
+[DEP] flex
+[DEP] gawk
+[DEP] gettext
+[DEP] glib
+[DEP] gmp
+[DEP] grep
+[DEP] gsasl
+[DEP] icu4c
+[DEP] isl
+[DEP] libelf
+[DEP] libidn
+[DEP] libpsl
+[DEP] m4
+[DEP] make
+[DEP] mpc
+[DEP] mpfr
+[DEP] nghttp2
+[DEP] perl
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] texinfo
+[DEP] zlib

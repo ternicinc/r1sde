@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/resynthesizer/resynthesizer.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A GIMP plugin for texture synthesis
+
+[T] Resynthesizer is a GIMP plugin for texture synthesis. Given a sample of a
+[T] texture, it can create more of that texture. This has a surprising number of
+[T] uses: Creating more of a texture (including creation of tileable textures),
+[T] removing objects from images (great for touching up photos), creating themed
+[T] images.
+
+[U] http://www.logarithmic.net/pfh/resynthesizer
+
+[A] Paul Harrison <pfh@logarithmic.net>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/graphic
+
+[L] GPL
+[V] 3.0.1
+
+[D] ac9cc4c5427f79ccc4f86defdbf1b10640cfb19334682760cdba4d33 resynthesizer-3.0.1.tar.gz https://github.com/bootchk/resynthesizer/archive/v3.0.1/

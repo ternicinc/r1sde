@@ -1,0 +1,40 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dvbd/hotfix-64bit.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+On 32bit platforms it accidently compiles, however on 32bit platforms we
+either must cast to int, or would need a long overload ...
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- dvbd-0.7.7/src/controlledconnection.cpp.vanilla	2005-12-16 16:13:34.000000000 +0100
++++ dvbd-0.7.7/src/controlledconnection.cpp	2005-12-16 16:14:20.000000000 +0100
+@@ -151,7 +151,7 @@
+     else if (words[0] == "TUNE") {
+       if (words.size() != 5) 
+ 	writeControl("ERROR TUNE WRONG NUMBER OF ARGS (Expected 4, got " +
+-		     ::toString(words.size() - 1) + ")\n");
++		     ::toString((int)words.size() - 1) + ")\n");
+       else {
+ 	const std::string &type = words[1];
+ 	std::string channel = unescapeWS(words[2]);
+@@ -179,7 +179,7 @@
+     else if (words[0] == "SCHEDULE") {
+       if (words.size() != 10) 
+ 	writeControl("ERROR SCHEDULE WRONG NUMBER OF ARGS (Expected 9, got " +
+-		     ::toString(words.size() - 1) + ")\n");
++		     ::toString((int)words.size() - 1) + ")\n");
+       else {
+ 	std::string dateTime = words[1] + " " + words[2];
+ 
+@@ -239,7 +239,7 @@
+     else if (words[0] == "REMOVEJOB") {
+       if (words.size() != 2) 
+ 	writeControl("ERROR REMOVEJOB WRONG NUMBER OF ARGS (Expected 1, got " +
+-		     ::toString(words.size() - 1) + ")\n");
++		     ::toString((int)words.size() - 1) + ")\n");
+       else {
+ 	int job = toInt(words[1]);
+ 	if (!scheduler->remove(job) && !cm->removeJob(job))

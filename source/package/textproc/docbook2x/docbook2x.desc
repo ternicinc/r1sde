@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/docbook2x/docbook2x.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Converts DocBook into man pages and Texinfo
+
+[T] Docbook2X converts DocBook documents to man pages and Texinfo.
+
+[U] https://docbook2x.sourceforge.net/
+
+[A] Steve Cheng <stevecheng@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] MIT
+[V] 0.8.8
+[P] X -----5---9 144.500
+
+[D] 36542e1245a24a5b0c0e258bdfcdca96d9c0de88fbbac800191bc91a docbook2X-0.8.8.tar.gz https://prdownloads.sourceforge.net/sourceforge/docbook2x/

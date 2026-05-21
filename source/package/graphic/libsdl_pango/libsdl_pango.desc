@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libsdl_pango/libsdl_pango.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Pango font layout engine connection to SDL
+
+[T] SDL_Pango connects the Pango font layout engine to SDL.
+
+[U] https://sdlpango.sourceforge.net/
+
+[A] NAKAMURA Ken'ichi
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] LGPL
+[V] 0.1.2
+[P] X -----5---9 146.000
+
+[D] fe7b653ab27c77fecb35a3768819da0eb861ea4ea0528be9aed9116a SDL_Pango-0.1.2.tar.gz https://prdownloads.sourceforge.net/sourceforge/sdlpango/

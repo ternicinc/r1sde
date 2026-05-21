@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pam_ldap/pam_ldap.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] LDAP Pluggable Authentication Module
+
+[T] pam_ldap is a pam/ldap module that supports password changes, V2
+[T] clients, Netscapes SSL, ypldapd, Netscape Directory Server password
+[T] policies, access authorization, crypted hashes, etc.
+
+[U] https://www.padl.com/OSS/pam_ldap.html
+
+[A] Luke Howard <lukeh@padl.com>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/server extra/base
+
+[L] LGPL
+[V] 186
+
+[D] 69d07fbc14ab3c449a97858051bf4b7f32441ce6ddbe443442cdeb56 pam_ldap-186.tar.gz https://fossies.org/linux/privat/old/
+
+[ "$prefix_auto" = 1 ] && prefix= && set_confopt
+
+pkgprefix -t openldap
+var_append confopt ' ' "--with-ldap-dir=$root/`pkgprefix openldap`"
+var_append confopt ' ' "--with-ldap-conf-file=$root`pkgprefix sysconfdir openldap`/ldap.conf"
+var_append confopt ' ' "--with-ldap-secret-file=$root`pkgprefix sysconfdir openldap`/ldap.secret"
+
+hook_add postmake 3 "cp -avP pam.d $root$docdir/"
+hook_add postpatch 5 'mv -v chfn chfn.in; mv -v chsh chsh.in'

@@ -1,0 +1,41 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/freedroid/freedroid.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Paradroid clone
+
+[T] THE CLASSICAL FREEDROID: Freedroid is a clone of the classic game
+[T] "Paradroid" on Commodore 64 with some improvements and extensions to
+[T] the classic version.
+[T]
+[T] In this game, you control a robot, depicted by a small white ball with
+[T] a few numbers within an interstellar spaceship consisting of several
+[T] decks connected by elevators.
+[T]
+[T] The aim of the game is to destroy all enemy robots, depicted by small
+[T] black balls with a few numbers, by either shooting them or seizing
+[T] control over them by creating connections in a short subgame of
+[T] electric circuits.
+
+[U] https://freedroid.sourceforge.net
+
+[A] Johannes Prix <johannesprix@users.sourceforge.net>
+[A] Reinhard Prix <rprix@users.sourceforge.net>
+
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+#[C] extra/game/rpg
+
+[L] GPL
+[V] 1.9.0
+
+[D] 608276afebacbe659ef99aed84b37916c8e69475af223c2a3e3671bd freedroid-1.9.0.tar.gz https://github.com/ReinhardPrix/FreedroidClassic/archive/refs/tags/freedroid-1.9.0-sdl2-port/
+
+bindir=$root/$SDECFG_PKG_GAMES_BINDIR
+datadir=$root/$SDECFG_PKG_GAMES_DATADIR
+autogen=2
+var_append GCC_WRAPPER_APPEND ' ' -std=gnu11

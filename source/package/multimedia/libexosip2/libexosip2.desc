@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libexosip2/libexosip2.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The eXtended osip Library
+
+[T] eXosip is a GPL library that extend the capability of the oSIP library. It aims to implement a simple
+[T] high layer API to control the SIP for sessions establishements and common extensions.
+[T] Once completed, this eXtended library should provide an API for call management, messaging and presence features.
+
+[U] http://savannah.nongnu.org/projects/exosip
+
+[A] Aymeric MOIZARD <jack@osip.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] GPL
+[V] 5.3.0
+
+[D] 0c0c018f0c7b054e0620863a40e17d6c07e089c710222bf142f23d4b libexosip2-5.3.0.tar.gz https://download.savannah.nongnu.org/releases/exosip/

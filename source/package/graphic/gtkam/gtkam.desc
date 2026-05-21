@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gtkam/gtkam.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Graphical front end for gphoto2
+
+[T] gtkam is the official GTK2 GUI for libgphoto2. Its purpose it to provide
+[T] a standard client for libgphoto2 aimed at GNOME users. Consider it as a
+[T] reference implementation for a graphical libgphoto2 client.
+
+[U] http://www.gphoto.org/proj/gtkam/
+
+[A] Scott Fritzinger <scottf@unr.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office
+
+[L] GPL
+[V] 1.1
+[P] X -----5---9 196.800
+
+[D] 8e268648cc431fb018890067a4b8267dc65ce8b973688fee463da409 gtkam-1.1.tar.gz https://prdownloads.sourceforge.net/sourceforge/gphoto/
+
+var_append CC_WRAPPER_REMOVE ' ' -DGTK_DISABLE_DEPRECATED
+. $base/package/*/*/gnome-conf.in

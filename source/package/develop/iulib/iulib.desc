@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/iulib/iulib.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Easy-to-use image and video I/O functions
+
+[T] Iulib implements easy-to-use image and video I/O functions, as well
+[T] as a large number of common image processing functions.
+
+[U] https://code.google.com/p/iulib/
+
+[A] http://code.google.com/p/iulib/
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] base/development
+
+[L] APL
+[V] 0.3
+[P] X -----5---9 200.000
+
+[D] 5554da266292c4d19c4a12716f8c909f0e1e1a26d89558052b5487ec iulib-0.3.tar.gz http://iulib.googlecode.com/files/

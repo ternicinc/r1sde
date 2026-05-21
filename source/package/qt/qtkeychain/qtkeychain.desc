@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/qtkeychain/qtkeychain.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Platform-independent Qt API for storing passwords securely
+
+[T] QtKeychain is a Qt API to store passwords and other secret data securely.
+
+[U] https://github.com/frankosterfeld/qtkeychain
+
+[A] Frank Osterfeld
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] BSD
+[V] 0.16.0
+[P] X -----5---9 179.210
+
+[D] 0ec6f66d3b84c2fb41ac478ae0706685ec246fec30e22392bbe3b41e qtkeychain-0.16.0.tar.gz https://github.com/frankosterfeld/qtkeychain/archive/refs/tags/0.16.0/
+
+. $base/package/*/*/qt6-conf.in
+var_append cmakeopt ' ' -DBUILD_WITH_QT6=ON
+var_append cmakeopt ' ' -DBUILD_TRANSLATIONS=OFF # lupdate failed w/ clang/llvm assertions

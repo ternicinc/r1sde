@@ -1,0 +1,23 @@
+[TIMESTAMP] 1773428547 Fri Mar 13 20:02:27 2026
+[BUILDTIME] 560 (9)
+[SIZE] 329.95 MB, 9 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] boost
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] eigen
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] icestorm
+[DEP] linux-header
+[DEP] make
+[DEP] prjtrellis
+[DEP] pybind11
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

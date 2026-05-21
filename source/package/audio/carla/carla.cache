@@ -1,0 +1,29 @@
+[TIMESTAMP] 1739227074 Mon Feb 10 23:37:54 2025
+[BUILDTIME] 100 (5)
+[SIZE] 26.70 MB, 86 files
+
+[DEP] 00-dirtree
+[DEP] alsa-lib
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] file
+[DEP] freetype
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libglvnd
+[DEP] liblo
+[DEP] libsdl2
+[DEP] libsndfile
+[DEP] libx11
+[DEP] libxcursor
+[DEP] libxext
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] pulseaudio
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

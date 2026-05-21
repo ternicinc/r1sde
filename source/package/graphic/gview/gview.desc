@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gview/gview.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A tiny simple gtk image viewer
+
+[T] A tiny simple gtk image viewer
+
+[U] https://gview.sourceforge.net/
+
+[A] Jason Barto
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 0.9.1a
+
+[D] e5ad6818bddd2180d93b1458b85a223d54bd1a720628193d4d9dcfcc gview-0.9.1a.tar.gz https://prdownloads.sourceforge.net/sourceforge/gview/
+
+gview_build() {
+    rm -f gview
+    ./compile.sh
+    install -m755 -s gview $root/usr/bin
+}
+runmake=0
+hook_add postmake 5 gview_build

@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pfscalibration/pfscalibration.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A set of tools for photometric calibration of HDR and LDR cameras
+
+[T] PFSCalibration provides an implementation of the Robertson et al. 2003
+[T] method for the photometric calibration of cameras and for the recovery of
+[T] high dynamic range (HDR) images from teh set of low dynamic range (LDR)
+[T] exposures. The tools included can be used for photometric calibration of
+[T] both off-the-shelf digital cameras and HDR cameras as described in the MPI
+[T] Research Report.
+
+[U] https://www.mpi-inf.mpg.de/resources/hdr/calibration/pfs.html
+
+[A] Grzegorz Krawczyk <krawczyk@mpi-sb.mpg.de>
+[M] LuisF <luisbf@megamail.pt>
+
+[C] extra/graphic
+[F] CROSS
+
+[L] GPL
+[V] 1.4
+
+[D] 7f9cd6381b82d7246801ffea11b1e4bd7de9d94153f56264e35ffc93 pfscalibration-1.4.tar.gz https://prdownloads.sourceforge.net/sourceforge/pfstools/

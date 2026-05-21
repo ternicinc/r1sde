@@ -1,0 +1,18 @@
+[TIMESTAMP] 1769209901 Sat Jan 24 00:11:41 2026
+[BUILDTIME] 4 (9)
+[SIZE] 0.13 MB, 27 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[OPT] glib
+[DEP] grep
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] xz
+[DEP] yelp-xsl

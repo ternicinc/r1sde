@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/tntdb/tntdb.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A C++ class library for database-independent database access
+
+[T] Tntdb is a c++-class-library for database access. It implements a
+[T] database-independent layer, which loads the actual driver dynamically
+[T] when a connection is made. The classes use automatic resource
+[T] management with reference counts. Resources are freed when the classes
+[T] go out of scope. Error handling is done with exceptions (derived from
+[T] std::exception). There are STL-like iterators for result sets and rows,
+[T] and also the cursor is an STL-like iterator. It is written in standard
+[T] C++ with Linux. Drivers for PostgreSQL, sqlite3, and MySQL are available.
+
+[U] http://www.tntnet.org/tntdb.hms
+
+[A] Tommi Mäkitalo <tommi@tntnet.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/database
+
+[E] opt doxygen
+
+[L] LGPL
+[V] 1.4
+
+[D] 499f17d3c4dc9e55969cd5374ca60ecd6bbc415a900c3a6fd209b655 tntdb-1.4.tar.gz https://github.com/maekitalo/tntdb/archive/V1.4/
+
+hook_add preconf 5 'autoreconf -fi'
+pkginstalled postgresql || var_append confopt ' ' --without-postgresql
+pkginstalled mysql || var_append confopt ' ' --without-mysql

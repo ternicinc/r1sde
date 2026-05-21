@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-poetry-core/python-poetry-core.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Poetry PEP 517 Build Backend & Core Utilities
+
+[T] A PEP 517 build backend implementation developed for Poetry. This project
+[T] is intended to be a lightweight, fully compliant, self-contained package
+[T] allowing PEP 517-compatible build frontends to build Poetry-managed
+[T] projects.
+
+[U] https://github.com/python-poetry/poetry-core
+
+[A] Sébastien Eustace <sebastien@eustace.io>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] MIT
+[V] 2.3.1
+[P] X -----5---9 136.700
+
+[D] 8ebab2f7da2e831fc63e4149d861ed8748c1ada5ace333d3505a2f27 poetry_core-2.3.1.tar.gz https://files.pythonhosted.org/packages/source/p/poetry-core/

@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pyudev/pyudev.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A pure Python binding for libudev
+
+[T] pyudev is a pure Python binding for libudev, the device and hardware
+[T] management and information library for Linux. It supports almost all
+[T] libudev functionality. You can enumerate devices, query device properties
+[T] and attributes or monitor devices, including asynchronous monitoring with
+[T] threads, or within the event loops of Qt, Glib or wxPython.
+
+[U] http://pyudev.readthedocs.org/
+
+[A] Sebastian Wiesner <lunaryorn@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] LGPL
+[V] 0.24.4
+[P] X -----5---9 200.000
+
+[D] 232a9ed15c9db0051828d6b1d3ee91ce3b6d55f10f3ce81c445ec6cc pyudev-0.24.4.tar.gz https://pypi.io/packages/source/p/pyudev/

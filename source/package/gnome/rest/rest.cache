@@ -1,0 +1,34 @@
+[TIMESTAMP] 1760525708 Wed Oct 15 12:55:08 2025
+[BUILDTIME] 6 (9)
+[SIZE] 2.64 MB, 231 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gi-docgen
+[OPT] glib
+[DEP] gobject-introspection
+[DEP] graphene
+[OPT] graphviz
+[DEP] grep
+[DEP] gtk
+[DEP] gtksourceview
+[DEP] harfbuzz
+[DEP] json-glib
+[DEP] libadwaita
+[DEP] libsoup3
+[DEP] libxml
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar
+[DEP] xz

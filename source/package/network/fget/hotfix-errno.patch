@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/fget/hotfix-errno.patch
+# Copyright (C) 2005 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -ur fget/error.h fget-fixed/error.h
+--- fget/error.h	2000-07-01 23:36:17.000000000 +0200
++++ fget-fixed/error.h	2005-12-16 20:02:23.000000000 +0100
+@@ -1,6 +1,8 @@
++
+ #ifndef ERROR_H
+ #define ERROR_H
+ 
++#include <errno.h>
+ #ifndef errno
+ extern int errno;
+ #endif

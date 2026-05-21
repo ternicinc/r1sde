@@ -1,0 +1,25 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/ncurses/hotfix-install-no-rm.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+One must not rm a library - especially not when the system - e.g. bash -
+depends on it ...
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- ncurses-5.9/mk-1st.awk.vanilla	2011-07-15 11:25:37.000000000 +0200
++++ ncurses-5.9/mk-1st.awk	2011-07-15 11:27:01.000000000 +0200
+@@ -118,9 +118,9 @@
+ function symlink(src,dst) {
+ 		if ( src != dst ) {
+ 			if ( SymLink !~ /.*-f.*/ ) {
+-				printf "rm -f %s; ", dst
++				#printf "rm -f %s; ", dst
+ 			}
+-			printf "$(LN_S) %s %s; ", src, dst
++			printf "$(LN_S) -f %s %s; ", src, dst
+ 		}
+ 	}
+ function rmlink(directory, dst) {

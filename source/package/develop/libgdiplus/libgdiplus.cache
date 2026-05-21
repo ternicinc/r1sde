@@ -1,0 +1,29 @@
+
+[TIMESTAMP] 1703625058 Tue Dec 26 21:10:58 2023
+[BUILDTIME] 14 (9)
+[SIZE] 2.49 MB, 10 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] libexif
+[DEP] libgif
+[DEP] libjpeg
+[DEP] libpng
+[DEP] libtiff
+[DEP] libx11
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

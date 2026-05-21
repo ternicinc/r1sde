@@ -1,0 +1,42 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libyuv/libyuv.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] YUV scaling and conversion library
+
+[T] libyuv is an open source project that includes YUV scaling
+[T] and conversion functionality.
+
+[U] https://chromium.googlesource.com/libyuv/libyuv/
+
+[A] Google Inc.
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] BSD
+[V] 96134e9
+[P] X -----5---9 124.605
+
+[D] 6485b7c1a0b0a03729fbfa83b6460c2b1f85321ad9e0afc6005dc717 libyuv-96134e9.tar.gz git+https://chromium.googlesource.com/libyuv/libyuv 96134e9
+
+[[ $arch = arm* ]] && var_remove GCC_WRAPPER_REMOVE ' ' '-march*'
+
+create_libyuv_pc_file() {
+    cat <<-EOT > $root/$libdir/pkgconfig/libyuv.pc
+	prefix=/$prefix
+	exec_prefix=\${prefix}
+	libdir=\${prefix}/${libdir##*/}
+	includedir=\${prefix}/include/libyuv
+
+	Name: libyuv
+	Description: YUV Image Conversion Library
+	Version: $desc_V
+	Libs: -L\${libdir} -lyuv
+	Cflags: -I\${includedir}
+EOT
+}
+hook_add postinstall 7 create_libyuv_pc_file

@@ -1,0 +1,47 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/librsvg/librsvg.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library implementing the SVG image format
+
+[T] The librsvg library is a lightweight library for parsing and rendering
+[T] vector-graphic files in SVG format (like the ones made by sodipodi). It
+[T] also includes functions that render anti-aliased fonts using freetype,
+[T] including caching of glyphs. It's used by Nautilus for drawing vector
+[T] icons and anti-aliased type.
+
+[U] https://wiki.gnome.org/Projects/LibRsvg
+
+[A] Raph Levien <raph@artofcode.com>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/multimedia
+[F] CROSS LATOMIC.sparc LATOMIC.x86
+[R] - alpha arc avr32 blackfin cris hppa hppa64 m68k microblaze nios2 openrisc superh
+
+[E] add smartypants
+[E] opt docutils gi-docgen
+[E] opt gobject-introspection vala
+
+[L] LGPL
+[V] 2.62.2
+[P] X -----5---9 150.100
+
+[CV-URL] https://download.gnome.org/sources/librsvg/cache.json
+[D] a744e5f4232ad2a5f2f7adec7c5d00c17d71563fcab0df6cf9dcc21b librsvg-2.62.2.tar.xz https://download.gnome.org/sources/librsvg/2.62/
+
+. $base/package/*/*/gnome-conf.in
+if [ "$arch" != "ia64" ]; then
+	runcargo=0
+	hook_add prepatch 5 cargo_vendor
+	atstage cross && var_append mesonopt ' ' -Dtriplet=$arch_target
+	[ "$SDECFG_DEBUG" = 1 ] || var_append mesonopt ' ' -Ddebug=false
+	[ "$SDECFG_LTO" = 0 ] || var_append mesonopt ' ' -Db_lto=true
+else
+	# on ia64, librsvg 2.40.23, the last non-Rust version, is used
+	runmeson=0 # meson.build is very rudimentary in this version, disable it
+	pkginstalled gobject-introspection || var_append confopt ' ' --enable-introspection=no
+fi

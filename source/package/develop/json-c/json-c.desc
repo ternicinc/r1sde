@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/json-c/json-c.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A JSON implementation in C
+
+[T] JSON-C implements a reference counting object model that allows you to
+[T] easily construct JSON objects in C, output them as JSON formatted strings
+[T] and parse JSON formatted strings back into the C representation of JSON
+[T] objects.
+
+[U] https://github.com/json-c/json-c/wiki
+
+[A] Michael Clark <michael@metaparadigm.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] MIT
+[V] 0.18
+[P] X -----5---9 109.400
+
+[CV-URL] https://github.com/json-c/json-c/wiki
+[D] 0bdad4b4176f5297bce26c473e260313754f8320f21936cdf134f7e8 json-c-0.18.tar.gz https://s3.amazonaws.com/json-c_releases/releases/
+
+var_append cmakeopt ' ' -DCMAKE_POLICY_VERSION_MINIMUM=3.5

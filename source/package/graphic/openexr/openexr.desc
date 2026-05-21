@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openexr/openexr.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A high dynamic-range (HDR) image file format
+
+[T] OpenEXR is a high dynamic-range (HDR) image file format developed
+[T] by Industrial Light & Magic for use in computer imaging applications.
+[T]
+[T] OpenEXR is used by ILM on all motion pictures currently in production.
+[T] The first movies to employ OpenEXR were Harry Potter and the Sorcerers
+[T] Stone, Men in Black II, Gangs of New York, and Signs. Since then,
+[T] OpenEXR has become ILM's main image file format.
+
+[U] https://www.openexr.com
+
+[A] Industrial Light & Magic Ltd.
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] BSD
+[V] 3.4.11
+[P] X -----5---9 128.500
+
+[D] bc279d3eb2e36516dac8e674fd59eaa5d584742ed76f4d770a718b49 openexr-3.4.11.tar.gz https://github.com/AcademySoftwareFoundation/openexr/archive/v3.4.11/
+
+runpipinstall=0 rungpepinstall=0

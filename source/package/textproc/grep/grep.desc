@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/grep/grep.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] This is GNU grep, the "fastest grep in the west"
+
+[T] GNU grep is based on a fast lazy-state deterministic matcher
+[T] (about twice as fast as stock Unix egrep) hybridized with a
+[T] Boyer-Moore-Gosper search for a fixed string that eliminates
+[T] impossible text from being considered by the full regexp
+[T] matcher without necessarily having to look at every character. The
+[T] result is typically many times faster than Unix grep or
+[T] egrep.
+
+[U] https://www.gnu.org/software/grep/
+
+[A] Alain Magloire <alainm@rcsm.ee.mcgill.ca> {Current Maintainer}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS DIETLIBC
+
+[L] GPL
+[V] 3.12
+[P] X --2--5---9 107.900
+
+[D] eb0c539273d33c57f728392e894d05d1e8041bca24ac8833b6c857bc grep-3.12.tar.xz http://ftp.gnu.org/pub/gnu/grep/
+
+# because we do not have pcre in Stage-2 or on the boot disk ...
+var_append confopt ' ' --bindir=/bin
+atstage native || var_append confopt ' ' --disable-perl-regexp
+# the configure adds -std=gnu99 to CC; otherwise we get missing pthread symbols
+var_remove_regex makeopt ' ' 'CC=.*'

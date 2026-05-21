@@ -1,0 +1,32 @@
+
+[TIMESTAMP] 1684756412 Mon May 22 11:53:32 2023
+[BUILDTIME] 5 (9)
+[SIZE] 17.82 MB, 316 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] expat
+[DEP] findutils
+[DEP] gawk
+[DEP] gdbm
+[DEP] gmp
+[DEP] gnutls
+[DEP] grep
+[DEP] libffi
+[DEP] libsigsegv
+[DEP] libtasn1
+[DEP] libtool
+[DEP] libunistring
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[DEP] ncurses
+[DEP] nettle
+[DEP] readline
+[DEP] sed
+[DEP] sqlite
+[DEP] tar
+[DEP] zip
+[DEP] zlib

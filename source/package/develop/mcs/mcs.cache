@@ -1,0 +1,16 @@
+
+[TIMESTAMP] 1235438483 Tue Feb 24 02:21:23 2009
+[BUILDTIME] 5 (5)
+[SIZE] 0.06 MB, 18 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar

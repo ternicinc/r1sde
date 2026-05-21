@@ -1,0 +1,47 @@
+[TIMESTAMP] 1742245576 Mon Mar 17 22:06:16 2025
+[BUILDTIME] 125 (9)
+[SIZE] 17.64 MB, 638 files
+
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] bdb
+[DEP] binutils
+[DEP] cairo
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] e2fsprogs
+[OPT] evolution-exchange
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[OPT] glib
+[OPT] gnome-weather
+[DEP] gperf
+[DEP] graphene
+[DEP] grep
+[DEP] gsettings-desktop-schemas
+[DEP] gtk
+[DEP] gtk+
+[DEP] harfbuzz
+[DEP] icu4c
+[DEP] json-glib
+[DEP] libcanberra
+[DEP] libical
+[DEP] libsecret
+[DEP] libsoup3
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[DEP] nspr
+[OPT] nss
+[OPT] openldap
+[DEP] pango
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] sqlite
+[DEP] tar
+[DEP] util-linux
+[DEP] xz
+[DEP] zlib

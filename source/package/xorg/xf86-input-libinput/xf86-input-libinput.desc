@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-input-libinput/xf86-input-libinput.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Xorg input driver using libinput
+
+[T] This driver supports input devices thru libinput.
+
+[U] https://www.freedesktop.org/wiki/Software/libinput/
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.5.0
+[P] X -----5---9 200.000
+
+[D] f57f822046432faaeebc322eae87099c4825e15a28c068db8d87a594 xf86-input-libinput-1.5.0.tar.xz http://xorg.freedesktop.org/archive/individual/driver/
+
+. package/*/*/modular-x-conf.in

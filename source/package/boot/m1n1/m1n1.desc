@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/m1n1/m1n1.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A bootloader and experimentation playground for Apple Silicon
+
+[T] A bootloader and experimentation playground for Apple Silicon.
+
+[U] https://github.com/AsahiLinux/m1n1
+
+[A] Asahi Linux Project
+[M] René Rebe <rene@exactco.de>
+
+[C] base/boot
+[F] CROSS NO-LTO
+[R] + arm64
+
+[L] MIT
+[V] 20210828
+
+[D] 9843d9593b84070d4655d63074b8edcb37bfcd326816ea84a53d24ed m1n1-v20210828.tar.gz https://github.com/AsahiLinux/m1n1/archive/v1.4.21/
+
+var_append makeopt ' ' AS=$CC
+var_append makeopt ' ' OBJCOPY=$OBJCOPY
+var_remove GCC_WRAPPER_REMOVE ' ' '-march*'
+makeinstopt=
+hook_add postmake 5 "install build/m1n1.{macho,bin} $root/boot/"

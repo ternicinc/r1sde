@@ -1,0 +1,52 @@
+[TIMESTAMP] 1777138292 Sat Apr 25 17:31:32 2026
+[BUILDTIME] 480 (9)
+[SIZE] 78.62 MB, 1274 files
+
+[OPT] acl
+[DEP] bash
+[DEP] bison
+[DEP] coreutils
+[OPT] cups
+[DEP] dbus
+[DEP] diffutils
+[OPT] docbook-xml
+[OPT] docbook-xsl
+[DEP] file
+[DEP] findutils
+[DEP] flex
+[OPT] fuse2
+[DEP] gawk
+[DEP] gettext
+[OPT] glusterfs
+[DEP] gnutls
+[DEP] grep
+[DEP] gzip
+[DEP] icu4c
+[OPT] jansson
+[OPT] libarchive
+[DEP] libcap
+[DEP] libtasn1
+[DEP] libtirpc
+[OPT] liburing
+[DEP] libxcrypt
+[OPT] libxslt
+[DEP] linux-header
+[OPT] lmdb
+[DEP] m4
+[DEP] make
+[DEP] ncurses
+[OPT] openldap
+[DEP] openssl
+[OPT] pam
+[DEP] perl
+[DEP] perl-parse-yapp
+[DEP] popt
+[DEP] python
+[DEP] readline
+[DEP] rpcsvc-proto
+[DEP] sed
+[DEP] tar
+[DEP] tdb
+[DEP] util-linux
+[OPT] xfsprogs
+[DEP] zlib

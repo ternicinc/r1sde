@@ -1,0 +1,12 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/sysvinit/config-720.hlp
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+MENU_INIT
+  Here you can select the Init-Style to be used.
+
+SDECFG_INIT_STYLE
+  Here you can select the Init-Style to be used.

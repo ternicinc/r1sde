@@ -1,0 +1,23 @@
+[TIMESTAMP] 1746963725 Sun May 11 13:42:05 2025
+[BUILDTIME] 3 (9)
+[SIZE] 0.08 MB, 11 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] file
+[DEP] findutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] libsdl
+[DEP] linux-header
+[DEP] make
+[DEP] pango
+[DEP] sed
+[DEP] tar

@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libmaa/libmaa.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library providing many low-level data structures
+
+[T] The LIBMAA library provides many low-level data structures which are
+[T] helpful for writing compilers, including hash tables, sets, lists,
+[T] debugging support, and memory management. Although LIBMAA was
+[T] designed and implemented as a foundation for the Khepera
+[T] Transformation System, the data structures are generally applicable
+[T] to a wide range of programming problems.
+[T]
+[T] The memory management routines are especially helpful for improving
+[T] the performance of memory-intensive applications.
+
+[U] https://www.dict.org/
+[U] https://sourceforge.net/projects/dict/
+
+[A] Dict Development Group <dict-beta@dict.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/server
+
+[L] GPL
+[V] 1.5.1
+[P] X -----5---9 234.000
+
+[D] 85c1aec36b1ad9c0604b969c8c77a2b816e460695ff7167b5221f379 libmaa-1.5.1.tar.gz https://prdownloads.sourceforge.net/sourceforge/dict/

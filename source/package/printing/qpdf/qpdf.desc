@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/qpdf/qpdf.desc
+[COPY] Copyright (C) 2015-2020 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A utility for structural, content-preserving transformations on PDF files
+
+[T] QPDF is a command-line program that does structural, content-preserving
+[T] transformations on PDF files. It could have been called something like
+[T] pdf-to-pdf.
+
+[U] https://qpdf.sourceforge.net/
+
+[A] Jay Berkenbilt
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/printing
+[F] CROSS OBJDIR
+
+[L] Artistic
+[V] 12.3.2
+[P] X -----5---9 142.810
+
+[D] 3269b67e799406cd7c8ac1aca5d138b07cb935caaea7dd61329d1d5f qpdf-12.3.2.tar.gz https://github.com/qpdf/qpdf/releases/download/v12.3.2/

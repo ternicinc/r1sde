@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xan/xan.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The CSV processing CLI
+
+[T] xan is a command line tool that can be used to process CSV files directly
+[T] from the shell. It can easily preview, filter, slice, aggregate, sort, join
+[T] CSV files, and exposes a large collection of composable commands that can
+[T] be chained together to perform a wide variety of typical tasks.
+
+[U] https://github.com/medialab/xan
+
+[A] Andrew Gallant
+[A] Guillaume Plique
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] UNL
+[V] 0.57.1
+
+[D] 6139745294269d39f5096883ab360f41c204f9339dfdc463deb3cdb1 xan-0.57.1.tar.gz https://github.com/medialab/xan/archive/0.57.1/

@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/virtiofsd/virtiofsd.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A virtio-fs vhost-user device daemon written in Rust
+
+[T] This program is a vhost-user backend that implements the virtio-fs device.
+[T] Each virtio-fs device instance requires its own virtiofsd process.
+
+[U] https://gitlab.com/virtio-fs/virtiofsd/
+
+[A] Stefan Hajnoczi <stefanha@redhat.com>
+[A] Masayoshi Mizuma <m.mizuma@jp.fujitsu.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/emulator
+[F] CROSS
+
+[L] BSD
+[V] 1.13.3
+
+[D] d03fe7f7baeb82928eb7d4ae406806136706af617bccc0a6dad297bb virtiofsd-1.13.3.tar.gz https://gitlab.com/virtio-fs/virtiofsd//-/archive/v1.13.3/

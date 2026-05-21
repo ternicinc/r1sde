@@ -1,0 +1,21 @@
+
+[TIMESTAMP] 1736721328 Sun Jan 12 23:35:28 2025
+[BUILDTIME] 50 (9)
+[SIZE] 0.85 MB, 17 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] clang
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] hyperscan
+[DEP] openssl
+[DEP] python
+[DEP] python-gpep517
+[DEP] python-maturin
+[DEP] rustc
+[DEP] sed
+[DEP] tar

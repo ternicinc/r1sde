@@ -1,0 +1,26 @@
+[TIMESTAMP] 1740442520 Tue Feb 25 01:15:20 2025
+[BUILDTIME] 6 (9)
+[SIZE] 9.53 MB, 126 files
+
+[DEP] autoconf
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[OPT] cyrus-sasl2
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gdbm
+[DEP] grep
+[DEP] gzip
+[DEP] libidn
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] ncurses
+[OPT] openssl
+[DEP] perl
+[DEP] sed
+[DEP] tar
+[DEP] zlib

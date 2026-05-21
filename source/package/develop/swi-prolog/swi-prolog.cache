@@ -1,0 +1,47 @@
+[TIMESTAMP] 1759865241 Tue Oct  7 21:27:21 2025
+[BUILDTIME] 135 (9)
+[SIZE] 33.83 MB, 2226 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] dmalloc
+[DEP] findutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] gmp
+[DEP] grep
+[DEP] gzip
+[DEP] libarchive
+[DEP] libedit
+[DEP] libice
+[DEP] libjpeg
+[DEP] libsm
+[DEP] libx11
+[DEP] libxcrypt
+[DEP] libxft
+[DEP] libxinerama
+[DEP] libxpm
+[DEP] libxrandr
+[DEP] libxrender
+[DEP] libxt
+[DEP] libyaml
+[DEP] linux-header
+[DEP] make
+[DEP] ncurses
+[OPT] openjdk
+[DEP] openssl
+[DEP] pcre2
+[DEP] pkgconfig
+[DEP] python
+[DEP] qt6base
+[DEP] readline
+[DEP] sed
+[DEP] tar
+[DEP] unixodbc
+[DEP] vulkan-headers
+[DEP] xorgproto
+[DEP] zlib

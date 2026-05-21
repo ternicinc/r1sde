@@ -1,0 +1,13 @@
+[TIMESTAMP] 1737667486 Thu Jan 23 22:24:46 2025
+[BUILDTIME] 2 (9)
+[SIZE] 94.19 MB, 2315 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] sed
+[DEP] tar

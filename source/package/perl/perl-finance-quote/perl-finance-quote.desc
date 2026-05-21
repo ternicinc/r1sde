@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-finance-quote/perl-finance-quote.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module Finance::Quote
+
+[T] Finance::Quote provides access to time-delayed stockquotes from a
+[T] number of sources. After you've installed the pacakage, try
+[T] 'perldoc Finance::Quote' for full information. Alternatively,
+[T] you can 'perldoc lib/Finance/Quote.pm' before the install.
+
+[U] https://www.cpan.org
+
+[A] Various Authors, see cpan.org
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/development
+
+[L] GPL
+[V] 1.69
+[P] X -----5---9 148.400
+
+[D] 40b89692ca06fc2e2ea0353e7588ea3af7373ec7d8008a2d19b81dac Finance-Quote-1.69.tar.gz https://cpan.metacpan.org/authors/id/B/BP/BPSCHUCK/

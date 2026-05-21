@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openvpn/openvpn.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A VPN daemon
+
+[T] OpenVPN is a robust and highly configurable VPN (Virtual Private Network)
+[T] daemon which can be used to securely link two or more private networks using
+[T] an encrypted tunnel over the internet.
+[T] So while OpenVPN supports standards which are consistent with this goal such
+[T] as SSL/TLS-based session authentication, RSA Certificates, X509 public key
+[T] infrastructure, and user-space tunneling of IP networks over TUN or TAP
+[T] virtual devices, it does not support IPSec at this time.
+
+[U] https://openvpn.net/
+
+[A] James Yonan <jim@yonan.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/server
+[F] CROSS
+
+[L] GPL
+[V] 2.7.4
+
+[D] 96f1ad7f8e8fccff88178e09b02b06deb2416b6e1b32a647e7d4b610 openvpn-2.7.4.tar.gz https://build.openvpn.net/downloads/releases/
+
+var_append confopt ' ' --enable-x509-alt-username
+pkginstalled iproute2 && var_append confopt ' ' --enable-iproute2
+pkginstalled lzo || var_append confopt ' ' --disable-lzo

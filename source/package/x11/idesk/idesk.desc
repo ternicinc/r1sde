@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/idesk/idesk.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A program that provides icons on an X11 desktop
+
+[T] iDesk gives users of minimal wm's icons on their desktop. The icon
+[T] graphics are either from a png or svg (vector) file and support some
+[T] eyecandy effects like transparency. Each icon can be confgured to run
+[T] one or more shell commands and the actions which run those commands are
+[T] completely configurable.
+
+[U] https://idesk.sourceforge.net/
+
+[A] Chris <nikon@sc.rr.com>
+[A] Bryn <curious@ihug.com.au>
+
+[M] Vlad Glagolev <stelzy@gmail.com>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 0.7.9
+
+[D] 6d3a2036459332a7e78c26472b5e8f9621dc0a6bdf6124e985976b52 idesk-0.7.9.tar.gz https://github.com/neagix/idesk/archive/v0.7.9/
+
+hook_add preconf 5 'autoreconf -fi'
+var_append GCC_WRAPPER_APPEND ' ' -I$root$(pkgprefix includedir libx11)
+var_append GCC_WRAPPER_APPEND ' ' -L$root$(pkgprefix libdir libx11)

@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-python/gnome-python.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Python interfaces to gnome-libs
+
+[T] gnome-python is a set of interfaces to gnome platform gnome libraries.
+
+[U] http://www.daa.com.au/~james/pygtk/
+
+[A] James Henstridge <james@daa.com.au>
+[A] Johan Dahlin <jdahlin@telia.com>
+[A] Matt Wilson <msw@redhat.com>
+
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/development extra/desktop/gnome
+
+[L] GPL
+[V] 2.28.1
+[P] X -----5---9 156.200
+
+[CV-URL] https://download.gnome.org/sources/gnome-python/cache.json
+[D] 5b9d1d18d62a3cfce34dd223e5c5ad5d25f49523d2df5963c4a682c8 gnome-python-2.28.1.tar.bz2 https://download.gnome.org/sources/gnome-python/2.28/
+
+. $base/package/*/*/gnome-conf.in
+runpysetup=0
+var_append confopt ' ' --disable-dependency-tracking

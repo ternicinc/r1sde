@@ -1,0 +1,29 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/isdn4k-utils/x11r7.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+--- isdn4k-utils-CVS-2005-10-28/xmonisdn/Imakefile.orig	2002-01-30 01:51:52.000000000 +0100
++++ isdn4k-utils-CVS-2005-10-28/xmonisdn/Imakefile	2005-10-31 14:15:25.000000000 +0100
+@@ -7,6 +7,9 @@
+            OBJS = xmonisdn.o Net.o
+         HEADERS = NetP.h Net.h
+ 
++         BINDIR = /usr/X11R7/bin
++         MANDIR = /usr/X11R7/man
++
+    INSTPGMFLAGS = -m 0755 -s
+ 
+ ComplexProgramTarget(xmonisdn)
+--- isdn4k-utils-CVS-2005-10-28/xisdnload/Imakefile.orig	1998-03-08 19:54:01.000000000 +0100
++++ isdn4k-utils-CVS-2005-10-28/xisdnload/Imakefile	2005-10-31 14:16:46.000000000 +0100
+@@ -23,6 +33,9 @@
+  OSMINORVERSION = OSMinorVersion
+       DEFINES = -DOSMAJORVERSION=$(OSMAJORVERSION) -DOSMINORVERSION=$(OSMINORVERSION) -DREGEX_NUMBER
+ 
++         BINDIR = /usr/X11R7/bin
++         MANDIR = /usr/X11R7/man
++
+ AllTarget(xisdnload)
+ NormalProgramTarget(xisdnload,$(OBJS),$(DEPLIBS),$(LOCAL_LIBRARIES),NullParameter)
+ 

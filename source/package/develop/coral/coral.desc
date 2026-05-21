@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/coral/coral.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A metamodeling toolkit
+
+[T] Coral is a tool and a development platform to create and transform
+[T] models and modeling languages. It can be used to edit UML models,
+[T] to develop editors for other modeling languages and to implement
+[T] MDA and QVT-like model transformations.
+
+[U] https://web.archive.org/web/20050207111503/http://mde.abo.fi/tools/Coral/
+
+[A] Ivan Porres <iporres@abo.fi>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] GPL
+[V] 0.8.1
+
+[D] cdab823f2224a09af3fcfa40691fc251e75b32ebeab6401cd8ed1adc coral-0.8.1.tar.gz https://prdownloads.sourceforge.net/sourceforge/coral/
+
+hook_add premake 5 'export PYTHONPATH=$PWD:$PYTHONPATH'

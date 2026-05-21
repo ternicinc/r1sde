@@ -1,0 +1,28 @@
+[TIMESTAMP] 1758196059 Thu Sep 18 13:47:39 2025
+[BUILDTIME] 6 (9)
+[SIZE] 0.35 MB, 37 files
+
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] bison
+[DEP] bluez
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] flex
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] grep
+[DEP] gtk+2
+[DEP] harfbuzz
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] pango
+[OPT] python2
+[DEP] sed
+[DEP] tar
+[DEP] xz

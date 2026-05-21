@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-video-effects/gnome-video-effects.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome gnome-video-effects package
+
+[T] Core Gnome gnome-video-effects package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+[F] CROSS
+
+[L] LGPL
+[V] 0.6.0
+
+[CV-URL] https://download.gnome.org/sources/gnome-video-effects/cache.json
+[D] 9c4347001ebd4e543d6105ab24ceacd8fe8af1f18a324c2060dabfe8 gnome-video-effects-0.6.0.tar.xz https://download.gnome.org/sources/gnome-video-effects/0.6/
+
+. $base/package/*/*/gnome-conf.in

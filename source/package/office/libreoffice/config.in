@@ -1,0 +1,30 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/libreoffice/config.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+if pkgcheck openoffice-org X; then
+	menu_begin MENU_PKG_OOO 'OpenOffice.org Package Options'
+
+	# Widgets
+	#
+	CFGTEMP_PKG_OOO_WIDGETS_LIST="none OOO_widgets"
+	pkgcheck gtk+2 X && var_append CFGTEMP_PKG_OOO_WIDGETS_LIST ' ' \
+		"gnome GTK_native_widgets"
+	pkgcheck arts X && var_append CFGTEMP_PKG_OOO_WIDGETS_LIST ' ' \
+		"kde KDE_native_widgets"
+
+	choice SDECFG_PKG_OOO_WIDGETS none $CFGTEMP_PKG_OOO_WIDGETS_LIST
+
+	# Icons
+	#
+	if pkgcheck 'gtk+|arts' X; then
+		comment 'Select (additional) icon sets.'
+#FIXME: download location		bool 'Bluecurve' SDECFG_PKG_OOO_ICONS_BLUECURVE 1
+		pkgcheck gtk+2 X &&	bool 'Gnome' SDECFG_PKG_OOO_ICONS_GNOME 1
+		pkgcheck arts X &&	bool 'KDE' SDECFG_PKG_OOO_ICONS_KDE 1
+	fi
+
+	menu_end
+fi

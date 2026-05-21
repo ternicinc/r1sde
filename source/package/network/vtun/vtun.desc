@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/vtun/vtun.desc
+[COPY] Copyright (C) 2011 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] VTun provides a method for creating Virtual Tunnels over TCP/IP networks
+
+[T] VTun provides a method for creating Virtual Tunnels over TCP/IP networks
+[T] and allows one to shape, compress, and encrypt traffic in those tunnels.
+[T] Supported types of tunnels are: PPP, IP, Ethernet and most other serial
+[T] protocols and programs.
+[T] VTun is easily and highly configurable: it can be used for various
+[T] network tasks like VPN, Mobile IP, Shaped Internet access, IP address
+[T] saving, etc. It is completely a user space implementation and does not
+[T] require modification to any kernel parts.
+
+[A] Maxim Krasnyansky <max_mk@yahoo.com>
+[M] Gerardo Di Iorio <arete74@gmail.com>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 3.0.4
+
+[D] 97dd86f9ca7e775b971191cde2ae9fb6dab16465192f56f08107c3e3 vtun-3.0.4.tar.gz https://prdownloads.sourceforge.net/sourceforge/vtun/

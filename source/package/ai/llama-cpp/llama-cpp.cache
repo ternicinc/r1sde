@@ -1,0 +1,33 @@
+[TIMESTAMP] 1775040268 Wed Apr  1 12:44:28 2026
+[BUILDTIME] 540 (9)
+[SIZE] 377.64 MB, 160 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[OPT] curl
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[OPT] hip-rocclr
+[OPT] hipblas
+[OPT] hipblas-common
+[OPT] hipcc
+[DEP] linux-header
+[DEP] make
+[OPT] opencl-headers
+[OPT] opencl-loader
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] python
+[OPT] rocblas
+[OPT] rocm-device-libs
+[OPT] rocm-llvm
+[DEP] sed
+[OPT] shaderc
+[DEP] tar
+[DEP] util-linux
+[OPT] vulkan-headers

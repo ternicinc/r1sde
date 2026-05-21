@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/testdisk/testdisk.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A partition recovery utility
+
+[T] TestDisk is a tool to check and undelete partitions. It works with the
+[T] following partitions: FAT12, FAT16, FAT32, Linux, Linux swap (version
+[T] 1 and 2), NTFS (Windows NT/W2K/2003), BeFS (BeOS), UFS (BSD), JFS, XFS,
+[T] and Netware. This package also includes fidentify and photorec.
+
+[U] https://www.cgsecurity.org/wiki/TestDisk
+
+[A] Grenier Christophe <grenier@cgsecurity.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+[F] CROSS
+
+[E] opt qt5base
+[E] opt ntfs-3g
+
+[L] GPL
+[V] 7.2
+
+[CV-URL] https://www.cgsecurity.org/wiki/TestDisk_Download
+[D] 3492a9bd6a1edbeb2997ad46c34f8a91c63e2b571d4c2158d44baf8e testdisk-7.2.tar.bz2 https://www.cgsecurity.org/

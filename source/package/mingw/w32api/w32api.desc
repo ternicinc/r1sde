@@ -1,0 +1,45 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/w32api/w32api.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Header and library interface definitions for win32 development
+
+[T] Mingw development header and library interface definitions for win32 development.
+
+[U] https://www.mingw.org/
+
+[A] Anders Norlander <anorland@telia.com>
+[A] MinGW Developers
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+
+[R] + x86 x86-64
+[K] + mingw
+
+[L] Free-to-use
+[V] 5.0.2
+[P] O 01-------9 100.300
+
+[D] ef02ed344240ec68d60162981539ff0f075912ad018f5861280dbb22 w32api-5.0.2-mingw32-src.tar.xz https://prdownloads.sourceforge.net/sourceforge/mingw/
+
+makeinstopt=
+
+if atstage toolchain; then
+	root="$sysroot"
+	makeopt=
+fi
+
+# this is an exception - don't to this in other non system packages!
+var_append flistroot ' ' mingw
+
+w32api_install() {
+	mkdir -p $root/mingw/{include,lib}
+
+	cp -rfv include/* $root/mingw/include/
+	cp -rfv lib/* $root/mingw/lib/
+}
+hook_add postmake 5 w32api_install

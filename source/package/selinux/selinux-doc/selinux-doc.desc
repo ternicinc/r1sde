@@ -1,0 +1,44 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/selinux-doc/selinux-doc.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] SELinux documentation
+
+[T] Security-enhanced Linux is a patch of the Linux® kernel and a number
+[T] of utilities with enhanced security functionality designed to add
+[T] mandatory access controls to Linux. The Security-enhanced Linux
+[T] kernel contains new architectural components originally developed to
+[T] improve the security of the Flask operating system. These
+[T] architectural components provide general support for the enforcement
+[T] of many kinds of mandatory access control policies, including those
+[T] based on the concepts of Type Enforcement®, Role-based Access Control,
+[T] and Multi-level Security.
+[T] This package contains build instructions, porting information, and a
+[T] CREDITS file for SELinux. Some of these files will be split up into
+[T] per-package files in the future, and other documentation will be added
+[T] to this package (e.g. an updated form of the Configuring the SELinux
+[T] Policy report).
+
+[A] NSA SElinux Team
+[M] Miguel Bolanos <miguel@geekpreview.org>
+
+[C] extra/security
+
+[L] GPL
+[V] 1.26
+[P] O
+
+[D] 721668482 selinux-doc-1.26.tgz http://www.nsa.gov/selinux/archives/
+
+createdocs=0
+
+main_selinux_doc() {
+  for x in module policy uavc; do
+  make -C $x all
+  cp -a $x $docdir
+  cp CREDITS PORTING README README.CONDITIONAL README.MLS $docdir
+  done
+}
+custmain="main_selinux_doc"

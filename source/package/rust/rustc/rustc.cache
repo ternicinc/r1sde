@@ -1,0 +1,22 @@
+[TIMESTAMP] 1774556435 Thu Mar 26 21:20:35 2026
+[BUILDTIME] 3250 (9)
+[SIZE] 756.19 MB, 203 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cargo
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[DEP] llvm
+[DEP] openssl
+[DEP] python
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] util-linux
+[DEP] xz

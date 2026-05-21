@@ -1,0 +1,23 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/tcsh/undef_tiocgltc.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+
+This patch is needed on Alpha AXP ...
+
+--- ./ed.h.orig	Sat Nov 25 09:42:59 2000
++++ ./ed.h	Sat Nov 25 09:43:03 2000
+@@ -37,6 +37,10 @@
+ #ifndef _h_ed
+ #define _h_ed
+ 
++#ifdef TIOCGLTC
++# undef TIOCGLTC
++#endif
++
+ #ifndef EXTERN
+ # define EXTERN extern
+ #endif

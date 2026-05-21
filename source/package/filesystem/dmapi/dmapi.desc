@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dmapi/dmapi.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Data Management API runtime environment
+
+[T] Files required by system software using the Data Management API (DMAPI).
+[T] This is used to implement the interface defined in the X/Open document:
+[T] Systems Management: Data Storage Managment (XDSM) API dated February 1997.
+[T] This interface is implemented by the libdm library.
+
+[U] http://oss.sgi.com/projects/xfs/
+
+[A] SGI XFS development team <linux-xfs@oss.sgi.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+[F] CROSS
+
+[L] GPL
+[V] 2.2.12
+
+[D] 44191afc8110bc995a65ce692b5c79e30a11a2b2106f916cf4a3122b dmapi-2.2.12.tar.gz ftp://oss.sgi.com/projects/xfs/cmd_tars/

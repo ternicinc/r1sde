@@ -1,0 +1,34 @@
+[TIMESTAMP] 1768844224 Mon Jan 19 18:37:04 2026
+[BUILDTIME] 25 (9)
+[SIZE] 1.82 MB, 50 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] libpng
+[DEP] libx11
+[DEP] libxcb
+[DEP] libxext
+[DEP] libxrender
+[DEP] linux-header
+[DEP] lzo
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pixman
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[OPT] xcb-util
+[DEP] xorgproto
+[DEP] xz
+[DEP] zlib

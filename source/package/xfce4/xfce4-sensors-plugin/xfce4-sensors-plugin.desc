@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfce4-sensors-plugin/xfce4-sensors-plugin.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A hardware sensors plugin for the Xfce panel
+
+[T] A hardware sensors plugin for the panel. For now, it only works on Linux
+[T] and requires libsensors.
+
+[U] https://www.xfce.org/
+
+[A] Fabian Nowak
+[M] Johan Boyé <linuxmasterjedi@free.fr>
+
+[C] extra/desktop/xfce
+
+[L] GPL
+[V] 1.5.0
+
+[D] aad289ec2383cc86755cb864a44260800dd8baf393952071a4e28942 xfce4-sensors-plugin-1.5.0.tar.xz https://archive.xfce.org/src/panel-plugins/xfce4-sensors-plugin/1.5/
+
+. $base/package/xfce4/*/xfce4-conf.in

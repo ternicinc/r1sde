@@ -1,0 +1,29 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/fam/hotfix-glibc.patch
+# Copyright (C) 2009 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -Naurp fam-2.7.0-orig/src/Interest.h fam-2.7.0/src/Interest.h
+--- fam-2.7.0-orig/src/Interest.h	2008-12-04 17:42:58.000000000 -0600
++++ fam-2.7.0/src/Interest.h	2008-12-04 17:45:12.000000000 -0600
+@@ -29,6 +29,7 @@
+ #include <netinet/in.h>  //  for in_addr
+ 
+ #include "Boolean.h"
++#include <cstdlib>
+ 
+ class Event;
+ class FileSystem;
+diff -Naurp fam-2.7.0-orig/include/BTree.h fam-2.7.0/include/BTree.h
+--- fam-2.7.0-orig/include/BTree.h	2003-01-19 22:22:30.000000000 -0600
++++ fam-2.7.0/include/BTree.h	2008-12-04 17:47:04.000000000 -0600
+@@ -24,6 +24,7 @@
+ #define BTree_included
+ 
+ #include "Boolean.h"
++#include <cstdlib>
+ 
+ //  This is an in-core B-Tree implementation.
+ //
+

@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gtkhtml/gtkhtml.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] HTML widget for GTK
+
+[T] This is GtkHTML, a lightweight HTML rendering/printing/editing engine.
+[T] It was originally based on KHTMLW, but is now being developed
+[T] independently of it.
+[T] A library containing functionality to display (and edit?) html formated
+[T] text. - It comes in the form of a gtk widget.
+
+[U] https://www.gnome.org
+
+[A] Ximian <hello@ximian.com>
+
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 4.10.0
+[P] X -----5---9 177.300
+
+[CV-URL] https://download.gnome.org/sources/gtkhtml/cache.json
+[D] dbe6d4af3ab3ec91fd983527a0734cd68de56e0d1c4153169932cf04 gtkhtml-4.10.0.tar.xz https://download.gnome.org/sources/gtkhtml/4.10/
+
+. $base/package/*/*/gnome-conf.in

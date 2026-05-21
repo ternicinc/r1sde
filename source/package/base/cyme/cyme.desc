@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cyme/cyme.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A modern cross-platform lsusb written in Rust
+
+[T] List system USB buses and devices; a lib and modern cross-platform lsusb
+[T] that attempts to maintain compatibility with, but also add new features.
+
+[U] https://github.com/tuna-f1sh/cyme
+
+[A] John Whittington <git@jbrengineering.co.uk>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+
+[L] GPL3
+[V] 2.3.0
+
+[D] 86c3fcb96f869629389e63df6e12a7c5c903c44dbb361e132f269443 cyme-2.3.0.tar.gz https://github.com/tuna-f1sh/cyme/archive/refs/tags/v2.3.0/

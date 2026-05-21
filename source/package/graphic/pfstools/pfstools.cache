@@ -1,0 +1,27 @@
+[TIMESTAMP] 1759875201 Wed Oct  8 00:13:21 2025
+[BUILDTIME] 40 (9)
+[SIZE] 2.56 MB, 127 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] fftw3
+[DEP] freeglut
+[DEP] gawk
+[OPT] glu
+[DEP] grep
+[DEP] gsl
+[DEP] gzip
+[DEP] libglvnd
+[DEP] libtiff
+[DEP] linux-header
+[DEP] make
+[OPT] octave
+[OPT] opencv
+[DEP] pkgconfig
+[OPT] qt5base
+[DEP] sed
+[DEP] tar
+[DEP] zlib

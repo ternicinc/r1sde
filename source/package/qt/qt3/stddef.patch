@@ -1,0 +1,27 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/qt3/stddef.patch
+# Copyright (C) 2014 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./src/tools/qvaluelist.h	2008-01-15 20:09:13.000000000 +0100
++++ ./src/tools/qvaluelist.h	2013-02-21 16:39:02.268736404 +0100
+@@ -45,6 +45,7 @@
+ #include "qtl.h"
+ #include "qshared.h"
+ #include "qdatastream.h"
++#include <stddef.h>
+ #endif // QT_H
+ 
+ #ifndef QT_NO_STL
+--- ./src/tools/qmap.h	2008-01-15 20:09:13.000000000 +0100
++++ ./src/tools/qmap.h	2013-02-21 16:39:23.858881970 +0100
+@@ -47,6 +47,7 @@
+ #include "qdatastream.h"
+ #include "qpair.h"
+ #include "qvaluelist.h"
++#include <stddef.h>
+ #endif // QT_H
+ 
+ #ifndef QT_NO_STL
+

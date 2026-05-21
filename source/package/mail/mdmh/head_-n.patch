@@ -1,0 +1,57 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/mdmh/head_-n.patch
+# Copyright (C) 2005 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./Makefile.orig	2005-12-16 14:43:56.000000000 -0300
++++ ./Makefile	2005-12-16 14:44:18.000000000 -0300
+@@ -11,8 +11,8 @@
+ mdbiff: \
+ warn-auto.sh mdbiff.sh conf-home conf-play
+ 	cat warn-auto.sh mdbiff.sh \
+-	| sed s}HOME}"`head -1 conf-home`"}g \
+-	| sed s}PLAY}"`head -1 conf-play`"}g \
++	| sed s}HOME}"`head -n 1 conf-home`"}g \
++	| sed s}PLAY}"`head -n 1 conf-play`"}g \
+ 	> mdbiff
+ 	chmod 755 mdbiff
+ 
+@@ -20,7 +20,7 @@
+ warn-auto.sh conf-ld
+ 	( cat warn-auto.sh; \
+ 	echo 'main="$$1"; shift'; \
+-	echo exec "`head -1 conf-ld`" \
++	echo exec "`head -n 1 conf-ld`" \
+ 	'-o "$$main" "$$main".o $${1+"$$@"}' \
+ 	) > load
+ 	chmod 755 load
+@@ -34,7 +34,7 @@
+ compile: \
+ warn-auto.sh conf-cc
+ 	( cat warn-auto.sh; \
+-	echo exec "`head -1 conf-cc`" '-c $${1+"$$@"}' \
++	echo exec "`head -n 1 conf-cc`" '-c $${1+"$$@"}' \
+ 	) > compile
+ 	chmod 755 compile
+ 
+@@ -57,7 +57,7 @@
+ 
+ auto_home.c: \
+ auto-str conf-home
+-	./auto-str auto_home `head -1 conf-home` > auto_home.c
++	./auto-str auto_home `head -n 1 conf-home` > auto_home.c
+ 
+ auto-str: \
+ load auto-str.o buffer.a error.a str.a
+@@ -91,8 +91,8 @@
+ systype: \
+ find-systype.sh conf-cc conf-ld trycpp.c x86cpuid.c
+ 	( cat warn-auto.sh; \
+-	echo CC=\'`head -1 conf-cc`\'; \
+-	echo LD=\'`head -1 conf-ld`\'; \
++	echo CC=\'`head -n 1 conf-cc`\'; \
++	echo LD=\'`head -n 1 conf-ld`\'; \
+ 	cat find-systype.sh; \
+ 	) | sh > systype
+ 

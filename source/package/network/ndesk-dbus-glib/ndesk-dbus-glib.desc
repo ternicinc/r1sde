@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ndesk-dbus-glib/ndesk-dbus-glib.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] D-Bus for .NET: GLib integration module
+
+[T] This code provides GLib main loop integration for Managed D-Bus.
+
+[U] http://www.ndesk.org/DBusSharp
+
+[A] Alp Toker <alp@atoker.com>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/network
+
+[L] MIT
+[V] 0.4.1
+[P] X -----5---9 300.110
+
+[D] e4808569e5c3d25066c441ad8ad32b4a80f7c801cd60730b8ae3cf5b ndesk-dbus-glib-0.4.1.tar.gz http://www.ndesk.org/archive/ndesk-dbus/

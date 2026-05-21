@@ -1,0 +1,30 @@
+[TIMESTAMP] 1746914077 Sat May 10 22:54:37 2025
+[BUILDTIME] 8 (9)
+[SIZE] 3.27 MB, 70 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[OPT] gdk-pixbuf
+[OPT] glib
+[DEP] grep
+[DEP] libptytty
+[DEP] libx11
+[DEP] libxext
+[DEP] libxft
+[DEP] libxmu
+[DEP] libxrender
+[DEP] linux-header
+[DEP] make
+[DEP] ncurses
+[DEP] perl
+[DEP] sed
+[OPT] startup-notification
+[DEP] tar
+[DEP] xorgproto

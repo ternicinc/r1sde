@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kpat/kpat.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A selection of solitaire card games
+
+[T] KPat (aka KPatience) is a relaxing card sorting game. To win the game a
+[T] player has to arrange a single deck of cards in certain order amongst each
+[T] other.
+
+[U] https://apps.kde.org/kpat/
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[E] add six
+
+[L] GPL
+[V] 26.04.1
+
+[CV-GROUP] kde-gear
+[D] 639fe6c961f5cc5859e66f8020b8dcd27d1d914ffae20dc532965394 kpat-26.04.1.tar.xz https://download.kde.org/stable/release-service/26.04.1/src/
+
+. $base/package/*/*/kde-conf.in
+
+pkginstalled kdoctools docbook-xml docbook-xsl || var_append cmakeopt ' ' -DBUILD_DOC=OFF

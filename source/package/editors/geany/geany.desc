@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/geany/geany.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Geany is a text editor
+
+[T] Geany is a small and lightweight integrated development
+[T] environment. It was developed to provide a small and fast IDE, which
+[T] only a few dependencies from other packages. Another goal was to
+[T] be as independent as possible from a special Desktop Environment
+[T] like KDE or GNOME. So it is using only the GTK2 toolkit and
+[T] therefore you need only the GTK2 runtime libraries to run Geany.
+
+[U] https://www.geany.org/
+
+[A] Enrico Troeger <enrico.troeger@uvena.de>
+[M] LMJ <linuxmasterjedi@free.fr>
+
+[C] extra/development
+[F] CROSS
+
+[E] opt doxygen
+[E] opt gobject-introspection
+
+[L] GPL
+[V] 2.1
+[P] X -----5---9 127.800
+
+[CV-URL] https://www.geany.org/download/releases/
+[D] f8337f416c5f7c09bf6f2d0cd0fbd3b0320843f5cee65c064089ffb5 geany-2.1.tar.gz https://download.geany.org/geany-2.1.tar.gz
+
+. $base/package/*/*/gnome-conf.in

@@ -1,0 +1,38 @@
+[TIMESTAMP] 1779346880 Thu May 21 09:01:20 2026
+[BUILDTIME] 18 (9)
+[SIZE] 2.10 MB, 222 files
+
+[DEP] alsa-lib
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] docutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[DEP] glib
+[DEP] grep
+[DEP] gtk+
+[DEP] gtk-layer-shell
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] json-c
+[OPT] libmpdclient
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[DEP] pipewire
+[DEP] pulseaudio
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] wayland
+[DEP] wayland-protocols
+[DEP] xkbcommon

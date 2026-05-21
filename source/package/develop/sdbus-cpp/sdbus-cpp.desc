@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sdbus-cpp/sdbus-cpp.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] High-level C++ D-Bus library on top of sd-bus
+
+[T] sdbus-c++ is a high-level C++ D-Bus library designed to provide expressive,
+[T] easy-to-use API in modern C++. It adds another layer of abstraction on top
+[T] of sd-bus. Even though sdbus-c++ uses sd-bus library, it is not necessarily
+[T] constrained to systemd and can perfectly be used in non-systemd
+[T] environments as well.
+
+[U] https://github.com/Kistler-Group/sdbus-cpp
+
+[A] sdbus-cpp Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+
+[E] opt doxygen
+
+[L] LGPL
+[V] 2.3.1
+[P] X -----5---9 274.000
+
+[D] 6e4c5a2432e2839156e9b47ccf1c3567e7171d343f77757fbe23ee80 sdbus-cpp-2.3.1.tar.gz https://github.com/Kistler-Group/sdbus-cpp/archive/refs/tags/v2.3.1/

@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/librfid/librfid.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Low-level RFID access library
+
+[T] This library intends to provide a reader- and (as much as possible)
+[T] PICC / tag independent API for RFID applications.
+
+[U] https://www.openmrtd.org
+
+[A] Harald Welte <laforge@gnumonks.org>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/rfid
+[F] CROSS
+
+[L] GPL
+[V] 0.1.0
+
+[D] 0bed5dcf4b12507cff6d5537fcbc568bd26a5b9ccade1096b4440a86 librfid-0.1.0.tar.bz2 https://mirror2.openwrt.org/sources/
+
+var_append confopt ' ' --with-ccid

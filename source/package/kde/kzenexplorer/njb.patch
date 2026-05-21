@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/kzenexplorer/njb.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+diff -ruN kzenexplorer-0.6.orig/src/kzencommandthread.cpp kzenexplorer-0.6/src/kzencommandthread.cpp
+--- kzenexplorer-0.6.orig/src/kzencommandthread.cpp	2005-07-03 17:01:48.000000000 +0000
++++ kzenexplorer-0.6/src/kzencommandthread.cpp	2005-08-05 01:37:23.000000000 +0000
+@@ -44,8 +44,6 @@
+ 
+ #include "kzencommandthread.h"
+ 
+-static njb_t * fNJB = NULL;
+-
+ u_int64_t KZenCommandThread::fBytesSent = 0;
+ u_int64_t KZenCommandThread::fBytesTotal = 0;
+ 

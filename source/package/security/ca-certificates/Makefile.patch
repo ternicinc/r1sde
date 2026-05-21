@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/ca-certificates/Makefile.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -urN ca-certificates-20050804.orig/Makefile ca-certificates-20050804/Makefile
+--- ca-certificates-20050804.orig/Makefile	2005-05-17 17:50:40.000000000 +0200
++++ ca-certificates-20050804/Makefile	2006-02-27 13:29:44.000000000 +0100
+@@ -18,7 +18,7 @@
+ 
+ install:
+ 	for dir in $(SUBDIRS); do \
+-	  mkdir $(DESTDIR)/$(CERTSDIR)/$$dir; \
++	  mkdir -p $(DESTDIR)/$(CERTSDIR)/$$dir; \
+ 	  $(MAKE) -C $$dir install CERTSDIR=$(DESTDIR)/$(CERTSDIR)/$$dir; \
+ 	done
+ 	for dir in sbin; do \

@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kdevelop/kdevelop.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Integrated Development Environment for C++/C
+
+[T] KDevelop is a Free and Open Source integrated development environment (IDE).
+
+[U] https://www.kdevelop.org
+
+[A] KDevelop Team <kdevelop-team@kdevelop.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 26.04.1
+[P] X -----5---9 290.000
+
+[CV-GROUP] kde-gear
+[D] b1b047a2aea0471439a42914d1f2ae97fc50f62c094f58895f8eda9c kdevelop-v26.04.1.tar.bz2 https://invent.kde.org/kdevelop/kdevelop/-/archive/v26.04.1/
+
+. $base/package/*/*/kde-conf.in
+var_append cmakeopt ' ' -DQT_MAJOR_VERSION=6

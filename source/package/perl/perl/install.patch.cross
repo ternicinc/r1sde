@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/perl/install.patch.cross
+# Copyright (C) 2018 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- perl-5.28.0/Makefile.SH.vanilla	2018-11-15 11:43:01.571550237 +0000
++++ perl-5.28.0/Makefile.SH	2018-11-15 11:43:38.359549684 +0000
+@@ -1115,7 +1115,7 @@
+ # But also this ensures that all extensions are built before we try to scan
+ # them, which picks up Devel::PPPort's documentation.
+ pod/perltoc.pod: $(perltoc_pod_prereqs) $(PERL_EXE) $(ext) pod/buildtoc
+-	$(RUN_PERL) -f pod/buildtoc -q
++	#$(MINIPERL) -f pod/buildtoc -q
+ 
+ pod/perlapi.pod: pod/perlintern.pod
+ 

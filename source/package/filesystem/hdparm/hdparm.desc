@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/hdparm/hdparm.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Get/set hard disk parameters
+
+[T] Shell utility to access/tune ioctl features of the Linux IDE driver
+[T] and IDE drives.
+
+[U] https://sourceforge.net/projects/hdparm/
+
+[A] Mark Lord <mlord@pobox.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS DIETLIBC
+
+[L] BSD
+[V] 9.65
+
+[D] ed6372a44b8c836da829c2cc6ba71c90247243c8785e0a0988d26cea hdparm-9.65.tar.gz https://sourceforge.net/projects/hdparm/files/hdparm/

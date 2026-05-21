@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-input-dmc/xf86-input-dmc.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Xorg driver for DMC FIT10 controller
+
+[T] This driver supports DMC FIT10 controller input devices.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.1.2
+[P] O
+
+[D] 4f80f4e68890b3d24cb3e1ffd506a1a44e4715dbd84afc2a3c2139ef xf86-input-dmc-1.1.2.tar.bz2 http://xorg.freedesktop.org/releases/individual/driver/
+
+. package/*/*/modular-x-conf.in

@@ -1,0 +1,21 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-gtk2-ex-formfactory/perl-gtk2-ex-formfactory.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Makes building complex GUI's easy
+
+[T] With Gtk2::Ex::FormFactory you can build a GUI which consistently
+[T] represents the data of your application.
+
+[A] Jorn Reder <joern@zyn.de>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 0.67
+[P] X -----5---9 176.000
+
+[D] 37356f7b1e07b15f37e8da7c6bc66e2f8eca656f7c6fc5d639bba0c5 Gtk2-Ex-FormFactory-0.67.tar.gz http://search.cpan.org/CPAN/authors/id/J/JR/JRED/

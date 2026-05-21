@@ -1,0 +1,16 @@
+[TIMESTAMP] 1754760553 Sat Aug  9 19:29:13 2025
+[BUILDTIME] 4 (5)
+[SIZE] 2.48 MB, 29 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] make
+[DEP] mono
+[DEP] sed
+[DEP] tar
+[DEP] tzdata

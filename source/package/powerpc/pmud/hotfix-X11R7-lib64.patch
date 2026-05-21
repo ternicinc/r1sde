@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/pmud/hotfix-X11R7-lib64.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- pmud-0.10/Makefile.vanilla	2006-03-29 08:28:46.000000000 +0200
++++ pmud-0.10/Makefile	2006-03-29 08:29:17.000000000 +0200
+@@ -39,7 +39,7 @@
+ 	$(CC) $(CFLAGS) -o fblevel fblevel.c
+ 
+ xmouse: xmouse.c
+-	$(CC) $(CLAGS) -o xmouse xmouse.c -L/usr/X11R6/lib -lX11
++	$(CC) $(CLAGS) -o xmouse xmouse.c  `pkg-config x11 --libs`
+ 
+ tcp.o: tcp.c tcp.h
+ 	$(CC) $(CFLAGS) -c tcp.c

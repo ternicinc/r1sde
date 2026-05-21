@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/plocate/plocate.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Alternative to locate, faster and compatible with mlocate's database
+
+[T] plocate is a locate(1) based on posting lists, completely replacing
+[T] mlocate with a much faster (and smaller) index. It is suitable as a
+[T] default locate on your system.
+[T] It does nearly all I/O asynchronously using io_uring if available,
+[T] which reduces the impact of seek latency on systems without SSDs.
+
+[U] https://plocate.sesse.net/
+
+[A] Steinar H. Gunderson <steinar+plocate@gunderson.no>
+[M] NoTag <notag@t2sde.org>
+
+[C] base/tool
+[F] CROSS
+
+[L] GPL
+[V] 1.1.24
+
+[D] 72ec71f1f76cf5b573722406f9be0ef6ef85c4149fa35ca75642dfd9 plocate-1.1.24.tar.gz https://plocate.sesse.net/download/
+
+var_append mesonopt ' ' '-Dinstall_systemd=false -Dlocategroup=root -Dupdatedb_progname=pupdatedb'

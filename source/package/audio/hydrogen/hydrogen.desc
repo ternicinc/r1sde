@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/hydrogen/hydrogen.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A drum machine/rhythm programmer
+
+[T] Hydrogen is an advanced drum machine for GNU/Linux.
+[T] It's main goal is to bring professional yet simple and
+[T] intuitive pattern-based drum programming.
+
+[U] http://www.hydrogen-music.org/
+
+[A] Alessandro Cominu <comix@users.sourceforge.net>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 1.2.6
+
+[D] 34a1460788003fa7b111dac2944c4133d672a6697a042e642f890073 hydrogen-1.2.6.tar.gz https://prdownloads.sourceforge.net/sourceforge/hydrogen/
+
+# plugins have hardcoded paths, string replacement doesn't works since libdir
+# is reset, same thing for install wrapper
+var_append makeinstopt ' ' LIBDIR=$root$libdir

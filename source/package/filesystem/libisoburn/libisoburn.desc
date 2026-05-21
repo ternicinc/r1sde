@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libisoburn/libisoburn.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library and an application for multi-session ISO 9660 filesystems
+
+[T] Libisoburn coordinates libburn and libisofs to enable creation and
+[T] manipulation of ISO-9660 filesystems on CD, DVD, BD, in disk files,
+[T] or into pipes. It comes with a command line application named xorriso,
+[T] which goes quite beyond the limitations of mkisofs.
+
+[U] https://libburnia-project.org/
+
+[A] Vreixo Formoso
+[A] Thomas Schmitt
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+[F] CROSS
+
+[L] GPL
+[V] 1.5.8
+
+[D] 73cd0e7b0c981de96baf6ef7697e2d0054f44e8cd3dadadc3658972e libisoburn-1.5.8.tar.gz https://files.libburnia-project.org/releases/
+
+var_append confopt ' ' --disable-ldconfig-at-install

@@ -1,0 +1,47 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/stlport/stlport.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A superior implementation of the C++ Standard Template Library (STL)
+
+[T] The ANSI/ISO C++ specifcation includes a standard
+[T] C++ library, also known as the STL. GCC by default
+[T] comes with an implementation that does not comply
+[T] with this standard, but instead partly implements
+[T] an older version. STLport is freely available
+[T] version, based on the SGI STL implementation. It
+[T] is fully-compliant, supported, and very fast.
+[T] Includes special debugging facilities, and
+[T] interesting and useful extensions to the standard.
+
+[U] http://www.stlport.org/
+
+[A] STLport Consulting
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/development
+
+[L] OpenSource
+#FIXME: Licence, what type of licence is it? BSD?
+[V] 5.2.1
+
+[D] 444d590cf7cd5ac0033b6fe123b72579fc06afef8acd65affcefa6cb STLport-5.2.1.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/stlport/
+
+stlport_main() {
+	ln -s /usr/include/c++/* .
+
+	cd build/lib
+	
+	makefile=gcc.mak
+	#make -f ${makefile} prepare
+	make -f ${makefile} all
+
+	eval "make -f ${makefile} INSTALLDIR=$root/$prefix install"
+}
+
+runmake=0
+hook_add postmake 5 stlport_main
+
+var_append GCC_WRAPPER_INSERT ' ' -I/usr/include/c++/4.1.0

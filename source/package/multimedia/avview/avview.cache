@@ -1,0 +1,35 @@
+
+[TIMESTAMP] 1171285746 Mon Feb 12 13:09:06 2007
+[BUILDTIME] 10 (5) ERROR
+[SIZE] 0.01 MB, 6 files
+
+[DEP] alsa-lib
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] ffmpeg
+[DEP] findutils
+[DEP] grep
+[OPT] lame
+[DEP] libice
+[DEP] libogg
+[DEP] libpng
+[DEP] libvorbis
+[DEP] libx11
+[DEP] libxau
+[DEP] libxcb
+[DEP] libxdmcp
+[DEP] libxext
+[DEP] libxinerama
+[DEP] libxv
+[DEP] libzvbi
+[DEP] linux-header
+[DEP] lirc
+[DEP] make
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] tcl
+[DEP] tk
+[DEP] xorgproto
+[DEP] zlib

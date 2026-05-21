@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sysfsutils/sysfsutils.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] SysFS utilities
+
+[T] These are a set of utilites built upon sysfs, a new virtual
+[T] filesystem in Linux kernel versions 2.5+ that exposes a system's
+[T] device tree.
+
+[U] https://linux-diag.sourceforge.net/Sysfsutils.html
+
+[A] Ananth Mavinakayanahalli <ananth@in.ibm.com>
+[A] Daniel Stekloff <dsteklof@us.ibm.com>
+[A] Nitin Vashisth <vnitin@in.ibm.com>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] base/system extra/filesystem
+
+[F] CROSS FPIC
+
+[L] GPL
+[V] 2.1.1
+[P] X -----5---9 105.000
+
+[D] 22b2df7eaf104102ccaf2fa98a7c4b9720a568b177c2d31b9e37efd1 sysfsutils-2.1.1.tar.gz https://github.com/linux-ras/sysfsutils/archive/v2.1.1/
+
+autogen=2
+
+[ $prefix_auto = 1 ] && prefix= && set_confopt
+[ "$SDECFG_LIBC" != "glibc" ] && hook_add preconf 5 "echo 'ac_cv_func_malloc_0_nonnull=yes' >> config.cache"

@@ -1,0 +1,24 @@
+[TIMESTAMP] 1746971762 Sun May 11 15:56:02 2025
+[BUILDTIME] 3 (9)
+[SIZE] 1.22 MB, 200 files
+
+[DEP] bash
+[DEP] bzip2
+[DEP] coreutils
+[DEP] dbus
+[DEP] dbus-glib
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[OPT] glib
+[DEP] grep
+[DEP] intltool
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] perl-xml-parser
+[DEP] pkgconfig
+[DEP] polkit
+[DEP] sed
+[DEP] tar

@@ -1,0 +1,32 @@
+[TIMESTAMP] 1773908793 Thu Mar 19 09:26:33 2026
+[BUILDTIME] 25 (9)
+[SIZE] 6.07 MB, 42 files
+
+[DEP] 00-dirtree
+[OPT] asciidoc
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] cython
+[DEP] diffutils
+[OPT] e2fsprogs
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[DEP] lzo
+[DEP] make
+[DEP] openssl
+[DEP] pkgconfig
+[OPT] python
+[OPT] reiserfsprogs
+[DEP] sed
+[OPT] setuptools
+[OPT] sphinx
+[DEP] tar
+[DEP] udev
+[DEP] util-linux
+[DEP] xz
+[DEP] zlib
+[DEP] zstd

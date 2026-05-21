@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/acdctl/hotfix-install.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- acdctl-1.1/Makefile.vanilla	2005-08-15 14:04:23.000000000 +0200
++++ acdctl-1.1/Makefile	2007-05-28 20:01:42.000000000 +0200
+@@ -34,7 +34,8 @@
+ 	$(RM) acdctl *.o
+ 
++prefix = /usr
+ install:acdctl
+-	install -o root -g root -m 755 acdctl /usr/local/sbin
++	install -o root -g root -m 755 acdctl $(DESTDIR)$(prefix)/sbin
+ 
+ test:acdctl
+ 	./acdctl

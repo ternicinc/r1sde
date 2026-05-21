@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gtkwave/gtkwave.desc
+[COPY] Copyright (C) 2018 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A fully featured GTK+ based wave viewer
+
+[T] GTKWave is a fully featured GTK+ based wave viewerm which reads LXT,
+[T] LXT2, VZT, FST, and GHW files as well as standard Verilog VCD/EVCD
+[T] files and allows their viewing.
+
+[U] https://gtkwave.sourceforge.net/
+
+[A] Anthony Bybell <bybell@rocketmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] GPL
+[V] 3.3.127
+
+[D] bae4ecd632f8a70dd9be30bc241373a6142b0299d8915c842865de18 gtkwave-3.3.127.tar.gz https://gtkwave.sourceforge.net/

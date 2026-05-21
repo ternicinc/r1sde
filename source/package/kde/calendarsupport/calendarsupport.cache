@@ -1,0 +1,43 @@
+[TIMESTAMP] 1770549322 Sun Feb  8 12:15:22 2026
+[BUILDTIME] 80 (9)
+[SIZE] 3.65 MB, 148 files
+
+[DEP] akonadi
+[DEP] akonadi-calendar
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] cups
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] freetype
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] kcalendarcore
+[DEP] kcalutils
+[DEP] kcodecs
+[DEP] kcompletion
+[DEP] kconfig
+[DEP] kcoreaddons
+[DEP] kguiaddons
+[DEP] kholidays
+[DEP] ki18n
+[DEP] kidentitymanagement
+[DEP] kio
+[DEP] kjobwidgets
+[DEP] kmime
+[DEP] kservice
+[DEP] kwidgetsaddons
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] procps
+[DEP] python
+[DEP] qt6base
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] vulkan-headers
+[DEP] xz

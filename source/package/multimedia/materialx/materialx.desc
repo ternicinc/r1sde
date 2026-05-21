@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/materialx/materialx.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Open standard for representing rich material
+
+[T] MaterialX is an open standard for representing rich material and
+[T] look-development content in computer graphics, enabling its
+[T] platform-independent description and exchange across applications and
+[T] renderers.
+
+[U] https://materialx.org/
+
+[A] MaterialX Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] APL
+[V] 1.39.4
+
+[D] 3df1745042333c7316accedd10389a182bebb0dba2e4d5719a5a07a0 materialx-1.39.4.tar.gz git+https://github.com/AcademySoftwareFoundation/MaterialX.git v1.39.4
+
+runpysetup=0 rungpepinstall=0
+prefix=/opt/materialx
+
+var_append GCC_WRAPPER_INSERT ' ' "-L$root$(pkgprefix libdir libx11)"
+[ "$SDECFG_STATIC" = 1 ] || var_append cmakeopt ' ' -DBUILD_SHARED_LIBS=ON
+var_append cmakeopt ' ' '-DMATERIALX_BUILD_VIEWER=ON -DMATERIALX_BUILD_GRAPH_EDITOR=ON'
+pkginstalled python && var_append cmakeopt ' ' -DMATERIALX_BUILD_PYTHON=ON
+pkginstalled doxygen && var_append cmakeopt ' ' -DMATERIALX_BUILD_DOCS=ON

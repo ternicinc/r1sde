@@ -1,0 +1,8 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/couchdb/postsysfiles.in
+# Copyright (C) 2010 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+safe_groupadd couchdb 69
+safe_useradd  couchdb 69 69 "couchdb" /var/lib/couchdb /bin/bash "*"

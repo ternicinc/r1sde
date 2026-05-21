@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/unixodbc/unixodbc.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The definitive standard for ODBC on non MS Windows platforms
+
+[T] The unixODBC project provides Unix applications with the same ODBC 3.51
+[T] API and facilities available under Windows. It provides a Driver Manager
+[T] that supports the full ODBC API and performs the ODBC 3 to ODBC 2
+[T] translations with UNICODE to ANSI conversion. It also includes a set of
+[T] graphical utilities that allow users to specify connections to DBMSes to
+[T] be used by applications, a collection of ODBC drivers including a simple
+[T] text based driver, an NNTP driver, a Postgres driver and others, and a
+[T] selection of templates and libraries that to aid in the construction of
+[T] ODBC drivers. It works with MySQL, Postgres, StarOffice/OpenOffice,
+[T] Applixware, iHTML, PHP, Perl DBD::ODBC, and many other applications and
+[T] drivers. Connection pooling is also provided to increase performance with
+[T] applications such as PHP.
+
+[U] https://www.unixodbc.org/
+
+[A] Nick Gorham <gorham@easysoft.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/database
+[F] CROSS
+
+[L] LGPL
+[V] 2.3.14
+[P] X -----5---9 158.290
+
+[D] e9802d595391603242091303f670da3d07aa98adcdbd7c1dd0720a03 unixODBC-2.3.14.tar.gz https://www.unixodbc.org/
+
+var_append confopt ' ' --enable-gui=no

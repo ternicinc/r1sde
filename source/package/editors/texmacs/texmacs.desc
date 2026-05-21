@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/texmacs/texmacs.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A structured "wysiwyg" technical text editor
+
+[T] GNU TeXmacs is a free scientific text editor, which was inspired
+[T] by both TeX and GNU Emacs. The editor allows you to write structured
+[T] documents via a "wysiwyg" and user friendly interface. The program
+[T] implements high quality typesetting algorithms and TeX fonts. It is
+[T] also possible to use TeXmacs as an interface to computer algebra
+[T] systems. Finally, TeXmacs supports the Guile/Scheme extension
+[T] language, which makes it possible to adapt the user interface to
+[T] specific needs, and even to extend the editor.
+
+[U] https://www.texmacs.org/
+
+[A] Joris van der Hoeven
+[A] (for more information: contact@texmacs.org)
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/office
+
+[L] GPL
+[V] 2.1.4
+
+[D] 883a911d479a079afddcc5d6698a12850afaa0f61ee6d951b4e8b5dd TeXmacs-2.1.4-src.tar.gz https://www.texmacs.org/Download/ftp/tmftp/source/

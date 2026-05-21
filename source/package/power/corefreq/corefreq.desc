@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/corefreq/corefreq.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] CPU monitoring and tuning software designed for 64-bit processors
+
+[T] CPU monitoring and tuning software designed for 64-bit processors.
+
+[U] https://github.com/cyring/CoreFreq
+
+[A] cyring
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS NO-PIE
+[R] + arm64 x86-64
+
+[L] GPL
+[V] 2.1.1
+
+[D] c33f50042e31b9b1a8bf9f852ba0bd6a74958d38aa2960f37f0a9f8b CoreFreq-2.1.1.tar.gz https://github.com/cyring/CoreFreq/archive/2.1.1/
+
+var_append makeopt ' ' 'corefreq-cli corefreqd'
+var_append makeinstopt ' ' PREFIX=$root/$prefix

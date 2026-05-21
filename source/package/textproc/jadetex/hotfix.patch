@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/jadetex/hotfix.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -Nur jadetex-3.13-orig/Makefile jadetex-3.13/Makefile
+--- jadetex-3.13-orig/Makefile	2002-01-07 13:02:14.000000000 +0000
++++ jadetex-3.13/Makefile	2006-01-27 13:13:03.079847000 +0000
+@@ -4,7 +4,7 @@
+ 	tex jadetex.ins
+ 
+ jadetex.fmt: basic
+-	tex -ini -progname=jadetex "&latex" jadetex.ini
++	latex -ini -progname=jadetex "&latex" jadetex.ini
+ 
+ pdfjadetex.fmt: basic
+ 	pdftex -ini -progname=pdfjadetex "&pdflatex" pdfjadetex.ini

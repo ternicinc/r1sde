@@ -1,0 +1,31 @@
+[TIMESTAMP] 1746615574 Wed May  7 12:59:34 2025
+[BUILDTIME] 5600 (9)
+[SIZE] 346.38 MB, 7 files
+
+[DEP] alsa-lib
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] fontconfig
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libglvnd
+[DEP] libsdl2
+[DEP] libsdl2_ttf
+[DEP] libx11
+[DEP] libxcb
+[DEP] libxi
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] pulseaudio
+[DEP] python
+[DEP] qt5base
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

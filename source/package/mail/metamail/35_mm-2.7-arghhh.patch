@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/metamail/35_mm-2.7-arghhh.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- mm2.7/src/bin/showexternal~	Mon Jun 22 10:55:36 1998
++++ mm2.7/src/bin/showexternal	Tue Jun 23 21:16:04 1998
+@@ -215,7 +215,7 @@
+ 	    exit -1
+ 	endif
+ 	echo Subject: Automated Mail Server Request > "$NEWNAME"
+-	echo To: ${server} >> "$NEWNAME"
++	echo To: "$server" >> "$NEWNAME"
+ 	echo "" >> "$NEWNAME"
+ 	sed -e 1,/^\$/d < $bodyfile >> "$NEWNAME"
+ 	echo "" >> "$NEWNAME"

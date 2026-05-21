@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/setools/setools.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] SELinux Tools
+
+[T] Security-enhanced Linux is a patch of the Linux® kernel and a number
+[T] of utilities with enhanced security functionality designed to add
+[T] mandatory access controls to Linux. The Security-enhanced Linux
+[T] kernel contains new architectural components originally developed to
+[T] improve the security of the Flask operating system. These
+[T] architectural components provide general support for the enforcement
+[T] of many kinds of mandatory access control policies, including those
+[T] based on the concepts of Type Enforcement®, Role-based Access
+[T] Control, and Multi-level Security.
+
+[A] Tresys Technology, LLC <selinux@tresys.com>
+[M] Miguel Bolanos <miguel@geekpreview.org>
+
+[C] extra/security
+[E] add networkx
+[E] add pygraphviz
+
+[L] GPL
+[V] 4.6.0
+[P] O
+
+[D] fde5d6456cf4e8b8f53e096ef4dbf4c6731719073334763f8707a740 setools-4.6.0.tar.bz2 https://github.com/SELinuxProject/setools/releases/download/4.6.0/

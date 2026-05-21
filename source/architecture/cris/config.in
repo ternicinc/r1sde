@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/cris/config.in
+# Copyright (C) 2004 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+#Description: CRIS (Axis)
+
+#	default		"No special optimization"	\
+#	v3		"Optimized for v3 ETRAX 4"	\
+#	v8		"Optimized for v8 ETRAX 100"	\
+choice SDECFG_CRIS_OPT v10 \
+	v10		"Optimized for v10 ETRAX 100 LX"
+
+if [ $SDECFG_CRIS_OPT != default ]; then
+	SDECFG_ID="$SDECFG_ID-$SDECFG_CRIS_OPT"
+fi

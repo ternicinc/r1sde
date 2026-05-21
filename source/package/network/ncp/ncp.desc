@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ncp/ncp.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A fast file copy tool for LANs
+
+[T] Ncp is an utility for copying files in a LAN. It has absolutely no
+[T] security or integrity checking, no throttling, no features, except
+[T] one: you don't have to type the coordinates of your peer. It works
+[T] with IPv6, too! The files are copied with tar over TCP.
+
+[U] https://www.fefe.de/ncp/ ncp Homepage
+
+[A] Felix von Leitner <felix-ncp@fefe.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] OpenSource
+[V] 1.2.4
+
+[D] 87c03d3a2fb51fb1981bb51f8f821273104b8e095392442c16403205 ncp-1.2.4.tar.bz2 http://dl.fefe.de/
+
+var_append makeopt ' ' "DIET= DEBUG=no"
+var_append makeinstopt ' ' PREFIX=$root/$prefix
+var_append GCC_WRAPPER_APPEND ' ' "-I$root/$(pkgprefix includedir libowfat)/libowfat"

@@ -1,0 +1,21 @@
+[TIMESTAMP] 1737723112 Fri Jan 24 13:51:52 2025
+[BUILDTIME] 3 (9)
+[SIZE] 0.32 MB, 18 files
+
+[DEP] bash
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] perl-extutils-depends
+[DEP] perl-extutils-pkgconfig
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar

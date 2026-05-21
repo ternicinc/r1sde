@@ -1,0 +1,21 @@
+[TIMESTAMP] 1777992740 Tue May  5 16:52:20 2026
+[BUILDTIME] 6 (9)
+[SIZE] 0.14 MB, 17 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] file
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] libimobiledevice-glue
+[DEP] libplist
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

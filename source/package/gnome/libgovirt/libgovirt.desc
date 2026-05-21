@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libgovirt/libgovirt.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GObject wrapper for the oVirt REST API
+
+[T] GoVirt is a GObject wrapper for the oVirt REST API.
+
+[U] https://gitlab.gnome.org/GNOME/libgovirt/
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/base extra/desktop/gnome
+
+[L] LGPL
+[V] 0.3.11
+[P] X -----5---9 210.500
+
+[D] 7acaa02c3958c2031c4046f99cd69b1f3f50c2699654d42f67c0beaf libgovirt-v0.3.11.tar.bz2 https://gitlab.gnome.org/GNOME/libgovirt/-/archive/v0.3.11/
+
+. $base/package/*/*/gnome-conf.in

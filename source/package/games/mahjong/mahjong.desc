@@ -1,0 +1,41 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mahjong/mahjong.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A chinese board game
+
+[T] This is a set of three programs which provide a networked Mah Jong
+[T] program, together with a computer player. Thus the game can be played
+[T] by four humans, by a human and three computer players, or any other
+[T] combination. There is a server program, which handles the game - only
+[T] one game, since I'm not trying to compete with Yahoo! and friends -, an
+[T] X client to allow humans to play naturally, and a computer player. The
+[T] version of Mah Jong is that generally called Chinese Classical. Of
+[T] course, there are many variants within this; I intend to accommodate
+[T] most of the more interesting variants via options, but this is future
+[T] work. In the longer term, I might also be interested in adding Hong Kong
+[T] and Japanese versions. I'm not interested in adding American versions,
+[T] though somebody else might be.
+
+[U] https://www.stevens-bradfield.com/MahJong/
+
+[A] J. C. Bradfield <mahjong@stevens-bradfield.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+#[C] extra/game/board
+
+[L] GPL
+[V] 1.17.2
+
+[D] 5dfcabe09e15d4a8dd103ac73c59c64c4d4ebc4d8a51a692ae1caaaa mj-1.17.2-src.tar.gz http://mahjong.julianbradfield.org/Source/
+
+var_append CC_WRAPPER_APPEND ' ' -std=gnu17
+bindir="$root/$SDECFG_PKG_GAMES_BINDIR"
+datadir="$root/$SDECFG_PKG_GAMES_DATADIR"
+prefix="${bindir%/*}"
+var_append makeopt	' ' "DESTDIR=$prefix BINDIR=${bindir#$prefix}"
+var_append makeinstopt	' ' "$makeopt"

@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/neon/neon.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A HTTP and WebDAV client library
+
+[T] Neon is an HTTP and WebDAV client library, with a C language API.
+[T] It is used by many applications including subversion.
+
+[U] http://www.webdav.org/neon/
+
+[A] Joe Orton <joe@manyfish.co.uk>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS FPIC DIETLIBC
+
+[E] opt krb5
+[E] opt libproxy
+[E] opt glib
+
+[L] LGPL
+[V] 0.37.1
+[P] X -----5---9 138.200
+
+[D] b2195e50f02aba5c02fcb04c42b713eba512dd3937f6e7613283ac49 neon-0.37.1.tar.gz https://notroj.github.io/neon/
+
+hook_add preconf 5 "export CFLAGS=\"-I/usr/include/libxml2/libxml $CFLAGS\""
+pkginstalled openssl && var_append confopt ' ' --with-ssl
+[ "$SDECFG_STATIC" = 1 ] || var_append confopt ' ' --enable-shared

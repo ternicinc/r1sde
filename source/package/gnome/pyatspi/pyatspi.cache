@@ -1,0 +1,19 @@
+[TIMESTAMP] 1751448380 Wed Jul  2 11:26:20 2025
+[BUILDTIME] 2 (5)
+[SIZE] 0.19 MB, 30 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[OPT] glib
+[DEP] grep
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] xz

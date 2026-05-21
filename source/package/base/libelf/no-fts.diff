@@ -1,0 +1,106 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/libelf/no-fts.diff
+# Copyright (C) 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- elfutils-0.193/Makefile.in.vanilla	2025-06-05 22:54:21.610341814 +0200
++++ elfutils-0.193/Makefile.in	2025-06-05 22:55:10.256644262 +0200
+@@ -495,8 +495,7 @@
+ # Don't make make repeat.
+ AM_MAKEFLAGS = --no-print-directory
+ pkginclude_HEADERS = version.h
+-SUBDIRS = config lib libelf libcpu backends libebl libdwelf libdwfl \
+-	  libdwfl_stacktrace libdw libasm debuginfod src po doc tests
++SUBDIRS = lib libelf libcpu backends libebl
+ 
+ EXTRA_DIST = elfutils.spec GPG-KEY NOTES CONTRIBUTING SECURITY \
+ 	     COPYING COPYING-GPLV2 COPYING-LGPLV3 CONDUCT
+--- elfutils-0.193/configure.vanilla	2025-06-05 22:55:16.013796790 +0200
++++ elfutils-0.193/configure	2025-06-05 22:56:33.280281294 +0200
+@@ -9689,85 +9689,6 @@
+ 
+ 
+ saved_LIBS="$LIBS"
+-{ printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking for library containing fts_close" >&5
+-printf %s "checking for library containing fts_close... " >&6; }
+-if test ${ac_cv_search_fts_close+y}
+-then :
+-  printf %s "(cached) " >&6
+-else case e in #(
+-  e) ac_func_search_save_LIBS=$LIBS
+-cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+-/* end confdefs.h.  */
+-
+-/* Override any GCC internal prototype to avoid an error.
+-   Use char because int might match the return type of a GCC
+-   builtin and then its argument prototype would still apply.
+-   The 'extern "C"' is for builds by C++ compilers;
+-   although this is not generally supported in C code supporting it here
+-   has little cost and some practical benefit (sr 110532).  */
+-#ifdef __cplusplus
+-extern "C"
+-#endif
+-char fts_close (void);
+-int
+-main (void)
+-{
+-return fts_close ();
+-  ;
+-  return 0;
+-}
+-_ACEOF
+-for ac_lib in '' fts
+-do
+-  if test -z "$ac_lib"; then
+-    ac_res="none required"
+-  else
+-    ac_res=-l$ac_lib
+-    LIBS="-l$ac_lib  $ac_func_search_save_LIBS"
+-  fi
+-  if ac_fn_c_try_link "$LINENO"
+-then :
+-  ac_cv_search_fts_close=$ac_res
+-fi
+-rm -f core conftest.err conftest.$ac_objext conftest.beam \
+-    conftest$ac_exeext
+-  if test ${ac_cv_search_fts_close+y}
+-then :
+-  break
+-fi
+-done
+-if test ${ac_cv_search_fts_close+y}
+-then :
+-
+-else case e in #(
+-  e) ac_cv_search_fts_close=no ;;
+-esac
+-fi
+-rm conftest.$ac_ext
+-LIBS=$ac_func_search_save_LIBS ;;
+-esac
+-fi
+-{ printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: $ac_cv_search_fts_close" >&5
+-printf "%s\n" "$ac_cv_search_fts_close" >&6; }
+-ac_res=$ac_cv_search_fts_close
+-if test "$ac_res" != no
+-then :
+-  test "$ac_res" = "none required" || LIBS="$ac_res $LIBS"
+-
+-fi
+-
+-LIBS="$saved_LIBS"
+-case "$ac_cv_search_fts_close" in
+-        no) { { printf "%s\n" "$as_me:${as_lineno-$LINENO}: error: in '$ac_pwd':" >&5
+-printf "%s\n" "$as_me: error: in '$ac_pwd':" >&2;}
+-as_fn_error $? "failed to find fts_close
+-See 'config.log' for more details" "$LINENO" 5; } ;;
+-        -l*) fts_LIBS="$ac_cv_search_fts_close" ;;
+-        *) fts_LIBS= ;;
+-esac
+-
+-
+-saved_LIBS="$LIBS"
+ { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking for library containing _obstack_free" >&5
+ printf %s "checking for library containing _obstack_free... " >&6; }
+ if test ${ac_cv_search__obstack_free+y}

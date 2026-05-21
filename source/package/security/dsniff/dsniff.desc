@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dsniff/dsniff.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Sniffing utilities for network security testing and auditing
+
+[T] Dsniff is a collection of tools for network auditing and penetration
+[T] testing. dsniff, filesnarf, mailsnarf, msgsnarf, urlsnarf, and webspy
+[T] passively monitor a network for interesting data (passwords, e-mail, files,
+[T] etc.). arpspoof, dnsspoof, and macof facilitate the interception of network
+[T] traffic normally unavailable to an attacker (e.g, due to layer-2
+[T] switching). sshmitm and webmitm implement active monkey-in-the-middle
+[T] attacks against redirected SSH and HTTPS sessions by exploiting weak
+[T] bindings in ad-hoc PKI.
+[T] This version of the package was patched by Denis Ducamp to compile
+[T] with newer versions of the affected libraries. Not all binaries are
+[T] built though!
+
+[U] https://monkey.org/~dugsong/dsniff/
+
+[A] Dug Song <dugsong@monkey.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+
+[L] GPL
+[V] 2.4b1
+
+# [D] 2532404035 dsniff-2.3.tar.gz http://monkey.org/~dugsong/dsniff/
+[D] 2797187735 dsniff-2.4b1-sined-2.tar.bz2 http://www.groar.org/patch/
+
+var_insert makeopt ' ' -i

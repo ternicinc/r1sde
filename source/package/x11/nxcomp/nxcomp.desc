@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/nxcomp/nxcomp.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library for X11 compression
+
+[T] The Xcomp library is a basic components you need to compress the X
+[T] protocol produced by any standard X client.
+
+[U] https://www.nomachine.com/developers.php
+
+[A] NoMachine {http://www.nomachine.com}
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] FPIC
+
+[L] GPL
+[V] 3.4.0-7
+[P] X -----5---9 146.100
+
+[D] 1bbb025ae18890f192e6df89d324feef19faa0c97e89bbaac3ed4ae0 nxcomp-3.4.0-7.tar.gz http://64.34.161.181/download/3.4.0/sources/

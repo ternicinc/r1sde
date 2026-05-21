@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lximage-qt/lximage-qt.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The image viewer and screenshot tool for LXQt
+
+[T] The image viewer and screenshot tool for LXQt.
+
+[U] https://github.com/lxqt/lximage-qt
+
+[A] Lximage-qt Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] OBJDIR
+
+[V] 2.4.0
+[L] LGPL
+
+[CV-GROUP] lxqt
+[D] 01255d04c7d74dd2009dc3d27097b85ed656925b60f164b1024a926f lximage-qt-2.4.0.tar.xz https://github.com/lxqt/lximage-qt/releases/download/2.4.0/

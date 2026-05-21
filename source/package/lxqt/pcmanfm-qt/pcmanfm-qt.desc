@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pcmanfm-qt/pcmanfm-qt.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Qt port of pcmanfm
+
+[T] Qt port of pcmanfm.
+
+[U] https://github.com/lxqt/pcmanfm-qt
+
+[A] Pcmanfm-qt Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] OBJDIR
+
+[V] 2.4.0
+[L] LGPL
+
+[CV-GROUP] lxqt
+[D] f32f0e4563ea57ca822efe2d69c31211c3a82d059d71f45411eef107 pcmanfm-qt-2.4.0.tar.xz https://github.com/lxqt/pcmanfm-qt/releases/download/2.4.0/
+
+var_append GCC_WRAPPER_APPEND ' ' -I$(pkgprefix includedir kwindowsystem)
+var_append GCC_WRAPPER_APPEND ' ' -L$(pkgprefix libdir layer-shell-qt)

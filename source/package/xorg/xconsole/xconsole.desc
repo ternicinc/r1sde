@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xconsole/xconsole.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Monitor system console messages with X
+
+[T] The xconsole program displays messages which are usually sent to
+[T] /dev/console.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.1.1
+[P] X -----5---9 112.600
+
+[D] 65e44c2ee6ac7662bf5c1a0f8690d1a4b6b98291a5ec03affcd08ebd xconsole-1.1.1.tar.xz http://xorg.freedesktop.org/releases/individual/app/
+
+. package/*/*/modular-x-conf.in

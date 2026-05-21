@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dmalloc/dmalloc.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Debug Malloc Library
+
+[T] The debug memory allocation or dmalloc library has been designed as a drop in
+[T] replacement for the system's malloc, realloc, calloc, free and other memory
+[T] management routines while providing powerful debugging facilities configurable
+[T] at runtime. These facilities include such things as memory-leak tracking, fence-
+[T] post write detection, file/line number reporting, and general logging of
+[T] statistics.
+
+[U] https://dmalloc.com/
+
+[A] Gray Watson { Project Admin }
+
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Free-to-use
+[V] 5.6.5
+[P] X -----5---9 126.000
+
+[D] 240b528a6fde565b5c882c8253e73d02a6c1b64f4bace7ba7729b42a dmalloc_release_5_6_5.tar.gz https://github.com/j256/dmalloc/archive/refs/tags/dmalloc_release_5_6_5/

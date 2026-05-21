@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/noto-emoji-fonts/noto-emoji-fonts.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Google Noto emoji fonts
+
+[T] Emoji pack from to Google made Noto font.
+
+[U] https://github.com/googlefonts/noto-emoji/
+
+[A] Google
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/font
+[F] CROSS
+
+[L] OFL
+[V] 2.051
+
+[D] e0018c1318ba24da2fb966002e365e7a2374696743ceb4f1cdb52aef noto-emoji-fonts-2.051.tar.gz https://github.com/googlefonts/noto-emoji/archive/v2.051/
+
+runmake=0
+hook_add inmake 5 'install -m644 fonts/NotoColorEmoji.ttf $root$datadir/fonts/'

@@ -1,0 +1,21 @@
+[TIMESTAMP] 1737978202 Mon Jan 27 12:43:22 2025
+[BUILDTIME] 10 (9)
+[SIZE] 8.47 MB, 366 files
+
+[DEP] addresses
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gnustep-base
+[DEP] gnustep-gui
+[DEP] gnustep-make
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] pantomime
+[DEP] sed
+[DEP] tar

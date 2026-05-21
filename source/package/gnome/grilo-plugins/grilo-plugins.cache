@@ -1,0 +1,36 @@
+[TIMESTAMP] 1778651603 Wed May 13 08:53:23 2026
+[BUILDTIME] 12 (9)
+[SIZE] 2.26 MB, 175 files
+
+[DEP] avahi
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gettext
+[OPT] glib
+[DEP] gom
+[DEP] gperf
+[DEP] grep
+[DEP] grilo
+[DEP] gstreamer
+[DEP] itstool
+[DEP] json-glib
+[DEP] libarchive
+[DEP] librest
+[DEP] libsoup3
+[DEP] libxml
+[DEP] linux-header
+[DEP] lua
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] python
+[DEP] sed
+[DEP] sqlite
+[DEP] tar
+[DEP] totem-pl-parser
+[DEP] util-linux
+[DEP] xz

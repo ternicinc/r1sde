@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/zsync/zsync.desc
+[COPY] Copyright (C) 2020 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A file transfer program
+
+[T] Zsync is a file transfer program. It allows you to download a file from a
+[T] remote server, where you have a copy of an older version of the file on
+[T] your computer already. zsync downloads only the new parts of the file. It
+[T] uses the same algorithm as rsync.
+
+[U] https://zsync.moria.org.uk/
+
+[A] Colin Phipps <cph@moria.org.uk>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] Artistic
+[V] 0.6.4
+
+[D] d0db96a3699372710bbabfa58cece3cb551d97a826323f9f0b8c8039 zsync-0.6.4.tar.bz2 https://zsync.moria.org.uk/download/

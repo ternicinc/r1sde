@@ -1,0 +1,9 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dpkg/parse-config
+# Copyright (C) 2004 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+# since a lot of packages try install-info due to debianism, we need
+# to filter those read files out
+var_append flistrfilter '|' ".*/install-info"

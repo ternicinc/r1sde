@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libzmf/libzmf.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library that parses the file format of Zoner Callisto/Draw documents
+
+[T] Libzmf is a library that parses the file format of Zoner Callisto/Draw
+[T] documents. Currently it only understands documents created by Zoner Draw
+[T] version 4 and 5.
+
+[U] https://wiki.documentfoundation.org/DLP/Libraries/libzmf
+
+[A] Aleksas Pantechovskis <alex.pantec@gmail.com>
+[A] David Tardon <dtardon@redhat.com>
+[A] Fridrich Strba <fridrich.strba@bluewin.ch>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[E] opt doxygen
+
+[L] MPL
+[V] 0.0.2
+[P] X -----5---9 200.100
+
+[D] 2e969d93b7ee553d192ef25c159bae414f2d55920ff63a3534f5eea2 libzmf-0.0.2.tar.xz https://dev-www.libreoffice.org/src/libzmf/

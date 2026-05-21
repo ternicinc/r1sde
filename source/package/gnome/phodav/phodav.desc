@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/phodav/phodav.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome phodav package
+
+[T] Core Gnome phodav package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 3.0
+
+[CV-URL] https://download.gnome.org/sources/phodav/cache.json
+[D] 0d3fb48d5c95cc833c4ce25af4493aa73b7bf62c7e059129d81e33ae phodav-3.0.tar.xz https://download.gnome.org/sources/phodav/3.0/
+
+. $base/package/*/*/gnome-conf.in

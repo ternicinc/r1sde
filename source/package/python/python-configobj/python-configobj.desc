@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-configobj/python-configobj.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Simple python config file reader and writer
+
+[T] Python 3+ compatible port of the configobj library.
+
+[U] https://github.com/DiffSK/configobj/
+
+[A] Michael Foord (original author)
+[A] Jürgen Hermann (current maintainer)
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] BSD
+[V] 5.0.9
+[P] X -----5---9 109.060
+
+[D] 79471f9c053f9d13669d5d3f403e314fba9676267b2d7ee2759bdb1e python-configobj-5.0.9.tar.gz https://github.com/DiffSK/configobj/archive/v5.0.9/

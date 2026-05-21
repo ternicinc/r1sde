@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dtorrent/dtorrent.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A tool for distributing files
+
+[T] dtorrent is a tool for distributing files. It's extremely
+[T] easy to use - downloads are started by clicking on hyperlinks.
+[T] Whenever more than one person is downloading at once
+[T] they send pieces of the file(s) to each other, thus relieving
+[T] the central server's bandwidth burden. Even with many
+[T] simultaneous downloads, the upload burden on the central server
+[T] remains quite small, since each new downloader introduces new
+[T] upload capacity.
+
+[U] https://sourceforge.net/projects/dtorrent/
+
+[A] dholmes999 <dholmes999@users.sourceforge.net>
+[M] Martin Papadopoulos <mpp@0x3381e.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 3.3.2
+
+[D] eba162ab9d5fcbec34f409596d084ce243de1f2e0fa7acac553bad39 ctorrent-dnh3.3.2.tar.gz http://www.rahul.net/dholmes/ctorrent/

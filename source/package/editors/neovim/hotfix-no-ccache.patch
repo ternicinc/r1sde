@@ -1,0 +1,23 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/neovim/hotfix-no-ccache.patch
+# Copyright (C) 2024 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- neovim-0.11.0/cmake/Deps.cmake.vanilla	2025-03-26 18:36:54.561712416 +0100
++++ neovim-0.11.0/cmake/Deps.cmake	2025-03-26 18:37:10.493727615 +0100
+@@ -18,12 +18,14 @@
+   list(APPEND DEPS_CMAKE_ARGS -D CMAKE_FIND_FRAMEWORK=${CMAKE_FIND_FRAMEWORK})
+ endif()
+ 
++if(0)
+ find_program(CACHE_PRG NAMES ccache sccache)
+ mark_as_advanced(CACHE_PRG)
+ if(CACHE_PRG)
+   set(CMAKE_C_COMPILER_LAUNCHER ${CMAKE_COMMAND} -E env CCACHE_SLOPPINESS=pch_defines,time_macros ${CACHE_PRG})
+   list(APPEND DEPS_CMAKE_CACHE_ARGS -DCMAKE_C_COMPILER_LAUNCHER:STRING=${CMAKE_C_COMPILER_LAUNCHER})
+ endif()
++endif()
+ 
+ # MAKE_PRG
+ if(UNIX)

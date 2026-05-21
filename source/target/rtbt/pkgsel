@@ -1,0 +1,63 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/target/rtbt/pkgsel
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+O *
+
+X 00-dirtree
+X sysfiles
+X rocknet
+X embutils
+X disktype
+X minised
+X pdksh
+X udev
+#X cpio
+X mkinitrd
+
+X linux-header
+
+X automake
+X libtool
+
+X dietlibc
+X binutils
+X gcc
+
+X linux
+
+X module-init-tools
+
+X libowfat
+X minit
+x fgetty
+
+X procps
+X ugrep
+
+X less
+x mmv
+
+X elvis-tiny
+X zile
+
+X zlib
+X gzip
+X bzip2
+
+X ncurses
+X readline
+
+X iptables
+X net-tools
+X iproute2
+X dropbear
+X rsync
+X lua
+X vlan
+X mininet
+
+X file
+X diffutils

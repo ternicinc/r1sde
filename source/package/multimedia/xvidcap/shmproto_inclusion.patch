@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/xvidcap/shmproto_inclusion.patch
+# Copyright (C) 2010 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- xvidcap-1.1.7/src/capture.c_orig	2010-08-10 01:18:27.000000000 +0000
++++ xvidcap-1.1.7/src/capture.c	2010-08-10 01:18:57.000000000 +0000
+@@ -65,7 +65,7 @@
+ #include <sys/ipc.h>
+ #include <sys/shm.h>
+ #include <X11/extensions/XShm.h>
+-#include <X11/extensions/shmstr.h>
++#include <X11/extensions/shmproto.h>
+ #ifndef SOLARIS
+ #include <X11/extensions/extutil.h>
+ #endif     // SOLARIS

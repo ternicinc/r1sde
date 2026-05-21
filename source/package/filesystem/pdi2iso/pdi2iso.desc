@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pdi2iso/pdi2iso.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A PDI to ISO converter
+
+[T] Pdi2iso is a very simple utility to convert an instant copy bin image
+[T] to the standard ISO-9660 format.
+
+[U] http://developer.berlios.de/projects/pdi2iso/
+
+[A] Salvatore Santagati <salsan@users.berlios.de>
+[M] Nagy Karoly Gabriel <karasz@x5.ro>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 0.1
+
+[D] 541f7dffc606014812609a18592f4652a3aaa9643380db207cb43f99 pdi2iso-0.1-src.tar.bz2 https://download.sourceforge.net/project/pdi2iso.berlios/
+
+makeinstopt="all"
+hook_add postmake 4 'cp -vf pdi2iso $root$bindir'

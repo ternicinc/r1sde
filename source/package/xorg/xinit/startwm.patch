@@ -1,0 +1,35 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/xinit/startwm.patch
+# Copyright (C) 2004 - 2025 The T2 SDE Project
+# Copyright (C) 1998 - 2004 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+More flexible root application startup.
+
+--- xinit-1.4.4/xinitrc.in.vanilla	2025-03-11 23:58:54.894239788 +0100
++++ xinit-1.4.4/xinitrc.in	2025-03-11 23:59:57.681493376 +0100
+@@ -40,7 +40,7 @@
+     "$xmodmap" "$usermodmap"
+ fi
+ 
+-# start some nice programs
++# start windowmanager or some programs 
+ 
+ if [ -d "$xinitdir"/xinitrc.d ] ; then
+ 	for f in "$xinitdir/xinitrc.d"/?*.sh ; do
+@@ -49,8 +49,9 @@
+ 	unset f
+ fi
+ 
+-"$twm" &
+-"$xclock" -geometry 50x50-1+1 &
+-"$xterm" -geometry 80x50+494+51 &
+-"$xterm" -geometry 80x20+494-0 &
+-exec "$xterm" -geometry 80x66+0+0 -name login
++[ "$WINDOWMANAGER" =  "gnome" ] && WINDOWMANAGER="gnome-session"
++[ "$WINDOWMANAGER" =  "kde"   ] && WINDOWMANAGER="startkde"
++[ "$WINDOWMANAGER" != "twm"   ] && exec $WINDOWMANAGER
++xsetroot -solid RebeccaPurple &
++"$xterm" -geometry 80x66+0+0 -name login &
++exec "$twm"

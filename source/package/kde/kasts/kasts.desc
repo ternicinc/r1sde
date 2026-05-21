@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kasts/kasts.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A convergent podcast application that looks good on desktop and mobile
+
+[T] Kasts is a convergent podcast application that looks good on desktop
+[T] and mobile.
+
+[U] https://apps.kde.org/kasts/
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 26.04.1
+
+[CV-GROUP] kde-gear
+[D] 7ac1082d05cf58ef53b35ac7094e7430f588a7a01c5a101ef5870450 kasts-26.04.1.tar.xz https://download.kde.org/stable/release-service/26.04.1/src/
+
+. $base/package/*/*/kde-conf.in
+var_append GCC_WRAPPER_APPEND ' ' "$(pkg-config --libs zlib)"

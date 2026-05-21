@@ -1,0 +1,45 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/fnord/hotfix-cross.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- fnord-1.10/Makefile.vanilla	2007-06-19 15:45:13.899610396 +0200
++++ fnord-1.10/Makefile	2007-06-19 15:46:14.663073109 +0200
+@@ -1,5 +1,7 @@
+ CC=gcc
+ CXX=g++
++STRIP=strip
++AR=ar
+ 
+ #LIBOWFAT=../libowfat/
+ DIET=diet -Os
+@@ -11,24 +13,24 @@
+ 
+ fnord: httpd
+ 	cp -p $^ $@
+-	-strip -R .note -R .comment $@
++	-$(STRIP) -R .note -R .comment $@
+ 
+ httpd: httpd.o libowfat.a
+ 	$(DIET) $(CC) -o $@ $^ $(CFLAGS)
+ 
+ fnord-cgi: httpd-cgi.o libowfat.a
+ 	$(DIET) $(CC) -o $@ $^ $(CFLAGS)
+-	-strip -R .note -R .comment $@
++	-$(STRIP) -R .note -R .comment $@
+ 
+ fnord-idx: httpd-idx.o libowfat.a
+ 	$(DIET) $(CC) -o $@ $^ $(CFLAGS)
+-	-strip -R .note -R .comment $@
++	-$(STRIP) -R .note -R .comment $@
+ 
+ libowfat.a: httpd.o buffer_1.o buffer_puts.o buffer_flush.o buffer_put.o \
+ buffer_putulong.o buffer_2.o buffer_putspace.o buffer_stubborn.o \
+ buffer_putflush.o str_copy.o fmt_ulong.o byte_diff.o byte_copy.o \
+ str_len.o str_diff.o str_chr.o str_diffn.o str_start.o scan_ulong.o
+-	ar cru $@ $^
++	$(AR) cru $@ $^
+ 	-ranlib $@
+ 
+ httpd.o: httpd.c

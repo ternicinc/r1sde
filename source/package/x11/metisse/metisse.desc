@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/metisse/metisse.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An experimental X desktop with OpenGL capacity
+
+[T] Metisse is an X-based window system designed with two goals in
+[T] mind. First, it should make it easy for HCI researchers to design and
+[T] implement innovative window management techniques. Second, it should
+[T] conform to existing standards and be robust and efficient enough
+[T] to be used on a daily basis, making it a suitable platform for the
+[T] evaluation of the proposed techniques. Metisse is not focused on a
+[T] particular kind of interaction (e.g. 3D) and should not be seen as
+[T] a new desktop proposal. It is rather a tool for creating new types of
+[T] desktop environments.
+
+[U] http://insitu.lri.fr/metisse/index.html
+
+[A] Olivier Chapuis <chapuis@lri.fr>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/windowmanager
+
+[L] GPL
+[V] 0.4.1
+
+[D] b1e8dabc4e76d5e124dc8713b551ca44525a95eb17c1cf4822a0b1ed metisse-0.4.1.tar.bz2 http://insitu.lri.fr/metisse/download/metisse/

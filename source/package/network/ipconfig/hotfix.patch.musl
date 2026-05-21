@@ -1,0 +1,24 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/ipconfig/hotfix.patch.musl
+# Copyright (C) 2019 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ipconfig/netdev.h.vanilla	2019-09-17 15:55:39.308000000 +0200
++++ ipconfig/netdev.h	2019-09-17 15:55:49.672000000 +0200
+@@ -8,6 +8,8 @@
+ #include <sys/utsname.h>
+ #include <net/if.h>
+ 
++#define SYS_NMLN  512
++
+ #define BPLEN		40
+ 
+ struct netdev {
+--- ipconfig/packet.c.vanilla	2019-09-17 15:58:26.960000000 +0200
++++ ipconfig/packet.c	2019-09-17 15:58:31.964000000 +0200
+@@ -1,3 +1,4 @@
++#define _GNU_SOURCE
+ /*
+  * ipconfig/packet.c
+  *

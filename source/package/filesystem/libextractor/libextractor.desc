@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libextractor/libextractor.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A meta-data extraction library
+
+[T] Libextractor is a library used to extract meta-data from files of
+[T] arbitrary type. It is designed to use helper-libraries to perform the
+[T] actual extraction, and to be trivially extendable by linking against
+[T] external extractors for additional file types. The goal is to provide
+[T] developers of file-sharing networks, file managers, and WWW-indexing bots
+[T] with a universal library to obtain meta-data about files. It includes
+[T] a shell-command and bindings for Java (JNI) and Python.
+
+[U] https://gnunet.org/libextractor/
+
+[A] Christian Grothoff <Christian@Grothoff.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+[F] CROSS
+
+[E] opt flac
+
+[L] GPL
+[V] 1.13
+[P] X -----5---9 300.000
+
+[[ $libdir != *lib ]] && var_append GCC_WRAPPER_REMOVE ' ' /usr/lib64/../lib/libstdc++.so
+
+[D] e8e0870c56665f394bc923a04235a92073cc62b7b98222ed70fb3b52 libextractor-1.13.tar.gz https://ftpmirror.gnu.org/gnu/libextractor/

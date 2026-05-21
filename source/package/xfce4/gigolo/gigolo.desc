@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gigolo/gigolo.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Frontend to manage connections GVfs/GIO filesystems
+
+[T] Gigolo is a frontend to easily manage connections to local and remote
+[T] filesystems using GIO/GVfs. It allows you to quickly connect/mount a remote
+[T] filesystem and manage bookmarks of such.
+
+[U] https://docs.xfce.org/apps/gigolo/start
+
+[A] Xfce Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/xfce
+
+[L] GPL
+[V] 0.6.0
+
+[D] 92110a0ad7afaaba2bbbf449885020229468350331e1098ded1c8a31 gigolo-0.6.0.tar.xz https://archive.xfce.org/src/apps/gigolo/0.6/

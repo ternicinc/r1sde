@@ -1,0 +1,63 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kiss/kiss.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Keep It Simple Shell
+
+[T] Also: Karel's Interactive Simple Shell (or Incredibly Stupid Shell, if you
+[T] like).
+[T]
+[T] Kiss is a simple shell language interpreter, meant especially to be used
+[T] with rescue disks. Kiss contains a lot of built-in commands, which means
+[T] that you can put Kiss on a bootable floppy and leave out the programs cat,
+[T] cd, chgrp, chown, chmod, cp, grep, kill, ln, ls, mkdir, mknod, more,
+[T] mount, mv, printenv, pwd, rmdir, rm, setenv, sleep, touch, umount, wc
+[T] (this list may grow..). Furthermore, having a statically linked Kiss on
+[T] your hdu might help you if your /lib gets wiped out: you'll still have
+[T] some programs that execute.
+
+[A] Karel Kubat <karel@icce.rug.nl> {Original Author}
+[A] Sven Van Den Steene <kiss@skynet.be> {Maintainer}
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS DIETLIBC
+[C] base/tool
+
+[L] GPL
+[V] 0.21
+
+[D] 5f02a53d60e16259360abbb45af35f2b88936d41e0b6f5194417a113 kiss-0.21.tar.xz.gz !http://metalab.unc.edu/pub/Linux/system/shells/kiss-0.21.tar.gz
+
+kiss_extract() {
+	# double-compressed kiss-$ver.tar.gz.bz2 ...
+	local f=$(match_source_file -p kiss)
+	$(get_compressor $f) -d < $f > $builddir/kiss-$ver.tar.gz
+	tar -xzf $builddir/kiss-$ver.tar.gz
+	cd kiss-$ver
+
+	hook_eval prepatch
+	apply_patchfiles
+	hook_eval postpatch
+
+	cd src
+}
+
+kiss_pi() {
+	cp bkiss $root/bin/kiss
+	cd ..
+	for x in ChangeLog doc/* kiss.README kiss.lsm; do
+		chmod 0644 $x
+		cp $x $root$docdir/
+	done
+}
+
+autoextract=0
+
+hook_add preconf 1 kiss_extract
+hook_add postmake 3 kiss_pi
+
+makeopt="CC='$CC' STDLFLAGS='-s -static' bkiss"
+makeinstopt=

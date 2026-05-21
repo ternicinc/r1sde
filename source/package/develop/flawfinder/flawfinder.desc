@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/flawfinder/flawfinder.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A program that scans source code looking for security weaknesses
+
+[T] Flawfinder searches through source code looking for potential
+[T] security flaws. It will provide a list of potential security flaws,
+[T] sorted by risk, with the most potentially dangerous flaws shown
+[T] first. This risk level depends not only on the function, but on
+[T] the values of the parameters of the function. Flawfinder ignores
+[T] text inside comments and strings.
+
+[U] https://www.dwheeler.com/flawfinder/
+
+[A] David A. Wheeler <dwheeler@dwheeler.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 2.0.20
+
+[D] 41beb5d2b3e71ec3423de001341e59a24e7f01a420f0aff0a2d11e79 flawfinder-2.0.20.tar.gz https://sourceforge.net/projects/flawfinder/files/flawfinder-2.0.20.tar.gz

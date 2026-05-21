@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/meanwhile/meanwhile.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An implementation of the Sametime client protocol
+
+[T] Meanwhile is an implementation of the Lotus Sametime client protocol. The
+[T] project provides protocol documentation, a library, an API written in C,
+[T] and a simple client plugin utilizing the library.
+
+[U] https://github.com/obriencj/meanwhile/
+
+[A] Christopher O'Brien <siege@preoccupied.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[E] opt doxygen
+
+[L] LGPL
+[V] 1.1.1
+
+[D] c4211fd20e81f0cb29024e2d0aed36daef6d2cb83c5c6174449e97f4 meanwhile-1.1.1.tar.gz https://github.com/obriencj/meanwhile/archive/v1.1.1/
+
+autogen=1

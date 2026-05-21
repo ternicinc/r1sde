@@ -1,0 +1,51 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/nvrec/nvrec.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] High performance audio/video capture engine
+
+[T] This is an attempt at a high performance audio/video capture engine. It
+[T] currently only supports v4l1, v4l2 and OSS drivers. This engine makes
+[T] use of deep buffers (2 seconds+) for audio and video. The video is
+[T] buffered in the driver to avoid too many costly userspace copies. The
+[T] audio is buffered in a userspace ring buffer. This is expensive, but
+[T] neccessary, as OSS drivers are often limited to very short buffers.
+
+[U] https://nvrec.sourceforge.net
+
+[A] Justin Schoeman <justin@expertron.co.za>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[R] + x86 x86-64
+
+[E] opt lame
+
+[L] GPL
+[V] 20041227
+
+[D] f40920fcd70d2e51b507ed86dfceb997dbc67c6f69f42884cbb4eda7 nvrec-20041227.tar.gz https://prdownloads.sourceforge.net/sourceforge/nvrec/
+
+if [ $arch = x86 ]; then
+	for x in X86_MMX X86_MMXEXT X86_SSE X86_SSE2 X86_3DNOW X86_3DNOWEXT; do
+		var_append confopt ' ' --enable-$x
+	done
+else
+	for x in X86_MMX X86_MMXEXT X86_SSE X86_SSE2 X86_3DNOW X86_3DNOWEXT; do
+		var_append confopt ' ' --disable-$x
+	done
+fi
+
+pkginstalled libquicktime ||
+	var_append confopt ' ' --without-quicktime
+
+# last API not supported, dead project.
+var_append confopt ' ' --without-divx4linux
+# new API not supported
+var_append confopt ' ' --without-avifile
+
+hook_add preconf 5 ./bootstrap

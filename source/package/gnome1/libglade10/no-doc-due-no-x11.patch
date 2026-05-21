@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/libglade10/no-doc-due-no-x11.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+--- libglade-0.17/Makefile.in.orig	2003-11-21 18:24:23.000000000 +0100
++++ libglade-0.17/Makefile.in	2003-11-21 18:24:32.000000000 +0100
+@@ -167,7 +167,7 @@
+ bin_SCRIPTS = libglade-config libglade-xgettext
+ noinst_PROGRAMS = test-libglade
+ test_libglade_LDADD = $(THE_LIBS) $(XML_LIBS)
+-SUBDIRS = intl macros glade doc
++SUBDIRS = intl macros glade
+ 
+ m4datadir = $(datadir)/aclocal
+ m4data_DATA = libglade.m4

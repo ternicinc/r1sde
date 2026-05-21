@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/skopeo/skopeo.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Work with remote container registries
+
+[T] Skopeo is a command line utility that performs various operations on
+[T] container images and image repositories.
+
+[U] https://github.com/containers/skopeo
+
+[A] Antonio Murdaca <runcom@redhat.com>
+[A] Miloslav Trmač <mitr@redhat.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS NO-LTO
+
+[L] APL
+[V] 1.22.2
+
+[D] 9e26d71f9082ef79f84c105e212e3daf0089085157af6d510ba9c31f skopeo-1.22.2.tar.gz https://github.com/containers/skopeo/archive/v1.22.2/
+
+. $base/package/*/*/go-conf.in
+export CGO_ENABLED=1
+var_remove GCC_WRAPPER_REMOVE ' ' '-gdwarf*'
+var_append goconfopt ' ' "-o bin/$pkg ./cmd/$pkg"
+hook_add postmake 5 "cp bin/$pkg $root$bindir"

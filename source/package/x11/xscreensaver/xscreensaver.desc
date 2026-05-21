@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xscreensaver/xscreensaver.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A collection of screen-savers and -lockers for the X window system
+
+[T] The xscreensaver package contains a variety of screensavers
+[T] for your mind-numbing, ambition-eroding, time-wasting,
+[T] hypnotized viewing pleasure.
+[T] Install the xscreensaver package if you need screensavers for
+[T] use with the X Window System.
+
+[U] http://www.jwz.org/xscreensaver/
+
+[A] Jamie Zawinski <jwz@jwz.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/screensaver base/x11
+
+[L] BSD
+[V] 6.15
+[P] X -----5---9 159.300
+
+[CV-URL] http://www.jwz.org/xscreensaver/download.html
+[D] c32a36168ac58e7242e922d0f782dafe73d5d865dd6ea487ff41ae5a xscreensaver-6.15.tar.gz https://www.jwz.org/xscreensaver/
+
+confopt="--prefix=/$prefix --libdir=$libdir"
+var_append GCC_WRAPPER_INSERT ' ' "-I$root$(pkgprefix includedir libx11)"
+var_append GCC_WRAPPER_INSERT ' ' "-L$root$(pkgprefix libdir libx11)"
+[[ $arch != powerpc* ]] || var_append GCC_WRAPPER_APPEND ' ' -mno-altivec

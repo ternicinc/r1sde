@@ -1,0 +1,15 @@
+[TIMESTAMP] 1737680738 Fri Jan 24 02:05:38 2025
+[BUILDTIME] 2 (9)
+[SIZE] 0.08 MB, 13 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[OPT] doxygen
+[DEP] gawk
+[DEP] grep
+[DEP] make
+[DEP] sed
+[DEP] tar

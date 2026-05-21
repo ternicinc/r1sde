@@ -1,0 +1,22 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/pdksh/largefile.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+Request large file support. I could have used the T2 wrappers, but
+decided to do it a bit more verbose.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- pdksh-5.2.14/Makefile.in.vanilla	2006-04-24 14:03:27.000000000 +0000
++++ pdksh-5.2.14/Makefile.in	2006-04-24 14:03:47.000000000 +0000
+@@ -12,7 +12,7 @@
+ INSTALL_PROGRAM = @INSTALL_PROGRAM@
+ INSTALL_DATA = @INSTALL_DATA@
+ 
+-DEFS = @DEFS@
++DEFS = @DEFS@ -D_FILE_OFFSET_BITS=64
+ LIBS = @LIBS@
+ 
+ CPPFLAGS = @CPPFLAGS@

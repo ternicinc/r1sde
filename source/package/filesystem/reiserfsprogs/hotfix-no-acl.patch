@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/reiserfsprogs/hotfix-no-acl.patch
+# Copyright (C) 2021 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- reiserfsprogs-3.6.27/reiserfscore/xattr.c.vanilla	2021-01-25 18:58:54.000629525 +0100
++++ reiserfsprogs-3.6.27/reiserfscore/xattr.c	2021-01-25 18:58:59.109629889 +0100
+@@ -1,7 +1,7 @@
+ #include <sys/types.h>
+ #include <stdio.h>
+ #include <errno.h>
+-#include <sys/acl.h>
++//#include <sys/acl.h>
+ #include "reiserfs_lib.h"
+ 
+ static inline unsigned short from32to16(unsigned int x)

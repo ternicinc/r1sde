@@ -1,0 +1,25 @@
+[TIMESTAMP] 1737680447 Fri Jan 24 02:00:47 2025
+[BUILDTIME] 8 (9)
+[SIZE] 2.77 MB, 198 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[OPT] doxygen
+[DEP] findutils
+[OPT] flac
+[DEP] gawk
+[OPT] graphviz
+[DEP] grep
+[DEP] gzip
+[DEP] libid3tag
+[DEP] libmad
+[DEP] libogg
+[DEP] libtool
+[DEP] libvorbis
+[DEP] linux-header
+[DEP] make
+[DEP] pcre
+[DEP] sed
+[DEP] tar

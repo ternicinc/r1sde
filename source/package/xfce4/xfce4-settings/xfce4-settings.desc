@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfce4-settings/xfce4-settings.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Xfce configuration daemon and utilities
+
+[T] Xfce configuration daemon and utilities.
+
+[U] https://www.xfce.org/
+
+[A] Stephan Arts <stephan@xfce.org>
+[A] Brian J. Tarricone <bjt23@cornell.edu>
+[A] Jannis Pohlmann <jannis@xfce.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/xfce
+[F] CROSS
+
+[E] opt colord
+
+[L] LGPL
+[V] 4.20.4
+
+[D] acec8cbcd0fc1cada00c7a7eb6d51bf6555a6f7a967c27b9a0748a00 xfce4-settings-4.20.4.tar.bz2 https://archive.xfce.org/src/xfce/xfce4-settings/4.20/
+
+. $base/package/xfce4/*/xfce4-conf.in

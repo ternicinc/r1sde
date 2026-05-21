@@ -1,0 +1,21 @@
+
+[TIMESTAMP] 1693423586 Wed Aug 30 21:26:26 2023
+[BUILDTIME] 2 (9)
+[SIZE] 0.25 MB, 12 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] libcap
+[DEP] libowfat
+[DEP] linux-header
+[DEP] make
+[OPT] openssl
+[DEP] sed
+[DEP] tar
+[DEP] xz

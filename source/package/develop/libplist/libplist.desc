@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libplist/libplist.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library to handle Apple Property List format in binary or XML
+
+[T] A library to handle Apple Property List format in binary or XML.
+
+[U] https://www.libimobiledevice.org
+
+[A] info@libimobiledevice.org
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS NO-LTO.gcc
+
+[L] GPL
+[V] 2.7.0
+[P] X -----5---9 100.000
+
+[D] 8ba3be1b3a34c1c6763482de0331687c2c710738b8f4c218ee2e2f1c libplist-2.7.0.tar.bz2 https://github.com/libimobiledevice/libplist/releases/download/2.7.0/
+
+pkginstalled cython || var_append confopt ' ' --without-cython

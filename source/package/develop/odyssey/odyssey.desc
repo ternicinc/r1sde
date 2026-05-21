@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/odyssey/odyssey.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] PIC programming software for Linux
+
+[T] Odyssey is a PIC programming application which can erase, read, and write
+[T] a variety of PIC microcontrollers. It was originally written to work with
+[T] the EPIC programmer but it should work with any parallel port programmer.
+
+[U] http://vasco.gforge.enseeiht.fr/index.php?article=Odyssey.html
+
+[A] Mark A <marka@desert.cx>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 0.5
+
+[D] 1e615c6ad8c87ada61b04ee0c296cf177042ecc03a90179cf395f2f8 odyssey-0.5.tar.gz http://gforge.enseeiht.fr/frs/download.php/116/

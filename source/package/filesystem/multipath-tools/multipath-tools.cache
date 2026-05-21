@@ -1,0 +1,27 @@
+[TIMESTAMP] 1779035061 Sun May 17 16:24:21 2026
+[BUILDTIME] 6 (9)
+[SIZE] 1.28 MB, 101 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] git
+[DEP] grep
+[DEP] gzip
+[DEP] json-c
+[DEP] libaio
+[DEP] liburcu
+[DEP] linux-header
+[DEP] lvm2
+[DEP] make
+[DEP] man
+[OPT] nvme-cli
+[DEP] pkgconfig
+[DEP] sed
+[OPT] systemd
+[DEP] tar
+[DEP] udev
+[DEP] util-linux

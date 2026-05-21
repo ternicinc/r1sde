@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openvino/openvino.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Toolkit for AI inference
+
+[T] OpenVINO is an open-source toolkit for optimizing and deploying AI
+[T] inference.
+
+[U] https://docs.openvino.ai/2024/index.html
+
+[A] Openvino Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[E] opt doxygen
+
+[L] APL
+[V] 2025.4.2
+
+[D] bc3f36a8f13d1bf57df8846785c80c6a34bf78addcf0846e06a18fb7 openvino-2025.4.2.tar.gz git+https://github.com/openvinotoolkit/openvino.git 2025.4.2
+
+prefix=opt/openvino
+var_append cmakeopt ' ' "-DENABLE_CPPLINT=OFF -DENABLE_INTEL_NPU_PROTOPIPE=OFF"
+var_append GCC_WRAPPER_APPEND ' ' -I$root/usr/include/opencv4

@@ -1,0 +1,37 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/arcload/elf32-netboot.patch
+# Copyright (C) 2020 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+Fix loading 32-bit kernel on 32-bit Arcs over bootp / tftp on earlier Sgi
+machines, like the precious and famous O2.
+
+Signed-off-by: René Rebe <rene@exactcode.de>
+
+--- arcload-0.5-patched/loader/main.c.vanilla	2020-08-28 21:38:30.189076493 +0200
++++ arcload-0.5-patched/loader/main.c	2020-08-30 14:42:32.672622589 +0200
+@@ -325,7 +325,7 @@
+ 	printf("Loading %s...\n\r", fname);
+ 
+ 	/* Read ELF Header */
+-	if(bread(&file, sizeof(hdr), &hdr)<0) {
++	if(bread(&file, sizeof(hdr.e_ident), &hdr)<0) {
+ 		printf("Error reading ELF header.\n\r");
+ 		goto close;
+ 	}
+@@ -346,6 +346,14 @@
+ 		goto close;
+ 	}
+ 
++	/* read the rest of the header */
++	if(bread(&file, (hdr.e_ident[EI_CLASS] == ELFCLASS64 ?
++		 sizeof(Elf64_Ehdr) : sizeof(Elf32_Ehdr)) - EI_NIDENT,
++		 &hdr.e_ident[EI_NIDENT]) < 0) {
++		printf("Error reading remaining ELF header.\n\r");
++		return 0;
++	}
++
+ 	/* 32 or 64 bit? */
+ 	if(hdr.e_ident[EI_CLASS] == ELFCLASS64) {
+ 		kentry = load_elf64(&hdr.e64, &file);

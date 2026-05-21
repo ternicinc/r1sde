@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/utfcpp/utfcpp.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] UTF-8 with C++ in a Portable Way
+
+[T] A small, C++98 compatible generic library in order to handle UTF-8
+[T] encoded strings. For anybody used to work with STL algorithms and
+[T] iterators, it should be easy and natural to use.
+
+[U] https://github.com/nemtrif/utfcpp
+
+[A] Nemanja Trifunovic
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] BSL
+[V] 4.1.1
+[P] X 0----5---9 112.200
+
+[D] 597bcf84c9448b57b4288d2690b202bf7223193cf690eb7e75c0ab4e utfcpp-4.1.1.tar.gz https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.1.1/

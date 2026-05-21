@@ -1,0 +1,24 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/ssmtp/hotfix-no_gen_config.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./Makefile.in.orig	2006-07-10 15:31:57.000000000 +0000
++++ ./Makefile.in	2006-07-10 15:32:15.000000000 +0000
+@@ -45,14 +45,13 @@
+ 	latex $<
+ 
+ .PHONY: install
+-install: ssmtp $(GEN_CONFIG)
++install: ssmtp
+ 	$(INSTALL) -d -m 755 $(bindir)
+ 	$(INSTALL) -s -m 755 ssmtp $(bindir)/ssmtp
+ 	$(INSTALL) -d -m 755 $(mandir)
+ 	$(INSTALL) -m 644 $(srcdir)/ssmtp.8 $(mandir)/ssmtp.8
+ 	$(INSTALL) -d -m 755 $(SSMTPCONFDIR)
+ 	$(INSTALL) -m 644 $(srcdir)/revaliases $(INSTALLED_REVALIASES_FILE)
+-	$(GEN_CONFIG) $(INSTALLED_CONFIGURATION_FILE)
+ 
+ 
+ .PHONY: install-sendmail

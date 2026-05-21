@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sound-theme-freedesktop/sound-theme-freedesktop.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Freedesktop sound theme
+
+[T] This is a reference sound theme from freedesktop similar to what
+[T] you can do with icon themes.
+
+[U] https://freedesktop.org/wiki/Specifications/sound-theme-spec/
+
+[A] Lennart Poettering
+[A] William Jon McCann
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/multimedia
+
+[E] add perl-xml-parser
+
+[L] OpenSource
+[V] 0.8
+
+[D] 5bf27f533ba494db49060bf6823add04d7a5fcd132060c54288d2b8f sound-theme-freedesktop-0.8.tar.bz2 https://people.freedesktop.org/~mccann/dist/

@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libmemcache/libmemcache.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Memcache C API
+
+[T] memcache C API
+
+[U] https://people.freebsd.org/~seanc/libmemcache/
+
+[A] Sean Chittenden <seanc@FreeBSD.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] OpenSource
+
+[V] 1.4.0-rc2
+[P] X -----5---9 145.000
+
+[D] 72db05a2305bd37632f0fafb823a9ca070db48565b2e72b8dd090973 libmemcache-1.4.0.rc2.tar.bz2 https://people.freebsd.org/~seanc/libmemcache/

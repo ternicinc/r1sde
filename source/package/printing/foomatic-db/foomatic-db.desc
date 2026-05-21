@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/foomatic-db/foomatic-db.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Foomatic is a system for integrating free software printer drivers
+
+[T] Foomatic is a database-driven system for integrating free software printer
+[T] drivers with common spoolers under Unix. It supports CUPS, LPRng, LPD,
+[T] GNUlpr, Solaris LP, PPR, PDQ, CPS, and direct printing with every free
+[T] software printer driver known to us and every printer known to work with
+[T] these drivers.
+
+[U] https://openprinting.github.io/projects/02-foomatic/
+
+[A] Till Kamppeter <till.kamppeter@gmail.com>
+[A] Grant Taylor <gtaylor@picante.com>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/printing
+[F] CROSS
+
+[L] GPL
+[V] 3.0-20090114
+
+[D] 7c46961eefac2d6be53194adbf3df1e9b87e91281f32d1297702816c foomatic-db-3.0-20090114.tar.gz https://www.openprinting.org/download/foomatic/oldstuff/

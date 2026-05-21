@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/autogen/autogen.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Program generation for repetitive text with varied substitutions
+
+[T] AutoGen is a tool designed for generating program files that contain
+[T] repetitive text with varied substitutions. Its goal is to simplify the
+[T] maintenance of programs that contain large amounts of repetitious text.
+
+[U] https://autogen.sourceforge.net/
+
+[A] Bruce Korb <bkorb@gnu.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/development
+[F] NOPARALLEL
+
+[L] GPL
+[V] 5.18.16
+
+[D] 76672ba3b928fda7405028b714bdfccdbc0e49a77486a248b4fe9b72 autogen-5.18.16.tar.xz https://ftp.gnu.org/gnu/autogen/rel5.18.16/
+
+var_append confopt ' ' --disable-dependency-tracking

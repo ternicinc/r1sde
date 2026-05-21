@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfprint/xfprint.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Print dialog and printer manager for Xfce 4
+
+[T] A print dialog and a printer manager for Xfce 4.
+
+[U] https://www.xfce.org/
+
+[A] Benedikt Meurer <benedikt.meurer@unix-ag.uni-siegen.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/xfce
+
+[L] BSD
+[V] 4.6.1
+[P] X -----5---9 222.800
+
+[D] 839a4a31327b77c9bc952f6f9dd315f7a28ca1c236fac1471a8e37f6 xfprint-4.6.1.tar.bz2 https://www.us.xfce.org/archive/xfce-4.6.1/src/
+
+. $base/package/xfce4/*/xfce4-conf.in

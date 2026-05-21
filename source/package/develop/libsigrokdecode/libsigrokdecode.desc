@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libsigrokdecode/libsigrokdecode.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library providing (streaming) protocol decoding functionality
+
+[T] libsigrokdecode (sometimes abbreviated as "srd") is a shared library
+[T] written in C, which provides (streaming) protocol decoding functionality.
+
+[U] https://sigrok.org/wiki/Libsigrokdecode
+
+[A] Uwe Hermann
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL3
+[V] 0.5.3
+[P] X -----5---9 205.000
+
+[D] c6dfbe1d7b32c0c00b60bd1ba9f1ac58a1915730d1a9360e8a23ffac libsigrokdecode-0.5.3.tar.gz http://sigrok.org/download/source/libsigrokdecode/

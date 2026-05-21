@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lzdoom/lzdoom.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Feature centric port for all Doom engine games
+
+[T] Feature centric port for all Doom engine games (legacy GL 2.0 support).
+
+[U] https://www.zdoom.org/
+
+[A] Lzdoom Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+
+[E] opt libwebp
+
+[L] GPL3
+[V] 4.14.3a
+
+[D] 4b7890badead561e26bb5fdba6011d2de8a1f2f44f5c27d45b52f452 lzdoom-4.14.3a.tar.gz https://github.com/drfrag666/gzdoom/archive/refs/tags/l4.14.3a/
+
+var_append CC_WRAPPER_APPEND ' ' -std=gnu17

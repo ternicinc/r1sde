@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xosd/xosd.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library for displaying shaped text
+
+[T] xosd is an X11 On Screen Display library. It creates an unmanged and
+[T] shaped X11 window for onscreen information.
+
+[U] https://www.ignavus.net/software.html
+
+[A] spoonboy@ignavus.net
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 2.2.15
+[P] X -----5---9 146.300
+
+[D] 4c3295f68949b83450515788e3da01034b893593dfc75a0a172a5465 xosd-2.2.15.tar.gz https://raw.githubusercontent.com/Schlauf/libXosd/refs/heads/main/

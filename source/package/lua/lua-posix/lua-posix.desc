@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lua-posix/lua-posix.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A POSIX library for Lua
+
+[T] A library for lua containing POSIX commands:
+[T] setenv,getenv,mkdir,chmod,fork, etc..
+
+[U] https://github.com/luaposix/luaposix
+
+[A] Luiz Henrique de Figueiredo <lhf@tecgraf.puc-rio.br>
+[A] Natanael Copa <natanael.copa@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] MIT
+[V] 36.3
+
+[D] 06b667f770746485819b0b3fea638c62a50715b3f18dcdea5848d5de luaposix-36.3.tar.gz https://github.com/luaposix/luaposix/archive/v36.3/
+
+. $base/package/*/*/lua-conf.in
+
+runmake=0
+hook_add inmake 5 ./build-aux/luke
+hook_add postmake 5 "./build-aux/luke PREFIX=/$prefix INST_LIBDIR=$pkglibdir install"

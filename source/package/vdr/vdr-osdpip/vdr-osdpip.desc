@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/vdr-osdpip/vdr-osdpip.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] VDR Plugin: OSD picture-in-picture
+
+[T] Video Disc Recorder plugin: OSD picture-in-picture,
+[T] displays the current channel in a small box on the screen
+
+[U] http://linux.kompiliert.net
+
+[A] Sascha Volkenardt <sascha@akv-soft.de>
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/multimedia
+[F] FPIC
+
+[L] GPL
+[V] 0.0.8
+
+[D] 2905134110 vdr-osdpip-0.0.8.tgz http://linux.kompiliert.net/files/
+
+. $base/package/vdr/*/vdr-plugin-conf.in
+hook_add postmake 5 "plugin_register osdpip"

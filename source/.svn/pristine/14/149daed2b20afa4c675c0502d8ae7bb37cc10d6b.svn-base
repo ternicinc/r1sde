@@ -1,0 +1,88 @@
+#!/usr/bin/env bash
+# --- R2-COPYRIGHT-BEGIN ---
+# r2/r2
+# Copyright (C) 2023 - 2026 The R2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- R2-COPYRIGHT-END ---
+
+top=$(readlink -f $0)
+[ ! -e t2 -a "$top" ] && cd ${top%/*}
+
+declare -A commands
+commands["apply"]="apply patch"
+commands["bench"]="benchmark system"
+commands["bootstrap"]="bootstrap vital deps on homebrew systems"
+commands["config|conf"]="creates a target configuration profile"
+commands["inst|install"]="installs a package and its dependencies"
+commands["uninstall"]="uninstalls a package from the system"
+commands["download|dl"]="downloads assets of a package"
+commands["build-target"]="builds a whole target sandbox"
+commands["clean|clear"]="clean-up build artifacts"
+commands["create"]="create a package from external URLs"
+commands["create-iso"]="create an ISO after a target build"
+commands["list-errors"]="list build target errors"
+commands["commit"]="commit changes to the R1 source tree"
+commands["find"]="find package based on meta data"
+commands["update"]="update a package meta-data version"
+commands["upgrade"]="upgrade the system install packages"
+commands["up|pull|sync"]="update / pull r1 source tree changes"
+
+usage() {
+    cat << EOT
+Usage: r1 command <options>
+Commands:
+EOT
+
+    for i in "${!commands[@]}"; do
+	local desc=${commands[$i]}
+	local n=$((${#i} + 2))
+	local t="\t\t"
+	[ $n -gt 7 ] && t="\t"
+	echo -e "  $i$t$desc"
+    done | sort
+
+    cat << EOT
+Options:
+  -v, --verbose	verbose operation
+  -c, --cfg	config name
+EOT
+    exit 1
+}
+
+# convert modern --* args to backward-compat single-dash -*
+# and save the first non option as cmd
+cmd=
+declare -a args
+for a; do
+    a=(${a/--/-})
+    [[ -z "$cmd" && "$a" = [^-]* && ( ${#args[*]} -eq 0 || ${args[-1]} != "-cfg" ) ]] && cmd="$a" && continue
+    args+=($a)
+done
+
+# cmd wrapper w/ check if r1 and the matching script was checked out
+exec_checked_w_args() {
+	[ -e $1 ] && exec $* "${args[@]}"
+	echo 'Error: r1 not fully checked out: run "r1 up" to initialize or update.'
+	exit 1
+}
+
+case "$cmd" in
+    apply) exec_checked_w_args scripts/Apply ;;
+    conf|config) exec_checked_w_args scripts/Config ;;
+    bench) exec_checked_w_args scripts/Bench ;;
+    bootstrap) exec_checked_w_args scripts/Bootstrap ;;
+    build-target) exec_checked_w_args scripts/Build-Target ;;
+    clean|clear) exec_checked_w_args scripts/Cleanup ;;
+    create) exec_checked_w_args scripts/Create-Pkg ;;
+    create-iso) exec_checked_w_args scripts/Create-ISO ;;
+    list-errors) exec_checked_w_args scripts/Create-ErrList ;;
+    commit|ci) exec_checked_w_args scripts/Commit ;;
+    download|dl) exec_checked_w_args scripts/Download ;;
+    find) exec_checked_w_args scripts/Find-Pkg ;;
+    install|inst) exec_checked_w_args scripts/Emerge-Pkg ;;
+    update) exec_checked_w_args scripts/Update-Pkg ;;
+    update-system|upgrade) exec_checked_w_args scripts/Emerge-Pkg -system ;;
+    uninstall) type -p mine >/dev/null && mine=mine || mine=bize; $mine -r "${args[@]}" ;;
+    up|pull|sync) if [ -e .git ]; then exec git pull; else exec svn up "${args[@]}"; fi ;;
+    *) usage ;;
+esac

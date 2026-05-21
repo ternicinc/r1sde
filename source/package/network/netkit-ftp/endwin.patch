@@ -1,0 +1,23 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/netkit-ftp/endwin.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+
+I don't know why - but this test fails all the time ...
+
+ - Clifford
+
+--- ./configure.orig	Fri Jul  3 13:55:58 1998
++++ ./configure	Fri Jul  3 13:56:33 1998
+@@ -417,7 +417,7 @@
+ syntax error. /* not ncurses */
+ #endif
+ int main() {
+-    endwin();
++    //endwin();
+     return 0;
+ }
+ EOF

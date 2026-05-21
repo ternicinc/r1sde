@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/tinylogin/tinylogin.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Very small login utilities
+
+[T] TinyLogin is a suite of tiny Unix utilities for handling logging into,
+[T] being authenticated by, changing one's password for,
+[T] and otherwise maintaining users and groups on an embedded system.
+[T] It also provides shadow password support to enhance system security.
+
+[A] Erik Andersen
+[M] Nigel Kostiuck <emte@labotomy.net>
+
+[C] base/system
+[F] CROSS
+
+[L] GPL
+[V] 1.4
+[P] O --2--5---9 163.501
+
+[D] 32d5787c24fdb61f0ccdc95daa6498846544a9666f5810a2843a5d3e tinylogin-1.4.tar.bz2 http://tinylogin.busybox.net/downloads/
+
+var_append makeinstopt ' ' PREFIX=$root

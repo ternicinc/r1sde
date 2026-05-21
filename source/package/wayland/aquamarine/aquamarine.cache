@@ -1,0 +1,32 @@
+
+[TIMESTAMP] 1729795142 Thu Oct 24 20:39:02 2024
+[BUILDTIME] 18 (9)
+[SIZE] 1.38 MB, 33 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] hwdata
+[DEP] hyprutils
+[DEP] hyprwayland-scanner
+[DEP] libdisplay-info
+[DEP] libdrm
+[DEP] libglvnd
+[DEP] libinput
+[DEP] linux-header
+[DEP] make
+[DEP] mesa
+[DEP] pixman
+[DEP] pkgconfig
+[DEP] seatd
+[DEP] sed
+[DEP] tar
+[DEP] udev
+[DEP] wayland
+[DEP] wayland-protocols

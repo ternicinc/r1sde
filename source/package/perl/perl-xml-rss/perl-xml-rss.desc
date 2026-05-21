@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-xml-rss/perl-xml-rss.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module XML-RSS
+
+[T] Perl module XML-RSS.
+
+[U] https://metacpan.org/pod/XML::RSS
+
+[A] Kellan Elliott-Mccrea <kellan@protest.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] Artistic GPL
+[V] 1.65
+[P] X -----5---9 200.121
+
+[D] ea7bdb66eb727e38c1bdfefd0a25f4e4f2adc6aa699e56ded5c5f091 XML-RSS-1.65.tar.gz https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/

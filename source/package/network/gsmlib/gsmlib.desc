@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gsmlib/gsmlib.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library for GSM modem access
+
+[T] Gsmlib contains a library to access GSM mobile phones through GSM modems.
+[T] Features include:
+[T]
+[T] - modification of phonebooks stored in the mobile phone or on the SIM card
+[T] - reading and writing of SMS messages stored in the mobile phone
+[T] - sending and reception of SMS messages
+
+[U] http://www.pxh.de/fs/gsmlib/index.html
+
+[A] Peter Hofmann <software@pxh.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+
+[L] LGPL
+[V] 1.10
+
+[CV-URL] http://www.pxh.de/fs/gsmlib/download/index.html
+
+[D] 804d900e1fb60d1e387f7be5e4dbe3503713de3a30ec1f94909486ab gsmlib-1.10.tar.gz http://www.pxh.de/fs/gsmlib/download/

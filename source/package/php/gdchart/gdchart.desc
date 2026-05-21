@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gdchart/gdchart.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GDChart Based Graphing Interface
+
+[T] The GDChart extension provides an interface to the bundled gdchart
+[T] library. This library uses GD (bundled) library to generate 20
+[T] different types of graphs based on supplied parameters.
+
+[U] http://users.fred.net/brv/chart/
+
+[A] Ilia Alshanetsky <ilia@prohost.org>
+[A] Rasmus Lerdorf <rasmus@php.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] OpenSource
+[V] 0.11.5
+
+[D] 0adc807d9152608744ca1c8b08947f1060195d815f76bae837677d92 gdchart0.11.5dev.tar.gz http://users.fred.net/brv/chart/
+
+hook_add preconf 5 phpize
+var_append confopt ' ' "--enable-gdchart=$(pkgprefix includedir php)/php/ext/gd/"

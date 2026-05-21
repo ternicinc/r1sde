@@ -1,0 +1,30 @@
+[TIMESTAMP] 1737709217 Fri Jan 24 10:00:17 2025
+[BUILDTIME] 8 (9)
+[SIZE] 0.39 MB, 13 files
+
+[DEP] autoconf
+[DEP] automake
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] libdrm
+[DEP] libglvnd
+[DEP] libpciaccess
+[DEP] libtool
+[DEP] libx11
+[DEP] libxext
+[DEP] libxv
+[DEP] libxvmc
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] perl
+[DEP] pixman
+[DEP] sed
+[DEP] tar
+[DEP] xorg-server
+[DEP] xorgproto
+[DEP] xz

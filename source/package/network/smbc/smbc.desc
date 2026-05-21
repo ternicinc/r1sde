@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/smbc/smbc.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Samba Commander
+
+[T] Samba Commander is a text mode SMB network commander. In SMBC,
+[T] you can browse the local network or you can use the search
+[T] function to find the files. You can also download/upload files
+[T] and directories or create them both locally and remotely. SMBC
+[T] has a resume function and supports UTF-8 characters.
+
+[U] http://smbc.airm.net/en/index.php
+
+[A] Rafal Michniewicz
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] NOPARALLEL
+
+[L] GPL
+[V] 1.2.2
+
+[D] f49a9ee79da18eee6d714283bf330feeedb3a34a30b9b889657290ae smbc-1.2.2.tgz https://prdownloads.sourceforge.net/sourceforge/smbc/
+
+[ $prefix_auto = 1 ] && prefix=opt/samba && set_confopt
+
+pkgprefix -t samba
+var_append GCC_WRAPPER_APPEND ' ' "-I$(pkgprefix includedir samba) -L$(pkgprefix libdir samba)"

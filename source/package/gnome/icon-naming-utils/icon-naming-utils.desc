@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/icon-naming-utils/icon-naming-utils.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Icon naming utility (Tango project)
+
+[T] To help with the transition to the new naming scheme, Icon Naming
+[T] Utilities are available. This utility maps the icon names used by the GNOME
+[T] and KDE desktops to the icon names proposed in the Icon Naming Specification
+[T] linked above.
+
+[U] http://tango.freedesktop.org/
+
+[A] The Tango project
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/icon extra/desktop/gnome
+[F] CROSS
+
+[E] add perl-xml-simple
+
+[L] GPL
+[V] 0.8.90
+[P] X -----5---9 144.700
+
+[CV-URL] https://download.gnome.org/sources/icon-naming-utils/cache.json
+[D] 164d1c2462f208c0b0bfe1123e2ffd5c98f4c5e149948b7cd427d83d icon-naming-utils-0.8.90.tar.gz https://tango.freedesktop.org/releases/
+
+. $base/package/*/*/gnome-conf.in

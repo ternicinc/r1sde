@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/metamail/hotfix-60_metamail-2.7-awk.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- mm2.7/src/bin/sun2mime.fixawk	Thu Feb  1 12:28:33 2001
++++ mm2.7/src/bin/sun2mime	Thu Feb  1 12:28:55 2001
+@@ -20,7 +20,7 @@
+     rm -rf $TMPFILE
+ fi
+ 
+-/bin/nawk '
++/bin/gawk '
+   BEGIN { printf("Content-type: multipart/mixed; boundary=--------\n\n")
+           RS=""; FS="\n"; mode="HEADER" }
+   mode == "HEADER" {

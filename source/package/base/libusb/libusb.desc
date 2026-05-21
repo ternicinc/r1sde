@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libusb/libusb.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] OS independent USB device access
+
+[T] The libusb project's aim is to create a Library for use by user
+[T] level applications to USB devices regardless of OS.
+
+[U] https://libusb.info
+
+[A] <johannes@erdfelt.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[L] GPL
+[V] 1.0.30
+[P] X --2--5---9 110.000
+
+[D] c348d313ed30f0cee70d714b302692d090a55c227181f4e87eb8ce37 libusb-1.0.30.tar.bz2 https://github.com/libusb/libusb/releases/download/v1.0.30/
+
+if ! atstage native || ! pkginstalled udev; then var_append confopt ' ' --disable-udev; fi
+var_append confopt ' ' --disable-build-docs

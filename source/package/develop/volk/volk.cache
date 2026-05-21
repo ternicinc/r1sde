@@ -1,0 +1,16 @@
+[TIMESTAMP] 1737659313 Thu Jan 23 20:08:33 2025
+[BUILDTIME] 1 (9)
+[SIZE] 0.54 MB, 13 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] vulkan-headers

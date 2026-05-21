@@ -1,0 +1,17 @@
+[TIMESTAMP] 1778695388 Wed May 13 20:03:08 2026
+[BUILDTIME] 4 (9)
+[SIZE] 0.10 MB, 26 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] openssl
+[DEP] python
+[DEP] python-gpep517
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

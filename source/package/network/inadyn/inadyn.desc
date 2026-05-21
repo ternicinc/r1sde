@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/inadyn/inadyn.desc
+[COPY] Copyright (C) 2018 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Internet Automated Dynamic DNS Client
+
+[T] Inadyn is a small and simple Dynamic DNS, DDNS, client with HTTPS support
+[T] Commonly available in many GNU/Linux distributions, used in off the shelf
+[T] routers and Internet gateways to automate the task of keeping your Internet
+[T] name in sync with your public IP address. It can also be used in
+[T] installations with redundant (backup) connections to the Internet.
+
+[U] https://github.com/troglobit/inadyn
+
+[A] Narcis Ilisei's (original INADYN)
+[A] Joachim Nilsson
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 2.13.0
+
+[D] 9c79ee9ff6a7796104b5dcec7d6b66ab2f13d21d41f9267c2ed30004 inadyn-2.13.0.tar.xz https://github.com/troglobit/inadyn/releases/download/v2.13.0/
+
+PKG_CONFIG_PATH="$root/usr/lib/pkgconfig"
+
+var_append confopt ' ' --sysconfdir=/etc
+var_append confopt ' ' --localstatedir=/var
+
+if pkginstalled openssl; then
+	var_append confopt ' ' --enable-openssl
+fi

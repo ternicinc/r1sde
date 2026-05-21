@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/intel-vaapi-driver/intel-vaapi-driver.desc
+[COPY] Copyright (C) 2016 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The VA-API user mode driver for Intel GEN Graphics family
+
+[T] The VA-API user mode driver for Intel GEN Graphics family.
+
+[U] https://github.com/01org/intel-vaapi-driver
+
+[A] Keith Whitwell
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[R] + arm64 x86-64
+
+[L] OpenSource
+[V] 2.4.1
+
+[D] c0b1d9ea7b739f6447819295dd1a4636caaf6e84e1b3bf4a03ca536a intel-vaapi-driver-2.4.1.tar.bz2 https://github.com/01org/intel-vaapi-driver/releases/download/2.4.1/

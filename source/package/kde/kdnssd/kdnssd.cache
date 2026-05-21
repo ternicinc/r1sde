@@ -1,0 +1,21 @@
+[TIMESTAMP] 1759845363 Tue Oct  7 15:56:03 2025
+[BUILDTIME] 35 (9)
+[SIZE] 0.32 MB, 136 files
+
+[OPT] avahi
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] qt6base
+[DEP] qt6tools
+[DEP] qt6translations
+[DEP] sed
+[DEP] tar
+[DEP] xz

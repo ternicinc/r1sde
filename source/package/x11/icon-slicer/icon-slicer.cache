@@ -1,0 +1,19 @@
+[TIMESTAMP] 1737674271 Fri Jan 24 00:17:51 2025
+[BUILDTIME] 2 (9)
+[SIZE] 0.05 MB, 6 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] popt
+[DEP] sed
+[DEP] tar
+[DEP] xcursorgen

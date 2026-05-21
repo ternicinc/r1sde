@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libchamplain/libchamplain.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome libchamplain package
+
+[T] Core Gnome libchamplain package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 0.12.21
+[P] X -----5---9 177.200
+
+[CV-URL] https://download.gnome.org/sources/libchamplain/cache.json
+[D] 3c9457e9feb357a9fc98d34409a5ff2bd6ed7c8f7c7525ad1f62262f libchamplain-0.12.21.tar.xz https://download.gnome.org/sources/libchamplain/0.12/
+
+. $base/package/*/*/gnome-conf.in

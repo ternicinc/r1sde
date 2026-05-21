@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/aquamarine/aquamarine.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A very light rendering backend library
+
+[T] Aquamarine provides basic abstractions for an application to render on a
+[T] Wayland session (in a window) or a native DRM session. It is agnostic of
+[T] the rendering API (Vulkan/OpenGL) and designed to be lightweight,
+[T] performant, and minimal.
+
+[U] https://github.com/hyprwm/aquamarine
+
+[A] vaxerski
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/x11
+[F] CROSS OBJDIR
+
+[L] BSD
+[V] 0.11.0
+[P] X -----5---9 204.000
+
+[D] 457e1455e8ff4a303dc31c01612a32b94123b3ac45c9ee581ea95e91 aquamarine-0.11.0.tar.gz https://github.com/hyprwm/aquamarine/archive/v0.11.0/
+
+var_append GCC_WRAPPER_APPEND ' ' -I$root$(pkgprefix includedir pixman)

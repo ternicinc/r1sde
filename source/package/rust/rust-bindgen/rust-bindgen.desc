@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rust-bindgen/rust-bindgen.desc
+[COPY] Copyright (C) 2017 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Generates Rust FFI bindings to C and C++ libraries
+
+[T] Automatically generates Rust FFI bindings to C (and some C++) libraries.
+
+[U] https://rust-lang.github.io/rust-bindgen/
+
+[A] Rust community
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+
+[R] - alpha hppa hppa64 ia64
+
+[L] BSD
+[V] 0.72.1
+[P] X ?----5---9 127.400
+
+[CV-FLAGS] NO-PREFIX
+[D] 840ce6d0e298e584598c512c7abbd41601e84d3cc5b484ecc1123cc3 rust-bingen-0.72.1.tar.gz https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.72.1/
+
+cargoinstopt=
+hook_add postmake 5 "install target/*/bindgen $root$bindir/"

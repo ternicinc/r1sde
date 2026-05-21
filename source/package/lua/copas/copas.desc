@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/copas/copas.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Lua dispatcher that can be used fo TCP/IP socket communication
+
+[T] Copas is a dispatcher based on coroutines that can be used by
+[T] TCP/IP socket request/response servers. It uses LuaSocket as the
+[T] interface with the TCP/IP stack.
+[T] A server registered with Copas should provide a handler for
+[T] requests and use Copas socket functions to send the response.
+[T] Copas loops through requests and invokes the corresponding
+[T] handlers.
+
+[U] https://www.keplerproject.org/copas/
+
+[A] André Carregal
+[A] Javier Guerra
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] OpenSource
+[V] 4.10.0
+
+[D] 2693bb5b22ffce97ddddc186c3af1935cb1ebcedf14f4ff1d176535b copas-4.10.0.tar.gz https://github.com/lunarmodules/copas/archive/4.10.0/
+
+. $base/package/*/*/lua-conf.in
+runmake=0
+hook_add postmake 5 install_lua_module

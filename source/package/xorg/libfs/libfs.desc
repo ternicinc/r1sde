@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libfs/libfs.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library Interface to the X Font Server
+
+[T] Library Interface to the X Font Server
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS NO-LTO
+
+[L] OpenSource
+[V] 1.0.10
+[P] X -----5---9 112.407
+
+[D] 5f9afc13b5f7a5da695ff1a880cde70988313efe0f0755e1327d1ff1 libFS-1.0.10.tar.xz http://xorg.freedesktop.org/releases/individual/lib/
+
+. package/*/*/modular-x-conf.in

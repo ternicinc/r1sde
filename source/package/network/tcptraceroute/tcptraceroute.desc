@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/tcptraceroute/tcptraceroute.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A traceroute implementation using TCP packets
+
+[T] tcptraceroute is a traceroute implementation using TCP SYN packets,
+[T] instead of the more traditional UDP or ICMP ECHO packets. In doing
+[T] so, it is able to trace through many common firewall filters.
+
+[U] https://github.com/mct/tcptraceroute
+
+[A] Michael C. Toren <mct@toren.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] GPL
+[V] 1.5beta7
+
+[D] dccd63a789a02cebd688214eb3aa8e2c4047d60a79eea007dbf855ba tcptraceroute-1.5beta7.tar.gz https://github.com/mct/tcptraceroute/archive/refs/tags/tcptraceroute-1.5beta7/

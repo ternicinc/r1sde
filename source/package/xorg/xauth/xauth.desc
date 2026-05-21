@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xauth/xauth.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] X authority file utility
+
+[T] The xauth program is used to edit and display the authorization
+[T] information used in connecting to the X server.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.1.5
+[P] X -----5---9 112.600
+
+[D] d9c437118a5417b4b9e1c1969853d9de993d27e17c75aee9d6f4b591 xauth-1.1.5.tar.xz http://xorg.freedesktop.org/releases/individual/app/
+
+. package/*/*/modular-x-conf.in

@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/musicbrainz-trm/hotfix-gcc43.patch
+# Copyright (C) 2009 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- trm-0.2.1/mbid3.cpp.vanilla	2009-02-21 18:32:16.000000000 +0100
++++ trm-0.2.1/mbid3.cpp	2009-02-21 18:32:38.000000000 +0100
+@@ -6,6 +6,7 @@
+ #ifdef HAVE_LIBID3
+ 
+ #include <stdio.h>
++#include <string.h>
+ #include "mbid3.h"
+ 
+ #define DB Debug_v("%s:%d", __FILE__, __LINE__);

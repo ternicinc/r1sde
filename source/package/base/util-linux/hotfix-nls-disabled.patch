@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/util-linux/hotfix-nls-disabled.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- util-linux-2.13-pre7/include/nls.h.orig	2007-06-19 08:31:42.000000000 +0200
++++ util-linux-2.13-pre7/include/nls.h	2007-06-19 08:30:49.000000000 +0200
+@@ -13,6 +13,7 @@
+ #  define N_(String) (String)
+ # endif
+ #else
++# include <locale.h>
+ # undef bindtextdomain
+ # define bindtextdomain(Domain, Directory) /* empty */
+ # undef textdomain

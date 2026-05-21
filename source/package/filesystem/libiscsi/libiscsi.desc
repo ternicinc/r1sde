@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libiscsi/libiscsi.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---\
+
+[I] A client-side library to implement the iSCSI protocol
+
+[T] Libiscsi is a client-side library to implement the iSCSI protocol that
+[T] can be used to access the resources of an iSCSI target. The library
+[T] is fully asynchronous with regards to iSCSI commands and SCSI tasks,
+[T] but a synchronous layer is also provided for ease of use for simpler
+[T] applications. The utils directory contains a handful of useful iSCSI
+[T] utilities such as logging in to and enumerating all targets on a
+[T] portal and all devices of a target. The examples directory contains
+[T] example implementation of how to access both the synchronous and
+[T] asynchronous APIs of libiscsi.
+
+[U] https://github.com/sahlberg/libiscsi/
+
+[A] Ronnie Sahlberg <ronniesahlberg@gmail.com>
+[M] Douglas Andreani <andreani.dr@gmail.com>
+
+[C] extra/filesystem
+[F] CROSS
+
+[L] GPL
+[V] 1.20.3
+[P] X -----5---9 136.500
+
+[D] 8b5cc8e0c0cbc9e76734bbf987b9738a7fac7473372f2d798cc5e1c2 libiscsi-1.20.3.tar.gz https://github.com/sahlberg/libiscsi/archive/1.20.3/
+
+autogen=1

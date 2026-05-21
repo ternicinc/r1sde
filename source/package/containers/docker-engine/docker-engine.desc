@@ -1,0 +1,47 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/docker-engine/docker-engine.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An open framework to assemble specialized container systems without reinventing the wheel
+
+[T] The Moby Project - a collaborative project for the container ecosystem
+[T] to assemble container-based systems.
+
+[U] https://mobyproject.org/
+
+[A] The Moby contributors (see AUTHORS file)
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/emulator
+[F] CROSS
+
+[E] add containerd
+[E] add runc
+[E] add tini
+
+[L] APL
+[V] 29.5.2
+[P] X -----5---9 300.005
+
+[D] 7190592ddbe1fe75644862cadcc79ea1d26afaa3c0403355031504cb moby-29.5.2.tar.gz https://github.com/moby/moby/archive/docker-v29.5.2/
+
+. $base/package/*/*/go-conf.in
+
+runmake= rungo=
+
+export DOCKER_GITCOMMIT=6c91b92
+
+hook_add inmake 5 "./hack/make.sh dynbinary"
+hook_add postmake 5 docker-engine-pm
+
+docker-engine-pm() {
+	mkdir -p $root$libexecdir/docker/cli-plugins
+	install -m 755 bundles/dynbinary-daemon/dockerd $root$bindir
+	install -m 755 bundles/dynbinary-daemon/docker-proxy $root$bindir
+
+	if pkginstalled systemd; then
+		install -m 644 ./contrib/init/systemd/docker.service $root/$prefix/lib/systemd/system/
+	fi
+}

@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/qt5declarative/qt5declarative.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Qt5 Declarative (Quick 2)
+
+[T] Qt5 Declarative: QML, Qt Quick and several Quick 2 related modules.
+
+[U] https://qt.io
+
+[A] Trolltech AS <www.trolltech.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] LGPL
+[V] 5.15.14
+[P] X -----5---9 140.000
+
+[CV-GROUP] qt5
+[D] ff2707a90a26d4095ba45eba15f4d939c80a4e11a9a12e743a075bc4 qtdeclarative-everywhere-opensource-src-5.15.14.tar.xz http://download.qt.io/official_releases/qt/5.15/5.15.14/submodules/
+
+. $base/package/*/*/qt5-conf.in

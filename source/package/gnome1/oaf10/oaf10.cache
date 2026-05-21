@@ -1,0 +1,27 @@
+
+[TIMESTAMP] 1684795754 Mon May 22 22:49:14 2023
+[BUILDTIME] 0 (9)
+[SIZE] 0.57 MB, 72 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] bison
+[DEP] coreutils
+[DEP] diffutils
+[DEP] file
+[DEP] findutils
+[DEP] flex
+[DEP] gawk
+[DEP] glib12
+[DEP] grep
+[DEP] indent
+[DEP] libxml1
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] orbit10
+[DEP] orbit2
+[DEP] popt
+[DEP] sed
+[DEP] tar
+[DEP] zlib

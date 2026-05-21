@@ -1,0 +1,26 @@
+[TIMESTAMP] 1747942896 Thu May 22 21:41:36 2025
+[BUILDTIME] 165 (9)
+[SIZE] 20.17 MB, 31 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] clang
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] hwloc
+[OPT] libjpeg
+[DEP] linux-header
+[DEP] llvm
+[DEP] make
+[OPT] opencl-loader
+[OPT] opencv
+[DEP] pkgconfig
+[DEP] procps
+[DEP] sed
+[OPT] spirv-llvm-translator
+[OPT] spirv-tools
+[DEP] tar

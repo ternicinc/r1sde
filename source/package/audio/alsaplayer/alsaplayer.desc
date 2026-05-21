@@ -1,0 +1,37 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/alsaplayer/alsaplayer.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] PCM audio player for Linux and compatible OSes
+
+[T] AlsaPlayer is a new PCM player developed on the Linux OS. Since the first
+[T] public beta release it's support has been extended to various other operating
+[T] systems. AlsaPlayer was written to excercise the new ALSA driver and library
+[T] system. The program is very much plugin based. It supports many input plugins
+[T] like MPEG audio, CDDA, MikMod or waves. It's output plugins support ALSA,
+[T] OSS, Esound, Sparc and SGI. There are also effect and visualisation plugins.
+
+[U] https://alsaplayer.sourceforge.net
+
+[A] Andy Lo A Foe <andy@alsa-project.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia extra/desktop/gnome
+[F] CROSS
+
+[E] opt jack
+[E] opt flac
+[E] opt gtk+2 cairo harfbuzz gdk-pixbuf at-spi2-core pango
+[E] opt doxygen
+
+[L] GPL
+[V] 0.99.82
+[P] X -----5---9 146.500
+
+[D] 100a0474d831e1a817cd1d71e89ccc5291adc3a5654b6abf77dcd83a alsaplayer-0.99.82.tar.gz https://github.com/alsaplayer/alsaplayer/releases/download/0.99.82/
+
+pkginstalled audiofile && var_append confopt ' ' " --enable-audiofile"
+pkginstalled nas && var_append CC_WRAPPER_INSERT ' ' -I$root/usr/X11/include

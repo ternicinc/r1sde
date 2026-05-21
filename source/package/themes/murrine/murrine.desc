@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/murrine/murrine.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Murrine Gtk+ theme
+
+[T] Murrine is a flexible Gtk+ theme.
+
+[U] https://gitlab.gnome.org/Archive/murrine
+
+[A] Cimitan Andrea
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/gnome
+[F] CROSS
+
+[L] GPL
+[V] 0.98.2
+
+[D] 28318f681538e2066faad5a2b5ad1f678d1ca5f68c1988ee09281118 murrine-0.98.2.tar.xz https://download.gnome.org/sources/murrine/0.98/
+
+. $base/package/*/*/gnome-conf.in

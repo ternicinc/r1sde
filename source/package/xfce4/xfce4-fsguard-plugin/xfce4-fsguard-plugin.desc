@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfce4-fsguard-plugin/xfce4-fsguard-plugin.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A XFCE panel plugin to check the chosen mountpoint for free disk space
+
+[T] This plugin checks the chosen mountpoint for free disk space. It displays
+[T] 4 different icons (red, yellow, green, unknown) and a message box, depending
+[T] on the free space. The amount of free disk space is visible in a tooltip.
+
+[U] http://xfce-goodies.berlios.de/
+
+[A] Andre Lerche
+[M] Johan Boyé <linuxmasterjedi@free.fr>
+
+[C] extra/desktop/xfce
+[F] CROSS
+
+[L] BSD
+[V] 1.2.0
+
+[D] 60174eb07b9b0045ed171237d8874272e92a11ec4a172ff2b1b55973 xfce4-fsguard-plugin-1.2.0.tar.xz https://archive.xfce.org/src/panel-plugins/xfce4-fsguard-plugin/1.2/
+
+. $base/package/xfce4/*/xfce4-conf.in

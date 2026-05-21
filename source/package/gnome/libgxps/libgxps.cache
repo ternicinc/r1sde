@@ -1,0 +1,35 @@
+[TIMESTAMP] 1737679628 Fri Jan 24 01:47:08 2025
+[BUILDTIME] 5 (9)
+[SIZE] 0.42 MB, 26 files
+
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] gdk-pixbuf
+[OPT] glib
+[DEP] gobject-introspection
+[DEP] grep
+[DEP] gtk+
+[DEP] harfbuzz
+[DEP] lcms2
+[DEP] libarchive
+[DEP] libjpeg
+[DEP] libpng
+[DEP] libtiff
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar
+[DEP] xz

@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mpc/mpc.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A C library for the arithmetic of high precision complex numbers
+
+[T] Mpc is a C library for the arithmetic of complex numbers with arbitrarily
+[T] high precision and correct rounding of the result. It is built upon and
+[T] follows the same principles as Mpfr.
+
+[U] https://www.multiprecision.org/
+
+[A] Andreas Enge
+[A] Philippe Th'eveny
+[A] Paul Zimmermann
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+
+[F] CROSS DIETLIBC
+
+[L] LGPL
+[V] 1.4.1
+[P] X 0-2--5---9 102.250
+
+[CV-URL] http://www.multiprecision.org/mpc/download.html
+[D] 34678a5513f40e57fa70e65e3de2c5b017d0b9ceb2357c55f173c1d4 mpc-1.4.1.tar.xz https://ftp.gnu.org/gnu/mpc/
+
+atstage toolchain && var_append confopt ' ' --enable-shared=no
+atstage toolchain && var_append confopt ' ' '--with-gmp-include=$root$includedir --with-gmp-lib=$root$libdir'

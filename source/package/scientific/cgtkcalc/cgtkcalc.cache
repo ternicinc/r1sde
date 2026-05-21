@@ -1,0 +1,25 @@
+
+[TIMESTAMP] 1420818875 Fri Jan  9 15:54:35 2015
+[BUILDTIME] 0 (5) ERROR
+[SIZE] 0.01 MB, 6 files
+
+[DEP] 00-dirtree
+[DEP] at-spi2-core
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] grep
+[DEP] gtk+
+[DEP] linux-header
+[DEP] pango
+[DEP] pkgconfig
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar

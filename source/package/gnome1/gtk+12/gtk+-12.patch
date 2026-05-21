@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/gtk+12/gtk+-12.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./gtk/Makefile.in.orig	Sun Apr 23 15:01:41 2000
++++ ./gtk/Makefile.in	Sun Apr 23 15:02:01 2000
+@@ -146,5 +146,5 @@
+ 
+ # GTK+ header files that don't get installed
+-gtk_private_h_sources = @STRIP_BEGIN@ @STRIP_END@
++gtk_private_h_sources =
+ 
+ # GTK+ C sources to build the library from

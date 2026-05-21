@@ -1,0 +1,18 @@
+[TIMESTAMP] 1742573623 Fri Mar 21 17:13:43 2025
+[BUILDTIME] 3 (9)
+[SIZE] 0.40 MB, 14 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] efl
+[DEP] gawk
+[DEP] grep
+[OPT] imlib2
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] sed
+[DEP] tar
+[DEP] xz

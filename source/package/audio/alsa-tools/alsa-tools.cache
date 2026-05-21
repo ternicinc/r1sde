@@ -1,0 +1,26 @@
+[TIMESTAMP] 1744713484 Tue Apr 15 12:38:04 2025
+[BUILDTIME] 20 (5)
+[SIZE] 1.20 MB, 90 files
+
+[DEP] alsa-lib
+[DEP] at-spi2-core
+[DEP] automake
+[DEP] bash
+[DEP] bzip2
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] fltk
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] grep
+[DEP] gtk+
+[DEP] gtk+2
+[DEP] harfbuzz
+[DEP] linux-header
+[DEP] make
+[DEP] pango
+[DEP] sed
+[DEP] tar

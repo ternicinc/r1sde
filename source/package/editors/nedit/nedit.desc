@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/nedit/nedit.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Advanced multi-language programmers' text editor
+
+[T] NEdit is a Unix text editor for programmers and general users.
+[T] It combines a standard, easy-to-use, graphical user interface
+[T] with the thorough functionality and stability required by users
+[T] who edit text eight hours a day. It includes a macro language
+[T] with a complete library of editing functions, state-of-the-art
+[T] syntax highlighting for 30 common languages and text processors,
+[T] and the best mouse-interactivity available in a Unix text editor.
+
+[U] http://nedit.org/
+
+[A] Mark Edel <edel@ltx.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/editor
+
+[L] GPL
+[V] 5.8
+
+[D] 2b9f7926d09f14ebc615d881c833380b4cec1f0e39dc51fdd694ed69 nedit-5.8-src.tar.gz https://prdownloads.sourceforge.net/sourceforge/nedit/
+
+makeopt="linux" makeinstopt=
+
+hook_add premake 5 'sed -i "s:-O:${CFLAGS} -D__LINUX__:" makefiles/Makefile.linux'
+hook_add postmake 5 'cp -v source/{nc,nedit} $root$bindir'

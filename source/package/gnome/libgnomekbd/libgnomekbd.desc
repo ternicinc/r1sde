@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libgnomekbd/libgnomekbd.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Is an API to manage the keyboard in GNOME applications
+
+[T] Is an API to manage the keyboard in GNOME applications.
+
+[U] https://www.gnome.org
+
+[A] Sergey V. Udaltsov <svu@users.sourceforge.net>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/desktop/gnome
+
+[L] GPL
+[V] 3.28.1
+[P] X -----5---9 185.399
+
+[CV-URL] https://download.gnome.org/sources/libgnomekbd/cache.json
+[D] b5503212beaf9f34d675decc61342208d3786b1440874423e9eab060 libgnomekbd-3.28.1.tar.xz https://download.gnome.org/sources/libgnomekbd/3.28/
+
+. $base/package/*/*/gnome-conf.in

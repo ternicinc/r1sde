@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xvid4conf/xvid4conf.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Xvid4conf creates XviD configuration files
+
+[T] This tool creates XviD configuration files. The generated
+[T] configuration file is meant to be read by transcodes xvid4
+[T] export module. This module (and so the configuration file) is
+[T] intended to be used with XviD 1.0 (dev-api-4).
+
+[U] https://twolife.be/xvid4conf/
+
+[A] Tilmann Bitterberg <tilmann@bitterberg.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] OpenSource
+[V] 1.13
+
+[D] f2ce28f8ec3b2482a5f9bdeebeaec17be085a612b22c48b34a26b8fb xvid4conf_1.13.tar.gz https://twolife.be/xvid4conf/

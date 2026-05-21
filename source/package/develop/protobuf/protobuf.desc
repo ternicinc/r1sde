@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/protobuf/protobuf.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Google's data interchange format
+
+[T] Protocol Buffers (a.k.a., protobuf) are Google's language-neutral,
+[T] platform-neutral, extensible mechanism for serializing structured data.
+
+[U] https://developers.google.com/protocol-buffers/
+
+[A] Google
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] MIT
+[V] 35.0
+[P] X -----5---9 109.300
+
+[D] c1ef437eb0922c31188a6284d062ebad4fbdd7074583fd8328695058 protobuf-35.0.tar.gz https://github.com/protocolbuffers/protobuf/archive/v35.0/
+
+var_append cmakeopt ' ' -Dprotobuf_BUILD_TESTS=OFF
+var_append cmakeopt ' ' -Dprotobuf_ABSL_PROVIDER=package
+[ "$SDECFG_STATIC" = 1 ] || var_append cmakeopt ' ' -DBUILD_SHARED_LIBS=ON

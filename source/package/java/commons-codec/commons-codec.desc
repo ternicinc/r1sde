@@ -1,0 +1,37 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/commons-codec/commons-codec.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Jakarta Commons Codec
+
+[T] Commons Codec provides implementations of common encoders and
+[T] decoders such as Base64, Hex, various phonetic encodings, and
+[T] URLs.
+
+[U] https://jakarta.apache.org/commons/codec/
+
+[A] Apache Jakarta Commons team
+[M] Minto van der Sluis <minto@multimach.com>
+
+[C] extra/development
+
+[L] OpenSource
+[V] 1.22.0
+
+[D] 3705ca0656c99887ff30f2bba3960f6e7818fc0cf03108ba6499daef commons-codec-1.22.0-src.tar.gz https://dlcdn.apache.org/commons/codec/source/
+
+. $base/package/*/*/java-conf.in BUILD_TYPE=ANT
+
+buildtarget="jar javadoc"
+buildjardir=dist
+builddocdir=dist/docs
+
+cc-custextract() {
+	echo "Extracting $1 ($taropt) ..."
+	mkdir $pkg-$ver
+	tar -v $taropt $1 -C $pkg-$ver | sed 's,^,$pkg-$ver/,' > untar.txt
+}
+
+custextract=cc-custextract

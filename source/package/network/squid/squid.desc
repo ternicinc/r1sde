@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/squid/squid.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Internet Object Cache
+
+[T] Squid is a fully-featured HTTP/1.0 proxy which is almost HTTP/1.1
+[T] compliant. Squid offers a rich access control, authorization and logging
+[T] environment to develop web proxy and content serving applications.
+
+[U] https://www.squid-cache.org/
+
+[A] Duane Wessels
+[M] René Rebe <rene@exactco.de>
+
+[F] JAIL CROSS
+[C] extra/server
+
+[E] opt cyrus-sasl2
+
+[L] GPL
+[V] 7.5
+
+[D] 0a31667f83dd9c474ffbe101eefabf7d6e26e33dcd0a4e2124121c0d squid-7.5.tar.xz https://github.com/squid-cache/squid/releases/download/SQUID_7_5/
+
+[ $prefix_auto = 1 ] && prefix=opt/squid && set_confopt
+var_append confopt ' ' --enable-follow-x-forwarded-for

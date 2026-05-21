@@ -1,0 +1,46 @@
+[TIMESTAMP] 1759927076 Wed Oct  8 14:37:56 2025
+[BUILDTIME] 90 (9)
+[SIZE] 21.86 MB, 311 files
+
+[DEP] 00-dirtree
+[OPT] asciidoc
+[DEP] bash
+[DEP] binutils
+[DEP] bison
+[DEP] capstone
+[DEP] clang
+[DEP] coreutils
+[DEP] dbus-glib
+[DEP] diffutils
+[OPT] docbook-xml
+[OPT] docbook-xsl
+[OPT] dwarves
+[DEP] findutils
+[DEP] flex
+[DEP] gawk
+[DEP] grep
+[DEP] libbpf
+[DEP] libelf
+[DEP] libtraceevent
+[DEP] libtracefs
+[DEP] libxml
+[DEP] libxslt
+[DEP] linux-header
+[DEP] llvm
+[DEP] m4
+[DEP] make
+[OPT] numactl
+[DEP] openssl
+[DEP] perl
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] slang
+[OPT] systemtap
+[DEP] tar
+[DEP] util-linux
+[OPT] xmlto
+[DEP] xz
+[DEP] zlib
+[DEP] zstd

@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sdparm/sdparm.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Get/set hard disk parameters for SCSI discs
+
+[T] Shell utility to access/tune ioctl features of the Linux SCSI driver
+[T] (which also means S-ATA, USB of Firewire attached devices that appear
+[T] as SCSI devices).
+
+[U] https://sg.danny.cz/sg/sdparm.html
+
+[A] Douglas Gilbert <dgilbert@interlog.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS DIETLIBC
+
+[L] BSD
+[V] 1.12
+
+[D] a42a04150b956aaf7f6779bf5fd0dd4102bb0003f3d185a625f46bf8 sdparm-1.12.tgz http://sg.danny.cz/sg/p/

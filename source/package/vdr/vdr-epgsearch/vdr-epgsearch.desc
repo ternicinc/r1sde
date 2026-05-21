@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/vdr-epgsearch/vdr-epgsearch.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] VDR Plugin: advanced program guide search tool
+
+[T] Video Disc Recorder plugin: advanced program guide search tool
+
+[U] http://winni.vdr-developer.org/epgsearch/index.html
+
+[A] Christian Wieninger <cwieninger@gmx.de>
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/multimedia
+[F] FPIC
+
+[L] GPL
+[V] 2.4.6
+
+[D] fe769cb7ac344d6cdb961aa66a8996b9f6dcb4320ae25b7463d5b5a4 vdr-epgsearch-2.4.6.zip https://github.com/vdr-projects/vdr-plugin-epgsearch/archive/v2.4.6/
+
+. $base/package/vdr/*/vdr-plugin-conf.in
+hook_add postmake 5 "plugin_register epgsearch"

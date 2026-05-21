@@ -1,0 +1,48 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/qscanq/runit.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./src/conf-svc.orig	2005-12-01 13:09:29.000000000 -0300
++++ ./src/conf-svc	2005-12-01 13:35:26.000000000 -0300
+@@ -1,6 +1 @@
+-/command/svc
+-
+-The first line of this file gives the full path to the svc program from
+-Dan Bernstein's daemontools package. You shouldn't need to change it,
+-unless you've installed daemontools to a non-standard place, or are using
+-an outdated version of daemontools.
++/command/runsvctrl
+--- ./src/run-cleanq.c.orig	2005-12-01 13:09:29.000000000 -0300
++++ ./src/run-cleanq.c	2005-12-01 13:31:55.000000000 -0300
+@@ -7,7 +7,7 @@
+ 
+ char *svco_cmd[] = {
+ (char *)auto_svc,
+-"-o",
++"o",
+ (char *)auto_scanq,
+ 0
+ };
+--- ./src/install-cleanq.c.orig	2005-12-02 19:32:22.000000000 -0300
++++ ./src/install-cleanq.c	2005-12-02 19:51:45.000000000 -0300
+@@ -79,6 +79,7 @@
+   if (chdir("log") == -1)
+     strerr_die4sys(111,FATAL,"unable to chdir to ", r, "/log: ");
+   makedir("main",02755,auto_loguid,0);
++  fn = "main/config"; start(); outs(auto_cqlog); finish();
+ 
+   /* Create the "run" script */
+   fn = "run";
+@@ -87,9 +88,7 @@
+     start();
+     outs("#!/bin/sh\nexec setuidgid ");
+     outs(auto_loguser);
+-    outs(" multilog t \\\n  ");
+-    outs(auto_cqlog);
+-    outs("\\\n  ./main\n");
++    outs(" svlogd -t ./main\n");
+     finish();
+     move_file(fn,"run");
+     fn = "run";

@@ -1,0 +1,20 @@
+
+[TIMESTAMP] 1714729593 Fri May  3 11:46:33 2024
+[BUILDTIME] 4 (9)
+[SIZE] 0.38 MB, 20 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] ghostscript
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar

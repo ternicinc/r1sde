@@ -1,0 +1,26 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/vnuml/hotfix-make-install.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- vnuml-1.6.2-1/Makefile.in.orig	2006-02-16 14:19:32.000000000 +0100
++++ vnuml-1.6.2-1/Makefile.in	2006-02-16 14:50:31.000000000 +0100
+@@ -187,7 +187,7 @@
+ 		test -f Build || $(PERL) Build.PL; \
+ 	fi;
+ 	$(MAKE) all install-bin install-lib install-docs \
+-		install-modules install-share install-user
++		install-modules install-share
+ 
+ # put share in place
+ .PHONY install-share:
+@@ -249,7 +249,7 @@
+ install-bin:
+ 	cd bin; \
+ 	for file in $(INSTALLBIN_TARGETS); do \
+-	    $(INSTALL) $$file ${prefix}/${BIN}; \
++	    $(INSTALL) $$file ${BIN}/; \
+ 	done; \
+ 	# We test if it's a SuSE Linux Distribution to apply the patch
+ 	if test -f $(SUSE_FILE); then \

@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ocaml-findlib/ocaml-findlib.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] O'Caml library manager
+
+[T] O'Caml Findlib is a library manager for Objective Caml. It provides a
+[T] convention how to store libraries, and a file format ("META") to
+[T] describe the properties of libraries. There is also a tool (ocamlfind)
+[T] for interpreting the META files, so that it is very easy to use
+[T] libraries in programs and scripts.
+
+[U] http://projects.camlcity.org/projects/findlib.html
+
+[A] Gerd Stolpmann
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] MIT
+[V] 1.9.8
+[P] X -----5---9 191.900
+
+[D] 8118bee2bda55597a6df921e0917e0146cb569c89e482a74330a3b6c ocaml-findlib-1.9.8.tar.gz !http://download.camlcity.org/download/findlib-1.9.8.tar.gz
+
+which ocamlopt >/dev/null && var_append makeopt ' ' 'all' # Enable build of native-code libraries
+var_remove_regex makeopt ' ' 'prefix=.*'
+var_remove_regex makeinstopt ' ' 'prefix=.*'

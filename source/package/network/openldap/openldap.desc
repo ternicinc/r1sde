@@ -1,0 +1,69 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openldap/openldap.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Lightweight Directory Access Protocol
+
+[T] OpenLDAP Software is an open source implementation of the Lightweight
+[T] Directory Access Protocol. The suite includes slapd - stand-alone LDAP
+[T] server, slurpd - stand-alone LDAP replication server, libraries
+[T] implementing the LDAP protocol, and utilities, tools, and sample clients.
+
+[U] https://www.openldap.org/
+
+[A] Kurt Zeilenga {Chief Architect, Founder}
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/server
+[F] JAIL CROSS NO-LTO.gcc
+
+[L] GPL
+[V] 2.6.13
+[P] X -----5---9 117.900
+
+[CV-URL] https://www.openldap.org/software/download/
+[D] dfaaa03bcde8e506957c5688051f2156f4f83b8d0194c62190a51159 openldap-2.6.13.tgz http://mirror.eu.oneandone.net/software/openldap/openldap-release/
+
+createdocs=0
+
+if [ "$prefix_auto" = 1 ]; then
+	if [ "$SDECFG_PKG_OPENLDAP_CORE_PREFIX" ]; then
+		prefix="$SDECFG_PKG_OPENLDAP_CORE_PREFIX"
+	else
+		prefix="opt/openldap"
+	fi
+	set_confopt
+	# we want to keep a good record of openldap's sysconfdir
+	var_remove_regex confopt ' ' "--sysconfdir=.*"
+	var_append confopt ' ' --sysconfdir=${sysconfdir%/openldap}
+fi
+
+if atstage cross; then
+	var_append confopt ' ' --with-yielding_select=yes
+fi
+
+pkginstalled tcp_wrappers && var_append confopt ' ' --enable-wrappers
+
+var_append confopt ' ' --enable-shared
+var_append confopt ' ' --libexec=$sbindir
+
+# also desired backends (meta needs ldap)
+var_append confopt ' ' "--enable-meta --enable-ldap"
+
+if [ "$SDECFG_PKG_OPENLDAP_CLIENTONLY" = "1" ]; then
+	var_append confopt ' ' "--without-cyrus-sasl --disable-slapd \
+	                             --disable-slurpd"
+fi
+
+hook_add premake 3 'eval $MAKE depend'
+
+pkgprefix -t bdb
+var_append CPP_WRAPPER_APPEND ' ' "-I$(pkgprefix includedir bdb)"
+
+var_append GCC_WRAPPER_APPEND ' ' -DLDAP_DEBUG
+
+# work around - needs to be fixed, treading support hangs ... -ReneR
+[ $arch = powerpc ] && var_append confopt ' ' --disable-bdb

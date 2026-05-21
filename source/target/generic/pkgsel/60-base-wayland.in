@@ -1,0 +1,71 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/target/generic/pkgsel/60-base-wayland.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+# TITLE: Base Wayland desktop
+
+# reuse the minimal-xorg
+include target/generic/pkgsel/50-base-desktop.in
+
+# some required stuff
+X cmake
+
+# graphics
+X sane-backends
+X libgphoto
+
+X ghostscript
+X ghostscript-fonts
+X gutenprint
+
+# gtk/gnome
+X gtkdoc
+#X gobject-introspection
+#X libglade
+#X librsvg
+
+# multimedia
+X pulseaudio
+X libcamera
+X libfreeaptx
+X lua
+X pipewire
+X wireplumber
+X speakersafetyd
+X asahi-audio
+X speex
+X libogg
+X libmad
+X libopus
+X flac
+X libvorbis
+
+X libedit
+X cargo
+X cbindgen
+X rust-bindgen
+O uniifdef
+O webkitgtk
+X wasi-libc
+X wasi-libcxx
+X wasi-compiler-rt
+X lld
+X firefox
+X thunderbird
+
+# Wayland
+X xwayland
+X libdisplay-info
+X wlroots
+X seatd
+X xcb-util-wm
+X sway
+X swaybg
+X swayidle
+X swaylock
+X alacritty
+
+X wine

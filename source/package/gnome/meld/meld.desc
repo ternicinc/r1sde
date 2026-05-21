@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/meld/meld.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Meld visual diff and merge tool
+
+[T] You can compare two or three files and edit them in place (diffs update
+[T] dynamically). You can compare two or three folders and launch file comparisons.
+[T] You can browse and view a working copy from popular version control systems
+[T] such such as CVS, Subversion, Bazaar-ng and Mercurial.
+
+[U] https://meld.sf.net
+
+[A] Stephen Kennedy <stevek@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/editor extra/desktop/gnome
+[F] CROSS
+
+[L] GPL
+[V] 3.23.1
+
+[CV-URL] http://ftp.gnome.org/pub/gnome/sources/meld/cache.json
+[D] 8b1eebb45728d346b2a8ac70886f25fc3cd48ea87d40fbd13d4934df meld-3.23.1.tar.xz http://ftp.gnome.org/pub/gnome/sources/meld/3.23/
+
+hook_add premake 3 'for lang in hu ja ru; do mv po/$lang.po{,.defect}; done'

@@ -1,0 +1,40 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/plasma-workspace/plasma-workspace.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Plasma workspace
+
+[T] Plasma Workspace is used as the base for Plasma Desktop, Mobile, and
+[T] Bigscreen. It contains shared KCMs, applets as well as multiple libraries.
+
+[U] https://invent.kde.org/plasma/plasma-workspace
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[E] opt systemd
+[E] opt libqualculate
+[E] opt xdotool
+
+[L] GPL
+[V] 6.6.5
+[P] X -----5---9 200.310
+
+[CV-GROUP] kde-plasma
+[D] 607df7f120116de33be333afec65e74ce40ed650a057672b37575de0 plasma-workspace-6.6.5.tar.xz https://download.kde.org/stable/plasma/6.6.5/
+
+. $base/package/*/*/kde-conf.in
+
+plasma_splash() {
+    gzip -9 < $base/misc/artwork/t2.svg > \
+	lookandfeel/org.kde.breeze/contents/splash/images/plasma.svgz
+}
+hook_add preconf 1 plasma_splash
+
+atstage cross && var_append CXX_WRAPPER_APPEND ' ' "-L$root$(pkgprefix libdir glib)"
+pkginstalled kdoctools docbook-xml docbook-xsl || var_append cmakeopt ' ' -DBUILD_DOC=OFF

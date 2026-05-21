@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/minizip-ng/minizip-ng.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Fork of the zip manipulation library found in the zlib distribution
+
+[T] Minizip-ng is a zip manipulation library written in C that is supported
+[T] on Windows, macOS, and Linux.
+
+[U] https://github.com/zlib-ng/minizip-ng
+
+[A] Nathan Moinvaziri <https://github.com/nmoinvaz>
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] base/library
+[F] CROSS
+
+[L] OpenSource
+[V] 4.2.1
+[P] X -----5---9 300.000
+
+[D] 5be9f05c7142a71843b284fc065a8344225792a36977a6596397c2bb minizip-ng-4.2.1.tar.gz https://github.com/zlib-ng/minizip-ng/archive/4.2.1/
+
+[ "$SDECFG_STATIC" = 1 ] || var_append cmakeopt ' ' -DBUILD_SHARED_LIBS=ON

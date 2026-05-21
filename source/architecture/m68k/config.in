@@ -1,0 +1,15 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/m68k/config.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+#Description: Motorola 68000
+
+choice SDECFG_M68K_OPT 68020   \
+	68020	"Optimized for 68020" \
+	68030	"Optimized for 68030" \
+	68040	"Optimized for 68040" \
+	68060	"Optimized for 68060"
+
+#SDECFG_ID="$SDECFG_ID-$SDECFG_M68K_OPT"

@@ -1,0 +1,25 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/samba/hotfix-smbadduser_csh_usage.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./source3/smbadduser.in.orig	2006-01-16 22:50:47.000000000 +0000
++++ ./source3/smbadduser.in	2006-01-16 22:51:12.000000000 +0000
+@@ -3,11 +3,11 @@
+ # smbadduser - Written by Mike Zakharoff
+ #
+ 
+-prefix=@prefix@
+-exec_prefix=@exec_prefix@
+-LIBDIR=@libdir@
+-PRIVATEDIR=@privatedir@
+-CONFIGDIR=@configdir@
++set prefix=@prefix@
++set exec_prefix=@exec_prefix@
++set LIBDIR=@libdir@
++set PRIVATEDIR=@privatedir@
++set CONFIGDIR=@configdir@
+ 
+ unalias *
+ set path = ($path /usr/local/samba/bin)

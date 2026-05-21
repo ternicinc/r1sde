@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ipmiutil/ipmiutil.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] IPMI Management Utilities
+
+[T] The IPMI Management Utilities (ipmiutil, formerly known as panicsel)
+[T] project provides a series of utilities that perform common IPMI server
+[T] management functions, such as viewing the firmware log (showsel), or
+[T] configuring the BMC LAN & PEF features (pefconfig). The utilities are
+[T] designed for end-users, so that they should not require intimate
+[T] knowledge of how to build IPMI commands.
+
+[U] https://ipmiutil.sourceforge.net/
+
+[A] Intel Corporation
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] BSD
+[V] 3.2.2
+
+[D] f50222ec1643f06ce6e0107bc839a1453d3c051460e3881efe19a234 ipmiutil-3.2.2.tar.gz http://sourceforge.net/projects/ipmiutil/files/

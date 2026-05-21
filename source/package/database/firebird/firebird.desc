@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/firebird/firebird.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A relational database offering many ANSI SQL-99 features
+
+[T] Firebird is a relational database offering many ANSI SQL-99
+[T] features that runs on Linux, Windows, and a variety of Unix
+[T] platforms. It offers excellent concurrency, high performance,
+[T] and powerful language support for stored procedures and triggers.
+
+[U] https://www.firebirdsql.org/
+
+[A] Mariuz <mapopa@yahoo.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/database
+
+[L] MPL
+[V] 5.0.4.1812
+
+[D] 65b2e36e8f8c9aa45f3276796c59c61bfbd97b448e513f6a68704667 Firebird-5.0.4.1812-0-source.tar.xz https://github.com/FirebirdSQL/firebird/releases/download/v5.0.4/
+
+[ $prefix_auto = 1 ] && prefix="opt/firebird" && set_confopt
+
+pkginstalled icu4c && var_append confopt ' ' --with-system-icu
+pkginstalled boost && var_append confopt ' ' --with-system-boost
+pkginstalled re2 && var_append confopt ' ' --with-system-re2

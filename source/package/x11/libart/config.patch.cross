@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/libart/config.patch.cross
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -Naur libart_lgpl-2.3.21-VANILLA/Makefile.in libart_lgpl-2.3.21/Makefile.in
+--- libart_lgpl-2.3.21-VANILLA/Makefile.in	2010-04-01 13:39:49.000000000 +0000
++++ libart_lgpl-2.3.21/Makefile.in	2011-11-04 18:25:37.000000000 +0000
+@@ -1001,7 +1001,7 @@
+ 
+ 
+ art_config.h:
+-	./gen_art_config.sh > art_config.h
++	touch art_config.h
+ 
+ @OS_WIN32_TRUE@install-libtool-import-lib:
+ @OS_WIN32_TRUE@	$(INSTALL) .libs/libart_lgpl_2.dll.a $(DESTDIR)$(libdir)

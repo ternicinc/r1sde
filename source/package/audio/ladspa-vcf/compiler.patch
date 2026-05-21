@@ -1,0 +1,22 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/ladspa-vcf/compiler.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- vcf-0.0.5.orig/Makefile	2002-08-12 14:53:36.000000000 +0200
++++ vcf-0.0.5/Makefile	2008-02-10 15:37:18.000000000 +0100
+@@ -1,9 +1,9 @@
+ all: vcf_cv_in.so vcf.so
+ vcf_cv_in.so: vcf_cv_in.o 
+-	gcc -shared -o vcf_cv_in.so vcf_cv_in.o -lm
++	$(CC) -shared -o vcf_cv_in.so vcf_cv_in.o -lm
+ vcf.so: vcf.o 
+-	gcc -shared -o vcf.so vcf.o -lm
++	$(CC) -shared -o vcf.so vcf.o -lm
+ vcf_cv_in.o: vcf.so.c                
+-	cc -c -fPIC -o vcf_cv_in.o vcf.so.c -DWITH_CV_IN
++	$(CC) -c -fPIC -o vcf_cv_in.o vcf.so.c -DWITH_CV_IN
+ vcf.o: vcf.so.c                
+-	cc -c -fPIC -o vcf.o vcf.so.c
++	$(CC) -c -fPIC -o vcf.o vcf.so.c

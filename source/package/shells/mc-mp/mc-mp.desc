@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mc-mp/mc-mp.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Midnight Commander visual shell
+
+[T] Midnight Commander is a visual shell much like a file manager, only with way
+[T] more features. It is text mode, but also includes mouse support if you are
+[T] running GPM. Its coolest feature is the ability to ftp, view tar, zip
+[T] files, and poke into RPMs for specific files. :-)
+[T]
+[T] This version includes many cleanups and has no dependency to X11.
+
+[U] http://mc.linuxinside.com/
+
+[A] Oleg "Olegarch" Konovalov <olegarch@linuxinside.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell
+[F] CROSS
+
+[L] GPL
+[V] 4.1.40-pre9
+[P] O -----5---9 154.500
+
+[CV-URL] http://mc.linuxinside.com/cgi-bin/dir.cgi
+[D] 9b0c4aeabd8944e17b1b16b906942b59d1f38b930cc468407236dfe8 mc-4.1.40-pre9.tar.bz2 http://mc.linuxinside.com/Releases/
+
+var_append confopt ' ' "--without-gpm-mouse --with-ext2undel --disable-nls"
+var_append makeopt ' ' libdir=$libdir/$pkg
+var_append makeinstopt ' ' libdir=$libdir/$pkg
+var_append GCC_WRAPPER_APPEND ' ' -D_FILE_OFFSET_BITS=64
+hook_add postmake 5 "chmod 0644 $root$libdir/$pkg/syntax/*"

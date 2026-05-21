@@ -1,0 +1,25 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/pspresent/hotfix-install.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- pspresent-1.3/Makefile.vanilla      2007-06-19 19:51:42.634372361 +0200
++++ pspresent-1.3/Makefile      2007-06-19 19:52:14.180170054 +0200
+@@ -3,4 +3,6 @@
+ # Copyright (C) Matthew Chapman 2001-2003
+ #
+
++prefix=/usr
++
+ # You may need to change these paths
+@@ -21,6 +21,9 @@
+ $(TARGET): $(OBJS)
+ 	$(CC) -o $(TARGET) $(OBJS) $(LDLIBS)
+ 
++install:
++	install $(TARGET) $(DESTDIR)$(prefix)/
++
+ clean:
+ 	rm $(TARGET) $(OBJS)
+ 

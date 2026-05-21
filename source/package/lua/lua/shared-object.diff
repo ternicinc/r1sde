@@ -1,0 +1,27 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/lua/shared-object.diff
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- lua-5.1.4/src/Makefile.orig	2008-09-24 21:18:45.000000000 +0200
++++ lua-5.1.4/src/Makefile	2008-09-24 21:18:27.000000000 +0200
+@@ -50,6 +50,7 @@
+ $(LUA_A): $(CORE_O) $(LIB_O)
+ 	$(AR) $@ $?
+ 	$(RANLIB) $@
++	$(CC) -shared -o liblua.so $? -ldl
+ 
+ $(LUA_T): $(LUA_O) $(LUA_A)
+ 	$(CC) -o $@ $(MYLDFLAGS) $(LUA_O) $(LUA_A) $(LIBS)
+--- lua-5.2.0/Makefile.orig	2011-12-20 15:42:59.000000000 +0100
++++ lua-5.2.0/Makefile	2011-12-20 15:44:05.000000000 +0100
+@@ -41,7 +41,7 @@
+ # What to install.
+ TO_BIN= lua luac
+ TO_INC= lua.h luaconf.h lualib.h lauxlib.h lua.hpp
+-TO_LIB= liblua.a
++TO_LIB= liblua.a liblua.so
+ TO_MAN= lua.1 luac.1
+ 
+ # Lua version and release.

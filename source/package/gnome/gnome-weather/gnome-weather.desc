@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-weather/gnome-weather.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome gnome-weather package
+
+[T] Core Gnome gnome-weather package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 50.0
+[P] X -----5---9 177.200
+
+[CV-URL] https://download.gnome.org/sources/gnome-weather/cache.json
+[D] 39b8f0077781dbe2302980d10910044eaa0a571b2309b8fe552b83f4 gnome-weather-50.0.tar.xz https://download.gnome.org/sources/gnome-weather/50/
+
+. $base/package/*/*/gnome-conf.in

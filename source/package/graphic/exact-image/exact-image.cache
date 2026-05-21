@@ -1,0 +1,35 @@
+[TIMESTAMP] 1761214059 Thu Oct 23 12:07:39 2025
+[BUILDTIME] 35 (9)
+[SIZE] 13.49 MB, 21 files
+
+[DEP] agg
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] expat
+[DEP] findutils
+[DEP] freetype
+[DEP] gawk
+[DEP] grep
+[OPT] ilmbase
+[OPT] jasper
+[OPT] libgif
+[OPT] libheif
+[DEP] libjpeg
+[DEP] libpng
+[DEP] libtiff
+[DEP] linux-header
+[OPT] lua
+[DEP] make
+[OPT] openexr
+[DEP] openssl
+[OPT] perl
+[OPT] php
+[OPT] python
+[OPT] ruby
+[DEP] sed
+[OPT] swig
+[DEP] tar
+[DEP] zlib

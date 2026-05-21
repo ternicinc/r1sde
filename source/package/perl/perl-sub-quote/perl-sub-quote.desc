@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-sub-quote/perl-sub-quote.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Efficient generation of subroutines via string eval
+
+[T] Sub::Quote - Efficient generation of subroutines via string eval.
+
+[U] https://metacpan.org/pod/Sub::Quote
+
+[A] Graham Knop <haarg@haarg.org>
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/network
+
+[L] Artistic GPL
+[V] 2.006009
+[P] X -----5---9 200.122
+
+[D] 7a9f3882720050278c27625a4316acb5dface3590da697ff6201d399 Sub-Quote-2.006009.tar.gz https://cpan.metacpan.org/authors/id/H/HA/HAARG/

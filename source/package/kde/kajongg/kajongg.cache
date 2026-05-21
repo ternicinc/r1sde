@@ -1,0 +1,30 @@
+[TIMESTAMP] 1770637607 Mon 09 Feb 2026 11:46:47 GMT
+[BUILDTIME] 10 (9)
+[SIZE] 9.04 MB, 568 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] constantly
+[DEP] coreutils
+[DEP] diffutils
+[DEP] docbook-xml
+[DEP] docbook-xsl
+[DEP] extra-cmake-modules
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] kdoctools
+[DEP] libkmahjongg
+[DEP] libxml
+[DEP] make
+[DEP] openssl
+[DEP] procps
+[DEP] python
+[DEP] qt6base
+[DEP] sed
+[DEP] tar
+[DEP] twisted
+[DEP] util-linux
+[DEP] vulkan-headers
+[DEP] xz

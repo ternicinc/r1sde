@@ -1,0 +1,12 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/imlib2/config.hlp
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2004 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+MENU_PKG_E17
+  Here you will find configurations for e17.
+
+SDECFG_PKG_E17_CORE_PREFIX
+  Plese enter the path where you want to install e17.

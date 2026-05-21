@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-structlog/python-structlog.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library for structured logging
+
+[T] structlog is the production-ready logging solution for Python.
+
+[U] https://www.structlog.org/
+
+[A] Hynek Schlawack
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[E] add hatch-fancy-pypi-readme
+
+[L] MIT
+[V] 25.5.0
+[P] X -----5---9 200.000
+
+[D] d24d1af248e4d4908ec88834ad71947bf1d29872e4c3907c3d7edf86 structlog-25.5.0.tar.gz https://files.pythonhosted.org/packages/source/s/structlog/

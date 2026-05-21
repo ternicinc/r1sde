@@ -1,0 +1,21 @@
+[TIMESTAMP] 1779273219 Wed May 20 12:33:39 2026
+[BUILDTIME] 4 (9)
+[SIZE] 0.08 MB, 35 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] cython
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] openssl
+[DEP] python
+[DEP] python-gpep517
+[DEP] sed
+[DEP] setuptools
+[DEP] tar
+[DEP] util-linux
+[DEP] vcs-versioning
+[DEP] zope

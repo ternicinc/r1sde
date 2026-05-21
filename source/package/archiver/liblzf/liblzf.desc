@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/liblzf/liblzf.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A small, fast, real-time data compression library
+
+[T] LibLZF is a very small, self-contained library that can be incorporated
+[T] into applications where data compression would be nice but speed is
+[T] more important. It can be used to add data compression in a painless way
+[T] to any program. Likewise, a small and self-contained perl interface is
+[T] available via CPAN (Compress::LZF).
+
+[U] http://www.goof.com/pcg/marc/liblzf.html
+
+[A] Marc Lehmann <pcg@goof.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[L] BSD
+[V] 3.6
+
+[D] 4244921717c60d9256aff8eeff9c3fdc9288ebdeedfa54265e1ec6f3 liblzf-3.6.tar.gz http://dist.schmorp.de/liblzf/
+
+var_append makeinstopt ' ' prefix=$root/$prefix

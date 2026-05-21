@@ -1,0 +1,48 @@
+[TIMESTAMP] 1773346865 Thu Mar 12 21:21:05 2026
+[BUILDTIME] 2250 (9)
+[SIZE] 27.44 MB, 157 files
+
+[DEP] abseil-cpp
+[DEP] alsa-lib
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[OPT] doxygen
+[DEP] ffmpeg
+[DEP] freetype
+[DEP] gawk
+[DEP] glew
+[DEP] glu
+[DEP] grep
+[DEP] gzip
+[OPT] jack
+[DEP] libedit
+[DEP] libevdev
+[DEP] libglvnd
+[DEP] libpng
+[DEP] libsdl3
+[DEP] libusb
+[DEP] libx11
+[DEP] libxml
+[DEP] linux-header
+[DEP] llvm
+[DEP] make
+[DEP] openal
+[OPT] opencv
+[DEP] pkgconfig
+[DEP] pugixml
+[DEP] pulseaudio
+[DEP] qt6base
+[DEP] qt6multimedia
+[DEP] qt6svg
+[DEP] sed
+[DEP] tar
+[DEP] udev
+[DEP] util-linux
+[DEP] vulkan-headers
+[DEP] wayland
+[DEP] xorgproto
+[DEP] zlib

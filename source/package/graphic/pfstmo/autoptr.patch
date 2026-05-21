@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/pfstmo/autoptr.patch
+# Copyright (C) 2010 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- pfstmo-1.4/src/mantiuk08/display_adaptive_tmo.h_orig	2010-08-11 01:04:34.000000000 +0000
++++ pfstmo-1.4/src/mantiuk08/display_adaptive_tmo.h	2010-08-11 01:02:47.000000000 +0000
+@@ -29,6 +29,8 @@
+  * $Id: display_adaptive_tmo.h,v 1.12 2009/02/23 18:46:36 rafm Exp $
+  */
+ 
++#include <memory>
++
+ #include "display_function.h"
+ #include "display_size.h"
+ 

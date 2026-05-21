@@ -1,0 +1,27 @@
+[TIMESTAMP] 1759848974 Tue Oct  7 16:56:14 2025
+[BUILDTIME] 55 (9)
+[SIZE] 9.27 MB, 832 files
+
+[DEP] alsa-lib
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[OPT] doxygen
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libusb-compat
+[DEP] linux-header
+[DEP] make
+[DEP] ncurses
+[DEP] openssl
+[DEP] portaudio
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] sysfiles
+[DEP] tar
+[DEP] udev

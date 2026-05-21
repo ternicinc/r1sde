@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/zstd/hotfix.patch.alpha
+# Copyright (C) 2021 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- zstd-1.4.5/programs/util.c.vanilla	2020-10-04 17:20:31.861471356 +0200
++++ zstd-1.4.5/programs/util.c	2020-10-04 17:20:05.057471500 +0200
+@@ -20,6 +20,7 @@
+ #include <stdlib.h>     /* malloc, realloc, free */
+ #include <stdio.h>      /* fprintf */
+ #include <time.h>       /* clock_t, clock, CLOCKS_PER_SEC, nanosleep */
++#include <utime.h>
+ #include <errno.h>
+ #include <assert.h>
+ 

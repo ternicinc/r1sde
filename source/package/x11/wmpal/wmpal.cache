@@ -1,0 +1,21 @@
+
+[TIMESTAMP] 1279683922 Wed Jul 21 05:45:22 2010
+[BUILDTIME] 5 (5)
+[SIZE] 0.33 MB, 6 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] grep
+[DEP] libx11
+[DEP] libxau
+[DEP] libxcb
+[DEP] libxpm
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] xorgproto

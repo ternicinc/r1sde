@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gentoo/gentoo.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A GTK+ based file manager somewhat similar to Amiga DirectoryOpus 4
+
+[T] A modern, powerful, flexible, and utterly configurable file manager for
+[T] UNIX systems, written using the GTK+ toolkit. Internal support for most
+[T] file operations (copy, move, rename, makedir etc.) and a powerful file
+[T] recognition system. It has nothing to do with the Gentoo distribution.
+
+[U] https://www.obsession.se/gentoo/
+
+[A] Emil Brink <emil@obsession.se> {gentoo}
+[A] Johan Hanson <johan@tiq.com> {custom widgets}
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell
+
+[L] GPL
+[V] 0.20.7
+
+[D] 4b712093314bf67d8470e0c37e2d596d8c43001b6eb9d327cb3fb786 gentoo-0.20.7.tar.gz https://prdownloads.sourceforge.net/sourceforge/gentoo/
+
+. $base/package/*/*/gnome1-conf.in

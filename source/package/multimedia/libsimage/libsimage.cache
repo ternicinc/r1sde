@@ -1,0 +1,22 @@
+[TIMESTAMP] 1745869442 Mon Apr 28 22:44:02 2025
+[BUILDTIME] 4 (9)
+[SIZE] 0.10 MB, 16 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[OPT] jasper
+[DEP] libjpeg
+[OPT] libogg
+[DEP] libpng
+[OPT] libsndfile
+[DEP] libtiff
+[OPT] libvorbis
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar

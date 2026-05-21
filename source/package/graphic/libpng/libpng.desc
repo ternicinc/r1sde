@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libpng/libpng.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Portable Network Graphics (PNG) Reference Library
+
+[T] PNG (Portable Network Graphics) is an extensible file format for the
+[T] lossless, portable, well-compressed storage of raster images. PNG provides
+[T] a patent-free replacement for GIF and can also replace many
+[T] common uses of TIFF. Indexed-color, grayscale, and truecolor images are
+[T] supported, plus an optional alpha channel. Sample depths range from
+[T] 1 to 16 bits.
+
+[U] http://www.libpng.org/
+
+[A] Glenn Randers-Pehrson <randeg@alum.rpi.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[L] OpenSource
+[V] 1.6.55
+[P] X ?----5---9 105.950
+
+[D] 846b0c709a9b3d5604425a13c00691e72a854a040dc0009d53265dee libpng-1.6.55.tar.xz https://prdownloads.sourceforge.net/libpng/libpng16/
+[D] e2cfc12dc7ddd49d6aada64471528fb1c2c53c61340bd6cfaa42db59 libpng-1.6.55-apng.patch.gz https://downloads.sourceforge.net/sourceforge/libpng-apng/
+
+hook_add prepatch 5 'gzip -cd $(match_source_file -p *apng.patch.gz) | patch -p1'
+hook_add postmake 5 "ln -sf libpng16/png.h $root$includedir/png.h"
+hook_add postmake 5 "ln -sf libpng16/pngconf.h $root$includedir/pngconf.h"
+
+#riscv/filter_rvv_intrinsics.c:37:18: error: invalid argument to built-in function
+#   37 |       row_vals = __riscv_vadd_vv_u8m8(row_vals, prev_vals, vl);
+var_append confopt ' ' --enable-riscv-rvv=no

@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/xen-tools/hotfix-hot.patch
+# Copyright (C) 2010 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -Nur xen-3.4.2-orig/xen/crypto/vmac.c xen-3.4.2/xen/crypto/vmac.c
+--- xen-3.4.2-orig/xen/crypto/vmac.c	2009-11-14 21:15:00.000000000 +0000
++++ xen-3.4.2/xen/crypto/vmac.c	2009-11-14 21:25:14.000000000 +0000
+@@ -378,7 +378,7 @@
+ 	#define ASJ(x, y, z) __asm {x label##y}
+ #endif
+ 
+-static void NOINLINE nh_16_func(const uint64_t *mp, const uint64_t *kp, size_t nw, uint64_t *rh, uint64_t *rl)
++static void noinline nh_16_func(const uint64_t *mp, const uint64_t *kp, size_t nw, uint64_t *rh, uint64_t *rl)
+ {
+ 	// This assembly version, using MMX registers, is just as fast as the
+ 	// intrinsics version (which uses XMM registers) on the Intel Core 2,

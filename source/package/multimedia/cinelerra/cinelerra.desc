@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cinelerra/cinelerra.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Movie studio for a Linux Box
+
+[T] Cinelerra does primarily 3 main things: capturing, compositing, and editing
+[T] audio and video with sample level accuracy. It's a seemless integration of
+[T] audio, video, and still photos rarely experienced on a web server.
+[T] If you want to make movies, you just want to defy the establishment, you
+[T] want the same kind of compositing and editing suite that the big boys use,
+[T] on the world's most efficient UNIX operating system, it's time for Cinelerra.
+
+[U] http://heroinewarrior.com/cinelerra.php3
+
+[A] heroinewarrior.com
+[M] Leonel Iván Saafigueroa <leonel@saafigueroa.com.ar>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 10
+
+[D] c9b2d2c0ef8db08a668d64c87c734ed5187073e21d383ba08fd510fb cinelerra-10-src.tar.xz https://download.sourceforge.net/heroines/files/

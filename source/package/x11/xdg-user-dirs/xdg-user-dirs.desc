@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xdg-user-dirs/xdg-user-dirs.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A set of cli-tools for desktop integration
+
+[T] A set of cli-tools for desktop integration.
+
+[U] http://freedesktop.org/wiki/Software_2fxdg_2duser_2ddirs
+
+[A] Alexander Larsson <alexl@redhat.com>
+[M] Gerardo Di Iorio <arete74@gmail.com>
+
+[C] extra/x11
+[F] CROSS
+
+[L] GPL
+[V] 0.20
+
+[D] e42d19061776353b30b3b1dad06acee1cb8c2316a70ce4cf3d7f4d48 xdg-user-dirs-0.20.tar.xz https://user-dirs.freedesktop.org/releases/
+
+pkginstalled docbook-xml docbook-xsl libxslt || var_append mesonopt ' ' -Ddocs=false

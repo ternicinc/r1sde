@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/makedepend/makedepend.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Creates dependencies in makefiles
+
+[T] Creates dependencies in makefiles, a left-over of the historic imake
+[T] build system.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.0.9
+[P] X -----5---9 112.440
+
+[D] 2ccc89eb66d1a95e5539eca5e4a8470c24f4fcf829f3ab623bf5c131 makedepend-1.0.9.tar.xz http://xorg.freedesktop.org/releases/individual/util/
+
+. package/*/*/modular-x-conf.in

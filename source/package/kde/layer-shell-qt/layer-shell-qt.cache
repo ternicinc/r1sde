@@ -1,0 +1,26 @@
+[TIMESTAMP] 1770497125 Sat Feb  7 21:45:25 2026
+[BUILDTIME] 40 (9)
+[SIZE] 0.17 MB, 26 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] gawk
+[DEP] grep
+[DEP] libglvnd
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] qt6base
+[DEP] qt6declarative
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] vulkan-headers
+[DEP] wayland
+[DEP] wayland-protocols
+[DEP] xkbcommon
+[DEP] xz

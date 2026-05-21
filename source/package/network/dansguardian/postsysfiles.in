@@ -1,0 +1,8 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dansguardian/postsysfiles.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+safe_groupadd dansguardian 56
+safe_useradd dansguardian 56 56 "dansguardian" /var/empty /bin/false "*"

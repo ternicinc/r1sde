@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/asahi-audio/asahi-audio.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Userspace audio for Asahi Linux
+
+[T] Linux userspace audio configuration for Apple Silicon Macs.
+
+[U] https://github.com/AsahiLinux/asahi-audio
+
+[A] The Asahi Linux Contributors
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+[R] + arm64
+
+[L] MIT
+[V] 3.4
+
+[D] 60b201839adff29eb3feb4de48d193b279e5cf7523f1de94078c3e79 asahi-audio-3.4.tar.gz https://github.com/AsahiLinux/asahi-audio/archive/refs/tags/v3.4/

@@ -1,0 +1,59 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/ia64/boot/boot.in
+# Copyright (C) 2007 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+. $base/architecture/share/boot/grub.in
+
+arch_boot_cd_pre()
+{
+	local platform=ia64-efi
+	local exe=bootia64.efi
+	mkdir -p $isofsdir/boot/grub
+	cp -af $build_root/usr/lib*/grub/* $isofsdir/boot/grub/
+	rm -f $isofsdir/boot/grub/*/*.{module,img} # not needed in the image
+
+	mkdir -p $isofsdir/efi/boot/
+	cat > $isofsdir/efi/boot/grub.cfg <<EOT
+regexp -s root "([^,]*)" "\$root"
+set prefix="(\$root)/boot/grub"
+EOT
+	grub-mkimage -O $platform -p /boot/grub \
+	             -d $build_root/usr/lib*/grub/$platform \
+	             -o $isofsdir/efi/boot/$exe -c $isofsdir/efi/boot/grub.cfg \
+	             --compression auto iso9660 fat part_msdos part_gpt regexp
+	rm -f $isofsdir/efi/boot/grub.cfg
+
+	grub_create_efi_img $isofsdir/efi/boot/$exe
+
+	# header
+	sed -n '/CUT/q;p' $base/architecture/share/boot/grub.cfg \
+		> $1/boot/grub/grub.cfg
+}
+
+arch_boot_cd_add()
+{
+	cat >> $1/boot/grub/grub.cfg <<-EOT
+
+menuentry "$3 ($2)" {
+        linux $4
+        initrd $5
+}
+EOT
+}
+
+arch_boot_cd_post()
+{
+	# footer
+	sed '1,/CUT/d' $base/architecture/share/boot/grub.cfg \
+		>> $1/boot/grub/grub.cfg
+	echo_status "Creating isofs_arch.txt file .."
+
+	echo "DISK1	$isofsdir/ /" > $build_toolchain/isofs_arch.txt
+
+	cat >> $build_toolchain/isofs_arch.txt <<- EOT
+BOOT	-no-emul-boot
+EOT
+	grub_create_boot_entry >> $build_toolchain/isofs_arch.txt
+}

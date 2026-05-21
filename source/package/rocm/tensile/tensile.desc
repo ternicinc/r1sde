@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/tensile/tensile.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A tool for creating benchmark-driven backend libraries
+
+[T] Tensile is a tool for creating benchmark-driven backend libraries for
+[T] GEMMs, GEMM-like problems (such as batched GEMM), and general N-dimensional
+[T] tensor contractions on a GPU. The Tensile library is mainly used as backend
+[T] library to rocBLAS.
+
+[U] https://github.com/ROCm/Tensile
+
+[A] Advanced Micro Devices, Inc.
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS
+[C] extra/development
+
+[L] MIT
+[V] 7.2.3
+[P] X -----5---9 300.885
+
+[CV-GROUP] rocm
+[D] e1fc03d67e228d54498c3836575b8a26da7044d6d864fadb4dbb3b8e Tensile-rocm-7.2.3.tar.gz https://github.com/ROCm/Tensile/archive/rocm-7.2.3/
+
+. $base/package/*/*/rocm-conf.in

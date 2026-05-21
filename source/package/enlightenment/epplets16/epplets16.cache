@@ -1,0 +1,27 @@
+[TIMESTAMP] 1770134579 Tue Feb  3 17:02:59 2026
+[BUILDTIME] 16 (9)
+[SIZE] 1.54 MB, 262 files
+
+[DEP] audiofile
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] esound
+[DEP] file
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] imlib2
+[DEP] libcdaudio
+[DEP] libglvnd
+[DEP] libx11
+[DEP] libxext
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] xorgproto
+[DEP] xz

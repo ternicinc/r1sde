@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/spiralsynthmodular/spiralsynthmodular.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Spiral Synth Modular
+
+[T] SpiralSynth Modular (or SSM) is a object orientated modular
+[T] softsynth / sequencer / sampler. Audio or control data can
+[T] be freely passed between the plugins, its all treated the
+[T] same. Data can also be fed back on itself for chaotic effects.
+
+[U] https://www.pawfal.org/Software/SSM/
+
+[A] Dave Griffiths <dave@pawfal.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 0.2.2a
+[P] O -----5---9 169.600
+
+[D] 1949c0566b7b8204bb4fe8c33867a1e0846a40426eb1a3dda75e1f65 spiralmodular-0.2.2a.tar.gz https://prdownloads.sourceforge.net/sourceforge/spiralmodular/
+
+var_append GCC_WRAPPER_APPEND ' ' "-L$(pkgprefix libdir xorg-server)"
+
+smm_postmake() {
+	rm -rf $docdir/*
+	cp -r Examples $docdir
+}
+
+hook_add postmake 5 smm_postmake

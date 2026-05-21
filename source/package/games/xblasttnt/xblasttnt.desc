@@ -1,0 +1,52 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xblasttnt/xblasttnt.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] XBlast TNT
+
+[T] XBlast is a multi-player arcade game for X11R5/R6 (v2.6 or TNT) and
+[T] Windows (TNT version only). The game can be played with at least two
+[T] players and up to six players. It was inspired by the video/computer
+[T] game Bomberman (Dynablaster), which was to my knowledge first
+[T] programmed for NEC's PC Engine/Turbo Grafx. Other commercial versions
+[T] of the original game exist for IBM-PC, Atari ST, Amiga [trop cool
+[T] l'Amiga], NES, GameBoy and Super NES.
+
+[U] http://www.xblast-center.com/
+
+[A] Oliver Vogel
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+#[C] extra/game/arcade
+
+[L] GPL
+[V] 0.50
+
+[D] 884008459 xbtnt-unix.tar.gz http://xblast.host.sk/zips/
+[D] 2177691264 xbtnt-image-complete.tar.gz http://xblast.host.sk/zips/
+[D] 2212967838 xbtnt-sound-complete.tar.gz http://xblast.host.sk/zips/
+[D] 2350246093 xbtnt-level.tar.gz http://xblast.host.sk/zips/
+
+bindir="/$SDECFG_PKG_GAMES_BINDIR"
+datadir="/$SDECFG_PKG_GAMES_DATADIR/xblast"
+
+runxmkmf=1
+var_append makeopt ' ' "DESTDIR=$root BINDIR=$bindir XBLASTDIR=$datadir"
+var_append makeinstopt ' ' "$makeopt install"
+
+xblasttnt_premake() {
+   touch xblast.man
+}
+hook_add postmake 5 xblasttnt_postmake
+
+xblasttnt_postmake() {
+   mkdir -p $datadir; cd $datadir
+   for x in `match_source_file -p '\(complete\|level\)'`; do
+	tar -v $taropt $x
+   done
+}
+hook_add premake 5 xblasttnt_premake

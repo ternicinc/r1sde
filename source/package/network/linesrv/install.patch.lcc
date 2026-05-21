@@ -1,0 +1,23 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/linesrv/install.patch.lcc
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- lcc/Makefile.vanilla	2006-10-04 16:43:37.000000000 +0000
++++ lcc/Makefile	2006-10-04 16:45:41.000000000 +0000
+@@ -6,8 +6,14 @@
+ OBJ=lcc.o lcp3.o lcp3_io.o init.o globals.o lists.o user.o proccmd.o end.o
+ PRG=lcc
+ 
++prefix := /usr
++
+ all: $(PRG)
+ 
++install: $(PRG)
++	install $(PRG) $(DESTDIR)$(prefix)/bin/
++	install lcc.conf $(DESTDIR)/etc/
++
+ clean:
+ 	rm *.o
+ 

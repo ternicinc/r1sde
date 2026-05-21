@@ -1,0 +1,40 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/grsecurity/grsecurity.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Innovative security model for 2.4 and 2.6 Linux Kernels
+
+[T] grsecurity is an innovative approach to security utilizing
+[T] a multi-layered detection, prevention, and containment model.
+[T] It offers among many other features:
+[T]
+[T] - An intelligent and robust Role-Based Access Control (RBAC)
+[T] system that can generate least privilege policies for your
+[T] entire system with no configuration
+[T] - Change root (chroot) hardening
+[T] - /tmp race prevention
+[T] - Extensive auditing
+[T] - Prevention of entire classes of exploits related to address
+[T] space bugs (from the PaX project)
+[T] - Additional randomness in the TCP/IP stack
+[T] - A restriction that allows a user to only view his/her processes
+[T] - Every security alert or audit contains the IP address of the
+[T] person that caused the event
+
+[U] https://www.grsecurity.net/
+
+[A] Bradley Spengler (spender) <spende@grsecurity.net>
+[M] René Rebe <rene@exactco.de>
+
+[F] DIETLIBC
+[C] extra/security
+
+[L] GPL
+[V] 2.1.6
+[P] O -----5---9 190.200
+
+[D] 783422428 gradm-2.1.6-200506131347.tar.gz http://www.grsecurity.net/
+[D] 3224295871 grsecurity-2.1.6-2.4.31-200506141150.patch.gz http://www.grsecurity.net/
+[D] 2554625873 grsecurity-2.1.6-2.6.11.12-200506141713.patch.gz http://www.grsecurity.net/

@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/memtester/memtester.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Userspace utility for testing the memory subsystem
+
+[T] A userspace utility for testing the memory subsystem for faults. It is
+[T] portable and should compile and work on any 32- or 64-bit Unix-like system.
+
+[U] https://pyropus.ca/software/memtester/
+
+[A] Charles Cazabon <memtest@discworld.dyndns.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+
+[L] GPL
+[V] 4.7.1
+
+[D] 2ac31bcdae0b96bb679610172dac86d2c017fad33d6714cca43a0e9e memtester-4.7.1.tar.gz http://pyropus.ca/software/memtester/old-versions/
+
+makeinstopt=
+hook_add postmake 5 "cp memtester $root$sbindir; cp memtester.8 $root$mandir/man8/"

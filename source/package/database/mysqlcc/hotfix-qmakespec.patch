@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/mysqlcc/hotfix-qmakespec.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./configure.in.orig	2003-12-13 20:10:43.000000000 -0300
++++ ./configure.in	2005-02-12 11:37:12.733286108 -0300
+@@ -25,7 +25,7 @@
+ AC_SUBST(MYSQLCC_SOURCES)
+ AC_OUTPUT(mysqlcc.pro)
+ if test -z "${QMAKESPEC}"; then
+-  QMAKESPEC=$QTDIR/mkspecs/$host_os
++  QMAKESPEC=$QTDIR/mkspecs/linux-g++
+ else
+   QMAKESPEC=${QMAKESPEC}
+ fi

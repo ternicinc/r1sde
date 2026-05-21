@@ -1,0 +1,20 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/vdr-softdevice/hotfix-softdevice-configh.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- softdevice/utils.h.orig	2006-11-02 13:44:15.000000000 +0000
++++ softdevice/utils.h	2006-11-02 13:43:37.000000000 +0000
+@@ -10,7 +10,10 @@
+ //#include <vdr/plugin.h>
+ #include <stdint.h>
+ #include <sys/time.h>
+-#include "config.h"
++
++#ifdef HAVE_CONFIG
++# include "config.h"
++#endif
+ #include "mmx.h"
+ 
+ // for MMX2 CPU's

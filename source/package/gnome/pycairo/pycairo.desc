@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pycairo/pycairo.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Python bindings for Cairo
+
+[T] The Python bindings for Cairo.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[E] add meson-python
+
+[L] LGPL
+[V] 1.29.0
+[P] X -----5---9 141.199
+
+[CV-URL] https://github.com/pygobject/pycairo/releases/
+[D] 892568c46ea171afb2b1f750260ef74a73014f55883a1dc9fd270c69 pycairo-1.29.0.tar.gz https://github.com/pygobject/pycairo/releases/download/v1.29.0/
+
+. $base/package/*/*/gnome-conf.in
+# build, but wronp include path et al. in the resulting pycairo.pc ...
+runpysetup=0

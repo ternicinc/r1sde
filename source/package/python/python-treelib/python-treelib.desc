@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-treelib/python-treelib.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Python implementation of tree structure
+
+[T] This is a simple tree data structure implementation in python.
+
+[U] https://github.com/caesar0301/treelib
+
+[A] Xiaming Chen <chenxm35@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] APL
+[V] 1.8.0
+[P] X -----5---9 200.000
+
+[D] d1f7e8b7f70e30d36ea6d1b682a1ad728e532d424b9dd98c289a11e7 treelib-1.8.0.tar.gz https://files.pythonhosted.org/packages/source/t/treelib/

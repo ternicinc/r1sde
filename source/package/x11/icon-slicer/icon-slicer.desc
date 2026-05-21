@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/icon-slicer/icon-slicer.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A utility for generating icon themes and libXcursor cursor themes
+
+[T] Icon-slicer is a utility for generating icon themes and libXcursor cursor themes.
+
+[U] https://www.freedesktop.org/wiki/Software/icon-slicer/
+
+[A] Owen Taylor <otaylor@redhat.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell
+[F] CROSS
+
+[L] GPL
+[V] 0.3
+[P] X -----5---9 134.500
+
+[D] d1a33850cedac13f11faff2fa27a4eb617e253486a9f8189ddde1b5c icon-slicer-0.3.tar.gz http://freedesktop.org/software/icon-slicer/releases/

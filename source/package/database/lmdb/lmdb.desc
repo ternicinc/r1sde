@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lmdb/lmdb.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Lightning Memory-Mapped Database
+
+[T] Symas LMDB is an extraordinarily fast, memory-efficient database we
+[T] developed for the OpenLDAP Project. With memory-mapped files, LMDB has
+[T] the read performance of a pure in-memory database while retaining the
+[T] persistence of standard disk-based databases.
+
+[U] https://www.symas.com/lmdb
+
+[A] Howard Chu, Symas Corp
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/database
+[F] CROSS
+
+[L] OpenSource
+[V] 0.9.35
+[P] X -----5---9 120.000
+
+[D] 50d631f814da79e0554df0a6216f6c6952c447ffab4c20f13a0bf132 openldap-LMDB_0.9.35.tar.bz2 https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.35/
+
+srcdir=*/libraries/liblmdb
+var_append makeinstopt ' ' libdir=$libdir

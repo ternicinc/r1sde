@@ -1,0 +1,11 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/qemu/config.in
+# Copyright (C) 2014 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+if pkgcheck qemu X; then
+    menu_begin MENU_PKG_QEMU 'Qemu options'
+	bool 'Build all targets' SDECFG_PKG_QEMU_ALL 1
+    menu_end
+fi

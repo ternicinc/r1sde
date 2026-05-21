@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ppp/ppp.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The PPP user level programs
+
+[T] The Point-to-Point Protocol (PPP) provides a standard way to establish
+[T] a network connection over a serial link. At present, this package
+[T] supports IP and the protocols layered above IP, such as TCP and UDP.
+[T] The Linux port of this package also has support for IPX.
+
+[U] https://www.samba.org/ppp/
+
+[A] Paul Mackerras <paulus@linuxcare.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS NO-PIE NO-LTO.mips NO-LTO.mips64
+
+[L] OpenSource
+[V] 2.5.2
+[P] X -----5---9 150.900
+
+[D] 9d1de367e75a262aac84620805b9970761cbded956a3e5f16f2b9c2f ppp-2.5.2.tar.gz https://github.com/ppp-project/ppp/archive/v2.5.2/
+
+autogen=1
+
+var_append CC_WRAPPER_APPEND ' ' -std=gnu17
+
+ppp_pm() {
+	mkdir -p $root/etc/ppp/
+	cp -v $confdir/ip-up $root/etc/ppp/ip-up
+	chmod +x $root/etc/ppp/ip-up
+}
+hook_add postmake 5 ppp_pm

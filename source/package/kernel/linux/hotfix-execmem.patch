@@ -1,0 +1,27 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/linux/hotfix-execmem.patch
+# Copyright (C) 2024 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+Since f6bec26c0a7 (mm/execmem, arch: convert simple overrides of module_alloc to execmem)
+sparc was accidentaly changed to map module memory w/ VM_FLUSH_RESET_PERMS, causing
+page tables or memory corruption on each module load, making it even nearly impossible
+to even successfully boot sun4u systems.
+
+Signed-off-by: René Rebe <rene@exactcode.de>
+
+index 0c4b36bc6d10..64404c517e93 100644
+--- linux-6.13/mm/execmem.c.orig	2025-01-20 23:15:27.093329248 +0100
++++ linux-6.13/mm/execmem.c	2025-01-20 23:22:16.633328514 +0100
+@@ -361,6 +361,9 @@
+ 	struct execmem_range *range = &execmem_info->ranges[type];
+ 	bool use_cache = range->flags & EXECMEM_ROX_CACHE;
+ 	unsigned long vm_flags = VM_FLUSH_RESET_PERMS;
++#ifdef __sparc__
++	vm_flags = 0;
++#endif
+ 	pgprot_t pgprot = range->pgprot;
+ 	void *p;
+ 
+

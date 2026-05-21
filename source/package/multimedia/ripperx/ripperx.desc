@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ripperx/ripperx.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Yet another CD ripping application
+
+[T] RipperX is a pretty GTK program to rip CD audio and encode to Ogg, MP3,
+[T] or other sound formats. It is easy, usually requiring no more three
+[T] mouse clicks to convert an entire album, while nicely displaying the
+[T] progress along the way. It can rip and encode in parallel and has
+[T] plugins for cdparanoia, Oggenc, Lame, FLAC, and others. It also has
+[T] support for CDDB (including HTTP proxy servers) for automatic track
+[T] name query and setting ID tags.
+
+[U] https://ripperx.sourceforge.net
+
+[A] TeJun Huh (original code)
+[A] Jos Dehaes (maintainer)
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 3.0.2
+
+[D] 34b9d77982d5bcc67ea6cdd01eed1931c2fb8a65cfee0ae8de084139 ripperx-3.0.2.tar.gz !https://codeberg.org/thothix/ripperx/archive/3.0.2.tar.gz

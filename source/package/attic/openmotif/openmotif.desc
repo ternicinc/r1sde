@@ -1,0 +1,51 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openmotif/openmotif.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Open Motif implementation
+
+[T] Motif is the industry standard graphical user interface (GUI) available on
+[T] more than 200 hardware and software platforms. It is the de facto graphical
+[T] user interface on UNIX systems in heterogeneous networked computing
+[T] environments. Motif is fully specified by the IEEE 1295 standard, providing
+[T] application developers, system vendors, and end users with a stable, mature
+[T] and reliable environment for application presentation on a wide range of
+[T] platforms. Motif is also the base graphical user interface for the Common
+[T] Desktop Environment (CDE) and a number of other desktops.
+
+[U] http://www.opengroup.org/openmotif
+
+[A] Open Group Team
+[M] Roger Mason <rmason@mun.ca>
+
+[C] extra/development base/x11
+
+[L] OpenSource
+[V] 2.3.3
+[P] O -----5---9 129.900
+
+[D] 2442439540 openmotif-2.3.3.tar.gz http://www.openmotif.org/files/public_downloads/2.3/2.3.3/
+
+build_motif() {
+	patch -p1 < ${confdir}/Imakefile-openmotif-2.1.30.diff
+
+	mkdir -p imports/x11
+	ln -vs $root/usr/X11R6/bin imports/x11/bin
+	ln -vs $root/usr/X11R6/include imports/x11/include
+	ln -vs $root/usr/X11R6/lib imports/x11/lib
+	eval $MAKE World
+	eval $MAKE install
+	eval $MAKE install.man
+}
+
+# We need that for version 2.2.2. I'll let it here because we need this perhaps in the future again
+#var_append INSTALL_WRAPPER_FILTER '|' \
+#                'sed "s,man/man[123456789n]/.*\$,\\0openmotif,"'
+
+hook_add postdoc 3 "rm -rf $docdir/man $docdir/Makefile*"
+hook_add postinstall 3 "register_wm $pkg ${pkg}-mwm $bindir/mwm"
+
+custmain="build_motif"
+srctar="openmotif-${ver}_MLI.src.tar.bz2"

@@ -1,0 +1,35 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/gpart/hotfix-errno.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./src/disku.c.org	Thu May 15 18:31:53 2003
++++ ./src/disku.c	Thu May 15 18:32:02 2003
+@@ -19,6 +19,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <sys/ioctl.h>
++#include <errno.h>
+ #include "gpart.h"
+ 
+ #if defined(__linux__)
+@@ -27,7 +28,6 @@
+ #endif
+ 
+ #if defined(__FreeBSD__)
+-#include <errno.h>
+ #include <sys/disklabel.h>
+ #endif
+ 
+--- ./src/l64seek.c.orig	2003-05-20 11:33:12.000000000 +0200
++++ ./src/l64seek.c	2003-05-20 11:33:33.000000000 +0200
+@@ -15,6 +15,7 @@
+  */
+ 
+ #include "l64seek.h"
++#include <errno.h>
+ 
+ 
+ #define OSTACKLEN	16

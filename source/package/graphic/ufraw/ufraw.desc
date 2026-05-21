@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ufraw/ufraw.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A utility for converting and manipulating raw images from digital cameras
+
+[T] UFRaw is a utility for converting and manipulating raw images from
+[T] digital cameras. It can be used as a stand-alone tool or as
+[T] a Gimp plugin, and images can be batch processed using the
+[T] commandline interface. UFRaw reads most existing raw formats
+[T] using Dave Coffin's raw conversion utility DCRaw, and it supports
+[T] basic color management using Little CMS, allowing the user to
+[T] apply color profiles. For Nikon users, UFRaw has the advantage
+[T] that it can read the camera's tone curves. Even if you don't
+[T] own a Nikon, you can still apply a Nikon curve to your images.
+
+[U] https://ufraw.sourceforge.net/
+
+[A] Udi Fuchs <udifuchs@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 0.22
+
+[D] d3e0cb60b1de764498644f1752246a4b3bcbced20372d213190eedc9 ufraw-0.22.tar.gz https://prdownloads.sourceforge.net/sourceforge/ufraw/

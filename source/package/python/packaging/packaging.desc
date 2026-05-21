@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/packaging/packaging.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Core utilities for Python packages
+
+[T] This library provides utilities that implement the interoperability
+[T] specifications which have clearly one correct behaviour (eg: PEP 440)
+[T] or benefit greatly from having a single shared implementation (eg: PEP
+[T] 425). The packaging project includes the following: version handling,
+[T] specifiers, markers, requirements, tags, utilities.
+
+[U] https://github.com/pypa/packaging
+
+[A] Donald Stufft <donald@stufft.io>
+[M] René Rebe <rene@exactco.de>
+
+[E] add python-flit-core python-installer
+
+[C] extra/development
+[L] APL BSD
+
+[V] 24.2
+[P] X -----5---9 109.005
+
+[D] 419cbc8e00b778a2dd800531fde86d8db96102afd7f3e8d3d79655b1 packaging-24.2.tar.gz https://files.pythonhosted.org/packages/d0/63/68dbb6eb2de9cb10ee4c9c14a0148804425e13c4fb20d61cce69f53106da/

@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/selinux-gui/selinux-gui.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] SELinux core policy utilities (graphical utilities)
+
+[T] Contains the system-config-selinux and the selinux-polgengui utilities.
+
+[U] https://github.com/SELinuxProject/selinux
+
+[A] NSA SElinux Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+[F] CROSS
+
+[E] add libselinux
+
+[L] GPL
+[V] 3.10
+
+[CV-GROUP] selinux
+[D] 020974703898f4caec7c3ac21ba66bcf06b832ad7c40617a007f91c4 selinux-gui-3.10.tar.gz https://github.com/SELinuxProject/selinux/releases/download/3.10/

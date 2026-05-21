@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libevent/libevent.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library for asynchronous event notification
+
+[T] The libevent API provides a mechanism to execute a callback
+[T] function when a specific event occurs on a file descriptor
+[T] or after a timeout has been reached. It is meant to replace
+[T] the asynchronous event loop found in event-driven network servers.
+
+[U] https://www.libevent.org/
+
+[A] Niels Provos <provos@citi.umich.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+[E] opt python
+
+[L] BSD
+[V] 2.1.12
+[P] X -----5---9 127.000
+
+[D] 045b3171267fc75740f27869b02af0e713890ff029a1073af0dd534d libevent-2.1.12-stable.tar.gz https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/

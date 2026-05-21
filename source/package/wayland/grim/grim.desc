@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/grim/grim.desc
+[COPY] Copyright (C) 2021 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Screenshot utility for wayland
+
+[T] Grim is a cli tool to grab images (aka screenshots) from Wayland compositors.
+
+[U] https://gitlab.freedesktop.org/emersion/grim
+
+[A] Simon Ser <contact@emersion.fr>
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/x11
+[F] CROSS
+
+[L] MIT
+[V] 1.5.0
+
+[D] 90651f6a533b270db267331694e1ffbe9526f2e75295403b8dc5d12b grim-1.5.0.tar.gz https://gitlab.freedesktop.org/emersion/grim/-/releases/v1.5.0/downloads/
+
+pkginstalled libjpeg-turbo || var_append mesonopt ' ' -Djpeg=disabled

@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/arpwatch/arpwatch.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Monitors MAC/IP pairings
+
+[T] Arpwatch is a tool that monitors ethernet activity and keeps a
+[T] database of ethernet/ip address pairings. It also reports certain
+[T] changes via email.
+[T] Arpwatch messages you if someone tries ARP-Poision-Routing on your host.
+
+[U] https://ee.lbl.gov
+
+[A] LBL Network Research Group
+[M] Tobias Schmidt <tschmidt@stradego.de>
+
+[C] extra/tool
+
+[L] GPL
+[V] 3.9
+
+[D] e82766ea32d4d31080b390ccc645108600887845579924c5d8cc2335 arpwatch-3.9.tar.gz https://ee.lbl.gov/downloads/arpwatch/
+
+var_append confopt ' ' --datadir=$root$datadir/arpwatch/
+pkginstalled sendmail || var_append confopt ' ' --without-sendmail
+hook_add postmake 5 "mkdir -p $root$datadir/arpwatch; touch $root$datadir/arpwatch/arp.dat"

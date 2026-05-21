@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ouch/ouch.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Obvious Unified Compression Helper
+
+[T] Ouch is a CLI tool for compressing and decompressing for various formats.
+[T] Currently supporting: .tar, .zip, 7z, .gz, .xz, .lzma, .bz/bz2/bz3, lz4,
+[T] .sz, .zst, .rar, .br.
+
+[U] https://github.com/ouch-org/ouch
+
+[A] Ouch Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+
+[L] MIT
+[V] 0.7.1
+
+[D] e7d38abae067f62471a3c2a4842248c7f91ad012d8448587346a30be ouch-0.7.1.tar.gz https://github.com/ouch-org/ouch/archive/refs/tags/0.7.1/

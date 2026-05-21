@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/time/time.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Measuring program resource use
+
+[T] 'time' is a program that measures many of the CPU resources, such as
+[T] time and memory, that other programs use. The GNU version can format
+[T] the output in arbitrary ways by using a printf-style format string to
+[T] include various resource measurements.
+
+[U] https://www.gnu.org/software/time/
+
+[A] David Keppel and others
+[M] René Rebe <rene@exactco.de>
+
+[C] base/development
+[F] CROSS DIETLIBC
+
+[L] GPL3
+[V] 1.10
+[P] X --2--5---9 105.700
+
+[D] a8cd896eed3ec9ad18a4e5a90569a3d328dfbf5b569085661c3e019a time-1.10.tar.gz http://ftp.gnu.org/gnu/time/

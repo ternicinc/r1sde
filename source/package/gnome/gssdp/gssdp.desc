@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gssdp/gssdp.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome gssdp package
+
+[T] Core Gnome gssdp package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 1.6.4
+[P] X -----5---9 179.200
+
+[CV-URL] https://download.gnome.org/sources/gssdp/cache.json
+[D] ce56474d2e5f3a530d1b38b97114f29d10ce95efb081f97ce6e51754 gssdp-1.6.4.tar.xz https://download.gnome.org/sources/gssdp/1.6/
+
+. $base/package/*/*/gnome-conf.in

@@ -1,0 +1,25 @@
+[TIMESTAMP] 1737547513 Wed Jan 22 13:05:13 2025
+[BUILDTIME] 12 (9)
+[SIZE] 2.07 MB, 179 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bison
+[DEP] coreutils
+[DEP] diffutils
+[DEP] flex
+[DEP] gawk
+[OPT] glib
+[DEP] grep
+[DEP] libffi
+[DEP] linux-header
+[DEP] m4
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar
+[DEP] xz

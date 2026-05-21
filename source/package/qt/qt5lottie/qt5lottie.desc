@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/qt5lottie/qt5lottie.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Qt5 Lottie
+
+[T] Lottie is a family of player software for a certain json-based file format for
+[T] describing 2d vector graphics animations. These files are created/exported
+[T] directly from After Effects by a plugin called Bodymovin.
+
+[U] https://qt.io
+
+[A] Trolltech AS <www.trolltech.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] LGPL
+[V] 5.15.14
+
+[CV-GROUP] qt5
+[D] 79643da9ac85323593fc3e5d568eb0d2adc9dad1bebbfc041e3490a3 qtlottie-everywhere-opensource-src-5.15.14.tar.xz http://download.qt.io/official_releases/qt/5.15/5.15.14/submodules/
+
+. $base/package/*/*/qt5-conf.in

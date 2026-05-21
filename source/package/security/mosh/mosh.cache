@@ -1,0 +1,22 @@
+[TIMESTAMP] 1738599359 Mon Feb  3 17:15:59 2025
+[BUILDTIME] 30 (9)
+[SIZE] 2.27 MB, 12 files
+
+[DEP] abseil-cpp
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] ncurses
+[DEP] openssl
+[DEP] perl
+[DEP] protobuf
+[DEP] sed
+[DEP] tar
+[DEP] zlib

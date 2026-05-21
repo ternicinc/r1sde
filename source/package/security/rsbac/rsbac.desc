@@ -1,0 +1,51 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rsbac/rsbac.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Rule Set Based Access Control for Linux
+
+[T] RSBAC is a flexible, powerful and fast open source access control
+[T] framework for current Linux kernels, which has been in stable production
+[T] use since January 2000 (version 1.0.9a). All development is independent
+[T] of governments and big companies, and no existing access control code has
+[T] been reused.
+[T]
+[T] The standard package includes a range of access control models like MAC,
+[T] RC, ACL (see below). Furthermore, the runtime registration facility (REG)
+[T] makes it easy to implement your own access control model as a kernel
+[T] module and get it registered at runtime.
+
+[U] https://www.rsbac.org/
+
+[A] Amon Ott <ao@rsbac.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+
+[L] GPL
+[V] 1.5.0
+[P] O
+
+[D] dd6ea6b3f4a266bbc9b1c770b04cce87f1c7cc64b22642d85a6ea398 rsbac-admin-1.5.0.tar.xz https://download.rsbac.org/code/1.5.0/
+[D] 3494848042 rsbac-common-1.2.6.tar.bz2 https://download.rsbac.org/code/1.2.6/
+[D] 3231970242 patch-linux-2.6.16-rsbac-1.2.6.diff.bz2 https://download.rsbac.org/patches/1.2.6/2.6.16/
+
+pkg_rsbac_lx="\(1\|.*-2\.6\)"
+pkg_rsbac_patches=""
+
+hook_add prepatch 5 "tar -v $taropt `match_source_file -p rsbac-common-v${ver}` rsbac/help"
+
+var_append confopt ' ' --enable-contrib
+var_append confopt ' ' --with-kerneldir=/usr
+
+if [ "$pkg_rsbac_patches" ]; then
+	for x in $(match_source_file -p "rsbac-bugfix-v${ver}-${pkg_rsbac_patches}"); do
+		var_append patchfiles ' ' $x
+	done
+fi
+
+var_append makeopt     ' ' HELPPATH=../rsbac/help
+var_append makeinstopt ' ' HELPPATH=../rsbac/help

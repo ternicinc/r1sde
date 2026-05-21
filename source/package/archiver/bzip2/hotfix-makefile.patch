@@ -1,0 +1,33 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/bzip2/hotfix-makefile.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+No test (we are usually cross compiling anyway) and no chmod on executables,
+as we translate some into /bin on-the-fly.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- bzip2-1.0.4/Makefile.vanilla	2007-01-06 15:53:09.776200767 +0100
++++ bzip2-1.0.4/Makefile	2007-01-06 15:53:16.420579409 +0100
+@@ -35,7 +35,7 @@
+       decompress.o \
+       bzlib.o
+ 
+-all: libbz2.a bzip2 bzip2recover test
++all: libbz2.a bzip2 bzip2recover
+ 
+ bzip2: libbz2.a bzip2.o
+ 	$(CC) $(CFLAGS) $(LDFLAGS) -o bzip2 bzip2.o -L. -lbz2
+--- bzip2-1.0.4/Makefile.vanilla	2007-01-06 15:54:44.681609118 +0100
++++ bzip2-1.0.4/Makefile	2007-01-06 15:56:11.462554482 +0100
+@@ -809,8 +79,4 @@
+ 	cp -f bzip2 $(DESTDIR)$(PREFIX)/bin/bzcat
+ 	cp -f bzip2recover $(DESTDIR)$(PREFIX)/bin/bzip2recover
+-	chmod a+x $(DESTDIR)$(PREFIX)/bin/bzip2
+-	chmod a+x $(DESTDIR)$(PREFIX)/bin/bunzip2
+-	chmod a+x $(DESTDIR)$(PREFIX)/bin/bzcat
+-	chmod a+x $(DESTDIR)$(PREFIX)/bin/bzip2recover
+ 	cp -f bzip2.1 $(DESTDIR)$(PREFIX)/man/man1
+ 	chmod a+r $(DESTDIR)$(PREFIX)/man/man1/bzip2.1

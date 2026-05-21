@@ -1,0 +1,28 @@
+	[COPY] --- T2-COPYRIGHT-BEGIN ---
+	[COPY] t2/package/*/wmpal/wmpal.desc
+	[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+	[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+	[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A dockapp for the WindowMaker window manager
+
+[T] wmpal is a useless dockapp. Current features are
+[T] - 6 pals to choose from at compile-time
+[T] - configurable command on click
+
+[U] http://www.asleep.net/hacking/wmpal/ Wmpal Home Page
+
+[A] A.Sleep <a.sleep@asleep.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/windowmanager
+[F] CROSS
+
+[L] GPL
+[V] 0.6.1
+
+[D] ddfe1f1c192f603705e2856a6e2b203d1fb6afff8fb4d526ce1e742e wmpal-0.6.1.tar.gz https://download.sourceforge.net/wmpal/
+
+# checks for the x11 dirs, but doesn't use them, sigh.
+var_append GCC_WRAPPER_APPEND ' ' "-L`pkgprefix libdir libx11`"

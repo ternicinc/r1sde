@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/blisp/blisp.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] ISP tool & library for Bouffalo Labs RISC-V Microcontrollers and SoCs
+
+[T] Bouffalo Labs ISP (in-system-programming) tool & library: an open source
+[T] tool to flash Bouffalo RISC-V MCUs.
+
+[U] https://github.com/pine64/blisp
+
+[A] Marek Kraus <gamelaster@outlook.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS OBJDIR
+
+[L] MIT
+[V] 0.0.5
+
+[D] cf5943da3ce5a0d8623cbf3a76c25625a5dbd5d4e949368c3798266c blisp-0.0.5.tar.gz git+https://github.com/pine64/blisp v0.0.5
+
+var_append cmakeopt ' ' -DBLISP_BUILD_CLI=ON

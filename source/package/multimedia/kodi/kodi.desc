@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kodi/kodi.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The ultimate entertainment center
+
+[T] Kodi is the ultimate entertainment center. Kodi brings your media to
+[T] life with endless features, a beautiful interface, and ease of use.
+
+[U] https://kodi.tv
+
+[A] XBMC Foundation
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 21.3
+
+[D] 9655542bb47856d521e145179b85dd5781841e52523d5446b08dc245 xbmc-21.3-Omega.tar.gz https://github.com/xbmc/xbmc/archive/21.3-Omega/

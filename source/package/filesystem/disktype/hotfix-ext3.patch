@@ -1,0 +1,24 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/disktype/hotfix-ext3.patch
+# Copyright (C) 2010 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+New mkfs.ext3 also set min_extra_isize, and thus are misqualified as ext4, ...
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- disktype/linux.c.vanilla	2010-02-06 14:09:54.000000000 +0000
++++ disktype/linux.c	2010-02-06 14:09:18.000000000 +0000
+@@ -60,9 +60,11 @@
+     /* Ext4 RO_COMPAT features: HUGE_FILE, GDT_CSUM, DIR_NLINK, EXTRA_ISIZE */
+     if (get_le_long(buf + 100) & 0x0078)
+       fslevel = 4;
++#if 0
+     /* Ext4 sets min_extra_isize even on external journals */
+     if (get_le_short(buf + 348) >= 0x1c)
+       fslevel = 4;
++#endif
+     /* Ext4dev TEST_FILESYS flag */
+     if (get_le_long(buf + 352) & 0x0004)
+       is_dev = 1;

@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pygresql/pygresql.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Python interface for PostgreSQL
+
+[T] PyGreSQL is a Python module that interfaces to a PostgreSQL database.
+[T] It embeds the PostgreSQL query library to allow easy use of the powerful
+[T] PostgreSQL features from a Python script.
+
+[U] https://www.pygresql.org
+
+[A] D'Arcy J.M. Cain <darcy@druid.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] BSD
+[V] 6.2.3
+
+[D] 0729e5734653ce280bd889761d3921df7d3748cc420d9d9868cfcf9c pygresql-6.2.3.tar.gz https://files.pythonhosted.org/packages/source/p/pygresql/

@@ -1,0 +1,26 @@
+[TIMESTAMP] 1750535721 Sat Jun 21 21:55:21 2025
+[BUILDTIME] 65 (9)
+[SIZE] 1.67 MB, 79 files
+
+[DEP] autoconf
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] bison
+[DEP] coreutils
+[DEP] diffutils
+[DEP] docbook-xml
+[DEP] docbook-xsl
+[DEP] findutils
+[DEP] flex
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libtool
+[DEP] libxslt
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] perl
+[DEP] sed
+[DEP] tar

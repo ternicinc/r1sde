@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kanjipad/kanjipad.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Japanese Handwriting recognition
+
+[T] KanjiPad is a simple (but snazzy) program which does Japanese handwriting
+[T] recognition. It is uses the GTK toolkit for a GUI and Todd David Rudicks's
+[T] algorithms from JavaDict for recognition.
+
+[U] https://fishsoup.net/software/kanjipad/
+
+[A] Owen Taylor <otaylor@gtk.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office
+
+[L] GPL
+[V] 2.0.0
+
+[D] 0f2879faab2970d9acf72c66c28246f417527468803abbd1f323aa12 kanjipad-2.0.0.tar.gz https://fishsoup.net/software/kanjipad/
+
+hook_add premake 3 "sed -ie 's,^PREFIX=/usr/local,PREFIX=$root/$prefix,' Makefile"

@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libpsl/libpsl.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] C library for the Public Suffix List
+
+[T] C library for the Public Suffix List.
+
+[U] https://github.com/rockdaboot/libpsl
+
+[A] Tim Ruehsen
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system extra/development
+
+[F] CROSS
+
+[L] MIT
+[V] 0.21.5
+[P] X -----5---9 127.100
+
+[D] 268c15c56f6454b4fe359471d4297150c338a419f985f6021d80d02b libpsl-0.21.5.tar.lz https://github.com/rockdaboot/libpsl/releases/download/0.21.5/

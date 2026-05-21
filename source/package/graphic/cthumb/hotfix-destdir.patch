@@ -1,0 +1,23 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/cthumb/hotfix-destdir.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- cthumb-4.2/Makefile.in.vanilla	2007-06-17 12:52:37.398639356 +0200
++++ cthumb-4.2/Makefile.in	2007-06-17 12:53:26.909460817 +0200
+@@ -23,10 +23,10 @@
+ 	./configure --prefix=$(prefix)
+ 
+ install: cthumb
+-	install -d $(bindir) $(prefix)/share $(themedir) $(mandir)/man1
+-	install -m555 cthumb $(bindir)
+-	install cthumb.1 $(mandir)/man1
+-	$(CPR) themes/* $(themedir)
++	install -d $(DESTDIR)$(bindir) $(DESTDIR)$(prefix)/share $(DESTDIR)$(themedir) $(DESTDIR)$(mandir)/man1
++	install -m555 cthumb $(DESTDIR)$(bindir)
++	install cthumb.1 $(DESTDIR)$(mandir)/man1
++	$(CPR) themes/* $(DESTDIR)$(themedir)
+ 
+ Makefile: Makefile.in VERSION configure
+ 	./configure --prefix=/usr

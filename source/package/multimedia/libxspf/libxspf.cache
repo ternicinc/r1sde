@@ -1,0 +1,18 @@
+[TIMESTAMP] 1737678967 Fri Jan 24 01:36:07 2025
+[BUILDTIME] 10 (9)
+[SIZE] 0.82 MB, 38 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] expat
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] uriparser

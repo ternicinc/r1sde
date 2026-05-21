@@ -1,0 +1,26 @@
+
+[TIMESTAMP] 1691065393 Thu Aug  3 14:23:13 2023
+[BUILDTIME] 2 (9)
+[SIZE] 0.78 MB, 25 files
+
+[DEP] 00-dirtree
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] glib
+[DEP] glib12
+[DEP] grep
+[DEP] gtk+12
+[DEP] libx11
+[DEP] libxau
+[DEP] libxcb
+[DEP] libxext
+[DEP] libxi
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar

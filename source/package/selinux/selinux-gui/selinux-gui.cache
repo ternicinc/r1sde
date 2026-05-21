@@ -1,0 +1,14 @@
+[TIMESTAMP] 1739271589 Tue Feb 11 11:59:49 2025
+[BUILDTIME] 2 (5)
+[SIZE] 1.43 MB, 124 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gettext
+[DEP] grep
+[DEP] gzip
+[DEP] libselinux
+[DEP] make
+[DEP] sed
+[DEP] tar

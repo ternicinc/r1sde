@@ -1,0 +1,20 @@
+[TIMESTAMP] 1758305952 Fri Sep 19 20:19:12 2025
+[BUILDTIME] 14 (9)
+[SIZE] 1.43 MB, 88 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[OPT] docbook-xml
+[OPT] docbook-xsl
+[DEP] gawk
+[DEP] grep
+[OPT] gtk-doc
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] sed
+[DEP] tar
+[DEP] xz

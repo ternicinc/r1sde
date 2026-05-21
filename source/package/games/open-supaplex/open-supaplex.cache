@@ -1,0 +1,18 @@
+[TIMESTAMP] 1774691402 Sat Mar 28 10:50:02 2026
+[BUILDTIME] 6 (9)
+[SIZE] 8.87 MB, 155 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libsdl2
+[DEP] libsdl2_mixer
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

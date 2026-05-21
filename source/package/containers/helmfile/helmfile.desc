@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/helmfile/helmfile.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Declaratively deploy your Kubernetes manifests
+
+[T] Helmfile is a declarative spec for deploying helm charts. It lets you:
+[T] 
+[T] - Keep a directory of chart value files and maintain changes in version control.
+[T] - Apply CI/CD to configuration changes.
+[T] - Periodically sync to avoid skew in environments.
+[T] 
+[T] To avoid upgrades for each iteration of helm, the helmfile executable
+[T] delegates to helm - as a result, helm must be installed.
+
+[U] https://github.com/helmfile/helmfile
+
+[A] mumoshu
+[A] itscaro
+[A] yxxhero
+[A] xiaomudk
+[A] zhaque44
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+
+[L] MIT
+[V] 1.5.1
+
+[D] bfde8b63bc9718f81a096e0482f865dae032349d34e16a8efa99d6c8 helmfile-1.5.1.tar.gz https://github.com/helmfile/helmfile/archive/v1.5.1/

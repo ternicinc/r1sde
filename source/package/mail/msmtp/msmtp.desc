@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/msmtp/msmtp.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An SMTP client
+
+[T] Msmtp is an SMTP client that can be used with Mutt and other MUAs. It
+[T] forwards messages to an SMTP server which does the delivery. Features
+[T] include various SMTP AUTH methods, TLS-encrypted connections
+[T] (including server certificate verification and the ability to
+[T] send a client certificate), support for multiple accounts, DSN,
+[T] and IPv6 support.
+
+[U] https://msmtp.sourceforge.net/
+
+[A] Martin Lambers <marlam@marlam.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 1.8.32
+
+[D] d63c0996b7fe24ff5eef95f31ed169128942764d224731395f9de67d msmtp-1.8.32.tar.xz https://marlam.de/msmtp/releases/
+
+if pkginstalled gnutls; then
+	var_append confopt ' ' --with-ssl=gnutls
+elif pkginstalled openssl; then
+	var_append confopt ' ' --with-ssl=openssl
+else
+	var_append confopt ' ' --with-ssl=no
+fi

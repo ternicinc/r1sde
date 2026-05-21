@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/utf8proc/utf8proc.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] UTF-8 library
+
+[T] Utf8proc is a library for processing UTF-8 encoded Unicode strings. Some
+[T] features are Unicode normalization, stripping of default ignorable
+[T] characters, case folding, and detection of grapheme cluster
+[T] boundaries. The library can be used in C programs, but most of the
+[T] functionality is also available as a ruby library. For PostgreSQL,
+[T] there is an extension providing a function for preparing strings in case
+[T] insensitive indices. The currently supported Unicode version is 5. 0. 0.
+
+[U] https://juliastrings.github.io/utf8proc/
+
+[A] Jan Behrens <jan.behrens@flexidesk.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS FPIC
+
+[L] BSD
+[V] 2.11.3
+[P] X -----5---9 200.000
+
+[D] af372b59d7fcb915c2f6fc905e88afae3c019bfd3ee1c6a6c764a6e4 utf8proc-v2.11.3.tar.gz https://github.com/JuliaLang/utf8proc/archive/v2.11.3/
+
+var_append makeopt ' ' 'cc=$CC ar=$AR'
+var_append makeinstopt ' ' libdir=$libdir

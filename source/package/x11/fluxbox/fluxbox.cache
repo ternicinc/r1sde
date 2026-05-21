@@ -1,0 +1,28 @@
+[TIMESTAMP] 1760035906 Thu Oct  9 20:51:46 2025
+[BUILDTIME] 80 (9)
+[SIZE] 3.25 MB, 321 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] fribidi
+[DEP] gawk
+[DEP] grep
+[DEP] imlib2
+[DEP] libx11
+[DEP] libxext
+[DEP] libxft
+[DEP] libxinerama
+[DEP] libxpm
+[DEP] libxrandr
+[DEP] libxrender
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

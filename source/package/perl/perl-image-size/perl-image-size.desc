@@ -1,0 +1,21 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-image-size/perl-image-size.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Reads the dimensions of an image in several popular formats
+
+[T] The Image::Size library can determine the 'width' and 'height' of images
+[T] in several popular image formats.
+
+[A] Randy J. Ray <rjray@blackperl.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 3.300
+[P] X -----5---9 113.300
+
+[D] 36fd805c7ab06d2ee698f659962c5cb4957985233adf74e7ede73880 Image-Size-3.300.tar.gz http://search.cpan.org/CPAN/authors/id/R/RJ/RJRAY/

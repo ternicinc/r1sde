@@ -1,0 +1,17 @@
+[TIMESTAMP] 1746974946 Sun May 11 16:49:06 2025
+[BUILDTIME] 5 (9)
+[SIZE] 34.39 MB, 4910 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] sed
+[DEP] tar

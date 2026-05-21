@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ftgl/ftgl.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A font library for use with OpenGL
+
+[T] FTGL is a free, open source library to enable developers to use
+[T] arbitrary fonts in their OpenGL applications. Unlike other OpenGL
+[T] font libraries FTGL uses standard font file formats so doesn't need a
+[T] preprocessing step to convert the high quality font data into a lesser
+[T] quality, proprietary format.
+[T] FTGL uses the Freetype font library to open and 'decode' the fonts. It
+[T] then takes that output and stores it in a format most efficient for
+[T] OpenGL rendering.
+
+[U] https://ftgl.sourceforge.net/
+
+[A] Henry Maddocks <ftgl@opengl.geek.nz>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/font
+
+[E] opt doxygen
+
+[L] LGPL
+[V] 2.4.0
+[P] X -----5---9 213.750
+
+[D] 8588941cde6acc71f857725beaee28716a13a4ca74185ac934b62564 ftgl-2.4.0.tar.gz https://github.com/frankheckenbach/ftgl/archive/v2.4.0/
+
+autogen=2 runcmake=0
+hook_add preconf 5 "rm -vf autogen.sh"
+
+var_append CXX_WRAPPER_APPEND ' ' -fpermissive

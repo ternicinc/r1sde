@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/squirrel/squirrel.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The squirrel programming language
+
+[T] Squirrel is a high level imperative/OO programming language, designed to
+[T] be a powerful scripting tool that fits in the size, memory bandwidth, and
+[T] real-time requirements of applications like games.
+
+[U] http://www.squirrel-lang.org/
+
+[A] Alberto Demichelis <alberto@ademichelis.com>
+[M] Valentin Ziegler <valentin.ziegler@googlemail.com>
+
+[C] extra/development
+[F] NO-LTO.gcc
+
+[L] OpenSource
+[V] 3.2
+
+[CV-TR] s/\./_/
+[D] db42ea8249f1ecf9a3318e2329fb45f152aa11b32efb29e40487eac1 squirrel_3_2_stable.tar.gz https://download.sourceforge.net/project/squirrel/squirrel3/squirrel%203.2%20stable/
+
+srcdir=squirrel3
+runcmake=0
+makeinstopt= # no install target
+
+squirrel_install() {
+	install -m 755 bin/sq $root$bindir/sq
+	install -m 644 doc/sq*.pdf $root$docdir/
+	cp -r samples $root$docdir/
+}
+hook_add postmake 3 squirrel_install

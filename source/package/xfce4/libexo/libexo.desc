@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libexo/libexo.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Extension library to Xfce
+
+[T] Libexo is the extension library to Xfce developed by os-cillation. While
+[T] Xfce ships with quite a few libraries that are primarly targeted at
+[T] desktop development, libexo is targeted at application development, with
+[T] a focus on applications for Xfce.
+
+[U] http://libexo.os-cillation.com/
+
+[A] Benedikt Meurer <benny@xfce.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/xfce
+[F] CROSS NO-LTO.clang
+
+[L] GPL
+[V] 4.20.0
+[P] X -----5---9 223.300
+
+[D] c928b968f2ed6bedd4491f9363d1c4e81860373dddc961a99ef71de0 exo-4.20.0.tar.bz2 https://archive.xfce.org/src/xfce/exo/4.20/
+
+. $base/package/xfce4/*/xfce4-conf.in
+var_append GCC_WRAPPER_INSERT ' ' "-c?:-L`pkgprefix libdir libx11` -lX11 -lXrender"

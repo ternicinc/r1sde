@@ -1,0 +1,45 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/magicolor2430dl/trivialities.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+We want to link to shared objects, if possible, for update, security
+and payload size reasons.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- magicolor2430DL-1.6.1/configure.vanilla	2008-05-13 10:46:00.000000000 +0200
++++ magicolor2430DL-1.6.1/configure	2008-05-13 10:48:29.000000000 +0200
+@@ -3227,14 +3227,6 @@
+ echo "$as_me:$LINENO: result: $ac_cv_lib_jbig_jbg_enc_init" >&5
+ echo "${ECHO_T}$ac_cv_lib_jbig_jbg_enc_init" >&6
+ if test $ac_cv_lib_jbig_jbg_enc_init = yes; then
+-  if test -f "/usr/lib64/libjbig.a"; then
+-	LIBJBIG="/usr/lib64/libjbig.a"
+-elif test -f "/usr/lib/libjbig.a"; then
+-	LIBJBIG="/usr/lib/libjbig.a"
+-elif test -f "/usr/local/lib64/libjbig.a"; then
+-	LIBJBIG="/usr/local/lib64/libjbig.a"
+-else
+-	LIBJBIG="/usr/local/lib/libjbig.a"
++	LIBJBIG="-ljbig"
+-fi
+ else
+   { { echo "$as_me:$LINENO: error: Could not find libjbig.a" >&5
+@@ -3308,14 +3301,6 @@
+ echo "$as_me:$LINENO: result: $ac_cv_lib_lcms_cmsCreateTransform" >&5
+ echo "${ECHO_T}$ac_cv_lib_lcms_cmsCreateTransform" >&6
+ if test $ac_cv_lib_lcms_cmsCreateTransform = yes; then
+-  if test -f "/usr/lib64/liblcms.a"; then
+-	LIBLCMS="/usr/lib64/liblcms.a"
+-elif test -f "/usr/lib/liblcms.a"; then
+-	LIBLCMS="/usr/lib/liblcms.a"
+-elif test -f "/usr/local/lib64/liblcms.a"; then
+-	LIBLCMS="/usr/local/lib64/liblcms.a"
+-else
+-	LIBLCMS="/usr/local/lib/liblcms.a"
++	LIBLCMS="-llcms"
+-fi
+ else
+   { { echo "$as_me:$LINENO: error: Could not find liblcms.a" >&5

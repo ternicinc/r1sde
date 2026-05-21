@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/sendmail/libresolv.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./devtools/OS/Linux~	Mon Dec 27 22:54:08 1999
++++ ./devtools/OS/Linux	Wed Mar  8 16:40:40 2000
+@@ -1,7 +1,7 @@
+ #	$Id: libresolv.patch,v 1.3 2003/01/10 12:12:51 clifford Exp $
+ define(`confDEPEND_TYPE', `CC-M')
+ define(`confMANROOT', `/usr/man/man')
+-define(`confLIBS', `-ldl')
++define(`confLIBS', `-ldl -lresolv -lpthread')
+ define(`confEBINDIR', `/usr/sbin')
+ APPENDDEF(`confLIBSEARCH', `crypt nsl')
+ 

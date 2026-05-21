@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/afb-ucode/afb-ucode.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Sun Elite3D firmware
+
+[T] Sun Elite3D firmware (afb.ucode) binary blob redistribution needed
+[T] for accelerated X.
+
+[U] https://lists.x.org/archives/xorg-devel/2009-December/004323.html
+
+[A] Sun Microsystems, Inc.
+[M] René Rebe <rene@exactco.de>
+
+[C] base/firmware
+[F] CROSS
+[R] + sparc64
+
+[L] MIT
+[V] 1.3.11
+
+[D] f7bc1fc62d4e122654d4056e6999be46c847ca785defbe73a648481f afb-ucode.tar.bz2 https://web.archive.org/web/20130223174652/http://dlc.sun.com/osol/sparc-gfx/downloads/
+
+runmake=
+hook_add postmake 5 "cp -vf afb.ucode $root/lib/firmware/"

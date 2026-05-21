@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xcursorgen/xcursorgen.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] X cursor file generator
+
+[T] Xcursorgen reads the config-file to find the list of cursor images along
+[T] with their hotspot and nominal size information. Xcursorgen converts all
+[T] of the images to Xcursor format and writes them to the output-file.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.0.9
+[P] X ?----5---9 112.600
+
+[D] 87a90311c4e21de56197828689b1c43ad0240be22bd6696ee346da4b xcursorgen-1.0.9.tar.xz http://xorg.freedesktop.org/releases/individual/app/
+
+. package/*/*/modular-x-conf.in

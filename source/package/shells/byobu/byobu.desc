@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/byobu/byobu.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Text-based window manager and terminal multiplexer
+
+[T] Byobu is text-based window manager and terminal multiplexer. It was
+[T] originally designed to provide elegant enhancements to the otherwise
+[T] functional, plain, practical GNU Screen
+
+[U] https://byobu.org/
+
+[A] Dustin Kirkland <kirkland@byobu.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL3
+[V] 6.15
+
+[D] adde47efd32247a116951046a9d79cf434a3323e212dee704f982e45 byobu-6.15.tar.gz https://github.com/dustinkirkland/byobu/archive/refs/tags/6.15/
+
+autogen=1

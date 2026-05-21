@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/aubio/aubio.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An audio labelling library
+
+[T] Aubio is a library for audio labelling. Its features include segmenting
+[T] a sound file before each of its attacks, performing pitch detection,
+[T] tapping the beat and producing midi streams from live audio.
+
+[U] https://aubio.org
+
+[A] Paul Brossier <piem@altern.org>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/multimedia
+
+[E] opt doxygen
+[E] opt ffmpeg
+[E] opt jack
+[E] opt libsamplerate
+[E] opt libsndfile
+
+[L] GPL
+[V] 0.4.9 e559ff1
+[P] X -----5---9 400.500
+
+[D] 76696dc9afdc22b84e2f58adbd500f969c8013f9a14fdb784a873cac aubio-0.4.9-e559ff1.tar.gz !https://github.com/aubio/aubio/archive/e559ff1.tar.gz
+
+runmake=0 runpysetup=0 runmeson=0
+hook_add preconf 2 "./scripts/get_waf.sh" # TODO: avoid!
+hook_add preconf 5 "python waf configure --prefix=/$prefix"
+hook_add inmake 5 "python waf build -j$SDECFG_PARALLEL"
+hook_add postmake 5 "python waf install --destdir=$root"

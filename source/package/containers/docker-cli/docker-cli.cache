@@ -1,0 +1,17 @@
+[TIMESTAMP] 1745849874 Mon Apr 28 15:17:54 2025
+[BUILDTIME] 30 (9)
+[SIZE] 39.91 MB, 6 files
+
+[DEP] bash
+[DEP] containerd
+[DEP] coreutils
+[DEP] diffutils
+[DEP] docker-buildx
+[DEP] docker-engine
+[DEP] gawk
+[DEP] go
+[DEP] grep
+[DEP] gzip
+[DEP] make
+[DEP] sed
+[DEP] tar

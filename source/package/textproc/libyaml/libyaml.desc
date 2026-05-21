@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libyaml/libyaml.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A C library for parsing and emitting YAML
+
+[T] The YAML package contains a C library for parsing and emitting YAML (YAML
+[T] Ain't Markup Language).
+
+[U] https://github.com/yaml/libyaml/
+
+[A] Ingy döt Net
+[A] Kirill Simonov
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[L] MIT
+[V] 0.2.5
+[P] X -----5---9 102.400
+
+[D] 21ce4d38661355d2398f3d3efffe342b7bc88478172be319839066f6 libyaml-0.2.5.tar.gz https://github.com/yaml/libyaml/archive/0.2.5/
+
+hook_add preconf 5 "autoreconf -fvi"

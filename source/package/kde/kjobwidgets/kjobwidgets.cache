@@ -1,0 +1,26 @@
+[TIMESTAMP] 1760655242 Fri Oct 17 00:54:02 2025
+[BUILDTIME] 50 (9)
+[SIZE] 0.58 MB, 140 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] gawk
+[DEP] grep
+[DEP] kcoreaddons
+[DEP] knotifications
+[DEP] kwidgetsaddons
+[DEP] libxcb
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] qt6base
+[DEP] qt6tools
+[DEP] qt6translations
+[DEP] sed
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] xz

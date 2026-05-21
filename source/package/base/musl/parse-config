@@ -1,0 +1,38 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/musl/parse-config
+# Copyright (C) 2004 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+if [ "$SDECFG_LIBC" == "musl" ]; then
+	[ "$pkg" != "musl" ] && var_append flist''del '|' "usr/lib[^/]*/charset.alias"
+
+	# the most typical fix is to config.sub
+	#
+	musl_fix_configsub() {
+	    for x; do
+		echo "musl_fix_configsub: adding musl_arch_target support to $x"
+		cp -f $x $x.orig
+		sed -e 's,\([-]\?linux\)-gnu\*,\1-gnu\* | \1-musl\*,g' $x.orig > $x
+		diff -u $x.orig $x || true
+	    done
+	}
+	musl_auto_fix_configsub() {
+		grep /config.sub $builddir/untar.txt |
+		while read f; do
+			if ! grep -q '\-musl' $builddir/$f; then
+				musl_fix_configsub $builddir/$f
+			fi
+		done
+	}
+	hook_add postpatch 5 'musl_auto_fix_configsub'
+
+	case "$pkg" in
+	coreutils)	var_append confopt ' ' '--with-included-regex' ;;
+	esac
+
+	# patching
+	if [ "`echo $confdir/*.patch.musl`" != "$confdir/*.patch.musl" ]; then
+		var_append patchfiles ' ' "`echo $confdir/*.patch.musl`"
+	fi
+fi

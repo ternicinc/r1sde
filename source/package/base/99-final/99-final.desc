@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/99-final/99-final.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Target specific finalization framework
+
+[T] This package contains finalization applied to T2 by a specific target.
+[T] Possible content are specialized applications or images to be prepared.
+
+[A] The T2 Project <t2@exactcode.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+
+[L] GPL
+[V] 0000
+[P] O -----5---9 999.999
+
+srctar= runmake=0

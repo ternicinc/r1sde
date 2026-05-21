@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/qjackctl/qjackctl.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A simple Qt application to control the JACK sound server daemon
+
+[T] Qjackctl is a simple Qt application to control the JACK sound server
+[T] daemon, specifically for the Linux Audio Desktop infrastructure. It is
+[T] written in C++ around the Qt3 toolkit for X11, most exclusively using Qt
+[T] Designer. It provides a simple GUI dialog for setting several JACK
+[T] daemon parameters, which are properly saved between sessions, and a way
+[T] to control of the status of the audio server daemon. With time, this
+[T] primordial interface has become richer by including an enhanced patchbay
+[T] and connection control features.
+
+[U] https://qjackctl.sourceforge.net
+
+[A] Rui Nuno Capela
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 1.0.6
+
+[D] 65aa40b2c28d22b687a4fa113aa91a0290a3ec7c6bf5a8b992e0b96a qjackctl-1.0.6.tar.gz https://prdownloads.sourceforge.net/sourceforge/qjackctl/
+
+#[[ $libdir != *lib ]] && hook_add preconf 5 'sed -i -e "s,/lib\([\"'\''; ]\),/$(libdir##*/)\1,g" configure'
+var_append confopt ' ' "--with-qt=$root/$(pkgprefix qt5base)"

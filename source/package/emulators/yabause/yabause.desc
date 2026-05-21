@@ -1,0 +1,21 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/yabause/yabause.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Saturn emulator
+
+[T] Yabause is a Sega Saturn emulator.
+
+[U] https://yabause.org
+
+[A] Guillaume Duhamel <guillaume.duhamel@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/emulator
+
+[L] GPL
+[V] 0.9.15
+
+[D] 84d22897db8969389f93adffdc81e3b2e6164cfe63a8279c93076ab4 yabause-0.9.15.tar.gz https://download.tuxfamily.org/yabause/releases/0.9.15/

@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ltrace/ltrace.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library call tracer
+
+[T] ltrace is a library call tracer, i.e. a debugging tool which prints out
+[T] a trace of all the dynamic library calls made by another process/program.
+[T]
+[T] It also displays system calls, as well as 'strace', but strace still
+[T] does a better job displaying arguments to system calls.
+[T]
+[T] The program to be traced need not be recompiled for this, so you can
+[T] use it on binaries for which you don't have the source handy.
+
+[U] https://www.ltrace.org
+
+[A] Juan Cespedes <cespedes@debian.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/development
+[F] NO-LTO.gcc
+
+[R] + alpha arm arm64 ia64 loongarch m68k mips mips64 powerpc powerpc64 riscv64 s390x sparc sparc64 x86 x86-64 xtensa
+
+[L] GPL
+[V] 0.8.1
+
+[D] 6fbdc32f51668b43c9adc5bc82e7da5dfa7d01b72099daedc972fce5 ltrace-0.8.1.tar.bz2 https://gitlab.com/cespedes/ltrace/-/archive/0.8.1/
+
+autogen=1
+LTRACE_ARCH="`echo $arch | arch2uname`"
+var_append confopt ' ' --without-libunwind
+var_append makeopt ' ' ARCH=$LTRACE_ARCH
+var_append makeinstopt ' ' ARCH=$LTRACE_ARCH

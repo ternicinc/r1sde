@@ -1,0 +1,27 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/maverik/hotfix.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -Nur maverik-6.2-orig/setup maverik-6.2/setup
+--- maverik-6.2-orig/setup	2002-03-20 17:59:51.000000000 +0000
++++ maverik-6.2/setup	2006-01-26 19:50:36.854952250 +0000
+@@ -6,7 +6,7 @@
+ TDMPATH=""
+ MESAPATH=""
+ MESADEFAULT=1
+-XLIBPATH="/usr/X11R6/lib"
++XLIBPATH="/usr/X11/lib"
+ TR=0
+ TRINCL=""
+ TRLIBS=""
+@@ -277,7 +277,7 @@
+     CXX="g++"
+     CXXFLAG=`echo $OS $OT`
+     if [ "$MESADEFAULT" = "1" ] ; then
+-	MESAPATH="/usr/X11R6"
++	MESAPATH="/usr/X11"
+     fi
+     OPENGLINCL="-I${MESAPATH}/include"
+     OPENGLLIBS="-L${MESAPATH}/lib -lGL -lGLU -L${XLIBPATH} -lX11 -lXext"

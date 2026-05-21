@@ -1,0 +1,13 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/vnc/config.hlp
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+MENU_PKG_VNC
+  Here you will find options for VNC.
+
+SDECFG_PKG_VNC_X_SERVER
+  This option enables the build of the stand-alone X server. The build
+  takes rather long since it builds a whole X server and might be disabled
+  when just the viewer is needed.

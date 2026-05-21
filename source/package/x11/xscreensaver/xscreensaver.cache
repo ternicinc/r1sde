@@ -1,0 +1,48 @@
+[TIMESTAMP] 1752748929 Thu Jul 17 13:42:09 2025
+[BUILDTIME] 55 (9)
+[SIZE] 53.80 MB, 815 files
+
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] glu
+[DEP] grep
+[DEP] gtk+
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] intltool
+[DEP] libglvnd
+[DEP] libice
+[DEP] libjpeg
+[DEP] libsm
+[DEP] libx11
+[DEP] libxcrypt
+[DEP] libxext
+[DEP] libxfixes
+[DEP] libxft
+[DEP] libxi
+[DEP] libxinerama
+[DEP] libxml
+[DEP] libxrandr
+[DEP] libxrender
+[DEP] libxt
+[DEP] libxxf86vm
+[DEP] linux-header
+[DEP] make
+[DEP] pam
+[DEP] pango
+[DEP] perl
+[DEP] sed
+[DEP] shadow
+[DEP] tar
+[DEP] wayland
+[DEP] wayland-protocols
+[DEP] xorgproto

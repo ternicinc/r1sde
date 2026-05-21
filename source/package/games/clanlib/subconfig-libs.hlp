@@ -1,0 +1,55 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/clanlib/subconfig-libs.hlp
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+MENU_PKG_CLANLIB
+  Here you'll find options for ClanLib
+
+SDECFG_PKG_CLANLIB_X11
+  Enable X11 support
+
+SDECFG_PKG_CLANLIB_DIRECTFB
+  Enable DirectFB support
+
+SDECFG_PKG_CLANLIB_JOY
+  Enable Joystick support
+
+SDECFG_PKG_CLANLIB_OPENGL
+  Enable OpenGL support
+
+SDECFG_PKG_CLANLIB_VIDMODE
+  Enable VidMode support
+
+SDECFG_PKG_CLANLIB_CLANSOUND
+  Enable ClanSound support
+
+SDECFG_PKG_CLANLIB_NET
+  Enable network support
+
+SDECFG_PKG_CLANLIB_ASM
+  Enable asm386 support
+
+SDECFG_PKG_CLANLIB_GUI
+  Enable clanGUI support
+
+SDECFG_PKG_CLANLIB_LUA
+  Enable clanLUA support
+
+SDECFG_PKG_CLANLIB_MIKMOD
+  clanMikMod
+
+SDECFG_PKG_CLANLIB_PNG
+  Enable clanPNG support
+
+SDECFG_PKG_CLANLIB_JPEG
+  Enable clanJPEG support
+
+SDECFG_PKG_CLANLIB_SMALLJPEG
+  Enable clanSmallJPEG support
+
+SDECFG_PKG_CLANLIB_VORBIS
+  Enable clanVorbis support
+
+SDECFG_PKG_CLANLIB_TTF
+  Enable clanTTF support

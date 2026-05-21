@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libgli/libgli.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A toolkit to create OpenGL User Interfaces
+
+[T] a multiplatform library for creating 3D user interfaces, based
+[T] on OpenGL. With the help of this library, programmers can add in their
+[T] own graphic application elements for the user interface and connect
+[T] interface objects to their own programs with callbacks. In other
+[T] words, GLI sits between the user and an OpenGL application.
+
+[U] http://www.crash-override.net/
+
+[A] Benjamin Schieder <blindcoder@scavenger.homeip.net>
+[M] René Rebe <rene@exactco.de>
+
+[F] FPIC
+[C] base/x11
+
+[L] LGPL
+[V] 0.4
+
+[D] 1c8eb83d5e418d04c0bae44820d28b12df5229948a398fd2df6fda87 libgli-0.4.tar.bz2 http://www.crash-override.net/libgli/
+
+runconf=0

@@ -1,0 +1,41 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ntp/ntp.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Network Time Protocol utilities
+
+[T] The Network Time Protocol (NTP) is used to synchronize the time of a
+[T] computer client or server to another server or reference time source,
+[T] such as a radio or satellite receiver or modem. It provides client
+[T] accuracies typically within a millisecond on LANs and up to a few tens
+[T] of milliseconds on WANs relative to a primary server synchronized to
+[T] Coordinated Universal Time (UTC) via a Global Positioning Service
+[T] (GPS) receiver, for example.
+
+[U] https://www.ntp.org/
+
+[A] David L. Mills <mills@udel.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[E] opt net-snmp
+[E] opt ruby
+
+[L] OpenSource
+[V] 4.2.8p18
+
+[D] d96fe129614018281fff537855982273c7f8f885bd56bb101eb3ef27 ntp-4.2.8p18.tar.gz http://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/
+
+var_append GCC_WRAPPER_APPEND ' ' -std=gnu17
+
+var_append confopt ' ' --with-sntp
+atstage cross && var_append confopt ' ' --with-yielding-select=yes
+atstage cross && var_append confopt ' ' --with-threads=yes
+hook_add preconf 5 "echo 'ac_cv_func_setrlimit=yes' >> config.cache"
+hook_add postmake 5 'cp -vrf html conf $root$docdir/'
+hook_add postmake 5 "install -v -m 644 $confdir/etc_ntpd.conf $root$sysconfdir/ntp.conf"

@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-pluggy/python-pluggy.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Crystallized core of plugin management and hook calling for pytest
+
+[T] crystallized core of plugin management and hook calling for pytest.
+
+[U] https://pluggy.readthedocs.io/en/latest/
+
+[A] Pluggy team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] MIT
+[V] 1.6.0
+[P] X -----5---9 109.007
+
+[D] 0d87b3cadd02537879c5c29e56634f9fc8f3a9575ec5e4fbfe654576 pluggy-1.6.0.tar.gz https://files.pythonhosted.org/packages/source/p/pluggy/

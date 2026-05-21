@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/wmdiskmon/wmdiskmon.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A windowmanager dockapp that monitors the disk usage
+
+[T] A nice digital clock with 7 different styles either in LCD style and LED style,
+[T] and that uses locales to display week-day and month names. It also features the
+[T] internet time.
+
+[U] http://tnemeth.free.fr/projets/dockapps.html
+
+[A] Thomas Nemeth <tnemeth@free.fr>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS CROSS
+
+[L] GPL
+[V] 0.0.2
+
+[D] 8376d6eb5ca980f698b6190b9812681337fda5c0b78a5a47a02cd3ae wmdiskmon-0.0.2.tar.gz http://tnemeth.free.fr/projets/programmes/
+
+var_append GCC_WRAPPER_APPEND ' ' -L$root$(pkgprefix libdir libx11)

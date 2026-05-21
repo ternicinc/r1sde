@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xmms2/xmms2.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A redesign of the XMMS music player
+
+[T] XMMS2 is a redesign of the XMMS music player. It features a
+[T] client-server model, allowing multiple (even simultaneous!) user
+[T] interfaces, both textual and graphical. All common audio formats
+[T] are supported using plugins. On top of this, there is a flexible
+[T] media library to organize your music.
+
+[U] http://wiki.xmms2.xmms.se/index.php/Main_Page
+
+[A] 4Front Technologies
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[E] opt flac
+[E] opt lame
+
+[L] GPL
+[V] 0.9.7
+
+[D] c2906c241d3687512d681b239d27f843dc1efb6be61dbff133f20bc5 xmms2-0.9.7.tar.xz https://github.com/xmms2/xmms2-devel/releases/download/0.9.7/
+
+runmake=0
+hook_add premake 5 "./waf configure --prefix=/$prefix"
+hook_add inmake 5 "./waf build"
+hook_add postmake 5 "./waf install"

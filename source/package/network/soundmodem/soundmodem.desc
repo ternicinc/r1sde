@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/soundmodem/soundmodem.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Allows a standard PC soundcard to be used as a packet radio "modem"
+
+[T] This software allows a standard PC soundcard to be used as a packet
+[T] radio "modem". The whole processing is done on the main processor CPU.
+[T] Unlike previous packet radio modem software, this new release offers several
+[T] new benefits:
+[T] * Now uses standard operating system sound drivers (OSS/Free under Linux,
+[T] /dev/audio under Solaris and DirectSound under Windows), thus runs on all
+[T] soundcards for which drivers for the desired operating system are available.
+[T] * No fixed relationship between bitrate, sampling rate, and modem parameters.
+[T] Modems may be parametrized, and multiple modems may even run on the same
+[T] audio channel!
+[T] * Usermode solution allows the use of MMX, VIS, Floating point and other
+[T] media instruction sets to speed up computation.
+[T] * Cross platform builds from a single source code provides ubiquitous
+[T] availability.
+
+[U] http://www.baycom.org/~tom/ham/soundmodem/
+
+[A] Thomas Sailer <sailer@ife.ee.ethz.ch>
+[A] Tomi Manninen <tomi.manninen@hut.fi>
+[M] Leonel Iván Saafigueroa <leonel@saafigueroa.com.ar>
+
+[C] extra/network
+
+[L] GPL
+[V] 0.20
+
+[D] 7fb8266656fbcb2ebb311e7c3b88ec142d1372fa0508bf1420009727 soundmodem-0.20.tar.gz https://archive.org/download/soundmodem-0.20/
+
+var_append GCC_WRAPPER_APPEND ' ' -Wno-template-body
+var_append GCC_WRAPPER_APPEND ' ' -std=gnu11

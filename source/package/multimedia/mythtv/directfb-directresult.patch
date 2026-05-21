@@ -1,0 +1,48 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/mythtv/directfb-directresult.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- mythtv-0.21/libs/libmythtv/videoout_directfb.cpp.orig	2008-03-08 01:07:31.000000000 +0100
++++ mythtv-0.21/libs/libmythtv/videoout_directfb.cpp	2008-09-10 09:34:58.000000000 +0200
+@@ -141,8 +141,7 @@
+         if (DFB_OK != fberr)
+         {
+             VERBOSE(VB_IMPORTANT, LOC_ERR + "Failed to lock buffer" + ENOFB);
+-            fberr = bufferSurface->Release(bufferSurface);
+-            if (DFB_OK != fberr)
++            if (bufferSurface->Release(bufferSurface) != DR_OK)
+             {
+                 VERBOSE(VB_IMPORTANT, LOC_ERR +
+                         "Failed to release buffer" + ENOFB);
+@@ -198,8 +197,7 @@
+                             "Failed to unlock buffer" + ENOFB);
+                 }
+ 
+-                fberr = surf->Release(surf);
+-                if (DFB_OK != fberr)
++                if (surf->Release(surf) != DR_OK)
+                 {
+                     VERBOSE(VB_IMPORTANT, LOC_ERR +
+                             "Failed to release buffer" + ENOFB);
+@@ -244,8 +242,7 @@
+                         "Failed to unlock buffer" + ENOFB);
+             }
+ 
+-            fberr = surf->Release(surf);
+-            if (DFB_OK != fberr)
++            if (surf->Release(surf) != DR_OK)
+             {
+                 VERBOSE(VB_IMPORTANT, LOC_ERR +
+                         "Failed to release buffer" + ENOFB);
+@@ -1121,8 +1118,7 @@
+     {
+         VERBOSE(VB_IMPORTANT, LOC_WARN + "Failed to test config" + ENOFB);
+ 
+-        fberr = vodata->videoLayer->Release(vodata->videoLayer);
+-        if (DFB_OK != fberr)
++        if (vodata->videoLayer->Release(vodata->videoLayer) != DR_OK)
+         {
+             VERBOSE(VB_IMPORTANT, LOC_ERR +
+                     "Failed to release display layer" + ENOFB);

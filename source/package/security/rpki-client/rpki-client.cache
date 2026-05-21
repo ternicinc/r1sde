@@ -1,0 +1,22 @@
+
+[TIMESTAMP] 1709814118 Thu Mar  7 13:21:58 2024
+[BUILDTIME] 4 (9)
+[SIZE] 0.31 MB, 17 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] expat
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libretls
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] sed
+[DEP] tar
+[DEP] zlib

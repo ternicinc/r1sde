@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pcem/pcem.desc
+[COPY] Copyright (C) 2017 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] PCem emulates PC XT and AT machines
+
+[T] PCem is a PC emulator which emulates vintage PC platforms.
+[T] While similar to Bochs and Dosbox, it emulates many more
+[T] different types of CPU and graphic chips, including
+[T] S3 ViRGE/DX and 3DFX Voodoo Graphics.
+
+[U] https://pcem-emulator.co.uk
+
+[A] Sarah Walker
+[A] Michael Manley
+[M] coolluke1992 <coolluke1992@thenightswatch.co.uk>
+
+[C] extra/emulator
+[F] CROSS NO-LTO
+
+[L] GPL
+[V] 17 3a9b8b7
+
+[D] 3518a1ab635a572425fc6f85b059a957999d9a214d0cefe9c03f2e4b PCemLinux-3a9b8b7.tar.gz !https://github.com/sarah-walker-pcem/pcem/tarball/3a9b8b7
+
+var_append confopt ' ' -DCMAKE_BUILD_TYPE=Release

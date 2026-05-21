@@ -1,0 +1,13 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/bacula/config.hlp
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+MENU_PKG_BACULA
+  Here you will find config options for the bacula backup application.
+
+SDECFG_PKG_BACULE_DB
+  Supported databases are: MySQL, PostgreSQL, SQLite3 or SQLite. Depending
+  on the current package selection you should choose one of those. Leaving
+  this as-is will result in a client-only package.

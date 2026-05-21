@@ -1,0 +1,23 @@
+[TIMESTAMP] 1777033266 Fri Apr 24 14:21:06 2026
+[BUILDTIME] 55 (9)
+[SIZE] 20.14 MB, 638 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pybind11
+[DEP] python
+[DEP] python-gpep517
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] vcs-versioning

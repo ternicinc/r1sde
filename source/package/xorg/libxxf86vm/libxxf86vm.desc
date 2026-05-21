@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libxxf86vm/libxxf86vm.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Extension library for the XFree86-VidMode X extension
+
+[T] The libxxf86vm provides an interface to the server extension
+[T] XFree86-VidModeExtension which allows the video modes to be queried and
+[T] adjusted dynamically and mode switching to be controlled.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.1.7
+[P] X ?----5---9 112.441
+
+[D] efc6747ca2d2db53e9ed6fc2e1e0a29d62262d5d7109ff3d68f7efd9 libXxf86vm-1.1.7.tar.xz http://xorg.freedesktop.org/releases/individual/lib/
+
+. package/*/*/modular-x-conf.in

@@ -1,0 +1,24 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/xmms-winamp-x-theme/colors.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+Some slithgly tuned, visible selection color.
+
+  - Rene Rebe <rene@exactcode.de>
+
+diff -u Winamp_X_XMMS_1.01-orig/pledit.txt Winamp_X_XMMS_1.01/pledit.txt
+--- Winamp_X_XMMS_1.01-orig/pledit.txt	2001-05-22 15:13:46.000000000 +0200
++++ Winamp_X_XMMS_1.01/pledit.txt	2005-08-05 19:41:19.000000000 +0200
+@@ -5,7 +5,7 @@
+ NormalBG=#9AC1EA
+ Normal=#000000
+ Current=#3966A0
+-SelectedBG=#9AC1EA
++SelectedBG=#BAE1FF
+ Font=Tahoma
+ mbBG=#FFFFFF
+-mbFG=#000000
+\ No newline at end of file
++mbFG=#000000

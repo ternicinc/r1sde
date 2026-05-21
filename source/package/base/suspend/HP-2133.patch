@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/suspend/HP-2133.patch
+# Copyright (C) 2009 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- suspend/whitelist.c.new	2009-02-19 10:23:26.000000000 +0000
++++ suspend/whitelist.c	2009-02-19 10:26:19.000000000 +0000
+@@ -215,6 +215,8 @@
+ 	{ "Hewlett-Packard ",		"Pavilion zt3300 *",	"",	"68BAL*", S3_BIOS },
+ 	/* A desktop with integrated graphics, Bo Thysell <thysell@fusemail.com> */
+ 	{ "HP Pavilion 061",		"EJ192AA-ABS t3250.se",	"",	"", 0 },
++	/* Rene Rebe <rene@exactcode.de>, VIA Chrome 9 */
++	{ "Hewlett-Packard",  "HP 2133", "", "", VBE_POST },
+ 
+ 	/* R51 confirmed by Christian Zoz and Sitsofe Wheeler <sitsofe@yahoo.com> */
+ 	{ "IBM",			"",		"ThinkPad R51",	"", 0 },

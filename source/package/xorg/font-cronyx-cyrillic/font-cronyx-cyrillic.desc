@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/font-cronyx-cyrillic/font-cronyx-cyrillic.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Russian fonts for X11
+
+[T] Russion fonts for X11 by Cronyx.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.0.4
+
+[D] 938c1d4b98488ed31bdd8ae51363094376789933544821e3f27da9dc font-cronyx-cyrillic-1.0.4.tar.xz http://xorg.freedesktop.org/releases/individual/font/
+
+. package/*/*/modular-x-conf.in

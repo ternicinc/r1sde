@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/txt2tags/txt2tags.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A tool that converts text files to HTML, LaTeX, man page, and more
+
+[T] Txt2tags converts a text file with minimal markup to HTML, XHTML,
+[T] SGML, LaTeX, Lout, UNIX man page, MoinMoin, MagicPoint (mgp), and
+[T] PageMaker. It is simple and fast and features automatic TOC, macros,
+[T] filters, include, tools, GUI, CLI, and Web interfaces, translations,
+[T] and extensive documentation.
+
+[U] https://txt2tags.sourceforge.net/
+
+[A] Aurélio Marinho Jargas <verde@aurelio.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+[E] add python
+
+[L] GPL
+[V] 3.9
+
+[D] 358cf66066ff996e7689e2920d1529b4b78ebd57379ab2ad42dab2e9 txt2tags-3.9.tar.gz https://github.com/txt2tags/txt2tags/archive/refs/tags/3.9/

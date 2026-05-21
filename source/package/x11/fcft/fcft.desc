@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/fcft/fcft.desc
+[COPY] Copyright (C) 2021 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Font loading and glyph rasterisation library
+
+[T] Font loading and glyph rasterisation library using fontconfig, freetype
+[T] and pixman.
+
+[U] https://codeberg.org/dnkl/fcft
+
+[A] Daniel Eklöf
+[M] NoTag <notag@t2sde.org>
+
+[C] base/x11
+[F] CROSS
+
+[L] MIT
+[V] 3.3.3
+[P] X -----5---9 150.000
+
+[CV-FLAGS] NO-PREFIX
+[D] 6bacd12d4cc7b95c21f4a88bc59a02b8f73baae495b0b91bf28e9423 fcft-3.3.3.tar.gz !https://codeberg.org/dnkl/fcft/archive/3.3.3.tar.gz
+
+var_append GCC_WRAPPER_INSERT ' ' "-I$root$(pkgprefix includedir pixman)"

@@ -1,0 +1,38 @@
+[TIMESTAMP] 1737663288 Thu Jan 23 21:14:48 2025
+[BUILDTIME] 30 (9)
+[SIZE] 4.17 MB, 137 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bison
+[DEP] coreutils
+[DEP] diffutils
+[DEP] docbook-xml
+[DEP] docbook-xsl
+[DEP] e2fsprogs
+[DEP] findutils
+[DEP] fuse
+[DEP] gawk
+[DEP] glib
+[OPT] gobject-introspection
+[DEP] gpgme
+[DEP] grep
+[OPT] gtk-doc
+[DEP] libarchive
+[DEP] libgpg-error
+[OPT] libselinux
+[OPT] libsoup
+[OPT] libsoup3
+[DEP] libxslt
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[OPT] systemd
+[DEP] tar
+[DEP] util-linux
+[DEP] xz
+[DEP] zlib

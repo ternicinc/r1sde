@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/joe/joe.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Joe's Own Editor
+
+[T] JOE is a powerful ASCII-text screen editor. It has a "mode-less"
+[T] user interface which is similer to many user- friendly PC editors.
+[T] Users of Micro-Pro's WordStar or Borland's "Turbo" languages will feel
+[T] at home. JOE is a full featured UNIX screen-editor though, and has
+[T] many fea- tures for editing programs and text.
+[T]
+[T] JOE also emulates several other editors. JSTAR is a close immitation
+[T] of WordStar with many "JOE" extensions. JPICO is a close immitation of
+[T] the Pine mailing system's PICO editor, but with many extensions and
+[T] improvements. JMACS is a GNU-EMACS immitation. RJOE is a restricted
+[T] version of JOE, which allowes you to edit only the files specified on
+[T] the command line.
+
+[U] https://joe-editor.sourceforge.io
+
+[A] Joseph H. Allen <jhallen@world.std.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/editor
+[F] CROSS
+
+[L] GPL
+[V] 4.8
+
+[D] ad650685d7bd8de42ab2dcec4a7631f792546dca81d2f87fb9fbf82d joe-4.8.tar.gz https://downloads.sourceforge.net/project/joe-editor/JOE%20sources/joe-4.8/

@@ -1,0 +1,23 @@
+[TIMESTAMP] 1738523051 Sun Feb  2 20:04:11 2025
+[BUILDTIME] 14 (9)
+[SIZE] 3.53 MB, 216 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] brotli
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] lz4
+[DEP] make
+[DEP] pcre2
+[DEP] sed
+[DEP] tar
+[DEP] xz
+[DEP] zlib
+[DEP] zstd

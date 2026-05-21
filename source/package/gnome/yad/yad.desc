@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/yad/yad.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Gtk+ dialog tool
+
+[T] Yad is a tool that allows you to display Gtk+ dialog boxes from the
+[T] command line and through shell scripts.
+
+[U] https://github.com/v1cont/yad/
+
+[A] Victor Ananjevsky <ananasik@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] GPL
+[V] 14.2
+[P] X -----5---9 151.799
+
+[D] ee8b42ef62eca463c83fdcb3d3b7814d0f5510481b31a2795196bb04 yad-14.2.tar.xz https://github.com/v1cont/yad/releases/download/v14.2/

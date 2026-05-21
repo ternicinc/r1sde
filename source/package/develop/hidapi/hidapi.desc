@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/hidapi/hidapi.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] HIDAPI library for Windows, Linux, FreeBSD and macOS
+
+[T] HIDAPI is a multi-platform library which allows an application to
+[T] interface with USB and Bluetooth HID-Class devices on Windows, Linux,
+[T] FreeBSD, and macOS.
+
+[U] https://github.com/libusb/hidapi
+
+[A] Alan Ott <alan@signal11.us>:
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[L] GPL3 BSD
+[V] 0.15.0
+[P] X -----5---9 110.000
+
+[D] 39e8caf068512ce665e4c418d4122f46434e6422dcd10859ec5ac44a hidapi-0.15.0.tar.gz https://github.com/libusb/hidapi/archive/
+
+runcmake=0 runmeson=0
+hook_add preconf 5 ./bootstrap

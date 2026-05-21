@@ -1,0 +1,25 @@
+[TIMESTAMP] 1739268348 Tue Feb 11 11:05:48 2025
+[BUILDTIME] 2 (5)
+[SIZE] 2.94 MB, 159 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] file
+[DEP] gawk
+[DEP] gettext
+[DEP] glib
+[DEP] grep
+[DEP] gtk+2
+[DEP] intltool
+[DEP] libxml
+[DEP] openssl
+[DEP] perl
+[DEP] perl-xml-parser
+[DEP] python
+[DEP] python-gpep517
+[DEP] sed
+[DEP] setuptools
+[DEP] sysfiles
+[DEP] tar
+[DEP] xz

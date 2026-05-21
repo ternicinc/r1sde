@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dvorakng/dvorakng.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Dvorak keyboard learning tool
+
+[T] This is a very enhanced version of dvorak7min a program for learning how to
+[T] type on a dvorak keyboard.
+
+[U] http://freshmeat.net/projects/dvorakng/
+
+[A] Ragnar Hojland Espinosa <ragnar@ragnar-hojland.com>
+[A] Kamil Burzynski <K.Burzynski@adbglobal.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/education
+[F] CROSS
+
+[L] GPL
+[V] 0.6.0rc1
+
+[D] 9d6aa5a25dd047c8e0c0ee8de1a76274ddc87b99c52ffa9e0fee171d dvorakng-0.6.0rc1.tar.bz2 http://www.free.of.pl/n/nopik/
+
+var_append makeinstopt ' ' prefix=$root

@@ -1,0 +1,48 @@
+[TIMESTAMP] 1770549408 Sun Feb  8 12:16:48 2026
+[BUILDTIME] 145 (9)
+[SIZE] 1.93 MB, 60 files
+
+[DEP] akonadi
+[DEP] akonadi-contacts
+[DEP] akonadi-search
+[DEP] bash
+[DEP] binutils
+[DEP] calendarsupport
+[DEP] cmake
+[DEP] coreutils
+[DEP] cups
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] freetype
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] kcalendarcore
+[DEP] kcolorscheme
+[DEP] kcompletion
+[DEP] kconfig
+[DEP] kconfigwidgets
+[DEP] kcontacts
+[DEP] kcoreaddons
+[DEP] kcrash
+[DEP] kdbusaddons
+[DEP] ki18n
+[DEP] kitemmodels
+[DEP] kmime
+[DEP] ktextwidgets
+[DEP] kwidgetsaddons
+[DEP] kxmlgui
+[DEP] libkdepim
+[DEP] linux-header
+[DEP] make
+[DEP] messagelib
+[DEP] pkgconfig
+[DEP] procps
+[DEP] qt6base
+[DEP] sed
+[DEP] sonnet
+[DEP] tar
+[DEP] util-linux
+[DEP] vulkan-headers
+[DEP] xapian-core
+[DEP] xz

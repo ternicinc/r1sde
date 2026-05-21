@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/feng/feng.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A multimedia streaming server
+
+[T] Feng is a multimedia streaming server compliant with the IETF's
+[T] standards for real-time streaming of multimedia contents over
+[T] Internet. Feng implements RTSP – Real-Time Streaming Protocol
+[T] (rfc2326) and RTP/RTCP – Real-Time Transport Protocol/RTP Control
+[T] Protocol (rfc3550) supporting the RTP Profile for Audio and Video
+[T] Conferences with Minimal Control (rfc3551).
+
+[U] http://live.polito.it
+
+[A] Alessandro Molina <amol.wrk@gmail.com>
+[A] Dario Gallucci <dario.gallucci@polito.it>
+[A] Luca Barbato <lu_zero@gentoo.org>
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/multimedia
+
+[L] LGPL
+[V] 0.1.99
+
+[D] 2713ae91981d8b6ab695838180130f3466735fa91a97da6f74ed09f9 feng-0.1.99.tar.bz2 http://live.polito.it/files/downloads/feng/

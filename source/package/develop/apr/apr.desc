@@ -1,0 +1,51 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/apr/apr.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A free portable runtime library
+
+[T] The mission of the Apache Portable Runtime (APR) project is to create
+[T] and maintain software libraries that provide a predictable and
+[T] consistent interface to underlying platform-specific implementations.
+[T] The primary goal is to provide an API to which software developers
+[T] may code and be assured of predictable if not identical behaviour
+[T] regardless of the platform on which their software is built, relieving
+[T] them of the need to code special-case conditions to work around or
+[T] take advantage of platform-specific deficiencies or features.
+
+[U] https://apr.apache.org/
+
+[A] Apache Software Foundation
+[M] Minto van der Sluis <minto@multimach.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] DIETLIBC CROSS
+
+[L] APL
+[V] 1.7.6
+[P] X -----5---9 118.000
+
+[D] aa04ec6f4af616843ca992ee63b9a1420787980d8bcb7a5e3e8e479e apr-1.7.6.tar.bz2 http://www.apache.org/dist/apr/
+
+apr_fill_cache() {
+	cat >> config.cache <<-EOT
+		ac_cv_file__dev_zero=1
+		apr_cv_process_shared_works=1
+		apr_cv_tcp_nodelay_with_cork=1
+		ac_cv_strerror_r_rc_int=yes
+		ac_cv_type_size_t=yes
+		ac_cv_type_ssize_t=yes
+		ac_cv_sizeof_size_t=$arch_sizeof_long
+		ac_cv_sizeof_ssize_t=$arch_sizeof_long
+		ac_cv_sizeof_struct_iovec="sizeof(struct iovec)"
+EOT
+}
+
+if atstage cross; then
+	hook_add preconf 5 apr_fill_cache
+	hook_add premake 5 'make CC=$HOSTCC tools/gen_test_char'
+fi
+var_append makeinstopt ' ' -j1

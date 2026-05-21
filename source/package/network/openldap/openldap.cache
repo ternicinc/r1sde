@@ -1,0 +1,24 @@
+[TIMESTAMP] 1769767585 Fri Jan 30 11:06:25 2026
+[BUILDTIME] 70 (9)
+[SIZE] 8.54 MB, 360 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] cyrus-sasl2
+[DEP] diffutils
+[DEP] file
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] groff
+[DEP] gzip
+[DEP] libxcrypt
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[OPT] tcp_wrappers
+[DEP] util-linux

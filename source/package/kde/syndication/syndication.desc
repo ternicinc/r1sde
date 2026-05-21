@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/syndication/syndication.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Syndication Library
+
+[T] Syndication offers a unified, format-agnostic view on the parsed feed, so
+[T] that the using application does not need to distinguish between feed
+[T] formats.
+
+[U] https://invent.kde.org/frameworks/syndication
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 6.26.0
+[P] X -----5---9 162.950
+
+[CV-GROUP] kde-frameworks
+[D] 861d6b1b205dc935a55a1e612403aae3419e42fa5a92e792aea59037 syndication-6.26.0.tar.xz https://download.kde.org/stable/frameworks/6.26/
+
+. $base/package/*/*/kde-conf.in

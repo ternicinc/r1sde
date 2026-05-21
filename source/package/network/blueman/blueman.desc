@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/blueman/blueman.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A GTK+ Bluetooth Manager
+
+[T] Blueman is a GTK+ Bluetooth Manager.
+
+[U] https://github.com/blueman-project/blueman
+
+[A] Valmantas Paliksa <walmis@balticum-tv.lt>
+[A] Tadas Dailyda <tadas@dailyda.com>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/tool
+
+[L] GPL
+[V] 2.4.6
+
+[D] 2f1378b4aff6a0ce0266e79cbbe13f9d757e32bd425f9f3e1dbcb7f5 blueman-2.4.6.tar.xz https://github.com/blueman-project/blueman/releases/download/2.4.6/

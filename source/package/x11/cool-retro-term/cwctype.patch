@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/cool-retro-term/cwctype.patch
+# Copyright (C) 2020 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- cool-retro-term-1.1.1/qmltermwidget/lib/TerminalCharacterDecoder.cpp.vanilla	2020-07-23 17:54:12.508700905 +0200
++++ cool-retro-term-1.1.1/qmltermwidget/lib/TerminalCharacterDecoder.cpp	2020-07-23 17:55:09.703699118 +0200
+@@ -31,6 +31,8 @@
+ // Konsole
+ #include "konsole_wcwidth.h"
+ 
++#include <cwctype>
++
+ using namespace Konsole;
+ PlainTextDecoder::PlainTextDecoder()
+  : _output(0)

@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-yaml/perl-yaml.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Is a generic data serialization language
+
+[T] Is a generic data serialization language that is optimized for human
+[T] readability. It can be used to express the data structures of most modern
+[T] programming languages, including perl.
+
+[U] https://search.cpan.org
+
+[A] <ingy@cpan.org>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/database
+
+[L] Artistic GPL
+[V] 1.31
+[P] X -----5---9 175.500
+
+[D] f11d1152b017dc8533a7feaccff86bd3c9a030498d57f3ae474902f1 YAML-1.31.tar.gz http://search.cpan.org/CPAN/authors/id/I/IN/INGY/

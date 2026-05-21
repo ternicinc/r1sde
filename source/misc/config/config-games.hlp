@@ -1,0 +1,19 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/misc/config/config-games.hlp
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+MENU_PKG_GAMES_GENERAL
+  In this menu you will find all option concerning games.
+
+SDECFG_PKG_GAMES_BINDIR
+  Please specify the directory in which game binaries should be
+  installed.
+
+SDECFG_PKG_GAMES_DATADIR
+  This is where the games should install their datafiles.
+
+SDECFG_PKG_GAMES_SCOREDIR
+  This is the directory where global scorefiles should be kept.

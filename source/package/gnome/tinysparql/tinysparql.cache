@@ -1,0 +1,37 @@
+[TIMESTAMP] 1737678866 Fri Jan 24 01:34:26 2025
+[BUILDTIME] 16 (9)
+[SIZE] 8.45 MB, 370 files
+
+[DEP] asciidoc
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] docbook-xml
+[DEP] docbook-xsl
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[OPT] glib
+[DEP] gobject-introspection
+[DEP] grep
+[DEP] icu4c
+[DEP] json-glib
+[DEP] libsoup3
+[DEP] libstemmer
+[DEP] libxml
+[DEP] libxslt
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] sqlite
+[OPT] systemd
+[DEP] tar
+[DEP] vala
+[DEP] xz

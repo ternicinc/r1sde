@@ -1,0 +1,24 @@
+[TIMESTAMP] 1737980399 Mon Jan 27 13:19:59 2025
+[BUILDTIME] 150 (9)
+[SIZE] 5.02 MB, 64 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] c-ares
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gmp
+[DEP] gnutls
+[DEP] grep
+[DEP] libssh2
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[DEP] nettle
+[DEP] sed
+[DEP] sqlite
+[DEP] tar
+[DEP] xz
+[DEP] zlib

@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/a2ps/a2ps.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Converts text and other types of files to PostScript(TM)
+
+[T] GNU a2ps is an Any to PostScript filter. Of course it processes plain
+[T] text files, but also pretty prints quite a few popular languages.
+[T]
+[T] Its slogan is precisely ` Do The Right Thing '', which means that
+[T] though it is highly configurable, everything was made so that a novice
+[T] user can do complicated PostScript manipulations. For instance, it
+[T] has the ability to delegate the processing of some files to other
+[T] filters (such as groff, texi2dvi, dvips, gzip etc.), what allows a
+[T] uniform treatment (n-up, page selection, duplex etc.) of heterogeneous
+[T] files.
+
+[U] https://www.gnu.org/software/a2ps/
+
+[A] Akim Demaille <demaille@inf.enst.fr>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/printing
+[F] CROSS AUTOMAKE-QUIRK
+
+[L] GPL
+[V] 4.15.8
+
+[D] 28b211563de7c85d8a287880dfdc7407f1d004ebf5ab488622e574fe a2ps-4.15.8.tar.gz https://ftp.gnu.org/gnu/a2ps/
+
+var_append makeinstopt ' ' lispdir=$docdir

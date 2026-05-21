@@ -1,0 +1,21 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/ncurses/c++.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+CC is set during cross compilation and utilzing non default compilers (ICC et al).
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- ncurses-5.7/c++/Makefile.in.vanilla	2008-11-04 08:51:36.000000000 +0100
++++ ncurses-5.7/c++/Makefile.in	2008-11-04 08:52:11.000000000 +0100
+@@ -75,7 +75,7 @@
+ INCDIR		= ../include
+ CPPFLAGS	= -I../c++ -I$(INCDIR) -I$(srcdir) -DHAVE_CONFIG_H @CPPFLAGS@
+ 
+-CC		= ${CXX}
++override CC		= ${CXX}
+ CCFLAGS		= $(CPPFLAGS) $(CXXFLAGS)
+ 
+ CFLAGS_LIBTOOL	= $(CCFLAGS)

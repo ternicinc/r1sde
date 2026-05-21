@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/asc/asc.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Battle Isle (I/II) like multiplayer strategy game
+
+[T] ASC is a free, turn based strategy game. It is designed in the
+[T] tradition of the Battle Isle series from Bluebyte.
+
+[U] https://www.asc-hq.org
+
+[A] Martin Bickel
+[A] Marc Schellenberger
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+[F] CROSS
+
+[E] opt flac
+[E] opt speex
+
+[L] GPL
+[V] 2.6.0.0
+
+[D] 3192ac6d49fe6f56ab23adef0562389e36c803b87598182589ef6c7b asc-2.6.0.0.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/asc-hq/
+
+bindir=$root/$SDECFG_PKG_GAMES_BINDIR
+datadir=$root/$SDECFG_PKG_GAMES_DATADIR
+# paraguitest works only from within X. nice design :/
+var_append confopt ' ' --disable-paraguitest

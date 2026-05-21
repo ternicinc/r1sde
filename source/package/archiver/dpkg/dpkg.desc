@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dpkg/dpkg.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Debian package manager
+
+[T] The `dpkg' suite contains the programs which handle Debian (.deb)
+[T] packages. It was developed on Debian GNU/Linux but can be used on all
+[T] Linux distributions and most Unix systems. The `dpkg' command can be
+[T] used to install, remove and manage .deb binary packages, and it
+[T] maintains a package database which gets updated on changes. It is also a
+[T] front-end to the low-level `dpkg-deb' tool, which is oriented towards
+[T] manipulating archives. However, the primary interface to dpkg is the
+[T] `dselect' program, which is used to get and display packages for the
+[T] user to select for (de)installation.
+
+[U] https://www.debian.org/Packages/unstable/base/dpkg.html
+
+[A] Jeff Covey
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] NOPARALLEL
+
+[E] opt zlib-ng
+
+[L] GPL
+[V] 1.23.7
+
+[D] 1ec8c0407a01efb35da62644f5457988744ae134e8768faf1f21c042 dpkg_1.23.7.tar.xz http://ftp.debian.org/debian/pool/main/d/dpkg/
+
+confopt="$confopt --without-sgml-doc --without-start-stop-daemon"
+hook_add premake 5 "sed -i 's:perl5\/vendor_perl:perl5:' scripts/Makefile"

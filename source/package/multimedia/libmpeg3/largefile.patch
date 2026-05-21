@@ -1,0 +1,20 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/libmpeg3/largefile.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+Needed for compilation on at least ppc64, maybe all architectures.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- libmpeg3-1.6/mpeg3io.c.vanilla	2006-06-04 13:23:42.000000000 +0200
++++ libmpeg3-1.6/mpeg3io.c	2006-06-04 13:26:14.000000000 +0200
+@@ -1,6 +1,7 @@
+ #include "mpeg3private.h"
+ #include "mpeg3protos.h"
+ 
++#define __USE_LARGEFILE64
+ #include <mntent.h>
+ #include <stdint.h>
+ #include <stdlib.h>

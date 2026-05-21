@@ -1,0 +1,39 @@
+[TIMESTAMP] 1776498151 Sat Apr 18 09:42:31 2026
+[BUILDTIME] 12 (9)
+[SIZE] 0.99 MB, 79 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] cmake
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] libdrm
+[DEP] libinput
+[DEP] libpng
+[OPT] librsvg
+[DEP] libxml
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[DEP] pixman
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] udev
+[DEP] util-linux
+[DEP] wayland
+[DEP] wayland-protocols
+[DEP] wlroots
+[DEP] xkbcommon

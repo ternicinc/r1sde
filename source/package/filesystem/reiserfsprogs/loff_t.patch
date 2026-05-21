@@ -1,0 +1,19 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/reiserfsprogs/loff_t.patch
+# Copyright (C) 2021 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- reiserfsprogs-3.6.25/include/misc.h.vanilla	2021-01-19 17:25:09.551477382 +0100
++++ reiserfsprogs-3.6.25/include/misc.h	2021-01-19 17:27:32.677484766 +0100
+@@ -12,7 +12,10 @@
+ #  include "config.h"
+ #endif
+ 
++#include <stdint.h>
++
+ #define _DEFAULT_SOURCE
++#define __USE_MISC
+ 
+ #include <stdio.h>
+ #include <unistd.h>

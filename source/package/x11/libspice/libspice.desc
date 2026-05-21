@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libspice/libspice.desc
+[COPY] Copyright (C) 2015 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A remote-display system built for virtual environments
+
+[T] SPICE (the Simple Protocol for Independent Computing Environments) is a
+[T] remote-display system built for virtual environments which allows users to
+[T] view a computing "desktop" environment - not only on its computer-server
+[T] machine, but also from anywhere on the Internet and using a wide variety
+[T] of machine architectures.
+
+[U] https://www.spice-space.org/
+
+[A] Yaniv Kamay <ykamay@redhat.com> {Original project author}
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/x11
+
+[E] add six
+[E] opt asciidoc docbook-xml docbook-xsl libxml libxslt
+
+[L] LGPL
+[V] 0.15.2
+[P] X -----5---9 200.000
+
+[D] 6a853fe60b0653524a6142ad186f7f24572892daad0b494b405568f5 spice-0.15.2.tar.bz2 http://www.spice-space.org/download/releases/
+
+var_append mesonopt ' ' -Dtests=false
+pkginstalled libopus || var_append confopt ' ' --disable-opus

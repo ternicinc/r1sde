@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mikmod/mikmod.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Mikmod Sound System Player
+
+[T] Mikmod is a module player and library supporting many formats, including
+[T] mod, s3m, it, and xm. Originally a player for MS-DOS, MikMod has been
+[T] ported to other platforms, such as Unix, Macintosh, BeOS, and Java(!!)
+
+[U] https://mikmod.sourceforge.net/
+
+[A] MikMod Project, Miod Vallat <miod@mikmod.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 3.2.9
+
+[D] 4c39216c1daa20f1a6e5b4f9fb8e38ae5f010b6fa81ad8e146ee9bd6 mikmod-3.2.9.tar.gz https://prdownloads.sourceforge.net/sourceforge/mikmod/

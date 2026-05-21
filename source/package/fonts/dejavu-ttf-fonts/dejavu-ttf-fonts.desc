@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dejavu-ttf-fonts/dejavu-ttf-fonts.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A font family based on Bitstream Vera Fonts
+
+[T] The DejaVu fonts are a font family based on the Bitstream Vera Fonts. Its
+[T] purpose is to provide a wider range of characters while maintaining the
+[T] original look and feel. The family is available as TrueType fonts and also
+[T] as third-party packages for various operating systems, including handhelds.
+
+[U] https://github.com/dejavu-fonts/dejavu-fonts
+
+[A] Stepan Roh <src@srnet.cz>
+[M] Vlad Glagolev <stelzy@gmail.com>
+
+[C] extra/font
+[F] CROSS
+
+[L] OpenSource
+[V] 2.37
+[P] X -----5---9 200.000
+
+[D] 03e7e5148fd84d234ae3b9c96ad9e62a285a67fa702795495798abae dejavu-fonts-ttf-2.37.tar.bz2 https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_2_37/
+
+runmake=0
+hook_add postmake 5 'cp -vf ttf/*.ttf $root$datadir/fonts/'

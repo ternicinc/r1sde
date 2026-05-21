@@ -1,0 +1,37 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/alliance/alliance.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A free VLSI cad system
+
+[T] Alliance is a complete set of free CAD tools and portable libraries for
+[T] VLSI design. It includes a VHDL compiler and simulator, logic synthesis
+[T] tools, and automatic place and route tools. A complete set of portable
+[T] CMOS libraries is provided. Alliance is the result of a twelve year
+[T] effort spent at ASIM department of LIP6 laboratory of the Pierre et
+[T] Marie Curie University (Paris VI, France). Alliance has been used for
+[T] research projects such as the 875 000 transistors StaCS superscalar
+[T] microprocessor and 400 000 transistors IEEE Gigabit HSL Router.
+
+[U] https://coriolis.lip6.fr/
+
+[A] ASIM department of LIP6 laboratory of the Pierre et Marie Curie University
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/scientific
+[F] OBJDIR
+
+[L] GPL
+[V] 5.1.1
+[P] O -----5---9 217.000
+
+[D] 8e1123f8abb22ad2219dd10f585441ccce358a07c122c9af3a56438b alliance-5.1.1.tar.bz2 http://www-asim.lip6.fr/pub/alliance/distribution/latest/
+
+export ALLIANCE_TOP="$root/$prefix"
+
+[ $prefix_auto = 1 ] && prefix="opt/alliance" && set_confopt
+
+makeopt= # directly run make install ...

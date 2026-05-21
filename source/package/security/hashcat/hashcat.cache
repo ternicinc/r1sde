@@ -1,0 +1,22 @@
+[TIMESTAMP] 1759874254 Tue Oct  7 23:57:34 2025
+[BUILDTIME] 240 (9)
+[SIZE] 208.42 MB, 2546 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] cargo
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] python
+[DEP] rustc
+[DEP] sed
+[DEP] tar

@@ -1,0 +1,37 @@
+[TIMESTAMP] 1763324831 Sun Nov 16 22:27:11 2025
+[BUILDTIME] 10 (9)
+[SIZE] 2.22 MB, 312 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] cmake
+[DEP] coreutils
+[DEP] dbus
+[DEP] diffutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] gobject-introspection
+[DEP] grep
+[DEP] imagemagick
+[DEP] lgi
+[DEP] libx11
+[DEP] libxcb
+[DEP] libxdg-basedir
+[DEP] linux-header
+[DEP] lua
+[DEP] make
+[DEP] pango
+[DEP] pkgconfig
+[DEP] sed
+[DEP] startup-notification
+[DEP] tar
+[DEP] xcb-util
+[DEP] xcb-util-cursor
+[DEP] xcb-util-keysyms
+[DEP] xcb-util-wm
+[DEP] xcb-util-xrm
+[DEP] xkbcommon
+[DEP] xorgproto
+[DEP] xz

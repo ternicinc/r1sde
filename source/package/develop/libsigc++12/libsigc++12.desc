@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libsigc++12/libsigc++12.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Typesafe Signal Framework for C++
+
+[T] This library implements a full callback system for use in widget libraries,
+[T] abstract interfaces, and general programming. Originally part of the Gtkmm
+[T] widget set. Libsigc++ is now a seperate library to provide for more general
+[T] use. It is the most complete library of its kind with the ablity to connect
+[T] an abstract callback to a class method, function, or function object. It
+[T] contains adaptor classes for connection of dissimilar callbacks and has an
+[T] ease of use unmatched by other C++ callback libraries.
+
+[U] https://libsigc.sourceforge.net/
+
+[A] Karl E. Nelson <kenelson@ece.ucdavis.edu>
+[A] Tero Pulkinen <terop@students.cc.tut.fi>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] LGPL
+[V] 1.2.7
+[P] X -----5---9 122.100
+
+[D] 72d0328973c0ab78aff1812c4cd5ab4e3bc599623c7b93b3c265d690 libsigc++-1.2.7.tar.gz https://download.gnome.org/sources/libsigc++/1.2/

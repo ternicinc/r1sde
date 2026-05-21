@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sound-juicer/sound-juicer.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] CD ripping tool
+
+[T] This is Sound Juicer, a CD ripping tool using GTK+ and GStreamer.
+
+[U] http://www.burtonini.com/blog/computers/sound-juicer
+
+[A] Ross Burton <ross@burtonini.com>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/tool extra/desktop/gnome
+
+[L] GPL
+[V] 3.40.0
+[P] X -----5---9 185.600
+
+[CV-URL] https://download.gnome.org/sources/sound-juicer/cache.json
+[D] ac0e9520a9628141e5402f41aace703dd4e141ceb0fd97030b19cce9 sound-juicer-3.40.0.tar.xz https://download.gnome.org/sources/sound-juicer/3.40/
+
+. $base/package/*/*/gnome-conf.in
+var_append confopt ' ' --disable-schemas-install

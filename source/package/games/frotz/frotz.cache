@@ -1,0 +1,32 @@
+[TIMESTAMP] 1739217711 Mon Feb 10 21:01:51 2025
+[BUILDTIME] 4 (5)
+[SIZE] 0.63 MB, 22 files
+
+[DEP] bash
+[DEP] bdftopcf
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] freetype
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libao
+[DEP] libjpeg
+[DEP] libmodplug
+[DEP] libpng
+[DEP] libsamplerate
+[DEP] libsdl2
+[OPT] libsdl2_mixer
+[DEP] libsndfile
+[OPT] libx11
+[DEP] libxt
+[DEP] linux-header
+[DEP] make
+[DEP] mkfontscale
+[DEP] ncurses
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto
+[DEP] zlib

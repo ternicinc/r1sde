@@ -1,0 +1,18 @@
+[TIMESTAMP] 1777557810 Thu Apr 30 16:03:30 2026
+[BUILDTIME] 3 (9)
+[SIZE] 0.20 MB, 57 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] openssl
+[DEP] python
+[DEP] python-flit-core
+[DEP] python-gpep517
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

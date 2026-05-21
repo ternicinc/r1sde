@@ -1,0 +1,20 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/qemu/no-tests.patch
+# Copyright (C) 2024 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+superh-24.12-*/tests/fp/fp-bench.c: In function 'set_host_precision':
+superh-24.12.*/tests/fp/fp-bench.c:568:17: error: 'FE_DOWNWARD' undeclared (first use in this function); did you mean 'FP_INT_DOWNWARD'?
+
+--- qemu-10.1.0/meson.build.vanilla	2025-08-27 12:30:19.577796215 +0200
++++ qemu-10.1.0/meson.build	2025-08-27 12:30:38.423000000 +0200
+@@ -4611,7 +4611,7 @@
+ # Tests are disabled on emscripten because they rely on host features that aren't
+ # supported by emscripten (e.g. fork and unix socket).
+ if host_os != 'emscripten'
+-  subdir('tests')
++  #subdir('tests')
+ endif
+ if gtk.found()
+   subdir('po')

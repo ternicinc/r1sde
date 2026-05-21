@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kruler/kruler.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A screen ruler and color measurement tool
+
+[T] KRuler is an on-screen ruler for measuring pixels. Position the 0 at your
+[T] starting point and measure the precise pixel distance between the starting
+[T] point and your cursor.
+
+[U] https://apps.kde.org/kruler/
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[E] opt kdoctools docbook-xml docbook-xsl
+
+[L] GPL
+[V] 26.04.1
+
+[CV-GROUP] kde-gear
+[D] f84242fe5e9ecd9e91b790d948c3c698e759a56ea0ac0eb7e30d977c kruler-26.04.1.tar.xz https://download.kde.org/stable/release-service/26.04.1/src/
+
+. $base/package/*/*/kde-conf.in

@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-video-mga/xf86-video-mga.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Xorg Matrox video driver
+
+[T] This driver supports Matrox video cards up to the Matrox G550. Supported
+[T] chipsets: MGA2064W, MGA1064SG, Mystique, MGA2164W, Millennium II, G100,
+[T] Productiva G100, G200, Millennium G200 and Mystique G200, G400, Millennium
+[T] G400, Millennium G400 MAX, Millennium G450, and Marvel G450 eTV, G550,
+[T] Millennium G550 and Millennium G550 Dual DVI.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS FCOMMON.mips FCOMMON.mips64
+
+[L] OpenSource
+[V] 2.1.0
+
+[D] b0626ce9fa7902bffc65409af9fe632a09fb071b6c49d527c70d43a1 xf86-video-mga-2.1.0.tar.xz http://xorg.freedesktop.org/releases/individual/driver/
+
+. package/*/*/modular-x-conf.in
+autogen=2

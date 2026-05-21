@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rocgdb/rocgdb.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The ROCm source-level debugger for Linux
+
+[T] This is ROCgdb, the ROCm source-level debugger for Linux, based on GDB, the
+[T] GNU source-level debugger.
+
+[U] https://github.com/ROCm/ROCgdb
+
+[A] Advanced Micro Devices, Inc.
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS
+[C] extra/development
+
+[E] opt guile
+[E] opt msgpack-c
+
+[L] MIT
+[V] 7.2.3
+[P] X -----5---9 300.495
+
+[CV-GROUP] rocm
+[D] ebd18d04fabdcbc76b8170b5b109a08510380b8555fd3257e21720bd ROCgdb-rocm-7.2.3.tar.gz https://github.com/ROCm/ROCgdb/archive/rocm-7.2.3/
+
+. $base/package/*/*/rocm-conf.in

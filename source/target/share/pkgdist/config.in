@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/target/share/pkgdist/config.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+comment ' '
+comment_id '- Package distribution destination' COMMENT_PKGDIST
+
+block_begin 7
+	comment 'If all following fields are empty, nothing is done.'
+
+	text "Package destination" SDECFG_TARGET_PKGDIST_LOCATION ''
+	text "Username" SDECFG_TARGET_PKGDIST_USER ''
+	text "Password" SDECFG_TARGET_PKGDIST_PASS ''
+block_end

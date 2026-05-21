@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/lua/compile.patch.dietlibc
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- lua-5.1.1/src/luaconf.h.orig	2006-11-05 19:49:35.000000000 +0100
++++ lua-5.1.1/src/luaconf.h	2006-11-05 19:49:54.000000000 +0100
+@@ -55,7 +55,7 @@
+ #define LUA_USE_MKSTEMP
+ #define LUA_USE_ISATTY
+ #define LUA_USE_POPEN
+-#define LUA_USE_ULONGJMP
++/*#define LUA_USE_ULONGJMP not with dietlibc */
+ #endif
+ 
+ 

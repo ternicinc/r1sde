@@ -1,0 +1,19 @@
+
+[TIMESTAMP] 1279639620 Tue Jul 20 17:27:00 2010
+[BUILDTIME] 10 (5)
+[SIZE] 0.08 MB, 12 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] libelf
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar

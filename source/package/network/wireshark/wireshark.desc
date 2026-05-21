@@ -1,0 +1,53 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/wireshark/wireshark.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A network protocol analyzer
+
+[T] Wireshark is a free network protocol analyzer for Unix and Windows. It
+[T] allows you to examine data from a live network or from a capture file
+[T] on disk. You can interactively browse the capture data, viewing summary
+[T] and detail information for each packet. Wireshark has several powerful
+[T] features, including a rich display filter language and the ability to view
+[T] the reconstructed stream of a TCP session. (Formerly known as Ethereal.)
+
+[U] https://www.wireshark.org/
+
+[A] Gerald Combs
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] NO-LTO.gcc
+
+[E] opt asciidoctor
+[E] opt bcg729
+[E] opt cups
+[E] opt krb5
+[E] opt libmaxminddb
+[E] opt libopus
+[E] opt libsmi
+[E] opt libssh
+[E] opt lua
+[E] opt minizip-ng
+[E] opt nghttp2
+[E] opt nghttp3
+[E] opt opencore-amr
+[E] opt ruby
+[E] opt spandsp
+[E] opt qt6multimedia
+[E] opt snappy
+[E] opt speex
+[E] opt xxhash
+[E] opt zlib-ng
+
+[L] GPL
+[V] 4.6.6
+
+[CV-FLAGS] ODD-UNSTABLE
+[D] cc6df74816a1b872ef19b7e10a7a88f39a85ed345da8eebdd116035e wireshark-4.6.6.tar.xz https://1.eu.dl.wireshark.org/src/
+
+var_append confopt ' ' --without-ucdsnmp
+var_append confopt ' ' --with-ssl
+hook_add postmake 5 "cp doc/R* doc/r* $docdir"

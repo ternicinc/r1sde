@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnue-reports/gnue-reports.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Platform and output-independent reporting system for GNUe
+
+[T] GNUe Reports is a platform and output-independent reporting system. It
+[T] reads an XML-based report definition and generates arbitrary XML output
+[T] that can further be translated into any format for which there is an
+[T] adapter. GNUe Reports currently has outputs for Text, HTML, Label Stock,
+[T] and CSV -- with PDF, Postscript, and Gnumeric/Excel formats in the works.
+[T] Reports can output directly to a file, as an email attachment, to a
+[T] printer, or to a HylaFax server.
+
+[U] http://www.gnuenterprise.org/tools/reports/
+
+[A] GNUe Project <gnue@gnu.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] GPL
+[V] 0.2.0
+
+[D] 2d5b70a6bfd04f2909bca6ffe57e22799c94b8d15a3e88e6f0dfd741 gnue-reports-0.2.0.tar.gz http://www.gnuenterprise.org/downloads/releases/
+
+. $base/package/*/*/gnue-conf.in

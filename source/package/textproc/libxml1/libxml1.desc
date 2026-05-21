@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libxml1/libxml1.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] XML parser library for Gnome
+
+[T] The libxml package contains an XML library, which allows you
+[T] to manipulate XML files. XML (eXtensible Markup Language) is a
+[T] data format for structured document interchange via the Web.
+
+[U] http://xmlsoft.org/
+
+[A] Daniel Veillard <Daniel.Veillard@w3.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+
+[F] CROSS NOPARALLEL AUTOMAKE-QUIRK
+
+[L] LGPL
+[V] 1.8.17
+[P] X -----5---9 138.100
+
+[D] c5f7a9a490a2e825b9cf15c93eb7f94f58b1ff39bad1a658db0b7f17 libxml-1.8.17.tar.gz http://xmlsoft.org/sources/old/

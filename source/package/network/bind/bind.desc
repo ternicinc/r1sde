@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/bind/bind.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The ISC DNS server, resolver library and utilities
+
+[T] The Berkeley Internet Name Domain (BIND) implements an Internet
+[T] name server for Unix operating systems. The BIND consists of a server
+[T] (or `daemon') called `named' and a resolver library. A name server is
+[T] a network service that enables clients to name resources or objects
+[T] and share this information with other objects in the network.
+
+[U] https://www.isc.org/bind/
+
+[A] ISC Software <bind@isc.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/server base/system
+[F] CROSS
+
+[E] opt krb5
+[E] opt systemtap
+
+[L] Free-to-use
+[V] 9.20.22
+
+[CV-URL] https://ftp.isc.org/isc/bind9/
+[D] 0b199e8ba32adb78d755355a5c1cdd2db50866801c5ebd9a55efe7c4 bind-9.20.22.tar.xz https://ftp.isc.org/isc/bind9/9.20.22/
+
+pkginstalled nghttp2 || var_append confopt ' ' --disable-doh

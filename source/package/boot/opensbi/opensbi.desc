@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/opensbi/opensbi.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Open Source Supervisor Binary Interface
+
+[T] The goal of the OpenSBI project is to provide an open-source reference
+[T] implementation of the RISC-V SBI specifications for platform-specific
+[T] firmwares executing in M-mode
+
+[U] https://github.com/riscv-software-src/opensbi
+
+[A] Western Digital Corporation
+[M] René Rebe <rene@exactco.de>
+
+[C] base/boot
+[F] CROSS NO-LTO.gcc
+[R] + riscv riscv64
+
+[V] 1.8.1
+[L] BSD
+
+[P] O -----5---9 102.050
+
+[D] 331dd822c8e83db65698f443f3d657b42c70da6fe64359b1cda306b9 opensbi-1.8.1.tar.gz https://github.com/riscv-software-src/opensbi/archive/v1.8.1/
+
+var_append makeopt ' ' "AS=$CC PLATFORM=generic"
+makeinstopt=
+hook_add postmake 5 "install build/platform/generic/firmware/*bin $root/boot/"

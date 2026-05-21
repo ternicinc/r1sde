@@ -1,0 +1,30 @@
+[TIMESTAMP] 1751624452 Fri Jul  4 12:20:52 2025
+[BUILDTIME] 5 (9)
+[SIZE] 0.64 MB, 50 files
+
+[DEP] alsa-lib
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gmp
+[DEP] gnutls
+[DEP] grep
+[DEP] gzip
+[DEP] libao
+[DEP] libsamplerate
+[DEP] libtasn1
+[DEP] libx11
+[DEP] libxcursor
+[DEP] libxrandr
+[DEP] libxrender
+[DEP] linux-header
+[DEP] make
+[DEP] nettle
+[OPT] pcsc-lite
+[DEP] pulseaudio
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/liboil/liboil.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A simple function library optimized for various CPUs
+
+[T] Liboil is a library of simple functions that are optimized
+[T] for various CPUs. These functions are generally loops
+[T] implementing simple algorithms, such as converting an
+[T] array of N integers to floating-point numbers or multi-
+[T] plying and summing an array of N numbers. Such functions
+[T] are candidates for significant optimization using various
+[T] techniques, especially by using extended instructions
+[T] provided by modern CPUs (Altivec, MMX, SSE, etc.).
+
+[U] https://liboil.freedesktop.org
+
+[A] David Schleef <ds@schleef.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[F] CROSS
+
+[L] OpenSource
+[V] 0.3.17
+[P] X -----5---9 150.000
+
+[D] f966398f2172004a46e35359278d1c4e621035dc784a46be2f4eb0bf liboil-0.3.17.tar.gz https://liboil.freedesktop.org/download/

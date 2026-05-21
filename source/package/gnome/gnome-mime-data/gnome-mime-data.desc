@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-mime-data/gnome-mime-data.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GNOME MIME database
+
+[T] This module contains the base MIME and Application database for GNOME.
+[T] It is meant to be accessed through the MIME functions in GnomeVFS.
+
+[A] Seth Nickell <snickell@stanford.edu>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/base extra/desktop/gnome
+[F] CROSS
+
+[L] GPL
+[V] 2.18.0
+[P] X -----5---9 142.395
+
+[CV-URL] https://download.gnome.org/sources/gnome-mime-data/cache.json
+[D] 1ad15cf4a48fc36a7c42df8052e1f95c13d6ae84ff8f7de1229c6761 gnome-mime-data-2.18.0.tar.bz2 https://download.gnome.org/sources/gnome-mime-data/2.18/
+
+. $base/package/*/*/gnome-conf.in

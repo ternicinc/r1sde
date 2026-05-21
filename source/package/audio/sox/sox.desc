@@ -1,0 +1,50 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sox/sox.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Sound eXchange
+
+[T] SoX (aka Sound eXchange) translates sound samples between different file
+[T] formats and optionally applies various sound effects. SoX is intended as
+[T] the Swiss Army Knife of sound processing tools. It doesn't do anything very
+[T] well, but sooner or later it comes very handy.
+
+[U] https://codeberg.org/sox_ng/sox_ng
+
+[A] Chris Bagwell <cbagwell@sprynet.com>
+[A] sox-ng <sox-ng@proton.me>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[E] opt alsa-lib
+[E] opt fftw3
+[E] opt flac
+[E] opt gsm
+[E] opt lame
+[E] opt libao
+[E] opt libid3tag
+[E] opt libmad
+[E] opt libogg
+[E] opt libopus opusfile
+[E] opt libpng
+[E] opt libsndfile
+[E] opt libvorbis
+[E] opt pulseaudio
+[E] opt speex
+[E] opt speexdsp
+[E] opt twolame
+
+[L] LGPL
+[V] 14.8.0
+[P] X -----5---9 500.000
+
+[D] 8387c7358ff0f5ea6e054639194a877f2586ac927a11f6e7ef9bda43 sox_ng-14.8.0.tar.gz https://codeberg.org/sox_ng/sox_ng/releases/download/sox_ng-14.8.0/
+
+runcmake=0
+var_append confopt ' ' --enable-replace
+var_append GCC_WRAPPER_INSERT ' ' -I$root/usr/include/opus

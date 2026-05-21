@@ -1,0 +1,21 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/arpwatch/arpwatch.init
+# Copyright (C) 2004 - 2025 The T2 SDE Project
+# Copyright (C) 1998 - 2004 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+#
+# Desc: ARP-Monitor
+# Runlevel: 90 rcX
+#
+
+main_begin
+
+    block_begin(start, `Starting arpwatch')
+	check(`D_sbindir/arpwatch -f D_datadir/arpwatch/arp.dat')
+    block_end
+    block_begin(stop, `Stopping arpwatch')
+	check(`killall D_sbindir/arpwatch')
+    block_end
+
+main_end

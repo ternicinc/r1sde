@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/flightgear-data/flightgear-data.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Flight Gear's textures, models, data, and config files
+
+[T] This package contains the basic textures, models, data,
+[T] and config files for Flight Gear.
+[T]
+[T] This package is required to run Flight Gear.
+
+[U] https://flightgear.org/
+
+[A] Curt Olson <curt@me.umn.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+#[C] extra/game/simulation
+[F] CROSS
+
+[L] GPL
+[V] 2024.1.5
+
+[D] 823cdc317d6eabd71b2e3da55764b3fca7319a6a92d4b6d83507f3d4 FlightGear-2024.1.5-data.txz https://download.sourceforge.net/project/flightgear/release-2024.1/
+
+runmake=0
+
+fgfs_pm() {
+	mkdir -p $root$datadir/../lib/FlightGear
+	cp -rfv * $root$datadir/../lib/FlightGear
+}
+hook_add postmake 5 fgfs_pm

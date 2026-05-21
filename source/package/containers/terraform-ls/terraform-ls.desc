@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/terraform-ls/terraform-ls.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Terraform Language Server
+
+[T] The official Terraform language server provides IDE features to any
+[T] LSP-compatible editor.
+
+[U] https://github.com/hashicorp/terraform-ls
+
+[A] Hashicorp
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/emulator
+
+[L] MPL
+[V] 0.38.6
+
+[D] d969bd610d3bd0c05dba5a9d2bbe29f28921a6c6e90acaccd02504a8 terraform-ls-v0.38.6.tar.gz https://github.com/hashicorp/terraform-ls/archive/v0.38.6/
+
+export CGO_ENABLED=0
+goconfopt=" "
+hook_add postmake 5 'install -m 755 terraform-ls $root$bindir'

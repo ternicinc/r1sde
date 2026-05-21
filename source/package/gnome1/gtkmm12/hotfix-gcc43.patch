@@ -1,0 +1,28 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/gtkmm12/hotfix-gcc43.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -Nur gtkmm-1.2.10-orig/src/gtkmmproc/fixate.cc gtkmm-1.2.10/src/gtkmmproc/fixate.cc
+--- gtkmm-1.2.10-orig/src/gtkmmproc/fixate.cc	2008-07-23 04:01:31.000000000 +0000
++++ gtkmm-1.2.10/src/gtkmmproc/fixate.cc	2008-07-23 04:02:33.000000000 +0000
+@@ -1,6 +1,7 @@
+ #include <stdio.h>
+ #include <string>
+ #include <string.h>
++#include <stdlib.h>
+ 
+ namespace std {}
+ using namespace std;
+diff -Nur gtkmm-1.2.10-orig/src/gtkmmproc/gtkmmproc.h gtkmm-1.2.10/src/gtkmmproc/gtkmmproc.h
+--- gtkmm-1.2.10-orig/src/gtkmmproc/gtkmmproc.h	2008-07-23 04:01:31.000000000 +0000
++++ gtkmm-1.2.10/src/gtkmmproc/gtkmmproc.h	2008-07-23 04:05:22.000000000 +0000
+@@ -7,6 +7,7 @@
+ #include <string>
+ #include <list>
+ #include <stdio.h>
++#include <cstdlib>
+ 
+ namespace std {}
+ using namespace std;

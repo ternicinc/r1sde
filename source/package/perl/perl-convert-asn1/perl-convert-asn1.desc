@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-convert-asn1/perl-convert-asn1.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Encodes and decodes ASN.1 data structures using BER/DER rules
+
+[T] Encodes and decodes ASN.1 data structures using BER/DER rules.
+
+[U] https://metacpan.org/dist/Convert-ASN1
+
+[A] Graham Barr <gbarr@pobox.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 0.34
+[P] X -----5---9 150.000
+
+[D] 844850b87829a8dfaecf3e1836971837ce39c949585e04b41223586c Convert-ASN1-0.34.tar.gz https://cpan.metacpan.org/authors/id/T/TI/TIMLEGGE/

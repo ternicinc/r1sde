@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/aqhbci/aqhbci.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A backend for HBCI
+
+[T] AqHBCI is a complete implementation of the HBCI network protocol
+[T] written in C. It works under POSIX systems (such as Linux, *BSD etc)
+[T] and on WIN32 platforms.
+
+[U] https://aqhbci.sourceforge.net
+
+[A] Martin Preuss <martin@libchipcard.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/development
+[F] NOPARALLEL
+
+[L] GPL
+[V] 1.2.0
+[P] O -----5---9 207.510
+
+[SRC] .
+
+[D] 3260611110 aqhbci-1.2.0.tar.gz https://prdownloads.sourceforge.net/sourceforge/aqhbci/
+[D] 2427202257 aqhbci-ddvcard-1.0.1beta.tar.gz https://prdownloads.sourceforge.net/sourceforge/aqhbci/
+[D] 3983445894 aqhbci-rsacard-0.9.3beta.tar.gz https://prdownloads.sourceforge.net/sourceforge/aqhbci/

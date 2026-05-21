@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gsm/gsm.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GSM 06.10 lossy speech compression
+
+[T] The package consists of a C library and a stand­alone program. GSM 06.10
+[T] is faster than code­book lookup algorithms such as CELP, but by no means
+[T] cheap; to use it for real­time communication, you will need at least a
+[T] medium­scale workstation.
+
+[U] http://kbs.cs.tu-berlin.de/~jutta/toast.html
+
+[A] Jutta Degener <jutta@cs.tu-berlin.de>
+[T] Carsten Bormann <cabo@cs.tu-berlin.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] FPIC CROSS NO-LTO.gcc
+
+[L] OpenSource
+[V] 1.0.24
+[P] X -----5---9 136.700
+
+[D] 5410e47b3886fba0e80f32afbd0fbeb62b3ce96c481a07f60c709c88 gsm-1.0.24.tar.gz https://www.quut.com/gsm/
+
+# fix linking on e.g. arm/uclibc
+var_append makeopt ' ' LD=$CC
+var_append makeinstopt ' ' 'INSTALL_ROOT=$root/$prefix GSM_INSTALL_INC=$root$includedir'

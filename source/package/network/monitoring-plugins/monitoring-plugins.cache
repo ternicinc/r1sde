@@ -1,0 +1,23 @@
+
+[TIMESTAMP] 1703961693 Sat Dec 30 19:41:33 2023
+[BUILDTIME] 16 (9)
+[SIZE] 1.48 MB, 68 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] findutils
+[DEP] freeradius-client
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libdbi
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] sed
+[DEP] tar
+[DEP] uriparser

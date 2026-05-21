@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/argon2/argon2.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The password hash Argon2
+
+[T] This is the reference C implementation of Argon2.
+
+[U] https://github.com/P-H-C/phc-winner-argon2
+
+[A] Daniel Dinu
+[A] Dmitry Khovratovich
+[A] Jean-Philippe Aumasson
+[A] and Samuel Neves
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/security
+[F] CROSS
+
+[L] OpenSource
+[V] 20190702
+
+[D] f7442a1372336fd92f88ca3ea0981e1f11b7265a5e066d9e3eec0235 phc-winner-argon2-20190702.tar.gz https://dev-www.libreoffice.org/src/

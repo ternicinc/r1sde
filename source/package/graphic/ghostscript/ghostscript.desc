@@ -1,0 +1,41 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ghostscript/ghostscript.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] PostScript and PDF interpreter and previewer
+
+[T] This is the GPL version of the PostScript (TM) and PDF (TM) language
+[T] interpreter formerly known as Alladin Ghostscript.
+[T] (now artofcode, LLC and Artifex Software, Inc.)
+
+[A] artofcode, LLC
+[A] Artifex Software, Inc.
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[U] https://sourceforge.net/projects/ghostscript/
+[U] https://ghostscript.com
+
+[C] extra/printing extra/office
+[F] CROSS FPIC
+
+[E] opt glu libglvnd
+[E] opt libx11 libice libsm libxt xorgproto
+
+[L] AGPL3
+[V] 10.06.0
+[P] X -----5---9 142.450
+
+# only for the dir
+[CV-TR] s/\.//
+[D] 836880cfb4ca9457197664857186e37639335b463332d0c2cc360f16 ghostscript-10.06.0.tar.xz https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10060/
+
+var_append CC_WRAPPER_REMOVE ' ' -Werror=declaration-after-statement
+var_append CC_WRAPPER_APPEND ' ' -std=gnu17
+var_append SYSCC_WRAPPER_APPEND ' ' -std=gnu17
+
+var_append makeopt ' ' so
+var_append makeinstopt ' ' 'soinstall -j1'
+
+[[ $arch = arm* && "$SDECFG_DEFAULT_CC" = clang ]] && var_append GCC_WRAPPER_REMOVE ' ' -mfpu=neon

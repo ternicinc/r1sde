@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ebtables/ebtables.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Ethernet bridge tables
+
+[T] The ebtables program is a filtering tool for a bridging firewall.
+[T] The filtering is focussed on the Link Layer Ethernet frame fields.
+[T] Apart from filtering, it also gives the ability to alter the
+[T] Ethernet MAC addresses and implement a brouter.
+[T] The ebtables tool can be used together with the other Linux
+[T] filtering tools, like iptables. There are no incompatibility issues.
+
+[U] https://www.netfilter.org/
+
+[A] Bart De Schuymer <bdschuym@pandora.be>
+[A] Nick Fedchik <nick@fedchik.org.ua>
+[A] Grzegorz Borowiak <grzes@gnu.univ.gda.pl>
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS DIETLIBC
+[C] extra/security
+
+[L] OpenSource
+
+[V] 2.0.11
+
+[D] 90f29573931faa8e143f2fd057d059d7ee117e50ae24a596d55628da ebtables-2.0.11.tar.gz https://www.netfilter.org/pub/ebtables/
+
+var_append makeinstopt ' ' "BINDIR=/$sbindir LIBDIR=$libdir MANDIR=/$mandir"
+var_append makeinstopt ' ' "ETCDIR=/$sysconfdir SYSCONFIG=/$sysconfdir"

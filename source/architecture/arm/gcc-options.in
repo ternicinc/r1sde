@@ -1,0 +1,28 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/arm/gcc-options.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+case "$SDECFG_ARM_OPT" in
+    generic)	: ;;
+    armv7*)	var_append GCC_WRAPPER_INSERT " " "-march=$SDECFG_ARM_OPT+fp" # -mfpu=neon
+    		#var_append KCC_WRAPPER_APPEND " " "-march=$SDECFG_ARM_OPT"
+		;;
+    armv*)	var_append GCC_WRAPPER_INSERT " " "-march=$SDECFG_ARM_OPT+fp"
+    		#var_append KCC_WRAPPER_APPEND " " "-march=$SDECFG_ARM_OPT"
+		;;
+    *)		var_append GCC_WRAPPER_INSERT " " "-mcpu=$SDECFG_ARM_OPT"
+    		#var_append KCC_WRAPPER_APPEND " " "-mcpu=$SDECFG_ARM_OPT"
+		;;
+esac
+
+# gcc 4.2.1 has no config code to default to big-endian, -ReneR
+[ "$SDECFG_ARM_ENDIANESS" = "eb" ] &&
+	var_append GCC_WRAPPER_INSERT " " "-mbig-endian"
+
+[ "$SDECFG_ARM_THUMB" = 1 ] &&
+	var_append GCC_WRAPPER_INSERT " " "-mthumb -mthumb-interwork"
+
+[ "$SDECFG_SOFTFLOAT" = 1 ] &&
+	var_append GCC_WRAPPER_INSERT " " "-msoft-float"

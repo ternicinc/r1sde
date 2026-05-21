@@ -1,0 +1,24 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/linux-firmware/used-only.diff
+# Copyright (C) 2023 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- linux-firmware-20241017/copy-firmware.sh.vanilla	2024-11-12 20:21:06.500009971 +0100
++++ linux-firmware-20241017/copy-firmware.sh	2024-11-12 20:24:05.306679895 +0100
+@@ -70,6 +70,7 @@
+ 
+ # shellcheck disable=SC2162 # file/folder name can include escaped symbols
+ grep -E '^(RawFile|File):' WHENCE | sed -E -e 's/^(RawFile|File): */\1 /;s/"//g' | while read k f; do
++    grep -E -q "(^|/)${f##*/}$" INSTALLED || continue
+     install -d "$destdir/$(dirname "$f")"
+     $verbose "copying/compressing file $f$compext"
+     if test "$compress" != "cat" && test "$k" = "RawFile"; then
+@@ -82,6 +83,7 @@
+ 
+ # shellcheck disable=SC2162 # file/folder name can include escaped symbols
+ grep -E '^Link:' WHENCE | sed -e 's/^Link: *//g;s/-> //g' | while read l t; do
++    grep -E -q "(^|/)${l##*/}$" INSTALLED || continue
+     directory="$destdir/$(dirname "$l")"
+     install -d "$directory"
+     target="$(cd "$directory" && realpath -m -s "$t")"

@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-boxes/gnome-boxes.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome gnome-boxes package
+
+[T] Core Gnome gnome-boxes package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 50.0
+
+[CV-URL] https://download.gnome.org/sources/gnome-boxes/cache.json
+[D] fad648d19681afc6ce78b9f4029aea619aeaeaf7d1b7ec3e7b22833a gnome-boxes-50.0.tar.xz https://download.gnome.org/sources/gnome-boxes/50/
+
+. $base/package/*/*/gnome-conf.in

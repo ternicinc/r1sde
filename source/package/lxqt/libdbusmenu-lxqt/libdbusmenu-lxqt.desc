@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libdbusmenu-lxqt/libdbusmenu-lxqt.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The LXQt DBus menu library
+
+[T] This library provides a Qt implementation of the DBusMenu protocol. The
+[T] DBusMenu protocol makes it possible for applications to export and import
+[T] their menus over DBus.
+
+[U] https://github.com/lxqt/libdbusmenu-lxqt/
+
+[A] libdbusmenu-lxqt Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] OBJDIR
+
+[V] 0.4.0
+[L] LGPL
+[P] X -----5---9 200.000
+
+[D] dd94d285cacfd8f266a206d151298cca523a7094adec8a8153c8f272 libdbusmenu-lxqt-0.4.0.tar.gz https://github.com/lxqt/libdbusmenu-lxqt/archive/refs/tags/0.4.0/

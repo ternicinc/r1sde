@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/g-golf/g-golf.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Guile Object Library for GNOME
+
+[T] G-Golf is a tool to develop fast and feature-rich graphical applications,
+[T] with a clean and recognizable look and feel.
+
+[U] https://www.gnu.org/software/g-golf/
+
+[A] David Pirotte <david@altosw.be>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] LGPL
+[V] 0.8.7
+
+[D] f1d13ac6f1acd8bb3f5bc51169747b2dd2237dfe9c1b289b0a886ffe g-golf-0.8.7.tar.gz https://ftp.gnu.org/gnu/g-golf/

@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libkarma/libkarma.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A C library for managing the Rio Karma
+
+[T] Libkarma is a C library for managing the Rio Karma via TCP/IP. It supports
+[T] all basic protocol commands and some advanced functions on top of these,
+[T] like caching of the Rio database. There are two proof-of-concept tools
+[T] included, riocp and chprop. Riocp can be used to upload files to the
+[T] Karma.
+
+[U] https://www.freakysoft.de/libkarma/
+
+[A] Frank Zschockelt <web@freakysoft.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] NOPARALLEL
+
+[L] GPL
+[V] 0.1.2
+
+[D] 8ce791e06ac4f0d7ae150d13eacc0c1db6e4ab784eae32e7198ee144 libkarma-0.1.2.tar.gz https://www.freakysoft.de/libkarma/

@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/onig/onig.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Modern Regular Expression Library
+
+[T] Oniguruma is a modern and flexible regular expression library.
+[T] It encompasses features from different regular expression
+[T] implementations that traditionally exist in different languages.
+
+[U] https://github.com/kkos/oniguruma
+
+[A] K. Kosako <kkosako0@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] BSD
+[V] 6.9.10
+[P] X -----5---9 109.500
+
+[D] bad7ceba0a0defe07e547d00d53c24abe008481038b3bc339a792090 onig-6.9.10.tar.gz https://github.com/kkos/oniguruma/releases/download/v6.9.10/
+
+var_append confopt ' ' --enable-posix-api

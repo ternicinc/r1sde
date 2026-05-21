@@ -1,0 +1,19 @@
+[TIMESTAMP] 1737658895 Thu Jan 23 20:01:35 2025
+[BUILDTIME] 55 (9)
+[SIZE] 5.52 MB, 125 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] boehm-gc
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] readline
+[DEP] sed
+[DEP] tar

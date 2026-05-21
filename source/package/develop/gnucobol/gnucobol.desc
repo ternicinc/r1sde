@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnucobol/gnucobol.desc
+[COPY] Copyright (C) 2021 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A free/libre COBOL compiler
+
+[T] GnuCOBOL produces native executables from COBOL source code. It is known
+[T] to work on Linux, BSD, many proprietary Unixes, macOS, and Windows, among
+[T] others and has been extensively tested on a variety of platforms and is
+[T] being used in commercial settings.
+
+[U] https://gnucobol.sourceforge.io
+
+[A] FSF GNU.org
+[M] René Rebe <rene@exactco.de>
+
+[C] base/development
+[F] CROSS
+
+[L] GPL
+[V] 3.2
+
+[D] dde92416c2e22ed296bea4514d15a28a3732425b13e365289f2dc91a gnucobol-3.2.tar.xz https://prdownloads.sourceforge.net/sourceforge/gnucobol/3.2/

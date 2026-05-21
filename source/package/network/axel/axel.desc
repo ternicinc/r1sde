@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/axel/axel.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Lightweight CLI download accelerator
+
+[T] Axel tries to accelerate the download process by using multiple
+[T] connections per file, and can also balance the load between different
+[T] servers.
+
+[U] https://github.com/axel-download-accelerator/axel
+
+[A] Ismael Luceno
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] GPL
+[V] 2.17.14
+
+[D] 423bae212943b60c5b675afc9eb29ccf4125d1574242fdd3197dd1c0 axel-2.17.14.tar.xz https://github.com/axel-download-accelerator/axel/releases/download/v2.17.14/

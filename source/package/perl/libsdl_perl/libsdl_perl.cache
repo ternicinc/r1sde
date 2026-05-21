@@ -1,0 +1,30 @@
+[TIMESTAMP] 1776447187 Fri Apr 17 20:33:07 2026
+[BUILDTIME] 10 (9)
+[SIZE] 2.86 MB, 420 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libsdl
+[DEP] libsdl_alien
+[DEP] libsdl_gfx
+[DEP] libsdl_image
+[DEP] libsdl_mixer
+[DEP] libsdl_pango
+[DEP] libsdl_ttf
+[DEP] linux-header
+[DEP] perl
+[DEP] perl-capture-tiny
+[DEP] perl-class-inspector
+[DEP] perl-file-sharedir
+[DEP] perl-html-parser
+[DEP] perl-module-build
+[DEP] perl-test-most
+[DEP] perl-tie-simple
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

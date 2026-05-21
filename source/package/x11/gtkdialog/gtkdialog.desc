@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gtkdialog/gtkdialog.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A utility for creating X11 dialog boxes
+
+[T] gtkdialog is a utility that allows you to show dialog boxes
+[T] (containing questions or messages) in X11 (graphics mode)
+[T] from shell scripts.
+
+[U] http://code.google.com/p/gtkdialog/
+
+[A] Thunor
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development base/x11
+[F] CROSS
+
+[L] GPL
+[V] 0.8.5e
+
+[D] f09aa2e75cd7adcad12843c24f9defc39f6e4ca999941030e9749035 gtkdialog-0.8.5e.tar.gz https://github.com/puppylinux-woof-CE/gtkdialog/archive/0.8.5e/
+
+#var_append GCC_WRAPPER_APPEND ' ' -std=gnu99

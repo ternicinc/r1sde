@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---.
+[COPY] t2/package/*/zoxide/zoxide.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---.
+
+[I] A faster way to navigate your filesystem
+
+[T] zoxide is a smarter cd command, inspired by z and autojump. It remembers
+[T] which directories you use most frequently, so you can "jump" to them in
+[T] just a few keystrokes - zoxide works on all major shells.
+
+[U] https://github.com/ajeetdsouza/zoxide
+
+[A] Zoxide Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+
+[L] MIT
+[V] 0.9.9
+
+[D] 59fc86c8a6a59ece60c75496734ae97f116d6ae9d6a89f6c0573c75c zoxide-0.9.9.tar.gz https://github.com/ajeetdsouza/zoxide/archive/v0.9.9/
+
+runjust=0

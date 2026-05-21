@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/hyprsunset/hyprsunset.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An application to enable a blue-light filter on Hyprland
+
+[T] An application to enable a blue-light filter on Hyprland.
+
+[U] https://hyprland.org/
+
+[A] vaxerski
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/x11
+[F] CROSS OBJDIR
+
+[L] BSD
+[V] 0.3.3
+
+[D] 591b6d7a02b538519499bac49b43deb0ae07af7ebfa1753d6b04e820 hyprsunset-0.3.3.tar.gz https://github.com/hyprwm/hyprsunset/archive/v0.3.3/

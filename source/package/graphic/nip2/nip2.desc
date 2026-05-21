@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/nip2/nip2.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Nip2 is a GTK frontend for VIPS, an image processing library/suite
+
+[T] Nip2 aims to be halfway between Excel and Photoshop. You don't directly
+[T] edit images, instead, like a spreadsheet, you build relationships between
+[T] objects. When you make a change somewhere, nip2 will recalculate the
+[T] objects affected by that change. Since it is demand-driven, this update is
+[T] usually (almost) instant, even for very very large images.
+
+[U] http://www.vips.ecs.soton.ac.uk/
+
+[A] John Cuppit
+[A] Joe Padfield
+[A] Jans Breuer
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 8.9.1
+
+[D] b2499c411f52c8fda902953ca717c2bc5e0bc174071d4f134b29597b nip2-8.9.1.tar.gz https://github.com/libvips/nip2/archive/refs/tags/v8.9.1/
+
+autogen=1

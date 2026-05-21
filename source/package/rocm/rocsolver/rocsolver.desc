@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rocsolver/rocsolver.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A work-in-progress implementation of a subset of LAPACK
+
+[T] rocSOLVER is a work-in-progress implementation of a subset of LAPACK
+[T] functionality on the ROCm platform.
+
+[U] https://github.com/ROCm/rocSOLVER
+
+[A] Advanced Micro Devices, Inc.
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS OBJDIR
+[C] extra/development
+
+[L] MIT
+[V] 7.2.3
+[P] X -----5---9 300.200
+
+[CV-GROUP] rocm
+[D] 6fe83681c7e70d31798567322ab627953915f47c6257f9d5c08d6602 rocSOLVER-rocm-7.2.3.tar.gz https://github.com/ROCm/rocSOLVER/archive/rocm-7.2.3/
+
+. $base/package/*/*/rocm-conf.in
+var_append cmakeopt ' ' -DCMAKE_C_COMPILER=/$prefix/bin/clang
+var_append cmakeopt ' ' -DCMAKE_CXX_COMPILER=/$prefix/bin/clang++
+var_append cmakeopt ' ' "-DHIP_PLATFORM=amd -DHIP_COMPILER=clang"
+var_append cmakeopt ' ' "-DAMDGPU_TARGETS='$SDECFG_PKG_ROCM_ARCHS'"

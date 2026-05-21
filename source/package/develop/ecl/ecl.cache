@@ -1,0 +1,25 @@
+[TIMESTAMP] 1739227690 Mon Feb 10 23:48:10 2025
+[BUILDTIME] 60 (5)
+[SIZE] 14.26 MB, 242 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] boehm-gc
+[DEP] coreutils
+[DEP] diffutils
+[DEP] file
+[DEP] gawk
+[DEP] gmp
+[DEP] grep
+[DEP] gzip
+[DEP] libatomic_ops
+[DEP] libffi
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] perl-libintl
+[DEP] sed
+[DEP] tar
+[DEP] texinfo
+[DEP] xemacs

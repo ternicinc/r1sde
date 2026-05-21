@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/bacon/bacon.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A BASIC compiler, with high-level GUI
+
+[T] BaCon is a free BASIC to C translator for Unix-based systems, which runs
+[T] on most Unix/Linux/BSD platforms, including MacOSX. It intends to be a
+[T] programming aid in creating tools which can be compiled on different
+[T] platforms (including 64bit environments), while trying to revive the days
+[T] of the good old BASIC.
+
+[U] https://chiselapp.com/user/bacon/repository/bacon/home
+
+[A] Peter van Eerten <peter@remove-no-spam.basic-converter.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] NOPARALLEL
+
+[L] GPL
+[V] 5.0.3
+[P] X -----5---9 200.100
+
+[D] c4c18d3c15e55fe8d360ca2bf2c327b081a1fc606746f0a460e45bfd bacon-5.0.3.tar.gz http://www.basic-converter.org/stable/

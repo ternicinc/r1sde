@@ -1,0 +1,46 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/haproxy/haproxy.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A high performance TCP and HTTP load balancer
+
+[T] HAproxy is a high-performance and highly-robust TCP and HTTP load
+[T] balancer which provides cookie-based persistence, content-based switching,
+[T] advanced traffic regulation with surge protection, automatic failover,
+[T] run-time regex-based header control, Web-based reporting, advanced
+[T] logging to help trouble-shooting buggy applications and/or networks,
+[T] and a few other features. Its own event-driven state machine achieves
+[T] 20,000 hits per second and surpasses GigaEthernet on modern hardware,
+[T] even with tens of thousands of simultaneous connections.
+
+[U] https://www.haproxy.org/
+
+[A] Willy Tarreau
+[M] Gerardo Di Iorio <arete74@gmail.com>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 3.3.10
+
+[D] 71c1bb0f06a9a415a2268dd7eda2c0de49643216e2c2fa639c019d6a haproxy-3.3.10.tar.gz http://www.haproxy.org/download/3.3/src/
+
+[ "$SDECFG_LIBC" = "glibc" ] && var_append makeopt ' ' TARGET=linux-glibc
+[ "$SDECFG_LIBC" = "musl" ] && var_append makeopt ' ' TARGET=linux-musl
+
+# use pcre for regex (recommended)
+if pkginstalled pcre; then
+	var_append makeopt ' ' USE_PCRE=1
+	# it is recommended to link in pcre statically
+	var_append makeopt ' ' USE_STATIC_PCRE=1
+else
+	echo "PCRE is not available but recommended for regex support!"
+fi
+
+var_append makeinstopt ' ' DESTDIR=$root
+if atstage cross; then
+	var_append makeopt ' ' LD=$CC
+fi

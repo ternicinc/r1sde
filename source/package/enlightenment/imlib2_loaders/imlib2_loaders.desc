@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/imlib2_loaders/imlib2_loaders.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Several image format loader backends for imlib2
+
+[T] Imlib2 is an advanced replacement library for libraries like libXpm that
+[T] provides many more features with much greater flexability and speed.
+[T]
+[T] This package includes several loader backends for various image formats.
+
+[A] The Rasterman <raster@redhat.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] LGPL
+[V] 1.12.6
+
+[D] f29284eead380be093ca157caec824f9ccf8df60dfe6c646bce64928 imlib2_loaders-1.12.6.tar.gz https://prdownloads.sourceforge.net/sourceforge/enlightenment/
+
+. $base/package/*/*/e17-conf.in
+var_append GCC_WRAPPER_INSERT ' ' "-I$root$(pkgprefix includedir imlib2)"

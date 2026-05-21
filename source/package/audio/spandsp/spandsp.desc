@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/spandsp/spandsp.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library which provides many of the DSP functions needed for telephony
+
+[T] Spandsp is a library which provides many of the DSP functions needed for
+[T] telephony. It is designed to be independent of the telephony platform
+[T] itself.
+
+[U] http://soft-switch.org/
+
+[A] Steve Underwood <steveu@coppice.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 3.0.0-6ec23e5
+[P] X -----5---9 180.000
+
+[D] 703dfa84eccbd669449ee920920fadc9fdec0ce4575e054c394af740 spandsp-3.0.0-6ec23e5.tar.gz !https://github.com/freeswitch/spandsp/archive/6ec23e5.tar.gz
+
+autogen=1
+atstage native || hook_add preconf 5 "echo 'ac_cv_func_malloc_0_nonnull=yes' >> config.cache"

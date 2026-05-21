@@ -1,0 +1,23 @@
+[TIMESTAMP] 1737632775 Thu Jan 23 12:46:15 2025
+[BUILDTIME] 12 (9)
+[SIZE] 0.79 MB, 10 files
+
+[OPT] acl
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[OPT] lz4
+[DEP] make
+[DEP] openssl
+[DEP] popt
+[OPT] python
+[DEP] sed
+[DEP] tar
+[OPT] xxhash
+[DEP] zlib
+[DEP] zstd

@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-digest-sha1/perl-digest-sha1.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A module for SHA1
+
+[T] The Digest::SHA1 module allows you to use the NIST SHA-1 message
+[T] digest algorithm from within Perl programs.
+
+[A] Gisle Aas
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 2.13
+[P] X -----5---9 113.300
+
+[D] 12cad6f69d3fac502fb3d6ad0ed65caa83fdf03482c1bb8abc10a5a3 Digest-SHA1-2.13.tar.gz http://www.cpan.org/authors/id/G/GA/GAAS/
+
+. $base/*/perl/perl/perllocal_hack.sh

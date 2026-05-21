@@ -1,0 +1,287 @@
+#!/usr/bin/env bash
+#
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/scripts/Config
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+if [ -z "${lines:=$LINES}" -o -z "${columns:=$COLUMNS}" ]; then
+	if [ "$(type -p stty)" ]; then
+		lines="$( stty size 2> /dev/null | cut -d' ' -f1)"
+		columns="$(stty size 2> /dev/null | cut -d' ' -f2)"
+	fi
+	[ -z "$lines"   -o "$lines"   -le 0 ] 2> /dev/null && lines=24
+	[ -z "$columns" -o "$columns" -le 0 ] 2> /dev/null && columns=80
+fi
+
+eval "$(egrep '^sdever=' scripts/parse-config)"
+
+config=default
+do_config_cycle=0
+delete_mode=0
+oldconfig=
+cfgtmpdir=
+profile=
+
+show_usage() {
+	echo
+	echo "Usage: $0 [ -delete | -oldconfig ] [ -cfg <config> ] [ key[=value ] ]"
+	echo
+	echo "Other options:"
+	echo "	-profile	create a config.profile with profiling data"
+	echo
+}
+
+while [ "$1" ]; do
+	case "$1" in
+	    -cycle)	do_config_cycle=1; shift ;;
+	    -delete)	delete_mode=1    ; shift ;;
+	    -profile)	profile=$1       ; shift ;;
+	    -oldconfig)	oldconfig=$1     ; shift ;;
+	    -cfg)	config="$2"      ; shift; shift ;;
+	    -*)		show_usage       ; exit 1 ;;
+	    *)		break ;;
+	esac
+done
+
+if [ -z "$config" ]; then
+	show_usage
+	exit 1
+fi
+
+# get/set config key=value
+for x; do
+	key=${x%%=*}
+	val=${x#$key}
+	key=${key//-/_}
+	key=${key^^}
+
+	if [ "$val" ]; then
+		val=${val#=}
+		sed -i "/SDECFG_$key=/{s/=.*/='$val'/}" config/$config/config
+	fi
+
+	sed -n "/SDECFG_$key=/x; \${x; s/^[^=]*=//; s/^'\(.*\)'$/\1/; s/.\+/$key=&/p}" config/$config/config
+done
+[ $# -gt 0 ] && exit 0
+
+if [ ! -d config/$config -a -e /etc/SDE-CONFIG/config -a $config = default ]; then
+	echo "Using /etc/SDE-CONFIG/ as default config"
+	mkdir -p config/$config
+	cp -vf /etc/SDE-CONFIG/* config/$config/
+	sed -i -E '/SDECFG_(CROSSBUILD|OPT|LTO|PARALLEL|TARGET|PKGSEL_TMPL|TMPFS|C_FLAGS|DEBUG|XTRACE)/d' \
+		config/$config/config
+fi
+
+if [ ! -d config/$config -a -n "$oldconfig" ]; then
+	echo "Error: -oldconfig is not supported for a new config"
+	echo
+	exit 1
+fi
+
+if [ $delete_mode = 1 ]; then
+	rm -rv config/$config
+	exit $?
+fi
+
+cfgtmpdir=src/$config
+
+if [ $do_config_cycle = 0 ]; then
+	echo "T2 $sdever configuration"
+
+	set -e
+	mkdir -p config/$config
+	touch config/$config/{config,packages}
+	set +e
+
+	echo -n "Aquiring config lock ..."
+	# aquire lock
+	exec 200>> config/$config/lock.pid
+	flock 200
+	echo -en "\r                          \r"
+	echo $$ > config/$config/lock.pid
+
+	rm -rf $cfgtmpdir
+	mkdir -p $cfgtmpdir	# src
+
+	if [ -z "$oldconfig" -a ! -f src/confdialog.bin ]; then
+		echo "Creating confdialog tool"
+		command="cc -O2 misc/confdialog/*.c `
+			`-Imisc/confdialog -lncurses -o src/confdialog.bin"
+		echo "$command"
+		if ! eval "$command.$$"; then
+			echo "Compilation of the dialog tool failed, ncurses-devel missing?"
+			exit 1
+		fi
+		mv src/confdialog.bin.$$ src/confdialog.bin
+	fi
+
+	# don't let Ctrl-C interrupt, because it destroys the configurations
+	trap '' INT
+
+	while "$0" -cfg $config $oldconfig $profile -cycle; do :; done
+
+	trap INT
+
+	rm config/$config/lock.pid
+	exit 0
+fi
+
+if [ ! -f src/bash/luabash.??* ]; then
+	echo "Building src/bash/luabash"
+	j="$(nproc 2>/dev/null)"
+	make -j${j:-1} --no-print-directory SILENT=1 -C misc/luabash \
+		X_OUTARCH=$PWD/src ${HOSTCC:+CC=$HOSTCC} ${HOSTCC:+LD=ld}
+	unset j
+fi
+
+if [ ! -f src/bash/luabash.??* ]; then
+	echo "Error building the Lua bash accelerator"
+	exit 1
+fi
+
+if ! enable -f $PWD/src/bash/luabash.??* luabash; then
+	echo "Error enabling the Lua bash accelerator: bash built with plugin support?"
+	exit 1
+fi
+
+luabash load scripts/config-functions.lua || exit 1
+
+if [ -z "$profile" ]; then
+	bprof() { :; }
+	bprof_print() { :; }
+else
+	if [ ! -f src/bash_profiler.so -o misc/tools-source/bash_profiler.c -nt src/bash_profiler.so ]; then
+		echo "Building src/bash_profiler.so"
+		cc -O2 -shared -fPIC -Wall -o src/bash_profiler.so misc/tools-source/bash_profiler.c || exit 1
+	fi
+	enable -f src/bash_profiler.so bprof || exit 1
+	bprof_print() {
+		local cprof=$cfgtmpdir/config.profile
+		bprof all print >> $cprof
+		awk '
+			$4 == "profiled" { next; }
+			$4 != "main" { count["profiled"]+=$1; time["profiled"]+=$2; }
+			{ count[$4]+=$1; time[$4]+=$2; }
+			END {
+				for (id in count)
+					printf "%7d %7Ld %10.3f %s\n", count[id], time[id], time[id]/count[id], id;
+			}
+		' < $cprof | sort -n -k2 > $cprof.new
+		mv $cprof.net $cprof
+	}
+fi
+
+bprof main start
+
+. scripts/config-functions.in
+arch=`uname -m | uname2arch`
+current=""
+export SDECFG_ARCH="$arch" SDECFG_KERNEL="linux" SDECFG_EXPERT=0
+menu_this=0 menu_current=0 menu_counter=0
+menu_stack=x menu_back=-1 menu_backpos=-1
+
+configtitle="$(printf ' %-50s %6s active packages ]' \
+	"T2 $sdever Configuration - $config" \
+	"[ $(echo `grep '^X' config/$config/packages | wc -l`)")"
+
+bprof main stop
+
+. config/$config/config
+bprof main start
+
+rm -f $cfgtmpdir/config.{dialog,data,help}
+touch $cfgtmpdir/config.{dialog,data,help}
+echo -e "#\n# T2 $sdever Config File\n#" > config/$config/config
+spacer="" expert=0 tabspace="5" tabspace_list=""
+commentnr=0 editfilenr=0
+
+bprof mkpkglist start
+cmd="scripts/Create-PkgList $SDECFG_ARCH $SDECFG_KERNEL"
+if [ "$cmd" != "`cat $cfgtmpdir/config.pcache.cmd 2> /dev/null`" ]; then
+	$cmd | tee $cfgtmpdir/config.pcache.data > config/$config/packages
+	echo "$cmd" > $cfgtmpdir/config.pcache.cmd
+else
+	cat $cfgtmpdir/config.pcache.data > config/$config/packages
+fi
+bprof mkpkglist stop
+
+# Create lists of .in files
+create_dot_in_lists
+
+export SDECFG_ID="$sdever"; pkgin; . scripts/config.in; pkgout
+echo "export SDECFG_ID='$SDECFG_ID'" >> config/$config/config
+rm -f $cfgtmpdir/*.tmp
+
+cut -f1,2,4,5,8- -d' ' config/$config/packages | sed 's, [^ ]*$,,' | \
+tr ' ' '\t' | expand -t2,15,35, > $cfgtmpdir/packages.txt
+
+configtitle="$(printf ' %-50s %6s active packages ]' \
+	"T2 $sdever Configuration - $config" \
+	"[ $(echo `grep '^X' config/$config/packages | wc -l`)")"
+
+bprof main stop
+
+if [ -z "$oldconfig" ]; then
+    eval "src/confdialog.bin --title 'Build Config' \
+	--backtitle '$configtitle' \
+	--menu 'Arrow keys navigate the menu.  Press <Enter> to activate menu items.  Highlighted letters are hotkeys.' \
+	$(($lines - 4)) $(($columns - 5)) $(($lines - 12)) \
+	'$current' `tr '\n' ' ' < $cfgtmpdir/config.dialog`" 2> $cfgtmpdir/config.out
+    returncode=$? item="$(< $cfgtmpdir/config.out)"
+else
+    returncode=1
+fi
+
+bprof main start
+
+[ "$returncode" = 1 -a "$menu_back" -ne -1 ] && returncode="menu-back"
+
+case "$returncode" in
+	0|6)
+		command="`grep "^$item	" $cfgtmpdir/config.data | cut -f2-`"
+		{ echo -e "\n# Remember menu position:\ncurrent='$item'"
+		echo -e "\n# Remember sub-menu:\nmenu_current='$menu_current'"
+		echo -e "\n# Execute this config command:\n$command"
+		} >> config/$config/config
+		;;
+	menu-back)
+		{ echo -e "\n# New menu position:\ncurrent='$menu_backpos'"
+		echo -e "\n# New sub-menu:\nmenu_current='$menu_back'"
+		} >> config/$config/config
+		;;
+	1|255)
+		rm -rf $cfgtmpdir
+		echo "New config written to: config/$config/"
+		bprof main stop
+		bprof_print
+		exit 1 ;;
+	2)
+		tempitem=$item
+		item=$(echo $item | cut -f1 -d' ')  # dialog(1) bug?
+		{ echo -e "\n# Remember menu position:\ncurrent='$item'"
+		echo -e "\n# Remember sub-menu:\nmenu_current='$menu_current'"
+		} >> config/$config/config
+
+		get_help $item > $cfgtmpdir/config.dialog
+
+		bprof main stop
+		src/confdialog.bin --title 'T2 Config - Help' \
+			--backtitle "T2 $sdever Configuration" \
+			--textbox $cfgtmpdir/config.dialog \
+			$(($lines - 4)) $(($columns - 5))
+		bprof main start
+		;;
+	*)
+		echo "unknown returncode: $returncode"
+		bprof main stop
+		bprof_print
+		exit 1 ;;
+esac
+
+bprof main stop
+bprof_print
+
+exit 0

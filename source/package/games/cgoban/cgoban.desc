@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cgoban/cgoban.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] X11 Go-Client
+
+[T] CGoban provides a large set of go-related services for *nix and X11.
+[T] Functions include:
+[T]
+[T] -Full functionality for viewing and editing SGF files
+[T] -Can connect to a go server over the Internet
+[T] -Can act as a bridge to a 'go' modem protocol
+[T] -When playing locally, you have a choice of rule sets and time
+[T] controls
+
+[U] https://cgoban1.sourceforge.net
+
+[A] Bill Shubert <wms@igoweb.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+
+[L] GPL
+[V] 1.9.14
+
+[D] 0c372c196d1438e6c1f8190e20f85fb110995d7f81ea6b1f965bada6 cgoban-1.9.14.tar.gz https://download.sourceforge.net/project/cgoban1/cgoban1/1.9.14/
+
+var_append confopt ' ' --x-includes=$root$(pkgprefix includedir libx11)
+var_append confopt ' ' --x-libraries=$root$(pkgprefix libdir libx11)

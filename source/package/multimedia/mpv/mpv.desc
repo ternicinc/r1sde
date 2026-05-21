@@ -1,0 +1,46 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mpv/mpv.desc
+[COPY] Copyright (C) 2021 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A media player for the command line
+
+[T] mpv is a free (as in freedom) media player for the command line. It
+[T] supports a wide variety of media file formats, audio and video codecs,
+[T] and subtitle types. It supports custom user scripts which can be
+[T] written in Lua.
+
+[U] https://mpv.io
+
+[A] The MPV devs
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/multimedia
+[F] CROSS
+
+[E] opt alsa-lib
+[E] opt jack
+[E] opt libarchive
+[E] opt libbluray
+[E] opt libcdio
+[E] opt libcdio-paranoia
+[E] opt libxpresent
+[E] opt luajit
+[E] opt pulseaudio
+[E] opt uchardet
+[E] opt vulkan-headers
+[E] opt wayland
+[E] opt libcaca
+
+[L] GPL
+[V] 0.41.0
+[P] X -----5---9 399.000
+
+[D] 2284c5e78b6e61897e0fc95df45ba787cfa944dd04fe05dbeabde141 mpv-v0.41.0.tar.gz https://github.com/mpv-player/mpv/archive/v0.41.0/
+
+rungpepinstall=0 runpipinstall=0 runpysetup=0
+
+var_append mesonopt ' ' '-Dlibmpv=true -Djavascript=disabled'
+pkginstalled libxpresent && var_append mesonopt ' ' -Dx11=enabled
+pkginstalled libdvdnav && var_append mesonopt ' ' "-Ddvdnav=enabled -Ddvbin=enabled"

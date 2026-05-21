@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libxmp/libxmp.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library for XMP music players
+
+[T] Libxmp loads the module and renders the sound as linear PCM samples in a
+[T] buffer at rate and format specified by the user. Applications for libxmp
+[T] include players, module information extractors, module-to-mp3 renderers,
+[T] game music, etc. A smaller subset of libxmp is also available. below).
+
+[U] https://xmp.sourceforge.net/
+
+[A] Claudio Matsuoka
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] OpenSource
+[V] 4.7.0
+[P] X -----5---9 117.300
+
+[D] ae51e3a2a782467ddccb49ecd7f8f1f1c8a45ed21b02827e69c4691d libxmp-4.7.0.tar.gz https://downloads.sourceforge.net/project/xmp/libxmp/4.7.0/

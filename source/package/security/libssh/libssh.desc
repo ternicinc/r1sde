@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libssh/libssh.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A working SSH implementation by means of a library
+
+[T] The ssh library was designed to be used by programmers needing a working
+[T] SSH implementation by the mean of a library. The complete control of the
+[T] client is made by the programmer. With libssh, you can remotely execute
+[T] programs, transfer files, use a secure and transparent tunnel for your
+[T] remote programs. With its Secure FTP implementation, you can play with
+[T] remote files easily, without third-party programs others than libcrypto
+[T] (from openssl).
+
+[U] https://www.libssh.org/
+
+[A] Arris, GlaDiaC See http://www.libssh.org/
+[M] Roger Mason <rmason@mun.ca>
+
+[C] extra/security
+[F] OBJDIR CROSS
+
+[E] opt doxygen graphviz
+
+[L] OpenSource
+[V] 0.12.0
+[P] X -----5---9 135.800
+
+[D] ef40e43422b2c4b4562eb507ffa33c79600907445e34b9c90b16a75c libssh-0.12.0.tar.xz https://www.libssh.org/files/0.12/

@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-input-evdev/xf86-input-evdev.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Generic Xorg Linux input driver
+
+[T] Evdev is an Xorg input driver for Linux's generic event devices. It
+[T] therefore supports all input devices that the kernel knows about,
+[T] including most mice and keyboards.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 2.11.0
+
+[D] 906ad6dfd5ae96e0d7bd154248707758707077896fc0d4174c47955f xf86-input-evdev-2.11.0.tar.xz http://xorg.freedesktop.org/releases/individual/driver/
+
+. package/*/*/modular-x-conf.in

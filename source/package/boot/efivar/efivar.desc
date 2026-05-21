@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/efivar/efivar.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Tools and libraries to manipulate EFI variables
+
+[T] efivar contains Tools and libraries to manipulate UEFI variables.
+
+[U] https://github.com/rhboot/efivar
+
+[A] Matt Domsch <Matt_Domsch@dell.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/boot
+[F] CROSS NO-LTO
+[R] + arm arm64 ia64 riscv riscv64 x86 x86-64
+
+[L] GPL
+[V] 39
+[P] X -----5---9 202.100
+
+[D] 68db14318c625980e502631de1181c68dd556dc73f7a470a1c571013 efivar-39.tar.gz https://github.com/rhboot/efivar/archive/39/
+
+if atstage cross; then
+	hook_add premake 3 'eval $MAKE $makeopt TOPDIR=$PWD CC_FOR_BUILD=$CC CCLD_FOR_BUILD=cc -C src makeguids'
+	hook_add premake 5 "rm -vf src/*.o; sed /^MAKEGUIDS_SOURCES/d -i src/Makefile"
+fi
+
+var_append GCC_WRAPPER_APPEND ' ' -Wno-error=address-of-packed-member
+var_append SYSCC_WRAPPER_APPEND ' ' -Wno-error=address-of-packed-member
+
+var_append makeopt ' ' ENABLE_DOCS=0
+var_append makeinstopt ' ' "ENABLE_DOCS=0 LIBDIR=$libdir"

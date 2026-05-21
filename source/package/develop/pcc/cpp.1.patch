@@ -1,0 +1,19 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/pcc/cpp.1.patch
+# Copyright (C) 2014 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+Otherwise shared with gcc, in the default installation.
+
+--- pcc-1.1.0/cc/cpp/Makefile.in.vanilla	2019-04-21 11:29:10.486809006 +0000
++++ pcc-1.1.0/cc/cpp/Makefile.in	2019-04-21 11:29:34.982808905 +0000
+@@ -75,7 +75,7 @@
+ 	test -z "$(DESTDIR)$(libexecdir)" || mkdir -p "$(DESTDIR)$(libexecdir)"
+ 	$(INSTALL_PROGRAM) $(DEST) $(DESTDIR)$(libexecdir)
+ 	test -z "$(DESTDIR)$(mandir)/man1" || mkdir -p "$(DESTDIR)$(mandir)/man1"
+-	$(INSTALL_DATA) $(srcdir)/cpp.1 $(DESTDIR)$(mandir)/man1/$(DEST).1
++	$(INSTALL_DATA) $(srcdir)/cpp.1 $(DESTDIR)$(mandir)/man1/$(DEST)-pcc.1
+ 
+ clean:
+ 	rm -f $(OBJS) $(DEST) cpy.[ch] y.tab.[ch] tests/run*

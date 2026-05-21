@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ktexttemplate/ktexttemplate.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library to allow to separate the structure of documents from data
+
+[T] Library to allow application developers to separate the structure of
+[T] documents from the data they contain.
+
+[U] https://invent.kde.org/frameworks/ktexttemplate
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 6.26.0
+[P] X -----5---9 162.920
+
+[CV-GROUP] kde-frameworks
+[D] dd3299acbd46e55bc40c224df82928b5446bd8ebce70603e4cd948d2 ktexttemplate-6.26.0.tar.xz https://download.kde.org/stable/frameworks/6.26/
+
+. $base/package/*/*/kde-conf.in

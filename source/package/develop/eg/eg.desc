@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/eg/eg.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Text Mode Norton Guide Reader
+
+[T] Expert Guide - A Text Mode Norton Guide Reader
+[T] it's used to read .ng files
+
+[U] https://www.davep.org/norton-guides/
+
+[A] David A Pearson <davep@davep.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 1.02
+
+[D] ff226bb070766c50d558c237737161edd16261c8c54505d5420c5e62 eg-1.02.tar.gz https://github.com/davep/eg/archive/v1.02/

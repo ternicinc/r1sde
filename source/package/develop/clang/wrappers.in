@@ -1,0 +1,19 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/clang/wrappers.in
+# Copyright (C) 2010 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+build_wrapper CC,GCC,CLANG clang
+build_wrapper CXX,GCC,CLANG clang++
+build_wrapper CC,GCC,CLANG ${arch_target}-clang
+build_wrapper CXX,GCC,CLANG ${arch_target}-clang++
+
+if atstage native || [ "$SDECFG_USE_CROSSCC" = 0 ]; then
+	build_wrapper CPP,CPP,CLANG cpp
+else
+	# system compiler used in stage 0 - mostly for ccache
+	build_wrapper SYSCC,SYSGCC cc
+	build_wrapper SYSCXX,SYSGCC c++
+	#build_wrapper SYSCPP,SYSCPP cpp
+fi

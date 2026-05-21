@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lprng/lprng.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Next Generation Line-Printer-Spooler
+
+[T] LPRng is the Next Generation in LPR software. It supports the standard
+[T] bsd lpr commands and also supports an System V interface. Other features
+[T] include lightweight lpr, lpc, and lprm programs, dynamic redirection of
+[T] print queues, automatic job holding, highly verbose diagnostics, multiple
+[T] printers serving a single queue, client programs do not need to run SUID
+[T] root, greatly enhanced security checks and a greatly improved permission
+[T] and authorization mechanism. The default configuration provides a simple
+[T] BSD LPR interface, but there are options to modify a wide variety of
+[T] operational facilities. The companion IFHP print filter can interface to a
+[T] wide variety of printers, from the latest network based high speed to
+[T] vintage legacy printers.
+
+[U] https://lprng.sourceforge.net
+
+[A] Patrick Powell <papowell@astart.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/printing
+[F] PRINTER FCOMMON
+
+[L] OpenSource
+[V] 3.9.0
+
+[D] fbfbcd5e6cf60c038b91ad6187d47b584950e1dd2c4dbcea4378c0b2 lprng-3.9.0.tar.gz https://prdownloads.sourceforge.net/sourceforge/lprng/
+
+hook_add postmake 5 "install_setprinter lprng"

@@ -1,0 +1,33 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/superh/config.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+#Description: SuperH
+
+choice SDECFG_SH_OPT sh4 \
+	sh		"No special optimization (SH1)"	\
+	sh2		"Optimized for the SH2"	\
+	sh3		"Optimized for the SH3"	\
+	sh4		"Optimized for the SH4"
+
+choice SDECFG_SH_BOARDDEF dreamcast \
+	dreamcast	"SEGA Dreamcast" \
+	se7300		"Hitachi SH7300 (SH-Mobile V) evaluation board" \
+	se73180		"Hitachi SH73180 (SH-Mobile 3) evaluation board" \
+	se7751		"Hitachi SH7751 evalutation board" \
+	se7705		"Hitachi SH7709 or SH7750 evaluation board" \
+	cqreek		"CqREEK SH7708 or SH7750" \
+	hp6xx		"HP Jornada HP6xx" \
+	microdev	"SuperH MicroDev board with an SH4-202 CPU" \
+	rts7751r2dplus	"Renesas Technology Sales SH-Graphics board" \
+	sh3		"CTP/PCI-SH03 by Interface Corporation" \
+	snapgear	"SnapGear SH board" \
+	systemh		"Renesas SystemH 7751R evaluation board"
+
+SDECFG_ID="$SDECFG_ID-$SDECFG_SH_OPT"
+
+# TODO: should certainly be in sync w/ optimization choice!
+const SDECFG_MULTILIBLIST "m4,m4-nofpu"
+SDECFGSET_MULTILIBLIST="m4,m4-nofpu"

@@ -1,0 +1,118 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/target/test/pkgsel
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+O * # unless otherwise noted below
+
+X 00-dirtree
+X sysfiles
+X linux-header
+X glibc
+X glibc32
+X binutils
+X mpfr
+X gmp
+X mpc
+X gcc
+X linux
+X module-init-tools
+
+X gettext
+X dietlibc
+
+X udev
+X mkinitrd
+X rocknet
+
+X embutils
+X libowfat
+X minised
+# minit is implicit thru init style in config.in
+X fgetty
+
+X pdksh
+X bash
+X perl
+
+# we need those for some broken packages that need updating
+X m4
+X autoconf
+X automake
+X groff
+X libtool
+
+# some other core tools
+X gawk
+X findutils
+X eject
+X lsof
+X less
+X curl
+
+# minimal editors are enough :-)
+X nvi
+X zile
+
+# the usual archiver and compres
+X cpio
+X tar
+X zlib
+X gzip
+X bzip2
+
+X ncurses
+X readline
+
+# File-System section
+X e2fsprogs
+
+# Network section
+X net-tools
+X iproute2
+X udhcp
+X dropbear
+X tcpdump
+
+X make
+
+X file
+X psmisc
+
+X patch
+X patchutils
+
+# just for the t2 build system right now
+X grep
+X bc
+X ccache
+
+# just to build some stuff
+X bison
+X flex
+X texinfo
+#X intltool
+
+# boot loader
+X grub
+
+# system info
+X pciutils
+X libusb
+X usbutils
+X sysfsutils
+X pcmciautils
+
+# some more low level hw info and testing
+X acpica
+X disktype
+X ddcxinfo
+X dmidecode
+X powertop
+X stressapptest
+X x86info
+
+# dev. tools
+X gdb
+X strace

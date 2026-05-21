@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/qt5websockets/qt5websockets.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A pure Qt5 implementation of WebSockets
+
+[T] QtWebSockets is a pure Qt implementation of WebSockets - both client and
+[T] server. It is implemented as a Qt add-on module that can easily be
+[T] embedded into existing Qt projects.
+
+[U] https://qt.io
+
+[A] Trolltech AS <www.trolltech.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] LGPL
+[V] 5.15.14
+
+[CV-GROUP] qt5
+[D] d29d409bdd45959fd76b5e390df3a936180cdc27e99a0c020d37e903 qtwebsockets-everywhere-opensource-src-5.15.14.tar.xz http://download.qt.io/official_releases/qt/5.15/5.15.14/submodules/
+
+. $base/package/*/*/qt5-conf.in

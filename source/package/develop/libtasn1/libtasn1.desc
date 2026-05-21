@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libtasn1/libtasn1.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library for ASN.1 and DER manipulation
+
+[T] Libtasn is a library written in C for manipulating ASN.1 objects including
+[T] DER/BER encoding and DER/BER decoding. Libtasn is used by GnuTLS to
+[T] manipulate X.509 objects and by GNU Shishi to handle Kerberos V5 packets.
+
+[U] https://www.gnutls.org/
+
+[A] Fabio Fiorina <fiorinaf@gnutls.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS NO-LTO.clang
+
+[L] LGPL
+
+[V] 4.21.0
+[P] X -----5---9 120.000
+
+[D] 6b16b445ec1be8b71a2d8b06520594373ef427d3b7003f352e3cfe48 libtasn1-4.21.0.tar.gz https://ftp.gnu.org/gnu/libtasn1/

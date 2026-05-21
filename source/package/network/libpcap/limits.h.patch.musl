@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/libpcap/limits.h.patch.musl
+# Copyright (C) 2019 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- libpcap-1.9.0/pcap-usb-linux.c.vanilla	2019-09-18 11:46:58.100000000 +0200
++++ libpcap-1.9.0/pcap-usb-linux.c	2019-09-18 11:47:22.988000000 +0200
+@@ -57,6 +57,7 @@
+ #include <sys/ioctl.h>
+ #include <sys/mman.h>
+ #include <sys/utsname.h>
++#include <limits.h>
+ #ifdef HAVE_LINUX_USBDEVICE_FS_H
+ /*
+  * We might need <linux/compiler.h> to define __user for

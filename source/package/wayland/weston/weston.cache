@@ -1,0 +1,52 @@
+[TIMESTAMP] 1737725591 Fri Jan 24 14:33:11 2025
+[BUILDTIME] 25 (9)
+[SIZE] 6.20 MB, 129 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] fontconfig
+[OPT] freerdp
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] gst-plugins-base
+[DEP] gstreamer
+[DEP] harfbuzz
+[DEP] lcms2
+[DEP] libdisplay-info
+[DEP] libdrm
+[DEP] libevdev
+[DEP] libglvnd
+[DEP] libinput
+[DEP] libjpeg
+[DEP] libpng
+[DEP] libva
+[OPT] libwebp
+[DEP] libx11
+[DEP] libxcb
+[DEP] libxcursor
+[DEP] libxml
+[DEP] linux-header
+[DEP] mesa
+[DEP] meson
+[OPT] neatvnc
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[OPT] pipewire
+[DEP] pixman
+[DEP] python
+[OPT] seatd
+[DEP] sed
+[OPT] systemd
+[DEP] tar
+[DEP] udev
+[DEP] wayland
+[DEP] wayland-protocols
+[DEP] xcb-util-cursor
+[DEP] xkbcommon
+[DEP] xorgproto
+[DEP] xz

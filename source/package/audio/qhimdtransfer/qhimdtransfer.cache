@@ -1,0 +1,26 @@
+[TIMESTAMP] 1745226751 Mon Apr 21 11:12:31 2025
+[BUILDTIME] 14 (9)
+[SIZE] 1.19 MB, 28 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] libgcrypt
+[DEP] libgpg-error
+[DEP] libid3tag
+[DEP] libmad
+[DEP] libusb
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] qt6base
+[DEP] qt6tools
+[DEP] sed
+[DEP] taglib
+[DEP] tar

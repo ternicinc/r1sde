@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/taglib-sharp/taglib-sharp.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A .NET 2.0 and Mono tagging library
+
+[T] TagLib# is a FREE and Open Source library for the .NET 2.0 and Mono
+[T] frameworks which will let you tag your software with as much or as
+[T] little detail as you like without slowing you down. It supports a
+[T] large variety of movie and music formats which abstract away the work,
+[T] handling all the different cases,
+
+[U] https://github.com/mono/taglib-sharp/
+
+[A] Brian Nickel <brian.nickel@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] NOPARALLEL
+
+[L] LGPL
+[V] 2.3.0.0
+
+[D] 17bcfd3ecd371da888adce454875374e73153d7b5343f8eedb74cb63 taglib-sharp-2.3.0.0.tar.gz https://github.com/mono/taglib-sharp/archive/refs/tags/TaglibSharp-2.3.0.0/
+
+var_append confopt ' ' --disable-docs

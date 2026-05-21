@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-video-sunleo/xf86-video-sunleo.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Xorg driver for Sun LEO video cards
+
+[T] This driver supports Sun Leo (ZX) video cards. The leo driver supports all
+[T] Sun stations that include a Leo chipset: Workstations: Sun 4/15, 4/30,
+[T] 4/75, SPARCstation 5, 10, 20, Ultra 1, 1E, 2. Servers: SPARCserver 1000,
+[T] SPARCcenter 2000.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.2.3
+
+[R] + sparc sparc64
+
+[D] 10be647e03a8e7df904a976ee1c8c960dc72292fb7b093c4def86d40 xf86-video-sunleo-1.2.3.tar.xz http://xorg.freedesktop.org/releases/individual/driver/
+
+. package/*/*/modular-x-conf.in

@@ -1,0 +1,8 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/oprofile/postsysfiles.in
+# Copyright (C) 2014 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+safe_groupadd oprofile 85
+safe_useradd oprofile 85 85 "oprofile" /var/empty /bin/false "*"

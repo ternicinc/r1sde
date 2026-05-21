@@ -1,0 +1,34 @@
+[TIMESTAMP] 1745531234 Thu Apr 24 23:47:14 2025
+[BUILDTIME] 35 (9)
+[SIZE] 3.25 MB, 56 files
+
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] grep
+[DEP] gtk+
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] libglvnd
+[OPT] libwebp
+[DEP] linux-header
+[DEP] lua
+[DEP] make
+[DEP] pango
+[OPT] qt5base
+[OPT] qt5svg
+[OPT] qt5tools
+[OPT] qt65compat
+[OPT] qt6base
+[OPT] qt6svg
+[OPT] qt6tools
+[DEP] readline
+[DEP] sed
+[DEP] tar
+[DEP] wxwidgets

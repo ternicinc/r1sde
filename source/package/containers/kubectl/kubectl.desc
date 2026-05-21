@@ -1,0 +1,52 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kubectl/kubectl.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A command line tool for communicating with a Kubernetes cluster
+
+[T] A command line tool for communicating with a Kubernetes cluster's control
+[T] plane, using the Kubernetes API.
+
+[U] https://kubernetes.io/
+
+[A] Kubernetes Team
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/base
+[F] CROSS
+
+[L] GPL
+[V] 1.36.1
+
+[D] 8e6b8f90c0a41f2226f22b3bd01714f12665da1c1354c310241fef04 kubernetes-v1.36.1.tar.gz !https://dl.k8s.io/release/v1.36.1/kubernetes-src.tar.gz
+
+rungo=0
+makeinstopt=
+
+var_append makeopt ' ' 'kubectl gendocs genman genyaml'
+var_remove GCC_WRAPPER_REMOVE ' ' '-gdwarf*'
+
+kubectl_extract() {
+	local taropt_orig="$taropt"
+	mkdir -p "${xsrctar%%.tar*}"
+	taropt="-C ${xsrctar%%.tar*} $taropt_orig"
+	autoextract_tar "$@"
+	taropt="$taropt_orig"
+}
+custextract='kubectl_extract'
+
+kubectl_docs() {
+	mkdir -p docs/{man/man1,user-guide/kubectl,yaml/kubectl}
+	./_output/bin/gendocs "docs/user-guide/kubectl/"
+	./_output/bin/genman "docs/man/man1/" "kubectl"
+	./_output/bin/genyaml "docs/yaml/kubectl/"
+}
+hook_add inmake 5 kubectl_docs
+
+kubectl_install() {
+	install -Dm 755 _output/bin/kubectl $root$bindir/
+	install -Dm 644 docs/man/man1/kubectl* -t $root$mandir/man1/
+}
+hook_add postmake 5 kubectl_install

@@ -1,0 +1,21 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-event-execflow/perl-event-execflow.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] High level API for event-based execution flow control
+
+[T] Event::ExecFlow provides a ligh level API for defining complex flow
+[T] controls with asynchronous execution of external programs.
+
+[A] Jorn Reder <joern@zyn.de>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 0.64
+[P] X -----5---9 177.000
+
+[D] 4d948810e043797e67d6dda20bebbc92539d14c7d834281dfecc2688 Event-ExecFlow-0.64.tar.gz http://search.cpan.org/CPAN/authors/id/J/JR/JRED/

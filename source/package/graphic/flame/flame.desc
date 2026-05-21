@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/flame/flame.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Flame is an cosmic recursive fractal flames generator
+
+[T] Fractal Flames are algorithmically generated images and animations. You can
+[T] create your own flames with the gimp's flame plugin, included in the gimp
+[T] distribution, and use Flame to convert the gimp generated files, animate
+[T] them, morph them, and render them in the command line. You can also use the
+[T] ElectricSheep distributed screen saver, to join the collective evolution of
+[T] animated fractal flames.
+
+[U] https://www.flam3.com
+
+[A] Scott Draves <mail@flam3.com>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 3.1.1
+
+[D] 4bc5318590c0d34544ec6c4276a8d97f5dfa2b09779db6f57eb5d0c2 flam3-3.1.1.tar.gz https://github.com/scottdraves/flam3/archive/v3.1.1/

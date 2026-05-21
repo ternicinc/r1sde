@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/slurp/slurp.desc
+[COPY] Copyright (C) 2021 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Screen zone selection for wayland
+
+[T] Slurp lets you interactively select zones of your screen in a Wayland
+[T] compositor to be used for example with a screenshot utility.
+
+[U] https://wayland.emersion.fr/slurp/
+
+[A] Simon Ser <contact@emersion.fr>
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/x11
+[F] CROSS
+
+[L] MIT
+[V] 1.5.0
+
+[D] 4e43f708f260114329270cef8f5656462ee87b8c1124d150a32d0be9 slurp-1.5.0.tar.gz https://github.com/emersion/slurp/archive/v1.5.0/

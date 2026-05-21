@@ -1,0 +1,21 @@
+[TIMESTAMP] 1743346498 Sun Mar 30 16:54:58 2025
+[BUILDTIME] 4 (9)
+[SIZE] 0.67 MB, 56 files
+
+[DEP] autoconf
+[DEP] automake
+[DEP] coreutils
+[DEP] gettext
+[DEP] glib
+[DEP] gzip
+[DEP] intltool
+[DEP] libdrm
+[DEP] libtool
+[OPT] libx11
+[DEP] libxxf86vm
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] tar
+[DEP] wayland
+[OPT] xorgproto

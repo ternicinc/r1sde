@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pcc-libs/pcc-libs.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Portable C Compiler Libs
+
+[T] The Portable BSD C Compiler libraries.
+
+[U] http://pcc.ludd.ltu.se/
+
+[A] Stephen C. Johnson
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] BSD
+[V] 1.1.0
+
+[D] 3464004300186556563218d120d9cc90491bc16ebdb0bda8204760a4 pcc-libs-1.1.0.tgz http://pcc.ludd.ltu.se/ftp/pub/pcc-releases/

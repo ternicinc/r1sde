@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dnsmasq/dnsmasq.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A lightweight, caching DNS proxy with integrated DHCP server
+
+[T] Dnsmasq is a caching DNS forwarder designed to provide DNS service on
+[T] a small network. It is targeted at home networks using NAT and connected
+[T] to the internet via a modem, cable-modem or ADSL connection but would be
+[T] a good choice for any small network where low resource use and ease of
+[T] configuration are important.
+
+[U] https://www.thekelleys.org.uk/dnsmasq/doc.html
+
+[A] Simon Kelley <simon@thekelleys.org.uk>
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 2.92
+
+[D] ac48284e50ffeab54bbffab83bf39062c94fa9aa163328e9990c8ccd dnsmasq-2.92.tar.xz http://www.thekelleys.org.uk/dnsmasq/

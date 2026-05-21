@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xmms/xmms.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] X Mult-Media System
+
+[T] XMMS is a multimedia player based on the look of winamp.
+[T] Currently it plays mpeg layer 1/2/3, wav/au and all
+[T] formats supported by libmikmod as well as CD audio.
+
+[U] http://www.xmms.org/
+
+[A] 4Front Technologies
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[E] opt libmikmod
+[E] opt libogg libvorbis
+
+[L] GPL
+[V] 1.2.11
+[P] X -----5---9 201.100
+
+[CV-URL] http://www.xmms.org/download.php
+[D] ed7fd69d2834ae9a9a68fb3c6cb896489f6027d62f7834f5be0806d3 xmms-1.2.11.tar.bz2 http://www.xmms.org/files/1.2.x/
+
+var_append CC_WRAPPER_APPEND ' ' -std=gnu17
+atstage cross && var_append confopt ' ' "--with-glib-prefix=$root/`pkgprefix glib12`"
+atstage cross && var_append confopt ' ' "--with-gtk-prefix=$root/`pkgprefix gtk+12`"
+hook_add postmake 5 "mkdir -p $root$datadir/xmms/Skins"

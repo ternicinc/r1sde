@@ -1,0 +1,35 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/gsmlib/hotfix-gcc41.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- gsmlib-1.10/gsmlib/gsm_me_ta.h.vanilla	2006-03-04 19:22:37.360131000 +0100
++++ gsmlib-1.10/gsmlib/gsm_me_ta.h	2006-03-04 19:23:37.311877750 +0100
+@@ -291,8 +291,8 @@
+     // 3 disable phone receive RF circuits only
+     // 4 disable phone both transmit and receive RF circuits
+     // 5...127 implementation-defined
+-    int MeTa::getFunctionalityLevel() throw(GsmException);
+-    void MeTa::setFunctionalityLevel(int level) throw(GsmException);
++    int getFunctionalityLevel() throw(GsmException);
++    void setFunctionalityLevel(int level) throw(GsmException);
+ 
+     // return battery charge status (+CBC):
+     // 0 ME is powered by the battery
+@@ -386,13 +386,13 @@
+     void setCallWaitingLockStatus(FacilityClass cl,
+                                   bool lock)throw(GsmException);
+ 
+-    void MeTa::setCLIRPresentation(bool enable) throw(GsmException);
++    void setCLIRPresentation(bool enable) throw(GsmException);
+     //(+CLIR)
+     
+     // 0:according to the subscription of the CLIR service
+     // 1:CLIR invocation
+     // 2:CLIR suppression
+-    int MeTa::getCLIRPresentation() throw(GsmException);
++    int getCLIRPresentation() throw(GsmException);
+ 
+     friend class Phonebook;
+     friend class SMSStore;

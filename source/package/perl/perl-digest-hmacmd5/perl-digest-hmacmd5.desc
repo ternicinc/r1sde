@@ -1,0 +1,20 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-digest-hmacmd5/perl-digest-hmacmd5.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A perl module for HMAC MD5
+
+[T] The Digest::HMAC_MD5 module provides HMAC-MD5 hashing.
+
+[A] Gisle Aas
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 1.03
+[P] X -----5---9 113.300
+
+[D] a64b35ba9dd6535afc024c3397a7461e7e6f1bdbc99d25e82e7e6fe4 Digest-HMAC-1.03.tar.gz http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/

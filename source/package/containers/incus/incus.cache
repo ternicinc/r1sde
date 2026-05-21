@@ -1,0 +1,23 @@
+[TIMESTAMP] 1768669578 Sat Jan 17 18:06:18 2026
+[BUILDTIME] 155 (9)
+[SIZE] 246.03 MB, 23 files
+
+[DEP] acl
+[DEP] bash
+[DEP] coreutils
+[DEP] cowsql
+[DEP] diffutils
+[DEP] gawk
+[DEP] go
+[DEP] grep
+[DEP] gzip
+[DEP] libcap
+[DEP] linux-header
+[DEP] lxc
+[DEP] make
+[DEP] raft
+[DEP] sed
+[DEP] sqlite
+[DEP] tar
+[DEP] udev
+[DEP] util-linux

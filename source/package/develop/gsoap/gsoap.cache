@@ -1,0 +1,24 @@
+[TIMESTAMP] 1775729457 Thu Apr  9 12:10:57 2026
+[BUILDTIME] 35 (9)
+[SIZE] 7.98 MB, 224 files
+
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] bison
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] flex
+[DEP] gawk
+[OPT] gnutls
+[DEP] grep
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] openssl
+[DEP] sed
+[DEP] unzip
+[DEP] util-linux
+[OPT] wolfssl
+[DEP] zlib

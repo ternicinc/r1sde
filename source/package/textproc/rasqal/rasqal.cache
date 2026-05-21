@@ -1,0 +1,23 @@
+[TIMESTAMP] 1759940192 Wed Oct  8 18:16:32 2025
+[BUILDTIME] 18 (9)
+[SIZE] 2.59 MB, 60 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gmp
+[DEP] grep
+[DEP] gtk-doc
+[DEP] gzip
+[DEP] libmhash
+[DEP] linux-header
+[DEP] make
+[DEP] mpfr
+[DEP] pcre
+[DEP] raptor
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

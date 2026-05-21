@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/zxing-cpp/zxing-cpp.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An multi-format linear/matrix barcode image processing library
+
+[T] ZXing-C++ ("zebra crossing") is an open-source, multi-format
+[T] linear/matrix barcode image processing library implemented in C++.
+
+[U] https://github.com/zxing-cpp/zxing-cpp
+
+[A] Axel from Berlin
+[A] ZXing authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] APL
+[V] 3.0.2
+[P] X -----5---9 133.900
+
+[D] 68b6e07d051a06edddae9e4d4197fc40d46b73ef1b1134cb0f71c1f7 zxing-cpp-3.0.2.tar.gz https://github.com/zxing-cpp/zxing-cpp/archive/v3.0.2/
+
+var_append cmakeopt ' ' -DZXING_USE_BUNDLED_ZINT=OFF
+var_append cmakeopt ' ' "-DZXING_EXAMPLES=OFF -DZXING_WRITERS=BOTH"
+
+inst() {
+	cd $builddir/zxing-cpp*/
+	rm -rf core/src/libzint
+	rm -f core/src/*.cpp
+	rm -f core/src/*/*.{c,cpp,md}
+	mv core/src core/ZXing
+	cp -rv core/ZXing $root$includedir/
+}
+hook_add postmake 5 inst

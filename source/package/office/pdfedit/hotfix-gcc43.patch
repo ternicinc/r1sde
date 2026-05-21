@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/pdfedit/hotfix-gcc43.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- pdfedit-0.3.2/src/utils/confparser.h.vanilla	2008-05-14 14:50:26.000000000 +0200
++++ pdfedit-0.3.2/src/utils/confparser.h	2008-05-14 14:50:44.000000000 +0200
+@@ -66,6 +66,7 @@
+ #ifndef _CONFPARSER_H_
+ #define _CONFPARSER_H_
+ 
++#include<string.h> // mem*, str*
+ #include<iostream>
+ #include<string>
+ #include<vector>

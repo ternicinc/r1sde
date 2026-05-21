@@ -1,0 +1,29 @@
+[TIMESTAMP] 1755816863 Fri Aug 22 00:54:23 2025
+[BUILDTIME] 3 (9)
+[SIZE] 0.13 MB, 10 files
+
+[DEP] bash
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] file
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] grep
+[DEP] gtk+
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] lcms2
+[DEP] libexif
+[DEP] libjpeg
+[DEP] libtiff
+[DEP] libx11
+[DEP] libxext
+[DEP] linux-header
+[DEP] make
+[DEP] pango
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

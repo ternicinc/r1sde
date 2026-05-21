@@ -1,0 +1,41 @@
+[TIMESTAMP] 1777204470 Sun Apr 26 13:54:30 2026
+[BUILDTIME] 55 (9)
+[SIZE] 10.62 MB, 379 files
+
+[DEP] 00-dirtree
+[DEP] alsa-lib
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] dbus
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] glib
+[DEP] glu
+[DEP] grep
+[DEP] groff
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] libglvnd
+[DEP] libjpeg
+[DEP] libpng
+[DEP] libx11
+[DEP] libxcursor
+[DEP] libxfixes
+[DEP] libxinerama
+[DEP] libxrender
+[DEP] linux-header
+[DEP] make
+[DEP] pango
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] wayland
+[DEP] wayland-protocols
+[DEP] xkbcommon
+[DEP] xorgproto
+[DEP] zlib

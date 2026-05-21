@@ -1,0 +1,112 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/target/generic/pkgsel/20-base.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+# TITLE: Base package selection
+
+# reuse the bootstrap
+include target/generic/pkgsel/10-bootstrap.in
+
+X bzip2
+X xz
+X lzo
+X lzip
+X cron
+X gdb
+X groff
+X iptables
+#X reiserfsprogs
+X ntfsprogs
+X btrfs-progs
+X squashfs-tools
+X inih
+X liburcu
+X xfsprogs
+X jfsutils
+X libaio
+X lvm2
+X libgpg-error
+X json-c
+X libgcrypt
+X cryptsetup
+X iw
+X wireless-regdb
+X wpa_supplicant
+X libnl
+X kbd
+X less
+X libelf
+X linux-firmware
+X intel-microcode
+X memtest86
+X gdbm
+X libpipeline
+X man
+X man-pages
+X nghttp2
+X iputils
+#X netkit-telnet
+#X netcat
+X net-tools
+X tcp_wrappers
+X rpcbind
+X rpcsvc-proto
+X libtirpc
+X nfs-utils
+X vim
+X openssh
+X wireguard-tools
+X xxhash
+X rsync
+X libpcap
+X ppp
+X sysstat
+X hwdata
+X pciutils
+X sharutils
+X libusb
+X usbutils
+X pcmciautils
+X libevent
+X strace
+X sysfsutils
+
+X watchdog
+#X perl-gettext
+X help2man
+X libatomic_ops
+
+# and let people create T2 ISOs and LiveCD/DVDs
+X cmake
+X libisofs
+X libburn
+X libisoburn
+X popt
+
+X numactl
+X powerpc-utils
+
+X parted
+# nice to have
+X libmnl
+X ethtool
+X smartmontools
+X sgutils
+X libnvme
+X nvme-cli
+X ntp
+X lm_sensors
+X stressapptest
+X tmux
+
+X llvm
+X clang
+X lld
+X cargo
+X rustc
+X rust-src
+= thin-provisioning-tools
+
+X go

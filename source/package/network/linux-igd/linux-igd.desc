@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/linux-igd/linux-igd.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Linux Internet Gateway Device
+
+[T] This project is a deamon that emulates Microsoft's Internet Connection
+[T] Service (ICS). It implements the UPnP Internet Gateway Device (IGD) and
+[T] allows UPnP aware clients, such as MSN Messenger to work properly from
+[T] behind a NAT firewall.
+
+[U] https://linux-igd.sourceforge.net
+
+[A] Daniel J Blueman <daniel.blueman@gmail.com>
+[M] Adam Stirk <adam.stirk@brantano.co.uk>
+
+[C] extra/network
+
+[L] Free-to-use
+[V] 2008-07-20
+
+[D] b6b34680c931a9fd61ba15349b81026b3b646fde1318dcc2844df8bc linux-igd_2008-07-20.tar.bz2 cvs://:pserver:anonymous@linux-igd.cvs.sourceforge.net:/cvsroot/linux-igd linux-igd -D 2008-07-20

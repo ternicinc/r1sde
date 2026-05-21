@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/diehard/diehard.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Marsaglia's Diehard Battery of Tests of Randomness
+
+[T] A set of routines to evaluate randomness of a test file.
+[T] Nice for distinguishing PRNG output from HRNGs.
+
+[U] https://www.stat.fsu.edu/pub/diehard/
+
+[A] George Marsaglia
+[M] Valentin Ziegler <valentin.ziegler@googlemail.com>
+
+[C] extra/scientific
+[F] CROSS
+
+[L] OpenSource
+[V] 1998-04-03
+
+[D] 4fee8beb1f996f15f546fee1e67907fbfb8f87b3de2a3c16ef7e3c8d die-c.tar.gz http://www.stat.fsu.edu/pub/diehard/
+
+makeinstopt=
+hook_add postmake 3 "install -m 755 diehard $root$bindir/diehard"

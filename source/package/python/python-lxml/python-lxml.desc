@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-lxml/python-lxml.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Python binding for the libxml2 and libxslt libraries
+
+[T] Lxml is a Pythonic, mature binding for the libxml2 and libxslt libraries.
+[T] It provides safe and convenient access to these libraries using the
+[T] ElementTree API.
+
+[U] https://lxml.de/
+
+[A] lxml dev team <lxml-dev@codespeak.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] BSD
+[V] 6.1.1
+[P] X -----5---9 149.000
+
+[D] e3a779e405d74f45924f8bbf5e51d96f6c01951d5038b81b78ed850b lxml-6.1.1.tar.gz https://github.com/lxml/lxml/releases/download/lxml-6.1.1/

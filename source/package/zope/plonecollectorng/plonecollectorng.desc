@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/plonecollectorng/plonecollectorng.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Plone-based bugtracking solution and framework
+
+[T] A Plone-based bugtracking solution and framework
+
+[U] https://zopyx.com/OpenSource/PloneCollectorNG
+
+[A] Andreas Jung andreas@andreas-jung.com
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[E] add zope plone
+
+[L] OpenSource
+
+[V] 1.2.7
+
+[D] fcef14b383e59a7e4cb53891cece8050931cf76780b4392464d4a8ee PloneCollectorNG-1.2.7.tar.gz https://download.sourceforge.net/collective/
+
+. $base/package/*/zope/zope-conf.in

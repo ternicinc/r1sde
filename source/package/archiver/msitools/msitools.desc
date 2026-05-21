@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/msitools/msitools.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A set of programs to inspect and build Windows Installer files
+
+[T] msitools is a set of programs to inspect and build Windows Installer (.MSI)
+[T] files. It is based on libmsi, a portable library to read and write .MSI
+[T] files. libmsi in turn is a port of (and a subset of) Wine's implementation
+[T] of the Windows Installer.
+
+[U] https://gitlab.gnome.org/GNOME/msitools
+
+[A] Paolo Bonzini <pbonzini@redhat.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/archive
+[F] CROSS
+
+[L] GPL
+[V] 0.106
+
+[D] 529f9ac939fa3159de56592a647d31a214232bf142c5c6c1aa716247 msitools-0.106.tar.xz https://download.gnome.org/sources/msitools/0.106/

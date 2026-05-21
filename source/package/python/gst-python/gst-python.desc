@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gst-python/gst-python.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Python bindings for GStreamer
+
+[T] GStreamer Python Bindings provide Python bindings for the GStreamer
+[T] project. These bindings provide access to almost all of the GStreamer
+[T] C API through an object oriented Python API.
+
+[U] https://gstreamer.freedesktop.org/
+
+[A] Edward Hervey <bilboed@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] LGPL
+[V] 1.28.3
+[P] X -----5---9 240.000
+
+[CV-GROUP] gst
+[CV-FLAGS] ODD-UNSTABLE
+[D] ecf945405868d787b05764d0a1fbc3a82bee88f3c963ab97239c9778 gst-python-1.28.3.tar.xz https://gstreamer.freedesktop.org/src/gst-python/

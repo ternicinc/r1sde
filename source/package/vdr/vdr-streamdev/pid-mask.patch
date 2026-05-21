@@ -1,0 +1,28 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/vdr-streamdev/pid-mask.patch
+# Copyright (C) 2009 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./client/filter.c.orig	2008-03-31 10:38:01.000000000 +0000
++++ ./client/filter.c	2009-05-03 16:49:25.000000000 +0000
+@@ -225,7 +225,7 @@
+ 	while (Running()) {
+ 		const uchar *block = m_TSBuffer->Get();
+ 		if (block) {
+-			u_short pid = (((u_short)block[1] & PID_MASK_HI) << 8) | block[2];
++			u_short pid = (((u_short)block[1] & TS_PID_MASK_HI) << 8) | block[2];
+ 			u_char tid = block[3];
+ 			bool Pusi = block[1] & 0x40;
+ 			int len = block[4];
+--- ./remux/tsremux.c.orig	2008-03-31 10:38:03.000000000 +0000
++++ ./remux/tsremux.c	2009-05-03 16:49:43.000000000 +0000
+@@ -20,7 +20,7 @@
+ 
+ int cTSRemux::GetPid(const uchar *Data)
+ {
+-  return (((uint16_t)Data[0] & PID_MASK_HI) << 8) | (Data[1] & 0xFF);
++  return (((uint16_t)Data[0] & TS_PID_MASK_HI) << 8) | (Data[1] & 0xFF);
+ }
+ 
+ int cTSRemux::GetPacketLength(const uchar *Data, int Count, int Offset)

@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xaos/xaos.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A real-time interactive fractal explorer
+
+[T] XaoS is a fast portable real-time interactive fractal zoomer. It
+[T] displays the Mandelbrot set (among other escape time fractals) and
+[T] allows you to zoom smoothly into the fractal. Various coloring modes
+[T] are provided for both the points inside and outside the selected
+[T] set. In addition, switching between Julia and Mandelbrot fractal types
+[T] and on-the-fly plane switching is provided. Features an ASCII output
+[T] mode, too.
+
+[U] https://xaos-project.github.io
+
+[A] Jan Hubicka
+[A] Zoltan Kovacs
+[M] Valentin Ziegler <valentin.ziegler@googlemail.com>
+
+[C] extra/scientific
+
+[L] GPL
+[V] 4.3.4
+
+[D] a49003e43c32c6d10e7b0cf92f1a012250f5b7237771a44358db2bfe xaos-4.3.4.tar.gz https://github.com/xaos-project/XaoS/archive/release-4.3.4/

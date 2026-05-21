@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/vdr-dxr3/vdr-dxr3.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] VDR Plugin: DXR3 decoder card as output device
+
+[T] Video Disc Recorder plugin: DXR3 decoder card as output device
+[T] Note: this plugin needs the dxr3/em8400 device driver!
+
+[U] https://dxr3plugin.sourceforge.net
+
+[A] Kai Moeller <dxr3_av@schluenss.de>
+[A] Stefan Schluenss <dxr3_osd@schluenss.de>
+[A] Christian Gmeiner <christian@visual-page.de>
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/multimedia
+[F] FPIC
+
+[L] GPL
+[V] 0.2.6
+[P] O -----5---9 611.000
+
+[D] 108637753e87dbc172fb7ee24537733bdad33436a244ef3111430776 vdr-dxr3-0.2.6.tgz https://prdownloads.sourceforge.net/sourceforge/dxr3plugin/
+
+. $base/package/vdr/*/vdr-plugin-conf.in
+hook_add postmake 5 "plugin_register dxr3"

@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfce4-diskperf-plugin/xfce4-diskperf-plugin.desc
+[COPY] Copyright (C) 2007-2012 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A XFCE disk performance panel plugin
+
+[T] This plugin displays instant disk/partition performance (bytes transfered
+[T] per second) for Linux kernels 2.6 or recent 2.4.s and NetBSD systems
+[T] (support added by Benedikt Meurer).
+
+[U] http://xfce-goodies.berlios.de/
+
+[A] Roger Seguin
+[M] Johan Boyé <linuxmasterjedi@free.fr>
+
+[C] extra/desktop/xfce
+[F] CROSS
+
+[L] BSD
+[V] 2.8.0
+
+[D] 72ff7a8d86ef4bd19914cae514cd2bb68ae88d44bbf3c8b80c293815 xfce4-diskperf-plugin-2.8.0.tar.xz https://archive.xfce.org/src/panel-plugins/xfce4-diskperf-plugin/2.8/
+
+. $base/package/xfce4/*/xfce4-conf.in
+var_append GCC_WRAPPER_APPEND ' ' -c?:-lm

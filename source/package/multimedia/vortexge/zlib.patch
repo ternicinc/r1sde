@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/vortexge/zlib.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- VortexGE/buildScript/configure/zlib-functions.inc.vanilla	2007-01-01 18:38:10.000000000 +0000
++++ VortexGE/buildScript/configure/zlib-functions.inc	2007-01-01 18:38:57.000000000 +0000
+@@ -30,7 +28,7 @@
+     fi
+   done
+ 
+-  for __Loc__ in $USRLibLoc $STDLibLoc; do
++  for __Loc__ in $USRLibLoc $STDLibLoc /lib* ; do
+     if [[ -e $__Loc__/libz.so ]]; then
+       export $2=$__Loc__
+       break;

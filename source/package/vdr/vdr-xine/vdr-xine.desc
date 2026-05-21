@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/vdr-xine/vdr-xine.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] VDR Plugin: software playback using xine output
+
+[T] Video Disc Recorder plugin: software playback using xine output
+
+[U] http://home.vrweb.de/~rnissl/
+
+[A] Reinhard Nißl <rnissl@gmx.de>
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/multimedia
+[F] FPIC
+
+[L] GPL
+[V] 0.9.4
+[P] O -----5---9 611.000
+
+[D] df028fa05ffd7ffde85825c7572562bbf51c61b7cd32c326764ccc4c vdr-xine-0.9.4.tar.gz https://github.com/vdr-projects/vdr-plugin-xine/archive/v0.9.4/
+
+. $base/package/vdr/*/vdr-plugin-conf.in
+
+vdr_plugin_pm() {
+	plugin_register "xine -r"
+	mkdir -p $PLUGINDIR/xine
+	cp -a data/* $PLUGINDIR/xine
+}
+hook_add postmake 5 vdr_plugin_pm

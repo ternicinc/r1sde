@@ -1,0 +1,53 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/systemd/systemd.desc
+[COPY] Copyright (C) 2020 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] System and Service Manager
+
+[T] systemd is a suite of basic building blocks for a Linux system. systemd
+[T] provides aggressive parallelization capabilities, uses socket and D-Bus
+[T] activation for starting services, offers on-demand starting of daemons,
+[T] keeps track of processes using Linux control groups, maintains mount and
+[T] automount points, and implements an elaborate transactional
+[T] dependency-based service control logic.
+
+[U] https://systemd.io/
+
+[A] Lennart Poettering
+[A] Kay Sievers
+[A] Harald Hoyer
+[A] Daniel Mack
+[A] Tom Gundersen
+[A] David Herrmann
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS INIT
+[K] + linux
+
+[L] LGPL
+[V] 260.1
+[P] O ?-2--5---9 136.000
+
+[CV-GROUP] systemd
+[D] b64cd3f66c06f4b5c830cdea1c2a318f3857f5c888614ffd0a724581 systemd-260.1.tar.gz https://github.com/systemd/systemd/archive/v260.1/
+
+#[ $prefix_auto = 1 ] && prefix= && set_confopt
+
+var_append mesonopt ' ' '-Ddefault-timeout-sec=30 -Ddefault-user-timeout-sec=30'
+var_append mesonopt ' ' '-Dtests=false -Dinstall-tests=false'
+
+[ "$SDECFG_LIBC" = musl ] && var_append mesonopt ' ' -Dlibc=musl
+
+if atstage toolchain; then
+	var_append mesonopt ' ' -Dhwdb=false
+else
+	pkginstalled pam &&
+		var_append mesonopt ' ' "-Dpamlibdir=$(pkgprefix libdir pam)/security -Dpamconfdir=/etc/pam.d"
+
+	hook_add postmake 5 "pkg_systemd_install_service $confdir/hostname.service"
+	hook_add postmake 5 'ln -sfv ../${prefix:+$prefix/}lib/systemd/systemd $root/sbin/init'
+	hook_add postmake 5 'ln -sfv /sbin/udevd $root/$prefix/lib/systemd/systemd-udevd'
+fi

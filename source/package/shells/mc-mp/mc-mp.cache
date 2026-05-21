@@ -1,0 +1,30 @@
+
+[TIMESTAMP] 1134074343 Thu Dec  8 21:39:03 2005
+[BUILDTIME] 20 (9)
+[SIZE] 1.95 MB, 163 files
+
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] file
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[DEP] gnutls
+[DEP] grep
+[DEP] groff
+[DEP] libdnet
+[DEP] libgcrypt
+[DEP] libgpg-error
+[DEP] libice
+[DEP] libprelude
+[DEP] libtasn1
+[DEP] linux-header
+[DEP] make
+[DEP] pam
+[DEP] sed
+[DEP] shadow
+[DEP] slang
+[DEP] sysfiles
+[DEP] tar
+[DEP] zlib

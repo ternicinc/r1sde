@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/uni2ascii/uni2ascii.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A tool that converts between Unicode and various ASCII representations
+
+[T] Uni2ascii and ascii2uni provide conversion in both directions between
+[T] UTF-8 Unicode and more than thirty 7-bit ASCII equivalents, including RFC
+[T] 2396 URI format and RFC 2045 Quoted Printable format, the representations
+[T] used in HTML, SGML, XML, OOXML, the Unicode standard, Rich Text Format,
+[T] POSIX portable charmaps, POSIX locale specifications, and Apache log
+[T] files. It can also convert between the escapes used for Unicode in
+[T] languages such as Ada, C, Common Lisp, Java, Pascal, Perl, Postscript,
+[T] Python, Scheme, and Tcl.
+
+[U] https://billposer.org/Software/uni2ascii.html
+
+[A] Bill Poser <billposer@alum.mit.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] GPL
+[V] 4.20
+
+[D] 79ef4ebb3abce0f113dfcb53f5aa81d9b5ec069db1cca17b17f57217 uni2ascii-4.20.tar.gz http://billposer.org/Software/Downloads/

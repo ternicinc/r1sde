@@ -1,0 +1,19 @@
+[TIMESTAMP] 1760541396 Wed Oct 15 17:16:36 2025
+[BUILDTIME] 100 (9)
+[SIZE] 9.27 MB, 308 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] icu4c
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] xapian-core

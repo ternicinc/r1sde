@@ -1,0 +1,28 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/rtai/parse-config-9
+# Copyright (C) 2004 - 2025 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+# TODO:
+# This file is obsolete and must be updated!
+
+if [ "$SDECFG_REALTIME" = "1" ]; then
+	if [ $SDECFG_RTAI_PATCH="rthal5g" ]; then
+		if [ $pkg = "linux24" ]; then
+		var_append patchfiles ' ' $base/package/*/rtai/kernel-patches/rthal5g.patch
+		fi
+		if [ $pkg = "linux24-src" ]; then
+		var_append patchfiles ' ' $base/package/*/rtai/kernel-patches/rthal5g.patch
+		fi
+	fi
+#	if [ $SDECFG_RTAI_PATCH="adeos" ]; then
+#		if [ $pkg = "linux24" ]; then
+#		var_append patchfiles ' ' $base/package/*7/rtai/kernel-patches/adeos.patch
+#		fi
+#		if [ $pkg = "linux24-src" ]; then
+#		var_append patchfiles ' ' $base/package/*/rtai/kernel-patches/adeos.patch
+#		fi
+#	fi
+fi

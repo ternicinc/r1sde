@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libgee/libgee.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Data-type extension library for Vala
+
+[T] Data-type extension library for Vala.
+
+[A] Jürg Billeter <j@bitron.ch>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+[E] opt gobject-introspection
+
+[L] LGPL
+[V] 0.20.8
+
+[P] X -----5---9 200.001
+
+[D] d52562a3574beff6a0367774ddb36631fc322c56d85ceb543ac6bd3c libgee-0.20.8.tar.xz http://ftp.gnome.org/pub/gnome/sources/libgee/0.20/

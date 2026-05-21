@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/yle-dl/yle-dl.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Download videos from Yle Areena
+
+[T] Command-line program for downloading media files from the two video
+[T] streaming services of the Finnish national broadcasting company Yle.
+
+[U] https://aajanki.github.io/yle-dl/index-en.html
+
+[A] Antti Ajanki
+[M] Aleksi Venäläinen <aleksi.venalainen@outlook.com>
+
+[C] extra/multimedia
+
+[E] add chardet
+[E] add ffmpeg
+[E] add hatchling
+[E] add pyidna
+[E] add pyrequests
+[E] add python-certifi
+[E] add python-configargparse
+[E] add python-flit-core
+[E] add python-lxml
+[E] add pyurllib3
+[E] add setuptools
+[E] add wget
+
+[L] GPL3
+[V] 20260520
+
+[D] a66ac53adc67cbd0e53181508596de6d22fd5fa7ef9c819a7c308c97 yle-dl-20260520.tar.gz https://github.com/aajanki/yle-dl/archive/refs/tags/releases/20260520/

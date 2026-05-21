@@ -1,0 +1,94 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/eclipse/eclipse.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Extensible universal IDE written in java
+
+[T] Eclipse is a kind of universal tool platform - an open extensible IDE
+[T] for anything and nothing in particular. The real value of Eclipse comes
+[T] from tool plug-ins that "teach" Eclipse how to work with things - java
+[T] files, web content, graphics, video, etc. Eclipse allows you to
+[T] independently develop tools that integrate with other people's tools
+[T] seamlessly.
+[T]
+[T] The Platform defines the set of frameworks and common services that
+[T] collectively make up "integration-ware" required to support the use of
+[T] Eclipse as a component model, as a rich client platform (RCP) and as a
+[T] comprehensive tool integration platform. These services and frameworks
+[T] include a standard workbench user interface model and portable native
+[T] widget toolkit, a project model for managing resources, automatic
+[T] resource delta management for incremental compilers and builders,
+[T] language-independent debug infrastructure, and infrastructure for
+[T] distributed multi-user versioned resource management.
+
+[U] https://www.eclipse.org/
+
+[A] Eclipse Foundation <news@eclipse.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] KAFFE
+
+[L] OpenSource
+[V] 4.39
+
+[D] c0bfdeda89760a78244172a415207f0704636d7b1dababb22495c52d ecjsrc-4.39.zip !https://ftp.snt.utwente.nl/pub/software/eclipse/eclipse/downloads/drops4/R-4.39-202602260420/repository-4.39.zip
+
+[ $prefix_auto -eq 1 ] && prefix=opt/eclipse && set_confopt
+
+# Arch conversion from t2 to the one used by eclipse.
+ECLIPSE_ARCH=$arch
+case "$ECLIPSE_ARCH" in
+    x86-64)
+	ECLIPSE_ARCH="x86_64" ;;
+
+    powerpc)
+	ECLIPSE_ARCH="ppc" ;;
+
+    powerpc*)
+	ECLIPSE_ARCH="ppc64" ;;
+esac
+
+# package doesn't contain a base dir
+custextract=eclipse_extract
+eclipse_extract() {
+	mkdir $pkg-$ver
+	var_append zipopt ' ' -d$pkg-$ver
+	autoextract_zip "$@"
+	}
+
+runmake=0
+
+ECJ="-Dbuild.compiler=org.eclipse.jdt.core.JDTCompilerAdapter"
+
+# create ECJ
+ANTOPT="$ECJ -lib \$PWD/jdtcoresrc/ecj.jar"
+hook_add premake 2 "ant -buildfile jdtcoresrc/compilejdtcorewithjavac.xml"
+hook_add premake 3 "ant -buildfile jdtcoresrc/compilejdtcore.xml $ANTOPT"
+
+# compile & install
+ANTOPT="$ECJ -lib \$PWD/ecj.jar -DinstallOs=linux -DinstallWs=gtk -DinstallArch=$ECLIPSE_ARCH"
+
+# Custom installation.
+eclipse_postmake() {
+	# Have eclipse put it all together.
+	ant $ANTOPT install
+
+	# Copy all stuff from the eclipse build to our prefix location.
+	# But to make sure any possible links stay intact we use
+	# tar | untar instead of cp.
+	(cd eclipse; tar -c * | tar -x -C /$prefix)
+
+	# and a $PATH friendly `eclipse`
+	cat <<-EOT > $bindir/eclipse
+	#!/bin/sh
+
+	exec \${0%/*}/../eclipse
+	EOT
+	chmod +x $bindir/eclipse
+}
+
+hook_add inmake   5 "ant $ANTOPT compilelibs"
+hook_add postmake 5 eclipse_postmake

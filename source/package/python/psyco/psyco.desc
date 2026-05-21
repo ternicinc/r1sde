@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/psyco/psyco.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Python specializing compiler
+
+[T] Psyco shows that it is possible to execute Python code at
+[T] speeds approaching that of fully compiled languages, by using
+[T] a technique called "specialization".
+[T] This extension module for the unmodified interpreter accelerates
+[T] user programs with little or no change in their sources.
+[T] It can increase speed by a factor that can be very interesting,
+[T] and an increase of 2 to 10 times is common.
+
+[U] https://psyco.sourceforge.net/
+
+[A] Armin Rigo <arigo@tunes.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] OpenSource
+[V] 1.6
+
+[D] 38251765b64a34fac6abce47afc554abe94b2806977b77ca7825ee14 psyco-1.6-src.tar.gz https://prdownloads.sourceforge.net/sourceforge/psyco/

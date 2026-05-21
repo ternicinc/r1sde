@@ -1,0 +1,21 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lua-lut/lua-lut.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Lubyk base module for Lua
+
+[T] Lubyk base module for Lua.
+
+[U] http://doc.lubyk.org/lut.html
+
+[A] Lua-lut Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+
+[V] 1.2.1
+[L] MIT
+
+[D] 1ab7e04734968adc67b9760ee0227d40495dced12108c24df8b202b1 lua-lut-1.2.1.tar.gz https://github.com/lubyk/lut/archive/REL-1.2.1/

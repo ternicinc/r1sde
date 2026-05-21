@@ -1,0 +1,21 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/sparc/config.in
+# Copyright (C) 2004 - 2025 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+#Description: SPARC (Sun, Ross, Texas Instruments, Cypress, Fujitsu, LEON)
+
+choice SDECFG_SPARC_OPT v8 \
+	v7		"Optimized for Cypress"		\
+	v8		"Optimized for Super/Hyper SPARC"		\
+	v9		"Optimized for UltraSPARC"	\
+	v9vis		"Optimized for UltraSPARC with VIS"	\
+	leon		"Optimized for LEON"		\
+	leon3		"Optimized for LEON 3"		\
+	leon5		"Optimized for LEON 5"		\
+
+SDECFG_ID="$SDECFG_ID-$SDECFG_SPARC_OPT"
+
+# . architecture/sparc/boot-config.in

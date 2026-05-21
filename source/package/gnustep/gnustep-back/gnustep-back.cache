@@ -1,0 +1,29 @@
+[TIMESTAMP] 1737978188 Mon Jan 27 12:43:08 2025
+[BUILDTIME] 6 (9)
+[SIZE] 1.34 MB, 39 files
+
+[DEP] bash
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] gnustep-base
+[DEP] gnustep-gui
+[DEP] gnustep-make
+[DEP] grep
+[DEP] gzip
+[DEP] libglvnd
+[DEP] libx11
+[DEP] libxcursor
+[DEP] libxext
+[DEP] libxfixes
+[DEP] libxrandr
+[DEP] libxrender
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

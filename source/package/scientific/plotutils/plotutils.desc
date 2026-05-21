@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/plotutils/plotutils.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library and programs for exporting 2-D vector graphics
+
+[T] The GNU plotutils package contains software for both programmers and
+[T] technical users. Its centerpiece is libplot, a powerful C/C++ function
+[T] library for exporting 2-D vector graphics in many file formats, both
+[T] vector and raster. It can also do vector graphics animations.
+
+[U] https://www.gnu.org/software/plotutils/
+
+[A] Robert Maier
+[A] Nick Tufillaro
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+[F] CROSS
+
+[L] GPL
+[V] 2.6
+
+[D] 0f000b0beb61d2a91026456fcf670ecbe183416b6feee602b33b1efe plotutils-2.6.tar.gz http://ftp.gnu.org/gnu/plotutils/

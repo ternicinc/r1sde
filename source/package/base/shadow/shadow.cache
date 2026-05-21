@@ -1,0 +1,24 @@
+[TIMESTAMP] 1737709550 Fri Jan 24 10:05:50 2025
+[BUILDTIME] 18 (9)
+[SIZE] 4.55 MB, 109 files
+
+[DEP] acl
+[DEP] attr
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] libcap
+[DEP] libeconf
+[OPT] libselinux
+[DEP] libxcrypt
+[DEP] linux-header
+[DEP] make
+[DEP] pam
+[DEP] sed
+[OPT] systemd
+[DEP] tar
+[DEP] xz

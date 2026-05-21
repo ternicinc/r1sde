@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/tolua++/tolua++.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An extended version of tolua, a tool to integrate C/C++ code with Lua
+
+[T] tolua++ is an extended version of tolua, a tool to integrate C/C++ code
+[T] with Lua. tolua++ includes new features oriented to c++ such as:
+[T] support for std::string as a basic type and support for class templates.
+
+[U] http://www.codenix.com/~tolua/
+
+[A] Waldemar Celes
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+
+[L] OpenSource
+[V] 1.0.93
+
+[D] 563fbd3a9cdf9c3a65eb474c25455fba98e3b8bb4ae13e93c5b69c89 toluapp-1.0.93.tar.gz https://github.com/LuaDist/toluapp/archive/1.0.93/

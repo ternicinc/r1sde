@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/hugo/hugo.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A fast and flexible static site generator
+
+[T] Hugo is a static HTML and CSS website generator written in Go.
+[T] It is optimized for speed, ease of use, and configurability.
+[T] Hugo takes a directory with content and templates (usually
+[T] in markdown) and renders them into a full HTML website.
+
+[U] https://gohugo.io/
+
+[A] The Hugo Authors
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/text
+[F] CROSS NO-PIE NO-LTO
+
+[L] MIT
+[V] 0.161.1
+
+[D] 122aee43273b08967b618e1714d12dafad2a80cb35436399149d5c4e hugo-0.161.1.tar.gz https://github.com/gohugoio/hugo/archive/v0.161.1/
+
+. $base/package/*/*/go-conf.in
+export CGO_ENABLED=1
+var_remove GCC_WRAPPER_REMOVE ' ' '-gdwarf*'
+var_append goconfopt ' ' "-v -o bin/$pkg --tags extended"
+hook_add postmake 5 "cp -v bin/$pkg $root$bindir"

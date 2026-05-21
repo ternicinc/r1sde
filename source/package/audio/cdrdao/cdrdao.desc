@@ -1,0 +1,53 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cdrdao/cdrdao.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Disk-At-One CD creation tool
+
+[T] Cdrdao creates audio and data CD-Rs in disk-at-once (DAO) mode
+[T] driven by a description file called toc-file. In DAO mode it is
+[T] possible to create non standard track pre-gaps that have other
+[T] lengths than 2 seconds and contain nonzero audio data.
+[T] Is is a CML tool like cdrecord, but also includes a gtk+ frontend
+[T] (gcdmaster).
+
+[U] https://cdrdao.sourceforge.net/
+
+[A] Andreas Mueller <mueller@daneb.ping.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem extra/multimedia extra/desktop/gnome
+[F] NO-LTO.gcc
+
+[E] opt lame
+
+[L] GPL
+[V] 1.2.6
+[P] X -----5---9 161.100
+
+[D] 943eff66ea44709eef6be4a8387a9eee4fa800d6069e2cce661db713 cdrdao-1.2.6.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/cdrdao/
+[D] 8b26cd4696d889e94f05437669c29d5c74c50944904e9c23f2f5b7d5 pccts133mr.zip http://www.polhode.com/
+
+install_pccts() {
+	cd pccts
+	unzip `match_source_file -p pccts`
+	cd pccts
+	$MAKE
+	for x in antlr dlg genmk sor
+		do cp bin/$x $bindir
+	done
+	mkdir -p $root/usr/include/pccts
+	cp h/* $root/usr/include/pccts
+	cd ..
+	cd ..
+}
+hook_add preconf 5 install_pccts
+
+var_append confopt ' ' --without-xdao
+
+# newer versions of gcc (3.3 on) issue an
+# error on inclusion of varargs.h
+var_append GCC_WRAPPER_APPEND ' ' -DPCCTS_USE_STDARG

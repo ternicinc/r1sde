@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rosetta/rosetta.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A handwriting recognition engine for the X Window System
+
+[T] Rosetta is a handwriting recognition engine for the X Window System.
+[T] It supports multi stroke recognition and recognition for whole words /
+[T] sentences. It captures characters written in a small window with a
+[T] pointing device (mouse, tablet or pen), recognizes them and passes the
+[T] relating keypress events to the actualy focused window.
+
+[U] https://www.handhelds.org/project/rosetta/
+
+[A] Ole Reinhardt <ole.reinhardt@kernelconcepts.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 2007-10-02
+[P] O -----5---9 128.000
+
+[D] 91499e5f08671ec2b93a1a86118d269884922095d4331d61e974bd37 rosetta-2007-10-02.tar.bz2 cvs://:pserver:anoncvs@cvs.handhelds.org:/cvs rosetta -D 2007-10-02

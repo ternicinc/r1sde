@@ -1,0 +1,26 @@
+[TIMESTAMP] 1752601906 Tue Jul 15 19:51:46 2025
+[BUILDTIME] 6 (9)
+[SIZE] 0.39 MB, 14 files
+
+[DEP] alsa-lib
+[DEP] at-spi2-core
+[DEP] audiofile
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] grep
+[DEP] gtk+2
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[DEP] pango
+[DEP] sed
+[DEP] tar

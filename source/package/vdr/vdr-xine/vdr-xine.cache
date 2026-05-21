@@ -1,0 +1,17 @@
+
+[TIMESTAMP] 1171400487 Tue Feb 13 21:01:27 2007
+[BUILDTIME] 5 (5) ERROR
+[SIZE] 0.01 MB, 6 files
+
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] vdr
+[DEP] xine-lib

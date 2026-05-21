@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/acroread/desktop-database.diff
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- Adobe/Reader8/Reader/intellinux/bin/xdg-desktop-menu.orig	2008-06-25 18:17:05.000000000 +0200
++++ Adobe/Reader8/Reader/intellinux/bin/xdg-desktop-menu	2008-09-03 10:01:40.000000000 +0200
+@@ -628,7 +628,7 @@
+         for x in `echo $PATH | sed 's/:/ /g'` /opt/gnome/bin; do
+            if [ -x $x/update-desktop-database ] ; then
+               DEBUG 1 "Running $x/update-desktop-database"
+-              eval '$x/update-desktop-database'$xdg_redirect_output
++              eval echo '$x/update-desktop-database'$xdg_redirect_output
+               return
+            fi
+         done

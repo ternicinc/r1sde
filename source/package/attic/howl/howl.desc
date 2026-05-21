@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/howl/howl.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Zeroconf networking IP networking
+
+[T] Branded as Rendezvous by Apple Computer, Inc., Zeroconf standardizes
+[T] networking protocols for delivering hassle-free ad-hoc networking,
+[T] service discovery and IP configuration.
+
+[U] http://www.porchdogsoft.com/products/howl/
+
+[A] Porchdogsoft
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 1.0.0
+[P] O -----5---9 164.000
+
+[CV-URL] http://www.porchdogsoft.com/products/howl/download.html
+
+[D] 86a82a2979179db05e5bd24e1aa2dc4a5ba836711e9f827f2e7779a9 howl-1.0.0.tar.gz http://www.porchdogsoft.com/download/

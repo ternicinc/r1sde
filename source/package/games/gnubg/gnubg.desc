@@ -1,0 +1,67 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnubg/gnubg.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Backgammon implementation - to lay and analys games and matches
+
+[T] It is currently a work-in-progress. So far it is able to play both
+[T] independent games and tournament matches, evaluate and roll out
+[T] positions, tune its own evaluation functions using either TD or
+[T] supervised training, maintain databases of positions for training
+[T] and other purposes, and more.
+[T]
+[T] It is driven by a command-line interface, and displays an ASCII
+[T] rendition of a board on text-only terminals, but also allows the
+[T] user to play games and manipulate positions with a GTK+ board window
+[T] where available. It is extensible on platforms which support Guile.
+[T]
+[T] It currently plays at about the level of a championship flight
+[T] tournament player (depending on its parameters and its luck in recent
+[T] games, it rates at around 2000 on FIBS, the First Internet Backgammon
+[T] Server -- at its best, it is in the top 5 of over 6000 rated players
+[T] there) and is gradually improving; it should be somewhat stronger than
+[T] this when released. Since almost all of the CPU time required during
+[T] supervised training is spent performing rollouts, and rollouts can
+[T] easily be performed in parallel, it is hoped that users will be able
+[T] to pool rollout results and collectively train it to a level stronger
+[T] than any individual could obtain.
+
+[U] https://www.gnu.org/software/gnubg/gnubg.html
+
+[A] Joseph Heled
+[A] Øystein Johansen
+[A] David Montgomery
+[A] Jørn Thyssen
+[A] Gary Wong
+
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+
+[L] GPL
+[V] 1_08_003
+
+[D] d8a82f73767e0c61c8a84364a4d1cb32f67957fb6e95477aeb3d5a57 gnubg-release-1_08_003.tar.gz https://git.savannah.gnu.org/cgit/gnubg.git/snapshot/
+
+autogen=1
+
+bindir=$root/$SDECFG_PKG_GAMES_BINDIR
+datadir=$root/$SDECFG_PKG_GAMES_DATADIR
+
+[ "$SDECFG_PKG_GNUBG_READLINE" == "1" ] &&
+  var_append confopt ' ' --with-readline
+[ "$SDECFG_PKG_GNUBG_GDBM" == "1" ] &&
+  var_append confopt ' ' --with-gdbm
+[ "$SDECFG_PKG_GNUBG_GTK" == "1" ] &&
+  var_append confopt ' ' --with-gtk
+[ "$SDECFG_PKG_GNUBG_GTK2" == "1" ] &&
+  var_append confopt ' ' --with-gtk2
+[ "$SDECFG_PKG_GNUBG_GTKEXTRA" == "1" ] &&
+  var_append confopt ' ' --with-gtkextra
+[ "$SDECFG_PKG_GNUBG_GUILE" == "1" ] &&
+  var_append confopt ' ' --with-guile
+[ "$SDECFG_PKG_GNUBG_SOUND" == "1" ] &&
+  var_append confopt ' ' --with-sound

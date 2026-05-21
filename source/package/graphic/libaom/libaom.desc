@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libaom/libaom.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The AOMedia encoder for AV1, an open source & royalty-free video codec
+
+[T] libaom-av1 is the AOMedia video encoder for AV1, an open source &
+[T] royalty-free video codec. libaom-av1 can save about 30% bitrate compared
+[T] to VP9 and H.265 / HEVC, and about 50% over H.264, while retaining the
+[T] same visual quality.
+
+[U] https://aomedia.org/
+
+[A] Alliance for Open Media
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] OBJDIR CROSS
+
+[E] add yasm
+[E] opt doxygen
+
+[L] BSD
+[V] 3.14.0
+[P] X -----5---9 124.600
+
+[D] bfb764d88678eab7b938fa762ef498e834e13965cb3367a73825bbeb aom-v3.14.0.tar.gz git+https://aomedia.googlesource.com/aom v3.14.0
+
+[ "$SDECFG_STATIC" = 1 ] || var_append cmakeopt ' ' -DBUILD_SHARED_LIBS=ON
+[ "$arch" = arm64 ] && var_remove GCC_WRAPPER_REMOVE ' ' "-march*"

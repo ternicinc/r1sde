@@ -1,0 +1,30 @@
+[TIMESTAMP] 1758036533 Tue Sep 16 17:28:53 2025
+[BUILDTIME] 2050 (9)
+[SIZE] 30.92 MB, 722 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] clang
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[OPT] doxygen
+[DEP] gawk
+[DEP] grep
+[DEP] libedit
+[DEP] libxml
+[DEP] linux-header
+[DEP] llvm
+[OPT] lua
+[DEP] make
+[DEP] ncurses
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] swig
+[DEP] tar
+[DEP] unifdef
+[DEP] xorgproto
+[DEP] xz
+[DEP] zlib

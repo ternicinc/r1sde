@@ -1,0 +1,42 @@
+[TIMESTAMP] 1775641684 Wed Apr  8 11:48:04 2026
+[BUILDTIME] 75 (9)
+[SIZE] 75.42 MB, 353 files
+
+[OPT] apache
+[OPT] apr
+[OPT] apr-util
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] bison
+[OPT] bzip2
+[DEP] coreutils
+[OPT] curl
+[DEP] diffutils
+[DEP] findutils
+[OPT] freetype
+[DEP] gawk
+[OPT] gettext
+[DEP] grep
+[OPT] libgd
+[OPT] libjpeg
+[OPT] libmcrypt
+[OPT] libmhash
+[OPT] libpng
+[OPT] libxml
+[DEP] linux-header
+[DEP] make
+[OPT] mysql
+[DEP] ncurses
+[OPT] openldap
+[OPT] openssl
+[OPT] pcre
+[DEP] pkgconfig
+[OPT] postgresql
+[OPT] re2c
+[DEP] sed
+[DEP] sqlite
+[DEP] tar
+[DEP] util-linux
+[DEP] xz
+[DEP] zlib

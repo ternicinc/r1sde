@@ -1,0 +1,25 @@
+[TIMESTAMP] 1740670247 Thu Feb 27 16:30:47 2025
+[BUILDTIME] 3 (9)
+[SIZE] 0.36 MB, 7 files
+
+[DEP] bash
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] e2fsprogs
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libgcrypt
+[DEP] libgpg-error
+[DEP] linux-header
+[DEP] lz4
+[DEP] lzo
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] xz
+[DEP] zlib
+[DEP] zstd

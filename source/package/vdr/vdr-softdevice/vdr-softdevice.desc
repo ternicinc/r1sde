@@ -1,0 +1,41 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/vdr-softdevice/vdr-softdevice.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] VDR Plugin: softdevice
+
+[T] Video Disc Recorder plugin: softdevice, create output devices with
+[T] software mpeg decoding using the system graphic card via Xv, DirectFB,
+[T] or Vidix.
+
+[U] http://softdevice.berlios.de
+
+[A] Stefan Lucke
+[A] Torgeir Veimo
+[A] Martin Wache
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/multimedia
+[F] FPIC
+
+[E] opt lame
+
+[L] GPL
+[V] 0.5.0
+
+[D] 3202956974 vdr-softdevice-0.5.0.tgz http://download.berlios.de/softdevice/
+
+. $base/package/vdr/*/vdr-plugin-conf.in
+
+vdr_plugin_pm() {
+	plugin_register "softdevice -L $VDRPLUGINDIR -vo xv:"
+}
+hook_add postmake 5 vdr_plugin_pm
+
+pkginstalled directfb || var_append confopt ' ' --disable-dfb
+pkginstalled vidix || var_append confopt ' ' --disable-vidix
+  var_append confopt ' ' "--with-vidix-path'' $root/$(pkgprefix vidix)"
+pkginstalled ffmpeg &&
+  var_append confopt ' ' "--with-ffmpeg-path'' $root/$(pkgprefix ffmpeg)"

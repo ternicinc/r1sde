@@ -1,0 +1,67 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/clearsilver/clearsilver.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A language-neutral HTML template system
+
+[T] Clearsilver is a fast, powerful, and language-neutral HTML template system.
+[T] In both static content sites and dynamic HTML applications, it provides a
+[T] separation between presentation code and application logic which makes
+[T] working with your project easier.
+
+[U] http://www.clearsilver.net/
+
+[A] Brandon Long
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] OpenSource
+
+[V] 0.11.0
+[P] X -----5---9 200.400
+
+[D] af3171c855b4572703a78f5180cd4d9b06dc40e3c93ad76ce902622f clearsilver-0.11.0.tar.gz https://github.com/blong42/clearsilver/archive/
+
+# permanently disabling ruby beacause of compile errors
+# disabling java and csharp module (mono support not testet till now)
+var_append confopt ' ' "--disable-ruby --disable-java --disable-csharp"
+
+# correcting apache path
+if pkginstalled apache; then
+	var_append confopt ' ' --with-apache=$SDECFG_PKG_APACHE_PREFIX
+	var_append CFLAGS ' ' -I/$SDECFG_PKG_APACHE_PREFIX/include
+	var_append CPPFLAGS ' ' -I/$SDECFG_PKG_APACHE_PREFIX/include
+	var_append LDFLAGS ' ' -L/$SDECFG_PKG_APACHE_PREFIX/lib
+	export CPPFLAGS CFLAGS LDFLAGS
+fi
+
+if pkginstalled zlib; then
+	var_append confopt ' ' --enable-compression
+else
+	var_append confopt ' ' --disable-compression
+fi
+
+# perl module
+if pkginstalled perl; then
+	var_append confopt ' ' --enable-perl
+else
+	var_append confopt ' ' --disable-perl
+fi
+
+# python module
+if pkginstalled python; then
+	PYVER="`python -V 2>&1 | sed 's/Python \([0-9]\.[0-9]\).*/\1/'`"
+	var_append confopt ' ' --enable-python
+	var_append confopt ' ' --with-python=/usr/bin/python$PYVER
+else
+	var_append confopt ' ' --disable-python
+fi
+
+# gettext
+if pkginstalled gettext; then
+	var_append confopt ' ' --enable-gettext
+fi

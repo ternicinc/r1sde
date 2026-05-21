@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/vdr/vdr-skin-conf.in
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+. $base/package/vdr/*/vdr-conf.in
+
+makeopt=
+makeinstopt=
+
+pkgprefix -t vdr-text2skin
+vdr_skin_pm() {
+	tar $taropt $(match_source_file -p $xsrctar) -C $PLUGINDIR/text2skin
+}
+hook_add postmake 5 'vdr_skin_pm'

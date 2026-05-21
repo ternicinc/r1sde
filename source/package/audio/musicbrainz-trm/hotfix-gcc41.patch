@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/musicbrainz-trm/hotfix-gcc41.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- trm-0.2.1/defs.h.orig	2006-03-08 06:47:34.000000000 +0100
++++ trm-0.2.1/defs.h	2006-03-08 06:48:37.000000000 +0100
+@@ -16,7 +16,7 @@
+     string fileName;
+     unsigned long duration;
+ 
+-    Metadata::Metadata(void) { trackNum = 0; };
++    Metadata(void) { trackNum = 0; };
+     Metadata &operator=(const Metadata &other)
+     {
+         artist = other.artist;

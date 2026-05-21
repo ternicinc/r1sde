@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/fim/fim.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Universal image viewer
+
+[T] FIM (Fbi IMproved) is a universal image viewer inspired by GNU/Linux
+[T] concepts. It is a highly customizable and scriptable image viewer for users
+[T] who are comfortable with software like the VIM text editor or the Mutt mail
+[T] user agent. It can display in full screen and you control it using the
+[T] keyboard.
+
+[U] https://www.nongnu.org/fbi-improved/
+
+[A] Michele Martone
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+[F] CROSS
+
+[E] opt libcaca
+[E] opt libwebp
+
+[L] GPL
+[V] 0.8-trunk
+
+[D] 70163a1894107d409f2f9e490e1ea727870de34d409b58cad3b4d3f9 fim-0.8-trunk.tar.gz http://download.savannah.nongnu.org/releases/fbi-improved/

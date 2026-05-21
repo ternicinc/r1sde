@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/opencl-clhpp/opencl-clhpp.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] OpenCL API C++ bindings
+
+[T] The interface is contained with a single C++ header file opencl.hpp and all
+[T] definitions are contained within the namespace cl.
+
+[U] https://github.com/KhronosGroup/OpenCL-SDK
+
+[A] OpenCL developers
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] APL
+
+[V] 2025.07.22
+[P] X -----5---9 109.425
+
+[D] 92aa9fb0981d8588433f0e65ad4b84932685b3af84d5b6380f72cc37 OpenCL-CLHPP-v2025.07.22.tar.gz https://github.com/KhronosGroup/OpenCL-CLHPP/archive/v2025.07.22/
+
+var_append cmakeopt ' ' '-DCLHPP_BUILD_TESTS=OFF -DBUILD_TESTING=OFF'
+var_append cmakeopt ' ' '-DBUILD_DOCS=OFF -DBUILD_EXAMPLES=OFF'

@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/jpilot/jpilot.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Palm pilot desktop software for Linux
+
+[T] J-Pilot is a full-featured desktop organizer application for the Palm
+[T] Pilot that runs under Linux and UNIX. It includes support for
+[T] datebooks, addresses, memos, todos, expenses, and has plugin support.
+[T] It uses the GTK+ libraries.
+
+[U] https://www.jpilot.org/
+
+[A] The jpilot Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office
+
+[L] GPL
+[V] 2.0.3
+
+[CV-TR] s/\./_/g
+[D] 7d5bb0614b123db3a7d3800aa06d0204297639404fbff1c9a8de76ec jpilot-2_0_3.tar.gz https://github.com/juddmon/jpilot/archive/v2_0_3/
+
+autogen=2
+pkginstalled gtk+2 && var_append confopt ' ' --enable-gtk2

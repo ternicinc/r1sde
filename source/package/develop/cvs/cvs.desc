@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cvs/cvs.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A version control system
+
+[T] CVS is a version control system, which allows you to keep old versions
+[T] of files (usually source code), keep a log of who, when, and why
+[T] changes occurred, etc., like RCS or SCCS. It handles multiple
+[T] developers, multiple directories, triggers to enable/log/control
+[T] various operations, and can work over a wide area network. The
+[T] following tasks are not included; they can be done in conjunction with
+[T] CVS but will tend to require some script-writing and software other
+[T] than CVS: bug-tracking, build management (that is, make and make-like
+[T] tools), and automated testing.
+
+[U] https://cvs.nongnu.org
+
+[A] The GNU Project <gnu@gnu.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/development
+[F] CROSS
+
+[L] GPL
+[V] 1.12.13
+[P] X -----5---9 111.800
+
+[D] d185778107a987eacef5b911de71d1df6554c93b7fb072f629f15de0 cvs-1.12.13.tar.bz2 https://ftp.gnu.org/gnu/non-gnu/cvs/source/feature/1.12.13/
+
+var_append CC_WRAPPER_APPEND ' ' -std=gnu17

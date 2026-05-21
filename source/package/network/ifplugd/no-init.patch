@@ -1,0 +1,19 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/ifplugd/no-init.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2004 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ifplugd-0.22/conf/Makefile.in~	2004-02-10 00:23:14.000000000 +0100
++++ ifplugd-0.22/conf/Makefile.in	2004-03-21 05:52:48.017446880 +0100
+@@ -294,8 +294,7 @@
+ 	sed -e 's,@sysconfdir\@,$(sysconfdir),g' -e 's,@sbindir\@,$(sbindir),g' $< > $@
+ 	chmod 755 $@
+ 
+-install-data-local: ifplugd.init
+-	$(INSTALL) -b -D -m755 ifplugd.init ${DESTDIR}${sysinitdir}/ifplugd
++install-data-local:
+ 	$(INSTALL) -b -D -m755 $(srcdir)/ifplugd.action ${DESTDIR}${sysconfdir}/ifplugd/ifplugd.action
+ 	$(INSTALL) -b -D -m644 $(srcdir)/ifplugd.conf ${DESTDIR}${sysconfdir}/ifplugd/ifplugd.conf
+ 

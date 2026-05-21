@@ -1,0 +1,45 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cheetah/cheetah.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Python-powered template engine and code generator
+
+[T] Cheetah is a Python-powered template engine and code generator.
+[T] It can be used as a standalone utility or it can be combined with other tools.
+[T] Cheetah has many potential uses, but web developers looking for a viable
+[T] alternative to ASP, JSP, PHP and PSP are expected to be its principle user group.
+[T]
+[T] Cheetah:
+[T] - generates HTML, SGML, XML, SQL, Postscript, form email, LaTeX, or any other
+[T] text-based format.
+[T] - cleanly separates content, graphic design, and program code. This leads to
+[T] highly modular, flexible, and reusable site architectures, shorter development
+[T] time, and HTML and program code that is easier to understand and maintain.
+[T] It is particularly well suited for team efforts.
+[T] - blends the power and flexibility of Python with a simple template language
+[T] that non-programmers can understand.
+[T] - gives template writers full access to any Python data structure, module,
+[T] function, object, or method in their templates.
+[T] - makes code reuse easy by providing an object-orientated interface to templates
+[T] that is accessible from Python code or other Cheetah templates. One template
+[T] can subclass another and selectively reimplement sections of it.
+[T] - provides a simple, yet powerful, caching mechanism that can dramatically
+[T] improve the performance of a dynamic website.
+[T] - compiles templates into optimized, yet readable, Python code.
+
+[U] https://www.cheetahtemplate.org/
+
+[A] The Cheetah Development Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[E] add python
+
+[L] OpenSource
+[V] 3.4.0
+[P] X -----5---9 200.000
+
+[D] af8bdb610a640325f52bd462863e44ee1566f8d0709cd1630efd05ba ct3-3.4.0.tar.gz https://github.com/CheetahTemplate3/cheetah3/releases/download/3.4.0/

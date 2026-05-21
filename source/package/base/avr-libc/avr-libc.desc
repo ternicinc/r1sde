@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/avr-libc/avr-libc.desc
+[COPY] Copyright (C) 2017 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A C library for Atmel AVR microcontrollers
+
+[T] AVR Libc is a Free Software project whose goal is to provide a high
+[T] quality C library for use with GCC on Atmel AVR microcontrollers.
+
+[U] https://www.nongnu.org/avr-libc/
+
+[A] Marek Michalkiewicz
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS LIBC
+[R] + avr
+
+[L] BSD
+[V] 2.3.1
+[P] X -1---5---9 101.700
+
+[CV-TR] s/\./_/
+[D] 55c4bc2c7890c8bb65f8a2765aa973e81fdb3d701fc3dca0b3748236 avr-libc-2.3.1.tar.bz2 https://github.com/avrdudes/avr-libc/releases/download/avr-libc-2_3_1-release/

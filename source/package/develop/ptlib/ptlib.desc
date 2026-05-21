@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ptlib/ptlib.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Network focused portable C++ class library providing high level functions
+
+[T] PTLib (Portable Tools Library) is a moderately large class library that has it's
+[T] genesis many years ago as PWLib (portable Windows Library), a method to product
+[T] applications to run on both Microsoft Windows and Unix systems. It has also been
+[T] ported to other systems such as Mac OSX, VxWorks and other embedded systems.
+
+[U] https://ekiga.org
+
+[A] Damien Sandras <dsandras@seconix.com>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/tool
+
+[L] MPL
+[V] 2.18.8
+[P] X -----5---9 180.000
+
+[D] 0b383cfd6fa96c2717cb069c7b2a7cd995f2c771fe72e4531a849a80 ptlib-2.18.8.tar.bz2 https://master.dl.sourceforge.net/project/opalvoip/v3.18%20Cygni/Stable%208/

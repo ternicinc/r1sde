@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openshot/openshot.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] OpenShot is an open source video editor
+
+[T] OpenShot Video Editor an easy to use, quick to learn, and surprisingly
+[T] powerful video editor. Take a quick look at some of our most popular
+[T] features and capabilities.
+
+[U] https://www.openshot.org/
+
+[A] Jonathan Thomas <jonathan@openshot.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 3.5.1
+
+[D] a5e48efa54f2778f24e268e162016f187a091cf48ba03de3ae01d1e8 openshot-qt-3.5.1.tar.gz https://github.com/OpenShot/openshot-qt/archive/v3.5.1/

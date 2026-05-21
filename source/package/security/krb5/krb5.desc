@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/krb5/krb5.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A network authentication protocol
+
+[T] Kerberos is a network authentication protocol. It is designed to
+[T] provide strong authentication for client/server applications by
+[T] using secret-key cryptography.
+
+[U] https://web.mit.edu/kerberos/dist/index.html
+
+[A] MIT
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+[F] CROSS
+
+[L] MIT
+[V] 1.22.2
+[P] X -----5---9 300.000
+
+[CV-URL] https://web.mit.edu/kerberos/dist/krb5/
+[D] fccfabd8e3a746183479b5e9574b259c4ad75d8cb80cb7b3cd4ca0cd krb5-1.22.2.tar.gz https://web.mit.edu/kerberos/dist/krb5/1.22/
+
+srcdir="*/src"
+var_append confopt ' ' "--enable-shared --with-system-et --with-system-ss"
+var_append GCC_WRAPPER_APPEND ' ' -std=gnu17

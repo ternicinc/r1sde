@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kxmlgui/kxmlgui.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] KDE Frameworks solution for user-configurable main windows
+
+[T] KXMLGUI provides a framework for managing menu and toolbar actions in an
+[T] abstract way. The actions are configured through a XML description and
+[T] hooks in the application code.
+
+[U] https://invent.kde.org/frameworks/kxmlgui
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[E] opt cups
+
+[L] GPL
+[V] 6.26.0
+[P] X -----5---9 162.917
+
+[CV-GROUP] kde-frameworks
+[D] dc8979a53146e26765a149fc9d373878f538da986713d98bf6d925ac kxmlgui-6.26.0.tar.xz https://download.kde.org/stable/frameworks/6.26/
+
+. $base/package/*/*/kde-conf.in

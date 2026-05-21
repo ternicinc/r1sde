@@ -1,0 +1,28 @@
+[TIMESTAMP] 1737677149 Fri Jan 24 01:05:49 2025
+[BUILDTIME] 30 (9)
+[SIZE] 20.27 MB, 84 files
+
+[DEP] bash
+[OPT] bash-completion
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] glib
+[DEP] gobject-introspection
+[DEP] grep
+[DEP] gudev
+[DEP] gzip
+[DEP] help2man
+[DEP] libmbim
+[DEP] libqrtr
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] perl
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar

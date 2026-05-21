@@ -1,0 +1,37 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/lazyfs/hotfix-install.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+--- ./Makefile.in.orig	2005-04-24 22:51:22.000000000 +0200
++++ ./Makefile.in	2005-04-24 22:54:40.000000000 +0200
+@@ -13,7 +13,7 @@
+ VPATH = @srcdir@
+ ROOT_PREFIX = @ROOT_PREFIX@
+ KERNEL_VERSION = @KERNEL_VERSION@
+-MODULEDIR = $(ROOT_PREFIX)/lib/modules/${KERNEL_VERSION}/kernel/fs/lazyfs
++MODULEDIR = $(DESTDIR)/lib/modules/${KERNEL_VERSION}/kernel/fs/lazyfs
+ 
+ ifeq ($(KERNEL_TYPE), Linux_2_6)
+ KOBJECT = ko
+@@ -36,19 +36,9 @@
+ MODFLAGS := -DMODULE -D__KERNEL__
+ 
+ install: lazyfs@COMMA_VERSION@.$(KOBJECT)
++	@echo Installing to ${MODULEDIR}
+ 	mkdir -p ${MODULEDIR}
+-	[ -n "${ROOT_PREFIX}" ] || ${MAKE} real-install
+-
+-real-install:
+-	@echo Installing to ${ROOT_PREFIX}/lib/modules/${KERNEL_VERSION}
+-	@echo "(current kernel uses $(ROOT_PREFIX)/lib/modules/`uname -r`)"
+ 	cp lazyfs@COMMA_VERSION@.$(KOBJECT) ${MODULEDIR}/
+-	/sbin/depmod -a
+-	@echo
+-	@echo '*** Testing kernel module ***'
+-	@echo
+-	@/sbin/modprobe lazyfs@COMMA_VERSION@ || echo "FAILED: Try 'dmesg' for help"
+-	@echo '(try "python tests/check.py" for more checking)'
+ 
+ uninstall:
+ 	rm -f ${MODULEDIR}/lazyfs@COMMA_VERSION@.${KOBJECT}

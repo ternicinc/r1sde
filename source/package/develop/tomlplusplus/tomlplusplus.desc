@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/tomlplusplus/tomlplusplus.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Header-only TOML config file parser and serializer for C++17
+
+[T] TOML config parser and serializer for C++.
+
+[U] https://marzer.github.io/tomlplusplus/
+
+[A] Mark Gillard <mark.gillard@outlook.com.au>
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/development
+[F] CROSS
+
+[L] MIT
+[V] 3.4.0
+[P] X -----5---9 150.000
+
+[D] a0d3f693a8df9b7cbc366a195c4c8df90df09ab7733c7967a687179d tomlplusplus-3.4.0.tar.gz https://github.com/marzer/tomlplusplus/archive/v3.4.0/

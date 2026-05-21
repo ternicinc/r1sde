@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libmd/libmd.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Message Digest functions from BSD systems
+
+[T] This library provides message digest functions found on BSD systems either
+[T] on their libc (NetBSD, OpenBSD) or libmd (FreeBSD, DragonflyBSD, macOS,
+[T] Solaris) libraries and lacking on others like GNU systems.
+
+[U] https://www.hadrons.org/software/libmd/
+
+[A] Guillem Jover
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] BSD
+[V] 1.2.0
+[P] X -----5---9 100.000
+
+[D] 8f9a61ca8160d6307a81ed5293eedc3bcc87cc8ded650cd4b2feccd2 libmd-1.2.0.tar.xz https://archive.hadrons.org/software/libmd/

@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xmodmap/xmodmap.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A utility for modifying keymaps and pointer button mappings in X
+
+[T] The xmodmap program is used to edit and display the keyboard modifier map
+[T] and keymap table that are used by client applications to convert event
+[T] keycodes into keysyms.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.0.11
+
+[D] 3b507efad00c12659710ae9d24060159846297b047b8ea656338fa57 xmodmap-1.0.11.tar.xz http://xorg.freedesktop.org/releases/individual/app/
+
+. package/*/*/modular-x-conf.in

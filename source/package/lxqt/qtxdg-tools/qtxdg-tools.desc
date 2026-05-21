@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/qtxdg-tools/qtxdg-tools.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Qt implementation of freedesktop.org xdg specifications
+
+[T] Qt implementation of freedesktop.org xdg specifications.
+
+[U] https://github.com/lxqt/qtxdg-tools
+
+[A] Libqtxdg Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] OBJDIR
+
+[V] 4.4.0
+[L] LGPL
+
+[D] 750aaa9774db4e379c1ca50622bcf648bee2c536bfeb76462dff2463 qtxdg-tools-4.4.0.tar.xz https://github.com/lxqt/qtxdg-tools/releases/download/4.4.0/

@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xchm/xchm.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A portable viewer for Microsofts ITSS/CHM files
+
+[T] Xchm is a cross-platform GUI front-end to chmlib to view Microsofts
+[T] ITSS/CHM files.
+[T]
+[T] Originally written for UNIX systems (Linux, *BSD, Solaris), xCHM has been
+[T] since ported to Mac OS X and Windows.
+[T]
+[T] Xchm can show the content tree if one is available, print pages, change
+[T] font face and size, remember bookmarks, display a searchable index, and
+[T] search for words in the current page and the whole book.
+
+[U] https://github.com/rzvncj/xCHM
+
+[A] Razvan Cojocaru <razvanco@gmx.net>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 1.39
+
+[D] bc9950465d8ef352149ff3abcd23bbf96357c75358ee40536af82b3c xchm-1.39.tar.gz https://github.com/rzvncj/xCHM/releases/download/1.39/

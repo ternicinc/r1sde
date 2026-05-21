@@ -1,0 +1,27 @@
+[TIMESTAMP] 1774047817 Sat Mar 21 00:03:37 2026
+[BUILDTIME] 8 (9)
+[SIZE] 2.52 MB, 20 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[OPT] libx11
+[OPT] libxcb
+[DEP] libxrandr
+[DEP] libxrender
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] vulkan-headers
+[OPT] wayland-protocols
+[DEP] xorgproto

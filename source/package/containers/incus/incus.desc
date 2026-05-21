@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/incus/incus.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Powerful system container and virtual machine manager
+
+[T] Incus is a modern, secure and powerful system container and virtual machine
+[T] manager.
+
+[U] https://linuxcontainers.org/incus/
+
+[A] Incus contributors
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/tool
+[F] CROSS
+
+[E] add lxc raft
+
+[L] APL
+[V] 7.0.0
+
+[D] 6f3d0c35e49a077187d6d824bf9cc1c33d35791a019a4dd23dd8a626 incus-7.0.0.tar.gz https://github.com/lxc/incus/archive/v7.0.0/
+
+. $base/package/*/*/go-conf.in
+rungo=0 makeinstopt=
+export CGO_ENABLED=1
+var_remove GCC_WRAPPER_REMOVE ' ' '-gdwarf*'

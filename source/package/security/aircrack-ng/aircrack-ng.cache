@@ -1,0 +1,29 @@
+[TIMESTAMP] 1737931443 Sun Jan 26 23:44:03 2025
+[BUILDTIME] 20 (9)
+[SIZE] 2.24 MB, 124 files
+
+[DEP] autoconf
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] hwloc
+[DEP] libbsd
+[DEP] libnl
+[DEP] libpcap
+[DEP] libtool
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] openssl
+[DEP] pcre
+[DEP] perl
+[DEP] sed
+[DEP] sqlite
+[DEP] tar
+[DEP] zlib

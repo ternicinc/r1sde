@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/fourier/hotfix-install-site.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- fourier-0.3.0/Makefile.vanilla	2007-11-30 15:58:00.000000000 +0100
++++ fourier-0.3.0/Makefile	2007-11-30 15:58:23.000000000 +0100
+@@ -1,7 +1,7 @@
+ #  Use gimptool-2.0 to sett these variables
+ GIMPTOOL=gimptool
+ PLUGIN_BUILD=$(GIMPTOOL) --build
+-PLUGIN_INSTALL=$(GIMPTOOL) --install-bin
++PLUGIN_INSTALL=$(GIMPTOOL) --install-admin-bin
+ GCC=g++
+ LIBS=$(shell pkg-config fftw3 --libs)
+ CFLAGS=-O2 $(shell pkg-config fftw3 --cflags)

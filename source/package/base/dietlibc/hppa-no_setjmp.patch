@@ -1,0 +1,28 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dietlibc/hppa-no_setjmp.patch
+# Copyright (C) 2018 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+No suprious _setjmp symbol, to fix pdksh.
+
+  - Rene Rebe <rene@exactcode.de>
+
+ld: main.o: in function `unwind':
+undefined reference to `_longjmp'
+
+--- dietlibc-0.33/parisc/setjmp.S.vanilla	2018-08-15 20:08:05.642636829 +0000
++++ dietlibc-0.33/parisc/setjmp.S	2018-08-15 20:08:27.826636495 +0000
+@@ -18,12 +18,9 @@
+ 
+ .weak setjmp
+ .type setjmp,@function
+-.globl _setjmp
+-.type _setjmp,@function
+ .globl __setjmp
+ .type __setjmp,@function
+ setjmp:
+-_setjmp:
+ __setjmp:
+ 	ldi 0, %r25
+ 

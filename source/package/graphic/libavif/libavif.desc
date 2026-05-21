@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libavif/libavif.desc
+[COPY] Copyright (C) 2020 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library for encoding and decoding .avif files
+
+[T] This library aims to be a friendly, portable C implementation of the AV1
+[T] Image File Format, as described here:
+
+[U] https://github.com/AOMediaCodec/libavif
+
+[A] Joe Drago
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] BSD
+[V] 1.4.1
+[P] X -----5---9 124.610
+
+[D] e23b739517a231178d4ea932f28bfadd8e80530d7f3d887e95aea444 libavif-1.4.1.tar.gz https://github.com/AOMediaCodec/libavif/archive/v1.4.1/
+
+var_append cmakeopt ' ' -DAVIF_BUILD_APPS=ON
+var_append cmakeopt ' ' '-DAVIF_CODEC_DAV1D=ON -DAVIF_CODEC_RAV1E=ON'

@@ -1,0 +1,15 @@
+
+[TIMESTAMP] 1279729347 Wed Jul 21 18:22:27 2010
+[BUILDTIME] 5 (5)
+[SIZE] 0.15 MB, 21 files
+
+[DEP] 00-dirtree
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] grep
+[DEP] make
+[DEP] samba
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar

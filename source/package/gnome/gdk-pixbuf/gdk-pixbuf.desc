@@ -1,0 +1,51 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gdk-pixbuf/gdk-pixbuf.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The GdkPixBuf image handling library
+
+[T] The GdkPixBuf library provides a number of features:
+[T] 	- Image loading facilities.
+[T] 	- Rendering of a GdkPixBuf into various formats:
+[T] 	 drawables (windows, pixmaps), GdkRGB buffers.
+[T]
+[T] In addition, this module also provides a little libgnomecanvaspixbuf
+[T] library, which contains a GNOME Canvas item to display pixbufs with
+[T] full affine transformations.
+
+[U] https://www.gtk.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development extra/desktop/gnome
+[F] CROSS
+
+[E] add shared-mime-info
+[E] opt libjpeg
+[E] opt libpng
+
+[L] LGPL
+[V] 2.44.6
+[P] X -----5---9 150.000
+
+[CV-URL] https://download.gnome.org/sources/gdk-pixbuf/cache.json
+[CV-FLAGS] ODD-UNSTABLE
+[D] 69e44f9d51ef1b6fea418eeb064208841834868672a0892717ceea3b gdk-pixbuf-2.44.6.tar.xz https://download.gnome.org/sources/gdk-pixbuf/2.44/
+
+. $base/package/*/*/gnome-conf.in
+
+atstage cross && var_append GCC_WRAPPER_INSERT ' ' "-c?:-Wl,-rpath,/$libdir"
+
+pkginstalled gobject-introspection || var_append mesonopt ' ' -Dintrospection=disabled
+pkginstalled docutils || var_append mesonopt ' ' -Dman=false
+pkginstalled libtiff || var_append mesonopt ' ' -Dtiff=disabled
+pkginstalled gtk-doc || var_append mesonopt ' ' -Dgtk_doc=false
+pkginstalled glycin || var_append mesonopt ' ' -Dglycin=disabled
+
+pkginstalled libjpeg && var_append mesonopt ' ' -Djpeg=disabled
+pkginstalled libjpeg-turbo && var_append mesonopt ' ' -Djpeg=enabled
+
+var_append mesonopt ' ' "-Dinstalled_tests=false -Dtests=false -Dothers=enabled"

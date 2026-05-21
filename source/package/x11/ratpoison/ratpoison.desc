@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ratpoison/ratpoison.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A window manager that lets you say good-bye to the rodent
+
+[T] Ratpoison is a simple window manager with no large library dependencies,
+[T] no fancy graphics, no window decorations, and no rodent dependence. It is
+[T] largely modeled after GNU Screen, which has done wonders in the virtual
+[T] terminal market. All interaction with the window manager is done through
+[T] keystrokes. Ratpoison has a prefix map to minimize the key clobbering
+[T] that cripples EMACS and other quality pieces of software. All windows
+[T] are maximized and kept maximized to avoid wasting precious screen space.
+
+[U] https://www.nongnu.org/ratpoison
+
+[A] Shawn <sabetts@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/windowmanager
+[F] CROSS
+
+[L] GPL
+[V] 1.4.9
+
+[D] db0b7fa06961f413f8374b653ed40b2531d9b279b8fbc45a22d770cc ratpoison-1.4.9.tar.xz http://savannah.nongnu.org/download/ratpoison/
+
+hook_add postinstall 3 "register_wm ratpoison Ratpoison $bindir/ratpoison"

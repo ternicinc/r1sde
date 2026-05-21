@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gpart/gpart.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Partition table recovery tool
+
+[T] A tool which tries to guess the primary partition table of a PC-type hard
+[T] disk in case the primary partition table in sector 0 is damaged, incorrect
+[T] or deleted. The guessed table can be written to a file or device.
+[T] Supported (guessable) filesystem or partition types: DOS/Windows FAT, Linux
+[T] ext2 and swap, OS/2 HPFS, Windows NTFS, FreeBSD and Solaris/x86 disklabels,
+[T] Minix FS, QNX 4 FS, Reiser FS, LVM physical volumes, BeOS FS, SGI XFS.
+
+[U] http://www.stud.uni-hannover.de/user/76201/gpart/
+
+[A] Michail Brzitwa <michail@brzitwa.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+[F] CROSS
+
+[L] GPL
+[V] 0.1h
+
+[D] fd98d922f9df63e81da5d8833aa9130a4d6c60aec1be7e50ffe6514f gpart-0.1h.tar.gz http://www.stud.uni-hannover.de/user/76201/gpart/
+
+var_append makeinstopt ' ' prefix=$root/$prefix

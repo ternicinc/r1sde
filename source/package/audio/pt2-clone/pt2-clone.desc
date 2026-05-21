@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pt2-clone/pt2-clone.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A portable ProTracker 2 clone
+
+[T] Aims to be a highly accurate clone of the classic ProTracker 2.3D software
+[T] for Amiga. Has additional audio filters and audio mixer improvements to
+[T] make it sound close to a real Amiga computer.
+
+[U] https://16-bits.org/pt2.php
+
+[A] Olav Sørensen
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] BSD
+[V] 1.88
+
+[D] da7924abe5c127c2f70cde758913258d7f2c8b648ebafe370887526a pt2-clone-1.88.tar.gz https://github.com/8bitbubsy/pt2-clone/archive/refs/tags/v1.88/
+
+runcmake=0 runmake=0
+hook_add inmake 5 "bash make-linux.sh"
+hook_add postmake 5 "install release/other/pt2-clone $root$bindir/"

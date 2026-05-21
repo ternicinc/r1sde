@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/fuse/fuse.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A simple user-space filesystem interface for Linux
+
+[T] FUSE provides a simple interface for userspace programs to export a
+[T] virtual filesystem to the Linux kernel. FUSE also aims to provide a
+[T] secure method for non privileged users to create and mount their own
+[T] filesystem implementations.
+
+[U] https://github.com/libfuse/libfuse
+
+[A] Miklos Szeredi <mszeredi@inf.bme.hu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+[F] CROSS NO-LTO.clang
+
+[L] GPL
+[V] 3.18.2
+[P] X -----5---9 136.500
+
+[D] 2ecd4b0a5a0f006c4ff405e9f3274be2190165d422cf0742124d2324 fuse-3.18.2.tar.gz https://github.com/libfuse/libfuse/archive/
+
+var_remove GCC_WRAPPER_REMOVE ' ' -Werror # allow detection of clang symver support
+var_append mesonopt ' ' '-Dexamples=false -Dtests=false'

@@ -1,0 +1,19 @@
+[TIMESTAMP] 1739227538 Mon Feb 10 23:45:38 2025
+[BUILDTIME] 4 (5)
+[SIZE] 1.48 MB, 557 files
+
+[DEP] asciidoc
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] docbook-xml
+[DEP] docbook-xsl
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] kmod
+[DEP] libxslt
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar

@@ -1,0 +1,23 @@
+[TIMESTAMP] 1759857819 Tue Oct  7 19:23:39 2025
+[BUILDTIME] 55 (9)
+[SIZE] 0.91 MB, 42 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] fmt
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] gzip
+[DEP] libmpdclient
+[DEP] linux-header
+[OPT] lirc
+[DEP] meson
+[DEP] ncurses
+[DEP] ninja
+[DEP] openssl
+[DEP] pcre2
+[DEP] sed
+[DEP] tar

@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/joblib/joblib.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Lightweight pipelining with Python functions
+
+[T] Joblib is a set of tools to provide lightweight pipelining in Python. In
+[T] particular: transparent disk-caching of functions and lazy re-evaluation
+[T] (memoize pattern), easy simple parallel computing.
+
+[U] https://joblib.readthedocs.io/
+
+[A] Gael Varoquaux <gael.varoquaux@normalesup.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] BSD
+[V] 1.5.3
+[P] X -----5---9 110.265
+
+[D] 89c13721cf1689cd4901f7039519f33918c9e38c0c5378771d6cb842 joblib-1.5.3.tar.gz https://files.pythonhosted.org/packages/source/j/joblib/

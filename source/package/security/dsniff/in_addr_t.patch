@@ -1,0 +1,21 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dsniff/in_addr_t.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+The code includes netinet/in.h which has in_addr_t, use it for checking as
+well and thus fix compilation.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- dsniff-2.4b1-sined-2/configure.vanilla	2006-10-04 15:39:33.000000000 +0000
++++ dsniff-2.4b1-sined-2/configure	2006-10-04 15:39:56.000000000 +0000
+@@ -5320,6 +5320,7 @@
+   cat >conftest.$ac_ext <<_ACEOF
+ #line $LINENO "configure"
+ #include "confdefs.h"
++#include <netinet/in.h>
+ $ac_includes_default
+ #ifdef F77_DUMMY_MAIN
+ #  ifdef __cplusplus

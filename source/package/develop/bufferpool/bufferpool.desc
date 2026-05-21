@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/bufferpool/bufferpool.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Memory management library for multimedia streaming apps
+
+[T] Bufferpool is a memory management library used in feng, libnemesi,
+[T] felix. It provides a nice way to store rtp packets efficiently and
+[T] share them across applications.
+
+[U] https://web.archive.org/web/20101231010339/http://lscube.org/projects/bufferpool
+
+[A] Alessandro Molina <amol.wrk@gmail.com>
+[A] Dario Gallucci <dario.gallucci@polito.it>
+[A] Luca Barbato <lu_zero@gentoo.org>
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] LGPL
+[V] 0.0.4
+[P] X -----5---9 400.000
+
+[D] f1a6baa0395e84017291de232f08b88396b03a7727911864c83bc007 bufferpool-0.0.4.tar.gz http://cgit.lscube.org/cgit.cgi/bufferpool/snapshot/

@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libproxy/libproxy.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library that provides automatic proxy configuration management
+
+[T] libproxy is a library that provides automatic proxy configuration management.
+
+[U] https://github.com/libproxy/libproxy
+
+[A] Nathaniel McCallum <nathaniel@natemccallum.com>
+[A] Alex Panait <kippled@gmail.com>
+[A] Dominique Leuenberger <dominique-libproxy@leuenberger.net>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/development
+[F] CROSS
+
+[E] add smartypants
+[E] opt gi-docgen
+
+[L] LGPL
+[V] 0.5.12
+[P] X -----5---9 127.390
+
+[D] 482cc9973ac7083be1da49d4e71f4838921de0900db3adfec3713bdf libproxy-0.5.12.tar.gz https://github.com/libproxy/libproxy/archive/refs/tags/0.5.12/
+
+var_append mesonopt ' ' -Dtests=false
+pkginstalled vala || var_append mesonopt ' ' -Dvapi=false
+pkginstalled gobject-introspection || var_append mesonopt ' ' '-Dintrospection=false -Ddocs=false'

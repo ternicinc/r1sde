@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/hpgl-distiller/hotfix-cross-cc.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- hpgl-distiller-0.9.1/Makefile.vanilla	2007-08-17 11:36:45.000000000 +0200
++++ hpgl-distiller-0.9.1/Makefile	2007-08-17 11:36:54.000000000 +0200
+@@ -1,7 +1,7 @@
+ all: hpgl-distiller
+ 
+ hpgl-distiller: hpgl-distiller.c
+-	gcc -Wall hpgl-distiller.c -o hpgl-distiller
++	$(CC) -Wall hpgl-distiller.c -o hpgl-distiller
+ 
+ install: hpgl-distiller
+ 	cp hpgl-distiller /usr/local/bin

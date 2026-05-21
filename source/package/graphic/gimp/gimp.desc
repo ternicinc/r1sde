@@ -1,0 +1,60 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gimp/gimp.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The GNU Image Manipulation Program
+
+[T] The GIMP is the GNU Image Manipulation Program. It is used to edit and
+[T] manipulate images. It can load and save a variety of image formats
+[T] and can be used to convert between formats.
+[T]
+[T] Gimp can also be used as a paint program. It features a set of drawing and
+[T] painting tools such as airbrush, clone, pencil, and paint brush. Painting
+[T] and drawing tools can be applied to an image with a variety of paint modes.
+[T] It also offers an extensive array of selection tools like rectangle,
+[T] ellipse, fuzzy select, bezier select, intelligent scissors, and select by
+[T] color.
+[T]
+[T] Gimp offers a variety of plugins that perform a variety of image
+[T] manipulations. Examples include bumpmap, edge detect, gaussian blur,
+[T] and many others.
+[T]
+[T] In addition, Gimp has several scripting extension which allow for advanced
+[T] non-interactive processing and creation of images.
+
+[U] https://www.gimp.org
+
+[A] The GIMP project
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia extra/desktop/gnome
+
+[E] add gnome-icon-theme
+[E] add poppler-data
+[E] add pygobject
+[E] opt aalib
+[E] opt gi-docgen docbook-xml docbook-xsl
+[E] opt ghostscript
+[E] opt ilmbase openexr
+[E] opt libbacktrace
+[E] opt libheif
+[E] opt libwebp
+[E] add mypaint-brushes
+
+[L] GPL
+[V] 3.2.4
+
+[D] f224aea77b4ffea035b292f20f45e832ca5b95b3e0bd969c36b266c0 gimp-3.2.4.tar.xz https://download.gimp.org/pub/gimp/v3.2/
+
+. $base/package/*/*/gnome-conf.in
+
+var_append mesonopt ' ' -Dcheck-update=no
+var_append mesonopt ' ' -Denable-default-bin=enabled
+var_remove GCC_WRAPPER_APPEND ' ' -c?:-s
+
+# fix gimp loading at the end of the build
+export GI_TYPELIB_PATH=${libdir}/girepository-1.0:/usr/${libdir##*/}/girepository-1.0

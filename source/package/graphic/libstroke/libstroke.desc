@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libstroke/libstroke.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A stroke (pushes) interface library
+
+[T] LibStroke is a stroke interface library. Strokes are motions
+[T] of the mouse that can be interpreted by a program as a command. Strokes
+[T] are used extensively in CAD programs. I fell in love with them when I was
+[T] using the Mentor Graphics CAD tools and the CAD tools internally developed
+[T] by Intel. I am writing this library so that others can see how useful
+[T] strokes can be and so that more programs take advantage of this extremely
+[T] natural human-computer interface.
+
+[U] https://web.archive.org/web/20160316025242/http://www.etla.net/libstroke/
+
+[A] Mark Willey <willey@etla.net>
+[A] Dan Nicolaescu <dann@ics.uci.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS AUTOMAKE-QUIRK
+
+[L] GPL
+[V] 0.5.1
+[P] X -----5---9 135.600
+
+[D] 7107a93811b04f19cd7b1a2bc474e1b4afde17a017f805e1c5656d3d libstroke-0.5.1.tar.gz https://web.archive.org/web/20160316025242/http://www.etla.net/libstroke/libstroke-0.5.1.tar.gz
+
+var_append GCC_WRAPPER_INSERT ' ' "-I$root$(pkgprefix includedir libx11)"
+var_append GCC_WRAPPER_INSERT ' ' "-L$root$(pkgprefix libdir libx11)"

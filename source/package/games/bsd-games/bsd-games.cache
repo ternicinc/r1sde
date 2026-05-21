@@ -1,0 +1,24 @@
+
+[TIMESTAMP] 1279522477 Mon Jul 19 08:54:37 2010
+[BUILDTIME] 35 (5)
+[SIZE] 5.46 MB, 215 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] bison
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] flex
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] miscfiles
+[DEP] ncurses
+[DEP] openssl
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar

@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-lz4/python-lz4.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] LZ4 Bindings for Python
+
+[T] This package provides python bindings for the LZ4 compression library.
+
+[U] https://github.com/python-lz4/python-lz4
+
+[A] Jonathan Underwood <jonathan.underwood@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] BSD
+[V] 4.4.5
+[P] X -----5---9 200.000
+
+[D] 333b2c046bd92fd798a1b6c0cd16a5f594cc6037276ea47c1d2ec768 lz4-4.4.5.tar.gz https://files.pythonhosted.org/packages/source/l/lz4/

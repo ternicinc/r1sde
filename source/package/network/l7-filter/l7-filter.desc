@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/l7-filter/l7-filter.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Application Layer Packet Classifier for Linux
+
+[T] This is a classifier for the Linux kernel's Netfilter subsystem that
+[T] identifies packets based on application layer data (OSI layer 7).
+[T] This means that it can classify packets as HTTP, FTP, Gnucleus,
+[T] eDonkey2000, etc, regardless of port. Our classifier complements
+[T] existing ones that match on address, port numbers and so on.
+[T]
+[T] Our intent is for l7-filter to be used in conjunction with Linux QoS
+[T] to do bandwith arbitration ("packet shaping").
+
+[U] https://l7-filter.sourceforge.net/
+
+[A] Matthew Strait <quadong@users.sf.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 2.22
+[P] O
+
+[D] 663261763 l7-protocols-2009-05-28.tar.gz https://prdownloads.sourceforge.net/sourceforge/l7-filter/
+[D] 1262243031 netfilter-layer7-v2.22.tar.gz https://prdownloads.sourceforge.net/sourceforge/l7-filter/
+
+var_append makeinstopt ' ' PREFIX=$root

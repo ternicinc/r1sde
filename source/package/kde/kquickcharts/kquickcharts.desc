@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kquickcharts/kquickcharts.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A QtQuick plugin providing high-performance charts
+
+[T] The Quick Charts module provides a set of charts that can be used from
+[T] QtQuick applications. They are intended to be used for both simple display
+[T] of data as well as continuous display of high-volume data
+
+[U] https://invent.kde.org/frameworks/kquickcharts
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 6.26.0
+[P] X -----5---9 162.900
+
+[CV-GROUP] kde-frameworks
+[D] 651f6b84cbabceec7578483bfdef6ea0b803c64fdacd4940c501da61 kquickcharts-6.26.0.tar.xz https://download.kde.org/stable/frameworks/6.26/
+
+. $base/package/*/*/kde-conf.in

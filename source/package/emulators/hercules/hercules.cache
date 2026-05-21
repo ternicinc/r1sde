@@ -1,0 +1,17 @@
+[TIMESTAMP] 1758490302 Sun Sep 21 23:31:42 2025
+[BUILDTIME] 250 (9)
+[SIZE] 13.30 MB, 210 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libcap
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] zlib

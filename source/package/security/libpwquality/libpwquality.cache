@@ -1,0 +1,21 @@
+[TIMESTAMP] 1737676132 Fri Jan 24 00:48:52 2025
+[BUILDTIME] 4 (9)
+[SIZE] 0.53 MB, 83 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] cracklib
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] pam
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar

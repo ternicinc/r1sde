@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gfnrename/gfnrename.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GFnRename is a simple utility to rename multiple files
+
+[T] gFnRename is a simple utility to rename multiple files.
+[T] There are options to add prefixes and/or postfixes, add or change
+[T] extensions, delete or replace characters, and convert to lowercase
+[T] or uppercase.
+
+[U] https://home.hccnet.nl/paul.schuurmans/
+
+[A] Paul Schuurmans
+[M] René Rebe <rene@exactco.de>
+
+[L] GPL
+[C] extra/filesystem
+
+[V] 0.6
+
+[D] f124679b94be2b1a78af7fdc92bf9fd53ebb3d8cd13c21b275fc0c2f gfnrename-0.6.tar.gz https://distro.ibiblio.org/easyos/source/oe/dunfell/gfnrename-0.6.tar.gz
+
+autogen=1

@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/jq/jq.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A JSON command line utility
+
+[T] jq is like sed for JSON data - you can use it to slice and filter and
+[T] map and transform structured data with the same ease that sed, awk,
+[T] grep and friends let you play with text.
+
+[U] https://stedolan.github.io/jq/
+
+[A] Stephen Dolan <mu@netsoc.tcd.ie>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] OpenSource
+[V] 1.8.1
+
+[D] 5472664ba790156ee2427d2432edf0d886b48e0a4c84010a6abb7196 jq-1.8.1.tar.gz https://github.com/stedolan/jq/releases/download/jq-1.8.1/

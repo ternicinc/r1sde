@@ -1,0 +1,26 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/avr32/config.in
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+#Description: AVR32 (Atmel)
+
+choice SDECFG_AVR32_OPT default \
+	default		"No special optimization"	\
+	ap7000		"Optimized for AP7000"
+
+choice SDECFG_AVR32_BOARDDEF none \
+	none            "Board config not available, use defconfig" \
+	atstk1002       "atstk1002 evaluation board" \
+	atstk1003       "atstk1003 evaluation board" \
+	atstk1004       "atstk1004 evaluation board" \
+	atstk1006       "atatk1006 evaluation board" \
+	atngw100        "atngw100 Network Gateway"
+
+if [ $SDECFG_AVR32_OPT != default ]; then
+	SDECFG_ID="$SDECFG_ID-$SDECFG_AVR32_OPT"
+fi
+
+# Force uClibc system library
+SDECFGSET_LIBC='uclibc'

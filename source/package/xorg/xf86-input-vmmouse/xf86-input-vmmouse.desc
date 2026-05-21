@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-input-vmmouse/xf86-input-vmmouse.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Xorg driver for the VMWare virtual mouse
+
+[T] The VMMouse driver enables support for the special VMMouse protocol
+[T] that is provided by VMware virtual machines to give absolute pointer
+[T] positioning.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS NO-LTO.gcc
+
+[L] OpenSource
+[V] 13.2.0
+
+[R] + alpha x86 x86-64
+
+[D] 7569f3ca3bf7018854f5cadf158700723744dc546010a26234cef87c xf86-input-vmmouse-13.2.0.tar.xz http://xorg.freedesktop.org/releases/individual/driver/
+
+. package/*/*/modular-x-conf.in

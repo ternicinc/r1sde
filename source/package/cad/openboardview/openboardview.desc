@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openboardview/openboardview.desc
+[COPY] Copyright (C) 2015 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Software for viewing .brd files
+
+[T] Linux SDL/ImGui edition software for viewing .brd files, intended as a
+[T] drop-in replacement for the "Test_Link" software.
+
+[U] https://openboardview.org
+
+[A] Chloridite and OpenBoardView contributors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/cad
+
+[L] MIT
+[V] 9.95.2
+
+[D] 672f0d81bac1b1fe3325a06bf0d05abdb2ff5518b1d873371b76793c OpenBoardView-9.95.2.tar.gz https://github.com/OpenBoardView/OpenBoardView/archive/9.95.2/
+
+#var_append cmakeopt ' ' '-DKICAD_REPO_NAME=stable -DKICAD_BUILD_VERSION=$ver -DKICAD_SKIP_BOOST=1'
+makeinstopt=
+hook_add postmake 5 "install src/openboardview/openboardview $root$bindir/"

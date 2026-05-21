@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/sysfiles/etc_inputrc.txt
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+set meta-flag on
+set convert-meta off
+set input-meta on
+set output-meta on
+
+"\e[1~": beginning-of-line		# Home
+"\e[2~": overwrite-mode			# Insert
+"\e[3~": delete-char			# Delete
+"\e[4~": end-of-line			# End/K7
+"\e[5~": history-search-backward 	# Previous
+"\e[6~": history-search-forward		# Next

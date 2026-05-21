@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pcmciautils/pcmciautils.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The (new) Linux PCMCIA (PC-Card) Utilities
+
+[T] PCMCIAutils contains hotplug scripts and initialization tools necessary
+[T] to allow the PCMCIA subsystem to behave (almost) as every other
+[T] hotpluggable bus system (e.g. USB, IEEE1394).
+
+[U] https://www.kernel.org/pub/linux/utils/kernel/pcmcia/pcmcia.html
+
+[A] Dominik Brodowski <linux@dominikbrodowski.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+
+[L] GPL
+[V] 018
+[P] X -----5---9 163.700
+
+[D] a52acfcb95f51617cb5cc94cefa62627cc65f9b3f4775e5f99454e5c pcmciautils-018.tar.xz http://kernel.org/pub/linux/utils/kernel/pcmcia/
+
+var_append makeopt ' ' 'LD=$CC HOSTCC=$HOSTCC'
+var_append makeinstopt ' ' 'etcdir=$sysconfdir mandir=$mandir'

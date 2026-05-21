@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/twolame/twolame.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An MPEG Audio Layer 2 encoder
+
+[T] TwoLAME is an optimised MPEG Audio Layer 2 (MP2) encoder based on
+[T] tooLAME by Mike Cheng, which in turn is based upon the ISO dist10 code
+[T] and portions of LAME. TwoLAME includes libtwolame, a fully thread-safe
+[T] shared library with an API very similar to LAME's.
+
+[U] https://www.twolame.org/
+
+[A] Nicholas J Humfrey <njh@nospam.aelius.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] LGPL
+[V] 0.4.0
+[P] X -----5---9 122.500
+
+[D] 210473b0c7a0a4b2ae83e576e48b0f5af257996426dd78bcf16714ea twolame-0.4.0.tar.gz https://download.sourceforge.net/twolame/

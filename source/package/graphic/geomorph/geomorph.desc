@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/geomorph/geomorph.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An height field generator and editor for Linux
+
+[T] Geomorph is an height field generator and editor for Linux. An heightmap is
+[T] a kind of topographic map, a 2d projection of a 3d landscape.
+[T] Geomorph generates square images and shows a 3d preview of the resulting
+[T] landscape. The resulting 2d image can be processed with a tool like, Povray
+[T] for instance, for rendering the landscape.
+[T] It's main features are, for now, an environment allowing multiple documents
+[T] in multiple windows, output in PNG format with 16bpc, from 128x128 to 4k res
+[T] work, a fractal pen for drawing irregular surfaces, pens for drawing smooth
+[T] strokes, craters, faults, cracks and fissures, as well as image editing and
+[T] transform tools. Tools for erosion, quantization ("terraces"), cityscapes,
+[T] etc. an opengl preview, and povray preview.
+
+[U] https://geomorph.sourceforge.net/frame_en.html
+
+[A] Patrice St-Gelais <patrstg@users.sourceforge.net>
+[M] luisf <trb7@megamail.pt>
+
+[C] extra/graphic
+
+[L] GPL
+[V] 0.63
+
+[D] 500644faa432ebabc3887ed46c31afa9160eb37dee3bfdf32ec98103 geomorph-0.63.tar.gz https://prdownloads.sourceforge.net/sourceforge/geomorph/
+
+docdir="$root$datadir/$pkg/$ver"

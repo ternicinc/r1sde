@@ -1,0 +1,19 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/metamail/70_mm-2.7-sendmail.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -Nur mm2.7.orig/src/bin/showexternal mm2.7/src/bin/showexternal
+--- mm2.7.orig/src/bin/showexternal	2003-05-14 23:58:27.000000000 +0200
++++ mm2.7/src/bin/showexternal	2003-05-14 23:59:21.000000000 +0200
+@@ -219,7 +219,7 @@
+ 	echo "" >> "$NEWNAME"
+ 	sed -e 1,/^\$/d < $bodyfile >> "$NEWNAME"
+ 	echo "" >> "$NEWNAME"
+-	/usr/lib/sendmail -t  < "$NEWNAME"
++	/usr/sbin/sendmail -t  < "$NEWNAME"
+ 	if ($status) then
+ 	    echo sendmail failed
+ 	    cd ${METAMAIL_TMPDIR}

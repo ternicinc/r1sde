@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/box86/box86.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Linux Userspace x86 Emulator with a twist, targeted at ARM Linux devices
+
+[T] Box86 lets you run x86 Linux programs (such as games) on non-x86 Linux
+[T] systems, like ARM (host system needs to be 32bit little-endian).
+
+[U] https://github.com/ptitSeb/box86
+
+[A] Sebastien Chevalier
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/emulator
+[F] CROSS
+[R] + arm
+
+[L] MIT
+[V] 0.3.8
+
+[D] 4260877a2c7fab1f87a5e0c8aaa517765388c915b49c891565ef3575 box86-0.3.8.tar.gz https://github.com/ptitSeb/box86/archive/v0.3.8/

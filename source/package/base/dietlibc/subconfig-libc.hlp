@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dietlibc/subconfig-libc.hlp
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2004 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+SDECFG_DIETLIBC_DYN
+  This option controls whether to link binaries dynamically with the
+  dietlibc. Normally you link programs statically with dietlibc. The
+  dynamic linker of dietlibc is only a proof of concept and only
+  available for x86, x86-64 and ARM.
+
+SDECFG_DIETWANT_SYSENTER
+  On i386, Linux has an alternate syscall method since 2002/12/16.
+  It is usually twice as fast, but it's only in the 2.5/2.6++ kernel
+  and was known to break User Mode Linux!

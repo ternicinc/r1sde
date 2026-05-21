@@ -1,0 +1,34 @@
+[TIMESTAMP] 1772489204 Mon Mar  2 23:06:44 2026
+[BUILDTIME] 110 (9)
+[SIZE] 7.91 MB, 127 files
+
+[DEP] automake
+[DEP] avfs
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] dbus
+[DEP] diffutils
+[DEP] file
+[DEP] findutils
+[DEP] flex
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] grep
+[DEP] imlib2
+[DEP] libx11
+[DEP] libxft
+[DEP] libxinerama
+[DEP] libxrender
+[DEP] linux-header
+[DEP] lua
+[DEP] m4
+[DEP] make
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] xorgproto

@@ -1,0 +1,175 @@
+#!/usr/bin/env bash
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/scripts/Commit
+# Copyright (C) 2004 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+force=
+svnopt=
+addtxt=
+fold=
+untested=
+cache=
+root=
+
+locations=
+while [ "$1" ]; do
+	case "$1" in
+	-f)	force=1 ;;
+	-u|-untested) untested=1 ;;
+	-svn-opt)
+		svnopt="$2"; shift ;;
+	-add-txt)
+		addtxt="$2"; shift ;;
+	-cache)
+		((cache++)) ;;
+	-root)
+		root="$2"; shift ;;
+	-fold)
+		fold=1 ;;
+	*)
+		[ ! -e "$1" -a -e `echo package/*/$1` ] &&
+			x=`echo package/*/$1` || x="$1"
+		locations="$locations $x"
+		;;
+	esac
+	shift
+done
+
+if [ -z "$locations" ]; then
+	echo "Usage $0 [ -cache ] [ -fold ] package | files"
+	exit
+fi
+
+cleanup() {
+	local ret=$?
+	rm $$.{log,diff}
+	return 0
+}
+trap cleanup EXIT
+
+fold_desc() {
+	# save out [T], fold and insert with appropriate newlines
+	sed -n '/\[T\] \(.*\)/{s//\1/; H}; ${x; s/\n/ /g; s/^ //; p}' "$1" |
+		fold -w 76 -s | sed 's/^/[T] /; s/  */ /g; s/ $//' > x
+	sed "/^\[I\].*/{ s//&\n/; r x
+}; /^\[T\]/d" $1 | sed '/^$/{n;/^$/d}' > x.2
+	cat x.2 > $f
+	rm -f x x.2
+}
+
+trap 'echo "Got SIGINT (Ctrl-C)."; exit 1' INT
+
+# Copy .caches if requested and changed significantly
+#
+[ "$cache" ] &&
+for p in $locations; do
+	[[ $p != *package/*/* ]] && continue
+	p=${p#*package/*/}
+	p=${p%%/*}
+	d=$(echo package/*/$p)
+	# changed enough?
+	if [ -e $d/$p.cache -a -e $root/var/adm/cache/$p ]; then
+		# changes of DEP/OPT content, if not enforced
+		changes=$(diff -u $d/$p.cache $root/var/adm/cache/$p | sed -n '/^[+-]\[...\]/p' | wc -l)
+		[ $changes -lt 3 -a $cache -lt 2 ] && continue
+	fi
+	cp -vf $root/var/adm/cache/$p $d/$p.cache
+	addtxt=" and .cache$addtxt"
+	unset p d
+done
+
+# CopyPatch and Checksum and CkSumPatch
+#
+svn st $locations | grep '^\(A\|M\)' | cut -c8- | while read f; do
+	if [ -f "$f" ]; then
+		scripts/Create-CopyPatch $f | patch -p0
+		if [[ $f = *.desc ]]; then
+		    [ "$fold" ] && fold_desc $f
+		    if grep '\[D\] \+0 \+' $f; then
+			pkg=${f%.desc} pkg=${pkg##*/}
+			scripts/Create-CkSumPatch $pkg | patch -p0
+		    fi
+		fi
+	fi
+done
+
+visualize_warnings() {
+	# do not highlight just single space diff lines
+	sed '/^[+ -]./ {
+		s/\([[ \r\t]]*\)$/\o033[0;41m\1\o033[0m/
+		s/\(   *\)/\o033[0;41m\1\o033[0m/
+	    }'
+}
+
+echo "Diff:"
+svn diff $locations | tee $$.diff | visualize_warnings
+
+# the grep -v === is a hack - somehow the svn === lines confuse awk ... ?!?
+grep -v === $$.diff | gawk "
+	BEGIN { FS=\"[ /]\" }
+
+	/^\+\+\+ / { pkg = \$4 }
+	{ if (sub(/^\+\[I\]/,\" -\") ) { info = \$0 } }
+
+	/^\-\[V\] / { oldver=\$2 }
+	/^\+\[V\] / {
+		newver=\$2
+		if (oldver)
+		  print \"\t* update \" pkg \" (\" oldver \" -> \" newver \")\"
+		else {
+		  print \"\t* add \" pkg \" (\" newver \")\" info
+		}
+		oldver=\"\"; newver=\"\"; info=\"\"
+	}
+
+	/^\-\[P\] / { oldprio=\$4 }
+	/^\+\[P\] / {
+		newprio=\$4
+		if (oldprio)
+		  print \"\t* change \" pkg \" priority (\" oldprio \" -> \" newprio \")\"
+		oldprio=\"\"; newprior=\"\"
+	}
+
+" > $$.log
+
+[ "$untested" ] && sed -i -z 's/\n$/, untested\n/g' $$.log
+
+[ "$addtxt" ] && sed -i "\$s|\$|$addtxt|" $$.log
+
+commit() {
+	svn commit $svnopt $locations --file $$.log || exit $?
+}
+
+if [ -s $$.diff ]; then
+	quit=0
+	until [ $quit -ne 0 ]; do
+
+		echo -e "\nLog:"
+		if [ -s $$.log ]; then
+			cat $$.log
+			commit=",c=commit"
+		else
+			echo -e "\tEmpty Log File!"
+			commit=
+		fi
+		
+		echo -en "\nLog ok (q=quit,e=edit,d=diff,s=status$commit)? "
+		[ ! "$force" ] && read in || in="commit"
+
+		case "$in" in
+		  c*)	if [ -n "$commit" ]; then
+		  		commit; quit=1
+			fi ;;
+		  d*)	cat $$.diff | visualize_warnings | less -R ;;
+		  s*)	svn st $locations ;;
+		  e*)	${EDITOR:-vi} $$.log ;;
+		  q*)	quit=1 ;;
+		  *)	echo "Excuse me?"
+		esac
+	done
+else
+	echo -e "\nNo changes detected at:$locations"
+	svn st $locations
+fi

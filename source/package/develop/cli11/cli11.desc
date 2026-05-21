@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cli11/cli11.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Command line parser for C++11
+
+[T] CLI11 is a command line parser for C++11 and beyond that provides a rich
+[T] feature set with a simple and intuitive interface.
+
+[U] https://cliutils.github.io/CLI11/book/
+
+[A] University of Cincinnati
+[A] Henry Schreiner
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] OBJDIR
+
+[E] opt doxygen
+
+[L] OpenSource
+[V] 2.6.2
+[P] X -----5---9 109.400
+
+[D] 518fee358239aa65c5bc2b2ca8d255d76264b1894527f0fedf9df2e0 cli11-2.6.2.tar.gz https://github.com/CLIUtils/CLI11/archive/refs/tags/v2.6.2/
+
+var_append cmakeopt ' ' "-DCLI11_BUILD_TESTS=OFF -DCLI11_BUILD_EXAMPLES=OFF"

@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/iceauth/iceauth.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] ICE authority file utility
+
+[T] The iceauth program is used to edit and display the authorization
+[T] information used in connecting with ICE.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.0.11
+[P] X -----5---9 112.600
+
+[D] 03a10c20c6a93e94b756ee394cb7098570a95d8a4e358a4c7e4e5c6f iceauth-1.0.11.tar.xz http://xorg.freedesktop.org/releases/individual/app/
+
+. package/*/*/modular-x-conf.in

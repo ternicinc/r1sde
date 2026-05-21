@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mdadm/mdadm.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Raid Configuration Tool
+
+[T] mdadm is a tool for creating, managing and monitoring
+[T] device arrays using the "md" driver in Linux, also
+[T] known as Software RAID arrays
+
+[A] Neil Brown
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+[F] CROSS DIETLIBC
+
+[L] GPL
+[V] 4.6
+
+[D] 4a0facc6f3af4faa3a95e7dc4e57aea17fdd4b7b54860c3ef165a85b mdadm-4.6.tar.gz https://github.com/md-raid-utilities/mdadm/archive/
+
+unset STRIP # used in Makefile for install -s
+var_append makeopt ' ' RUN_DIR=/var/run/mdadm
+var_append makeinstopt ' ' RUN_DIR=/var/run/mdadm

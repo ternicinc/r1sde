@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/twain-dsm/twain-dsm.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] TWAIN Data Source Manager
+
+[T] The TWAIN Data Source Manager (DSM). The DSM manages the interactions
+[T] between TWAIN applications and TWAIN Data Sources for the acquisition
+[T] of images from scanners and cameras.
+
+[U] https://twain.org
+
+[A] The TWAIN Working Group
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+[F] CROSS
+
+[L] LGPL
+[V] 2.5.1
+
+[D] e20d807abf9da4d07fa53242f920d863f5e011aa9aea7144b99df39f twaindsm-2.5.1.tar.gz https://github.com/twain/twain-dsm/archive/v2.5.1/
+
+srcdir="twain-dsm-*/TWAIN_DSM/src/"
+hook_add prepatch 5 "sed -i 's/ lib$/ ${libdir##*/}/' CMakeLists.txt"

@@ -1,0 +1,27 @@
+[TIMESTAMP] 1753631639 Sun Jul 27 17:53:59 2025
+[BUILDTIME] 6 (9)
+[SIZE] 0.22 MB, 12 files
+
+[DEP] autoconf
+[DEP] automake
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] imlib2
+[DEP] libx11
+[DEP] libxext
+[DEP] libxft
+[DEP] libxrender
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] perl
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

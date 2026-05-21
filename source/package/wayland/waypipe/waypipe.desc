@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---.
+[COPY] t2/package/*/waypipe/waypipe.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---.
+
+[I] Proxy for Wayland clients
+
+[T] Proxy for Wayland clients.
+
+[U] https://gitlab.freedesktop.org/mstoeckl/waypipe
+
+[A] Waypipe Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+
+[E] opt ffmpeg scdoc
+
+[V] 0.11.0
+[L] MIT
+
+[D] b639e1016afbef270f926d3ec7ab027ee1cdf093cc69ae7433f5819c waypipe-v0.11.0.tar.gz https://gitlab.freedesktop.org/mstoeckl/waypipe/-/archive/v0.11.0/
+
+hook_add premake 5 'cargo fetch --locked'

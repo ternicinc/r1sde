@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/autopano-sift/autopano-sift.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A helper utility for automated panorama image generation
+
+[T] Autopano-SIFT looks at your images and compares information about the
+[T] image content to order them correctly. Together with programs like
+[T] hugin and enblend, you can create top-quality panorama images.
+
+[U] https://www.nowozin.net/sebastian/tu-berlin-2006/autopano-sift
+
+[A] Sebastian Nowozin <nowozin@cs.tu-berlin.de>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 2.4
+
+[D] 19f443d419fe7e892bc0ede1e1025777b12f967da799b5c94d2eec16 autopano-sift-2.4.tar.gz https://www.nowozin.net/sebastian/tu-berlin-2006/autopano-sift/
+
+. $base/package/*/mono/mono.in
+
+atps_main() {
+    make clean all
+    rm -f bin/*win32.exe
+    cp -vf bin/*.exe $root$bindir/
+    cp -vf bin/*.dll $root$libdir/
+}
+
+srcdir="autopano-sift-$ver/src"
+runmake=0
+hook_add postmake 5 atps_main

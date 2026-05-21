@@ -1,0 +1,43 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnutls/gnutls.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Development Library for TLS applications
+
+[T] GnuTLS is a project that aims to develop a library which provides
+[T] a secure layer, over a reliable transport layer. Currently the
+[T] GnuTLS library implements the proposed standards by the IETF's TLS
+[T] working group.
+[T]
+[T] Quoting from RFC2246 - the TLS 1.0 protocol specification:
+[T] "The TLS protocol provides communications privacy over the Internet.
+[T] The protocol allows client/server applications to communicate in a way that
+[T] is designed to prevent eavesdropping, tampering, or message forgery."
+
+[U] https://www.gnutls.org/
+
+[A] Simon Josefsson <jas@gnutls.org>
+[A] Nikos Mavroyanopoulos <nmav@gnutls.org>
+[A] Fabio Fiorina <fiorinaf@gnutls.org>
+[A] Timo Schulz <twoaday@freakmail.de>
+[A] Andrew McDonald <andrew@mcdonald.org.uk>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security extra/development
+[F] CROSS LATOMIC.sparc NO-LTO.clang
+
+[E] opt libidn2
+[E] opt tpm2-tss
+
+[L] LGPL
+[V] 3.8.13
+[P] X -----5---9 127.300
+
+[D] 99a9270141bdb8f7a54cae778257f88c7d35f9a80e9e4d989f76fa2b gnutls-3.8.13.tar.xz http://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/
+
+var_append confopt ' ' --with-default-trust-store-file=/etc/ssl/certs/ca-certificates.crt
+var_append confopt ' ' --without-p11-kit
+pkginstalled guile || var_append confopt ' ' --disable-guile
+atstage native || var_append confopt ' ' --disable-doc

@@ -1,0 +1,40 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sqlite2/sqlite2.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An Embeddable SQL Database Engine
+
+[T] SQLite is a C library that implements an embeddable SQL database
+[T] engine. Programs that link with the SQLite library can have SQL database
+[T] access without running a separate RDBMS process. The distribution comes
+[T] with a standalone command-line access program (sqlite) that can be used
+[T] to administer an SQLite database and which serves as an example of how
+[T] to use the SQLite library.
+[T]
+[T] SQLite is not a client library used to connect to a big database
+[T] server. SQLite is the server. The SQLite library reads and writes directly
+[T] to and from the database files on disk.
+
+[U] https://www.sqlite.org/
+
+[A] drh@hwaci.com
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/database
+[F] CROSS
+
+[L] PublicDomain
+[V] 2.8.17
+[P] X -----5---9 132.300
+
+[CV-FLAGS] NO-AUTO
+[D] 8b9c700475c723dbe05d7b92d179482e0a22f10c7fe72aded95affb3 sqlite-2.8.17.tar.gz https://www.sqlite.org/
+
+var_append GCC_WRAPPER_APPEND ' ' -std=gnu11
+
+atstage native || export config_BUILD_CC=$BUILD_CC config_TARGET_CC=$CC
+atstage native || hook_add preconf 5 "echo 'ac_cv_header_readline_h=yes' >> config.cache"
+pkginstalled tcl || var_append confopt ' ' --without-tcl

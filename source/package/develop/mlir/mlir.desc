@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mlir/mlir.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Multi-Level Intermediate Representation
+
+[T] The MLIR project is a novel approach to building reusable and extensible
+[T] compiler infrastructure. MLIR aims to address software fragmentation,
+[T] improve compilation for heterogeneous hardware, significantly reduce the
+[T] cost of building domain specific compilers, and aid in connecting existing
+[T] compilers together.
+
+[U] https://mlir.llvm.org/
+
+[A] University of Illinois/NCSA
+[A] Chris Lattner <clattner@apple.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] OBJDIR CROSS NO-LTO.gcc
+[R] - alpha arc avr32 alpha blackfin cris m68k microblaze nios2
+
+[L] BSD
+[V] 22.1.5
+[P] X -----5---9 150.000
+
+[CV-GROUP] llvm-project
+[D] 539b0fa857272b2b18ad9b9e58e11d4e48e0f1c807ec375d5ca91913 llvm-project-22.1.5.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-22.1.5/
+
+srcdir=*/mlir
+
+[ "$SDECFG_STATIC" = 1 ] || var_append cmakeopt ' ' '-DBUILD_SHARED_LIBS=ON -DLLVM_BUILD_LLVM_DYLIB=ON'
+var_append cmakeopt ' ' '-DMLIR_BUILD_MLIR_C_DYLIB=ON -DMLIR_LINK_MLIR_DYLIB=ON'
+var_append cmakeopt ' ' '-DLLVM_BUILD_UTILS=ON -DLLVM_BUILD_TOOLS=ON'

@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/madplay/madplay.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A MPEG audio decoder program
+
+[T] This package contains the mpg123 compatible CML tool utilizing the high
+[T] quality MAD decoder implementation.
+
+[U] https://www.mars.org/home/rob/proj/mpeg/
+
+[A] Rob Leslie <rob@mars.org>
+[M] René Rebe <rene@exactco.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 0.15.2b
+
+[D] 7d4b072d1176b267327470585c4aa8af9ed0edf74dc859c7672436a1 madplay-0.15.2b.tar.gz ftp://ftp.mars.org/pub/mpeg/

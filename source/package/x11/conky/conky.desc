@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/conky/conky.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Free, light-weight system monitor for X
+
+[T] Conky is a free, light-weight system monitor for X, that displays any
+[T] information on your desktop. Conky is licensed under the GPL and
+[T] runs on Linux and BSD.
+
+[U] https://conky.cc/
+
+[A] a lot, see AUTHORS file
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 1.23.0
+
+[D] 20c32abc385e4f3e19aecb7edd1778073c736761823f2732b19d369d conky-1.23.0.tar.gz https://github.com/brndnmtthws/conky/archive/refs/tags/v1.23.0/
+
+var_append cmakeopt ' ' '-DCMAKE_POLICY_VERSION_MINIMUM=3.5'

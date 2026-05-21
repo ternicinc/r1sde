@@ -1,0 +1,19 @@
+[TIMESTAMP] 1752263799 Fri Jul 11 21:56:39 2025
+[BUILDTIME] 14 (9)
+[SIZE] 3.98 MB, 352 files
+
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] boehm-gc
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libpaper
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar

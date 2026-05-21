@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ktexteditor/ktexteditor.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] KDE Frameworks with advanced embeddable text editor
+
+[T] KTextEditor provides a powerful text editor component that you can embed in
+[T] your application, either as a KPart or using the KF6::TextEditor library.
+
+[U] https://invent.kde.org/frameworks/ktexteditor
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 6.26.0
+[P] X -----5---9 182.920
+
+[CV-GROUP] kde-frameworks
+[D] 8794af4248f70677a1dd91627ebfba396904d0b25dec01afbc7ccf32 ktexteditor-6.26.0.tar.xz https://download.kde.org/stable/frameworks/6.26/
+
+. $base/package/*/*/kde-conf.in
+
+atstage cross && var_append cmakeopt ' ' -DENABLE_KAUTH=OFF

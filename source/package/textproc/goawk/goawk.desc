@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/goawk/goawk.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A POSIX-compliant AWK interpreter written in Go
+
+[T] Awk is a text processor that scans each input file for lines that match any
+[T] of a set of patterns. With each pattern there can be an associated action
+[T] that will be performed when a line of a file matches the pattern.
+
+[U] https://github.com/benhoyt/goawk
+
+[A] Ben Hoyt
+[M] Tomas Glozar <tglozar@gmail.com>
+
+[C] base/tool
+
+[L] MIT
+[V] 1.31.0
+
+[D] c5edcfab865e52dd12c5a9614e5400558bc4e4d707e4eeaa0ac9aab5 goawk-1.31.0.tar.gz https://github.com/benhoyt/goawk/archive/v1.31.0/
+
+runmake=0
+hook_add premake 2 'go build -x'
+hook_add postmake 2 "strip goawk && install -c goawk $root$bindir"

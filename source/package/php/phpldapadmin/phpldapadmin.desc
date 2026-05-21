@@ -1,0 +1,50 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/phpldapadmin/phpldapadmin.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Web-based LDAP administration tool
+
+[T] phpLDAPadmin is a web-based LDAP administration tool for managing your
+[T] LDAP server. With it you can browse your LDAP tree, view LDAP schema,
+[T] perform searches, create, delete, copy and edit LDAP entries. You can
+[T] even copy entries between servers.
+
+[U] https://phpldapadmin.sourceforge.net/
+
+[A] David Smith <davidsmith@byu.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] GPL
+[V] 2.3.11
+
+[D] cd61e3a4642f1ad15a29528e8c789e9289ce2fcab9eec416288c7a06 phpldapadmin-2.3.11.tar.gz https://github.com/leenooks/phpLDAPadmin/archive/2.3.11/
+
+# use the apache prefix
+. $base/package/*/apache/apache.conf
+
+phpldapadmin_main() {
+	local x="phpLDAPadmin"
+
+	mkdir -vp $datadir/$x
+	mkdir -vp $sysconfdir/$x
+	
+	mv -vf config/config.php.example $sysconfdir/$x/config.php-dist
+	ln -svnf $sysconfdir/$x/config.php $datadir/$x/
+
+	tar -cof - * | tar -C $datadir/$x -xvf -
+
+	cat <<- EOT > $sysconfdir/$x.conf-dist
+		Alias /$x $datadir/$x
+		<Directory $datadir/$x>
+			DirectoryIndex index.php
+		</Directory>
+	EOT
+
+}
+runmake=0
+hook_add postmake 5 phpldapadmin_main
+createdoc=0

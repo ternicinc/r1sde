@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lxappearance/lxappearance.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A desktop-independent theme switcher for GTK+
+
+[T] It's a desktop-independent theme switcher for GTK+.
+
+[U] https://lxde.org/
+
+[A] LXDE team http://lxde.org/
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/desktop/lxde
+
+[L] GPL
+[V] 0.6.4
+[P] X -----5---9 220.016
+
+[D] 7d7aa4eccdd35a9ca57df8483603326b7e244dca22fa78e95adbc30a lxappearance-0.6.4.tar.gz https://github.com/lxde/lxappearance/archive/0.6.4/
+
+. $base/package/lxde/*/lxde-conf.in
+autogen=1

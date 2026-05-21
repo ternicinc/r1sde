@@ -1,0 +1,40 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libcamera/libcamera.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An open source camera stack and framework for Linux, Android, and ChromeOS
+
+[T] A complex camera support library for Linux, Android, and ChromeOS
+[T] the Linux media community is collaborating with the industry to develop a
+[T] camera stack that is open-source-friendly while still protecting vendor
+[T] core IP. libcamera was born out of that collaboration and offers modern
+[T] camera support to Linux-based systems, including traditional
+[T] Linux distributions, ChromeOS and Android.
+
+[U] https://libcamera.org/
+
+[A] libcamera Team
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] base/tool
+[F] CROSS
+
+[E] add libyaml
+[E] add pyyaml ply
+[E] opt doxygen graphviz gtest
+[E] opt libpisp
+[E] opt unwind
+
+[R] - sparc sparc64
+
+[L] GPL
+[V] 0.7.1
+[P] X -----5---9 175.000
+
+[D] 0a62028aaad3e68551abd8fb1e8acd4c426105b43b1e249ce418992e libcamera-0.7.1.tar.zst git+https://git.libcamera.org/libcamera/libcamera.git v0.7.1
+
+var_append mesonopt ' ' '-Dcam=disabled -Dqcam=disabled'
+pkginstalled python || var_append mesonopt ' ' -Dpycamera=disabled
+#pkginstalled libpisp || var_append mesonopt ' ' -Dpisp=disabled

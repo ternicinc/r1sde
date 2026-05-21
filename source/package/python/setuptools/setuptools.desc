@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/setuptools/setuptools.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A collection of enhancements to the Python distutils
+
+[T] Packages built and distributed using setuptools look to the user like
+[T] ordinary Python packages based on the distutils. Your users don't need to
+[T] install or even know about setuptools in order to use them, and you don't
+[T] have to include the entire setuptools package in your distributions. By
+[T] including just a single bootstrap module (a 7K .py file), your package
+[T] will automatically download and install setuptools if the user is building
+[T] your package from source and doesn't have a suitable version already
+[T] installed.
+
+[U] https://pypi.org/project/setuptools
+
+[A] Phillip J. Eby <pje@telecommunity.com>
+[A] Tyler C. Sarna <tsarna@sarna.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[E] add python-installer
+
+[L] MIT
+[V] 82.0.1
+[P] X ?----5---9 109.006
+
+[CV-URL] https://pypi.org/project/setuptools/#history
+[D] dc8b6d2059ceabf71a16fa6f76d844e87cbc6ec74fbd29c9aa24c335 setuptools-82.0.1.tar.gz https://pypi.io/packages/source/s/setuptools/
+
+hook_add preconf 5 "sed -i -e '/tag_build = .post/d' -e '/tag_date = 1/d' setup.cfg"

@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-volume-manager/gnome-volume-manager.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome Volume Manager
+
+[T] gnome-volume-manager is a desktop-level daemon that enforces volume-related
+[T] policy in response to events received from HAL. Its goal is to implement
+[T] all functionality as a state-machine in response to asynchronous events
+[T] from HAL.
+[T]
+[T] It is one component in a larger plan to fully integrate all levels of
+[T] the Linux system, from the kernel on up through the desktop and its
+[T] applications.
+
+[U] https://www.gnome.org
+
+[A] Robert Love <rml@novell.com>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/configuration
+
+[L] GPL
+[V] 2.24.1
+
+[CV-URL] https://download.gnome.org/sources/gnome-volume-manager/cache.json
+[D] 30d9642350189519cbb78f9df93630e76eeb94febfcf356d96f70e7b gnome-volume-manager-2.24.1.tar.gz https://download.gnome.org/sources/gnome-volume-manager/2.24/
+
+. $base/package/*/*/gnome-conf.in

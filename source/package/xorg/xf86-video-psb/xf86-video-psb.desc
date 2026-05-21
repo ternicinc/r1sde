@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-video-psb/xf86-video-psb.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Xorg driver for Intel GMA 500, Poulsbo integrated graphics
+
+[T] The Xorg driver for Intel GMA 500, Poulsbo integrated chipset graphics.
+[T] Intel's US15 UMPC (Poulsbo) chipset contains a graphics core developed by
+[T] Imagination Technologies. Intel has licensed the PowerVR SGX as a graphics
+[T] core and the PowerVR VXD for h.264 and AVC playback. The Video Core is able
+[T] to process 720p as well as 1080i resolutions.
+
+[U] http://intellinuxgraphics.org/
+
+[A] Thomas Hellstrom <thomas@tungstengraphics.com>
+[A] Jakob Bornecrantz <jakob@tungstengraphics.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+[R] + x86
+
+[L] OpenSource
+[V] 0.36.0
+[P] O
+
+[D] e9fdf530a49bcb3317200d33e715fa158fe97a06be142c9635a8511d xserver-xorg-video-psb_0.36.0-0ubuntu3~1004um9.tar.gz https://launchpadlibrarian.net/51383624/
+
+. package/*/*/modular-x-conf.in

@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kidletime/kidletime.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] KDE Frameworks integration module for idle time detection
+
+[T] KIdleTime is a singleton reporting information on idle time. It is useful
+[T] not only for finding out about the current idle time of the PC, but also
+[T] for getting notified upon idle time events, such as custom timeouts, or
+[T] user activity.
+
+[U] https://www.kde.org
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 6.26.0
+[P] X -----5---9 162.800
+
+[CV-GROUP] kde-frameworks
+[D] 919d65c365b8ca85ead6842e422743089f589231ab2e4cae1a5c0003 kidletime-6.26.0.tar.xz https://download.kde.org/stable/frameworks/6.26/
+
+. $base/package/*/*/kde-conf.in
+var_append GCC_WRAPPER_APPEND ' ' "-I$root/$(pkgprefix includedir libxcb)"

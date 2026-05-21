@@ -1,0 +1,19 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/blackfin/parse-config
+# Copyright (C) 2004 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+case $pkg in
+	# translate fork to vfork, TODO: properly review and patch upstream
+	bash|bison|coreutils|cpio|cron|curl|dash|dialog|disktype|eject|embutils|\
+	findutils|groff|iproute2|\
+	libcap|libevent|libgpg-error|libgcrypt|libisofs|libisoburn|\
+	kbd|keyutils|lvm2|m4|mine|mksh|ntfsprogs|\
+	gawk|glib|flex|gdbm|openssh|openssl|pam|pdksh|ppp|procps|\
+	rpcbind|rpcsvc-proto|rsync|\
+	shadow|smartmontools|subversion|sysklogd|sysvinit|\
+	tar|tcp_wrappers|texinfo|time|tmux|util-linux|vim|wpa_supplicant)
+		var_append GCC_WRAPPER_APPEND ' ' '-Dfork=vfork'
+		;;
+esac

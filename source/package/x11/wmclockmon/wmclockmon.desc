@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/wmclockmon/wmclockmon.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A windowmanager dockapp that shows a nice digital clock
+
+[T] A nice digital clock with 7 different styles either in LCD style and LED style,
+[T] and that uses locales to display week-day and month names. It also features the
+[T] internet time.
+
+[U] http://tnemeth.free.fr/projets/dockapps.html
+
+[A] Thomas Nemeth <tnemeth@free.fr>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] GPL
+[V] 1.0.0
+
+[D] eba169ba811cf63fe46c2a18851d99eb39ac6df24c33bb2c7e9726be wmclockmon-1.0.0.tar.xz https://www.dockapps.net/download/

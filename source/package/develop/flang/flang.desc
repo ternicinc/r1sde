@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/flang/flang.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A implementation of a Fortran front end written in modern C++
+
+[T] Flang is a ground-up implementation of a Fortran front end written in
+[T] modern C++. It started off as the f18 project and replacethe previous
+[T] flang project.
+
+[U] https://llvm.org/
+
+[A] University of Illinois/NCSA
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] OBJDIR CROSS F77
+
+[L] BSD
+[V] 22.1.5
+
+[CV-GROUP] llvm-project
+[D] 539b0fa857272b2b18ad9b9e58e11d4e48e0f1c807ec375d5ca91913 llvm-project-22.1.5.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-22.1.5/
+
+srcdir=*/flang
+
+var_append cmakeopt ' ' -DFLANG_INCLUDE_TESTS=OFF
+
+cmake_mod() {
+        tar $taropt `match_source_file -p cmake` -C ..
+        mv -vf ../cmake-*src ../../cmake
+}
+hook_add preconf 5 cmake_mod

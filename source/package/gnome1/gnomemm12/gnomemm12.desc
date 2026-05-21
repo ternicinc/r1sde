@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnomemm12/gnomemm12.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] C++ bindings for the GNOME library
+
+[T] Gnomemm is the c++ wrapper for the gnome-libs. This provides a clean
+[T] C++ style enviroment for writing GNOME applications with C++.
+
+[A] Karl Nelson <kenelson@users.sourceforge.net>
+[A] Murray Cumming <murrayc@usa.net>
+[A] Many more
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development extra/desktop/gnome
+[F] NO-AS-NEEDED
+
+[L] GPL
+[V] 1.2.4
+[P] X -----5---9 141.600
+
+[D] df3f852c55c6fb6d7f637d86a56bea228949db2549170755b7184322 gnomemm-1.2.4.tar.gz https://download.gnome.org/sources/gnomemm/1.2/
+
+. $base/package/*/*/gnome1-conf.in

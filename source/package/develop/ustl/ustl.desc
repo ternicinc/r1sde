@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ustl/ustl.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A size-optimized STL implementation
+
+[T] USTL is a partial implementation of the Standard Template Library which
+[T] reduces code size by factoring memory management code into a non-template
+[T] base class and deriving containers from it.
+
+[U] https://ustl.sourceforge.net
+
+[A] Mike Sharov <msharov@hotmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] MIT
+[V] 2.1
+
+[D] 3b58165d08361beb9764527da61a1814d4385c02223d6b528b1f48d8 ustl-2.1.tar.gz https://github.com/andrewprock/ustl/archive/v2.1/
+
+cleanconfopt=0

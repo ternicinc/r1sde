@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pycparser/pycparser.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A complete C99 parser in pure Python
+
+[T] Pycparser is a parser for the C language, written in pure Python. It is
+[T] a module designed to be easily integrated into applications that need
+[T] to parse C source code.
+
+[U] https://github.com/eliben/pycparser
+
+[A] Eli Bendersky
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] Unknown
+[V] 3.00
+[P] X -----5---9 109.003
+
+[D] a3b9240a72bc455b73ad3338f3992c4deae9889825010d0f687746d4 pycparser-3.00.tar.gz https://github.com/eliben/pycparser/archive/refs/tags/release_v3.00/

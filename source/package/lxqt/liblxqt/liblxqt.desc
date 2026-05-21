@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/liblxqt/liblxqt.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Common base library for LXQt components
+
+[T] Common base library for LXQt components.
+
+[U] https://github.com/lxqt/liblxqt
+
+[A] Liblxqt Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] OBJDIR
+
+[V] 2.4.0
+[L] LGPL
+[P] X -----5---9 700.000
+
+[CV-GROUP] lxqt
+[D] 72ce089c9cc24bd8551434ce1a4aca8da5b5e8f2934aa752eef30f20 liblxqt-2.4.0.tar.xz https://github.com/lxqt/liblxqt/releases/download/2.4.0/

@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gucharmap/gucharmap.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Unicode/ISO10646 character map and font viewer
+
+[T] gucharmap displays the whole Unicode range for any chosen font.
+[T] For single characters it displays among other information the
+[T] Unicode codepoint, the official character name, aliases, usage
+[T] notes and cross-references. Searching is supported and of course
+[T] copying. It includes a GTK+2 Input Method Module.
+
+[U] https://gucharmap.sourceforge.net/ gucharmap Homepage
+
+[A] Noah Levitt <nlevitt@columbia.edu>
+
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/desktop/gnome extra/text
+[F] CROSS
+
+[L] GPL
+[V] 17.0.2
+
+[D] c6a0c0482040f5533b6bfed9dcbdf7c04c60e5a852b2dddbd86a75fa gucharmap-17.0.2.tar.bz2 https://gitlab.gnome.org/GNOME/gucharmap/-/archive/17.0.2/
+
+. $base/package/*/*/gnome-conf.in

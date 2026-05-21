@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/serpnp/serpnp.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Serial / COM PnP detection
+
+[T] A tiny tool to query the "Plug and Play External COM Device Specification"
+[T] on serial ports as defined by the Microsoft Corporation & Hayes
+[T] Microcomputer Products, Inc. et. al.
+
+[U] https://www.t2-project.org/serpnp/
+
+[A] René Rebe <rene@exactco.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+
+[L] GPL
+[V] 0.0.2
+
+srctar= autoextract=0 runmake=0
+hook_add inmake 5 "$CXX -c $confdir/serpnp.c; $CXX -o serpnp serpnp.o"
+hook_add postmake 5 "install serpnp $root$sbindir/"

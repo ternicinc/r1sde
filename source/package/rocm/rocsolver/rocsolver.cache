@@ -1,0 +1,23 @@
+[TIMESTAMP] 1743532637 Tue Apr  1 20:37:17 2025
+[BUILDTIME] 3300 (9)
+[SIZE] 255.91 MB, 23 files
+
+[DEP] bash
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] fmt
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] hip-rocclr
+[DEP] linux-header
+[DEP] make
+[DEP] rocblas
+[DEP] rocm-cmake
+[DEP] rocm-device-libs
+[DEP] rocm-llvm
+[DEP] rocprim
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar

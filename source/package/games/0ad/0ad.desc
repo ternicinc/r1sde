@@ -1,0 +1,49 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/0ad/0ad.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Empires Ascendant
+
+[T] 0 A.D. is a free and open-source real-time strategy video game under
+[T] development by Wildfire Games. It is a historical war and economy game
+[T] focusing on the years between 500 BC and 1 BC, with the years between 1 AD
+[T] and 500 AD planned to be developed in the future.
+
+[U] https://play0ad.com/
+
+[A] Wildfire Games
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+[F] NO-LTO
+
+[L] GPL
+[V] 0.28.0
+
+[D] 0a00ab7818f43324f1ba8877dcc97afedc32dfa571871fb765b0f2e1 0ad-0.28.0-unix-build.tar.xz https://releases.wildfiregames.com/
+
+makeinstopt=
+
+preconf_0ad() {
+	cd libraries
+	./build-source-libs.sh --with-system-cxxtest --with-system-nvtt -j$SDECFG_PARALLEL
+
+	cd ../build/workspaces
+	./update-workspaces.sh --bindir=$bindir --libdir=$libdir/0ad --datadir=$datadir/0ad \
+		-j$SDECFG_PARALLEL --with-system-nvtt --without-pch --without-tests --without-lobby
+	cd gcc
+}
+hook_add preconf 5 preconf_0ad
+
+install_0ad() {
+	cd $builddir/0ad-*/binaries/
+	install system/pyrogenesis $root$bindir/0ad
+	install system/ActorEditor $root$bindir/0ad-ActorEditor
+	install system/*.so* $root$libdir/
+
+	mkdir -p $root$datadir/0ad
+	cp -rfv data/* $root$datadir/0ad/
+}
+hook_add postmake 5 install_0ad

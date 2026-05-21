@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/bglibs/bglibs.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] BG Libraries Collection
+
+[T] This package contains a collection of libraries written by Bruce and
+[T] used by various packages.
+
+[U] https://untroubled.org/bglibs/
+
+[A] Bruce Guenter <bruceg@em.ca>
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS
+[C] extra/base
+
+[L] GPL
+[V] 2.04
+[P] X -----5---9 177.600
+
+[D] 993fb921e6d431ab202421bd59149d4ab0bcad4c44fff28cbbbd8f41 bglibs-2.04.tar.gz http://untroubled.org/bglibs/
+
+[ "$prefix_auto" = 1 ] && prefix="usr/bglibs" && set_confopt && docdir="/usr/share/doc/bglibs"
+
+bglibs_conf() {
+	echo "$root/$prefix"	> conf-home
+	echo "$root$bindir"	> conf-bin
+	echo "$root$includedir"	> conf-include
+	echo "$root$libdir"	> conf-lib
+	echo "$root$mandir"	> conf-man
+}
+hook_add preconf 1 bglibs_conf
+
+var_append GCC_WRAPPER_APPEND ' ' -std=gnu17

@@ -1,0 +1,29 @@
+[TIMESTAMP] 1745181361 Sun Apr 20 22:36:01 2025
+[BUILDTIME] 3 (9)
+[SIZE] 0.25 MB, 28 files
+
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[OPT] glib
+[DEP] gobject-introspection
+[DEP] grep
+[DEP] gtk+
+[DEP] harfbuzz
+[DEP] libarchive
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar
+[DEP] xz

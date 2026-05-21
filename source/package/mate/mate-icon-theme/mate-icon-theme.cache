@@ -1,0 +1,22 @@
+[TIMESTAMP] 1737813107 Sat Jan 25 14:51:47 2025
+[BUILDTIME] 40 (9)
+[SIZE] 33.11 MB, 8186 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] icon-naming-utils
+[DEP] make
+[OPT] mate-desktop
+[DEP] perl
+[DEP] perl-sax-exception
+[DEP] perl-sax-parser
+[DEP] perl-xml-namespace-support
+[DEP] perl-xml-simple
+[DEP] sed
+[DEP] tar
+[DEP] xz

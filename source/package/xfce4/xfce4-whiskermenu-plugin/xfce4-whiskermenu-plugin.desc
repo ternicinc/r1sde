@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Alternative Xfce Menu
+
+[T] Whisker Menu is an alternate application launcher for Xfce. When you open
+[T] it you are shown a list of applications you have marked as favorites.
+
+[U] https://docs.xfce.org/panel-plugins/xfce4-whiskermenu-plugin/start
+
+[A] Xfce Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/xfce
+
+[L] GPL
+[V] 2.10.1
+
+[D] 65cb21872ac2887cf8516172d8a21c565d3a6ff1631c0d2116e03299 xfce4-whiskermenu-plugin-v2.10.1.tar.gz https://github.com/gottcode/xfce4-whiskermenu-plugin/archive/refs/tags/v2.10.1/
+
+. $base/package/xfce4/*/xfce4-conf.in
+pkginstalled accountsservice || var_append cmakeopt ' ' -DENABLE_ACCOUNTS_SERVICE=OFF
+pkginstalled gtk-layer-shell || var_append cmakeopt ' ' -DENABLE_GTK_LAYER_SHELL=OFF

@@ -1,0 +1,20 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/mythtv/fribidi-include.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- mythtv-0.21/libs/libmythtv/libmythtv.pro.orig	2008-02-18 23:59:32.000000000 +0100
++++ mythtv-0.21/libs/libmythtv/libmythtv.pro	2008-09-09 22:14:42.000000000 +0200
+@@ -240,7 +240,10 @@
+     using_ivtv:SOURCES += ivtvdecoder.cpp
+ 
+     # On screen display (video output overlay)
+-    using_fribidi:DEFINES += USING_FRIBIDI
++    using_fribidi: {
++        DEFINES += USING_FRIBIDI
++        QMAKE_CXXFLAGS += $${FRIBIDI_CFLAGS}
++    }
+     HEADERS += osd.h                    osdtypes.h
+     HEADERS += osdsurface.h             osdlistbtntype.h
+     HEADERS += osdimagecache.h          osdtypeteletext.h

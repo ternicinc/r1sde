@@ -1,0 +1,39 @@
+[TIMESTAMP] 1745228825 Mon Apr 21 11:47:05 2025
+[BUILDTIME] 35 (9)
+[SIZE] 1.23 MB, 114 files
+
+[DEP] attrs
+[DEP] bash
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[OPT] lziprecover
+[DEP] openssl
+[DEP] pyfatfs
+[DEP] python
+[DEP] python-annotated-types
+[DEP] python-arpy
+[DEP] python-click
+[DEP] python-cryptography
+[DEP] python-dissect-cstruct
+[DEP] python-gpep517
+[DEP] python-jefferson
+[DEP] python-lark
+[DEP] python-lief
+[DEP] python-lz4
+[DEP] python-magic
+[DEP] python-maturin
+[DEP] python-plotext
+[DEP] python-pyperscan
+[DEP] python-rarfile
+[DEP] python-rich
+[DEP] python-structlog
+[DEP] python-treelib
+[DEP] python-typing-extensions
+[DEP] rustc
+[DEP] sed
+[DEP] tar
+[DEP] unblob-native

@@ -1,0 +1,64 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rocksndiamonds/rocksndiamonds.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Boulderdash clone
+
+[T] Rocks'n'Diamonds is an Arcade style game for Unix, DOS and Windows.
+[T] A game like "Boulderdash" (C 64) or "Emerald Mine" (Amiga).
+[T] Included are many levels known from the games "Boulderdash",
+[T] "Emerald Mine", "Sokoban", "Supaplex" and "DX-Boulderdash",
+[T] level elements for "Diamond Caves II" style games
+[T] and a lot of new levels designed by other players.
+[T] Some features:
+[T] - joystick support for Linux, FreeBSD and DOS/Windows
+[T] - local multiplayer support for all supported platforms
+[T] - network multiplayer support for Unix platform
+[T] - soft scrolling with 50 frames/s
+[T] - stereo sound effects and music
+[T] - music module support for SDL version (Unix/Win32)
+[T] - fullscreen support for SDL version (Unix/Win32)
+[T] - lots of additional levels available (over 10.000)
+
+[U] https://www.artsoft.org
+
+[A] Holger Schemel <info@artsoft.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+#[C] extra/game/arcade
+
+[L] GPL
+[V] 4.4.1.3
+
+[D] f7ba6c2c12fee3335361dbd37bafe7705ce9e317813a2ad3604bb022 rocksndiamonds-4.4.1.3-linux.tar.gz https://www.artsoft.org/RELEASES/linux/rocksndiamonds/
+
+bindir=$root/$SDECFG_PKG_GAMES_BINDIR
+datadir=$root/$SDECFG_PKG_GAMES_DATADIR
+scoredir=$SDECFG_PKG_GAMES_SCOREDIR
+
+my_target=$SDECFG_PKG_ROCKSNDIAMONDS_TARGET
+[ "$SDECFG_PKG_ROCKSNDIAMONDS_NOJOY" == "1" ] &&
+  var_append makeopt ' ' JOYSTICK=-DNO_JOYSTICK
+ 
+var_append makeopt ' ' "RO_GAME_DIR=$datadir/rocksndiamonds RW_GAME_DIR=$scoredir $my_target"
+
+rocksndiamonds_inmake() {
+# make install isnt avaliable, yet. author promised to fix that ;)
+  mkdir -p $datadir/rocksndiamonds $root/var/games/rocksndiamonds
+  mkdir -p $scoredir
+  cp -af graphics levels music sounds $datadir/rocksndiamonds/
+  cp -af scores $scoredir
+  cp -af rocksndiamonds $bindir
+  cp -af rocksndiamonds.1 $mandir/man6/rocksndiamonds.6
+}
+
+makeinstopt=
+
+hook_add premake 5 "make clean"
+hook_add inmake 5 rocksndiamonds_inmake
+
+# targets: sdl, x11, solaris, solaris-sdl, mac

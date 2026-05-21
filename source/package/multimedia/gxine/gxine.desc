@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gxine/gxine.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GTK+-based media player
+
+[T] GTK+-based media player, with style gui + mozilla / firefox plugins.
+
+[U] http://xinehq.de/index.php/releases
+
+[A] xine Team http://sourceforge.net/mail/?group_id=9655
+[M] Rui Andrada <shingonoide@gmail.com>
+
+[C] extra/desktop/gnome extra/multimedia
+
+[L] GPL
+[V] 0.5.910
+
+[D] 679f57d7fc7cd648362fe1ad878407bd341ae69e9e78b3d0ef00e033 gxine-0.5.910.tar.xz https://prdownloads.sourceforge.net/sourceforge/xine/
+
+. $base/package/*/*/gnome-conf.in

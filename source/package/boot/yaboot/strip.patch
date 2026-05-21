@@ -1,0 +1,35 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/yaboot/strip.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+When we cross-compile we need to use the cross strip ...
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- yaboot-1.3.13/Makefile.vanilla	2006-09-28 17:24:45.000000000 +0200
++++ yaboot-1.3.13/Makefile	2006-09-28 17:25:37.000000000 +0200
+@@ -98,6 +98,7 @@
+ LD		:= $(CROSS)ld
+ AS		:= $(CROSS)as
+ OBJCOPY		:= $(CROSS)objcopy
++STRIP		:= $(CROSS)strip
+ 
+ lgcc = `$(CC) -m32 -print-libgcc-file-name`
+ 
+@@ -172,10 +173,10 @@
+ release: docs bindist clean
+ 
+ strip: all
+-	strip second/yaboot
+-	strip --remove-section=.comment second/yaboot
+-	strip util/addnote
+-	strip --remove-section=.comment --remove-section=.note util/addnote
++	$(STRIP) second/yaboot
++	$(STRIP) --remove-section=.comment second/yaboot
++	$(STRIP)  util/addnote
++	$(STRIP) --remove-section=.comment --remove-section=.note util/addnote
+ 
+ install: all strip
+ 	install -d -o root -g root -m 0755 ${ROOT}/etc/

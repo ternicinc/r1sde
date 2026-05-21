@@ -1,0 +1,23 @@
+[TIMESTAMP] 1746980348 Sun May 11 18:19:08 2025
+[BUILDTIME] 2 (9)
+[SIZE] 0.17 MB, 12 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] flex
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libusb
+[DEP] linux-header
+[DEP] m4
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pcsc-lite
+[DEP] perl
+[DEP] sed
+[DEP] tar
+[DEP] zlib

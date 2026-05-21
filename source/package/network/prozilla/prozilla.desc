@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/prozilla/prozilla.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A download accelerator for Linux
+
+[T] ProZilla is a download accelerator for Linux which gives you
+[T] a 200% to 300% improvement in your file downloading speeds.
+
+[U] http://prozilla.genesys.ro/
+
+[A] kalum <kalum@genesys.ro>
+[M] Leonel Iván Saafigueroa <leonel@saafigueroa.com.ar>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 2.0.4
+
+[D] de709412a04df4cdbe2f46f2a036a1ddfa42b6ea075f6fb546aee8f4 prozilla-2.0.4.tar.bz2 http://prozilla.genesys.ro/downloads/prozilla/tarballs/

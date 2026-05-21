@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/bazaar/bazaar.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A simple distributed version control system
+
+[T] Bazaar is a simple decentralized revision control system. Decentralized
+[T] revision control systems give users the ability to branch remote
+[T] repositories to a local context. Users can commit to local branches
+[T] without requiring special permission from the branches that they
+[T] branched from.
+
+[U] https://launchpad.net/bzr
+
+[A] Martin Pool <mbp@sourcefrog.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] GPL
+[V] 2.7.0
+
+[CV-URL] https://bazaar-vcs.org/Download
+[D] 182a2b4be4ccabb879b8e6879bfac681c47df09a1fb8186562b5cbb7 bzr-2.7.0.tar.gz https://launchpad.net/bzr/2.7/2.7.0/+download/

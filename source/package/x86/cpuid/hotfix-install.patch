@@ -1,0 +1,22 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/cpuid/hotfix-install.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- cpuid-3.3/Makefile.vanilla	2007-06-21 17:25:27.000000000 +0200
++++ cpuid-3.3/Makefile	2007-06-21 17:26:35.000000000 +0200
+@@ -1,7 +1,12 @@
++prefix=/usr/local
++
+ CFLAGS=-O2 -Wall
+ 
+ cpuid: cpuid.o
+-	gcc -o $@ $^
++	$(CC) -o $@ $^
++
++install: cpuid
++	install cpuid $(DESTDIR)$(prefix)/bin
+ 
+ clean:
+ 	rm -f *.o cpuid

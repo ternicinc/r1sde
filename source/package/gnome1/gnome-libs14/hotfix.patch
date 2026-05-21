@@ -1,0 +1,28 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/gnome-libs14/hotfix.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- gnome-libs-1.4.1.7/gnome-config.in	2001-03-05 23:17:43.000000000 +0100
++++ new/gnome-config.in	2002-05-26 00:24:18.000000000 +0200
+@@ -19,7 +19,7 @@
+ pkglibdir=${libdir}/@PACKAGE@
+ pkgincludedir=${includedir}/@PACKAGE@
+ MODULE_VERSION=@PACKAGE@-@VERSION@
+-module_dirs="$libdir"
++module_dirs="$libdir /usr/lib"
+ 
+ # stolen from autoconf
+ if (echo "testing\c"; echo 1,2,3) | grep c >/dev/null; then
+@@ -113,6 +113,9 @@
+ modversion=false
+ moddatadir=false
+ 
++the_libs=""
++the_flags="-I${includedir}"
++
+ while test $# -gt 0; do
+     case "$1" in
+     -*=*) optarg=`echo "$1" | sed 's/[-_a-zA-Z0-9]*=//'` ;;

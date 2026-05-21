@@ -1,0 +1,22 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/vdr-softdevice/yield.patch
+# Copyright (C) 2009 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+pthread_yield() is not part of POSIX standard (and not supported by uClibc),
+so use sched_yield() instead
+
+  -- Michael Tross
+
+--- softdevice-0.5.0/SoftOsd.c.orig	2008-01-26 00:55:44.000000000 +0100
++++ softdevice-0.5.0/SoftOsd.c	2008-11-02 13:26:57.000000000 +0100
+@@ -303,7 +303,7 @@
+ 
+         // give priority to the other threads
+ #ifndef __APPLE__
+-        pthread_yield();
++        sched_yield();
+ #endif
+ 
+         if (!active && !close)

@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/glib12/hotfix-gcc43.patch
+# Copyright (C) 2016 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- glib-1.2.10/glib.h.vanilla	2016-11-18 21:14:44.662534888 +0100
++++ glib-1.2.10/glib.h	2016-11-18 21:16:30.543059921 +0100
+@@ -204,7 +204,7 @@
+ #ifndef G_INLINE_FUNC
+ #  ifdef __GNUC__
+ #    ifdef __OPTIMIZE__
+-#      define G_INLINE_FUNC extern inline
++#      define G_INLINE_FUNC static inline
+ #    else
+ #      undef G_CAN_INLINE
+ #      define G_INLINE_FUNC extern

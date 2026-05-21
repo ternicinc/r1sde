@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/jhead/jhead.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Exif Jpeg camera setting parser and thumbnail remover
+
+[T] Exif Jpeg camera setting parser and thumbnail remover.
+
+[U] https://www.sentex.net/~mwandel/jhead/
+
+[A] Matthias Wandel <mwandel@sentex.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/printing
+[F] CROSS
+
+[L] OpenSource
+[V] 3.08
+[P] X -----5---9 125.400
+
+[D] 888bf6e15e7519a033c803a7b7513902b8ce883e031b9513ebe8c49a jhead-3.08.tar.gz https://github.com/Matthias-Wandel/jhead/archive/3.08/
+
+makeinstopt=
+hook_add postmake 5 "cp -fv jhead $root$bindir/"

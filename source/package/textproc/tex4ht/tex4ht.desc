@@ -1,0 +1,55 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/tex4ht/tex4ht.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A LaTeX to HTML converter
+
+[T] TeX4ht is a convertor that converts TEX and LATEX documents to HTML (and
+[T] some other formats). This way e.g. scientific papers - primarily typeset
+[T] for printing - can be put on the Web for online viewing. In contrast to
+[T] LATEX2HTML TeX4ht does not try to reimplement the TeX layout, but used
+[T] the usual TeX engine and does the postprecessing.
+
+[U] http://www.cis.ohio-state.edu/~gurari/TeX4ht/
+
+[A] Eitan M. Gurari <gurari@cis.ohio-state.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office
+
+[L] OpenSource
+[V] 20250308
+[P] X -----5---9 132.100
+
+[D] 239f85d5b1a752e94997916e349ce9889729b15fbc6d3a84352c3b83 texlive-20250308-source.tar.xz ftp://tug.org/historic/systems/texlive/2025/
+
+autoextract=0 runmake=0
+
+tex4ht_main() {
+	unzip `match_source_file -p tex4ht`
+
+	echo "Compiling and installing binaries ..."
+	gcc -o t4ht temp/t4ht.c \
+	    -DENVFILE=\"/$prefix/share/texmf/tex4ht/tex4ht.env\"
+	gcc -o tex4ht temp/tex4ht.c \
+	    -DENVFILE=\"/usr/share/texmf/tex4ht/tex4ht.env\" -DHAVE_DIRENT_H
+	cp -fv t4ht tex4ht $bindir/
+
+	echo "Installing support scripts ..."
+	cp -fv bin/unix/* $bindir/
+
+	# correct double-path and unwanted files before cp ...
+	mv -v texmf/tex4ht/ht-fonts/ht-fonts/* texmf/tex4ht/ht-fonts/
+	rmdir texmf/tex4ht/ht-fonts/ht-fonts
+	rm -rf texmf/tex4ht/base
+
+	cp -rv texmf/* $root/$prefix/share/texmf/
+
+	# install our own corrected env file ...
+	sde_substitute	$confdir/tex4ht.env > \
+		$root/$prefix/share/texmf/tex4ht/tex4ht.env
+}
+hook_add postmake 5 tex4ht_main

@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/hack-nerd-fonts/hack-nerd-fonts.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Improved iconic font
+
+[T] Nerd Fonts patches developer targeted fonts with a high number of glyphs
+[T] (icons). Specifically to add a high number of extra glyphs from popular
+[T] ‘iconic fonts’ such as Font Awesome, Devicons, Octicons, and others.
+
+[U] https://www.nerdfonts.com/
+
+[A] Ryan L McIntyre
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/font
+
+[L] MIT
+[V] 3.4.0
+
+[D] dce4c1a1bf6d4f58f24a8564fa726edc9773afd1b0e889f031d0ff03 hack-nerd-fonts-3.4.0.zip !https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.zip
+
+runmake=0
+srcdir=.
+hook_add postmake 5 "cp -vf *.ttf $root$datadir/fonts/"

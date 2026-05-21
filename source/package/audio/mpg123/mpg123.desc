@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mpg123/mpg123.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A real time MPEG Audio Player for Layer 1, 2 and 3
+
+[T] Mpg123 is a real time MPEG Audio Player for Layer 1,2 and Layer3.
+
+[U] https://mpg123.org
+
+[A] Michael Hipp
+[A] Thomas Orgis <maintainer@mpg123.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[E] opt esound
+[E] opt jack
+[E] opt openal
+
+[L] LGPL
+[V] 1.33.5
+[P] X -----5---9 148.600
+
+[D] 5a102d80b70687a70a7035f9c5bd67e1a3fe629f13199fd97326a85d mpg123-1.33.5.tar.bz2 http://mpg123.org/download/

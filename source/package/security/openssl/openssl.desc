@@ -1,0 +1,83 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openssl/openssl.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Open Source toolkit for Secure Sockets Layer and Transport Layer Security
+
+[T] The OpenSSL Project is a collaborative effort to develop a robust,
+[T] commercial-grade, fully featured, and Open Source toolkit implementing the
+[T] Secure Sockets Layer (SSL v2/v3) and Transport Layer Security (TLS v1)
+[T] protocols as well as a full-strength general purpose cryptography library.
+[T] The project is managed by a worldwide community of volunteers that use the
+[T] Internet to communicate, plan, and develop the OpenSSL toolkit and its
+[T] related documentation.
+
+[U] https://www.openssl.org/
+
+[A] The OpenSSL Project
+[A] Eric A. Young, Tim J. Hudson
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS DIETLIBC NO-LTO.gcc LATOMIC.arch32
+
+[L] OpenSource
+[V] 3.6.2
+[P] X -1---5---9 102.500
+
+[CV-FLAGS] NO-MAJOR
+[D] 02392d92c02d4863a4e386463d6592a13ee99597f2d050eefa396c8d openssl-3.6.2.tar.gz https://www.openssl.org/source/
+
+confopt="enable-md2" # e.g. for nmap
+
+if [ "$SDECFG_STATIC" != 1 ]; then
+	var_append confopt ' ' shared
+else
+	var_append confopt ' ' no-shared
+	var_append confopt ' ' no-dso
+fi
+
+if [ "$SDECFG_LIBC" = "uclibc" ]; then
+	var_append confopt ' ' no-async
+fi
+
+sysconfdir=$sysconfdir/ssl
+
+# We can't use ./config becouse that would probably add optimize
+# options which won't work on our taget system.
+case "$arch_machine" in
+		i?86)	  [ "$SDECFG_X86_OPT" = i386 ] && trg="linux-elf no-asm" || trg=linux-elf ;;
+		x86_64)
+			[ "$SDECFG_X8664_X32" = 1 ] && trg="linux-x32 no-asm" || trg=linux-x86_64
+			[ "$SDECFG_KERNEL" = hurd ] && trg="hurd-x86_64"
+			;;
+		alpha)	  trg=linux-alpha-gcc ;;
+		ia64)	  trg=linux-ia64 ;;
+		mips64)	  [ "$SDECFG_MIPS64_N32" = 1 ] && trg="linux-mips64" || trg="linux64-mips64" ;;
+		powerpc)  trg=linux-ppc ;;
+		powerpc64) trg=linux-ppc64 ;;
+		riscv32)  trg=linux32-riscv32 ;;
+		riscv64)  trg=linux64-riscv64 ;;
+		sparc64)  trg=linux64-sparcv9 ;;
+		sparc*)	  # v7, v8, v9, ... remove plus, vis, ...
+		 	  trg=linux-$(echo $arch_machine | sed 's/sparc\(v.\).*/sparc\1/')
+			  #[ "$trg" = "linux-sparc" ] && # broken in 1.1.1i 2021
+			  trg=linux-generic32
+			  ;;
+		s390x)    trg=linux64-s390x ;;
+		*)	  if [ "$arch_bigendian" == "yes" ]; then
+				trg="linux-generic32 -DB_ENDIAN";
+			  else
+			  	trg="linux-generic32 -DL_ENDIAN";
+			  fi ;;
+esac
+
+runconf=
+hook_add premake 4 "./Configure --prefix=/$prefix --libdir=${libdir#/$prefix/} --openssldir=$sysconfdir $trg $confopt"
+
+var_remove_regex makeopt " " "AS=.*"
+var_remove_regex makeopt " " "AR=.*"
+var_insert makeinstopt ' ' "MANDIR=$mandir INSTALL_PREFIX=$root"

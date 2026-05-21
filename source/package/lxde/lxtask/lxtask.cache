@@ -1,0 +1,25 @@
+[TIMESTAMP] 1737729539 Fri Jan 24 15:38:59 2025
+[BUILDTIME] 3 (9)
+[SIZE] 0.31 MB, 75 files
+
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[DEP] glib
+[DEP] grep
+[DEP] gtk+2
+[DEP] harfbuzz
+[DEP] intltool
+[DEP] linux-header
+[DEP] make
+[DEP] pango
+[DEP] perl
+[DEP] sed
+[DEP] tar
+[DEP] xz

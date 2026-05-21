@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lsscsi/lsscsi.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Obtain information of attached SCSI devices
+
+[T] The lsscsi command accesses the sysfs file system (usually mounted under
+[T] /sys) to obtain information rather than opening the SCSI device nodes
+[T] (e.g. /dev/sda) in the system.
+
+[U] http://sg.torque.net/scsi/lsscsi.html
+
+[A] Douglas Gilbert <dgilbert@interlog.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS DIETLIBC
+
+[L] GPL
+[V] 0.32
+
+[CV-FLAGS] NO-MAJOR
+[D] 8ad15d8ee946884bf456c0a0e6214112173b876b3bff42b1602bf173 lsscsi-0.32.tgz http://sg.danny.cz/scsi/

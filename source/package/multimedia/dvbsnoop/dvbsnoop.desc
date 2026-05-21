@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dvbsnoop/dvbsnoop.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] DVB stream analyzer
+
+[T] dvbsnoop is a DVB / MPEG stream analyzer program, which enables you to
+[T] watch (live) stream information in human readable form.
+[T] Its purpose is to debug, dump or view digital stream information (e.g.
+[T] digital television broadcasts) send via satellite, cable or terrestrial.
+[T] Streams can be SI, PES or TS. Basically you can describe dvbsnoop as a
+[T] "swiss army knife" analyzing program for DVB, MHP, DSM-CC or MPEG - similar
+[T] to TCP network sniffer programs like the old and famous snoop on Sun Solaris
+[T] or tcpdump on Linux (which is in fact a kind of a snoop clone). You may also
+[T] analyze offline mpeg streams, e.g. stored on DVD or mpeg2 movie files.
+
+[U] https://dvbsnoop.sourceforge.net/
+
+[A] Rainer Scherg <rasc@users.sourceforge.net>
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/multimedia
+[F] CROSS NO-LTO.gcc
+
+[L] GPL
+[V] 1.4.50
+
+[D] ab2562bf568ba93037ec2e45f6089a3740afaba70d2036a3ad59846e dvbsnoop-1.4.50.tar.gz https://prdownloads.sourceforge.net/sourceforge/dvbsnoop/

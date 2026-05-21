@@ -1,0 +1,13 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/samba/config.in
+# Copyright (C) 2014 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+if pkgcheck samba X
+then
+	menu_begin MENU_PKG_SAMBA 'Samba Package Options'
+		text 'Install prefix for Samba Packages' \
+			SDECFG_PKG_SAMBA_CORE_PREFIX "opt/samba"
+	menu_end
+fi

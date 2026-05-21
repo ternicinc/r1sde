@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ipod-sharp/ipod-sharp.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library that allows manipulation of the iTunesDB
+
+[T] ipod-sharp is a library that allows manipulation of the iTunesDB used in
+[T] Apple iPod devices. Currently it supports adding/removing songs and
+[T] manipulating playlists. Recent versions added the ability to manipulate
+[T] the photo database and attach cover art.
+
+[U] http://banshee-project.org/Ipod-sharp
+
+[A] James Willcox <snorp@snorp.net>
+[A] Aaron Bockover <aaron@abock.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] NOPARALLEL
+
+[L] LGPL
+[V] 0.8.1
+
+[D] 256decb5b4634617ab280883fa8103eb849ca155c359a390699b379f ipod-sharp-0.8.1.tar.gz http://download.banshee-project.org/ipod-sharp/

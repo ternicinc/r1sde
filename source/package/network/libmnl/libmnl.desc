@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libmnl/libmnl.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A minimal netlink library
+
+[T] libmnl is a minimal library for applications dealing with netlink socket.
+[T] It provides an easy to use interface for raw netlink message but
+[T] also netlink family specific APIs.
+
+[U] https://netfilter.org/projects/libmnl/
+
+[A] Pablo Neira Ayuso
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+
+[E] opt doxygen
+
+[L] LGPL
+[V] 1.0.5
+[P] X -----5---9 184.200
+
+[D] e89d1b6b671cb37f7c3014410c1cfc9192e52248a412eeb61637c02e libmnl-1.0.5.tar.bz2 https://ftp.netfilter.org/pub/libmnl/

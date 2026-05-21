@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kdeplasma-addons/kdeplasma-addons.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Plasmoids for KDE Plasma - main package
+
+[T] KDE Plasmoids module is a collection of additional Plasma data engines
+[T] and widgets (applets). It is part of the official KDE distribution.
+[T] This package contains Plasma data engines and widgets (applets). Install
+[T] this package if you want to use plasmoids from the KDE Plasmoids module.
+
+[U] https://www.kde.org
+
+[A] The KDE-Team
+[M] Gerhard Weis <gweis@gmx.at>
+
+[C] extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 6.6.5
+[P] X -----5---9 700.000
+
+[CV-GROUP] kde-plasma
+[D] cb8e6cc086e2923e7a1cdd6bd9bbec634d4f6f757095b2195f69007a kdeplasma-addons-6.6.5.tar.xz https://download.kde.org/stable/plasma/6.6.5/
+
+. $base/package/*/*/kde-conf.in

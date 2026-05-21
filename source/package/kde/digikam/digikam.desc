@@ -1,0 +1,37 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/digikam/digikam.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Professional Photo Management with the Power of Open Source
+
+[T] DigiKam is an advanced open-source digital photo management application.
+[T] The application provides a comprehensive set of tools for importing,
+[T] managing, editing, and sharing photos and raw files.
+
+[U] https://www.digikam.org
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia extra/desktop/kde
+[F] CROSS OBJDIR
+
+[E] opt exiftool
+[E] opt libheif
+[E] opt doxygen
+[E] opt jasper
+
+[L] GPL
+[V] 9.0.0
+
+[D] 41c46ea349d57f728007a1a3712a6ebb193a89ffc36f8b03154133c5 digiKam-9.0.0.tar.xz https://download.kde.org/stable/digikam/9.0.0/
+
+. $base/package/*/*/kde-conf.in
+var_append cmakeopt ' ' -DBUILD_WITH_QT6=ON
+var_append cmakeopt ' ' -GNinja
+var_append GCC_WRAPPER_APPEND ' ' -Wno-error=undef
+var_append GCC_WRAPPER_APPEND ' ' "-c?-I$(pkgprefix includedir libx11):-L$(pkgprefix libdir libx11)"
+var_append GCC_WRAPPER_APPEND ' ' -I$root/usr/include/opencv4

@@ -1,0 +1,21 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dhcpclient/hotfix-install.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- dhcpclient-snap_20071104/Makefile.vanilla	2008-07-30 22:01:58.000000000 +0000
++++ dhcpclient-snap_20071104/Makefile	2008-07-30 22:02:10.000000000 +0000
+@@ -28,9 +28,9 @@
+ 
+ .PHONY: install
+ install: dhcpclient dhcpclient.$(MANEXT) dhcpclient-script.sample
+-	install -m 755 -t $(DESTDIR)$(PREFIX)/sbin dhcpclient
+-	install -m 755 -t $(DESTDIR)$(PREFIX)/sbin dhcpclient-script.sample
+-	install -m 644 -t $(DESTDIR)$(MANDIR)/man$(MANEXT) dhcpclient.$(MANEXT)
++	install -m 755 dhcpclient $(DESTDIR)$(PREFIX)/sbin
++	install -m 755 dhcpclient-script.sample $(DESTDIR)$(PREFIX)/sbin
++	install -m 644 dhcpclient.$(MANEXT) $(DESTDIR)$(MANDIR)/man$(MANEXT)
+ 
+ .depend: Makefile
+ 	touch .depend

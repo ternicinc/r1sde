@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/akonadiconsole/akonadiconsole.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Akonadi developer tool
+
+[T] Akonadi Console is a tool for developers working with Akonadi or on Akonadi
+[T] itself.
+
+[U] https://invent.kde.org/pim/akonadiconsole
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 26.04.1
+
+[CV-GROUP] kde-gear
+[D] c03ab1aaebfae9b8c9752d6af2beb31ba881631ee60960c4d9af8181 akonadiconsole-26.04.1.tar.xz https://download.kde.org/stable/release-service/26.04.1/src/
+
+. $base/package/*/*/kde-conf.in

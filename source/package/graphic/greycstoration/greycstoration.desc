@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/greycstoration/greycstoration.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GREYCstoration Gimp plugin
+
+[T] GREYCstoration is an image regularization algorithm which processes an
+[T] image by locally removing small variations of pixel intensities while
+[T] preserving significant global image features, such as sharp edges and
+[T] corners. The most direct application of image regularization is denoising.
+[T] By extension, it can also be used to inpaint or resize images.
+
+[U] http://www.haypocalc.com/wiki/Gimp_Plugin_GREYCstoration
+
+[A] David Tschumperle <David.Tschumperle@greyc.ensicaen.fr>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/graphic
+
+[L] OpenSource
+[V] 0.2
+
+[D] 674f6717131e7f56b23c21289be91bad355b03309f5f13bdc5487466 greycstoration-0.2.0.tar.bz2 http://www.haypocalc.com/perso/prog/greycstoration/
+
+. $base/package/*/*/gnome-conf.in

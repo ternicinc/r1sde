@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xa/xa.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A high-speed, two-pass portable cross-assembler
+
+[T] It understands mnemonics and generates code for NMOS 6502s (such as
+[T] 6502A, 6504, 6507, 6510, 7501, 8500, 8501, 8502 ...), CMOS 6502s
+[T] (65C02 and Rockwell R65C02) and the 65816.
+
+[U] https://www.floodgap.com/retrotech/xa/
+
+[A] Andre Fachat, Cameron Kaiser (maintainer) <ckaiser@floodgap.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 2.4.1
+[P] X -----5---9 124.300
+
+[D] c188615ad70b951157702b8824b0b36f84ef36378007723bf9fbd2e0 xa-2.4.1.tar.gz https://www.floodgap.com/retrotech/xa/dists/
+
+var_append makeinstopt ' ' DESTDIR=$root/$prefix

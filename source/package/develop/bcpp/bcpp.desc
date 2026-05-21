@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/bcpp/bcpp.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Indents C/C++ programs
+
+[T] Bcpp indents C/C++ source programs, replacing tabs with spaces or the
+[T] reverse. Unlike indent, it does not attempt to wrap long statements.
+
+[U] https://invisible-island.net/bcpp/
+
+[A] Thomas E. Dickey <dickey@invisible-island.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] MIT
+[V] 20250914
+
+[D] c5815926f67e5d3281ee4b0964b251396571a74c1740f8074780f28a bcpp-20250914.tgz https://invisible-island.net/archives/bcpp/

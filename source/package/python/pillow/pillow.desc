@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pillow/pillow.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Python Imaging Library
+
+[T] Pillow is the friendly PIL fork. PIL is the Python Imaging Library by
+[T] Fredrik Lundh and contributors. As of 2019, Pillow development is supported
+[T] by Tidelift.
+
+[U] https://pypi.org/project/pillow
+
+[A] Jeffrey A. Clark and contributors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[E] opt lcms2
+[E] opt libwebp
+[E] opt openjpeg
+
+[L] MIT
+[V] 12.2.0
+[P] X -----5---9 400.000
+
+[D] 5d928e5b57d24777f412f6e8a11e2030924a846b325cb703e7df5a85 pillow-12.2.0.tar.gz https://files.pythonhosted.org/packages/source/p/pillow/

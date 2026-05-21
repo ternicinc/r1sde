@@ -1,0 +1,19 @@
+[TIMESTAMP] 1778918746 Sat May 16 10:05:46 2026
+[BUILDTIME] 8 (9)
+[SIZE] 1.61 MB, 604 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] desktop-file-utils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] readline
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

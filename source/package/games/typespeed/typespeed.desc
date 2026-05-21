@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/typespeed/typespeed.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A typing speed tester
+
+[T] Typespeed is a tool and game for testing your typing speed. It displays
+[T] your CPS (total and correct), typo ratio, and some points to compare with
+[T] your friends. It is a clone of 'ztspeed', and features a network play
+[T] mode for challenging your friends.
+
+[U] https://typespeed.sourceforge.net/
+
+[A] Jani Ollikainen <bestis@iki.fi>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+[F] CROSS
+
+[L] GPL
+[V] 0.6.5
+
+[D] 5c70eae84850af7e82b6f77f3c0d5fcda5c6cf6033529c476fceb729 typespeed-0.6.5.tar.gz https://typespeed.sourceforge.net/
+
+atstage native || hook_add preconf 5 "echo 'ac_cv_func_malloc_0_nonnull=yes' >> config.cache"
+atstage native || hook_add preconf 5 "echo 'ac_cv_func_realloc_0_nonnull=yes' >> config.cache"
+
+typespeedopt="BIN=$root/$SDECFG_PKG_GAMES_BINDIR \
+	      WORDFILES=$root/$SDECFG_PKG_GAMES_DATADIR  \
+	      MAN=$mandir"
+
+var_append makeopt     ' ' $typespeedopt
+var_append makeinstopt ' ' $typespeedopt
+
+hook_add inmake 3 "rm -f $root/etc/typespeedrc"

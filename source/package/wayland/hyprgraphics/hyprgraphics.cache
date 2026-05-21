@@ -1,0 +1,31 @@
+[TIMESTAMP] 1759508642 Fri Oct  3 18:24:02 2025
+[BUILDTIME] 35 (9)
+[SIZE] 0.44 MB, 24 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] file
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] hyprutils
+[OPT] libheif
+[DEP] libjpeg
+[DEP] libjpeg-turbo
+[OPT] libjxl
+[DEP] libpng
+[DEP] librsvg
+[DEP] libwebp
+[DEP] linux-header
+[DEP] make
+[DEP] pango
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar

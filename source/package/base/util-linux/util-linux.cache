@@ -1,0 +1,28 @@
+[TIMESTAMP] 1765886168 Tue Dec 16 12:56:08 2025
+[BUILDTIME] 105 (9)
+[SIZE] 24.03 MB, 472 files
+
+[DEP] bash
+[DEP] binutils
+[OPT] coreutils
+[DEP] diffutils
+[DEP] file
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[OPT] libcap-ng
+[DEP] linux-header
+[DEP] make
+[OPT] ncurses
+[DEP] pam
+[OPT] python
+[DEP] readline
+[DEP] sed
+[OPT] shadow
+[OPT] sqlite
+[OPT] systemd
+[OPT] sysvinit
+[DEP] tar
+[DEP] udev
+[DEP] xz
+[DEP] zlib

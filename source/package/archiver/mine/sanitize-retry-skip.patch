@@ -1,0 +1,41 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/mine/sanitize-retry-skip.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+Mark the default choise more obviously front (also alphabetically -
+beside the Eject case).
+
+  - Rene Rebe <rene@exactcode.de>
+
+diff -ur mine-0.23-vanilla/gasgui.c mine-0.23/gasgui.c
+--- mine-0.23-vanilla/gasgui.c	2005-03-23 09:51:06.000000000 +0100
++++ mine-0.23/gasgui.c	2006-05-29 16:22:40.000000000 +0200
+@@ -133,7 +133,7 @@
+ 			sourcedir, config, p->name);
+ 		printf("Not found on webserver: %s\n\n", p->name);
+ 		while (1) {
+-			printf("Skip or Retry (default=Retry) > ");
++			printf("Retry or Skip (default=Retry) > ");
+ 			fflush(stdout);
+ 			fgets(command, 1024, stdin);
+ 			if ( command[0] == 0 || command[0] == '\n' ||
+@@ -164,7 +164,7 @@
+ 		printf("Please insert Disk #%d and press ENTER.\n\n",
+ 		       p->disk_number);
+ 		while (1) {
+-			printf("Skip, Retry or Eject disk (default=Retry) > ");
++			printf("Retry, Eject or Skip disk (default=Retry) > ");
+ 			fflush(stdout);
+ 			fgets(command, 1024, stdin);
+ 			if ( command[0] == 0 || command[0] == '\n' ||
+@@ -212,7 +212,7 @@
+ 		if ( rc ) {
+ 			printf("Error while installing package %s!\n\n", p->name);
+ 			while (1) {
+-				printf("Skip or Retry (default=Retry) > ");
++				printf("Retry or Skip (default=Retry) > ");
+ 				fflush(stdout);
+ 				fgets(command, 1024, stdin);
+ 				if ( command[0] == 0 || command[0] == '\n' ||

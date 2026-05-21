@@ -1,0 +1,23 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/sane-frontends/hotfix.patch
+# Copyright (C) 2010 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -Nur sane-frontends-1.0.14-orig/src/gtkglue.c sane-frontends-1.0.14/src/gtkglue.c
+--- sane-frontends-1.0.14-orig/src/gtkglue.c	2010-07-23 16:13:33.254914203 +0000
++++ sane-frontends-1.0.14/src/gtkglue.c	2010-07-23 16:14:43.078912232 +0000
+@@ -1476,8 +1476,13 @@
+ 	  || opt->type == SANE_TYPE_GROUP || !dialog->element[i].widget)
+ 	continue;
+ 
++#ifdef SANE_CAP_ALWAYS_SETTABLE
+       if (!(opt->cap & SANE_CAP_ALWAYS_SETTABLE))
+ 	gtk_widget_set_sensitive (dialog->element[i].widget, sensitive);
++#else
++      gtk_widget_set_sensitive (dialog->element[i].widget, sensitive);
++#endif
++
+     }
+ }
+ 

@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/statifier/statifier.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Creates a static executable from a dynamic executable and required libraries
+
+[T] Executable files may be linked statically or dynamically. Dynamically
+[T] linked executables use less disk space and memory, but require
+[T] appropriative dynamic libraries present in order to run. ELF statifier
+[T] make one executable file with no run-time dependencies from a dynamically
+[T] linked executable and all its libraries. This file can be copied and
+[T] run on another machine with no need for all of the libraries.
+
+[U] https://statifier.sourceforge.net/
+
+[A] Valery Reznic <valery_reznic@yahoo.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 1.7.4
+
+[D] 6d70188db3eac9c5295291cb8759835615596419b1b8aa1efc0619e1 statifier-1.7.4.tar.gz https://prdownloads.sourceforge.net/sourceforge/statifier/
+
+hook_add preconf 5 "chmod +x configure"

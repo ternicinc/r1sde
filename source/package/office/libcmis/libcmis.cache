@@ -1,0 +1,29 @@
+[TIMESTAMP] 1777510223 Thu Apr 30 03:50:23 2026
+[BUILDTIME] 110 (9)
+[SIZE] 6.06 MB, 57 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] boost
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] docbook-xml
+[DEP] docbook2x
+[DEP] file
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libxml
+[DEP] libxslt
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] perl-sax-exception
+[DEP] perl-sax-parser
+[DEP] perl-xml-namespace-support
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

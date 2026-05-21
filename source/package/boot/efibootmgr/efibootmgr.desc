@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/efibootmgr/efibootmgr.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A user-space application to modify the Intel EFI Boot Manager
+
+[T] This is efibootmgr, a Linux user-space application to modify the Intel
+[T] Extensible Firmware Interface (EFI) Boot Manager. This application can
+[T] create and destroy boot entries, change the boot order, change the next
+[T] running boot option, and more.
+
+[U] https://github.com/rhboot/efibootmgr
+
+[A] Matt Domsch <Matt_Domsch@dell.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/boot
+[F] CROSS
+[R] + arm arm64 ia64 riscv riscv64 x86 x86-64
+
+[L] GPL
+[V] 18
+
+[D] 8c000a05c049da426bef3259527bc0187eea92859b620703cab1118c efibootmgr-18.tar.gz https://github.com/rhboot/efibootmgr/archive/97668ae0bce776a36ea2001dea63d376be8274ac/
+
+var_append makeopt ' ' EFIDIR=/boot/efi
+var_append makeinstopt ' ' EFIDIR=/boot/efi

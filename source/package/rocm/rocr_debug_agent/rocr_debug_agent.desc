@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rocr_debug_agent/rocr_debug_agent.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] AMD ROCm Debug Agent Library (ROCdebug-agent)
+
+[T] The AMD ROCm Debug Agent (ROCdebug-agent) is a library that can be loaded
+[T] by the ROCm Platform Runtime (ROCr) to provide the following functionality:
+[T] - Print the state of all AMD GPU wavefronts that caused a queue error (for
+[T] example, causing a memory violation, executing an "s_trap 2", or executing
+[T] an illegal instruction). - Print the state of all AMD GPU wavefronts by
+[T] sending a SIGQUIT signal to the process (for example, by pressing "Ctrl-\")
+[T] while the program is executing.
+
+[U] https://github.com/ROCm/rocr_debug_agent
+
+[A] Advanced Micro Devices, Inc.
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS
+[C] extra/development
+
+[L] MIT
+[V] 7.2.3
+[P] X -----5---9 300.765
+
+[CV-GROUP] rocm
+[D] 5d1503a1d3f50f77171b3b5097255362d4a90940f0f157f92844efcd rocr_debug_agent-rocm-7.2.3.tar.gz https://github.com/ROCm/rocr_debug_agent/archive/rocm-7.2.3/
+
+. $base/package/*/*/rocm-conf.in

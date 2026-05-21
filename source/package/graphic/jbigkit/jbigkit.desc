@@ -1,0 +1,40 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/jbigkit/jbigkit.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Lossless image compression library
+
+[T] JBIG-KIT implements a highly effective data compression algorithm for
+[T] bi-level high-resolution images such as fax pages or scanned
+[T] documents as defined in:
+[T]
+[T] International Standard ISO/IEC 11544:1993 and ITU-T Recommendation
+[T] T.82(1993), "Information technology - Coded representation of picture
+[T] and audio information - progressive bi-level image compression",
+[T]
+[T] which is commonly referred to as the "JBIG1 standard". JBIG (Joint
+[T] Bi-level Image experts Group).
+
+[U] https://www.cl.cam.ac.uk/~mgk25/jbigkit/
+
+[A] Markus Kuhn <mgk25@cl.cam.ac.uk>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+[F] CROSS FPIC
+
+[L] GPL
+[V] 2.1
+[P] X -----5---9 112.700
+
+[D] c293b9546e07e14e7c2bfa054bd92804eee79dd9fd2190893e8d7b49 jbigkit-2.1.tar.gz http://www.cl.cam.ac.uk/~mgk25/jbigkit/download/
+
+makeinstopt=
+jbig_install() {
+	install libjbig/*.{a,so} $root$libdir/
+	install libjbig/*.h $root$includedir/
+	install pbmtools/???to???{,85} $root$bindir/
+}
+hook_add postmake 5 jbig_install

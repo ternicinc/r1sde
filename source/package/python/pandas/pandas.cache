@@ -1,0 +1,23 @@
+[TIMESTAMP] 1771859418 Mon Feb 23 16:10:18 2026
+[BUILDTIME] 130 (9)
+[SIZE] 37.76 MB, 1683 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] cython
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] numpy
+[DEP] openssl
+[DEP] python
+[DEP] python-gpep517
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

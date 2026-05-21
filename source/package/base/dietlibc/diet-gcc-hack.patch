@@ -1,0 +1,21 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dietlibc/diet-gcc-hack.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+GCC (but potentionally other packages) use -xassembler, which we must not inject
+the library objects into. The assembler does not recognize object files ... ,-)
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- dietlibc-0.34/diet.c.vanilla	2018-10-23 12:16:16.161405824 +0000
++++ dietlibc-0.34/diet.c	2018-10-23 12:23:03.489399698 +0000
+@@ -139,6 +139,7 @@
+     char *tmp2,*tmp3;
+     if (tmp<cc) goto donttouch;
+     if (!strstr(cc,"cc") && !strstr(cc,"clang")) goto donttouch;
++    if (!strcmp(cc, "-xassembler")) goto donttouch;
+     if ((tmp2=strstr(cc,"linux-"))) {	/* cross compiling? */
+       int len=strlen(platform);
+       m-tmp2;

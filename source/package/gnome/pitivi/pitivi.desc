@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pitivi/pitivi.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Pitivi non-linear audio video editor
+
+[T] Pitivi non-linear audio video editor.
+
+[U] https://www.pitivi.org/
+
+[A] Edward HERVEY <bilboed@bilboed.com>
+[A] Alessandro Decina <alessandro.decina@collabora.co.uk>
+[A] Brandon Lewis <brandon_lewis@berkeley.edu>
+[M] Gerardo Di Iorio <arete74@gmail.com>
+
+[C] extra/multimedia extra/desktop/gnome
+
+[L] GPL
+[V] 2023.03
+
+[CV-URL] https://download.gnome.org/sources/pitivi/cache.json
+[D] 3830512288ad29a9dc803e77deb32d7f5bff33c48e52b71bd33499fe pitivi-2023.03.tar.xz https://download.gnome.org/sources/pitivi/2023/
+
+. $base/package/*/*/gnome-conf.in

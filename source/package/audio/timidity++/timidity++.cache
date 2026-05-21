@@ -1,0 +1,19 @@
+
+[TIMESTAMP] 1703620685 Tue Dec 26 19:58:05 2023
+[BUILDTIME] 10 (9)
+[SIZE] 0.97 MB, 9 files
+
+[DEP] 00-dirtree
+[DEP] alsa-lib
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] xz

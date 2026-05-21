@@ -1,0 +1,50 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/zthread/zthread.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A platform-independent, multi-threading and synchronization library for C++
+
+[T] ZThread is an advanced object-oriented threading and synchronization
+[T] library, implemented in C++ for POSIX, MacOS, and Win32 systems. It
+[T] provides an excellent and powerful abstraction from native threads.
+[T] It includes interruptible thread objects and several other
+[T] synchronization control objects.
+
+[U] https://zthread.sf.net/
+
+[A] Eric Crahen <crahen @ code |dash| foo>
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/development
+[F] CROSS
+
+[L] MIT
+[V] 2.3.2
+
+[D] 24f134324dd464cd8caff62f09e0f9b4d1a125d837d64990a460552f ZThread-2.3.2.tar.gz https://prdownloads.sourceforge.net/sourceforge/zthread/
+
+# clean up .swp files accidently left over
+hook_add inmake 3 'rm -f include/zthread/.Barrier.h.swp'
+
+z_setup() {
+	cp $confdir/zthread.pc.in ${root}$(pkgprefix libdir pkgconfig)/pkgconfig/zthread.pc
+	chmod 644 ${root}$(pkgprefix libdir pkgconfig)/pkgconfig/zthread.pc
+
+	sed -e "s,@libdir@,$libdir,g" \
+		-e "s,@prefix@,/$prefix,g" \
+		-e "s,@exec_prefix@,\$\{prefix},g" \
+		-e "s,@includedir@,\$\{prefix}/include/zthread," \
+		-e "s,@ZTHREAD_VER@,$ver,g" \
+		-i ${root}$(pkgprefix libdir pkgconfig)/pkgconfig/zthread.pc
+}
+hook_add postmake 3 z_setup
+
+z_docs() {
+	doxygen ./doc/zthread.doxygen
+	cp ./doc/documentation.html ./doc/html/index.html
+	cp ./doc/zthread.css ./doc/html/zthread.css
+	cp ./doc/bugs.js ./doc/html/bugs.js
+}
+[ $SDECFG_CREATE_DOCS -ne 0 ] && hook_add inmake 3 z_docs

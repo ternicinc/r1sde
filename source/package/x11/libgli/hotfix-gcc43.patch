@@ -1,0 +1,26 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/libgli/hotfix-gcc43.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- libgli-0.4/src/gli_glf.cpp.vanilla	2008-08-10 16:20:14.000000000 +0200
++++ libgli-0.4/src/gli_glf.cpp	2008-08-10 16:20:20.000000000 +0200
+@@ -23,6 +23,7 @@
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <math.h>
++#include <string.h>
+ 
+ #ifdef MACOSX
+ #include <OpenGL/gl.h>
+--- libgli-0.4/src/gli_window.cpp.vanilla	2008-08-10 16:20:28.000000000 +0200
++++ libgli-0.4/src/gli_window.cpp	2008-08-10 16:20:40.000000000 +0200
+@@ -17,6 +17,7 @@
+ 	Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+ */
+ #include <stdio.h>
++#include <string.h>
+ #include "gli_window.h"
+ #include "gli_button.h"
+ #include "string"

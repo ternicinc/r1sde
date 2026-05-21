@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/alacritty/alacritty.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The fastest terminal emulator in existence
+
+[T] Alacritty is a terminal emulator with a strong focus on simplicity
+[T] and performance. Using the GPU for rendering enables optimizations
+[T] that simply aren't possible without it. With such a strong focus on
+[T] performance, included features are carefully considered and you can
+[T] always expect Alacritty to be blazingly fast.
+
+[A] The Alacritty Project
+[M] René Rebe <rene@exactco.de>
+
+[U] https://alacritty.org
+
+[C] extra/shell
+[F] CROSS LATOMIC.sparc LATOMIC.x86
+[R] - alpha arc avr32 blackfin cris ia64 hppa hppa64 m68k microblaze nios2 openrisc superh
+
+[L] APL
+[V] 0.17.0
+
+[D] 22bb488cb26d8e0b4a27c5f6c601ba9c754a4f7b982fd577180d7dae alacritty-0.17.0.tar.gz !https://github.com/alacritty/alacritty/archive/refs/tags/v0.17.0.tar.gz
+
+cargoinstopt=
+[ "$arch" = arm ] && hook_add prepatch 5 cargo_vendor
+atstage cross && export PKG_CONFIG_SYSROOT_DIR=$root
+atstage cross && hook_add postmake 5 "install target/${arch_target}/*/alacritty $root$bindir"
+atstage native && hook_add postmake 5 "install target/*/alacritty $root$bindir"
+mkdir -p $root$datadir/pixmaps/
+hook_add postmake 5 "install extra/logo/alacritty-term.svg $root$datadir/pixmaps/Alacritty.svg"
+hook_add postmake 5 "install extra/linux/Alacritty.desktop $root$datadir/applications/"

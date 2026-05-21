@@ -1,0 +1,23 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/vnuml/hotfix-configure-notcheck-devnettun.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- vnuml-1.6.2-1/configure.orig	2005-11-22 13:24:37.000000000 +0100
++++ vnuml-1.6.2-1/configure	2006-02-16 00:22:50.000000000 +0100
+@@ -2896,14 +2896,6 @@
+ fi
+ echo "$as_me:$LINENO: result: `eval echo '${'$as_ac_File'}'`" >&5
+ echo "${ECHO_T}`eval echo '${'$as_ac_File'}'`" >&6
+-if test `eval echo '${'$as_ac_File'}'` = yes; then
+-  :
+-else
+-  { { echo "$as_me:$LINENO: error: tun device $VNUML_TUN not found.  Please set the appropriate device using the --with-tun option." >&5
+-echo "$as_me: error: tun device $VNUML_TUN not found.  Please set the appropriate device using the --with-tun option." >&2;}
+-   { (exit 1); exit 1; }; }
+-fi
+-
+ 
+ 
+ # Check whether --with-tun_group or --without-tun_group was given.

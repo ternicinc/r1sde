@@ -1,0 +1,20 @@
+[TIMESTAMP] 1737679379 Fri Jan 24 01:42:59 2025
+[BUILDTIME] 40 (9)
+[SIZE] 58.35 MB, 246 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libffi
+[DEP] libtommath
+[DEP] libuv
+[DEP] linux-header
+[DEP] make
+[DEP] moarvm
+[DEP] nqp
+[DEP] perl
+[DEP] sed
+[DEP] tar

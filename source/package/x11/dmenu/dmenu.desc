@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dmenu/dmenu.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A generic menu for X
+
+[T] Dynamic menu is a generic menu for X, originally designed for dwm. It
+[T] manages huge amounts (up to 10.000 and more) of user defined menu items
+[T] efficiently.
+
+[U] https://tools.suckless.org/dmenu/
+
+[A] Michał Janeczek <janeczek@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/windowmanager
+[F] CROSS
+
+[L] MIT
+[V] 5.4
+
+[D] be9bc32dd793185dfeb4d351e42505d2342216cce9b76344478f17e9 dmenu-5.4.tar.gz https://dl.suckless.org/tools/

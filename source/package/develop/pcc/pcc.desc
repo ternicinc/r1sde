@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pcc/pcc.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Portable C Compiler
+
+[T] The Portable BSD C Compiler.
+
+[U] http://pcc.ludd.ltu.se/
+
+[A] Stephen C. Johnson
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] NOPARALLEL
+
+[L] BSD
+[V] 1.1.0
+
+[D] 1b5a8723872a49f33a5c5d80e6a34e5b29368019d839e207e677d78f pcc-1.1.0.tgz http://pcc.ludd.ltu.se/ftp/pub/pcc-releases/

@@ -1,0 +1,48 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ghidra/ghidra.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Reverse engineering Software (SRE) framework
+
+[T] A software reverse engineering (SRE) framework created and
+[T] maintained by the National Security Agency Research Directorate. This
+[T] framework includes a suite of full-featured, high-end software analysis tools
+[T] that enable users to analyze compiled code on a variety of
+[T] platforms.
+
+[U] https://github.com/NationalSecurityAgency/ghidra
+
+[A] NSA
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/development
+[E] add pip
+
+[L] APL
+[V] 12.1
+
+[D] 01dc43769ef97ee1286ab2e8c734855ca44f014f7ce4ecb195e04c2b Ghidra_12.1_build.tar.gz https://github.com/NationalSecurityAgency/ghidra/archive/Ghidra_12.1_build/
+
+[ $prefix_auto = 1 ] && prefix="opt/ghidra" && set_confopt
+
+runconf=0
+runmake=
+
+build() {
+	gradle -I gradle/support/fetchDependencies.gradle
+	gradle buildGhidra
+}
+hook_add inmake 2 build
+
+install() {
+	mkdir -p build/out
+	cd build/out
+	unzip ../dist/*.zip
+
+	cp -r gh*/* $root/$prefix
+	ln -svf ../ghidraRun $root$bindir/ghidra
+	chmod +x $root$bindir/ghidra
+}
+hook_add postmake 2 install

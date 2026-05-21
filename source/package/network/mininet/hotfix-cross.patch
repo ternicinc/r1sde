@@ -1,0 +1,38 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/mininet/hotfix-cross.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+Allow a specifc compiler for cross compilation.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- mininet/Makefile	2000-01-01 00:00:00.000000000 +0100
++++ mininet/Makefile	2006-01-03 14:06:17.000000000 +0100
+@@ -4,6 +4,8 @@
+ 
+ DIET=/opt/diet/bin/diet -Os
+ #CROSS=arm-linux-
++CC=gcc
++STRIP=strip
+ CROSS=
+ LDFLAGS=-s
+ 
+@@ -14,12 +15,12 @@
+ endif
+ 
+ %.o: %.c
+-	$(DIET) $(CROSS)gcc -pipe $(CFLAGS) -c $^
+-	strip -x -R .comment -R .note $@
++	$(DIET) $(CROSS)$(CC) -pipe $(CFLAGS) -c $^
++	$(STRIP) -x -R .comment -R .note $@
+ 
+ %: %.o
+-	$(DIET) $(CROSS)gcc -o $@ $^ -L../libowfat -lowfat $(LDFLAGS)
+-	strip -R .comment -R .note $@
++	$(DIET) $(CROSS)$(CC) -o $@ $^ -L../libowfat -lowfat $(LDFLAGS)
++	$(STRIP) -R .comment -R .note $@
+ 
+ netcat: netcat.o
+ ping: ping.o

@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libglvnd/libglvnd.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The GL Vendor-Neutral Dispatch library
+
+[T] libglvnd is a vendor-neutral dispatch layer for arbitrating OpenGL API
+[T] calls between multiple vendors. It allows multiple drivers from different
+[T] vendors to coexist on the same filesystem, and determines which vendor to
+[T] dispatch each API call to at runtime.
+[T]
+[T] Both GLX and EGL are supported, in any combination with OpenGL and OpenGL ES.
+
+[A] NVIDIA CORPORATION
+[M] René Rebe <rene@exactco.de>
+
+[U] https://github.com/NVIDIA/libglvnd
+
+[C] base/x11
+[F] CROSS
+
+[L] MIT
+[V] 1.7.0
+[P] X ?----5---9 127.440
+
+[D] 743684c87a38f34fc698a306bbb8b348db42d1f1472fbb3b47a82f02 libglvnd-v1.7.0.tar.bz2 https://gitlab.freedesktop.org/glvnd/libglvnd/-/archive/v1.7.0/

@@ -1,0 +1,16 @@
+[TIMESTAMP] 1776336930 chu 16 abr 2026 12:55:30
+[BUILDTIME] 3 (9)
+[SIZE] 0.53 MB, 14 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/prjtrellis/prjtrellis.desc
+[COPY] Copyright (C) 2018 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Documenting the Lattice ECP5 bit-stream format
+
+[T] Project Trellis enables a fully open-source flow for ECP5 FPGAs using
+[T] Yosys for Verilog synthesis and nextpnr for place and route. Project
+[T] Trellis itself provides the device database and tools for bitstream
+[T] creation.
+
+[U] https://github.com/SymbiFlow/prjtrellis
+
+[A] The Project Trellis Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] MIT
+[V] 1.4
+[P] X -----5---9 210.000
+
+[D] dcce9483d34554896336aa6ae9f957e938479766608ca3d54aae1f5a prjtrellis-1.4.tar.gz https://github.com/YosysHQ/prjtrellis/archive/1.4/
+[D] 142c4d0294b1087d727cd76613b8d06870269abb986f3d0662c81dda prjtrellis-db-1.4.zip https://github.com/YosysHQ/prjtrellis/releases/download/1.4/
+
+prjtrellis_db() {
+	unzip $(match_source_file -p prjtrellis-db.*zip)
+	mv -vf prjtrellis-db-*/* database/
+	cd libtrellis
+}
+hook_add preconf 5 prjtrellis_db
+
+var_append cmakeopt ' ' -DCURRENT_GIT_VERSION=$desc_V

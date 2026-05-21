@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lua-pcre/lua-pcre.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] PCRE lua module base on lrexlib
+
+[T] This module provides PCRE regular exprision matching.
+[T] Additionally it is possible to replace the default
+[T] string routines to use the PCRE syntax.
+
+[U] http://lrexlib.luaforge.net/
+
+[A] Reuben Thomas
+[A] Shmuel Zeigerman
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS FPIC
+
+[L] MIT
+[V] 2.4.0
+
+[CV-URL] http://luaforge.net/frs/?group_id=63
+[D] e943ca50793d5736e501d5010a829c14ed2e12794abe1acbdb3d5283 lrexlib-2.4.0.zip http://luaforge.net/frs/download.php/3599/
+
+. package/lua/*/lrexlib-conf.in
+custmain="build_lrexlib pcre"

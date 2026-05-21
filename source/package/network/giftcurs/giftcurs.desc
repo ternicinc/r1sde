@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/giftcurs/giftcurs.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A cursed frontend to the giFT daemon
+
+[T] giFTcurs is a cursed frontend to the giFT daemon and has been described as
+[T] seriously slick. It wont work that well without giFT, which you should
+[T] have already.
+
+[U] https://www.nongnu.org/giftcurs/
+
+[A] Göran Weinholt <weinholt@dtek.chalmers.se>
+[A] Christian Häggström <chm@c00.info>
+[M] Leonel Iván Saafigueroa <leonel@saafigueroa.com.ar>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 0.6.2
+
+[D] ff029f727f10ee778f4d4bd869fbc3253358d61736d3bf382ebe8d9e giFTcurs-0.6.2.tar.gz http://savannah.nongnu.org/download/giftcurs/

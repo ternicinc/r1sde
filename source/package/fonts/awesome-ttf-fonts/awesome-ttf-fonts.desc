@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/awesome-ttf-fonts/awesome-ttf-fonts.desc
+[COPY] Copyright (C) 2021 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Iconic font designed for Bootstrap
+
+[T] A font that includes emojis for use in web content, chat software
+[T] and so on.
+
+[U] https://fontawesome.com
+
+[A] FontAwesome team and contributors
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/font
+[F] CROSS
+
+[L] OpenSource
+[V] 7.2.0
+
+[D] 65cdbd516364f68a8a974469bff9567135c5092b58a173d4dd3573d5 awesome-ttf-fonts-7.2.0.tar.gz https://github.com/FortAwesome/Font-Awesome/archive/7.2.0/
+
+runmake=0
+
+aw_inst() {
+	cp -fv webfonts/*.ttf otfs/*.otf $root$datadir/fonts/
+}
+hook_add postmake 5 aw_inst

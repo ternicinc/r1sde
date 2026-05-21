@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libnice/libnice.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An implementation of the Interactice Connectivity Establishment standard (ICE)
+
+[T] An implementation of the Interactice Connectivity Establishment standard (ICE).
+
+[U] https://nice.freedesktop.org/wiki/
+
+[A] Dafydd Harries <dafydd.harries@collabora.co.uk>
+[A] Remi Denis-Courmont <remi.denis-courmont@nokia.com>
+[A] Kai Vehmanen <kai.vehmanen@nokia.com>
+[A] Youness Alaoui <youness.alaoui@collabora.co.uk>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/multimedia
+
+[L] LGPL
+[V] 0.1.23
+[P] X -----5---9 240.000
+
+[D] 670f5a21a793157c901920e4b443fae0f73d7f8626415445a109e5c0 libnice-0.1.23.tar.gz http://nice.freedesktop.org/releases/

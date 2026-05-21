@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---.
+[COPY] t2/package/*/zopfli/zopfli.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---.
+
+[I] Compression algorithm library
+
+[T] Compression algorithm library.
+
+[U] https://github.com/google/zopfli
+
+[A] Zopfli Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] OBJDIR CROSS
+
+[V] 1.0.3
+[L] APL
+
+[D] be1a8678ef965105395fbc719e5833a6d937b3411e3a9aeed3c1948c zopfli-1.0.3.tar.gz https://github.com/google/zopfli/archive/
+
+var_append cmakeopt ' ' -DCMAKE_POLICY_VERSION_MINIMUM=3.5

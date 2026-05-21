@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/containerd/containerd.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An open and reliable container runtime
+
+[T] An open and reliable container runtime.
+
+[U] https://containerd.io/
+
+[A] Containerd Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+
+[V] 2.3.1
+[L] APL
+[P] X -----5---9 300.000
+
+[D] 2098603404feb401579c92aa3b5eb44b7f7a17d37e0103f537be2adc containerd-2.3.1.tar.gz https://github.com/containerd/containerd/archive/v2.3.1/
+
+. $base/package/*/*/go-conf.in
+
+rungo=0
+export CGO_ENABLED=0
+export GO111MODULE=on
+
+var_remove GCC_WRAPPER_REMOVE ' ' '-gdwarf*'
+var_append makeopt ' ' VERSION=$ver

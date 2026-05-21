@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xkbcommon/xkbcommon.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library to handle keyboard descriptions
+
+[T] xkbcommon is a library to handle keyboard descriptions, including loading
+[T] them from disk, parsing them and handling their state. It's mainly meant
+[T] for client toolkits, window systems, and other system applications.
+
+[U] https://xkbcommon.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.13.1
+[P] X ?----5---9 112.600
+
+[D] 1bfbd589cfd85aa11b53c3845b75dcf06ee9b195d31570cb19284758 libxkbcommon-1.13.1.tar.gz https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.13.1/
+
+. package/*/*/modular-x-conf.in
+pkginstalled wayland || var_append mesonopt ' ' -Denable-wayland=false
+pkginstalled doxygen || var_append mesonopt ' ' -Denable-docs=false
+pkginstalled libxcb || var_append mesonopt ' ' -Denable-x11=false

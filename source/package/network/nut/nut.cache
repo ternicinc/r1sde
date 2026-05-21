@@ -1,0 +1,39 @@
+[TIMESTAMP] 1775584586 Tue Apr  7 19:56:26 2026
+[BUILDTIME] 85 (9)
+[SIZE] 20.60 MB, 220 files
+
+[DEP] asciidoc
+[OPT] aspell
+[DEP] automake
+[DEP] avahi
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] cppunit
+[DEP] diffutils
+[DEP] docbook-xml
+[DEP] file
+[DEP] findutils
+[OPT] freeipmi
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] libmodbus
+[DEP] libtool
+[DEP] libusb
+[OPT] libusb-compat
+[DEP] libxml
+[DEP] libxslt
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] neon
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] tcp_wrappers
+[DEP] util-linux

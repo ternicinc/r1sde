@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/yersinia/yersinia.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A framework for layer 2 attacks
+
+[T] Yersinia implements several attacks for the following protocols:
+[T] Spanning Tree (STP), Cisco Discovery (CDP), Dynamic Host
+[T] Configuration (DHCP), Hot Standby Router (HSRP), Dynamic Trunking
+[T] (DTP), 802.1q, Inter-Switch Link Protocol (ISL), and VLAN Trunking
+[T] (VTP). It helps the pen-tester in different tasks, such as becoming
+[T] the root role in the Spanning Tree, creating virtual CDP neighbors,
+[T] setting up rogue DHCP servers, becoming the active router in a HSRP
+[T] scenario, enabling trunk, performing ARP spoofing over VLAN hopping,
+[T] adding or deleting VLANs (via VTP), and more.
+
+[U] http://www.yersinia.net
+
+[A] David Barroso Berrueta "tomac" <tomac@wasahero.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] GPL
+[V] 0.8.2
+
+[D] 56b2ad713671687ca94511a93b08276520f38d7b4531c3495ae074b0 yersinia-0.8.2.tar.gz https://github.com/tomac/yersinia/archive/v0.8.2/

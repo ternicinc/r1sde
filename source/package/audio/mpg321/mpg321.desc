@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mpg321/mpg321.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A simple CML mp3 player
+
+[T] mpg321 is a free replacement for mpg123, a very popular command-line
+[T] mp3 player. mpg321 is used for frontends, as an mp3 player and as an
+[T] mp3 to wave file decoder (primarily for use with CD-recording software.)
+[T] In all of these capacities, mpg321 can be used as a drop-in replacement
+[T] for mpg123.
+[T]
+[T] It uses code from the MAD distribution by Rob Leslie; XMMS; and plaympeg
+[T] from the SMPEG distribution.
+
+[U] https://mpg321.sourceforge.net/
+
+[A] Joe Drew <hoserhead@woot.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS FCOMMON
+
+[E] opt mpg123
+
+[L] GPL
+[V] 0.3.2
+
+[D] 9388cfc28fc8e3f0040cb02bfe90b4d2541c5e83f69e5da48e13f216 mpg321_0.3.2.orig.tar.gz https://prdownloads.sourceforge.net/sourceforge/mpg321/

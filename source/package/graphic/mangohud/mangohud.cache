@@ -1,0 +1,29 @@
+[TIMESTAMP] 1777383182 mar. 28 avril 2026 15:33:02
+[BUILDTIME] 175 (9)
+[SIZE] 13.19 MB, 18 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] dbus
+[DEP] diffutils
+[DEP] gawk
+[DEP] glslang
+[DEP] grep
+[DEP] libx11
+[DEP] linux-header
+[DEP] mako
+[DEP] markupsafe
+[DEP] meson
+[DEP] ninja
+[OPT] nvidia-settings
+[DEP] openssl
+[DEP] pygments
+[DEP] python
+[DEP] sed
+[DEP] tar
+[OPT] wayland
+[DEP] xkbcommon
+[DEP] xorgproto
+[DEP] xz

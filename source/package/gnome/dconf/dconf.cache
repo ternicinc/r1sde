@@ -1,0 +1,23 @@
+[TIMESTAMP] 1745785257 Sun Apr 27 23:20:57 2025
+[BUILDTIME] 6 (9)
+[SIZE] 0.31 MB, 27 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[OPT] docbook-xml
+[OPT] docbook-xsl
+[DEP] gawk
+[OPT] glib
+[DEP] grep
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] vala
+[DEP] xz

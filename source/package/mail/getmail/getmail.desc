@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/getmail/getmail.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A fetchmail replacement with qmail-like Maildir and external MDA delivery
+
+[T] Getmail is intended as a simple, secure, and reliable replacement for
+[T] fetchmail. It retrieves email (either all messages, or only unread
+[T] messages) from one or more POP3, SPDS, or IMAP4 servers (with or
+[T] without SSL) for one or more email accounts, and reliably delivers into
+[T] qmail-style Maildirs, mboxrd files, or through external MDAs (command
+[T] deliveries) specified on a per-account basis. Getmail also has excellent
+[T] support for domain (multidrop) mailboxes, including delivering messages to
+[T] different users or destinations based on the envelope recipient address.
+
+[U] https://pyropus.ca/software/getmail/
+
+[A] Charles Cazabon <freshmeat@discworld.dyndns.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office
+[F] CROSS
+
+[L] GPL
+[V] 6.19.12
+
+[D] 83e89e269faf615dafdb32daf40d3265d4912cb181185f59bd6129de getmail-6.19.12.tar.gz https://github.com/getmail6/getmail6/archive/v6.19.12/

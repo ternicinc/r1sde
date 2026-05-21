@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libopenshot/libopenshot.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] OpenShot Video Library
+
+[T] OpenShot Video Library is a free, open-source project dedicated to
+[T] delivering high quality video editing, animation, and playback solutions
+[T] to the world. API currently supports C++, Python, and Ruby.
+
+[U] https://www.openshot.org/
+
+[A] Jonathan Thomas <jonathan@openshot.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[E] opt doxygen
+
+[L] LGPL3
+[V] 0.7.0
+[P] X -----5---9 300.100
+
+[D] 57cd2a054cbf5cad3363157abca495d57a413dc1a3e81312e09f1f4a libopenshot-0.7.0.tar.gz https://github.com/OpenShot/libopenshot/archive/v0.7.0/

@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-video-intel/xf86-video-intel.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Xorg driver for Intel video chips
+
+[T] The Xorg driver for Intel i810, i815, 830M, 845G, 852GM, 855GM, 865G, 915G,
+[T] 915GM and 965G video chips. Supported chipsets: i810, i810e, i810-dc100,
+[T] i815, i830M, 845G, 852GM, 855GM, 865G, 915G/GM, 945G/GM/GME, 946GZ,
+[T] G/GM/GME/Q965, G/Q33, G/Q35, G41, G/Q43, G/GM/Q45, PineView-M (Atom N400
+[T] series), PineView-D (Atom D400/D500 series).
+
+[U] https://www.X.org
+[U] http://intellinuxgraphics.org/
+
+[A] Alan Hourihane
+[A] Keith Whitwell
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+# LTO triggered inf.loop w/ gcc
+[F] CROSS NO-LTO.gcc
+[R] + x86 x86-64
+
+[L] OpenSource
+[V] 2.99.917 4a64400e
+
+[D] 398231e855a2c362c25f1c718ed9cd3b639faa329c11dc5906267afe xf86-video-intel-4a64400e.tar.bz2 git+https://gitlab.freedesktop.org/xorg/driver/xf86-video-intel 4a64400e
+
+. package/*/*/modular-x-conf.in
+autogen=1 runmeson=0 # git only

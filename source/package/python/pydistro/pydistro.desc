@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pydistro/pydistro.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Linux OS platform information API
+
+[T] Distro provides information about the OS distribution it runs on,
+[T] such as a reliable machine-readable ID, or version information.
+[T] It is the recommended replacement for Python's original
+[T] platform.linux_distribution function (removed in Python 3.8).
+[T] It also provides much more functionality which isn't necessarily
+[T] Python bound, like a command-line interface.
+
+[U] https://github.com/python-distro/distro
+
+[A] Nir Cohen <nir36g@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/development
+
+[L] APL
+[V] 1.9.0
+[P] X -----5---9 160.000
+
+[D] 9a1669fb90333fdc09ebe89babbadbeb43334193c4328b226df430ed pydistro-1.9.0.tar.gz https://github.com/python-distro/distro/archive/v1.9.0/

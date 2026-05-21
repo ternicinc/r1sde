@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-jsonschema/python-jsonschema.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An implementation of the JSON Schema specification for Python
+
+[T] jsonschema is an implementation of the JSON Schema specification for Python.
+
+[U] https://github.com/python-jsonschema/jsonschema
+
+[A] Julian Berman <Julian+jsonschema@GrayVines.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[E] add attrs
+[E] add hatchling
+[E] add hatch-fancy-pypi-readme
+[E] add hatch-vsc
+[E] add python-jsonschema-specifications
+[E] add referencing
+[E] add rpds
+
+[L] MIT
+[V] 4.26.0
+[P] X -----5---9 110.275
+
+[D] a4428e4ba049fa90fa4e97cb2ba14f8ed1bddd509b6b6e4bebe6d6e5 jsonschema-4.26.0.tar.gz https://files.pythonhosted.org/packages/source/j/jsonschema/

@@ -1,0 +1,34 @@
+[TIMESTAMP] 1737678768 Fri Jan 24 01:32:48 2025
+[BUILDTIME] 6 (9)
+[SIZE] 1.01 MB, 213 files
+
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] caja
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] gobject-introspection
+[DEP] grep
+[DEP] gtk+
+[DEP] harfbuzz
+[DEP] libmateweather
+[DEP] libx11
+[DEP] libxklavier
+[DEP] linux-header
+[DEP] make
+[OPT] mate-desktop
+[DEP] openssl
+[DEP] pango
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar
+[DEP] xorgproto
+[DEP] xz

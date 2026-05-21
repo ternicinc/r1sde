@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libglade/libglade.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A GUI creation library for Gtk+
+
+[T] This library allows you to load user interfaces in your program, which are
+[T] stored externally. This allows alteration of the interface without
+[T] recompilation of the program.
+[T]
+[T] The interfaces can also be edited with GLADE.
+
+[A] James Henstridge <james@daa.com.au>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/development extra/desktop/gnome
+[F] CROSS
+
+[L] GPL
+[V] 2.6.4
+[P] X -----5---9 140.800
+
+[CV-URL] https://download.gnome.org/sources/libglade/cache.json
+[D] 9a01066fd430729ad0293105cc3f3e767adb4069f7c0dca127d3f859 libglade-2.6.4.tar.bz2 https://download.gnome.org/sources/libglade/2.6/
+
+. $base/package/*/*/gnome-conf.in
+atstage native || var_append confopt ' ' --without-xml-catalog

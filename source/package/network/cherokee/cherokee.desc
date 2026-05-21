@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cherokee/cherokee.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A very fast, flexible, and lightweight Web server
+
+[T] Cherokee is a very fast, flexible, and easy to configure Web Server. It
+[T] supports the currently widespread technologies: FastCGI, SCGI, PHP,
+[T] CGI, TLS and SSL encrypted connections, Virtual hosts, authentication,
+[T] on the fly encoding, Apache compatible log files, and much more. It also
+[T] provides two versions. The default one scales up in SMP systems. Besides,
+[T] it is also possible to compile u-Cherokee, a much smaller version of
+[T] the server suitable for embedded devices.
+
+[U] https://www.cherokee-project.com/
+
+[A] Alvaro Lopez Ortega <alvaro@alobbs.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[E] opt libtheora
+[E] opt lame
+
+[L] GPL
+[V] 1.2.104
+
+[D] e4960cf982280e41ab512eb53e579a318cb94fbe851377e51b5a8674 cherokee-1.2.104.tar.gz https://github.com/cherokee/webserver/archive/v1.2.104/

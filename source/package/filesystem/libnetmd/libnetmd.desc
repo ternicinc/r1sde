@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libnetmd/libnetmd.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] NetMD, HiMD access library
+
+[T] Libnetmd is an open source effort to provide tools for use with Sony NetMD
+[T] and HiMD recorders under operating systems supported by libusb.
+
+[U] https://libnetmd.sourceforge.net/
+
+[A] Marc Britten
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+[F] CROSS
+
+[L] GPL
+[V] 20060701
+
+[D] b8f176fe6335a01963d1d9d87fd9b95ff87979df87d09bb520b959dc libnetmd-20060701.tar.gz !https://libnetmd.sourceforge.net/cvs/nightly.tar.gz
+
+makeinstopt=
+hook_add postmake 5 "install netmd $root$bindir/"

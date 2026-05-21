@@ -1,0 +1,22 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/clang/skip-distros.patch
+# Copyright (C) 2019 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+There is no point wasting CPU cycles checking for other distributions.
+We know we are "Unknown" aka T2.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- clang-10.0.0.src/lib/Driver/Distro.cpp.vanilla	2020-03-25 11:54:34.708521322 +0100
++++ clang-10.0.0.src/lib/Driver/Distro.cpp	2020-03-25 11:54:53.396521225 +0100
+@@ -22,7 +22,7 @@
+                                        const llvm::Triple &TargetOrHost) {
+   // If we don't target Linux, no need to check the distro. This saves a few
+   // OS calls.
+-  if (!TargetOrHost.isOSLinux())
++  //if (!TargetOrHost.isOSLinux())
+     return Distro::UnknownDistro;
+ 
+   // If the host is not running Linux, and we're backed by a real file system,

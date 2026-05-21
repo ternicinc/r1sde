@@ -1,0 +1,54 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sqlite/sqlite.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An Embeddable SQL Database Engine
+
+[T] SQLite is a C library that implements an embeddable SQL database
+[T] engine. Programs that link with the SQLite library can have SQL database
+[T] access without running a separate RDBMS process. The distribution comes
+[T] with a standalone command-line access program (sqlite) that can be used
+[T] to administer an SQLite database and which serves as an example of how
+[T] to use the SQLite library.
+[T]
+[T] SQLite is not a client library used to connect to a big database
+[T] server. SQLite is the server. The SQLite library reads and writes directly
+[T] to and from the database files on disk.
+
+[U] https://www.sqlite.org/
+
+[A] drh@hwaci.com
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system extra/database
+[F] CROSS NO-LTO.gcc
+
+[L] PublicDomain
+[V] 3.51.3
+[P] X --2--5---9 109.400
+
+# we need to use alamgamation version now according to it's website
+[CV-URL] http://www.sqlite.org/download.html
+[CV-TR] s/\(.*\)\.\(.*\)\.\(.*\)/\1\20\300/
+[D] 9f352285c2f8f7cbdaeed793a814220ca9fbefa28d55c542a65bc5f1 sqlite-autoconf-3510300.tar.gz https://www.sqlite.org/2026/
+
+cleanconfopt=0
+if atstage cross; then
+	var_remove_regex confopt ' ' "--with-sysroot=.*"
+	var_append confopt ' ' --sysroot=$sysroot
+fi
+
+export CCACHE=none
+
+# for tinysparql
+var_append confopt ' ' --enable-fts5
+# for Firefox et al. when using system sqlite
+var_append GCC_WRAPPER_APPEND ' ' '-DSQLITE_SECURE_DELETE -DSQLITE_ENABLE_UNLOCK_NOTIFY -DSQLITE_ENABLE_DBSTAT_VTAB'
+# for gdal
+var_append confopt ' ' --enable-rtree
+
+pkginstalled tcl && var_append confopt ' ' --enable-fts3
+[ $arch = "xtensa" ] && var_append GCC_WRAPPER_APPEND ' ' '-mlongcalls -mtext-section-literals'

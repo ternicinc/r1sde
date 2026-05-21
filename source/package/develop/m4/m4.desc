@@ -1,0 +1,41 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/m4/m4.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The m4 macro processor
+
+[T] GNU 'M4' is an implementation of the traditional Unix macro
+[T] processor. It is mostly SVR4 compatible, although it has some
+[T] extensions (for example, handling more than 9 positional parameters
+[T] to macros). 'M4' also has built-in functions for including files,
+[T] running shell commands, doing arithmetic, etc. Autoconf needs GNU
+[T] 'M4' for generating 'configure' scripts, but not for running them.
+
+[U] https://www.gnu.org/software/m4/
+
+[A] Rene' Seindal and many others
+[M] René Rebe <rene@exactco.de>
+
+[C] base/development
+[F] CROSS DIETLIBC LATOMIC.sparc
+
+[L] GPL
+[V] 1.4.21
+[P] X 01---5---9 102.400
+
+[D] f6c7c3711ca653e978afcf407b2f3da5dcc1d5640798e716badd1a12 m4-1.4.21.tar.xz http://ftp.gnu.org/pub/gnu/m4/
+
+atstage native || hook_add preconf 5 "echo 'gl_cv_func_mbrtowc_incomplete_state=yes
+gl_cv_func_mbrtowc_sanitycheck=yes
+gl_cv_func_mbrtowc_null_arg=yes
+gl_cv_func_mbrtowc_retval=yes
+gl_cv_func_mbrtowc_nul_retval=yes
+gl_cv_func_btowc_eof=yes
+gl_cv_func_wcrtomb_retval=yes
+gl_cv_func_wctob_works=yes' > config.cache"
+
+var_append SYSGCC_WRAPPER_APPEND ' ' -std=gnu11
+var_append GCC_WRAPPER_APPEND ' ' -std=gnu11

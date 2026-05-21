@@ -1,0 +1,53 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xboard/xboard.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A GUI frontend to GNU chess
+
+[T] XBoard is a graphical chessboard for the X Window System that can
+[T] serve as a user interface for GNU Chess, Crafty, and other chess
+[T] engines, for the Internet Chess Servers, and for electronic mail
+[T] correspondence chess. XBoard can also be used by itself. It can
+[T] read and write game files in PGN (portable game notation).
+
+[U] https://www.tim-mann.org/xboard.html
+
+[A] Tim Mann <tim@tim-mann.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+#[C] extra/game/board
+
+[L] GPL
+[V] 4.9.1
+
+[D] 8d4f75abade28e9e4698733bb034602a2a56810183060ec8e99e004b xboard-4.9.1.tar.gz http://ftp.gnu.org/gnu/xboard/
+
+bindir=$root/$SDECFG_PKG_GAMES_BINDIR
+datadir=$root/$SDECFG_PKG_GAMES_DATADIR
+
+[ "$SDECFG_PKG_XBOARD_XAW3D" == "1" ] &&
+  var_append confopt ' ' --with-Xaw3d
+[ "$SDECFG_PKG_XBOARD_ZIPPY" == "1" ] &&
+  var_append confopt ' ' --enable-zippy
+
+if [ "$SDECFG_PKG_XBOARD_XPM" == "1" ]; then
+  var_append confopt ' ' --enable-xpm
+else
+  var_append confopt ' ' --disable-xpm
+fi
+
+if [ "$SDECFG_PKG_XBOARD_PTYS" == "1" ]; then
+  var_append confopt ' ' --enable-ptys
+else
+  var_append confopt ' ' --disable-ptys
+fi
+
+if [ "$SDECFG_PKG_XBOARD_SIGINT" == "1" ]; then
+  var_append confopt ' ' --enable-sigint
+else
+  var_append confopt ' ' --disable-sigint
+fi

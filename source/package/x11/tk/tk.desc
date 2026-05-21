@@ -1,0 +1,39 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/tk/tk.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Tk toolkit
+
+[T] Tcl paired with the Tk toolkit provides the fastest and most powerful
+[T] way to create GUI applications that run on PCs, Unix, and the Macintosh.
+[T] Tcl can also be used for a variety of web-related tasks and for creating
+[T] powerful command languages for applications.
+
+[U] https://tcl.sourceforge.net/
+
+[A] University of California, Sun Microsystems, Inc., Scriptics Corporation
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development base/x11
+
+[E] opt cups
+[E] opt libxscrnsaver
+
+[L] OpenSource
+[V] 9.0.3
+[P] X -----5---9 119.000
+
+[CV-FLAGS] tcltk
+[D] ee8c4d20905981e0c754706926f9eb7bf75efd4865732d9a731b2b8a tk9.0.3-src.tar.gz https://prdownloads.sourceforge.net/sourceforge/tcl/
+
+srcdir=*/unix
+
+ptk() {
+    mm=`echo $ver | cut -d . -f 1-2`
+    ln -vsf $bindir/wish$mm $root$bindir/wish
+    ln -vsf $libdir/libtk$mm.so $root$libdir/libtk.so
+}
+hook_add postinstall 5 ptk

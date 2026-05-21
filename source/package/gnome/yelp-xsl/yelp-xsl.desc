@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/yelp-xsl/yelp-xsl.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome yelp-xsl package
+
+[T] Core Gnome yelp-xsl package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+[F] CROSS
+
+[L] LGPL
+[V] 49.0
+[P] X -----5---9 400.000
+
+[CV-URL] https://download.gnome.org/sources/yelp-xsl/cache.json
+[D] 39e6383e000846c3898ff31db318352e69b0204a2ba0dbd43af5fc1a yelp-xsl-49.0.tar.xz https://download.gnome.org/sources/yelp-xsl/49/
+
+. $base/package/*/*/gnome-conf.in

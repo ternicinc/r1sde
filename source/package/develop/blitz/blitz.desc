@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/blitz/blitz.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] High performance C++ numeric library
+
+[T] Blitz++ is a C++ class library for scientific computing which provides
+[T] performance on par with Fortran 77/90. It uses template techniques to
+[T] achieve high performance. The current versions provide dense arrays and
+[T] vectors, random number generators, and small vectors and matrices.
+
+[A] Todd Veldhuizen <tveldhui@oonumerics.org>
+[M] René Rebe <rene@exactco.de>
+
+[U] https://github.com/blitzpp/blitz/wiki
+
+[C] extra/development
+
+[L] Artistic
+
+[V] 1.0.2
+
+[D] 3d8bcaeace1f4f57a2a747ed1fda818a8a6c1a0ef06642921fe94b52 blitz-1.0.2.tar.gz https://github.com/blitzpp/blitz/archive/1.0.2/
+
+autogen=1

@@ -1,0 +1,25 @@
+[TIMESTAMP] 1763493191 Tue Nov 18 21:13:11 2025
+[BUILDTIME] 14 (9)
+[SIZE] 1.00 MB, 64 files
+
+[DEP] apr
+[DEP] bash
+[OPT] bdb
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[OPT] cyrus-sasl2
+[DEP] diffutils
+[OPT] expat
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] libxcrypt
+[DEP] linux-header
+[DEP] make
+[OPT] openldap
+[OPT] postgresql
+[DEP] sed
+[DEP] sqlite
+[DEP] tar
+[OPT] unixodbc

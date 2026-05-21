@@ -1,0 +1,8 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/apache/postsysfiles.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+safe_groupadd http 80
+safe_useradd http 80 80 "Apache Webserver" /var/empty /bin/false "*"

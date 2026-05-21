@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/amdsmi/amdsmi.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library offers a unified tool for managing and monitoring GPUs
+
+[T] The AMD System Management Interface (AMD SMI) library offers a unified tool
+[T] for managing and monitoring GPUs, particularly in high-performance
+[T] computing environments. It provides a user-space interface that allows
+[T] applications to control GPU operations, monitor performance, and retrieve
+[T] information about the system's drivers and GPUs.
+
+[U] https://github.com/ROCm/amdsmi
+
+[A] Advanced Micro Devices, Inc.
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS
+[C] extra/development
+
+[L] MIT
+[V] 7.2.3
+[P] X -----5---9 300.090
+
+[CV-GROUP] rocm
+[D] 5e2c3db053d5a73fff7c715039af2f2f6b17329293e3755672b650d4 amdsmi-rocm-7.2.3.tar.gz https://github.com/ROCm/amdsmi/archive/rocm-7.2.3/
+
+. $base/package/*/*/rocm-conf.in

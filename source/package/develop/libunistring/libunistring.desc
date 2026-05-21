@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libunistring/libunistring.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library for Unicode C strings according to the Unicode standard
+
+[T] Library for manipulating Unicode strings and C strings according to the Unicode standard.
+
+[U] https://www.gnu.org/software/libunistring/
+
+[A] Bruno Haible <bruno@clisp.org>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 1.4.2
+[P] X -----5---9 107.590
+
+[D] c84257b0fee5b5888f04ecbd79b8597885adc84eae7cdcd8d1b81dbf libunistring-1.4.2.tar.xz http://ftp.gnu.org/gnu/libunistring/
+
+var_append GCC_WRAPPER_APPEND ' ' -std=gnu17

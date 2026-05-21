@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pmacct/pmacct.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A libpcap, NetFlow, and sFlow IPv4/IPv6 accounting package
+
+[T] Pmacct is a small set of passive network monitoring tools to measure,
+[T] account, classify, aggregate, and export IPv4 and IPv6 traffic. A
+[T] pluggable and flexible architecture allows collected network data to be
+[T] stored into memory tables or SQL (MySQL, SQLite, PostgreSQL) databases and
+[T] exported through NetFlow or sFlow protocols to remote collectors. Pmacct
+[T] supports fully customizable historical data breakdown, flow sampling,
+[T] filtering and tagging, recovery actions, and triggers. Libpcap, sFlow
+[T] v2/v4/v5 and NetFlow v1/v5/v7/v8/v9 are supported.
+
+[U] http://www.pmacct.net/
+
+[A] Paolo Lucente <paolo.lucente@ic.cnr.it>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 1.7.9
+
+[D] c93a6254c2edfa61cb3259e0b1c1ac270561edc013a327e240ae01c0 pmacct-1.7.9.tar.gz http://www.pmacct.net/

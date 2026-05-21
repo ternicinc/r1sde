@@ -1,0 +1,50 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/grub/hotfix-gcc4.0.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+The usual GCC-4.0 uncovered issues.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- grub-0.97/netboot/natsemi.c.vanilla	2008-08-20 13:08:40.000000000 +0200
++++ grub-0.97/netboot/natsemi.c	2008-08-20 13:10:20.000000000 +0200
+@@ -602,7 +602,7 @@
+ 		 const char  *p)     /* Packet */
+ {
+     u32 to, nstype;
+-    u32 tx_status;
++    volatile u32 tx_status;
+     
+     /* Stop the transmitter */
+     outl(TxOff, ioaddr + ChipCmd);
+@@ -641,7 +641,7 @@
+ 
+     to = currticks() + TX_TIMEOUT;
+ 
+-    while ((((volatile u32) tx_status=txd.cmdsts) & OWN) && (currticks() < to))
++    while (((tx_status=txd.cmdsts) & OWN) && (currticks() < to))
+         /* wait */ ;
+ 
+     if (currticks() >= to) {
+--- g/netboot/sis900.c.vanilla	2008-08-20 13:20:47.000000000 +0200
++++ g/netboot/sis900.c	2008-08-20 13:21:08.000000000 +0200
+@@ -1081,7 +1081,7 @@
+                 const char  *p)     /* Packet */
+ {
+     u32 to, nstype;
+-    u32 tx_status;
++    volatile u32 tx_status;
+     
+     /* Stop the transmitter */
+     outl(TxDIS | inl(ioaddr + cr), ioaddr + cr);
+@@ -1120,7 +1120,7 @@
+ 
+     to = currticks() + TX_TIMEOUT;
+ 
+-    while ((((volatile u32) tx_status=txd.cmdsts) & OWN) && (currticks() < to))
++    while (((tx_status=txd.cmdsts) & OWN) && (currticks() < to))
+         /* wait */ ;
+ 
+     if (currticks() >= to) {

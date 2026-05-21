@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libcaca/libcaca.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A graphics library that outputs text instead of pixels
+
+[T] libcaca is a graphics library that outputs text instead of pixels, so that
+[T] it can work on older video cards or text terminals. It is not unlike the
+[T] famous AAlib library
+
+[U] http://caca.zoy.org/wiki/libcaca
+
+[A] Sam Hocevar
+[A] Jean-Yves Lamoureux.
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[E] opt doxygen
+[E] opt ruby
+
+[L] PublicDomain
+[V] 0.99.beta20
+[P] X -----5---9 127.900
+
+[D] 0624c06c84a8a9da64747fa2c4dec8e115f1aa7b9f8686e7f2bcae1e libcaca-0.99.beta20.tar.bz2 https://github.com/cacalabs/libcaca/releases/download/v0.99.beta20/
+
+export CONFIG_SHELL=/bin/bash
+pkginstalled python || var_append confopt ' ' --disable-python
+pkginstalled openjdk || var_append confopt ' ' --disable-java
+var_append GCC_WRAPPER_APPEND ' ' -Wno-int-conversion

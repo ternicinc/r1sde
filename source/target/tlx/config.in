@@ -1,0 +1,22 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/target/tlx/config.in
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+#Description: TLX - Tiny command-line LinuX
+
+SDECFGSET_PKGFILE_TYPE='none'
+SDECFGSET_IMAGE='livecd'
+
+# as flexible and small as possible
+SDECFGSET_ARCH='x86'
+SDECFGSET_X86_OPT='i386'
+SDECFGSET_OPT='size'
+
+SDECFGSET_CROSSBUILD=1
+
+# use busybox for most utilities
+SDECFGSET_PKG_BUSYBOX_SYMLINKS=1
+SDECFGSET_LIBC='uclibc'
+SDECFGSET_INIT='busybox'

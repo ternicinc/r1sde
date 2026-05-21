@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gtk-sharp2/gtk-sharp2.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Dot Net language binding for the Gtk+ toolkit v2
+
+[T] Gtk# brings the power and ease of .Net development paradigms to the free
+[T] software GUI application development community. Gtk# provides a C source
+[T] parser and C# code generator which can be used to produce .Net assemblies
+[T] that bind to GObject based libraries. Among the libraries currently
+[T] wrapped are gtk, gdk, atk, pango, gda, gnomedb, gconf, libgnomecanvas,
+[T] libgnomeui, and libglade.
+
+[U] https://gtk-sharp.sourceforge.net/
+
+[A] Mike Kestner <mkestner@ximian.com>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/development
+[F] NOPARALLEL
+
+[L] GPL
+[V] 2.12.9
+[P] X -----5---9 142.150
+
+[CV-URL] https://download.gnome.org/sources/gtk-sharp2/cache.json
+[D] fc9eb75a0331f196ba13494b0c1f1fa549e8edb3f0f644f82b65db1e gtk-sharp-2.12.9.tar.xz http://ftp.acc.umu.se/pub/GNOME/sources/gtk-sharp/2.12/
+
+. $base/package/*/mono/mono.in

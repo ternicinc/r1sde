@@ -1,0 +1,62 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/wxwidgets/wxwidgets.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A portable widget library
+
+[T] wxWidgets gives you a single, easy-to-use API for writing GUI applications
+[T] on multiple platforms. Link with the appropriate library for your platform
+[T] (Windows/Unix/Mac, others coming shortly) and compiler (almost any popular
+[T] C++ compiler), and your application will adopt the look and feel appro-
+[T] priate to that platform. On top of great GUI functionality, wxwidgets
+[T] gives you: online help, network programming, streams, clipboard and drag
+[T] and drop, multithreading, image loading and saving in a variety of popular
+[T] formats, database support, HTML viewing and printing, and much much more.
+
+[U] https://www.wxwidgets.org
+
+[A] wxwidgets team (http://www.wxwidgets.org/whowhat.htm)
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS OBJDIR
+
+[E] opt gst-plugins-bad
+[E] opt libmspack
+[E] opt libwebp
+
+[L] LGPL
+[V] 3.3.2
+[P] X -----5---9 203.000
+
+[CV-FLAGS] ODD-UNSTABLE
+[CV-URL] https://github.com/wxWidgets/wxWidgets/releases/
+[D] 67eca398c1bc0278062c2dff60e9508eeeee10e29503b43070ebfefa wxWidgets-3.3.2.tar.bz2 https://github.com/wxWidgets/wxWidgets/releases/download/v3.3.2/
+
+runconf=0
+
+var_append GCC_WRAPPER_INSERT ' ' "-L$root$(pkgprefix libdir glib)"
+
+var_remove_regex cmakeopt ' ' '-DCMAKE_INSTALL_LIBDIR=.*'
+var_append cmakeopt ' ' "-DwxBUILD_PRECOMP=OFF \
+		-DwxBUILD_TESTS=OFF \
+		-DwxBUILD_TOOLKIT=gtk3 \
+		-DwxUSE_EXPAT=sys \
+		-DwxUSE_GLCANVAS_EGL=ON \
+		-DwxUSE_GTKPRINT=ON \
+		-DwxUSE_LIBJPEG=sys \
+		-DwxUSE_LIBLZMA=sys \
+		-DwxUSE_LIBPNG=sys \
+		-DwxUSE_LIBTIFF=sys \
+		-DwxUSE_OPENGL=ON \
+		-DwxUSE_PRIVATE_FONTS=ON \
+		-DwxUSE_REGEX=sys \
+		-DwxUSE_ZLIB=sys"
+
+pkginstalled webkitgtk41 libsoup3 &&
+	var_append GCC_WRAPPER_APPEND ' ' "$(pkg-config webkit2gtk-4.1 --cflags)"
+
+hook_add postmake 5 'cp -fv ../wxwin.m4 $root$datadir/aclocal/'

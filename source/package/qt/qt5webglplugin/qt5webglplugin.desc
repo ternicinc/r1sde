@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/qt5webglplugin/qt5webglplugin.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] QPA plugin for running an application via a browser
+
+[T] QPA plugin for running an application via a browser using streamed WebGL
+[T] commands.
+
+[U] https://qt.io
+
+[A] Trolltech AS <www.trolltech.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] LGPL
+[V] 5.15.14
+
+[CV-GROUP] qt5
+[D] e598637d3d9a121302f550c991d045a34f45a9b4d2ceb07a610d39cb qtwebglplugin-everywhere-opensource-src-5.15.14.tar.xz http://download.qt.io/official_releases/qt/5.15/5.15.14/submodules/
+
+. $base/package/*/*/qt5-conf.in

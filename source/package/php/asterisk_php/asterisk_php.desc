@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/asterisk_php/asterisk_php.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] PHP integration into the Asterisk PBX
+
+[T] Asterisk PHP allows you to control the dial-plan [T] and write
+[T] applications for Asterisk in PHP. This [T] is faster and more
+[T] flexible than phpAGI.
+
+[U] https://eder.us/projects/asterisk_php/
+
+[A] David Eder <david@eder.us>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] GPL
+[V] 0.2a
+
+[D] b22f1109bc0bf5af7fbfe00f4cf589b05a329982e09c3dfce9b2b584 asterisk_php.0.2a.tgz http://www.eder.us/projects/asterisk_php/
+
+pkgprefix -t php
+prefix=$(pkgprefix php)
+set_confopt
+
+runmake=0
+
+# only install the doc
+hook_add postmake 5 'cp test.php $docdir/'

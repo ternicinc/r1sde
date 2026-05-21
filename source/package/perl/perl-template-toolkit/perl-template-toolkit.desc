@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-template-toolkit/perl-template-toolkit.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module Template-Toolkit
+
+[T] The Template Toolkit is a collection of modules which implement a
+[T] fast, flexible, powerful and extensible template processing system.
+[T] It was originally designed and remains primarily useful for generating
+[T] dynamic web content, but it can be used equally well for processing
+[T] any other kind of text based documents: HTML, XML, POD, PostScript,
+[T] LaTeX, and so on.
+
+[U] https://template-toolkit.org/
+
+[A] Andy Wardley
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] Artistic GPL
+[V] 3.102
+[P] X -----5---9 200.124
+
+[D] d282d6c71177361513aeac42c6391215d67956e1ba256d5d4fa1ae79 Template-Toolkit-3.102.tar.gz https://cpan.metacpan.org/authors/id/T/TO/TODDR/
+
+var_append plconfopt ' ' TT_PREFIX=/$prefix/t2

@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gtksourceview/gtksourceview.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An extension to the GTK+ multiline text editing
+
+[T] GtkSourceView is a portable C library that extends the standard GTK+
+[T] framework for multiline text editing with support for configurable
+[T] syntax highlighting, unlimited undo/redo, UTF-8 compliant caseless
+[T] searching, printing and other features typical of a source code editor.
+
+[U] https://projects.gnome.org/gtksourceview/
+
+[A] Gustavo Giraldez <gustavo.giraldez@gmx.net>
+[A] Paolo Maggi <paolo.maggi@polito.it>
+[A] Jeroen Zwartepoorte <jeroen@xs4all.nl>
+[A] Mikael Hermansson <mikeh@bahnhof.se>
+[A] Chris Phelps <chicane@reninet.com>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/development extra/desktop/gnome
+[F] CROSS
+
+[L] LGPL
+[V] 5.20.0
+[P] X -----5---9 177.300
+
+[CV-FLAGS] ODD-UNSTABLE
+[CV-URL] https://download.gnome.org/sources/gtksourceview/cache.json
+[D] 4982b83aa29a169c6bbe51ecc1db05e9629f845138259223eaa1e8a1 gtksourceview-5.20.0.tar.xz https://download.gnome.org/sources/gtksourceview/5.20/
+
+. $base/package/*/*/gnome-conf.in
+var_remove GCC_WRAPPER_REMOVE ' ' "-Werror*" # gir fails with invalid cpp args otherwise

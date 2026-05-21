@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rocdecode/rocdecode.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A high-performance video decode SDK for AMD GPUs
+
+[T] rocDecode is a high-performance video decode SDK for AMD GPUs. Using the
+[T] rocDecode API, you can access the video decoding features available on your
+[T] GPU.
+
+[U] https://github.com/ROCm/rocDecode
+
+[A] Advanced Micro Devices, Inc.
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS OBJDIR
+[C] extra/development
+
+[L] MIT
+[V] 7.2.3
+[P] X -----5---9 300.465
+
+[CV-GROUP] rocm
+[D] 61b0268aec9797581eb311070f76d72dc0165c165a97af0c74f4cd77 rocDecode-rocm-7.2.3.tar.gz https://github.com/ROCm/rocDecode/archive/rocm-7.2.3/
+
+. $base/package/*/*/rocm-conf.in
+var_append cmakeopt ' ' "-DCMAKE_INSTALL_LIBDIR=${libdir##*/}"
+var_append cmakeopt ' ' -DCMAKE_C_COMPILER=/$prefix/bin/clang
+var_append cmakeopt ' ' -DCMAKE_CXX_COMPILER=/$prefix/bin/clang++
+var_append cmakeopt ' ' "-DHIP_PLATFORM=amd -DHIP_COMPILER=clang"
+var_append cmakeopt ' ' "-DAMDGPU_TARGETS='$SDECFG_PKG_ROCM_ARCHS'"

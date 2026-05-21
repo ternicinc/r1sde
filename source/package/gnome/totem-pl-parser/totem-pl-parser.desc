@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/totem-pl-parser/totem-pl-parser.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Simple GObject-based library to parse a host of playlist formats, as well as save those
+
+[T] totem-pl-parser is a simple GObject-based library to parse a host of
+[T] playlist formats, as well as save those.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/multimedia extra/desktop/gnome
+
+[L] LGPL
+[V] 3.26.7
+
+[P] X -----5---9 200.000
+
+[CV-URL] https://download.gnome.org/sources/totem-pl-parser/cache.json
+[D] 7af08aca7554ed8fb710d8f8690143900fce9c34864e534a39ebbd35 totem-pl-parser-3.26.7.tar.xz https://download.gnome.org/sources/totem-pl-parser/3.26/
+
+. $base/package/*/*/gnome-conf.in
+var_append GCC_WRAPPER_REMOVE ' ' -Werror=maybe-uninitialized

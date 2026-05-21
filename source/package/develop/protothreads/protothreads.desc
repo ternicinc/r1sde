@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/protothreads/protothreads.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Extremely lightweight stackless threads in C
+
+[T] Protothreads are a type of extremely lightweight, stackless threads
+[T] written in 100% portable C. While protothreads were originally designed
+[T] for severely memory-constrained systems such as deeply embedded systems,
+[T] they have found a number of uses as a general purpose portable library
+[T] as well.
+
+[U] https://www.sics.se/~adam/pt/
+
+[A] Adam Dunkels <adam@sics.se>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] BSD
+[V] 1.4
+
+[D] 1734ea9ed35621c1c9f36b986a67da86129b4747c2bba92f5ecc61e8 pt-1.4.tar.gz http://www.sics.se/~adam/download/
+
+makeinstopt=
+hook_add postmake 5 "install *.h $root$includedir/"

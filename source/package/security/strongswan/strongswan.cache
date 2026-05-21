@@ -1,0 +1,20 @@
+[TIMESTAMP] 1752507832 Mon Jul 14 17:43:52 2025
+[BUILDTIME] 40 (9)
+[SIZE] 2.99 MB, 202 files
+
+[DEP] bash
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gmp
+[DEP] grep
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[OPT] openldap
+[OPT] openssl
+[DEP] sed
+[DEP] tar
+[OPT] wolfssl

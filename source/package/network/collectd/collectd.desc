@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/collectd/collectd.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A system statistics collection daemon
+
+[T] Collectd is a small daemon which collects system information every 10
+[T] seconds and writes the results in an RRD-file. The statistics gathered
+[T] include: CPU and memory usage, network interface traffic, and system
+[T] temperatures (using lm-sensors). In network mode, clients multicast
+[T] their values over the network to servers which write the RRD-files.
+
+[U] https://collectd.org/
+
+[A] Florian Forster <flo@verplant.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] GPL
+[V] 5.12.0
+
+[D] 5da7d761ec7938eeae41a69e4ad11f115300767edec9ccba5c61ff27 collectd-5.12.0.tar.bz2 https://storage.googleapis.com/collectd-tarballs/
+
+var_append confopt ' ' --without-java

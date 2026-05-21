@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-text-autoformat/perl-text-autoformat.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module Text-Autoformat
+
+[T] Autoformat provides intelligent formatting of plaintext without the need
+[T] for any kind of embedded mark-up. The module recognizes Internet quoting
+[T] conventions, a wide range of bulleting and number schemes, centred text,
+[T] and block quotations, and reformats each appropriately
+
+[U] https://metacpan.org/pod/Text::Autoformat
+
+[A] Damian Conway <damian@conway.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] Artistic GPL
+[V] 1.75
+[P] X -----5---9 200.108
+
+[D] 30c5be28bd9ca3207dd37bab6a67c251cbf958812bbb707c5246b788 Text-Autoformat-1.75.tar.gz https://cpan.metacpan.org/authors/id/N/NE/NEILB/

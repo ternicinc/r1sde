@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/acdctl/size_t.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- acdctl-1.1/acdctl.c	2005-08-14 14:46:20.000000000 +0200
++++ acdctl-1.1-fixed/acdctl.c	2007-05-28 17:41:58.892612048 +0200
+@@ -130,7 +131,7 @@
+       next->vendor, next->product, next->description, next->year);
+     next++;
+   }
+-  printf("\n%d displays supported\n", displayCount);
++  printf("\n%ld displays supported\n", (long)displayCount);
+ }
+ 
+ void help(const char* program_name) {

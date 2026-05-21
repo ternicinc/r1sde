@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mt-st/mt-st.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Tape control programs for Linux SCSI tapes
+
+[T] Includes a mt-like program supporting commands using ioctls specific
+[T] to the Linux SCSI tape driver (up to kernel 2.1.95), and the program
+[T] stinit to define the SCSI tape devices in system startup scripts.
+
+[A] Kai Makisara <Kai.Makisara@kolumbus.fi>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+
+[L] GPL
+[V] 1.8
+
+[D] 894e3b61a42ba9b762b9d66f77b1a18f96a6202b69977c0daddac1e9 mt-st-1.8.tar.gz https://github.com/iustin/mt-st/releases/download/v1.8/
+
+var_append makeopt ' ' 'BINDIR=$bindir SBINDIR=$sbindir MANDIR=$mandir'
+var_append makeinstopt ' ' 'BINDIR=$root$bindir SBINDIR=$root$sbindir MANDIR=$root$mandir'

@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/fuppes/fuppes.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A free, multiplatform UPnP A/V Media Server
+
+[T] FUPPES supports a wide range of UPnP MediaRenderers as well as on-the-fly
+[T] transcoding of various audio, video and image formats. FUPPES also includes
+[T] basic DNLA support.
+
+[U] https://fuppes.ulrich-voelkel.de/
+
+[A] Ulrich Völkel <fuppes@ulrich-voelkel.de>
+[M] Adam Stirk <adam.stirk@brantano.co.uk>
+
+[C] extra/multimedia
+
+[E] opt flac
+[E] opt lame
+
+[L] GPL
+[V] r627
+
+[D] 1a8b2a99cb8780e64729f5b7ca2d214ca3e1897a57af8462c0529682 fuppes-r627.tar.gz svn+http://fuppes.svn.sourceforge.net/svnroot/fuppes/trunk/ fuppes -r627
+
+hook_add preconf 2 'autoreconf -vfi'
+var_append confopt ' ' --enable-video-transcoding

@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dvdisaster/dvdisaster.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] CD and DVD data recovery ans defect analysis
+
+[T] Dvdisaster provides a margin of safety against data loss on CD and DVD
+[T] media caused by aging or scratches. Dvdisaster creates error correction
+[T] codes to compensate read errors which are not correctable in the CD/DVD
+[T] drive.
+[T] Dvdisaster tries to read as much data as possible from defective media.
+[T] Afterwards unreadable sectors are recovered using the previously created
+[T] error correction code. The maximum error correction capacity is
+[T] user-selectable.
+
+[U] https://dvdisaster.jcea.es
+
+[A] Carsten Gnoerlich <carsten@dvdisaster.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+
+[L] GPL
+[V] 0.79.10
+
+[D] 4330b96ccd2deee84c22b0cd6679eec99d1d0c57e1dd9b3d6a8cb80f dvdisaster-0.79.10.tar.bz2 https://dvdisaster.jcea.es/downloads/
+
+cleanconfopt=0 # not autoconf
+var_append confopt ' ' --localedir=$datadir/locale

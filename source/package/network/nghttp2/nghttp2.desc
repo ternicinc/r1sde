@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/nghttp2/nghttp2.desc
+[COPY] Copyright (C) 2013 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] HTTP/2 C Library
+
+[T] nghttp2 is an implementation of HTTP/2 and its header compression
+[T] algorithm HPACK in C.
+
+[U] https://www.nghttp2.org/
+
+[A] Tatsuhiro Tsujikawa
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS NO-LTO.gcc
+
+[E] opt c-ares
+[E] opt libev
+[E] opt jansson
+
+[L] BSD
+[V] 1.69.0
+[P] X -----5---9 127.200
+
+[D] daf239e746da906d9ca752249b62dca77bacde80a8002cc7d23633e6 nghttp2-1.69.0.tar.bz2 https://github.com/nghttp2/nghttp2/releases/download/v1.69.0/
+
+var_append CXX_WRAPPER_APPEND ' ' -std=c++20
+[ $arch = arm ] && var_remove_regex GCC_WRAPPER_INSERT ' ' '-mfpu=.*'
+pkginstalled python || var_append confopt ' ' --disable-python-bindings

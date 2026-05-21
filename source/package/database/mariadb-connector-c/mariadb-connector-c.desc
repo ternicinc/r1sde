@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mariadb-connector-c/mariadb-connector-c.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The MariaDB Native Client library
+
+[T] The MariaDB Native Client library (C driver).
+
+[U] https://mariadb.org/
+
+[A] Mariadb-connector-c Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+
+[V] 3.4.9
+[L] LGPL
+[P] X -----5---9 700.000
+
+[D] 9f38079078f351501fc82b5e74df09a57548560c928111c74a3e8996 mariadb-connector-c-3.4.9-src.tar.gz https://github.com/mariadb-corporation/mariadb-connector-c/archive/v3.4.9/
+
+var_append CC_WRAPPER_APPEND ' ' -std=gnu17
+var_append cmakeopt ' ' -DCMAKE_POLICY_VERSION_MINIMUM=3.5

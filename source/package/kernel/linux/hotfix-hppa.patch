@@ -1,0 +1,27 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/linux/hotfix-hppa.patch
+# Copyright (C) 2022 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+We don't need another compiler for hppa(32).
+
+--- linux-6.16/arch/parisc/Makefile.vanilla	2025-08-28 19:07:17.154736418 +0200
++++ linux-6.16/arch/parisc/Makefile	2025-08-28 19:09:26.333393561 +0200
+@@ -42,12 +42,16 @@
+ # Set default 32 bits cross compilers for vdso.
+ # This means that for 64BIT, both the 64-bit tools and the 32-bit tools
+ # need to be in the path.
++ifeq ($(ARCH),parisc64)
+ CC_ARCHES_32 = hppa hppa2.0 hppa1.1
+ CC_SUFFIXES  = linux linux-gnu unknown-linux-gnu suse-linux
+ CROSS32_COMPILE := $(call cc-cross-prefix, \
+ 	$(foreach a,$(CC_ARCHES_32), \
+ 	$(foreach s,$(CC_SUFFIXES),$(a)-$(s)-)))
+ CROSS32CC := $(CROSS32_COMPILE)gcc
++else
++CROSS32CC := $(CC)
++endif
+ export CROSS32CC
+ 
+ # Set default cross compiler for kernel build

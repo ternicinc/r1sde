@@ -1,0 +1,21 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/slmodem/hotfix-install.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+--- slmodem-2.9.10/drivers/Makefile	2003-12-21 22:15:54.000000000 +0100
++++ slmodem-2.9.10-fixed/drivers/Makefile	2005-04-25 17:24:34.000000000 +0200
+@@ -102,13 +99,11 @@
+ install:
+ 	install -D -m 644 slamr.ko $(module-dir)/slamr.ko
+ 	install -D -m 644 slusb.ko $(module-dir)/slusb.ko
+-	/sbin/depmod -a
+ uninstall:
+ 	modprobe -r slamr ; echo -n
+ 	modprobe -r slusb ; echo -n
+ 	$(RM) $(module-dir)/slamr.ko
+ 	$(RM) $(module-dir)/slusb.ko
+-	/sbin/depmod -a
+ endif
+ 
+ endif

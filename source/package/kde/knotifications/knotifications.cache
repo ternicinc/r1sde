@@ -1,0 +1,26 @@
+[TIMESTAMP] 1770493411 Sat Feb  7 20:43:31 2026
+[BUILDTIME] 55 (9)
+[SIZE] 0.41 MB, 134 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] gawk
+[DEP] grep
+[DEP] kconfig
+[DEP] libcanberra
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] qt6base
+[DEP] qt6declarative
+[DEP] qt6tools
+[DEP] qt6translations
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] vulkan-headers
+[DEP] xz

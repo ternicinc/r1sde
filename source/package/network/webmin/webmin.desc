@@ -1,0 +1,60 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/webmin/webmin.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A web-based interface for system administration for Unix
+
+[T] Webmin is a web-based interface for system administration for Unix.
+[T] Using any browser that supports tables and forms (and Java for the
+[T] File Manager module), you can setup user accounts, Apache, DNS, file
+[T] sharing and so on.
+[T] Webmin consists of a simple web server, and a number of CGI programs
+[T] which directly update system files like /etc/inetd.conf and
+[T] /etc/passwd. The web server and all CGI programs are written in Perl
+[T] version 5, and use no non-standard Perl modules.
+
+[U] https://www.webmin.com/
+
+[A] Jamie Cameron <jcameron@webmin.com>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/configuration
+
+[L] BSD
+[V] 2.641
+
+[D] 8bfb9f8d0a680f856cf0ed64e9125cdc4a8e6c09aac1e49f1b6204ab webmin-2.641.tar.gz https://prdownloads.sourceforge.net/sourceforge/webadmin/
+
+runmake=0
+sysconfdir=$root/etc/webmin
+prefix=opt/webmin; set_confopt
+
+pkg_webmin_main() {
+	#cd $root/$prefix
+
+	export config_dir=$sysconfdir
+	export var_dir=/var/webmin
+	export perldef=/usr/bin/perl
+
+	export os_type="generic-linux"
+	export real_os_type="generic-linux"
+	export real_os_version="2.4"
+
+	export port=10000
+	export login="admin"
+	export password=
+
+	export ssl=0
+	pkginstalled openssl && export ssl=1
+
+	export prefix
+	export atboot=1
+	export nostart=1
+	export makeboot=0
+
+	./setup.sh /opt/webmin
+}
+hook_add postmake 5 pkg_webmin_main

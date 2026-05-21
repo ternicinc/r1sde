@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kakoune/kakoune.desc
+[COPY] Copyright (C) 2021 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Visual text editor inspired by vim with fewer keystrokes
+
+[T] Kakoune is a code editor that implements Vi's "keystrokes as a text editing
+[T] language" model. As it's also a modal editor, it is somewhat similar to the
+[T] Vim editor (after which Kakoune was originally inspired).
+[T] 
+[T] Kakoune has a strong focus on interactivity, most commands provide immediate
+[T] and incremental results, while still being competitive (as in keystroke count)
+[T] with Vim.
+[T]
+[T] Kakoune works on selections, which are oriented, inclusive range of characters,
+[T] selections have an anchor and a cursor character. Most commands move both of
+[T] them, except when extending selection where the anchor character stays fixed
+[T] and the cursor one moves around.
+
+[U] https://kakoune.org/
+
+[A] Maxime Coste <mawww@kakoune.org>
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/editor
+
+[F] CROSS
+
+[L] OpenSource
+[V] 2026.05.21
+
+[D] ed03525d691c0f18bc2419ead55a81534ed4ee6c2f6f33e2e9fe01eb kakoune-2026.05.21.tar.bz2 https://github.com/mawww/kakoune/releases/download/v2026.05.21/
+
+var_append makeinstopt ' ' PREFIX=$root/$prefix

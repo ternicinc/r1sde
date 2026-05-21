@@ -1,0 +1,38 @@
+[TIMESTAMP] 1759850148 Tue Oct  7 17:15:48 2025
+[BUILDTIME] 14 (9)
+[SIZE] 1.61 MB, 173 files
+
+[DEP] 7zip
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[OPT] docbook-xml
+[OPT] docbook-xsl
+[DEP] extra-cmake-modules
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] kconfig
+[DEP] kconfigwidgets
+[DEP] kcoreaddons
+[DEP] kcrash
+[DEP] kdbusaddons
+[OPT] kdoctools
+[DEP] ki18n
+[DEP] kiconthemes
+[DEP] ktextwidgets
+[DEP] kwidgetsaddons
+[DEP] kxmlgui
+[DEP] libkdegames
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[DEP] procps
+[DEP] qt6base
+[DEP] qt6declarative
+[DEP] sed
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] xz

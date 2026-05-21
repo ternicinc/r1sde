@@ -1,0 +1,23 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dietlibc/native-diet.patch
+# Copyright (C) 2016 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- dietlibc-0.33/Makefile.vanilla	2016-01-07 18:21:14.335717749 +0000
++++ dietlibc-0.33/Makefile	2016-01-07 18:22:08.051718757 +0000
+@@ -63,10 +63,14 @@
+ ifeq ($(MYARCH),armeb)
+ ARCH=arm
+ else
++ifeq ($(MYARCH),native)
++ARCH=native
++else
+ $(error unknown architecture, please fix Makefile)
+ endif
+ endif
+ endif
++endif
+ endif
+ endif
+ endif

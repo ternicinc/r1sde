@@ -1,0 +1,21 @@
+[TIMESTAMP] 1737905354 Sun Jan 26 16:29:14 2025
+[BUILDTIME] 75 (9)
+[SIZE] 176.90 MB, 10730 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[OPT] doxygen
+[DEP] gawk
+[OPT] graphviz
+[DEP] grep
+[DEP] gzip
+[DEP] icu4c
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] sed
+[DEP] tar
+[DEP] xerces-c

@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/eom/eom.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Image viewer for MATE
+
+[T] This is the Eye of MATE, an image viewer program. It is meant to be a fast
+[T] and functional image viewer. Eye of MATE is a fork of Eye of GNOME.
+
+[U] https://mate-desktop.org/
+
+[A] MATE developer
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/mate
+
+[L] GPL
+[V] 1.28.0
+
+[D] 22a8497f09355f6a25270e207eb28a0077801e06bd265fdd37dadd27 eom-1.28.0.tar.xz https://pub.mate-desktop.org/releases/1.28/
+
+. $base/package/*/*/mate-conf.in

@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ccd2iso/ccd2iso.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A CloneCD to ISO converter
+
+[T] CCD2iso converts CloneCD image files to standard ISO image files.
+
+[U] https://sourceforge.net/projects/ccd2iso/
+
+[A] Danny Kurniawan <danny_kurniawan@users.sourceforge.net>
+[M] Nagy Karoly Gabriel <karasz@x5.ro>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 0.3
+
+[D] 36eeed705b8eec39bb69300ec0ade8401d6e7751c414f9c170e59f66 ccd2iso-0.3.tar.gz https://prdownloads.sourceforge.net/sourceforge/ccd2iso/

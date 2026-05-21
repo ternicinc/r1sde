@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/mysql++/hotfix-gcc43.patch
+# Copyright (C) 2009 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./lib/datetime.cpp.vanilla	2009-04-17 11:19:55.000000000 +0200
++++ ./lib/datetime.cpp	2009-04-17 11:20:08.000000000 +0200
+@@ -32,6 +32,7 @@
+ #include "stream2string.h"
+ 
+ #include <iomanip>
++#include <cstring>
+ 
+ #include <stdlib.h>
+ #include <time.h>

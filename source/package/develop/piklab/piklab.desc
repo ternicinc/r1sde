@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/piklab/piklab.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An IDE for applications based on PIC and dsPIC microcontrollers
+
+[T] Piklab is an integrated development environment for applications based on
+[T] PIC and dsPIC microcontrollers. Supported compilers are: the Small Device
+[T] C Compiler, the GNU PIC Utilities, PICC compilers, the PIC30 toolchain,
+[T] the C18 compiler, and the JAL compiler. Supported programmers: ICD2,
+[T] PICkit, PICkit2, PicStart+, and most direct programmers. Supported
+[T] debuggers: ICD2 and GPSim. A command line programmer/debugger is also
+[T] provided.
+
+[U] https://piklab.sourceforge.net
+
+[A] azhyd <hadacek@kde.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] GPL
+[V] 0.16.2
+
+[D] c5aaf0298f9af64a9a98f37ade9128065bf383dcf01fe03c4bfc5425 piklab-0.16.2.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/piklab/

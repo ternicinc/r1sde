@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dssi/dssi.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A plugin API for software instruments
+
+[T] DSSI is a plugin API for software instruments with user interfaces,
+[T] permitting them to be hosted in-process by audio applications.
+
+[U] https://dssi.sourceforge.net/
+
+[A] Chris Cannam
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] LGPL
+[V] 1.1.1
+
+[D] ec8ccddbb0bb46c6a32415539fd0b3067fe6dcf516180fea84677889 dssi-1.1.1.tar.gz https://download.sourceforge.net/dssi/

@@ -1,0 +1,21 @@
+[TIMESTAMP] 1778437004 Sun May 10 20:16:44 2026
+[BUILDTIME] 5 (9)
+[SIZE] 0.08 MB, 11 files
+
+[DEP] alsa-lib
+[DEP] automake
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libxmp
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] pulseaudio
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

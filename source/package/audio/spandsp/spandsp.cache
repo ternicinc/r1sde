@@ -1,0 +1,24 @@
+[TIMESTAMP] 1755596104 Tue Aug 19 11:35:04 2025
+[BUILDTIME] 14 (9)
+[SIZE] 3.11 MB, 174 files
+
+[DEP] autoconf
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libjpeg
+[DEP] libtiff
+[DEP] libtool
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] perl
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

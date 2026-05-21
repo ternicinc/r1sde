@@ -1,0 +1,37 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/notecase/notecase.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] NoteCase is a hierarchical note manager (aka. outliner)
+
+[T] NoteCase is a hierarchical note manager (aka. outliner). It helps you
+[T] organize your everyday text notes into a single document, with individual
+[T] notes placed in the tree-like structure (each note can have its sub-notes,
+[T] ...). To ensure your privacy, encrypted document format is supported,
+[T] along with standard unencrypted format. Project is free and open source.
+[T] Note: version 1.9.8 is the last open-source free version.
+
+[U] https://notecase.sourceforge.net/index1.html
+
+[A] Miroslav Rajcic <miroslav.rajcic@inet.hr>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office
+
+[L] BSD
+[V] 1.9.8
+
+[D] 26e6496e7df061f9d9aac9e68acd0c4c28f10ba305baff231089bf94 notecase-1.9.8_src.tar.gz https://download.sourceforge.net/notecase/
+
+runconf=0
+
+notecase_pre_fix() {
+    sed -i -e 's%^AUTODETECT_GNOME_VFS.*%#AUTODETECT_GNOME_VFS=1%' Makefile
+    sed -i -e 's%^HAVE_GNOME_VFS.*%#HAVE_GNOME_VFS=1%' Makefile
+}
+hook_add premake 5 notecase_pre_fix
+
+var_append makeopt ' ' "LDFLAGS='-lX11'"
+var_append makeinstopt ' ' "LDFLAGS='-lX11'"

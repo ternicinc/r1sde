@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sfwbar/sfwbar.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A taskbar for wayland compositors
+
+[T] SFWBar (Sway Floating Window Bar) is a flexible taskbar application for
+[T] wayland compositors, designed with a stacking layout in mind.
+[T] Originally developed for Sway, SFWBar will work with any compositors
+[T] supporting layer shell protocol.
+
+[U] https://github.com/LBCrion/sfwbar
+
+[A] Lev Babiev <harley@hosers.org>
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/x11
+[E] opt libmpdclient
+
+[L] GPL3
+[V] 1.0_beta17
+
+[D] 2f6ae09a586216b9d5c4c9578fa5d055ccaf22539868ed44f2f0e7a07c0c7ff8 sfwbar-1.0_beta17.tar.gz https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta17/

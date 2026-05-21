@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-input-magellan/xf86-input-magellan.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Xorg driver for Magellan 3D input devices
+
+[T] This driver supports Magellan 3D input devices.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.2.0
+[P] O
+
+[D] 64d761e07aa524bb3521601959c9d7e78ce48c870a914ff0f394c34a xf86-input-magellan-1.2.0.tar.bz2 http://xorg.freedesktop.org/releases/individual/driver/
+
+. package/*/*/modular-x-conf.in

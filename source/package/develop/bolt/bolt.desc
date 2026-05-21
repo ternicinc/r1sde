@@ -1,0 +1,40 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/bolt/bolt.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Binary Optimization and Layout Tool
+
+[T] A Linux command-line utility used for optimizing performance of binaries.
+
+[U] https://github.com/facebookincubator/BOLT
+
+[A] University of Illinois/NCSA
+[A] Facebook
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] OBJDIR CROSS
+[R] - alpha arc avr32 alpha blackfin cris m68k microblaze nios2
+
+[E] opt doxygen
+
+[L] BSD
+[V] 22.1.5
+
+[CV-GROUP] llvm-project
+[D] 539b0fa857272b2b18ad9b9e58e11d4e48e0f1c807ec375d5ca91913 llvm-project-22.1.5.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-22.1.5/
+
+srcdir=*/bolt
+
+if atstage toolchain; then
+	var_append cmakeopt ' ' -DLLVM_DEFAULT_TARGET_TRIPLE=$arch_target
+elif atstage cross; then
+	var_append cmakeopt ' ' -DLLVM_MAIN_INCLUDE_DIR=$root$includedir
+	var_append cmakeopt ' ' -DLLVM_LIBRARY_DIR=$root$libdir
+	var_append GCC_WRAPPER_FILTER '|' "sed 's,$root/TOOLCHAIN.*libLLVM\(.*\)\.[as].*,-lLLVM\1,g'"
+fi
+
+[ "${libdir##*/lib}" ] && var_append cmakeopt ' ' "-DLLVM_LIBDIR_SUFFIX=${libdir##*/lib}"
+[ "$SDECFG_STATIC" = 1 ] || var_append cmakeopt ' ' -DBUILD_SHARED_LIBS=ON

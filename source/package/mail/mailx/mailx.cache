@@ -1,0 +1,17 @@
+
+[TIMESTAMP] 1279521119 Mon Jul 19 08:31:59 2010
+[BUILDTIME] 5 (5)
+[SIZE] 0.11 MB, 10 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] grep
+[DEP] liblockfile
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar

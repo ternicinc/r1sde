@@ -1,0 +1,42 @@
+[TIMESTAMP] 1765395566 Wed Dec 10 20:39:26 2025
+[BUILDTIME] 14 (9)
+[SIZE] 3.80 MB, 298 files
+
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gi-docgen
+[DEP] glib
+[DEP] gobject-introspection
+[DEP] graphene
+[DEP] grep
+[OPT] gtk
+[OPT] gtk+
+[DEP] harfbuzz
+[DEP] jinja2
+[DEP] libglvnd
+[DEP] libx11
+[DEP] linux-header
+[DEP] markupsafe
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[DEP] pkgconfig
+[DEP] python
+[OPT] qt5base
+[OPT] qt6base
+[DEP] sed
+[DEP] setuptools
+[DEP] smartypants
+[DEP] tar
+[DEP] typogrify
+[DEP] vala
+[DEP] wayland
+[DEP] xorgproto
+[DEP] xz

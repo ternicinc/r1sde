@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/esnacc/no-examples.patch.cross
+# Copyright (C) 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- esnacc-ng-1.8.1/Makefile.am.vanilla	2025-06-21 21:58:04.980528188 +0200
++++ esnacc-ng-1.8.1/Makefile.am	2025-06-21 21:58:08.295700158 +0200
+@@ -116,8 +116,6 @@
+ include c-lib/automake.mk
+ include cxx-lib/automake.mk
+ include compiler/automake.mk
+-include c-examples/automake.mk
+-include cxx-examples/automake.mk
+ # This file is excluded from distribution on releases.
+ # include debian/automake.mk
+ include redhat/automake.mk

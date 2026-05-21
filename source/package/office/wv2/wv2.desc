@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/wv2/wv2.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Microsoft Word file access library
+
+[T] wv is a library which allows access to Microsoft Word files. It can
+[T] load and parse Word 2000, 97, 95 and 6 file formats. (These are the
+[T] file formats known internally as Word 9, 8, 7 and 6.) There is some
+[T] support for reading earlier formats as well: Word 2 docs are converted
+[T] to plaintext.
+
+[U] https://wvWare.sourceforge.net/
+
+[A] Caolán McNamara {original author}
+[A] Dom Lachowicz
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+
+[L] GPL
+[V] 0.4.2
+
+[D] 902123a33789ad0aa79780c35e71020386ddcde84c4a3d86da1b2d9c wv2-0.4.2.tar.bz2 https://download.sourceforge.net/project/wvware/

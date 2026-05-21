@@ -1,0 +1,39 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/chkrootkit/chkrootkit.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Checks for signs of rootkits
+
+[T] chkrootkit is a tool to locally check for signs of a rootkit. It contains
+[T] a chkrootkit: shell script that checks system binaries for rootkit
+[T] modification. The following tests are made: aliens, asp, bindshell, lkm,
+[T] rexedcs, sniffer, wted, z2, amd, basename, biff, chfn, chsh, cron, date,
+[T] du, dirname, echo, egrep, env, find, fingerd, gpm, grep, hdparm, su,
+[T] ifconfig, inetd, inetdconf, identd, killall, login, ls, mail, mingetty,
+[T] netstat, named, passwd, pidof, pop2, pop3, ps, pstree, rpcinfo, rlogind,
+[T] rshd, slogin, sendmail, sshd, syslogd, tar, tcpd, top, telnetd, timed,
+[T] traceroute, and write. ifpromisc.c checks whether the interface is in
+[T] promiscuous mode, chklastlog.c checks for lastlog deletions, chkwtmp.c
+[T] checks for wtmp deletions, check_wtmpx.c checks for wtmpx deletions
+[T] (Solaris only), and chkproc.c checks for signs of LKM trojans.
+
+[U] https://www.chkrootkit.org/
+
+[A] Nelson Murilo <nelson@pangeia.com.br>
+[A] Klaus Steding-Jessen <jessen@nic.br>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+[F] CROSS
+
+[L] OpenSource
+[V] 0.59
+
+[D] 213fef3bdb520fd7982bfc69635c997279c81508bf139e11844e75c4 chkrootkit-0.59.tar.gz ftp://ftp.chkrootkit.org/pub/seg/pac/
+
+var_remove makeopt ' ' all
+var_append makeopt ' ' sense
+var_append makeinstopt ' ' SBINDIR=$sbindir

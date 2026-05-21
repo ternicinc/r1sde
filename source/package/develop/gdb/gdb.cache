@@ -1,0 +1,28 @@
+[TIMESTAMP] 1760651373 Thu Oct 16 23:49:33 2025
+[BUILDTIME] 310 (9)
+[SIZE] 15.80 MB, 125 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[OPT] expat
+[DEP] findutils
+[DEP] gawk
+[DEP] gmp
+[DEP] grep
+[OPT] guile
+[DEP] libelf
+[DEP] linux-header
+[DEP] make
+[DEP] mpfr
+[DEP] ncurses
+[DEP] perl
+[DEP] perl-libintl
+[OPT] python
+[DEP] sed
+[DEP] tar
+[DEP] texinfo
+[DEP] xxhash
+[DEP] xz
+[DEP] zstd

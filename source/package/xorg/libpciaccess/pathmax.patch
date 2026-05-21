@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/libpciaccess/pathmax.patch
+# Copyright (C) 2016 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+E.g. for musl.
+
+--- libpciaccess-0.13.4/src/linux_sysfs.c.vanilla	2016-12-24 14:15:50.139685518 +0000
++++ libpciaccess-0.13.4/src/linux_sysfs.c	2016-12-24 14:16:00.635685698 +0000
+@@ -48,6 +48,7 @@
+ #include <sys/mman.h>
+ #include <dirent.h>
+ #include <errno.h>
++#include <limits.h>
+ 
+ #if defined(__i386__) || defined(__x86_64__) || defined(__arm__)
+ #include <sys/io.h>

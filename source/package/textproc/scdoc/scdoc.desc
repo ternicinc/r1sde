@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/scdoc/scdoc.desc
+[COPY] Copyright (C) 2021 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A simple man page generator for POSIX systems written in C99
+
+[T] Scdoc is a simple man page generator for POSIX systems written in C99.
+
+[U] https://git.sr.ht/~sircmpwn/scdoc
+
+[A] Drew DeVault <sir@cmpwn.com>
+[M] NoTag <notag@t2sde.org>
+
+[C] base/x11
+[F] CROSS
+
+[L] MIT
+[V] 1.11.4
+[P] X -1---5---9 109.040
+
+[D] dbc1b6e1fa8bcc21f523778896da89a434bf1b480cb8e206a52b5d21 scdoc-1.11.4.tar.gz !https://git.sr.ht/~sircmpwn/scdoc/archive/1.11.4.tar.gz

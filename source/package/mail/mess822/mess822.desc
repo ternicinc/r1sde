@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mess822/mess822.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library for parsing Internet mail messages
+
+[T] mess822 is a library for parsing Internet mail messages. The mess822
+[T] package contains several applications that work with qmail:
+[T]
+[T] * ofmipd rewrites messages from dumb clients. It supports a database
+[T] of recognized senders and From lines, using cdb for fast lookups.
+[T] * new-inject is an experimental new version of qmail-inject. It
+[T] includes a flexible user-controlled hostname rewriting mechanism.
+[T] * iftocc can be used in .qmail files. It checks whether a known
+[T] address is listed in To or Cc.
+[T] * 822header, 822field, 822date, and 822received extract various pieces
+[T] of information from a mail message.
+[T] * 822print converts a message into an easier-to-read format.
+
+[U] https://cr.yp.to/mess822.html
+
+[A] Dan J. Bernstein <djb@cr.yp.to>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] OpenSource
+[V] 0.58
+
+[D] 94f496d9d5ec0d464d94aaac1a9fd4ac1b7c92e7451d84ad25853f40 mess822-0.58.tar.gz http://cr.yp.to/software/
+
+makeinstopt="$makeopt setup"
+hook_add preconf 5 'echo $root/$prefix > conf-home'

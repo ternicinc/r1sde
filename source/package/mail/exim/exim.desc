@@ -1,0 +1,82 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/exim/exim.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Mail Tranfer Agent
+
+[T] Exim is a message transfer agent (MTA) developed at the University of
+[T] Cambridge for use on Unix systems connected to the Internet.
+[T]
+[T] In style it is similar to Smail 3, but its facilities are more extensive,
+[T] and in particular it has some defences against mail bombs and unsolicited
+[T] junk mail in the form of options for refusing messages from particular
+[T] hosts, networks, or senders.
+[T]
+[T] Compared with sendmail it is much easier to configure, too ;-)!
+
+[U] https://www.exim.org
+[U] https://duncanthrax.net/exiscan-acl/
+
+[A] University of Cambridge
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/server
+[F] MTA JAIL CROSS NO-LTO.gcc
+
+[L] GPL
+[V] 4.99.3
+
+[D] e995e8783048a3d8d14d3bf1ca3b3f684efab62c22f0bf0f06cdb110 exim-4.99.3.tar.xz https://ftp.exim.org/pub/exim/exim4/
+
+var_append makeopt ' ' 'AR=$AR\ cq'
+var_append makeinstopt ' ' INSTALL_CP=install
+
+exim_pc() {
+	[ "${prefix#opt/}" == "$prefix" ] && sysconfdir="$sysconfdir/exim"
+
+	echo "Creating Makefile ..."
+	cp -v src/EDITME Local/Makefile
+
+	cat >> Local/Makefile << EOT
+BIN_DIRECTORY=$bindir
+CONFIGURE_FILE=$sysconfdir/configure
+EXIM_USER=30
+EXIM_GROUP=30
+AUTH_CRAM_MD5=yes
+AUTH_PLAINTEXT=yes
+SUPPORT_TLS=yes
+TLS_LIBS=-lssl -lcrypto
+COMPRESS_COMMAND=/bin/gzip
+ZCAT_COMMAND=/bin/zcat
+SUPPORT_MAILDIR=yes
+SUPPORT_MAILSTORE=yes
+SUPPORT_MBX=yes
+LOOKUP_DSEARCH=yes
+WITH_CONTENT_SCAN=yes
+HAVE_OPENSSL=yes
+EOT
+
+	if pkginstalled openssl; then
+		echo "USE_OPENSSL=yes" >> Local/Makefile
+	elif pkginstalled gnutls; then
+		echo "USE_GNUTLS=yes" >> Local/Makefile
+	else
+		echo "SUPPORT_TLS=no" >> Local/Makefile
+	fi
+
+	pkginstalled pam &&
+		echo "SUPPORT_PAM=yes" >> Local/Makefile &&
+		var_append GCC_WRAPPER_APPEND ' ' '-c?:-lpam'
+}
+hook_add preconf 3 exim_pc
+
+exim_pm(){
+	ln -sfv $bindir/exim $root$bindir/mail_exim
+	ln -sfv $bindir/exim $root$bindir/sendmail_exim
+	ln -sfv $bindir/exim $root$bindir/mailq_exim
+	install_setmailer exim
+}
+hook_add postmake 3 exim_pm

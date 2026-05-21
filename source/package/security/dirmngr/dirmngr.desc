@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dirmngr/dirmngr.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Certificate Manager for GnuPG
+
+[T] DirMngr is a daemon to handle CRL and certificate requests for GnuPG 1.9.
+[T] It might also be installed as a system daemon for CRL and OCSP checks.
+
+[U] https://www.gnupg.org/aegypten/
+
+[A] The Aegypten Project
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] GPL
+[V] 1.1.1
+
+[D] c6377d99c6cf2c715e9583993861f9bfb5b3d6f3ceb57a74c1aa3096 dirmngr-1.1.1.tar.bz2 https://www.gnupg.org/ftp/gcrypt/dirmngr/
+
+pkgprefix -t openldap
+LDAPLIBS="$root/$(pkgprefix libdir openldap)"
+LDAPINCS="$root/$(pkgprefix includedir openldap)"
+
+var_append GCC_WRAPPER_APPEND ' ' -I$LDAPINCS
+var_append GCC_WRAPPER_APPEND ' ' -L$LDAPLIBS
+
+var_append CPP_WRAPPER_APPEND ' ' -I$LDAPINCS
+var_append CPP_WRAPPER_APPEND ' ' -L$LDAPLIBS

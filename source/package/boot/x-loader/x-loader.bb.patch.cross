@@ -1,0 +1,26 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/x-loader/x-loader.bb.patch.cross
+# Copyright (C) 2012 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- a/board/omap3530beagle/omap3530beagle.c.orig	2012-11-02 15:38:55.000000000 -0400
++++ b/board/omap3530beagle/omap3530beagle.c	2012-11-02 15:39:55.000000000 -0400
+@@ -243,7 +243,7 @@
+ 		__raw_writel(MICRON_SDRC_ACTIM_CTRLB_0, SDRC_ACTIM_CTRLB_0);
+ 	}
+ 
+-	__raw_writel(SDP_SDRC_RFR_CTRL, SDRC_RFR_CTRL);
++	__raw_writel(SDP_SDRC_RFR_CTRL, SDRC_RFR_CTRL_0);
+ 	__raw_writel(SDP_SDRC_POWER_POP, SDRC_POWER);
+ 
+ 	/* init sequence for mDDR/mSDR using manual commands (DDR is different) */
+@@ -911,3 +911,8 @@
+ void abort(void)
+ {
+ }
++
++
++int onenand_chip(){
++	return 0;
++}

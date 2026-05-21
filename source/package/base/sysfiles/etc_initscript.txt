@@ -1,0 +1,39 @@
+#
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/sysfiles/etc_initscript.txt
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+# Set umask to safe level, and enable core dumps.
+#
+umask 022
+ulimit -c 2097151
+PATH=/bin:/sbin:/usr/bin:/usr/sbin
+export PATH
+
+# Setup /dev for boot without initrd.
+#
+if [ ! -e /dev/console ]; then
+	echo "No /dev/console, boot without initrd? Initializig /dev."
+	mount -n /dev
+	mount -n /proc
+	mount -n /sys
+	ln -s /proc/self/fd /dev/fd
+
+	mknod /dev/null c 1 3
+	mknod /dev/zero c 1 5
+
+	udevd &
+	udevtrigger
+	udevsettle
+	kill %1
+
+	[ -e /dev/console ] || mknod /dev/console c 5 1
+	[ -e /dev/tty ] || mknod /dev/tty c 5 0
+fi
+
+# Execute the program.
+#
+eval exec "$4" > /dev/console 2>&1 < /dev/console

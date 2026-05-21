@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rust-analyzer/rust-analyzer.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Rust compiler front-end for IDEs
+
+[T] A Rust compiler front-end for IDEs.
+
+[U] https://github.com/rust-lang/rust-analyzer
+
+[A] https://rust-analyzer.github.io/
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] base/tool
+[F] CROSS
+
+[L] APL MIT
+[V] 2026-05-11
+
+[D] af4bb265a2772628042a5a21140945c7f6352d63f1201b4ddfd2e047 rust-analyzer-2026-05-11.tar.gz https://github.com/rust-lang/rust-analyzer/archive/2026-05-11/
+
+cargoinstopt=
+atstage cross && hook_add postmake 5 'install target/$arch_target/release/rust-analyzer $root$bindir'
+atstage native && hook_add postmake 5 'install target/release/rust-analyzer $root$bindir'

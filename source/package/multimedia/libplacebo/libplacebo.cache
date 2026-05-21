@@ -1,0 +1,28 @@
+[TIMESTAMP] 1775994332 dim. 12 avril 2026 13:45:32
+[BUILDTIME] 8 (9)
+[SIZE] 1.57 MB, 47 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] fast_float
+[DEP] gawk
+[DEP] glad
+[DEP] grep
+[DEP] gzip
+[DEP] jinja2
+[DEP] lcms2
+[DEP] linux-header
+[DEP] markupsafe
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] python
+[DEP] sed
+[DEP] shaderc
+[DEP] tar
+[DEP] util-linux
+[DEP] vulkan-headers
+[DEP] xxhash

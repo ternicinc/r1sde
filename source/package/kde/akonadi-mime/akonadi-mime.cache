@@ -1,0 +1,35 @@
+[TIMESTAMP] 1739209616 Mon Feb 10 18:46:56 2025
+[BUILDTIME] 135 (5)
+[SIZE] 1.30 MB, 132 files
+
+[DEP] akonadi
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] freetype
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] kconfig
+[DEP] kconfigwidgets
+[DEP] kcoreaddons
+[DEP] ki18n
+[DEP] kio
+[DEP] kmime
+[DEP] kwidgetsaddons
+[DEP] kxmlgui
+[DEP] libxslt
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] procps
+[DEP] python
+[DEP] qt6base
+[DEP] sed
+[DEP] shared-mime-info
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] xz

@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libdazzle/libdazzle.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome libdazzle package
+
+[T] Core Gnome libdazzle package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 3.44.0
+[P] X -----5---9 179.200
+
+[CV-URL] https://download.gnome.org/sources/libdazzle/cache.json
+[D] d03eba18a6b74600da9a3875b2b1fe57b4af703a8fab1905659aef0a libdazzle-3.44.0.tar.xz https://download.gnome.org/sources/libdazzle/3.44/
+
+. $base/package/*/*/gnome-conf.in

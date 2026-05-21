@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/patchelf/patchelf.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A small utility to modify the dynamic linker and RPATH of ELF executables
+
+[T] A simple utility for modifying existing ELF executables and libraries.
+
+[U] https://github.com/NixOS/patchelf
+
+[A] Eelco Dolstra <edolstra@gmail.com>, The NixOS development team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 0.18.0
+
+[D] c0ccf04b8eb4254f4b94c68b269e008493da225487743490f8065b2f patchelf-0.18.0.tar.gz https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0/
+
+hook_add preconf 5 ./bootstrap.sh

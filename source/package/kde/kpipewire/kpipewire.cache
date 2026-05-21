@@ -1,0 +1,33 @@
+[TIMESTAMP] 1770497149 Sat Feb  7 21:45:49 2026
+[BUILDTIME] 80 (9)
+[SIZE] 0.56 MB, 97 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] epoxy
+[DEP] extra-cmake-modules
+[DEP] ffmpeg
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] kcoreaddons
+[DEP] ki18n
+[DEP] libdrm
+[DEP] libglvnd
+[DEP] libva
+[DEP] linux-header
+[DEP] make
+[DEP] mesa
+[DEP] pipewire
+[DEP] pkgconfig
+[DEP] procps
+[DEP] qt6base
+[DEP] qt6declarative
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] vulkan-headers
+[DEP] xz

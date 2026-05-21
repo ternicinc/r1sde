@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/make/make.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GNU make utility to maintain groups of programs
+
+[T] The 'make' utility automatically determines which pieces of a large program
+[T] need to be recompiled, and issues commands to recompile them. This is GNU
+[T] 'make', which was implemented by Richard Stallman and Roland McGrath. GNU
+[T] 'make' conforms to section 6.2 of EEE Standard 1003.2-1992' (POSIX.2).
+
+[U] https://www.gnu.org/software/make/
+[U] https://make.paulandlesley.org/
+
+[A] Roland McGrath <roland@gnu.org> {Original Author up to Version 3.75}
+[A] Paul D. Smith <psmith@gnu.org> {Developer since Version 3.76}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/development
+[F] CROSS DIETLIBC NO-LTO.gcc
+
+[L] GPL
+[V] 4.4.1
+[P] X 0-2--5---9 107.700
+
+[D] 8963a9162a5f77c46beab9c6ee2e3565f39441675050842ef02c47df make-4.4.1.tar.lz http://ftp.gnu.org/pub/gnu/make/
+
+hook_add preconf 5 "echo make_cv_sys_get_minus_G=no >> config.cache"
+var_append confopt ' ' --disable-posix-spawn
+hook_add postmake 5 "ln -sfv make $root/usr/bin/gmake"

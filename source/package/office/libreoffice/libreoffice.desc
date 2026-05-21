@@ -1,0 +1,233 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libreoffice/libreoffice.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Libre Open Office Suite
+
+[T] Libreoffice is the community maintained OpenOffice fork.
+
+[U] https://www.libreoffice.org
+[U] http://www.go-ooo.org
+
+[A] StarDivision
+[A] Sun Microsystems
+[A] The Document Foundation
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office
+[F] CROSS CUSTOM-LTO.gcc NO-LTO.clang
+# some arch just fail linking w/ a symbol or incompatible object format
+[R] - ia64 hppa hppa64 riscv superh
+
+# tests xvfb-run
+[E] del xorg-server
+[E] opt jq
+[E] opt pigz
+[E] opt python-lxml
+[E] opt gpgme libgpg-error
+[E] add afdko
+[E] opt systemtap
+
+[L] OpenSource
+[V] 26.2.3.2
+
+# (grep 'curl\|wget'| tr ' ' '\n' | sed -n 's,\(http.*\)/\(.*\),[D] 0 \2 \1/,p' | sort) < libreoffice.log
+[D] a630d1a87e747814a95ac896ca9bc5dc1663ded2f8c41e43910632cc libreoffice-26.2.3.2.tar.xz https://download.documentfoundation.org/libreoffice/src/26.2.3/
+[D] e0d7538228c8da89071c2e49c994cd7a0c5b9cc311ddcb1ba3410426 box2d-2.4.1.tar.gz https://dev-www.libreoffice.org/src/
+[D] 16109c08e73c71f27ce60f86afa89d43218e97728b4637f5b2760177 f543e6e2d7275557a839a164941c0a86e5f2c3f2a0042bfc434c88c6dde9e140-opens___.ttf https://dev-www.libreoffice.org/extern/
+[D] e8c0dfd74b754d713b187e814578f51497593b99baa2f33da680bc72 pdfium-7471.tar.bz2 https://dev-www.libreoffice.org/src/
+[D] 0448d8a8deac5b80ac2d30e5efa0db333a5e38fe8ecc78d0d01b9aed skia-m142-f4ed99d2443962782cf5f8b4dd27179f131e7cbe.tar.xz https://dev-www.libreoffice.org/src/
+
+[ $prefix_auto = 1 ] && prefix=opt/libreoffice && set_confopt
+
+ooo_lang='en-US' # de es fr it' #ALL
+
+lo_tarballs() {
+	mkdir -p external/tarballs/
+	for f in `match_source_file -p . | grep -v libreoffice`; do
+		local dl="$f"
+		f=${f##*/}
+		ln -svf $dl external/tarballs/$f
+	done
+}
+hook_add prepatch 5 lo_tarballs
+
+var_append confopt ' ' --with-vendor="T2"
+var_append confopt ' ' --enable-release-build
+var_append confopt ' ' "--with-system-gcc --disable-ccache"
+
+cpu="`echo $arch | arch2uname`"
+var_append confopt ' ' --with-arch=$cpu
+
+[[ $libdir == *lib64 ]] &&
+	var_append confopt ' ' --enable-64bit-libs=yes
+
+[ "$SDECFG_LTO" = 1 ] && var_append confopt ' ' --enable-lto
+
+#var_append confopt ' ' --disable-fetch-external
+var_append confopt ' ' "--with-parallelism=$SDECFG_PARALLEL \
+--disable-sdremote \
+--disable-sdremote-bluetooth \
+--disable-mariadb-sdbc \
+--disable-postgresql-sdbc \
+--disable-firebird-sdbc \
+--disable-scripting-beanshell \
+--with-dotnet=no \
+--enable-access=no \
+--enable-mono=no"
+
+# requires some prebuilt .dll or mingw around - for windows registry mangling
+var_append confopt ' ' --disable-odk
+var_append confopt ' ' --disable-gstreamer-1-0
+var_append confopt ' ' --without-java
+
+var_append confopt ' ' "--without-gpc --enable-crashdump=no --disable-crashdump --disable-binfilter --disable-epm"
+var_append confopt ' ' "--with-system-db --with-db-version=4.3"
+var_append confopt ' ' "--enable-fontconfig --without-myspell-dicts --without-fonts"
+var_append confopt ' ' "--disable-mozilla --without-gssapi"
+
+var_append confopt ' ' "'--with-lang=\"\$ooo_lang\"'"
+var_append confopt ' ' "'--with-dict=\"\$ooo_lang\"'"
+
+ooo_iconset=
+#FIXME: download location [ "$SDECFG_PKG_OOO_ICONS_BLUECURVE" = '1' ] && var_append ooo_iconset ',' Bluecurve
+[ -n "$ooo_iconset" ] && var_append confopt ' ' --with-icons=$ooo_iconset
+
+var_append GCC_WRAPPER_APPEND ' ' "-I$root$(pkgprefix includedir libx11)"
+var_append GCC_WRAPPER_APPEND ' ' "-c?:-L$root$(pkgprefix libdir libx11)"
+var_append confopt ' ' "--x-includes=$root$(pkgprefix includedir libx11)"
+var_append confopt ' ' "--x-libraries=$root$(pkgprefix libdir libx11)"
+
+#output dirs (all options can be found in configure:2715)
+var_append confopt ' ' --docdir=$docdir
+
+var_append confopt ' ' --with-system-headers
+
+var_append confopt ' ' --with-system-afdko
+var_append confopt ' ' --with-system-argon2
+#var_append confopt ' ' --with-system-box2d	#re-enable when libre box2d updates to next major version
+var_append confopt ' ' --with-system-clucene
+var_append confopt ' ' --with-system-coinmp
+var_append confopt ' ' --with-system-dragonbox
+var_append confopt ' ' --with-system-frozen
+var_append confopt ' ' --with-system-glm
+var_append confopt ' ' --with-system-graphite
+var_append confopt ' ' --with-system-harfbuzz
+var_append confopt ' ' --with-system-altlinuxhyph
+var_append confopt ' ' --with-system-libabw
+var_append confopt ' ' --with-system-libcmis
+var_append confopt ' ' --with-system-libebook
+var_append confopt ' ' --with-system-libepubgen
+var_append confopt ' ' --with-system-libetonyek
+var_append confopt ' ' --with-system-libexttextcat
+var_append confopt ' ' --with-system-liblangtag
+var_append confopt ' ' --with-system-libmwaw
+var_append confopt ' ' --with-system-libnumbertext
+var_append confopt ' ' --with-system-libpagemaker
+var_append confopt ' ' --with-system-libqxp
+var_append confopt ' ' --with-system-libstaroffice
+var_append confopt ' ' --with-system-libvisio
+var_append confopt ' ' --with-system-libwpg
+var_append confopt ' ' --with-system-libwps
+var_append confopt ' ' --with-system-lpsolve
+var_append confopt ' ' --with-system-md4c
+var_append confopt ' ' --with-system-mythes
+var_append confopt ' ' --with-system-redland
+var_append confopt ' ' --with-system-xmlsec
+var_append confopt ' ' --with-system-zxcvbn
+
+pkginstalled abseil-cpp && var_append confopt ' ' --with-system-abseil
+pkginstalled boost &&
+	var_append confopt ' ' "--with-system-boost --with-boost-libdir=$root$(pkgprefix libdir boost)"
+pkginstalled bluez && var_append confopt ' ' --with-system-bluez
+pkginstalled bzip2 && var_append confopt ' ' --with-system-bzip2
+pkginstalled cairo && var_append confopt ' ' --with-system-cairo
+pkginstalled colamd && var_append confopt ' ' --with-system-colamd
+pkginstalled cppunit && var_append confopt ' ' --with-system-cppunit
+pkginstalled curl && var_append confopt ' ' --with-system-curl
+pkginstalled epoxy && var_append confopt ' ' --with-system-epoxy
+pkginstalled expat && var_append confopt ' ' --with-system-expat
+pkginstalled fast_float && var_append confopt ' ' --with-system-fast-float
+pkginstalled fontforge && var_append confopt ' ' --enable-build-opensymbol
+pkginstalled hunspell && var_append confopt ' ' --with-system-hunspell
+pkginstalled icu4c && var_append confopt ' ' --with-system-icu
+pkginstalled lcms2 && var_append confopt ' ' --with-system-lcms2
+pkginstalled libatomic_ops && var_append confopt ' ' --with-system-libatomic_ops
+pkginstalled libcdr && var_append confopt ' ' --with-system-libcdr
+pkginstalled libeot && var_append confopt ' ' --with-system-libeot
+pkginstalled libfixmath && var_append confopt ' ' --with-system-libfixmath
+pkginstalled libfreehand && var_append confopt ' ' --with-system-libfreehand
+pkginstalled libjpeg-turbo && var_append confopt ' ' --with-system-jpeg
+pkginstalled liblockfile && var_append confopt ' ' --with-system-lockfile
+pkginstalled libmspub && var_append confopt ' ' --with-system-libmspub
+pkginstalled libodfgen && var_append confopt ' ' --with-system-libodfgen
+pkginstalled liborcus && var_append confopt ' ' --with-system-orcus
+pkginstalled libpng && var_append confopt ' ' --with-system-libpng
+pkginstalled librevenge && var_append confopt ' ' --with-system-librevenge
+pkginstalled libtiff && var_append confopt ' ' --with-system-libtiff
+pkginstalled libtommath && var_append confopt ' ' --with-system-libtommath
+pkginstalled libwebp && var_append confopt ' ' --with-system-libwebp
+pkginstalled libwpd && var_append confopt ' ' --with-system-libwpd
+pkginstalled libxml && var_append confopt ' ' --with-system-libxml
+pkginstalled libzmf && var_append confopt ' ' --with-system-libzmf
+pkginstalled lzma && var_append confopt ' ' --with-system-lzma
+pkginstalled mdds && var_append confopt ' ' --with-system-mdds
+pkginstalled nss && var_append confopt ' ' --with-system-nss
+pkginstalled openjpeg && var_append confopt ' ' --with-system-openjpeg
+pkginstalled openssl && var_append confopt ' ' --with-system-openssl
+pkginstalled poppler && var_append confopt ' ' --with-system-poppler
+pkginstalled sane-backends && var_append confopt ' ' --with-system-sane
+pkginstalled unixodbc && var_append confopt ' ' --with-system-odbc
+pkginstalled zlib && var_append confopt ' ' --with-system-zlib
+pkginstalled zstd && var_append confopt ' ' --with-system-zstd=yes
+pkginstalled zxing-cpp && var_append confopt ' ' --with-system-zxing
+
+if pkginstalled krb5 && ! pkginstalled heimdal; then
+	var_append confopt ' ' --with-krb5
+else
+	var_append confopt ' ' --without-krb5
+fi
+
+if pkginstalled openldap; then
+	var_append confopt ' ' --with-system-openldap
+	var_append GCC_WRAPPER_APPEND ' ' "-I`pkgprefix includedir openldap`"
+	var_append GCC_WRAPPER_APPEND ' ' "-L`pkgprefix libdir openldap`"
+else
+	var_append confopt ' ' --disable-ldap
+fi
+
+if pkginstalled gpgmepp; then
+	var_append confopt ' ' --with-system-gpgmepp
+else
+	 var_append confopt ' ' --disable-gpgmepp
+fi
+
+# libre is not checking for them
+#pkginstalled serf && var_append confopt ' ' --with-system-serf
+#pkginstalled startup-notification && var_append confopt ' ' --enable-libsn
+#pkginstalled neon && var_append confopt ' ' --with-system-neon
+#pkginstalled libsndfile && var_append confopt ' ' --with-system-sndfile
+#pkginstalled apr && var_append confopt ' ' --with-system-apr
+
+if atstage cross; then
+	export PKG_CONFIG_FOR_BUILD=/usr/bin/pkg-config
+	# for dconf build artifacts
+	export HOME=$builddir/home
+	mkdir -p $HOME
+
+	# why don't have cross compiling python, and skia needs clang :-/
+	var_append confopt ' ' '--enable-python=no --disable-skia'
+
+	# TODO: better, for arm64 crypto:
+	var_remove_regex GCC_WRAPPER_INSERT ' ' '-march=.*'
+	var_remove GCC_WRAPPER_REMOVE ' ' '-march*'
+
+	# don't overwrite it's internal CC vs. HOSTCC defines
+	var_remove_regex makeopt ' ' '[A-Z].*=.*'
+fi
+
+var_append makeopt ' ' build
+atstage native && var_append makeinstopt ' ' DESTDIR=/
+makeinstopt="${makeinstopt/install/distro-pack-install}"

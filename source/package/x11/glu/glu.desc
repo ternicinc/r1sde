@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/glu/glu.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Mesa 3-D GLU library
+
+[T] Mesa is a 3-D graphics library with an API which is very similar to that
+[T] of OpenGL*. To the extent that Mesa utilizes the OpenGL command syntax
+[T] or state machine, it is being used with authorization from Silicon Graphics,
+[T] Inc. However, the author makes no claim that Mesa is in any way a
+[T] compatible replacement for OpenGL or associated with Silicon Graphics, Inc.
+[T] Those who want a licensed implementation of OpenGL should contact a licensed
+[T] vendor.
+[T]
+[T] While Mesa is not a licensed OpenGL implementation, it is currently
+[T] being tested with the OpenGL conformance tests. For the current
+[T] conformance status see the CONFORM file included in the Mesa distribution.
+[T]
+[T] * OpenGL(R) is a registered trademark of Silicon Graphics, Inc.
+
+[A] Brian Paul <brian@mesa3d.org>
+[M] René Rebe <rene@exactco.de>
+
+[U] https://www.mesa3d.org/
+
+[C] base/x11
+[F] CROSS NO-LTO
+
+[L] OpenSource
+[V] 9.0.3
+[P] X -----5---9 127.500
+
+[D] 2ed31d603d945ee0a0d2de649dec63da6a45a3c8ff046350835b6f07 glu-9.0.3.tar.xz https://mesa.freedesktop.org/archive/glu/

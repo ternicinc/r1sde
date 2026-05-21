@@ -1,0 +1,17 @@
+[TIMESTAMP] 1737724488 Fri Jan 24 14:14:48 2025
+[BUILDTIME] 2 (9)
+[SIZE] 0.41 MB, 27 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] make
+[DEP] perl
+[DEP] perl-crypt-des
+[DEP] perl-digest-hmacmd5
+[DEP] perl-digest-sha1
+[DEP] sed
+[DEP] tar

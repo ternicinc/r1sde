@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gupnp-dlna/gupnp-dlna.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome gupnp-dlna package
+
+[T] Core Gnome gupnp-dlna package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 0.12.0
+
+[CV-URL] https://download.gnome.org/sources/gupnp-dlna/cache.json
+[D] e462392bfdf481d2a95af87c429ef9072435a3467c77f6e0dc0509f7 gupnp-dlna-0.12.0.tar.xz https://download.gnome.org/sources/gupnp-dlna/0.12/
+
+. $base/package/*/*/gnome-conf.in

@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xrick/xrick.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A clone of Rick Dangerous
+
+[T] Remember Rick Dangerous?
+[T] Way before Lara Croft, back in the 1980's and early 1990's, Rick Dangerous
+[T] was the Indiana Jones of computer games, running away from rolling rocks,
+[T] avoiding traps, from South America to a futuristic missile base via Egypt
+[T] and the Schwarzendumpf castle.
+[T] xrick is a clone of Rick Dangerous,
+
+[U] https://www.bigorno.net/xrick/
+
+[A] bigorno.net <bigorno@bigorno.net>
+[M] Leonel Iván Saafigueroa <leonel@saafigueroa.com.ar>
+
+[C] extra/game
+[F] CROSS
+
+[L] GPL
+[V] 021212
+
+[D] cb5da18027ed2d556fd4190227294cdeb218a7e679122d0a663cc51b xrick-021212.tgz http://www.bigorno.net/xrick/
+
+makeinstopt=
+
+xrick_pm() {
+	cp -fv xrick $root$bindir/
+	cp -fv data.zip $root$bindir/
+
+	cp -fv xrick.6.gz $root$mandir/man6/
+}
+
+hook_add postmake 5 xrick_pm

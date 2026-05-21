@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libiec61883/libiec61883.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library for capturing video (dv or mpeg2) over the IEEE 1394 bus
+
+[T] The libiec61883 library provides a higher level API for streaming DV,
+[T] MPEG-2 and audio over Linux IEEE 1394. This includes both reception and
+[T] transmission. It uses the new "rawiso" API of libraw1394, which
+[T] transparently provides mmap-ed DMA for efficient data transfer. It also
+[T] represents the third generation of I/O technology for Linux 1394 for these
+[T] media types thereby removing the complexities of additional kernel
+[T] modules, /dev nodes, and procfs. It also consolidates features for plug
+[T] control registers and connection management that previously existed in
+[T] experimental form in an unreleased version of libavc1394.
+
+[U] https://www.linux1394.org/
+
+[A] Dan Dennedy <dan@dennedy.org>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] LGPL
+[V] 1.2.0
+[P] X -----5---9 211.000
+
+[D] 2b6b66398d7d021fe41260321e33a14eb606bde0b11bedee2a3511de libiec61883-1.2.0.tar.xz https://www.kernel.org/pub/linux/libs/ieee1394/

@@ -1,0 +1,21 @@
+[TIMESTAMP] 1737709207 Fri Jan 24 10:00:07 2025
+[BUILDTIME] 6 (9)
+[SIZE] 0.27 MB, 7 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] libdrm
+[DEP] libpciaccess
+[DEP] linux-header
+[DEP] make
+[DEP] pixman
+[DEP] sed
+[DEP] tar
+[DEP] udev
+[DEP] xorg-server
+[DEP] xorgproto
+[DEP] xz

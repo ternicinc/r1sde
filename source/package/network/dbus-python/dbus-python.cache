@@ -1,0 +1,24 @@
+[TIMESTAMP] 1742039985 Sat Mar 15 12:59:45 2025
+[BUILDTIME] 3 (5)
+[SIZE] 0.38 MB, 38 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] dbus
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] linux-header
+[DEP] meson
+[OPT] mono
+[DEP] ninja
+[DEP] openssl
+[OPT] pyrexc
+[DEP] python
+[DEP] python-gpep517
+[DEP] sed
+[DEP] tar
+[DEP] xz

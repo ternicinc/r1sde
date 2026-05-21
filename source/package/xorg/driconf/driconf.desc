@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/driconf/driconf.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] DRI Configuration Applet
+
+[T] DRIconf is a configuration applet for the Direct Rendering Infrastructure.
+[T] It allows customizing performance and visual quality settings of OpenGL
+[T] drivers on a per-driver, per-screen and/or per-application level.
+
+[U] https://dri.freedesktop.org/wiki/DriConf
+
+[A] Felix Kuehling <fxkuehl@gmx.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+
+[L] OpenSource
+[V] 0.9.1
+[P] X -----5---9 112.445
+
+[D] d8697c8a23b71d894300121424d0d06b2f2be7a355ae82e77dccd875 driconf-0.9.1.tar.gz https://people.freedesktop.org/~fxkuehl/driconf/
+
+. package/*/*/modular-x-conf.in
+check_usrlocal=0 # TODO: try to get rid of this

@@ -1,0 +1,14 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/imlib2/config.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2004 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+if pkgcheck imlib2 X
+then
+ 	menu_begin MENU_PKG_E17 'Enlightenment 17 Options'
+		text 'Install prefix for E17 Packages' \
+		     SDECFG_PKG_E17_CORE_PREFIX "opt/e17"
+	menu_end
+fi

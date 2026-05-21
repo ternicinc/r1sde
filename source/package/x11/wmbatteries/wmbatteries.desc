@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/wmbatteries/wmbatteries.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A windowmanager dockapp that shows the battery status using acpi
+
+[T] wmbatteries monitors up to 2 battery capacities, remaining time, current
+[T] power consumption and cpu temperature.
+[T] Note: requires recent acpi kernel
+
+[A] Florian Krohs <florian.krohs@artis.uni-oldenburg.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 0.1.7
+
+[D] 5c60d159aec8f54dae52aad977f418fb58d1e103e4a49fe90db267c9 wmbatteries-0.1.7.tar.gz https://github.com/tarjanm-movidius/wmbatteries/archive/0.1.7/
+
+autogen=1
+var_append GCC_WRAPPER_APPEND ' ' -L$root$(pkgprefix libdir libx11)
+atstage native || hook_add preconf 5 "echo 'ac_cv_func_malloc_0_nonnull=yes' >> config.cache"

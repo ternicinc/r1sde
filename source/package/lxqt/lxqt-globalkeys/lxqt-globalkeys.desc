@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lxqt-globalkeys/lxqt-globalkeys.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Daemon used to register global keyboard shortcuts
+
+[T] Daemon used to register global keyboard shortcuts.
+
+[U] https://github.com/lxqt/lxqt-globalkeys
+
+[A] Lxqt-globalkeys Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] OBJDIR
+
+[V] 2.4.0
+[L] LGPL
+[P] X -----5---9 700.000
+
+[CV-GROUP] lxqt
+[D] 1c985ff9b390408ba615f2c2131b33b8cf31135dbd662159f57b788b lxqt-globalkeys-2.4.0.tar.xz https://github.com/lxqt/lxqt-globalkeys/releases/download/2.4.0/

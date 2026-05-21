@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/eq-xmms/eq-xmms.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Graphical real-time audio equalizer plugin for XMMS
+
+[T] EQU is a realtime graphical equalizer that will equalize the audio of
+[T] almost everything you play through XMMS (OGG, MP3, WAV, etc.).
+
+[U] https://equ.sourceforge.net/
+
+[A] Felipe Rivera <liebremx@users.sourceforge.net>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 0.7
+
+[D] 06c1060da3112df6d9ae84f585969a332ca186bc2b054e596e33430f eq-xmms-0.7.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/equ/
+
+var_append makeinstopt ' ' libdir=$root/usr/lib/xmms/Effect

@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-asterisk/perl-asterisk.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Asterisk Perl Modules
+
+[T] These are all modules for interfacing with the Asterisk open source pbx
+[T] system.
+[T]
+[T] agi-sayani.agi: AGI Script that says the callerid and dnis
+[T] agi-test.agi: Rewrite of AGI Example included with asterisk
+[T] calleridnamelookup.agi: AGI Script that uses an online reverse number
+[T] databases to add a name to callerid
+[T] tts-bofh.agi: AGI script that uses Festival to give a random bofh excuse
+[T] tts-ping.agi: AGI script that pings an ip address and notifies the user
+[T] if the host is up or down
+[T] tts-line.agi: AGI script that uses Festival to read a text file one line
+[T] at a time
+[T] manager-test.pl: Example usage of the Asterisk::Manager module
+
+[U] http://asterisk.gnuinter.net/
+
+[A] James Golovich <james@gnuinter.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] Artistic GPL
+[V] 1.08
+
+[D] 87cd1a9f8362c9f26ff20ffb031f6a380128c90225e3d8cd65f04b60 asterisk-perl-1.08.tar.gz https://www.cpan.org/authors/id/I/IT/ITCHARLIE/

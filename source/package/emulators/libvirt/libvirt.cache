@@ -1,0 +1,56 @@
+[TIMESTAMP] 1772489491 Mon Mar  2 23:11:31 2026
+[BUILDTIME] 130 (9)
+[SIZE] 56.26 MB, 920 files
+
+[OPT] acl
+[OPT] audit
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] curl
+[OPT] cyrus-sasl2
+[DEP] diffutils
+[OPT] docutils
+[DEP] findutils
+[DEP] fuse
+[DEP] gawk
+[DEP] gettext
+[DEP] glib
+[OPT] glusterfs
+[DEP] gnutls
+[DEP] grep
+[DEP] json-c
+[DEP] libbsd
+[DEP] libcap-ng
+[OPT] libiscsi
+[DEP] libnl
+[DEP] libpcap
+[DEP] libpciaccess
+[OPT] libssh
+[OPT] libssh2
+[DEP] libtasn1
+[DEP] libtirpc
+[DEP] libxml
+[DEP] libxslt
+[DEP] linux-header
+[DEP] lvm2
+[DEP] m4
+[DEP] meson
+[DEP] ninja
+[DEP] numactl
+[DEP] openssl
+[DEP] parted
+[DEP] perl
+[DEP] polkit
+[DEP] python
+[DEP] readline
+[OPT] rst2html5
+[OPT] sanlock
+[DEP] sed
+[DEP] sysfiles
+[OPT] systemtap
+[DEP] tar
+[DEP] udev
+[DEP] util-linux
+[DEP] xz

@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ghostpcl/ghostpcl.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] PCL interpreter and previewer
+
+[T] GhostPCL is Artifex Software's implementation of the PCL-5tm
+[T] and PCL-XLtm family of page description languages.
+[T]
+[T] It's available freely but may not be distributed commercially.
+
+[A] Artifex Software, Inc.
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[U] https://ghostscript.com
+
+[C] extra/printing extra/office
+
+[L] Commercial
+[V] 10.06.0
+
+# only for the dir
+[CV-TR] s/\.//
+[D] f20e5ddbf9fb4bf20bb6f5ff7ed82ee46fd17754aa1fb5afa24a82ed ghostpdl-10.06.0.tar.xz https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10060/
+
+var_append CC_WRAPPER_APPEND ' ' -std=gnu17

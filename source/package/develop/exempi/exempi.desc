@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/exempi/exempi.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] XMP SDK to work on UNIX
+
+[T] exempi is a port of Adobe XMP SDK to work on UNIX and to be build with GNU
+[T] automake.
+
+[U] https://gitlab.freedesktop.org/libopenraw/exempi
+
+[A] Hubert Figuière <hub@figuiere.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] BSD
+[V] 2.6.6
+[P] X -----5---9 400.000
+
+[D] 4292f231ff3fe77c6cce571414b78e6ce0c57d2aa8c29197a1991712 exempi-2.6.6.tar.gz https://gitlab.freedesktop.org/libopenraw/exempi/-/archive/2.6.6/
+
+autogen=1

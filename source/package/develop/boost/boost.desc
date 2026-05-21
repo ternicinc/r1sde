@@ -1,0 +1,65 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/boost/boost.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Peer-reviewed STL style libraries for C++
+
+[T] Boost provides free peer-reviewed portable C++ source libraries. The
+[T] emphasis is on libraries which work well with the C++ Standard Library.
+[T] One goal is to establish "existing practice" and provide reference
+[T] implementations so that the Boost libraries are suitable for eventual
+[T] standardization. Some of the libraries have already been proposed for
+[T] inclusion in the C++ Standards Committee's upcoming C++ Standard Library
+[T] Technical Report.
+
+[U] https://www.boost.org/
+
+[A] Dave Abrahams
+[A] Darin Adler
+[A] Carl Daniel
+[A] Beman Dawes
+[A] Doug Gregor
+[A] John Maddock
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] OpenSource
+[V] 1.91.0
+[P] X -----5---9 126.400
+
+[CV-TR] s/\./_/g
+[CV-URL] https://www.boost.org/users/download/
+[D] f0ab5647da4dcb1884ec2ad194e19b1b6b5c96f6975be9aa28c700ed boost_1_91_0.tar.bz2 https://archives.boost.io/release/1.91.0/source/
+
+runconf=0 runmake=0
+
+# otherwise rebuilding boost does not reinstall static files
+var_insert taropt ' ' -m
+b2opt="-j$SDECFG_PARALLEL"
+
+# rom_exception.cpp:171:2: error: #error On this platform memory leaks are possible if capturing stacktrace from exceptions is enabled and exceptions are thrown concurrently and libc++ runtime is used. Define `BOOST_STACKTRACE_LIBCXX_RUNTIME_MAY_CAUSE_MEMORY_LEAK` to suppress this error if the library would not be used with libc++ runtime (for example, it would be only used with GCC runtime). Otherwise, disable the boost_stacktrace_from_exception library build (for example by `./b2 boost.stacktrace.from_exception=off` option).
+case $arch in
+    alpha|ia64|hppa*|m68k|x86)
+	var_append b2opt ' ' boost.stacktrace.from_exception=off ;;
+esac
+
+cross_boost_config() {
+	# TODO: get it built w/o the -xxx toolset
+	echo "using gcc : xxx : $CXX ;" >> project-config.jam
+}
+
+if atstage cross; then
+	b2opt="toolset=gcc-xxx $b2opt"
+	hook_add premake 5 cross_boost_config
+else
+	b2opt="toolset=gcc $b2opt"
+fi
+
+hook_add preconf 5 "./bootstrap.sh --without-libraries=python"
+hook_add inmake 5 "./b2 $b2opt --prefix=/$prefix --libdir=$libdir --includedir=$includedir --datadir=$root$datadir"
+hook_add postmake 5 "./b2 $b2opt --prefix=/$prefix --libdir=$root$libdir --includedir=$root$includedir --datadir=$root$datadir install"

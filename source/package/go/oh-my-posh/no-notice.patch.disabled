@@ -1,0 +1,30 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/oh-my-posh/no-notice.patch.disabled
+# Copyright (C) 2023 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+Avoid checking the web for newer versions at startup as it
+might be a security risk depending on your threat model.
+
+  - NoTag <notag@maneto.fr>
+
+--- oh-my-posh-14.26.0/src/shell/init.go.vanilla	2023-06-06 18:27:38.641000000 +0300
++++ oh-my-posh-14.26.0/src/shell/init.go	2023-06-06 18:28:25.724000000 +0300
+@@ -11,7 +11,6 @@
+ 
+ 	"github.com/jandedobbeleer/oh-my-posh/src/platform"
+ 	"github.com/jandedobbeleer/oh-my-posh/src/template"
+-	"github.com/jandedobbeleer/oh-my-posh/src/upgrade"
+ )
+ 
+ //go:embed scripts/omp.ps1
+@@ -259,7 +259,7 @@
+ 	// only run this for shells that support
+ 	// injecting the notice directly
+ 	if shell != PWSH && shell != PWSH5 {
+-		notice, hasNotice = upgrade.Notice(env)
++		notice, hasNotice = "", false // upgrade.Notice(env)
+ 	}
+ 
+ 	return strings.NewReplacer(

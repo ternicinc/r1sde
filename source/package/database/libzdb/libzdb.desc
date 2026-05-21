@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libzdb/libzdb.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A high level multi-database API
+
+[T] The Zild C Database Library implements a small, fast, and easy to
+[T] use database API with thread-safe connection pooling. The library can
+[T] connect transparently to multiple database systems. It has zero runtime
+[T] configuration and connections are specified via a URL scheme.
+
+[U] https://www.tildeslash.com/libzdb/
+
+[A] Jan-Henrik Haukeland <hauk@tildeslash.com>
+[A] Martin Pala <martinp@tildeslash.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/database
+
+[L] GPL
+[V] 3.5.0
+[P] X -----5---9 205.000
+
+# test with dbmail before commiting
+[D] a0c20efb41ce1fe28159cba840072e779f47702c875c31a2152b6d04 libzdb-3.5.0.tar.gz http://www.tildeslash.com/libzdb/dist/
+
+var_append confopt ' ' "--with-mysql=$root/$(pkgprefix mysql)"

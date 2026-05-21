@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cramfsswap/cramfsswap.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Swap endianess of a cram filesystem
+
+[T] Cramfs is a highly compressed and size optimized linux filesystem which is
+[T] mainly used for embedded applications. The problem with cramfs is that it
+[T] is endianess sensitive, meaning you can't mount a cramfs for a big endian
+[T] target on a little endian machine and vice versa. This is often especially
+[T] a problem in the development phase.
+[T]
+[T] Cramfsswap provides a solution by allowing to swap the endianess of a
+[T] cramfs filesystem.
+
+[U] https://github.com/julijane/cramfsswap
+
+[A] Michael Holzt <kju@debian.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+[F] CROSS
+
+[L] GPL
+[V] 1.4.5
+
+[D] 65d4009772db0018199b29b0fc989a8c83e3f8637df9113bbc9c2bc6 cramfsswap_1.4.5.tar.xz http://ftp.debian.org/debian/pool/main/c/cramfsswap/
+
+var_append makeopt ' ' cramfsswap
+var_append makeinstopt ' ' DESTDIR=$root

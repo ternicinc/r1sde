@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/wob/wob.desc
+[COPY] Copyright (C) 2021 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Lightweight overlay volume (or anything) bar for Wayland
+
+[T] Wob is a lightweight overlay bar for Wayland inspired by xob
+[T] that can be used to display volume, backlight, progress or anything
+[T] by giving it a number.
+
+[U] https://github.com/francma/wob/
+
+[A] Martin Franc <me@martinfranc.eu>
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/x11
+[F] CROSS NO-LTO.gcc
+
+[E] opt libseccomp
+
+[L] ISC
+[V] 0.16
+
+[D] 4cdec714f14fb62d83d0d276e9c7b7972dda97c38d189c48c63ae5c4 wob-0.16.tar.gz https://github.com/francma/wob/archive/0.16/

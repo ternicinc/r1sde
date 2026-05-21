@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ksplice/ksplice.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Rebootless Linux kernel security updates
+
+[T] Ksplice allows system administrators to apply security patches to the
+[T] Linux kernel without having to reboot. Ksplice takes as input a source
+[T] code change in unified diff format and the kernel source code to be
+[T] patched, and it applies the patch to the corresponding running kernel.
+[T] The running kernel does not need to have been prepared in advance in
+[T] any way.
+
+[U] https://web.mit.edu/ksplice/
+
+[A] Jeffrey Brian Arnold <jbarnold@mit.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/development
+[R] + x86 x86-64
+
+[L] GPL
+[V] 0.9.9.1
+
+[D] 0afb0b022770c636dddbf3101de4808246c15ae211c2a059d18341bd ksplice-0.9.9.1-src.tar.gz https://oss.oracle.com/ksplice/software/

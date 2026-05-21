@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pangomm/pangomm.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The C++ bindings for Pango
+
+[T] This package provides a C++ interface for Pango.
+
+[U] https://www.gtkmm.org
+
+[A] Murray Cumming <murrayc@usa.net>
+[A] Daniel Elstner <daniel.elstner@gmx.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development extra/desktop/gnome
+[F] CROSS
+
+[L] LGPL
+[V] 2.56.1
+
+[P] X -----5---9 150.150
+
+[CV-URL] https://download.gnome.org/sources/pangomm/cache.json
+[D] c21368767a168d959a6b791da9eec5963e0848384d0d0d1d74cd5b34 pangomm-2.56.1.tar.xz https://download.gnome.org/sources/pangomm/2.56/
+
+. $base/package/*/*/gnome-conf.in
+var_append GCC_WRAPPER_INSERT ' ' "-c?:-L$(pkgprefix libdir glibmm)"

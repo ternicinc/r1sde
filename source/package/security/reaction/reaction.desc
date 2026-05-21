@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/reaction/reaction.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A daemon that scans program outputs for repeated patterns and takes action
+
+[T] Reaction is A daemon that scans program outputs for repeated patterns,
+[T] and takes action. A common usage is to scan ssh and webserver logs,
+[T] and to ban hosts that cause multiple authentication errors.
+[T] It is intended to be faster and less complex
+[T] alternative to fail2ban.
+
+[U] https://blog.ppom.me/en-reaction/
+
+[A] ppom
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/security
+[F] CROSS
+
+[L] AGPL3
+[V] 2.3.1
+
+[D] b4984b5e3307d43affd084ec37e5d9d4a2123eec0442f5f4834acb4d reaction-v2.3.1.tar.gz https://framagit.org/ppom/reaction/-/archive/v2.3.1/
+
+. $base/package/*/*/go-conf.in
+rungo=0

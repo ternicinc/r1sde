@@ -1,0 +1,23 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/softdog/softdog.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+
+define _GNU_SOURCE (for extended glibc features).
+
+ - Clifford
+
+--- ./Makefile~	Mon May 11 22:14:00 1998
++++ ./Makefile	Wed Sep 23 00:47:44 1998
+@@ -10,7 +10,7 @@
+ #DEBUG	= -g -DDEBUG
+ CFLAGS	= -Wall $(DEBUG) $(INCLUDE) $(OPTIMIZE)\
+           -DDEVICE=\"$(DEVICE)\" -DMY_MAJOR=$(MAJOR) -DMY_MINOR=$(MINOR)\
+-          -DBINNAME=\"$(BINNAME)\"
++          -DBINNAME=\"$(BINNAME)\" -D_GNU_SOURCE
+ 
+ # Installation paths
+ BINDIR	=/sbin

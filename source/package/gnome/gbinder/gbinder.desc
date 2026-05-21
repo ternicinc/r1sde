@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gbinder/gbinder.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GLib-style interfacer to binder (Android IPC mechanism)
+
+[T] Android keeps changing both low-level RPC and service manager
+[T] protocols from version to version. To counter that, libgbinder
+[T] implements configirable backends for different variants of those,
+[T] and yet keeping its own API unchanged.
+
+[U] https://github.com/mer-hybris/libgbinder
+
+[A] Slava Monich <slava@monich.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] BSD
+[V] 1.1.45
+[P] X -----5---9 120.000
+
+[D] 2e11c09015973c89eef28e75f46088d1b2ff5b2455c48400239b6899 libgbinder-1.1.45.tar.gz https://github.com/mer-hybris/libgbinder/archive/refs/tags/1.1.45/
+
+hook_add postmake 5 "make install-dev"

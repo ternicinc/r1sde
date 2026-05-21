@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/just/just.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A command runner
+
+[T] Just is a handy way to save and run project-specific commands.
+
+[U] https://just.systems/
+
+[A] Casey Rodarmor
+[M] René Rebe <rene@exactco.de>
+
+[C] base/development
+[F] CROSS
+
+[L] CC0
+[V] 1.51.0
+[P] X ?----5---9 200.700
+
+[D] e81d0beda117fe2bab4a99c7e8ce25d258bc5d79d762af4100d6f02f just-1.51.0.tar.gz https://github.com/casey/just/archive/refs/tags/1.51.0/
+
+runjust=0

@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/astyle/astyle.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An automatic code formatter
+
+[T] An automatic code formatter.
+
+[U] https://sourceforge.net/projects/astyle/
+
+[A] Astyle Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+
+[L] MIT
+[V] 3.6.16
+
+[D] 741166a112d3613dc6bf67c3636f26f003808fea80ab39c19890b583 astyle-3.6.16.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/astyle/

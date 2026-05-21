@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/hunspell/hunspell.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Spelling Checker
+
+[T] Hunspell is the spell checker of LibreOffice, OpenOffice.org, Mozilla
+[T] Firefox 3 & Thunderbird, Google Chrome, and it is also used by proprietary
+[T] software packages, like Mac OS X, InDesign, memoQ, Opera and SDL Trados.
+
+[U] http://hunspell.github.io
+
+[A] László Németh <nemeth@numbertext.org>
+[M] Barry Kauler <bkauler@gmail.com>
+
+[C] extra/office
+[F] CROSS NO-LTO.gcc
+
+[L] GPL
+[V] 1.7.3
+[P] X -----5---9 121.000
+
+[D] 918521069480af8d084c30619b28c431079c4a1bc9545271f6359588 hunspell-1.7.3.tar.gz https://github.com/hunspell/hunspell/releases/download/v1.7.3/

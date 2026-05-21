@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/schismtracker/schismtracker.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An oldschool sample-based music composition tool
+
+[T] Schism Tracker is a free and open-source reimplementation of Impulse
+[T] Tracker, a program used to create high quality music without the
+[T] requirements of specialized, expensive equipment, and with a unique
+[T] "finger feel" that is difficult to replicate in part. The player is based
+[T] on a highly modified version of the Modplug engine, with a number of
+[T] bugfixes and changes to improve IT playback.
+
+[U] https://schismtracker.org/
+
+[A] Storlek <storlek@rigelseven.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[E] opt flac
+
+[L] GPL
+[V] 20251014
+
+[D] 52dc860f28d74781aed73957539d7ca086aa5ce4bebde1df58dbd5ab schismtracker-20251014.source.tar.gz https://github.com/schismtracker/schismtracker/releases/download/20251014/

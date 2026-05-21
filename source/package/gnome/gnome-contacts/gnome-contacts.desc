@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-contacts/gnome-contacts.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome gnome-contacts package
+
+[T] Core Gnome gnome-contacts package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 50.0
+
+[CV-URL] https://download.gnome.org/sources/gnome-contacts/cache.json
+[D] 1df65de71d8109fb87bf9690c4204adf5e20f187472206a0acc6e253 gnome-contacts-50.0.tar.xz https://download.gnome.org/sources/gnome-contacts/50/
+
+. $base/package/*/*/gnome-conf.in

@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gsound/gsound.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome gsound package
+
+[T] Core Gnome gsound package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 1.0.3
+[P] X -----5---9 179.200
+
+[CV-URL] https://download.gnome.org/sources/gsound/cache.json
+[D] 5b594cdbd973bfa3f725c56bd3b3d6e9885be1808f15f115dbaa3389 gsound-1.0.3.tar.xz https://download.gnome.org/sources/gsound/1.0/
+
+. $base/package/*/*/gnome-conf.in

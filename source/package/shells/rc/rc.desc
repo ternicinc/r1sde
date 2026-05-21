@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rc/rc.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Plan 9 Shell
+
+[T] Rc is a command interpreter for Plan 9 that provides similar facilities to
+[T] UNIX's Bourne shell, with some small additions and less idiosyncratic syntax.
+
+[U] https://tobold.org/article/rc
+
+[A] Tom Duff {Original Author of rc}
+[A] Tim Goodwin <tjg@star.le.ac.uk>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell
+
+[L] GPL
+[V] 1.7.4
+
+[D] a66fc9af1774596babd11e8f4e75cb3f238357d9e233be17f51d0f7f rc-1.7.4.tar.gz https://github.com/rakitzis/rc/archive/v1.7.4/
+
+# we have a rc - Runlevel Control - init wrapper we must not shadow ...
+var_append INSTALL_WRAPPER_FILTER '|' "sed -e 's,/rc$,/rcsh,' -e 's,/rc\.,/rcsh.,'"

@@ -1,0 +1,24 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/lcdutils/hotfix-makefile-useprefix.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- lcdutils-0.2/Makefile.vanilla	2008-04-09 17:56:05.000000000 +0200
++++ lcdutils-0.2/Makefile	2008-04-13 18:43:21.000000000 +0200
+@@ -2,12 +2,13 @@
+ #LDFLAGS=-static
+ 
+ CFLAGS=-O2 -Wall
++prefix=/usr/local
+ 
+ all: putlcd buttond
+ 
+ install: all
+-	install putlcd /usr/local/sbin
+-	install buttond /usr/local/sbin
++	install putlcd $(DESTDIR)$(prefix)/sbin
++	install buttond $(DESTDIR)$(prefix)/sbin
+ 
+ clean:
+ 	rm -f putlcd buttond *.o

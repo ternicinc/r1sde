@@ -1,0 +1,22 @@
+
+[TIMESTAMP] 1715106829 Tue May  7 20:33:49 2024
+[BUILDTIME] 8 (9)
+[SIZE] 0.24 MB, 17 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] libsecret
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] qt6base
+[DEP] sed
+[DEP] tar

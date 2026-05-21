@@ -1,0 +1,17 @@
+
+[TIMESTAMP] 1146235219 Fri Apr 28 16:40:19 2006
+[BUILDTIME] 100 (9)
+[SIZE] 0.20 MB, 12 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] grep
+[DEP] libpcap
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar

@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/numlockx/numlockx.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A small tool to start X with NumLock turned on
+
+[T] Numlockx is a small tool which allows you to start X with NumLock
+[T] turned on. This relies on X extensions called XTest and XKB.
+
+[U] https://ktown.kde.org/~seli/numlockx/
+
+[A] Lubos Lunak <l.lunak@kde.org>
+[M] Koen Vervloesem <koen@vervloesem.eu>
+
+[C] extra/x11
+[F] CROSS
+
+[L] MIT
+[V] 1.2
+
+[D] f781871f2399d51741b7be6175570dda64330c89a4e1bad8d3d86d20 numlockx-1.2.tar.gz https://github.com/rg3/numlockx/releases/download/1.2/

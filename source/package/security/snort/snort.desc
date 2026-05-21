@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/snort/snort.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An open source network intrusion detection system
+
+[T] Snort is an open source network intrusion detection system,
+[T] capable of performing real-time traffic analysis and
+[T] packet logging on IP networks.
+
+[U] https://www.snort.org/
+
+[A] Marty Roesch <roesch@clark.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] OBJDIR
+
+[L] GPL
+[V] 3.12.2.0
+
+[D] 22de372805c221903eb7631b131b04a0f1d2f38c8e260ed39e13e230 snort3-3.12.2.0.tar.gz https://github.com/snort3/snort3/archive/refs/tags/3.12.2.0/
+[D] e500000cd9d679fe913b4bffd0a85980e9800b5b9b6ca9dda5c3816d snort3-community-rules-2025-07-05.tar.gz !https://www.snort.org/downloads/community/snort3-community-rules.tar.gz
+
+[ $prefix_auto = 1 ] && prefix=opt/snort && set_confopt
+var_append cmakeopt ' ' '-DENABLE_JEMALLOC=OFF -DENABLE_UNIT_TESTS=OFF'

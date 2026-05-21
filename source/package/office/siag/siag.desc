@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/siag/siag.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Free Office Package for Unix
+
+[T] Siag Office is a tightly integrated, free office package. It consists of
+[T] the spreadsheet Siag, the word processor PW, the animation program Egon,
+[T] the text editor XedPlus, the file manager Xfiler and the previewer Gvu.
+
+[U] https://siag.nu/
+
+[A] Siod - George J. Carrette, gjc@delphi.com
+[A] Xaw3d - Kaleb S. Keithley, kaleb@x.org
+[A] Chimera - John Kilburg
+[A] Ghostview - Tim Theisen, tim@cs.wisc.edu
+[A] Gnuplot - Thomas Williams, Colin Kelley and others.
+[A] DND - Cesar Crusius, crusius@ieee.org
+[M] Leonel Iván Saafigueroa <leonel@saafigueroa.com.ar>
+
+[C] extra/office
+
+[L] GPL
+[V] 3.6.1
+
+[D] 42c90802169b94b328d786c9bad29876ff718be64302e909c9a1f79f siag-3.6.1.tar.gz http://siag.nu/pub/siag/

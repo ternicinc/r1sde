@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/metamail/45_metamail-2.7-nl.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- mm2.7/src/metamail/mailto.c~	Thu Sep  9 01:24:39 1999
++++ mm2.7/src/metamail/mailto.c	Thu Sep  9 01:28:07 1999
+@@ -1796,6 +1796,8 @@
+                 printf("\nEnter the MIME Content-type value for the data from file %s\n    (type '?' for a list of locally-valid content-types): ", sdum);
+                 fflush(stdout);
+                 fgets(LineBuf, sizeof(LineBuf), stdin);
++		if (LineBuf[strlen(LineBuf)-1] == '\n')
++		    LineBuf[strlen(LineBuf)-1] = '\0';
+                 if (index(LineBuf, '/')) {
+                     char lc[100], *s, AnsBuf[100];
+                     strcpy(lc, LineBuf);

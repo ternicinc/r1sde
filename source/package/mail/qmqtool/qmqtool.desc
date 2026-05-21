@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/qmqtool/qmqtool.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Qmail queue manipulation program
+
+[T] qmqtool is a qmail queue manipulation program geared towards the
+[T] viewing and safe modification of the contents in a qmail queue.
+
+[U] https://jeremy.kister.net/code/qmqtool/
+
+[A] Jeremy Kister <qmqtool-devel@jeremykister.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] Artistic
+[V] 1.15
+
+[D] 60af19dd33bbe81020cc03db2812ed6231f5817795fe8848451d3129 qmqtool-1.15.tgz https://jeremy.kister.net/code/qmqtool/files/
+
+runmake=0
+hook_add postmake 5 'cp -v qmqtool $root$bindir/'

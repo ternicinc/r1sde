@@ -1,0 +1,50 @@
+[TIMESTAMP] 1759923121 Wed Oct  8 13:32:01 2025
+[BUILDTIME] 370 (9)
+[SIZE] 2.33 MB, 222 files
+
+[DEP] akonadi
+[DEP] akonadi-contacts
+[DEP] akonadi-search
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] freetype
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] kcmutils
+[DEP] kcodecs
+[DEP] kcolorscheme
+[DEP] kcompletion
+[DEP] kconfig
+[DEP] kconfigwidgets
+[DEP] kcontacts
+[DEP] kcoreaddons
+[DEP] ki18n
+[DEP] kimap
+[DEP] kio
+[DEP] kitemmodels
+[DEP] kitemviews
+[DEP] kldap
+[DEP] knewstuff
+[DEP] ktextaddons
+[DEP] kwidgetsaddons
+[DEP] kxmlgui
+[DEP] libkdepim
+[DEP] libxslt
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] plasma-activities
+[DEP] procps
+[DEP] purpose
+[DEP] python
+[DEP] qt6base
+[DEP] qt6tools
+[DEP] sed
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] xz

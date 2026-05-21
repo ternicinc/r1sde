@@ -1,0 +1,24 @@
+[TIMESTAMP] 1751212732 Sun Jun 29 17:58:52 2025
+[BUILDTIME] 14 (9)
+[SIZE] 92.81 MB, 283 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libedit
+[DEP] libxml
+[DEP] linux-header
+[DEP] lld
+[DEP] llvm
+[DEP] make
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] zlib

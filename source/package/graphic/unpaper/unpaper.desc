@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/unpaper/unpaper.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A tool to enhance scanned book page images
+
+[T] Unpaper is a post-processing tool for scanned sheets of paper,
+[T] especially for book pages that have been scanned from previously created
+[T] photocopies. It can make scanned pages more readable on a screen and
+[T] more acceptable for OCR. unpaper removes dark edges from the image and
+[T] also tries to unskew or rotate pages to make the text horizontal.
+
+[U] http://unpaper.berlios.de/
+
+[A] Jens Gulden <gulden@users.berlios.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+[F] CROSS
+
+[E] opt sphinx-doc
+
+[L] GPL
+[V] 7.0.0
+
+[D] 0ed14a7e9746dce16afae93581229bc77a6f029e83f53edacc210476 unpaper-7.0.0.tar.xz https://github.com/unpaper/unpaper/releases/download/unpaper-7.0.0/

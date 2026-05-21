@@ -1,0 +1,41 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/vnuml/vnuml.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Virtualization tool designed to test complex network simulation scenarios
+
+[T] VNUML (Virtual Network User Mode Linux) is an open-source general purpose
+[T] virtualization tool designed to quickly define and test complex network
+[T] simulation scenarios based on the great User Mode Linux (UML)
+[T] virtualization software.
+[T] VNUML is aimed to help in testing network applications and services over
+[T] complex testbeds made of several nodes (even tenths) and networks inside
+[T] one Linux machine, without involving the investment and management
+[T] complexity needed to create them using real equipment.
+
+[U] http://jungla.dit.upm.es/~vnuml/
+
+[A] Telematics Engineering Department (DIT) http://www.dit.upm.es/
+[A] Technical University of Madrid (UPM) http://www.upm.es/
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[L] GPL
+
+[V] 1.6.4-1
+[P] O
+
+[D] a34b1ed00025c20e7d210017a46fce565b1d1f28e530ddd36ed2f48e vnuml-1.6.4-1.tar.gz https://prdownloads.sourceforge.net/sourceforge/vnuml/
+
+if [ $prefix_auto = 1 ]; then
+	if [ "$SDECFG_PKG_VNUML_PREFIX" ]; then
+	  prefix="$SDECFG_PKG_VNUML_PREFIX"
+	else
+	  prefix="opt/vnuml"
+	fi
+	set_confopt
+fi
+
+var_append makeinstopt ' ' DATA=$root$localstatedir/run

@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libcapplet15/libcapplet15.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GNOME Config Applet library v1.4 (compat)
+
+[T] GNOME Config Applet library
+[T] v1.4 for compatibility
+[T] (which is mainly gnucash)
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/development extra/desktop/gnome
+
+[L] GPL
+[V] 1.5.11
+
+[D] 09ae16f9b3d3c0eeb39c820f377ce8152eeb431c300c4e823eeac4b9 libcapplet-1.5.11.tar.bz2 ftp://archive.progeny.com/GNOME/sources/libcapplet/1.5/
+
+. $base/package/*/*/gnome1-conf.in

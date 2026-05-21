@@ -1,0 +1,40 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-video-i740/xf86-video-i740.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Xorg Intel i740 video driver
+
+[T] This driver supports Intel i740 based video cards. Reported Working Video
+[T] Cards: Real3D Starfighter AGP, Real3D Starfighter PCI, Diamond Stealth
+[T] II/G460 AGP, 3DVision-i740 AGP, ABIT G740 8MB SDRAM, Acorp AGP i740, AGP
+[T] 2D/3D V. 1N, AGP-740D, AOpen AGP 2X 3D Navigator PA740, ARISTO i740 AGP
+[T] (ART-i740-G), ASUS AGP-V2740, Atrend (Speedy) 3DIO740 AGP (ATC-2740),
+[T] Chaintech AGP-740D, EliteGroup(ECS) 3DVision-i740 AGP, EONtronics Picasso
+[T] 740, EONtronics Van Gogh, Everex MVGA i740/AG, Flagpoint Shocker i740 8MB,
+[T] Gainward CardExpert 740 8MB, Genoa Systems Phantom 740, Gigabyte Predator
+[T] i740 8MB AGP, Hercules Terminator 128 2X/i AGP, HOT-158 (Shuttle), Intel
+[T] Express 3D AGP, Jaton Video-740 AGP 3D, Jetway J-740-3D 8MB AGP, i740 AGP
+[T] 3D, Joymedia Apollo 7400, Leadtek Winfast S900, Machspeed Raptor i740 AGP
+[T] 4600, Magic-Pro MP-740DVD, MAXI Gamer AGP 8 MB, Palit Daytona AGP740,
+[T] PowerColor C740 (SG/SD) AGP, QDI Amazing I, Soyo AGP (SY-740 AGP),
+[T] Spacewalker Hot-158, VideoExcel AGP 740, ViewTop ZeusL 8MB, Winfast S900
+[T] i740 AGP 8MB.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.4.0
+
+[R] + alpha x86 x86-64
+
+[D] 8777951d8a0d3267dd0b8381c2dce4ac1676bb9a729bf9291b9c2e13 xf86-video-i740-1.4.0.tar.bz2 http://xorg.freedesktop.org/releases/individual/driver/
+
+. package/*/*/modular-x-conf.in

@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/corewars/corewars.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Let progams fight each other in memory
+
+[T] Corewars is a simulation game where a number of warriors try to
+[T] crash each other while they are running in a virtual computer.
+[T] The warriors can be written in one of two assembler-like languages
+[T] called Corewars and Redcode. Corewars is the default language and
+[T] is easier to learn and understand. Redcode provides more advanced
+[T] and powerful instructions but also requires more time to learn.
+
+[U] https://corewars.sourceforge.net/
+
+[A] Walter Hofmann <walterh@gmx.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+#[C] extra/game/simulation
+
+[L] GPL
+[V] 0.9.13
+
+[D] 87f83272bfdc7777b622c1414d6141a1f803421cfe1ecabd3dd64929 corewars-0.9.13.tar.gz https://prdownloads.sourceforge.net/sourceforge/corewars/
+
+bindir=$root/$SDECFG_PKG_GAMES_BINDIR
+datadir=$root/$SDECFG_PKG_GAMES_DATADIR

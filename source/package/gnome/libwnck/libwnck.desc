@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libwnck/libwnck.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Window Navigator Construction Kit
+
+[T] A library which helps in the construction of a Window Navigator.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/development extra/desktop/gnome
+[F] CROSS
+
+[L] LGPL
+[V] 43.3
+[P] X -----5---9 202.000
+
+[CV-URL] https://download.gnome.org/sources/libwnck/cache.json
+[D] 469d7c6975dd85e5aff2c8d03252f70f42c738eab09ee5b403be005e libwnck-43.3.tar.xz https://download.gnome.org/sources/libwnck/43/
+
+. $base/package/*/*/gnome-conf.in
+pkginstalled gobject-introspection || var_append mesonopt ' ' -Dintrospection=disabled

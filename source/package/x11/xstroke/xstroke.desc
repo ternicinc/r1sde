@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xstroke/xstroke.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A fullscreen gesture recognition program for X Windows
+
+[T] Xstroke is a full-screen gesture recognition program written for the X
+[T] Window System. It captures gestures that are performed with a pointer
+[T] device, (such as a mouse, a stylus, or a pen/tablet), recognizes the
+[T] gestures and performs actions based on the gestures. Xstroke has been
+[T] developed on Linux systems, (i386 and StrongARM), but should be quite
+[T] portable to any UNIX-like system with X.
+
+[U] https://cworth.org/~cworth/papers/xstroke/
+
+[A] Carl Worth <cworth@east.isi.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 0.6
+
+[D] f6ac1e9893e3eedf4238a1cb332cdc051bf56dd1e6673c168741b0c5 xstroke-0.6.tar.gz http://www.oesources.org/source/current/

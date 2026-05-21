@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lxqt-openssh-askpass/lxqt-openssh-askpass.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GUI to query passwords on behalf of SSH agents
+
+[T] GUI to query passwords on behalf of SSH agents.
+
+[U] https://github.com/lxqt/lxqt-openssh-askpass
+
+[A] Lxqt-openssh-askpass Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] OBJDIR
+
+[V] 2.4.0
+[L] LGPL
+
+[CV-GROUP] lxqt
+[D] 9d737d5faab49989161fa36c1c750f7c97a8bdd6a21fe183471131f1 lxqt-openssh-askpass-2.4.0.tar.xz https://github.com/lxqt/lxqt-openssh-askpass/releases/download/2.4.0/

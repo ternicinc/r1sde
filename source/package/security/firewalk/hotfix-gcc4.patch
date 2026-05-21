@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/firewalk/hotfix-gcc4.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- Firewalk/src/firewalk.c.orig	2006-04-26 18:28:18.000000000 +0200
++++ Firewalk/src/firewalk.c	2006-04-26 18:40:43.000000000 +0200
+@@ -190,6 +190,7 @@
+                         return (FW_SERIOUS_ERROR);
+                     default:
+                         /* empty */
++                        break;
+                 }
+             }
+         }

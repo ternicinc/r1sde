@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/geoip/geoip.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Find the country that any IP address or hostname originates from
+
+[T] Find the country that any IP address or hostname originates from.
+
+[U] https://github.com/maxmind/geoip-api-c
+
+[A] MaxMind
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/tool
+[F] CROSS
+
+[L] LGPL
+[V] 1.6.12
+[P] X -----5---9 150.000
+
+[D] c44b5b9dd29ffca4b692a873b797a33472af7278c499fb7c131b7c39 GeoIP-1.6.12.tar.gz https://github.com/maxmind/geoip-api-c/releases/download/v1.6.12/

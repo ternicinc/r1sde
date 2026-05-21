@@ -1,0 +1,67 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/sparc64/parse-config
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+# Note: There is a copy in powerpc64/parse-config
+
+alter_arch() {
+	case "$SDECFG_SPARC64_OPT" in
+		generic) x=v9 ;;
+		#) x=v9v ;;
+		*) x=v9b ;;
+	esac
+
+	echo "Altering arch_{machine,target} to sparc$x"
+	# tweak target and other defines
+	arch_machine=${arch_machine/64/$x}
+	arch_target=${arch_target/64/$x}
+	arch_sizeof_long=4
+	arch_sizeof_char_p=4
+	atstage native && arch_build=${arch_build/64/$x} || true
+}
+
+sparc64_build_32() {
+	make distclean	# wipe the previous build
+	var_remove GCC_WRAPPER_INSERT ' ' '-m64'
+	alter_arch
+	set_confopt	# regen libdir and configure options
+	build_package $pkg
+}
+
+if [ "$SDECFG_SPARC64_32BIT" = 1 ]; then
+  # TODO: make dietlibc parse-config -7 (or so) and this one -9 (or so) ,-)
+  x="${pkg//-/_}" ; x="${x//+/_}"
+  eval x=\$SDECFG_DIETLIBC_$x
+  if [ "$x" = 1 ]; then
+	echo "Building package for 64bit"
+	var_append GCC_WRAPPER_INSERT ' ' '-m64'
+  else
+  	case $pkg in
+	gcc)
+		: # 32bit patch now in gcc package
+		;;
+	binutils)
+		echo "Patching package to default to 32bit"
+		var_append patchfiles ' ' \
+		           "$base/architecture/$arch/pkg_$pkg.diff"
+		;;
+	glibc|module-init-tools|modutils|iptables|gdb)
+		echo "Building for 64bit ..."
+		var_append GCC_WRAPPER_INSERT ' ' '-m64'
+		;;
+	linux|grub2|kmod)
+		# usually nothing, except:
+		[ $pkg = kmod ] && hook_add preconf 5 'libdir=${libdir%64}'
+		;;
+	ncurses|mpfr|gmp)
+		var_append GCC_WRAPPER_INSERT ' ' '-m64'
+		hook_add postmake 9 "sparc64_build_32"
+		;;
+	*) # including glibc32
+		alter_arch
+		;;
+	esac
+  fi
+fi

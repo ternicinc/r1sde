@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/haserl/haserl.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A tiny CGI interpreter using PHP-like syntax for shell scripts
+
+[T] Haserl is a small CGI program that parses POST and GET data from
+[T] Web clients and provides a PHP-like syntax for writing dynamic Web
+[T] content. A Unix shell is used for the scripting language. It is intended
+[T] for environments where something like PHP is too big, and compiles to
+[T] around 20KB.
+
+[U] https://haserl.sourceforge.net
+
+[A] Nathan Angelacos <nangel@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 0.9.36
+
+[D] 1b32d98d9118d2f61115d88e62eda01dfca28e8f8d7e0fc148055010 haserl-0.9.36.tar.gz https://prdownloads.sourceforge.net/sourceforge/haserl/

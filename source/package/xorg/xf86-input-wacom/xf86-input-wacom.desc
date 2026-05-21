@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-input-wacom/xf86-input-wacom.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Xorg wacom driver
+
+[T] The Xorg wacomdriver for all sorts of common tablets.
+
+[U] https://www.X.org
+
+[A] Peter Hutterer <peter.hutterer@who-t.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[E] opt doxygen
+
+[L] OpenSource
+[V] 1.2.4
+
+[D] ff277d6e5dc6b9f58fd8538b68af6df8cb54a4a2cc358dfd35883499 xf86-input-wacom-1.2.4.tar.bz2 https://github.com/linuxwacom/xf86-input-wacom/releases/download/xf86-input-wacom-1.2.4/
+
+. package/*/*/modular-x-conf.in
+
+runconf=0
+var_append mesonopt ' ' -Dunittests=disabled

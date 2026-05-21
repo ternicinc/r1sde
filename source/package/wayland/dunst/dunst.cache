@@ -1,0 +1,33 @@
+[TIMESTAMP] 1754484861 Wed Aug  6 15:54:21 2025
+[BUILDTIME] 6 (9)
+[SIZE] 0.35 MB, 15 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] libnotify
+[DEP] libx11
+[DEP] libxext
+[DEP] libxinerama
+[DEP] libxrandr
+[DEP] libxrender
+[DEP] libxscrnsaver
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[DEP] perl
+[DEP] sed
+[DEP] tar
+[DEP] wayland
+[DEP] xorgproto

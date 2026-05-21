@@ -1,0 +1,27 @@
+[TIMESTAMP] 1737660246 Thu Jan 23 20:24:06 2025
+[BUILDTIME] 12 (9)
+[SIZE] 0.65 MB, 75 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] cairomm
+[DEP] coreutils
+[DEP] diffutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[OPT] glib
+[DEP] glibmm
+[DEP] grep
+[DEP] harfbuzz
+[DEP] libsigc++
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] xz

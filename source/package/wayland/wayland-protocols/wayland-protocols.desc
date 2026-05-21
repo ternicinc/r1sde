@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/wayland-protocols/wayland-protocols.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A simpler replacement for X
+
+[T] Wayland is intended as a simpler replacement for X.
+
+[T] Wayland is a protocol for a compositor to talk to its clients as well
+[T] as a C library implementation of that protocol. The compositor can be a
+[T] standalone display server running on Linux kernel modesetting and evdev
+[T] input devices, an X application, or a wayland client itself. The clients
+[T] can be traditional applications, X servers or other display servers.
+
+[U] https://wayland.freedesktop.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.48
+[P] X ?----5---9 112.500
+
+[CV-URL] https://wayland.freedesktop.org/releases.html
+[D] 209e7bdd917fb371d428d831d12b622ed6aa9d496f4ba18a56cb6ac0 wayland-protocols-1.48.tar.xz https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.48/downloads/
+
+var_append mesonopt ' ' -Dtests=false

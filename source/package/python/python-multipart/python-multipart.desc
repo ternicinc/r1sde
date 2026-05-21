@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-multipart/python-multipart.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A streaming multipart parser for Python
+
+[T] python-multipart is a streaming multipart parser for Python.
+
+[U] https://github.com/Kludex/python-multipart
+
+[A] Andrew Dunham <andrew@du.nham.ca>
+[A] Marcelo Trylesinski <marcelotryle@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[E] add hatchling
+
+[L] APL
+[V] 0.0.29
+[P] X -----5---9 110.000
+
+[D] f74dbd2ff7182dd8f2cfbf18ca649868961c96cf5ad343ac6911346d python-multipart-0.0.29.tar.gz https://github.com/Kludex/python-multipart/archive/0.0.29/

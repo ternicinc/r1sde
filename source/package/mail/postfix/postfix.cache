@@ -1,0 +1,26 @@
+
+[TIMESTAMP] 1279536239 Mon Jul 19 12:43:59 2010
+[BUILDTIME] 30 (5)
+[SIZE] 7.77 MB, 200 files
+
+[DEP] 00-dirtree
+[DEP] bdb
+[DEP] binutils
+[DEP] coreutils
+[OPT] cyrus-sasl2
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[OPT] mysql
+[OPT] openldap
+[OPT] openssl
+[DEP] pcre
+[DEP] perl
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] zlib

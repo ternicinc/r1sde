@@ -1,0 +1,28 @@
+[TIMESTAMP] 1765304082 Tue Dec  9 19:14:42 2025
+[BUILDTIME] 95 (9)
+[SIZE] 0.58 MB, 61 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] freetype
+[DEP] gawk
+[DEP] grep
+[DEP] libx11
+[DEP] libxcb
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] plasma-wayland-protocols
+[DEP] qt6base
+[DEP] qt6declarative
+[DEP] sed
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] wayland
+[DEP] wayland-protocols
+[DEP] xorgproto
+[DEP] xz

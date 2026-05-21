@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pluma/pluma.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A powerful text editor for MATE
+
+[T] Pluma (pluma) is a small and lightweight UTF-8 text editor for the MATE
+[T] environment. It started as a fork of Gedit (at version 2.30) in 2011, back
+[T] then the text editor for the GNOME 2 environment.
+
+[U] https://mate-desktop.org/
+
+[A] MATE developer
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/mate
+
+[E] add enchant
+
+[L] GPL
+[V] 1.28.0
+
+[D] 991d50f0ef09a5b60ebbdca0964ccd888aaabc41022d16aa5979c2b4 pluma-1.28.0.tar.xz https://pub.mate-desktop.org/releases/1.28/
+
+. $base/package/*/*/mate-conf.in

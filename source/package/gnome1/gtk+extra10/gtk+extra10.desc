@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gtk+extra10/gtk+extra10.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library of gtk+ widgets
+
+[T] Gtk+Extra is a complementary to GTK+ for creating graphical interfaces
+[T] for the X Windows System.
+[T] A library of dynamically linked gtk+ widgets including:
+[T] GtkSheet, GtkPlot, and GtkIconList
+
+[U] https://gtkextra.sourceforge.net/
+
+[A] Adrian E. Feiguin <adrian@ifir.edu.ar>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] AUTOMAKE-QUIRK
+
+[L] LGPL
+[V] 0.99.17
+[P] X -----5---9 144.300
+
+[D] 0926ea898399d7094e3cb2b52ba0bc89aed0b12ac1744cae8dfb6218 gtk+extra-0.99.17.tar.gz http://gtkextra.sourceforge.net/src/
+
+. $base/package/*/*/gnome1-conf.in

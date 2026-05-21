@@ -1,0 +1,21 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/budgie-desktop/budgie-desktop.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Budgie Desktop Environment
+
+[T] Budgie Desktop is a familiar, modern desktop environment.
+
+[U] https://buddiesofbudgie.org/
+
+[A] Budgie Desktop Developers
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/gnome
+
+[L] GPL
+[V] 10.10.2
+
+[D] 0df0a792f781a348ea43170253bb2a6e19f71e1de8daf5d198009c27 budgie-desktop-v10.10.2.tar.xz https://github.com/BuddiesOfBudgie/budgie-desktop/releases/download/v10.10.2/

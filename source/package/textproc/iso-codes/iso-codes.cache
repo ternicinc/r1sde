@@ -1,0 +1,17 @@
+[TIMESTAMP] 1767436508 Sat Jan  3 11:35:08 2026
+[BUILDTIME] 8 (9)
+[SIZE] 22.72 MB, 1344 files
+
+[DEP] bash
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] python
+[DEP] sed
+[DEP] tar

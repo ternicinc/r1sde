@@ -1,0 +1,20 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/htdig/hotfix-gcc41.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- htdig-3.2.0b6/htsearch/Collection.h.vanilla	2006-03-04 22:50:53.593096750 +0100
++++ htdig-3.2.0b6/htsearch/Collection.h	2006-03-04 22:51:03.637724500 +0100
+@@ -36,9 +36,9 @@
+                const char *docExcerpt);
+     ~Collection();
+ 
+-    void Collection::Open();
++    void Open();
+ 
+-    void Collection::Close(); 
++    void Close(); 
+ 
+     char *getWordFile() { return wordFile.get(); }
+     DocumentRef         *getDocumentRef(int id);

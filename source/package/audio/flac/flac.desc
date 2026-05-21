@@ -1,0 +1,43 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/flac/flac.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An Free Lossless Audio Codec
+
+[T] Grossly oversimplified, FLAC is similar to MP3, but lossless, meaning
+[T] that audio is compressed in FLAC without throwing away any information.
+[T] This is similar to how Zip works, except with FLAC you will get much
+[T] better compression because it is designed specifically for audio,
+[T]
+[T] FLAC consists of:
+[T] - `libFLAC', a library which implements reference encoders and
+[T] decoders, and a metadata interface
+[T] - `libFLAC++', a C++ object wrapper library around libFLAC
+[T] - `libOggFLAC' and `libOggFLAC++', which provide encoders and
+[T] decoders for FLAC streams in an Ogg container
+[T] - `flac', a command-line program for encoding and decoding files
+[T] - `metaflac', a command-line program for editing FLAC metadata
+[T] - player plugins for XMMS and Winamp
+[T] - user and API documentation
+
+[U] https://xiph.org/flac/
+
+[A] Josh Coalson <jcoalson@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+[E] opt doxygen
+
+[L] LGPL
+[V] 1.5.0
+[P] X -----5---9 126.400
+
+[D] 1579a5392646ac463b464fe87d992c2f7337b4389aa5ef404a7c3b5c flac-1.5.0.tar.xz https://github.com/xiph/flac/releases/download/1.5.0/
+
+[[ "$arch" == x86* ]] && $CC -E -dM - </dev/null | grep -i SSE >/dev/null || var_append confopt ' ' --disable-sse
+[[ "$arch" = powerpc* ]] && var_append GCC_WRAPPER_INSERT ' ' *vsx.c?-mvsx
+var_append confopt ' ' --disable-examples

@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/scripts/Find-Pkg
+# Copyright (C) 2004 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+echo "Searching for matching package names ..."
+
+for pkg in $*; do
+  matched=0
+  pkg=${pkg,,}
+  x=$(cd package/; ls -d */*$pkg* 2>/dev/null)
+
+  if [ -n "$x" ]; then
+	echo -e "$x\n"
+	matched=1
+  else
+	echo "Searching in package descriptions: $pkg"
+	# grep --color does not work with -i (at least not in GNU sed 2.5.1),
+	# so colorize via sed
+	grep -i "[(\I\|T\)].*$pkg" package/*/*/*.desc | sed "/$pkg/I s//\o033[31;1m&\o033[0m/g"
+	[ $? -eq 0 ] && matched=1
+
+	[ $matched = 0 ] && echo "No match found."
+  fi
+done

@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/openzone-cursors/hotfix-install.patch
+# Copyright (C) 2020 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- openzone-cursors-1.2.9/Makefile.vanilla	2020-09-21 12:29:05.250701914 +0000
++++ openzone-cursors-1.2.9/Makefile	2020-09-21 12:32:21.190702007 +0000
+@@ -16,7 +16,7 @@
+ 
+ install: $(themes)
+ 	install -dm755 $(DESTDIR)/share/icons
+-	mv $(themes) $(DESTDIR)/share/icons
++	for t in $(themes); do mkdir $(DESTDIR)/share/icons/$$t; cp -vrf $$t/* $(DESTDIR)/share/icons/$$t/; done
+ 
+ pack: $(themes)
+ 	tar Jcf $(pkgname)-$(version).tar.xz --owner=0 --group=0 $(themes)

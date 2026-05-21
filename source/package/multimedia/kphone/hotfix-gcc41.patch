@@ -1,0 +1,30 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/kphone/hotfix-gcc41.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -Nur kphone-orig/kphone/kcallwidget.h kphone/kphone/kcallwidget.h
+--- kphone-orig/kphone/kcallwidget.h	2005-04-18 13:04:40.000000000 +0000
++++ kphone/kphone/kcallwidget.h	2006-04-03 11:59:33.717210000 +0000
+@@ -67,7 +67,7 @@
+ 	void clickHangup( void );
+ 	void setHide( void );
+ 	bool isHided( void ) const { return hided; }
+-	void KCallWidget::setDTMFSender( QString &s );
++	void setDTMFSender( QString &s );
+ 
+ public slots:
+ 	void pleaseDial( const SipUri &dialuri );
+diff -Nur kphone-orig/kphone/kphoneview.h kphone/kphone/kphoneview.h
+--- kphone-orig/kphone/kphoneview.h	2005-04-18 13:04:40.000000000 +0000
++++ kphone/kphone/kphoneview.h	2006-04-03 11:59:52.206365500 +0000
+@@ -54,7 +54,7 @@
+ 	QString getStunSrv( void );
+ 	void kphoneQuit( void );
+ 	bool getState( void );
+-	KCallWidget *KPhoneView::DoCall( QString num, SipCall::CallType ctype );
++	KCallWidget *DoCall( QString num, SipCall::CallType ctype );
+ 
+ signals:
+ 	void stateChanged( void );

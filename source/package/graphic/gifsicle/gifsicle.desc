@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gifsicle/gifsicle.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A tool for creating gif animations
+
+[T] Gifsicle is a command-line tool for creating, editing, and getting
+[T] information about GIF images and animations. Making a GIF animation
+[T] with gifsicle is easy.
+
+[U] http://www.lcdf.org/gifsicle/
+
+[A] Eddie Kohler
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] OpenSource
+[V] 1.96
+
+[D] ac4ec9691ecb11911f465cb6b7904fd425ff2987cdfb82876ab3a532 gifsicle-1.96.tar.gz http://www.lcdf.org/gifsicle/
+
+var_append confopt ' ' '--enable-gifview --enable-gifdiff --disable-ungif --with-x'

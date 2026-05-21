@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libglpng/libglpng.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library to load PNG and bind them to OpenGL textures
+
+[T] LibGLPng is a library for OpenGL to load PNG graphics files as OpenGL
+[T] textures, as easily as possible. It also has a number of options for
+[T] generating the alpha channel and mipmaps. It is implemented using modified
+[T] vesions of the LibPNG 1.0.2 and ZLib 1.1.3 libraries.
+
+[U] https://repo.or.cz/w/glpng.git
+
+[A] Ben Wyatt <ben@wyatt100.freeserve.co.uk>
+[M] luisf <trb7@megamail.pt>
+
+[C] extra/graphic
+[F] CROSS
+
+[L] LGPL
+[V] 1.47
+[P] X -----5---9 460.000
+
+[D] ca50bc7976dbccffc274c5300a4a8de4f60309aadcc8953d83aa5c3b libglpng-1.47.tar.gz !https://repo.or.cz/glpng.git/snapshot/2266ea17d0df15619e6c6e21611aa7a34f5f6833.tar.gz
+
+hook_add preconf 5 'rm -f Makefile'

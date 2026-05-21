@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-mysqldb/python-mysqldb.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Python interface for MySQL
+
+[T] MySQLdb is the Python DB API-2.0 interface.
+
+[U] https://sourceforge.net/projects/mysql-python/
+
+[A] Andy Dustman
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] OpenSource
+
+[V] 1.2.4b4
+[P] X -----5---9 300.000
+
+[D] 37351be110ffb21412140b8556f5a828d444f1d12160699411d28a95 MySQL-python-1.2.4b4.tar.gz https://prdownloads.sourceforge.net/sourceforge/mysql-python/

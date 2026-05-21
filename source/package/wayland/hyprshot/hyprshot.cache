@@ -1,0 +1,16 @@
+[TIMESTAMP] 1746031496 Wed Apr 30 18:44:56 2025
+[BUILDTIME] 1 (9)
+[SIZE] 0.01 MB, 6 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] grim
+[DEP] gzip
+[DEP] jq
+[DEP] sed
+[DEP] slurp
+[DEP] tar
+[DEP] wl-clipboard

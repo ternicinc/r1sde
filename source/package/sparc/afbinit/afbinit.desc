@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/afbinit/afbinit.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Init Sun Elite3D AFB for general purpose usage
+
+[T] Init AFB for general purpose usage at system boot. All this program
+[T] does is load the firmware ucode needed on the AFB_FLOAT chips.
+
+[A] David S. Miller <davem@redhat.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[R] + sparc64
+[F] CROSS
+
+[L] MIT
+[V] 1.0
+
+[D] 7812656c94cb61567e533520af5665fa34f77ac46f384460902bffb8 afbinit_1.0.orig.tar.gz https://ftp.up.pt/debian-archive/debian/pool/contrib/a/afbinit/
+
+makeinstopt=
+hook_add postmake 5 "install afbinit $root/sbin/"

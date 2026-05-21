@@ -1,0 +1,21 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/drm_info/drm_info.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Small utility to dump info about DRM devices
+
+[T] Small utility to dump info about DRM devices.
+
+[U] https://github.com/ascent12/drm_info
+
+[A] Drm_info Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+
+[V] 2.9.0
+[L] MIT
+
+[D] d75a884ca39da4b41a647b45ab6edbbe20ee3b15a3ab6f0648ef7653 drm_info-2.9.0.tar.gz https://gitlab.freedesktop.org/emersion/drm_info/-/releases/v2.9.0/downloads/

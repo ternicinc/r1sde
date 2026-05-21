@@ -1,0 +1,55 @@
+[TIMESTAMP] 1770718183 Tue Feb 10 11:09:43 2026
+[BUILDTIME] 65 (9)
+[SIZE] 2.77 MB, 160 files
+
+[DEP] alsa-lib
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] enet
+[DEP] findutils
+[OPT] flac
+[DEP] freetype
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] glu
+[DEP] grep
+[DEP] gtk+
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] libglvnd
+[DEP] libjpeg
+[DEP] libogg
+[OPT] libopus
+[DEP] libpng
+[OPT] libtheora
+[DEP] libvorbis
+[OPT] libwebp
+[DEP] libx11
+[DEP] libxcursor
+[DEP] libxext
+[DEP] libxfixes
+[DEP] libxi
+[DEP] libxinerama
+[DEP] libxrandr
+[DEP] libxrender
+[DEP] libxscrnsaver
+[DEP] libxxf86vm
+[DEP] linux-header
+[DEP] make
+[DEP] openal
+[DEP] opusfile
+[DEP] pango
+[DEP] physfs
+[DEP] pkgconfig
+[DEP] pulseaudio
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] xorgproto
+[DEP] zlib

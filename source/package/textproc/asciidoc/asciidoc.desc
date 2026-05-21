@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/asciidoc/asciidoc.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Text based document generation
+
+[T] AsciiDoc is a text document format for writing short documents,
+[T] articles, books and UNIX man pages. AsciiDoc files can be translated
+[T] to HTML and DocBook markups using the asciidoc(1) command.
+[T] AsciiDoc is highly configurable: both the AsciiDoc source file syntax
+[T] and the backend output markups (which can be almost any type of
+[T] SGML/XML markup) can be customized and extended by the user.
+
+[U] https://asciidoc-py.github.io/
+
+[A] Stuart Rackham <srackham@methods.co.nz>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+[L] GPL
+
+[V] 10.2.1
+[P] X -----5---9 170.000
+
+[CV-FLAGS] NO-PREFIX
+[D] 7686acbbd25ad9f2f10d62e6dad78fbe07a251398e4fdc62976fb251 asciidoc-py3-10.2.1.tar.gz https://github.com/asciidoc/asciidoc-py3/archive/10.2.1/

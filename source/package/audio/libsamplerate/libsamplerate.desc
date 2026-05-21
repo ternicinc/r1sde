@@ -1,0 +1,37 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libsamplerate/libsamplerate.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Sample Rate Converter library for audio
+
+[T] Libsamplerate is a Sample Rate Converter for audio. One example of where
+[T] such a thing would be useful is converting audio from the CD sample rate
+[T] of 44.1kHz to the 48kHz sample rate used by DAT players.
+[T]
+[T] Libsamplerate is capable of arbitrary and time varying conversions; from
+[T] downsampling by a factor of 12 to upsampling by the same factor. Arbitrary
+[T] in this case means that the ratio of input and output sample rates can be
+[T] an irrational number. The conversion ratio can also vary with time for
+[T] speeding up and slowing down effects.
+[T]
+[T] Libsamplerate provides a small set of converters to allow quality to be
+[T] traded off against computation cost. The current best converter provides
+[T] a signal-to-noise ratio of 97dB with -3dB passband extending from DC to
+[T] 96% of the theoretical best bandwidth for a given pair of input and
+[T] output sample rates.
+
+[U] http://www.mega-nerd.com/SRC/
+
+[A] Erik de Castro Lopo <erikd@mega-nerd.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] BSD
+[V] 0.2.2
+[P] X -----5---9 140.000
+
+[D] db94923c145beb4bc9bdca01b3a870810c90637ec11909a3c30dc7c5 libsamplerate-0.2.2.tar.xz https://github.com/libsndfile/libsamplerate/releases/download/0.2.2/

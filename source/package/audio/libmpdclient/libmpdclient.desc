@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libmpdclient/libmpdclient.desc
+[COPY] Copyright (C) 2021 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An abstraction around libmpd
+
+[T] Libmpdclient provides an easy and reliable callback based interface to mpd.
+
+[U] https://musicpd.org/libs/libmpdclient
+
+[A] Max Kellermann <max.kellermann@gmail.com>
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] BSD
+[V] 2.24
+[P] X -----5---9 197.500
+
+[D] 021a895e68a43df54d253e97713b5117e5dff1431a59cf06d7d9855b libmpdclient-2.24.tar.gz https://github.com/MusicPlayerDaemon/libmpdclient/archive/v2.24/

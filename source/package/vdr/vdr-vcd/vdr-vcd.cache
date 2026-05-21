@@ -1,0 +1,18 @@
+
+[TIMESTAMP] 1167781417 Wed Jan  3 00:43:37 2007
+[BUILDTIME] 10 (5)
+[SIZE] 0.14 MB, 12 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] vdr

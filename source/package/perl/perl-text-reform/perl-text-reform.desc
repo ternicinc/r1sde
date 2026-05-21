@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-text-reform/perl-text-reform.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module Text-Reform
+
+[T] The module supplies a re-entrant, highly configurable replacement
+[T] for the built-in Perl format() mechanism.
+
+[U] https://metacpan.org/pod/Text::Reform
+
+[A] Damian Conway <damian@conway.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] Artistic GPL
+[V] 1.20
+[P] X -----5---9 200.107
+
+[D] 705b262fa5aaaa8fe8962ddfefbb63858b1b613f472873f513830cba Text-Reform-1.20.tar.gz https://cpan.metacpan.org/authors/id/C/CH/CHORNY/

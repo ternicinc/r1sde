@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/chrony/chrony_conf.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- chrony-3.2/configure.vanilla        2018-03-20 09:51:24.602473319 +0000
++++ chrony-3.2/configure        2018-03-20 09:51:48.346473813 +0000
+@@ -934,7 +934,7 @@
+   CHRONYVARDIR=$SETCHRONYVARDIR
+ fi
+
+-add_def DEFAULT_CONF_FILE "\"$SYSCONFDIR/chrony.conf\""
++add_def DEFAULT_CONF_FILE "\"$SYSCONFDIR/chrony/chrony.conf\""
+ add_def DEFAULT_HWCLOCK_FILE "\"$default_hwclockfile\""
+ add_def DEFAULT_PID_FILE "\"$default_pidfile\""
+ add_def DEFAULT_RTC_DEVICE "\"$default_rtcdevice\""

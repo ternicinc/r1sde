@@ -1,0 +1,21 @@
+[TIMESTAMP] 1775648319 Wed Apr  8 13:38:39 2026
+[BUILDTIME] 10 (9)
+[SIZE] 1.92 MB, 14 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] file
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] readline
+[DEP] sed
+[DEP] tar
+[OPT] tcl
+[DEP] util-linux

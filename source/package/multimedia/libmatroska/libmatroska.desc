@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libmatroska/libmatroska.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library for the .mkv video format
+
+[T] Matroska aims to become THE Standard of Multimedia Container Formats. It
+[T] was derived from a project called MCF, but differentiates from it
+[T] significantly because it is based on EBML (Extensible Binary Meta
+[T] Language), a binary derivative of XML. EBML enables the
+[T] Matroska Development Team to gain significant advantages in terms of
+[T] future format extensibility, without breaking file support in old
+[T] parsers.
+
+[U] https://www.matroska.org
+
+[A] Matroska Team <matroska-users@lists.matroska.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 1.7.1
+
+[D] 34833218d29015c9c54672c4812395a969f3b1e7533b8a8eccb4d969 libmatroska-1.7.1.tar.xz https://dl.matroska.org/downloads/libmatroska/

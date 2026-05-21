@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/netboot/netboot.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Tools to make images to boot from network
+
+[T] The netboot project allows booting a diskless PC over a TCP/IP based
+[T] network using standard protocols like BOOTP, DHCP, and TFTP. It is
+[T] able to boot Linux, FreeBSD, MS-DOS/Windows, and more.
+
+[U] https://netboot.sourceforge.net/
+
+[A] Gero Kuhlmann <gero@gkminix.han.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] GPL
+[V] 0.10.2
+
+[D] 820757bdd853144a6a356a548dfc145e71cf0db29861fab0e5616df7 netboot-0.10.2.tar.gz https://prdownloads.sourceforge.net/sourceforge/netboot/

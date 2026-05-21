@@ -1,0 +1,26 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/fbv/linux-header.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- fbv-0.99/fb_display.c.vanilla	2007-02-27 11:02:21.000000000 +0000
++++ fbv-0.99/fb_display.c	2007-02-27 11:03:26.000000000 +0000
+@@ -18,8 +18,6 @@
+     Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+ */
+ 
+-#include <linux/fb.h>
+-
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <sys/types.h>
+@@ -32,6 +30,8 @@
+ #include <string.h>
+ #include <errno.h>
+ #include "config.h"
++#include <linux/fb.h>
++
+ /* Public Use Functions:
+  *
+  * extern void fb_display(unsigned char *rgbbuff,

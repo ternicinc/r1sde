@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kiwi/kiwi.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A framework for developing graphical applications in Python and PyGTK
+
+[T] Kiwi is an object-oriented framework for developing graphical
+[T] applications using Python. It has a set of classes that provide
+[T] a solid application architecture, and a set of high level
+[T] graphical components that can be used as drop-in replacements
+[T] for some of the widgets in PyGTK, including CList, CTree, Label,
+[T] OptionMenu, and more. It includes a complete developer's manual,
+[T] with examples and screenshots, and full API documentation.
+
+[U] http://www.async.com.br/projects/kiwi/
+
+[A] Christian Reis <kiko@async.com.br>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] GPL
+[V] 1.9.29
+[P] X -----5---9 145.000
+
+[D] c36746e252fd32ce5c07aaf1255f65348f47ef0deaedf45523eb8f1c kiwi-1.9.29.tar.xz https://download.gnome.org/sources/kiwi/1.9/

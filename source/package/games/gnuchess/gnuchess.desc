@@ -1,0 +1,58 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnuchess/gnuchess.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GNU chess
+
+[T] GNU Chess lets most modern computers play a full game of chess. It
+[T] has a plain terminal interface but supports visual interfaces such
+[T] as X-Windows "xboard".
+[T]
+[T] Version 5.06 is the current release. Version 5 shares no code with
+[T] versions 1.x through 4.x. This release features simplified chess code
+[T] and modern data structures, which make it more pedantically accessible,
+[T] easier to modify, and more understandable for skilled chess experts
+[T] who are not necessarily programmers.
+[T]
+[T] Chua Kong-Sian is the primary author of GNU Chess 5's precursor
+[T] program (Cobalt, which maintains a separate but cooperative parallel
+[T] development path.) Several features have been integrated or written
+[T] by Stuart Cracraft (opening book code, documentation, ability to play
+[T] on Free Internet Chess Server etc.)
+
+[U] https://www.fsf.org/software/chess/chess.html
+
+[A] Stuart Cracraft <cracraft@ai.mit.edu>
+[A] Lukas Geyer <lukas@debian.org>
+[A] Simon Waters <simon@wretched.demon.co.uk>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+#[C] extra/game/board
+
+[F] CROSS
+
+[L] GPL
+[V] 6.3.0
+
+[D] 8955121ad42d52d0151d2635c5eb8c3f40dc02c0c57b56195930fb6b gnuchess-6.3.0.tar.gz http://ftp.gnu.org/pub/gnu/chess/
+
+atstage native || hook_add preconf 5 "echo 'ac_cv_func_malloc_0_nonnull=yes' >> config.cache"
+atstage native || hook_add preconf 5 "echo 'ac_cv_func_realloc_0_nonnull=yes' >> config.cache"
+
+bindir=/$SDECFG_PKG_GAMES_BINDIR
+datadir=/$SDECFG_PKG_GAMES_DATADIR
+
+create_gnuchessx(){
+	# create an executable shell script that allows
+	# xboard to run gnuchess in server mode
+
+	prog=$bindir/gnuchessx
+	echo -e "#! /bin/sh\nexec gnuchess -x" > $prog
+	chmod a+x $prog
+}
+
+hook_add postinstall 3 create_gnuchessx

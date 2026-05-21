@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/escreen/escreen.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Linux boot screen implementation
+
+[T] eScreen is a Linux graphical user-space boot screen implementation. Since
+[T] it implements a terminal emulator, FB and X terminals are included.
+
+[U] https://exactco.de/about/
+
+[A] René Rebe <rene@exactco.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/boot
+[F] CROSS
+
+[L] GPL
+[V] 0.0.4
+
+[D] b577f78cda86d27ff6afd0267cd76468d43e4016adaa053dba6109b4 escreen-0.0.4.tar.bz2 http://dl.exactcode.de/oss/escreen/
+
+# translate some stuff from $prefix/bin to sbin/ ...
+var_append INSTALL_WRAPPER_FILTER '|' "sed -e 's,$prefix/bin/\(escreen\|miniescreen\)$,sbin/\1,'"

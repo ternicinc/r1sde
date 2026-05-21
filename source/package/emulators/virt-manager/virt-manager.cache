@@ -1,0 +1,25 @@
+[TIMESTAMP] 1778263274 Fri May  8 20:01:14 2026
+[BUILDTIME] 8 (9)
+[SIZE] 7.59 MB, 306 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] docutils
+[DEP] gawk
+[DEP] gettext
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] libosinfo
+[DEP] libvirt-glib
+[DEP] libvirt-python
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pygobject
+[DEP] pyidna
+[DEP] pyrequests
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

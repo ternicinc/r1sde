@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ipw3945d/ipw3945d.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Intel® PRO/Wireless 3945 regulatory daemon
+
+[T] The regulatory daemon is responsible for controlling and configuring
+[T] aspects of the Intel IPW 3945 hardware required to operate the device
+[T] within compliance of various regulatory agencies. This includes
+[T] controlling which channels are allowed to do active/passive scanning,
+[T] transmit power levels, which channels are allowed to be transmitted on,
+[T] and support for IEEE 802.11h (DFS and TPC).
+
+[U] https://ipw3955.sourceforge.net/
+
+[A] Intel Corporation
+[M] René Rebe <rene@exactco.de>
+
+[C] base/kernel
+
+[R] + x86 x86-64
+
+[L] Free-to-use
+[V] 1.7.22
+
+[D] 3431996168 ipw3945d-1.7.22.tgz http://bughost.org/ipw3945/daemon/
+
+runmake=0
+
+ipw3945d_install() {
+	# only x86 and x86-64 are valid
+	install ${arch/x86-64/x86_64}/ipw3945d $root$sbindir/
+}
+hook_add postmake 5 ipw3945d_install

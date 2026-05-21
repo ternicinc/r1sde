@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kaffeine/kaffeine.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] KDE media player
+
+[T] Kaffeine is a media player. What makes it different from the others is its
+[T] excellent support of digital TV (DVB). Kaffeine has user-friendly
+[T] interface, so that even first time users can start immediately playing
+[T] their movies: from DVD (including DVD menus, titles, chapters, etc.), VCD,
+[T] or a file.
+
+[U] https://apps.kde.org/kaffeine/
+
+[A] Juergen Kofler <kaffeine@gmx.net>
+[A] Christophe Thommeret <hftom@free.fr>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 2.0.19
+
+[D] cf3b17bb5b1d8bfd4a7e9d464fe47bd04fd33f0d44a08141bae08226 kaffeine-2.0.19.tar.bz2 https://invent.kde.org/multimedia/kaffeine/-/archive/v2.0.19/
+
+. $base/package/*/*/kde-conf.in

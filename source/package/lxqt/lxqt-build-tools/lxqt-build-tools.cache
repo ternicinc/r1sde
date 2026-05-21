@@ -1,0 +1,16 @@
+[TIMESTAMP] 1744892651 Thu Apr 17 14:24:11 2025
+[BUILDTIME] 1 (9)
+[SIZE] 0.12 MB, 43 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] make
+[DEP] qt6base
+[DEP] sed
+[DEP] tar
+[DEP] xz

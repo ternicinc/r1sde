@@ -1,0 +1,37 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/fish/fish.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A shell focused on interactive use, discoverability, and user friendliness
+
+[T] Fish, the friendly interactive shell is a shell that is focused on
+[T] interactive use, discoverability, and user friendliness. The design goal
+[T] of fish is to give the user a rich set of powerful features in a way that
+[T] is easy to discover, remember, and use. Fish features a user-friendly
+[T] and powerful tab-completion, including descriptions of every completion,
+[T] tab-completion of strings with wildcards, and many completions for
+[T] specific commands. It also features an extensive and discoverable help
+[T] system. A special help command gives access to all the fish documentation
+[T] in your preferred Web browser. Other features include syntax highlighting
+[T] with extensive error checking, support for the X clipboard, smart terminal
+[T] handling based on terminfo, an easy to search, no duplicates history.
+
+[U] https://fishshell.com/
+
+[A] liljencrantz <liljencrantz@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS NO-LTO LATOMIC.x86
+
+[E] opt sphinx-doc
+
+[L] GPL
+[V] 4.7.1
+
+[D] 6fc0b597f7cfe3151ecebdf0ba313db955efdcdddbde0c27a35c477f fish-4.7.1.tar.xz https://github.com/fish-shell/fish-shell/releases/download/4.7.1/
+
+runcargo=0 rungpepinstall=0
+var_append cmakeopt ' ' -DFISH_USE_SYSTEM_PCRE2=ON

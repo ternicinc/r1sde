@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/fontforge/fontforge.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An outline font editor
+
+[T] An outline font editor that lets you create your own postscript, truetype,
+[T] opentype, cid-keyed, multi-master, cff, svg and bitmap (bdf, FON, NFNT)
+[T] fonts, or edit existing ones. Also lets you convert one format to another.
+[T] FontForge has support for many macintosh font formats.
+
+[U] https://github.com/fontforge/fontforge
+
+[A] George Williams
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] OBJDIR CROSS
+
+[L] BSD
+[V] 20251009
+[P] X -----5---9 125.200
+
+[D] acd3aa5fe56093266998c7d65313087e7addca3585d46925812a5927 fontforge-20251009.tar.xz https://github.com/fontforge/fontforge/releases/download/20251009/
+
+var_append cmakeopt ' ' '-DENABLE_GUI=off -DENABLE_LIBSPIRO=off'

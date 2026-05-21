@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/twin/twin.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A text-mode window manager and terminal emulator
+
+[T] Twin is a text-mode window environment. It turns a text terminal into
+[T] a X11-style display with window manager, terminal windows, and can also
+[T] serve as display for remote applications. Each terminal window provides
+[T] the functions of a text-mode Linux console. Twin runs on X11, libggi,
+[T] itself, the Linux console, and any termcap/ncurses-compatible tty. It
+[T] supports multiple simultaneous displays, and can attach/detach each
+[T] display on the fly.
+
+[U] https://sourceforge.net/projects/twin/
+
+[A] Massimiliano Ghilardi <max@linuz.sns.it>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] GPL
+[V] 1.0.0
+
+[D] a5d8a60742a2ad0bff88ef3385da361cfd0fa221a90df07ac126adf0 twin-1.0.0.tar.gz https://github.com/cosmos72/twin/archive/v1.0.0/

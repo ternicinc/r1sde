@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/strigi/strigi.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A desktop and indexer independent desktop search engine
+
+[T] Strigi is a desktop and indexer independent desktop search engine. Its
+[T] main features include very fast crawling, a very small memory footprint,
+[T] no hammering of the system, and pluggable backends (currently clucene
+[T] and hyperestraier was provided). Communication between the daemon and
+[T] search program is done over an abstract interface which is desktop
+[T] independent. A small Perl program with an example of how to query the
+[T] database is included along with an example KDE client application and
+[T] a KIO interface.
+
+[U] https://strigi.sf.net/
+
+[A] <jos@vandenoever.info>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+
+[L] LGPL
+[V] 0.7.8
+[P] X -----5---9 128.800
+
+[D] 520ccd2b2ec915d6059749322cba107ac7c4793061745aea23668b66 strigi-0.7.8.tar.bz2 https://www.vandenoever.info/software/strigi/
+
+var_append cmakeopt ' ' -DCMAKE_POLICY_VERSION_MINIMUM=3.5

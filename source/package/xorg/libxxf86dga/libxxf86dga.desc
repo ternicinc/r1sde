@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libxxf86dga/libxxf86dga.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Client library for the XFree86-DGA extension
+
+[T] This package contains the client library for the XFree86-DGA extension,
+[T] allowing direct access to the graphic framebuffer.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.1.7
+[P] X -----5---9 112.439
+
+[D] 314da1cf89cd4ccd76ade4151089fee4f06a18f106c4951322c711ae libXxf86dga-1.1.7.tar.xz http://xorg.freedesktop.org/releases/individual/lib/
+
+. package/*/*/modular-x-conf.in

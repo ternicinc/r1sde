@@ -1,0 +1,8 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/openntpd/postsysfiles.in
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+safe_groupadd _ntp 123
+safe_useradd _ntp 123 123 "OpenNTPD" /var/empty /bin/false "*"

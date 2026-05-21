@@ -1,0 +1,83 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/tse3/hotfix-gcc43.patch
+# Copyright (C) 2009 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -Nur tse3-0.3.1-orig/src/examples/recording/recording.cpp tse3-0.3.1/src/examples/recording/recording.cpp
+--- tse3-0.3.1-orig/src/examples/recording/recording.cpp	2009-02-17 21:31:01.000000000 +0000
++++ tse3-0.3.1/src/examples/recording/recording.cpp	2009-02-17 21:38:29.000000000 +0000
+@@ -27,6 +27,7 @@
+      **************************************************************/
+ 
+ #include <iostream>
++#include <cstdlib>
+ 
+ // Used in step 1
+ #include "tse3/Metronome.h"
+diff -Nur tse3-0.3.1-orig/src/tse3/MidiFile.cpp tse3-0.3.1/src/tse3/MidiFile.cpp
+--- tse3-0.3.1-orig/src/tse3/MidiFile.cpp	2009-02-17 21:31:01.000000000 +0000
++++ tse3-0.3.1/src/tse3/MidiFile.cpp	2009-02-17 21:40:03.000000000 +0000
+@@ -30,6 +30,7 @@
+ 
+ #include <fstream>
+ #include <string>
++#include <cstring>
+ #include <queue>
+ #include <math.h>
+ 
+diff -Nur tse3-0.3.1-orig/src/tse3/Serializable.h tse3-0.3.1/src/tse3/Serializable.h
+--- tse3-0.3.1-orig/src/tse3/Serializable.h	2009-02-17 21:31:01.000000000 +0000
++++ tse3-0.3.1/src/tse3/Serializable.h	2009-02-17 21:41:26.000000000 +0000
+@@ -20,6 +20,7 @@
+ #include <iosfwd>
+ #include <iomanip>
+ #include <cstddef>
++#include <iostream>
+ 
+ namespace TSE3
+ {
+diff -Nur tse3-0.3.1-orig/src/tse3/TSE2MDL.cpp tse3-0.3.1/src/tse3/TSE2MDL.cpp
+--- tse3-0.3.1-orig/src/tse3/TSE2MDL.cpp	2009-02-17 21:31:01.000000000 +0000
++++ tse3-0.3.1/src/tse3/TSE2MDL.cpp	2009-02-17 21:42:09.000000000 +0000
+@@ -38,6 +38,7 @@
+ #include "tse3/Progress.h"
+ 
+ #include <fstream>
++#include <cstring>
+ 
+ using namespace TSE3;
+ 
+diff -Nur tse3-0.3.1-orig/src/tse3/cmd/Phrase.h tse3-0.3.1/src/tse3/cmd/Phrase.h
+--- tse3-0.3.1-orig/src/tse3/cmd/Phrase.h	2009-02-17 21:31:01.000000000 +0000
++++ tse3-0.3.1/src/tse3/cmd/Phrase.h	2009-02-17 21:32:34.000000000 +0000
+@@ -29,6 +29,7 @@
+     class Phrase;
+     class Song;
+     class Part;
++    class PhraseEdit;
+ 
+     namespace Cmd
+     {
+diff -Nur tse3-0.3.1-orig/src/tse3/plt/OSS.cpp tse3-0.3.1/src/tse3/plt/OSS.cpp
+--- tse3-0.3.1-orig/src/tse3/plt/OSS.cpp	2009-02-17 21:31:01.000000000 +0000
++++ tse3-0.3.1/src/tse3/plt/OSS.cpp	2009-02-17 21:40:49.000000000 +0000
+@@ -21,6 +21,7 @@
+ 
+ #include <stdlib.h>
+ #include <stdio.h>
++#include <cstring>
+ #include <unistd.h>
+ #include <fcntl.h>
+ #include <stdarg.h>
+diff -Nur tse3-0.3.1-orig/src/tse3play/tse3play.cpp tse3-0.3.1/src/tse3play/tse3play.cpp
+--- tse3-0.3.1-orig/src/tse3play/tse3play.cpp	2009-02-17 21:31:01.000000000 +0000
++++ tse3-0.3.1/src/tse3play/tse3play.cpp	2009-02-17 21:42:48.000000000 +0000
+@@ -32,6 +32,7 @@
+ #include "tse3/Error.h"
+ #include "tse3/Metronome.h"
+ #include <fstream>
++#include <cstdlib>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include "config.h"

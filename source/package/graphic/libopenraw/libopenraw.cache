@@ -1,0 +1,25 @@
+[TIMESTAMP] 1745138156 Sun Apr 20 04:35:56 2025
+[BUILDTIME] 100 (9)
+[SIZE] 19.18 MB, 37 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] boost
+[DEP] bzip2
+[DEP] cargo
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] grep
+[DEP] libjpeg
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] rustc
+[DEP] sed
+[DEP] tar

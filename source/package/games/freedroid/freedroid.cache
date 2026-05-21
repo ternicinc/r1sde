@@ -1,0 +1,29 @@
+[TIMESTAMP] 1777152709 Sat Apr 25 23:31:49 2026
+[BUILDTIME] 12 (9)
+[SIZE] 6.90 MB, 136 files
+
+[DEP] autoconf
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] imake
+[DEP] libsdl2
+[DEP] libsdl2_image
+[DEP] libsdl2_mixer
+[DEP] libtool
+[DEP] libx11
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] perl
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] xorgproto

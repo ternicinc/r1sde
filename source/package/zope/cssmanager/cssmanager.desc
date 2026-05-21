@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cssmanager/cssmanager.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A simple CSS-Manager for Plone
+
+[T] CSSManager is a simple css management tool for Plone 2.
+
+[U] https://web.archive.org/web/20061116001051/http://opensource.arche.de/products/cssmanager
+
+[A] Michael Geddert <geddert@arche.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[E] add plone
+
+[L] OpenSource
+
+[V] 0.4.1
+
+[D] 16b62a8530623634ae85aa7d451788afd0db13e23b2748f782b1d37e CSSManager-0.4.1.tgz http://opensource.arche.de/products/
+
+. $base/package/*/zope/zope-conf.in

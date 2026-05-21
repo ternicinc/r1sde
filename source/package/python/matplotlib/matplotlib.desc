@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/matplotlib/matplotlib.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Python plotting package
+
+[T] Matplotlib is a comprehensive library for creating static, animated, and
+[T] interactive visualizations in Python.
+
+[U] https://matplotlib.org/stable/
+
+[A] Matplotlib Developers
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] OpenSource
+[V] 3.10.9
+[P] X -----5---9 200.300
+
+[D] 2fdb5a95bb175d38a1c96bb5b0644c39f221a04f62da4959c95d2077 matplotlib-3.10.9.tar.gz https://files.pythonhosted.org/packages/source/m/matplotlib/
+
+runpysetup=1 runmeson=1

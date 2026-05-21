@@ -1,0 +1,48 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/rustc/arch-i3486.patch.prepatch
+# Copyright (C) 2020 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+Let's add i386 and i486 for embedded, bootloader or other early kernel code.
+
+ - Signed-off-by: René Rebe <rene@exactcode.de>
+
+--- rustc-1.73.0-src/compiler/rustc_target/src/spec/mod.rs.vanilla	2023-10-07 16:10:45.606034645 +0200
++++ rustc-1.73.0-src/compiler/rustc_target/src/spec/mod.rs	2023-10-07 16:11:18.595034753 +0200
+@@ -1270,8 +1270,10 @@
+ supported_targets! {
+     ("x86_64-unknown-linux-gnu", x86_64_unknown_linux_gnu),
+     ("x86_64-unknown-linux-gnux32", x86_64_unknown_linux_gnux32),
+-    ("i686-unknown-linux-gnu", i686_unknown_linux_gnu),
++    ("i386-unknown-linux-gnu", i386_unknown_linux_gnu),
++    ("i486-unknown-linux-gnu", i486_unknown_linux_gnu),
+     ("i586-unknown-linux-gnu", i586_unknown_linux_gnu),
++    ("i686-unknown-linux-gnu", i686_unknown_linux_gnu),
+     ("loongarch64-unknown-linux-gnu", loongarch64_unknown_linux_gnu),
+     ("m68k-unknown-linux-gnu", m68k_unknown_linux_gnu),
+     ("csky-unknown-linux-gnuabiv2", csky_unknown_linux_gnuabiv2),
+--- /dev/null
++++ a/compiler/rustc_target/src/spec/targets/i386_unknown_linux_gnu.rs
+@@ -0,0 +1,9 @@
++use crate::spec::Target;
++
++pub(crate) fn target() -> Target {
++    let mut base = super::i686_unknown_linux_gnu::target();
++    base.rustc_abi = None; // overwrite the SSE2 ABI set by the base target
++    base.cpu = "i386".into();
++    base.llvm_target = "i386-unknown-linux-gnu".into();
++    base
++}
+--- /dev/null
++++ a/compiler/rustc_target/src/spec/targets/i486_unknown_linux_gnu.rs
+@@ -0,0 +1,9 @@
++use crate::spec::Target;
++
++pub(crate) fn target() -> Target {
++    let mut base = super::i686_unknown_linux_gnu::target();
++    base.rustc_abi = None; // overwrite the SSE2 ABI set by the base target
++    base.cpu = "i486".into();
++    base.llvm_target = "i486-unknown-linux-gnu".into();
++    base
++}

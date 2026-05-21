@@ -1,0 +1,39 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/jetty/jetty.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A 100% Java based HTTP Server and Servlet Container
+
+[T] Jetty is a 100% Java HTTP Server and Servlet Container. This means
+[T] that you do not need to configure and run a separate web server
+[T] (like Apache) in order to use java, servlets and JSPs to generate
+[T] dynamic content. Jetty is a fully featured web server for static
+[T] and dynamic content. Unlike separate server/container solutions, this
+[T] means that your web server and web application run in the same process,
+[T] without interconnection overheads and complications. Furthermore,
+[T] as a pure java component, Jetty can be simply included in your
+[T] application for demonstration, distribution or deployment. Jetty
+[T] is available on all Java supported platforms.
+
+[U] http://jetty.mortbay.org/
+
+[A] Mort Bay
+[M] Minto van der Sluis <minto@multimach.com>
+
+[C] extra/development
+[F] BINARY CROSS
+
+[L] APL
+[V] 12.1.9
+
+[D] 3334d4cfd601014d71c8fb424929311c999efa46fc6c085ef7523913 jetty-home-12.1.9.tar.gz https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.9/
+
+runmake=0
+[ $prefix_auto = 1 ] && prefix=opt/jetty && set_confopt
+
+jetty_install() {
+	tar -xf $(match_source_file -p jetty) --strip-components=1 -C $root/$prefix
+}
+hook_add postmake 5 jetty_install

@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ktextaddons/ktextaddons.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] KDE Frameworks with advanced embeddable text editor
+
+[T] KDE Frameworks with advanced embeddable text editor.
+
+[U] https://invent.kde.org/libraries/ktextaddons
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 2.0.2
+[P] X -----5---9 200.000
+
+[D] 0b7241306b71d5ead94b4369165f103a50a5726d30056d5d9987d403 ktextaddons-2.0.2.tar.xz https://download.kde.org/stable/ktextaddons/
+
+. $base/package/*/*/kde-conf.in
+var_append cmakeopt ' ' -DQT_MAJOR_VERSION=6

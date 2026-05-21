@@ -1,0 +1,19 @@
+[TIMESTAMP] 1751039928 Fri Jun 27 17:58:48 2025
+[BUILDTIME] 3 (9)
+[SIZE] 0.84 MB, 37 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] libexif
+[DEP] libgphoto
+[DEP] linux-header
+[DEP] make
+[DEP] popt
+[DEP] readline
+[DEP] sed
+[DEP] tar
+[DEP] xz

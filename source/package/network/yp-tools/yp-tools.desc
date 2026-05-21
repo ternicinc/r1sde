@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/yp-tools/yp-tools.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] NIS (YP) clients
+
+[T] yp-tools is an implementation of the NIS client tools for Linux and should
+[T] work with every Linux C Library. This implementation only provides NIS
+[T] client tools. You must already have a ypbind daemon running on the same
+[T] host, and a NIS server running somewhere in the net.
+
+[U] http://www.linux-nis.org/nis/yp-tools/
+
+[A] Thorsten Kukuk <kukuk@suse.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 4.2.3
+
+[D] 07d73450b4e38483423977e658b17f1beeb6868949f7ed7f0b126f80 yp-tools-4.2.3.tar.gz https://github.com/thkukuk/yp-tools/archive/refs/tags/v4.2.3/
+
+autogen=1
+
+# avoid a shared-files conflict with net-tools
+var_append INSTALL_WRAPPER_FILTER '|' 'sed -e "s,bin/\(nis\|yp\|\)\(domainname\)$,bin/yp-\1\2,"'

@@ -1,0 +1,31 @@
+[TIMESTAMP] 1745935447 Tue Apr 29 17:04:07 2025
+[BUILDTIME] 16 (9)
+[SIZE] 2.56 MB, 150 files
+
+[OPT] apache
+[DEP] bash
+[DEP] binutils
+[OPT] brotli
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gettext
+[OPT] glib
+[OPT] gobject-introspection
+[DEP] grep
+[DEP] libpsl
+[DEP] libxml
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] sqlite
+[OPT] sysprof
+[DEP] tar
+[OPT] unwind
+[DEP] xz
+[DEP] zlib

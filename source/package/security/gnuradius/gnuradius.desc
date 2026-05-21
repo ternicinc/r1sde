@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnuradius/gnuradius.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An extensible SQL/SNMP-enabled Radius server with Scheme scripting interface
+
+[T] GNU Radius is a radius server and an accompanying set of monitoring
+[T] utilities. It features MySQL and PostgreSQL interfaces for authentication
+[T] and/or logging (the ODBC interface allows you to use almost any existing
+[T] DBMS for that purpose), the ability to rewrite RADIUS requests from
+[T] various NASs to normalize them to a more understandable format, as well as
+[T] the ability to completely customize the behavior of radius authentication
+[T] and accounting based on NAS and user attributes.
+
+[U] https://www.gnu.org/software/radius/
+
+[A] <gray@farlep.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] GPL
+[V] 1.7
+
+[D] 87d627d12f97d900479853c3b4a3370da36fec8a3ad1f1cf7eb30d80 radius-1.7.tar.bz2 http://ftp.gnu.org/gnu/radius/

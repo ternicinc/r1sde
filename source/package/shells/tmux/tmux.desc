@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/tmux/tmux.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A terminal multiplexer program
+
+[T] Tmux is a terminal multiplexer. It allows a number of terminals (or
+[T] windows) to be accessed and controlled from a single terminal. It is
+[T] intended to be a simple, modern, BSD-licensed alternative to programs
+[T] such as GNU screen.
+
+[U] https://github.com/tmux/tmux/
+
+[A] Nicholas Marriott <nicm@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] BSD
+[V] 3.6b
+
+[D] 2a7a2ccb71d8999a29b3ae4e9ca74c5a7c31fc302a6f8a82c8f44b6d tmux-3.6b.tar.gz https://github.com/tmux/tmux/releases/download/3.6b/
+
+var_append confopt ' ' --with-TERM=tmux-256color
+atstage cross && hook_add preconf 5 "echo ac_cv_func_strtonum=no >> config.cache"

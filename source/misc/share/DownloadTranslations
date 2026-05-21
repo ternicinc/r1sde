@@ -1,0 +1,29 @@
+#!/bin/sed
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/misc/share/DownloadTranslations
+# Copyright (C) 2015 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+# normal user will always find their files on our mirrors, so this will be used only by developers
+
+s,^http://www.mysql.org/Downloads/,http://www.mirrorservice.org/sites/ftp.mysql.com/Downloads/,
+
+#s,^ftp://ftp.kde.org/pub/kde/,http://ftp-stud.fht-esslingen.de/Mirrors/ftp.kde.org/pub/kde/,
+
+#s,^http://ftp.gnu.org/gnu/,http://ftpmirror.gnu.org/,
+
+# loadbalancer is working weird these days
+s,^http://.*dl.\(sourceforge\|sf\).net/,http://prdownloads.sourceforge.net/,
+
+# PostgreSQL Team does not like us to use their ftp
+s,^ftp://ftp.postgresql.org/pub/source/,ftp://ftp.de.postgresql.org/packages/databases/PostgreSQL/source/,
+
+# Apache downloads
+s,^http://dl.apache.org/,http://www.eu.apache.org/,
+
+# clip's ftp is a pain
+s,^ftp://ftp.itk.ru/,ftp://www.cis.by/pub/clip/,
+
+# evolt.org doesn't allow direct downloads
+s,http://browsers.evolt.org/download.php?,http://www.mirrorservice.org/sites/browsers.evolt.org/browsers,

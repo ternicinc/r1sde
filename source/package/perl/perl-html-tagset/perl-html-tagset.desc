@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-html-tagset/perl-html-tagset.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module HTML-Tagset
+
+[T] This module contains data tables useful in dealing with HTML.
+
+[U] https://search.cpan.org/~petdance/HTML-Tagset/
+
+[A] Andy Lester <andy@petdance.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] Artistic GPL
+[V] 3.24
+[P] X -----5---9 200.116
+
+[D] bee732cf3d6edf72c5111b68e4896509c73fc10d3e9f2256fbcd0575 HTML-Tagset-3.24.tar.gz http://search.cpan.org/CPAN/authors/id/P/PE/PETDANCE/

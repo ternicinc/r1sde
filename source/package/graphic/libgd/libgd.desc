@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libgd/libgd.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A graphics library for fast image creation
+
+[T] GD is a library used to create .PNG images. It has many nice
+[T] features and can be used in scripts (e.g. PHP) for dynamic image
+[T] generation.
+
+[U] https://github.com/libgd/libgd/
+
+[A] Thomas Boutell <boutell@boutell.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[E] opt libheif
+[E] opt libjpeg
+[E] opt libpng
+[E] opt libtiff
+[E] opt libwebp
+[E] opt libxpm
+
+[L] OpenSource
+[V] 2.3.3
+[P] X -----5---9 126.700
+
+[D] a382b75309cfbad6320f213a05c2179f0aade1814e1d1e4c01797a7c libgd-2.3.3.tar.xz https://github.com/libgd/libgd/releases/download/gd-2.3.3/
+
+CC="$CC -I/usr/include/freetype2 -I/usr/include/libpng -I/usr/X11/include -I."
+INSTALL_BIN=/usr/bin

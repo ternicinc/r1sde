@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xbacklight/xbacklight.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A command-line utility to set the backlight level via RandR 1.2
+
+[T] Xbacklight is a simple command-line utility to set the backlight level
+[T] using the RandR 1.2 BACKLIGHT output property.
+
+[U] https://www.x.org
+
+[A] Keith Packard
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.2.4
+
+[D] a8d9359d6acaf191aa7d8a8e9709c8d1e3c9e46ae8e3d176499f2d9a xbacklight-1.2.4.tar.xz http://xorg.freedesktop.org/archive/individual/app/
+
+. package/*/*/modular-x-conf.in

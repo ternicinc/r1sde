@@ -1,0 +1,27 @@
+[TIMESTAMP] 1759835355 Tue Oct  7 13:09:15 2025
+[BUILDTIME] 155 (9)
+[SIZE] 3.43 MB, 315 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] libdrm
+[DEP] libglvnd
+[DEP] libx11
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] python
+[DEP] qt6base
+[DEP] qt6svg
+[DEP] sed
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] wayland
+[DEP] xkbcommon
+[DEP] xorgproto
+[DEP] xz

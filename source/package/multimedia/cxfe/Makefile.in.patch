@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/cxfe/Makefile.in.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./Makefile.in.orig	2007-07-25 20:40:59.000000000 +0200
++++ ./Makefile.in	2008-10-09 19:18:01.000000000 +0200
+@@ -15,7 +15,7 @@
+ CPPFLAGS = @CPPFLAGS@
+ CFLAGS = $(CPPFLAGS) @CFLAGS@ `xine-config --cflags`
+ LIBS = @LIBS@
+-LDFLAGS = `xine-config --libs` -L/usr/X11R6/lib -lXext@LDFLAGS@ @LIBS@ -lX11 
++LDFLAGS = `xine-config --libs` -L/usr/X11/lib -lXext@LDFLAGS@ @LIBS@ -lX11 
+ INSTALL = @INSTALL@
+ 
+ #CC=gcc -Wall -g -O2

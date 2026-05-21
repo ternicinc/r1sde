@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/stella/stella.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A multi-platform Atari 2600 VCS emulator
+
+[T] The Atari 2600 Video Computer System (VCS), introduced in 1977, was the
+[T] most popular home video game system of the early 1980's.
+[T] Now you can enjoy all of your favorite Atari 2600 games on your PC
+[T] thanks to Stella!.
+
+[U] https://stella-emu.github.io/
+
+[A] Bradford W. Mott <bwmott@acm.org> and the Stella Team
+[M] Leonel Iván Saafigueroa <leonel@saafigueroa.com.ar>
+
+[C] extra/emulator
+
+[L] GPL
+[V] 7.0c
+
+[D] 6a8f526705a5295f47d4d67c94cbedcd49afabe22e6cd02c4c08cfd4 stella-7.0c-src.tar.gz https://github.com/stella-emu/stella/archive/7.0c/
+
+confopt= makeinstopt=
+hook_add postmake 5 'cp -vf stella $root$bindir'

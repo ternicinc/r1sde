@@ -1,0 +1,26 @@
+[TIMESTAMP] 1760709669 Fri Oct 17 16:01:09 2025
+[BUILDTIME] 1300 (9)
+[SIZE] 955.84 MB, 397 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cargo
+[DEP] cbindgen
+[DEP] clang
+[DEP] coreutils
+[DEP] diffutils
+[DEP] file
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] icu4c
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] python
+[DEP] rustc
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] xz
+[DEP] zlib

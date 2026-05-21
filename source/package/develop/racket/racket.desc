@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/racket/racket.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Racket, the Language-Oriented Programming Language
+
+[T] Racket is a general-purpose modern Scheme dialect, implementation and
+[T] ecosystem.
+[T]
+[T] Racket allows programmers to add new syntactic constructs in the same way
+[T] that other languages permit the formulation of procedures, methods, or
+[T] classes.
+[T]
+[T] Racket comes with a comprehensive suite of libraries: a cross-platform
+[T] GUI toolbox, a web server, and more.
+
+[U] https://racket-lang.org
+
+[A] Matthias Felleisen <matthias@ccs.neu.edu>
+[M] Tomas Glozar <tglozar@gmail.com>
+
+[C] base/development
+
+[L] MIT APL
+[V] 9.1
+
+[D] ea63673d4e28e257d519a5ad2b7cc99e01f5b1bf7bc8b68022e3c354 racket-9.1-src.tgz https://download.racket-lang.org/installers/9.1/
+
+srcdir="*/src"

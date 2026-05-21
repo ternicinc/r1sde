@@ -1,0 +1,27 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/gsmlib/hotfix-gcc4.patch
+# Copyright (C) 2005 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+
+--- gsmlib-1.10/gsmlib/gsm_map_key.h.vanilla
++++ gsmlib-1.10/gsmlib/gsm_map_key.h
+@@ -74,7 +74,7 @@
+   // MapKey members
+   
+   template <class SortedStore>
+-    bool gsmlib::operator<(const MapKey<SortedStore> &x,
++    bool operator<(const MapKey<SortedStore> &x,
+                            const MapKey<SortedStore> &y)
+     {
+       assert(&x._myStore == &y._myStore);
+@@ -99,7 +99,7 @@
+     }
+ 
+   template <class SortedStore>
+-    bool gsmlib::operator==(const MapKey<SortedStore> &x,
++    bool operator==(const MapKey<SortedStore> &x,
+                             const MapKey<SortedStore> &y)
+     {
+       assert(&x._myStore == &y._myStore);

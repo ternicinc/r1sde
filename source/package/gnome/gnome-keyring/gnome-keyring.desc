@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-keyring/gnome-keyring.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome password (and other secrets) manager
+
+[T] Gnome-keyring is a program that keep password and other secrets for
+[T] users. It is run as a daemon in the session, similar to ssh-agent.
+[T]
+[T] The program can manage several keyrings, each with its own master
+[T] password, and there is also a session keyring which is never stored on
+[T] disk and forgotten when the session ends.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/development extra/base extra/desktop/gnome
+[F] CROSS
+
+[L] LGPL
+[V] 50.0
+[P] X -----5---9 142.100
+
+[CV-URL] https://download.gnome.org/sources/gnome-keyring/cache.json
+[D] 26559beb0240f6964c964453061351851ac4e02878b8a4b1c19d8e23 gnome-keyring-50.0.tar.xz https://download.gnome.org/sources/gnome-keyring/50/
+
+. $base/package/*/*/gnome-conf.in
+pkginstalled systemd || var_append mesonopt ' ' -Dsystemd=disabled

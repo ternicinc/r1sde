@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kea/kea.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Open source software system suite for networking
+
+[T] Open source software system including DHCPv4, DHCPv6 servers, Dynamic DNS
+[T] daemon, REST API interface, MySQL, and PostgreSQL databases, RADIUS and
+[T] NETCONF interfaces and related utilities.
+
+[U] https://kea.isc.org/
+
+[A] ISC Software
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/server base/system
+[F] CROSS
+
+[L] MPL
+[V] 3.0.3
+
+[D] 47cd9bea6e43c5355167aa6ef97d7402f42ede1537f93252108633d0 kea-3.0.3.tar.xz https://downloads.isc.org/isc/kea/cur/3.0/
+
+pkginstalled mysql || var_append mesonopt ' ' -Dmysql=disabled
+pkginstalled postgresql || var_append mesonopt ' ' -Dpostgresql=disabled

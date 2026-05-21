@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/upx/upx.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Powerful executable packer
+
+[T] UPX is a portable, extendable, high-performance executable packer for
+[T] several different executable formats. It achieves an excellent compression
+[T] ratio and offers very fast decompression. Your executables suffer no
+[T] memory overhead or other drawbacks. UPX supports vmlinuz/386,
+[T] linux/elf386, linux/386, win32/pe, dos/exe, djgpp2/coff, and many more.
+
+[U] https://upx.github.io/
+
+[A] Markus F.X.J. Oberhumer <markus@oberhumer.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 5.1.1
+
+[D] 0c973140f9f29aceb0ed598680ef40c2b0726b1c40eff6a565ad689a upx-5.1.1-src.tar.xz https://github.com/upx/upx/releases/download/v5.1.1/
+
+var_append makeopt ' ' 'UCLDIR=$root/$prefix all'
+makeinstopt= # no install target
+
+upx_pi() {
+	install -m 755 build/release/upx $root$bindir/upx
+	install -m 644 doc/upx.1 $root$mandir/man1/upx.1
+}
+hook_add postmake 3 upx_pi

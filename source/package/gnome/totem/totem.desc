@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/totem/totem.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A simple movie player for the GNOME desktops
+
+[T] Totem is simple movie player for GNOME desktops based on xine. It
+[T] features a simple playlist, a full-screen mode, seek and volume
+[T] controls, as well as a pretty complete keyboard navigation system.
+
+[U] http://www.hadess.net/totem.php3
+
+[A] Bastien Nocera <hadess@hadess.net>
+[A] Julian Moutte <julien@moutte.net> (GStreamer backend)
+
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/multimedia extra/desktop/gnome
+
+[L] GPL
+[V] 43.2
+[P] X -----5---9 191.500
+
+[CV-URL] https://download.gnome.org/sources/totem/cache.json
+[D] 43e646f5dd725d597f6b0447669bd622e389384a11cbfe183df0f6d6 totem-43.2.tar.xz https://download.gnome.org/sources/totem/43/
+
+. $base/package/*/*/gnome-conf.in

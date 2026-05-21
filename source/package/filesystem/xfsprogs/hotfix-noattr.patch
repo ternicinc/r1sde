@@ -1,0 +1,60 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/xfsprogs/hotfix-noattr.patch
+# Copyright (C) 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- xfsprogs-7.0.0/io/Makefile.vanilla	2026-05-12 13:44:56.414410949 +0200
++++ xfsprogs-7.0.0/io/Makefile	2026-05-12 14:07:41.876765770 +0200
+@@ -21,7 +21,6 @@
+ 	fiemap.c \
+ 	file.c \
+ 	freeze.c \
+-	fsproperties.c \
+ 	fsuuid.c \
+ 	fsync.c \
+ 	getrusage.c \
+@@ -54,6 +53,11 @@
+ 	utimes.c \
+ 	verify_media.c
+ 
++ifeq ($(HAVE_LIBATTR),yes)
++	CFILES+=fsproperties.c
++	CFLAGS += -DHAVE_LIBATTR
++endif
++
+ LLDLIBS = $(LIBXCMD) $(LIBHANDLE) $(LIBFROG) $(LIBPTHREAD) $(LIBUUID)
+ LTDEPENDENCIES = $(LIBXCMD) $(LIBHANDLE) $(LIBFROG)
+ LLDFLAGS = -static-libtool-libs
+--- xfsprogs-7.0.0/io/init.c.vanilla	2026-05-12 13:46:37.644839402 +0200
++++ xfsprogs-7.0.0/io/init.c	2026-05-12 13:46:56.771070118 +0200
+@@ -91,7 +91,9 @@
+ 	utimes_init();
+ 	crc32cselftest_init();
+ 	exchangerange_init();
++#ifdef HAVE_LIBATTR
+ 	fsprops_init();
++#endif
+ 	healthmon_init();
+ 	verifymedia_init();
+ 	listmount_init();
+--- xfsprogs-7.0.0/scrub/phase1.c.vanilla	2026-05-12 14:02:44.217794975 +0200
++++ xfsprogs-7.0.0/scrub/phase1.c	2026-05-12 14:03:08.152047922 +0200
+@@ -141,6 +141,7 @@
+ mode_from_autofsck(
+ 	struct scrub_ctx	*ctx)
+ {
++#ifdef HAVE_LIBATTR
+ 	struct fsprops_handle	fph = { };
+ 	char			valuebuf[FSPROP_MAX_VALUELEN + 1] = { 0 };
+ 	size_t			valuelen = FSPROP_MAX_VALUELEN;
+@@ -177,6 +178,9 @@
+ 	}
+ 
+ 	fsprops_free_handle(&fph);
++#else
++	goto no_property;
++#endif
+ 
+ summarize:
+ 	switch (ctx->mode) {

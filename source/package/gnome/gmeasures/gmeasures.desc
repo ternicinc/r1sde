@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gmeasures/gmeasures.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A simple utility to convert weights and measures, and temperature
+
+[T] This is a simple utility to convert weights and measures. It can also
+[T] convert Celsius / Fahrenheit temperatures. Configurable (you can add
+[T] your own weights and measures to the 101 already built in).
+
+[U] https://home.hccnet.nl/paul.schuurmans/linux/
+
+[A] Paul Schuurmans
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 0.7
+
+[CV-URL] https://download.gnome.org/sources/gmeasures/cache.json
+[D] 0c67dfe3ee434bef95816a411484d3e72f1acaf6ad9c3ee29926cc3b gmeasures-0.7.tar.gz http://home.hccnet.nl/paul.schuurmans/linux/download/
+
+. $base/package/*/*/gnome-conf.in
+autogen=1

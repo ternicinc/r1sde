@@ -1,0 +1,21 @@
+[TIMESTAMP] 1739037789 Sat Feb  8 19:03:09 2025
+[BUILDTIME] 12 (5)
+[SIZE] 5.49 MB, 52 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[OPT] libusb
+[OPT] libusb-compat
+[DEP] linux-header
+[DEP] make
+[OPT] openldap
+[DEP] readline
+[DEP] sed
+[DEP] tar
+[DEP] zlib

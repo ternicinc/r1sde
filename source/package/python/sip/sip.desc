@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sip/sip.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Tool to create Python bindings for C and C++
+
+[T] SIP is a tool that makes it very easy to create Python bindings
+[T] for C and C++ libraries. It was originally developed to create
+[T] PyQt, the Python bindings for the Qt toolkit, but can be used to
+[T] create bindings for any C or C++ library.
+
+[U] http://www.riverbankcomputing.co.uk/sip/
+
+[A] Riverbank Computing Ltd. <http://www.riverbankcomputing.co.uk>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[E] add packaging python
+[E] add setuptools-scm
+
+[L] OpenSource
+
+[V] 6.15.3
+[P] X -----5---9 200.500
+
+[D] 386320e7b75429a40ce4ca92aa9aef67ff1485980354ee4dcd8f4fc2 sip-6.15.3.tar.gz https://github.com/Python-SIP/sip/archive/6.15.3/

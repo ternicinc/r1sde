@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cgilua/cgilua.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Lua tool for creating dynamic Web pages
+
+[T] CGILua is a tool for creating dynamic Web pages and manipulating
+[T] input data from Web forms. CGILua allows the separation of logic
+[T] and data handling from the generation of pages, making it ease
+[T] to develop web applications with Lua. One of advantages of CGILua
+[T] is its abstraction of the underlying Web server. You can develop
+[T] a CGILua application for one Web server and run it on any other
+[T] Web server that supports CGILua.
+
+[U] https://www.keplerproject.org/cgilua/
+
+[A] Roberto Ierusalimschy
+[A] André Carregal
+[A] Tomás Guisasola
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] OpenSource
+[V] 6.0.2
+
+[D] fb6f3668c9396aeca9b267d3ef38e9c5dfe032dd2686768156491893 cgilua-6.0.2.tar.gz https://github.com/lunarmodules/cgilua/archive/6.0.2/
+
+. $base/package/*/*/lua-conf.in
+var_append makeopt ' ' LUA_DIR=$root$pkgdatadir
+hook_add premake 5 "cd src/cgilua"
+makeinstopt=

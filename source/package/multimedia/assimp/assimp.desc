@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/assimp/assimp.desc
+[COPY] Copyright (C) 2016 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Open Asset Import Library
+
+[T] A library to import and export various 3d-model-formats including
+[T] scene-post-processing to generate missing render data.
+
+[U] https://assimp.sourceforge.net/
+
+[A] assimp team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] BSD
+[V] 6.0.5
+[P] X -----5---9 300.000
+
+[D] d7240e67cfa7dd690f659e6b4db3977ca719af4a2de9edbaf40bae98 assimp-6.0.5.tar.gz https://github.com/assimp/assimp/archive/v6.0.5/

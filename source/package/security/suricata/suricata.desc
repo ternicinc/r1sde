@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/suricata/suricata.desc
+[COPY] Copyright (C) 2016 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A leading threat detection engine
+
+[T] Suricata is the leading independent open source threat detection engine.
+[T] By combining intrusion detection (IDS), intrusion prevention (IPS),
+[T] network security monitoring (NSM) and PCAP processing, Suricata can
+[T] quickly identify, stop, and assess even the most sophisticated attacks.
+
+[U] https://suricata.io/
+
+[A] Open Information Security Foundation
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS NO-LTO
+
+[L] GPL
+[V] 8.0.5
+
+[D] 402aa184d81ad4679b75c0fcd157520b58fedbebaed1117bfc6f004d suricata-8.0.5.tar.gz https://www.openinfosecfoundation.org/download/
+
+hook_add preconf 5 "export RUSTDOC=true"

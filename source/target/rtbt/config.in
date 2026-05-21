@@ -1,0 +1,22 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/target/rtbt/config.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+#Description: T2 rtbt (incomplete!)
+
+SDECFGSET_IMAGE='initrd'
+SDECFGSET_PKGFILE_TYPE='none'
+SDECFGSET_PKGFILE_VER=1
+
+# we must set it here, since the logic pkgenables the selected libc
+SDECFGSET_LIBC=dietlibc
+SDECFGSET_DIETLIBC_DYN=1
+
+SDECFGSET_INIT='minit'
+
+SDECFGSET_OPT='size'
+
+SDECFGSET_CROSSBUILD=1
+SDECFGSET_DISABLE_NLS=1

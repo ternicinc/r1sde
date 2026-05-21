@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/groupuserfolder/groupuserfolder.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Zope Product that manages Groups of Users
+
+[T] GroupUserFolder is a kind of user folder that provides a special
+[T] kind of user management. Some users are "flagged" as GROUP and
+[T] then normal users will be able to belong to one or serveral groups.
+
+[U] http://ingeniweb.sourceforge.net/Products/GroupUserFolder/
+
+[A] Ingeniweb <support@ingeniweb.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[E] add zope
+
+[L] OpenSource
+
+[V] 3.3
+
+[D] d66ec4507506da1b4c6a77174196c5425f5f6e2ab368fc2712a3c0f2 GroupUserFolder-3.3.tar.gz https://download.sourceforge.net/collective/
+
+. $base/package/*/zope/zope-conf.in

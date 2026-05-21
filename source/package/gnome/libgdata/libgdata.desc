@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libgdata/libgdata.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome libgdata package
+
+[T] Core Gnome libgdata package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 0.18.1
+[P] X -----5---9 177.200
+
+[CV-URL] https://download.gnome.org/sources/libgdata/cache.json
+[D] 1511d1b15b9be724c25053022a0b3a93ce54be286deaa20d3f7e8a7f libgdata-0.18.1.tar.xz https://download.gnome.org/sources/libgdata/0.18/
+
+. $base/package/*/*/gnome-conf.in

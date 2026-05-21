@@ -1,0 +1,40 @@
+[TIMESTAMP] 1759918268 Wed Oct  8 12:11:08 2025
+[BUILDTIME] 200 (9)
+[SIZE] 39.14 MB, 1122 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gsm
+[DEP] gzip
+[DEP] jansson
+[DEP] libcap
+[DEP] libedit
+[DEP] libical
+[DEP] libogg
+[DEP] libvorbis
+[DEP] libxcrypt
+[DEP] libxml
+[DEP] libxslt
+[DEP] linux-header
+[DEP] lua
+[DEP] make
+[DEP] neon
+[DEP] net-snmp
+[DEP] openssl
+[DEP] portaudio
+[DEP] postgresql
+[DEP] sed
+[OPT] speex
+[DEP] speexdsp
+[DEP] sqlite
+[DEP] tar
+[DEP] unixodbc
+[DEP] uriparser
+[DEP] util-linux
+[DEP] zlib

@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/graphene/graphene.desc
+[COPY] Copyright (C) 2020 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A thin layer of types for graphic libraries
+
+[T] This library provides types and their relative API; it does not deal with
+[T] windowing system surfaces, drawing, scene graphs, or input.
+
+[U] https://github.com/ebassi/graphene
+
+[A] Emmanuele Bassi
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/gnome
+[F] CROSS NO-LTO.gcc
+
+[E] opt gobject-introspection
+
+[L] MIT
+[V] 1.10.8
+[P] X -----5---9 127.100
+
+[D] d4dea0eb11fbba073f09b4126edbe945a673a2ce10c5f7bb626bfb7b graphene-1.10.8.tar.gz https://github.com/ebassi/graphene/archive/1.10.8/
+
+. $base/package/*/*/gnome-conf.in

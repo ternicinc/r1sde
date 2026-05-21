@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/net-tools/compile.patch.dietlibc
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2004 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- net-tools-1.60/lib/fddi.c.vanilla	2005-02-06 17:24:42.114093992 +0100
++++ net-tools-1.60/lib/fddi.c	2005-02-06 17:26:39.740212104 +0100
+@@ -29,6 +29,7 @@
+ #if __GLIBC__ >= 2
+ #include <netinet/if_fddi.h>
+ #else
++#include <asm/types.h>
+ #include <linux/if_fddi.h>
+ #endif
+ #include <stdlib.h>

@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/srm/srm.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Secure file deletion for POSIX systems
+
+[T] srm is a secure replacement for rm(1).
+[T] Unlike the standard rm, it overwrites the data in the target files before unlinking them.
+[T] This prevents command-line recovery of the data by examining the raw block device.
+[T] It may also help frustrate physical examination of the disk,
+[T] although it's unlikely that it can completely prevent that type of recovery.
+[T] It is, essentially, a paper shredder for sensitive files.
+
+[U] https://srm.sourceforge.net
+
+[A] Matthew Gauthier
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+[F] CROSS
+
+[L] MIT
+[V] 1.2.15
+
+[D] e2f42e6c1f582ff51964edcc7b72f604feb3b0622912e08436790fed srm-1.2.15.tar.gz https://prdownloads.sourceforge.net/sourceforge/srm/

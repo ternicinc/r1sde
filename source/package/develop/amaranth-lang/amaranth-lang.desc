@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/amaranth-lang/amaranth-lang.desc
+[COPY] Copyright (C) 2018 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An toolchain for developing hardware based on synchronous digital logic
+
+[T] The Amaranth project provides an open-source toolchain for developing
+[T] hardware based on synchronous digital logic using the Python programming
+[T] language.
+
+[U] https://amaranth-lang.org/
+
+[A] Amaranth HDL contributors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] BSD
+[V] 0.5.8
+
+[D] ffe5fc7f4d2bb14a8ea8309ca8a4ff7ffa75a4b29677635a35044629 amaranth-lang-0.5.8.tar.gz https://github.com/amaranth-lang/amaranth/archive/refs/tags/v0.5.8/

@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/clamav/clamav.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An anti-virus utility for Unix
+
+[T] Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+[T] this software is the integration with mail servers (attachment
+[T] scanning). The package provides a flexible and scalable multi-threaded
+[T] daemon, a commandline scanner, and a tool for automatic updating via
+[T] Internet. The programs are based on a shared library distributed with
+[T] the Clam AntiVirus package, which you can use in your own software.
+
+[U] https://www.clamav.net/
+
+[A] Tomasz Kojm <zolw@konarski.edu.pl>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security extra/server
+[F] OBJDIR
+
+[L] GPL
+[V] 1.5.2
+
+[D] 1890693d0c6103d98cc2c3f87ee7a5db6116665cb1f7b79a31eeabb0 clamav-1.5.2.tar.gz https://www.clamav.net/downloads/production/
+
+cargoinstopt=
+var_append cmakeopt ' ' -DENABLE_MILTER=OFF
+var_append cmakeopt ' ' -DENABLE_JSON_SHARED=OFF

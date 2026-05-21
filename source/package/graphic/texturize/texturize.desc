@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/texturize/texturize.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Texturize plugin for GIMP
+
+[T] Texturize, is an image resampling plugin for GIMP, specially useful for the
+[T] creation of tileable textures, from small sample images, and to some extent
+[T] also capable of element replacing.
+
+[U] http://www.manucornet.net/Informatique/Texturize.php
+
+[A] Emmanuel Cornet <manu@manucornet.net>
+[A] Jean-Baptiste Rouquier <gimp.texturize@gmail.com>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 2.0
+
+[D] 3dfb4b79711c1e56582fd119c56512da804ccbbb672b235cd94d5b20 gimp-texturize-2.0.tgz https://prdownloads.sourceforge.net/sourceforge/gimp-texturize/
+
+. $base/package/*/*/gnome-conf.in

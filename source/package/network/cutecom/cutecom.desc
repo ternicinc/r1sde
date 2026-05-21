@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cutecom/cutecom.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A serial terminal program with a Qt GUI
+
+[T] CuteCom is a graphical serial terminal like minicom, but offering an
+[T] easy-to-use GUI. It is aimed mainly at hardware developers or other people
+[T] who need a terminal to talk to their devices. It is heavily inspired by
+[T] Bray++ for Windows.
+
+[U] https://cutecom.sourceforge.net
+
+[A] neundorf <neundorf@kde.org>
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 0.51.0
+
+[D] 86a7f858d18b2d8e3e1299f97b69f5e387b9f02d838079b12d8a955a cutecom-v0.51.0.tar.gz https://gitlab.com/cutecom/cutecom/-/archive/v0.51.0/

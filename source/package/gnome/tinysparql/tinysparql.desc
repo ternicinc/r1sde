@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/tinysparql/tinysparql.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Low-footprint RDF triple store library with SPARQL 1.1 interface
+
+[T] The TinySPARQL library offers a complete RDF triplestore with SPARQL 1.1
+[T] interface and a minimal footprint. It allows creating local databases in
+[T] memory or the filesystem, and accessing/creating endpoints for federated
+[T] queries. Formerly knows as Tracker, an efficient search engine and
+[T] triplestore for desktop, embedded and mobile.
+
+[U] https://tracker.gnome.org/
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 3.11.1
+[P] X -----5---9 185.500
+
+[CV-URL] https://download.gnome.org/sources/tinysparql/cache.json
+[D] 911a6fe1ce5a854557ba60cc0495b148c62e09e8c64db1d809b7bd29 tinysparql-3.11.1.tar.xz https://download.gnome.org/sources/tinysparql/3.11/
+
+. $base/package/*/*/gnome-conf.in
+pkginstalled systemd || var_append mesonopt ' ' -Dsystemd_user_services=false

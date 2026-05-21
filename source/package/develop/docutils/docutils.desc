@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/docutils/docutils.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Documentation Utilities
+
+[T] The purpose of the Docutils project is to create a set of tools for
+[T] processing plaintext documentation into useful formats, such as HTML,
+[T] XML, and LaTeX. Includes reStructuredText, the easy to read, easy to
+[T] use, what-you-see-is-what-you-get plaintext markup language.
+
+[U] https://docutils.sourceforge.net/
+
+[A] The Docutils Project
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[E] add python-flit-core
+
+[L] OpenSource
+[V] 0.22.4
+[P] X -----5---9 150.000
+
+[D] 8048dc666ad629a94baf5565af8c04662de75cb5b97bccf41a029d65 docutils-0.22.4.tar.gz https://files.pythonhosted.org/packages/source/d/docutils/

@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pure-ftpd/pure-ftpd.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A secure FTP daemon
+
+[T] Pure-FTPd is a free (BSD), secure, production-quality and standard-conformant FTP server.
+[T] It doesn't provide useless bells and whistles, but focuses on efficiency and ease of use.
+[T] It provides simple answers to common needs, plus unique useful features for personal
+[T] users as well as hosting providers.
+
+[U] http://www.pureftpd.org
+
+[A] Frank DENIS "Jedi/Sector One" <j@pureftpd.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] OpenSource
+[V] 1.0.54
+
+[D] ddfc0331b4b47d49894df79ff81463c0bdc2a0dde7d5a525c9ccc754 pure-ftpd-1.0.54.tar.gz https://download.pureftpd.org/pub/pure-ftpd/releases/
+
+[ $prefix_auto = 1 ] && prefix="opt/pureftpd" && set_confopt
+
+# checking for LDAP support
+if pkginstalled openldap; then
+	pkgprefix -t openldap
+	var_append confopt ' ' "--with-ldap=$root/$(pkgprefix openldap)"
+fi

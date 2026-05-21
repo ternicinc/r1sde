@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/entr/entr.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Run arbitrary commands when files change
+
+[T] A utility for running arbitrary commands when files change. Uses kqueue(2)
+[T] or inotify(7) to avoid polling entr was written to facilitate rapid
+[T] feedback on the command line.
+
+[U] https://eradman.com/entrproject
+
+[A] Eric Radman <ericshane@eradman.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell
+
+[L] ISC
+[V] 5.8
+
+[D] e3f909767dfee221a2f2fa38d896c6947af9073d6b6f075f9d369cd8 entr-5.8.tar.gz !https://github.com/eradman/entr/archive/refs/tags/5.8.tar.gz

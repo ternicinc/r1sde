@@ -1,0 +1,34 @@
+[TIMESTAMP] 1737675678 Fri Jan 24 00:41:18 2025
+[BUILDTIME] 6 (9)
+[SIZE] 0.45 MB, 30 files
+
+[DEP] bash
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] grep
+[DEP] harfbuzz
+[DEP] libjpeg
+[DEP] libpng
+[DEP] librsvg
+[DEP] libx11
+[DEP] libxext
+[DEP] libxft
+[DEP] libxinerama
+[DEP] libxmu
+[DEP] libxpm
+[DEP] libxrender
+[DEP] libxt
+[DEP] linux-header
+[DEP] make
+[DEP] pango
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto
+[DEP] xz

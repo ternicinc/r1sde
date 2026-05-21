@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-input-elographics/xf86-input-elographics.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Xorg driver for Elographics touchscreen devices
+
+[T] This driver supports E271-2210 and E271-2200 devices as well as partially
+[T] E281-2310 and compatible devices.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.4.4
+
+[D] 3d813ce02fce99d081561d5396c753f24c104d5ec19495c1b76aed0e xf86-input-elographics-1.4.4.tar.xz http://xorg.freedesktop.org/releases/individual/driver/
+
+. package/*/*/modular-x-conf.in

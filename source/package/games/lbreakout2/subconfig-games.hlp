@@ -1,0 +1,13 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/lbreakout2/subconfig-games.hlp
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+MENU_PKG_GAMES_LBREAKOUT2
+  Here you'll find options for LBreakout 2
+
+SDECFG_PKG_LBREAKOUT2_SOUND
+  Sound support
+
+SDECFG_PKG_LBREAKOUT2_NET
+  Network support

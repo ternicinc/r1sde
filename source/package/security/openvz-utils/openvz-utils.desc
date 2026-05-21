@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openvz-utils/openvz-utils.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Userspace tools for OpenVZ
+
+[T] The OpenVZ userspace tools allow to control OpenVZ including to set
+[T] quotas.
+
+[U] https://openvz.org/
+
+[A] SWsoft
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+
+[L] OpenSource
+
+[V] 3.0.23-3.0.12
+
+[SRC] .
+
+[D] 2297760852 vzctl-3.0.23.tar.bz2 http://download.openvz.org/utils/vzctl/3.0.23/src/
+[D] 2880020457 vzquota-3.0.12.tar.bz2 http://download.openvz.org/utils/vzquota/3.0.12/src/
+
+# this is an exception - don't to this in other non system packages!
+var_append flistroot ' ' vz

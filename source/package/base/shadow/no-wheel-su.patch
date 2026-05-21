@@ -1,0 +1,23 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/shadow/no-wheel-su.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+The now, enabled by default, wheel group is annoying for most users,
+we comment it out, experts can re-enable it.
+
+  - Rene Rebe <rene@exactcode.de>
+
+diff -urN shadow-4.0.14/etc/pam.d/su shadow-4.0.14-fixed/etc/pam.d/su
+--- shadow-4.0.14/etc/pam.d/su	2006-01-02 21:40:28.000000000 +0100
++++ shadow-4.0.14-fixed/etc/pam.d/su	2006-06-06 18:03:00.000000000 +0200
+@@ -3,7 +3,7 @@
+ # Uncomment the following line to implicitly trust users in the "wheel" group.
+ #auth		sufficient	pam_wheel.so trust use_uid
+ # Uncomment the following line to require a user to be in the "wheel" group.
+-auth		required	pam_wheel.so use_uid
++#auth		required	pam_wheel.so use_uid
+ auth		include		system-auth
+ account		include		system-auth
+ password	include		system-auth

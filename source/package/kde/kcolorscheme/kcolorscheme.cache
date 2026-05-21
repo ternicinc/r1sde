@@ -1,0 +1,25 @@
+[TIMESTAMP] 1765304099 Tue Dec  9 19:14:59 2025
+[BUILDTIME] 12 (9)
+[SIZE] 0.17 MB, 68 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] gzip
+[DEP] kconfig
+[DEP] kguiaddons
+[DEP] ki18n
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] procps
+[DEP] qt6base
+[DEP] sed
+[DEP] tar
+[DEP] vulkan-headers

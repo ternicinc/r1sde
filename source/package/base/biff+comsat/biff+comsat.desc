@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/biff+comsat/biff+comsat.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A mail checker client and the comsat mail checking server
+
+[T] This is biff+comsat for Linux, used for email notification.
+[T] These are part of the NetKit distribution, but can be downloaded
+[T] separately.
+
+[A] NetKit maintainers <netbug@ftp.uk.linux.org> {we are not the authors}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool extra/network
+
+[L] BSD
+[V] 0.17
+
+[D] d1b404620e5eb258e34474dfb40884b82e730981eec8b7d1102b79a4 biff+comsat-0.17.tar.gz ftp://ftp.uk.linux.org/pub/linux/Networking/netkit/
+
+confopt="--prefix=/$prefix"

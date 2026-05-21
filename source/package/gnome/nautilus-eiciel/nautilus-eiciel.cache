@@ -1,0 +1,35 @@
+[TIMESTAMP] 1756159785 Tue Aug 26 00:09:45 2025
+[BUILDTIME] 25 (9)
+[SIZE] 1.30 MB, 80 files
+
+[DEP] acl
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] cairomm
+[DEP] coreutils
+[DEP] diffutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[OPT] glib
+[DEP] glibmm
+[DEP] graphene
+[DEP] grep
+[DEP] gtk
+[DEP] gtkmm
+[DEP] harfbuzz
+[DEP] libsigc++
+[DEP] libxml
+[DEP] linux-header
+[DEP] meson
+[DEP] nautilus
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[DEP] pangomm
+[DEP] sed
+[DEP] tar
+[DEP] xz

@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lua-lanes/lua-lanes.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Multithreading in Lua
+
+[T] Lanes intends to provide 'the' a solution for running Lua multithreaded,
+[T] making maximum use of current multicore CPUs. The Lua level APIs are
+[T] simple and there's no C side messing involved.
+
+[U] https://github.com/LuaLanes/lanes
+
+[A] Asko Kauppi <askok@dnainternet.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+
+[L] MIT
+[V] 4.0.0
+
+[D] 27ef8702c02fce75c61d71a337d994f7b3db1e4b17b2d350998ce8c6 LuaLanes-v4.0.0.tar.gz https://github.com/LuaLanes/lanes/archive/v4.0.0/
+
+. $base/package/*/*/lua-conf.in
+var_append makeinstopt ' ' 'LUA_LIBDIR=$root$pkglibdir LUA_SHAREDIR=$root$pkgdatadir'

@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dsf2flac/dsf2flac.desc
+[COPY] Copyright (C) 2016 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Command line tool to convert dsd audio files to flac
+
+[T] A file conversion tool for translating dsf or dff dsd audio files into
+[T] flac pcm audio files.
+
+[U] https://github.com/hank/dsf2flac/
+
+[A] respective authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 24514e5
+
+[D] fa5661ca04cdd75183d8ea3f62dfbe938266d0248aeb71642321542a dsf2flac-24514e5.tar.gz https://github.com/hank/dsf2flac/archive/24514e5/
+
+autogen=1
+var_append GCC_WRAPPER_APPEND ' ' '-c?:-lz' # for libid3?

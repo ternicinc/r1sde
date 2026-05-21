@@ -1,0 +1,36 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/wxwidgets24/pango.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+diff -ur wxPythonSrc-2.4.2.4_orig/src/gtk/dcclient.cpp wxPythonSrc-2.4.2.4/src/gtk/dcclient.cpp
+--- wxPythonSrc-2.4.2.4_orig/src/gtk/dcclient.cpp	2003-04-19 22:22:59.000000000 +0200
++++ wxPythonSrc-2.4.2.4/src/gtk/dcclient.cpp	2005-09-11 02:30:52.000000000 +0200
+@@ -1774,9 +1774,9 @@
+    
+         if (m_owner)
+         {
+-            if (m_font.GetNoAntiAliasing())
+-                m_context = m_owner->GtkGetPangoX11Context();
+-            else
++            //if (m_font.GetNoAntiAliasing())
++            //    m_context = m_owner->GtkGetPangoX11Context();
++            //else
+                 m_context = m_owner->GtkGetPangoDefaultContext();
+         }
+     }
+diff -ur wxPythonSrc-2.4.2.4_orig/src/gtk/window.cpp wxPythonSrc-2.4.2.4/src/gtk/window.cpp
+--- wxPythonSrc-2.4.2.4_orig/src/gtk/window.cpp	2003-09-20 00:32:24.000000000 +0200
++++ wxPythonSrc-2.4.2.4/src/gtk/window.cpp	2005-09-11 02:32:45.000000000 +0200
+@@ -4015,10 +4015,7 @@
+ 
+ PangoContext *wxWindowGTK::GtkGetPangoX11Context()
+ {
+-    if (!m_x11Context)
+-        m_x11Context = pango_x_get_context( gdk_display );
+-
+-    return m_x11Context;
++    return gtk_widget_get_pango_context(m_widget);
+ }
+ #endif
+ 

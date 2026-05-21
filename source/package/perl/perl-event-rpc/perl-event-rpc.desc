@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-event-rpc/perl-event-rpc.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Event based transparent Client/Server RPC framework
+
+[T] Event::RPC supports you in developing Event based networking
+[T] client/server applications with transparent object/method access from
+[T] the client to the server. Network communication is optionally encrypted
+[T] using IO::Socket::SSL. Several event loop managers are supported due to
+[T] an extensible API. Currently Event and Glib are implemented.
+
+[A] Jorn Reder <joern@zyn.de>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 1.11
+[P] X -----5---9 176.000
+
+[D] 918e1a080451d5b6789b5d7e2f3698d140e7df737ad61972b175e8ef Event-RPC-1.11.tar.gz http://search.cpan.org/CPAN/authors/id/J/JR/JRED/

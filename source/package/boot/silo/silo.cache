@@ -1,0 +1,18 @@
+[TIMESTAMP] 1757784707 Sat Sep 13 19:31:47 2025
+[BUILDTIME] 3 (9)
+[SIZE] 0.37 MB, 23 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] e2fsprogs
+[DEP] elftoaout
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar

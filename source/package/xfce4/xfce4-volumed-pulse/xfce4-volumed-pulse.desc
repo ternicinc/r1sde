@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfce4-volumed-pulse/xfce4-volumed-pulse.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Volume manager for the Xfce Desktop Environment
+
+[T] Fork of xfce4-volumed with support for PulseAudio.
+
+[U] https://www.xfce.org/
+
+[A] Lionel Le Folgoc <lionel@lefolgoc.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/xfce
+
+[L] GPL
+[V] 0.3.0
+
+[D] b4063e231518fda5ac8cfdcc4f7670b8639ec25487b5eea105cf7032 xfce4-volumed-pulse-0.3.0.tar.xz https://archive.xfce.org/src/apps/xfce4-volumed-pulse/0.3/
+
+. $base/package/xfce4/*/xfce4-conf.in

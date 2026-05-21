@@ -1,0 +1,44 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/microblaze/package/*/hotfix-glibc2.18.patch
+# Copyright (C) 2011 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+Fix build w/ dietlibc, probably related to implicit glibc include hierarchy:
+
+extras/ata_id/ata_id.o: In function `disk_identify_fixup_uint16':
+ata_id.c:(.text+0xd1): undefined reference to `le16toh'
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- udev-147/src/ata_id/ata_id.c.vanilla	2011-01-05 19:15:42.000000000 +0100
++++ udev-147/src/ata_id/ata_id.c	2011-01-05 19:15:53.000000000 +0100
+@@ -39,6 +39,7 @@
+ #include <linux/hdreg.h>
+ #include <linux/fs.h>
+ #include <arpa/inet.h>
++#include <endian.h>
+ 
+ #include "libudev.h"
+ #include "libudev-private.h"
+--- udev-167/src/libudev-device-private.c.vanilla	2018-08-08 17:46:08.247860535 +0000
++++ udev-167/src/libudev-device-private.c	2018-08-08 17:46:34.963860133 +0000
+@@ -18,6 +18,7 @@
+ #include <fcntl.h>
+ #include <string.h>
+ #include <sys/stat.h>
++#include <sys/sysmacros.h>
+ 
+ #include "libudev.h"
+ #include "libudev-private.h"
+--- udev-167/src/libudev-private.h.vanilla	2018-08-08 17:48:01.711858828 +0000
++++ udev-167/src/libudev-private.h	2018-08-08 17:48:06.659858754 +0000
+@@ -16,6 +16,8 @@
+ #include <signal.h>
+ #include <stdint.h>
+ #include <stdbool.h>
++#include <sys/sysmacros.h>
++
+ #include "libudev.h"
+ 
+ #define ARRAY_SIZE(x) (sizeof(x) / sizeof((x)[0]))

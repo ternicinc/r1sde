@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kunitconversion/kunitconversion.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] KDE Frameworks addon for unit conversions
+
+[T] KUnitConversion provides functions to convert values in different physical
+[T] units. It supports converting different prefixes (e.g. kilo, mega, giga) as
+[T] well as converting between different unit systems (e.g. liters, gallons).
+
+[U] https://invent.kde.org/frameworks/kunitconversion
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 6.26.0
+[P] X -----5---9 162.800
+
+[CV-GROUP] kde-frameworks
+[D] cdd350ebe687eaefb16f8fc2632fc19e12fa979843155d53e2ce5e08 kunitconversion-6.26.0.tar.xz https://download.kde.org/stable/frameworks/6.26/
+
+. $base/package/*/*/kde-conf.in

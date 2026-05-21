@@ -1,0 +1,19 @@
+[TIMESTAMP] 1737675643 Fri Jan 24 00:40:43 2025
+[BUILDTIME] 2 (9)
+[SIZE] 0.32 MB, 42 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] glib
+[DEP] gobject-introspection
+[DEP] grep
+[DEP] gzip
+[DEP] libffi
+[DEP] linux-header
+[DEP] lua
+[DEP] make
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar

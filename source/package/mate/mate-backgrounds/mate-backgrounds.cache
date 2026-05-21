@@ -1,0 +1,18 @@
+[TIMESTAMP] 1737813022 Sat Jan 25 14:50:22 2025
+[BUILDTIME] 3 (9)
+[SIZE] 45.16 MB, 147 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[OPT] mate-desktop
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] sed
+[DEP] tar
+[DEP] xz

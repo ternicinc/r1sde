@@ -1,0 +1,45 @@
+[TIMESTAMP] 1744979592 Fri Apr 18 14:33:12 2025
+[BUILDTIME] 1650 (9)
+[SIZE] 99.67 MB, 6 files
+
+[OPT] a52dec
+[OPT] alsa-lib
+[OPT] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[OPT] cairo
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[OPT] faad
+[DEP] findutils
+[OPT] flac
+[OPT] freetype
+[OPT] fribidi
+[DEP] gawk
+[OPT] gdk-pixbuf
+[OPT] glib
+[DEP] grep
+[OPT] gtk+
+[OPT] harfbuzz
+[OPT] libgif
+[OPT] libjpeg
+[OPT] libmad
+[OPT] libmikmod
+[OPT] libmpcdec
+[OPT] libmpeg2
+[OPT] libogg
+[OPT] libpng
+[DEP] libsdl2
+[OPT] libtheora
+[OPT] libvorbis
+[OPT] libvpx
+[OPT] libx11
+[DEP] linux-header
+[DEP] make
+[OPT] pango
+[DEP] sed
+[DEP] tar
+[OPT] xorgproto
+[DEP] xz
+[DEP] zlib

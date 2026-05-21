@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/flowblade/flowblade.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Video Editor for Linux
+
+[T] With Flowblade Movie Editor you can compose movies from video clips, audio
+[T] clips and graphics files. Clips can be cut at the desired frames, filters
+[T] can be added to clips, and you can create multilayer composite images using
+[T] compositor objects.
+
+[U] https://github.com/jliljebl/flowblade/
+
+[A] Janne Liljebl <janne.liljeblad@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[E] add python-libusb1 mlt
+
+[L] GPL
+[V] 2.24.1
+
+[D] 7df85b95d61955e26375f83e2ba9d70de11d5f9fce81dd9f9a6bb179 flowblade-2.24.1.tar.gz https://github.com/jliljebl/flowblade/archive/refs/tags/v2.24.1/
+
+srcdir=flow*/flow*

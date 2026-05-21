@@ -1,0 +1,26 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/xfce4-terminal/default-transparent.patch
+# Copyright (C) 2024 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- xfce4-terminal-1.1.5/terminal/terminal-preferences.c.vanilla	2025-03-27 22:07:16.603328533 +0100
++++ xfce4-terminal-1.1.5/terminal/terminal-preferences.c	2025-03-27 22:07:57.076661863 +0100
+@@ -316,7 +316,7 @@
+                        NULL,
+                        "BackgroundMode",
+                        TERMINAL_TYPE_BACKGROUND,
+-                       TERMINAL_BACKGROUND_SOLID,
++                       TERMINAL_BACKGROUND_TRANSPARENT,
+                        G_PARAM_READWRITE | G_PARAM_STATIC_STRINGS);
+ 
+   /**
+@@ -352,7 +352,7 @@
+     g_param_spec_double ("background-darkness",
+                          NULL,
+                          "BackgroundDarkness",
+-                         0.0, 1.0, 0.5,
++                         0.0, 1.0, 0.666,
+                          G_PARAM_READWRITE | G_PARAM_STATIC_STRINGS);
+ 
+   /**

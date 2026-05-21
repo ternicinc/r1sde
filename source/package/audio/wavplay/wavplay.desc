@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/wavplay/wavplay.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A simple commandline wav file player
+
+[T] A simple commandline wav file player.
+
+[U] https://sourceforge.net/projects/wavplay/
+
+[A] Warren W. Gay <ve3wwg@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 2.0
+
+[D] adc212f0210b2a6318673f7b770f549d14053526d38f93ca77b9a083 wavplay-2.0.tar.gz https://download.sourceforge.net/project/wavplay/Release%20Downloads/
+
+var_append confopt ' ' --enable-nox

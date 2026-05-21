@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/plasma-integration/plasma-integration.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Qt Platform Theme integration plugins for the Plasma workspaces
+
+[T] Qt Platform Theme integration plugins for the Plasma workspaces.
+
+[U] https://www.kde.org
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 6.6.5
+
+[CV-GROUP] kde-plasma
+[D] f9dc9a96182016acdafd2f5401fdba21d1f5a175831d74217e232a47 plasma-integration-6.6.5.tar.xz https://download.kde.org/stable/plasma/6.6.5/
+
+. $base/package/*/*/kde-conf.in
+pkginstalled qt5base || var_append cmakeopt ' ' -DBUILD_QT5=OFF

@@ -1,0 +1,18 @@
+[TIMESTAMP] 1755074265 Wed Aug 13 10:37:45 2025
+[BUILDTIME] 3 (5)
+[SIZE] 40.78 MB, 976 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] mlt
+[DEP] openssl
+[DEP] python
+[DEP] python-libusb1
+[DEP] sed
+[DEP] setuptools
+[DEP] tar

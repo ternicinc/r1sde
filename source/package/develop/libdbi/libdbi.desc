@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libdbi/libdbi.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A database-independent abstraction layer written in C
+
+[T] Libdbi implements a database-independent abstraction layer in
+[T] C, similar to the DBI/DBD layer in Perl. Writing one generic
+[T] set of code, programmers can leverage the power of multiple
+[T] databases and multiple simultaneous database connections
+[T] by using this framework. The plugin architecture allows for
+[T] new database drivers to be easily added by a third party with
+[T] flexible licensing.
+
+[U] https://libdbi.sourceforge.net/
+
+[A] David Parker <david@neongoat.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+
+[L] GPL
+[V] 0.9.0
+[P] X -----5---9 200.000
+
+[D] d058731356b4903a119c45d62d084b196b929040544c154f68e8a1d9 libdbi-0.9.0.tar.gz https://prdownloads.sourceforge.net/sourceforge/libdbi/

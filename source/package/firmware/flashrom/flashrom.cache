@@ -1,0 +1,22 @@
+[TIMESTAMP] 1737811589 Sat Jan 25 14:26:29 2025
+[BUILDTIME] 10 (9)
+[SIZE] 3.86 MB, 13 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] cmocka
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] libftdi1
+[DEP] libusb
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pciutils
+[DEP] sed
+[DEP] tar
+[DEP] xz

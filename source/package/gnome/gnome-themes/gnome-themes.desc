@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-themes/gnome-themes.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome themes
+
+[T] Gnome themes
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/desktop/gnome
+[F] CROSS
+
+[L] GPL
+[V] 3.0.0
+
+[CV-URL] https://download.gnome.org/sources/gnome-themes/cache.json
+#@FIXME [D] 0 gnome-themes-extras
+[D] 1b1c13d545b60cf130abeeb1f7d6b05f5c4b2a4572bd633cce5ac824 gnome-themes-3.0.0.tar.bz2 https://download.gnome.org/sources/gnome-themes/3.0/
+
+. $base/package/*/*/gnome-conf.in

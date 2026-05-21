@@ -1,0 +1,21 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/microblaze/package/*/no-persistent-net.patch
+# Copyright (C) 2011 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+http://rene.rebe.de/2010-12-17/the-pita-that-is-udev/
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- udev-182/Makefile.in.vanilla	2020-02-15 16:03:41.633555318 +0000
++++ udev-182/Makefile.in	2020-02-15 16:06:17.861555318 +0000
+@@ -115,7 +115,7 @@
+ 
+ @ENABLE_RULE_GENERATOR_TRUE@am__append_27 = \
+ @ENABLE_RULE_GENERATOR_TRUE@	src/rule_generator/75-cd-aliases-generator.rules \
+-@ENABLE_RULE_GENERATOR_TRUE@	src/rule_generator/75-persistent-net-generator.rules
++#@ENABLE_RULE_GENERATOR_TRUE@	src/rule_generator/75-persistent-net-generator.rules
+ 
+ @ENABLE_FLOPPY_TRUE@am__append_28 = create_floppy_devices
+ @ENABLE_FLOPPY_TRUE@am__append_29 = src/floppy/60-floppy.rules

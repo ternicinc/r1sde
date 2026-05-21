@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sdl12-compat/sdl12-compat.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An SDL-1.2 compatibility layer that uses SDL 2.0 behind the scenes
+
+[T] This is the Simple DirectMedia Layer, a general API that provides low level
+[T] access to audio, keyboard, mouse, joystick, 3D hardware via OpenGL, and 2D
+[T] framebuffer across multiple platforms. This code is a compatibility layer; it
+[T] provides a binary and source compatible API for programs written against SDL
+[T] 1.2, but it uses SDL 2.0 behind the scenes. If you are writing new code, please
+[T] target SDL 2.0 directly and do not use this layer.
+
+[U] https://github.com/libsdl-org/sdl12-compat
+
+[A] Sam Lantinga <slouken@libsdl.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] ZLIB
+[V] 1.2.76
+
+[D] ef5b8be206f17dd44abe6b7149d7620c35b61a73b573d2f06aeb809e sdl12-compat-release-1.2.76.tar.gz https://github.com/libsdl-org/sdl12-compat/archive/release-1.2.76/
+
+var_append GCC_WRAPPER_APPEND ' ' "-I$root$(pkgprefix includedir glu)"

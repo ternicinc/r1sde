@@ -1,0 +1,24 @@
+[TIMESTAMP] 1739184083 Mon Feb 10 11:41:23 2025
+[BUILDTIME] 10 (5)
+[SIZE] 45.92 MB, 170 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bison
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] flex
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libtirpc
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] ncurses
+[DEP] readline
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] zlib

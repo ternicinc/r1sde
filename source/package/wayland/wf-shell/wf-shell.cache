@@ -1,0 +1,41 @@
+[TIMESTAMP] 1759925205 Wed Oct  8 14:06:45 2025
+[BUILDTIME] 45 (9)
+[SIZE] 7.05 MB, 33 files
+
+[DEP] alsa-lib
+[DEP] at-spi2-core
+[DEP] atkmm1
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] cairomm1
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] glibmm2
+[DEP] glm
+[DEP] grep
+[DEP] gtk+
+[DEP] gtk-layer-shell
+[DEP] gtkmm3
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] libdbusmenu
+[DEP] libsigc++2
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[DEP] pangomm1
+[DEP] pulseaudio
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] wayland
+[DEP] wf-config

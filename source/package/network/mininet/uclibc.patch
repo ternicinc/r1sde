@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/mininet/uclibc.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- mininet/host.c.vanilla	2007-01-19 10:41:31.000000000 +0000
++++ mininet/host.c	2007-01-19 10:42:30.000000000 +0000
+@@ -37,7 +37,9 @@
+ #include <uint32.h>
+ 
+ #undef dn_expand
++#if !defined (__UCLIBC__)
+ #undef res_query
++#endif
+ 
+ typedef struct { const char* name; unsigned short value; } rec;
+ 

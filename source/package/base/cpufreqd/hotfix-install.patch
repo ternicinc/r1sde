@@ -1,0 +1,19 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/cpufreqd/hotfix-install.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2004 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -Nur cpufreqd-2.1.1-orig/Makefile.in cpufreqd-2.1.1/Makefile.in
+--- cpufreqd-2.1.1-orig/Makefile.in	2006-06-22 17:43:52.000000000 +0000
++++ cpufreqd-2.1.1/Makefile.in	2006-06-23 12:22:58.000000000 +0000
+@@ -647,7 +647,7 @@
+ 	if [ -f $(DESTDIR)/$(sysconfdir)/cpufreqd.conf ]; then \
+ 	 echo "** preserving old configuration file **"; \
+ 	else \
+-	 install -Dm 0644 $(top_srcdir)/cpufreqd.conf $(DESTDIR)/$(sysconfdir)/cpufreqd.conf; \
++	 install -m 0644 $(top_srcdir)/cpufreqd.conf $(DESTDIR)/$(sysconfdir)/cpufreqd.conf; \
+ 	fi;
+ 
+ tags:

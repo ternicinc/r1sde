@@ -1,0 +1,73 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/poco/poco.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A collection of useful C++ class libraries
+
+[T] The POCO C++ Libraries are a collection of class libraries
+[T] for developing network-centric, portable applications in C++.
+[T] The classes integrate perfectly with the C++ Standard Library
+[T] and cover functionality like threads, thread synchronization,
+[T] filesystem access, streams, shared libraries and class loading,
+[T] sockets and network protocols (HTTP, FTP, SMTP, etc.), including
+[T] an HTTP server, as well as an XML parser with SAX2 and DOM
+[T] interfaces and SQL database access.
+
+[U] https://pocoproject.org
+
+[A] Guenter Obiltschnig <guenter [dot] obiltschnig [at] appinf [dot] com>
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/development
+[F] CROSS
+
+[L] OpenSource
+[V] 1.15.3
+
+[D] cbb9af503bcf61de0a1562265109d6788ddb6b94b56f8b5742765eeb poco-1.15.3-release.tar.gz https://github.com/pocoproject/poco/archive/refs/tags/
+
+# non-autotools configure script
+cleanconfopt=0
+
+poco_mysql() {
+	sed -e "s@^SYSLIBS.*@SYSLIBS += -Wl,-rpath,/$(pkgprefix libdir mysql)/mysql -lmysqlclient@" \
+	-e "s@^INCLUDE.*@INCLUDE += -I/$(pkgprefix includedir mysql)/mysql@" \
+	-i Data/MySQL/Makefile
+
+	sed -e "s@^SYSLIBS.*@SYSLIBS += -L/$(pkgprefix libdir mysql)/mysql -lmysqlclient@" \
+	-e "s@^INCLUDE.*@INCLUDE += -I./../include -I/$(pkgprefix includedir mysql)/mysql@" \
+	-i Data/MySQL/testsuite/Makefile
+}
+
+if pkginstalled unixodbc; then
+	var_append pocolibs ' ' "-L$(pkgprefix libdir unixodbc) -lodbc"
+else
+	var_append omit ',' Data/ODBC
+fi
+
+if pkginstalled mysql; then
+	var_append pocolibs ' ' "-L$(pkgprefix libdir mysql)/mysql -lmysqlclient_r"
+	hook_add preconf 5 poco_mysql
+else
+	var_append omit ',' Data/MySQL
+fi
+
+if pkginstalled openssl; then
+	var_append pocolibs ' ' '-lcrypto -lssl'
+else
+	var_append omit ',' 'NetSSL_OpenSSL,Crypto'
+fi
+
+# drop libs if requirements not met
+[ -n $omit ] && var_append confopt ' ' --omit=$omit
+
+if [ $SDECFG_LIBC == "uclibc" ]; then
+	#var_append confopt ' ' --config=GCCEMBEDLINUX
+	var_append confopt ' ' '--no-wstring --no-fpenvironment'
+	var_append confopt ' ' '--no-tests --no-samples'
+fi
+
+var_append makeopt ' ' 'SYSLIBS="$pocolibs -lpthread -ldl -lrt"'
+var_append makeopt ' ' TOOL=$arch_target

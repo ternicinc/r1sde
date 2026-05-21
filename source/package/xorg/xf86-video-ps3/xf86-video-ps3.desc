@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-video-ps3/xf86-video-ps3.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An accelerated X.org video driver for Sony's PlayStation 3 RSX
+
+[T] An accelerated X.org video driver for Sony's PlayStation 3 RSX. So far it
+[T] supports some EXA acceleration as well as XVideo.
+
+[U] https://code.google.com/p/ps3rsx/
+
+[A] Vivien Chappelier <vivien.chappelier@free.fr>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[R] + powerpc powerpc64
+[F] CROSS
+
+[L] OpenSource
+[V] 74a1894
+
+[D] 18cb12490f01a751fa3628857c520bf8d9d11ba90fac817c0047f832 xf86-video-ps3-74a1894.tar.zst git+https://github.com/rxrbln/xf86-video-ps3 74a1894
+
+. package/*/*/modular-x-conf.in
+autogen=1

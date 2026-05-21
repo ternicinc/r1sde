@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/javawm/javawm.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A new, small Java Virtual Machine conforming to the JVM specification
+
+[T] JamVM is a new Java Virtual Machine which conforms to the JVM
+[T] specification version 2 (blue book). In comparison to most other VM's
+[T] (free and commercial) it is extremely small, with a stripped executable
+[T] on PowerPC of only ~160K, and Intel 140K. However, unlike other small
+[T] VMs (e.g. KVM) it is designed to support the full specification, and
+[T] includes support for object finalisation, Soft/Weak/Phantom References,
+[T] class-unloading, the Java Native Interface (JNI) and the Reflection API.
+
+[U] https://jamvm.sourceforge.net/
+
+[A] Robert Lougher
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/emulator
+[F] CROSS
+
+[L] GPL
+[V] 1.4.5
+
+[D] 8afdc07b4d06d4a0655ae29258738dfeeafe82d17778653712c52337 jamvm-1.4.5.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/jamvm/
+
+. $base/package/*/*/java-common-conf.in

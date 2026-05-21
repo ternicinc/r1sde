@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-cgi-ajax/perl-cgi-ajax.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module CGI-Ajax
+
+[T] Perljax is a perl-specific system for writing AJAX- or
+[T] DHTML-based web applications.
+
+[U] https://search.cpan.org/~bct/CGI-Ajax/
+
+[A] Brian C. Thomas <bct@cpan.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] Artistic GPL
+[V] 0.707
+[P] X -----5---9 200.105
+
+[D] 8aba93dd80847800c19cf971b2c39bf228183936d3e01ac4ab2d42dc CGI-Ajax-0.707.tar.gz https://cpan.metacpan.org/authors/id/B/BP/BPEDERSE/

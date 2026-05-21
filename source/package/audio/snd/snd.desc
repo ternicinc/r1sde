@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/snd/snd.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A sound editor
+
+[T] Snd is a sound editor modelled loosely after Emacs. It can accommodate any
+[T] number of sounds, each with any number of channels. It can be customized
+[T] and extended using Guile, Ruby, or Forth.
+
+[U] https://snd.sourceforge.net
+
+[A] Bill Schottstaedt <bil@ccrma.stanford.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[E] opt fftw3
+
+[L] GPL
+[V] 26.4
+
+[D] 087b1a484c0af893ca0748adb52804dda842c8ba04cc736d35f3f698 snd-26.4.tar.gz https://download.sourceforge.net/project/snd/snd/26.4/

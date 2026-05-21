@@ -1,0 +1,15 @@
+[TIMESTAMP] 1737923652 Sun Jan 26 21:34:12 2025
+[BUILDTIME] 2 (9)
+[SIZE] 0.36 MB, 7 files
+
+[OPT] arts
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[OPT] mplayer
+[DEP] sed
+[DEP] tar
+[OPT] xine-lib

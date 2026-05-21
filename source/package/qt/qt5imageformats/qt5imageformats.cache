@@ -1,0 +1,25 @@
+
+[TIMESTAMP] 1718835647 Thu Jun 20 00:20:47 2024
+[BUILDTIME] 8 (9)
+[SIZE] 0.25 MB, 20 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[OPT] jasper
+[DEP] libjpeg
+[DEP] libmng
+[DEP] libtiff
+[OPT] libwebp
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] qt5base
+[DEP] sed
+[DEP] tar
+[DEP] xz
+[DEP] zlib

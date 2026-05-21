@@ -1,0 +1,9 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/openjdk/config.in
+# Copyright (C) 2024 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+[ "$SDECFG_ARM_ENDIANESS" = eb -o "$SDECFG_MIPS64_N32" = 1 -o \
+  "$SDECFG_SPARC64_32BIT" = 1 ] &&
+	pkgremove openjdk

@@ -1,0 +1,9 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/python2/parse-config
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+# Filter out the access of the module registration files. We could force it to
+# just python instances via \.python\. - but just the ext should be fine.
+var_append flistrfilter '|' '.*:	.*\.(pth|egg)'

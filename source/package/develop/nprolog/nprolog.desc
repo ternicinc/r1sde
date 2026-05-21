@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/nprolog/nprolog.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Interpreter and compiler to be compatible with ARITY/PROLOG
+
+[T] N-Prolog(NPL) is an interpreter and compiler to be superset of
+[T] ARITY/PROLOG(MS-DOS). N-Prolog is NOT ISO-Prolog. Compatible with
+[T] ARITY/PROLOG(MS-DOS).
+
+[U] https://github.com/sasagawa888/nprolog
+
+[A] Kenichi Sasagawa
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] BSD
+[V] 5.18
+
+[D] 07e97e661af3b9ba8875b0519047d6b096c8f51b45cc9e54eb3ac358 nprolog-5.18.tar.gz https://github.com/sasagawa888/nprolog/archive/refs/tags/v5.18/

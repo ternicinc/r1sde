@@ -1,0 +1,31 @@
+
+[TIMESTAMP] 1718835702 Thu Jun 20 00:21:42 2024
+[BUILDTIME] 165 (9)
+[SIZE] 3.63 MB, 366 files
+
+[DEP] 00-dirtree
+[DEP] alsa-lib
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] gst-plugins-base
+[DEP] gstreamer
+[DEP] libglvnd
+[DEP] libx11
+[DEP] libxcb
+[DEP] linux-header
+[DEP] make
+[DEP] openal
+[DEP] perl
+[DEP] pkgconfig
+[DEP] pulseaudio
+[DEP] qt5base
+[DEP] qt5declarative
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto
+[DEP] xz

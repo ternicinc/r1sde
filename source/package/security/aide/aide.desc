@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/aide/aide.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Free replacement for Tripwire(tm)
+
+[T] AIDE (Advanced Intrusion Detection Environment) is a free replacement for
+[T] Tripwire(tm). It generates a database that can be used to check the
+[T] integrity of files on server. It uses regular expressions for determining
+[T] which files get added to the database. You can use several message digest
+[T] algorithms to ensure that the files have not been tampered with.
+
+[U] https://aide.github.io/
+
+[A] Rami Lehti <rammer@cs.tut.fi>
+[A] Pablo Virolainen <pablo@cs.tut.fi>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+
+[L] GPL
+[V] 0.19.3
+
+[D] f4ba3afbf2d810b8e51aaecc5d08a5b8d3c7a624fb7b2b1493d18f8c aide-0.19.3.tar.gz https://github.com/aide/aide/releases/download/v0.19.3/

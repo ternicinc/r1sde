@@ -1,0 +1,30 @@
+[TIMESTAMP] 1758197613 Thu Sep 18 14:13:33 2025
+[BUILDTIME] 200 (9)
+[SIZE] 14.30 MB, 40 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[DEP] glib
+[DEP] grep
+[DEP] libmpeg2
+[DEP] libpng
+[DEP] libsdl2
+[DEP] libx11
+[DEP] libxext
+[DEP] libxfixes
+[DEP] libxi
+[DEP] linux-header
+[DEP] make
+[DEP] openal
+[DEP] sed
+[DEP] shared-mime-info
+[DEP] tar
+[DEP] xorgproto
+[DEP] xz
+[DEP] zip
+[DEP] zlib

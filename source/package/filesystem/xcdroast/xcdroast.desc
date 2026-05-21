@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xcdroast/xcdroast.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A cdrecord GUI
+
+[T] X-CD-Roast tries to be the most flexible CD-burning software ever. It
+[T] allows even the unexperienced user to create or copy a CD with a few
+[T] mouse clicks in a intuitive and nice looking graphical user interface.
+
+[U] http://www.xcdroast.org
+
+[A] Thomas Niederreiter <tn@fh-muenchen.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+[F] CROSS
+
+[L] GPL
+[V] 1.19
+
+[D] e76f1f4ec07f6f227381b21eb74a478d109545f7786e94aadf8fdad9 xcdroast-1.19.tar.gz https://download.sourceforge.net/project/xcdroast/

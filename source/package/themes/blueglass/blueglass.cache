@@ -1,0 +1,15 @@
+
+[TIMESTAMP] 1690845144 Tue Aug  1 01:12:24 2023
+[BUILDTIME] 0 (9)
+[SIZE] 4.14 MB, 55 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

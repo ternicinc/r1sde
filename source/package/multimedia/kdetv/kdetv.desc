@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kdetv/kdetv.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] TV-Application for KDE
+
+[T] KdeTV is formerly known as kwintv and qtvision
+[T] KdeTV enables you to watch TV on your Desktop
+
+[U] https://www.kdetv.org
+[A] George Staikos <staikos@kde.org>
+
+[M] Tobias Schmidt <tschmidt@stradego.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 0.8.9
+
+[D] ef459424f93041bfd5e171d99d4e00dbc34712f55c0a843f1c033907 kdetv-0.8.9.tar.bz2 http://dziegel.free.fr/releases/
+
+. $base/package/*/*/kde-conf.in

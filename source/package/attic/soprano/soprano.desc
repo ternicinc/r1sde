@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/soprano/soprano.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library which provides a nice QT interface to RDF storage solutions
+
+[T] Soprano is a library which provides a QT wrapper API to different RDF storage solutions. It
+[T] features named graphs (contexts) and has a modular plug-in structure which allows to use RDF
+[T] backends implemented with different RDF Storage.
+
+[U] https://sourceforge.net/projects/soprano/
+
+[A] Daniele Galdi <daniele.galdi@gmail.com>
+[A] Sebastian Trueg <trueg@kde.org>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/development
+
+[L] GPL
+[V] 2.9.4
+[P] X -----5---9 128.800
+
+[D] e16db196a958184eaf2514a880382bb12bb8e76e00af46b6e9250ee3 soprano-2.9.4.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/soprano/
+
+. $base/package/*/*/kde-conf.in NO_SANITY_CHECK
+var_append cmakeopt ' ' -DCMAKE_POLICY_VERSION_MINIMUM=3.5

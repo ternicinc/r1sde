@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/iso-codes/iso-codes.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] ISO-639 and 3166 code lists and gettext translations
+
+[T] This package provides the ISO-639 Language code list, the ISO-3166
+[T] Territory code list, and ISO-3166-2 sub-territory lists, and all their
+[T] translations in gettext .po form.
+
+[U] http://alioth.debian.org/projects/pkg-isocodes/
+
+[A] Alastair McKinstry <mckinstry@debian.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] LGPL
+[V] 4.20.1
+[P] X -----5---9 150.000
+
+[D] ca04ed65eb542de2cf669cef2231d929bd9be425d3955f602b4061f4 iso-codes-v4.20.1.tar.bz2 https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.20.1/

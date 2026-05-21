@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pdftk/pdftk.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A handy tool for manipulating PDF
+
+[T] Pdftk is a simple tool for doing everyday things with PDF documents. It
+[T] is able to: merge PDF documents, split PDF pages into a new document,
+[T] decrypt input as necessary (password required), encrypt output as desired,
+[T] fill PDF forms with FDF data and/or flatten forms, apply a background
+[T] watermark, Report on PDF metrics such as metadata, bookmarks, and page
+[T] labels, update PDF metadata, attach files to PDF pages or the PDF document,
+[T] unpack PDF attachments, burst a PDF Document into single pages,
+[T] uncompress and re-compress page streams and repair corrupted PDF (where
+[T] possible).
+
+[U] http://www.pdfhacks.com/pdftk/
+
+[A] Sid Steward
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/printing
+
+[L] OpenSource
+[V] 3.3.3
+
+[D] 30cd5aaf95f99b45217689803cad01cbaba0e3a315f758a710dbb960 pdftk-v3.3.3.tar.bz2 https://gitlab.com/pdftk-java/pdftk/-/archive/v3.3.3/

@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/midish/midish.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An open-source MIDI sequencer/filter
+
+[T] Midish is an open-source MIDI sequencer/filter for Unix-like operating
+[T] systems. Implemented as a simple command-line interpreter (like a shell)
+[T] it's intended to be lightweight, fast and reliable for real-time
+[T] performance.
+
+[U] https://www.midish.org/
+
+[A] Alexandre Ratchov <alex@caoua.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] BSD
+[V] 1.4.1
+
+[CV-URL] http://www.midish.org/
+[CV-FLAGS] ODD_STABLE
+[D] b30764e80dca35b1447bc26d4b9fe9e3225d4fa09713ab60e8372c97 midish-1.4.1.tar.gz http://www.midish.org/
+
+cleanconfopt=0 confopt="--prefix=/$prefix"

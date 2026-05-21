@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libgtkhtml/libgtkhtml.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A HTML engine for GNOME
+
+[T] This is libGtkHTML, a lightweight HTML rendering/printing/editing engine.
+[T] It was originally based on KHTMLW, but is now being developed
+[T] independently of it.
+[T] A library containing functionality to display and edit? html formated
+[T] text. - It comes in the form of a gtk widget.
+[T]
+[T] It is used by Encompass, Evolution, Balsa, Helpsurfer ...
+[T]
+[T] This is an independantly updated version for Helpsurfer, but works as is
+[T] for the other packages. (http://lightofdawn.org/blog/?viewDetailed=00142)
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] scsijon
+
+[C] extra/development extra/desktop/gnome
+[F] CROSS
+
+[L] GPL
+[V] 2.12
+[P] X -----5---9 146.900
+
+[CV-URL] https://download.gnome.org/sources/libgtkhtml/cache.json
+[D] 8b51abd9fa8d6020a2e4980c97a9a52f31c60af9c3c19c3412c78442 libgtkhtml-2.12.tar.gz http://distro.ibiblio.org/easyos/source/alphabetical/l/
+
+. $base/package/*/*/gnome-conf.in

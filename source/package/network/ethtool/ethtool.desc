@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ethtool/ethtool.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Display or change ethernet card settings
+
+[T] Ethtool is used for querying settings of an ethernet device and
+[T] changing them.
+
+[U] https://www.kernel.org/pub/software/network/ethtool/
+
+[A] David Miller <davem@redhat.com>
+[A] Jakub Jelinek <jj@ultra.linux.cz>
+[A] Jeff Garzik <jgarzik@mandrakesoft.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS NO-PIE.superh
+
+[L] GPL
+[V] 7.0
+
+[D] b459baf635e470556b0020673546ffde66e1712cd9f64b2db4f167bc ethtool-7.0.tar.xz https://www.kernel.org/pub/software/network/ethtool/

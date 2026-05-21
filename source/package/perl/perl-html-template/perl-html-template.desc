@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-html-template/perl-html-template.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module to use HTML Templates from CGI scripts
+
+[T] Perl module to use HTML Templates from CGI scripts
+
+[U] https://search.cpan.org/dist/HTML-Template/
+
+[A] Sam Tregar <sam@tregar.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 2.97
+[P] X -----5---9 780.000
+
+[D] 83594a6c58d813ce5530f787c5422f65e869ed1158cb6b48cf9ee290 HTML-Template-2.97.tar.gz http://search.cpan.org/CPAN/authors/id/S/SA/SAMTREGAR/

@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pdfcube/pdfcube.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A way to display your PDF presentation on a rotating OpenGL cube
+
+[T] PDF Cube is an OpenGL PDF viewer that adds a compiz/Keynote-like
+[T] spinning cube effect to your PDF presentations (including beamer and
+[T] prosper ones). As a bonus, you can zoom on 5 predefined areas of any
+[T] presentation page with a smooth zooming effect.
+
+[U] http://code.100allora.it/pdfcube/
+
+[A] Mirko <mirko.maischberger@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 0.0.5
+
+[D] 606956207bbbfa2115b04f8f30d79c79fe54a7724c3f7ba529064ced pdfcube-0.0.5.zip !https://github.com/baol/pdfcube/archive/5784b234e49c50ffc136623cd1467b34ad9d2053.zip
+
+hook_add preconf 5 'autoreconf -fi'

@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/epson-alc1100/epson-alc1100.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Rasterizer for Epson AcuLaser C1100
+
+[T] This package includes the PPD file needed by the Linux print filter
+[T] for printing to EPSON AL-C1100 printers on systems that use the Common
+[T] UNIX Printing System (CUPS) as their printing system.
+
+[U] http://www.avasys.jp/english/linux_e/dl_laser.html
+
+[A] EPSON KOWA Corporation Linux Driver Team
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/printing
+
+[L] Free-to-use
+[V] 1.0
+
+[R] + x86
+[F] BINARY
+
+[E] add libstdc++-v3
+
+[D] e75583f6b42a76441fe715bf14d32a04e47e716f5ac80818ff22208b Epson-ALC1100-filter-1.0.tar.gz http://lx1.avasys.jp/lpf/alc1100/

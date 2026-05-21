@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perf/perf.desc
+[COPY] Copyright (C) 2021 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Linux kernel kernel perf tool
+
+[T] This package contains the Linux kernel perf profiling tool
+
+[U] https://perf.wiki.kernel.org/index.php/Main_Page
+
+[A] Linus Torvalds <torvalds@osdl.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS NO-LTO.gcc
+
+[E] opt asciidoc
+[E] opt docbook-xml docbook-xsl
+[E] opt dwarves
+[E] opt numactl
+[E] opt systemtap
+[E] opt xmlto
+
+[L] GPL
+[V] 6.19.14
+
+# https://cdn.kernel.org/pub/linux/kernel/tools/perf/
+[D] a778bb689d09b8535eb2c8d2cec5d20eea381378b3bde9a24988b28e linux-6.19.14.tar.xz https://www.kernel.org/pub/linux/kernel/v6.x/
+
+srcdir="linux-*/tools/perf"
+makeopt=

@@ -1,0 +1,217 @@
+#!/usr/bin/env bash
+# t2/scripts/Create-CopyPatch
+# Copyright (C) 2004 - 2025 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+tmpfile=`mktemp`
+copynote=$tmpfile.note
+copynotepatch=$tmpfile.patch
+rocknote=$tmpfile.rock
+oldfile=$tmpfile.old
+newfile=$tmpfile.new
+
+cat << EOT > $copynote
+t2/@@FILENAME@@
+@@COPYRIGHT@@
+EOT
+
+cp $copynote $copynotepatch
+
+cat << EOT >> $copynote
+SPDX-License-Identifier: GPL-2.0
+EOT
+
+cat << EOT >> $copynotepatch
+SPDX-License-Identifier: GPL-2.0 or patched project license
+EOT
+
+echo "Creating copy.patch ..." >&2
+
+usesvn=
+if [ "$1" = "-svn" ]; then
+	usesvn=1; shift
+fi
+
+if [ $# = 0 ]; then
+    set architecture misc package scripts target
+else
+    # check if file or package name was given
+    files=
+    for i; do
+	if [ -f $i -o -d $i ]; then
+	    files="$files ${i#./}"
+	elif [ -d package/*/$i ]; then
+	    for each in `echo package/*/$i`; do
+		[[ $each = *~ ]] && continue
+		files="$files $each/."
+	    done
+	else
+	    echo Cannot find \'$i\', ignoring. 1>&2
+	fi
+    done
+    set -- $files
+    [ $# = 0 ] && exit
+fi
+
+bash scripts/xfind.sh $* -type f ! -name "*~" ! -name Create-CopyPatch | sed 's,/\./,/,g' |
+while read filename; do
+	# determine the comment mode first
+	mode=none
+	case "$filename" in
+		*.cache) mode=skip	;;
+		*/Makefile|*.sh|*.pl|*.in|*.hlp|*.desc|*.conf) mode=sh ;;
+		*.cron|*.postinstall|*.init) mode=sh ;;
+		*.h|*.c|*.cc|*.cpp|*.lex|*.y|*.spec|*.tcx|*.tmpl|*.tcc) mode=c ;;
+		*.lua) mode=lua ;;
+		*scripts/[A-Z][a-z-]*|*/parse-config*) mode=sh ;;
+		*patch|*diff|*patch.*) mode=sh ;;
+		*m4) mode=m4 ;;
+	esac
+
+	#echo "Mode type: $mode"
+
+	grep -q -- '--- NO-\(T2\|ROCK\)-COPYRIGHT.* ---' "$filename" && continue
+
+	case "$mode" in
+		skip)	continue ;;
+		none)
+			if head -n 1 "$filename" | grep -q '^#!'; then
+				mode=sh
+			else
+				case "`sed -n 's/^ *\([^ ]\+\) .*COPYRIGHT-.*BEGIN .*/\1/p' "$filename"`" in
+					"#") mode=sh ;;
+					"*") mode=c ;;
+				esac
+			fi
+
+			if [ "$mode" == none ]; then
+				echo "Unknown type for $filename" 1>&2
+				continue
+			fi
+	esac
+
+	# make a copy in the case we have no matching conditional below
+	sed 's,\(ROCK\|T2\)-COPYRIGHT-NOTE,T2-COPYRIGHT,g' "$filename" > "$oldfile"
+
+	tag=$(sed -n -e '/^\(.*\)--- T2-COPYRIGHT-.*BEGIN ---.*/{s//\1/;p;q;}' "$oldfile")
+	#[ "$tag" = "[COPY] " ] && tag="# "
+	thisyear=`date +%Y`
+
+	if [ -n "$tag" ]; then
+		# has a note, catch copyrights
+		oldcopyright=`sed -e '/--- T2-COPYRIGHT-.*BEGIN ---/,/--- T2-COPYRIGHT-.*END ---/!d' \
+		 	-e '/.*\(Copyright (C) .*\)/!d;s//\1/;' \
+			-e 's/Clifford Wolf/ROCK Linux Project/' \
+			$oldfile`
+	else
+		oldcopyright=
+	fi
+
+	if echo "$oldcopyright" | grep -q 'T2 SDE'; then
+		# if has T2 copyright, renew if necesary
+		since=$(echo "$oldcopyright" | sed -n -e 's,.* (C) \([^ ]*\) .*T2 SDE.*,\1,p')
+
+		if [ $since -lt $thisyear ]; then
+			copyright=`echo "$oldcopyright" | sed -e \
+			"s,.*T2 SDE.*,Copyright (C) $since - $thisyear The T2 SDE Project,"`
+		else
+			copyright="$oldcopyright"
+		fi
+	else
+		# else, add one...
+		if [ "$usesvn" = 1 ]; then
+			since=`TZ=UTC svn log -q "$filename" 2> /dev/null |
+				grep -a '^r' | tail -n 1 | cut -d'|' -f3 | cut -c2-5`
+			
+			# but until 2003 we were ROCK Linux, so
+			if [ ${since:-2004} -lt 2004 ]; then
+				oldcopyright="Copyright (C) $since - 2003 ROCK Linux Project"
+				since=2004
+			fi
+		else
+			since=$thisyear
+		fi
+
+		# prepare a copyright tag
+		if [ ${since:-1} -lt $thisyear ]; then
+			copyright="Copyright (C) ${since:-ESVNTO} - $thisyear The T2 SDE Project"
+		else
+			copyright="Copyright (C) $thisyear The T2 SDE Project"
+		fi
+		copyright="$copyright${oldcopyright:+\\n$oldcopyright}"
+	fi
+
+	action='i'
+	pretag= posttag=
+	if [ -z "$tag" ]; then
+		# doesn't have a note
+		if head -n 1 "$filename" | grep -a -q '^#!'; then
+			action='a'
+		fi
+		case "$mode" in
+			sh)
+				tag="# "
+				;;
+			c)
+				pretag='/*' posttag=' */'
+				tag=' * '
+				;;
+			m4)
+				tag="dnl "
+				;;
+			lua)
+				tag="-- "
+				;;
+		esac
+
+		# insert one
+		sed -i "1 $action\\
+${pretag:+$pretag\\
+}$tag--- T2-COPYRIGHT-BEGIN ---\\
+$tag--- T2-COPYRIGHT-END ---\\
+${posttag:+$posttag\\
+}" $oldfile
+	fi
+
+	mangled_filename=`echo "$filename" |
+		sed 's,package/\([^/]*\)/\(.*\),package/*/\2,'`
+
+	#echo BEFORE
+	#cat $oldfile
+
+	if [ "$tag" ]; then
+	    # implant T2 copy note
+	    {
+		grep -a -B 1000000 -- '--- T2-COPYRIGHT-.*BEGIN ---' $oldfile
+		{
+		if [ "$filename" != "${filename%/*.diff}" -o \
+		     "$filename" != "${filename%/*.patch}" -o \
+		     "$filename" != "${filename%/*.patch.*}" ]; then
+			sed -e "s,@@FILENAME@@,$mangled_filename,; \
+				s,@@COPYRIGHT@@,${copyright//
+/\\n},;"  $copynotepatch
+		else
+			sed -e "s,@@FILENAME@@,$mangled_filename,; \
+				s,@@COPYRIGHT@@,${copyright//
+/\\n},;"  $copynote
+		fi
+		# we need a separated sed call because $rockcopyright adds a new line
+		} | sed -e "s,^,$tag,"
+
+		grep -a -A 1000000 -- '--- T2-COPYRIGHT-.*END ---' $oldfile
+	    } > $newfile
+
+	    # create the difference
+	    if ! cmp -s $oldfile $newfile; then
+		echo "Creating patch for $filename." >&2
+		diff -ua "./$filename" $newfile |
+			sed -e "2 s,$newfile,./$filename,"
+	    fi
+	else
+		echo "WARNING: No Copyright tags in $filename found!" >&2
+	fi
+done
+
+rm -f $tmpfile{,.note,.patch,.rock,.old,.new}

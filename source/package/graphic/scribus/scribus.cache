@@ -1,0 +1,47 @@
+
+[TIMESTAMP] 1718835337 Thu Jun 20 00:15:37 2024
+[BUILDTIME] 1150 (9)
+[SIZE] 134.90 MB, 3666 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] boost
+[DEP] cairo
+[DEP] cmake
+[DEP] coreutils
+[DEP] cups
+[DEP] diffutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] grep
+[DEP] harfbuzz
+[DEP] hunspell
+[DEP] icu4c
+[DEP] lcms2
+[DEP] libcdr
+[DEP] libfreehand
+[DEP] libglvnd
+[DEP] libjpeg
+[DEP] libmspub
+[DEP] libpng
+[DEP] librevenge
+[DEP] libtiff
+[DEP] libx11
+[DEP] libxml
+[DEP] libzmf
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] podofo
+[DEP] poppler
+[DEP] python
+[DEP] qt6base
+[DEP] qt6tools
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto
+[DEP] xz
+[DEP] zlib

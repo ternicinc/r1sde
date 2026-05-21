@@ -1,0 +1,26 @@
+
+[TIMESTAMP] 1698920418 Thu Nov  2 11:20:18 2023
+[BUILDTIME] 4 (9)
+[SIZE] 0.19 MB, 6 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] libdrm
+[DEP] libpciaccess
+[DEP] libxfont2
+[DEP] linux-header
+[DEP] make
+[DEP] pixman
+[DEP] sed
+[DEP] spice-protocol
+[DEP] tar
+[DEP] udev
+[DEP] xorg-server
+[DEP] xorgproto
+[DEP] xz

@@ -1,0 +1,48 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/claws-mail/claws-mail.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A lightweight mail client and news reader
+
+[T] Claws Mail is an e-mail client (and news reader), based on
+[T] GTK+, aiming for Quick response Graceful, and sophisticated
+[T] interface, Easy configuration, intuitive operation Abundant
+[T] features. The appearance and interface are similar to some
+[T] popular e-mail clients for Windows, such as Outlook Express,
+[T] Becky!, and Datula. The interface is also designed to emulate
+[T] the mailers on Emacsen, and almost all commands are accessible
+[T] with the keyboard.
+
+[U] https://www.claws-mail.org/
+
+[A] The Claws Mail Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office
+
+[L] GPL
+[V] 4.4.0
+[P] X -----5---9 174.000
+
+[D] ea087b862e669bdec23186cacaa921d1c21027cdb8e5bb267a39038a claws-mail-4.4.0.tar.xz https://www.claws-mail.org/download.php?file=releases/
+
+. $base/package/*/*/gnome-conf.in
+
+if pkginstalled openldap; then
+	pkgprefix -t openldap
+	LDAPLIBS="$root/$(pkgprefix libdir openldap)"
+	LDAPINCS="$root/$(pkgprefix includedir openldap)"
+
+	var_append GCC_WRAPPER_APPEND ' ' -I$LDAPINCS
+	var_append GCC_WRAPPER_APPEND ' ' -L$LDAPLIBS
+
+	var_append CPP_WRAPPER_APPEND ' ' -I$LDAPINCS
+	var_append CPP_WRAPPER_APPEND ' ' -L$LDAPLIBS
+fi
+
+if pkginstalled clamav; then
+	pkgprefix -t clamav
+	var_append GCC_WRAPPER_APPEND ' ' "`pkg-config libclamav --cflags`"
+fi

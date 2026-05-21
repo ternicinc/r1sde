@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/hp2xx/hp2xx.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] HP-GL converter and viewer
+
+[T] Hp2xx is a versatile tool to convert vector-oriented graphics data
+[T] given in Hewlett-Packard's HP-GL (HPGL) plotter language into a
+[T] variety of popular both vector- and raster-oriented graphics
+[T] formats. The various supported output formats include Encapsulated
+[T] PostScript (EPS), PCX, IMG, and several formats intended to
+[T] facilitate the generation of graphics within TeX documents. In
+[T] addition, hp2xx output is printable on the HP Laserjet/Deskjet
+[T] printer series, and it may be used as a HP-GL previewer on many
+[T] platforms, e.g. X11 and DOS (VGA).
+
+[U] https://www.gnu.org/software/hp2xx/
+
+[A] MKroeker <mk@daveg.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+[F] CROSS
+
+[L] GPL
+[V] 3.4.4
+
+[D] 192522c8b3d910586051c5d5882f45f09d0cece132e0db0ae2279ec0 hp2xx-3.4.4.tar.gz http://ftp.gnu.org/gnu/hp2xx/

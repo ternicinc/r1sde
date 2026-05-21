@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/glark/glark.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A grep-like tool for searching text files
+
+[T] Glark offers grep-like searching of text files, with very
+[T] powerful, complex regular expressions. It also highlights the
+[T] matches, displays context (preceding and succeeding lines),
+[T] does case-insensitive matches, and automatic exclusion of non-text
+[T] files. It supports most options from the GNU version of grep.
+
+[U] http://www.incava.org/projects/glark
+
+[A] Jeff Pace <jpace@incava.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+
+[L] GPL
+[V] 1.10.5
+
+[D] 426b0576397bcede91c58f7a62da41131593d02dd342af6ae907eef5 glark-1.10.5.tar.gz https://github.com/jpace/glark/archive/refs/tags/v1.10.5/

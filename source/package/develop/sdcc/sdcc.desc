@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sdcc/sdcc.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Retargettable, optimizing ANSI-C compiler for the 8051 MCU
+
+[T] SDCC is a freeware, retargettable, optimizing ANSI-C compiler. The
+[T] current version targets Intel 8051-based MCUs, the Zilog Z80, and the
+[T] DS390. Targets for the Microchip PIC and Amtel AVR series are under
+[T] development, and the compiler can be retargeted for other 8 bit MCUs
+[T] or PICs.
+[T] SDCC has extensive MCU (8051)-specific language extensions, which lets
+[T] it utilize the underlying hardware effectively. It includes a
+[T] source-level debugger/simulator and can generate debug info for the
+[T] NoICE debugger.
+
+[U] https://sdcc.sourceforge.net/
+
+[A] Michael Hope <michaelh@juju.net.nz>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] GPL
+[V] 4.5.0
+
+[D] bc3fcce730583478e33843766a823df31435e707916e3008b952f0fa sdcc-src-4.5.0.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/sdcc/
+
+var_append makeopt ' ' CPP=$CC # used for dependency generation and cpp does not understand all options

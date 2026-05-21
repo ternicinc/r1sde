@@ -1,0 +1,19 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/nicstat/no-sudo.patch
+# Copyright (C) 2013 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- nicstat-src-1.92/Makefile.Linux.vanilla	2013-10-14 08:45:02.000000000 +0200
++++ nicstat-src-1.92/Makefile.Linux	2013-10-14 08:46:59.000000000 +0200
+@@ -16,8 +16,8 @@
+ 
+ CFLAGS =	$(COPT) -m32
+ 
+-INSTALL =	sudo install -o bin -g bin
+-SETUINSTALL =	sudo install -o root -g root -m 4511
++INSTALL =	install -o bin -g bin
++SETUINSTALL =	install -o root -g root -m 4511
+ 
+ #-- Look in nicstat.sh to see if you want to be more specific
+ OSTYPE =	RedHat

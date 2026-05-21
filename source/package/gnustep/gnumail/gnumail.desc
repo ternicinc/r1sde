@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnumail/gnumail.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A OpenStep mail application
+
+[T] GNUMail.app is a fully featured mail application using the GNUstep
+[T] development framework or Apple Cocoa, which is based on the OpenStep
+[T] specification provided by NeXT, Inc..
+
+[U] https://wiki.gnustep.org/index.php/GNUMail
+
+[A] Ludovic Marcotte <ludovic@sophos.ca>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/windowmanager
+
+[L] GPL
+[V] 1.4.0
+
+[D] ad3726d2dc5764e170d667efb4ae9d5055bcbceda56935ab740bd62f GNUMail-1.4.0.tar.gz http://download.savannah.nongnu.org/releases/gnustep-nonfsf/
+
+. $base/package/*/*/gnustep-conf.in
+hook_add postmake 5 "ln -svf Addresses $root$includedir/AddressBook"

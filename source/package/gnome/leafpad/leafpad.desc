@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/leafpad/leafpad.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A GTK+ based simple text editor
+
+[T] Leafpad is a GTK+ based text editor that emphasizes simplicity. As
+[T] development focuses on keeping weight down to a minimum, only the most
+[T] essential features are implemented in the editor. Leafpad is simple to
+[T] use, is easily compiled, requires few libraries, and starts up quickly.
+
+[U] http://tarot.freeshell.org/leafpad/
+
+[A] tarot <tarot@sdf.lonestar.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/editor extra/desktop/gnome
+[F] CROSS
+
+[L] GPL
+[V] 0.8.19
+
+[D] 9bcf81a80ecee11559e15588bb209453b58184cde8fb9f9107f007fb leafpad-0.8.19.tar.gz http://savannah.nongnu.org/download/leafpad/
+
+. $base/package/*/*/gnome-conf.in

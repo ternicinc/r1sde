@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ctalk/ctalk.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Object Oriented Extensions for C
+
+[T] Ctalk provides object oriented programming features, like classes,
+[T] methods, operator overloading, and inheritance to otherwise standard
+[T] C programs. You can use only a few objects and classes in a program,
+[T] or you can write programs entirely in Ctalk. The package provides a
+[T] translator from Ctalk source code into C for compilation and a library
+[T] that provides run-time support for class objects. The preprocessor, ctpp,
+[T] is also available separately, and the package includes sample programs
+[T] and documentation.
+
+[U] https://sourceforge.net/projects/ctalk/
+
+[A] thx1132 <ctalk@ctalklang.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] GPL
+[V] 0.0.96a
+
+[D] 7b72612407719f9f31fd4f5b8aaba604d2dd03e00a73fccf0d49825b ctalk-0.0.96a.tar.gz http://www.ctalklang.org/files/

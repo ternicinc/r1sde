@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xplsprinters/xplsprinters.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Shows a list of Xprint printers and it's attributes
+
+[T] Xplsprinters is a utility for Xprint, the printing system for the X
+[T] Window system.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.0.1
+
+[D] 3d8e40a9d49032a3acd2425f0debd251a91d261be0efa04308376758 xplsprinters-1.0.1.tar.bz2 http://xorg.freedesktop.org/releases/individual/app/
+
+. package/*/*/modular-x-conf.in

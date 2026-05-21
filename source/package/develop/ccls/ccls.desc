@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ccls/ccls.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] C/C++/ObjC language server
+
+[T] ccls, which originates from cquery, is a C/C++/Objective-C language server
+[T] supporting cross references, hierarchies, completion and semantic
+[T] highlighting.
+
+[U] https://github.com/MaskRay/ccls/
+
+[A] Fangrui Song <i@maskray.me>
+[A] Nikolaus Wittenstein <nikolaus.wittenstein@gmail.com>
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/development
+[F] OBJDIR
+
+[L] APL
+[V] 0.20250815.1
+
+[D] f4a57ba93e8ce3b90c9584e7ebdda79ad52a26222bc31bf2d6135e3b ccls-0.20250815.1.tar.gz https://github.com/MaskRay/ccls/archive/0.20250815.1/
+
+export CC=clang CPP=clang++ CXX=clang++

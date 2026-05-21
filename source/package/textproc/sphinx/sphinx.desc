@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sphinx/sphinx.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A full-text search engine
+
+[T] Sphinx is a full-text search engine. It's a standalone search engine,
+[T] meant to provide fast, size-efficient and relevant fulltext search
+[T] functions to other applications. Sphinx was specially designed to
+[T] integrate well with SQL databases and scripting languages. Currently
+[T] built-in data sources support fetching data either via direct connection
+[T] to MySQL or PostgreSQL, or using XML pipe mechanism (a pipe to indexer
+[T] in special XML-based format which Sphinx recognizes).
+
+[U] https://www.sphinxsearch.com/
+
+[A] Sphinx Technologies Inc.
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/text
+[L] GPL
+
+[E] opt mariadb
+
+[V] 2.3.2-beta
+[P] X -----5---9 158.400
+
+[D] 770ab4494880fd63f94cf1a3c9a78d111e28b1d138e2b4df6c94d076 sphinx-2.3.2-beta.tar.gz https://sphinxsearch.com/files/
+
+pkginstalled mysql || var_append confopt ' ' --without-mysql

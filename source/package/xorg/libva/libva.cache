@@ -1,0 +1,28 @@
+[TIMESTAMP] 1768844236 Mon Jan 19 18:37:16 2026
+[BUILDTIME] 6 (9)
+[SIZE] 1.20 MB, 65 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libdrm
+[DEP] libglvnd
+[OPT] libx11
+[OPT] libxcb
+[OPT] libxext
+[OPT] libxfixes
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] wayland
+[DEP] xorgproto

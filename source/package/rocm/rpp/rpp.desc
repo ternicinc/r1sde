@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rpp/rpp.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] AMD ROCm Performance Primitives (RPP) library
+
+[T] AMD ROCm Performance Primitives (RPP) library is a comprehensive
+[T] high-performance computer vision library for AMD processors with
+[T] HIP/OpenCL/CPU back-ends.
+
+[U] https://github.com/ROCm/rpp
+
+[A] Advanced Micro Devices, Inc.
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS OBJDIR
+[C] extra/development
+
+[L] MIT
+[V] 7.2.3
+[P] X -----5---9 300.350
+
+[CV-GROUP] rocm
+[D] 0c6b062437ae586c0c42f1d2be7cfa095f79c3994e8ac49e53efc022 rpp-rocm-7.2.3.tar.gz https://github.com/ROCm/rpp/archive/rocm-7.2.3/
+
+. $base/package/*/*/rocm-conf.in

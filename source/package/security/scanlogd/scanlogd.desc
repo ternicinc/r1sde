@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/scanlogd/scanlogd.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Check if you are portscanned
+
+[T] scanlogd is a TCP port scan detection tool, originally designed to
+[T] illustrate various attacks an IDS developer has to deal with, for a
+[T] Phrack Magazine article (see below). Thus, unlike some of the other
+[T] port scan detection tools out there, scanlogd is designed to be totally
+[T] safe to use.
+
+[U] https://www.openwall.com/scanlogd/
+
+[A] solar designer <solar@false.com>
+[M] Tobias Schmidt <tschmidt@stradego.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 2.2.8
+
+[D] 4a8b8892f6517306b9c3add0a67deef4cb62afa905d6b6ba52ec9681 scanlogd-2.2.8.tar.gz http://www.openwall.com/scanlogd/
+
+hook_add premake 5 "echo PREFIX=$prefix > $builddir/scanlogd-$ver/Makefile"
+hook_add premake 5 "echo ROOT=$root >> $builddir/scanlogd-$ver/Makefile"
+hook_add premake 5 "cat $confdir/Makefile >> $builddir/scanlogd-$ver/Makefile"

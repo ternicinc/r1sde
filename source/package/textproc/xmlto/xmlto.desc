@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xmlto/xmlto.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A front-end to an XSL toolchain
+
+[T] xmlto converts an XML file (DocBook or XSL-FO) into a specified format
+[T] (PS, PDF, HTML, man, ASCII, XSL-FO, etc.) by applying an appropriate
+[T] XSL-T stylesheet and then performing whatever post-processing is
+[T] necessary
+
+[U] https://pagure.io/xmlto/
+
+[A] Tim Waugh <twaugh@redhat.com>
+[M] Gerhard Weis <gweis@gmx.at>
+
+[C] extra/text
+[F] CROSS
+
+[L] GPL
+[V] 0.0.29
+[P] X -----5---9 158.400
+
+[D] a89d6aec3ff5ae640d476b2ba2c9d2db6f9998a07956103bddcc6f99 xmlto-0.0.29.tar.bz2 https://releases.pagure.org/xmlto/
+
+autogen=1

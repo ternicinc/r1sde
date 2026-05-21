@@ -1,0 +1,31 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/vdr/realpath.patch.uclibc
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+man canonicalize_file_name:
+
+DESCRIPTION
+       The call canonicalize_file_name(path) is equivalent to the call realpath(path, NULL).
+
+CONFORMING TO
+       The function is a GNU extension.
+
+Calling realpath with a NULL target pointer is likewise a
+non-standard glibc extension which is not supported by uClibc.
+
+  -- mtr <michael@tross.org>
+
+--- vdr-1.4.3/tools.c.orig	2006-08-12 15:30:07.000000000 +0200
++++ vdr-1.4.3/tools.c	2006-11-03 11:44:12.000000000 +0100
+@@ -481,7 +481,8 @@
+ {
+   if (!FileName)
+      return NULL;
+-  char *TargetName = canonicalize_file_name(FileName);
++  char *TargetName = MALLOC(char, PATH_MAX);
++  TargetName = realpath(FileName, TargetName);
+   if (!TargetName) {
+      if (errno == ENOENT) // file doesn't exist
+         TargetName = strdup(FileName);

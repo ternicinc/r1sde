@@ -1,0 +1,19 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/grub/hotfix-netboot.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- grub-0.97/netboot/ntulip.c.vanilla	2008-08-20 13:35:49.000000000 +0200
++++ grub-0.97/netboot/ntulip.c	2008-08-20 13:36:23.000000000 +0200
+@@ -857,10 +857,8 @@
+   /* initialize device */
+   ntulip_reset(card);
+ 
+-  card->reset    = ntulip_reset;
+   card->poll     = ntulip_poll;
+   card->transmit = ntulip_transmit;
+-  card->disable  = ntulip_disable;
+ 
+   return card;
+ }

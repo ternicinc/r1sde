@@ -1,0 +1,10 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/uclibc/xtensa.patch
+# Copyright (C) 2021 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- uClibc-ng-1.0.38/extra/Configs/defconfigs/xtensa/defconfig.vanilla	2021-05-01 13:34:41.790757632 +0200
++++ uClibc-ng-1.0.38/extra/Configs/defconfigs/xtensa/defconfig	2021-05-01 13:34:20.709757641 +0200
+@@ -0,0 +1 @@
++TARGET_xtensa=y

@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/bemenu/bemenu.desc
+[COPY] Copyright (C) 2021 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Dynamic menu client inspired by dmenu
+
+[T] Bemenu is a dynamic menu inspired by suckless' dmenu.
+[T] It takes text in input and returns the text you selected to stout,
+[T] allowing to do powerful things like executing scripts.
+
+[U] https://github.com/Cloudef/bemenu/
+
+[A] Cloudef
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/x11
+[F] CROSS
+
+[L] GPL
+[V] 0.6.23
+
+[D] aad8e537d8b92e8068591c5b8abef1c85bb345fa5c570bac73e8b7c3 bemenu-0.6.23.tar.gz https://github.com/Cloudef/bemenu/archive/0.6.23/
+
+make=
+hook_add inmake 5 'make clients wayland curses'
+var_append makeinstopt ' ' PREFIX=$root/$prefix

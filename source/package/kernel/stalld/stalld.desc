@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---.
+[COPY] t2/package/*/stalld/stalld.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---.
+
+[I] Daemon that finds starving tasks and gives them a temporary boost
+
+[T] The stalld program (which stands for 'stall daemon') is a mechanism to
+[T] prevent the starvation of operating system threads in a Linux system.
+
+[U] https://git.kernel.org/pub/scm/utils/stalld/stalld.git/
+
+[A] Stalld Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+
+[L] GPL
+[V] 1.27.1
+
+[D] 1823a1b913e534375d800383ec4b72463981ae1ea301d16e26b37137 stalld-1.27.1.tar.gz https://git.kernel.org/pub/scm/utils/stalld/stalld.git/snapshot/

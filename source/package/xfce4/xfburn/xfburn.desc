@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfburn/xfburn.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A simple CD burning tool for Xfce
+
+[T] Xfburn is a simple CD burning tool acting as a front-end to mkisofs,
+[T] cdrdao, readcd and cdrecord. It can blank CD-RW, copy CDs, burn and
+[T] create iso images, and burn personal composition of data.
+
+[U] https://docs.xfce.org/apps/xfburn/start
+
+[A] Jean-François Wauthy <pollux@xfce.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/xfce
+
+[L] GPL
+[V] 0.8.0
+
+[D] e2eafac737fa8df4c65c99db3fcbda6017276185d46b510252aadbd3 xfburn-0.8.0.tar.bz2 https://archive.xfce.org/src/apps/xfburn/0.8/
+
+. $base/package/xfce4/*/xfce4-conf.in

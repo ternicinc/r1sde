@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnustep-gui/gnustep-gui.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The GUI for a GNUstep system
+
+[T] The GUI for a GNUstep system.
+
+[U] https://www.gnustep.org/
+
+[A] The GNUstep Project
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/windowmanager
+
+[L] LGPL
+[V] 0.32.0
+[P] X -----5---9 162.300
+
+[D] 4ae8735fbb68255467b14e3778036ec5ca4efd24548425174535abfe gnustep-gui-0.32.0.tar.gz https://github.com/gnustep/libs-gui/releases/download/gui-0_32_0/
+
+. $base/package/*/*/gnustep-conf.in

@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/supertuxkart/supertuxkart.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A kart racing game
+
+[T] This is a kart game featuring Tux, the Linux Penguin.
+
+[U] https://supertuxkart.net
+
+[A] Steve Baker <sjbaker1@airmail.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+#[C] extra/game/racing
+
+[L] GPL
+[V] 1.5
+
+[D] 5186e4e3fe902374c9c651060f61a8466ff4ead7cdcc9c17ebf30b59 SuperTuxKart-1.5-src.tar.gz https://github.com/supertuxkart/stk-code/releases/download/1.5/
+
+var_append cmakeopt ' ' '-DBUILD_RECORDER=0 -DUSE_WIIUSE=NO'

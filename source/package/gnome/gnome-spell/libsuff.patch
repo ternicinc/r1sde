@@ -1,0 +1,27 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/gnome-spell/libsuff.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- gnome-spell-1.0.6/configure.orig	2006-02-07 20:16:38.000000000 +0100
++++ gnome-spell-1.0.6/configure	2006-02-07 20:20:25.000000000 +0100
+@@ -21781,14 +21781,14 @@
+ 
+ if test "x$with_aspell_prefix" != "x"; then
+    saved_LDFLAGS=$LDFLAGS
+-   LDFLAGS="-L$with_aspell_prefix/lib "$LDFLAGS
++   LDFLAGS="-L$with_aspell_prefix/lib${libsuff} "$LDFLAGS
+    ASPELL_INC="-I$with_aspell_prefix/include"
+-   ASPELL_LIBS="-L$with_aspell_prefix/lib -laspell"
++   ASPELL_LIBS="-L$with_aspell_prefix/lib${libsuff} -laspell"
+    ASPELL_DATA="$with_aspell_prefix/lib/aspell"
+ else
+-   LDFLAGS="-L`aspell config prefix`/lib "$LDFLAGS
++   LDFLAGS="-L`aspell config prefix`/lib${libsuff} "$LDFLAGS
+    ASPELL_INC="-I`aspell config prefix`/include"
+-   ASPELL_LIBS="-L`aspell config prefix`/lib -laspell"
++   ASPELL_LIBS="-L`aspell config prefix`/lib${libsuff} -laspell"
+    ASPELL_DICT="`aspell config dict-dir`"
+ fi
+ 

@@ -1,0 +1,23 @@
+
+[TIMESTAMP] 1280266058 Tue Jul 27 21:27:38 2010
+[BUILDTIME] 20 (5)
+[SIZE] 3.62 MB, 123 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] ghostscript
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] perl-gettext
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] tetex
+[DEP] texinfo

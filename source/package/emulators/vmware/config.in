@@ -1,0 +1,21 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/vmware/config.in
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+if pkgcheck vmware X
+then
+	menu_begin MENU_PKG_VMWARE 'VMWare options'
+		bool 'Build vmware-ppuser' \
+			SDECFG_PKG_VMWARE_PPUSER 0
+		text 'Install prefix for VMWare' \
+			SDECFG_PKG_VMWARE_PREFIX 'opt/vmware'
+		#bool 'Enable bridged networking' \
+		#	SDECFG_PKG_VMWARE_NET_BRIDGED 0
+		#bool 'Enable NAT for vmnet'	 \
+		#	SDECFG_PKG_VMWARE_NET_NAT     1
+		#bool 'Enable host only networking' \
+		#	SDECFG_PKG_VMWARE_NET_HO  0
+	menu_end
+fi

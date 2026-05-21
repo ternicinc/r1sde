@@ -1,0 +1,26 @@
+[TIMESTAMP] 1737678546 Fri Jan 24 01:29:06 2025
+[BUILDTIME] 3 (9)
+[SIZE] 0.24 MB, 63 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[OPT] docbook-xml
+[OPT] docbook-xsl
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[OPT] glib
+[DEP] gmp
+[DEP] grep
+[OPT] gtk-doc
+[DEP] gzip
+[DEP] libxslt
+[DEP] linux-header
+[DEP] make
+[DEP] mpfr
+[DEP] pcre2
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] tar

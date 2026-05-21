@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/tntnet/tntnet.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Web application server for C++
+
+[T] Tntnet is a Web application server for generating Web applications in
+[T] C++. HTML pages with some additional tags for inclusion of C++ code are
+[T] compiled into shared libraries and served from tntnet. It resembles PHP,
+[T] JSP, or Mason, but the programming language used is C++, and the pages are
+[T] compiled into native code before serving. Tntnet is fully multithreaded
+[T] and supports HTTP keep-alive for best performance. Its dynamic pages
+[T] are faster than static pages with other Web servers, while creating Web
+[T] applications is simple.
+
+[U] http://www.tntnet.org/
+
+[A] Tommi Mäkitalo <tommi@tntnet.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] GPL
+[V] 3.0
+
+[D] e8f5c42d9d18d2cd40ac0a0d38e27b1cd880e9fcea9420822d427655 tntnet-3.0.tar.gz https://github.com/maekitalo/tntnet/archive/refs/tags/V3.0/
+
+hook_add preconf 5 'autoreconf -fi'
+var_append GCC_WRAPPER_APPEND ' ' -std=gnu++11

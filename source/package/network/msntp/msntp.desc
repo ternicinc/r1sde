@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/msntp/msntp.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A full-featured, compact, portable SNTP library
+
+[T] libmsntp is a full-featured, compact, portable SNTP library.
+[T] SNTP is a simplified version of NTP, which allows precise
+[T] synchronization of system clocks over a best-effort network.
+[T] libmsntp provides SNTP client and server functionality in a
+[T] shared library with a simple API.
+
+[U] http://www.hpcf.cam.ac.uk/export
+
+[A] Nick Maclaren
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/development
+[F] CROSS
+
+[L] OpenSource
+[V] 1.6
+
+[D] 379d8510a32604f87dc86a89777766655fa4b3da9f523bf4f75a356a msntp-1.6.tar.gz ftp://ftp.openpkg.org/sources/DST/msntp/
+
+var_append makeopt ' ' LIBS=-lm
+makeinstopt=
+hook_add postmake 4 "cp -av msntp $root$bindir/msntp"

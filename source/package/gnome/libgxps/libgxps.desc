@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libgxps/libgxps.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome libgxps package
+
+[T] Core Gnome libgxps package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 0.3.2
+[P] X -----5---9 300.200
+
+[CV-URL] https://download.gnome.org/sources/libgxps/cache.json
+[D] 41fd6fcb4f21991e38a1874cae8937807eb84e92e03aa2d4e2e7aaee libgxps-0.3.2.tar.xz https://download.gnome.org/sources/libgxps/0.3/
+
+. $base/package/*/*/gnome-conf.in

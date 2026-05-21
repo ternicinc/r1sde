@@ -1,0 +1,48 @@
+[TIMESTAMP] 1767637257 Mon Jan  5 19:20:57 2026
+[BUILDTIME] 110 (9)
+[SIZE] 9.04 MB, 108 files
+
+[DEP] alsa-lib
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[OPT] dbus
+[DEP] diffutils
+[OPT] esound
+[OPT] ffmpeg
+[DEP] freetype
+[DEP] fribidi
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[OPT] jack
+[OPT] libdecor
+[DEP] libdrm
+[DEP] libglvnd
+[OPT] libsamplerate
+[DEP] libusb
+[OPT] libx11
+[OPT] libxcb
+[OPT] libxcursor
+[OPT] libxext
+[OPT] libxfixes
+[OPT] libxi
+[OPT] libxrandr
+[OPT] libxrender
+[OPT] libxscrnsaver
+[DEP] libxtst
+[DEP] linux-header
+[DEP] make
+[DEP] mesa
+[OPT] pipewire
+[DEP] pkgconfig
+[OPT] pulseaudio
+[OPT] python
+[DEP] sed
+[DEP] tar
+[DEP] udev
+[DEP] unwind
+[OPT] wayland
+[OPT] xkbcommon
+[DEP] xorgproto

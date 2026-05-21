@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-netstatus/gnome-netstatus.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Network status for the GNOME panel
+
+[T] This package contains an applet which provides information
+[T] about a network interface on your panel.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] Susanne Klaus <vadja@gmx.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base extra/desktop/gnome
+
+[L] GPL
+[V] 2.28.2
+[P] X -----5---9 153.100
+
+[CV-URL] https://download.gnome.org/sources/gnome-netstatus/cache.json
+[D] 45e47abc418244af2ef45f93c90c88416e1e2dbe97d46319d102d300 gnome-netstatus-2.28.2.tar.bz2 http://ftp.acc.umu.se/pub/GNOME/sources/gnome-netstatus/2.28/
+
+. $base/package/*/*/gnome-conf.in

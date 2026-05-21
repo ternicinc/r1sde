@@ -1,0 +1,25 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/gnupth/head-1-usage.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+--- pth-2.0.2/configure~	2004-09-12 14:45:17.000000000 +0200
++++ pth-2.0.2/configure	2004-11-08 16:06:06.452927152 +0100
+@@ -21974,7 +21974,7 @@
+     -e '/,[ 	]*$/N' \
+     -e 's/,[ 	]*\n[ 	]*/, /' \
+     -e 'tjoin' |\
+-egrep "[^a-zA-Z0-9_]accept[ 	]*\\($gpat\\)" | head -1 |\
++egrep "[^a-zA-Z0-9_]accept[ 	]*\\($gpat\\)" | head -n1 |\
+ sed -e "s/.*[^a-zA-Z0-9_]accept[ 	]*($spat).*/\\1/" \
+     -e 's/(\*[a-zA-Z_][a-zA-Z_0-9]*)/(*)/' \
+     -e 's/^[ 	]*//' -e 's/[ 	]*$//' \
+@@ -22101,7 +22101,7 @@
+     -e '/,[ 	]*$/N' \
+     -e 's/,[ 	]*\n[ 	]*/, /' \
+     -e 'tjoin' |\
+-egrep "[^a-zA-Z0-9_]poll[ 	]*\\($gpat\\)" | head -1 |\
++egrep "[^a-zA-Z0-9_]poll[ 	]*\\($gpat\\)" | head -n1 |\
+ sed -e "s/.*[^a-zA-Z0-9_]poll[ 	]*($spat).*/\\1/" \
+     -e 's/(\*[a-zA-Z_][a-zA-Z_0-9]*)/(*)/' \
+     -e 's/^[ 	]*//' -e 's/[ 	]*$//' \

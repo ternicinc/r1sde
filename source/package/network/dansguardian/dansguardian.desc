@@ -1,0 +1,59 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dansguardian/dansguardian.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Web filter with multiple page content analysis mechanisms
+
+[T] DansGuardian is a Web content filtering proxy that uses Squid to do all
+[T] the fetching. It filters using multiple methods including, but not
+[T] limited to, phrase matching, file extension matching, MIME type
+[T] matching, PICS filtering, and URL/domain blocking. It has the ability to
+[T] switch off filtering by certain criteria including username, domain
+[T] name, source IP, etc. The configurable logging produces a log in an easy
+[T] to read format. It has the option to only log text-based pages, thus
+[T] significantly reducing redundant information (such as every image on a
+[T] page).
+
+[U] https://sourceforge.net/projects/dansguardian/
+
+[A] Daniel Barron <daniel@jadeb.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/server
+
+[L] GPL
+[V] 2.12.0.3
+
+[D] cfe950578d8fb951b04bb84e26726f16fc1f5877450c7afc539f32f6 dansguardian-2.12.0.3.tar.bz2 https://downloads.sourceforge.net/dansguardian/files/
+
+var_append makeopt ' ' CPP=$CXX
+
+# I have to define all of this manually or it doesn't install properly.
+# Don't remove the trailing slash.
+confopt="--bindir=$root/usr/sbin/ --sysconfdir=$root/etc/dansguardian/ \
+	--sysvdir=$root/etc/rc.d/init.d/ --mandir=$root/usr/man/ \
+	--with-logdir=$root/var/log/dansguardian/ --runas_usr=dansguardian \
+	--runas_grp=dansguardian --with-piddir=$root/var/run/"
+
+if [ "$SDECFG_PKG_DANSGUARDIAN_DGVIRUS" == 1 ]; then
+	# Apply the DG Anti-Virus patch
+	var_append patchfiles ' ' $(match_source_file -p 'antivirus')
+
+	# Install a filter for ClamAV
+	dg_clamav() {
+		mkdir -pv $root/$prefix/lib/DGVirus
+		cat > $root/$prefix/lib/DGVirus/clamav-wrapper <<-'EOR'
+#!/bin/sh
+ClamScan=/usr/bin/clamdscan
+exec $ClamScan $ScanOptions "$@"
+EOR
+		chmod 755 $root/$prefix/lib/DGVirus/clamav-wrapper
+	}
+	hook_add postmake 3 dg_clamav
+fi
+
+[ $arch = x86-64 ] &&
+	var_append makeopt ' ' libdir=$libdir

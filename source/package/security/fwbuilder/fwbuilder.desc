@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/fwbuilder/fwbuilder.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] FWBuilder-GUI for firewall administration
+
+[T] Firewall Builder is a multi-platform firewall configuration and management
+[T] tool.
+[T] It uses an object-oriented approach, and helps administrators to maintain
+[T] a database of network objects and allows policy editing using simple
+[T] drag-and-drop operations.
+[T] It currently supports iptables, ipfilter, OpenBSD PF and Cisco PIX.
+
+[U] https://fwbuilder.sourceforge.net/
+
+[A] Vadim Kurland <vadim@fwbuilder.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+
+[L] OpenSource
+[V] 5.3.7
+
+[D] 1eb2fd7530c641ed9d80ec15841039a4a0baaa9f68c8de325c61144d fwbuilder-5.3.7.tar.gz https://github.com/fwbuilder/fwbuilder/archive/v5.3.7/

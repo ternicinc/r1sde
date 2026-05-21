@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xcur2png/xcur2png.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Converter from X cursor to PNG image
+
+[T] Xcur2png is a program which let you take PNG images from X cursor, and
+[T] generate config-file which is reusable by xcursorgen. To put it simply,
+[T] it is converter from X cursor to PNG image.
+
+[U] http://cli-apps.org/content/show.php/?content=86010
+
+[A] tksmashiw
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] GPL
+[V] 0.7.1
+
+[D] 968b4d93f02bc25d718a47c301a2182aa3e3933c47db64fc90fe837c xcur2png-0.7.1.tar.gz https://github.com/eworm-de/xcur2png/releases/download/0.7.1/

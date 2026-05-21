@@ -1,0 +1,121 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/rustc/parse-config
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+export CARGO_HOME="$base/build/$SDECFG_ID/TOOLCHAIN/.cargo" # $toolsdir/" # "$builddir/.cargo"
+var_append FLWRAPPER_FILTERDIR ':' $CARGO_HOME
+export RUSTFLAGS=""
+
+rust_target=${arch_target}
+
+cargo_clear_cksum() {
+	sed -i 's/\("files":{[^,]*\),[^}]*}/\1}/' "$@"
+}
+
+declare -A rust_t2_targets
+rust_t2_targets[armv5te-unknown-linux-gnueabihf]=armv5te-unknown-linux-gnueabi
+rust_t2_targets[armv6-unknown-linux-gnueabihf]=arm-unknown-linux-gnueabihf
+rust_t2_targets[armv6eb-unknown-linux-gnueabi]=armeb-unknown-linux-gnueabi
+rust_t2_targets[armv6eb-unknown-linux-gnueabihf]=armeb-unknown-linux-gnueabi
+rust_t2_targets[mips64-unknown-linux-gnuabin32]=mips64-unknown-linux-gnuabi64
+rust_t2_targets[riscv32-unknown-linux-gnu]=riscv32gc-unknown-linux-gnu
+rust_t2_targets[riscv32-unknown-linux-musl]=riscv32gc-unknown-linux-musl
+rust_t2_targets[riscv64-unknown-linux-gnu]=riscv64gc-unknown-linux-gnu
+rust_t2_targets[riscv64-unknown-linux-musl]=riscv64gc-unknown-linux-musl
+rust_t2_targets[sparcv7-unknown-linux-gnu]=sparc-unknown-linux-gnu
+rust_t2_targets[sparcv8-unknown-linux-gnu]=sparc-unknown-linux-gnu
+rust_t2_targets[sparcv9-unknown-linux-gnu]=sparc-unknown-linux-gnu
+rust_t2_targets[sparcv9b-unknown-linux-gnu]=sparc-unknown-linux-gnu
+
+rust_update_arch_target() {
+  # return early, if supplied with unexpanded argument
+  [ ! -e "$1" ] && return
+
+  # override some not widely support to match more often, e.g. atomics
+  rust_t2_targets[sparcv7-unknown-linux-gnu]=powerpc-unknown-linux-gnu
+  rust_t2_targets[sparcv8-unknown-linux-gnu]=powerpc-unknown-linux-gnu
+  rust_t2_targets[sparcv9-unknown-linux-gnu]=powerpc-unknown-linux-gnu
+  rust_t2_targets[sparcv9b-unknown-linux-gnu]=powerpc-unknown-linux-gnu
+
+  for f; do
+    cp -vf "$f" "$f.orig"
+    # add all t2 extra rustc target
+    for a in "${!rust_t2_targets[@]}"; do
+	local b=${rust_t2_targets[$a]}
+       sed -i "/\"$b\"/{p; s/$b/$a/; s/${b//-/_}/${a//-/_}/}" "$f"
+    done
+
+    sed -i "/\"${rust_target/-t2-/-unknown-}\"/ {p; s/unknown/t2/g}" "$f"
+    #diff -u "$f.orig" "$f" || true
+  done
+}
+
+cargo_vendor() {
+	echo "Running cargo vendor vendor"
+	cargo vendor vendor
+
+	mkdir -p .cargo
+	cat > .cargo/config.toml <<-EOT
+[source.crates-io]
+replace-with = "vendored-sources"
+
+[source.vendored-sources]
+directory = "vendor"
+EOT
+
+	# update known instances of arch_targets
+	rust_update_arch_target vendor/*/no_atomic*.rs
+
+	cargo_clear_cksum vendor/*/.cargo-checksum.json
+}
+
+if [ $stagelevel -gt 1 -a $pkg != rustc ]; then
+
+    # TODO: maybe use a rustc wrapper in the future, too
+
+    cflags="-mcpu= $GCC_WRAPPER_INSERT $GCC_WRAPPER_APPEND"
+    mcpu="${cflags##*-mcpu=}" mcpu="${mcpu%% *}"
+    if [ ! "$mcpu" ]; then
+	cflags="-march= $GCC_WRAPPER_INSERT $GCC_WRAPPER_APPEND"
+	mcpu="${cflags##*-march=}" mcpu="${mcpu%% *}"
+    fi
+
+    [[ $arch = riscv* ]] && mcpu= # NZY map RVA*
+
+    # translate our gcc based configs, to those supported by llvm
+    case "$mcpu" in
+	# ARM optional features for mozilla firefox/thunderbird
+	armv*) mcpu=$SDECFG_ARM_OPT-a,+neon ;;
+	*+*)
+		# TODO: -C target-feature=
+		mcpu=${mcpu%%+*}
+		;;
+	# PPC
+	cell) mcpu=970 ;;
+	power[0-9]*) mcpu=${mcpu/power/pwr} ;;
+	# MIPS
+	r[568]000|r[1246]0000) mcpu=mips4 ;;
+	# x86
+	esther) mcpu=c3-2 ;;
+    esac
+    [ "$mcpu" ] && var_append RUSTFLAGS ' ' "-C target-cpu=$mcpu"
+
+    unset cflags mcpu
+
+    case "$SDECFG_OPT" in
+    none|debug)
+	var_append RUSTFLAGS ' ' "-C opt-level=0" ;;
+    lazy)
+	var_append RUSTFLAGS ' ' "-C opt-level=1" ;;
+    size|smart*)
+	var_append RUSTFLAGS ' ' "-C opt-level=s" ;;
+    smaller)
+	var_append RUSTFLAGS ' ' "-C opt-level=z" ;;
+    fast*)
+	var_append RUSTFLAGS ' ' "-C opt-level=3" ;;
+    *)
+	var_append RUSTFLAGS ' ' "-C opt-level=2" ;;
+    esac
+fi

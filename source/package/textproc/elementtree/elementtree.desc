@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/elementtree/elementtree.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A simple but flexible container object
+
+[T] The Element type is a simple but flexible container object, designed to
+[T] store hierarchical data structures, such as simplified XML infosets, in
+[T] memory. The element type can be described as a cross between a Python
+[T] list and a Python dictionary.
+[T]
+[T] The Element type is available as a pure-Python implementation for Python
+[T] 1.5.2 and later.
+
+[U] http://effbot.org/zone/element-index.htm
+
+[A] Fredrik Lundh <fredrik@pythonware.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+
+[L] BSD
+[V] 1.2.6-20050316
+
+[D] 94876e76612562ffcef488cc1d808ca245c18f34a1c904ab4c45eb4f elementtree-1.2.6-20050316.tar.gz http://effbot.org/downloads/
+
+hook_add postmake 5 'cp -aR docs $docdir'

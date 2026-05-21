@@ -1,0 +1,26 @@
+[TIMESTAMP] 1760898188 Sun Oct 19 20:23:08 2025
+[BUILDTIME] 5 (9)
+[SIZE] 0.36 MB, 108 files
+
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] grep
+[DEP] gtk+
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] libx11
+[DEP] lightdm
+[DEP] linux-header
+[DEP] make
+[DEP] pango
+[DEP] sed
+[DEP] tar
+[DEP] xfce4-dev-tools
+[DEP] xorgproto

@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-autoar/gnome-autoar.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Methods for GNOME to transfer directories over the Internet
+
+[T] gnome-autoar provides functions and widgets for GNOME applications which
+[T] want to use archives as a method to transfer directories over the Internet.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 0.4.5
+[P] X -----5---9 300.200
+
+[CV-URL] https://download.gnome.org/sources/gnome-autoar/cache.json
+[D] 91895f8854eafc60723c6c1634b2e0e598058d4c291df468611c5aaa gnome-autoar-0.4.5.tar.xz https://download.gnome.org/sources/gnome-autoar/0.4/
+
+. $base/package/*/*/gnome-conf.in

@@ -1,0 +1,8 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/nginx/postsysfiles.in
+# Copyright (C) 2014 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+safe_groupadd nginx 82
+safe_useradd nginx  82 82  "Nginx Webserver" /var/empty /bin/false "*"

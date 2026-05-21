@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/colorcorrect/colorcorrect.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A YCrBr color correction plugin for GIMP
+
+[T] Color Correct is a GIMP color correction plug-in, working in YCbCr space
+[T] (luminance, blue chrominance, red chrominance). It provides an interface to
+[T] change white-point, gray-point, black-point, saturation, levels, of an image
+[T] as well as integration with various automatic correction methods, that let
+[T] you tweak the controls further after setting a value. Also has an built-in
+[T] vectorscope.
+
+[U] https://web.archive.org/web/20081212114923/http://pippin.gimp.org/plug-ins/color_correct/index.html
+
+[A] Michael Natterer <mitch@gimp.org>
+[A] Kevin Turner <acapnotic@users.sourceforge.net>
+[M] luisf <trb7@megamail.pt>
+
+[C] extra/graphic
+
+[L] GPL
+[V] 0.0.3
+
+[D] c44fb2aacdc96823e26588e2a1e543c093e79ace0fcf5f05f1c7a611 color-correct-0.0.3.tar.gz http://pippin.gimp.org/plug-ins/color_correct/files/
+
+. $base/package/*/*/gnome-conf.in
+# to avoid collision with gimp's standard index html file
+var_append confopt ' ' --datadir=$root$datadir/$pkg-$ver

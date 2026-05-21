@@ -1,0 +1,23 @@
+[TIMESTAMP] 1749399093 Sun Jun  8 16:11:33 2025
+[BUILDTIME] 4 (9)
+[SIZE] 0.45 MB, 23 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] fribidi
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[OPT] imagemagick
+[DEP] libdvdread
+[DEP] libpng
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] zlib

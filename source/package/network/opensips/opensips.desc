@@ -1,0 +1,50 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/opensips/opensips.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A fork of the SIP Express Router for open development
+
+[T] OpenSER is a high-performance SIP (RFC3261) server, with a flexible
+[T] architecture and many extensions. The server implements proxy, registrar,
+[T] redirect, and location SIP/VoIP services. It has support for UDP/TCP/TLS
+[T] transport layers, ENUM, AAA via database, RADIUS, DIAMETER, gateways to
+[T] SMS and XMPP, least cost routing, load balancing, NAT traversal, and call
+[T] processing language.
+
+[U] https://opensips.org/
+
+[A] http://www.iptel.org/ser/ {SIP Express Router}
+[A] Bogdan-Andrei Iancu <team@openser.org>
+[A] Daniel-Constantin Mierla <team@openser.org>
+[A] Elena-Ramona Modroiu <team@openser.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] GPL
+[V] 3.6.6
+
+[D] cc126e6855b86acaa578060f51bcd624c9dd27f8afb12da47ff83e51 opensips-3.6.6.tar.gz https://opensips.org/pub/opensips/3.6.x/
+
+if [ $prefix_auto = 1 ]; then
+	if [ "$SDECFG_PKG_SER_PREFIX" ]; then
+	  prefix="$SDECFG_PKG_SER_PREFIX"
+	else
+	  prefix="opt/opensips"
+	fi
+	set_confopt
+fi
+
+pkginstalled openssl && hook_add premake 5 'export TLS=1'
+
+var_append makeopt ' ' cfg-prefix=$root
+var_append makeopt ' ' cfg-target=$sysconfdir/
+var_append makeopt ' ' cfg-dir=$sysconfdir/
+var_append makeopt ' ' man-prefix=$root
+var_append makeopt ' ' man-dir=$mandir
+var_append makeopt ' ' doc-prefix=$root
+var_append makeopt ' ' doc-dir=$docdir
+
+makeinstopt="$makeopt install"

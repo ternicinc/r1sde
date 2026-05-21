@@ -1,0 +1,23 @@
+[TIMESTAMP] 1737630586 Thu Jan 23 12:09:46 2025
+[BUILDTIME] 12 (9)
+[SIZE] 1.26 MB, 35 files
+
+[DEP] alsa-lib
+[DEP] audiofile
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[OPT] esound
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[OPT] jack
+[DEP] libsdl2
+[DEP] linux-header
+[DEP] make
+[OPT] openal
+[DEP] pulseaudio
+[DEP] sed
+[DEP] tar

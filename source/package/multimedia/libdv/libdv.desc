@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libdv/libdv.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Quasar DV codec library
+
+[T] The Quasar DV codec (libdv) is a software codec for DV video. DV is
+[T] the encoding format used by most digital camcorders, typically those
+[T] that support the IEEE 1394 (aka FireWire or i.Link) interface. libdv
+[T] was developed according to the official standards for DV video, IEC
+[T] 61834 and SMPTE 314M. See http://libdv.sourceforge.net/ for more.
+
+[U] https://libdv.sf.net/
+
+[A] Erik Walthinsen <omega@cse.ogi.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[E] opt gtk+12 glib12
+
+[L] GPL
+[V] 1.0.0
+[P] X -----5---9 156.700
+
+[D] a9bd2bdcdec6ced62df176e3b147749d3512b2c3b2b3252867727fe5 libdv-1.0.0.tar.gz https://prdownloads.sourceforge.net/sourceforge/libdv/
+
+# configure defaults to demand gtk even if not available
+pkginstalled gtk+12 || var_append confopt ' ' --disable-gtk
+pkginstalled libxv || var_append confopt ' ' --disable-xv

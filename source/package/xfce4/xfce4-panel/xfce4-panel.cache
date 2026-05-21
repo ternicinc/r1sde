@@ -1,0 +1,43 @@
+[TIMESTAMP] 1737730173 Fri Jan 24 15:49:33 2025
+[BUILDTIME] 18 (9)
+[SIZE] 4.74 MB, 253 files
+
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] garcon
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[DEP] glib
+[DEP] gobject-introspection
+[DEP] grep
+[DEP] gtk+
+[DEP] gtk-doc
+[DEP] harfbuzz
+[DEP] libdbusmenu
+[DEP] libexo
+[DEP] libwnck
+[DEP] libx11
+[DEP] libxext
+[DEP] libxfce4ui
+[DEP] libxfce4util
+[DEP] libxfce4windowing
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] pango
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar
+[DEP] vala
+[DEP] wayland
+[DEP] xfconf
+[DEP] xorgproto

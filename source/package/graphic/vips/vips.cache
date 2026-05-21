@@ -1,0 +1,47 @@
+[TIMESTAMP] 1760442977 Tue Oct 14 13:56:17 2025
+[BUILDTIME] 55 (9)
+[SIZE] 5.75 MB, 84 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] expat
+[DEP] fftw3
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[DEP] glib
+[DEP] gobject-introspection
+[DEP] grep
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] highway
+[DEP] lcms2
+[DEP] libarchive
+[DEP] libexif
+[OPT] libheif
+[DEP] libjpeg
+[OPT] libjxl
+[DEP] libpng
+[DEP] librsvg
+[DEP] libtiff
+[OPT] libwebp
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openexr
+[DEP] openjpeg
+[DEP] openssl
+[DEP] pango
+[DEP] pkgconfig
+[DEP] poppler
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar
+[DEP] zlib

@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/fbgrab/fbgrab.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A framebuffer screenshot program
+
+[T] FBGrab is a framebuffer screenshot program,
+[T] capturing the Linux framebuffer and converting it
+[T] to a PNG image.
+
+[U] https://github.com/GunnarMonell/fbgrab
+
+[A] Gunnar Monell <gmo@linux.nu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 1.5
+
+[D] 9d43a13a884509704727af0adec0dea7fd67a392cc57bfcb3c93ea9a fbgrab-1.5.tar.gz https://github.com/GunnarMonell/fbgrab/archive/1.5/
+
+hook_add prepatch 3 "sed -ie '/splint/d' Makefile"

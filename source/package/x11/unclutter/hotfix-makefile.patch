@@ -1,0 +1,30 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/unclutter/hotfix-makefile.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- unclutter/Makefile.vanilla	2008-12-19 22:59:30.000000000 +0100
++++ unclutter/Makefile	2008-12-19 23:08:24.000000000 +0100
+@@ -23,11 +23,11 @@
+         IMAKE_CMD = $(IMAKE) -DUseInstalled -I$(IRULESRC) $(IMAKE_DEFINES)
+            BINDIR = $(DESTDIR)/usr/bin/X11
+           INCROOT = $(DESTDIR)/usr/include
+-          MANPATH = $(DESTDIR)/usr/catman/x11_man
++          MANPATH = $(DESTDIR)/usr/X11/man
+     MANSOURCEPATH = $(MANPATH)/man
+            MANDIR = $(MANSOURCEPATH)1
+             IMAKE = imake
+-             XLIB = $(EXTENSIONLIB)  -lX11
++             XLIB = $(EXTENSIONLIB) $(shell pkg-config x11 --libs)
+ 
+   LOCAL_LIBRARIES = $(XLIB)
+ 
+@@ -44,7 +44,6 @@
+ 
+ install:: unclutter
+ 	$(INSTALL) -c $(INSTPGMFLAGS)   unclutter $(BINDIR)
+-install.man:: unclutter.man
+ 	$(INSTALL) -c $(INSTMANFLAGS) unclutter.man $(MANDIR)/unclutter.1
+ clean::
+ 	$(RM) $(PROGRAM)

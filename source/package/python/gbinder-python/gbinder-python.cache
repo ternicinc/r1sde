@@ -1,0 +1,20 @@
+[TIMESTAMP] 1739044578 Sat Feb  8 20:56:18 2025
+[BUILDTIME] 3 (5)
+[SIZE] 0.37 MB, 16 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gbinder
+[DEP] glib
+[DEP] libglibutil
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar

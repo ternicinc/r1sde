@@ -1,0 +1,63 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ruby/ruby.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Ruby programming language
+
+[T] Ruby is a an exciting new, pure, object oriented programming language.
+[T] While few people in the West have heard of Ruby yet, it has taken off like
+[T] wildfire in Japani - already overtaking the Python language in popularity.
+
+[U] https://www.ruby-lang.org/
+[U] https://rubycentral.org/
+[U] https://rubycentral.com/
+
+[A] Yukihiro Matsumoto <matz@netlab.jp>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS FPIC
+
+[E] del valgrind
+[E] opt systemtap
+
+[L] GPL
+[V] 4.0.5
+[P] X -----5---9 200.000
+
+[D] b990a6ba6747657211f582bdb0f64c727733583a8979f7c3e8773d00 ruby-4.0.5.tar.xz https://cache.ruby-lang.org/pub/ruby/4.0/
+
+runcargo=0
+var_append confopt ' ' --disable-install-doc
+
+# miniruby segfaults on ppc64 when built with pthread support:
+# make: *** [.rbconfig.time] Aborted (core dumped)
+# make: *** [libruby.so] Aborted (core dumped)
+case $arch in
+powerpc64|sparc*)
+	var_append confopt ' ' '--disable-pthread' ;;
+*)
+	var_append confopt ' ' '--enable-pthread' ;;
+esac
+
+# NOTE: otherwise it defaults to __builtin_setjmp, which messes around
+#       register states causing segfaults on ia64.
+[ "$arch" = "ia64" ] && var_append confopt ' ' --with-setjmp-type=setjmp
+
+[ "$SDECFG_STATIC" != 1 ] && var_append confopt ' ' --enable-shared
+
+set_rubylib() {
+	RUBYLIB="$libdir/ruby/$ver"
+
+	for x in $(find $builddir/ruby-*/ext -type d); do
+		RUBYLIB="${RUBYLIB}:$x"
+	done
+	export RUBYLIB
+}
+hook_add inmake 5 set_rubylib
+
+[[ $libdir = *lib64 ]] && hook_add preconf 5 "sed -i -e 's,lib/ruby,lib64/ruby,' configure"
+cpu="`echo $arch | arch2uname`"

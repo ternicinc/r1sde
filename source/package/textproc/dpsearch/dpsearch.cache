@@ -1,0 +1,18 @@
+
+[TIMESTAMP] 1684766598 Mon May 22 14:43:18 2023
+[BUILDTIME] 5 (9)
+[SIZE] 7.18 MB, 550 files
+
+[DEP] 00-dirtree
+[DEP] aspell
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] zlib

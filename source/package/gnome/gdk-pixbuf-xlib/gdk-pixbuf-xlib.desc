@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gdk-pixbuf-xlib/gdk-pixbuf-xlib.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Deprecated Xlib integration for the GdkPixBuf image handling library
+
+[T] GdkPixbuf-Xlib contains the deprecated API for integrating GdkPixbuf
+[T] with Xlib data types.
+
+[U] https://gitlab.gnome.org/Archive/gdk-pixbuf-xlib
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] Andreas Baumann
+
+[C] extra/development extra/desktop/gnome
+[F] CROSS
+
+[L] LGPL
+[V] 2.40.2
+[P] X -----5---9 179.200
+
+[D] 5fada822369f1f0274e02fb408509957592f69ef6cc3f5051464c728 gdk-pixbuf-xlib-2.40.2.tar.gz https://gitlab.gnome.org/Archive/gdk-pixbuf-xlib/-/archive/2.40.2/
+
+. $base/package/*/*/gnome-conf.in

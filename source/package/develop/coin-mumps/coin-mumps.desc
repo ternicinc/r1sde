@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/coin-mumps/coin-mumps.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] COIN-OR autotools harness to build Mumps
+
+[T] COIN-OR autotools harness to build Mumps. 
+
+[U] https://www.coin-or.org/
+
+[A] COIN-OR Foundation
+[M] andrei32
+
+[C] base/library
+[F] CROSS NOPARALLEL
+
+[L] EPL
+[V] 3.0.12
+[P] X -----5---9 201.000
+
+[D] 589ef69aaad223102a3e17bc43c301511e837467a37a603286452421 ThirdParty-Mumps-3.0.12.tar.gz https://github.com/coin-or-tools/ThirdParty-Mumps/archive/releases%2F3.0.12/
+[D] b6a99307515b438b4dd64347f5b64ff0ed7725c87c813ef6bbefd467 MUMPS_5.8.2.tar.gz https://coin-or-tools.github.io/ThirdParty-Mumps/
+
+mumps() {
+	tar -xzf $(match_source_file -p MUMPS.*tar.gz)
+	mv MUMPS* MUMPS
+	patch -p0 < mumps_mpi.patch
+	mv MUMPS/libseq/mpi.h MUMPS/libseq/mumps_mpi.h
+}
+hook_add prepatch 4 mumps

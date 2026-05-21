@@ -1,0 +1,24 @@
+
+[TIMESTAMP] 1732204922 Thu Nov 21 17:02:02 2024
+[BUILDTIME] 220 (9)
+[SIZE] 14.49 MB, 7 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] directx-shader-compiler
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libsdl2
+[DEP] linux-header
+[DEP] make
+[DEP] ncurses
+[DEP] openal
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] vulkan-headers

@@ -1,0 +1,66 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/orbit2/orbit2.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A high-performance CORBA ORB (object request broker)
+
+[T] ORBit2 is a high-performance CORBA (Common Object Request Broker
+[T] Architecture) ORB (object request broker). It allows programs to
+[T] send requests and receive replies from other programs, regardless
+[T] of the locations of the two programs. CORBA is an architecture that
+[T] enables communication between program objects, regardless of the
+[T] programming language they're written in or the operating system they
+[T] run on.
+[T]
+[T] You will need to install this package if you want to run programs that use
+[T] the ORBit2 implementation of CORBA technology, e.g. GNOME.
+
+[A] Dick Porter <dick@acm.org>
+[A] Elliot Lee <sopwith@redhat.com>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/development extra/desktop/gnome
+[F] CROSS NO-LTO
+
+[L] GPL
+[V] 2.14.19
+[P] X ?----5---9 141.000
+
+[CV-URL] https://download.gnome.org/sources/orbit2/cache.json
+[D] 66cc0e1e8124064e19419ac48d5d2d66d56a556c97ecdae8ce4272f0 ORBit2-2.14.19.tar.bz2 https://download.gnome.org/sources/ORBit2/2.14/
+
+if ! atstage toolchain; then
+	. $base/package/*/*/gnome-conf.in
+fi
+
+pkginstalled openssl && var_append confopt ' ' --with-openssl
+
+orbit2_fill_cache() {
+	cat >> config.cache <<-EOT
+		ac_cv_alignof_CORBA_octet=1
+		ac_cv_alignof_CORBA_boolean=1
+		ac_cv_alignof_CORBA_char=1
+		ac_cv_alignof_CORBA_wchar=2
+		ac_cv_alignof_CORBA_short=$arch_sizeof_short
+		ac_cv_alignof_CORBA_long=$arch_sizeof_long
+		ac_cv_alignof_CORBA_long_long=$arch_sizeof_long_long
+		ac_cv_alignof_CORBA_float=4
+		ac_cv_alignof_CORBA_double=8
+		ac_cv_alignof_CORBA_long_double=8
+		ac_cv_alignof_CORBA_struct=1
+		ac_cv_alignof_CORBA_pointer=$arch_sizeof_char_p
+EOT
+}
+
+if atstage cross; then
+	# use a native orbit-idl compiler, hack for now, but should
+	# continoue to work when we build a native orbit-idl in stage 0,
+	# ... -ReneR
+	var_append makeopt ' ' "IDL_COMPILER=`which orbit-idl-2`"
+	hook_add preconf 5 orbit2_fill_cache
+fi
+
+var_append GCC_WRAPPER_REMOVE ' ' -DG_DISABLE_DEPRECATED

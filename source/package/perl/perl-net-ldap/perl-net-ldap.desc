@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-net-ldap/perl-net-ldap.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Implements a LDAP services API for Perl
+
+[T] Net::LDAP is a collection of modules that implements a LDAP services API
+[T] for Perl programs. The module may be used to search directories or perform
+[T] maintenance functions such as adding, deleting or modifying entries.
+
+[A] Graham Barr <gbarr@pobox.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[E] add perl-convert-asn1 perl-authen-sasl perl-uri perl-io-socket-ssl perl-net-ssleay
+
+[L] Artistic GPL
+[V] 0.68
+[P] X -----5---9 150.500
+
+[D] c6bd84bda41aa5af6c6523a12a68743bda6cad47a9c13f11689889bb perl-ldap-0.68.tar.gz https://cpan.metacpan.org/authors/id/M/MA/MARSCHAP/

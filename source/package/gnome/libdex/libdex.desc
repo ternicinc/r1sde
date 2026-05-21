@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libdex/libdex.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GNOME library for deferred execution
+
+[T] Dex provides Future-based programming for GLib-based applications. It both
+[T] integrates with and brings new features for application and library authors
+[T] who want to structure concurrent code in an easy to manage way.
+
+[U] https://gitlab.gnome.org/GNOME/libdex
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development extra/desktop/gnome
+[F] CROSS
+
+[E] opt liburing
+[E] opt libsoup3
+
+[L] LGPL
+[V] 1.1.0
+[P] X -----5---9 500.000
+
+[CV-FLAGS] ODD-UNSTABLE
+[D] 79758bd68dcd828562d121b42641c8094ade9f97a249c3d35918be57 libdex-1.1.0.tar.xz https://download.gnome.org/sources/libdex/1.1/

@@ -1,0 +1,25 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dietlibc/clearenv.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+A clearenv, as needed for latest u/dev - sigh.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- ./libugly/clearenv.c	2006-06-15 18:22:57.855986824 +0200
++++ ./libugly/clearenv.c	2006-06-22 16:10:28.000000000 +0200
+@@ -0,0 +1,12 @@
++#include <string.h>
++#include <stdlib.h>
++
++#include <dietwarning.h>
++
++extern char **__origenv; /* from putenv */
++
++int clearenv(void) {
++  if (!__origenv) __origenv=environ;
++  environ=realloc(environ==__origenv?0:environ,sizeof(char*));
++  environ[0]=0;
++}

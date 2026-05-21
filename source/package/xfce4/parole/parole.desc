@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/parole/parole.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A new modern media player for Xfce
+
+[T] Parole is a modern simple media player based on the GStreamer framework and
+[T] written to fit well in the Xfce deskto
+
+[U] https://goodies.xfce.org/
+
+[A] Ali Abdallah <aliov@xfce.org>
+[M] Gerardo Di Iorio <arete74@gmail.com>
+
+[C] extra/desktop/xfce
+
+[L] GPL
+[V] 4.20.0
+
+[D] 58b3fee622c27c83ea4c70c7f86852ffbed26a079f0052cc2e8079c1 parole-4.20.0.tar.xz https://archive.xfce.org/src/apps/parole/4.20/
+
+. $base/package/xfce4/*/xfce4-conf.in

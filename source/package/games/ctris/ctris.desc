@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ctris/ctris.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Tetris clone for the console
+
+[T] Ctris is a Tetris clone for the console. It uses the ncurses library.
+
+[U] https://github.com/0xminik/ctris/
+
+[A] Dominik Hackl <dominik.hackl@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+[F] CROSS
+
+[L] GPL
+[V] 0.43
+
+[D] a704b8b6a1f91ae2bccaa7e6646b50c57a3065e5103f3986daeea1b2 ctris-0.43.tar.gz https://github.com/0xminik/ctris/archive/refs/tags/v0.43/
+
+var_append GCC_WRAPPER_APPEND ' ' -fcommon

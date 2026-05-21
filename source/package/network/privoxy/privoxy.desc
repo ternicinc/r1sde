@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/privoxy/privoxy.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Privoxy is a web proxy based on Internet Junkbuster (tm)
+
+[T] Privoxy is a web proxy with advanced filtering capabilities for protecting privacy,
+[T] modifying web page content, managing cookies, controlling access, and removing ads,
+[T] banners, pop-ups and other obnoxious Internet junk.
+
+[U] https://www.privoxy.org/
+
+[A] many <developers@privoxy.org>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/network
+
+[L] OpenSource
+[V] 4.1.0
+
+[D] 5c4a7d1ab33dd7e641561578aa7d68abdaf5196d679be2f5e90832bd privoxy-4.1.0-stable-src.tar.gz https://prdownloads.sourceforge.net/sourceforge/ijbswa/4.1.0 (Stable)
+
+[ $prefix_auto = 1 ] && prefix=opt/privoxy && set_confopt
+hook_add preconf 5 "autoheader; autoconf"
+var_append makeinstopt ' ' STRIP=

@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/zathura-djvu/zathura-djvu.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Plugin adds DjVu support to zathura by using the djvulibre library
+
+[T] Plugin adds DjVu support to zathura by using the djvulibre library.
+
+[U] https://pwmt.org/projects/zathura-djvu/
+
+[A] pwmt
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/office
+[F] CROSS
+
+[L] ZLIB
+[V] 2026.02.03
+
+[D] 7db9667a5d60eb3f18bd84e939fa4cd1d70140f51798595fa239427a zathura-djvu-2026.02.03.tar.xz https://pwmt.org/projects/zathura-djvu/download/

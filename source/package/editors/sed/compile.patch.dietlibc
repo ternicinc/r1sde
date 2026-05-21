@@ -1,0 +1,26 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/sed/compile.patch.dietlibc
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2004 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./lib/Makefile.in.orig	2005-01-25 05:30:31.000000000 -0300
++++ ./lib/Makefile.in	2005-10-31 15:49:39.000000000 -0300
+@@ -42,7 +42,7 @@
+ subdir = lib
+ DIST_COMMON = $(noinst_HEADERS) $(srcdir)/Makefile.am \
+ 	$(srcdir)/Makefile.in $(srcdir)/regex_.h $(srcdir)/stdbool_.h \
+-	alloca.c getline.c memchr.c memcmp.c memmove.c mkstemp.c \
++	alloca.c memchr.c memcmp.c memmove.c mkstemp.c \
+ 	obstack.c obstack.h regex.c strerror.c strverscmp.c
+ ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
+ am__aclocal_m4_deps = $(top_srcdir)/config/codeset.m4 \
+@@ -259,7 +259,6 @@
+ 	-rm -f *.tab.c
+ 
+ @AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/alloca.Po@am__quote@
+-@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/getline.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/memchr.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/memcmp.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/memmove.Po@am__quote@

@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/liboobs/liboobs.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Is a wrapping library to the System Tools Backends
+
+[T] Is a wrapping library to the System Tools Backends. It will provide easy
+[T] to access GObjects to system configuration details, like users, groups
+[T] and network interfaces. It will handle sessions with the backend and data
+[T] consistency, too.
+
+[U] https://www.gnome.org
+
+[A] Carlos Garnacho Parro <carlosg@gnome.org>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/desktop/gnome
+
+[L] GPL
+[V] 3.0.0
+
+[CV-URL] https://download.gnome.org/sources/liboobs/cache.json
+[D] 4f94933c2d0dbbd05b0602082303469bd0fbb6ac81d2c9a104edc28d liboobs-3.0.0.tar.gz https://download.gnome.org/sources/liboobs/3.0/

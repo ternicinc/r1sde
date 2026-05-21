@@ -1,0 +1,28 @@
+[TIMESTAMP] 1743156494 Fri Mar 28 11:08:14 2025
+[BUILDTIME] 2 (9)
+[SIZE] 0.12 MB, 8 files
+
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] epoxy
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] grep
+[DEP] gtk+
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] libxml
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[DEP] sed
+[DEP] tar
+[DEP] wayland
+[DEP] wayland-protocols

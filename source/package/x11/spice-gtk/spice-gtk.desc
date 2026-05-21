@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/spice-gtk/spice-gtk.desc
+[COPY] Copyright (C) 2015 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A GTK+3 SPICE widget
+
+[T] It features glib-based objects for SPICE protocol parsing and a gtk
+[T] widget for embedding the SPICE display into other applications such as
+[T] virt-manager or Boxes. Python and Vala bindings are available too.
+
+[U] https://www.spice-space.org/download.html
+
+[A] Yaniv Kamay <ykamay@redhat.com> {Original project author}
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/x11
+
+[E] add six
+[E] add vala
+[E] opt asciidoc gtk-doc docbook-xml docbook-xsl
+[E] opt cyrus-sasl2
+[E] opt libopus
+
+[L] LGPL
+[V] 0.42
+[P] X -----5---9 400.440
+
+[D] e668362012a5dfa688619a7ded193a4a338448b1887073fc5b7e66a8 spice-gtk-0.42.tar.xz https://www.spice-space.org/download/gtk/

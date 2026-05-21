@@ -1,0 +1,24 @@
+[TIMESTAMP] 1768842456 Mon Jan 19 18:07:36 2026
+[BUILDTIME] 4800 (9)
+[SIZE] 721.72 MB, 2696 files
+
+[DEP] automake
+[DEP] bash
+[OPT] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] libedit
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] xz
+[DEP] zlib

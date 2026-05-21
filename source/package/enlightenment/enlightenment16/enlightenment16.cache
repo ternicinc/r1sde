@@ -1,0 +1,38 @@
+[TIMESTAMP] 1744385122 Fri Apr 11 17:25:22 2025
+[BUILDTIME] 10 (9)
+[SIZE] 13.59 MB, 2564 files
+
+[DEP] bash
+[DEP] cf
+[DEP] coreutils
+[DEP] dbus
+[DEP] diffutils
+[DEP] findutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] imake
+[DEP] imlib2
+[DEP] libice
+[DEP] libsm
+[DEP] libsndfile
+[DEP] libx11
+[DEP] libxcomposite
+[DEP] libxdamage
+[DEP] libxext
+[DEP] libxfixes
+[DEP] libxft
+[DEP] libxinerama
+[DEP] libxrandr
+[DEP] libxrender
+[DEP] linux-header
+[DEP] make
+[DEP] pango
+[DEP] pulseaudio
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mono-develop/mono-develop.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Graphical debugger written in c# for Mono
+
+[T] The Mono Debugger is a graphical debugger which is written in C#. It
+[T] can debug both native and managed applications and it has a graphical
+[T] and a text-mode user interface.
+[T]
+[T] You can debug any single-threaded and multi-threaded managed
+[T] applications (unmanaged multi-threaded applications are also
+[T] supported, but a few restrictions apply in this case).
+
+[U] http://www.monodevelop.org/
+
+[A] Martin Baulig <martin@ximian.com>
+[A] Miguel de Icaza <miguel@ximian.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] NOPARALLEL
+
+[L] GPL
+[V] 2.4.2
+
+[CV-URL] http://go-mono.com/sources-stable/
+[D] 989dc77b916d9cbe68fb8ad28915bd04cb0570a3aeb3f34aeddd512c monodevelop-2.4.2.tar.bz2 http://ftp.novell.com/pub/mono/sources/monodevelop/
+
+. $base/package/*/*/mono.in
+. $base/package/*/mono/mono.in
+
+var_append makeinstopt ' ' UPDATE_MIME_DB=true

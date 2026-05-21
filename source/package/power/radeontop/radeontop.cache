@@ -1,0 +1,20 @@
+[TIMESTAMP] 1739232518 Tue Feb 11 01:08:38 2025
+[BUILDTIME] 2 (5)
+[SIZE] 0.13 MB, 18 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] gzip
+[DEP] libdrm
+[DEP] libpciaccess
+[DEP] libxcb
+[DEP] linux-header
+[DEP] make
+[DEP] ncurses
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar

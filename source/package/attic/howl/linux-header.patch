@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/howl/linux-header.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- howl-1.0.0/src/lib/howl/Posix/posix_interface.c.vanilla	2007-05-12 11:14:07.401940485 +0200
++++ howl-1.0.0/src/lib/howl/Posix/posix_interface.c	2007-05-12 11:14:25.410966761 +0200
+@@ -42,6 +42,7 @@
+ typedef __uint16_t 	u16;
+ typedef __uint8_t		u8;
+ #	include <linux/sockios.h>
++#	include <linux/types.h>
+ #	include <linux/ethtool.h> 
+ #endif
+ 

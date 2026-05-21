@@ -1,0 +1,21 @@
+[TIMESTAMP] 1745927194 Tue Apr 29 14:46:34 2025
+[BUILDTIME] 5 (9)
+[SIZE] 0.50 MB, 11 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[OPT] flac
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libmikmod
+[DEP] libogg
+[DEP] libsdl
+[DEP] libvorbis
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar

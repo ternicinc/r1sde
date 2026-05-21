@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/bitfields/bitfields.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A simple tool to accurately inspect individual bitfields
+
+[T] This is a simple tool to accurately inspect the individual fields of a register.
+
+[U] https://github.com/ajdlinux/bitfield
+
+[A] Jeremy Kerr <jk@ozlabs.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] GPL
+[V] 0.2
+[P] X -----5---9 126.800
+
+[D] 9bc3b9fbb4a15ed63f30bded5b4a2b8b3de2c682309d5b8852cb6d38 bitfield-0.2.tar.gz http://jk.ozlabs.org/projects/bitfield/

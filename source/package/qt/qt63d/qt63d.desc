@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/qt63d/qt63d.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Qt3D project for Qt6
+
+[T] The Qt3D project for Qt5: Qt3D QML bindings and Qt3D C++ APIs.
+
+[U] https://qt.io
+
+[A] Trolltech AS <www.trolltech.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS OBJDIR
+
+[L] LGPL
+[V] 6.11.1
+[P] X -----5---9 141.000
+
+[CV-GROUP] qt6
+[D] 5b5c2213e931416a2d623e04b5b5a26959894695a41385bf730b9adf qt3d-everywhere-src-6.11.1.tar.xz http://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/
+
+. $base/package/*/*/qt6-conf.in

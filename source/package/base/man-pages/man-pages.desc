@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/man-pages/man-pages.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Over 1100 man pages for Linux
+
+[T] A large collection of man pages (documentation) from the Linux
+[T] Documentation Project (LDP). The man pages are organized
+[T] into the following sections:
+[T] - Section 1, user commands (intro only)
+[T] - Section 2, system calls
+[T] - Section 3, libc calls
+[T] - Section 4, devices (e.g., hd, sd)
+[T] - Section 5, file formats and protocols (e.g., wtmp, /etc/passwd, nfs)
+[T] - Section 6, games (intro only)
+[T] - Section 7, conventions, macro packages, etc. (e.g., nroff, ascii)
+[T] - Section 8, system administration (intro only)
+
+[A] Andries E. Brouwer <aeb@cwi.nl>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/documentation
+[F] CROSS
+
+[L] OpenSource
+[V] 6.18
+
+[D] f220ee90e25beeed75eed9700a4df318b2a67986a96144ad4ea91033 man-pages-6.18.tar.xz https://www.kernel.org/pub/linux/docs/man-pages/
+
+makeopt=; var_insert makeinstopt ' ' -R
+hook_add premake 5 "rm -vf man3/getspnam.3 man5/passwd.5" # shadow
+hook_add premake 7 "rm -vf man3/crypt.3 man3/crypt_r.3" # xcrypt
+hook_add premake 7 "rm -vf man2/move_pages.2" # numactl

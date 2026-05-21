@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lftp/lftp.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A ftp client
+
+[T] LFTP is sophisticated ftp/http client, file transfer program. Like BASH,
+[T] it has job control and uses readline library for input. It has bookmarks,
+[T] built-in mirror, can transfer several files in parallel. It was designed
+[T] with reliability in mind.
+
+[U] https://lftp.yar.ru/
+
+[A] Alexander V. Lukyanov <lav@yars.free.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[E] opt libidn2
+
+[L] GPL
+[V] 4.9.3
+
+[D] 7513dda6b29db343d01f7150616e2f12fa5a56b0b21ce18203f82782 lftp-4.9.3.tar.xz http://lftp.yar.ru/ftp/

@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/intel-onevpl/intel-onevpl.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Intel graphics memory management library
+
+[T] The Intel Graphics Memory Management Library provides device specific
+[T] and buffer management for the Intel Graphics Compute Runtime for
+[T] OpenCL and the Intel Media Driver for VAAPI.
+
+[U] https://github.com/oneapi-src/oneVPL-intel-gpu/
+
+[A] Intel
+[M] NoTag <notag@t2sde.org>
+
+[C] base/x11
+[F] CROSS OBJDIR NO-LTO.gcc
+
+[L] MIT
+[V] 26.2.0
+[P] X -----5---9 127.600
+
+[D] d1c17034b82ed617d59b004c15681ccc883f2ecc869e3b22cfa125ca intel-onevpl-26.2.0.tar.gz https://github.com/oneapi-src/oneVPL-intel-gpu/archive/refs/tags/

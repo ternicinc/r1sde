@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/html5lib/html5lib.desc
+[COPY] Copyright (C) 2020 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library for parsing and serializing HTML
+
+[T] Standards-compliant library for parsing and serializing HTML documents
+[T] and fragments in Python.
+
+[U] https://pypi.org/project/html5lib/
+
+[A] James Graham
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[E] add webencodings
+
+[L] MIT
+[V] 1.1
+[P] X -----5---9 136.800
+
+[D] 68263959ee52250032167d1fd1637739ae90b054161aab793219ef02 html5lib-1.1.tar.gz https://files.pythonhosted.org/packages/ac/b6/b55c3f49042f1df3dcd422b7f224f939892ee94f22abcf503a9b7339eaf2/

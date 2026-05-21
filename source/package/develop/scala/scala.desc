@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/scala/scala.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A scalable multiplatform programming language
+
+[T] A programming language that scales with you: from small scripts to large
+[T] multiplatform applications.
+
+[U] https://www.scala-lang.org/
+
+[A] École Polytechnique Fédérale
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 3.8.3
+
+[D] 50bb272b895504d48861855f7053770dc55839493fc1ec322dd56dc8 scala3-3.8.3.tar.gz https://github.com/scala/scala3/archive/refs/tags/3.8.3/

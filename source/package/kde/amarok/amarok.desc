@@ -1,0 +1,37 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/amarok/amarok.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A KDE music player
+
+[T] AmaroK is the audio player for KDE. It supports many multimedia frameworks
+[T] (like GStreamer, XINE, and aRts) to play music media and streams, and
+[T] features a fresh and efficient approach to playlist handling. The emphasis
+[T] is on the quick and easy user interface, allowing for fast access to the
+[T] media library.
+
+[U] https://apps.kde.org/amarok/
+
+[A] The KDE-Team
+[M] Martin Baum <martin.baum@berlin.de>
+
+[C] extra/multimedia extra/desktop/kde
+[F] CROSS OBJDIR
+
+[E] opt cups
+[E] opt kdoctools docbook-xml docbook-xsl
+
+[L] GPL
+[V] 3.3.2
+
+[D] 839cca2c50828252918f4b5a8b9e5cdf884efc1061d8a421c8adf5b0 amarok-3.3.2.tar.gz https://github.com/KDE/amarok/archive/v3.3.2/
+
+. $base/package/*/*/kde-conf.in
+var_append cmakeopt ' ' -DBUILD_WITH_QT6=ON
+var_append GCC_WRAPPER_APPEND ' ' -L$root$(pkgprefix libdir glib)
+
+if pkginstalled mariadb && ! pkginstalled mysql; then
+	var_append cmakeopt ' ' -DWITH_EMBEDDED_DB=NO
+fi

@@ -1,0 +1,27 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/lcap/hotfix-install.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- lcap-0.0.6/Makefile.vanilla	2007-06-17 13:26:43.031213312 +0200
++++ lcap-0.0.6/Makefile	2007-06-17 13:27:10.048752954 +0200
+@@ -29,14 +29,16 @@
+ LDFLAGS = -s
+ 
+ FILES = COPYING INSTALL Makefile README lcap.c lcap.spec lcap.8
++
++prefix=/usr
+   
+ all:		lcap
+ 
+ lcap:		lcap.o
+ 
+ install:	lcap
+-		install -m700 -D lcap $(prefix)/sbin/lcap
+-		install -m444 -D lcap.8 $(prefix)/usr/man/man8/lcap.8
++		install -m700 -D lcap $(DESTDIR)/sbin/lcap
++		install -m444 -D lcap.8 $(DESTDIR)$(prefix)/man/man8/lcap.8
+ 
+ rpms:
+ 		$(MAKE) dist

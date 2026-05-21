@@ -1,0 +1,26 @@
+
+[TIMESTAMP] 1690848905 Tue Aug  1 02:15:05 2023
+[BUILDTIME] 3 (9)
+[SIZE] 1.25 MB, 52 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] file
+[DEP] findutils
+[DEP] gawk
+[DEP] glib
+[DEP] glib12
+[DEP] grep
+[DEP] libsoup
+[DEP] libxml1
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] popt
+[DEP] sed
+[DEP] tar
+[DEP] zlib
+[DEP] zlib

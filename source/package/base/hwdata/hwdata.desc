@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/hwdata/hwdata.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Hardware ID database
+
+[T] Hwdata contains various hardware identification and configuration data,
+[T] such as the pci.ids and usb.ids databases.
+
+[U] https://github.com/vcrhonek/hwdata
+
+[A] Vitezslav Crhonek <vcrhonek@redhat.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+
+[L] GPL
+[V] 0.406
+[P] X -----5---9 125.000
+
+[D] 7d2dc699193894e26ce8499deb770502771ca8f24abc6575f2646d9c hwdata-0.406.tar.gz https://github.com/vcrhonek/hwdata/archive/v0.406/
+
+var_append confopt ' ' --disable-blacklist

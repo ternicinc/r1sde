@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/keditbookmarks/keditbookmarks.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Bookmark organizer and editor
+
+[T] The editor shows a tree view of your KDE bookmarks and bookmark subfolders.
+[T] Several applications in the KDE suite let you create bookmarks (e.g.
+[T] Konqueror, Konsole, Konversation) and will launch this bookmark editor from
+[T] their Bookmarks -> Edit Bookmarks menu item.
+
+[U] https://www.kde.org
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[E] opt kdoctools docbook-xml docbook-xsl
+
+[L] GPL
+[V] 26.04.1
+
+[CV-GROUP] kde-gear
+[D] 38767293a47eec2a74a9fb55c9835d4a5acce4985c3d1ce207ae2760 keditbookmarks-26.04.1.tar.xz https://download.kde.org/stable/release-service/26.04.1/src/
+
+. $base/package/*/*/kde-conf.in

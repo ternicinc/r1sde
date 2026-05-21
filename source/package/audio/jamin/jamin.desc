@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/jamin/jamin.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A JACK Audio Mastering interface
+
+[T] JAMin is a realtime mastering processor designed to bring out the detail
+[T] in recorded music and provide the final layer of polish. Every effort
+[T] has been made to ensure a clean, distortion-free signal path. All
+[T] processing elements use linear-phase filtering, ensuring that no phase
+[T] distortion is introduced. JAMin uses the JACK Audio Connection Kit, a
+[T] low-latency audio server, which can connect a number of different
+[T] applications to an audio device, and also allow them to share audio
+[T] among themselves.
+
+[U] https://jamin.sourceforge.net/
+
+[A] Jack O'Quin
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 0.95.0
+[P] X -----5---9 182.200
+
+[D] 551e8b4494828a84488c5d91c64bd30ff02d69f820a2831d156c9f3d jamin-0.95.0.tar.gz https://prdownloads.sourceforge.net/sourceforge/jamin/
+
+var_append confopt ' ' --enable-double-fft

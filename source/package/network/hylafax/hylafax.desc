@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/hylafax/hylafax.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2005 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A telecommunication system for UNIX systems
+
+[T] HylaFAX is a telecommunication system for UNIX systems. It supports sending
+[T] facsimile, receiving facsimile, polled retrieval of facsimile, transparent
+[T] shared data use of the modem and sending alpha-numeric pages. The software is
+[T] structured around a client-server architecture. Fax modems may reside on a
+[T] single machine on a network and clients can submit outbound jobs from any
+[T] machine that can communicate with the machine on which the modems reside. An
+[T] access control mechanism is included to control which users on which machines
+[T] may access a server.
+
+[U] https://www.hylafax.org
+[U] https://hylafax.sourceforge.net
+
+[A] Matthias Apitz <guru@sisis.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/server
+[F] NOPARALLEL
+
+[L] OpenSource
+[V] 7.0.11
+
+[D] 99cd54719cef29410d0e2b83346b767dc72b246db288524510503bbe hylafax-7.0.11.tar.gz https://prdownloads.sourceforge.net/sourceforge/hylafax/
+
+hook_add preconf 3 "sed -i -e 's,usr/local,usr,' configure defs.in config.site"

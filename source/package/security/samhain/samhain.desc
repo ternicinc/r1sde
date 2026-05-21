@@ -1,0 +1,75 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/samhain/samhain.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A file integrity checker and host-based intrusion detection
+
+[T] samhain is a multiplatform, open source solution for centralized file
+[T] integrity checking / host-based intrusion detection on POSIX systems
+[T] (Unix, Linux, Cygwin/Windows). It has been designed to monitor multiple
+[T] hosts with potentially different operating systems from a central location,
+[T] although it can also be used as standalone application on a single host.
+
+[U] https://www.la-samhna.de/samhain/
+
+[A] samhain design labs <http://la-samhna.de/samhain/>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+
+[L] OpenSource
+
+[V] 4.5.2
+
+[D] 67b6ef3917638d6636200ddca44ab6d19224363b32b0feab3d07255f samhain_signed-4.5.2.tar.gz https://www.la-samhna.de/archive/
+
+# removing some not supported configure options
+CONFOPT_RM_REGEX="bindir libdir datadir includedir infodir"
+for x in $CONFOPT_RM_REGEX; do
+	var_remove_regex confopt " " "--$x.*"
+done
+
+EXTRACONFOPT_RM_REGEX="enable-gssapi with-gss with-krb5 with-kerberos5 with-mysql-lib with-mysql-include with-ssl"
+for x in $EXTRACONFOPT_RM_REGEX; do
+	var_remove_regex confopt ' ' "--$x.*"
+done
+
+EXTRACONFOPTS_RM="with-pam enable-pam with-libpam enable-libpam with-kerberos"
+for x in $EXTRACONFOPTS_RM; do
+	var_remove confopt ' ' --$x
+done
+
+# checking for prelude support
+if pkginstalled libprelude; then
+	var_append confopt ' ' --with-prelude
+fi
+
+# checking for mysql support
+if pkginstalled mysql; then
+	pkgprefix -t mysql
+	var_append confopt ' ' --enable-xml-log
+	var_append confopt ' ' --with-database=mysql
+	var_append LD_RUN_PATH ':' "$(pkgprefix libdir mysql)/mysql"
+	export LD_RUN_PATH
+fi
+
+# checking for postgresql support
+if pkginstalled postgresql; then
+	pkgprefix -t postgresql
+	var_append confopt ' ' --enable-xml-log
+	var_append confopt ' ' --with-database=postgresql
+	var_append LD_RUN_PATH ':' "$(pkgprefix libdir postgresql)"
+	export LD_RUN_PATH
+fi
+
+samhain_custextract() {
+	echo "Extracting $1 ($taropt) to temporary location ..."
+	pkg_samhain_tempdir=`mktemp -d`
+	tar -v $taropt $1 -C $pkg_samhain_tempdir
+	echo "Extracting2 $1 ($taropt) ..."
+	tar -xzvf $pkg_samhain_tempdir/$pkg-$ver.tar.gz | sed 's,^,$pkg-$ver/,' > untar.txt
+}
+
+custextract=samhain_custextract

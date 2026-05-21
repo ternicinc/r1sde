@@ -1,0 +1,37 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/bin86/no-elks.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- dev86-0.16.17/Makefile.vanilla	2007-04-10 09:12:53.000000000 +0200
++++ dev86-0.16.17/Makefile	2007-04-10 09:13:01.000000000 +0200
+@@ -5,11 +5,11 @@
+ VERSION=0.16.17
+ 
+ TARGETS=install clean other \
+-    bcc86 unproto copt as86 ld86 elksemu \
++    bcc86 unproto copt as86 ld86 \
+     install-all install-bcc install-emu install-lib \
+     install-lib2 install-ln install-man install-other \
+     all-libs alt-libs library lib-386 lib-bsd lib-dos lib-fast lib-stand \
+-    config tests dis88 doselks bootblocks ld86r
++    config tests dis88 bootblocks ld86r
+ 
+ ELKSSRC= /usr/src/elks
+ PREFIX=  /usr
+--- dev86-0.16.17/makefile.in.vanilla	2007-04-10 09:33:27.000000000 +0200
++++ dev86-0.16.17/makefile.in	2007-04-10 09:33:34.000000000 +0200
+@@ -89,10 +89,10 @@
+ 
+ #ifdef GNUMAKE
+ all: check_config bcc86 cpp unproto copt as86 ar86 ld86 objdump86 \
+-     library lib-bsd alt-libs elksemu
++     library lib-bsd alt-libs
+ 
+ install: check_config install-bcc install-man \
+-     install-lib install-emu
++     install-lib
+ 
+ install-all: install install-other
+ 

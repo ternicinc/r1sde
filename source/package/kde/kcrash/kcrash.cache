@@ -1,0 +1,26 @@
+[TIMESTAMP] 1768848676 Mon Jan 19 19:51:16 2026
+[BUILDTIME] 8 (9)
+[SIZE] 0.09 MB, 21 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] findutils
+[DEP] freetype
+[DEP] gawk
+[DEP] grep
+[DEP] kcoreaddons
+[DEP] libx11
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] qt6base
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] vulkan-headers
+[DEP] xorgproto
+[DEP] xz

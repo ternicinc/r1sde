@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dmg2img/dmg2img.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An Apple compressed dmg to standard (hfsplus) image disk file converter
+
+[T] DMG2IMG is an Apple's compressed dmg to standard (hfsplus) image disk
+[T] file convert tool.
+
+[U] http://vu1tur.eu.org/tools/
+
+[A] Jean-Pierre Demailly <demailly@fourier.ujf-grenoble.fr>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 1.6.7
+
+[CV-URL] http://vu1tur.eu.org/tools/
+[D] e0737d9129b34e2f2078db0c830bdb6a6c0ae9bc5031fba57cae1ee2 dmg2img-1.6.7.tar.gz http://vu1tur.eu.org/tools/
+
+var_append makeinstopt ' ' BIN_DIR=$root$bindir/

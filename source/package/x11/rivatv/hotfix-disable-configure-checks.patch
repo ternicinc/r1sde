@@ -1,0 +1,39 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/rivatv/hotfix-disable-configure-checks.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+--- rivatv-0.8.6/configure.orig	2005-07-23 19:26:32.862196560 +0200
++++ rivatv-0.8.6/configure	2005-07-23 19:30:08.645392528 +0200
+@@ -222,15 +222,15 @@
+ 
+ echo -n "Checking for /proc... "
+ 
+-if test -n "`/bin/mount | grep \"type proc\"`"; then
++#if test -n "`/bin/mount | grep \"type proc\"`"; then
+ 	echo "yes"
+-else
+-	echo "no"
+-	echo "*** ERROR:"
+-	echo "*** proc-fs is needed for testing"
+-	echo "*** We recommend you enable proc-fs in your kernel"
+-	exit 1
+-fi
++#else
++#	echo "no"
++#	echo "*** ERROR:"
++#	echo "*** proc-fs is needed for testing"
++#	echo "*** We recommend you enable proc-fs in your kernel"
++#	exit 1
++#fi
+ 
+ echo -n "Checking for kernel gcc... "
+ 
+@@ -243,7 +243,6 @@
+ 	echo "*** If you are going to use the running kernel (compiled with"
+ 	echo "*** gcc version $kgcc) with RivaTV (will be compiled"
+ 	echo "*** with gcc version $bgcc) you may experience system crashes."
+-	WARNINGS=`expr $WARNINGS + 1`
+ fi
+ 
+ # Check for write access to kernel sources

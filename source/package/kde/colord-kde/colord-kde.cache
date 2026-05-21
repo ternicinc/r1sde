@@ -1,0 +1,37 @@
+[TIMESTAMP] 1739219641 Mon Feb 10 21:34:01 2025
+[BUILDTIME] 50 (5)
+[SIZE] 0.99 MB, 59 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] freetype
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] kcmutils
+[DEP] kconfig
+[DEP] kcoreaddons
+[DEP] kdbusaddons
+[DEP] ki18n
+[DEP] kwidgetsaddons
+[DEP] kwindowsystem
+[DEP] lcms2
+[DEP] libx11
+[DEP] libxcb
+[DEP] libxrandr
+[DEP] libxrender
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] procps
+[DEP] qt6base
+[DEP] qt6declarative
+[DEP] sed
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] xorgproto
+[DEP] xz

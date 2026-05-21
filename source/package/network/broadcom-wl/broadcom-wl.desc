@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/broadcom-wl/broadcom-wl.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Broadcom Linux hybrid wireless driver
+
+[T] Broadcom Linux hybrid wireless driver (64-bit).
+
+[U] https://github.com/antoineco/broadcom-wl
+
+[A] Broadcom
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+[R] + x86-64
+
+[L] Commercial
+[V] 34633bb
+[P] O
+
+[D] 577cead813c54e113a0df337dc9fb6438dc5a43976c0bf8e83e5b4eb broadcom-wl-34633bb.tar.gz git+https://github.com/antoineco/broadcom-wl 34633bb
+
+autoextract=0
+custmain="true"

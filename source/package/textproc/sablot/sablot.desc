@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sablot/sablot.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] XSLT, DOM and XPath processor
+
+[T] Sablotron is a fast, compact and portable XML toolkit implementing XSLT
+[T] 1.0, DOM Level2 and XPath 1.0. Sablotron is an open project; other users
+[T] and developers are encouraged to use it or to help us testing or improving
+[T] it. The goal of this project is to create a lightweight, reliable and fast
+[T] XML library processor conforming to the W3C specification, which is
+[T] available for public and can be used as a base for multi-platform XML
+[T] applications.
+
+[U] https://sourceforge.net/projects/sablotron/
+
+[A] Ginger Alliance <sablotron@gingerall.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/text
+[F] CROSS
+
+[L] GPL
+[V] 1.0.3
+
+[D] 8c134dbabc9dd524ca09d043ce4222b777f296d648d4e0b42d18d9ec Sablot-1.0.3.tar.gz http://downloads.sourceforge.net/project/sablotron/sablotron-1.0.3/

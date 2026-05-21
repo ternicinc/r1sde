@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/euler/euler.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A program for quickly and interactively computing
+
+[T] EULER is a program for quickly and interactively computing with real
+[T] and complex numbers and matrices, or with intervals, in the style of
+[T] MatLab, Octave,... It can draw and animate your functions in two and three
+[T] dimensions.
+
+[U] https://euler.sourceforge.net/index.html
+
+[A] Eric Boucharé <bouchare.eric@wanadoo.fr>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/scientific
+[F] CROSS
+
+[L] GPL
+[V] 1.61.0
+
+[D] 282fe1f41825c06aadfaf7e4e0ef0c7e89dd81b56890bfe8a7290fd6 euler-1.61.0.tgz https://download.sourceforge.net/euler/
+
+var_append CC ' ' "-DINSTALL_DIR=\\\"$root/$prefix\\\" -D_POSIX_SOURCE"
+var_append makeopt ' ' INSTALL_DIR=$root/$prefix
+var_append makeinstopt ' ' INSTALL_DIR=$root/$prefix

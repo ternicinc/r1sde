@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ladspa-wasp/ladspa-wasp.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Wave Sculpting LADSPA plugins
+
+[T] Wave Sculpting plugins, are LADSPA generators and processors. Currently four
+[T] plugins are included: X-Shaper (wave shaper), Noisifer, Boosters, and
+[T] Variable Noise Source. They're intended for digital audio processing, in a
+[T] professional DAW environment such as Ardour.
+
+[U] http://sineshine.com/creations/software/
+
+[A] Artemiy Pavlov
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 0.1.4
+
+[D] 3683133931bf2748c8c0d99f9185dbf588da93414afcf13e69ba2e1d wasp-0.1.4.tar.bz2 http://sineshine.com/media/creations/software/
+
+hook_add premake 5 "sed -i -e 's,/usr/lib/ladspa,$libdir/ladspa,g' Makefile"
+. $base/package/*/ladspa/ladspa.in

@@ -1,0 +1,19 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/metamail/65_metamail-2.7-usesox.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- mm2.7/src/bin/showaudio.usesox	Thu Feb  1 12:31:32 2001
++++ mm2.7/src/bin/showaudio	Thu Feb  1 12:36:24 2001
+@@ -151,6 +151,9 @@
+ #  Solaris 2.0
+     /bin/audioconvert -i raw,voice -f sun $* | /bin/audioplay
+     exit $status
++else if (-e /usr/bin/play) then
++# Red Hat Linux
++    exec /usr/bin/play $*
+ else
+     set dev=/dev/audio
+ endif

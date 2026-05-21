@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/squeak/squeak.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A portable Smalltalk 80-based language
+
+[T] Squeak is an OpenSource and super-portable implementation of a multi-media
+[T] capable Smalltalk-80 based object-oriented programming environment. It is
+[T] written entirely in Smalltalk and has a high-performance VM, created by
+[T] compiling the Smalltalk VM code into efficient and portable C code. It
+[T] now uses the Self language's Morphic User Interface but still provides
+[T] the original MVC GUI as well.
+
+[U] https://squeak.org/
+
+[A] Cees de Groot <cg@cdegroot.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] OBJDIR
+
+[L] OpenSource
+[V] 4.10.2.2614
+
+[D] 842e2c28017839c0e7a7e7335a8448be245979b9e35d89d744fe80e7 Squeak-4.10.2.2614-src.tar.gz http://squeakvm.org/unix/release/
+
+runcmake=0
+srcdir="Squeak*/unix"
+var_append GCC_WRAPPER_APPEND ' ' '-fpermissive' # Old code, -fpermissive is required
+hook_add premake 5 "../cmake/configure --prefix=/$prefix"

@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/smartmontools/smartmontools.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Control and monitor storage systems using the S.M.A.R.T system
+
+[T] The smartmontools package contains two utility programs (smartctl and
+[T] smartd) to control and monitor storage systems using the Self-Monitoring,
+[T] Analysis and Reporting Technology System (S.M.A.R.T.) built into most
+[T] modern ATA and SCSI hard disks. It is derived from the smartsuite
+[T] package, and includes support for ATA/ATAPI-5 disks. It should run on
+[T] any modern Linux system.
+
+[U] https://smartmontools.sourceforge.net/
+
+[A] Bruce Allen <smartmontools-support@lists.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS NO-LTO.gcc
+
+[L] GPL
+[V] 7.5
+
+[D] 7b4e91f54123b3a260ef29649f692260e2e4311b94b9b94f99247614 smartmontools-7.5.tar.gz https://sourceforge.net/projects/smartmontools/files/smartmontools/7.5/
+
+var_append confopt ' ' --with-initscriptdir=no

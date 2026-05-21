@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/krusader/krusader.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An advanced twin panel (commander style) file manager for KDE
+
+[T] An advanced twin panel (commander style) file manager for KDE and other
+[T] desktops in the *nix world, similar to Midnight or Total Commander.
+[T] It provides all the file management features you could possibly want.
+
+[U] https://krusader.sourceforge.net
+
+[A] Shie Erlich <erlich@users.sourceforge.net>
+[A] Rafi Yanai <yanai@users.sourceforge.net>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/desktop/kde
+[F] CROSS OBJDIR
+
+[E] opt kdoctools docbook-xml docbook-xsl
+
+[L] GPL
+[V] 2.9.0
+
+[D] fbbccc6076234db0b52109d789e95be9a03ef52dff48393021de5c8c krusader-2.9.0.tar.xz https://download.kde.org/stable/krusader/2.9.0/
+
+. $base/package/*/*/kde-conf.in

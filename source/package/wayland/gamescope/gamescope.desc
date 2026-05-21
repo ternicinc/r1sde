@@ -1,0 +1,21 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gamescope/gamescope.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] SteamOS session compositing window manager
+
+[T] gamescope: the micro-compositor formerly known as steamcompmgr.
+
+[U] https://github.com/ValveSoftware/gamescope
+
+[A] Nvidia Corp.
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/x11
+
+[L] BSD
+[V] 3.16.23
+
+[D] 9eb8909da6823b9e24da9dda06aada5a54ba0511a0c30cdfe0b8c107 gamescope-3.16.23.tar.gz git+https://github.com/ValveSoftware/gamescope.git 3.16.23

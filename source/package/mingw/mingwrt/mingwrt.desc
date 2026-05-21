@@ -1,0 +1,48 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mingwrt/mingwrt.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Header and library interface definitions for win32 run-time
+
+[T] Mingw development header and library interface definitions of the win32 run-time.
+
+[U] https://www.mingw.org/
+
+[A] Colin Peters <colin@fu.is.saga-u.ac.jp>
+[A] Danny Smith <dannysmith@users.sourceforge.net>
+[A] Earnie Boyd <earnie@users.sourceforge.net>
+[A] Luke Dunstan <coder_infidel@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] BINARY CROSS
+
+[R] + x86 x86-64
+[K] + mingw
+
+[L] Free-to-use
+[V] 5.0.2
+[P] O 01-------9 100.300
+
+[D] e3f22eed62f007da6d34e29607fcf265d243fc30c46463aeda4f8bea mingwrt-5.0.2-mingw32-dev.tar.xz https://prdownloads.sourceforge.net/sourceforge/mingw/Base/mingwrt-5.0.2
+
+runmake=0
+chownsrcdir=0
+srcdir=.
+
+if atstage toolchain; then
+	root="$sysroot"
+fi
+
+# this is an exception - don't to this in other non system packages!
+var_append flistroot ' ' mingw
+
+mingwrt_install() {
+	mkdir -p $root/mingw/{include,lib}
+
+	cp -rfv include/* $root/mingw/include/
+	cp -rfv lib/* $root/mingw/lib/
+}
+hook_add postmake 5 mingwrt_install

@@ -1,0 +1,23 @@
+[TIMESTAMP] 1737976104 Mon Jan 27 12:08:24 2025
+[BUILDTIME] 920 (9)
+[SIZE] 411.15 MB, 14947 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] font-util
+[DEP] fontconfig
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] lz4
+[DEP] make
+[DEP] ncurses
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto
+[DEP] zlib

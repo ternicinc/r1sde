@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/arping/arping.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Sending arp and/or ip pings to a given host
+
+[T] The arping utility sends ARP and/or ICMP requests to the specified host
+[T] and displays the replies. The host may be specified by its hostname,
+[T] its IP address, or its MAC address.
+
+[A] Thomas Habets <thomas@habets.pp.se>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 2.28
+
+[D] a0fe6e529d6ef8d380847a538808e466e5ccf002efaa2593bed028d1 arping-2.28.tar.gz https://www.habets.pp.se/synscan/files/

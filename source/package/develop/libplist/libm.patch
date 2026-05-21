@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/libplist/libm.patch
+# Copyright (C) 2020 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- libplist-2.2.0/src/Makefile.in.vanilla	2020-09-29 18:41:35.091988081 +0200
++++ libplist-2.2.0/src/Makefile.in	2020-09-29 18:42:37.271992598 +0200
+@@ -296,7 +296,7 @@
+ LDFLAGS = @LDFLAGS@
+ LIBOBJS = @LIBOBJS@
+ LIBPLIST_SO_VERSION = @LIBPLIST_SO_VERSION@
+-LIBS = @LIBS@
++LIBS = @LIBS@ -lm
+ LIBTOOL = @LIBTOOL@
+ LIPO = @LIPO@
+ LN_S = @LN_S@

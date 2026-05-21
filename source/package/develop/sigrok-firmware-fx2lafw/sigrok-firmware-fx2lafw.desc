@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sigrok-firmware-fx2lafw/sigrok-firmware-fx2lafw.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A open-source firmware for Cypress FX2
+
+[T] fx2lafw is an open-source firmware for Cypress FX2 chips which makes
+[T] them usable as simple logic analyzer and/or oscilloscope hardware.
+
+[U] https://sigrok.org/wiki/Fx2lafw
+
+[A] Uwe Hermann
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/firmware
+[F] CROSS
+
+[L] GPL3
+[V] 0.1.7
+
+[D] 676bc33e4cff0021431313d08b015a30c6418cd09b6981306ecb7dc5 sigrok-firmware-fx2lafw-0.1.7.tar.gz http://sigrok.org/download/source/sigrok-firmware-fx2lafw/

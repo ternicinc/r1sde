@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/nextaw/nextaw.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A replacement library for the Athena (libXaw) widget set
+
+[T] neXtaw is a replacement library for the Athena (libXaw) widget set.
+[T] It is based on Xaw3d, by Kaleb Keithley and is almost 100% backward
+[T] compatible with it. Its goal is to try to emulate the look and feel of the
+[T] N*XTSTEP GUI.
+
+[U] https://siag.nu/neXtaw/
+
+[A] ulric <ulric@siag.nu>
+[M] Leonel Iván Saafigueroa <leonel@saafigueroa.com.ar>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 0.15.1
+
+[D] 63aa81034b56ea5edc18b5ce5f9d48465a771040e06f9c1fd8cd8bc6 neXtaw-0.15.1.tar.gz http://siag.nu/pub/neXtaw/

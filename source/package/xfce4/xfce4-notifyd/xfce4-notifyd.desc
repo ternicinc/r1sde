@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfce4-notifyd/xfce4-notifyd.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Xfce notification-daemon
+
+[T] The Xfce Notify Daemon (xfce4-notifyd for short) is a smallish program
+[T] that [T] implements the "server-side" portion of the Freedesktop desktop
+[T] notifications specification.
+
+[U] http://www.galago-project.org
+
+[A] Nick Schermer <nick@xfce.org>
+[M] Gerardo Di Iorio <arete74@gmail.com>
+
+[C] extra/desktop/xfce
+
+[L] GPL
+[V] 0.9.7
+
+[D] 94b1256c3b7b5a1e9f281d460f7c629e9fedd8e62a9e2cce99f6c5b2 xfce4-notifyd-0.9.7.tar.bz2 https://archive.xfce.org/src/apps/xfce4-notifyd/0.9/
+
+. $base/package/xfce4/*/xfce4-conf.in

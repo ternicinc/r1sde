@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/tor/tor.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An anonymous Internet communication system
+
+[T] Tor is a toolset for a wide range of organizations and people that want to
+[T] improve their safety and security on the Internet. Using Tor can help you
+[T] anonymize web browsing and publishing, instant messaging, IRC, SSH, and
+[T] more.
+
+[U] https://www.torproject.org/
+
+[A] Roger Dingledine and Nick Mathewson
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] BSD
+[V] 0.4.9.8
+
+[D] f04a87e6bb7f84e374bb426a8b6d4263010e3c27f4351f8926ead358 tor-0.4.9.8.tar.gz https://www.torproject.org/dist/

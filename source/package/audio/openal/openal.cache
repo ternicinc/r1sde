@@ -1,0 +1,26 @@
+[TIMESTAMP] 1750791249 Tue Jun 24 20:54:09 2025
+[BUILDTIME] 40 (9)
+[SIZE] 2.96 MB, 36 files
+
+[DEP] alsa-lib
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] dbus
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[OPT] jack
+[OPT] libsndfile
+[DEP] linux-header
+[DEP] make
+[OPT] pipewire
+[DEP] pkgconfig
+[OPT] portaudio
+[OPT] pulseaudio
+[OPT] qt5base
+[DEP] sed
+[DEP] tar
+[DEP] zlib

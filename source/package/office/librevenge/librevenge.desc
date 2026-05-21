@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/librevenge/librevenge.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library for writing document import filters
+
+[T] librevenge is a base library for writing document import filters. It has
+[T] interfaces for text documents, vector graphics, spreadsheets and
+[T] presentations.
+
+[U] https://libwpd.sf.net
+
+[A] William Lachance <w_lach@yahoo.ca>
+[A] Marc Maurer <uwog@uwog.net>
+[A] Fridrich Strba <fridrich.strba@bluewin.ch>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[E] opt doxygen
+
+[L] LGPL
+[V] 0.0.5
+[P] X -----5---9 200.000
+
+[D] 5afaa1cf51c98e3d15ff7ea99763080d147e9801ff6f1165651cf386 librevenge-0.0.5.tar.xz https://prdownloads.sourceforge.net/sourceforge/libwpd/

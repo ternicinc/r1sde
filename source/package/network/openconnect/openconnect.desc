@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openconnect/openconnect.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Open client for proprietary SSL VPNs
+
+[T] OpenConnect is a cross-platform multi-protocol SSL VPN client
+[T] implementation of a number of proprietary VPN protocols:
+[T]   - Cisco AnyConnect
+[T]   - Array Networks AG SSL VPN
+[T]   - Juniper SSL VPN
+[T]   - Pulse Connect Secure
+[T]   - Palo Alto Networks GlobalProtect SSL VPN
+[T]   - F5 Big-IP SSL VPN
+[T]   - Fortinet Fortigate SSL VPN
+[T] OpenConnect is not officially supported by the companies
+[T] owning those protocols.
+
+[U] https://www.infradead.org/openconnect/
+
+[A] David Woodhouse <dwmw2@infradead.org> and contributors
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/network
+
+[L] LGPL
+[V] 9.12
+
+[D] aac5fc0b36f9593bbaa4ad785b6a734171dfc44e15352531d3dd0fa9 openconnect-9.12.tar.gz https://www.infradead.org/openconnect/download/

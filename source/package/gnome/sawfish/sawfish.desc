@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sawfish/sawfish.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An extensible window manager
+
+[T] Sawfish (the window manager formerly known as Sawmill) is an extensible
+[T] window manager using a Lisp-based extension language. All window
+[T] decorations are configurable and all user-interface policy is controlled
+[T] through the language. Its aim is to manage windows in the most flexible
+[T] and attractive manner possible. As such it does not implement desktop
+[T] backgrounds, application docks, or other things that may be achieved
+[T] through separate applications. Sawfish is mostly GNOME-compliant; almost
+[T] all configuration may be made through a graphical interface.
+
+[U] http://downloads.tuxfamily.org/sawfish/
+
+[A] John Harper <john@dcs.warwick.ac.uk>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/windowmanager extra/desktop/gnome
+[F] NO-LTO
+
+[L] GPL
+[V] 1.13.0
+
+[D] 3e3606dfc192ba982b7ee3f502bc2ea55b9ce907b8d2fccc39685a42 sawfish-1.13.0.tar.gz https://github.com/SawfishWM/sawfish/archive/sawfish-1.13.0/
+
+. $base/package/*/*/gnome-conf.in
+hook_add postinstall 3 "register_wm sawfish Sawfish $bindir/sawfish"
+autogen=1

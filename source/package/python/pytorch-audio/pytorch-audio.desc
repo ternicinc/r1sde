@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pytorch-audio/pytorch-audio.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] PyTorch Audio is a library for audio and signal processing
+
+[T] Torchaudio is a library for audio and signal processing with PyTorch. It
+[T] provides I/O, signal and data processing functions, datasets, model
+[T] implementations and application components.
+
+[U] https://pytorch.org/audio
+
+[A] Facebook, Inc
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS OBJDIR
+[C] extra/development
+
+[L] BSD
+[V] 2.11.0
+[P] X -----5---9 310.000
+
+[D] 9080cdbda9c5d7c8ed676ed8dcc90330f591566ed6f11a1b98e9de58 pytorch-audio-v2.11.0.tar.gz https://github.com/pytorch/audio/archive/refs/tags/v2.11.0/
+
+var_append cmakeopt ' ' -DCMAKE_PREFIX_PATH=$libdir/python3.12/site-packages/torch/share/cmake/Torch/
+pkginstalled ffmpeg && var_append cmakeopt ' ' -DUSE_FFMPEG=ON

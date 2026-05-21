@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perceptualdiff/perceptualdiff.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A tool that uses a model of human vision to diff images
+
+[T] Perceptual Image Diff is a command line utility that tells you if two
+[T] similar images are different from the point of view of a theoretical
+[T] human observer. It's useful for running automated regression testing on
+[T] images that are perceptually identical but have minor pixel noise from
+[T] different random number generators or small changes to algorithms.
+
+[U] https://pdiff.sourceforge.net
+
+[A] Hector Yee <yeehector@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+[F] CROSS
+
+[L] GPL
+[V] 2.1
+
+[D] 51aa40fe345700e79ae0f236bb637848594c2d912bd955fa1c3a83a7 perceptualdiff-2.1.tar.gz https://github.com/myint/perceptualdiff/archive/v2.1/
+
+var_append cmakeopt ' ' -DCMAKE_POLICY_VERSION_MINIMUM=3.5

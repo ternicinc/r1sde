@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/spectacle/spectacle.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Spectacle is a KDE base package
+
+[T] Spectacle is a simple application for capturing desktop screenshots.
+
+[U] https://apps.kde.org/spectacle/
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[E] opt kdoctools docbook-xml docbook-xsl
+
+[L] GPL
+[V] 6.6.5
+
+[CV-GROUP] kde-plasma
+[D] d16c1a2216532621674b4f69429dd4085ecb8b52fc6c4baf4fddc096 spectacle-6.6.5.tar.xz https://download.kde.org/stable/plasma/6.6.5/
+
+. $base/package/*/*/kde-conf.in
+var_append GCC_WRAPPER_APPEND ' ' -I$root/usr/include/opencv4

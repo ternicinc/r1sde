@@ -1,0 +1,23 @@
+[TIMESTAMP] 1762785589 Mon Nov 10 15:39:49 2025
+[BUILDTIME] 25 (9)
+[SIZE] 14.56 MB, 25 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libpng
+[DEP] linux-header
+[DEP] make
+[OPT] qt4
+[OPT] qt5base
+[OPT] qt6base
+[DEP] sed
+[DEP] tar
+[DEP] zlib

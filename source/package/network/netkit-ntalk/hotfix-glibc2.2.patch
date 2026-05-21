@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/netkit-ntalk/hotfix-glibc2.2.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./talkd/announce.c.orig	Tue Oct 16 18:38:22 2001
++++ ./talkd/announce.c	Tue Oct 16 18:38:54 2001
+@@ -44,6 +44,7 @@
+ #include <sys/socket.h>
+ #include <errno.h>
+ #include <syslog.h>
++#include <time.h>
+ #include <unistd.h>
+ #include <stdio.h>
+ #include <fcntl.h>

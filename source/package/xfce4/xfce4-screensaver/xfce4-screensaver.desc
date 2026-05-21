@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfce4-screensaver/xfce4-screensaver.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Screensaver for the Xfce Desktop Environment
+
+[T] Xfce Screensaver is a screen saver and locker that aims to have simple,
+[T] sane, secure defaults and be well integrated with the desktop.
+
+[U] https://www.xfce.org/
+
+[A] Sean Davis <bluesabre@xfce.org>
+[A] Simon Steinbeiss <ochosi@xfce.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/xfce
+
+[E] opt consolekit
+
+[L] LGPL
+[V] 4.20.2
+
+[D] 280bc31581b922fa93770a0be258991c33877e5aaa625af1dba42dfb xfce4-screensaver-4.20.2.tar.xz https://archive.xfce.org/src/apps/xfce4-screensaver/4.20/
+
+pkginstalled systemd || var_append mesonopt ' ' -Dsession-manager=consolekit

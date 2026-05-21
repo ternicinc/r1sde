@@ -1,0 +1,12 @@
+#!/bin/sh
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/misc/tail/install_init.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+. $base/misc/tail/formats/tail.in
+
+for y in $( cd $confdir; ls -1 *.init 2> /dev/null ); do
+	hook_add postinstall 6 "install_init '${y%.init}' '$confdir/$y'"
+done

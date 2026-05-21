@@ -1,0 +1,27 @@
+
+[TIMESTAMP] 1171375116 Tue Feb 13 13:58:36 2007
+[BUILDTIME] 10 (5) ERROR
+[SIZE] 0.26 MB, 116 files
+
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] flex
+[DEP] grep
+[DEP] libice
+[DEP] libx11
+[DEP] libxau
+[DEP] libxcb
+[DEP] libxdmcp
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] ncurses
+[DEP] readline
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] tcl
+[DEP] tk
+[DEP] xorgproto

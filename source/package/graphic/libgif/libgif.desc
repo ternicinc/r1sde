@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libgif/libgif.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Reading and writing gif images
+
+[T] A library for reading and writing gif images.
+
+[U] https://sourceforge.net/projects/giflib/
+
+[A] Toshio Kuratomi <badger@prtr-13.ucsc.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] OpenSource
+[V] 6.1.3
+[P] X -----5---9 112.690
+
+[D] 1679106a572ee9aecb8e9d865d49bf3760072b676a78ba80c46063b1 giflib-6.1.3.tar.gz http://sourceforge.net/projects/giflib/files/
+
+var_append makeopt ' ' LIBDIR=$libdir
+var_append makeinstopt ' ' LIBDIR=$libdir

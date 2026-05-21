@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/opensc/opensc.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A general SmartCard library and applications with PKCS #15 support
+
+[T] OpenSC consists of a SmartCard library that uses any common
+[T] transport API (e.g. PC/SC, CT-API, OpenCT) as its backend and
+[T] applications that use the library. It has been tested extensively
+[T] on Finnish Electronic Identity (FINEID) cards, but a number of other
+[T] PKCS #15 and ISO 7816 compatible cards work too. Also implemented are
+[T] a PKCS #11 module (e.g. for Mozilla Web/email usage), a PAM module,
+[T] somewhat working OpenSSH support, an OpenSSL engine, a few basic
+[T] tools, and a PKCS #15 structure generation tool for supported cards.
+
+[U] http://www.opensc-project.org/
+
+[A] Juha Yrj"ol"a <juha.yrjola@iki.fi>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+
+[L] GPL
+[V] 0.27.1
+
+[D] b4c10687b6deebf4e340456b108cf2414e582320bf8754c78ab4f0c9 opensc-0.27.1.tar.gz https://github.com/OpenSC/OpenSC/archive/refs/tags/0.27.1/

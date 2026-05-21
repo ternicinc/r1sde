@@ -1,0 +1,13 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/architecture/avr32/package/*/gcc.desc
+[COPY] Copyright (C) 2007 - 2025 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[V] 4.2.2.atmel.1.1.3
+
+var_insert patchfiles ' ' "`match_source_file -p patch`"
+
+[D] ac04d7ff0e587cfa5278f64da163531b8b5bc7933e10d7667bcb3290 gcc-4.2.2.tar.bz2 ftp://gcc.gnu.org/pub/gcc/releases/gcc-4.2.2/
+[D] c89b903a2bb3195aa259d75f65fbc5e9b8d34c334f406384dc359069 gcc-4.2.2.atmel.1.1.3.patch.bz2 https://mirror.egtvedt.no/avr32linux.org/twiki/pub/Main/GccPatches/
+[D] 7179eda531ff986b32013eb7057088c38078355f606e6a266a1c9832 gcc-4.2.2.atmel.1.1.3-revert-broken-uclibc-stuff.patch https://mirror.egtvedt.no/avr32linux.org/twiki/pub/Main/GccPatches/

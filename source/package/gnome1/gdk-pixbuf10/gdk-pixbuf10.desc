@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gdk-pixbuf10/gdk-pixbuf10.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The GdkPixBuf image handling library
+
+[T] The GdkPixBuf library provides a number of features:
+[T] 	- Image loading facilities.
+[T] 	- Rendering of a GdkPixBuf into various formats:
+[T] 	 drawables (windows, pixmaps), GdkRGB buffers.
+[T]
+[T] In addition, this module also provides a little libgnomecanvaspixbuf
+[T] library, which contains a GNOME Canvas item to display pixbufs with
+[T] full affine transformations.
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development extra/desktop/gnome
+
+[L] LGPL
+[V] 0.22.0
+[P] X -----5---9 133.600
+
+[D] 4af1c88af45c4a90f0a2348c7559b3120e80ed574747c71a6fa56792 gdk-pixbuf-0.22.0.tar.bz2 https://download.gnome.org/sources/gdk-pixbuf/0.22/
+
+. $base/package/*/*/gnome1-conf.in

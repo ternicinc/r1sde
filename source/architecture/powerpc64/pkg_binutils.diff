@@ -1,0 +1,38 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/powerpc64/pkg_binutils.diff
+# Copyright (C) 2018 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+-- binutils-with-gold-2.46/ld/configure.tgt.orig	2026-02-13 12:20:13.529688876 +0100
++++ binutils-with-gold-2.46/ld/configure.tgt	2026-02-13 12:27:55.936941102 +0100
+@@ -685,9 +685,9 @@
+   | powerpc*-*-kaos* | powerpc*-*-vxworks*)
+ 			case "${targ}" in
+ 			powerpc64*)
+-			    targ_emul=elf64ppc
+-			    targ_extra_emuls=elf32ppcsim
+-			    targ_extra_libpath="elf32ppc elf32ppclinux" ;;
++			    targ_emul=elf32ppclinux
++			    targ_extra_emuls="elf64ppc"
++			    targ_extra_libpath="elf64ppc elf32ppc elf32ppclinux" ;;
+ 			*linux*)
+ 			    targ_emul=elf32ppclinux
+ 			    targ_extra_emuls=elf32ppcsim
+--- binutils-2.41/bfd/configure.vanilla	2023-08-31 16:24:04.067767492 +0200
++++ binutils-2.41/bfd/configure	2023-08-31 16:24:33.850764622 +0200
+@@ -14009,10 +14009,10 @@
+     powerpc_elf32_le_vec)	 tb="$tb elf32-ppc.lo elf-vxworks.lo elf32.lo $elf" ;;
+     powerpc_elf32_fbsd_vec)	 tb="$tb elf32-ppc.lo elf-vxworks.lo elf32.lo $elf" ;;
+     powerpc_elf32_vxworks_vec)	 tb="$tb elf32-ppc.lo elf-vxworks.lo elf32.lo $elf" ;;
+-    powerpc_elf64_vec)		 tb="$tb elf64-ppc.lo elf64-gen.lo elf64.lo $elf"; target_size=64 ;;
+-    powerpc_elf64_le_vec)	 tb="$tb elf64-ppc.lo elf64-gen.lo elf64.lo $elf" target_size=64 ;;
+-    powerpc_elf64_fbsd_vec)	 tb="$tb elf64-ppc.lo elf64-gen.lo elf64.lo $elf" target_size=64 ;;
+-    powerpc_elf64_fbsd_le_vec)	 tb="$tb elf64-ppc.lo elf64-gen.lo elf64.lo $elf" target_size=64 ;;
++    powerpc_elf64_vec)		 tb="$tb elf64-ppc.lo elf64-gen.lo elf64.lo $elf" ;;
++    powerpc_elf64_le_vec)	 tb="$tb elf64-ppc.lo elf64-gen.lo elf64.lo $elf" ;;
++    powerpc_elf64_fbsd_vec)	 tb="$tb elf64-ppc.lo elf64-gen.lo elf64.lo $elf" ;;
++    powerpc_elf64_fbsd_le_vec)	 tb="$tb elf64-ppc.lo elf64-gen.lo elf64.lo $elf" ;;
+     powerpc_xcoff_vec)		 tb="$tb coff-rs6000.lo $xcoff" ;;
+     pru_elf32_vec)		 tb="$tb elf32-pru.lo elf32.lo $elf" ;;
+     riscv_elf32_vec)		 tb="$tb elf32-riscv.lo elfxx-riscv.lo elf-ifunc.lo elf32.lo $elf" ;;

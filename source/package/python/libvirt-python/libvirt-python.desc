@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libvirt-python/libvirt-python.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Python bindings for libvirt
+
+[T] Python bindings for libvirt
+
+[U] https://libvirt.org/
+
+[A] Daniel Berrange <dan@berrange.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/emulator
+[F] CROSS
+
+[L] GPL
+[V] 12.3.0
+
+[D] 1a53c9993ae939bda690ce7b4491c98cff28e3153ed023f74c6d3531 libvirt_python-12.3.0.tar.gz https://files.pythonhosted.org/packages/source/l/libvirt-python/

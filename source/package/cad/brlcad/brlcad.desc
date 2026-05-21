@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/brlcad/brlcad.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] BRL-CAD is a powerful solid modeling system
+
+[T] BRL-CAD is a powerful Combinatorial/Constructive Solid Geometry (CSG)
+[T] solid modeling system that includes an interactive geometry editor,
+[T] ray-tracing support for rendering and geometric analysis,
+[T] network-distributed framebuffer support, image and signal-processing
+[T] tools, realistic image synthesis path-tracing, and an embedded
+[T] scripting language.
+
+[U] https://www.brlcad.org
+
+[A] BRL-CAD development team <brlcad-devel@lists.sourceforge.net>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/cad
+
+[E] opt libwebp
+[E] opt doxygen
+
+[L] LGPL BSD
+[V] 7.42.2
+
+#[CV-TR] s/\./-/g
+[D] 92c1fec91208c9ca0268fa8f84df734f67d6dec1a423bcb302c4e8a4 brlcad-7.42.2.tar.gz https://github.com/BRL-CAD/brlcad/archive/rel-7-42-2/
+
+[ $prefix_auto = 1 ] && prefix="opt/brlcad" && set_confopt
+
+[ "$SDECFG_DEBUG" = 1 ] ||
+	var_append cmakeopt ' ' '-DBRLCAD_ENABLE_RUNTIME_DEBUG=OFF -DBRLCAD_DEBUGGING=OFF'
+var_append cmakeopt ' ' '-DBRLCAD_BUNDLED_LIBS=SYSTEM -DBRLCAD_ENABLE_OPENGL=ON'

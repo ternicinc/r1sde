@@ -1,0 +1,44 @@
+[TIMESTAMP] 1761513741 Sun Oct 26 22:22:21 2025
+[BUILDTIME] 18 (9)
+[SIZE] 0.73 MB, 139 files
+
+[DEP] at-spi2-core
+[DEP] autoconf
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[DEP] glib
+[DEP] grep
+[DEP] gtk
+[DEP] gtk-layer-shell
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] libcanberra
+[DEP] libnotify
+[DEP] libtool
+[DEP] libwnck
+[DEP] libx11
+[DEP] libxml
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] mate-common
+[DEP] mate-desktop
+[DEP] mate-panel
+[OPT] mate-wayland-session
+[DEP] pango
+[DEP] perl
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] tar
+[OPT] wayland
+[DEP] xorgproto
+[DEP] xz

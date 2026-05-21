@@ -1,0 +1,26 @@
+[TIMESTAMP] 1768744928 Sun Jan 18 15:02:08 2026
+[BUILDTIME] 20 (9)
+[SIZE] 1.74 MB, 83 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[OPT] cython
+[DEP] diffutils
+[DEP] file
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] libimobiledevice-glue
+[DEP] libplist
+[DEP] libtatsu
+[DEP] libusbmuxd
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] readline
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

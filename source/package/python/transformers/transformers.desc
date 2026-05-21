@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/transformers/transformers.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX
+
+[T] Transformers provides thousands of pretrained models to perform tasks on
+[T] different modalities such as text, vision, and audio.
+
+[U] https://github.com/huggingface/transformers
+
+[A] huggingface
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[E] add filelock
+[E] add huggingface_hub
+[E] add mrab-regex
+[E] add pyrequests
+[E] add safetensors
+[E] add tokenizers
+[E] add tqdm
+
+[L] APL
+[V] 5.9.0
+[P] X -----5---9 160.005
+
+[D] 2c2fd70f259294a89861b4927d3e1d2a440b6095675b3587c3ac3496 transformers-v5.9.0.tar.gz https://github.com/huggingface/transformers/archive/v5.9.0/

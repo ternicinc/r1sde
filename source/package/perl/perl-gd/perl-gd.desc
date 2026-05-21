@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-gd/perl-gd.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl interface for the gd graphics library
+
+[T] GD.pm is a Perl interface to Thomas Boutell's gd graphics library (version 2.01 or higher).
+[T] GD allows you to create color drawings using a large number of graphics primitives, and
+[T] emit the drawings as PNG files.
+
+[U] http://stein.cshl.org/WWW/software/GD
+
+[A] Lincoln D. Stein
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 2.84
+[P] X -----5---9 150.000
+
+[D] 8a2aa2e0e620c8e3feec2035a50d28a37c06c199383c29167b7d7295 GD-2.84.tar.gz https://cpan.metacpan.org/authors/id/R/RU/RURBAN/

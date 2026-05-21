@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/pmud/X11R7.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- pmud-0.10/Makefile.vanilla	2008-04-17 12:19:49.000000000 +0200
++++ pmud-0.10/Makefile	2008-04-17 12:19:53.000000000 +0200
+@@ -49,7 +49,7 @@
+ 	install -c snooze /sbin
+ 	install -c wakebay /sbin
+ 	install -c fblevel /sbin
+-	install -c xmouse /usr/X11R6/bin
++	install -c xmouse /usr/X11/bin
+ 	install -c Batmon /usr/bin
+ 	install -c -D pwrctl /etc/power/pwrctl
+ 	ln -sf /sbin/snooze /usr/bin/apm

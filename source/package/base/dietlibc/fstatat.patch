@@ -1,0 +1,20 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dietlibc/fstatat.patch
+# Copyright (C) 2011 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+For udev, too.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- /dev/null	2010-10-27 14:43:31.488782000 +0200
++++ dietlibc/syscalls.s/fstatat.S	2011-01-05 15:37:28.000000000 +0100
+@@ -0,0 +1,7 @@
++#include "syscalls.h"
++
++#ifdef __NR_newfstatat
++syscall(newfstatat,fstatat)
++#else
++syscall(fstatat64,fstatat)
++#endif

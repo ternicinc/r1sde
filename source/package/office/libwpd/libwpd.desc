@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libwpd/libwpd.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library for importing WordPerfect (tm) documents
+
+[T] Libwpd is a C++ library designed to help process WordPerfect documents.
+[T] It is most commonly used to import WordPerfect documents into other
+[T] word processors (see below), but may be useful in other cases as well.
+
+[U] https://libwpd.sf.net
+
+[A] William Lachance <w_lach@yahoo.ca>
+[A] Marc Maurer <uwog@uwog.net>
+[A] Fridrich Strba <fridrich.strba@bluewin.ch>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[E] opt doxygen
+
+[L] LGPL
+[V] 0.10.3
+[P] X -----5---9 201.800
+
+[D] 91e79c5f46200f89a02c244379d8d61209fca9e3a56cc29ba1b43c6e libwpd-0.10.3.tar.xz https://prdownloads.sourceforge.net/sourceforge/libwpd/

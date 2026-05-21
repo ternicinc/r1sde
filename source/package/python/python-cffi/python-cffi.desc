@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-cffi/python-cffi.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Foreign Function Interface for Python calling C code
+
+[T] C Foreign Function Interface for Python. Interact with almost any C code
+[T] from Python, based on C-like declarations that you can often copy-paste
+[T] from header files or documentation.
+
+[U] https://cffi.readthedocs.io/en/stable/
+
+[A] Armin Rigo <python-cffi@googlegroups.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] MIT
+[V] 2.0.0
+[P] X -----5---9 200.000
+
+[D] a06a392f7da7ac1e88200c0cb17b04dd7eda9d037ed0515e6f968f79 cffi-2.0.0.tar.gz https://files.pythonhosted.org/packages/source/c/cffi/

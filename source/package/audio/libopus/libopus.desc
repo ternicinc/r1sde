@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libopus/libopus.desc
+[COPY] Copyright (C) 2012 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Opus audio codec
+
+[T] Opus is a codec for interactive speech and audio transmission over the
+[T] Internet.
+[T]
+[T] Opus can handle a wide range of interactive audio applications, including
+[T] Voice over IP, videoconferencing, in-game chat, and even remote live
+[T] music performances. It can scale from low bit-rate narrowband speech to
+[T] very high quality stereo music.
+
+[U] https://www.opus-codec.org/
+
+[A] Xiphorus <team@xiph.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[E] opt doxygen graphviz
+
+[L] BSD
+[V] 1.6.1
+[P] X -----5---9 122.500
+
+[D] bf68c76731ecaa4f5fdc0c0a9d1be522ab09e99db88033e69ef0706a opus-1.6.1.tar.gz https://downloads.xiph.org/releases/opus/
+
+runmeson=0
+[ "$arch" != "arm" ] && var_append confopt ' ' --enable-deep-plc

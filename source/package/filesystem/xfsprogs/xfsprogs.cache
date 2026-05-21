@@ -1,0 +1,23 @@
+[TIMESTAMP] 1737661015 Thu Jan 23 20:36:55 2025
+[BUILDTIME] 35 (9)
+[SIZE] 6.70 MB, 126 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[OPT] gettext
+[DEP] grep
+[DEP] gzip
+[DEP] icu4c
+[DEP] inih
+[DEP] liburcu
+[DEP] linux-header
+[DEP] lvm2
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] xz

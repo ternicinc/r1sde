@@ -1,0 +1,22 @@
+[TIMESTAMP] 1777799927 Sun May  3 11:18:47 2026
+[BUILDTIME] 40 (9)
+[SIZE] 1.10 MB, 15 files
+
+[DEP] 00-dirtree
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] libxcrypt
+[DEP] linux-header
+[DEP] make
+[DEP] pam
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] zlib

@@ -1,0 +1,53 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/nodejs/nodejs.desc
+[COPY] Copyright (C) 2013 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A software system designed for writing scalable internet application
+
+[T] Node.js is a software system designed for writing scalable internet
+[T] applications, notably web servers. Programs are written in JavaScript,
+[T] using event-driven, asynchronous I/O to minimize overhead and maximize
+[T] scalability. Node.js consists of Google's V8 JavaScript engine plus several
+[T] built-in libraries
+[U] https://www.nodejs.org/
+
+[A] Ryan Dahl
+[M] Gerardo Di Iorio <arete74@gmail.com>
+
+[C] extra/development
+[F] CROSS CUSTOM-LTO
+
+[L] MIT
+[V] 26.2.0
+[P] X -----5---9 199.666
+
+[CV-URL] https://nodejs.org/dist/latest/
+[D] 2bfb55e20e164eaa09ca2d950cb46c62aef5733abf1aa16540fdbdab node-v26.2.0.tar.xz https://nodejs.org/dist/v26.2.0/
+
+runpipinstall=0
+rungpepinstall=0
+cleanconfopt=0
+
+LD="$CXX"
+confopt="--prefix=/$prefix --ninja"
+
+[ "$SDECFG_LTO" = 1 ] && var_append confopt ' ' --enable-lto
+pkginstalled ada-url && var_append confopt ' ' --shared-ada
+pkginstalled brotli && var_append confopt ' ' --shared-brotli
+pkginstalled c-ares && var_append confopt ' ' --shared-cares
+pkginstalled icu4c && var_append confopt ' ' --with-intl=system-icu
+pkginstalled libuv && var_append confopt ' ' --shared-libuv
+pkginstalled nghttp2 && var_append confopt ' ' --shared-nghttp2
+pkginstalled nghttp3 && var_append confopt ' ' --shared-nghttp3
+pkginstalled openssl && var_append confopt ' ' --shared-openssl
+#pkginstalled simdutf && var_append confopt ' ' --shared-simdutf
+pkginstalled simdjson && var_append confopt ' ' --shared-simdjson
+pkginstalled zlib && var_append confopt ' ' --shared-zlib
+pkginstalled zstd && var_append confopt ' ' --shared-zstd
+
+if atstage "cross"; then
+	# TODO: needs some translations: 'mac', 'ppc', 'ppc64', 'loong64'
+	var_append confopt ' ' '--without-snapshot --dest-cpu=${arch/-/_} --dest-os=$kernel'
+fi

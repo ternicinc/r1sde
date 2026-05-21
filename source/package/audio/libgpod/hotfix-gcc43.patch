@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/libgpod/hotfix-gcc43.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- libgpod-0.6.0/tests/test-rebuild-db.cc.vanilla	2008-04-09 10:40:14.000000000 +0000
++++ libgpod-0.6.0/tests/test-rebuild-db.cc	2008-04-09 10:40:21.000000000 +0000
+@@ -29,6 +29,7 @@
+ #include <sys/stat.h>
+ #include <typeinfo>
+ #include <unistd.h>
++#include <string.h>
+ 
+ #include <glib/gstdio.h>
+ 

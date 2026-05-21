@@ -1,0 +1,43 @@
+[TIMESTAMP] 1750286504 Thu Jun 19 00:41:44 2025
+[BUILDTIME] 3800 (9)
+[SIZE] 279.69 MB, 3353 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] boost
+[DEP] cmake
+[DEP] coin
+[DEP] coreutils
+[DEP] diffutils
+[OPT] doxygen
+[DEP] eigen
+[DEP] fmt
+[DEP] freetype
+[DEP] gawk
+[DEP] glu
+[DEP] grep
+[DEP] gzip
+[DEP] hdf5
+[DEP] libglvnd
+[DEP] libspnav
+[DEP] libx11
+[DEP] linux-header
+[DEP] make
+[DEP] med
+[DEP] msgsl
+[DEP] opencascade
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] python
+[DEP] qt6base
+[DEP] qt6svg
+[DEP] qt6tools
+[DEP] sed
+[DEP] swig
+[DEP] tar
+[DEP] vtk
+[DEP] vulkan-headers
+[DEP] xerces-c
+[DEP] xorgproto
+[DEP] yaml-cpp
+[DEP] zlib

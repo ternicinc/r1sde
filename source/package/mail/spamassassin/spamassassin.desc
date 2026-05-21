@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/spamassassin/spamassassin.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A mail filter to identify spam
+
+[T] SpamAssassin(tm) is a mail filter to identify spam.
+[T]
+[T] Using its rule base, it uses a wide range of heuristic tests on mail
+[T] headers and body text to identify "spam", also known as unsolicited
+[T] commercial email.
+
+[U] https://spamassassin.apache.org/
+
+[A] The spamassassin team <http://spamassassin.apache.org/>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/server
+
+[L] APL
+[V] 4.0.2
+
+[CV-URL] http://spamassassin.apache.org/downloads.cgi
+[D] 606efff7b62876f4be32b52c58af1a6cb087856b065c11a6c4ebafab Mail-SpamAssassin-4.0.2.tar.bz2 http://www.apache.org/dist/spamassassin/source/
+
+runconf=0
+sysconfdir=/etc/spamassassin
+hook_add premake 3 "perl Makefile.PL CONFDIR=$sysconfdir ENABLE_SSL=yes"

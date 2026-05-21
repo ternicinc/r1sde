@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/swaylock/swaylock.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Wayland screen locking utility
+
+[T] Swaylock is a screen locking utility compatible with some Wayland compositors.
+
+[U] https://github.com/swaywm
+
+[A] Drew DeVault
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/x11
+[F] CROSS
+
+[L] MIT
+[V] 1.8.5
+
+[D] ab8bba3516681b6ff05d639d66f8884c6ef66c4d28c5de1d4e320937 swaylock-1.8.5.tar.gz https://github.com/swaywm/swaylock/archive/refs/tags/v1.8.5/

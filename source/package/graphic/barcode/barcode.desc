@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/barcode/barcode.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A tool to convert text strings to printed bars
+
+[T] GNU Barcode is a tool to convert text strings to printed bars. It supports
+[T] a variety of standard codes to represent the textual strings and creates
+[T] postscript output.
+[T] It is available as both a library and an executable program, supports UPC,
+[T] EAN, ISBN, CODE39 and other encoding standards, Postscript and
+[T] Encapsulated Postscript output, accepts sizes and positions as inches,
+[T] centimeters, millimeters and can create tables of barcodes (to print
+[T] labels on sticker pages).
+
+[U] https://www.gnu.org/software/barcode/
+
+[A] Alessandro Rubini <rubini@gnu.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+[F] CROSS
+
+[L] GPL
+[V] 0.99
+
+[D] 85618cf6dad3a7106cd7fb1edb764d80fa5194fa7b37f7bd049f7a80 barcode-0.99.tar.gz http://ftp.gnu.org/gnu/barcode/
+
+# no DESTDIR
+var_append makeinstopt ' ' prefix=$root/$prefix
+var_append INSTALL_WRAPPER_FILTER '|' "sed 's,\(man[0-9]\)/barcode,\1/gnubarcode,'"

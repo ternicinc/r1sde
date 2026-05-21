@@ -1,0 +1,7 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/runit/postsysfiles.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+safe_groupadd log 61
+safe_useradd log 61 61 "system logs" /var/log /bin/false "*"

@@ -1,0 +1,26 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/slim/paths.patch
+# Copyright (C) 2021 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- slim-1.3.6/slim.conf.vanilla	2020-09-30 21:20:38.555570904 +0200
++++ slim-1.3.6/slim.conf	2020-09-30 21:21:17.827077194 +0200
+@@ -1,7 +1,7 @@
+ # Path, X server and arguments (if needed)
+ # Note: -xauth $authfile is automatically appended
+ default_path        /bin:/usr/bin:/usr/local/bin
+-default_xserver     /usr/bin/X
++default_xserver     /usr/X11/bin/X
+ #xserver_arguments   -dpi 75
+ 
+ # Commands for halt, login, etc.
+@@ -11,7 +11,7 @@
+ #suspend_cmd        /usr/sbin/suspend
+ 
+ # Full path to the xauth binary
+-xauth_path         /usr/bin/xauth 
++xauth_path         /usr/X11/bin/xauth
+ 
+ # Xauth file for server
+ authfile           /var/run/slim.auth

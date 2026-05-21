@@ -1,0 +1,37 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/hte/hte.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] File editor/viewer/analyzer for executables
+
+[T] This program is a file viewer, editor and analyzer for text,
+[T] binary, and (especially) executable files.
+[T] Supported formats:
+[T] - COFF/XCOFF32 (common object file format)
+[T] - ELF
+[T] - LE (linear executables)
+[T] - MZ (Standard DOS)
+[T] - NE
+[T] - PE32, PE64
+[T] - Java CLASS
+[T] - MachO
+[T] - XBR (X-Box executable)
+[T] - FLT
+[T] - PEF (PowerPC executable format)
+
+[U] https://hte.sourceforge.net/
+
+[A] Stefan Weyergraf
+[A] Sebastian Biallas <sb@biallas.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] GPL
+[V] 2.1.0
+
+[D] 1b436d5f5b6f12e3e4cb5ddbec859523126c61d3f731d2ae5f8b5f9d ht-2.1.0.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/hte/
+
+var_append confopt ' ' '--program-transform-name="s,ht,hte,"'

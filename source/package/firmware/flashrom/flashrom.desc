@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/flashrom/flashrom.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A utility for reading, writing, verifying and erasing flash ROM chips
+
+[T] Flashrom is a utility for reading, writing, verifying and erasing flash
+[T] ROM chips. It's often used to flash BIOS/coreboot/firmware images.
+
+[U] https://flashrom.org/
+
+[A] Carl-Daniel Hailfinger <c-d.hailfinger.devel.2006@gmx.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+
+[R] + x86 x86-64
+
+[L] GPL
+[V] 1.7.0
+
+[D] ffd57431858ecaba1712e4545bcfcb167d2f0fd3968972d1df89f07d flashrom-v1.7.0.tar.xz https://download.flashrom.org/releases/
+
+hook_add prepatch 5 "rm -vrf subprojects/"

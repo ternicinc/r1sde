@@ -1,0 +1,28 @@
+[TIMESTAMP] 1778251973 Fri May  8 17:52:53 2026
+[BUILDTIME] 20 (9)
+[SIZE] 2.38 MB, 99 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] file
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[OPT] gtk-doc
+[DEP] gzip
+[DEP] libtool
+[DEP] linux-header
+[DEP] make
+[OPT] mysql
+[DEP] perl
+[DEP] pkgconfig
+[OPT] postgresql
+[DEP] raptor
+[DEP] rasqal
+[DEP] sed
+[DEP] sqlite
+[DEP] tar
+[DEP] unixodbc
+[DEP] util-linux

@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libburn/libburn.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A burn library for CD, DVD, BD and a cdrecord emulator
+
+[T] Libburn is an open-source library by which preformatted data
+[T] get onto optical media: CD, DVD, BD (Blu-Ray). It comes with
+[T] a cdrecord compatible command line application named cdrskin.
+
+[U] https://libburnia-project.org/
+
+[A] Mario Danic
+[A] Thomas Schmitt
+[A] Dana Jansens {Original author}
+[A] Derek Foreman {Original author}
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+[F] CROSS
+
+[L] GPL
+[V] 1.5.8
+[P] X -----5---9 400.000
+
+[D] f6390dd71bf1cd139e3b420a664cf15835565bc8699faee792c55990 libburn-1.5.8.tar.gz https://files.libburnia-project.org/releases/
+
+var_append confopt ' ' --disable-ldconfig-at-install

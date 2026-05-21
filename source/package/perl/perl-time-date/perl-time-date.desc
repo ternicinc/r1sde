@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-time-date/perl-time-date.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module to parse date strings into time values
+
+[T] Date::Parse is a Perl module to parse date strings into time values.
+
+[U] https://metacpan.org/dist/TimeDate
+
+[A] Graham Barr <gbarr@pobox.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 2.34
+[P] X -----5---9 200.120
+
+[D] eb77e233ac6fceabda6eda9581b44f1dd3abc95eb8de060fdd7ee635 TimeDate-2.34.tar.gz https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/

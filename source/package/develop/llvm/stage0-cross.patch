@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/llvm/stage0-cross.patch
+# Copyright (C) 2022 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- llvm/CMakeLists.txt.vanilla	2026-02-24 15:23:53.049064950 +0100
++++ llvm/CMakeLists.txt	2026-02-24 15:24:01.056016833 +0100
+@@ -935,7 +935,7 @@
+ option(LLVM_OPTIMIZED_TABLEGEN "Force TableGen to be built with optimization" OFF)
+ if(CMAKE_CROSSCOMPILING OR (LLVM_OPTIMIZED_TABLEGEN AND (LLVM_ENABLE_ASSERTIONS
+   OR CMAKE_CONFIGURATION_TYPES OR LLVM_USE_SANITIZER)))
+-  set(LLVM_USE_HOST_TOOLS ON)
++  #set(LLVM_USE_HOST_TOOLS ON)
+ endif()
+ 
+ option(LLVM_OMIT_DAGISEL_COMMENTS "Do not add comments to DAG ISel" ON)

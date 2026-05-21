@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xrestop/xrestop.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Top like statistics of each connected X11 client's resource usage
+
+[T] Xrestop uses the X-Resource extension to provide 'top' like statistics of
+[T] each connected X11 client's server side resource usage. It is intended as
+[T] a developer tool to aid more efficient server resource usage and debug
+[T] server side leakage.
+[T] It should work with any server supporting the X-Resource extension,
+[T] including the Xorg server and XFree86 4.3+.
+
+[U] https://freedesktop.org/wiki/Software/xrestop/
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 0.6
+
+[D] 5a4f3a016223c331b162b138ca2d2417c7f1002145787739943882b2 xrestop-0.6.tar.xz http://xorg.freedesktop.org/archive/individual/app/
+
+. package/*/*/modular-x-conf.in

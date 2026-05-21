@@ -1,0 +1,41 @@
+[TIMESTAMP] 1759999097 Thu Oct  9 10:38:17 2025
+[BUILDTIME] 40 (9)
+[SIZE] 3.56 MB, 355 files
+
+[DEP] appstream-glib
+[DEP] at-spi2-core
+[DEP] babl
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gegl
+[DEP] geocode-glib
+[DEP] gettext
+[DEP] gexiv2
+[OPT] glib
+[DEP] gnome-online-accounts
+[DEP] grep
+[DEP] gsettings-desktop-schemas
+[DEP] gtk+
+[DEP] harfbuzz
+[DEP] itstool
+[DEP] libdazzle
+[DEP] libhandy
+[DEP] libjpeg
+[DEP] libpng
+[DEP] libportal
+[DEP] libxml
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] tinysparql
+[DEP] xz

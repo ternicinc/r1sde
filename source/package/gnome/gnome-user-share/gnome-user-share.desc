@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-user-share/gnome-user-share.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome gnome-user-share package
+
+[T] Core Gnome gnome-user-share package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 48.2
+
+[CV-URL] https://download.gnome.org/sources/gnome-user-share/cache.json
+[D] ca1cb80aa7cdf23c5338333b8340f1a734f68730839547b6f64547f3 gnome-user-share-48.2.tar.xz https://download.gnome.org/sources/gnome-user-share/48/
+
+. $base/package/*/*/gnome-conf.in

@@ -1,0 +1,15 @@
+[TIMESTAMP] 1754822941 Sun Aug 10 12:49:01 2025
+[BUILDTIME] 100 (9)
+[SIZE] 0.03 MB, 7 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libglvnd
+[DEP] make
+[DEP] sed
+[DEP] tar

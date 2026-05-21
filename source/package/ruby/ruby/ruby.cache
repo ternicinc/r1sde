@@ -1,0 +1,33 @@
+[TIMESTAMP] 1779349582 Thu May 21 09:46:22 2026
+[BUILDTIME] 160 (9)
+[SIZE] 47.49 MB, 2565 files
+
+[DEP] 00-dirtree
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gmp
+[DEP] grep
+[DEP] groff
+[DEP] gzip
+[DEP] libffi
+[DEP] libxcrypt
+[DEP] libyaml
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] pyparsing
+[DEP] rustc
+[DEP] sed
+[DEP] sysfiles
+[OPT] systemtap
+[DEP] tar
+[DEP] unwind
+[DEP] util-linux
+[DEP] xz
+[DEP] zlib

@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/hdf5/hdf5.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] NCSA Hierarchical Data Format v5
+
+[T] The HDF project involves the development and support of software and
+[T] file formats for scientific data management. The HDF software includes
+[T] I/O libraries and tools for analyzing, visualizing, and converting
+[T] scientific data.
+
+[U] http://hdf.ncsa.uiuc.edu/
+
+[A] NCSA
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/scientific
+[F] OBJDIR
+
+[L] OpenSource
+[V] 2.1.0
+[P] X -----5---9 176.800
+
+[D] 53d0f3556dd25f45f6c9114dc371a0292f96caff87dcdc472bc05100 hdf5_2.1.0.tar.gz https://github.com/HDFGroup/hdf5/archive/refs/tags/

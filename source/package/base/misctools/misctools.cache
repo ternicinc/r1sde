@@ -1,0 +1,22 @@
+
+[TIMESTAMP] 1196950455 Thu Dec  6 15:14:15 2007
+[BUILDTIME] 10 (5)
+[SIZE] 12.22 MB, 79 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] cbase
+[DEP] coreutils
+[DEP] diffutils
+[DEP] expat
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] ncurses
+[DEP] pkgconfig
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] texinfo

@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/eudev/eudev.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Init system agnostic fork of systemd-udev
+
+[T] Eudev is a standalone dynamic and persistent device naming support
+[T] (aka userspace devfs) daemon that runs independently from the init
+[T] system. eudev strives to remain init system and linux distribution
+[T] neutral. It is currently used as the devfs manager for more than a
+[T] dozen different linux distributions.
+
+[U] https://github.com/eudev-project/eudev
+
+[A] Eudev Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+
+[V] 3.2.14
+[L] GPL
+[P] O -----5---9 127.000
+
+[D] 3eb4a80429c8282450da3da4746ab855a1f295aa4416bf8edb045dae eudev-3.2.14.tar.gz https://github.com/eudev-project/eudev/releases/download/v3.2.14/
+
+var_append confopt ' ' "--with-rootprefix='' \
+	--with-rootrundir=/dev \
+	--with-rootlibexecdir=/lib/udev \
+	--libdir=/${libdir##*/} \
+	--enable-split-usr \
+	--enable-manpages \
+	--enable-kmod \
+	--exec-prefix=/ \
+	--bindir=/sbin \
+	--sbindir=/sbin"

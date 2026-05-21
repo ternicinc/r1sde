@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ladspa/ladspa.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Linux Audio Developer's Simple Plugin API
+
+[T] Toolkit for creating audio filters.
+
+[U] https://www.ladspa.org/
+
+[A] Richard Furse
+[M] René Rebe <rene@exactco.de>
+
+[F] NO-AS-NEEDED CROSS
+[C] extra/multimedia
+
+[L] LGPL
+[V] 1.17
+[P] X -----5---9 156.500
+
+[D] 369fa7ebc4859c425b2e823e49f944711fe818b49fab4a6e1024f4eb ladspa_sdk_1.17.tgz http://www.ladspa.org/download/
+
+var_append makeopt ' ' CPP=$CXX
+srcdir="*/src/"
+. $base/package/*/ladspa/ladspa.in

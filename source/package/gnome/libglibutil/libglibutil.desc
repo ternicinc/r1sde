@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libglibutil/libglibutil.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library of glib utilities
+
+[T] Library of glib utilities.
+
+[U] https://github.com/sailfishos/libglibutil
+
+[A] Slava Monich <slava@monich.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] BSD
+[V] 1.0.81
+[P] X -----5---9 120.000
+
+[D] 8a640e5dc27b33f94ce478b8efc2cc60d6f5b18d927d5f0289e4f6c9 libglibutil-1.0.81.tar.gz https://github.com/sailfishos/libglibutil/archive/refs/tags/1.0.81/
+
+hook_add postmake 5 "make install-dev"

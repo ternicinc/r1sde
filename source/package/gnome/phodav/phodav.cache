@@ -1,0 +1,30 @@
+[TIMESTAMP] 1759943538 Wed Oct  8 19:12:18 2025
+[BUILDTIME] 6 (9)
+[SIZE] 0.24 MB, 60 files
+
+[DEP] asciidoc
+[DEP] avahi
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] docbook-xml
+[DEP] docbook-xsl
+[DEP] gawk
+[DEP] gettext
+[OPT] glib
+[DEP] grep
+[DEP] gtk-doc
+[DEP] libsoup3
+[DEP] libxml
+[DEP] libxslt
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] xmlto
+[DEP] xz

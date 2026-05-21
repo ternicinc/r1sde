@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/qca2/qca2.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Qt Cryptographic Architecture (QCA) ver2
+
+[T] QCA aims to provide a straightforward and cross-platform crypto API,
+[T] using Qt datatypes and conventions. QCA separates the API from the
+[T] implementation, using plugins known as Providers. The advantage of this
+[T] model is to allow applications to avoid linking to or explicitly
+[T] depending on any particular cryptographic library. This allows one to
+[T] easily change or upgrade crypto implementations without even needing to
+[T] recompile the application! QCA should work everywhere Qt does, including
+[T] Windows/Unix/MacOSX.
+
+[U] https://invent.kde.org/libraries/qca
+
+[A] Justin Karneges <justin@affinix.com>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/crypto
+[F] CROSS OBJDIR
+
+[E] opt botan
+[E] opt cyrus-sasl2
+[E] opt doxygen
+
+[L] LGPL
+[V] 2.3.10
+[P] X -----5---9 162.912
+
+[D] 86252d64652b459d7ea896767f5b9b337c7c6ceebc10b7bcda77dc41 qca-2.3.10.tar.xz https://download.kde.org/stable/qca/2.3.10/
+
+. $base/package/*/*/kde-conf.in
+var_append cmakeopt ' ' -DBUILD_WITH_QT6=ON
+var_append cmakeopt ' ' -DBUILD_TESTS=OFF

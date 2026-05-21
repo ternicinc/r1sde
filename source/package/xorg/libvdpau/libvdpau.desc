@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libvdpau/libvdpau.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Video Decode and Presentation API for UNIX
+
+[T] VDPAU is the Video Decode and Presentation API for UNIX. It provides an
+[T] interface to video decode acceleration and presentation hardware present
+[T] in modern GPUs.
+
+[U] https://www.freedesktop.org/wiki/Software/VDPAU/
+
+[A] Stephen Warren
+[A] Aaron Plattner
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[E] opt graphviz
+
+[L] MIT
+[V] 1.5
+[P] X -----5---9 112.450
+
+#. package/*/*/modular-x-conf.in
+
+[D] e1e6372148dd148ecf8e0ae8a272b000260ff2fb0ff5dd17488a117a libvdpau-1.5.tar.bz2 https://gitlab.freedesktop.org/vdpau/libvdpau/-/archive/1.5/

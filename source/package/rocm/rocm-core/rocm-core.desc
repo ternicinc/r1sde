@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rocm-core/rocm-core.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A package to get ROCm release version, and path information
+
+[T] ROCM-CORE is a package which can be used to get ROCm release version, get
+[T] ROCm install path information etc
+
+[U] https://github.com/ROCm/rocm-core
+
+[A] Advanced Micro Devices, Inc.
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS
+[C] extra/development
+
+[L] MIT
+[V] 7.2.3
+[P] X -----5---9 300.540
+
+[CV-GROUP] rocm
+[D] 9d0afd5ea4c3a03e6e15ae701580c5a64d2819aa0e431d878e87dda1 rocm-core-rocm-7.2.3.tar.gz https://github.com/ROCm/rocm-core/archive/rocm-7.2.3/
+
+. $base/package/*/*/rocm-conf.in

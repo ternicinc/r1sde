@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/keychain/keychain.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Helps to manage ssh and GPG keys in a convenient and secure manner
+
+[T] Keychain acts as a frontend to ssh-agent and ssh-add, but allows you
+[T] to easily have one long running ssh-agent process per system, rather
+[T] than the norm of one ssh-agent per login session.
+[T] 
+[T] This dramatically reduces the number of times you need to enter your
+[T] passphrase. With keychain, you only need to enter a passphrase once
+[T] every time your local machine is rebooted. Keychain also makes it easy
+[T] for remote cron jobs to securely "hook in" to a long running ssh-agent
+[T] process, allowing your scripts to take advantage of key-based logins.
+
+[U] https://www.funtoo.org/en/security/keychain/intro/
+
+[A] Gentoo developers
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 2.9.8
+
+[D] c570519ee8e788a714a7fd5b286b683fe84b522227a62d12858c2531 keychain-2.9.8.tar.gz https://github.com/funtoo/keychain/archive/2.9.8/
+
+makeinstopt=
+hook_add postmake 5 "install keychain $root$bindir/"
+hook_add postmake 5 "install keychain.1 $root$mandir/man1/"

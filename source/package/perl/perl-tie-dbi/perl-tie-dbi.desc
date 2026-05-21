@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-tie-dbi/perl-tie-dbi.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module Tie-DBI
+
+[T] Tie-DBI allow you to tie associative arrays to relational databases using
+[T] the DBI library. The hash is tied to a table in a local or networked
+[T] database.
+
+[U] https://metacpan.org/pod/Tie::DBI
+
+[A] Lincoln D. Stein <lstein@cshl.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] Artistic GPL
+[V] 1.08
+[P] X -----5---9 200.115
+
+[D] b3a80d534dc9a3d95cdc1eb92de234b62970a62bf6f0efdf94d91f5e Tie-DBI-1.08.tar.gz https://cpan.metacpan.org/authors/id/T/TO/TODDR/

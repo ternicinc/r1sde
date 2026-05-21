@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gtkpbbuttons/gtkpbbuttons.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Gtk+ frontend for PBButtons
+
+[T] Gtkpbbuttons is a client for pbbutonsd which visualize user adjustments
+[T] for display brightness and volume on a X desktop.
+
+[U] https://pbbuttons.sourceforge.net/
+
+[A] Matthias Grimm <joker@cymes.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[R] + powerpc powerpc64 x86 x86-64
+
+[L] GPL
+[V] 0.6.10
+
+[D] e1021d3c1ad24b3e4e4ced4a5e4816422421146e32ac87884a03380c gtkpbbuttons-0.6.10.tar.gz https://prdownloads.sourceforge.net/sourceforge/pbbuttons/

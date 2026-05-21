@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libcloudproviders/libcloudproviders.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library that allows cloud storage expose their services
+
+[T] Clients such as file managers and desktop environments can then provide
+[T] integrated access to the cloud providers services.
+
+[U] https://gitlab.gnome.org/World/libcloudproviders
+
+[A] The GNOME Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 0.4.0
+[P] X -----5---9 300.200
+
+[CV-URL] https://download.gnome.org/sources/libcloudproviders/cache.json
+[D] 3fc445c460a3bee88af0fcfb3a201d7b87c880b01a122d38bd571128 libcloudproviders-0.4.0.tar.xz https://download.gnome.org/sources/libcloudproviders/0.4/
+
+. $base/package/*/*/gnome-conf.in

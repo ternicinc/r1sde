@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/foomatic-filters/foomatic-filters.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Foomatic filter convert PostScript data into printer's native format
+
+[T] The universal print filter "foomatic-rip", used by spoolers to convert
+[T] PostScript job data into the printer's native format as described by a
+[T] printer/driver-specific PPD file.
+
+[U] https://www.linuxprinting.org
+
+[A] Till Kamppeter <till.kamppeter@gmail.com>
+[A] Grant Taylor <gtaylor@picante.com>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/printing
+
+[L] GPL
+[V] 4.0.17
+
+[D] e5d8c10c7ff7389f0da27bd95368bbc05d01de3324fe03d1980eea2c foomatic-filters-4.0.17.tar.gz https://www.openprinting.org/download/foomatic/
+
+pkginstalled dbus || var_append confopt ' ' --disable-dbus

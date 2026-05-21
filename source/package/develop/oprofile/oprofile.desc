@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/oprofile/oprofile.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] System-wide profiler for Linux systems
+
+[T] OProfile is a system-wide profiler for Linux systems, capable of profiling
+[T] all running code at low overhead. OProfile is released under the GNU GPL.
+[T]
+[T] It consists of a kernel driver and a daemon for collecting sample data,
+[T] and several post-profiling tools for turning data into information.
+[T]
+[T] OProfile leverages the hardware performance counters of the CPU to
+[T] enable profiling of a wide variety of interesting statistics, which
+[T] can also be used for basic time-spent profiling. All code is profiled:
+[T] hardware and software interrupt handlers, kernel modules, the kernel,
+[T] shared libraries, and applications.
+
+[U] https://oprofile.sourceforge.net/
+
+[A] John Levon <levon@movementarian.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS NO-LTO.gcc
+
+[L] GPL
+[V] 1.4.0
+
+[D] 5573181663c7dd8f8aef760ef825af613bf49d55e3729dd24268e87f oprofile-1.4.0.tar.gz https://prdownloads.sourceforge.net/sourceforge/oprofile/
+
+var_append confopt ' ' '--with-kernel=/usr' # /usr/src/t2-trunk/linux-4.0' # usr'

@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/enblend/enblend.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A tool for compositing images
+
+[T] Given a set of images that overlap in some irregular way, Enblend overlays
+[T] them in such a way that the seam between the images is invisible, or at
+[T] least very difficult to see. Enblend does not line up the images for you.
+
+[U] https://enblend.sourceforge.net/
+
+[A] Andrew Mihal <mihal@eecs.berkeley.edu>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 4.2
+
+[D] f2176a619d0075f52ba19eb2865a4b3e72efd22c915133df5b799a13 enblend-enfuse-4.2.tar.gz https://prdownloads.sourceforge.net/sourceforge/enblend/
+
+atstage native || hook_add preconf 5 "echo 'ac_cv_func_malloc_0_nonnull=yes' >> config.cache"

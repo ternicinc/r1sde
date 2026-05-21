@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/markupsafe/markupsafe.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A text object that escapes characters
+
+[T] MarkupSafe implements a text object that escapes characters so it is
+[T] safe to use in HTML and XML. Characters that have special meanings are
+[T] replaced so that they display as the actual characters
+
+[U] https://markupsafe.palletsprojects.com
+
+[A] Armin Ronacher
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[L] BSD
+
+[V] 3.0.3
+[P] X ?----5---9 109.700
+
+[D] e480effadf39cc7a1decf0b033f19a173685bafe6a3de6862d487090 MarkupSafe-3.0.3.tar.gz https://github.com/pallets/markupsafe/archive/3.0.3/

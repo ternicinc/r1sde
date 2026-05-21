@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/luit/luit.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Locale and ISO 2022 support for Unicode terminals
+
+[T] Luit is a filter that can be run between an arbitrary application and a
+[T] UTF-8 terminal emulator. It will convert application output from the
+[T] locale's encoding into UTF-8, and convert terminal input from UTF-8
+[T] into the locale's encoding.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.1.1
+
+[D] 078628793191f0602a2faa4cb35c457755edbc79675b874030694549 luit-1.1.1.tar.bz2 http://xorg.freedesktop.org/releases/individual/app/
+
+. package/*/*/modular-x-conf.in

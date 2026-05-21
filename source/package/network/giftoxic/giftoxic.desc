@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/giftoxic/giftoxic.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A GTK2-based client for giFT
+
+[T] giFToxic is a GTK2-based client for giFT. At the moment it is under
+[T] heavy development.
+
+[U] https://giftoxic.sourceforge.net/
+
+[A] Tilman Sauerbeck <tsauerbeck@users.sourceforge.net>
+[A] Franco Catrin L. <fcatrin@tuxpan.cl>
+[M] Leonel Iván Saafigueroa <leonel@saafigueroa.com.ar>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 0.0.10
+
+[D] ab5a1143f833aa93cd9c5f1463ae2e8be6530195826d1f7892b53b25 giFToxic-0.0.10.tar.gz https://prdownloads.sourceforge.net/sourceforge/giftoxic/

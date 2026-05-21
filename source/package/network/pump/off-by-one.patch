@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/pump/off-by-one.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- pump-0.8.24/pump.c.orig	2005-10-11 19:35:59.000000000 +0200
++++ pump-0.8.24/pump.c	2008-08-25 14:42:48.000000000 +0200
+@@ -598,7 +598,7 @@
+ 		    if (intf[i].set & PUMP_NETINFO_HAS_HOSTNAME)
+ 			strncpy(cmd.u.status.hostname,
+ 			    intf->hostname, sizeof(cmd.u.status.hostname));
+-		    cmd.u.status.hostname[sizeof(cmd.u.status.hostname)] = '\0';
++		    cmd.u.status.hostname[sizeof(cmd.u.status.hostname) - 1] = '\0';
+ 
+ 		    if (intf[i].set & PUMP_NETINFO_HAS_DOMAIN)
+ 			strncpy(cmd.u.status.domain,
