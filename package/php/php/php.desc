@@ -1,9 +1,10 @@
-[COPY] --- T2-COPYRIGHT-BEGIN ---
-[COPY] t2/package/*/php/php.desc
+[COPY] --- R1-COPYRIGHT-BEGIN ---
+[COPY] r1/package/*/php/php.desc
+[COPY] Copyright (C) 2026 - 2026 The R1 SDE Project
 [COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
-[COPY] --- T2-COPYRIGHT-END ---
+[COPY] --- R1-COPYRIGHT-END ---
 
 [I] Scripting language especially suited for Web development
 
@@ -13,7 +14,7 @@
 [U] https://www.php.net/
 
 [A] PHP Group <group@php.net>
-[M] René Rebe <rene@exactco.de>
+[M] Allexander Bergmans <abm@libregrad.pp.ua>
 
 [C] extra/development
 [F] CROSS NO-LTO.gcc
