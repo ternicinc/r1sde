@@ -1,10 +1,11 @@
 /*
- * --- T2-COPYRIGHT-BEGIN ---
- * t2/misc/confdialog/inputbox.c
+ * --- R1-COPYRIGHT-BEGIN ---
+ * r1/misc/confdialog/inputbox.c
+ * Copyright (C) 2026 - 2026 The R1 SDE Project
  * Copyright (C) 2004 - 2026 The T2 SDE Project
  * Copyright (C) 1998 - 2003 ROCK Linux Project
  * SPDX-License-Identifier: GPL-2.0
- * --- T2-COPYRIGHT-END ---
+ * --- R1-COPYRIGHT-END ---
  */
 /*
  *  inputbox.c -- implements the input box
@@ -33,7 +34,8 @@
 char dialog_input_result[MAX_LEN + 1];
 
 /*
- *  Print the termination buttons
+ *  Print the termination buttons.
+ *  Is this even used?
  */
 static void
 print_buttons(WINDOW *dialog, int height, int width, int selected)
