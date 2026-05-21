@@ -114,6 +114,9 @@ dialog_inputbox (const char *title, const char *prompt, int height, int width,
     draw_box (dialog, y + 1, box_x - 1, 3, box_width + 2,
 	      border_attr, dialog_attr);
 
+	/* print the buttons in the dialog, at the given
+	 * height and width.
+	 */
     print_buttons(dialog, height, width, 0);
 
     /* Set up the initial value */
