@@ -156,8 +156,8 @@ dialog_inputbox (const char *title, const char *prompt, int height, int width,
 		continue;
 	    case KEY_RIGHT:
 		continue;
-	    case KEY_BACKSPACE:
-	    case 127:
+	    case KEY_BACKSPACE:	// If the key = backspace:
+	    case 127:			// We give it the case 127.
 		if (input_x || scroll) {
 		    wattrset (dialog, inputbox_attr);
 		    if (!input_x) {
