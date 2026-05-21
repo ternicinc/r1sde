@@ -29,13 +29,13 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
+/* We include the header. */
 #include "dialog.h"
 
 char dialog_input_result[MAX_LEN + 1];
 
 /*
  *  Print the termination buttons.
- *  Is this even used?
  */
 static void
 print_buttons(WINDOW *dialog, int height, int width, int selected)
