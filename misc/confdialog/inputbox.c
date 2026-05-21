@@ -119,7 +119,7 @@ dialog_inputbox (const char *title, const char *prompt, int height, int width,
 	 */
     print_buttons(dialog, height, width, 0);
 
-    /* Set up the initial value */
+    /* Set up the initial value(s) */
     wmove (dialog, box_y, box_x);
     wattrset (dialog, inputbox_attr);
 
