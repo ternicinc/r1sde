@@ -1,8 +1,9 @@
-[COPY] --- T2-COPYRIGHT-BEGIN ---
-[COPY] t2/package/*/pystring/pystring.desc
+[COPY] --- R1-COPYRIGHT-BEGIN ---
+[COPY] r1/package/*/pystring/pystring.desc
+[COPY] Copyright (C) 2026 - 2026 The R1 SDE Project
 [COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
-[COPY] --- T2-COPYRIGHT-END ---
+[COPY] --- R1-COPYRIGHT-END ---
 
 [I] A collection of C++ functions which match the interface
 
@@ -13,7 +14,7 @@
 [U] https://github.com/imageworks/pystring
 
 [A] Sony Pictures Imageworks
-[M] René Rebe <rene@exactco.de>
+[M] Allexander Bergmans <abm@libregrad.pp.ua>
 
 [F] CROSS OBJDIR
 [C] extra/development
