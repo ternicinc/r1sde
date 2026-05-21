@@ -1,9 +1,10 @@
 #!/bin/sh
-# --- T2-COPYRIGHT-BEGIN ---
-# t2/scripts/Apply
+# --- R1-COPYRIGHT-BEGIN ---
+# r1/scripts/Apply
+# Copyright (C) 2026 The R1 SDE Project
 # Copyright (C) 2026 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0
-# --- T2-COPYRIGHT-END ---
+# --- R1-COPYRIGHT-END ---
 
 
 tmp=$(mktemp)
