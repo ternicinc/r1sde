@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/keyutils/keyutils.desc
+[COPY] Copyright (C) 2016 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Tools used to control the Linux key management system
+
+[T] These tools are used to control the key management system built into the
+[T] Linux kernel.
+
+[U] https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git
+
+[A] David Howells <dhowells@redhat.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS NO-LTO.clang
+
+[L] GPL
+[V] 1.6.3
+[P] X -----5---9 180.000
+
+[D] 551186f6f129d453c439fe02630184987c6f4da1d2f36f5a9ac924d0 keyutils-1.6.3.tar.gz https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git/snapshot/
+
+var_append makeinstopt ' ' 'LIBDIR=$libdir USRLIBDIR=$libdir'

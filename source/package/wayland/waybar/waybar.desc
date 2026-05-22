@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/waybar/waybar.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Highly customizable Wayland bar
+
+[T] Highly customizable Wayland bar for Sway and Wlroots based compositors.
+
+[U] https://github.com/Alexays/Waybar/
+
+[A] Alexis Rouillard <contact@arouillard.fr>
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/graphic
+[F] CROSS
+
+[E] opt gpsd
+[E] opt jack
+[E] opt libdbusmenu
+[E] opt libmpdclient
+[E] opt pipewire pulseaudio wireplumber
+#[E] opt spdlog
+[E] opt upower
+
+[L] MIT
+[V] 0.15.0
+
+[D] d1398fd2c4efedebdddd292807a2b19e3d021f2d3c31d3728edf7378 waybar-0.15.0.tar.gz https://github.com/Alexays/Waybar/archive/0.15.0/
+
+var_append mesonopt ' ' -Dtests=disabled
+var_append mesonopt ' ' -Dcava=disabled
+pkginstalled playerctl && var_append mesonopt ' ' -Dmpris=enabled
+pkginstalled systemd || var_append mesonopt ' ' -Dsystemd=disabled

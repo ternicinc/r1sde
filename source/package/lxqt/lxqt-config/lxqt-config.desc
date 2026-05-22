@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lxqt-config/lxqt-config.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Tools to configure LXQt and the underlying operating system
+
+[T] Tools to configure LXQt and the underlying operating system.
+
+[U] https://github.com/lxqt/lxqt-config
+
+[A] Lxqt-config Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] OBJDIR
+
+[V] 2.4.0
+[L] LGPL
+
+[CV-GROUP] lxqt
+[D] 65edb64c9ca167ce0bbd3ed29fa52d90007ad1008be83c1413733a34 lxqt-config-2.4.0.tar.xz https://github.com/lxqt/lxqt-config/releases/download/2.4.0/

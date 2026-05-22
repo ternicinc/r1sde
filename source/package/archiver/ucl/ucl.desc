@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ucl/ucl.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A portable lossless data compression library
+
+[T] UCL is a portable lossless data compression library written in ANSI C.
+[T] Both the source code and the compressed data format are designed to
+[T] be portable across platforms. UCL supports in-place decompression. It
+[T] implements a number of compression algorithms that achieve an excellent
+[T] compression ratio while allowing very fast decompression. Decompression
+[T] requires no additional memory.
+
+[U] https://www.oberhumer.com/opensource/ucl/
+
+[A] Markus F.X.J. Oberhumer <markus@oberhumer.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 1.03
+
+[D] faa6da16f6e26f2ee061ed85a8307adfe9871119d5ca65c14f783af1 ucl-1.03.tar.gz http://www.oberhumer.com/opensource/ucl/download/
+
+var_append GCC_WRAPPER_APPEND ' ' -std=gnu89

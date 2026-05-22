@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-empy/python-empy.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Templating Engine
+
+[T] EmPy is a powerful, robust and mature templating system for inserting
+[T] Python code in template text. EmPy takes a source document, processes it,
+[T] and produces output.
+
+[U] https://pypi.org/project/empy/
+
+[A] Erik Max Francis <software@alcyone.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] BSD
+[V] 4.2.1
+[P] X -----5---9 117.000
+
+[D] 76cd9a61fd65131fa1a4927f55fe519bdedf59a783c5238e8be20f12 empy-4.2.1.tar.gz https://files.pythonhosted.org/packages/source/e/empy/

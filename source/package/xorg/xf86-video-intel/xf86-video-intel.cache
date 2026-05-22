@@ -1,0 +1,45 @@
+[TIMESTAMP] 1737710024 Fri Jan 24 10:13:44 2025
+[BUILDTIME] 25 (9)
+[SIZE] 2.17 MB, 19 files
+
+[DEP] autoconf
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] libdrm
+[DEP] libpciaccess
+[DEP] libpng
+[DEP] libtool
+[DEP] libx11
+[DEP] libxcb
+[DEP] libxcursor
+[DEP] libxdamage
+[DEP] libxext
+[DEP] libxfixes
+[DEP] libxfont2
+[DEP] libxinerama
+[DEP] libxrandr
+[DEP] libxrender
+[DEP] libxscrnsaver
+[DEP] libxshmfence
+[DEP] libxtst
+[DEP] libxv
+[DEP] libxvmc
+[DEP] libxxf86vm
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] perl
+[DEP] pixman
+[DEP] sed
+[DEP] tar
+[DEP] udev
+[DEP] xcb-util
+[DEP] xorg-server
+[DEP] xorgproto

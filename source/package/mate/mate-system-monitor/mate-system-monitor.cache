@@ -1,0 +1,43 @@
+[TIMESTAMP] 1759850406 Tue Oct  7 17:20:06 2025
+[BUILDTIME] 40 (9)
+[SIZE] 12.21 MB, 2389 files
+
+[DEP] at-spi2-core
+[DEP] atkmm1
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] cairomm1
+[DEP] coreutils
+[DEP] diffutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[DEP] glib
+[DEP] glibmm2
+[DEP] grep
+[DEP] gtk+
+[DEP] gtkmm3
+[DEP] harfbuzz
+[DEP] itstool
+[DEP] libgtop
+[DEP] librsvg
+[DEP] libsigc++2
+[DEP] libx11
+[DEP] libxml
+[DEP] linux-header
+[OPT] mate-desktop
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[DEP] pangomm1
+[DEP] polkit
+[DEP] python
+[DEP] sed
+[OPT] systemd
+[DEP] tar
+[DEP] xorgproto
+[DEP] xz

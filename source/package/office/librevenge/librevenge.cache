@@ -1,0 +1,18 @@
+[TIMESTAMP] 1737709748 Fri Jan 24 10:09:08 2025
+[BUILDTIME] 10 (9)
+[SIZE] 8.85 MB, 471 files
+
+[DEP] bash
+[DEP] boost
+[DEP] coreutils
+[DEP] diffutils
+[OPT] doxygen
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] xz
+[DEP] zlib

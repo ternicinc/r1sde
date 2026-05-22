@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libxrandr/libxrandr.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] X Resize, Rotate and Reflection extension client library
+
+[T] Xrandr is a simple library designed to interface the X Resize and Rotate
+[T] Extension. This allows clients to change the size and rotation of the root
+[T] window of a screen, along with the ability to reflect the screen about
+[T] either axis.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.5.5
+[P] X ?----5---9 112.432
+
+[D] b8a70201ba41f1f51803b17f164f318e354eef49b1ed63f1dac918d4 libXrandr-1.5.5.tar.xz http://xorg.freedesktop.org/releases/individual/lib/
+
+. package/*/*/modular-x-conf.in

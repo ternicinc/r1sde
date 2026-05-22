@@ -1,0 +1,19 @@
+
+[TIMESTAMP] 1279739548 Wed Jul 21 21:12:28 2010
+[BUILDTIME] 5 (5)
+[SIZE] 1.68 MB, 8 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] grep
+[DEP] gzip
+[DEP] libsdl
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] zlib

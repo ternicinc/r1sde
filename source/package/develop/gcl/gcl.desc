@@ -1,0 +1,50 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gcl/gcl.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GNU Common Lisp
+
+[T] GCL is one of the oldest Lisp systems still in use, and as such
+[T] has served as the basis for large lisp applications when comput-
+[T] ers were much more limited than they are today, particularly in
+[T] terms of available memory. Considerable effort was therefore
+[T] made in the past to keep the memory image as small as possible.
+
+[U] https://www.gnu.org/software/gcl/
+
+[A] Dr William Schelter (rip)
+[A] Camm Maguire <camm@intech19.enhanced.com>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[F] NOPARALLEL
+[C] extra/development
+
+[L] LGPL
+[V] 2.7.1
+
+[D] 09431b9b14e2c034eaf1d55bba87f3cd8ce0181ea636a77bf0934d7c gcl-2.7.1.tar.gz http://ftp.gnu.org/pub/gnu/gcl/
+
+# selecting bfd target:
+gclbfd=locbfd
+
+for i in dlopen statsysbfd dynsysbfd locbfd custreloc; do
+	if [ "$gclbfd" = "$i" ]; then
+		var_append confopt ' ' --enable-$i
+	else
+		var_append confopt ' ' --disable-$i
+	fi
+done
+var_append confopt ' ' --enable-ansi
+
+# fixing locations, for 32 and 64bits architectures
+gcl_main() {
+
+	sed -i -e 's,$(DESTDIR)$(prefix)/lib,'$root$libdir',g' \
+	-e 's,INSTALL_LIB_DIR=$(prefix)/lib,INSTALL_LIB_DIR='$root$libdir',g' makefile
+
+}
+
+hook_add premake 5 gcl_main

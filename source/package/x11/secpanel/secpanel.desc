@@ -1,0 +1,37 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/secpanel/secpanel.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A graphical user interface for managing and running SSH
+
+[T] SecPanel sits on top of SSH software-suites and supports the SSH.com and the
+[T] OpenSSH-version. You may get information about these programs at
+[T] http://www.ssh.com respectively at http://www.openssh.com.
+[T] SecPanel is written entirely in pure Tcl/Tk and does not need any
+[T] extensions but it requires version 8.x of Tcl and Tk.
+
+[U] https://www.pingx.net/secpanel/
+
+[A] Steffen Leich <secpanel@pingx.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+[F] CROSS
+
+[L] GPL
+[V] 0.6.1
+
+[D] b4064c9e7aa0456c2b25a0e63d36208a7f9e598b449ea2cf4e1992c3 secpanel-0.6.1.tgz https://themediahost.de/secpanel/pages/downloads/
+
+runmake=0
+srcdir=.
+
+secpanel_custmain(){
+	[[ $libdir = *lib64 ]] && sed -i 's,lib/secpanel,lib64/secpanel,1' usr/local/bin/secpanel
+	cp -vf usr/local/bin/* $root$bindir/
+	cp -vfr usr/local/lib/secpanel $root$libdir/
+}
+hook_add postmake 5 secpanel_custmain

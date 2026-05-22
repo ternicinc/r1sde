@@ -1,0 +1,22 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/distcc/parse-config
+# Copyright (C) 2004 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+if [ "$SDECFG_PKG_DISTCC_USEIT" = 1 -a "`type -p distcc`" ]; then
+	unset ${!DISTCC_*}
+	#export DISTCC_VERBOSE=1
+	export DISTCC_HOSTS="$SDECFG_PKG_DISTCC_HOSTS"
+
+	# only using the KCC and GCC wrapper will work accidently, because
+	# GCC_* is utilized for any gcc based compilation - either C or C++
+	var_insert KCC_WRAPPER_OTHERS ':' distcc
+	var_insert GCC_WRAPPER_OTHERS ':' distcc
+
+	# distcc's dir is a valid place to write
+	flistvalid="$flistvalid|$HOME/.distcc"
+
+	# last but not least make sure the package does not depend on distcc
+	var_append flistrfilter '|' ".*bin/distcc"
+fi

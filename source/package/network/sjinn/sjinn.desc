@@ -1,0 +1,37 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sjinn/sjinn.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Simple command-line tool to send and receive data on a serial port
+
+[T] S-Jinn is a free, lightweight, open-source Linux application written in
+[T] It is a simple command-line tool designed for sending & receiving data
+[T] from PC controlled TIA/EIA-232 (RS-232) test, measurement, and control
+[T] devices. S-Jinn features include the ability to:
+[T] * Control RS-232 DTR and RTS lines from the command-line
+[T] * Display DTR, RTS, CTS & DSR status
+[T] * Send control characters (including the NULL character)
+[T] * Send values in hex
+[T] * Specify read length
+[T] * Set programable delay times for both send & read.
+[T] * Support for virtaally all baud rates, parity, and data lengths found in standard PC UARTs
+[T] * Output Formatting: ASCII, hex, ASCII-over-hex, wrap text, truncate lines, supress trailing line feeds
+
+[U] https://sjinn.sourceforge.net/
+
+[A] Brian Peterson <bpeterso@aspenresearch.com>
+[A] Aspen Research Corporation <www.aspenresearch.com>
+[M] Marian Aldenhövel <marian.aldenhoevel@mba-software.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 1.01
+
+[D] 7d6eff34e7b0211a11f0986eb62e63ad074dc7d4e695d3d84bdbba79 sjinn-1.01.tar.gz https://download.sourceforge.net/project/sjinn/sjinn-1.01/Sjinn%201.01/
+
+# The stock Makefile install target will write to the host filesystem.
+prefix="$root/$prefix"

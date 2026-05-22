@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/viewvc/viewvc.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Web-based Subversion and CVS repository browser
+
+[T] ViewVC (formerly known as ViewCVS) is a Python/CGI-based system
+[T] for viewing and interacting with Subversion and CVS repositories
+[T] through your Web browser. It can browse directories, view changelogs,
+[T] generate diffs, view arbitrary revisions, and display annotated
+[T] ("blame") listings.
+[T] It has full support for tags and branches, and contains a
+[T] database-backed query system like Bonsai.
+
+[U] https://www.viewvc.org/
+
+[A] Greg Stein <gstein@lyra.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] BSD
+[V] 1.2.5
+
+[D] 3309c1bf4fcd31b36853f0c361b8aa1b0d181031cc99bcd2c0256099 viewvc-1.2.5.tar.gz https://github.com/viewvc/viewvc/releases/download/1.2.5/
+
+[ $prefix_auto = 1 ] && prefix="opt/viewvc" && set_confopt
+
+viewvc_install() {
+	eval ./viewvc-install --prefix=/$prefix --destdir=$root
+}
+runconf=0
+runmake=0
+
+hook_add postmake 5 viewvc_install

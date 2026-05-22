@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lualogging/lualogging.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A simple API to use logging features in Lua
+
+[T] LuaLogging provides a simple API to use logging features in Lua.
+[T] Its design was based on log4j. LuaLogging currently supports,
+[T] through the use of appenders, console, file, email, socket and
+[T] sql outputs.
+
+[U] https://github.com/lunarmodules/lualogging/
+
+[A] Danilo Tuler
+[A] Thiago Ponte
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] OpenSource
+[V] 1.8.2
+
+[D] c01f5d7120be8d920ca5a97fde5bc81e74e164af9963c1be678cf6cd lualogging-1.8.2.tar.gz https://github.com/lunarmodules/lualogging/archive/v1.8.2/
+
+var_append makeinstopt ' ' PREFIX=$root/$prefix

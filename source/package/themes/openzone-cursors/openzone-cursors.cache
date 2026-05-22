@@ -1,0 +1,15 @@
+[TIMESTAMP] 1742307698 Tue Mar 18 15:21:38 2025
+[BUILDTIME] 1 (9)
+[SIZE] 2.41 MB, 1317 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] icon-slicer
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] xcursorgen

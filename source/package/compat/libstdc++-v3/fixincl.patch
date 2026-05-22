@@ -1,0 +1,21 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/libstdc++-v3/fixincl.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+No fixinclude neded and wanted.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- ../gcc/fixinc/fixincl.sh.orig
++++ ../gcc/fixinc/fixincl.sh
+@@ -143,6 +143,8 @@
+     INPUTLIST="$@"
+ fi
+ 
++INPUTLIST=""
++
+ for INPUT in ${INPUTLIST} ; do
+ 
+ cd ${ORIGDIR}

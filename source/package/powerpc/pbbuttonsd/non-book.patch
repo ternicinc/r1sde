@@ -1,0 +1,56 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/pbbuttonsd/non-book.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+Workstations, such as PowerMac's, the Cube or iMacs do not have a cover,
+and thus we must not inf. loop re-sleeping the machine.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- pbbuttonsd-0.8.1/src/module_pmac.c	2007-07-01 13:05:17.000000000 +0200
++++ pbbuttonsd-0.8.1-cube/src/module_pmac.c	2008-08-24 10:40:49.000000000 +0200
+@@ -60,6 +60,7 @@
+ 	int version;       /* PMU version */
+ 	int machine;       /* OpenFirmware machine code */
+ 	int lmuaddr;	   /* i2c address of LMU Controller */
++	int cover;         /* no cover, e.g. PowerMac, iMac, Cube,  etc. */
+ 	struct modflags_pmac flags;
+ 	int flagschanged;        /* PMU flags that have changed recently */
+ 	int oharevolbutton;      /* level of volume button on OHARE PBs scaled to 0..100 */
+@@ -120,6 +121,7 @@
+ #if defined(DEBUG) && SIMU_AMBIENT
+ 	base->ambient        =  0;
+ #endif
++	base->cover          =  1; /* until we find otherwise, we assume laptop with cover */
+ 	base->flags.coveropen      = 1;   /* lid is open */
+ 	base->flags.sleepsupported = 0;   /* sleep not supported by default */
+ 	base->flags.set_kbdmode    = 0;   /*   request flags for delayed actions */
+@@ -324,7 +326,7 @@
+ 			do {
+ 			    activate_sleepmode ();
+ 			    base->flagschanged = pmac_update_flags ();
+-			} while (base->flags.coveropen == 0);
++			} while (base->cover && base->flags.coveropen == 0);
+ #endif
+ 			base->timeleft = 7200;       /* reset time value so that the */
+ 				/* filter approximate the real value from top. Otherwise */
+@@ -1605,6 +1612,7 @@
+ int
+ getMachineID(int pmu)
+ {
++	struct moddata_pmac *base = &modbase_pmac;
+ 	char buffer[32];
+ 	int fd, n, machine = 0;
+ 
+@@ -1622,6 +1630,9 @@
+ 						machine |= atoi(&buffer[n+1]) & 0xf;
+ 				}
+ 			}
++			else if (strncmp("PowerMac", buffer, 8) == 0) {
++				base->cover = 0;
++			}
+ 		}
+ 		close(fd);
+ 	}

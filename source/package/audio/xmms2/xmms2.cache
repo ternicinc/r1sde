@@ -1,0 +1,54 @@
+[TIMESTAMP] 1759857903 Tue Oct  7 19:25:03 2025
+[BUILDTIME] 55 (9)
+[SIZE] 4.98 MB, 190 files
+
+[DEP] 00-dirtree
+[DEP] alsa-lib
+[DEP] avahi
+[DEP] bash
+[DEP] binutils
+[DEP] bison
+[DEP] boost
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] faad
+[DEP] ffmpeg
+[DEP] fftw3
+[DEP] file
+[OPT] flac
+[DEP] flex
+[DEP] gawk
+[DEP] gettext
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] jack
+[OPT] lame
+[DEP] libao
+[DEP] libmad
+[DEP] libmodplug
+[DEP] libmpcdec
+[DEP] libogg
+[DEP] libopus
+[DEP] libsamplerate
+[DEP] libshout
+[DEP] libsndfile
+[DEP] libvorbis
+[DEP] libxml
+[DEP] linux-header
+[DEP] m4
+[DEP] mpg123
+[DEP] openssl
+[DEP] opusfile
+[DEP] perl
+[DEP] pulseaudio
+[DEP] python
+[DEP] readline
+[DEP] ruby
+[DEP] sed
+[DEP] setuptools
+[DEP] speex
+[DEP] sqlite
+[DEP] tar
+[DEP] xz

@@ -1,0 +1,26 @@
+[TIMESTAMP] 1737675612 Fri Jan 24 00:40:12 2025
+[BUILDTIME] 2 (9)
+[SIZE] 0.10 MB, 7 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gdk-pixbuf-xlib
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] libx11
+[DEP] libxext
+[DEP] libxft
+[DEP] libxpm
+[DEP] libxrender
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

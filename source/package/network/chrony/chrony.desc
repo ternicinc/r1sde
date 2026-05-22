@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/chrony/chrony.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An ntp replacement for dial-up users
+
+[T] Chrony is a pair of programs which are used to maintain the accuracy
+[T] of the system clock on a computer.
+
+[U] http://chrony.tuxfamily.org/
+
+[A] Richard Curnow <richard@rrbcurnow.freeuk.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 4.8
+
+[D] 05073fa9ef820b969d93e353cf9f731f393882fffe977c259cc6f507 chrony-4.8.tar.gz https://chrony-project.org/releases/
+
+hook_add postmake 5 "mkdir -p $root/var/lib/chrony $root/var/log/chrony $root/etc/chrony"
+hook_add postmake 5 "cp -f $confdir/chrony_conf $root/etc/chrony/chrony.conf.sample"
+hook_add postmake 5 "cp -f $confdir/chrony_keys $root/etc/chrony/chrony.keys.sample"

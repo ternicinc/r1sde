@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/acroread/mime-database.diff
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- Adobe/Reader8/Reader/intellinux/bin/xdg-mime.orig	2008-06-25 18:17:05.000000000 +0200
++++ Adobe/Reader8/Reader/intellinux/bin/xdg-mime	2008-09-02 21:56:55.000000000 +0200
+@@ -1084,7 +1084,7 @@
+         ;;
+ esac
+ 
+-update_mime_database $xdg_base_dir
++echo update_mime_database $xdg_base_dir
+ 
+ exit_success
+ 

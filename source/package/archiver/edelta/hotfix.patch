@@ -1,0 +1,14 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/edelta/hotfix.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- edelta-0.10b/Makefile.vanilla	2007-06-14 11:27:57.000000000 +0000
++++ edelta-0.10b/Makefile	2007-06-14 11:28:16.000000000 +0000
+@@ -1,3 +1,3 @@
+-LDFLAGS = -lz  
+-CFLAGS = -Wall -ansi -finline-functions 
++LDLIBS = -lz
++CFLAGS = -Wall -finline-functions
+ edelta: edelta.c sha1.c

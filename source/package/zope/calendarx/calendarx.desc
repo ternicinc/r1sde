@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/calendarx/calendarx.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A customizable calendar product for Plone
+
+[T] CalendarX is a Plone Calendar providing metacalendar functionality
+[T] for the Plone content management system. It is highly customizable,
+[T] has industrial strength catalog querying tools, and is open source (GPL).
+
+[U] http://calendarx.org/
+
+[A] The CalendarX Project
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[E] add plone
+
+[L] GPL
+
+[V] 0.9.0
+
+[D] 69797735603379be9b6435fef638f463d24acca5c49f58537fe8cdee CalendarX-0.9.0.tar.gz https://download.sourceforge.net/calendarx/
+
+. $base/package/*/zope/zope-conf.in

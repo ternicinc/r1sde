@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mlt/mlt.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Multimedia framework designed for television broadcasting
+
+[T] MLT is a multimedia framework designed for television broadcasting.
+
+[U] https://www.mltframework.org/
+
+[A] Charles Yates <charles.yates@pandora.be>
+[A] Dan Dennedy <dan@dennedy.org>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/multimedia
+[F] CROSS OBJDIR
+
+[E] opt jack
+[E] opt fftw3
+[E] opt libsdl2
+[E] opt lilv
+[E] opt lv2
+[E] opt sox
+
+[L] LGPL
+[V] 7.38.0
+[P] X -----5---9 500.000
+
+[D] 1453c3ed23e089ad03e759ba4331f33a78dccbdc615ebab1aa27082d mlt-7.38.0.tar.gz https://prdownloads.sourceforge.net/sourceforge/mlt/
+
+var_append cmakeopt ' ' -DMOD_AVFORMAT=OFF # TODO: broken
+var_append cmakeopt ' ' -DMOD_SDL1=OFF # TODO: broken
+pkginstalled qt5base qt5svg || var_append cmakeopt ' ' -DMOD_QT=OFF
+pkginstalled qt6base qt65compat qt6svg && var_append cmakeopt ' ' -DMOD_QT6=ON
+pkginstalled python && var_append cmakeopt ' ' -DSWIG_PYTHON=ON
+var_insert GCC_WRAPPER_INSERT ' ' "-L$root$(pkgprefix libdir xorg-server)"

@@ -1,0 +1,29 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/corona/hotfix-gcc43.patch
+# Copyright (C) 2009 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -Nur corona-1.0.2-orig/src/Convert.cpp corona-1.0.2/src/Convert.cpp
+--- corona-1.0.2-orig/src/Convert.cpp	2009-02-08 22:37:13.000000000 +0000
++++ corona-1.0.2/src/Convert.cpp	2009-02-08 22:38:48.000000000 +0000
+@@ -9,7 +9,7 @@
+ #include "Debug.h"
+ #include "SimpleImage.h"
+ #include "Utility.h"
+-
++#include <cstring>
+ 
+ namespace corona {
+ 
+diff -Nur corona-1.0.2-orig/src/OpenTGA.cpp corona-1.0.2/src/OpenTGA.cpp
+--- corona-1.0.2-orig/src/OpenTGA.cpp	2009-02-08 22:37:13.000000000 +0000
++++ corona-1.0.2/src/OpenTGA.cpp	2009-02-08 22:44:00.000000000 +0000
+@@ -3,6 +3,7 @@
+ #include "Open.h"
+ #include "SimpleImage.h"
+ #include "Utility.h"
++#include <cstring>
+ 
+ 
+ namespace corona {

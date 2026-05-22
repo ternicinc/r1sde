@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/shaderc/shaderc.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A collection of tools, libraries, and tests for Vulkan shader compilation
+
+[T] A collection of tools, libraries and tests for shader compilation,
+[T] including: glslc, a command line compiler for GLSL/HLSL to SPIR-V, and
+[T] libshaderc, a library API for accessing glslc functionality.
+
+[A] Google
+[M] René Rebe <rene@exactco.de>
+
+[U] https://github.com/google/shaderc
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 2026.2
+[P] X -----5---9 127.400
+
+[D] dd2a4e137b43ec7ecf295013d1747b910f1246d2a0310ddfb18b03a2 shaderc-v2026.2.tar.gz https://github.com/google/shaderc/archive/refs/tags/v2026.2/
+
+var_append cmakeopt ' ' -DSHADERC_SKIP_TESTS=YES
+var_append cmakeopt ' ' -Dglslang_SOURCE_DIR=$root/usr/include/glslang
+var_append cmakeopt ' ' "-DSPIRV-Headers_SOURCE_DIR=$root/$prefix -Dspirv-tools_SOURCE_DIR=$root/$prefix"
+
+build_version() {
+	cat > build-version.inc <<-EOT
+"shaderc $ver\n"
+"SPIRV-Tools `pkgprefix ver spirv-tools`\n"
+"glslang `pkgprefix ver glslang`\n"
+EOT
+}
+hook_add premake 5 build_version

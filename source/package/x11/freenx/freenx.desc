@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/freenx/freenx.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Free NX server implementation
+
+[T] FreeNX is a free server implementation of NoMachine.com OSS NX
+[T] components. NX allows usage of X-connections over real slow
+[T] links with high latency and low bandwidth, like a Modem or ISDN.
+
+[U] http://freenx.berlios.de
+
+[A] Fabian Franz <FabianFranz@gmx.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 0.7.1
+
+[D] 424a593e8c30209dda258ddfcdf8105cc17b065d20f71dd5301fd2eb freenx-0.7.1.tar.gz https://download.sourceforge.net/project/freenx.berlios/
+
+freenx_install() {
+	for x in nxnode nxserver nxsetup nxkeygen nxnode-login nxloadconfig
+	do cp -fv $x $root$bindir/$x
+	done
+	mkdir -p $root/etc/nxserver
+	cp -fv node.conf.sample $root/etc/nxserver/
+}
+
+runmake=0
+
+hook_add postmake 5 freenx_install

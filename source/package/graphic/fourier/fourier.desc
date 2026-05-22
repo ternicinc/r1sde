@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/fourier/fourier.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Fourier transform GIMP plugin
+
+[T] A simple plug-in to do fourier transform on you image. The major advantage
+[T] of this plugin is to be able to work with the transformed image inside
+[T] GIMP.
+
+[U] http://people.via.ecp.fr/~remi/soft/gimp/gimp_plugin_en.php3
+
+[A] Rémi Peyronne <remi.peyronnet@via.ecp.fr>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+
+[L] GPL
+[V] 0.4.0
+
+[D] 0765ab3ee89712b2e3aa100c9362e96ae828b9bf98dcb14852844fbf fourier-0.4.0.tar.gz http://people.via.ecp.fr/~remi/soft/gimp/
+
+. $base/package/*/*/gnome-conf.in

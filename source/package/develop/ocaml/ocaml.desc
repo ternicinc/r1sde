@@ -1,0 +1,40 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ocaml/ocaml.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Objective Caml is the latest implementation of the Caml dialect of ML
+
+[T] Objective Caml is an implementation of the Caml dialect of ML extended
+[T] with class-based objects and a powerful module system in the style of
+[T] SML's. It continues the Caml Light effort in many ways (separate
+[T] compilation, low memory requirements, fast turnaround through bytecode
+[T] interpretation), but also significantly departs from Caml Light on other
+[T] points (objects, the module calculus, and a high-performance native-code
+[T] compiler).
+
+[U] https://ocaml.org/
+
+[A] INRIA <caml@inria.fr>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] NO-LTO
+
+[L] LGPL
+[V] 5.4.1
+[P] X -----5---9 191.900
+
+[D] 2bc7ec0cb79796bacc52624d32b6bc9e21acaf72b6272db99d2ecc40 ocaml-5.4.1.tar.gz https://github.com/ocaml/ocaml/archive/5.4.1/
+
+case "$arch" in
+arm64|x86-64|powerpc64|riscv64|s390x)
+	make_target=world.opt
+	;;
+*)
+	make_target=world
+	;;
+esac
+var_append makeopt ' ' $make_target

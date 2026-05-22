@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/netkit-tftp/netkit-tftp.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Netkit-tftp for Linux
+
+[T] The netkit-tftp package contains the 'tftp' client and server program.
+
+[U] http://www.hcs.harvard.edu/~dholland/computers/netkit.html
+
+[A] David A. Holland <netbug@ftp.uk.linux.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+
+[L] OpenSource
+[V] 0.17
+[P] O -----5---9 188.100
+
+[D] 8819baae8ef050aaf87889a457916263fbad0c94b48c4e6976d58d65 netkit-tftp-0.17.tar.gz ftp://ftp.uk.linux.org/pub/linux/Networking/netkit/
+
+confopt="--prefix=/$prefix --installroot=$root"

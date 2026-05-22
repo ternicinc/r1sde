@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-nettool/gnome-nettool.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GNOME interface for various networking tools
+
+[T] GNOME Nettool is a set of front-ends to various networking command-line
+[T] tools, like ping, netstat, ifconfig, whois, traceroute and finger.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] Susanne Klaus <vadja@gmx.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base extra/desktop/gnome
+
+[L] GPL
+[V] 42.0
+[P] X -----5---9 149.500
+
+[CV-URL] https://download.gnome.org/sources/gnome-nettool/cache.json
+[D] 65905fd5110ecbfc7d238a1c2174c3de00687e757a2b01fec37503db gnome-nettool-42.0.tar.xz https://download.gnome.org/sources/gnome-nettool/42/
+
+. $base/package/*/*/gnome-conf.in

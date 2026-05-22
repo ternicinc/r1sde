@@ -1,0 +1,25 @@
+[TIMESTAMP] 1744908293 Thu Apr 17 12:44:53 2025
+[BUILDTIME] 2 (9)
+[SIZE] 0.09 MB, 11 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pam
+[DEP] sed
+[DEP] tar
+[DEP] wayland
+[DEP] wayland-protocols
+[DEP] xkbcommon

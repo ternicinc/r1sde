@@ -1,0 +1,39 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/netkit-rsh/netkit-rsh.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Netkit-rsh for Linux
+
+[T] Contents of the netkit-rsh package:
+[T]
+[T] rexec Password-based remote execution program
+[T] rsh Non-password-based remote execution program
+[T] rcp Remote copy program using rsh
+[T] rlogin Remote login program
+[T] rshd Daemon for rsh connections
+[T] rexecd Daemon for rexec connections
+[T] rlogind Daemon for rlogin connections
+[T]
+[T] Note: None of these programs provide encryption or strong
+[T] authentication of network connections. As such, their use is
+[T] discouraged. The "ssh" protocol and package is a cryptographically
+[T] secure replacement.
+
+[U] http://www.hcs.harvard.edu/~dholland/computers/netkit.html
+
+[A] David A. Holland <netbug@ftp.uk.linux.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+
+[L] OpenSource
+[V] 0.17
+
+[D] 6168a9fe61555c34909c830600598fb239c63ede9db7a33a43640736 netkit-rsh-0.17.tar.gz ftp://ftp.uk.linux.org/pub/linux/Networking/netkit/
+
+hook_add prepatch 5 "rm -rf */*,v */RCS"
+confopt="--prefix=/$prefix"
+pkginstalled pam || var_append confopt ' ' --disable-pam

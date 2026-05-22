@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libsdl2_ttf/libsdl2_ttf.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library to use TrueType fonts in SDL2 applications
+
+[T] This is a sample library which allows you to use TrueType fonts in
+[T] your SDL applications. It comes with an example program "showfont"
+[T] which displays an example string for a given TrueType font file.
+
+[U] https://www.libsdl.org/projects/SDL_ttf/
+
+[A] Sam Lantinga <slouken@libsdl.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] GPL
+[V] 2.24.0
+[P] X -----5---9 146.000
+
+[D] c531d0d75eb62b1574b9875e9817f60cfe21b50cbdedbf7117e4125c SDL2_ttf-2.24.0.tar.gz https://www.libsdl.org/projects/SDL_ttf/release/

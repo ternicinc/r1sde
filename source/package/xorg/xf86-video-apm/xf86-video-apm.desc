@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-video-apm/xf86-video-apm.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Xorg Alliance ProMotion video driver
+
+[T] This driver supports Alliance ProMotion video cards. The following chipsets
+[T] are supported: 6422 Old chipset. The driver is still very unstable and has
+[T] computer crashes. You should use XFree86 3.3.x for this chipset. AT24 As
+[T] found in Diamond Stealth Video 2500. Quite similar to AT3D. AT25, AT3D AT3D
+[T] is found in Hercules Stingray 128/3D. Most other Voodoo Rush based cards
+[T] use the AT25 which is identical except it doesn't have the 3D stuff in it.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS FCOMMON.mips FCOMMON.mips64
+[R] + alpha x86 x86-64
+
+[L] OpenSource
+[V] 1.3.0
+
+[D] 6e54f56761429d5fcc859bdf055cefe61dd87874faff4a9d0d3118ac xf86-video-apm-1.3.0.tar.bz2 http://xorg.freedesktop.org/releases/individual/driver/
+
+. package/*/*/modular-x-conf.in

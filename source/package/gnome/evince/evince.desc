@@ -1,0 +1,41 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/evince/evince.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome PDF viewer
+
+[T] Evince is a document viewer for multiple document formats like
+[T] pdf, postscript, and many others. The goal of evince is to replace the
+[T] multiple document viewers that exist on the GNOME Desktop, like ggv,
+[T] gpdf, and xpdf with a single simple application.
+
+[U] https://wiki.gnome.org/Apps/Evince
+
+[A] Martin Kretzschmar <m_kretzschmar@gmx.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/gnome
+
+[E] add smartypants
+[E] opt graphviz
+
+[L] GPL
+[V] 48.4
+
+[CV-URL] http://ftp.gnome.org/pub/gnome/sources/evince/cache.json
+[D] 61ef95e5c4019ca913fae1310fa496c1ec2c3932f8c16d9722edd38e evince-48.4.tar.xz http://ftp.gnome.org/pub/gnome/sources/evince/48/
+
+. $base/package/*/*/gnome-conf.in
+
+# without configure options it does not even try to build additional backends
+# but it will not fail if you miss a dep - so just append them all ...
+var_append confopt ' ' --enable-comics
+var_append confopt ' ' --enable-pixbuf
+var_append confopt ' ' --enable-impress
+var_append confopt ' ' --enable-djvu
+var_append confopt ' ' --enable-dvi
+var_append confopt ' ' --enable-t1lib
+var_append confopt ' ' --enable-nautilus
+var_append confopt ' ' --enable-gtk-doc

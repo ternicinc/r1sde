@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cyanrip/cyanrip.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Bule-ish CD ripper
+
+[T] Fully featured CD ripping program able to take out most of the tedium.
+[T] Fully accurate, has advanced features most rippers don't, yet has no
+[T] bloat and is cross-platform.
+
+[A] Lynne <dev@lynne.ee>
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/multimedia
+
+[E] opt libtheora
+[E] opt speex
+[E] opt lame
+
+[L] MIT
+[V] 0.9.3.1
+
+[D] f0f9071978c53441c4b3e8c48cf4118518f2624b48ef732a6cb47885 cyanrip-0.9.3.1.tar.gz https://github.com/cyanreg/cyanrip/archive/v0.9.3.1/

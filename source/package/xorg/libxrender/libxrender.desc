@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libxrender/libxrender.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] X Rendering Extension client library
+
+[T] The X Rendering Extension (Render) introduces digital image composition
+[T] as the foundation of a new rendering model within the X Window System.
+[T] Rendering geometric figures is accomplished by client-side tesselation
+[T] into either triangles or trapezoids.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 0.9.12
+[P] X ?----5---9 112.419
+
+[D] fe88c5540e5f6d428ceee8099e7e837449cc32b7f33b1a7a7674f56c libXrender-0.9.12.tar.xz http://xorg.freedesktop.org/releases/individual/lib/
+
+. package/*/*/modular-x-conf.in

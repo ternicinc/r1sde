@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/djv/djv.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Imaging software for movie playback, image processing, monitor calibration
+
+[T] Digital imaging software for movie playback, image processing, and monitor
+[T] calibration. Features include support for extended range images, industry
+[T] standard file formats and batch image conversion.
+
+[U] https://grizzlypeak3d.github.io/DJV/
+
+[A] Darby Johnston
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/multimedia
+
+[L] OpenSource
+[V] 3.3.4
+
+[D] a633c478496fd3e98331df9ac8bce2c7768c9200514ea456561555d7 DJV-3.3.4.tar.gz https://github.com/darbyjohnston/DJV/archive/refs/tags/3.3.4/

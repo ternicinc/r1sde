@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lxqt-about/lxqt-about.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Information provider about LXQt and the system
+
+[T] Information provider about LXQt and the system.
+
+[U] https://github.com/lxqt/lxqt-about
+
+[A] Lxqt-about Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] OBJDIR
+
+[V] 2.4.0
+[L] LGPL
+
+[CV-GROUP] lxqt
+[D] 26da23bf1fdd3d4c23233b76f841ea8529bc7d282ca45e73b9ffad3d lxqt-about-2.4.0.tar.xz https://github.com/lxqt/lxqt-about/releases/download/2.4.0/

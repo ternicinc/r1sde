@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libideviceactivation/libideviceactivation.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library to handle the activation process of iOS devices
+
+[T] A library to handle the activation process of iOS devices.
+
+[U] https://www.libimobiledevice.org
+
+[A] info@libimobiledevice.org
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 1.1.1
+
+[D] 930c3662e6e37bb4705c5fc979180d47c97ad60952a6e7b67e99e1ce libideviceactivation-1.1.1.tar.bz2 https://github.com/libimobiledevice/libideviceactivation/releases/download/1.1.1/

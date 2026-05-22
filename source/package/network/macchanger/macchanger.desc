@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/macchanger/macchanger.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A utility for manipulating MAC addresses of network interfaces
+
+[T] MAC Changer is a GNU/Linux utility for viewing/manipulating
+[T] the MAC addresses of network interfaces. It can set specific,
+[T] random, vendor-based (with a 6600+ vendor list), and
+[T] device-type-based MACs.
+
+[U] https://www.alobbs.com/macchanger/
+
+[A] Alvaro Lopez Ortega <alvaro@alobbs>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 1.7.0
+
+[D] ebc1bc92be96d0b5d666b3a57b61b64a44cf485b1884c8ce60ca8abe macchanger-1.7.0.tar.gz https://github.com/alobbs/macchanger/releases/download/1.7.0/

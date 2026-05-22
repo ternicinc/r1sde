@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/glabels/glabels.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A label and business card program
+
+[T] gLabels is a lightweight program for creating labels and business
+[T] cards for the GNOME desktop environment. It is designed to work
+[T] with various laser/ink-jet peel-off label and business card
+[T] sheets that you'll find at most office supply stores.
+
+[U] http://snaught.com/glabels/
+
+[A] Jim Evins <evins@snaught.com>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/tool extra/office extra/desktop/gnome
+
+[L] GPL
+[V] 3.4.1
+[P] X -----5---9 158.900
+
+[CV-URL] https://download.gnome.org/sources/glabels/cache.json
+[D] 8d73da5f57ebfbfacc17b92658d6c0f9fe677bdbf8d68a2060c9ba73 glabels-3.4.1.tar.xz https://download.gnome.org/sources/glabels/3.4/
+
+. $base/package/*/*/gnome-conf.in
+var_append makeinstopt ' ' UPDATE_DESKTOP_DATABASE=true
+var_append makeinstopt ' ' UPDATE_MIME_DATABASE=true

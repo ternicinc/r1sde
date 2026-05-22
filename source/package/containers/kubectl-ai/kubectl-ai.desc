@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kubectl-ai/kubectl-ai.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] AI powered Kubernetes Assistant
+
+[T] kubectl-ai acts as an intelligent interface, translating user intent into
+[T] precise Kubernetes operations, making Kubernetes management more accessible
+[T] and efficient.
+
+[U] https://github.com/GoogleCloudPlatform/kubectl-ai
+
+[A] Google Inc.
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[E] add kubectl
+
+[L] APL
+[V] 0.0.31
+
+[D] 75ec8e1c0d7fcb2d79bab80eff5fe13b0b92b282205fda4fea49a85f kubectl-ai-0.0.31.tar.gz https://github.com/GoogleCloudPlatform/kubectl-ai/archive/v0.0.31/
+
+hook_add postmake 5 "cp -vf kubectl-ai $root$bindir/"
+var_append goconfopt ' ' '-o kubectl-ai ./cmd'

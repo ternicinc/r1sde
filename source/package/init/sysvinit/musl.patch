@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/sysvinit/musl.patch
+# Copyright (C) 2016 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- sysvinit-2.88dsf/src/init.c.vanilla	2016-12-23 20:04:50.466561628 +0000
++++ sysvinit-2.88dsf/src/init.c	2016-12-23 20:05:24.006562204 +0000
+@@ -73,6 +73,8 @@
+ #  endif
+ #endif
+ 
++#include <sys/ttydefaults.h>
++
+ #include "init.h"
+ #include "initreq.h"
+ #include "paths.h"

@@ -1,0 +1,13 @@
+[TIMESTAMP] 1737845275 Sat Jan 25 23:47:55 2025
+[BUILDTIME] 50 (9)
+[SIZE] 61.27 MB, 6 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] go
+[DEP] grep
+[DEP] gzip
+[DEP] sed
+[DEP] tar

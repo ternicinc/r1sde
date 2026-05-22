@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/vdr-remote/vdr-remote.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] VDR Plugin: remote control
+
+[T] Video Disc Recorder plugin: remote control, using
+[T] (a) linux input device driver ('/dev/input/eventX', X=0,1,2,...)
+[T] - built-in remote control port of the av711x-based DVB cards
+[T] (aka full-featured cards), e.g. DVB-S Nexus
+[T] - remote control port of some budget cards, e.g. Nova-CI
+[T] (b) keyboard (tty driver): /dev/console, /dev/ttyX
+[T] (c) TCP connection (telnet)
+[T] (d) LIRC
+
+[U] http://www.escape-edv.de/endriss/vdr
+
+[A] Oliver Endriss <o.endriss@gmx.de>
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/multimedia
+[F] FPIC
+
+[L] GPL
+[V] 0.7.1
+
+[D] 714763096f0cc856151876b355e7571835d25d29f14d4ba548577056 vdr-remote-0.7.1.tar.gz https://github.com/typingArtist/vdr-plugin-remote/archive/0.7.1/
+
+. $base/package/vdr/*/vdr-plugin-conf.in
+hook_add postmake 5 "plugin_register remote"

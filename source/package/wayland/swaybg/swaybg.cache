@@ -1,0 +1,24 @@
+[TIMESTAMP] 1772115476 Thu Feb 26 15:17:56 2026
+[BUILDTIME] 4 (9)
+[SIZE] 0.07 MB, 8 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] wayland
+[DEP] wayland-protocols

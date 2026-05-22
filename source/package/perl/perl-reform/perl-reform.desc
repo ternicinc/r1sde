@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-reform/perl-reform.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Less awkward syntax for Perl 5 OOP
+
+[T] This module provides a less awkward syntax for Perl 5 OOP.
+
+[U] https://search.cpan.org/~hkoch/reform/
+
+[A] Henning Koch
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 0.3
+[P] X -----5---9 113.600
+
+[D] 88b66bb941cb28d4c14cf9898f0801f5679b9107e7110d118f3b8354 reform-0.3.tar.gz http://search.cpan.org/CPAN/authors/id/H/HK/HKOCH/

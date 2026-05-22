@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kdenlive/kdenlive.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] KDE Non-Linear Video Editor
+
+[T] Kdenlive is an open source video editor. Kdenlive is built on Qt and the
+[T] KDE Frameworks libraries. Most of the video processing is done by the MLT
+[T] Framewor
+
+[U] https://kdenlive.org/
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[E] opt kdoctools docbook-xml docbook-xsl
+
+[L] GPL
+[V] 26.04.1
+
+[CV-GROUP] kde-gear
+[D] 99606063e0981359635dc32e7d8175cbf1a7a997c317ac84c68647ac kdenlive-26.04.1.tar.gz https://github.com/KDE/kdenlive/archive/v26.04.1/
+
+. $base/package/*/*/kde-conf.in
+var_append cmakeopt ' ' -DBUILD_TESTING=OFF

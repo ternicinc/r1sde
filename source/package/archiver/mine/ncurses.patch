@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/mine/ncurses.patch
+# Copyright (C) 2013 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- mine-0.23/Makefile.vanilla	2013-10-10 17:50:18.187617508 +0200
++++ mine-0.23/Makefile	2013-10-10 17:50:37.199616851 +0200
+@@ -83,7 +83,7 @@
+ 	$(CC) -static $(MINE_ALL_OBJS) $(MINE_ALL_LIBS) -o mine.static
+ 
+ gasgui: $(GAS_OBJ)
+-	$(CC) $(GAS_OBJ) -ldialog -lcurses -lm -o gasgui
++	$(CC) $(GAS_OBJ) -ldialog -lncursesw -lm -o gasgui
+ 
+ install: all
+ 	install mine $(sysprefix)/bin/mine

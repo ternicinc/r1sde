@@ -1,0 +1,16 @@
+[TIMESTAMP] 1739043381 Sat Feb  8 20:36:21 2025
+[BUILDTIME] 1 (5)
+[SIZE] 0.40 MB, 25 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] openssl
+[DEP] python
+[DEP] python-flit-core
+[DEP] python-gpep517
+[DEP] sed
+[DEP] tar

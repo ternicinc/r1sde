@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/mine/cdb-gcc6.patch
+# Copyright (C) 2018 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- mine-0.23/cdb-0.75/cdbmake.c.vanilla	2017-12-29 23:33:39.854936413 +0000
++++ mine-0.23/cdb-0.75/cdbmake.c	2017-12-29 23:34:05.226935484 +0000
+@@ -26,7 +26,7 @@
+   strerr_die2x(111,FATAL,"unable to read input: bad format");
+ }
+ 
+-inline void get(char *ch)
++static inline void get(char *ch)
+ {
+   switch(buffer_GETC(buffer_0,ch)) {
+     case 0: die_readformat();

@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gconf110/gconf110.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Configuration storage library, like libproplist or the Windows Registry
+
+[T] GConf is a "registry" system, a library applications can use
+[T] to store key-value pairs persistently. It's written for GNOME,
+[T] but it does not require GNOME or even X to work. Use outside
+[T] GNOME is encouraged and will be supported.
+
+[U] https://wiki.gnome.org/Attic(2f)GconfTools.html
+
+[A] Havoc Pennington <hp@redhat.com>
+[M] René Rebe <rene@exactco.de>
+
+[F] NOPARALLEL
+[C] extra/development extra/desktop/gnome
+
+[L] LGPL
+[V] 1.0.9
+[P] X -----5---9 143.000
+
+[D] 30ca6fd2b366f0a08dd57942be617808878c72b13cbddee58e7fb53b GConf-1.0.9.tar.bz2 ftp://archive.progeny.com/GNOME/sources/GConf/1.0/
+
+. $base/package/*/*/gnome1-conf.in

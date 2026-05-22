@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/grass/grass.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Geographic Resources Analysis Support System
+
+[T] Commonly referred to as GRASS, this is free Geographic Information
+[T] System (GIS) software used for geospatial data management and
+[T] analysis, image processing, graphics/maps production, spatial
+[T] modeling, and visualization. GRASS is currently used in academic and
+[T] commercial settings around the world, as well as by many governmental
+[T] agencies and environmental consulting companies. GRASS is an official
+[T] project of the Open Source Geospatial Foundation.
+
+[U] http://grass.itc.it/
+
+[A] The GRASS Team: http://grass.itc.it/community/team.php
+[M] Roger Mason <rmason@mun.ca>
+
+[C] extra/scientific
+
+[E] opt jasper
+
+[L] GPL
+[V] 8.5.0
+
+[D] 1bdd254487adde3c79ed3b896b102be4e79f09541755484ba63252d3 grass-8.5.0.tar.gz https://github.com/OSGeo/grass/archive/8.5.0/

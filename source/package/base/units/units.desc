@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/units/units.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Unit conversion program
+
+[T] GNU 'units' converts between different systems of units. It can only
+[T] handle multiplicative scale changes. For example, it cannot convert
+[T] Celsius to Fahrenheit but it can convert temperature differences
+[T] between those temperatures scales.
+
+[A] Adrian Mariano <adrian@cam.cornell.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+
+[L] GPL
+[V] 2.27
+
+[D] a695eceaba538b06ee449d81492d8f494de79f4ebc5db6bd327ff173 units-2.27.tar.gz http://ftp.gnu.org/pub/gnu/units/

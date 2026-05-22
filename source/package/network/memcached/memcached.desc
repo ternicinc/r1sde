@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/memcached/memcached.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A high-performance, distributed memory object caching system
+
+[T] memcached is a high-performance, distributed memory object caching
+[T] system, generic in nature, but intended for use in speeding up
+[T] dynamic web applications by alleviating database load.
+
+[U] https://memcached.org/
+
+[A] Brad Fitzpatrick <brad@danga.com>
+[M] René Rebe <rene@exactco.de>
+
+[E] opt cyrus-sasl2
+
+[C] extra/development
+[F] CROSS
+[L] BSD
+
+[V] 1.6.42
+
+[D] e5dce00ca372f9a62d73c894e46693674764ee9a3204f644603e81ce memcached-1.6.42.tar.gz http://www.memcached.org/files/
+
+[ $prefix_auto = 1 ] && prefix="opt/$pkg" && set_confopt
+var_append makeopt ' ' 'CC="$CC -std=gnu99"'

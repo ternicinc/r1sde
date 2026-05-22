@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libcdio/libcdio.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A CD-ROM reading and control library
+
+[T] This library is to encapsulate CD-ROM reading and control. Applications
+[T] wishing to be oblivious of the OS- and device-dependant properties of a
+[T] CD-ROM can use this library. Some support for disk image types like BIN/CUE
+[T] and NRG is available, so applications that use this library also have the
+[T] ability to read disc images as though they were CD's.
+[T]
+[T] Immediate uses are VCDImager, a navigation-capable Video CD plugin and
+[T] CD-DA plugin for the media player xine. A sample utility, cdinfo, is
+[T] included which displays CD info. If libcddb
+[T] (http://libcddb.sourceforge.net) is available, the cdinfo program will
+[T] display CDDB matches on CD-DA discs.
+
+[U] https://www.gnu.org/software/libcdio/
+
+[A] Rocky Bernstein <rocky@panix.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS NO-LTO.clang
+
+[L] GPL
+[V] 2.3.0
+[P] X -----5---9 134.000
+
+[D] 65bb2f3389282e83511c97c233c14fa2b8ffbd266f7764f5c39f748f libcdio-2.3.0.tar.bz2 https://github.com/libcdio/libcdio/releases/download/2.3.0/

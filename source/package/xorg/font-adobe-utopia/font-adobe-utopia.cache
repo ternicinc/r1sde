@@ -1,0 +1,19 @@
+[TIMESTAMP] 1737673142 Thu Jan 23 23:59:02 2025
+[BUILDTIME] 5 (9)
+[SIZE] 2.88 MB, 405 files
+
+[DEP] bash
+[DEP] bdftopcf
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] font-util
+[DEP] fontconfig
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] make
+[DEP] mkfontscale
+[DEP] sed
+[DEP] tar
+[DEP] xz

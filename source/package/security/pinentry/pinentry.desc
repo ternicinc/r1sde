@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pinentry/pinentry.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An Interfaces to enter Passphrases
+
+[T] Pinentry provides various interfaces to enter passphrases
+[T] It supports:
+[T] - terminal
+[T] - curses
+[T] - gtk
+[T] - qt
+
+[U] https://www.gnupg.org/related_software/pinentry/
+
+[A] The Aegypten Project
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 1.3.2
+[P] X -----5---9 130.100
+
+[D] 44602ba2c87d28c153136e71fb7d82362796e6440cc304812060e694 pinentry-1.3.2.tar.bz2 https://www.gnupg.org/ftp/gcrypt/pinentry/
+
+var_append confopt ' ' --enable-pinentry-tty
+pkginstalled gtk+2 && var_append confopt ' ' --enable-pinentry-gtk2
+pkginstalled gtk+ && var_append confopt ' ' --enable-pinentry-gnome3
+pkginstalled qt5base && var_append confopt ' ' --enable-pinentry-qt5
+pkginstalled qt6base kguiaddons kwindowsystem && var_append confopt ' ' --enable-pinentry-qt

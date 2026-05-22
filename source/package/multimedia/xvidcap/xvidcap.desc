@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xvidcap/xvidcap.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A small tool to capture things going on on an X-Windows display
+
+[T] A small tool to capture things going on on an X-Windows display to either
+[T] individual frames or an MPEG video.
+
+[U] https://xvidcap.sourceforge.net/
+
+[A] Karl H. Beckers <charly4711@users.sourceforge.net>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/multimedia
+
+[E] opt lame
+
+[L] GPL
+[V] 1.1.7
+
+[D] a8216957e1de51bb2ce4aeaf35f8177be03fda88b1442c2afa8bbb8b xvidcap-1.1.7.tar.gz https://prdownloads.sourceforge.net/sourceforge/xvidcap/
+
+var_append confopt ' ' "--with-gtk2 --with-forced-embedded-ffmpeg"
+var_append GCC_WRAPPER_INSERT ' ' -I$root/usr/include/ffmpeg
+var_append GCC_WRAPPER_REMOVE ' ' "-lm -lz"
+var_append GCC_WRAPPER_INSERT ' ' "-lm -lz"

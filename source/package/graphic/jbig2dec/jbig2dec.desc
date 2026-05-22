@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/jbig2dec/jbig2dec.desc
+[COPY] Copyright (C) 2013 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A decoder for JBIG2
+
+[U] https://jbig2dec.com/
+
+[T] This is a decoder for JBIG2: JBIG2 encodes bi-level (1 bpp) images using
+[T] a number of clever tricks to get better compression than G4.
+
+[A] Artifex Software, Inc. <jbig2-dev@ghostscript.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+[F] CROSS
+
+[L] AGPL
+[V] 0.20
+
+[CV-FLAGS] NO-PREFIX
+[D] 653d92da6570bcfca52f064fb18414dbe485511b00c54b829867c8c0 jbig2dec-0.20.tar.gz https://github.com/ArtifexSoftware/jbig2dec/archive/0.20/
+
+autogen=1

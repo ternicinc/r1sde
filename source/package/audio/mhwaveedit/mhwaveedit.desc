@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mhwaveedit/mhwaveedit.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A graphical program for editing, playing and recording sound files
+
+[T] mhWaveEdit is a graphical program for editing, playing and recording sound
+[T] files. It is lightweight, portable, user-friendly and handles large files
+[T] very well. The program itself has only simple editing features such as
+[T] cut'n'paste and volume adjustment but it can also use Ladspa effect
+[T] plugins and the effects provided by the SoX application. It can also
+[T] support additional file formats besides wav through libsndfile and
+[T] mp3/ogg import and export through lame and oggenc/oggdec.
+
+[U] https://gna.org/projects/mhwaveedit
+
+[A] Magnus Hjorth <magnus.hjorth@home.se>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 1.4.24
+
+[D] ea43e49ab72f71104c9ee0e2a8ee9bf95530411efb187c097fa55f48 mhwaveedit-1.4.24.tar.gz https://github.com/magnush/mhwaveedit/archive/v1.4.24/
+
+var_append confopt ' ' "--with-default-driver=alsa --without-sdl --without-jack --without-esound --without-arts --without-pulse --with-default-mixerapp=defaultaudiomixer"

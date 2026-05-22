@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/enigma/enigma.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Oxyd free puzzle game clone
+
+[T] Enigma is a tribute to and a re-implementation of one of the most
+[T] original and intriguing computer games of the 1990's: Oxyd. Your
+[T] objective is easily explained: find and uncover all pairs of identical
+[T] Oxyd stones in each landscape. Sounds simple? It would be, if it
+[T] weren't for hidden traps, vast mazes, insurmountable obstacles and
+[T] innumerable puzzles blocking your direct way to the Oxyd stones...
+
+[U] https://www.nongnu.org/enigma
+
+[A] Daniel Heck <dheck@gmx.de>
+[M] Leonel Iván Saafigueroa <leonel@saafigueroa.com.ar>
+
+[C] extra/game
+
+[L] GPL
+[V] 1.30
+
+[D] 4032cb96fe8395777e4fb06041b98c516c790644074ea468c6afa93d Enigma-1.30-src.tar.gz https://github.com/Enigma-Game/Enigma/releases/download/1.30/

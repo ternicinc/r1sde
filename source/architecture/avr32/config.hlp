@@ -1,0 +1,11 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/avr32/config.hlp
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+SDECFG_AVR32_OPT
+  Please select the CPU you want to optimize for.
+
+SDECFG_BOARDDEF
+  Please select the board you want to use

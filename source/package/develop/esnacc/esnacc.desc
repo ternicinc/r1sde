@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/esnacc/esnacc.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Sample Neufeld ASN.1 to C/C Compiler (BBN Modification)
+
+[T] SNACC is an ASN.1 parser generator developed by the University of British
+[T] Columbia.
+
+[U] http://esnacc.org
+
+[A] Robert Joop
+[A] Michael Sample
+[M] Marian Aldenhövel <marian.aldenhoevel@mba-software.de>
+
+[C] extra/development
+[F] CROSS NOPARALLEL
+
+[L] GPL
+[V] 1.8.1
+[P] O -----5---9 144.600
+
+[D] e28acb7a371c212b33da571371f7b2b121b55fba90cd17d2ae394b4d esnacc-1.8.1.tar.gz https://github.com/esnacc/esnacc-ng/archive/refs/tags/v1.8.1/
+
+hook_add preconf 5 'autoreconf -fi'
+var_append makeinstopt ' ' prefix=${root}/${prefix}
+var_append GCC_WRAPPER_APPEND ' ' -std=gnu11

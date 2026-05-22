@@ -1,0 +1,19 @@
+
+[TIMESTAMP] 1704028343 Sun Dec 31 14:12:23 2023
+[BUILDTIME] 230 (9)
+[SIZE] 21.78 MB, 92 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gmp
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar

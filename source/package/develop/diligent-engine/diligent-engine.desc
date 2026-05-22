@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/diligent-engine/diligent-engine.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Modern Low-Level 3D Graphics Library and Rendering Framework
+
+[T] A lightweight graphics API abstraction library and rendering framework.
+[T] It is designed to take full advantage of Vulkan, Metal and WebGPU,
+[T] while supporting older platforms via OpenGL, OpenGLES and WebGL.
+[T] Diligent Engine exposes common front-end API and uses HLSL as universal
+[T] shading language on all platforms and rendering back-ends.
+[T] The engine is intended to be used as graphics subsystem in a game engine
+[T] or any other 3D application.
+
+[U] https://github.com/DiligentGraphics/DiligentEngine.git
+
+[A] assiduous <assiduous@diligentgraphics.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] OBJDIR
+
+[L] APL
+[V] 2.5.6
+
+[D] 994f376f6c23b010eaa3ab7416285b064c99ba1c68ade2d5a8eb3f77 DiligentEngine_v2.5.6.zip https://github.com/DiligentGraphics/DiligentEngine/releases/download/v2.5.6/
+
+var_append cmakeopt ' ' "-DDILIGENT_BUILD_SAMPLES=OFF -Wno-dev -DDILIGENT_NO_FORMAT_VALIDATION=ON"

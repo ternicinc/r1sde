@@ -1,0 +1,9 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/gnome-libs14/parse-config
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+# Filter gnome-config, as most gnome2* configure scripts appear to run it?
+pkgprefix -t gnome-libs14 2>/dev/null &&
+var_append flistrfilter '|' ".*:	/`pkgprefix gnome-libs14`/bin/gnome-config"

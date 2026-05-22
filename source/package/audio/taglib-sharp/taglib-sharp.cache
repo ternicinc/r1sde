@@ -1,0 +1,20 @@
+
+[TIMESTAMP] 1213290638 Thu Jun 12 19:10:38 2008
+[BUILDTIME] 5 (5)
+[SIZE] 0.71 MB, 20 files
+
+[DEP] 00-dirtree
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] glib
+[DEP] gnome-sharp
+[DEP] grep
+[DEP] gtk-sharp2
+[DEP] make
+[DEP] mono
+[DEP] pkgconfig
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] udev

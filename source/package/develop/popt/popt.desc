@@ -1,0 +1,40 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/popt/popt.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A command-line option parsing library
+
+[T] This is the popt command line option parsing library. While it is similiar
+[T] to getopt(3), it contains a number of enhancements, including:
+[T]
+[T] 1) popt is fully reentrant
+[T] 2) popt can parse arbitrary argv[] style arrays while
+[T] getopt(2) makes this quite difficult
+[T] 3) popt allows users to alias command line arguments
+[T] 4) popt provides convience functions for parsting strings
+[T] into argv[] style arrays
+[T]
+[T] popt is used by rpm, the Red Hat install program, and many other Red Hat
+[T] utilities, all of which provide excellent examples of how to use popt.
+
+[U] http://www.rpm.org
+
+[A] Erik W. Troan <ewt@redhat.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS FPIC
+
+[L] OpenSource
+[V] 1.19
+[P] X --2--5---9 117.300
+
+[D] 710dc1699f356460faf32ba9d2efb3db5927f52e927e279ea435c11f popt-1.19.tar.gz http://ftp.rpm.org/popt/releases/popt-1.x/
+
+hook_add preconf 5 "echo ac_cv_header_mcheck_h=no >> config.cache"
+var_append makeopt ' ' usrlibdir=$libdir
+var_append makeinstopt ' ' usrlibdir=$libdir
+[ "$SDECFG_DISABLE_NLS" = 1 ] && var_append confopt ' ' --disable-nls

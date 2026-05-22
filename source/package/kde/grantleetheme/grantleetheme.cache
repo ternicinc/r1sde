@@ -1,0 +1,34 @@
+[TIMESTAMP] 1739209737 Mon Feb 10 18:48:57 2025
+[BUILDTIME] 14 (5)
+[SIZE] 0.30 MB, 92 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] kcolorscheme
+[DEP] kconfig
+[DEP] kconfigwidgets
+[DEP] kcoreaddons
+[DEP] kguiaddons
+[DEP] ki18n
+[DEP] kiconthemes
+[DEP] knewstuff
+[DEP] ktexttemplate
+[DEP] kwidgetsaddons
+[DEP] kxmlgui
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] procps
+[DEP] python
+[DEP] qt6base
+[DEP] sed
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] xz

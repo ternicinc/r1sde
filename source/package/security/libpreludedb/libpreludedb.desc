@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libpreludedb/libpreludedb.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library that provides easy access to the Prelude database
+
+[T] The PreludeDB Library provides an abstraction layer upon the type and the
+[T] format of the database used to store IDMEF alerts.
+[T] It allows developers to use the Prelude IDMEF database easily and efficiently
+[T] without worrying about SQL, and to access the database independently of the
+[T] type/format of the database.
+
+[U] https://www.prelude-ids.org
+
+[A] Yoann Vandoorselaere <yoann@prelude-ids.org>
+[A] The Prelude-IDS Project <http://www.prelude-ids.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+[F] FPIC
+
+[L] OpenSource
+
+[V] 5.2.0
+[P] X -----5---9 200.500
+
+[D] a9b386b9afd8472f6ec3226995bd23481b095cf4b8b239d1d36b2674 libpreludedb-5.2.0.tar.gz https://www.prelude-siem.org/pkg/src/5.2.0/
+
+if [ $prefix_auto = 1 ]; then
+	if [ "$SDECFG_PKG_PRELUDE_PREFIX" ]; then
+	  prefix="$SDECFG_PKG_PRELUDE_PREFIX"
+	else
+	  prefix="opt/prelude"
+	fi
+	set_confopt
+fi

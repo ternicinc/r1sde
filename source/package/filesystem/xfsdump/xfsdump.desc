@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfsdump/xfsdump.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Administrative utilities for the XFS filesystem
+
+[T] The xfsdump package contains xfsdump, xfsrestore and a number of other
+[T] utilities for administering XFS filesystems.
+[T]
+[T] Xfsdump examines files in a filesystem, determines which need to be
+[T] backed up, and copies those files to a specified disk, tape or other
+[T] storage medium. It uses XFS-specific directives for optimizing the
+[T] dump of an XFS filesystem, and also knows how to backup XFS extended
+[T] attributes. Backups created with xfsdump are "endian safe" and can
+[T] thus be transfered between Linux machines of different architectures
+[T] and also between IRIX machines.
+[T]
+[T] Xfsrestore performs the inverse function of xfsdump; it can restore a
+[T] full backup of a filesystem. Subsequent incremental backups can then
+[T] be layered on top of the full backup. Single files and directory
+[T] subtrees may be restored from full or partial backups.
+
+[U] http://oss.sgi.com/projects/xfs/
+
+[A] SGI XFS development team <linux-xfs@oss.sgi.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+
+[L] GPL
+[V] 3.3.0
+
+[D] e5a9c2e8d7d0387fdf13ddf329d65525deddba09daadb66b079d865b xfsdump-3.3.0.tar.xz https://www.kernel.org/pub/linux/utils/fs/xfs/xfsdump/

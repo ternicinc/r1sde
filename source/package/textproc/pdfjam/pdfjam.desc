@@ -1,0 +1,37 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pdfjam/pdfjam.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A small set of utilities for simple operations on PDF files
+
+[T] A small set of utilities for simple operations on PDF files.
+[T] Included are:
+[T] * pdfnup, a utility for converting pdf documents to "2-up", "4-up",
+[T] etc., for more economical printing
+[T] * pdfjoin, for combining multiple documents into one
+[T] * pdf90 which rotates pages
+[T]
+[T] Depends on a working installation of pdfLaTeX.
+
+[U] https://github.com/pdfjam/pdfjam
+
+[A] David Firth
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/text
+[F] CROSS
+
+[L] GPL
+[V] 4.3.1
+
+[D] 61cbb61c6e0480948dbe52f85d5d1cd300eb7926af10e18817a2955d pdfjam-4.3.1.tar.gz https://github.com/pdfjam/pdfjam/archive/refs/tags/v4.3.1/
+
+runmake=0
+
+pdfjam_install() {
+	cp -fv pdfjam $root$bindir/
+	cp -fv doc/pdfjam.1 $root$mandir/man1/
+}
+hook_add postmake 5 pdfjam_install

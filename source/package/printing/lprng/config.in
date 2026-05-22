@@ -1,0 +1,15 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/lprng/config.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+menu_begin MENU_PRINTER 'Printing System'
+	pkgout; list=''
+	while read pkg ver; do
+		list="$list $pkg Use_${pkg}_($ver)_as_standard_printer"
+	done < <(grep "^X .* PRINTER " config/$config/packages | cut -f5,6 -d' ')
+	list="$list none Do_not_configure_a_default_printer"
+	choice SDECFG_DEFAULT_PRINTER none $list
+menu_end

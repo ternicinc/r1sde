@@ -1,0 +1,19 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/macosd/hotfix-evas-config.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+Index: configure
+===================================================================
+--- ./configure	(revision 96)
++++ ./configure	(revision 97)
+@@ -34,7 +34,7 @@
+ "Pbbuttonsd is not installed on your system."
+ 
+ pkgcheck xosd -config XOSD atleast 2.2.0
+-pkgcheck evas -config EVAS atleast 0.9.9.025
++pkgcheck evas pkg-config EVAS atleast 0.9.9.025
+ 
+ if [ "$WITHXOSD" = 0 -a "$WITHEVAS" = 0 ] ; then
+ 	status_error \

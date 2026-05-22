@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gcolor2/gcolor2.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] It is a program to select colors, with a GTK+ 2.0 interface
+
+[T] It is a program to select colors, with a GTK+ 2.0 interface.
+
+[U] https://gcolor2.sourceforge.net/
+
+[A] R.F. Smith
+[M] René Rebe <rene@exactco.de>
+
+[L] GPL
+[C] extra/multimedia
+
+[V] 0.4
+
+[D] ceb5d8590651600f9d4502ddc0201f5364833d12242bef64fbf1441b gcolor2-0.4.tar.bz2 https://download.sourceforge.net/project/gcolor2/gcolor2/0.4/
+
+prep_gcolor2() {
+    #libtoolize --copy --force
+    ln -s freetype2 $root/usr/include/freetype
+    ./autogen.sh
+    make distclean
+}
+hook_add preconf 5 prep_gcolor2

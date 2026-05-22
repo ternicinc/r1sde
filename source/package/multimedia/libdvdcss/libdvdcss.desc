@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libdvdcss/libdvdcss.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Implements the CSS decryption
+
+[T] A library that implements the Contenet Scrambling System (CSS) decryption.
+[T] CSS is used on many DVDs. Please honor the copyright of your DVDs and use
+[T] this lib only to view original DVDs!!!
+
+[U] https://www.videolan.org/libdvdcss/
+
+[A] many - see the AUTHORS flie
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem extra/crypto
+[F] CROSS
+
+[L] GPL
+[V] 1.5.0
+[P] X -----5---9 204.000
+
+[CV-URL] http://www.videolan.org/vlc/download-sources.html
+[D] a625daa0b1e77531ec1552e8b0f255f7f0a0ff4f950e45f74c8f6729 libdvdcss-1.5.0.tar.bz2 https://code.videolan.org/videolan/libdvdcss/-/archive/1.5.0/

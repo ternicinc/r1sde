@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/redis/redis.desc
+[COPY] Copyright (C) 2020 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A data structure server
+
+[T] A database server provides access to mutable data structures via a set of
+[T] commands, which are sent using a server-client model with TCP sockets and
+[T] a simple protocol. So different processes can query and modify the same
+[T] data structures in a shared way.
+
+[U] https://redis.com/
+
+[A] Redis Ltd.
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/database
+[F] CROSS
+
+[E] opt systemd
+
+[L] BSD
+[V] 8.6.2
+
+[D] d0ff5e97b389b4c3857abf6ac005e5ee29e8ba8fbe512cd8ceb3847a redis-8.6.2.tar.gz https://download.redis.io/releases/
+
+runconf=0
+var_append makeopt ' ' BUILD_TLS=yes
+[ "$SDECFG_X8664_X32" = 1 ] && var_append makeopt ' ' 32bit
+var_append makeinstopt ' ' 'PREFIX="$root/$prefix"'
+
+install() {
+	mkdir -p $root/etc/redis
+	cp -vf redis.conf sentinel.conf $root/etc/redis/
+}
+hook_add postmake 2 install

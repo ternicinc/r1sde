@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/wcm/wcm.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Wayfire Config Manager
+
+[T] Wayfire Config Manager is a Gtk3 application to configure wayfire. It
+[T] writes the config file that wayfire reads to update option values.
+
+[U] https://wayfire.org/
+
+[A] Iliya Bozhinov
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/x11
+
+[E] opt wf-shell
+[E] opt wdisplays
+
+[L] MIT
+[V] 0.10.0
+
+[D] 59df8880eac46cfdddaa28ab410324e7d1d23cfc3ab9f21e952ab45c wcm-0.10.0.tar.gz git+https://github.com/WayfireWM/wcm.git v0.10.0
+
+var_append mesonopt ' ' -Denable_wdisplays=false
+pkginstalled wf-shell || var_append mesonopt ' ' -Dwf_shell=disabled

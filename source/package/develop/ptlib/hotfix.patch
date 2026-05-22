@@ -1,0 +1,23 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/ptlib/hotfix.patch
+# Copyright (C) 2009 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -Nur ptlib-2.4.4-orig/plugins/vidinput_v4l/vidinput_v4l.cxx ptlib-2.4.4/plugins/vidinput_v4l/vidinput_v4l.cxx
+--- ptlib-2.4.4-orig/plugins/vidinput_v4l/vidinput_v4l.cxx	2009-01-23 18:26:26.000000000 +0000
++++ ptlib-2.4.4/plugins/vidinput_v4l/vidinput_v4l.cxx	2009-01-23 18:31:23.000000000 +0000
+@@ -443,11 +443,11 @@
+   return result;
+ }
+ 
+-PMutex creationMutex;
++PMutex _creationMutex_;
+ static 
+ V4LNames & GetNames()
+ {
+-  PWaitAndSignal m(creationMutex);
++  PWaitAndSignal m(_creationMutex_);
+   static V4LNames names;
+   names.Update();
+   return names;

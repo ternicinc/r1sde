@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ploneextendednavigation/ploneextendednavigation.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Plone Product for managing dynamic navigation slots
+
+[T] This product allows users to manage a dynamic navigation slot
+[T] from "manage navigation" template.
+[T] It allows you to add or remove objects from the navigation slot,
+[T] and modify the order of links, really quickly and easily.
+
+[U] https://www.zopevillage.com/contributions/index_html-en/PloneExtendedNavigation
+
+[A] Jerome Sandarnaud <jerome.sandarnaud@gmail.com>
+[A] ZopeVillage <http://ploneextendednavigation.trackers.zopevillage.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[E] add plone
+
+[L] OpenSource
+
+[V] 0.5
+
+[D] b24bbd5784d7609e7993ba9e9a32d3b261b2eeca12a12b2667e9078e PloneExtendedNavigation-0.5.tar.gz http://www.zopevillage.com/contributions/index_html-en/PloneExtendedNavigation/
+
+. $base/package/*/zope/zope-conf.in

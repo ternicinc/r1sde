@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libvpx/libvpx.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A free VP8 codec
+
+[T] The open-sourced VP8 codec released by Google for the WebM HTML5
+[T] video format.
+
+[U] https://www.webmproject.org
+
+[A] Google, Inc.
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[E] opt doxygen
+
+[L] BSD
+[V] 1.16.0
+[P] X -----5---9 142.200
+
+[CV-URL] https://code.google.com/p/webm/downloads/list
+[D] cca3cc5104157f3e30a7483d3f9e559e8ffdec8ed6e4260c626df0b4 libvpx-1.16.0.tar.gz git+https://chromium.googlesource.com/webm/libvpx v1.16.0
+
+cleanconfopt=0
+confopt='--prefix=/$prefix --libdir=$libdir --enable-shared --disable-unit-tests'
+unset LD # configure tests fail to link otherwise
+unset AS # needs yasm, nasm, not GNU as our variable holds
+var_append makeinstopt ' ' DIST_DIR=$root/$prefix

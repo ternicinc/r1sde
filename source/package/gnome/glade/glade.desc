@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/glade/glade.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GTK+ interface builder v2
+
+[T] Glade is a GUI builder suite using GTK+ and GNOME. It stores
+[T] projects in XML-like plain ASCII format and can generate C
+[T] code of this meta-format. Additionally, the meta-format can be
+[T] converted to other languages via modules. For example, glade--
+[T] can generate C++ code.
+
+[A] Damon Chaplin <DAChaplin@msn.com>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/development extra/desktop/gnome
+
+[L] GPL
+[V] 3.40.0
+
+[CV-URL] https://download.gnome.org/sources/glade/cache.json
+[D] 7f7f3324a258fae22f08f83cbe0e2bbf7e0295f6d9e47014a2ec6c92 glade-3.40.0.tar.xz https://download.gnome.org/sources/glade/3.40/
+
+. $base/package/*/*/gnome-conf.in

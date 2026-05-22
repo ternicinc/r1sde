@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/tunctl/tunctl.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Utility to create and manage persistent TUN/TAP interfaces
+
+[T] Tunctl allows the host sysadmin to preconfigure a TUN/TAP
+[T] device for use by a particular user. That user may open and
+[T] use the device, but may not change any aspects of the host
+[T] side of the interface
+
+[A] Jeff Dike <jdike@karaya.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 1.5
+
+[D] c6e18f388a516f68f3b7442df7411ff4f0312fa68c5c256059c5d757 tunctl-1.5.tar.gz https://downloads.sourceforge.net/project/tunctl/tunctl/1.5/

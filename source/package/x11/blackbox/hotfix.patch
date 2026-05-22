@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/blackbox/hotfix.patch
+# Copyright (C) 2016 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- blackbox-0.71.1/src/Toolbar.cc.vanilla	2016-12-09 10:03:37.825174435 +0000
++++ blackbox-0.71.1/src/Toolbar.cc	2016-12-09 10:04:20.329175165 +0000
+@@ -44,7 +44,7 @@
+ {
+   timeval now;
+   gettimeofday(&now, 0);
+-  return (std::max(1000l, ((((resolution - (now.tv_sec % resolution)) * 1000l))
++  return (std::max((time_t)1000, ((((resolution - (now.tv_sec % resolution)) * 1000l))
+                            - (now.tv_usec / 1000l))));
+ }
+ 

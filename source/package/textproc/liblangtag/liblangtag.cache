@@ -1,0 +1,24 @@
+[TIMESTAMP] 1779109229 Mon May 18 15:00:29 2026
+[BUILDTIME] 12 (9)
+[SIZE] 3.02 MB, 105 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] check
+[DEP] coreutils
+[DEP] diffutils
+[DEP] file
+[DEP] findutils
+[DEP] gawk
+[OPT] gobject-introspection
+[DEP] grep
+[OPT] gtk-doc
+[DEP] gzip
+[DEP] libtool
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

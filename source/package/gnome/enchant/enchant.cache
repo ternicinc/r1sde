@@ -1,0 +1,24 @@
+[TIMESTAMP] 1768854525 Mon Jan 19 21:28:45 2026
+[BUILDTIME] 25 (9)
+[SIZE] 0.58 MB, 29 files
+
+[OPT] aspell
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[OPT] glib
+[DEP] grep
+[DEP] groff
+[DEP] gzip
+[OPT] hunspell
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] vala

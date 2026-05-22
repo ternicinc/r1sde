@@ -1,0 +1,36 @@
+[TIMESTAMP] 1759848273 Tue Oct  7 16:44:33 2025
+[BUILDTIME] 580 (9)
+[SIZE] 6.21 MB, 205 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] karchive
+[DEP] kcalendarcore
+[DEP] kcodecs
+[DEP] kcontacts
+[DEP] ki18n
+[DEP] kmime
+[DEP] kpkpass
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] poppler
+[DEP] procps
+[DEP] qt6base
+[DEP] qt6declarative
+[DEP] sed
+[DEP] shared-mime-info
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] xz
+[DEP] zlib
+[DEP] zxing-cpp

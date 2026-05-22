@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/abiword/abiword.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The GNOME wordprocessor
+
+[T] AbiSuite includes the GNOME wordprocessor AbiWord.
+[T] It gives you more than the basic processing functions and supports many
+[T] file formats including Word 2,7,8 doc formats.
+
+[U] https://github.com/AbiWord/abiword
+
+[A] SourceGear Corporation <webmaster@abisource.com>
+[A] many other contributors
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/office extra/desktop/gnome
+
+[E] add autoconf-archive
+
+[L] GPL
+[V] 3.0.8
+
+[D] 97dda9a2130a13aae14c1116092ce39c18cf5c33a5836c6e1fb87e35 AbiWord-release-3.0.8.tar.bz2 https://gitlab.gnome.org/World/AbiWord/-/archive/release-3.0.8/
+
+. $base/package/*/*/gnome-conf.in
+hook_add preconf 5 './autogen-common.sh; autoreconf -fi'
+var_append GCC_WRAPPER_APPEND ' ' -std=gnu++11

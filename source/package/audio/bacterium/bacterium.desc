@@ -1,0 +1,54 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/bacterium/bacterium.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Virtual Analogue Matrix Synthesizer
+
+[T] BacteriuM is a non-realtime software only simulation of an analogue
+[T] sounding synthesizer featuring:
+[T]
+[T] * 6 Oscillators
+[T] * 6 classic ADSR envelope generators (one for each oscillator)
+[T] * 6 ADSR frequency-envelope-generators (one for each oscillator)
+[T] * 6x6 modulation matrix (any oscillator can modulate any other oscillator)
+[T] * ring modulation
+[T] * ring demodulation
+[T] * amplitude modulation
+[T] * frequency modulation
+[T] * hard sync
+[T] * phase modulation
+[T] * pulsewith modulation
+[T] * simulation of 24 dB Butterworth LP/HP with resonance
+[T] * sample and hold
+[T] * chorus
+[T] * delay
+[T] * overdrive
+[T] * phaser
+[T] * WAV-Output
+[T]
+[T] BacteriuM itself has no GUI. Instead the synth configuration is written
+[T] to a configuration file which can be 'compiled' to the wav output file.
+[T]
+[T] However - this package also includes the 'bacterium_gui' program which
+[T] can be used for creating *.synth files and running BacteriuM over them.
+
+[U] https://web.archive.org/web/20020802232654/http://members.ping.de/~stefan/
+
+[A] Stefan Fendt <stefan@lionfish.ping.de> {Author of BacteriuM}
+[A] Claire Xenia Wolf <claire@clairexen.net> {Author of BacteriuM_GUI)
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 0.2.100
+
+[SRC] bacterium
+[D] 1191159655 bacterium-0.2.100.tar.bz2 ftp://members.ping.de/pub/Linux/bacterium/
+[D] 3211755723 bacterium_gui-0.2.tar.bz2 ftp://members.ping.de/pub/Linux/bacterium/
+
+hook_add postmake 5 "if [ -d examples ]; then cp -r examples $root$docdir/; fi"

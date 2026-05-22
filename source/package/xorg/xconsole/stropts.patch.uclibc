@@ -1,0 +1,20 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/xconsole/stropts.patch.uclibc
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+--- ./xconsole.c~	2005-09-26 21:48:20.000000000 +0200
++++ ./xconsole.c	2005-09-27 09:17:26.000000000 +0200
+@@ -157,6 +157,12 @@
+  */
+ #  define USE_PTS 
+ # endif
++# if defined (__UCLIBC__)
++/*
++ * uClibc lacks support of stropts.h
++ */
++#   undef USE_PTS
++# endif
+ #endif
+ 
+ #if defined(_AIX)

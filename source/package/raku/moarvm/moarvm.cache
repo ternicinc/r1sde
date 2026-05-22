@@ -1,0 +1,24 @@
+[TIMESTAMP] 1777222435 Sun Apr 26 18:53:55 2026
+[BUILDTIME] 25 (9)
+[SIZE] 11.37 MB, 249 files
+
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[OPT] libffi
+[DEP] libtommath
+[DEP] libuv
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] zstd

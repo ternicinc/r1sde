@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ndesk-dbus/ndesk-dbus.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] C# implementation of D-Bus
+
+[T] ndesk-dbus is a C# implementation of D-Bus. It's often referred to as dbus-sharp, or "managed D-Bus" to avoid
+[T] confusion with existing bindings (which wrap libdbus).
+
+[U] http://www.ndesk.org/DBusSharp
+
+[A] Alp Toker <alp@atoker.com>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/network
+
+[L] MIT
+[V] 0.6.1a
+[P] X -----5---9 300.100
+
+[D] 565e1eda8d4162580eb73b4c9a6b17561df1e31e7f49892056668c8c ndesk-dbus-0.6.1a.tar.gz http://www.ndesk.org/archive/ndesk-dbus/

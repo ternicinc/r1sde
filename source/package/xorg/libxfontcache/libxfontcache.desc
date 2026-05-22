@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libxfontcache/libxfontcache.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] X-TrueType font cache extension client library
+
+[T] FontCache is an extension that is used by X-TrueType to cache informations
+[T] about fonts.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS FAT-LTO.mips FAT-LTO.mips64
+
+[L] OpenSource
+[V] 1.0.5
+
+[D] afaf26eef9bf707709b356bf4d4d18f3e4ed062d1b80011dc6485494 libXfontcache-1.0.5.tar.bz2 http://xorg.freedesktop.org/releases/individual/lib/
+
+. package/*/*/modular-x-conf.in

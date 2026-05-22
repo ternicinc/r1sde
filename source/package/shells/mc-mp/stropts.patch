@@ -1,0 +1,27 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/mc-mp/stropts.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+uClibC and dietlibc do not have those.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- mc-4.1.40-pre9/src/subshell.c.vanilla	2007-01-15 09:36:52.000000000 +0000
++++ mc-4.1.40-pre9/src/subshell.c	2007-01-15 09:42:57.000000000 +0000
+@@ -76,7 +76,14 @@
+ #endif
+ 
+ #ifdef HAVE_GRANTPT
++#if defined (__UCLIBC__) || defined (__dietlibc__)
++#define __SID           ('S' << 8)
++#define I_PUSH      (__SID | 2)
++#define I_POP       (__SID | 3)
++#define I_FIND      (__SID |11)
++#else
+ #   include <stropts.h> /* For I_PUSH			      */
++#endif
+ #else
+ #   include <grp.h>	/* For the group struct & getgrnam()  */
+ #endif

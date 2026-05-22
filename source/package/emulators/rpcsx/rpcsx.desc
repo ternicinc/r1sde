@@ -1,0 +1,21 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rpcsx/rpcsx.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An experimental PlayStation 4 emulator for Linux
+
+[T] An experimental PlayStation 4 emulator for Linux written in C++
+
+[U] https://github.com/RPCSX/rpcsx
+
+[A] nekotekina, kd-11 & DH
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/emulator
+
+[L] GPL
+[V] 8cfb4e8
+
+[D] a9c0f7f20eb2ace66b3df998624b152b735ca8700f67dba377d8ca0a rpcsx-8cfb4e8.tar.gz git+https://github.com/RPCSX/rpcsx 8cfb4e8

@@ -1,0 +1,35 @@
+[TIMESTAMP] 1759854131 Tue Oct  7 18:22:11 2025
+[BUILDTIME] 1900 (9)
+[SIZE] 73.62 MB, 2815 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] fftw3
+[DEP] findutils
+[DEP] fltk
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] glu
+[DEP] grep
+[OPT] hdf5
+[DEP] libglvnd
+[DEP] libsndfile
+[DEP] linux-header
+[DEP] make
+[OPT] openjdk
+[DEP] pcre2
+[DEP] perl
+[OPT] portaudio
+[DEP] qt65compat
+[DEP] qt6base
+[DEP] qt6tools
+[DEP] readline
+[DEP] sed
+[DEP] tar
+[DEP] xz
+[DEP] zlib

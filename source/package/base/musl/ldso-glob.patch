@@ -1,0 +1,64 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/musl/ldso-glob.patch
+# Copyright (C) 2019 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+Wildcard expansion (glob) patch for musl.
+
+  - René Rebe <rene@exactcode.de>
+
+--- musl-1.1.23/ldso/dynlink.c.vanilla	2019-10-01 15:54:50.216000000 +0200
++++ musl-1.1.23/ldso/dynlink.c	2019-10-01 17:00:28.384000000 +0200
+@@ -18,6 +18,7 @@
+ #include <pthread.h>
+ #include <ctype.h>
+ #include <dlfcn.h>
++#include <glob.h>
+ #include <semaphore.h>
+ #include <sys/membarrier.h>
+ #include "pthread_impl.h"
+@@ -777,19 +778,31 @@
+ 		s += strspn(s, ":\n");
+ 		l = strcspn(s, ":\n");
+ 		if (l-1 >= INT_MAX) return -1;
+-		if (snprintf(buf, buf_size, "%.*s/%s", (int)l, s, name) < buf_size) {
+-			if ((fd = open(buf, O_RDONLY|O_CLOEXEC))>=0) return fd;
+-			switch (errno) {
+-			case ENOENT:
+-			case ENOTDIR:
+-			case EACCES:
+-			case ENAMETOOLONG:
+-				break;
+-			default:
+-				/* Any negative value but -1 will inhibit
+-				 * futher path search. */
+-				return -2;
++		// via glob for wildcards
++		if (snprintf(buf, buf_size, "%.*s", (int)l, s, name) < buf_size) {
++			glob_t result;
++			int ret = glob(buf, GLOB_ONLYDIR, NULL, &result);
++			for (int i = 0; ret == 0 && i < result.gl_pathc; ++i) {
++				if (snprintf(buf, buf_size, "%s/%s", result.gl_pathv[i], name) < buf_size) {
++					if ((fd = open(buf, O_RDONLY|O_CLOEXEC))>=0) {
++						globfree(&result);
++						return fd;
++					}
++					switch (errno) {
++					case ENOENT:
++					case ENOTDIR:
++					case EACCES:
++					case ENAMETOOLONG:
++					break;
++					default:
++						/* Any negative value but -1 will inhibit
++						 * futher path search. */
++						globfree(&result);
++						return -2;
++					}
++				}
+ 			}
++			globfree(&result);
+ 		}
+ 		s += l;
+ 	}

@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cpufreqd/cpufreqd.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] CPU frequency scaling daemon
+
+[T] Cpufreqd is used to monitor the status of the battery and adjust the
+[T] frequency of the CPU accordingly in order to preserve battery power
+[T] while providing optimal performance. The behaviour of the daemon is
+[T] fully configurable. Logs are reported through syslogd.
+
+[U] https://cpufreqd.sourceforge.net/
+
+[A] Mattia Dongili <dongili@supereva.it>
+[A] George Staikos <staikos@0wned.org>
+[A] René Rebe <rene@exactco.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+
+[L] GPL
+[V] 2.4.2
+
+[D] dbfc03ce2552fa047a942a111b0e84833403c32b564e3d71261be96c cpufreqd-2.4.2.tar.gz https://prdownloads.sourceforge.net/sourceforge/cpufreqd/
+
+atstage native || hook_add preconf 5 "echo 'ac_cv_func_malloc_0_nonnull=yes' >> config.cache"
+[[ "$arch" != x86* ]] && var_append confopt ' ' '--disable-acpi --disable-apm'

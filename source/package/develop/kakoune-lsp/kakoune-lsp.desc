@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kakoune-lsp/kakoune-lsp.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Kakoune Language Server Protocol Client
+
+[T] This is a Language Server Protocol client for the Kakoune editor.
+
+[U] https://github.com/kakoune-lsp/kakoune-lsp/
+
+[A] The kakoune-lsp contributors
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/editor
+[F] CROSS
+
+[L] UNL
+[V] 21.0.0
+
+[D] cf3b5937fe6086b00ecf9bd3d84727f3686e4c95d835249a6a08f9a8 kakoune-lsp-21.0.0.tar.gz https://github.com/kakoune-lsp/kakoune-lsp/archive/v21.0.0/

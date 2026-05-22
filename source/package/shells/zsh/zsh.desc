@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/zsh/zsh.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Z-Shell
+
+[T] Zsh is a UNIX command interpreter (shell) which of the standard shells most
+[T] resembles the Korn shell (ksh). It includes enhancements of many types,
+[T] notably in the command-line editor, options for customising its behaviour,
+[T] filename globbing, features to make C-shell (csh) users feel more at home
+[T] and extra features drawn from tcsh.
+
+[U] https://www.zsh.org/
+
+[A] Peter Stephenson <pws@zsh.org>
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS NO-LTO.gcc
+[C] base/system
+
+[L] GPL
+[V] 5.9
+[P] X -----5---9 106.600
+
+[D] a76fb89a27b896d36890972ae6fd7c2a555977ff536fa57f4fde799b zsh-5.9.tar.xz https://download.sourceforge.net/project/zsh/zsh/5.9/
+[D] 5e8e4557175db50a99939598baab8a5a5fb06373499426371e5602c2 zsh-5.9-doc.tar.xz https://download.sourceforge.net/project/zsh/zsh-doc/5.9/
+
+var_append confopt ' ' "--with-tcsetpgrp --bindir=/bin"

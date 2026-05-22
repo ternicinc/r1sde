@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sam7utils/sam7utils.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] AT91SAM7 USB specific firmware flasher
+
+[T] AT91SAM7 USB specific firmware flasher.
+
+[U] https://www.openpcd.org/
+
+[A] Erik Gilling
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 0.1.0
+
+[D] f68606415a37133b7e7f1ccaa1421391ab11b2cfb2a775b5795cb2ef sam7utils-0.1.0-bm.tar.bz2 http://www.openpcd.org/dl/

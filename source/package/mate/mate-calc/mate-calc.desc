@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mate-calc/mate-calc.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Calculator for MATE
+
+[T] MATE Calculator (mate-calc) started as a fork of gnome-calc, the calculator
+[T] application that was previously in the OpenWindows Deskset of the Solaris 8
+[T] operating system.
+
+[U] https://mate-desktop.org/
+
+[A] MATE developer
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/mate
+
+[L] GPL
+[V] 1.28.0
+[P] X -----5---9 600.100
+
+[D] 1017952c2f11a89c854088c0798fc37092968ad6d4d86b1eaf257427 mate-calc-1.28.0.tar.xz https://pub.mate-desktop.org/releases/1.28/
+
+. $base/package/*/*/mate-conf.in

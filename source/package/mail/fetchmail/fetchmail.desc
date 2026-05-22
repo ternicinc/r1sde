@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/fetchmail/fetchmail.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Remote-mail retrieval utility
+
+[T] Fetchmail is a free, full-featured, robust, well-documented remote
+[T] mail retrieval and forwarding utility intended to be used over
+[T] on-demand TCP/IP links (such as SLIP or PPP connections).
+[T]
+[T] Fetchmail supports all standard mail-retrieval protocols in use on the
+[T] Internet: POP2, POP3 (including POP3 with RFC1938 one-time passwords),
+[T] RPOP, APOP, KPOP, Compuserve's POP3 with RPA, Microsoft's NTLM, Demon
+[T] Internet's SDPS, all flavors of IMAP (including IMAP4rev1 with RFC1731
+[T] Kerberos v4 or GSSAPI authentication or CRAM-MD5 authentication), and
+[T] ESMTP ETRN. Fetchmail also supports end-to-end encryption with OpenSSL.
+
+[U] http://www.catb.org/~esr/fetchmail/
+
+[A] Eric S. Raymond <esr@thyrsus.com>
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS NOPARALLEL NO-AS-NEEDED AUTOMAKE-QUIRK
+[C] extra/office
+
+[L] GPL
+[V] 6.6.4
+
+[D] 9e5f292b36580a3aa437f9dd5b31f6fee27f8ecb4b723984128eab4e fetchmail-6.6.4.tar.xz https://downloads.sourceforge.net/project/fetchmail/branch_6.6/
+
+runmeson=0
+pkginstalled openssl && var_append confopt ' ' --with-ssl

@@ -1,0 +1,21 @@
+
+[TIMESTAMP] 1160602435 Wed Oct 11 21:33:55 2006
+[BUILDTIME] 5 (5)
+[SIZE] 0.11 MB, 17 files
+
+[DEP] 00-dirtree
+[DEP] autoconf
+[DEP] automake
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] texinfo

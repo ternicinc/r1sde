@@ -1,0 +1,28 @@
+[TIMESTAMP] 1768839083 Mon Jan 19 17:11:23 2026
+[BUILDTIME] 1200 (9)
+[SIZE] 29.83 MB, 1371 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] libglvnd
+[DEP] libxcb
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] python
+[DEP] qt6base
+[DEP] qt6declarative
+[DEP] qt6quicktimeline
+[DEP] qt6shadertools
+[DEP] sed
+[DEP] spirv-tools
+[DEP] tar
+[DEP] util-linux
+[DEP] vulkan-headers
+[DEP] xz
+[DEP] zlib

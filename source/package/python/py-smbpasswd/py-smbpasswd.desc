@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/py-smbpasswd/py-smbpasswd.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Samba password module for Python
+
+[T] This module can generate both LANMAN and NT password hashes,
+[T] suitable for use with Samba.
+
+[U] https://barryp.org/software/py-smbpasswd
+
+[A] Barry Pederson <bp@barryp.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[E] add python
+
+[L] GPL
+
+[V] 1.0.2
+[P] X -----5---9 200.000
+
+[D] d750247510e61b78aedd3441f18ab8d68b9a55c3b676bc81e46f7f47 py-smbpasswd-1.0.2.tar.gz https://github.com/barryp/py-smbpasswd/archive/1.0.2/

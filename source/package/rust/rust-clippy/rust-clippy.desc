@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rust-clippy/rust-clippy.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A bunch of lints to catch common mistakes and improve Rust code
+
+[T] A collection of lints to catch common mistakes and improve your Rust code.
+[T]
+[T] Lints are divided into categories, each with a default lint level. You can
+[T] choose how much Clippy is supposed to annoy help you by changing the lint
+[T] level by category.
+
+[U] https://rust-lang.github.io/rust-clippy/
+
+[A] Rust Community
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+
+[L] APL MIT
+[V] 1.95.0
+
+[D] ee846e9adc8ef9122016d6f84af9935a30c30b488320614e28c5ef8b rust-clippy-v1.95.0.tar.gz https://github.com/rust-lang/rust-clippy/archive/rust-1.95.0/
+
+#cargoinstopt=
+#hook_add postmake 5 'install target/*/rust-analyzer $root$bindir/'
+export RUSTC_BOOTSTRAP=1

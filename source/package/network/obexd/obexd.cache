@@ -1,0 +1,20 @@
+[TIMESTAMP] 1737808554 Sat Jan 25 13:35:54 2025
+[BUILDTIME] 6 (9)
+[SIZE] 0.45 MB, 9 files
+
+[DEP] bash
+[DEP] bluez
+[DEP] coreutils
+[DEP] dbus
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] libical
+[DEP] linux-header
+[DEP] make
+[DEP] readline
+[DEP] sed
+[DEP] tar
+[DEP] xz

@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pycrypto/pycrypto.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A cryptographic toolkit for Python
+
+[T] pycrypto is a collection of cryptographic algorithms and protocols for use
+[T] from Python.
+[T] - Hash functions: MD2, MD4, RIPEMD, SHA256.
+[T] - Block encryption algorithms: AES, ARC2, Blowfish, CAST, DES, Triple-DES,
+[T] IDEA, RC5.
+[T] - Stream encryption algorithms: ARC4, simple XOR.
+[T] - Public-key algorithms: RSA, DSA, ElGamal, qNEW.
+[T] - Protocols: All-or-nothing transforms, chaffing/winnowing.
+
+[U] https://pypi.org/project/pycrypto/
+
+[A] Andrew Kuchling <comments@amk.ca>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] OpenSource
+[V] 2.6.1
+
+[P] O
+
+[D] 3efa4cba115301e0f0b82edf59fa8a2b2abca5f1387e014ebf4ab7e8 pycrypto-2.6.1.tar.gz https://files.pythonhosted.org/packages/60/db/645aa9af249f059cc3a368b118de33889219e0362141e75d4eaf6f80f163/

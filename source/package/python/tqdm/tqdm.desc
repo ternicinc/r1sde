@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/tqdm/tqdm.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Fast, Extensible Progress Bar for Python and CLI
+
+[T] Instantly make your loops show a smart progress meter - just wrap any
+[T] iterable with tqdm(iterable), and you're done.
+
+[U] https://github.com/tqdm/tqdm
+
+[A] tqdm <devs@tqdm.ml>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[E] add pyrequests
+[E] add setuptools
+[E] add setuptools-scm
+
+[L] MIT MPL
+[V] 4.67.3
+[P] X -----5---9 110.000
+
+[D] d31224aad57740dc918cd90097cc43a75056d6950f5145f4e3d22696 tqdm-4.67.3.tar.gz https://files.pythonhosted.org/packages/source/t/tqdm/

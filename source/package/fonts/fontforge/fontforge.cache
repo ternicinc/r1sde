@@ -1,0 +1,29 @@
+[TIMESTAMP] 1739129851 Sun Feb  9 20:37:31 2025
+[BUILDTIME] 30 (5)
+[SIZE] 14.54 MB, 441 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] freetype
+[DEP] gawk
+[DEP] gettext
+[DEP] glib
+[DEP] grep
+[DEP] libgif
+[DEP] libjpeg
+[DEP] libpng
+[DEP] libtiff
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] python
+[DEP] readline
+[DEP] sed
+[DEP] tar
+[DEP] woff2
+[DEP] xz
+[DEP] zlib

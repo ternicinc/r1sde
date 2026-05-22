@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pavucontrol/pavucontrol.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] PulseAudio Volume Control
+
+[T] PulseAudio Volume Control (pavucontrol) is a simple GTK based volume
+[T] control tool ("mixer") for the PulseAudio sound server. In contrast to
+[T] classic mixer tools this one allows you to control both the volume of
+[T] hardware devices and of each playback stream separately.
+
+[U] https://freedesktop.org/software/pulseaudio/pavucontrol/
+
+[A] Lennart Poettering
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 6.2
+
+[D] 379a8f62fd6043904aa24e79d6d22c46ba41032fb61a4d2fe4a7ba37 pavucontrol-6.2.tar.xz https://freedesktop.org/software/pulseaudio/pavucontrol/
+
+var_append GCC_WRAPPER_INSERT ' ' "$(pkg-config x11 --cflags --libs-only-L)"
+pkginstalled lynx || var_append mesonopt ' ' -Dlynx=disabled

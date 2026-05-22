@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/commonc++/hotfix-parallel-build.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- commoncpp2-1.6.2/src/Makefile.in.orig	2008-06-12 09:27:23.000000000 +0200
++++ commoncpp2-1.6.2/src/Makefile.in	2008-06-12 09:22:43.000000000 +0200
+@@ -78,7 +78,7 @@
+ 	"$(DESTDIR)$(optincludedir)"
+ libLTLIBRARIES_INSTALL = $(INSTALL)
+ LTLIBRARIES = $(lib_LTLIBRARIES)
+-libccext2_la_DEPENDENCIES =
++libccext2_la_DEPENDENCIES = libccgnu2.la
+ am__libccext2_la_SOURCES_DIST = numbers.cpp zstream.cpp socketport.cpp \
+ 	url.cpp xml.cpp persist.cpp engine.cpp digest.cpp cmdoptns.cpp \
+ 	date.cpp md5.cpp unix.cpp network.cpp serial.cpp urlstring.cpp \

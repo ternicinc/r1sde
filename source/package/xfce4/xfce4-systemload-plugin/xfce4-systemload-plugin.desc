@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfce4-systemload-plugin/xfce4-systemload-plugin.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] System load monitor panel plugin for Xfce4
+
+[T] A system load plugin for the Xfce4 desktop environment. It displays the
+[T] current CPU load, the memory in use, the swap space and the system
+[T] uptime in the Xfce4 panel.
+
+[U] http://xfce-goodies.berlios.de/
+
+[A] Riccardo Persichetti
+[M] Johan Boyé <linuxmasterjedi@free.fr>
+
+[C] extra/desktop/xfce
+[F] CROSS
+
+[L] BSD
+[V] 1.4.0
+
+[D] 0d410996e516e48b07eb37983e2191fdaeabc0dffe77ec4adb3f7cd3 xfce4-systemload-plugin-1.4.0.tar.xz https://archive.xfce.org/src/panel-plugins/xfce4-systemload-plugin/1.4/
+
+. $base/package/xfce4/*/xfce4-conf.in

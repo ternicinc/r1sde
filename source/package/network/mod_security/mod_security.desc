@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mod_security/mod_security.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An embedded intrusion detection and prevention engine for web applications
+
+[T] ModSecurity is an open source intrusion detection and prevention engine
+[T] for web applications. Operating as an Apache Web server module, the
+[T] purpose of ModSecurity is to increase web application security,
+[T] protecting web applications from known and unknown attacks.
+
+[U] https://www.modsecurity.org/
+
+[A] Ivan Ristic <ivanr@webkreator.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/server
+
+[L] GPL
+[V] 3.0.14
+
+[D] eafa32bdd96522ae8d34b3db123c36c913a06ec833fd2e533166288a modsecurity-3.0.14.tar.gz git+https://github.com/owasp-modsecurity/ModSecurity v3.0.14
+
+#. $base/package/*/apache/apache.conf
+hook_add preconf 5 ./build.sh

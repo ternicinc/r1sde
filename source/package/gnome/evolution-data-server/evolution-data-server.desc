@@ -1,0 +1,52 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/evolution-data-server/evolution-data-server.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Integrated Workgroup and Personal Information Management: Data Server
+
+[T] Ximian Evolution(TM) is the premier personal and workgroup information
+[T] management solution for Linux and UNIX. The software seamlessly
+[T] integrates email, calendaring, meeting scheduling, contact management
+[T] and online task lists in one powerful, fast, and easy to use
+[T] application. Ximian Evolution also delivers a comprehensive set of
+[T] features that help you keep your work organized and your projects on
+[T] track. Automatic email indexing keeps your information at your
+[T] fingertips. The unique Ximian vFolders^(TM) are virtual folders you use
+[T] to create and save powerful contextual views of your email messages.
+
+[U] https://wiki.gnome.org/Apps/Evolution
+
+[A] Ximian <hello@ximian.com>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/office extra/desktop/gnome
+[F] NO-AS-NEEDED FPIC
+
+[L] GPL
+[V] 3.60.1
+[P] X -----5---9 200.200
+
+[CV-URL] http://ftp.gnome.org/pub/gnome/sources/evolution-data-server/cache.json
+[D] a0a9e00c15dc1d56ec54f6e0431584959a167486f89382432a986e59 evolution-data-server-3.60.1.tar.xz http://ftp.gnome.org/pub/gnome/sources/evolution-data-server/3.60/
+
+. $base/package/*/*/gnome-conf.in
+. $base/package/*/*/evolution-conf.in
+
+var_append cmakeopt ' ' -DLIB_INSTALL_DIR=$libdir
+var_append cmakeopt ' ' "-DWITH_KRB5=OFF -DENABLE_OAUTH2=OFF"
+var_append cmakeopt ' ' '-DENABLE_GOOGLE=OFF -DENABLE_GOA=OFF'
+
+var_append GCC_WRAPPER_APPEND ' ' "`pkg-config x11 --cflags --libs`"
+
+pkginstalled webkitgtk || var_append cmakeopt ' ' '-DENABLE_OAUTH2_WEBKITGTK=OFF -DENABLE_OAUTH2_WEBKITGTK4=OFF'
+pkginstalled gnome-weather || var_append cmakeopt ' ' -DENABLE_WEATHER=OFF
+
+if pkginstalled openldap; then
+	pkgprefix -t openldap
+	var_append GCC_WRAPPER_APPEND ' ' "-I`pkgprefix includedir openldap`"
+	var_append GCC_WRAPPER_APPEND ' ' "-L`pkgprefix libdir openldap`"
+else
+	var_append cmakeopt ' ' -DWITH_OPENLDAP=OFF
+fi

@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pipx/pipx.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Install and run Python applicatoins in isolated environments
+
+[T] Install and run Python applicatoins in isolated environments.
+
+[U] https://pipx.pypa.io
+
+[A] Pipx Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[E] add python-argocomplete python-platformdirs hatchling hatch-vcs setuptools-scm
+
+[L] MIT
+[V] 1.12.0
+[P] X -----5---9 109.100
+
+[D] 634d738e9fa2f7098d9762174e71643456406310f0678cfbb061bdfd pipx-1.12.0.tar.gz https://github.com/pypa/pipx/archive/refs/tags/1.12.0/
+
+export SETUPTOOLS_SCM_PRETEND_VERSION=$ver

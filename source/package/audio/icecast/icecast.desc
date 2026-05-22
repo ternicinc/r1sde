@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/icecast/icecast.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2005 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A streaming media broadcasting system
+
+[T] Icecast is a streaming media server which currently supports Ogg Vorbis
+[T] and MP3 audio streams. It can be used to create an Internet radio station
+[T] or a privately running jukebox and many things in between. It is very
+[T] versatile in that new formats can be added relatively easily, and it
+[T] supports open standards for communication and interaction.
+
+[U] https://www.icecast.org/
+
+[A] Oddsock <oddsock@oddsock.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS NO-LTO.gcc
+
+[E] opt libtheora
+[E] opt speex
+
+[L] GPL
+[V] 2.5.0
+
+[D] 0f2d7eeff633d0fd8de23ac3db7be8ed47f95fbd39205c22f92335de icecast-2.5.0.tar.gz http://downloads.us.xiph.org/releases/icecast/

@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-video-opentegra/xf86-video-opentegra.desc
+[COPY] Copyright (C) 2013 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Open-source X.Org video driver for NVIDIA Tegra
+
+[T] opentegra is an driver for NVIDIA Tegra SoCs. It sits on top of the Linux
+[T] kernel NVIDIA Tegra DRM driver.
+
+[U] https://www.X.org
+
+[A] Dave Airlie <airlied@redhat.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+[R] + arm arm64
+
+[L] OpenSource
+[V] 0.7.0
+
+[D] 017635b3154f045aa361a99c5cb8790305c6d218cfe601c56f8e987f xf86-video-opentegra-0.7.0.tar.xz http://xorg.freedesktop.org/archive/individual/driver/
+
+. package/*/*/modular-x-conf.in

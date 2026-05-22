@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/php-imagick/php-imagick.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Provides a PHP wrapper to the ImageMagick library
+
+[T] Provides a PHP wrapper to the ImageMagick library.
+
+[U] https://pecl.php.net/package/imagick
+
+[A] Mikko Koppanen
+[A] Scott MacVicar
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] OpenSource
+[V] 3.8.1
+
+[D] 1d7e403742754372c7c66ac6bb53fe756949fb962d3df731316cefcc imagick-3.8.1.tgz https://pecl.php.net/get/
+
+hook_add preconf 5 phpize

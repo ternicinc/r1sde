@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/glad/glad.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator
+
+[T] Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator
+[T] based on the official specs.
+
+[U] https://github.com/Dav1dde/glad/
+
+[A] David Herberth
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] MIT
+[V] 2.0.8
+[P] X -----5---9 152.600
+
+[D] bf1c4f03c61ad7f35428672c1e57fa8e136666e6f3301eeb1b4ebcae glad-2.0.8.tar.gz https://github.com/Dav1dde/glad/archive/v2.0.8/

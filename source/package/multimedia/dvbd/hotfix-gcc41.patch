@@ -1,0 +1,28 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dvbd/hotfix-gcc41.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- dvbd-0.7.7/src/stringrep.h.vanilla	2006-03-04 16:37:18.856263250 +0100
++++ dvbd-0.7.7/src/stringrep.h	2006-03-04 16:37:31.621061000 +0100
+@@ -26,7 +26,7 @@
+ class StringRep {
+ public:
+   friend std::ostream& operator << (std::ostream &o, const StringRep &s);
+-  std::string StringRep::toString() const;
++  std::string /*StringRep::*/toString() const;
+ protected:
+   virtual ~StringRep();
+   virtual std::ostream& printOn(std::ostream &) const = 0;
+--- dvbd-0.7.7/src/tunermanager.h.vanilla	2006-03-04 16:36:36.345606500 +0100
++++ dvbd-0.7.7/src/tunermanager.h	2006-03-04 16:36:49.482427500 +0100
+@@ -38,7 +38,7 @@
+ 
+   virtual ~TunerManager();
+ 
+-  bool TunerManager::parseConfig(ConfigFile &c);
++  bool /*TunerManager::*/parseConfig(ConfigFile &c);
+   void parseCommandLine(int argc, char *argv[]);
+ 
+   virtual void addSelectFDs(Select &) const;

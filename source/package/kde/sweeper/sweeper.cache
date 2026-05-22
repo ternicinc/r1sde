@@ -1,0 +1,36 @@
+[TIMESTAMP] 1759873867 Tue Oct  7 23:51:07 2025
+[BUILDTIME] 14 (9)
+[SIZE] 0.88 MB, 147 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[OPT] docbook-xml
+[OPT] docbook-xsl
+[DEP] extra-cmake-modules
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] kbookmarks
+[DEP] kconfig
+[DEP] kconfigwidgets
+[DEP] kcoreaddons
+[DEP] kcrash
+[OPT] kdoctools
+[DEP] ki18n
+[DEP] ktextwidgets
+[DEP] kwidgetsaddons
+[DEP] kxmlgui
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[DEP] plasma-activities-stats
+[DEP] procps
+[DEP] qt6base
+[DEP] sed
+[DEP] sonnet
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] xz

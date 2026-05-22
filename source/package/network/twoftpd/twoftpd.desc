@@ -1,0 +1,41 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/twoftpd/twoftpd.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Simple secure efficient FTP server
+
+[T] This is twoftpd, a new FTP server that strives to be secure, simple, and
+[T] efficient. None of the commands can cause execution of other programs,
+[T] and the normal model of execution does a chroot to the logged in user's
+[T] directory immediately after authentication.
+[T]
+[T] The name "twoftpd" comes from the fact that there were two parts to the
+[T] server -- an authenticating front end, which contains no file or data
+[T] transfer code, and a back end, which contains all the data transfer
+[T] code.
+
+[U] https://untroubled.org/twoftpd/
+
+[A] Bruce Guenter <bruceg@em.ca>
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS
+[C] extra/server
+
+[L] GPL
+[V] 1.43
+
+[D] 84c467d2b2ae2e79d426ee333249ca0d618121a89418518e118b5113 twoftpd-1.43.tar.gz http://untroubled.org/twoftpd/
+
+pkg_twoftpd_config() {
+	echo $root$(pkgprefix includedir bglibs)  > conf-bgincs
+	echo $root$(pkgprefix libdir bglibs) > conf-bglibs
+	echo $bindir > conf-bin
+	echo $mandir > conf-man
+}
+hook_add premake 5 pkg_twoftpd_config
+
+makeinstopt=

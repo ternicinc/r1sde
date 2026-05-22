@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/vorbis-tools/vorbis-tools.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Lossy audio compression tools using the ogg-vorbis algorithms
+
+[T] This package includes the command line tools for the Ogg Vorbis
+[T] libraries. It includes OggEnc, Ogg123, Ogginfo, Vorbiscomment,
+[T] Vcut and OggDecode.
+[T] The package ships with a VorbisInfo add-on which mimics the mp3info
+[T] interface.
+
+[U] https://www.xiph.org/vorbis/
+
+[A] Xiphorus <team@xiph.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS NO-LTO.gcc
+
+[E] opt flac
+[E] opt speex
+[E] opt libopus
+
+[L] GPL
+[V] 1.4.3
+
+[D] 56602f85c3971a4135fc32d22bbed1acca6504758675ec72ed32bba3 vorbis-tools-1.4.3.tar.gz http://downloads.xiph.org/releases/vorbis/
+[D] 4c9d55e3e760b6fcd826eeeca2d4b12c66d4279b584ca7a9f94fb574 vorbisinfo-0.4.pl http://dl.exactcode.de/oss/vorbisinfo/
+
+pkginstalled curl || var_append confopt ' ' --without-curl
+hook_add postmake 3 "install -m 755 `match_source_file -p vorbisinfo` $root$bindir/"

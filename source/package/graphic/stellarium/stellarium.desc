@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/stellarium/stellarium.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Renders realistic skies in real time with openGL
+
+[T] With Stellarium, you really see what you can see with
+[T] your eyes, binoculars or a small telescope. It displays
+[T] stars, constellations, planets, nebulas and others things
+[T] like ground, landscape, atmophere, etc ...
+
+[U] https://www.stellarium.org/
+
+[A] Fabien Chereau <xalioth@users.sourceforge.net>
+[M] Valentin Ziegler <valentin.ziegler@googlemail.com>
+
+[C] extra/graphic
+
+[E] opt flac
+[E] opt doxygen
+
+[L] GPL
+[V] 26.1
+
+[D] a6f56506e56d9b6c31d3737ed4599580122981fa3b6fa15ddfde3312 stellarium-26.1.tar.gz https://github.com/Stellarium/stellarium/releases/download/v26.1/

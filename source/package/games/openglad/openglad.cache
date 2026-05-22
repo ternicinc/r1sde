@@ -1,0 +1,17 @@
+[TIMESTAMP] 1746975432 Sun May 11 16:57:12 2025
+[BUILDTIME] 14 (9)
+[SIZE] 1.89 MB, 41 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libsdl
+[DEP] libsdl_mixer
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar

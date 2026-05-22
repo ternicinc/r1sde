@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libaacs/libaacs.desc
+[COPY] Copyright (C) 2013 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A implementation of the Advanced Access Content System specification
+
+[T] libaacs is a research project to implement the Advanced Access Content
+[T] System specification. This research project provides, through an
+[T] open-source library, a way to understand how the AACS works. This project
+[T] doesn't offer any key or certificate that could be used to decode
+[T] encrypted copyrighted material.
+
+[U] https://www.videolan.org/developers/libaacs.html
+
+[A] The VideoLAN Project
+[M] The VideoLAN Project
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] LGPL
+[V] 0.11.1
+[P] X -----5---9 142.200
+
+[CV-URL] https://www.videolan.org/developers/libaacs.html
+[D] 17a3906d9f152c9ba2f7d7a652be092b8721e485417fb9ebe64186e2 libaacs-0.11.1.tar.bz2 https://download.videolan.org/pub/videolan/libaacs/0.11.1/

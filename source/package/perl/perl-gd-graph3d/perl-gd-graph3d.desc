@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-gd-graph3d/perl-gd-graph3d.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module GD-Graph3d
+
+[T] This Perl module provides 3D graphs via the GD::Graph module.
+
+[U] https://search.cpan.org/~wadg/GDGraph3d/
+
+[A] Jeremy Wadsack <dgsupport@wadsack-allen.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] Artistic GPL
+[V] 0.63
+[P] X -----5---9 200.109
+
+[D] 0f5add30ee7872a9e053549dbf3a935fe69af318a6cfcac80930b5d6 GD-Graph3d-0.63.tar.gz http://search.cpan.org/CPAN/authors/id/W/WA/WADG/

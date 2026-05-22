@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/parted/parted.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GNU partition editor
+
+[T] GNU Parted is a program for creating, destroying, resizing, checking
+[T] and copying partitions, and the file systems on them. This is useful
+[T] for creating space for new operating systems, reorganising disk usage,
+[T] copying data between hard disks and disk imaging.
+
+[U] https://www.gnu.org/software/parted/
+
+[A] Andrew Clausen <clausen@gnu.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+[F] CROSS
+
+[L] GPL
+[V] 3.7
+[P] X -----5---9 180.000
+
+[D] 97c6e3918a5fa227ebe5161e68181899564392a4287fd9c81f0362e6 parted-3.7.tar.xz http://ftp.gnu.org/gnu/parted/
+
+pkginstalled lvm2 || var_append confopt ' ' --disable-device-mapper

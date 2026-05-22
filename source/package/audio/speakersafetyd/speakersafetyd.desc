@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/speakersafetyd/speakersafetyd.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Linux speaker safety daemon
+
+[T] Asahi Linux speaker safety daemon.
+
+[U] https://github.com/AsahiLinux/speakersafetyd
+
+[A] The Asahi Linux Contributors
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+[R] + arm64
+
+[L] MIT
+[V] 2.0.0
+
+[D] 8e32b62210e99ed305e27c893a246514f13bc0c161b5706872a3a6aa speakersafetyd-2.0.0.tar.gz https://github.com/AsahiLinux/speakersafetyd/archive/refs/tags/2.0.0/
+
+atstage native || export PKG_CONFIG_SYSROOT_DIR=$root

@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gstreamer-vaapi/gstreamer-vaapi.desc
+[COPY] Copyright (C) 2017 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Set of VAAPI GStreamer Plug-ins
+
+[T] This module contains a set of VA-API plug-ins.
+
+[U] https://gstreamer.freedesktop.org/
+
+[A] The GStreamer Project
+[M] Gerardo Di Iorio <arete74@gmail.com>
+
+[C] extra/multimedia extra/desktop/gnome
+[F] CROSS
+
+[L] LGPL
+[V] 1.26.11
+
+[CV-FLAGS] ODD-UNSTABLE
+[D] 937d66648e4adc7856d4401059735d333c04a8ceb7308b58b2a213d4 gstreamer-vaapi-1.26.11.tar.xz https://gstreamer.freedesktop.org/src/gstreamer-vaapi/

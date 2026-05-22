@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/llvm/build-any.patch
+# Copyright (C) 2020 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- llvm-10.0.1.src/cmake/config-ix.cmake.vanilla	2020-08-25 12:10:56.564873226 +0200
++++ llvm-10.0.1.src/cmake/config-ix.cmake	2020-08-25 12:11:09.220873240 +0200
+@@ -434,7 +434,7 @@
+ elseif (LLVM_NATIVE_ARCH MATCHES "riscv64")
+   set(LLVM_NATIVE_ARCH RISCV)
+ else ()
+-  message(FATAL_ERROR "Unknown architecture ${LLVM_NATIVE_ARCH}")
++  set(LLVM_NATIVE_ARCH X86)
+ endif ()
+ 
+ # If build targets includes "host", then replace with native architecture.

@@ -1,0 +1,14 @@
+[TIMESTAMP] 1739266779 Tue Feb 11 10:39:39 2025
+[BUILDTIME] 1 (5)
+[SIZE] 0.05 MB, 12 files
+
+[DEP] bash
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gettext
+[DEP] grep
+[DEP] make
+[DEP] perl
+[DEP] sed
+[DEP] tar

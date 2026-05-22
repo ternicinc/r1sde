@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnumeric/gnumeric.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A computer spreadsheet program used to manipulate and analyze numeric data
+
+[T] This is the Gnumeric, the GNOME spreadsheet program. If you are
+[T] familiar with Excel, you should be ready to use Gnumeric. We have
+[T] tried to clone all of the good features and stay as compatible as
+[T] possible with Excel in terms of usability. Hopefully we left the bugs
+[T] behind :). Gnumeric is the upcomming GNOME spreadsheet application.
+
+[U] https://www.gnumeric.org/
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/office extra/desktop/gnome
+
+[L] GPL
+[V] 1.12.61
+[P] X -----5---9 208.500
+
+[CV-URL] https://download.gnome.org/sources/gnumeric/cache.json
+[D] 1cf90ec2b11b6fab05c30b750ee68cb1fcab661f40c451643ee01de4 gnumeric-1.12.61.tar.xz https://download.gnome.org/sources/gnumeric/1.12/
+
+. $base/package/*/*/gnome-conf.in

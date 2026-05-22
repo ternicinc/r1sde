@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/fonttools/fonttools.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] fontTools is a library for manipulating fonts, written in Python
+
+[T] fontTools is a library for manipulating fonts, written in Python.
+[T] The project includes the TTX tool, that can convert TrueType and OpenType
+[T] fonts to and from an XML text format, which is also called TTX.
+[T] It supports TrueType, OpenType, AFM and to an extent Type 1
+[T] and some Mac-specific formats.
+
+[U] https://pypi.org/project/fonttools/
+
+[A] Just van Rossum <just@letterror.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] MIT
+[V] 4.63.0
+[P] X -----5---9 400.750
+
+[D] e98ddd3b242f9c713c9e05137885c73fb168449f5e12908dfccfe2bc fonttools-4.63.0.tar.gz https://files.pythonhosted.org/packages/source/f/fonttools/

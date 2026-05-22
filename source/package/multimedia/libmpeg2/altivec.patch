@@ -1,0 +1,43 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/libmpeg2/altivec.patch
+# Copyright (C) 2020 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- a/configure.ac.bak	2010-05-25 17:12:14.756245990 +0000
++++ b/configure.ac	2010-05-25 17:11:51.629581723 +0000
+@@ -79,11 +79,10 @@
+ 		 CFLAGS="$OPT_CFLAGS $TRY_CFLAGS $CFLAGS"
+ 		 AC_MSG_CHECKING([if <altivec.h> is needed])
+ 		 AC_TRY_COMPILE([],
+-		    [typedef vector int t;
+-		     vec_ld(0, (unsigned char *)0);],
++		    [vector int t; t = vec_add(t,t);],
+ 		    [have_altivec=yes; AC_MSG_RESULT(no)],
+ 		    [AC_TRY_COMPILE([#include <altivec.h>],
+-			[typedef vector int t; vec_ld(0, (unsigned char *)0);],
++			[vector int t; t = vec_add(t,t);],
+ 			[AC_DEFINE([HAVE_ALTIVEC_H],,
+ 			    [Define to 1 if you have the <altivec.h> header.])
+ 			 have_altivec=yes; AC_MSG_RESULT(yes)],
+--- a/configure.vanilla	2020-03-18 22:39:38.000000000 +0100
++++ b/configure	2020-03-18 22:41:50.000000000 +0100
+@@ -4984,8 +4984,7 @@
+ int
+ main ()
+ {
+-typedef vector int t;
+-		     vec_ld(0, (unsigned char *)0);
++		     vector int t; t = vec_add(t,t);
+   ;
+   return 0;
+ }
+@@ -5023,7 +5022,7 @@
+ int
+ main ()
+ {
+-typedef vector int t; vec_ld(0, (unsigned char *)0);
++vector t; t = vec_add(t,t);
+   ;
+   return 0;
+ }

@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lxpanel/lxpanel.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A lightweight X11 desktop panel
+
+[T] LXPanel is a lightweight X11 desktop panel.
+
+[U] https://lxde.org/
+
+[A] LXDE team http://lxde.org/
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/desktop/lxde
+
+[L] GPL
+[V] 0.11.1
+
+[D] 3661d8115f3d48c1674a6884602598d6ea395ed80a41e889c209b46d lxpanel-0.11.1.tar.gz https://github.com/lxde/lxpanel/archive/0.11.1/
+
+. $base/package/lxde/*/lxde-conf.in
+export LDFLAGS="-L$root`pkgprefix libdir libx11`"
+autogen=1

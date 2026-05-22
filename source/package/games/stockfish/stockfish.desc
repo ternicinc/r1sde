@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/stockfish/stockfish.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A free and strong UCI chess engine
+
+[T] Stockfish is a free and strong UCI chess engine derived from Glaurung
+[T] 2.1 that analyzes chess positions and computes the optimal moves.
+
+[U] https://stockfishchess.org/
+
+[A] The Stockfish Authors
+[M] xfearofdarkness <jamieleonhuta@gmail.com>
+
+[F] CROSS
+[C] extra/game
+
+[L] GPL
+[V] 18
+
+[D] eccb3aea7ed24deace8b49a8d01aa3f2d9341baa18965ae0c49a4279 Stockfish-sf_18.tar.gz https://github.com/official-stockfish/Stockfish/archive/refs/tags/sf_18/
+
+hook_add premake 5 "cd src"
+var_append makeopt ' ' build

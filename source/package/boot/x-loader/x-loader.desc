@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/x-loader/x-loader.desc
+[COPY] Copyright (C) 2012 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] TI OMAP second stage bootloader
+
+[T] TI OMAP second stage bootloader. This bootloader is needed to bootstrap
+[T] u-boot, a 3rd stage bootloader, on OMAP arm processors.
+
+[U] http://omapzoom.org
+
+[A] Wolfgang Denk <wd@denx.de>
+[M] Toan Pham <tpham3783@gmail.com>
+
+[R] + arm
+
+[C] base/kernel
+[F] CROSS
+
+[L] OpenSource
+[V] 1.4.4.4-3
+[P] O -1---5---9 112.600
+
+[D] e9756b59efbc949af703fc97f5227f68ba2d982ccfbac44cbf3cc2fd x-loader-1.4.4.4-3.tar.bz2 git+http://git.isee.biz/pub/scm/x-loader.git
+
+# TODO: Configure this package to build with t2SDE boardconfig
+
+hook_add premake 1 "make omap3530beagle_config"
+var_append makeopt ' ' CROSS_COMPILE=${CC%%gcc}
+
+hook_add postmake 1 "install x-load.bin $root/boot/MLO"
+
+unset makeinstopt

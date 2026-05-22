@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/exact-audio/exact-audio.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A fast audio library including command line frontend
+
+[T] ExactAudio is a fast audio library including a command line frontend.
+[T] It is intended to become for audio what GIMP is for graphics. - A free
+[T] (GPLed) virtual studio environment.
+[T] Currently this packages includes the editor component, player and
+[T] some VoIP test code - more to follow.
+[T]
+[T] It is designed to work with large data sets, respond to user
+[T] actions immediately and do all the data processing in the back-
+[T] ground.
+[T]
+[T] It uses an 24/8 bit data format, 64 bit indexes ... - It is capable
+[T] of processing at least 10 x 32 bit channels full-duplex - including
+[T] pre-hearing FX in realtime on an 600Mhz AMD Athlon(tm)!
+
+[U] https://www.exactcode.de/oss/exact-audio/
+
+[A] René Rebe <rene@exactco.de>
+[A] Valentin Ziegler <valentin@exactcode.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 0.0.6
+[P] O -----5---9 160.300
+
+[D] 085627e2b3aa0e02676a4c09815c00c1f6e29d958fd882fcfd9a0b64 GSMP-0.0.6.tar.bz2 http://dl.exactcode.de/gsmp/

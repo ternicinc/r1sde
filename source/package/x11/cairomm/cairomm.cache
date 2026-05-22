@@ -1,0 +1,28 @@
+[TIMESTAMP] 1760362690 Mon Oct 13 15:38:10 2025
+[BUILDTIME] 4 (9)
+[SIZE] 0.52 MB, 50 files
+
+[DEP] bash
+[DEP] binutils
+[OPT] boost
+[DEP] cairo
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] grep
+[DEP] libsigc++
+[DEP] libx11
+[DEP] libxcb
+[DEP] libxrender
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto
+[DEP] xz

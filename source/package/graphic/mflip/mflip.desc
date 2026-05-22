@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mflip/mflip.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] MFlip is a flipbook, an image sequence player
+
+[T] MFlip is a flipbook, a program that reads sequences of images and plays
+[T] them back from memory, part of the Matterial compositing project.
+
+[U] https://matterial.sourceforge.net/mflip/
+
+[A] Karl Rasche <karl@sourceforge.net>
+[A] Charles Iliya Krempeaux <tnt@sourceforge.net>
+[A] Thomas Kumlehn <pixelpartner@sourceforge.net>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 0.30
+
+[D] 3c2b90111431c919fc653ad1db99c9b53ba9eff1b38ae829db2b4912 mflip-0.3.0.tar.gz https://matterial.sourceforge.net/mflip/
+
+var_append GCC_WRAPPER_APPEND ' ' "$(pkg-config --cflags x11 --libs)"

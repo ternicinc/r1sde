@@ -1,0 +1,24 @@
+
+[TIMESTAMP] 1690876785 Tue Aug  1 09:59:45 2023
+[BUILDTIME] 1 (9)
+[SIZE] 0.01 MB, 5 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] brotli
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] pcre2
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] zlib

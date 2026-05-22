@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/iw/iw.desc
+[COPY] Copyright (C) 2013 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] New configuration tools for Linux wireless networking
+
+[T] iw is a new nl80211 based CLI configuration utility for wireless devices.
+[T] It supports all new drivers that have been added to the kernel recently.
+[T] The old tool iwconfing, which uses Wireless Extensions interface, is
+[T] deprecated and it's strongly recommended to switch to iw and nl80211.
+
+[U] https://wireless.kernel.org/en/users/Documentation/iw
+
+[A] Johannes Berg <johannes@sipsolutions.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+
+[L] GPL
+[V] 6.17
+
+[D] d43d753579e478dcf49c1f706b0f48b494679cfce8036ecee099ee65 iw-6.17.tar.xz https://www.kernel.org/pub/software/network/iw/

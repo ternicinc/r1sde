@@ -1,0 +1,37 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lutris/lutris.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A unified game launcher
+
+[T] Lutris is a video game preservation platform aiming to keep
+[T] your video game collection up and running for the years to
+[T] come. It allows you to manage your games in a unified way.
+
+[U] https://github.com/lutris/lutris
+
+[A] Mathieu Comandon <strider@strycore.com>
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/game
+[F] CROSS
+
+[E] opt cython
+[E] add 7zip
+[E] add p11-kit
+[E] add pyidna
+[E] add pydbus
+[E] add pillow
+[E] add python-lxml
+[E] add jansson
+[E] add gnutls
+[E] add samba
+
+[L] GPL3
+[V] 0.5.22
+
+[D] 8fdedfe85aa355fd742ab1f9825064fd287162c36f10e1192616f414 lutris-0.5.22.tar.gz https://github.com/lutris/lutris/archive/v0.5.22/
+
+runmake=0 runpysetup=0

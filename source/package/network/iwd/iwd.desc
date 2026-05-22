@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/iwd/iwd.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Wireless daemon for Linux
+
+[T] Iwd is a new Wireless daemon for Linux written by Intel.
+
+[U] https://iwd.wiki.kernel.org
+
+[A] Marcel Holtmann <marcel@holtmann.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 3.12
+
+[D] ce89c9e8bd3d41d97e26820b702847d3a87e6fead6987d2780b83b23 iwd-3.12.tar.xz https://mirrors.edge.kernel.org/pub/linux/network/wireless/
+
+var_append confopt ' ' --disable-systemd-service

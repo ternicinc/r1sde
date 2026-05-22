@@ -1,0 +1,44 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/smbldap-tools/smbldap-tools.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Scripts to manage Samba users on LDAP
+
+[T] SMBLDAP-TOOLS is a package containing some useful scripts to manage
+[T] users/groups when you're using LDAP as source of users/groups datas
+[T] (for Unix and for Samba). We developed then used those scripts in our
+[T] SAMBA-LDAP PDC HOWTO to add/del/mod users and groups. Version 0.7 is
+[T] adapted to Samba 2.2.7 and up, and the 0.8 branch works with Samba 3.0
+[T] (some work probably needed for Samba TNG). This IDEALX set of
+[T] contributions is officially integrated into Samba. Check out the CVS
+[T] if possible, usually newer is better with these tools.
+
+[U] https://github.com/fumiyas/smbldap-tools/
+
+[A] IDEALX S.A.S <samba@idealx.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] OpenSource
+[V] 0.9.11
+
+[D] a1aa87ad832b426fd9d2d5b86f9ac8e0b13f4e305a92e5cd230ae1a9 smbldap-tools-0.9.11.tar.gz https://github.com/fumiyas/smbldap-tools/archive/v0.9.11/
+
+pkgprefix -t samba
+
+[ "$prefix_auto" = 1 ] && prefix=$(pkgprefix samba) && set_confopt
+
+var_append makeinstopt ' ' "prefix=$root/$prefix sysconfdir=$root$sysconfdir"
+
+smbldap_patch() {
+	sed -i \
+	  -e "s,^my \$smbldap_conf=.*,my \$smbldap_conf=\"$sysconfdir/smbldap-tools/smbldap.conf\";," \
+	  -e "s,^my \$smbldap_bind_conf=.*,my \$smbldap_bind_conf=\"$sysconfdir/smbldap-tools/smbldap_bind.conf\";," \
+	  -e "s,^my \$samba_conf=.*,my \$samba_conf=\"$(pkgprefix sysconfdir samba)/smb.conf\";," \
+	  smbldap_tools.pm
+}
+hook_add postpatch 5 smbldap_patch

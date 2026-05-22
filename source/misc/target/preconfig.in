@@ -1,0 +1,17 @@
+#!/bin/sh
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/misc/target/preconfig.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+# magic target registration
+CFGTEMP_TARGET_AUTOREG=1
+for target in $( cd target; ls -1 ); do
+	if [ -f target/$target/version.txt ]; then
+		CFGTEMP_TARGET_AUTOID="$target"
+		CFGTEMP_TARGET_AUTONAME="`head -n 1 target/$target/version.txt | tr ' ' '_'`"
+		var_append CFGTEMP_TARGETLIST ' ' "$CFGTEMP_TARGET_AUTOID $CFGTEMP_TARGET_AUTONAME"
+	fi	
+done
+unset CFGTEMP_TARGET_AUTOID CFGTEMP_TARGET_AUTONAME

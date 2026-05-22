@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gtk-layer-shell/gtk-layer-shell.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library to build panels for Wayland
+
+[T] A library to write GTK applications that use Layer Shell. Layer Shell is
+[T] a Wayland protocol for desktop shell components, such as panels,
+[T] notifications and wallpapers. It supports all Layer Shell features
+[T] including popups and popovers (GTK popups Just Work™).
+
+[U] https://github.com/wmww/gtk-layer-shell
+
+[A] William Wold <wm@wmww.sh>
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/x11
+[F] CROSS
+
+[L] GPL3
+[V] 0.10.1
+[P] X -----5---9 201.100
+
+[D] d79d6a7b18393ec0b019cf40c49988221dda9a5d9533e90ecc6847eb gtk-layer-shell-0.10.1.tar.gz https://github.com/wmww/gtk-layer-shell/archive/v0.10.1/
+
+pkginstalled gobject-introspection || var_append mesonopt ' ' -Dintrospection=false
+pkginstalled vala || var_append mesonopt ' ' -Dvapi=false

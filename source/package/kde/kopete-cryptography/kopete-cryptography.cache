@@ -1,0 +1,17 @@
+
+[TIMESTAMP] 1663444744 Sat Sep 17 21:59:04 2022
+[BUILDTIME] 100 (9) ERROR
+[SIZE] 0.01 MB, 6 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] extra-cmake-modules
+[DEP] make
+[DEP] sed
+[DEP] tar

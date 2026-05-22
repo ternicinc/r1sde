@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/epix/epix.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Mathematically accurate plotting tool
+
+[T] ePiX (pronounced like "epic" with a soft "k", cf. "TeX"), a collection
+[T] of batch-oriented utilities for *nix, creates mathematically accurate
+[T] line figures, plots, and movies using easy-to-learn syntax. LaTeX and
+[T] dvips comprise the typographical rendering engine, while ImageMagick
+[T] is used to create bitmapped images and animations. The user interface
+[T] resembles that of LaTeX: You prepare a short scene description in a
+[T] text editor, then "compile" the input file into a picture. Default
+[T] output formats are eepic (a plain text enhancement to the LaTeX
+[T] picture environment), eps, pdf, png, and mng.
+
+[U] https://math.holycross.edu/~ahwang/current/ePiX.html
+
+[A] Andrew D. Hwang
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/scientific extra/office
+
+[L] GPL
+[V] 1.2.22
+
+[D] 175ea70ca40553a6f1d8c5282484674f4c71d105f99c339f4a0aa9f9 epix-1.2.22.tar.bz2 http://math.holycross.edu/~ahwang/epix/

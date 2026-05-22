@@ -1,0 +1,19 @@
+[TIMESTAMP] 1737679268 Fri Jan 24 01:41:08 2025
+[BUILDTIME] 25 (9)
+[SIZE] 3.63 MB, 59 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libglvnd
+[DEP] libx11
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

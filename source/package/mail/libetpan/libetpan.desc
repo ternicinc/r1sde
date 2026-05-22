@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libetpan/libetpan.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A portable, efficient middleware for accessing mails
+
+[T] The purpose of this mail library is to provide a portable,
+[T] efficient middleware for different kinds of mail access.
+[T] When using the drivers interface, the interface is the same
+[T] for all kinds of mail access, remote and local mailboxes.
+[T] Protocols: IMAP, POP3, NNTP, SMTP, Hotmail
+[T] File formats: mbox, MH, maildir
+[T] MIME and message format: RFC 2822 and MIME parser/renderer
+[T] Security: S/MIME, OpenPGP, SASL
+
+[U] https://www.etpan.org/
+
+[A] DINH Viet Hoa <hoa@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office
+[F] CROSS
+
+[L] GPL
+[V] 1.9.4
+[P] X -----5---9 173.500
+
+[D] c88c92325fdbf3e14839d99c48567a2df24c5c25f7315297f68dfa66 libetpan-1.9.4.tar.gz https://github.com/dinhvh/libetpan/archive/1.9.4/
+
+autogen=1
+# libetpan doesn't build with sasl2 2.1.21
+var_append confopt ' ' --without-sasl

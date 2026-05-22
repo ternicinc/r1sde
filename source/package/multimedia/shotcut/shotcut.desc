@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/shotcut/shotcut.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A free, open-source, cross-platform video editor
+
+[T] Shotcut is a free and open-source, cross-platform video, audio, and
+[T] image editing program for FreeBSD, Linux, macOS and Windows.
+
+[U] https://github.com/mltframework/shotcut
+
+[A] Dan Dennedy
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL3
+[V] 26.4.30
+
+[D] 75b66590957215bdda319d9db3e0eeaa8056587bf08c000d746f9a5e shotcut-26.4.30.tar.gz https://github.com/mltframework/shotcut/archive/v26.4.30/

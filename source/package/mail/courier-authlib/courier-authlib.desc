@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/courier-authlib/courier-authlib.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Courier Authentication Library
+
+[T] The Courier Authentication Library is a generic authentication
+[T] API that encapsulates the process of validating account passwords.
+[T] In addition to reading the traditional account passwords from
+[T] /etc/passwd, the account information can alternatively be obtained
+[T] from an LDAP directory; a MySQL or a PostgreSQL database; or a GDBM
+[T] or a DB file. The Courier authentication library must be installed
+[T] before building any Courier packages that needs direct access to
+[T] mailboxes (in other words, all packages except for courier-sox
+[T] and courier-analog).
+
+[U] https://www.courier-mta.org/authlib/
+
+[A] Sam Varshavchik <mrsam@courier-mta.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+
+[L] GPL
+[V] 0.72.7
+[P] X -----5---9 160.000
+
+[D] ddb1ed2ea0ead4f43ac6cae7c3c56b21dff38447380714a3fda8a42d courier-authlib-0.72.7.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/courier/

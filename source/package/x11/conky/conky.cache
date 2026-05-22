@@ -1,0 +1,33 @@
+
+[TIMESTAMP] 1715426233 Sat May 11 13:17:13 2024
+[BUILDTIME] 25 (9)
+[SIZE] 9.28 MB, 13 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] imlib2
+[DEP] libx11
+[DEP] libxdamage
+[DEP] libxext
+[DEP] libxfixes
+[DEP] libxft
+[DEP] libxi
+[DEP] libxinerama
+[DEP] libxrender
+[DEP] linux-header
+[DEP] lua
+[DEP] make
+[DEP] ncurses
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

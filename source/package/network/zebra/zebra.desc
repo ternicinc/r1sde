@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/zebra/zebra.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] TCP/IP based routing protocol implementation
+
+[T] GNU Zebra is free software (distributed under GNU Generic Public License)
+[T] that manages TCP/IP based routing protocols. It supports BGP-4 protocol as
+[T] described in RFC1771 (A Border Gateway Protocol 4) as well as RIPv1, RIPv2
+[T] and OSPFv2. Unlike traditional, Gated based, monolithic architectures and
+[T] even the so-called "new modular architectures" that remove the burden of
+[T] processing routing functions from the cpu and utilize special ASIC chips
+[T] instead, Zebra software offers true modularity.
+
+[U] http://www.zebra.org
+
+[A] Kunihiro Ishiguro <kunihiro@zebra.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] GPL
+[V] 0.95a
+
+[D] edf799e2916ca71ad00cc42d4b0c479d6b398f051a7f9c428ebbcf77 zebra-0.95a.tar.gz ftp://ftp.ripe.net/mirrors/sites/ftp.zebra.org/pub/zebra/
+
+var_append CC_WRAPPER_APPEND ' ' -std=gnu99
+var_append confopt ' ' --enable-netlink
+var_append confopt ' ' --enable-vtysh
+var_append confopt ' ' --enable-nssa
+var_append confopt ' ' --enable-opaque-lsa
+var_append confopt ' ' --enable-ospf-te
+var_append confopt ' ' --sysconfdir=/etc/zebra

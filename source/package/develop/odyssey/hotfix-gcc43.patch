@@ -1,0 +1,36 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/odyssey/hotfix-gcc43.patch
+# Copyright (C) 2009 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- odyssey-0.5/src/ConfigFile.cxx.vanilla	2009-04-12 17:06:11.000000000 +0200
++++ odyssey-0.5/src/ConfigFile.cxx	2009-04-12 17:07:38.000000000 +0200
+@@ -19,6 +19,7 @@
+ using namespace std;
+ 
+ #include <stdio.h>
++#include <stdlib.h>
+ #include <string.h>
+ #include <stdexcept>
+ #include <new>
+--- odyssey-0.5/src/device/PicDevice.cxx.vanilla	2009-04-12 17:08:05.000000000 +0200
++++ odyssey-0.5/src/device/PicDevice.cxx	2009-04-12 17:08:15.000000000 +0200
+@@ -19,6 +19,7 @@
+ using namespace std;
+ 
+ #include <stdio.h>
++#include <string.h>
+ #include <stdexcept>
+ #include "config.h"
+ #include "PicDevice.h"
+--- odyssey-0.5/src/main.cxx.vanilla	2009-04-12 17:07:13.000000000 +0200
++++ odyssey-0.5/src/main.cxx	2009-04-12 17:07:25.000000000 +0200
+@@ -19,6 +19,7 @@
+ using namespace std;
+ 
+ #include <stdio.h>
++#include <stdlib.h>
+ #include <string.h>
+ #include <signal.h>
+ #include <unistd.h>

@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---.
+[COPY] t2/package/*/yash/yash.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---.
+
+[I] Yet another shell
+
+[T] Yash, yet another shell, is a POSIX-compliant command line shell written in
+[T] C99 (ISO/IEC 9899:1999). Yash is intended to be the most POSIX-compliant
+[T] shell in the world while supporting features for daily interactive and
+[T] scripting use.
+
+[U] https://github.com/magicant/yash/
+
+[A] Yash Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS NO-LTO.gcc
+
+[V] 2.61
+[L] GPL
+
+[D] 34aa6879da6905cc7894be6462fe78b789d87f771e26dc902928304e yash-2.61.tar.xz https://github.com/magicant/yash/releases/download/2.61/
+
+var_remove confopt ' ' --disable-debug

@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/polkit-qt-1/polkit-qt-1.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Polkit-Qt provides an API to PolicyKit in the Qt environment
+
+[T] Polkit-Qt provides an API to PolicyKit in the Qt environment.
+
+[U] https://www.kde.org
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 0.201.1
+[P] X ?----5---9 162.900
+
+[D] e72547212f55f71224ab24e0e1ffe259128e9e184cf5259d7d7b128c polkit-qt-1-0.201.1.tar.xz https://download.kde.org/stable/polkit-qt-1/
+
+. $base/package/*/*/kde-conf.in
+var_append cmakeopt ' ' -DQT_MAJOR_VERSION=6
+
+atstage cross && var_append CXX_WRAPPER_APPEND ' ' "-L$root$(pkgprefix libdir glib)"

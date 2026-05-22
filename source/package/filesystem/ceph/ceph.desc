@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ceph/ceph.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Open source distributed file system
+
+[T] Open source distributed file system capable of managing many
+[T] petabytes of storage with ease.
+
+[U] https://ceph.io/en/
+
+[A] Sage Weil <sage@newdream.net>
+[A] Yehuda Sadeh-Weinraub <yehudasa@gmail.com>
+[A] Greg Farnum <gregf@hq.newdream.net>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/filesystem
+
+[L] LGPL
+[V] 20.2.1
+
+[D] 041b65b94c98131039c46945a8ac5e45f38c13811e4549441e5eb15c ceph-20.2.1.tar.gz http://download.ceph.com/tarballs/

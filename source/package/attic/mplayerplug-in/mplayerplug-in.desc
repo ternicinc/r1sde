@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mplayerplug-in/mplayerplug-in.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A browser plugin that uses mplayer to play digital media from websites
+
+[T] This plugin gives Netscape, Opera, Mozilla and Konqueror the ability to
+[T] play videos off the net without reading the source html and getting the url
+[T] manually. Videos are played embedded in the page or in a separate window
+[T] depending on how the author of the webpage intended the media to be seen.
+
+[U] https://mplayerplug-in.sourceforge.net/
+
+[A] Kevin DeKorte
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 3.55
+
+[D] 36437ed577f82cd6d176017b7641cd0c05b7a81ec9d90d2f37980fc4 mplayerplug-in-3.55.tar.gz https://prdownloads.sourceforge.net/sourceforge/mplayerplug-in/
+
+var_append makeinstopt ' ' DESTDIR=${root:-/}

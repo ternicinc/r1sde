@@ -1,0 +1,30 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/rivatv/disable-depmod.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+--- rivatv-0.8.6/Makefile.in	2004-07-30 18:43:19.000000000 +0200
++++ rivatv-0.8.6-patch/Makefile.in	2005-07-23 22:53:21.721763168 +0200
+@@ -100,7 +100,7 @@
+ 	  else \
+ 	    install -m 644 -o 0 -g 0 $$ofiles $(MODULES)$(MOD_DEST); \
+ 	  fi; \
+-	  $(DEPMOD); \
++	  \
+ 	  echo; \
+ 	  echo "RivaTV installed."; \
+ 	  echo "To load RivaTV, login as root and \`modprobe rivatv\`."; \
+@@ -109,11 +109,11 @@
+ 
+ install-ko:
+ 	install -m 644 -o 0 -g 0 $(TARGETS:.o=.ko) $(MODULES)$(MOD_DEST); \
+-	$(DEPMOD);
++	
+ 
+ uninstall:
+ 	@(cd $(MODULES)$(MOD_DEST) && rm -f $(SOURCES:src/%.c=%.o) $(BTTV_SOURCES:bttv/%.c=%.o) rivatv.o)
+-	@$(DEPMOD)
++	
+ 	@echo
+ 	@echo RivaTV uninstalled.
+ 	@echo

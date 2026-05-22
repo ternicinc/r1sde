@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/loki/loki.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A C++ library that demonstrates generic programming and design patterns
+
+[T] Loki is a C++ library which demonstrates and encourages the use of
+[T] generic programming and designe patterns. It was written to accompany
+[T] the book entitled "Modern C++ Design". The library includes a parametrized
+[T] smart pointer class, generalized functors, a multithreading abstraction,
+[T] and some help for important patterns.
+
+[U] https://www.moderncppdesign.com/
+
+[A] Andrei Alexandrescu <andrei@metalanguage.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] MIT
+[V] 0.1.7
+
+[D] 8e9f5a0fa960cc9dbb176e6f2cce3167bbf3f403f63ab66484abf4d5 loki-0.1.7.tar.gz https://prdownloads.sourceforge.net/sourceforge/loki-lib/
+
+# no DESTDIR
+var_append makeinstopt ' ' prefix=$root/$prefix

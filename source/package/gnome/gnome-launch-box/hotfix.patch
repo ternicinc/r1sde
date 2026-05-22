@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/gnome-launch-box/hotfix.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- gnome-launch-box-0.2/tests/search-applications.c.vanilla	2007-03-25 12:43:57.000000000 +0200
++++ gnome-launch-box-0.2/tests/search-applications.c	2007-03-25 12:44:06.000000000 +0200
+@@ -22,7 +22,7 @@
+ 
+ #include <libgnomevfs/gnome-vfs.h>
+ #define GMENU_I_KNOW_THIS_IS_UNSTABLE
+-#include <gnome-menus/gmenu-tree.h>
++#include <gmenu-tree.h>
+ 
+ static void
+ applications_add_directory (GSList **applications, GMenuTreeDirectory *dir)

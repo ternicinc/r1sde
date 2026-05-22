@@ -1,0 +1,19 @@
+[TIMESTAMP] 1737640779 Thu Jan 23 14:59:39 2025
+[BUILDTIME] 5 (9)
+[SIZE] 0.17 MB, 14 files
+
+[DEP] audiofile
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] esound
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libid3tag
+[DEP] libmad
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar

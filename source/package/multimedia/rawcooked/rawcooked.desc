@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rawcooked/rawcooked.desc
+[COPY] Copyright (C) 2021 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Easily archive RAW audio-visual content into a lossless format
+
+[T] RAWcooked easily encodes RAW audio-visual sequences into a lossless video
+[T] stream with FFmpeg using a Matroska container (MKV), the FFV1 video code
+[T] and the FLAC audio codec. The metadata accompanying the RAW data is fully
+[T] preserved allowing to retrieve the RAW source in its original form with
+[T] bit-by-bit accuracy allowing faster access to original material than
+[T] retrieving the same file from LTO tape storage.
+
+[U] https://mediaarea.net/RAWcooked
+
+[A] MediaArea.net SARL & AV Preservation by reto.ch
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] BSD
+[V] 25.12
+
+[D] 2aec3b8cee6726ad2a6b539f90e381322708b60f993025c67725a5c8 rawcooked_25.12.tar.xz https://mediaarea.net/download/source/rawcooked/25.12/
+
+autogen=1
+srcdir=rawcooked/Project/GNU/CLI

@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/scribus/scribus.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A desktop page layout program with high quality PDF output
+
+[T] Scribus is an open-source program that brings award-winning professional
+[T] page layout to Linux/Unix, MacOS X, OS/2 and Windows desktops with a
+[T] combination of "press-ready" output and new approaches to page layout.
+[T]
+[T] Underneath the modern and user friendly interface, Scribus supports
+[T] professional publishing features, such as CMYK color, separations, ICC
+[T] color management and versatile PDF creation.
+
+[U] https://www.scribus.net/
+
+[A] Franz Schmid <Franz.Schmid@altmuehlnet.de>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office
+
+[L] GPL
+[V] 1.6.6
+[P] X -----5---9 750.500
+
+[D] 4fba1aff525d2b8afe9e8a7eb15da40d37c771c8cfd980812a1616db scribus-1.6.6.tar.xz https://download.sourceforge.net/project/scribus/scribus/1.6.6/
+
+runconf=0
+var_append cmakeopt ' ' -DWANT_QT6=YES

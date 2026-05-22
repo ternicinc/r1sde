@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libksba/libksba.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] API to create and parse X.509 and CMS related objects
+
+[T] Libksba is a library to make the tasks of working with X.509
+[T] certificates, CMS data and related objects more easy. It provides a
+[T] highlevel interface to the implemented protocols and presents the data
+[T] in a consistent way. There is no more need to worry about all the
+[T] nasty details of the protocols.
+
+[U] https://www.gnupg.org
+
+[A] Werner Koch <wk@gnupg.org> (Maintainer)
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS
+[C] extra/crypto
+
+[L] GPL
+[V] 1.8.0
+[P] X -----5---9 118.200
+
+[D] b063330f6dec685e3919bf8f4253165a28b6a3c53ea6fded03bec00c libksba-1.8.0.tar.bz2 https://gnupg.org/ftp/gcrypt/libksba/
+
+# guide cross compiling
+var_append confopt ' ' "--with-gpg-error-prefix=$root/`pkgprefix libgpg-error`"

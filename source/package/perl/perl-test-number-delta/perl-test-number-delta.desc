@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-test-number-delta/perl-test-number-delta.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module Test-Number-Delta
+
+[T] This package includes the Perl module Test-Number-Delta.
+
+[U] https://search.cpan.org/dist/Test-Number-Delta/
+
+[A] David Golden <dagolden@cpan.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] GPL
+[V] 1.06
+[P] X -----5---9 120.000
+
+[D] 3982101113c249ff128222533e2860e5717f6c7195cb8b9f15d60f99 Test-Number-Delta-1.06.tar.gz http://search.cpan.org/CPAN/authors/id/D/DA/DAGOLDEN/

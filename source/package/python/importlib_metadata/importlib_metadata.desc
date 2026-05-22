@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/importlib_metadata/importlib_metadata.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Library to access the metadata for a Python package
+
+[T] This package supplies third-party access to the functionality of importlib.metadata
+[T] including improvements added to subsequent Python versions.
+
+[U] https://github.com/python/importlib_metadata
+
+[A] Jason R. Coombs <jaraco@jaraco.com>
+[M] Melvin <nyst.wysrt@gmail.com>
+
+[C] extra/development
+[F] CROSS
+
+[L] APL
+[V] 8.6.1
+[P] X -----5---9 109.007
+
+[D] 6a75f4009ec2b45ed60d814118ed1746cc5a4850cc856148546a15c9 importlib_metadata-8.6.1.tar.gz https://files.pythonhosted.org/packages/33/08/c1395a292bb23fd03bdf572a1357c5a733d3eecbab877641ceacab23db6e/

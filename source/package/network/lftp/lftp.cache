@@ -1,0 +1,22 @@
+[TIMESTAMP] 1737545457 Wed Jan 22 12:30:57 2025
+[BUILDTIME] 55 (9)
+[SIZE] 4.02 MB, 37 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] expat
+[DEP] findutils
+[DEP] gawk
+[DEP] gnutls
+[DEP] grep
+[OPT] libidn2
+[DEP] linux-header
+[DEP] make
+[DEP] ncurses
+[DEP] readline
+[DEP] sed
+[DEP] tar
+[DEP] xz
+[DEP] zlib

@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/bibletime/bibletime.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Bible Study Software for KDE
+
+[T] BibleTime is a free Bible study application for Linux
+[T] systems. BibleTime uses the desktop environment KDE.
+[T] We think that BibleTime is an easy to use but powerful study tool
+[T] for christians all over the world.
+
+[U] https://www.bibletime.info/
+
+[A] Joachim Ansorg <jansorg@gmx.de>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/religion extra/desktop/kde
+
+[L] GPL
+[V] 3.2.0
+
+[D] 144d27a0216ac9d87129a46438aca86621af8521423bb035a5018d4e bibletime-3.2.0.tar.gz https://github.com/bibletime/bibletime/archive/refs/tags/v3.2.0/
+
+. $base/package/*/*/kde-conf.in
+var_append cmakeopt ' ' "-DBUILD_HANDBOOK_HTML=OFF -DBUILD_HANDBOOK_PDF=OFF"
+var_append cmakeopt ' ' "-DBUILD_TEXT_TO_SPEECH=OFF -DBUILD_HOWTO_PDF=OFF -DBUILD_HOWTO_HTML=OFF"

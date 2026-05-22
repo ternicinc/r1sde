@@ -1,0 +1,22 @@
+[TIMESTAMP] 1737979698 Mon Jan 27 13:08:18 2025
+[BUILDTIME] 10 (9)
+[SIZE] 0.50 MB, 50 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libcap
+[DEP] libsodium
+[DEP] libxcrypt
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[OPT] openldap
+[DEP] pam
+[DEP] sed
+[DEP] tar

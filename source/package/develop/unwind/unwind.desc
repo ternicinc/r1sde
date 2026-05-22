@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/unwind/unwind.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A portable and efficient library to determine the call-chain
+
+[T] The primary goal of this project is to define a portable and efficient
+[T] C programming interface (API) to determine the call-chain of a program.
+[T] The API additionally provides the means to manipulate the preserved
+[T] (callee-saved) state of each call-frame and to resume execution at any
+[T] point in the call-chain (non-local goto). The API supports both local
+[T] (same-process) and remote (across-process) operation.
+
+[U] https://www.nongnu.org/libunwind/
+
+[A] David Mosberger-Tang <dmosberger@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[L] MIT
+[V] 1.8.3
+[P] X -----5---9 104.100
+
+[D] 0aa4b2f11ca190d362f566404becd6481ffbb5491d48ec59ac2bdc4e libunwind-1.8.3.tar.gz https://github.com/libunwind/libunwind/releases/download/v1.8.3/
+
+var_append confopt ' ' --disable-tests

@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/c3c/c3c.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Compiler for the C3 language
+
+[T] C3 is a programming language that builds on the syntax and semantics of the
+[T] C language, with the goal of evolving it while still retaining familiarity
+[T] for C programmers. It's an evolution, not a revolution: the C-like for
+[T] programmers who like C.
+
+[U] https://c3-lang.org/
+
+[A] Christoffer Lerno <christoffer@aegik.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] OBJDIR
+
+[L] LGPL
+[V] 0.8.0
+
+[D] 66ac94f0c56fb96f9ca38238f463777ef7d86fd5c498c5288310bd9d c3c-v0.8.0.tar.gz https://github.com/c3lang/c3c/archive/refs/tags/v0.8.0/
+
+var_append cmakeopt ' ' -DLLD_COFF=$root$(pkgprefix libdir lld)/liblldCOFF.so
+var_append cmakeopt ' ' -DLLD_COMMON=$root$(pkgprefix libdir lld)/liblldCommon.so
+var_append cmakeopt ' ' -DLLD_ELF=$root$(pkgprefix libdir lld)/liblldELF.so
+var_append cmakeopt ' ' -DLLD_MACHO=$root$(pkgprefix libdir lld)/liblldMacho.so
+var_append cmakeopt ' ' -DLLD_MINGW=$root$(pkgprefix libdir lld)/liblldMinGW.so
+var_append cmakeopt ' ' -DLLD_WASM=$root$(pkgprefix libdir lld)/liblldWasm.so

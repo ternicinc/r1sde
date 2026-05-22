@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/audacious-plugins/audacious-plugins.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Plugins for audacious
+
+[T] Plugins for audacious.
+
+[U] https://audacious-media-player.org/
+
+[A] William Pitcock <nenolod@nenolod.net>
+[A] Mohammed Sameer <msameer@foolab.org>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 4.5.1
+
+[D] 84000a1d85f8e46221bfb489e71a3fdda139c05c103c69a19464de41 audacious-plugins-4.5.1.tar.bz2 https://distfiles.audacious-media-player.org/

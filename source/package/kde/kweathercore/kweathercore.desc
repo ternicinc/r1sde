@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kweathercore/kweathercore.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library to facilitate weather forecasts and alerts
+
+[T] Library to facilitate retrieval of weather information including forecasts
+[T] and alerts.
+
+[U] https://www.kde.org
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 26.04.1
+[P] X -----5---9 200.000
+
+[CV-GROUP] kde-gear
+[D] 94dfa3d4489d5994fff4f7f6ee2fdbbdcc94f4b57f7ecd0b8c5257e1 kweathercore-26.04.1.tar.xz https://download.kde.org/stable/release-service/26.04.1/src/
+
+. $base/package/*/*/kde-conf.in

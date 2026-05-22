@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libpthread-stubs/libpthread-stubs.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library providing weak aliases for pthread functions
+
+[T] This library provides weak aliases for pthread functions not provided in
+[T] libc or otherwise available by default. Libraries like libxcb rely on
+[T] pthread stubs to use pthreads optionally, becoming thread-safe when linked
+[T] to libpthread, while avoiding any performance hit when running
+[T] single-threaded.
+
+[U] https://xcb.freedesktop.org/
+
+[A] The XCB developers
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 0.5
+[P] X -----5---9 112.000
+
+[D] 30db68f1a525f7a0e248f2056ac04c3024e5a47090be4b3711725818 libpthread-stubs-0.5.tar.xz https://xcb.freedesktop.org/dist/
+
+. package/*/*/modular-x-conf.in

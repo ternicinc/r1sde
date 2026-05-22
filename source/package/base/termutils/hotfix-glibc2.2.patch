@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/termutils/hotfix-glibc2.2.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./tparam.c.old	Thu Oct  4 04:14:17 2001
++++ ./tparam.c	Thu Oct  4 04:14:30 2001
+@@ -26,7 +26,7 @@
+ 
+ #ifdef STDC_HEADERS
+ #include <stdlib.h>
+-#include <string.h>
++/*#include <string.h>*/
+ #else
+ char *malloc ();
+ char *realloc ();

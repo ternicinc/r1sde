@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libcanberra/libcanberra.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Implementation of the XDG Sound Theme and Name Specifications
+
+[T] libcanberra is an implementation of the XDG Sound Theme and Name Specifications,
+[T] for generating event sounds on free desktops, such as GNOME. It comes with several backends
+[T] (ALSA, PulseAudio, OSS, GStreamer, null) and is designed to be portable.
+
+[A] Lennart Poettering <mzyvopnaoreen@0pointer.de>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/base extra/desktop/gnome
+[F] CROSS
+
+[E] opt gtk+2
+[E] opt gtk+
+[E] opt lynx
+
+[L] GPL
+[V] 0.30
+[P] X -----5---9 152.700
+
+[CV-URL] https://download.gnome.org/sources/libcanberra/cache.json
+[D] 691d709ecb9d5e24d12be5fff60cf558eac8dfad41dbbc3bc7e0beba libcanberra-0.30.tar.xz http://0pointer.de/lennart/projects/libcanberra/
+
+#. $base/package/*/*/gnome-conf.in
+
+pkginstalled alsa-lib && var_append confopt ' ' --disable-oss
+var_append makeinstopt ' ' -j1

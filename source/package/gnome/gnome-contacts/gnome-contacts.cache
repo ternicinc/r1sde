@@ -1,0 +1,20 @@
+
+[TIMESTAMP] 1616622429 Wed Mar 24 22:47:09 2021
+[BUILDTIME] 100 (9) ERROR
+[SIZE] 0.01 MB, 6 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] make
+[DEP] meson
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] vala

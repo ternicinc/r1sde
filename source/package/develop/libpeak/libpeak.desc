@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libpeak/libpeak.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library for parallel events and asynchronous tasking
+
+[T] The PEAK library tries to achieve high performance in combining
+[T] multi-threading with an efficient I/O event model. You can write
+[T] event-based applications that use massive sockets I/O, timers, and
+[T] signals. Its underlying I/O multiplexing engine supports kqueue(2)
+[T] (FreeBSD, NetBSD, and Mac OS X), epoll(2) (Linux 2. 6), and /dev/poll
+[T] (Solaris). It provides support for optimized memory allocations, basic
+[T] database primitives, and synchronization.
+
+[U] https://peak.sourceforge.net
+
+[A] Stéphane Thiell <mbuna@bugged.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[R] + powerpc x86 m68k sparc ia64
+
+[L] BSD
+[V] 0.1.2
+
+[D] 694623173c0c3ec9a05ffa3d4d84b99da0174736d390376f386c29b2 libpeak-0.1.2.tar.gz https://prdownloads.sourceforge.net/sourceforge/peak/

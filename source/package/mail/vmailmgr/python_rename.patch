@@ -1,0 +1,45 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/vmailmgr/python_rename.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+--- ./python/commands.py.orig	2004-05-07 11:41:20.000000000 -0400
++++ ./python/commands.py	2004-05-07 11:42:25.000000000 -0400
+@@ -16,7 +16,7 @@
+ 
+ import daemon
+ import string
+-import types
++import vmmtypes
+ 
+ def execute(command, *args):
+     return daemon.execute(command, args)
+@@ -33,7 +33,7 @@
+         if not r:
+             break
+         (username,data) = string.split(r, '\0', 1)
+-        users.append(types.NamedVUser(username, types.VUser(data)))
++        users.append(vmmtypes.NamedVUser(username, vmmtypes.VUser(data)))
+     return users
+ 
+ def adduser(domain, newuser, password, newpass, maildir=None, forwards=[]):
+@@ -42,7 +42,7 @@
+                            maildir or '') + tuple(forwards))
+ 
+ def lookup(domain, username, password):
+-    return types.VUser(execute('lookup', domain, username, password))
++    return vmmtypes.VUser(execute('lookup', domain, username, password))
+ 
+ def autoresponse(domain, user, password, action, message=None):
+     cmd = [ domain, user, password, action ]
+--- ./python/Makefile.am.orig	2004-05-07 11:41:30.000000000 -0400
++++ ./python/Makefile.am	2004-05-07 11:42:45.000000000 -0400
+@@ -5,7 +5,7 @@
+ 	constants.py constants.pyc constants.pyo \
+ 	daemon.py daemon.pyc daemon.pyo \
+ 	local.py local.pyc local.pyo \
+-	types.py types.pyc types.pyo
++	vmmtypes.py vmmtypes.pyc vmmtypes.pyo
+ EXTRA_DIST = __init__.py commands.py config.py constants.py daemon.py types.py
+ CLEANFILES = local.py *.pyc *.pyo
+ 

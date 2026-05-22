@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gdmap/gdmap.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GdMap is a tool which allows to visualize disk space
+
+[T] GdMap is a tool which allows to visualize disk space. Ever wondered why
+[T] your hard disk is full or what directory and files take up most of the
+[T] space? With GdMap these questions can be answered quickly. To display
+[T] directory structures cushion treemaps are used which visualize a complete
+[T] folder or even the whole hard drive with one picture.
+
+[U] https://gitlab.com/sjohannes/gdmap/
+
+[A] Markus Lausser
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem extra/desktop/gnome
+
+[L] GPL
+[V] 1.4.0
+
+[D] 5482e10368461b8051341898cabe7bb8ac3d6584e8fdb2267ba745a3 gdmap-v1.4.0.tar.gz https://gitlab.com/sjohannes/gdmap/-/archive/v1.4.0/
+
+. $base/package/*/*/gnome-conf.in

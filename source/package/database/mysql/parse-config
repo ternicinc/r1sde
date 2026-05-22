@@ -1,0 +1,12 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/mysql/parse-config
+# Copyright (C) 2004 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+# wait until it's built
+if [ -f $root/var/adm/packages/mysql ]; then
+	pkgprefix -t mysql
+	var_append confopt ' ' "--with-mysql-lib=$(pkgprefix libdir mysql)/mysql"
+	var_append confopt ' ' "--with-mysql-include=$(pkgprefix includedir mysql)/mysql"
+fi

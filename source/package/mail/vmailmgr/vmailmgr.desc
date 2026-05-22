@@ -1,0 +1,59 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/vmailmgr/vmailmgr.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Simple virtualizing for qmail
+
+[T] Vmailmgr provides a virtualizing password-checking interface to
+[T] qmail-pop3d as well as both a delivery agent to automatically delivery
+[T] mail within a virtual domain and a set of tools to manage such a domain.
+
+[U] http://www.vmailmgr.org/
+
+[A] Bruce Guenter <bruceg@em.ca>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] GPL
+[V] 0.97
+[P] O
+
+[D] 3039434275 vmailmgr-0.97.tar.gz http://www.vmailmgr.org/current/
+[D] 256171893 filepipe.c.gz http://library.em.ca/software/Guenter,_Bruce/
+
+[ "$prefix_auto" = 1 ] && prefix="opt/vmailmgr" && set_confopt
+
+# fix sysconfidir
+hook_add preconf 3 'sed -i -e "s,/etc/vmailmgr,$sysconfdir,g" lib/config/configrc.h'
+
+# patch .am files :(
+autogen=1
+hook_add preconf 5 'cp -v $root/usr/share/automake-1.7/depcomp .'
+
+# rename types.py to something not reserved
+#
+hook_add preconf 5 'mv -v python/types.py python/vmmtypes.py'
+
+# filepipe
+pkg_vmailmgr_filepipe() {
+	mkdir -p filepipe
+	bunzip2 -c `match_source_file -p filepipe` > filepipe/filepipe.c
+	gcc -o filepipe/filepipe filepipe/filepipe.c
+}
+hook_add inmake 5 pkg_vmailmgr_filepipe
+hook_add postmake 5 'cp -v filepipe/filepipe $root/usr/bin/'
+
+# procmailrc sample
+pkg_vmailmgr_procmailsample() {
+	echo "$docdir/vmailmgr.procmailrc"
+	sed -e "s,@BINDIR@,$bindir,g" \
+	    -e "s,@QMAILBINDIR@,/var/qmail/bin,g" \
+	    $confdir/vmailmgr.procmailrc > $docdir/vmailmgr.procmailrc
+
+	# i'll set separators here too :)
+	echo -n @ > $sysconfdir/separators
+}
+hook_add postdoc 5 pkg_vmailmgr_procmailsample

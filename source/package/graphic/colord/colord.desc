@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/colord/colord.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A system service that makes it easy to manage color profiles
+
+[T] colord is a system service that makes it easy to manage, install and
+[T] generate color profiles to accurately color manage input and output
+[T] devices.
+
+[U] https://www.freedesktop.org/software/colord/
+
+[A] Richard Hughes
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 1.4.8
+[P] X -----5---9 130.050
+
+[D] 58a4be72e3214d48ef4320a69e5c4e2c90537dcd96fa75b064d68f2b colord-1.4.8.tar.xz https://www.freedesktop.org/software/colord/releases/
+
+var_append mesonopt ' ' -Dbash_completion=false
+var_append mesonopt ' ' -Dman=false
+pkginstalled systemd || var_append mesonopt ' ' -Dsystemd=false
+pkginstalled vala && var_append mesonopt ' ' -Dvapi=true
+pkginstalled gtk-doc || var_append mesonopt ' ' -Ddocs=false

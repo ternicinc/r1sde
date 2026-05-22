@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pnscan/pnscan.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Parallel network scanner
+
+[T] Pnscan is a tool that can be used to survey TCP network services.
+[T] For example, it can be used to survey the installed versions of
+[T] SSH, FTP, SMTP, Web, IDENT and possibly other services.
+
+[U] https://www.lysator.liu.se/~pen/pnscan/
+
+[A] Peter Eriksson
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+
+[L] OpenSource
+[V] 1.14.1
+
+[D] 6578a77147ba86245d3668155a1ece0199f67ea404a8649d98b0fb7a pnscan-1.14.1.tar.gz http://ftp.lysator.liu.se/pub/unix/pnscan/

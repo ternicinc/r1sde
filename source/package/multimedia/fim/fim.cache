@@ -1,0 +1,30 @@
+[TIMESTAMP] 1759873544 Tue Oct  7 23:45:44 2025
+[BUILDTIME] 70 (9)
+[SIZE] 2.02 MB, 28 files
+
+[DEP] bash
+[DEP] bison
+[DEP] coreutils
+[DEP] diffutils
+[DEP] djvulibre
+[DEP] findutils
+[DEP] flex
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[OPT] libcaca
+[DEP] libexif
+[DEP] libgif
+[DEP] libjpeg
+[DEP] libpng
+[DEP] libsdl2
+[DEP] libspectre
+[DEP] libtiff
+[OPT] libwebp
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] perl
+[DEP] readline
+[DEP] sed
+[DEP] tar

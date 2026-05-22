@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sgutils/sgutils.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Multiple utilities to send one one more SCSI commands to a device
+
+[T] These packages contain multiple utilities, all with command line
+[T] interfaces. They send one one more SCSI commands to the nominated
+[T] device and output the response including error reports if the command
+[T] failed.
+
+[U] https://sg.danny.cz/sg/
+
+[A] Douglas Gilbert <dgilbert@interlog.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS LATOMIC.sparc
+
+[L] BSD
+[V] 1.48
+[P] X -----5---9 110.000
+
+[D] 13f2a2266a20ab23692a338bab07e7bfb1f58b4ff2132b9c55f48732 sg3_utils-1.48.tgz http://sg.danny.cz/sg/p/
+
+bindir=$sbindir

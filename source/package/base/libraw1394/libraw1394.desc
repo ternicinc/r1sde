@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libraw1394/libraw1394.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library for direct IEEE 1394 bus access
+
+[T] libraw1394 provides direct access to the IEEE 1394 bus through the Linux
+[T] 1394 subsystem's raw1394 user space interface.
+
+[U] https://www.linux1394.org/
+
+[A] Andreas Bombe <aeb@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS NO-LIBTOOL-FIX
+
+[L] GPL
+[V] 2.1.2
+[P] X -----5---9 142.589
+
+[D] 42a15f44f8449ba3adbbb997c9a72c37fb757e152c52a1a0dddf472c libraw1394-2.1.2.tar.xz https://www.kernel.org/pub/linux/libs/ieee1394/

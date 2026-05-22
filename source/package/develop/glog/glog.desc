@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/glog/glog.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] C++ implementation of the Google logging module
+
+[T] C++ implementation of the Google logging module.
+
+[U] https://github.com/google/glog
+
+[A] Glog Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+
+[V] 0.7.1
+[L] BSD
+
+#var_append cmakeopt ' ' -DCMAKE_DISABLE_FIND_PACKAGE_Unwind=ON
+
+[D] 0c263a8a464c901ff13e5097e129e09fc93ce8c00b0add47b2da97d7 glog-0.7.1.tar.gz https://github.com/google/glog/archive/v0.7.1/

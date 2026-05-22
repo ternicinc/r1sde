@@ -1,0 +1,38 @@
+[TIMESTAMP] 1778768592 Thu May 14 17:23:12 2026
+[BUILDTIME] 12 (9)
+[SIZE] 0.92 MB, 61 files
+
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] clutter
+[DEP] cogl
+[DEP] coreutils
+[DEP] diffutils
+[DEP] file
+[DEP] findutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[OPT] glib
+[DEP] gobject-introspection
+[DEP] grep
+[DEP] gst-plugins-base
+[DEP] gstreamer
+[DEP] gtk-doc
+[DEP] gudev
+[DEP] harfbuzz
+[DEP] json-glib
+[DEP] libx11
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] pango
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar
+[DEP] util-linux
+[DEP] xorgproto
+[DEP] xz

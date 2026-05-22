@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-dash/python-dash.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Python framework for building reactive web-apps
+
+[T] A Python framework for building ML & data science web apps.
+
+[U] https://pypi.org/project/dash/
+
+[A] Chris Parmer <chris@plotly.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] MIT
+[V] 4.1.0
+[P] X -----5---9 150.300
+
+[D] b2c76dfce5230bda07928032c689df180c5ab79664a941ea540add6d dash-4.1.0.tar.gz https://files.pythonhosted.org/packages/source/d/dash/

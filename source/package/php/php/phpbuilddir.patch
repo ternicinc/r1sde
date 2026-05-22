@@ -1,0 +1,33 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/php/phpbuilddir.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+Install this build noise where former php versions placed it. Also do not
+polute the libdir itself.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- php-5.0.5/scripts/Makefile.frag	2005-06-07 23:57:06.000000000 +0200
++++ php-5.0.5-fixed/scripts/Makefile.frag	2005-02-28 06:28:25.000000000 +0100
+@@ -4,7 +4,7 @@
+ #
+ 
+ phpincludedir = $(includedir)/php
+-phpbuilddir = $(libdir)/build
++phpbuilddir = $(libdir)/php/build
+ 
+ BUILD_FILES = \
+ 	scripts/phpize.m4 \
+--- ./scripts/phpize.in.orig	2006-04-04 15:24:45.000000000 +0200
++++ ./scripts/phpize.in	2006-04-04 15:26:13.000000000 +0200
+@@ -3,7 +3,7 @@
+ # Variable declaration
+ prefix='@prefix@'
+ exec_prefix="`eval echo @exec_prefix@`"
+-phpdir="`eval echo @libdir@`/build"
++phpdir="`eval echo @libdir@`/php/build"
+ includedir="`eval echo @includedir@`/php"
+ builddir="`pwd`"
+ 

@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/intel-microcode/intel-microcode.desc
+[COPY] Copyright (C) 2015 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Intel Processor Microcode Package for Linux
+
+[T] This package is provided for Linux distributors for inclusion in their OS
+[T] releases. Intel recommends obtaining the latest MCUs using the OS vendor
+[T] update mechanism.
+
+[U] https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files
+
+[A] Intel
+[M] René Rebe <rene@exactco.de>
+
+[C] base/firmware
+[F] CROSS
+[K] + linux
+[R] + x86 x86-64
+
+[L] Free-to-use
+[V] 20260512
+
+[D] cff8ab879a1cd97db6b865c3ea0beeb99024a094bfe6819888b256c3 microcode-20260512.tar.gz https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/archive/refs/tags/
+
+runmake=0
+hook_add postmake 5 "cp -rvf intel-ucode $root/lib/firmware/"

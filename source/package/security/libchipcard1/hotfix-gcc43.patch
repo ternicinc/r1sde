@@ -1,0 +1,29 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/libchipcard1/hotfix-gcc43.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -Nur libchipcard-0.9.1-orig/src/libchipcard/cards/ctfilesystem2.h libchipcard-0.9.1/src/libchipcard/cards/ctfilesystem2.h
+--- libchipcard-0.9.1-orig/src/libchipcard/cards/ctfilesystem2.h	2008-07-26 13:48:38.000000000 +0000
++++ libchipcard-0.9.1/src/libchipcard/cards/ctfilesystem2.h	2008-07-26 14:11:32.000000000 +0000
+@@ -64,6 +64,8 @@
+ #include <chipcard/ctmemorycard.h>
+ #include <chipcard/ctdatacache.h>
+ 
++#include <cstring>
++
+ 
+ /**
+  * @page cardfspage Card File System 1.0
+diff -Nur libchipcard-0.9.1-orig/src/libchipcard/cards/hbcicard.h libchipcard-0.9.1/src/libchipcard/cards/hbcicard.h
+--- libchipcard-0.9.1-orig/src/libchipcard/cards/hbcicard.h	2008-07-26 13:48:38.000000000 +0000
++++ libchipcard-0.9.1/src/libchipcard/cards/hbcicard.h	2008-07-26 13:52:44.000000000 +0000
+@@ -39,6 +39,7 @@
+ 
+ 
+ #include <string>
++#include <cstring>
+ #include <chipcard/cterror.h>
+ 
+ 

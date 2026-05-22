@@ -1,0 +1,41 @@
+[TIMESTAMP] 1777308434 Mon Apr 27 18:47:14 2026
+[BUILDTIME] 60 (9)
+[SIZE] 2.33 MB, 13 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] epoxy
+[DEP] gawk
+[DEP] grep
+[DEP] libdecor
+[DEP] libdrm
+[OPT] libei
+[DEP] libgcrypt
+[DEP] libglvnd
+[DEP] libgpg-error
+[DEP] libtirpc
+[DEP] libxau
+[DEP] libxcb
+[DEP] libxcvt
+[DEP] libxdmcp
+[DEP] libxfont2
+[DEP] libxkbfile
+[DEP] libxshmfence
+[DEP] linux-header
+[DEP] mesa
+[DEP] meson
+[OPT] nettle
+[DEP] ninja
+[DEP] openssl
+[DEP] pixman
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] wayland
+[DEP] wayland-protocols
+[DEP] xorgproto
+[DEP] xtrans
+[DEP] xz

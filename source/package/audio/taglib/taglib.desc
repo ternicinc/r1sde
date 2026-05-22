@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/taglib/taglib.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Audio Meta-Data Library
+
+[T] TagLib is a library for reading and editing the meta-data of several
+[T] popular audio formats. Currently it supports both ID3v1 and ID3v2 for
+[T] MP3 files, Ogg Vorbis comments and ID3 tags and Vorbis comments in
+[T] FLAC files.
+[T]
+[T] It is written in modern C++, very fast (about 6 times faster than
+[T] id3lib and 3 times faster than libvorbisfile at reading tags) and does
+[T] not have any external dependency.
+
+[U] https://taglib.github.io
+
+[A] Scott Wheeler <wheeler@kde.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] LGPL
+[V] 2.3
+[P] X -----5---9 120.200
+
+[CV-URL] http://developer.kde.org/~wheeler/taglib.html
+[D] 5d34b44881f7de84f752aff644b71248333f65a2d129ba522d384d54 taglib-2.3.tar.gz http://taglib.github.io/releases/
+
+hook_add preconf 1 'rm -f configure* Makefile'
+var_append cmakeopt ' ' '-DLIB_SUFFIX=${libdir#*/lib}'
+[ "$SDECFG_STATIC" = 1 ] || var_append cmakeopt ' ' -DBUILD_SHARED_LIBS=ON

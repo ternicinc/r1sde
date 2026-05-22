@@ -1,0 +1,22 @@
+
+[TIMESTAMP] 1718833970 Wed Jun 19 23:52:50 2024
+[BUILDTIME] 580 (9)
+[SIZE] 25.68 MB, 1030 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] libglvnd
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] python
+[DEP] qt5base
+[DEP] sed
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] xz

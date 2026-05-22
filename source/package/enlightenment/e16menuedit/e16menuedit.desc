@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/e16menuedit/e16menuedit.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Enlightenment v0.16 menu editor
+
+[T] Enlightenment v0.16 menu editor.
+
+[U] https://www.enlightenment.org
+
+[A] Rasterman <raster@rasterman.com>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/windowmanager
+
+[L] Free-to-use
+[V] 0.0.3
+
+[D] 2c59611aff9da2be926e2c17ce4520e68d2cdd103020810ded247c1a e16menuedit2-0.0.3.tar.gz https://prdownloads.sourceforge.net/sourceforge/enlightenment/
+
+. $base/package/*/*/e16-conf.in
+
+e16me_pc() {
+	echo "%%% GTK_CONFIG=$GTK_CONFIG"
+	echo "%%% GTK_CFLAGS=`$GTK_CONFIG --cflags`"
+	echo "%%% GTK_LIBS=`$GTK_CONFIG --libs`"
+	echo "%%% E16=$E16"
+	echo "%%% CFLAGS=$CFLAGS"
+}
+
+hook_add preconf 5 e16me_pc

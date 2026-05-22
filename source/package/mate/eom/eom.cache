@@ -1,0 +1,45 @@
+[TIMESTAMP] 1759943600 Wed Oct  8 19:13:20 2025
+[BUILDTIME] 35 (9)
+[SIZE] 8.89 MB, 882 files
+
+[DEP] appstream-glib
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] exempi
+[DEP] findutils
+[DEP] fontconfig
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[DEP] glib
+[DEP] gobject-introspection
+[DEP] grep
+[DEP] gtk+
+[DEP] gtk-doc
+[DEP] harfbuzz
+[DEP] itstool
+[DEP] lcms2
+[DEP] libexif
+[DEP] libjpeg
+[DEP] libpeas1
+[DEP] librsvg
+[DEP] libx11
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[OPT] mate-desktop
+[DEP] mate-system-monitor
+[DEP] mate-wayland-session
+[DEP] openssl
+[DEP] pango
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar
+[DEP] xorgproto
+[DEP] xz
+[DEP] zlib

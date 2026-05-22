@@ -1,0 +1,44 @@
+[TIMESTAMP] 1739220575 Mon Feb 10 21:49:35 2025
+[BUILDTIME] 1050 (5)
+[SIZE] 35.42 MB, 89 files
+
+[DEP] abseil-cpp
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] eigen
+[DEP] freetype
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] grep
+[DEP] gst-plugins-base
+[DEP] gstreamer
+[DEP] gtk+
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] libjpeg
+[DEP] libpng
+[DEP] libtiff
+[DEP] libva
+[OPT] libwebp
+[DEP] linux-header
+[DEP] ninja
+[DEP] numpy
+[DEP] openjpeg
+[DEP] openssl
+[DEP] pango
+[DEP] pkgconfig
+[DEP] pydistro
+[DEP] python
+[DEP] python-gpep517
+[DEP] scikit-build
+[DEP] sed
+[DEP] setuptools
+[DEP] tar
+[DEP] vtk
+[DEP] zlib

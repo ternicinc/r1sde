@@ -1,0 +1,13 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/postgresql/config.in
+# Copyright (C) 2010 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+if pkgcheck postgresql X
+then
+	menu_begin MENU_PKG_POSTGRESQL 'Postgresql Package Options'
+		text 'Install prefix for Postgresql Packages' \
+			SDECFG_PKG_POSTGRESQL_CORE_PREFIX "opt/postgresql"
+	menu_end
+fi

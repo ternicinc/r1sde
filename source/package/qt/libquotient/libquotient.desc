@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libquotient/libquotient.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Qt library to write cross-platform clients for Matrix
+
+[T] The Quotient project aims to produce a Qt-based SDK to develop
+[T] applications for Matrix. libQuotient is a library that enables
+[T] client applications. It is the backbone of Quaternion, NeoChat
+[T] and other projects.
+
+[U] https://github.com/quotient-im/libQuotient
+
+[A] Quotient
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] LGPL
+[V] 0.9.6.1
+[P] X -----5---9 140.010
+
+[D] 18118e2c629444d35b5fc8630289d11523a1b2918d162525a26c357f libQuotient-0.9.6.1.tar.gz https://github.com/quotient-im/libQuotient/archive/refs/tags/0.9.6.1/
+
+. $base/package/*/*/qt6-conf.in
+var_append cmakeopt ' ' -DBUILD_WITH_QT6=ON
+var_append cmakeopt ' ' -DQuotient_ENABLE_E2EE=ON

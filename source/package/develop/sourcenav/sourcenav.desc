@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sourcenav/sourcenav.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An IDE with source code comprehension features
+
+[T] Source-Navigator is a source code analysis tool. With it, you can edit
+[T] your source code, display relationships between classes and functions
+[T] and members, and display call trees. You can also build your projects,
+[T] either with your own makefile, or by using Source-Navigator's build
+[T] system to automatically generate a makefile. It works with the Insight GUI
+[T] interface for GDB, and supports C, C++, Java, Tcl, [incr Tcl], FORTRAN,
+[T] and COBOL, and provides an SDK so that you can write your own parsers.
+
+[U] https://sourcenav.sourceforge.net/
+
+[A] Red Hat Inc.
+[M] Michael Tross <michael@tross.org>
+
+[C] base/development
+[F] CROSS
+
+[L] GPL
+[V] 6.0
+
+[D] 11f70da0367621ab06e3dc4eabc99a39392a2ea345fdf1b3f9504157 sourcenav-6.0.tar.gz https://prdownloads.sourceforge.net/sourceforge/sourcenav/
+
+prefix=opt/sourcenav; set_confopt
+var_remove_regex makeopt ' ' 'CC=.*'
+var_remove_regex makeopt ' ' 'CXX=.*'

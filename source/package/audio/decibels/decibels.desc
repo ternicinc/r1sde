@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/decibels/decibels.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Simply play audio files
+
+[T] An audio player that just plays audio files. It doesn't require an
+[T] organized music library and won't overload you with tons of functionality.
+
+[U] https://apps.gnome.org/Decibels/
+
+[A] Angelo Verlain
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/audio
+
+[L] GPL
+[V] 49.6.1
+
+[D] 37b59a7ab5811dab66092875cee6fff1140ddef11cd7311e1f515228 decibels-49.6.1.tar.bz2 https://gitlab.gnome.org/GNOME/decibels/-/archive/49.6.1/
+
+. $base/package/*/*/gnome-conf.in

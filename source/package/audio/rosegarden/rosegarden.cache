@@ -1,0 +1,45 @@
+[TIMESTAMP] 1749130673 Thu Jun  5 15:37:53 2025
+[BUILDTIME] 580 (5)
+[SIZE] 13.08 MB, 106 files
+
+[DEP] akonadi
+[DEP] akonadi-mime
+[DEP] alsa-lib
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] cups
+[DEP] diffutils
+[DEP] dssi
+[DEP] fftw3
+[DEP] findutils
+[DEP] freetype
+[DEP] gawk
+[DEP] grep
+[DEP] gtk+2
+[OPT] jack
+[DEP] kbackup
+[DEP] kcoreaddons
+[DEP] ladspa
+[DEP] libglvnd
+[DEP] liblo
+[DEP] liblrdf
+[DEP] libsamplerate
+[DEP] libsndfile
+[DEP] linux-header
+[OPT] lirc
+[DEP] make
+[DEP] massif-visualizer
+[DEP] palapeli
+[DEP] pkgconfig
+[DEP] qt65compat
+[DEP] qt6base
+[DEP] qt6tools
+[DEP] raptor
+[DEP] sed
+[DEP] shared-mime-info
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] xz
+[DEP] zlib

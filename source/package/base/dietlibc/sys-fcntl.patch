@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dietlibc/sys-fcntl.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+Some crap, like gpm.h does use this header.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- /dev/null	1970-01-01 01:00:00.000000000 +0100
++++ dietlibc-0.28/include/sys/fcntl.h	2005-02-07 12:34:33.300839392 +0100
+@@ -0,0 +1,4 @@
++
++#warning "This is a non-standard header - use <fcntl.h> instead!"
++#include <fcntl.h>
++

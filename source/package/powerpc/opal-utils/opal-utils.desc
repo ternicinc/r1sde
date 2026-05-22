@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/opal-utils/opal-utils.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Utility programs for OpenPower systems
+
+[T] Utility programs for OpenPower systems.
+
+[U] https://github.com/open-power/skiboot
+
+[A] OpenPower
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[R] + powerpc powerpc64
+[F] CROSS
+
+[L] APL
+[V] 7.1
+
+[D] 85d82650abf672d84f2a7ffbd304f00d2f3faea602015ee81a6b1f18 opal-utils-7.1.tar.gz https://github.com/open-power/skiboot/archive/v7.1/
+
+export OPAL_PRD_VERSION="$ver" GARD_VERSION="$ver" PFLASH_VERSION="$ver"
+export XSCOM_VERSION="$ver" FFSPART_VERSION="$ver"
+
+runmake=
+var_append makeinstopt ' ' sbindir=$sbindir
+
+modules="gard pflash xscom-utils ffspart" # opal-prd
+hook_add inmake 5 'for m in $modules; do eval $MAKE -C external/$m $makeopt; done'
+hook_add inmake 5 'for m in $modules; do eval $MAKE -C external/$m $makeinstopt; done'

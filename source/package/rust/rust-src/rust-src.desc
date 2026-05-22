@@ -1,0 +1,39 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rust-src/rust-src.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Rust standard library source
+
+[T] The Rust standard library source required to cross compile some low-level
+[T] code, like the Linux kernel or other boot loaders and VMM.
+
+[U] https://www.rust-lang.org/
+
+[A] The Rust authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+[R] - alpha arc avr32 blackfin cris hppa hppa64 ia64 m68k microblaze nios2 openrisc superh
+
+[L] APL MIT
+[V] 1.95.0
+[P] X -1---5---9 130.000
+
+[CV-GROUP] rust
+[CV-URL] https://forge.rust-lang.org/infra/other-installation-methods.html
+[D] 1090937328a421584e97f75458249f76171eecca3deae26a8ca7e846 rust-src-1.95.0.tar.gz https://static.rust-lang.org/dist/
+
+autoextract=0
+runcargo=0
+runmake=0
+
+rust_src_install() {
+	local dir="$(rustc --print sysroot)/lib"
+	mkdir -p $dir
+	tar -xf $(match_source_file -p rust) --strip-components=3 -C $dir \
+		"rust-src-$(rustc --version | cut -d' ' -f2)/rust-src/lib/"
+}
+hook_add postmake 5 rust_src_install

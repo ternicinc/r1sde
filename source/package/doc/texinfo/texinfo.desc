@@ -1,0 +1,39 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/texinfo/texinfo.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The texinfo documentation system
+
+[T] Texinfo is a documentation system that uses a single source file to
+[T] produce both on-line information and printed output.
+
+[A] Richard Stallman, Brian Fox, Bob Chassell, Noah Friedman,
+[A] Paul Rubin, Karl Berry, Eli Zaretskii, and many others.
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS DIETLIBC
+
+[L] GPL
+[V] 7.3
+[P] X 0-2--5---9 102.050
+
+[D] 0b19868f92b6d25f5b79bf4f4271b3bce597db63bd73766e960ba484 texinfo-7.3.tar.xz http://ftp.gnu.org/pub/gnu/texinfo/
+
+no_doc_info_subdirs() {
+	sed -i '/^SUBDIRS/ { s/\bdoc\b//; s/\binfo\b//; }' Makefile
+}
+
+if ! atstage native; then
+	hook_add premake 5 no_doc_info_subdirs
+fi
+
+# Build native tools using the host compiler
+if atstage cross; then
+	export texinfo_cv_sys_iconv_converts_euc_cn=yes
+	var_append confopt ' ' --disable-perl-xs
+	hook_add premake 7 "make -C tools/gnulib/lib; make -C tools"
+fi

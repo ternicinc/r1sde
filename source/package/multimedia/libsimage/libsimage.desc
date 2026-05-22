@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libsimage/libsimage.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The simage Library
+
+[T] The simage library provides a simplified and uniform interface to many
+[T] image file format libraries, and it includes internal support for some
+[T] image file formats too.
+
+[U] http://www.coin3d.org/lib/simage
+
+[A] Coin3D
+[M] Adam Stirk <adam.stirk@brantano.co.uk>
+
+[C] extra/multimedia
+[F] CROSS
+
+[E] opt libogg libvorbis
+[E] opt jasper
+[E] opt libsndfile
+
+[L] GPL
+[V] 1.8.4
+[P] X -----5---9 141.700
+
+[D] f33c2393a3c434f25d595e565adc9e74fee88b47297e3b1227ed6c8f simage-1.8.4-src.tar.gz https://github.com/coin3d/simage/releases/download/v1.8.4/
+
+var_append confopt ' ' "--enable-qimage --enable-mpeg2enc --enable-avienc"
+var_append confopt ' ' --without-gif # needs legacy quantize.h

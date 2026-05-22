@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-net-mysql/perl-net-mysql.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Pure Perl MySQL network protocol interface
+
+[T] Net::MySQL is a Pure Perl client interface for the MySQL database. This
+[T] module implements network protocol between server and client of MySQL,
+[T] thus you don't need external MySQL client library like libmysqlclient
+[T] for this module to work. It means this module enables you to connect to
+[T] MySQL server from some operation systems which MySQL is not ported.
+
+[A] Hiroyuki Oyama <oyama@module.jp>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] Artistic GPL
+[V] 0.11
+
+[D] 177341c59e98a340de77f89ca72eacbac9482066b67fadbdd622b354 Net-MySQL-0.11.tar.gz https://cpan.metacpan.org/authors/id/T/TS/TSUCCHI/

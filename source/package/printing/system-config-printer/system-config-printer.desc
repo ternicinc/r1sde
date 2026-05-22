@@ -1,0 +1,37 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/system-config-printer/system-config-printer.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The printer administration tool in Fedora 6 (and later)
+
+[T] The purpose of the tool is to configure a CUPS server (often the local
+[T] machine) using the CUPS API. The tool is written in Python, using pygtk
+[T] for the graphical parts and with some Python bindings (pycups) for the
+[T] CUPS API.
+[T] It is largely the same as using the CUPS web interface for configuring
+[T] printers, but has the advantage of being a native application rather than
+[T] a web page.
+[T] As a result of using the CUPS API the tool is able to configure remote
+[T] CUPS instances and is not limited to configuring CUPS on the local
+[T] machine. The CUPS library providing the API uses HTTP and IPP to
+[T] communicate with the CUPS server.
+
+[U] https://cyberelk.net/tim/software/system-config-printer/
+
+[A] Tim Waugh <twaugh@redhat.com>
+[M] Gerhard Weis <gweis@gmx.at>
+
+[C] extra/printing
+[F] CROSS
+
+[E] add python dbus-python pycups
+
+[L] GPL
+[V] 1.5.18
+[P] X -----5---9 158.500
+
+[D] 72ac5b6b79ff6005ecab5be67ec81961ce5c5bc9544b7701c077cfc3 system-config-printer-1.5.18.tar.bz2 https://github.com/OpenPrinting/system-config-printer/releases/download/v1.5.18/
+
+runpysetup=0

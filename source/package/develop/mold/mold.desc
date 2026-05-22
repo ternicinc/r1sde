@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mold/mold.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Modern Linker
+
+[T] Mold is a faster drop-in replacement for existing Unix linkers. It is
+[T] several times faster than LLVM lld linker.
+
+[U] https://github.com/rui314/mold
+
+[A] Rui Ueyama <rui314@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] MIT
+[V] 2.41.0
+
+[D] c3d5b4868dae68b125123fb91259744a7841fb6de551f405e5a3ab8d mold-2.41.0.tar.gz https://github.com/rui314/mold/archive/v2.41.0/
+
+pkginstalled tbb && var_append cmakeopt ' ' -DMOLD_USE_SYSTEM_TBB=ON

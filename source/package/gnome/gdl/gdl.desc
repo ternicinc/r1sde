@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gdl/gdl.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome Devtools Library
+
+[T] Gnome Devtools Library
+[T] This package contains components and libraries that are intended to be
+[T] shared between GNOME development tools, including gnome-debug,
+[T] gnome-build, and anjuta2.
+
+[U] https://www.gnome.org/
+
+[A] Dave Camp <dave at ximian com>
+[A] Neil Hodgson <neilh at scintilla org> (Scintilla Widget)
+[A] Gustavo Giráldez <gustavo giraldez at gmx net> (GdlDock)
+
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/development extra/desktop/gnome
+[F] CROSS
+
+[L] GPL
+[V] 3.40.0
+[P] X -----5---9 153.200
+
+[CV-URL] https://download.gnome.org/sources/gdl/cache.json
+[D] 47fc50ed16c63fa3e110897f052e5350182624f59099866feeff338d gdl-3.40.0.tar.xz https://download.gnome.org/sources/gdl/3.40/
+
+. $base/package/*/*/gnome-conf.in

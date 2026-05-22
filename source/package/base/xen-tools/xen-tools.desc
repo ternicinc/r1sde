@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xen-tools/xen-tools.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Xen hypervisor
+
+[T] Xen is an open-source virtual machine monitor, or hypervisor, developed
+[T] by the University of Cambridge. Xen provides secure isolation, resource
+[T] control, quality-of-service guarantees, and live migration of virtual
+[T] machines. Operating systems must be explicitly modified to run on Xen -
+[T] this enables Xen to achieve high-performance virtualization.
+
+[U] https://www.xensource.com/
+[U] https://xenbits.xensource.com/
+[U] https://www.cl.cam.ac.uk/Research/SRG/netos/xen/index.html
+
+[A] Keir Fraser et.al.
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[R] + arm64 x86 x86-64
+
+[L] GPL
+[V] 4.21.1
+
+[D] 4942c0f84da73b9db0c6d652a1f850ec9ec85855ae755cf035b1d2a9 xen-4.21.1.tar.gz https://downloads.xenproject.org/release/xen/4.21.1/
+
+[ "$SDECFG_PKG_XEN_FULL" = 0 ] &&
+	var_append makeopt ' ' 'xen tools' &&
+	makeinstopt="${makeinstopt/install/install-xen install-tools} 

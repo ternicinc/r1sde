@@ -1,0 +1,21 @@
+[TIMESTAMP] 1768854493 Mon Jan 19 21:28:13 2026
+[BUILDTIME] 18 (9)
+[SIZE] 1.17 MB, 51 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] boost
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] xz

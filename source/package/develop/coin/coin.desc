@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/coin/coin.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] OpenGL-based 3D graphics library
+
+[T] Coin is an OpenGL-based, 3D graphics library that has its roots
+[T] in the Open Inventor 2.1 API, which Coin still is compatible with.
+
+[U] https://github.com/coin3d/coin
+
+[A] Volker Enderlein
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] BSD
+[V] 4.0.8
+
+[D] 2c57afa9630428e2bc718b7a50c3c35120ec17ad1efbec10163599d6 coin-4.0.8-src.tar.gz https://github.com/coin3d/coin/releases/download/v4.0.8/

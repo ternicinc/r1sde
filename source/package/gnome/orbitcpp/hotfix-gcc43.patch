@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/orbitcpp/hotfix-gcc43.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -Nur orbitcpp-1.3.9-orig/orbitcpp/idl-compiler/error.h orbitcpp-1.3.9/orbitcpp/idl-compiler/error.h
+--- orbitcpp-1.3.9-orig/orbitcpp/idl-compiler/error.h	2008-07-23 04:17:49.000000000 +0000
++++ orbitcpp-1.3.9/orbitcpp/idl-compiler/error.h	2008-07-23 04:19:56.000000000 +0000
+@@ -35,7 +35,7 @@
+ #include <libIDL/IDL.h>
+ #include <stdexcept>
+ #include <string>
+-
++#include <cstring>
+ 
+ 
+ 

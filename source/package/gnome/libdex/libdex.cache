@@ -1,0 +1,25 @@
+[TIMESTAMP] 1757522484 Wed Sep 10 18:41:24 2025
+[BUILDTIME] 10 (9)
+[SIZE] 0.51 MB, 41 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] glib
+[DEP] gobject-introspection
+[DEP] grep
+[OPT] libsoup3
+[OPT] liburing
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar
+[DEP] vala
+[DEP] xz

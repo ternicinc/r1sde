@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libixp/libixp.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A C library that implements the 9P distributed file system protocol
+
+[T] Libixp is an implementation of the 9P distributed file system protocol
+[T] as a portable C library for POSIX systems with support for threading.
+
+[U] http://www.suckless.org/libs/libixp.html
+
+[A] Lost Goblin <lost.goblin@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[L] MIT
+[V] 0.5
+[P] X -----5---9 200.000
+
+[D] e94c059bf15091f5f951b4cc70b36c17a89e4135f74a1d86f27bfbe1 libixp-0.5.tar.gz http://code.suckless.org/dl/libs/
+
+var_append AR ' ' crs
+var_append makeinstopt ' ' PREFIX=$root/$prefix

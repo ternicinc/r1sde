@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gjiten/gjiten.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Japanese dictionary program for GNOME
+
+[T] Gjiten is a Japanese dictionary program. It also has a kanji dictionary.
+[T] Any combination of stroke number, radicals and search key can be used
+[T] for kanji lookups. Gjiten requires a working X Input Method
+[T] [e.g. kinput2] for Japanese input.
+
+[U] https://gjiten.sourceforge.net/
+
+[A] Botond Botyanszki <boti@rocketmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office
+
+[L] GPL
+[V] 3.2.1
+
+[D] 5b5f8ba95a93f40ff0d41548ac385ae70abfef6edc1337acc55504ef gjiten-3.2.1.tar.gz https://github.com/DarkTrick/gjiten/archive/v3.2.1/
+
+. $base/package/*/*/gnome-conf.in

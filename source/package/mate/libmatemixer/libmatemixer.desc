@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libmatemixer/libmatemixer.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Mixer library for MATE Desktop
+
+[T] libmatemixer is a mixer library for MATE desktop. It provides an abstract
+[T] API allowing access to mixer functionality available in the PulseAudio,
+[T] ALSA and OSS sound systems.
+
+[U] https://mate-desktop.org/
+
+[A] MATE developer
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/mate
+
+[L] GPL
+[V] 1.28.0
+[P] X -----5---9 177.400
+
+[D] ad08c0dfb7c363779cc84c9e60db2bfab5cb7215523c4617a8b2ef46 libmatemixer-1.28.0.tar.xz https://pub.mate-desktop.org/releases/1.28/
+
+. $base/package/*/*/mate-conf.in

@@ -1,0 +1,47 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libclc/libclc.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A OpenCL C programming language library implementation
+
+[T] libclc is an open source, BSD licensed implementation of the library
+[T] requirements of the OpenCL C programming language, as specified by the
+[T] OpenCL 1.1 Specification.
+
+[U] https://libclc.llvm.org/
+
+[A] University of Illinois/NCSA
+[A] Chris Lattner <clattner@apple.com>
+[M] René Rebe <rene@exactco.de>
+
+[R] - alpha m68k nios2
+[C] extra/development
+[F] OBJDIR CROSS
+
+[L] BSD MIT
+[V] 22.1.5
+[P] X ?----5---9 127.400
+
+[CV-GROUP] llvm-project
+[D] 539b0fa857272b2b18ad9b9e58e11d4e48e0f1c807ec375d5ca91913 llvm-project-22.1.5.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-22.1.5/
+
+srcdir=*/libclc
+
+if atstage toolchain; then
+    var_append cmakeopt ' ' -DLIBCLC_TARGETS_TO_BUILD=
+    #makeinstopt=
+    #hook_add postmake 5 "install prepare_builtins $root$bindir/"
+elif atstage cross; then
+    copy_function create_cmake_toolchain_file _create_cmake_toolchain_file
+
+    create_cmake_toolchain_file() {
+	_create_cmake_toolchain_file | sed '/CMAKE_FIND_ROOT_PATH /d'
+    }
+
+    var_append GCC_WRAPPER_FILTER '|' "sed 's,$root/TOOLCHAIN.*libLLVM\(.*\)\.[as].*,-lLLVM\1,g'"
+fi
+
+[ "${libdir##*/lib}" ] && var_append cmakeopt ' ' "-DLLVM_LIBDIR_SUFFIX=${libdir##*/lib}"
+[ "$SDECFG_STATIC" = 1 ] || var_append cmakeopt ' ' -DBUILD_SHARED_LIBS=ON

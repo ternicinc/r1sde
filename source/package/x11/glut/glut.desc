@@ -1,0 +1,60 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/glut/glut.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] OpenGL Utility Toolkit
+
+[T] GLUT (pronounced like the glut in gluttony) is the OpenGL Utility Toolkit, a
+[T] window system independent toolkit for writing OpenGL programs. It implemen-
+[T] ts a simple windowing application programming interface (API) for OpenGL.
+[T] GLUT makes it considerably easier to learn about and explore OpenGL pro-
+[T] gramming. GLUT provides a portable API so you can write a single OpenGL
+[T] program that works on both Win32 PCs and X11 workstations.
+[T]
+[T] GLUT is designed for constructing small to medium sized OpenGL programs.
+[T] While GLUT is well-suited to learning OpenGL and developing simple OpenGL
+[T] applications, GLUT is not a full-featured toolkit so large applications re-
+[T] quiring sophisticated user interfaces are better off using native window
+[T] system toolkits like Motif. GLUT is simple, easy, and small. My intent is
+[T] to keep GLUT that way.
+
+[U] https://www.opengl.org/resources/libraries/glut.html
+
+[A] Mark J. Kilgard <mjk@nvidia.com>
+[A] Brian Paul <brian@mesa3d.org>
+[M] René Rebe <rene@exactco.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] Free-to-use
+[V] 3.7
+[P] O -----5---9 118.700
+
+[D] bb548ac24b27e8f003d1eaef4f575fef41279d3396f1c226913f0a2c glut-3.7.tar.gz http://www.opengl.org/resources/libraries/glut/
+
+var_append CC_WRAPPER_REMOVE ' ' -m486
+var_append GCC_WRAPPER_INSERT ' ' "-L$root/usr/X11/${libdir##*/}"
+
+glut_main() {
+	chmod -R +w *
+	cp -f linux/Glut.cf .
+	./mkmkfiles.imake
+
+	cd lib
+	cp -fv $confdir/Makefile.data glut/Makefile
+	$MAKE
+	cp -vf glut/libglut.so.3.7 $root$libdir/
+	ln -sf libglut.so.3.7 $root$libdir/libglut.so.3
+	ln -sf libglut.so.3.7 $root$libdir/libglut.so
+	cd ..
+
+	# this hack is needed because /usr/include/GL is a sym-link ...
+	cp -rfv include/GL/* $root/usr/include/GL
+	cp -rfv include/mui $root/usr/include
+}
+runmake=0
+hook_add inmake 5 glut_main

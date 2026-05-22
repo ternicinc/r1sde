@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/vobcopy/vobcopy.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Rips DVD .vob files to harddisk, with decrypting
+
+[T] Vobcopy copies DVD .vob files to harddisk, decrypting (if you have
+[T] libdvdcss installed) them on the way.
+
+[U] https://github.com/barak/vobcopy/
+
+[A] Robos <robos@muon.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 1.2.3
+
+[D] e8b80586297cd1e6e8ecd068b5ffe906c22c7fc8c0bf21e8fff109da vobcopy-1.2.3.tar.gz https://github.com/barak/vobcopy/archive/1.2.3/
+
+autogen=2

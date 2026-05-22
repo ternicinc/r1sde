@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/samba/hotfix-smbadduser_path.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./source3/smbadduser.in.old	2006-11-01 15:38:14.000000000 +0100
++++ ./source3/smbadduser.in	2006-11-01 15:39:54.000000000 +0100
+@@ -61,7 +61,7 @@
+ 	endif
+ 
+ 	echo "Adding: $unix to $smbpasswd"
+-	/usr/bin/smbpasswd -a -n $unix
++	$prefix/bin/smbpasswd -a -n $unix
+ 	if ($unix != $ntid) then
+ 		echo "Adding: {$unix = $ntid} to $user_map"
+ 		echo "$unix = $ntid" >> $user_map

@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnustep-make/gnustep-make.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The base for a GNUstep system
+
+[T] The base for a GNUstep system.
+
+[U] https://www.gnustep.org/
+
+[A] The GNUstep Project
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/windowmanager
+
+[L] GPL
+[V] 2.9.3
+[P] X -----5---9 162.100
+
+[D] a069f5ff4ffde1d43af53d1b47f6a501e2c1c4e2422644d0e7f9d60a gnustep-make-2.9.3.tar.gz https://github.com/gnustep/tools-make/releases/download/make-2_9_3/
+
+. $base/package/*/*/gnustep-conf.in NO_SANITY_CHECK
+var_append confopt ' ' --with-layout=fhs-system

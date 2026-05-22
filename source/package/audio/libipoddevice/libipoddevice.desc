@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libipoddevice/libipoddevice.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A device-specific layer for the Apple iPod
+
+[T] Libipoddevice is a device-specific layer for the Apple iPod. libipoddevice
+[T] provides iPod-specific HAL event notification to applications, and along
+[T] with objects representing an iPod, which gives the application access to
+[T] properties and features of an iPod.
+
+[U] http://banshee-project.org/Ipod-sharp
+
+[A] Aaron Bockover <abockover@novell.com>
+[A] James Willcox <snorp@novell.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] NOPARALLEL
+
+[L] LGPL
+[V] 0.5.3
+[P] X -----5---9 139.801
+
+[D] 732a3a170716345a5bc36615b9e264b628f883016feb1177da8e15fd libipoddevice-0.5.3.tar.gz http://download.banshee-project.org/libipoddevice/
+
+hook_add preconf 3 'sed -i "s/-lsgutils/-lsgutils2/" configure'

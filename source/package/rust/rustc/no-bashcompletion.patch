@@ -1,0 +1,24 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/rustc/no-bashcompletion.patch
+# Copyright (C) 2021 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- rustc-1.87.0-src/src/bootstrap/src/core/build_steps/dist.rs.vanilla	2025-05-15 21:37:28.789634631 +0200
++++ rustc-1.87.0-src/src/bootstrap/src/core/build_steps/dist.rs	2025-05-15 21:37:52.050176923 +0200
+@@ -1186,6 +1186,7 @@
+         tarball.set_overlay(OverlayKind::Cargo);
+ 
+         tarball.add_file(&cargo.tool_path, "bin", FileType::Executable);
++/*
+         tarball.add_file(etc.join("_cargo"), "share/zsh/site-functions", FileType::Regular);
+         tarball.add_renamed_file(
+             etc.join("cargo.bashcomp.sh"),
+@@ -1193,6 +1194,7 @@
+             "cargo",
+             FileType::Regular,
+         );
++*/
+         tarball.add_dir(etc.join("man"), "share/man/man1");
+         tarball.add_legal_and_readme_to("share/doc/cargo");
+ 

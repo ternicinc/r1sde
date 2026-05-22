@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dnrd/dnrd.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Simple proxy nameserver
+
+[T] The Domain Name Relay Daemon (DNRD) is a simple "proxy" nameserver.
+[T] It is meant to be used for home networks that can connect to the internet
+[T] using one of several ISP's.
+[T]
+[T] DNRD is pretty simple. It takes DNS queries from hosts, and forwards them
+[T] to the "real" DNS server. It takes DNS replies from the DNS server, and
+[T] forwards them to the client. What makes DNRD special is that it can be
+[T] configured to forward to different DNS servers depending on what ISP you
+[T] are dialing.
+
+[U] https://dnrd.sourceforge.net/
+
+[A] Wolfgang Zekoll <wzk@quietsche-entchen.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network extra/server
+[F] CROSS
+
+[L] GPL
+[V] 2.20.3
+
+[D] 21cca1ccca349a4c745c7121c07134af92ea9bf0b818348faf7eca43 dnrd-2.20.3.tar.gz https://prdownloads.sourceforge.net/sourceforge/dnrd/

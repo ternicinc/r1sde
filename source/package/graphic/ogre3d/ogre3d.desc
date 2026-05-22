@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ogre3d/ogre3d.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A realtime 3D engine
+
+[T] OGRE represents the culmination of 4 years of continuous development,
+[T] resulting in what is now regarded by many as the leading open source
+[T] real time 3D rendering engine.
+
+[U] https://www.ogre3d.org
+
+[A] Steve Streeting
+[A] Thomas Muldowney
+[A] James O'Sullivan
+[A] Wladimir J. van der Laan
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+
+[L] LGPL
+[V] 14.5.2
+
+[D] 138ab265a05a616d75f62c07c9065b40c9878413190549c21c04dc44 ogre-v14.5.2.tar.gz https://github.com/OGRECave/ogre/archive/v14.5.2/

@@ -1,0 +1,29 @@
+[TIMESTAMP] 1759867617 Tue Oct  7 22:06:57 2025
+[BUILDTIME] 45 (9)
+[SIZE] 4.53 MB, 12 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] file
+[DEP] fuse
+[OPT] fuse2
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] pkgconfig
+[OPT] pybind11
+[DEP] python
+[OPT] qt6base
+[DEP] qt6tools
+[DEP] qtchooser
+[DEP] readline
+[DEP] sed
+[DEP] taglib
+[DEP] tar
+[DEP] vulkan-headers

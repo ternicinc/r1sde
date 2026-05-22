@@ -1,0 +1,19 @@
+[TIMESTAMP] 1753905852 Wed Jul 30 22:04:12 2025
+[BUILDTIME] 20 (9)
+[SIZE] 2.35 MB, 82 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libdbi
+[DEP] linux-header
+[DEP] make
+[DEP] mariadb-connector-c
+[DEP] openssl
+[DEP] sed
+[DEP] tar

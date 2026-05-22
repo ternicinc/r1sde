@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libxdp/libxdp.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library for attaching XDP programs and using AF_XDP sockets
+
+[T] Libxdp provides two primary features on top of libbpf. The first is the
+[T] ability to load multiple XDP programs in sequence on a single network
+[T] device (which is not natively supported by the kernel). This support
+[T] relies on the freplace functionality in the kernel, which makes it
+[T] possible to attach an eBPF program as a replacement for a global function
+[T] in another (already loaded) eBPF program. The second main feature is
+[T] helper functions for configuring AF_XDP sockets as well as reading and
+[T] writing packets from these sockets.
+
+[U] https://github.com/xdp-project/xdp-tools/tree/master/lib/libxdp
+
+[A] XDP-project <xdp-newbies@vger.kernel.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS NO-LTO
+[R] + x86-64
+
+[L] BSD
+[V] 1.6.3
+[P] X -----5---9 139.000
+
+[D] 273065def86a428f4c0caa5493e39b9bfefbbab07c30590f827195e1 libxdp-1.6.3.tar.gz https://github.com/xdp-project/xdp-tools/archive/v1.6.3/
+
+hook_add premake 5 ./configure
+var_append makeopt ' ' libxdp
+var_remove_regex GCC_WRAPPER_INSERT ' ' '-march=.*'

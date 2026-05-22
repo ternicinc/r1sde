@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/boltd/boltd.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Userspace system daemon to enable security levels for Thunderbolt™ on GNU/Linux®
+
+[T] Devices connected via Thunderbolt can be DMA masters and thus read system
+[T] memory without interference of the operating system (or even the CPU). Version 3
+[T] of the interface introduced 5 different security levels, in order to mitigate
+[T] the aforementioned security risk that connected devices pose to the system. The
+[T] security level is set by the system firmware.
+
+[U] https://gitlab.freedesktop.org/bolt/bolt
+
+[A] Christian Kellner
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system base/kernel
+[F] CROSS
+
+[L] GPL
+[V] 0.9.10
+
+[D] 1d6b23937eb37c4d91e0366c8bd921fc934119684872a08cfa04cf0e bolt-0.9.10.tar.bz2 https://gitlab.freedesktop.org/bolt/bolt/-/archive/0.9.10/

@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/streamripper/streamripper.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A shoutcast-compatible stream ripper
+
+[T] Streamripper records shoutcast-compatible streams. For shoutcast style
+[T] streams it finds the "meta data" or track separation data, and uses that as
+[T] a marker for where the track should be separated. The MP3 data is decoded
+[T] and scanned for a silent point, which is where tracks will be created.
+
+[U] https://streamripper.sourceforge.net/
+
+[A] Greg Sharp <gregsharp@geocities.com>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/multimedia
+[F] CROSS NO-LTO.gcc
+
+[L] GPL
+[V] 1.64.6
+
+[D] 99b7bde23d996324e704f611bdbd5604d466b58095978e3b758d72f0 streamripper-1.64.6.tar.gz https://prdownloads.sourceforge.net/sourceforge/streamripper/

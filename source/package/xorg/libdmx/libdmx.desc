@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libdmx/libdmx.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] X Window System DMX (Distributed Multihead X) extension
+
+[T] The DMX extension provides support for communication with and control of
+[T] Xdmx server. Attributes of the Xdmx server and of the back-end screens
+[T] attached to the server can be queried and modified via this protocol.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.1.5
+[P] X -----5---9 112.405
+
+[D] 3600b548750630d2f95b6773e7115aef1d0369b4f0a6e23f9a6d9f6e libdmx-1.1.5.tar.xz http://xorg.freedesktop.org/releases/individual/lib/
+
+. package/*/*/modular-x-conf.in

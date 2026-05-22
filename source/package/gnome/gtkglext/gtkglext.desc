@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gtkglext/gtkglext.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An OpenGL extension to GTK+
+
+[T] GtkGLExt is an OpenGL extension to GTK+. It provides additional GDK objects
+[T] which support OpenGL rendering in GTK+, and GtkWidget API add-ons to make
+[T] GTK+ widgets OpenGL-capable.
+
+[U] https://gtkglext.sourceforge.net/
+
+[A] Naofumi Yasufuku <naofumi@users.sourceforge.net>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/development
+
+[L] GPL
+[V] 1.2.0
+[P] X -----5---9 141.000
+
+[CV-URL] https://download.gnome.org/sources/gtkglext/cache.json
+[D] c69dd3733d0cbb22f8ddb7cf5ab583b432b8e8f4c2a67a150e1fdd3e gtkglext-1.2.0.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/gtkglext/
+
+. $base/package/*/*/gnome-conf.in

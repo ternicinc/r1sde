@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfce4-weather-plugin/xfce4-weather-plugin.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Weather condition panel plugin for Xfce4
+
+[T] This panel plugin shows the current temperature and weather condition,
+[T] using weather data provided by xoap.weather.com.
+
+[U] http://xfce-goodies.berlios.de/
+
+[A] Bob Schlärmann
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/xfce
+[F] CROSS
+
+[L] BSD
+[V] 0.12.0
+
+[D] db9a6eca2e472789941a268128637f76bceeaf0903829932b47c775d xfce4-weather-plugin-0.12.0.tar.xz https://archive.xfce.org/src/panel-plugins/xfce4-weather-plugin/0.12/
+
+. $base/package/xfce4/*/xfce4-conf.in

@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/icestorm/icestorm.desc
+[COPY] Copyright (C) 2018 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A reverse engineering and documenting the FPGA bitstream format
+
+[T] Project IceStorm aims at reverse engineering and documenting the
+[T] bitstream format of Lattice iCE40 FPGAs and providing simple tools
+[T] for analyzing and creating bitstream files.
+
+[U] https://github.com/YosysHQ/
+
+[A] Claire Xenia Wolf <claire@clairexen.net>
+[A] David Shah <d@ds0.me>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] ISC
+[V] 1a40ae7
+[P] X -----5---9 200.800
+
+[D] 36898ca4468b62aa85472af91a668fd1da4d1b98ba11e8b6df1525f4 icestorm-1a40ae7.tar.gz git+https://github.com/YosysHQ/icestorm.git 1a40ae7

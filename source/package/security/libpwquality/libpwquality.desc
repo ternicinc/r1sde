@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libpwquality/libpwquality.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Password quality checking library
+
+[T] Library for password quality checking and generating random passwords.
+
+[U] https://github.com/libpwquality/libpwquality
+
+[A] Tomáš Mráz <tm@t8m.info>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[L] GPL BSD
+[V] 1.4.5
+[P] X -----5---9 113.000
+
+[D] de91e4509e5492d77a85655c996c1e17e8624bc834ac6d7aebc4e09a libpwquality-1.4.5.tar.bz2 https://github.com/libpwquality/libpwquality/releases/download/libpwquality-1.4.5/

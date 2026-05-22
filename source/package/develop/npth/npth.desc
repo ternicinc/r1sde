@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/npth/npth.desc
+[COPY] Copyright (C) 2016 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The New GNU Portable Threads Library
+
+[T] nPth is a library to provide the GNU Pth API and thus a non-preemptive
+[T] threads implementation.
+[T]
+[T] In contrast to GNU Pth is is based on the system's standard threads
+[T] implementation. This allows the use of libraries which are not compatible
+[T] to GNU Pth
+
+[U] https://www.gnupg.org/software/npth/
+
+[A] The GNUPG Project
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 1.8
+[P] X -----5---9 118.200
+
+[D] 128444a9e727be746fd33d401a77e301212e33f7d2c832594c9b5135 npth-1.8.tar.bz2 https://www.gnupg.org/ftp/gcrypt/npth/

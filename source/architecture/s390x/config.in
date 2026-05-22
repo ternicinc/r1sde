@@ -1,0 +1,23 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/s390x/config.in
+# Copyright (C) 2016 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+#Description: S390x
+
+choice SDECFG_S390X_OPT arch9 \
+	arch5	"Optimized for z900" \
+	arch6	"Optimized for z990" \
+	arch7	"Optimized for z9" \
+	arch8	"Optimized for z10" \
+	arch9	"Optimized for z196" \
+	arch11	"Optimized for z13" \
+	arch12	"Optimized for z14" \
+	arch13	"Optimized for z15" \
+	arch14	"Optimized for z16" \
+	arch15	"Optimized for z17"
+
+if [ $SDECFG_S390X_OPT != generic ] ; then
+	SDECFG_ID="$SDECFG_ID-$SDECFG_S390X_OPT"
+fi

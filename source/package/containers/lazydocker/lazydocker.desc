@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lazydocker/lazydocker.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The lazier way to manage everything docker
+
+[T] A simple terminal UI for both docker and docker-compose, written in Go with
+[T] the gocui library.
+
+[U] https://github.com/jesseduffield/lazydocker
+
+[A] Jesse Duffield
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] MIT
+[V] 0.25.2
+
+[D] 45e6a0bdd8bcd52bb9eb54269e3ee88425d14e87b8ff58237702e1d9 lazydocker-0.25.2.tar.gz https://github.com/jesseduffield/lazydocker/archive/v0.25.2/
+
+var_append goconfopt ' ' '-ldflags "-X main.version=$ver"'
+hook_add postmake 5 'install lazydocker $root$bindir/'

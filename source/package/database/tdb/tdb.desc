@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/tdb/tdb.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A trivial database
+
+[T] Tdb is a Trivial Database. In concept, it is very much like
+[T] GDBM, and BSD's DB except that it allows multiple simultaneous
+[T] writers and uses locking internally to keep writers from trampling
+[T] on each other. TDB is also extremely small.
+
+[U] https://tdb.samba.org
+
+[A] Anton Blanchard <antonb@users.sourceforge.net>
+[A] Samba Team & Andrew Tridgell <tridge@linuxcare.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/database
+[F] CROSS
+
+[E] opt docbook-xml docbook-xsl
+[E] opt libbsd
+
+[L] LGPL
+[V] 1.4.15
+[P] X -----5---9 152.500
+
+[D] 7bba0f53493fa59966823b86b02be5858425e954c3a77723dffe6bca tdb-1.4.15.tar.gz http://samba.org/ftp/tdb/
+
+cleanconfopt=0 confopt="--prefix=/$prefix"
+atstage cross && var_append confopt ' ' --disable-python

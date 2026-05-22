@@ -1,0 +1,22 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/ratty/ratty.desc
+# Copyright (C) 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+[I] A GPU-rendered terminal emulator with inline 3D graphics
+
+[T] ratty is a GPU-rendered terminal emulator with inline 3D graphics.
+
+[U] https://github.com/orhun/ratty
+
+[A] Orhun
+[M] foxdrodd
+
+[C] extra/tool
+[F] CROSS
+
+[L] MIT
+[V] 0.4.0
+
+[D] 59c842692b5be585209cde912e91b0aa972a14777b84f3f02eac45cc ratty-0.4.0.tar.gz https://github.com/orhun/ratty/archive/v0.4.0/

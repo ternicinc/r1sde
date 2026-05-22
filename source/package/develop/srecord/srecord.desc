@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/srecord/srecord.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A collection of powerful tools for manipulating EPROM load files
+
+[T] SRecord is a collection of powerful tools for manipulating EPROM load
+[T] files. It understands a number of file formats including Motorola
+[T] S-Record, Intel hex, Tektronix hex and binary, for both input and
+[T] output. SRecord filters include cropping, filling, splitting, joining,
+[T] and more. All filters may be applied to all file formats.
+
+[U] https://srecord.sourceforge.net/
+
+[A] Peter Miller <millerp@canb.auug.org.au>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 1.65.0
+
+[D] 25eed2558200f2cfef7d1ee1ca99a3e4a8a1a012e2621195d6488992 srecord-1.65.0-Source.tar.gz https://prdownloads.sourceforge.net/sourceforge/srecord/
+
+# DESTDIR a-like and different notion of STRIP, ...
+var_append makeinstopt ' ' RPM_BUILD_ROOT=$root

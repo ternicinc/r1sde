@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ltmm/ltmm.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] C++ interface to libltdl
+
+[T] For many kinds of applications, the ability of loading code into
+[T] the application dynamically (at runtime) is wanted. As C++ is
+[T] growing in popularity, that feature should be readily avaliable
+[T] to the C++ programmer. This set of headers provide such features
+[T] by wrapping the highly portable C library libltdl.
+
+[U] http://cholm.home.cern.ch/cholm/misc/ltmm/
+
+[A] Christian Holm <cholm@nbi.dk>
+[M] Minto van der Sluis <minto@multimach.com>
+
+[C] extra/development
+
+[E] opt doxygen
+[E] opt graphviz
+
+[L] LGPL
+[V] 1.5
+[P] O -----5---9 194.800
+
+[D] 9a052d1fff81a215f50a3539be5ae08888d94f32c5522518a20cc69d ltmm-1.5.tar.gz http://cholm.home.cern.ch/cholm/misc/

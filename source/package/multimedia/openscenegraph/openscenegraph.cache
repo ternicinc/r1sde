@@ -1,0 +1,44 @@
+[TIMESTAMP] 1760541260 Wed Oct 15 17:14:20 2025
+[BUILDTIME] 1250 (9)
+[SIZE] 38.20 MB, 812 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] cmake
+[DEP] coreutils
+[DEP] curl
+[OPT] cyrus-sasl2
+[DEP] diffutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] grep
+[DEP] gst-plugins-base
+[DEP] gstreamer
+[DEP] gzip
+[OPT] jasper
+[DEP] libgif
+[DEP] libglvnd
+[DEP] libjpeg
+[DEP] libpng
+[DEP] librsvg
+[OPT] librvg
+[DEP] libsdl
+[DEP] libtiff
+[OPT] libvncserver
+[DEP] libx11
+[DEP] libxinerama
+[DEP] libxml
+[DEP] libxrandr
+[DEP] libxrender
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[OPT] poppler
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto
+[DEP] zlib

@@ -1,0 +1,14 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/gtk+12/config.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+if pkgcheck "gtk+12" X
+then
+	menu_begin MENU_PKG_GTK12 'Gtk+1.2 Package Options'
+		bool 'Use locale fonts on input only' \
+			SDECFG_PKG_GTK12_INPUT_LOCALE 0
+	menu_end
+fi

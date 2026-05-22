@@ -1,0 +1,20 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/smpeg/hotfix-gcc41.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -Nur smpeg-2003-05-09-orig/MPEGaudio.h smpeg-2003-05-09/MPEGaudio.h
+--- smpeg-2003-05-09-orig/MPEGaudio.h	2001-07-17 19:52:24.000000000 +0000
++++ smpeg-2003-05-09/MPEGaudio.h	2006-04-02 17:37:38.997298250 +0000
+@@ -369,4 +369,10 @@
+   double timestamp[N_TIMESTAMPS];
+ };
+ 
++    void Play_MPEGaudioSDL(void *udata, Uint8 *stream, int len);
++    int Play_MPEGaudio(MPEGaudio *audio, Uint8 *stream, int len);
++#ifdef THREADED_AUDIO
++    int Decode_MPEGaudio(void *udata);
++#endif
++
+ #endif /* _MPEGAUDIO_H_ */

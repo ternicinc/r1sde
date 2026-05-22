@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/raft/raft.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Asynchronous C implementation of the Raft consensus protocol
+
+[T] Fully asynchronous C implementation of the Raft consensus protocol.
+
+[U] https://github.com/cowsql/raft/
+
+[A] RAFT contributors
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/tool
+[F] CROSS
+
+[L] LGPL3
+[V] 0.22.1
+[P] X -----5---9 200.000
+
+[D] e29be402d9ceb9c3c5b087359d042a618ca1710be4fb98f48b57ca33 raft-0.22.1.tar.gz https://github.com/cowsql/raft/archive/v0.22.1/
+
+autogen=1

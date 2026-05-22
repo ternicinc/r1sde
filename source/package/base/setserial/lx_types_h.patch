@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/setserial/lx_types_h.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./setserial.c.orig	Sun Nov 14 12:29:08 1999
++++ ./setserial.c	Sun Nov 14 12:30:09 1999
+@@ -22,6 +22,7 @@
+ #ifdef HAVE_LINUX_HAYESESP_H
+ #include <linux/hayesesp.h>
+ #endif
++#include <linux/types.h>
+ #include <linux/serial.h>
+ 
+ #define VERSION_STR "2.15"

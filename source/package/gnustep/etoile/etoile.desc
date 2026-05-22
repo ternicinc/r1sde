@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/etoile/etoile.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A document-centric desktop and post-desktop environment
+
+[T] The È Étoilé project aims to produce a document-centric desktop an
+[T] post-desktop environment. The project is built on top of GNUstep, a
+[T] high-quality Free Software implementation of the OpenStep specification
+[T] from Sun and NeXT and popularised by Apple as Cocoa.
+
+[U] https://github.com/etoile/Etoile
+
+[A] Quentin Mathe <qmathe@club-internet.fr>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] BSD
+[V] 46c3b6f
+
+[D] 181e331f6d8291bece6ab9a69f162e55f4b15c67cf3183a9d6b6c369 etoile-46c3b6f.tar.gz git+https://github.com/etoile/Etoile.git 46c3b6f
+
+. $base/package/*/*/gnustep-conf.in
+
+hook_add postmake 5 ./setup.sh
+# failed due some ln -s, and should use system one anyway
+export addresseskit=no addressmanager=no
+# used internally
+var_remove_regex makeopt ' ' 'prefix=.*'

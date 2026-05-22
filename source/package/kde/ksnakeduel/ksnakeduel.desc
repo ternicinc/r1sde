@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ksnakeduel/ksnakeduel.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Snake duel game
+
+[T] KSnakeDuel is a simple Tron-Clone. You can play KSnakeDuel against the computer or a friend.
+
+[U] https://apps.kde.org/ksnakeduel/
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[E] opt kdoctools docbook-xml docbook-xsl
+
+[L] GPL
+[V] 26.04.1
+
+[CV-GROUP] kde-gear
+[D] fb1fe1faff6816414890de12c9ea7157ecacf3ef380756d8d30276b3 ksnakeduel-26.04.1.tar.xz https://download.kde.org/stable/release-service/26.04.1/src/
+
+. $base/package/*/*/kde-conf.in

@@ -1,0 +1,24 @@
+
+[TIMESTAMP] 1707069033 Sun Feb  4 17:50:33 2024
+[BUILDTIME] 12 (9)
+[SIZE] 2.30 MB, 67 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[OPT] lame
+[DEP] libao
+[DEP] libmad
+[DEP] libogg
+[DEP] libvorbis
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] unzip

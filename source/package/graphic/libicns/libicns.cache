@@ -1,0 +1,20 @@
+
+[TIMESTAMP] 1707774565 Mon Feb 12 21:49:25 2024
+[BUILDTIME] 3 (9)
+[SIZE] 0.31 MB, 17 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[OPT] jasper
+[DEP] libpng
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar

@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/highway/highway.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Efficient and performance-portable SIMD
+
+[T] Highway is a C++ library for SIMD (Single Instruction, Multiple Data),
+[T] i.e. applying the same operation to multiple 'lanes' using a single CPU
+[T] instruction
+
+[U] https://github.com/google/highway
+
+[A] Google
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] APL
+[V] 1.4.0
+[P] X -----5---9 112.600
+
+[D] 7d60c74647e9ff47aae5a8d217f4d8529313a62734f5c0d726ac6e2a highway-1.4.0.tar.gz https://github.com/google/highway/archive/1.4.0/
+
+runmeson=0
+var_append cmakeopt ' ' -DHWY_ENABLE_TESTS=OFF

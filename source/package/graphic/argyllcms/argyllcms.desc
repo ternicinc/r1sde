@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/argyllcms/argyllcms.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An open source, ICC compatible color management system
+
+[T] Argyll is an open source, ICC compatible color management system. It
+[T] supports accurate ICC profile creation for scanners, CMYK printers, film
+[T] recorders and calibration and profiling of displays. Spectral sample
+[T] data is supported, allowing a selection of illuminants observer types,
+[T] and paper fluorescent whitener additive compensation
+
+[U] https://www.argyllcms.com/
+
+[A] Graeme Gill <Graeme@argyllcms.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 3.5.0
+
+[D] 1e2e86296073f5e6d7324f753d9678ddad6873d29a424b261cd78a5f Argyll_V3.5.0_src.zip http://www.argyllcms.com/
+
+[ $prefix_auto = 1 ] && prefix=opt/argyllcms && set_confopt
+
+pkgprefix -t libx11
+
+var_append CC_WRAPPER_APPEND ' ' -std=gnu17
+export LINKFLAGS="-L$root/$(pkgprefix libdir libx11)"
+unset AR
+
+runmake=0
+hook_add premake 5 "jam -q -fJambase -j${SDECFG_PARALLEL}"
+hook_add inmake 5 "jam -q -fJambase -j${SDECFG_PARALLEL} install"
+hook_add postmake 5 "cp -afv bin/* $root$bindir"

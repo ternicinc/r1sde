@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/svt-av1/svt-av1.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Scalable Video Technology for AV1
+
+[T] The Scalable Video Technology for AV1 (SVT-AV1 Encoder and Decoder) is an
+[T] AV1-compliant encoder/decoder library core. The SVT-AV1 encoder
+[T] development is a work-in-progress targeting performance levels applicable
+[T] to both VOD and Live encoding / transcoding video applications.
+
+[U] https://gitlab.com/AOMediaCodec/SVT-AV1/
+
+[A] Netflix
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+# always add for x86
+[E] add nasm
+
+[L] BSD
+[V] 4.1.0
+[P] X -----5---9 124.600
+
+[D] 6d271429667895201807ed842df73462976de53bf93171803f4be4be SVT-AV1-4.1.0.tar.gz https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v4.1.0/
+
+[ "$arch" = arm64 ] && var_remove GCC_WRAPPER_REMOVE ' ' "-march*"

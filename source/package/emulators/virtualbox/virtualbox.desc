@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/virtualbox/virtualbox.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A general-purpose full virtualizer for x86 hardware
+
+[T] InnoTek VirtualBox is a general-purpose full virtualizer for x86 hardware.
+[T] Targeted at server, desktop and embedded use, it is a professional-quality
+[T] virtualization solution that is now also Open Source Software.
+
+[U] https://www.virtualbox.org/
+
+[A] InnoTek
+[A] Sun Microsystems
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/emulator
+[R] + arm64 x86-64
+
+[E] add qt6scxml
+
+[L] GPL
+[V] 7.2.8
+
+[CV-URL] http://www.virtualbox.org/wiki/Downloads
+[D] b523876b15a427c6795ab09a30ed3cfe947d07c0e0834e568b8120ee VirtualBox-7.2.8.tar.bz2 http://download.virtualbox.org/virtualbox/7.2.8/
+
+makeopt= makeinstopt= confopt=
+
+var_append confopt ' ' "--disable-hardening --disable-kmods --disable-java"
+
+hook_add inmake 5 "source env.sh; kmk -j$SDECFG_PARALLEL"

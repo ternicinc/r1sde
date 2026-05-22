@@ -1,0 +1,21 @@
+
+[TIMESTAMP] 1172744780 Thu Mar  1 10:26:20 2007
+[BUILDTIME] 305 (5)
+[SIZE] 6.55 MB, 19 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] boost
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] zlib

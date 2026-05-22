@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-jsonschema-specifications/python-jsonschema-specifications.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The JSON Schema meta-schemas and vocabularies, exposed as a Registry
+
+[T] JSON support files from the JSON Schema Specifications (metaschemas,
+[T] vocabularies, etc.), packaged for runtime access from Python as a
+[T] referencing-based Schema Registry.
+
+[U] https://github.com/python-jsonschema/jsonschema-specifications
+
+[A] Julian Berman <Julian+jsonschema-specifications@GrayVines.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[E] add hatchling
+[E] add hatch-vcs
+[E] add referencing
+
+[L] MIT
+[V] 2025.9.1
+[P] X -----5---9 109.100
+
+[D] aed2f4fdeddba2f0cf807a3078af94f4b35ac46ef5058af4c0c1a0ea jsonschema_specifications-2025.9.1.tar.gz https://files.pythonhosted.org/packages/source/j/jsonschema-specifications/

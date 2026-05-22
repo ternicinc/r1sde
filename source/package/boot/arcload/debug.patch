@@ -1,0 +1,33 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/arcload/debug.patch
+# Copyright (C) 2020 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- arcload-0.5/arcgrub/arcfs.c.vanilla	2020-07-05 14:09:13.737424442 +0200
++++ arcload-0.5/arcgrub/arcfs.c	2020-07-05 14:58:08.849425865 +0200
+@@ -30,7 +30,7 @@
+ 	FILEINFORMATION info;
+ 
+ 	if(ArcOpen((char *)name, OpenReadOnly, &(data->id)) != ESUCCESS) {
+-		grub_error(GRUB_ERR_FILE_NOT_FOUND, "ArcOpen failed");
++		grub_error(GRUB_ERR_FILE_NOT_FOUND, "ArcOpen failed: %s", name);
+ 		return grub_errno;
+ 	}
+ 	data->pos = 0;
+--- arcload-0.5/loader/main.c.vanilla	2025-05-16 14:41:16.146206908 +0200
++++ arcload-0.5/loader/main.c	2025-05-16 14:45:14.086797024 +0200
+@@ -70,11 +70,11 @@
+ 
+ 		if((elf_start >= md_start) && (elf_start <= md_end)) {
+ 			if((md->Type != FreeContiguous) && (md->Type != FreeMemory)) {
+-				printf("Memory not free at given address.\n\r");
++				printf("Memory not free at address: 0x%x\n\r", elf_start);
+ 				return -1;
+ 			}
+ 			if(elf_end > md_end) {
+-				printf("Free memory area at given address is too small.\n\r");
++				printf("Free memory is too small, ends: 0x%x/0x%x\n\r", md_end, elf_end);
+ 				return -1;
+ 			}
+ 			return 0;

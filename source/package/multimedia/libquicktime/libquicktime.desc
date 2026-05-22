@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libquicktime/libquicktime.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library for reading and writing quicktime files
+
+[T] It provides convenient access to quicktime files with a variety of
+[T] supported codecs.
+
+[U] https://libquicktime.sourceforge.net/
+
+[A] libquicktime project
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[E] opt ffmpeg
+[E] opt lame
+[E] opt libogg libvorbis
+[E] opt gtk+2 cairo pango harfbuzz gdk-pixbuf glib at-spi2-core
+
+[L] OpenSource
+[V] 1.2.4
+[P] X -----5---9 174.600
+
+[D] cbebbeb6fe6e899583f4f15fb8404014c5a0181bc3581bbabd1f540e libquicktime-1.2.4.tar.gz https://prdownloads.sourceforge.net/sourceforge/libquicktime/
+
+pkginstalled doxygen || var_append confopt ' ' --without-doxygen

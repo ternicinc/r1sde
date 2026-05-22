@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kamera/kamera.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Digital camera support for KDE
+
+[T] Picture Transfer Protocol (PTP) is an older method of talking to camera
+[T] devices. Kamera provides a configuration tool and a KIO worker to read and
+[T] write to camera devices with this protocol.
+
+[U] https://apps.kde.org/kamera/
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[E] opt kdoctools docbook-xml docbook-xsl
+
+[L] GPL
+[V] 26.04.1
+[P] X -----5---9 162.900
+
+[CV-GROUP] kde-gear
+[D] 0fbc225ad6d131a105aae2dfce2806b66e2b1e8078d91f43ab40c21a kamera-26.04.1.tar.xz https://download.kde.org/stable/release-service/26.04.1/src/
+
+. $base/package/*/*/kde-conf.in

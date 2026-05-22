@@ -1,0 +1,25 @@
+[TIMESTAMP] 1737659617 Thu Jan 23 20:13:37 2025
+[BUILDTIME] 75 (9)
+[SIZE] 13.16 MB, 615 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libelf
+[DEP] libnl
+[DEP] libpcap
+[DEP] linux-header
+[DEP] make
+[DEP] ncurses
+[DEP] openssl
+[DEP] pciutils
+[DEP] pcre
+[OPT] perl
+[DEP] sed
+[DEP] tar
+[OPT] tcp_wrappers

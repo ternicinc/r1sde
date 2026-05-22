@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mimalloc/mimalloc.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A compact general purpose allocator with excellent performance
+
+[T] A compact general purpose allocator with excellent performance (in secure mode).
+
+[U] https://github.com/microsoft/mimalloc
+
+[A] Mimalloc1 Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+
+[V] 3.3.2
+[L] MIT
+
+[D] e6443c18ee3da8f8c72aed6e836834892919558fe05a101d49325f6a mimalloc-3.3.2.tar.gz https://github.com/microsoft/mimalloc/archive/v3.3.2/

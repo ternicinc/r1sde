@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/planner/planner.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A project management application (Gnome frontend)
+
+[T] Planner, formerly known as MrProject, a project managment tool for the
+[T] Gnome desktop, for planning, scheduling and tracking projects.
+
+[U] http://developer.imendio.com/wiki/Planner
+
+[A] Richard Hult <richard@imendio.com>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/office extra/desktop/gnome
+[F] NOPARALLEL
+
+[L] GPL
+[V] 0.14.92
+
+[CV-URL] https://download.gnome.org/sources/planner/cache.json
+[D] bb5fbfff213b3213e2b1111736cc10d4a4895ffafb774a52de7ed781 planner-0.14.92.tar.xz https://download.gnome.org/sources/planner/0.14/
+
+. $base/package/*/*/gnome-conf.in
+var_append makeinstopt ' ' UPDATE_DESKTOP_DATABASE=false
+var_append makeinstopt ' ' UPDATE_MIME_DATABASE=false

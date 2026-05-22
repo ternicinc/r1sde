@@ -1,0 +1,23 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/xboard/subconfig-games.hlp
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+MENU_PKG_GAMES_XBOARD
+  Here you'll find options for XBoard
+
+SDECFG_PKG_XBOARD_XAW3D
+  use Xaw3d instead of Xaw
+
+SDECFG_PKG_XBOARD_XPM
+  use libXpm if found
+
+SDECFG_PKG_XBOARD_PTYS
+  use of pseudo-ttys instead of pipes with child processes
+
+SDECFG_PKG_XBOARD_ZIPPY
+  enable features for interfacing a chess program to ICS
+
+SDECFG_PKG_XBOARD_SIGINT
+  sending SIGINT (^C) wakes up GNU Chess instead of typing a command
+  wakes up GNU Chess

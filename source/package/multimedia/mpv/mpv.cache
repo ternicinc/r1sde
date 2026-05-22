@@ -1,0 +1,52 @@
+[TIMESTAMP] 1766349748 Sun Dec 21 21:42:28 2025
+[BUILDTIME] 45 (9)
+[SIZE] 5.67 MB, 36 files
+
+[OPT] alsa-lib
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] docutils
+[DEP] ffmpeg
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[OPT] jack
+[DEP] lcms2
+[OPT] libarchive
+[DEP] libass
+[OPT] libbluray
+[OPT] libcaca
+[OPT] libcdio
+[OPT] libcdio-paranoia
+[DEP] libdisplay-info
+[DEP] libdrm
+[OPT] libdvdnav
+[DEP] libglvnd
+[DEP] libjpeg
+[DEP] libplacebo
+[DEP] libva
+[DEP] libx11
+[DEP] libxfixes
+[OPT] libxpresent
+[DEP] linux-header
+[OPT] luajit
+[DEP] mesa
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pipewire
+[OPT] pulseaudio
+[DEP] python
+[DEP] rubberband
+[DEP] sed
+[DEP] tar
+[OPT] uchardet
+[OPT] vulkan-headers
+[OPT] wayland
+[DEP] wayland-protocols
+[DEP] xkbcommon
+[DEP] xorgproto
+[DEP] zlib

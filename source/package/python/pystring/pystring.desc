@@ -1,0 +1,28 @@
+[COPY] --- R1-COPYRIGHT-BEGIN ---
+[COPY] r1/package/*/pystring/pystring.desc
+[COPY] Copyright (C) 2026 - 2026 The R1 SDE Project
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- R1-COPYRIGHT-END ---
+
+[I] A collection of C++ functions which match the interface
+
+[T] Pystring is a collection of C++ functions which match the interface and
+[T] behavior of python's string class methods using std::string. Implemented
+[T] in C++.
+
+[U] https://github.com/imageworks/pystring
+
+[A] Sony Pictures Imageworks
+[M] Allexander Bergmans <abm@libregrad.pp.ua>
+
+[F] CROSS OBJDIR
+[C] extra/development
+
+[L] BSD
+[V] 1.1.5
+[P] X ?----5---9 136.850
+
+[D] 3b21ad419a71fafb0e83e2f5a5efdafb3df286264eac7ca9178d6af2 pystring-1.1.5.tar.gz https://github.com/imageworks/pystring/archive/v1.1.5/
+
+var_append cmakeopt ' ' -DCMAKE_POLICY_VERSION_MINIMUM=3.5

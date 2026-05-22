@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/chromium-bsu/chromium-bsu.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A fast 3D game
+
+[T] Chromium is a top-down scrolling ship shoot game. Ii is nice to
+[T] demonstrate the video possiblities of Linux and for breeak in during
+[T] sessions ... . (It also seems to be a quick SDL, OpenAL, smpeg whatever
+[T] LOKI tech demo ...)
+
+[A] Mark B. Allan
+[M] René Rebe <rene@exactco.de>
+
+[U] https://chromium-bsu.sourceforge.net/
+
+[C] extra/game
+[L] Artistic
+[V] 0.9.16.1
+
+[D] ef61cb8ed46616a6f7409fade72733ec7e2ac230f57a1267d5ee6ee1 chromium-bsu-0.9.16.1.tar.gz https://prdownloads.sourceforge.net/sourceforge/chromium-bsu/
+[D] 49d66c2bb90162fe681ceebc59b653ff955d3a6c417de4b93b2818cb chromium-data-0.9.12.tar.gz https://prdownloads.sourceforge.net/sourceforge/chromium-bsu/
+
+chromium_install() {
+	tar xf `match_source_file -p -data`
+	mkdir -p $root$datadir/chromium
+	cp -ar Chromium-*/data/* $root$datadir/chromium/
+}
+hook_add postmake 5 chromium_install
+
+# maybe we should improve the libglpng package :-)
+var_append GCC_WRAPPER_APPEND ' ' '-L/usr/X11R7/lib/ -lGL -lm'

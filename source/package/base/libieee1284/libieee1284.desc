@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libieee1284/libieee1284.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A parallel port library
+
+[T] Libieee1284 is intended to be used by applications that need to
+[T] communicate with (or at least identify) devices that are attached via
+[T] a parallel port.
+
+[U] http://cyberelk.net/tim/libieee1284/
+
+[A] Tim Waugh <twaugh@redhat.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+
+[R] + x86 x86-64
+
+[L] GPL
+[V] 0.2.11
+[P] X -----5---9 200.000
+
+[D] 9824daa8ba774cac9845cd219983f8bc6128414a773856183f06ae70 libieee1284-0.2.11.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/libieee1284/

@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/fpm2/fpm2.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An application that allows you to securely store your passwords
+
+[T] Passwords are encrypted with the AES-256 algorithm. Key for encryption
+[T] is generated with PBKDF2 using HMAC-SHA-256 with 8192 iterations
+
+[U] https://als.regnet.cz/fpm2/
+
+[A] John Conneely (orig fpm), Ales Koval (current)
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+
+[L] GPL
+[V] 0.90.2
+
+[D] d520d3552e8b21c921133774b39a0693638e3f121524aa68c4b368b8 fpm2-0.90.2.tar.xz https://als.regnet.cz/fpm2/download/

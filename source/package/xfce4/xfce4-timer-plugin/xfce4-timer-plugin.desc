@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfce4-timer-plugin/xfce4-timer-plugin.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A XFCE time alarm panel plugin
+
+[T] This is a simple plugin that lets the user run an alarm at a specified time
+[T] or at the end of a specified countdown period.
+
+[U] http://xfce-goodies.berlios.de/
+
+[A] Kemal Ilgar Eroglu
+[M] Johan Boyé <linuxmasterjedi@free.fr>
+
+[C] extra/desktop/xfce
+[F] CROSS
+
+[L] BSD
+[V] 1.8.0
+
+[D] 1215e3b6e4c9839dabb80934ca15350ccc901892adaf7fa569a308bb xfce4-timer-plugin-1.8.0.tar.xz https://archive.xfce.org/src/panel-plugins/xfce4-timer-plugin/1.8/
+
+. $base/package/xfce4/*/xfce4-conf.in
+var_append GCC_WRAPPER_APPEND ' ' "$(pkg-config x11 --libs-only-L)"

@@ -1,0 +1,13 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/xorg-server/config.in
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+if pkgcheck libx11 X
+then
+ 	menu_begin MENU_PKG_X11 'X11 Options'
+	text 'Install prefix for X11 packages' \
+	     SDECFG_PKG_X11_PREFIX "usr/X11R7"
+	menu_end
+fi

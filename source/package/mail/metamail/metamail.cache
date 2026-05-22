@@ -1,0 +1,17 @@
+
+[TIMESTAMP] 1133997743 Thu Dec  8 00:22:23 2005
+[BUILDTIME] 5 (9)
+[SIZE] 0.41 MB, 70 files
+
+[DEP] bdftopcf
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] mkfontscale
+[DEP] ncurses
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar

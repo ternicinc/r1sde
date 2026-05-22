@@ -1,0 +1,53 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/evolution/evolution.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Integrated Workgroup and Personal Information Management
+
+[T] Ximian Evolution(TM) is the premier personal and workgroup information
+[T] management solution for Linux and UNIX. The software seamlessly
+[T] integrates email, calendaring, meeting scheduling, contact management
+[T] and online task lists in one powerful, fast, and easy to use
+[T] application. Ximian Evolution also delivers a comprehensive set of
+[T] features that help you keep your work organized and your projects on
+[T] track. Automatic email indexing keeps your information at your
+[T] fingertips. The unique Ximian vFolders^(TM) are virtual folders you use
+[T] to create and save powerful contextual views of your email messages.
+
+[U] https://gnome.pages.gitlab.gnome.org/evolution/help/
+
+[A] Ximian <hello@ximian.com>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/office extra/desktop/gnome
+[F] NO-AS-NEEDED
+
+[L] GPL
+[V] 3.60.1
+[P] X -----5---9 179.200
+
+[CV-URL] http://ftp.gnome.org/pub/gnome/sources/evolution/cache.json
+[CV-FLAGS] ODD-UNSTABLE
+[D] 3fa0ff67576ed118b2d3e9b98c605cb507bf2d23f185558ff0a325c8 evolution-3.60.1.tar.xz http://ftp.gnome.org/pub/gnome/sources/evolution/3.60/
+
+. $base/package/*/*/gnome-conf.in
+. $base/package/*/*/evolution-conf.in
+
+# still missing packages
+var_append cmakeopt ' ' -DENABLE_YTNEF=OFF
+var_append cmakeopt ' ' -DENABLE_TEXT_HIGHLIGHT=OFF
+var_append cmakeopt ' ' -DENABLE_PST_IMPORT=OFF
+pkginstalled openldap || var_append cmakeopt ' ' -DWITH_OPENLDAP=OFF
+
+var_append GCC_WRAPPER_INSERT ' ' "-c?:-L`pkgprefix libdir libx11` -lX11 -lXrender"
+
+if pkginstalled openldap; then
+  pkgprefix -t openldap
+  var_append GCC_WRAPPER_INSERT ' ' "-I$(pkgprefix includedir openldap)"
+  var_append GCC_WRAPPER_INSERT ' ' "-L$(pkgprefix libdir openldap)"
+else
+  var_append confopt ' ' -DWITH_OPENLDAP=OFF
+fi

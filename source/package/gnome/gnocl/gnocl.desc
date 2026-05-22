@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnocl/gnocl.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Tcl package for GTK and Gnome libraries
+
+[T] gnocl is a GTK+ / Gnome extension for the programming language
+[T] Tcl, loosely modeled after the Tk package. It provides easy to use
+[T] commands to build quickly GTK+ / Gnome-compliant applications
+[T] including a canvas widget, GConf, and drag and drop.
+
+[U] https://www.dr-baum.net/gnocl/
+
+[A] Peter G. Baum <peter@dr-baum.net>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/tool
+[F] FPIC
+
+[L] BSD
+[V] 0.9.96
+
+[D] 77ea22d2a548fdd32de98f01efd4517666b58d26a20d2723590a09cd gnocl-0.9.96-01-01-12.tar.bz2 https://download.sourceforge.net/project/gnocl/
+
+var_append GCC_WRAPPER_APPEND ' ' -std=gnu11
+hook_add preconf 3 "cd src"
+. $base/package/*/*/gnome-conf.in

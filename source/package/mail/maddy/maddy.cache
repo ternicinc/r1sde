@@ -1,0 +1,16 @@
+[TIMESTAMP] 1774513042 Thu Mar 26 09:17:22 2026
+[BUILDTIME] 60 (9)
+[SIZE] 43.11 MB, 10 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] go
+[DEP] grep
+[DEP] gzip
+[DEP] scdoc
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

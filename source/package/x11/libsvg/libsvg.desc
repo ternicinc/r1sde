@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libsvg/libsvg.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library for SVG files
+
+[T] Libsvg provides a parser for SVG content in files or buffers. - Libsvg
+[T] does not do any rendering, but instead provides a function-based interface
+[T] that can be used by various rendering engines.
+
+[U] https://cairographics.org/
+
+[A] Raph Levien <raph@acm.org>
+[A] Carl Worth <cworth@isi.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/x11
+[F] CROSS
+
+[L] LGPL
+[V] 0.1.4
+[P] X -----5---9 200.020
+
+[D] a63c4ebdd5caef2eec634e567175534de38f00e54a01c495a364b21d libsvg-0.1.4.tar.gz http://cairographics.org/snapshots/

@@ -1,0 +1,39 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/binutils/parse-config
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+split_debug() {
+	local tmp="$(mktemp)"	# intermediate file
+	pushd $root
+
+	echo "Splitting debug information"
+
+	# guard against already existing debug files
+	grep -v "$SDECFG_DEBUG_PATH/.*[.]debug$" $builddir/flist.txt |
+	while read f; do
+		if [[ $SDECFG_DEBUG_PATH = /* ]]; then
+			local dbg="$root$SDECFG_DEBUG_PATH/$f.debug"
+		else
+			local dbg="$root/${f%/*}/$SDECFG_DEBUG_PATH/${f##*/}.debug"
+		fi
+
+		# skip if not an object file
+		$OBJCOPY --only-keep-debug "$f" "$tmp" 2>/dev/null || continue
+
+		# create the debug destination dir
+		mkdir -p ${dbg%/*}
+		mv "$tmp" "$dbg"
+		$OBJCOPY --strip-debug "$f"
+		$OBJCOPY --add-gnu-debuglink="$dbg" "$f"
+		add_flist "$dbg"
+	done
+
+	rm $tmp
+	popd
+}
+
+if [ "$SDECFG_DEBUG" = 2 ]; then
+	hook_add postflist 5 split_debug
+fi

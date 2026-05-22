@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pyparsing/pyparsing.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Python library for creating PEG parsers
+
+[T] The pyparsing module is an alternative approach to creating and executing
+[T] simple grammars, vs. the traditional lex/yacc approach, or the use of
+[T] regular expressions. The pyparsing module provides a library of classes
+[T] that client code uses to construct the grammar directly in Python code.
+
+[U] https://pypi.org/project/pyparsing/
+
+[A] Paul T. McGuire
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[L] MIT
+[E] add python-flit-core
+
+[V] 3.3.2
+[P] X -----5---9 110.000
+
+[D] bd41cc497cb6235fd6db01f42eb1f2c0c14e97cc5aeb7930ae20e369 pyparsing-3.3.2.tar.gz https://github.com/pyparsing/pyparsing/releases/download/3.3.2/

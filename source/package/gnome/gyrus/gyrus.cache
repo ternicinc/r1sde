@@ -1,0 +1,27 @@
+[TIMESTAMP] 1753604927 Sun Jul 27 10:28:47 2025
+[BUILDTIME] 3 (9)
+[SIZE] 0.36 MB, 39 files
+
+[DEP] amtk
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[DEP] glib
+[DEP] grep
+[DEP] gtk+
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[DEP] python
+[DEP] sed
+[DEP] tar

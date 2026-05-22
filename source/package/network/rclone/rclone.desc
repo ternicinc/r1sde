@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rclone/rclone.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Rsync for cloud storage
+
+[T] Rclone is a command-line program to manage files on cloud storage. It is a
+[T] feature-rich alternative to cloud vendors' web storage interfaces.
+
+[U] https://rclone.org/
+
+[A] See MAINTAINERS.md file
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/network
+[F] CROSS
+
+[L] MIT
+[V] 1.74.1
+
+[D] f0e9250c6e7b02e0259b09bb179c1fbeaa7e8820f48b61534451a31c rclone-1.74.1.tar.gz https://github.com/rclone/rclone/archive/v1.74.1/
+
+. $base/package/*/*/go-conf.in
+rungo=0
+GCC_WRAPPER_BYPASS=1

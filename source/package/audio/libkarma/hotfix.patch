@@ -1,0 +1,39 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/libkarma/hotfix.patch
+# Copyright (C) 2007 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- libkarma-0.1.2/tools/Makefile	2011-03-26 03:23:43.000000000 -0600
++++ libkarma-0.1.2/tools/Makefile	2025-07-24 11:46:01.559043015 -0600
+@@ -19,7 +19,8 @@
+ 
+ CC?=gcc
+ CFLAGS+=-Wall -pedantic
+-LDFLAGS+=-ltag_c -lz -L $(LIBDIR)
++LDFLAGS+=-L $(LIBDIR)
++LDLIBS+=-ltag_c -ltag -lstdc++ -lm -lz
+ 
+ OBJS=$(SRCS:.c=.o)
+ TOOLS=riocp chprop karma_helper
+@@ -31,16 +32,16 @@
+ 	@echo Linking tools with the static lib: $(LIBKARMA)
+ 
+ riocp: riocp.c $(OBJS) $(LIBKARMA)
+-	$(CC) $(INCLUDES) $(LDFLAGS) $(CFLAGS) $@.c -o $@ $(OBJS) $(LKARMA) 
++	$(CC) $(INCLUDES) $(LDFLAGS) $(CFLAGS) $@.c -o $@ $(OBJS) $(LKARMA) $(LDLIBS)
+ 
+ chprop: chprop.c $(LIBKARMA)
+-	$(CC) $(INCLUDES) $(LDFLAGS) $(CFLAGS) $@.c -o $@  $(LKARMA)
++	$(CC) $(INCLUDES) $(LDFLAGS) $(CFLAGS) $@.c -o $@  $(LKARMA) $(LDLIBS)
+ 
+ playlist_show: playlist_show.c $(LIBKARMA)
+-	$(CC) $(INCLUDES) $(LDFLAGS) $(CFLAGS) $@.c -o $@  $(LKARMA)
++	$(CC) $(INCLUDES) $(LDFLAGS) $(CFLAGS) $@.c -o $@  $(LKARMA) $(LDLIBS)
+ 
+ karma_helper: karma_helper.c
+-	$(CC) $(INCLUDES) $(CFLAGS) $@.c -o $@ -lusb
++	$(CC) $(INCLUDES) $(CFLAGS) $@.c -o $@ -lusb $(LDLIBS)
+ 
+ install:
+	../install-sh -m 0755 -d $(DESTDIR)$(PREFIX)/bin

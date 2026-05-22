@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/eventviews/eventviews.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library for creating events
+
+[T] EventViews is part of KDE PIM (Personal Information Management), that
+[T] provides tools for managing calendars, tasks, emails and other
+[T] organizational needs. The Library deals with rendering and managing
+[T] calendar events and tasks in KDE applications.
+
+[U] https://www.kde.org
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 26.04.1
+[P] X -----5---9 162.420
+
+[CV-GROUP] kde-gear
+[D] f8ed3e5202253804644e46d673c052522e882600bd7ae71f91074c6a eventviews-26.04.1.tar.xz https://download.kde.org/stable/release-service/26.04.1/src/
+
+. $base/package/*/*/kde-conf.in

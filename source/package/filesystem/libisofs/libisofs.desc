@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libisofs/libisofs.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library to create an ISO-9660 filesystem
+
+[T] Libisofs is a library to create an ISO-9660 filesystem, and supports
+[T] extensions like RockRidge or Joliet. It is also a full featured ISO-9660
+[T] editor, allowing you to modify an ISO image or multisession disc,
+[T] including file addition and removal, change of file names and attributes.
+
+[U] https://libburnia-project.org/
+
+[A] Vreixo Formoso
+[A] Mario Danic
+[A] Thomas Schmitt
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+[F] CROSS
+
+[E] opt acl
+
+[L] GPL
+[V] 1.5.8
+[P] X -----5---9 390.000
+
+[D] 1175a17814089800e75a151f9df6042feddcf83f0b2e5d98494d470e libisofs-1.5.8.tar.gz https://files.libburnia-project.org/releases/
+
+var_append confopt ' ' --disable-ldconfig-at-install

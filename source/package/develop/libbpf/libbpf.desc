@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libbpf/libbpf.desc
+[COPY] Copyright (C) 2021 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A userspace library for loading and interacting with bpf programs
+
+[T] A mirror of bpf-next linux tree bpf-next/tools/lib/bpf directory plus its
+[T] supporting header files. The version of the package reflects the version
+[T] of ABI.
+
+[U] https://github.com/libbpf/libbpf
+
+[A] Linus Torvalds <torvalds@osdl.org>
+[M] Tomas Glozar <tglozar@gmail.com>
+
+[C] extra/development
+[F] CROSS
+
+[L] LGPL BSD
+[V] 1.7.0
+[P] X -----5---9 139.000
+
+[D] f369e03692bfdb0030bdc9e7a226e218d9c7f2110da74a0204753cf0 libbpf-1.7.0.tar.gz https://github.com/libbpf/libbpf/archive/v1.7.0/
+
+var_append makeopt ' ' -Csrc
+var_append makeinstopt ' ' -Csrc
+var_append makeinstopt ' ' "DESTDIR=$root LIBSUBDIR=${libdir##*/}"

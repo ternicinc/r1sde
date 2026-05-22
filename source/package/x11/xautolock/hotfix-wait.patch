@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/xautolock/hotfix-wait.patch
+# Copyright (C) 2020 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- xautolock-2.2/src/engine.c.vanilla	2020-02-20 20:50:38.027123423 +0000
++++ xautolock-2.2/src/engine.c	2020-02-20 20:51:12.091123247 +0000
+@@ -211,7 +211,7 @@
+   if (lockerPid)
+   {
+ #if !defined (UTEKV) && !defined (SYSV) && !defined (SVR4)
+-    union wait  status;      /* childs process status */
++    int status;      /* childs process status */
+ #else /* !UTEKV && !SYSV && !SVR4 */
+     int         status = 0;  /* childs process status */
+ #endif /* !UTEKV && !SYSV && !SVR4 */

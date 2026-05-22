@@ -1,0 +1,21 @@
+[TIMESTAMP] 1755860816 Fri Aug 22 13:06:56 2025
+[BUILDTIME] 210 (9)
+[SIZE] 0.96 MB, 61 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] gawk
+[DEP] grep
+[DEP] kconfig
+[DEP] linux-header
+[DEP] make
+[DEP] modemmanager
+[DEP] pkgconfig
+[DEP] qt6base
+[DEP] sed
+[DEP] tar
+[DEP] xz

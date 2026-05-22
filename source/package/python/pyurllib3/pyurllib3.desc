@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pyurllib3/pyurllib3.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Python HTTP library
+
+[T] HTTP library with thread-safe connection pooling, file post, and more
+[T] for Python.
+
+[U] https://github.com/urllib3/urllib3
+
+[A] Andrey Petrov and contributors
+[M] René Rebe <rene@exactco.de>
+
+[C] base/development
+[E] add hatchling
+[E] add hatch-vcs
+
+[L] MIT
+[V] 1.26.12
+[P] X -----5---9 109.605
+
+[D] bfc6dd4bd82cb571807a8f7c28205e5ed13f235ba5481beda94614ae urllib3-1.26.12.tar.gz https://github.com/urllib3/urllib3/releases/download/1.26.12/

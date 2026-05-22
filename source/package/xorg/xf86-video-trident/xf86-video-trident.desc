@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-video-trident/xf86-video-trident.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Xorg Trident video driver
+
+[T] This driver supports Trident based video cards. The trident driver supports
+[T] PCI and AGP video cards based on the following Trident chips: Blade:
+[T] Blade3D, CyberBlade series i1, i7 (DSTN), i1, i1 (DSTN), Ai1, Ai1 (DSTN),
+[T] CyberBlade/e4, CyberBladeXP, CyberBladeAi1/XP, BladeXP. Image: 3DImage975,
+[T] 3DImage985, Cyber9520, Cyber9525, Cyber9397, Cyber9397DVD. ProVidia: 9682,
+[T] 9685, Cyber9382, Cyber9385, Cyber9388. TGUI: 9440AGi, 9660, 9680.
+[T] ISA/VLBus: 8900C, 8900D, 9000, 9200CXr, Cyber9320, 9400CXi, 9440AGi.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS FCOMMON.mips FCOMMON.mips64
+[R] + alpha x86 x86-64
+
+[L] OpenSource
+[V] 1.4.0
+
+[D] bda4036b679cd10a5a01d2fffe54ba9b575791076a0d8fe8fca40619 xf86-video-trident-1.4.0.tar.xz http://xorg.freedesktop.org/releases/individual/driver/
+
+. package/*/*/modular-x-conf.in

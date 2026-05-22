@@ -1,0 +1,20 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/gtk+12/config.hlp
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+MENU_PKG_GTK12
+  Here you will find options for gtk+1.
+
+SDECFG_PKG_GTK12_INPUT_LOCALE
+  gtk+1 is unable to remap fonts, and so uses only fonts corresponding
+  to your locale setting (if any). With the NLS disabled that doesn't
+  make so much sense, because the gnome applications are not translated
+  anyway. Check here if you want the locale fonts to be used only on
+  input, for example if have only a few fonts corresponding to your
+  locale and gtk+1 apps look ugly, but take into account that all other
+  items, for example filenames, will not be displayed in your language.
+  Don't check this option if you have NLS enabled, your codepage is not
+  ISO8859-1 and you have applications translated to your language.

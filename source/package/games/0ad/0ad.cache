@@ -1,0 +1,48 @@
+[TIMESTAMP] 1745681316 Sat Apr 26 17:28:36 2025
+[BUILDTIME] 1500 (9)
+[SIZE] 51.78 MB, 11 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] boost
+[DEP] cargo
+[DEP] clang
+[DEP] coreutils
+[DEP] curl
+[DEP] cxxtest
+[DEP] diffutils
+[DEP] enet
+[DEP] file
+[DEP] fmt
+[DEP] freetype
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] icu4c
+[DEP] libglvnd
+[DEP] libogg
+[DEP] libpng
+[DEP] libsdl2
+[DEP] libsodium
+[DEP] libvorbis
+[DEP] libx11
+[DEP] libxml
+[DEP] linux-header
+[DEP] llvm
+[DEP] make
+[DEP] miniupnpc
+[DEP] nvidia-texture-tools
+[DEP] openal
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] python
+[DEP] rustc
+[DEP] sed
+[DEP] setuptools
+[DEP] sysfiles
+[DEP] tar
+[DEP] util-linux
+[DEP] wxwidgets
+[DEP] xorgproto
+[DEP] xz
+[DEP] zlib

@@ -1,0 +1,43 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/wxpython/wxpython.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] WxWindows bindings for Python
+
+[T] WxPython is a GUI toolkit for the Python programming language. It allows
+[T] Python programmers to create programs with a robust, highly functional
+[T] graphical user interface, simply and easily. It is implemented as a Python
+[T] extension module (native code) that wraps the popular wxWidgets cross
+[T] platform GUI library, which is written in C++.
+
+[U] https://www.wxpython.org
+
+[A] <zeitlin@dptmaths.ens-cachan.fr>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] LGPL
+[V] 3.0.2.0
+[P] X -----5---9 147.000
+
+[D] 45d58ecbb6bba75edd0d7fd98f934386b3e8fbfa199e134e29cec898 wxPython-src-3.0.2.0.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/wxpython/
+
+if pkginstalled gtk+2; then
+	WXPORT=gtk2
+	var_append pyconfopt ' ' UNICODE=1
+else
+	WXPORT=gtk
+fi
+var_append pyconfopt ' ' WXPORT=$WXPORT
+
+# we only want the wxpython stuff, so we'll just build in this subdir
+hook_add preconf 5 'cd wxPython'
+#var_append pyconfopt ' ' BUILD_GLCANVAS=0
+
+var_append pyconfopt ' ' WX_CONFIG=$root/usr/bin/wx-config
+
+createdocs=0

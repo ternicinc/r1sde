@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/tnef/tnef.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A program for unpacking ms-tnef type MIME attachments
+
+[T] TNEF provides a way to unpack those pesky Microsoft MS-TNEF MIME
+[T] attachments. It operates like tar in order to upack any files which may
+[T] have been put into the MS-TNEF attachment instead of being attached
+[T] seperately.
+
+[U] https://sourceforge.net/projects/tnef
+
+[A] Mark Simpson <damned@world.std.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 1.4.18
+
+[D] 17e5efa176adffc485d462ea87ed045dc048d5951f6d1b971848e9dc tnef-1.4.18.tar.gz https://github.com/verdammelt/tnef/archive/1.4.18/
+
+autogen=2
+var_append CC_WRAPPER_APPEND ' ' -std=gnu17

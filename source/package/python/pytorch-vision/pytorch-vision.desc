@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pytorch-vision/pytorch-vision.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Datasets, Transforms and Models specific to Computer Vision
+
+[T] This library is part of the PyTorch project. PyTorch is an open source
+[T] machine learning framework.
+
+[U] https://pytorch.org/vision
+
+[A] Facebook, Inc
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS OBJDIR
+[C] extra/development
+
+[L] BSD
+[V] 0.27.0
+[P] X -----5---9 310.000
+
+[D] 680253f2b26f25b4be8491d2deb988c43e8bcd071fb691d3e33879c7 pytorch-vision-v0.27.0.tar.gz https://github.com/pytorch/vision/archive/refs/tags/v0.27.0/
+
+var_append cmakeopt ' ' -DCMAKE_PREFIX_PATH=$libdir/python3.12/site-packages/torch/share/cmake/Torch/
+(pkginstalled libjpeg || pkginstalled libjpeg-turbo) || var_append cmakeopt ' ' -DWITH_JPEG=OFF
+pkginstalled libpng || var_append cmakeopt ' ' -DWITH_PNG=OFF
+#pkginstalled libavif && var_append cmakeopt ' ' -DWITH_AVIF=ON
+#pkginstalled libwebp && var_append cmakeopt ' ' -DWITH_WEBP=ON
+hook_add postdoc 3 "cd ..; ${pyscript:-python} setup.py build install --prefix $root/$prefix"

@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dos2unix/dos2unix.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Text file format converters
+
+[T] Dos2Unix / Unix2Dos - Text file format converters.
+
+[U] https://waterlan.home.xs4all.nl/dos2unix.html
+
+[A] Benjamin Lin <blin@socs.uts.edu.au>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[L] BSD
+[V] 7.5.5
+[P] X -----5---9 200.000
+
+[D] 0252f65b54a3a5c689d0877af11e7c5ff6fcb94f29251b15ce2d0e6f dos2unix-7.5.5.tar.gz https://waterlan.home.xs4all.nl/dos2unix/

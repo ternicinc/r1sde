@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/menu-cache/menu-cache.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library creating and utilizing caches to speed up the defined application menus
+
+[T] Libmenu-cache is a library creating and utilizing caches to speed up
+[T] the manipulation for freedesktop.org defined application menus.
+[T] It can be used as a replacement of libgnome-menu of gnome-menus.
+
+[U] https://lxde.org/
+
+[A] LXDE team http://lxde.org/
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/desktop/lxde
+[F] FCOMMON
+
+[L] GPL
+[V] 1.1.1
+[P] X -----5---9 220.005
+
+[D] 66028a41d4a075912ac49700905b09506f47fa9528873de2da3198bb menu-cache-1.1.1.tar.gz https://github.com/lxde/menu-cache/archive/1.1.1/
+
+autogen=1

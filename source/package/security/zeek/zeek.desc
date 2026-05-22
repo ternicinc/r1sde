@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/zeek/zeek.desc
+[COPY] Copyright (C) 2016 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A powerful network analysis framework
+
+[T] Zeek is a powerful network analysis framework that is much different from
+[T] the typical IDS you may know.
+
+[U] https://www.zeek.org
+
+[A] Vern Paxson
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+
+[E] opt nodejs
+
+[L] BSD
+[V] 8.2.0
+
+[D] 93b9d82448ee7f70ac37eed7a096ce04d9d2f41cf50093243f2b9672 zeek-8.2.0.tar.gz https://github.com/zeek/zeek/releases/download/v8.2.0/
+
+var_remove_regex confopt ' ' '--bindir=.*'
+var_remove_regex confopt ' ' '--sbindir=.*'
+var_remove_regex confopt ' ' '--datadir=.*'
+var_remove_regex confopt ' ' '--includedir=.*'
+var_remove_regex confopt ' ' '--infodir=.*'
+var_remove_regex confopt ' ' '--sysconfdir=.*'
+var_remove_regex confopt ' ' '--build=.*'
+var_remove_regex confopt ' ' '--host=.*'

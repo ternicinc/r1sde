@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/glibc/csky.patch.cross0
+# Copyright (C) 2021 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- glibc-2.33/sysdeps/csky/preconfigure.vanilla	2021-05-01 14:34:51.164756147 +0200
++++ glibc-2.33/sysdeps/csky/preconfigure	2021-05-01 14:35:43.370756125 +0200
+@@ -9,6 +9,8 @@
+     hard_float_abi=`$CC $CFLAGS $CPPFLAGS -E -dM -xc /dev/null |
+       sed -n 's/^#define __CSKY_HARD_FLOAT_ABI__ \(.*\)/\1/p'`
+ 
++    abi=2
++
+     case "$abi" in
+     1)
+         echo "glibc does not support abiv1 yet" >&2

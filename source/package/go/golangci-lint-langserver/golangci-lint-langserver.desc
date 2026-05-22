@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/golangci-lint-langserver/golangci-lint-langserver.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Linters runner for Go language server
+
+[T] Linters runner for Go language server.
+
+[U] https://github.com/nametake/golangci-lint-langserver
+
+[A] Shogo NAMEKI
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/tool
+[F] CROSS
+
+[L] MIT
+[V] 0.0.12
+
+[D] 6a30a2cad11820247b776a2c85108bddd2a9531c9e89751c6152f12d golangci-lint-langserver-v0.0.12.tar.gz https://github.com/nametake/golangci-lint-langserver/archive/v0.0.12/
+
+. $base/package/*/*/go-conf.in
+
+runmake=
+hook_add postmake 5 'install -Dvm 755 golangci-lint-langserver $root$bindir/'

@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-xml-libxml-xpathcontext/perl-xml-libxml-xpathcontext.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module XML-LibXML-XPathContext
+
+[T] This module provid a Perl interface to libxml2's xmlXPathContext structure.
+[T] Besides just performing xpath statements on XML::LibXML's node trees it
+[T] allows redefining certaint aspects of XPath engine.
+
+[U] https://search.cpan.org/~pajas/XML-LibXML-XPathContext/
+
+[A] Petr Pajas <pajas@matfyz.cz>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] Artistic GPL
+[V] 0.07
+[P] X -----5---9 200.101
+
+[D] 7fc7bfadcfca9bf9214d0133e924e169f1ce7cfbb3f05e6ff17a99dd XML-LibXML-XPathContext-0.07.tar.gz http://search.cpan.org/CPAN/authors/id/P/PA/PAJAS/

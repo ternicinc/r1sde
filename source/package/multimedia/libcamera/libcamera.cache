@@ -1,0 +1,39 @@
+[TIMESTAMP] 1769704908 Thu Jan 29 17:41:48 2026
+[BUILDTIME] 135 (9)
+[SIZE] 7.19 MB, 77 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[OPT] doxygen
+[DEP] gawk
+[DEP] glib
+[DEP] gnutls
+[OPT] graphviz
+[DEP] grep
+[DEP] gst-plugins-base
+[DEP] gstreamer
+[OPT] gtest
+[DEP] libdrm
+[DEP] libelf
+[DEP] libevent
+[DEP] libglvnd
+[OPT] libpisp
+[DEP] libtiff
+[DEP] libyaml
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] ply
+[DEP] pybind11
+[OPT] python
+[DEP] pyyaml
+[DEP] sed
+[DEP] tar
+[DEP] udev
+[OPT] unwind
+[DEP] util-linux
+[DEP] zstd

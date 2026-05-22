@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kpublictransport/kpublictransport.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library to assist with accessing public transport timetables and other data
+
+[T] A library for accessing realtime public transport data and for performing
+[T] public transport journey queries.
+
+[U] https://invent.kde.org/libraries/kpublictransport
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 26.04.1
+[P] X -----5---9 162.900
+
+[CV-GROUP] kde-gear
+[D] cbe1a61ded730ae0d8c3897e088b3241464408f17c0457e32f342863 kpublictransport-26.04.1.tar.xz https://download.kde.org/stable/release-service/26.04.1/src/
+
+. $base/package/*/*/kde-conf.in

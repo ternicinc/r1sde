@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libgcrypt/libgcrypt.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] General purpose cryptographic library
+
+[T] Libgcrypt is a general purpose cryptographic library based on the
+[T] code from GnuPG. It provides functions for all cryptographic building
+[T] blocks: symmetric ciphers, hash algorithms, MACs, public key
+[T] algorithms, large integer functions, random numbers and a lot of
+[T] supporting functions.
+
+[U] https://www.gnupg.org
+
+[A] Werner Koch <wk@gnupg.org> (Maintainer)
+[M] René Rebe <rene@exactco.de>
+
+[C] base/crypto
+[F] CROSS NO-LTO
+
+[L] GPL
+[V] 1.12.2
+[P] X -----5---9 112.340
+
+[D] 6a48210382e2a62dc4e945150d0a4173c3a2ea3ecb9ef459f8ddbb54 libgcrypt-1.12.2.tar.bz2 https://gnupg.org/ftp/gcrypt/libgcrypt/
+
+var_append CC_WRAPPER_APPEND ' ' -std=gnu17
+var_append GCC_WRAPPER_APPEND ' ' ./rndjent.c?-O0:
+
+if ! atstage native; then
+	var_append confopt ' ' --with-sysroot=$root
+	hook_add preconf 5 "echo ac_cv_sys_symbol_underscore=no >> config.cache"
+	hook_add preconf 5 "echo ac_cv_path_GPGRT_CONFIG=$root/usr/bin/gpgrt-config >> config.cache"
+fi

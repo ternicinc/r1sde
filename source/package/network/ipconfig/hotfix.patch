@@ -1,0 +1,19 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/ipconfig/hotfix.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -Nur ipconfig-orig/netdev.c ipconfig/netdev.c
+--- ipconfig-orig/netdev.c	2006-06-29 17:14:38.000000000 +0000
++++ ipconfig/netdev.c	2006-07-25 20:39:37.000000000 +0000
+@@ -11,6 +11,9 @@
+ #include <string.h>
+ #include <unistd.h>
+ #include <net/if.h>
++#ifdef _NET_IF_H
++#define _LINUX_IF_H
++#endif
+ #include <net/if_arp.h>
+ #include <netinet/in.h>
+ #include <linux/route.h>

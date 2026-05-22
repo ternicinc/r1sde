@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---.
+[COPY] t2/package/*/tini/tini.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---.
+
+[I] A tiny but valid init for containers
+
+[T] A tiny but valid init for containers.
+
+[U] https://github.com/krallin/tini
+
+[A] Tini Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+
+[V] 0.19.0
+[L] MIT
+
+[D] 7abeebf6500ba0359d45570142d582170e360fe0c3c6f438913ecdbe tini-0.19.0.tar.gz https://github.com/krallin/tini/archive/v0.19.0/
+
+hook_add postinstall 5 "ln -svf $root$bindir/tini-static $root$bindir/docker-init"
+var_append cmakeopt ' ' '-DCMAKE_POLICY_VERSION_MINIMUM=3.5'

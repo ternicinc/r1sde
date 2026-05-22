@@ -1,0 +1,18 @@
+[TIMESTAMP] 1768839163 Mon Jan 19 17:12:43 2026
+[BUILDTIME] 80 (9)
+[SIZE] 5.54 MB, 7 files
+
+[DEP] bash
+[DEP] cargo
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] openssl
+[DEP] rustc
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

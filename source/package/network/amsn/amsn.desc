@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/amsn/amsn.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A clone of the original MSN Messenger
+
+[T] This project is a modified and multilanguage version of Compu's Messenger
+[T] (CCMSN).It's a Tcl/Tk script as was CCMSN and Tcl/Tk must be installed to
+[T] run it. This means it is multiplatform and can run on any OS having Tcl/Tk
+[T] installed (Linux, Windows, Macintosh).
+[T] It's a clone of the original MSN Messenger, having the same look and feel.
+
+[U] https://amsn.sourceforge.net/
+
+[A] Alvaro J. Iradier Muro
+[M] Leonel Iván Saafigueroa <leonel@saafigueroa.com.ar>
+
+[C] extra/network
+
+[L] GPL
+[V] 0.98.9
+
+[D] ab792ced253cb2cf176be5f2f2c4c5e5ef90b218436209e87c7bcbf7 amsn-0_94.tar.gz https://prdownloads.sourceforge.net/sourceforge/amsn/
+
+makeopt=

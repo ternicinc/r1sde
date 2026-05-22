@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-gettext/perl-gettext.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module for internationalization
+
+[T] This is a perl5 module quickly written to gain access to
+[T] the C library functions for internatialization. They
+[T] work just like the C versions.
+
+[U] https://www.cpan.org/authors/id/P/PV/PVANDRY/
+
+[A] Phillip Vandry <vandry@TZoNE.org>
+[M] Minto van der Sluis <minto@multimach.com>
+
+[C] extra/development
+
+[L] GPL
+[V] 1.07
+[P] X -----5---9 126.098
+
+[D] 7dace970396f55a2a8b4ad72ca0079c2860d36277bb5129d535602ac perl-gettext-1.07.tar.gz !https://cpan.metacpan.org/authors/id/P/PV/PVANDRY/Locale-gettext-1.07.tar.gz
+
+source $base/*/perl/perl/perllocal_hack.sh

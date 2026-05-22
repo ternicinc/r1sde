@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-babel/python-babel.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Python Internationalization Library
+
+[T] Babel is a Python library that provides an integrated collection of
+[T] utilities that assist with internationalizing and localizing Python
+[T] applications (in particular web-based applications).
+
+[U] https://babel.pocoo.org/en/latest/
+
+[A] Babel team
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 2.18.0
+[P] X -----5---9 400.000
+
+[D] 61a1c5c10acd1740b2b196c2f92950ba994bd97354ab0849ebc78553 python-babel-2.18.0.tar.gz https://github.com/python-babel/babel/archive/v2.18.0/

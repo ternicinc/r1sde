@@ -1,0 +1,86 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/target/generic/pkgsel/50-base-desktop.in
+# Copyright (C) 2022 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+# TITLE: Base X.org and (Xfce) Desktop
+
+# reuse the minimal-xorg
+include target/generic/pkgsel/40-base-xorg.in
+
+X libass
+X gudev
+X libwacom
+X glew
+X pango
+X libdecor
+X mesa-demos
+X fribidi
+X cairo
+X gdk-pixbuf
+X librsvg
+X gtk+
+X dbus-glib
+X hicolor-icon-theme
+X adwaita-icon-theme
+X at-spi2-core
+#X pip
+#X pygments
+#X gtk-doc
+X harfbuzz
+X gnutls
+X duktape
+X libproxy
+X glib-networking
+
+# some more X stuff
+X xcompmgr
+
+# fonts
+X dejavu-ttf-fonts
+X freefonts
+
+# Xfce
+X libnotify
+X libwnck
+X lz4
+X fast_float
+X fmt
+X simdutf
+X vte
+#X upower
+X gtk-layer-shell
+X libexo
+X garcon
+X libxfce4ui
+X libxfce4util
+X libxfce4windowing
+X xfce4-dev-tools
+X thunar
+X thunar-volman
+X tumbler
+X xfce4-appfinder
+X xfce4-panel
+#X xfce4-power-manager
+X xfce4-session
+X iso-codes
+X libxklavier
+X xfce4-settings
+X xfce4-terminal
+X xfce4-screenshooter-plugin
+X xfconf
+X xfdesktop
+X xfwm4
+
+# some minimal webkit browser
+X libwebp
+X libpsl
+X libsoup
+X libtasn1
+X libunistring
+X gsettings-desktop-schemas
+X gstreamer
+X gst-plugins-base
+X icu4c
+X unifdef

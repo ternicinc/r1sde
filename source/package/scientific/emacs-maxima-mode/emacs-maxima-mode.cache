@@ -1,0 +1,15 @@
+
+[TIMESTAMP] 1690879372 Tue Aug  1 10:42:52 2023
+[BUILDTIME] 1 (9)
+[SIZE] 0.03 MB, 6 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] make
+[DEP] sed
+[DEP] tar

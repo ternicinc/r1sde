@@ -1,0 +1,46 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gtk/gtk.desc
+[COPY] Copyright (C) 2013 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Gimp ToolKit (GTK) v4
+
+[T] This is GTK+. GTK+, which stands for the Gimp ToolKit, is a library
+[T] for creating graphical user interfaces for the X Window System. It is
+[T] designed to be small, efficient, and flexible. GTK+ is written in C with
+[T] a very object-oriented approach.
+
+[U] https://www.gtk.org/
+
+[A] The GTK Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[E] opt cups
+[E] opt gstreamer gst-plugins-base
+[E] opt gstreamer-vaapi
+[E] add gst-plugins-bad
+
+[L] LGPL
+[V] 4.22.3
+[P] X -----5---9 201.000
+
+[CV-FLAGS] ODD-UNSTABLE
+[D] 6d4bd6536bc629083f11c1fe510cc3d60c91e24b5ec1ac9745592149 gtk-4.22.3.tar.xz https://download.gnome.org/sources/gtk/4.22/
+
+. $base/package/*/*/gnome-conf.in
+
+pkginstalled gst-plugins-bad || var_append mesonopt ' ' -Dmedia-gstreamer=disabled
+
+pkginstalled vulkan-headers || var_append mesonopt ' ' -Dvulkan=disabled
+
+var_append mesonopt ' ' '-Dbuild-tests=false -Dbuild-testsuite=false -Dbuild-examples=false'
+
+pkginstalled gobject-introspection &&
+	var_append mesonopt ' ' '-Dintrospection=enabled' ||
+	var_append mesonopt ' ' -Dintrospection=disabled
+
+hook_add prepatch 5 "rm -rf subprojects/*"

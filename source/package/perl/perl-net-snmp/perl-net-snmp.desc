@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-net-snmp/perl-net-snmp.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module Net::SNMP
+
+[T] The Net::SNMP module implements an object oriented interface to the
+[T] Simple Network Management Protocol. Perl applications can use the
+[T] module to retrieve or update information on a remote host using the
+[T] SNMP protocol.
+
+[U] https://metacpan.org/pod/Net::SNMP
+
+[A] David M. Town <dtown@cpan.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] GPL
+[V] 6.0.1
+[P] X -----5---9 148.300
+
+[D] 526e6b94a0a77fb0702e7341491839cecc2fdc9fc930ca845af7b0f2 Net-SNMP-v6.0.1.tar.gz https://cpan.metacpan.org/authors/id/D/DT/DTOWN/

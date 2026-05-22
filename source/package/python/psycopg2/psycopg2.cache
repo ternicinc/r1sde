@@ -1,0 +1,21 @@
+[TIMESTAMP] 1776769743 Tue Apr 21 13:09:03 2026
+[BUILDTIME] 6 (9)
+[SIZE] 0.47 MB, 24 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] cython
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] openssl
+[DEP] postgresql
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar
+[DEP] util-linux
+[DEP] vcs-versioning

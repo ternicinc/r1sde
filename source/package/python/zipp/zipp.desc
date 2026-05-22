@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/zipp/zipp.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A pathlib-compatible Zipfile object wrapper
+
+[T] Official backport of the standard library Path object.
+
+[U] https://github.com/jaraco/zipp
+
+[A] Jason R. Coombs <jaraco@jaraco.com>
+[M] Melvin <nyst.wysrt@gmail.com>
+
+[C] extra/development
+[F] CROSS
+
+[L] MIT
+[V] 3.23.0
+[P] X -----5---9 109.006
+
+[D] 12a88c0bdc8229c6d2e35a89060a8cf62ca23d2af056c91747ccf89b zipp-3.23.0.tar.gz https://files.pythonhosted.org/packages/source/z/zipp/

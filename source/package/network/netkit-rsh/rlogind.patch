@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/netkit-rsh/rlogind.patch
+# Copyright (C) 2010 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- netkit-rsh-0.17/rlogind/auth.c_orig	2010-08-08 15:30:31.000000000 +0000
++++ netkit-rsh-0.17/rlogind/auth.c	2010-08-08 15:30:48.000000000 +0000
+@@ -31,6 +31,7 @@
+  * SUCH DAMAGE.
+  */
+ 
++#include <stdlib.h>
+ #include <sys/types.h>
+ #include <pwd.h>
+ 

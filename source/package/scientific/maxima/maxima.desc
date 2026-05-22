@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/maxima/maxima.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A sophisticated computer algebra system
+
+[T] Maxima is a LISP implementation of MIT's Macsyma system for
+[T] computer based algebra. It features plotting over the network via
+[T] netmath, computations over the network, extensive testing on a large
+[T] array of problems, a source level debugger for maxima code, ease of
+[T] extension in fundamentally new ways, access to Common Lisp and
+[T] portability to many systems.
+
+[U] https://maxima.sourceforge.net/
+
+[A] James Amundson <amundson@fnal.gov>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/scientific
+
+[E] opt graphviz
+
+[L] GPL
+[V] 5.49.0
+
+[D] 2248b6417447371eea091f40498a5cc02c02d568bcf8e3111a8d42ca maxima-5.49.0.tar.gz https://prdownloads.sourceforge.net/sourceforge/maxima/
+
+prefix=opt/maxima
+set_confopt
+var_append confopt ' ' --enable-gcl

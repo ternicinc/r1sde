@@ -1,0 +1,14 @@
+
+[TIMESTAMP] 1172758762 Thu Mar  1 15:19:22 2007
+[BUILDTIME] 10 (1)
+[SIZE] 0.50 MB, 4 files
+
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] zlib

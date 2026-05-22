@@ -1,0 +1,18 @@
+[TIMESTAMP] 1767912980 Thu Jan  8 23:56:20 2026
+[BUILDTIME] 3 (9)
+[SIZE] 0.33 MB, 36 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] make
+[DEP] perl
+[DEP] perl-digest-sha1
+[DEP] perl-mp3-info
+[DEP] perl-unicode
+[DEP] sed
+[DEP] tar

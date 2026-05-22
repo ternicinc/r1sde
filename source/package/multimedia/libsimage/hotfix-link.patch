@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/libsimage/hotfix-link.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- simage-1.6.1.orig/src/Makefile.in
++++ simage-1.6.1/src/Makefile.in
+@@ -536,7 +536,7 @@
+ 	  rm -f "$${dir}/so_locations"; \
+ 	done
+ libsimage@SUFFIX@.la: $(libsimage@SUFFIX@_la_OBJECTS) $(libsimage@SUFFIX@_la_DEPENDENCIES) 
+-	$(CXXLINK) -rpath $(libdir) $(libsimage@SUFFIX@_la_LDFLAGS) $(libsimage@SUFFIX@_la_OBJECTS) $(libsimage@SUFFIX@_la_LIBADD) $(LIBS)
++	$(LINK) -rpath $(libdir) $(libsimage@SUFFIX@_la_LDFLAGS) $(libsimage@SUFFIX@_la_OBJECTS) $(libsimage@SUFFIX@_la_LIBADD) $(LIBS)
+ 
+ mostlyclean-compile:
+ 	-rm -f *.$(OBJEXT) core *.core

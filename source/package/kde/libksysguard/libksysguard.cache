@@ -1,0 +1,37 @@
+[TIMESTAMP] 1759851840 Tue Oct  7 17:44:00 2025
+[BUILDTIME] 135 (9)
+[SIZE] 3.45 MB, 728 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] kauth
+[DEP] kconfig
+[DEP] kcoreaddons
+[DEP] knewstuff
+[DEP] ki18n
+[DEP] kpackage
+[DEP] kservice
+[DEP] libcap
+[DEP] libdrm
+[DEP] libnl
+[DEP] libpcap
+[DEP] linux-header
+[DEP] lm_sensors
+[DEP] make
+[DEP] pkgconfig
+[DEP] procps
+[DEP] qt6base
+[DEP] qt6declarative
+[DEP] sed
+[DEP] solid
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] xz
+[DEP] zlib

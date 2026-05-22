@@ -1,0 +1,25 @@
+[TIMESTAMP] 1747607079 Mon May 19 00:24:39 2025
+[BUILDTIME] 14 (9)
+[SIZE] 4.73 MB, 81 files
+
+[DEP] 00-dirtree
+[DEP] alsa-lib
+[DEP] audiofile
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] esound
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libsdl2
+[DEP] libsndfile
+[DEP] linux-header
+[DEP] make
+[DEP] pulseaudio
+[DEP] readline
+[DEP] sed
+[DEP] tar
+[DEP] zlib

@@ -1,0 +1,34 @@
+[TIMESTAMP] 1761056599 Tue Oct 21 15:23:19 2025
+[BUILDTIME] 1250 (9)
+[SIZE] 85.13 MB, 2502 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] cmake
+[DEP] coreutils
+[DEP] curl
+[DEP] dbus
+[DEP] diffutils
+[DEP] file
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] gettext
+[DEP] glfw
+[DEP] grep
+[DEP] gzip
+[DEP] libglvnd
+[DEP] linux-header
+[DEP] lz4
+[DEP] make
+[DEP] mbedtls
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto
+[DEP] xz
+[DEP] zlib
+[DEP] zstd

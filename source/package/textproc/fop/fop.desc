@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/fop/fop.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A print formatter driven by XSL formatting objects
+
+[T] Apache™ FOP (Formatting Objects Processor) is a print formatter driven by
+[T] XSL formatting objects (XSL-FO) and an output independent formatter. It
+[T] is a Java application that reads a formatting object (FO) tree and renders
+[T] the resulting pages to a specified output.
+
+[U] https://xmlgraphics.apache.org/fop/
+
+[A] Apache
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] APL
+[V] 2.11
+
+[D] 3e48fb04a9cfe5331a4f01fad6174b04d6e1342b62256c871932ed5c fop-2.11-src.tar.gz https://dlcdn.apache.org/xmlgraphics/fop/source/
+
+runmake=0
+hook_add inmake 5 "mvn clean install -DskipTests"

@@ -1,0 +1,25 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/orbit10/hotfix.patch
+# Copyright (C) 2014 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ORBit-0.5.17/popt/intl/Makefile.in.vanilla	2014-08-13 19:14:10.776000071 +0000
++++ ORBit-0.5.17/popt/intl/Makefile.in	2014-08-13 19:14:51.032000071 +0000
+@@ -202,12 +202,10 @@
+ # The dependency for intlh.inst is different in gettext and all other
+ # packages.  Because we cannot you GNU make features we have to solve
+ # the problem while rewriting Makefile.in.
+-@GT_YES@intlh.inst: intlh.inst.in ../config.status
+-@GT_YES@	cd .. \
+-@GT_YES@	&& CONFIG_FILES=$(subdir)/$@ CONFIG_HEADERS= \
+-@GT_YES@	  $(SHELL) ./config.status
+-@GT_NO@.PHONY: intlh.inst
+-@GT_NO@intlh.inst:
++intlh.inst: intlh.inst.in ../config.status
++	cd .. \
++	&& CONFIG_FILES=$(subdir)/$@ CONFIG_HEADERS= \
++	  $(SHELL) ./config.status
+ 
+ # Tell versions [3.59,3.63) of GNU make not to export all variables.
+ # Otherwise a system limit (for SysV at least) may be exceeded.

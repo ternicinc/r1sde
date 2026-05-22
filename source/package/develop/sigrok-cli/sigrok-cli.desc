@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sigrok-cli/sigrok-cli.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A command-line frontend for sigrok
+
+[T] sigrok-cli (sometimes abbreviated as "cli") is a command-line frontend
+[T] for sigrok.
+
+[U] https://sigrok.org/wiki/Sigrok-cli
+
+[A] Bert Vermeulen <bert@biot.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL3
+[V] 0.7.2
+
+[D] 32398560ef353bbc299c68cbfac93c07aa13905172fde936b9bde1e4 sigrok-cli-0.7.2.tar.gz http://sigrok.org/download/source/sigrok-cli/

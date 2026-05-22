@@ -1,0 +1,47 @@
+[TIMESTAMP] 1744715803 Tue Apr 15 13:16:43 2025
+[BUILDTIME] 150 (9)
+[SIZE] 77.45 MB, 1924 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] cairo
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] findutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] icu4c
+[DEP] libice
+[DEP] libjpeg
+[DEP] libpng
+[DEP] libsm
+[DEP] libtiff
+[DEP] libtirpc
+[DEP] libx11
+[DEP] libxmu
+[DEP] libxt
+[DEP] linux-header
+[DEP] make
+[OPT] openjdk
+[DEP] pango
+[DEP] pcre2
+[DEP] perl
+[DEP] perl-libintl
+[DEP] readline
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] tcl
+[DEP] texinfo
+[DEP] tk
+[DEP] xorgproto
+[DEP] xz
+[DEP] zlib
+[DEP] zstd

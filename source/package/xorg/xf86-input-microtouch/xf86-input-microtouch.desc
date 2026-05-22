@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-input-microtouch/xf86-input-microtouch.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Xorg driver for microtouch devices
+
+[T] This driver supports microtouch devices.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.2.0
+[P] O
+
+[D] 8775e9778b84726794182db016a88ea0ff5e84eb3ac128bb8cc779a0 xf86-input-microtouch-1.2.0.tar.bz2 http://xorg.freedesktop.org/releases/individual/driver/
+
+. package/*/*/modular-x-conf.in

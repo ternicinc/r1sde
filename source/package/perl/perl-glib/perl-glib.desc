@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-glib/perl-glib.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl wrappers for the GLib utility and Object libraries
+
+[T] Perl wrapper for glib 2.x, including GObject, and a PkgConfig utility
+
+[U] https://gtk2-perl.sourceforge.net/
+
+[A] Muppet <scott@asofyet.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 1.3294
+[P] X -----5---9 121.000
+
+[D] 32e1b9a640a8ce0cbe826d38936bd18d34ccb725444291148bca0d70 Glib-1.3294.tar.gz https://download.sourceforge.net/gtk2-perl/

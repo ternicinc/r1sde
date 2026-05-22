@@ -1,0 +1,25 @@
+[TIMESTAMP] 1751202653 Sun Jun 29 15:10:53 2025
+[BUILDTIME] 230 (9)
+[SIZE] 7.61 MB, 181 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gnutls
+[DEP] grep
+[DEP] gzip
+[DEP] libcap
+[DEP] libtool
+[DEP] libxcrypt
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] nettle
+[DEP] pam
+[DEP] perl
+[DEP] sed
+[DEP] tar
+[DEP] tdb

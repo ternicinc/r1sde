@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/syslinux/syslinux.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Linux bootloader collection
+
+[T] The SYSLINUX project covers lightweight linux bootloaders for floppy
+[T] media (syslinux), network booting (pxelinux) and bootable el-torito
+[T] cd-roms (isolinux).
+
+[U] https://www.syslinux.org
+
+[A] H. Peter Anvin <hpa@zytor.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS NO-SSP NO-PIE NO-LTO FCOMMON
+[R] + x86 x86-64
+
+[L] GPL
+[V] 6.03
+
+[D] 919b52cbaefabe24c6fcbb0930dff06ce5a7f92ff19c64f13f31b824 syslinux-6.03.tar.xz https://www.kernel.org/pub/linux/utils/boot/syslinux/
+
+makeopt= # just run 'make install'
+var_remove GCC_WRAPPER_INSERT ' ' -fstack-protector
+atstage native || var_append makeinstopt ' ' OBJCOPY=$OBJCOPY
+var_append makeinstopt ' ' INSTALLROOT=$root

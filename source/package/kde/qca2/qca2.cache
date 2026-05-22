@@ -1,0 +1,28 @@
+[TIMESTAMP] 1739202361 Mon Feb 10 16:46:01 2025
+[BUILDTIME] 270 (5)
+[SIZE] 3.40 MB, 46 files
+
+[DEP] bash
+[DEP] binutils
+[OPT] botan
+[DEP] cmake
+[DEP] coreutils
+[OPT] cyrus-sasl2
+[DEP] diffutils
+[OPT] doxygen
+[DEP] gawk
+[DEP] grep
+[DEP] kconfig
+[DEP] libgcrypt
+[DEP] libgpg-error
+[DEP] linux-header
+[DEP] make
+[DEP] nspr
+[DEP] nss
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] qt65compat
+[DEP] qt6base
+[DEP] sed
+[DEP] tar
+[DEP] xz

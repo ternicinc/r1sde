@@ -1,0 +1,44 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/docker-cli/docker-cli.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Docker CLI
+
+[T] Pack, ship and run any application as a lightweight container.
+
+[U] https://www.docker.io/
+
+[A] The Docker CLI contributors (see AUTHORS file)
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/emulator
+[F] CROSS
+
+[E] add containerd docker-engine docker-buildx
+
+[L] APL
+[V] 29.5.1
+
+[D] 1aaa5ed6f92dd8f86089c2cf2fd03763ec3e137f38bce47df651c035 docker-cli-29.5.1.tar.gz https://github.com/docker/cli/archive/v29.5.1/
+
+. $base/package/*/*/go-conf.in
+export CGO_ENABLED=0
+export GITCOMMIT=d260a54c
+export GOPATH=$builddir/cli-$ver
+
+rungo=
+var_append makeopt ' ' dynbinary
+makeinstopt=
+
+docker-cli-pre() {
+	mkdir -p $builddir/cli-$ver/src/github.com/docker/
+	ln -sv $builddir/cli-$ver $builddir/cli-$ver/src/github.com/docker/cli
+}
+hook_add premake 5 docker-cli-pre
+
+docker-cli-pm() {
+	install -m 755 build/docker $root$bindir
+}
+hook_add postmake 5 docker-cli-pm

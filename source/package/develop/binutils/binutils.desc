@@ -1,0 +1,57 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/binutils/binutils.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A GNU collection of binary utilities
+
+[T] The GNU binutils are utilities of use when dealing with object files.
+[T] the packages includes ld - the GNU linker, as - the GNU assembler,
+[T] addr2line - converts addresses into filenames and line numbers,
+[T] ar - a utility for creating, modifying and extracting from archives,
+[T] c++filt - filter to demangle encoded C++ symbols, gprof - displays
+[T] profiling information, nlmconv - converts object code into an NLM,
+[T] nm - lists symbols from object files, objcopy - Copys and translates
+[T] object files, objdump - displays information from object files,
+[T] ranlib - generates an index to the contents of an archive,
+[T] readelf - displays information from any ELF format object file,
+[T] size - lists the section sizes of an object or archive file,
+[T] strings - lists printable strings from files, strip - discards symbols as
+[T] well as windres - a compiler for Windows resource files.
+
+[U] https://www.gnu.org/software/binutils/
+
+[A] The GNU Project <gnu@gnu.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/development
+# FAT-LTO.x86 NO-LTO.clang # also breaks w/ musl?
+[F] OBJDIR CROSS DIETLIBC NO-LTO FPIC.microblaze FPIC.mips FPIC.mips64
+
+[L] GPL
+[V] 2.46
+[P] X 0-2--5---9 102.100
+
+[D] b488e7a5bcb65a923ad6c73b531d041b60bd252333f62e4d70803c15 binutils-with-gold-2.46.tar.zst https://sourceware.org/pub/binutils/releases/
+
+var_append confopt ' ' '--enable-threads --enable-plugins --enable-shared'
+var_append confopt ' ' '--enable-64-bit-bfd --enable-targets=no'
+[ "$arch" = "ia64" ] && var_append confopt ' ' --enable-obsolete
+
+if atstage toolchain; then
+	var_append confopt ' ' --with-sysroot=$sysroot
+	var_append confopt ' ' '--program-prefix=${arch_target}-'
+else
+	confopt="${confopt/--with-sysroot/--with-libtool-sysroot}"
+	var_append confopt ' ' --enable-install-libiberty
+fi
+
+var_append confopt ' ' --disable-gprofng
+
+# hotfix libtool relink on install breaking gcc lto plugin
+if atstage native; then
+	hook_add inmake 5 "install {bfd,opcodes}/.libs/lib*-*.so $root$libdir/"
+	hook_add inmake 5 "install libsframe/.libs/lib*.so.* $root$libdir/"
+fi

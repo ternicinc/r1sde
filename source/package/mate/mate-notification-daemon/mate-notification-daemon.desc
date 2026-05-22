@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mate-notification-daemon/mate-notification-daemon.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Daemon to display passive pop-up notifications in MATE
+
+[T] mate-notification-daemon is a fork of gnome-notification-daemon to display
+[T] passive pop-up notifications in the MATE Desktop Environment.
+
+[U] https://mate-desktop.org/
+
+[A] MATE developer
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/mate
+
+[E] opt wayland mate-wayland-session
+
+[L] GPL
+[V] 1.29.0
+
+[D] 38bc4817e9c2621a99ab06555e4ef03e76963e1ee7067336596a0e95 mate-notification-daemon-1.29.0.tar.gz https://github.com/mate-desktop/mate-notification-daemon/archive/v1.29.0/
+
+. $base/package/*/*/mate-conf.in
+var_append GCC_WRAPPER_APPEND ' ' "$(pkg-config --libs x11)"
+autogen=1

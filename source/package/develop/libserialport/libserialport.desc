@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libserialport/libserialport.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A minimal library for using serial ports
+
+[T] A minimal, cross-platform shared library written in C that is intended to
+[T] take care of the OS-specific details when writing software that uses
+[T] serial ports.
+
+[U] https://sigrok.org/wiki/Libserialport
+
+[A] Martin Ling
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL3
+[V] 0.1.2
+[P] X -----5---9 205.000
+
+[D] e9dda46ec1c4d04a69a4e5ecdd2e9e5bae53757d9f45e6a75a98080c libserialport-0.1.2.tar.gz http://sigrok.org/download/source/libserialport/

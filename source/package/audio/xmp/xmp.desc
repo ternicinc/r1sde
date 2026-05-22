@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xmp/xmp.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A player for various audio formats
+
+[T] XMP is a player for various PC and Amiga module formats including:
+[T]
+[T] XM MOD MOD M15 IT S3M STM STX MTM MTN IMF PTM MDL ULT MMD PTM DIGI
+[T] EMOD OKT SFX FAR STIM KSM WN PM KRIS UNIC P60A PRU1 PRU2 PM01 PM10
+[T] PM18 PM20 PM40 AC1D PP10 XANN ZEN NP DI MP 669 FNK AMD RAD CRB ALM
+
+[U] https://xmp.sourceforge.net/
+
+[A] claudio@helllabs.org
+[A] hipolito@onda.com.br
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] FPIC
+
+[L] GPL
+[V] 4.3.0
+
+[D] 95d73aa7e2b0889083a39492727eaf31ec02d77e86d558a2ef816aaf xmp-4.3.0.tar.gz https://downloads.sourceforge.net/project/xmp/xmp/4.3.0/

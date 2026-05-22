@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnomesword/gnomesword.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Bible Study Software for GNOME
+
+[T] Bible Study Software for the Linux community. Lookup and search Bible
+[T] texts and commentaries. GnomeSword uses the Sword Projects modules and
+[T] libs.
+
+[U] https://gnomesword.sourceforge.net/
+
+[A] Terry Biggs <tbiggs@infinet.com>
+[A] The SWORD team <sword-feedback@crosswire.org>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/religion
+
+[L] GPL
+[V] 2.0.0
+[P] O -----5---9 221.800
+
+[D] 12a149b03a16e1219eba4fd1571ed4476d0d63e2da2ba0a90b4de9cb gnomesword2-2.0.0.tar.gz https://prdownloads.sourceforge.net/sourceforge/gnomesword/
+
+. $base/package/*/*/gnome-conf.in

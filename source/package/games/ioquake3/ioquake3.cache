@@ -1,0 +1,19 @@
+
+[TIMESTAMP] 1727777928 Tue Oct  1 12:18:48 2024
+[BUILDTIME] 30 (9)
+[SIZE] 0.01 MB, 5 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libsdl2
+[DEP] linux-header
+[DEP] make
+[DEP] ncurses
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar

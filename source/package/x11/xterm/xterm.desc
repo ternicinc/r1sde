@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xterm/xterm.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A terminal emulator for the X Window System
+
+[T] The xterm program is a terminal emulator for the X Window System. It
+[T] provides DEC VT102 and Tektronix 4014 compatible terminals emulation.
+
+[A] Thomas E. Dickey <dickey@invisible-island.net>
+[M] René Rebe <rene@exactco.de>
+
+[U] https://invisible-island.net/xterm/
+
+[C] base/x11
+[F] CROSS
+
+[L] MIT
+[V] 410
+
+[D] c10bd041696132356c02502cdfce0b9976c0a19f94d1cee73eca4380 xterm-410.tgz http://invisible-mirror.net/archives/xterm/
+
+. package/*/*/modular-x-conf.in
+var_append confopt ' ' --enable-wide-chars
+var_append confopt ' ' --x-includes=$root/$(pkgprefix includedir libx11)
+var_append confopt ' ' --x-libraries=$root/$(pkgprefix libdir libx11)
+[ "$SDECFG_LIBC" = musl ] && var_append GCC_WRAPPER_INSERT ' ' -D_GNU_SOURCE=1

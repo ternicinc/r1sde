@@ -1,0 +1,32 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/pciutils/compile.patch.dietlibc
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./lib/types.h.orig	2006-06-21 14:44:57.000000000 +0200
++++ ./lib/types.h	2006-06-21 14:56:35.000000000 +0200
+@@ -15,9 +15,9 @@
+ typedef unsigned __int16 u16;
+ typedef unsigned __int32 u32;
+ #else
+-typedef u_int8_t u8;
+-typedef u_int16_t u16;
+-typedef u_int32_t u32;
++typedef uint8_t u8;
++typedef uint16_t u16;
++typedef uint32_t u32;
+ #endif
+ 
+ #ifdef PCI_HAVE_64BIT_ADDRESS
+--- ./lib/pread.h.orig	2006-06-21 14:59:19.000000000 +0200
++++ ./lib/pread.h	2006-06-21 14:59:41.000000000 +0200
+@@ -12,7 +12,7 @@
+  *  don't define it.
+  */
+ 
+-#if defined(__GLIBC__) && __GLIBC__ == 2 && __GLIBC_MINOR__ > 0
++#if (defined(__GLIBC__) && __GLIBC__ == 2 && __GLIBC_MINOR__ > 0 || defined(__dietlibc__))
+ /* glibc 2.1 or newer -> pread/pwrite supported automatically */
+ 
+ #elif defined(i386) && defined(__GLIBC__)

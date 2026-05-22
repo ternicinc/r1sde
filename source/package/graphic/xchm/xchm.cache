@@ -1,0 +1,17 @@
+[TIMESTAMP] 1751038291 Fri Jun 27 17:31:31 2025
+[BUILDTIME] 8 (9)
+[SIZE] 0.70 MB, 37 files
+
+[DEP] bash
+[DEP] chmlib
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] wxwidgets

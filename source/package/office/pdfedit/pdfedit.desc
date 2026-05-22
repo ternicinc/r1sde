@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pdfedit/pdfedit.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A editor for manipulating PDF documents
+
+[T] Complete editing of pdf documents is easy with PDFedit. You can change
+[T] either raw pdf objects or use predefined gui functions.
+
+[U] http://pdfedit.petricek.net/pdfedit.index_e
+
+[A] Martin Beran
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+
+[L] GPL
+[V] 0.4.5
+
+[D] 7d6bf2ed4afb10c1353e246af33dc939ca88aec9212e6ad7b2a3fcb7 pdfedit-0.4.5.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/pdfedit/
+
+hook_add inmake 5 'chmod -R og+r *'
+unset AR
+var_append GCC_WRAPPER_INSERT ' ' "-L`pkgprefix libdir libx11` -L`pkgprefix libdir qt`"
+var_append GCC_WRAPPER_APPEND ' ' -fpermissive

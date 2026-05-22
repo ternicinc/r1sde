@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/jpeginfo/jpeginfo.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A utility to generate informative listings from jpeg files
+
+[T] jpeginfo is also able to check jpeg files for errors, and also supports
+[T] automagic deletion of broken jpegs.
+
+[U] http://www.cc.jyu.fi/~tjko/projects.html
+
+[A] Timo Kokkonen <tjko@cc.jyu.fi>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+
+[L] OpenSource
+[V] 1.7.1
+
+[D] 2a9eb5accd5f4bb6e40459f4cd3fc7479a6244dee66479af54ca4500 jpeginfo-1.7.1.tar.gz https://www.kokkonen.net/tjko/src/

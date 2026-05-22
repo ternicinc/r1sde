@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xpp/xpp.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] X Printing Panel
+
+[T] The X Printing Panel (XPP) is a completely free tool for easy
+[T] choosing of the desired printer out of a list of all available
+[T] printers and for setting printer options by an easy-to-use
+[T] graphical user interface. One simply calls the program (xpp)
+[T] instead of the usual utilities (lpr or lp) at the command line
+[T] or out of applications.
+
+[U] https://cups.sourceforge.net/xpp/
+
+[A] Till Kamppeter <till.kamppeter@gmx.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] NOPARALLEL
+
+[L] GPL
+[V] 1.5
+
+[D] 5fbb630dd4b85b9d50baf64d8da7626df9c1298fa4d4fea2cb913587 xpp-1.5.tar.gz https://prdownloads.sourceforge.net/sourceforge/cups/

@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/hylafax/no-init.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- hylafax-7.0.1/Makefile.in.vanilla	2019-11-03 13:15:33.173555318 +0000
++++ hylafax-7.0.1/Makefile.in	2019-11-03 13:15:50.509555318 +0000
+@@ -242,7 +242,6 @@
+ 	else \
+ 	    true; \
+ 	fi
+-	@${ECHO} "= "etc; cd etc; ${MAKE} installSysVInit;
+ 	@if [ "@DPS@" = yes ]; then \
+ 	    ${ECHO} "= "dps; cd dps; ${MAKE} install  ||  exit 1; \
+ 	else \

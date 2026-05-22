@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cmocka/cmocka.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An elegant unit testing framework for C with support for mock objects
+
+[T] An elegant unit testing framework for C with support for mock objects.
+[T] It only requires the standard C library, works on a range of computing
+[T] platforms (including embedded) and with different compilers.
+
+[U] https://cmocka.org/
+
+[A] Andreas Schneider <asn@cryptomilk.org>
+[A] Jakub Hrozek <jakub.hrozek@posteo.se>
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/development
+[F] CROSS OBJDIR NO-LTO.gcc
+
+[E] opt doxygen
+
+[L] APL
+[V] 2.0.2
+
+[D] f128d05454870af68defc25acf705cfb6bdd094beceb91bcf805e96f cmocka-2.0.2.tar.xz https://cmocka.org/files/2.0/

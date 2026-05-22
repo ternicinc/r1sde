@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/atcontenttypes/atcontenttypes.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Content types for Archetypes framework
+
+[T] Content types for Archetypes framework
+
+[U] https://plone.org/documentation/archetypes
+
+[A] Plone Collective
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[E] add zope
+
+[L] OpenSource
+
+[V] 0.2.1-final
+[P] X -----5---9 300.300
+
+[SRC] .
+
+[D] 232506a1cd9946e366ffe170f0b40001a98f2d02c18a75ab224d2083 ATContentTypes-0.2.1-final.tar.gz https://download.sourceforge.net/collective/
+
+. $base/package/*/zope/zope-conf.in

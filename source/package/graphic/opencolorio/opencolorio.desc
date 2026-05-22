@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/opencolorio/opencolorio.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A color management framework for visual effects and animation
+
+[T] OpenColorIO (OCIO) is a complete color management solution geared towards
+[T] motion picture production with an emphasis on visual effects and computer
+[T] animation. OCIO provides a straightforward and consistent user experience
+[T] across all supporting applications while allowing for sophisticated
+[T] back-end configuration options suitable for high-end production usage.
+[T] OCIO is compatible with the Academy Color Encoding Specification (ACES)
+[T] and is LUT-format agnostic, supporting many popular formats.
+
+[A] Academy Software Foundation
+[M] Aleksi Venäläinen <aleksi.venalainen@outlook.com>
+
+[U] https://opencolorio.org/
+
+[C] extra/development
+[F] OBJDIR
+
+[E] opt openexr
+
+[L] BSD
+[V] 2.5.2
+[P] X -----5---9 300.800
+
+[D] dc9ced310ea08b817e818c7c736e54904166623c5b8e78d47dba837e opencolorio-v2.5.2.tar.gz https://github.com/AcademySoftwareFoundation/OpenColorIO/archive/v2.5.2/
+
+hook_add premake 5 "mkdir -p ext/dist/usr/${libdir##*/}; ln -svf /usr/${libdir##*/}/libpystring.a ext/dist/usr/${libdir##*/}"

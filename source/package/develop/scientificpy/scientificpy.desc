@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/scientificpy/scientificpy.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Scientific Python
+
+[T] ScientificPython is a collection of Python modules that are useful for
+[T] scientific computing. In this collection you will find modules that
+[T] cover basic geometry (vectors, tensors, transformations, vector and
+[T] tensor fields), quaternions, automatic derivatives, (linear)
+[T] interpolation, polynomials, elementary statistics, nonlinear
+[T] least-squares fits, unit calculations, Fortran-compatible text
+[T] formatting, 3D visualization via VRML, and two Tk widgets for simple
+[T] line plots and 3D wireframe models. There are also interfaces to the
+[T] netCDF library (portable structured binary files), to MPI (Message
+[T] Passing Interface, message-based parallel programming), and to BSPlib
+[T] (Bulk Synchronous Parallel programming).
+
+[U] http://starship.python.net/~hinsen/ScientificPython/
+
+[A] Konrad HINSEN <hinsen@cnrs-orleans.fr>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/scientific
+
+[L] GPL
+[V] 2.4.9
+
+[D] 08466913bedc35e6ff33fb627907d3b9bb3e8983ad5b473e6ada1d06 ScientificPython-2.4.9.tar.gz http://starship.python.net/~hinsen/ScientificPython/

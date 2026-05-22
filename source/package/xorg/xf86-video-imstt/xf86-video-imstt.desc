@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-video-imstt/xf86-video-imstt.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Xorg Integrated Micro Solutions Twin Turbo video driver
+
+[T] This driver supports Integrated Micro Solutions Twin Turbo 128 video chips.
+[T] Supported chipsets: IMSTT128 (IMS, tt128mbA), IMSTT3D (IMS, tt3d).
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.1.0
+[P] O
+
+[D] 078c6e445ba9b7fdb76e98d8a91bccc3b927f1d6dcc3029a5b69ee09 xf86-video-imstt-1.1.0.tar.bz2 http://xorg.freedesktop.org/releases/individual/driver/
+
+. package/*/*/modular-x-conf.in

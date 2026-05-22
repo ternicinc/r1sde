@@ -1,0 +1,24 @@
+[TIMESTAMP] 1737712837 Fri Jan 24 11:00:37 2025
+[BUILDTIME] 25 (9)
+[SIZE] 14.72 MB, 740 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[OPT] doxygen
+[DEP] findutils
+[DEP] gawk
+[OPT] graphviz
+[DEP] grep
+[DEP] libexif
+[DEP] libgd
+[DEP] libjpeg
+[DEP] libtool
+[DEP] libusb
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] xz

@@ -1,0 +1,37 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/zthread/bugfix.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./include/zthread/Barrier.h.orig	Sun Mar 13 06:23:00 2005
++++ ./include/zthread/Barrier.h	Sat Jun 21 17:31:14 2008
+@@ -150,7 +150,7 @@
+ 
+       } else {
+ 
+-        int myGeneration = _generation;
++        unsigned int myGeneration = _generation;
+ 
+         try {
+ 
+@@ -251,7 +251,7 @@
+ 
+       } else {
+ 
+-        int myGeneration = _generation;
++        unsigned int myGeneration = _generation;
+ 
+         try {
+ 
+--- ./include/zthread/BlockingQueue.h.orig	Sun Mar 13 03:04:18 2005
++++ ./include/zthread/BlockingQueue.h	Sat Jun 21 17:31:14 2008
+@@ -83,7 +83,7 @@
+       /**
+        * @see Queue::add(const T& item, unsigned long timeout)
+        */
+-      virtual bool add(T item, unsigned long timeout) {
++      virtual bool add(const T& item, unsigned long timeout) {
+ 
+         try {
+ 

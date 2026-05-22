@@ -1,0 +1,45 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/spiralsynthmodular/hotfix-gcc41.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -Nur SpiralSynthModular-0.1.1-orig/SpiralSound/Sample.h SpiralSynthModular-0.1.1/SpiralSound/Sample.h
+--- SpiralSynthModular-0.1.1-orig/SpiralSound/Sample.h	2002-07-28 23:18:14.000000000 +0000
++++ SpiralSynthModular-0.1.1/SpiralSound/Sample.h	2006-04-01 20:54:24.247417750 +0000
+@@ -67,7 +67,7 @@
+ 	void CropTo(int NewLength);
+ 	bool IsEmpty() const { return m_IsEmpty; }
+ 
+-	inline float &Sample::operator[](int i) const
++	inline float &operator[](int i) const
+ 	{		
+ 		#ifdef DEBUG
+ 			assert(i>=0 && i<m_Length);
+@@ -76,7 +76,7 @@
+ 	}
+ 
+ 	// Linear interpolated
+-	inline float Sample::operator[](float i) const
++	inline float operator[](float i) const
+ 	{		
+ 		int ii=(int)i;
+ 		
+@@ -90,7 +90,7 @@
+ 	}
+ 
+ 
+-	inline void Sample::Set(int i, float v) 
++	inline void Set(int i, float v) 
+ 	{	
+ 		m_IsEmpty=false;
+ 		#ifdef DEBUG
+@@ -99,7 +99,7 @@
+ 		m_Data[i]=v;
+ 	}	
+ 	
+-	inline Sample &Sample::operator=(const Sample &rhs)
++	inline Sample &operator=(const Sample &rhs)
+ 	{
+ 		Allocate(rhs.GetLength());		
+ 		memcpy(m_Data,rhs.GetBuffer(),GetLengthInBytes());

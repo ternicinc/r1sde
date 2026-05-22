@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-power-manager/gnome-power-manager.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Is for managing the power environment of your laptop
+
+[T] GNOME Power Manager is a session daemon for the GNOME desktop environment
+[T] that makes it easy to manage your laptop or desktop system.
+
+[U] https://www.gnome.org/projects/gnome-power-manager/
+
+[A] Richard Hughes <richard@hughsie.com>
+[A] William Jon McCann <mccann@jhu.edu>
+[A] Jaap A. Haitsma <jaap@haitsma.org>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/desktop/gnome
+
+[L] GPL
+[V] 50.0
+[P] X -----5---9 208.900
+
+[CV-URL] https://download.gnome.org/sources/gnome-power-manager/cache.json
+[D] cf786ecb1ccae5a5b5f7c29c941d1d61f85005bf25846724d3dda703 gnome-power-manager-50.0.tar.xz https://download.gnome.org/sources/gnome-power-manager/50/
+
+. $base/package/*/*/gnome-conf.in

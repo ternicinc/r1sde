@@ -1,0 +1,21 @@
+[TIMESTAMP] 1750457355 Fri Jun 20 18:09:15 2025
+[BUILDTIME] 10 (9)
+[SIZE] 1.21 MB, 68 files
+
+[OPT] avahi
+[DEP] bash
+[DEP] coreutils
+[DEP] cups
+[OPT] dbus
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] libcupsfilters
+[DEP] libppd
+[DEP] linux-header
+[DEP] make
+[OPT] php
+[DEP] sed
+[DEP] tar
+[DEP] xz

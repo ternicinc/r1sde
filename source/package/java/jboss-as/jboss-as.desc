@@ -1,0 +1,61 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/jboss-as/jboss-as.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] JBoss J2EE Application Server
+
+[T] JBoss AS is the first J2EE 1.4 certified, production-ready,
+[T] open-source application server on the market, delivering a
+[T] high-performance, reliable platform for e-business applications.
+[T] Combining a revolutionary, service-oriented architecture with
+[T] a no-cost open source software license, JBoss AS is free to
+[T] download, use, embed, and distribute, making it the most popular
+[T] middleware platform for developers, independent software vendors
+[T] (ISVs), and enterprises alike.
+
+[U] https://www.jboss.org/products/overview/jbossas
+
+[A] The JBoss development team.
+[M] Minto van der Sluis <minto@multimach.com>
+
+[C] extra/server
+
+[L] LGPL
+[V] 7.1.1.Final
+[P] O
+
+[D] 7af2d3f26e88ff97a6700c54a53c6dd50ffcfdbb9e1b4ba1f062fbf0 jboss-as-7.1.1.Final.tar.gz https://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/
+
+# Prevent executing normal make and install build steps.
+# This package has custom make and install.
+runmake=0
+
+# Check if a java development kit was installed. Unfortunately
+# JBoss seems to use special sun classes that are no available
+# in the IBM jdk. So we are forced to check for the availability
+# of the Sun jdk.
+pkgprefix -t sun-jdk-150
+
+prefix=opt/jboss
+export JBOSS_HOME=$root/$prefix
+
+# Custom package building and installation.
+jboss_postmake() {
+	# Start building.
+	(cd build; sh build.sh)
+	if [ $? -ne 0 ]; then
+		# Something went wrong.
+		abort "Building $pkg failed."
+	fi
+	
+	mkdir -p $JBOSS_HOME
+	# After building we have to copy the build results to
+	# the installation directory ($prefix). We also have
+	# to make sure to preserve any existing links.
+	buildoutput=$builddir/jboss-$ver-src/build/output/jboss-$ver/
+	(cd $buildoutput; tar -c * | tar -x -C $JBOSS_HOME)
+}
+
+hook_add postmake 5 jboss_postmake

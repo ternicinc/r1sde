@@ -1,0 +1,35 @@
+[TIMESTAMP] 1759845204 Tue Oct  7 15:53:24 2025
+[BUILDTIME] 90 (9)
+[SIZE] 0.86 MB, 91 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] boost
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] freetype
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] kconfig
+[DEP] kconfigwidgets
+[DEP] kcoreaddons
+[DEP] kcrash
+[DEP] kdbusaddons
+[DEP] kglobalaccel
+[DEP] ki18n
+[DEP] kio
+[DEP] kservice
+[DEP] kwidgetsaddons
+[DEP] kxmlgui
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] procps
+[DEP] qt6base
+[DEP] sed
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] xz

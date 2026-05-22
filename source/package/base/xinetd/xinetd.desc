@@ -1,0 +1,40 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xinetd/xinetd.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An alternative inet implementation
+
+[T] Xinetd is a replacement for inetd, the internet services daemon.
+[T] Anybody can use it to start servers that don't require privileged
+[T] ports because xinetd does not require that the services in its
+[T] configuration file be listed in /etc/services. It can do access
+[T] control on all services based on the address of the remote host
+[T] and time of access. Access control works on all services, whether
+[T] multi-threaded or single-threaded and for both the TCP and UDP
+[T] protocols.
+
+[U] http://www.xinetd.org/
+
+[A] Panos Tsirigotis <panos@cs.colorado.edu> {Original Author}
+[A] Rob Braun <bbraun@synack.net> {Current Maintainer}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+
+[L] Free-to-use
+[V] 2.3.15.4
+
+[D] 40f22340d10ca1b2cd069debf44381107bad7144bde61bd5f769f89b xinetd-2.3.15.4.tar.xz https://github.com/openSUSE/xinetd/releases/download/2.3.15.4/
+
+var_append confopt ' ' '--with-libwrap --with-loadavg'
+
+# no DESTDIR
+var_append confopt ' ' '--bindir=\${prefix}/bin --sbindir=\${prefix}/sbin \
+			     --mandir=\${prefix}/share/man'
+var_append makeinstopt ' ' prefix=$root/$prefix
+
+hook_add postmake 5 '[ -e $root/etc/xinetd.conf ] || cp xinetd/sample.conf $root/etc/xinetd.conf'

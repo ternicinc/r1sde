@@ -1,0 +1,25 @@
+
+[TIMESTAMP] 1690851432 Tue Aug  1 02:57:12 2023
+[BUILDTIME] 2 (9)
+[SIZE] 0.44 MB, 17 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] bluez
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[DEP] glib
+[DEP] grep
+[DEP] gtk+
+[DEP] linux-header
+[DEP] make
+[DEP] man
+[DEP] psmisc
+[DEP] sed
+[DEP] shared-mime-info
+[DEP] tar
+[DEP] xz

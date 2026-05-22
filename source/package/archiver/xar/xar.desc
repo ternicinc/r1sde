@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xar/xar.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An extensible archiver
+
+[T] XAR stands for eXtensible ARchiver. XAR is a new archive format, library,
+[T] and archiver to meet modern archival needs. It can archive Extended
+[T] Attributes and ACLs for Linux, FreeBSD, and Mac OS X 10.4 systems and
+[T] resource forks and Finder metadata on Mac OS X 10.3. XAR can extract
+[T] files using either numeric (uid/gid) or symbolic (username/groupname)
+[T] file ownerships, saving the hassle of remapping uids/gids to the correct
+[T] users. Python bindings, Cocoa bindings, and a Finder Contextual Menu
+[T] Plugin are available separately.
+
+[U] https://github.com/apple-oss-distributions/xar
+
+[A] Rob Braun <bbraun@synack.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+
+[L] BSD
+[V] 503
+
+[D] 49390f33562acf3692816ad188cef8de212a9d1562f479726a9c92cc xar-503.tar.gz https://github.com/apple-oss-distributions/xar/archive/xar-503/
+
+autogen=1
+hook_add preconf 5 "cd xar"
+
+var_append GCC_WRAPPER_APPEND ' ' "-I$root/usr/include/libxml2"

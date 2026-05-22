@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lyx/lyx.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An advanced LaTeX-based typesetting and text editing program
+
+[T] LyX is an advanced document processor for Unix. It encourages an
+[T] approach to writing based on the structure of your documents, not
+[T] their appearance, allowing you to concentrate on writing rather
+[T] than visual layout. It automates formatting according to predefined
+[T] rule sets, yielding consistency throughout even the most complex
+[T] documents.
+
+[U] https://www.lyx.org/
+
+[A] LyX Team <lyx-users@lists.lyx.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/editor
+
+[L] GPL
+[V] 2.5.1
+
+[D] 7bc59708af6c31dd6cf8f5275273099e1897dec9a943814393787915 lyx-2.5.1.tar.xz https://ftp.lip6.fr/pub/lyx/stable/2.5.x/
+
+prefix="usr/X11"; set_confopt
+export QTDIR=$QT5DIR
+var_append GCC_WRAPPER_INSERT ' ' "-I$root$(pkgprefix includedir libx11)"
+var_append GCC_WRAPPER_INSERT ' ' "-L$root$(pkgprefix libdir libx11)"

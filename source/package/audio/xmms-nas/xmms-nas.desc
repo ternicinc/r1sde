@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xmms-nas/xmms-nas.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] XMMS output plugin to use NAS
+
+[T] The Network Audio System is used on most NCD X-terminals and is sometimes
+[T] part of the standard X distribution, primarily for getting the sound to
+[T] the right place.
+[T]
+[T] Be aware that you're sending upto 180 kb/sec over the network between your
+[T] X-terminal and the machine you're running xmms on. Don't blame me if some
+[T] sysadmin kicks your butt for hogging the network.
+[T]
+[T] The Network Audio System doesn't support separate left and right volume,
+[T] so the balance slider will not work.
+
+[U] ftp://mud.stack.nl/pub/OuterSpace/willem/
+
+[A] Willem Monsuwe <willem@stack.nl>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] AUTOMAKE-QUIRK
+
+[L] GPL
+[V] 0.2
+
+[D] a62bb4d2f2468f948f17d1dac835106322d588f7641bcef2f840a959 xmms-nas-0.2.tar.gz ftp://mud.stack.nl/pub/OuterSpace/willem/
+
+hook_add premake 5 "touch config.h"
+var_append confopt ' ' --libdir=/usr/lib/xmms/Output

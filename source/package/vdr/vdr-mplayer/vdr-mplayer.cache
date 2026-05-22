@@ -1,0 +1,22 @@
+
+[TIMESTAMP] 1167780977 Wed Jan  3 00:36:17 2007
+[BUILDTIME] 10 (5)
+[SIZE] 0.55 MB, 18 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] grep
+[DEP] libid3tag
+[DEP] libmad
+[DEP] libogg
+[DEP] libsndfile
+[DEP] libvorbis
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] vdr

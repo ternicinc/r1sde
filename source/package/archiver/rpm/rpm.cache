@@ -1,0 +1,38 @@
+[TIMESTAMP] 1752424073 Sun Jul 13 18:27:53 2025
+[BUILDTIME] 12 (9)
+[SIZE] 12.20 MB, 1011 files
+
+[OPT] acl
+[OPT] audit
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] cmake
+[DEP] coreutils
+[DEP] dbus
+[DEP] diffutils
+[OPT] doxygen
+[DEP] file
+[DEP] gawk
+[DEP] gettext
+[OPT] graphviz
+[DEP] grep
+[DEP] libarchive
+[OPT] libcap
+[DEP] libelf
+[OPT] libselinux
+[DEP] linux-header
+[DEP] lua
+[DEP] make
+[DEP] pkgconfig
+[DEP] popt
+[OPT] python
+[DEP] readline
+[OPT] rpm-sequoia
+[DEP] sed
+[DEP] sqlite
+[DEP] sysfiles
+[DEP] tar
+[DEP] xz
+[DEP] zlib
+[DEP] zstd

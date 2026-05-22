@@ -1,0 +1,26 @@
+[TIMESTAMP] 1752436853 Sun Jul 13 22:00:53 2025
+[BUILDTIME] 12 (9)
+[SIZE] 37.55 MB, 322 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gettext
+[DEP] gmp
+[DEP] grep
+[DEP] guile
+[DEP] gzip
+[DEP] libglvnd
+[DEP] libsdl2
+[DEP] libsdl2_image
+[DEP] libsdl2_mixer
+[DEP] libsdl2_ttf
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] zlib

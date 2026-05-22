@@ -1,0 +1,39 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openal/openal.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Open Audio Library
+
+[T] OpenAL, the Open Audio Library, is a joint effort to create an open,
+[T] vendor- neutral, cross-platform API for interactive, primarily
+[T] spatialized audio. OpenAL's primary audience are application
+[T] developers and desktop users that rely on portable standards like
+[T] OpenGL, for games and other multimedia applications. OpenAL is
+[T] already supported by a number of hardware vendors and developers.
+
+[U] https://www.openal.org
+
+[A] Loki Entertainment Software (http://www.lokigames.com)
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[E] opt jack
+[E] opt libsndfile
+[E] opt portaudio
+[E] opt pulseaudio
+
+[L] LGPL
+[V] 1.25.2
+[P] X -----5---9 166.750
+
+[D] eff8049d1ba56833e955aa55c63a431f8cc9f3b92596482a64e4b5a7 openal-soft-1.25.2.tar.gz https://github.com/kcat/openal-soft/archive/1.25.2/
+
+var_append cmakeopt ' ' -DALSOFT_EXAMPLES=FALSE
+pkginstalled pipewire || var_append cmakeopt ' ' -DALSOFT_BACKEND_PIPEWIRE=FALSE
+pkginstalled qt5base || var_append cmakeopt ' ' -DALSOFT_UTILS=FALSE
+var_append GCC_WRAPPER_REMOVE ' ' -Wno-c++20-attribute-extensions

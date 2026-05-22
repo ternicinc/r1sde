@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/yq/yq.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A cli for YAML, JSON, XML, CSV, TOML and properties processor
+
+[T] A lightweight and portable command-line YAML, JSON and XML processor. yq
+[T] uses jq like syntax but works with yaml files as well as json, xml,
+[T] properties, csv and tsv. It doesn't yet support everything jq does - but it
+[T] does support the most common operations and functions, and more is being
+[T] added continuously.
+
+[U] https://mikefarah.gitbook.io/yq
+
+[A] Mike Farah
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] MIT
+[V] 4.53.3
+
+[D] 0 yq-4.53.3.tar.gz https://github.com/mikefarah/yq/archive/refs/tags/v4.53.3/
+
+. $base/package/*/*/go-conf.in
+
+hook_add postmake 5 'cp -vf yq $root$bindir/'

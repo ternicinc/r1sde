@@ -1,0 +1,23 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/netkit-telnet/line-name.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./telnetd/utility.c~	Sun Dec 12 15:59:45 1999
++++ ./telnetd/utility.c	Sat Apr  8 11:04:09 2000
+@@ -467,11 +467,10 @@
+ 		switch (*++cp) {
+ 
+ 		case 't':
+-			slash = strrchr(line, '/');
+-			if (slash == NULL)
++			if ( strncmp(line,"/dev/",5) )
+ 				putstr(line);
+ 			else
+-				putstr(slash+1);
++				putstr(line+5);
+ 			break;
+ 
+ 		case 'h':

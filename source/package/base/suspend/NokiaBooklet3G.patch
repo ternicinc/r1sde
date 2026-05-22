@@ -1,0 +1,21 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/suspend/NokiaBooklet3G.patch
+# Copyright (C) 2009 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+The usual guidance.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- suspend/whitelist.c.orig	2009-11-01 16:00:04.000000000 +0000
++++ suspend/whitelist.c	2009-11-01 16:02:20.000000000 +0000
+@@ -291,6 +291,8 @@
+ 	{ "MAXDATA",			"PRO600IW",		"",	"", S3_BIOS|S3_MODE },
+ 	/* Hugo Costelha */
+ 	{ "NEC *",			"B7 *",			"",	"", VBE_SAVE }, 
++	/* Rene Rebe <rene@exactcode.de> */
++	{ "Nokia", 			"Nokia Booklet 3G",	"",	"", S3_BIOS },
+ 
+ 	/* Daniel Koester <koester@math.uni-augsburg.de> does not yet work from text mode */
+ 	{ "SAMSUNG ELECTRONICS CO., LTD.",	"R55S *",	"",	"", 0 },

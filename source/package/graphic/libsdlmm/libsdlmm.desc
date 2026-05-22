@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libsdlmm/libsdlmm.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A C++ class-based wrapper for SDL
+
+[T] SDLmm is a C++ glue for SDL, or the Simple DirectMedia Layer, which
+[T] is a generic API that provides low level access to audio, keyboard,
+[T] mouse, joystick, 3D hardware via OpenGL, and 2D framebuffer across
+[T] multiple platforms.
+[T]
+[T] SDLmm aims to stay as close as possible to the C API while taking
+[T] advantage of native C++ features like object orientation. We will
+[T] also aim at being platform independent as much as possible. I.e we'll
+[T] try to support ever platform supported by SDL.
+
+[U] https://sdlmm.sourceforge.net/
+
+[A] David Hedbor <david@hedbor.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 0.1.8
+
+[D] b4dbe360d41370af6aecc7ffca8725e4702a0803307091c78168796c SDLmm-0.1.8.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/sdlmm/

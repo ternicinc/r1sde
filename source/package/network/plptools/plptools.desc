@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/plptools/plptools.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Psion Link Protocol library and tools
+
+[T] Plptools contain a set of libraries and utilities for enabling Unix
+[T] (mainly Linux) systems to communicate with a Psion palmtop over a serial
+[T] line. On Linux, a connection over IrDA, using the IrCOMM feature is also
+[T] possible. A shared library encapsulates the highlevel protocol
+[T] (PsionLinkProtocol) and thus makes it easy to write applications without
+[T] extensive knowledge of the protocol itself. A daemon (ncpd) handles the
+[T] serial connection and provides it's services on a local TCP socket.
+
+[U] https://plptools.sourceforge.net/
+
+[A] Philip Proudman <phil@proudman51.freeserve.co.uk>
+[A] Fritz Elfert <felfert@to.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+
+[L] GPL
+[V] 1.0.13
+
+[D] 24f052f86e3e8b96e5855b2194abf994f0aec26d9b7b54168e2ac41d plptools-1.0.13.tar.gz https://prdownloads.sourceforge.net/sourceforge/plptools/
+
+var_append confopt ' ' --with-serial=/dev/tts/1

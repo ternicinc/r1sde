@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/devil/devil.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Open Source image loading, saving and manipulation library
+
+[T] DevIL (formerly OpenIL) offers very powerful image loading capabilities,
+[T] yet is easy for a developer to learn and use. Ultimate control of images
+[T] is left to the developer, so unnecessary conversions, etc. are not
+[T] performed. DevIL utilizes a simple, yet powerful, syntax. DevIL can load,
+[T] save, convert, manipulate, filter and display a wide variety of image
+[T] formats.
+
+[U] https://corona.sourceforge.net/
+
+[A] Denton Woods <denton@imagelib.org>
+[A] Nicolas Weber <thakis@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+
+[E] opt jasper
+
+[L] LGPL
+[V] 1.8.0
+
+[D] a1bf1a8f098f448245f7c7bcef6a434dc01164bc67901c6dd111c0c7 DevIL-1.8.0.tar.gz https://prdownloads.sourceforge.net/sourceforge/openil/
+
+srcdir=DevIL/DevIL
+var_append cmakeopt ' ' -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+var_append GCC_WRAPPER_APPEND ' ' -fpermissive

@@ -1,0 +1,11 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/superh/config.hlp
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+SDECFG_SH_OPT
+  Please select the CPU you want to optimize for.
+
+SDECFG_BOARDDEF
+  Please select the board you want to use (list incomplete, feel free to add more...)

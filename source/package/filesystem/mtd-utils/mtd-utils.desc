@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mtd-utils/mtd-utils.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A generic Linux subsystem for memory devices, especially Flash devices
+
+[T] The aim of the system is to make it simple to provide a driver for new
+[T] hardware, by providing a generic interface between the hardware drivers
+[T] and the upper layers of the system.
+[T] Hardware drivers need to know nothing about the storage formats used, such
+[T] as FTL, FFS2, etc., but will only need to provide simple routines for read,
+[T] write and erase. Presentation of the device's contents to the user in an
+[T] appropriate form will be handled by the upper layers of the system.
+
+[U] http://www.linux-mtd.infradead.org
+
+[A] David Woodhouse
+[A] Thomas Gleixner
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/filesystem
+[F] CROSS NO-LTO
+[E] opt acl
+
+[L] GPL
+[V] 2.3.1
+
+[D] d241afe5910df30868a1282aaae14715d123a0df05fdbae14a530a75 mtd-utils-2.3.1.tar.bz2 https://infraroot.at/pub/mtd/
+
+var_append confopt ' ' "--disable-unit-tests --without-tests"
+[ "$SDECFG_LIBC" = "glibc" ] || var_append confopt ' ' --without-ubifs

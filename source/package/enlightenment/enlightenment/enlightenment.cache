@@ -1,0 +1,28 @@
+[TIMESTAMP] 1742571397 Fri Mar 21 16:36:37 2025
+[BUILDTIME] 85 (9)
+[SIZE] 403.21 MB, 811 files
+
+[DEP] 00-dirtree
+[DEP] alsa-lib
+[DEP] bash
+[DEP] bluez
+[DEP] coreutils
+[DEP] diffutils
+[DEP] efl
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[OPT] imlib2
+[DEP] libexif
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pam
+[DEP] pulseaudio
+[DEP] sed
+[OPT] systemd
+[DEP] tar
+[DEP] udev
+[OPT] udisks
+[DEP] xz

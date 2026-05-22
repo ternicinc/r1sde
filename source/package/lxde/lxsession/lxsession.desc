@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lxsession/lxsession.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Default session manager of LXDE
+
+[T] LXSession is the default session manager of LXDE.
+
+[U] https://lxde.org/
+
+[A] LXDE team http://lxde.org/
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/desktop/lxde
+
+[L] GPL
+[V] 0.5.6
+[P] X -----5---9 220.010
+
+[D] a7748eb81a0ab61524952aed78a8f559d07b368d7d41eb69e728117d lxsession-0.5.6.tar.gz https://github.com/lxde/lxsession/archive/0.5.6/
+
+. $base/package/lxde/*/lxde-conf.in
+var_append GCC_WRAPPER_INSERT ' ' "$(pkg-config x11 --cflags --libs-only-L)"
+autogen=1

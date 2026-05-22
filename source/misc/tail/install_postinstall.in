@@ -1,0 +1,21 @@
+#!/bin/sh
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/misc/tail/install_postinstall.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+tail_postinstall_wrapper=sde_substitute
+
+auto_install_postinstall() {
+	local pitpl= pidir=$root/etc/postinstall.d
+	for pitpl in $( cd $confdir; ls -1 *.postinstall 2> /dev/null ); do
+		echo "Installing ${pitpl%.postinstall} postinstall script..."
+		eval "cat $confdir/$pitpl | \
+			${tail_postinstall_wrapper//|/ | } \
+			> $pidir/${pitpl%.postinstall}"
+		chmod +x $pidir/${pitpl%.postinstall}
+	done
+}
+
+hook_add postinstall 4 'auto_install_postinstall'

@@ -1,0 +1,36 @@
+[TIMESTAMP] 1737709927 Fri Jan 24 10:12:07 2025
+[BUILDTIME] 150 (9)
+[SIZE] 32.03 MB, 1309 files
+
+[DEP] autoconf
+[DEP] autoconf-archive
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] bison
+[DEP] coreutils
+[DEP] dejavu-ttf-fonts
+[DEP] diffutils
+[DEP] findutils
+[DEP] flex
+[DEP] freetype
+[OPT] fuse
+[OPT] fuse2
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] help2man
+[DEP] kmod
+[DEP] linux-header
+[OPT] lvm2
+[DEP] m4
+[DEP] make
+[DEP] ndctl
+[DEP] perl
+[DEP] perl-libintl
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] texinfo
+[DEP] xz

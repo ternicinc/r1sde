@@ -1,0 +1,19 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/moneypenny/datadir.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./src/globals.cpp	2006-02-04 10:40:46.000000000 +0100
++++ ./src/globals.cpp	2006-03-16 11:41:55.000000000 +0100
+@@ -39,8 +40,8 @@
+     mp_dir = dir.path() +"/";
+     if(QFile(mp_dir + "moneypenny.pro").exists())
+       qDebug("Running from development directory tree.");
+-    else
+-     if(mp_dir.find("usr")>=1){ // may be /usr or /usr/local or /UNIONFS/usr on a KNOPPIX CD
++    else if(dir.absPath().startsWith("/usr") || dir.absPath().startsWith("/opt")){ 
++       // may be /usr or /usr/local or /UNIONFS/usr on a KNOPPIX CD
+        mp_dir = mp_dir + "share/moneypenny/";
+      }  
+     QString fileName = mp_dir + MONEYPENNY_DATA_DIR + "/" + MONEYPENNY_HBCI_BANKDATA_FILE;

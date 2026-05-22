@@ -1,0 +1,23 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/avr32/package/*/no-libstdc++.patch.cross0
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+We first only build the c++ compiler for the toolchain cross-compiler. Later,
+in the next stage, when we have cross built the C library, we also build the
+libstdc++ STL.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- ./configure.orig	2005-11-24 11:58:19.000000000 +0100
++++ ./configure	2005-11-24 11:58:10.000000000 +0100
+@@ -1001,7 +1001,7 @@
+    
+ 
+ # Skipdirs are removed silently.
+-skipdirs=
++skipdirs=target-libstdc++-v3
+ # Noconfigdirs are removed loudly.
+ noconfigdirs=""
+ 

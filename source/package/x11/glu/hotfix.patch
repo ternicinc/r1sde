@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/glu/hotfix.patch
+# Copyright (C) 2020 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- glu-9.0.0/src/libutil/error.c.vanilla	2020-02-01 14:50:28.808090639 +0100
++++ glu-9.0.0/src/libutil/error.c	2020-02-01 14:50:45.460090836 +0100
+@@ -28,6 +28,7 @@
+  * Silicon Graphics, Inc.
+  */
+ 
++#include <stddef.h>
+ #include "gluos.h"
+ #include "gluint.h"
+ #include <GL/glu.h>

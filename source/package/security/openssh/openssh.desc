@@ -1,0 +1,58 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openssh/openssh.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An open re-implementation of the SSH package
+
+[T] This is a Linux port of OpenBSD's excellent OpenSSH. OpenSSH is
+[T] based on the last free version of Tatu Ylonen's SSH with all
+[T] patent-encumbered algorithms removed, all known security bugs
+[T] fixed, new features reintroduced, and many other clean-ups.
+[T]
+[T] SSH (Secure Shell) is a program to log into another computer over a
+[T] network, to execute commands in a remote machine, and to move files
+[T] from one machine to another. It provides strong authentication and
+[T] secure communications over insecure channels. It is intended as a
+[T] replacement for rlogin, rsh, rcp, and rdist.
+
+[U] https://www.openssh.com/
+
+[A] Tatu Ylonen {Original Author}
+[A] Aaron Campbell, Bob Beck, Markus Friedl, Niels Provos,
+[A] Theo de Raadt, and Dug Song {Current Maintainers}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system extra/network
+[F] CROSS FAT-LTO.mips FAT-LTO.mips64
+
+[L] OpenSource
+[V] 10.3p1
+[P] X -----5---9 191.100
+
+[D] aaca3ecc06dcad15529fa52b8b4a5ae69a766cd8ac221214b6a69644 openssh-10.3p1.tar.gz http://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/
+
+LD=$CC
+
+[ "$sysconfdir" == "/etc" ] && sysconfdir=/etc/ssh
+#var_append GCC_WRAPPER_APPEND ' ' -DSANDBOX_SECCOMP_FILTER_DEBUG=1
+
+# officially broken for gcc/mips, powerpc and ia64
+[[ "$arch" = mips* || "$arch" = powerpc* || "$arch" = ia64 ]] &&
+	var_append GCC_WRAPPER_REMOVE ' ' -fzero-call-used-regs=used
+
+var_append confopt ' ' "--sysconfdir=\$sysconfdir \
+	--with-md5-passwords \
+	--disable-suid-ssh \
+	--with-xauth=/usr/X11/bin/xauth"
+	#--with-sandbox=no"
+
+pkginstalled pam && var_append confopt ' ' --with-pam
+pkginstalled tcp_wrappers && var_append confopt ' ' --with-tcp-wrappers
+pkginstalled systemd &&
+	var_append GCC_WRAPPER_APPEND ' ' -DSYSTEMD_NOTIFY=1 &&
+	hook_add postmake 5 "pkg_systemd_install_service $confdir/sshd.service"
+
+makeinstopt="DESTDIR=$root install-nokeys"

@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mod_perl/mod_perl.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The marriage of Apache and Perl
+
+[T] mod_perl gives you a persistent Perl interpreter embedded in your
+[T] web server. This lets you avoid the overhead of starting an
+[T] external interpreter and avoids the penalty of Perl start-up time,
+[T] giving you super-fast dynamic content.
+
+[U] https://perl.apache.org/
+
+[A] Per Einar Ellefsen <pereinar@oslo.online.no>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] APL
+[V] 2.0.13
+
+[D] 5b63e32fbe09f0724a406cd2a55522f2e1f8a1b47a77725cf3040ea1 mod_perl-2.0.13.tar.gz https://apache.org/dist/perl/
+
+plconfopt="MP_APXS=$root/opt/apache/sbin/apxs"

@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/fvwm-themes-extra/fvwm-themes-extra.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Extra themes for thhe Famous(?) Virtual Window Manager
+
+[T] FVWM Themes project provides a configuration framework for FVWM and a
+[T] wide range of configurations ready to use.
+
+[U] https://fvwm-themes.sourceforge.net/
+
+[A] A lot of people <fvwm-workers@fvwm.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/windowmanager
+[F] CROSS
+
+[L] GPL
+[V] 0.7.0
+
+[D] 61d089aa8719f7827fd204fdf8d511c52c8d05c192d9ba2f4537d8f8 fvwm-themes-extra-0.7.0.tar.bz2 https://download.sourceforge.net/fvwm-themes/
+
+runmake=0
+hook_add inmake 5 "mkdir -p $root/usr/share/fvwm/themes/"
+hook_add inmake 5 "cp -r * $root/usr/share/fvwm/themes/"

@@ -1,0 +1,21 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openaptx/openaptx.desc
+[COPY] Copyright (C) 2018 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Reverse-engineered apt-X
+
+[T] Reverse-engineered apt-X.
+
+[A] Arkadiusz Bokowy <arkadiusz.bokowy@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] LGPL
+[V] 2.0.0
+[P] X -----5---9 126.400
+
+[D] e99bc20a9d73c8a454b9ca638545adc1fc9d30ec603c2f472694ebbe openaptx-2.0.0.tar.gz https://github.com/arkq/openaptx/archive/v2.0.0/

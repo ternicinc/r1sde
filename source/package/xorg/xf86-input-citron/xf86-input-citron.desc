@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-input-citron/xf86-input-citron.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Xorg input driver for Citron Infrared Touch devices
+
+[T] Citron is a Xorg input driver for Citron Infrared Touch devices.
+[T] The citron driver acts as a pointer input device, and may be used as
+[T] the X server's core pointer. It is connected via a "RS232" with the
+[T] host.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 2.2.2
+[P] O
+
+[D] 4551b51448f846b6f1d2056e8c04da2e5f437f59d5fba79a2293d6c0 xf86-input-citron-2.2.2.tar.bz2 http://xorg.freedesktop.org/releases/individual/driver/
+
+. package/*/*/modular-x-conf.in

@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/softdog/softdog.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Software watchdog timer
+
+[T] The software watchdog tries to "catch" computer lock-ups and will try
+[T] to reboot the machine in case one occurs. It also does some a few simple
+[T] tests to catch some events (currently the inability to fork and open a file)
+[T] and reboot the machine if they remain so for too long.
+
+[A] Christophe Dupre <duprec@risq.qc.ca>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+
+[L] GPL
+[V] 1.21
+[P] O -----5---9 184.300
+
+[D] 0b46f5ef4ac368fa5a93f2694c867cbc992711d458807dc32b73b234 softdog-1.21.tar.gz http://metalab.unc.edu/pub/Linux/system/daemons/watchdog/
+
+var_append GCC_WRAPPER_APPEND ' ' -D_LINUX_LIST_H
+makeinstopt="BINDIR=$root/sbin MANDIR=$root/usr/share/man/man8 installbin installman"

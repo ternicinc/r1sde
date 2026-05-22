@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xvkbd/xvkbd.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A virtual keyboard for X
+
+[T] Xvkbd is a virtual (graphical) keyboard program for X which provides a
+[T] facility to enter characters onto other clients software by clicking a
+[T] keyboard displayed on the screen. It also has facility to send characters
+[T] specified as the command line option to other client.
+
+[U] http://t-sato.in.coocan.jp/xvkbd/
+
+[A] Tom Sato <VEF00200@nifty.ne.jp>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+
+[L] GPL
+[V] 4.1
+
+[D] 70101f85145b93bdb34aa19dd0904a4057f074532e4e44460d79dc0b xvkbd-4.1.tar.gz http://t-sato.in.coocan.jp/xvkbd/

@@ -1,0 +1,15 @@
+
+[TIMESTAMP] 1133972766 Wed Dec  7 17:26:06 2005
+[BUILDTIME] 115 (9)
+[SIZE] 2.76 MB, 8 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar

@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ladspa-vocoder/ladspa-vocoder.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] LADSPA Vocoder Plugin
+
+[T] A vocoder is a sound effect that can make a human voice sound synthetic.
+[T] It is often used to speak like a robot, with a metallic and monotonous
+[T] voice.
+
+[U] https://www.sirlab.de/linux/descr_vocoder.html
+
+[A] Achim Settelmeier's <settel-linux@sirlab.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 0.4
+
+[CV-URL] http://www.sirlab.de/linux/download_vocoder.html
+
+[D] 7fd52604d1e492f992c2af89f7288e9556272764ace327190ae61074 vocoder-ladspa-0.4.tgz https://www.sirlab.de/linux/vocoder/download/
+
+. $base/package/*/ladspa/ladspa.in

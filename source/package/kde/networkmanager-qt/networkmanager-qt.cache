@@ -1,0 +1,22 @@
+[TIMESTAMP] 1755860541 Fri Aug 22 13:02:21 2025
+[BUILDTIME] 600 (9)
+[SIZE] 2.11 MB, 165 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] networkmanager
+[DEP] pkgconfig
+[DEP] qt6base
+[DEP] qt6declarative
+[DEP] sed
+[DEP] tar
+[DEP] xz

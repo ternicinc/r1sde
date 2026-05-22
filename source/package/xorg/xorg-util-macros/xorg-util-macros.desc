@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xorg-util-macros/xorg-util-macros.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] X.org autoconf utilities
+
+[T] X.org autoconf utilities such as M4 macros.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.20.2
+[P] X ?----5---9 112.600
+
+[D] 89ba1e6609965c414536700ab37dc3a2281a467f6a10e458ae35283d util-macros-1.20.2.tar.xz http://xorg.freedesktop.org/releases/individual/util/
+
+. package/*/*/modular-x-conf.in

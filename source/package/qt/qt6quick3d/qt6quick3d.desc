@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/qt6quick3d/qt6quick3d.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A module and API for defining 3D content in Qt6 Quick
+
+[T] Qt Quick 3D is a module within the Qt framework that provides a high-level
+[T] interface for creating 3D content for user interfaces.
+
+[U] https://qt.io
+
+[A] Trolltech AS <www.trolltech.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS OBJDIR
+
+[L] LGPL
+[V] 6.11.1
+[P] X ?----5---9 141.200
+
+[CV-GROUP] qt6
+[D] d7f7e88b14f9fa8068477454156bfa8b0ba96a2f704d7768a6e1d819 qtquick3d-everywhere-src-6.11.1.tar.xz http://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/
+
+. $base/package/*/*/qt6-conf.in
+var_append GCC_WRAPPER_APPEND ' ' "-I$root/$(pkgprefix includedir libxcb)"
+atstage toolchain && var_append cmakeopt ' ' -DFEATURE_quick3dxr_openxr=OFF

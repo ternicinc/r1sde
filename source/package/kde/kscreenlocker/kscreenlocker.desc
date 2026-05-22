@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kscreenlocker/kscreenlocker.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library and components for secure lock screen architecture
+
+[T] KScreenLocker can be configured to support the PAM ("Pluggable Authentication
+[T] Modules") system for password checking (for unlocking the display).
+
+[U] https://invent.kde.org/plasma/kscreenlocker
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 6.6.5
+[P] X -----5---9 200.020
+
+[CV-GROUP] kde-plasma
+[D] 8394cd1e2e0797b7aecd0e926e7fe824b2bc4c6f504e5f2b238fd002 kscreenlocker-6.6.5.tar.xz https://download.kde.org/stable/plasma/6.6.5/
+
+. $base/package/*/*/kde-conf.in

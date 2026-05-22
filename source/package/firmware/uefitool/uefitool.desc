@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/uefitool/uefitool.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] UEFI firmware image viewer and editor
+
+[T] UEFITool is a cross-platform open source application written in C++/Qt,
+[T] that parses UEFI-compatible firmware image into a tree structure, verifies
+[T] image's integrity and provides a GUI to manipulate image's elements.
+
+[U] https://github.com/LongSoft/UEFITool
+
+[A] Nikolaj Schlej
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] BSD
+[V] A73
+
+[D] 2bcc14e521fa6d6ac18ad9233f5acc2fc37de53c70d2d6ea5b6ee882 uefitools-A73.tar.gz https://github.com/LongSoft/UEFITool/archive/refs/tags/A73/

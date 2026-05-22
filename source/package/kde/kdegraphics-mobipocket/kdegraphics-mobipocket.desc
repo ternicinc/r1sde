@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kdegraphics-mobipocket/kdegraphics-mobipocket.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A collection of plugins to handle mobipocket files
+
+[T] KDE library designed to handle Mobipocket (MOBI) eBook files. It provides
+[T] plugins and functionalitites that enable KDE applications to open and
+[T] manage MOBI files seamlessly.
+
+[U] https://www.kde.org
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 26.04.1
+[P] X -----5---9 300.000
+
+[CV-GROUP] kde-gear
+[D] ca971201d652729504d893c8fead648baee6cf6e3921a3fa80776ae7 kdegraphics-mobipocket-26.04.1.tar.xz https://download.kde.org/stable/release-service/26.04.1/src/
+
+. $base/package/*/*/kde-conf.in

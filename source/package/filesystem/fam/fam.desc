@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/fam/fam.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A filesystem support library
+
+[T] fam is a library to help make GUI tools more usable by notifying them
+[T] when the files they're interested in are created, modified, executed,
+[T] and removed.
+
+[U] https://www.nusphere.com/kb/phpmanual/ref.fam.htm
+
+[A] Silicon Graphics
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+[F] CROSS
+
+[L] GPL
+[V] 2.7.0
+[P] X -----5---9 120.000
+
+[D] 4f9b23112be76f33b0a9937eb722947f31d5d753614df28e3aa39d5a fam-2.7.0.tar.gz ftp://oss.sgi.com/projects/fam/download/stable/
+
+autogen=1
+#[[ $arch = *64 ]] && autogen=1
+#hook_add preconf 1 "aclocal; automake --add-missing"

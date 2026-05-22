@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/redet/redet.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Regular expression development
+
+[T] Redet allows the user to construct regular expressions and test them
+[T] against input data by executing any of a variety of search programs,
+[T] editors, and programming languages that make use of regular expressions.
+
+[U] https://www.billposer.org/Software/redet.html
+
+[A] William J. Poser <billposer@alum.mit.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 8.26
+
+[D] 621b037c436ac04826b07fba240371669fa6a0b54711f18740c7634b redet-8.26.tar.gz http://www.billposer.org/Software/Downloads/
+
+makeopt= # only install: for file copy due tcl/tk

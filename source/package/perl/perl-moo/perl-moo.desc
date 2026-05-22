@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-moo/perl-moo.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Minimalist Object Orientation
+
+[T] A Minimalist Object Orientation (with Moose compatibility).
+
+[U] https://metacpan.org/dist/Moo
+
+[A] Graham Knop <haarg@haarg.org>
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/network
+
+[L] Artistic GPL
+[V] 2.005005
+[P] X -----5---9 200.122
+
+[D] a8cc40dc4d5d4c7b3f1f321b2f5a5fb990807ae2703acfbb26baed45 Moo-2.005005.tar.gz https://cpan.metacpan.org/authors/id/H/HA/HAARG/

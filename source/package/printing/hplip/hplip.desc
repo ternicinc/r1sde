@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/hplip/hplip.desc
+[COPY] Copyright (C) 2005 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] HP Linux Imaging and Printing
+
+[T] HPLIP (HP Linux Imaging and Printing) is a complete single and
+[T] multi-function printing device connectivity solution for users
+[T] of Linux. Supported features include a toolbox with status and
+[T] maintenance functions, scanning, a CUPS backend that supports
+[T] bidirectional I/O, and photo card unloading. It includes HPIJS
+[T] 2.x and supports over 300 HP printer models including Deskjet,
+[T] Business Inkjet, Photosmart, Business Inkjet, PSC, Officejet,
+[T] Mono/Color LaserJet, and LaserJet Multifunction Peripheral (MFP).
+
+[U] https://hplipopensource.com/
+
+[A] Don Welch <linux.deskjet@hp.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/printing
+
+[L] GPL MIT BSD
+[V] 3.25.8
+
+[D] 5087e6a2cac5b15a35b0ba17ba183d110d311ffcb18ef97584cfd073 hplip-3.25.8.tar.gz http://downloads.sourceforge.net/project/hplip/hplip/3.25.8/
+
+runpysetup=0
+
+if ! pkginstalled net-snmp; then
+	var_append confopt ' ' --disable-network-build
+fi
+
+var_append confopt ' ' --enable-foomatic-ppd-install
+var_append confopt ' ' --enable-hpcups-install
+var_append GCC_WRAPPER_APPEND ' ' '-Wno-return-mismatch -Wno-int-conversion'

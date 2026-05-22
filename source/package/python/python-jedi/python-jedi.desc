@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-jedi/python-jedi.desc
+[COPY] Copyright (C) 2020 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A static analysis tool for Python that is typically used in IDEs/editors
+
+[T] Jedi is a static analysis tool for Python that is typically used in
+[T] IDEs/editors plugins. Jedi has a focus on autocompletion and goto
+[T] functionality. Other features include refactoring, code search and finding
+[T] references.
+
+[U] https://pypi.org/project/jedi
+
+[A] David Hatler
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/development
+[L] MIT
+
+[V] 0.20.0
+[P] X -----5---9 149.000
+
+[D] 6fd2ba02aae9560d7bcaf58014426ba502e31ed9d024515f74d12770 jedi-0.20.0.tar.gz https://files.pythonhosted.org/packages/source/j/jedi/

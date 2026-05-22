@@ -1,0 +1,42 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rsync/rsync.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A replacement for rcp that has many more features
+
+[T] Rsync uses an own "rsync" algorithm which provides a very fast method for
+[T] bringing remote files into sync. It does this by sending just the
+[T] differences in the files across the link, without requiring that both
+[T] sets of files are present at one of the ends of the link beforehand.
+[T] At first glance this may seem impossible because the calculation of
+[T] diffs between two files normally requires local access to both
+[T] files.
+
+[U] https://rsync.samba.org/rsync/
+
+[A] Andrew Tridgel <tridge@samba.org>
+[A] Paul Mackerras <paulus@cs.anu.edu.au>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS DIETLIBC
+
+[E] opt acl
+[E] opt python
+
+[L] GPL
+[V] 3.4.3
+[P] X -----5---9 118.200
+
+[D] 2754f6f361d35338da2aa1c53623054d7c5512d57edf36e3a31f1965 rsync-3.4.3.tar.gz https://rsync.samba.org/ftp/rsync/src/
+
+configscript='./configure.sh'
+pkginstalled xxhash || var_append confopt ' ' --disable-xxhash
+pkginstalled lz4 || var_append confopt ' ' --disable-lz4
+[ "$SDECFG_LIBC" = 'glibc' ] || var_append confopt ' ' --disable-roll-simd
+atstage cross && var_append confopt ' ' --enable-ipv6
+var_append GCC_WRAPPER_INSERT ' ' '-DHAVE_VA_COPY=1' # for most arch cross
+var_append confopt ' ' '--without-included-zlib --without-included-popt'

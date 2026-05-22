@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/vdrskin-lightblue16/vdrskin-lightblue16.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] VDR Skin: Lightblue-16
+
+[T] Video Disc Recorder plugin: lightblue-16
+
+[U] http://skins.vdr-developer.org
+
+[A] Unknown
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/multimedia
+[F] FPIC
+
+[L] GPL
+[V] CVS-20051015
+
+[D] 9bf12b1110b101064ebf403d771ad6ed63edf93a30776d4f6515da2b lightblue16-CVS-20051015.tar.gz http://skins.vdr-developer.org/text2skin/files/
+
+. $base/package/vdr/*/vdr-skin-conf.in

@@ -1,0 +1,28 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/lua-sqlite3/map_index.patch
+# Copyright (C) 2010 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+Fixed named parameters with multiple statements (handles) to map correctly.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- lua-sqlite3-0.4.1/sqlite3.lua.vanilla	2005-09-14 23:22:59.000000000 +0000
++++ lua-sqlite3-0.4.1/sqlite3.lua	2010-03-29 13:15:37.936666788 +0000
+@@ -621,12 +621,14 @@
+   local function bind_by_names(parameters)
+     local parameter_names = stmt.paranames
+     local mapping = stmt.mapping
++    local map_index = 1
+     for _, handle in ipairs(stmt.handles) do
+       for index = 1, api.bind_parameter_count(handle) do
+-        local status = api.bind(handle, index, parameters[parameter_names[mapping[index]]])
++        local status = api.bind(handle, index, parameters[parameter_names[mapping[map_index]]])
+         if is_error(status) then
+           return nil, errmsg(stmt.db.handle)
+         end
++	map_index = map_index + 1
+       end
+     end
+   end

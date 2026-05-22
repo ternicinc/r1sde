@@ -1,0 +1,50 @@
+[TIMESTAMP] 1777049074 Fri Apr 24 18:44:34 2026
+[BUILDTIME] 150 (9)
+[SIZE] 59.41 MB, 4972 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] cmocka
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] findutils
+[OPT] flashrom
+[DEP] gawk
+[DEP] gettext
+[OPT] gi-docgen
+[DEP] glib
+[DEP] gnutls
+[OPT] gobject-introspection
+[OPT] graphviz
+[DEP] grep
+[DEP] jinja2
+[DEP] libdrm
+[OPT] libftdi1
+[DEP] libjcat
+[DEP] libmnl
+[DEP] libusb
+[DEP] libxml
+[DEP] libxmlb
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[OPT] openimageio
+[DEP] openssl
+[DEP] pciutils
+[DEP] pkgconfig
+[DEP] polkit
+[DEP] python
+[DEP] readline
+[DEP] sed
+[DEP] setuptools
+[DEP] sqlite
+[OPT] systemd
+[DEP] tar
+[DEP] util-linux
+[OPT] vala
+[DEP] xorgproto
+[DEP] xz
+[DEP] zlib

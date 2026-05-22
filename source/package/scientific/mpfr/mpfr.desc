@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mpfr/mpfr.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Multiple-precision floating-point computations with exact rounding
+
+[T] The MPFR library is a C library for multiple-precision floating-point
+[T] computations with exact rounding (also called correct rounding). It is
+[T] based on the GMP multiple-precision library. The main goal of MPFR is
+[T] to provide a library for multiple-precision floating-point computation
+[T] which is both efficient and has well-defined semantics. It copies the good
+[T] ideas from the ANSI/IEEE-754 standard for double-precision floating-point
+[T] arithmetic (53-bit mantissa).
+
+[U] https://www.mpfr.org/
+
+[A] Vincent Lefevre <Vincent.Lefevre@loria.fr>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS DIETLIBC
+
+[L] LGPL
+[V] 4.2.2
+[P] X 0-2--5---9 102.200
+
+[D] 5d6d0cf840852e97a9aa304afc7172c04b593445c3672fc8685adcfc mpfr-4.2.2.tar.xz https://ftp.gnu.org/gnu/mpfr/
+
+if atstage toolchain; then
+	var_append confopt ' ' '--with-gmp-include=$root$includedir --with-gmp-lib=$root$libdir'
+	var_append confopt ' ' --enable-shared=no
+fi

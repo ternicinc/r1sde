@@ -1,0 +1,15 @@
+
+[TIMESTAMP] 1671800640 Fri Dec 23 14:04:00 2022
+[BUILDTIME] 0 (5)
+[SIZE] 0.11 MB, 20 files
+
+[DEP] 00-dirtree
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] make
+[DEP] perl
+[DEP] sed
+[DEP] tar

@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mc/mc.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GNU Midnight Commander
+
+[T] GNU Midnight Commander is a file manager for free operating systems.
+[T] Like other GNU software, it is written in a portable manner and should
+[T] compile and run on a wide range of operating systems with some degree
+[T] of UNIX compatibility.
+
+[U] https://www.midnight-commander.org/
+
+[A] The GNOME Team
+[M] Vlad Glagolev <stelzy@gmail.com>
+
+[C] extra/shell
+[F] CROSS
+
+[E] opt e2fsprogs
+[E] opt gpm
+[E] opt libssh2
+
+[L] GPL
+[V] 4.8.33
+
+[D] 9b87a42336352e1aaaec4d28c38189bceb266446f7b0c3286370e116 mc-4.8.33.tar.bz2 https://ftp.osuosl.org/pub/midnightcommander/
+
+atstage cross && var_append confopt ' ' --with-screen=ncurses

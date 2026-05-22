@@ -1,0 +1,31 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/smpeg/subconfig-libs.hlp
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+MENU_PKG_SMPEG
+  Here you'll find options for SDL MPEG Library
+
+SDECFG_PKG_SMPEG_ASSERT
+  Enable consistency checks in decoding
+
+SDECFG_PKG_SMPEG_GLPLAY
+  build an OpenGL sample SMPEG player
+
+SDECFG_PKG_SMPEG_GTKPLAY
+  build a GTk sample SMPEG player
+
+SDECFG_PKG_SMPEG_THAUDIO
+  enable threaded audio
+
+SDECFG_PKG_SMPEG_THSYS
+  enable system thread
+
+SDECFG_PKG_SMPEG_SYNC
+  enable system timestamp sync
+
+SDECFG_PKG_SMPEG_ATI
+  enable ATI Rage128 hardware acceleration
+
+SDECFG_PKG_SMPEG_MMX
+  enable MMX IDCT decoding routines

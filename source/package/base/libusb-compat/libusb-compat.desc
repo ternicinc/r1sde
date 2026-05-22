@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libusb-compat/libusb-compat.desc
+[COPY] Copyright (C) 2011 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] OS independent USB device access
+
+[T] The libusb project's aim is to create a Library for use by user
+[T] level applications to USB devices regardless of OS.
+
+[U] https://libusb.sourceforge.net
+
+[A] <johannes@erdfelt.com>
+[M] Gerardo Di Iorio <arete74@gmail.com>
+
+[C] base/library
+[F] CROSS
+
+[L] GPL
+[V] 0.1.9
+[P] X -----5---9 110.000
+
+[D] 08be87c48f90bcd3fdf3838d46e025e2a7cdc00b11bacff03e2903b9 libusb-compat-0.1.9.tar.gz https://prdownloads.sourceforge.net/sourceforge/libusb/libusb-compat-0.1/
+
+autogen=1
+var_append confopt ' ' --disable-build-docs

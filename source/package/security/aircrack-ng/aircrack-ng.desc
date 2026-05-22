@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/aircrack-ng/aircrack-ng.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A set of tools for auditing wireless networks
+
+[T] Aircrack-ng is a set of tools for auditing wireless networks.
+[T] It's an enhanced/reborn version of aircrack. It consists of airodump
+[T] (an 802.11 packet capture program), aireplay (an 802.11 packet injection
+[T] program), aircrack (static WEP and WPA-PSK cracking), airdecap (decrypts
+[T] WEP/WPA capture files), and some tools to handle capture files (merge,
+[T] convert, etc.).
+
+[U] https://www.aircrack-ng.org
+
+[A] Thomas d'Otreppe <tdotreppe@aircrack-ng.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 1.7
+
+[CV-URL] http://www.aircrack-ng.org/
+[D] 06d9eba45546e8f3ae0daaf29247234ebee00497bd107a48ccaac1ef aircrack-ng-1.7.tar.gz https://download.aircrack-ng.org/
+
+autogen=1

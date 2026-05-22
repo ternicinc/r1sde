@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/wdat/wdat.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] DAT read/write program for linux
+
+[T] Wdat is a program for reading and writing Digital Audio Tape (DAT)
+[T] compliant tapes with a SCSI drive designed for this purpose. Note that
+[T] this only works with drives designed to do this. The vast majority
+[T] of DDS drives will NOT work with this program as this requires
+[T] special, Silicon Graphics Inc. (SGI) only, firmware support.
+
+[U] http://www.hoxnet.com/dat-tools/index_old.html
+
+[A] wayne@hoxnet.com
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 0.02
+
+[D] f803bbf05825166d5b2183970c0b8f250aea1aeb9859bd86830e50e9 wdat_0.02.tar.gz http://www.hoxnet.com/dat-tools/
+
+var_append makeinstopt ' ' INSTALL_PATH=$root$bindir

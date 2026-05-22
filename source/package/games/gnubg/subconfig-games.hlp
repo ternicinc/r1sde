@@ -1,0 +1,28 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/gnubg/subconfig-games.hlp
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+MENU_PKG_GAMES_GNUBG
+  Here you'll find options for GNU Backgammon
+
+SDECFG_PKG_GNUBG_READLINE
+  support fancy command line editing
+
+SDECFG_PKG_GNUBG_GDBM
+  use GNU dbm for position databases
+
+SDECFG_PKG_GNUBG_GTK
+  use GTK+ library and widgets
+
+SDECFG_PKG_GNUBG_GTK2
+  use GTK+ 2.0
+
+SDECFG_PKG_GNUBG_GTKEXTRA
+  use GtkExtra widgets
+
+SDECFG_PKG_GNUBG_GUILE
+  use the Guile extensibility language
+  
+SDECFG_PKG_GNUBG_SOUND
+  use sounds with GNU Backgammon

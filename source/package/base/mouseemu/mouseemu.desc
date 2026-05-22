@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mouseemu/mouseemu.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Mouse Emulation Daemon
+
+[T] This mouse button emulation tool lets you: emulate middle and right click,
+[T] a mouse wheel and block the trackpad while typing. It is most often used
+[T] on Apple laptops but can also be handy on other models.
+[T]
+[T] In contrast to the in-kernel mac_hid hack which only implements button
+[T] emulation, the toool operates entierly in user-space and therefore
+[T] needs a 2.6 kernel with userspace input event interface (uinput) compiled
+[T] in or as module.
+
+[U] https://geekounet.org/powerbook/
+
+[A] Colin Leroy <colin@colino.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+
+[L] GPL
+[V] 0.16
+
+[D] 915df8a435535a79d606e1877412c3610992b11afea1ed99d529fb79 mouseemu-0.16.tar.gz http://www.biophys.uni-duesseldorf.de/~schmitz/mouseemu/

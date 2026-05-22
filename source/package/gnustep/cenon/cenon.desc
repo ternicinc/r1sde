@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cenon/cenon.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A vector graphics tool for GNUstep
+
+[T] Cenon is a vector graphics tool for GNUstep. It is built upon a modular
+[T] graphical core, and offers a variety of applications beyond desktop
+[T] publishing. It can convert, import, and export DXF, PostScript, Adobe
+[T] Illustrator, DIN formats, HPGL, Gerber, and PDF.
+
+[U] https://www.cenon.info/
+
+[A] TODO: Name <info@vhf.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] OpenSource
+[V] 4.0.6
+
+[D] e7228dd2d49df25d4a04674e72eb979656f076e1e0f047f2bb173be3 Cenon-4.0.6.tar.bz2 https://cenon.download/source/
+
+. $base/package/*/*/gnustep-conf.in

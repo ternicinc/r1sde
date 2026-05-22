@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/thunar/thunar.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A new modern file manager for Xfce
+
+[T] Thunar is a new modern file manager for the Xfce Desktop Environment.
+[T] Thunar has been designed from the ground up to be fast and easy-to-use.
+[T] Its user interface is clean and intuitive, and does not include any
+[T] confusing or useless options. Thunar is fast and responsive with a good
+[T] start up time and directory load time.
+
+[U] https://docs.xfce.org/xfce/thunar/start
+
+[A] Benedikt Meurer <benny@xfce.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/xfce
+[F] CROSS NO-LTO.clang
+
+[L] GPL
+[V] 4.20.8
+
+[D] 9dcb0358c02abd7f8db3a6cd53bd50949293c52f1c0d41adcdabe044 thunar-4.20.8.tar.bz2 https://archive.xfce.org/src/xfce/thunar/4.20/
+
+. $base/package/xfce4/*/xfce4-conf.in
+var_append GCC_WRAPPER_INSERT ' ' "-c?:-L`pkgprefix libdir libx11` -lX11 -lXrender"

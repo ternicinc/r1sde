@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/checkpolicy/checkpolicy.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] SELinux policy compiler
+
+[T] Security-enhanced Linux is a patch of the Linux® kernel and a number
+[T] of utilities with enhanced security functionality designed to add
+[T] mandatory access controls to Linux. The Security-enhanced Linux
+[T] kernel contains new architectural components originally developed to
+[T] improve the security of the Flask operating system. These
+[T] architectural components provide general support for the enforcement
+[T] of many kinds of mandatory access control policies, including those
+[T] based on the concepts of Type Enforcement®, Role-based Access
+[T] Control, and Multi-level Security.
+[T] This package contains checkpolicy, the SELinux policy compiler.
+[T] Only required for building policies.
+
+[A] NSA SElinux Team
+[M] Miguel Bolanos <miguel@geekpreview.org>
+
+[C] extra/security
+
+[L] GPL
+[V] 3.10
+[P] O
+
+[CV-GROUP] selinux
+[D] aac4fc384bc92bf2c6827a22ce2aad8c630c6bb6330160c08992a928 checkpolicy-3.10.tar.gz https://github.com/SELinuxProject/selinux/releases/download/3.10/

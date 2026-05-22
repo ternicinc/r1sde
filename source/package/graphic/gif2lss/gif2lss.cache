@@ -1,0 +1,16 @@
+[TIMESTAMP] 1737806452 Sat Jan 25 13:00:52 2025
+[BUILDTIME] 2 (9)
+[SIZE] 0.03 MB, 6 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libx11
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

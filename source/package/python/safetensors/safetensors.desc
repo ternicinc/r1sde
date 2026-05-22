@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/safetensors/safetensors.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Simple, safe way to store and distribute tensors
+
+[T] safetensors implements a new simple format for storing tensors safely (as
+[T] opposed to pickle) and that is still fast (zero-copy).
+
+[U] https://github.com/huggingface/safetensors
+
+[A] Nicolas Patry <patry.nicolas@protonmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] APL
+[V] 0.7.0
+[P] X -----5---9 130.000
+
+[D] 71fa0f06ddc612e11ed4f204f741ff7a8ed62498b09e24821b2664f5 safetensors-v0.7.0.tar.gz https://github.com/huggingface/safetensors/archive/v0.7.0/
+
+#hook_add preconf 4 "sed -i 's/core::error::Error/std::error::Error/g' safetensors/src/tensor.rs"
+hook_add preconf 5 "cd bindings/python"

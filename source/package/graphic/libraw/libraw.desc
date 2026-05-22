@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libraw/libraw.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library for reading raw photo images
+
+[T] LibRaw is a library for reading RAW files obtained from digital photo
+[T] cameras (CRW/CR2, NEF, RAF, DNG, and others). LibRaw is based on the
+[T] source codes of the dcraw utility, though some of the drawbacks of dcraw
+[T] have been eliminated. The users of the library are provided with an API
+[T] to be used when writing their software programs.
+
+[U] https://www.libraw.org/
+
+[A] Alex Tutubalin <lexa@lexa.ru>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+[F] CROSS
+
+[L] GPL
+[V] 0.22.1
+[P] X -----5---9 133.400
+
+[CV-URL] https://www.libraw.org/download
+[D] 17e5d7bfcf1cbe293440caaeacf786ef415de8dc1b5e572cd195b56c LibRaw-0.22.1.tar.gz https://www.libraw.org/data/

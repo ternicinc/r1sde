@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/font-bh-type1/font-bh-type1.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Bigelow & Holmes Luxi font
+
+[T] Bigelow & Holmes Luxi font.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.0.4
+
+[D] 667b84a6c7181310fa98615a27bd3a10d69c916eefd213bd6bc0766e font-bh-type1-1.0.4.tar.xz http://xorg.freedesktop.org/releases/individual/font/
+
+. package/*/*/modular-x-conf.in

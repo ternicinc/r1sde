@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/lcap/hotfixes.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./lcap.c.orig	2003-02-10 11:52:30.000000000 +0100
++++ ./lcap.c	2003-02-10 11:52:41.000000000 +0100
+@@ -27,6 +27,7 @@
+ #include <getopt.h>
+ #include <stdlib.h>
+ #include <ctype.h>
++#include <limits.h>
+ 
+ #define PROC_CAP "/proc/sys/kernel/cap-bound"
+ 

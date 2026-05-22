@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfce4-docklike-plugin/xfce4-docklike-plugin.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Alternative minimalist taskbar for Xfce
+
+[T] Docklike Taskbar behaves similarly to many other desktop environments and
+[T] operating systems. Wherein all application windows are grouped together as
+[T] an icon and can be pinned to act as a launcher when the application is not
+[T] running. Commonly referred to as a dock.
+
+[U] https://docs.xfce.org/panel-plugins/xfce4-docklike-plugin/start
+
+[A] Xfce Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/xfce
+
+[L] GPL
+[V] 0.5.1
+
+[D] a8f8891aeaa22b5d0e25651d830893767510a934d8fb6312d412bec2 xfce4-docklike-plugin-0.5.1.tar.xz https://archive.xfce.org/src/panel-plugins/xfce4-docklike-plugin/0.5/
+
+. $base/package/xfce4/*/xfce4-conf.in

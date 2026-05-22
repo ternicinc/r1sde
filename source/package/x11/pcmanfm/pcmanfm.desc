@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pcmanfm/pcmanfm.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A fast and lightweight file manager developed with GTK+ 2
+
+[T] PCMan File Manager is a very fast and lightweight file manager which
+[T] features tabbed browsing.
+
+[U] https://github.com/lxde/pcmanfm
+
+[A] PCMan (Hong Jen Yee) <pcman.tw@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/x11
+
+[L] GPL
+[V] 1.4.0
+
+[D] d89975f9352a0b3b3a92c433f115ac99aa263bcdbea30a1b94fd588a pcmanfm-1.4.0.tar.gz https://github.com/lxde/pcmanfm/archive/1.4.0/
+
+autogen=1

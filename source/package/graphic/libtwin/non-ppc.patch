@@ -1,0 +1,28 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/libtwin/non-ppc.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- libtwin-0.0.2/libtwin/twin_feature.c.vanilla	2007-10-19 10:54:08.000000000 +0200
++++ libtwin-0.0.2/libtwin/twin_feature.c	2007-10-19 11:00:48.000000000 +0200
+@@ -54,8 +54,6 @@
+ 	return altivec;
+ }
+ 
+-#else
+-#define _twin_have_altivec()
+ #endif /* HAVE_ALTIVEC */
+ 
+ int twin_has_feature(unsigned int feature)
+@@ -65,8 +63,10 @@
+ 
+ void twin_feature_init(void)
+ {
++#ifdef HAVE_ALTIVEC
+ 	if (_twin_have_altivec())
+ 		_twin_features |= TWIN_FEATURE_ALTIVEC;
++#endif
+ 
+ 	_twin_draw_set_features();
+ }

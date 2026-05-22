@@ -1,0 +1,21 @@
+[TIMESTAMP] 1752704381 Thu Jul 17 01:19:41 2025
+[BUILDTIME] 16 (9)
+[SIZE] 4.33 MB, 203 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[OPT] luajit
+[DEP] make
+[OPT] openjdk
+[OPT] perl
+[OPT] ruby
+[DEP] sed
+[DEP] tar
+[OPT] tcl
+[DEP] xapian-core
+[DEP] xz

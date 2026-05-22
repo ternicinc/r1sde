@@ -1,0 +1,933 @@
+#!/usr/bin/env bash
+#
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/scripts/Download
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+#
+#   Run this command from the T2 directory as scripts/Download [ options ]
+#
+#   It enables you to download source files as described in the package
+#   definitions (optionally using a mirroring 'cache' server).
+#
+#   This script also allows for checksum display/validation.
+
+umask 022
+
+. scripts/functions.in
+. misc/output/parse-config
+
+eval "$(egrep '^(sdever)=' scripts/parse-config)"
+base=$(pwd -P)
+
+if [ "$1" = '--help' ]; then
+	{ echo
+	echo "Usage:"
+	echo
+	echo " scripts/Download [options] [ Package(s) ]"
+	echo " scripts/Download [options] [ Desc file(s) ]"
+	echo " scripts/Download [options] -repository Repositories"
+	echo " scripts/Download [options] { -all | -required }"
+	echo
+	echo " Where [options] is an alias for:"
+	echo "    [ -cfg <config> ] [ -nock ]  [ -alt-dir <AlternativeDirectory> ]"
+	echo "    [ -mirror <URL> | -check ]  [ -try-questionable ]  [ -notimeout ]"
+	echo "    [ -longtimeout ]  [ -curl-opt <curl-option>[:<curl-option>[:..]] ]"
+	echo "    [ -proxy <server>[:<port>] ] [ -proxy-auth <username>[:<password>] ]"
+	echo "    [ -copy ] [ -move ]"
+	echo
+	echo " On default, this script auto-detects the best T2 SDE mirror."
+	echo
+	echo " Mirrors can also be a local directories in the form of: 'file:///<dir>'"
+	echo
+	echo " scripts/Download -mk-cksum Filename(s)"
+	echo " scripts/Download [ -list | -list-unknown | -list-missing | -list-cksums ]"
+	echo; } >&2
+	exit 1
+fi
+
+# -mk-cksum mode (display T2 type package checksum): it
+# displays the checksum T2 validates against.
+#
+# Commonly known compressed tarballs unpacked.
+#
+if [ "$1" = -mk-cksum ]; then
+    shift
+    for x; do
+	echo -n "$x: "
+	ck="sha224"
+	cksum=${ck}sum
+
+	if ! type -p $cksum > /dev/null; then
+	    cksum=${cksum#sha} cksum=${cksum%sum}
+	    cksum="shasum -a $cksum"
+	fi
+
+	compressor="$(get_compressor "$x")"
+	if [ ! -f "$x" ]; then
+	    echo "No such file."
+	elif [ "$compressor" ]; then
+	    $compressor < "$x" | $cksum | cut -f1 -d' '
+	else
+	    $cksum < "$x" | cut -f1 -d' '
+	fi
+    done
+    exit 1
+fi
+
+# Handle options passed on the command line
+#
+mkdir -p src/ download/; config=default
+this_is_the_2nd_run=0
+mirror='' checkonly=0 altdir=''
+tryques=0 nocheck=0 options='-this_is_the_2nd_run '
+notimeout=0 curl_options='-A T2-downloader --disable-epsv --location -f'
+altcopy=link verbose=1 quietmirror=0
+downloaderror=0
+
+# load options from the enviroment T2DOWNOPT
+# and then clean it to avoid duplication on children processes
+#
+set -- $T2DOWNOPT "$@"
+export T2DOWNOPT=
+
+#
+while [ $# -gt 0 ]; do
+	case "$1" in
+	    -this_is_the_2nd_run)
+		this_is_the_2nd_run=1
+		;;
+
+	    -cfg)
+		options="$options -cfg $2"
+		config="$2"; shift ;;
+
+	    -q)
+		options="$options -q"
+		verbose=0 ;;
+
+	    -nock)
+		# -nock skips checksum checking (don't use lightly)
+		options="$options -nock"
+		nocheck=1 ;;
+
+	    -mirror)
+		# -mirror uses a mirror for finding source files
+		if [ "$2" = auto ]; then
+			rm -f download/Mirror-Cache
+		else
+			mkdir -p download
+			echo "$2 $sdever" > download/Mirror-Cache
+			options="$options -mirror $2"
+			mirror="$2"
+		fi
+		shift ;;
+
+	    -quiet-mirror)
+	    	quietmirror=1 ;;
+
+	    -check)
+		# -check just validates the file using the checksum
+		options="$options -check"
+		checkonly=1 ;;
+
+	    -notimeout)
+		# don't add timeout curl options
+		options="$options -notimeout"
+		notimeout=2 ;;
+
+	    -longtimeout)
+		# don't add timeout curl options
+		options="$options -longtimeout"
+		notimeout=1 ;;
+
+	    -curl-opt)
+		# additional curl options
+		options="$options -curl-opt $2"
+		curl_options="$curl_options `echo $2 | tr : ' '`"
+		shift ;;
+
+	    -proxy)
+		# proxy option for curl
+		mkdir -p download
+		echo -n "$2" > download/Proxy
+		options="$options -proxy $2"
+		shift ;;
+
+	    -proxy-auth)
+		# proxy authentication for curl - can be seen with ps!
+		mkdir -p download
+		echo -n "$2" > download/Proxy-auth
+		chmod 600 download/Proxy-auth
+		options="$options -proxy-auth $2"
+		shift ;;
+
+	    -alt-dir)
+		# check for an alternative directory where to search for
+		# package source tarballs
+		altdir=$(cd $2; pwd -P)
+		options="$options -alt-dir $2"
+		shift ;;
+
+	    -try-questionable)
+		# also try to download questionable URLs
+		options="$options -try-questionable"
+		tryques=1 ;;
+	
+	    -move) altcopy=move ;;
+	    -copy) altcopy=copy ;;
+
+	    *)	break	;;
+	esac
+	shift
+done
+
+# Read some config values
+
+target=`grep '^export SDECFG_TARGET=' config/$config/config 2>/dev/null |
+	cut -f2 -d= | tr -d "'"`
+arch=`grep '^export SDECFG_ARCH=' config/$config/config 2>/dev/null |
+	cut -f2 -d= | tr -d "'"`
+arch="${arch:-none}" target="${target:-none}"
+
+
+if [ $notimeout -eq 0 ]; then
+	curl_options="$curl_options -Y 10 -y 20 --connect-timeout 12"
+elif [ $notimeout -eq 1 ]; then
+	curl_options="$curl_options -Y 1 -y 60 --connect-timeout 60"
+fi
+
+if [ "$verbose" = 1 ]; then
+	curl_options="$curl_options --progress-bar"
+else
+	curl_options="$curl_options -s"
+fi
+
+# cksum_chk filename cksum origfile
+#
+# This function verifies the checksum. If it fails it renames the file
+# to file.chksum-err and returns failure.
+#
+# It seams like the [ ] command has problems with comparing high numbers.
+# That's why I'm using a text comparison here.
+#
+# Not doing anything if checksum is '0' or a text of 'X'.
+#
+cksum_chk() {
+	local y="$2"
+	[ $nocheck = 1 -o -z "${2//0/}" -o -z "${2//X/}" ] && return 0
+
+	# determine cksum type
+	local ck="${y%\}*}"
+	if [ "$ck" != "$y" ]; then
+		ck="${ck#\{}"
+	else case "${#ck}" in
+		56) ck="sha224" ;;
+		64) ck="sha256" ;;
+		*) ck="ck" ;;
+	esac; fi
+	y="${y#\{$ck\}}"
+
+	local cksum=${ck}sum
+	if ! type -p $cksum > /dev/null; then
+	    cksum=${cksum#sha} cksum=${cksum%sum}
+	    cksum="shasum -a $cksum"
+	fi
+
+	local x="`$cksum "$1" | cut -f1 -d' '`"
+	if [ "$x" != "$y" ]; then
+		# Add .cksum-err extension to filename:
+		echo "Cksum ERROR: $3.cksum-err ($x)"
+		mv "$3" "$3.cksum-err"; return 1
+	fi
+	return 0
+}
+
+# output (multiline) message only if we are not in quiet mode
+#
+echo_info() {
+	[ "$verbose" == 1 ] && echo "$@"
+}
+		
+# output (multiline) message always
+#
+echo_warn() {
+	echo "$@"
+}
+
+# Autodetect best Mirror and safe url in $mirror
+#
+info=
+detect_mirror() {
+    if [ -f download/Mirror-Cache ]; then
+	read mirror mirrorver < download/Mirror-Cache
+	mirror=${mirror:-none}
+	if [ "$mirror" = "none" ]; then
+		[ "$quietmirror" != 1 ] &&
+		var_append info $'\n' "Found download/Mirror-Cache: none (using original download locations)"
+		return
+	elif [ "$mirrorver" != "$sdever" -a "$mirrorver" != "any" ] ||
+	     [ "$(find download/Mirror-Cache -mtime +30)" ]; then
+		echo_warn "Cached mirror URL in download/Mirror-Cache is outdated."
+	else
+		[ "$quietmirror" != 1 ] && var_append info $'\n' "Found cached mirror: $mirror"
+		return
+	fi
+    fi
+	echo_warn "Auto-detecting best mirror:"
+
+	echo_warn "Downloading mirror-list from: t2sde.org"
+	curl -s -S $curl_options -o src/Download-Mirror-List \
+		"https://t2sde.org/cgi-bin/t2-mirrors.cgi?$sdever"
+
+	bestval=0 result='No Mirror Found!'
+	me=$([ -s download/Me ] && cat download/Me)
+	while read mirror_name; do
+	  if [ "${mirror_name#=}" != "$mirror_name" ]; then
+		mirror_name="${mirror_name#= }"
+		mirror_name="${mirror_name% =}"
+		read mirror_url
+
+		case "$mirror_name" in ($me) continue ;; esac
+
+		echo -n "Testing <$mirror_name> ..."
+		val="$(curl -s $curl_options -m 20 "${mirror_url%/}/DOWNTEST" \
+			-w "ok %{speed_download}" -o /dev/null)"
+		if [ "$val" = "${val#ok }" -o "$val" = "ok 0.000" ]; then
+			echo " error"
+		else
+			xval=`echo ${val#ok } | tr -d .,`; echo " $val B/s"
+			if [ "$xval" -gt "$bestval" ]; then
+				bestval=$xval mirror="${mirror_url%/}"
+				result="Saving mirror $mirror (src/Mirror-Cache)"
+			fi
+		fi
+
+	  fi
+	done < src/Download-Mirror-List
+	echo "$mirror $sdever" > download/Mirror-Cache
+	echo_warn "$result"
+}
+
+# download_file local-filename download-location cksum repo pkg
+#
+# This function decides if download directly or from a mirror,
+# validates checksum, etc.
+# Calls download_file_now to do the actual download.
+#
+download_file() {
+	# Init
+	#
+	local gzfile="$1" location="$2" cksum="$3" repo="$4" pkg="$5"
+	# Make src directory for creating tar balls
+	mkdir -p src/
+	# Remove optional '-' prefix from $location
+	[ "${location:0:1}" == '-' ] && location="${location:1}"
+	# Lock file name:
+	lkfile="src/down.lockfile.`echo $gzfile | tr / -`"
+
+	# Check if it's already there
+	#
+	[ -s "$gzfile" -a $checkonly != 1 ] && return 0
+
+	# Make locking
+	#
+	if [ -s "$lkfile" ]; then
+		echo "Found $lkfile -> skip download."
+		return 0
+	fi
+	trap 'local ret=$?; rm -f "$lkfile"; return $ret' INT
+	echo $$ > "$lkfile"
+
+	# Check if we only like to test the cksum(s)
+	#
+	if [ $checkonly = 1 ]; then
+		if [ ! -f "$gzfile" ]; then
+			echo "File missing: $gzfile"
+			rm -f "$lkfile"; trap INT; downloaderror=1; return
+		fi
+		if [ -z "${cksum##X*}" ]; then
+			echo "No checksum (ignore): $gzfile"
+			rm -f "$lkfile"; trap INT; return
+		fi
+		if [ "$cksum" = 0 ]; then
+			echo "No checksum (missing): $gzfile"
+			rm -f "$lkfile"; trap INT; return
+		fi
+
+	elif [ -s "$gzfile" ]; then
+		echo; echo "Already downloaded: $pkg:$gzfile"
+
+	else
+		[ "$info" ] && echo_info "$info" && info=
+		echo "Downloading $gzfile"
+
+		# Existing *.cksum-err
+		#
+		if [ -s "$gzfile.cksum-err" ]; then
+			# cksum-err file alread exists:
+			echo "ERROR: found: $gzfile.cksum-err"
+			echo "ERROR: That means that we downloaded the" \
+			     "file already and it had an"
+			echo "ERROR: incorrect checksum. Remove the" \
+			     "*.cksum-err file to force a"
+			echo "ERROR: new download of that file."
+			rm -f "$lkfile"; trap INT; downloaderror=1; return 1
+		fi
+
+		# Existing *.extck-err
+		#
+		if [ -s "$gzfile.extck-err" ]; then
+			# extck-err file alread exists:
+			echo "ERROR: found: $gzfile.extck-err"
+			echo "ERROR: That means that we downloaded the" \
+			     "file already and it's content"
+			echo "ERROR: did not match it's filename extension." \
+			     "Remove the *.extck-err file"
+			echo "ERROR: to force a new download of that file."
+			rm -f "$lkfile"; trap INT; downloaderror=1; return 1
+		fi
+
+		# Questionable URL
+		#
+		if [ "$location" != "${location#\?}" ]; then
+			if [ "$tryques" = 0 ]; then
+				echo "ERROR: URL is marked as questionable." \
+					"Not downloading this file."
+				rm -f "$lkfile"; trap INT; return 1
+			else
+				echo "WARNING: URL is marked as questionable." \
+					"Downloading it anyways."
+				location="${location#\?}"
+			fi
+		fi
+
+		# Make directory (if required)
+		#
+		if [ ! -d `dirname "$gzfile"` ]; then
+			mkdir -p `dirname "$gzfile"`
+		fi
+		
+		# Alternative Directory
+		#
+		if [ "$altdir" ]; then
+		    altfile=$(find $altdir/ -name `basename $gzfile` | head -n 1)
+		else
+		    altfile=""
+		fi
+
+		if [ "$altfile" ]; then
+
+			echo "Found `basename $gzfile` as: $altfile"
+			if [ "$altcopy" = 'link' ]; then
+				cp -lv $altfile $gzfile
+			elif [ "$altcopy" = 'copy' ]; then
+				cp -v $altfile $gzfile
+			elif [ "$altcopy" = 'move' ]; then
+				mv -v $altfile $gzfile
+			fi
+		else
+		    # Mirroring
+		    #
+		    read mirror mirrorver < download/Mirror-Cache
+
+		    if [ -n "$mirror" -a "$mirror" != "none" -a -z "${gzfile##download/mirror/*}" ]; then
+			# try to use mirror
+			if ! download_file_now "!$mirror/${gzfile#download/mirror/}" $gzfile; then
+				echo_warn "Download from mirror failed, trying original URL."
+				download_file_now "$location" $gzfile || downloaderror=1
+			fi
+		    else
+			# don't want to use mirror
+			download_file_now "$location" $gzfile || downloaderror=1
+		    fi
+		fi
+
+		if [ ! -s "$gzfile" ]; then
+			rm -f "$lkfile"; trap INT; return 1
+		fi
+	fi
+
+	# unsign .gpg file
+	if [[ $gzfile = *.gpg ]]; then
+		gzfile=${gzfile%.gpg}
+		if [ -f $gzfile.gpg ]; then
+			echo "Unsigning GnuPG file: $gzfile.gpg"
+			gpg $gzfile.gpg
+		fi
+		if [ ! -f $gzfile ]; then
+			echo "Unsigning failed"
+			rm -f "$lkfile"; trap INT; return 1
+		fi
+	fi
+
+	#echo "Checksum testing: $gzfile"
+	local compressor="$(get_compressor "$gzfile")"
+	if [ "$compressor" ]; then
+		# TODO: w/o temp file
+		$compressor < "$gzfile" > src/down.$$.dat
+		cksum_chk src/down.$$.dat $cksum "$gzfile" || downloaderror=1
+		rm -f src/down.$$.dat
+	else
+		cksum_chk "$gzfile" $cksum "$gzfile" || downloaderror=1
+	fi
+
+	# Free Lock and finish
+	#
+	rm -f "$lkfile"; trap INT; return 0
+}
+
+# download_file_now location filename
+#
+# This function executes the actual download using curl.
+#
+download_file_now() {
+	local location="$1" gzfile="$2" curlret=0
+
+	# Create URL
+	#
+	case "$location" in
+		manual://*) url="$location"	;;
+		!*)	url="${location#!}"	;;
+		*)	url="${location%/*}/${gzfile##*/}"	;;
+	esac
+
+	# Download
+	#
+	case "$url" in
+	manual://*)
+		# Determine if the file has already been downloaded
+		# manually. For this we first look in $HOME then in
+		# download/manual.
+		downloadpath=${altdir:-$HOME}
+		downloadfile="${gzfile##*/}"
+		if [ -e $downloadpath/$downloadfile ]; then
+			location="file://$downloadpath/"
+		else
+			location="http://${url#manual://}"
+			# No manual download has taken place yet.
+			# So inform the user to do so.
+			cat <<-EOT
+			The file $downloadfile can not be fetched automatically
+			please visit: $location
+			and download it manually into $HOME or somewhere else using -alt-dir
+			EOT
+			return 1
+		fi
+
+		# Re-use this function with a modified download location.
+		download_file_now "$location" $gzfile
+		return $?
+		;;
+	http://*|https://*|ftp://*|file://*)
+		if [ -s "$gzfile.incomplete" ]; then
+		    echo_info "Trying to resume previous download .."
+		    resume="-C -"
+		else
+		    resume=""
+		fi
+
+		[ -s download/Translations ] && trfile=download/Translations || trfile=misc/share/DownloadTranslations
+		trurl="$(echo "$url" | sed -f $trfile)"
+		if [ -n "$trurl" -a "$trurl" != "$url" ]; then
+			echo_info "URL translated: $trurl"
+			url="$trurl"
+		fi
+		unset trurl trfile
+
+		curl $resume $curl_options "$url" -o "$gzfile.incomplete"
+		curlret="$?"
+
+		if [ "$resume" ] &&
+		   [ $curlret -eq 33 -o $curlret -eq 36 ]; then
+		    echo_warn "Resuming download not possible. -> Overwriting old file."
+		    rm -f "$gzfile.incomplete"
+		    curl $curl_options "$url" -o "$gzfile.incomplete"
+		    curlret="$?"
+		fi
+
+		if [ $curlret -ne 0 ]; then
+		    case "$curlret" in
+		      18)
+		      echo "WARNING: Got only some of the file. A re-run of $0"
+		      echo "WARNING: is required to complete the download." ;;
+		      22) : ;; # 404 not found
+		      130)
+		      echo -e '\rWARNING: CURL got a SIGINT' \
+			   "(someone pressed Ctrl-C). A re-run of"
+		      echo "WARNING: $0 is required to complete the download."; sleep 1 ;;
+		      *)
+		      echo "$curlret $gzfile $url" \
+					>> src/Download-Errors
+		      echo -e "\rERROR: CURL Returned error: $curlret" ;;
+		    esac
+		    return 1
+		elif [ ! -s "$gzfile.incomplete" ]; then
+		    echo "0 $gzfile $url" >> src/Download-Errors
+		    echo "ERROR: CURL returned success but we have no data!"
+		    curlret=1
+		else
+		    case "$gzfile" in
+		      *.br|*.tbr)
+			  typeexpr="data" ;;
+		      *.gz|*.tgz)
+			  typeexpr="gzip compressed data" ;;
+		      *.bz2|*.tbz2|*.tbz)
+			  typeexpr="bzip2 compressed data" ;;
+		      *.lz|*.tlz)
+			  typeexpr="lzip compressed data" ;;
+		      *.lzma)
+			  typeexpr="LZMA compressed data" ;;
+		      *.zst|*.tzst|*.zstd)
+			  typeexpr="Zstandard compressed data" ;;
+		      *.Z|*.tZ)
+			  typeexpr="compress'd data" ;;
+		      *.zip)
+			  typeexpr="Zip archive data" ;;
+		      *.jar)
+			  typeexpr="Java archive data (JAR)" ;;
+		      *.tar)
+			  typeexpr="tar archive" ;;
+		      *.xz|*.txz)
+			  typeexpr="[xX][zZ] compressed data" ;;
+		      *)
+			  echo "WARNING: Unknown file extension: $gzfile"
+			  typeexpr="." ;;
+		    esac
+		    case $(file "$gzfile.incomplete") in
+		    *$typeexpr*)
+			mv "$gzfile"{.incomplete,}
+			;;
+		    *)
+			echo "ERROR: File type does not match filename ($typeexpr)!"
+			mv "$gzfile"{.incomplete,.extck-err}
+		    	;;
+		    esac
+		fi
+		;;
+	*)
+		protocol="${url%%://*}"
+
+		# we need to use $location - $url is already mangled above -ReneR
+		# $protocol://$url $options
+		url="`echo "$location" | sed "s,$protocol://\([^ ]*\).*,\1,"`"
+		options="`echo "$location" | cut -s -d' ' -f2-`"
+
+		case "$protocol" in
+			cvs)
+				# the first option is the module name
+				module="${options%% *}"
+				options="${options#* }"
+				cmdline="cvs -z4 -Q -d $url co -P $options $module"
+		  
+		  		# sometimes cvs wants to read ~/.cvspass just for fun ..
+				touch $HOME/.cvspass
+				;;
+			svn|svn\+*) # allow any svn+ other transport and strip the svn+ part off
+				url="${protocol#svn+}://$url"
+				options="${options## *}"
+				if [ "$options" == "" -o "${options:0:1}" == "-" ]; then
+					# the module is the last dir of $url,
+					# w/ or wo/ trailing slash (/)
+					module="${url%%/}"
+					module="${module##*/}"
+				else
+					# the first option is the module name
+					module="${options%% *}"
+					[ "$module" = "$options" ] &&
+					  options= || options="${options#* }"
+				fi
+				cmdline="svn export $options $url $module"
+				;;
+			git|git\+*) # allow any git+ other transport and strip the git+ part off
+				url="${protocol#git+}://$url"
+
+				module="${url##*/}"
+				cmdline="git clone --recursive $git_options $url $module"
+				options="${options#* }"
+				sub_recurse="git submodule update --init --recursive"
+				[ -n $options ] && cmdpp="(cd $module; git checkout $options; $sub_recurse)"
+				;;
+			hg|hg\+*) # allow any hg+ other transport and strip the hg+ part off
+				url="${protocol#hg+}://$url"
+
+				module="${url##*/}"
+				cmdline="hg clone $url $module"
+				options="${options#* }"
+				[ -n $options ] && cmdpp="(cd $module; hg clone $options)"
+				;;
+			*)
+				echo "$cmdclient unrecognized!"
+				return 1
+				;;
+		esac
+
+		cvsdir="src/down.${protocol}dir.`echo $gzfile | tr / -`"
+		saved_pwd=$PWD; mkdir -p $cvsdir; cd $cvsdir
+
+		echo "$cmdline"
+		{
+		  $cmdline || touch .cvs_error
+		} &> .cvs_output &
+
+		while fuser .cvs_output &> /dev/null; do
+			echo -ne `nice du -sh 2> /dev/null | \
+				cut -f1` 'downloaded from archive so far ...  \r'
+			sleep 3
+		done
+
+		if [ -f .cvs_error ]; then
+			cd $saved_pwd; rm -rf $cvsdir
+			echo -e "\nError during checkout."
+			return 1
+		fi
+
+		echo `du -sh 2> /dev/null | cut -f1` 'downloaded from archive (download finished).'
+
+		if [ `echo * | wc -w` -gt 1 ]; then
+			# multi-module module
+			echo "Multi-module package detected, relocating ..."
+			mkdir t2-module.$$
+			for x in *; do
+				[ "$x" != "t2-module.$$" ] && mv -f $x t2-module.$$/
+			done
+			mkdir -p "$module"
+			mv -f t2-module.$$/* "$module"
+			rm -f t2-module.$$
+		fi
+
+		cd `dirname $module`
+		tarname="`basename $gzfile`"
+		echo "Preparing files for final tarball."
+		[ -n "$cmdpp" ] && eval "$cmdpp"
+
+		if [ `find -type f | wc -l` -gt 4 ]; then
+			local compressor="$(get_compressor $tarname)"
+			# explicitly stable sort files
+			find $module | LANG=C sort |
+				egrep -v -e '/(CVS|.svn|.git|.hg)$' -e '/(CVS|.svn|.git|.hg)/' |
+			TZ=UTC tar -c --owner root --group root --mtime 20000101 \
+				--no-recursion --files-from=- | ${compressor/ -d/} > $tarname
+			mv $tarname $saved_pwd/$gzfile
+		else
+			echo "Too few files - assuming checkout failure."
+			curlret=1
+		fi
+
+		cd $saved_pwd; rm -rf $cvsdir
+		;;
+	esac
+	return $curlret
+}
+
+list_dtags() {
+	{
+		grep -aH '^\[D\] ' package/*/*/*.desc {architecture,target}/*/package/*/*.desc 2>/dev/null
+		grep -aH '^[X0-9a-z]' target/*/download.txt 2>/dev/null | sed 's,:,:[D] ,'
+	} | column_clean
+}
+
+list_cksums() {
+	trap '' INT
+
+	# we know we only have single spaces due to list_dtags' column_clean
+	list_dtags | sed -n \
+	  -e 's,[^ ]* \([X0-9a-z]*\) \(.\)\([^ ]*\) -.*,\1 download/local/\2/\2\3,p' \
+	  -e 's,[^ ]* \([X0-9a-z]*\) \(.\)\([^ ]*\) [^-].*,\1 download/mirror/\2/\2\3,p'
+
+	trap INT
+}
+
+list() {
+	trap '' INT
+	list_cksums | cut -f2- -d' '
+	trap INT
+}
+
+list_unknown() {
+	trap '' INT
+	mkdir -p src/; list > src/down.$$.lst
+	ls download/{Proxy,Proxy-auth,Me,Mirror-Cache} \
+	   download/mirror/{README,DOWNTEST,LAST-UPDATE} \
+						>> src/down.$$.lst 2> /dev/null
+	find download/* -type f -o -type l 2> /dev/null |
+	while read fn; do
+		grep -qx "$fn" src/down.$$.lst || echo "Unknown file: $fn"
+	done
+	rm -f src/down.$$.lst
+	trap INT
+}
+
+list_missing() {
+	trap '' INT
+	list |
+	while read fn; do
+		[ -f "$fn" ] || echo "$fn"
+	done
+	trap INT
+}
+
+repository() {
+	for repository; do
+		packages `echo package/$repository/*/*.desc`
+	done
+}
+
+required() {
+    # Choosen config must exist
+    #
+    if [ ! -f config/$config/packages ]; then
+	echo "ERROR: Config $config doesn't exist."
+	echo "ERROR: try scripts/Config -cfg $config first."
+	exit 1
+    fi
+
+    while read on a b repo pkg c; do
+	package $pkg
+    done < <(grep '^X' config/$config/packages)
+
+    targetchain="$target" x="$target"
+    while [ -f "target/$x/extends" ]; do
+	x="$(< target/$x/extends)"
+	targetchain="$targetchain $x"
+    done
+
+    for target in $targetchain; do
+    if [ -f target/$target/download.txt ]; then
+	while read cksum file url; do
+	    download_file "`source_file cksum $file "$url"`" "$url" "$cksum" "$target"
+	done < target/$target/download.txt
+    fi
+    done
+}
+
+all() {
+	trap '' INT
+	list_dtags | cut -d ' ' -f 2- | while read cksum file url; do
+		 download_file "`source_file cksum $file "$url"`" "$url" "$cksum"
+	done
+	trap INT
+}
+
+package() {
+	local pkg="$1"
+	detect_confdir # relies on $pkg being set
+	if [ ! "$confdir" ]; then
+		echo "Error: Package $pkg not found!"
+		downloaderror=1
+		return 1
+	fi
+	parse_desc $pkg # relies on $pkg and $confdir being set
+	while read cksum file url; do
+		download_file "`source_file cksum $file "$url"`" "$url" "$cksum" "$repo" "$pkg"
+	done < <(echo "$desc_D")
+}
+
+packages() {
+	local descfile
+	for arg; do
+		case "$arg" in
+		target/*)
+			if [ ! -f $arg ]; then
+			    echo "Skipping \"$arg\" (not found)!"
+			    continue
+			fi
+
+			target="`echo $arg | cut -f2 -d/`"
+
+			while read cksum file url; do
+			    download_file "`source_file cksum $file "$url"`" "$url" "$cksum" "$target"
+			done < <(cat $arg)
+			;;
+		*)
+			if [ "${arg%.desc}" != "$arg" ]; then
+			arg="`echo $arg | cut -f3 -d/`"; fi
+
+
+			# active extensions
+			local extender=
+
+			# pkg_*_{pre,post}.conf is only activated if extender
+			# is enabled on $config/packages, so we will only
+			# download files of those extenders
+			#
+			for extender in `ls -1 package/*/*/pkg_${arg}_{pre,post}.conf 2> /dev/null |
+			                 cut -d/ -f3 | sort -u`; do
+				if grep -q "^X .* $extender " \
+				   config/$config/packages; then
+					echo_info "Also downloading $extender ..."
+					package $extender
+				fi
+			done
+			package $arg
+			;;
+		esac
+	done
+}
+
+# Things to do only for downloading
+#
+if [ "${1:0:5}" != "-list" -a $checkonly = 0 ]; then
+	# Set proxy information
+	if [ -f download/Proxy ]; then
+		proxy="$(< download/Proxy)"
+		if [ "$proxy" ]; then
+			curl_options="$curl_options --proxy $proxy"
+		else
+			echo_warn "No proxy information, removing: download/Proxy"
+			rm download/Proxy
+		fi
+	fi
+	if [ -f download/Proxy-auth ]; then
+		proxyauth="$(< download/Proxy-auth)"
+		if [ "$proxyauth" ]; then
+			curl_options="$curl_options --proxy-user $proxyauth"
+			git_options="-c http.proxy=http://$proxyauth@$proxy"
+		else
+			echo_warn "No proxy-auth information, removing: download/Proxy-auth"
+			rm download/Proxy-auth
+ 		fi
+ 	fi
+
+	# We need curl
+	if [ -z "`type -p curl`" ]; then
+		echo "ERROR: we need \`curl\` installed and available in \$PATH to proceed."
+		exit 2
+	fi
+
+	# Thing to do only once
+	#
+	if [ $this_is_the_2nd_run = 0 ]; then
+		# am i using a proxy?
+		if [ "$proxy" ]; then
+			echo_info "Setting proxy to: $proxy"
+		fi
+		if [ "$proxyauth" ]; then
+			echo_info "Setting proxy authentication information."
+		fi
+
+		# do mirror detection
+		detect_mirror
+	fi
+fi
+
+case "$1" in
+	-list)		list ;;
+	-list-unknown)	list_unknown ;;
+	-list-missing)	list_missing ;;
+	-list-cksums)	list_cksums ;;
+
+	-required)	required ;;
+	-all)		all ;;
+
+	-repository)	shift; repository "$@" ;;
+
+	-*|"")		exec $0 --help ;;
+
+	*/\*)		repository "${1%/*}" ;;
+	*)		packages "$@" ;;
+esac
+
+exit $downloaderror

@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lz4/lz4.desc
+[COPY] Copyright (C) 2013 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A fast compression library
+
+[T] LZ4 is a portable lossless data compression library written in ANSI C.
+[T] It offers pretty fast compression and *extremly* fast decompression.
+[T] Decompression requires no memory.
+[T]
+[T] In addition there are slower compression levels achieving a quite
+[T] competitive compression ratio while still decompressing at this very high
+[T] speed.
+
+[U] https://www.lz4.org/
+
+[A] Yann Collet
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[L] BSD
+[V] 1.10.0
+[P] X -----5---9 108.020
+
+[D] c3d4ad6955ac282e8619642414b23b5a531f31f1951f9efba4c9ba4d lz4-1.10.0.tar.gz https://github.com/lz4/lz4/archive/v1.10.0/
+
+# lib/ uses LIBDIR differently than programs/
+hook_add premake 5 "eval $MAKE $makeopt LIBDIR=$libdir -C lib"
+var_append makeinstopt ' ' LIBDIR=$libdir

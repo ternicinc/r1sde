@@ -1,0 +1,19 @@
+[TIMESTAMP] 1751641230 Fri Jul  4 17:00:30 2025
+[BUILDTIME] 2 (9)
+[SIZE] 0.08 MB, 7 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] ffmpeg
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] sed
+[OPT] sphinx-doc
+[DEP] tar
+[DEP] xz

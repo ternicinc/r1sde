@@ -1,0 +1,21 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libtwin/libtwin.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Twin window system library
+
+[T] The Twin window system library.
+
+[A] Keith Packard <keithp@keithp.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] LGPL
+[V] 0.0.3
+[P] X -----5---9 500.000
+
+[D] 77e1161110d9c57160df42ff88dec809ba91df5eef38f7e8c3653095 libtwin-0.0.3.tar.gz http://mcavoy.id.au/~jk/projects/petitboot/downloads/

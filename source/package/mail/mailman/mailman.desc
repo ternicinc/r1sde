@@ -1,0 +1,60 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mailman/mailman.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Mailman, the GNU Mailing List Manager
+
+[T] Mailman is free software for managing electronic mail discussion
+[T] and e-newsletter lists. Mailman is integrated with the web, making
+[T] it easy for users to manage their accounts and for list owners to
+[T] administer their lists. Mailman supports built-in archiving,
+[T] automatic bounce processing, content filtering, digest delivery,
+[T] spam filters, and more.
+
+[U] https://mailman.sourceforge.net
+
+[A] Barry Warsaw <berry@python.org>
+[M] Minto van der Sluis <minto@multimach.com>
+
+[C] extra/server
+
+[L] GPL
+[V] 3.3.10
+
+[D] 319ed9bb3f24b3c4816edf2dfd4a6f92f9b30ded72910190ddd31275 mailman-3.3.10.tar.gz https://files.pythonhosted.org/packages/source/m/mailman/
+
+# Mailman wants its own directory with the proper group rights.
+prefix=opt/mailman
+set_confopt
+
+# Make sure mailman uses the var prefix.
+var_append confopt ' ' --with-var-prefix=$localstatedir
+
+# Make sure Python is installed.
+pkgprefix -t python
+var_append confopt ' ' "--with-python=$(pkgprefix bindir python)/python"
+
+# The group id for the http server is needed. Currently we have
+# it hardcoded, however this should no longer be hardcoded.
+var_append confopt ' ' --with-cgi-gid=http
+
+mailman_preconf() {
+	# Make sure the prefix directory has the proper access rights.
+	chgrp mailman $root/$prefix
+	chmod a+rx,g+ws $root/$prefix
+
+	# Also ensure the state dir has the proper access rights.
+	chgrp mailman $localstatedir
+	chmod a+rx,g+ws $localstatedir
+}
+
+mailman_postinstall() {
+	# Have mailman check the permissions and correct them
+	# if necessary.
+	(cd $root/$prefix; bin/check_perms -f)
+}
+
+hook_add preconf 5 mailman_preconf
+hook_add postinstall 5 mailman_postinstall

@@ -1,0 +1,14 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dropbear/config.hlp
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+MENU_PKG_DROPBEAR
+  Here you will find config options for the Dropbear SSH package.
+
+SDECFG_PKG_DROPBEAR_CLIENTONLY
+  Just build the Dropbear SSH client binaries: dbclient and scp.
+
+  Default is to install all binaries: dropbear, dbclient, dropbearkey,
+  dropbearconvert and scp.

@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ell/ell.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Embedded Linux library
+
+[T] Ell is a new Embedded Linux library.
+
+[U] https://iwd.wiki.kernel.org
+
+[A] Marcel Holtmann <marcel@holtmann.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS LATOMIC.sparc
+
+[L] GPL
+[V] 0.83
+[P] X -----5---9 136.800
+
+[D] 0e50d8edbd92c062e42839488b13a1799d40ec5caa5d52883fe04211 ell-0.83.tar.xz https://mirrors.edge.kernel.org/pub/linux/libs/ell/

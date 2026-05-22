@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/asn1c/asn1c.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] ASN.1 to C Compiler
+
+[T] Asn1c is a free, open source compiler of ASN.1 specifications into C source code.
+[T] It supports a range of ASN.1 syntaxes, including ISO/IEC/ITU ASN.1 1988, '94,
+[T] '97, 2002 and later amendments.
+
+[U] https://lionet.info/asn1c/
+
+[A] Lev Walkin <vlm@lionet.info>
+[M] Marian Aldenhövel <marian.aldenhoevel@mba-software.de>
+
+[C] extra/development
+[F] CROSS NO-LTO.gcc
+
+[L] GPL
+[V] 0.9.28
+
+[D] cd6f81a9ca8d68ac213d29dc74c2a44d96309c002cb555aa15f957ed asn1c-0.9.28.tar.gz http://lionet.info/soft/

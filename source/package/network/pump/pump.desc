@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pump/pump.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Bootp and DHCP client for automatic IP configuration
+
+[T] Pump is a combined BOOTP and DHCP client daemon, which allows your
+[T] machine to retrieve configuration information from a server
+
+[A] RedHat
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 0.8.24
+
+# wherever the upstream RedHat release area is located, ...
+[D] 90fb63c29a54c942546aeba131d83c05143bc8f1d6f7fdb7361a6214 pump_0.8.24.orig.tar.gz http://ftp.debian.org/debian/pool/main/p/pump/
+
+# horror Makefile setup, don't ask, ...
+var_append makeinstopt ' ' 'SBINPATH=$root/sbin sbindir=$root$sbindir'
+var_append makeinstopt ' ' 'libdir=$root$libdir includedir=$root$includedir'
+var_append makeinstopt ' ' 'datadir=$root$datadir mandir=$root$mandir'

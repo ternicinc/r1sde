@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/potrace/potrace.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Transforms bitmaps into vector graphics
+[T] potrace is a utility for tracing a bitmap (that is, transforming
+[T] a bitmap into a smooth, scalable image). The input is a portable
+[T] bitmap (PBM), and the default output is an encapsulated PostScript
+[T] file (EPS). A typical use is to create EPS files from scanned data,
+[T] such as company or university logos, handwritten notes, etc. The
+[T] resulting image is not &amp;quot;jaggy&amp;quot; like a bitmap,
+[T] but smooth. It can then be rendered at any resolution.
+
+[U] https://potrace.sourceforge.net/
+
+[A] Peter Selinger
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 1.16
+[P] X -----5---9 599.000
+
+[D] 92847ced8421f1e7fb2961d9bed86074537e3aecab6c8e98fb5b606e potrace-1.16.tar.gz https://download.sourceforge.net/potrace/download/
+
+var_append confopt ' ' --with-libpotrace

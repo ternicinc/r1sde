@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/addresses/addresses.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A versatile address book application for GNUstep
+
+[T] Addresses for GNUstep is a versatile address book application for
+[T] managing contact information. It stores addresses, phone numbers,
+[T] pictures, instant messaging information, email, homepages and whatever.
+
+[U] https://gap.nongnu.org/addresses/
+
+[A] Bjoern Giesler <bjoern@giesler.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/windowmanager
+
+[L] GPL
+[V] 0.5.0
+[P] X -----5---9 162.500
+
+[D] 1b338a00d066aa38b27ba15c9e7ec41b3202eb22bd0793f0d0ec68d1 Addresses-0.5.0.tar.gz http://savannah.nongnu.org/download/gap/
+
+. $base/package/*/*/gnustep-conf.in

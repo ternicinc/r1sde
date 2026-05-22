@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-io-socket-ssl/perl-io-socket-ssl.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Nearly transparent SSL encapsulation for IO::Socket::INET
+
+[T] IO::Socket::SSL is a class implementing an object oriented
+[T] interface to SSL sockets. The class is a descendent of
+[T] IO::Socket::INET.
+
+[A] Peter Behroozi <behrooz@fas.harvard.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 2.098
+[P] X -----5---9 150.000
+
+[D] 55a8812dcd99a23f444d84c693f7ee53c0699844f85d1973e046848e IO-Socket-SSL-2.098.tar.gz http://www.cpan.org/authors/id/S/SU/SULLR/

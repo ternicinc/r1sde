@@ -1,0 +1,24 @@
+[TIMESTAMP] 1737654833 Thu Jan 23 18:53:53 2025
+[BUILDTIME] 6 (9)
+[SIZE] 0.48 MB, 10 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] fribidi
+[DEP] gawk
+[DEP] grep
+[DEP] harfbuzz
+[DEP] linux-header
+[DEP] meson
+[DEP] nasm
+[DEP] ninja
+[DEP] openssl
+[DEP] sed
+[DEP] tar
+[DEP] xz

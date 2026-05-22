@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/htcflasher/htcflasher.desc
+[COPY] Copyright (C) 2011 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A ROM update utility (RUU) for HTC devices
+
+[T] HTCFlasher (formerly known as HERMflasher) is a tool which allows you
+[T] to flash ROMs on most current HTC devices. It has some extra features
+[T] that the original HTC RUU doesn't have. For example, it can present a
+[T] serial prompt to the bootloader (replacing mtty), or it can dump NBH
+[T] file contents (.nb ROM parts).
+
+[U] http://htc-flasher.googlecode.com/
+
+[A] pof <tu_que_coņo_miras@cotilla.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] GPL
+[V] 20080615-2
+
+[D] a1c3329f1f2570cdbd834036e83543f82003e5eca77b5d4150709f71 HTCFlasher-20080615-2.tar.gz http://htc-flasher.googlecode.com/files/

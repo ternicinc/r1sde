@@ -1,0 +1,17 @@
+[TIMESTAMP] 1739209420 Mon Feb 10 18:43:40 2025
+[BUILDTIME] 2 (5)
+[SIZE] 107.32 MB, 362 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] gawk
+[DEP] grep
+[DEP] make
+[DEP] plasma-workspace
+[DEP] sed
+[DEP] tar
+[DEP] xz

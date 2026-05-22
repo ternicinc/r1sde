@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-sax-parser/perl-sax-parser.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module XML::SAX::ParserFactory
+
+[T] This package includes the Perl module XML::SAX::ParserFactory.
+
+[U] https://metacpan.org/pod/XML::SAX::ParserFactory
+
+[A] Matt Sergeant, matt@sergeant.org
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 1.02
+[P] X -----5---9 120.200
+
+[D] 8a216a6fdcd3fdaa0841d8d6b88648ef6894e468343ab1bad15128f5 XML-SAX-1.02.tar.gz https://cpan.metacpan.org/authors/id/G/GR/GRANTM/

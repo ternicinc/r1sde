@@ -1,0 +1,43 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ifhp/ifhp.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] General purpose print filter
+
+[T] The ifhp filter is a general purpose print filter that can handle a
+[T] wide variety of Text, PostScript, PCL, and PJL printers.
+[T] These include all known HP printers, PostScript supporting printers,
+[T] as well as a wide variety of Tektronix, QMS, Epson,
+[T] etc. The filter provides support for error message reporting, diagnostics,
+[T] and format conversions, as well as a vast variety
+[T] of options that can be used to deal with difficult or vintage printers.
+
+[U] http://www.astart.com/
+
+[A] Patrick Powell <papowell@astart.com>
+[M] René Rebe <rene@exactco.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/printing
+
+[L] OpenSource
+[V] 3.5.22
+[P] O -----5---9 174.700
+
+[D] 2e79f50e1e23ba42492e35023e61f080de35762af0978112c52810e7 ifhp-3.5.22.tgz http://www.lprng.com/DISTRIB/ifhp/
+
+# This hack is needed to trick configure if gs is not installed
+#
+ifhp_preconf() {
+	mkdir -p $builddir/dummy_gs
+	cp $confdir/dummy_gs.sh $builddir/dummy_gs/gs
+	chmod +x $builddir/dummy_gs/gs
+	PATH="$PATH:$builddir/dummy_gs"
+}
+
+hook_add preconf 3 ifhp_preconf
+var_append confopt ' ' --disable-gscheck
+var_append CC_WRAPPER_APPEND  ' ' -fno-strict-aliasing

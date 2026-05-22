@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfmpc/xfmpc.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Graphical Music Player Daemon
+
+[T] xfmpc is a graphical GTK+ Music Player Daemon (MPD) client focusing on low
+[T] footprint.
+
+[U] https://docs.xfce.org/apps/xfmpc/start
+
+[A] Mike Massonnet <mmassonnet@xfce.org>
+[A] Vincent Legout <vincent@xfce.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/xfce
+
+[L] GPL
+[V] 0.4.0
+
+[D] 61775c3f014acd727a26d1aa82907888ed729773a2d9fb8eb5a7b4d6 xfmpc-0.4.0.tar.xz https://archive.xfce.org/src/apps/xfmpc/0.4/
+
+. $base/package/xfce4/*/xfce4-conf.in

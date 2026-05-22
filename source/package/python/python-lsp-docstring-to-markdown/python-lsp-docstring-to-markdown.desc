@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-lsp-docstring-to-markdown/python-lsp-docstring-to-markdown.desc
+[COPY] Copyright (C) 2020 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] On the fly conversion of Python docstrings to markdown
+
+[T] On the fly conversion of Python docstrings to markdown.
+
+[U] https://github.com/python-lsp/python-lsp-server
+
+[A] Spyder IDE team
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/development
+[L] LGPL
+
+[V] 0.17
+[P] X -----5---9 149.000
+
+[D] b275a745deb5c159eccee8ce5b5986a686f1d82f6f825049d01b094c docstring_to_markdown-0.17.tar.gz https://files.pythonhosted.org/packages/source/d/docstring-to-markdown/

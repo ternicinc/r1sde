@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/intel-media-driver/intel-media-driver.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Intel media driver for VA-API
+
+[T] The VA-API user mode driver for Intel GEN Graphics family.
+
+[U] https://github.com/intel/media-driver/
+
+[A] Intel
+[M] NoTag <notag@t2sde.org>
+
+[C] base/x11
+[F] CROSS OBJDIR
+
+[R] + arm64 x86-64
+
+[L] MIT
+[V] 26.2.0
+
+[D] 5f9ea00b683b72d49ac03b24def14cb7b11dfc54eb28da73dacab1fd intel-media-26.2.0.tar.gz https://github.com/intel/media-driver/archive/
+
+var_append cmakeopt ' ' -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+var_append cmakeopt ' ' '-DINSTALL_DRIVER_SYSCONF=OFF -DENABLE_PRODUCTION_KMD=ON'
+var_append GCC_WRAPPER_REMOVE ' ' -m64

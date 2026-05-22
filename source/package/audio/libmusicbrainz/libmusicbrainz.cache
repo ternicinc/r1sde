@@ -1,0 +1,20 @@
+[TIMESTAMP] 1776004098 Sun Apr 12 17:28:18 2026
+[BUILDTIME] 8 (9)
+[SIZE] 0.79 MB, 80 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[DEP] neon
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

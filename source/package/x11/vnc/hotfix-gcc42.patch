@@ -1,0 +1,37 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/vnc/hotfix-gcc42.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- vnc-4_1_2-unixsrc/unix/tx/TXImage.cxx.vanilla	2008-11-06 16:23:00.000000000 +0100
++++ vnc-4_1_2-unixsrc/unix/tx/TXImage.cxx	2008-11-06 16:23:37.000000000 +0100
+@@ -21,6 +21,7 @@
+ 
+ 
+ #include <stdio.h>
++#include <stdlib.h>
+ #include <strings.h>
+ #include <sys/types.h>
+ #include <sys/ipc.h>
+--- vnc-4_1_2-unixsrc/unix/x0vncserver/Image.cxx.vanilla	2008-11-06 16:24:03.000000000 +0100
++++ vnc-4_1_2-unixsrc/unix/x0vncserver/Image.cxx	2008-11-06 16:24:35.000000000 +0100
+@@ -21,6 +21,7 @@
+ 
+ 
+ #include <stdio.h>
++#include <stdlib.h>
+ #include <sys/types.h>
+ #include <sys/ipc.h>
+ #include <sys/shm.h>
+--- vnc-4_1_2-unixsrc/common/network/TcpSocket.cxx.vanilla	2008-11-06 16:22:07.000000000 +0100
++++ vnc-4_1_2-unixsrc/common/network/TcpSocket.cxx	2008-11-06 16:22:37.000000000 +0100
+@@ -37,6 +37,8 @@
+ #include <fcntl.h>
+ #endif
+ 
++#include <stdlib.h>
++
+ #include <network/TcpSocket.h>
+ #include <rfb/util.h>
+ #include <rfb/LogWriter.h>

@@ -1,0 +1,13 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/x86-64/config.hlp
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+SDECFG_X8664_OPT
+  Please select the specific type of x86-CPU you want to optimize
+  binaries for.
+  You can also choose to not optimize for any specific CPU. The resulting
+  binaries will run on any x86-compatible CPU but with a significant loss
+  in performance.

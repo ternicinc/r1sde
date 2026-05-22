@@ -1,0 +1,26 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/xtensa/package/*/runpatch.patch
+# Copyright (C) 2020 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- udev-182/src/libudev.c.vanilla	2020-03-08 14:27:48.536223015 +0100
++++ udev-182/src/libudev.c	2020-03-08 14:28:48.600218073 +0100
+@@ -251,7 +251,7 @@
+                         goto err;
+ 
+         if (udev->run_path == NULL)
+-                if (set_value(&udev->run_path, "/run/udev") == NULL)
++                if (set_value(&udev->run_path, "/dev/.udev") == NULL)
+                         goto err;
+ 
+         if (udev->rules_path[0] == NULL) {
+@@ -426,7 +426,7 @@
+  * udev_get_run_path:
+  * @udev: udev library context
+  *
+- * Retrieve the udev runtime directory path. The default is "/run/udev".
++ * Retrieve the udev runtime directory path. The default is "/dev/.udev".
+  *
+  * Returns: the runtime directory path
+  **/

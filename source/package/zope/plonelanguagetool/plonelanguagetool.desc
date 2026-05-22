@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/plonelanguagetool/plonelanguagetool.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Allows you to set the available languages in your Plone site
+
+[T] PloneLanguageTool allows you to set the available languages in your Plone site,
+[T] select various fallback mechanisms, and control the use of flags for language
+[T] selection and translations.
+
+[U] https://longsleep.org/projects/plonelanguagetool
+
+[A] Simon Eisenmann <simon@longsleep.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[E] add zope
+
+[L] OpenSource
+
+[V] 0.5
+
+[D] d05b6a62148402c5696b3b1a1b2e4fe437c3fc958a17b5f3cbcd0ff5 PloneLanguageTool-0.5.tar.gz https://download.sourceforge.net/collective/
+
+. $base/package/*/zope/zope-conf.in

@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ntfs2btrfs/ntfs2btrfs.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A tool for in-place conversion of Microsoft's NTFS to Btrfs
+
+[T] Ntfs2btrfs is a tool which does in-place conversion of Microsoft's NTFS
+[T] filesystem to the open-source filesystem Btrfs, much as btrfs-convert does
+[T] for ext2. The original image is saved as a reflink copy at image/ntfs.img,
+[T] and if you want to keep the conversion you can delete this to free up space.
+
+[U] https://github.com/maharmstone/ntfs2btrfs/
+
+[A] Mark Harmstone
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+[F] CROSS
+
+[L] GPL
+[V] 20250616
+
+[D] 1547cc70bd58af84b62fb6adb112fb7d4998aa700dab24f01415f3d0 ntfs2btrfs-20250616.tar.gz https://github.com/maharmstone/ntfs2btrfs/archive/refs/tags/20250616/

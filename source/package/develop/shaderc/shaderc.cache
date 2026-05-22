@@ -1,0 +1,20 @@
+[TIMESTAMP] 1739040262 Sat Feb  8 19:44:22 2025
+[BUILDTIME] 4 (5)
+[SIZE] 0.63 MB, 19 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] glslang
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] python
+[DEP] sed
+[DEP] spirv-headers
+[DEP] spirv-tools
+[DEP] tar

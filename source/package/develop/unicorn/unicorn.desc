@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/unicorn/unicorn.desc
+[COPY] Copyright (C) 2016 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Lightweight, multi-platform, multi-architecture CPU emulator framework
+
+[T] Unicorn is a lightweight multi-platform, multi-architecture CPU emulator
+[T] framework based on QEMU.
+
+[U] https://www.unicorn-engine.org/download/
+
+[A] Nguyen Anh Quynh <aquynh@gmail.com>
+[A] Dang Hoang Vu <dang.hvu@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] GPL
+[V] 2.1.4
+
+[CV-FLAGS] NO-PREFIX
+[D] d5a71cc9ca23c54becee22a95e790d7e339f4bc79ee12ae0359aae1e unicorn-2.1.4.tar.gz https://github.com/unicorn-engine/unicorn/archive/2.1.4/

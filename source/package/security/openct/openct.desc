@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openct/openct.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A framework for smart card readers
+
+[T] OpenCT is a library for accessing smart card terminals. It provides
+[T] a rich set of functions for driver writers, protocol drivers for T=0
+[T] and T=1, serial and USB functionality, including USB hotplugging. The
+[T] main user of OpenCT is the OpenSC smart card framework, but OpenCT
+[T] can of course be used by other applications as well. OpenCT provides
+[T] a native OpenCT, CT-API and PC/SC Lite IFD interface with an OpenCT
+[T] ifdhandler resource manager.
+
+[U] http://www.opensc-project.org/
+
+[A] Juha Yrj"ol"a <juha.yrjola@iki.fi>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+[F] CROSS
+
+[L] BSD
+[V] 0.6.20
+[P] X -----5---9 118.050
+
+[D] f3a4820f67fae2ee7f5f10e4555c62240accd4b52a57b6b3672ed7bd openct-0.6.20.tar.gz http://www.opensc-project.org/files/openct/

@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pyqt/pyqt.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Python bindings for the Qt toolkit
+
+[T] PyQt is a set of Python bindings for the Qt toolkit. The bindings
+[T] are implemented as a set of Python modules: qt, qtcanvas, qtgl,
+[T] qtnetwork, qtsql, qttable, qtui and qtxml, and contains 300 classes
+[T] and over 5,750 functions and methods.
+
+[U] https://sourceforge.net/projects/pyqt/
+
+[A] Riverbank Computing Ltd. <http://www.riverbankcomputing.co.uk>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[E] add qt3 python sip
+
+[L] GPL
+
+[V] 3.18.1
+[P] X -----5---9 210.000
+
+[D] b61a881422ccc55b4623075f6647f743a484025a87c4201edf3b8995 PyQt-x11-gpl-3.18.1.tar.gz https://downloads.sourceforge.net/project/pyqt/PyQt3/
+
+pyqt_pm() {
+	echo "yes" | (CXX_WRAPPER_BYPASS=1; eval python configure.py $pyconfopt)
+}
+
+var_append pyconfopt ' ' "-y qt-mt"
+
+hook_add premake 5 pyqt_pm

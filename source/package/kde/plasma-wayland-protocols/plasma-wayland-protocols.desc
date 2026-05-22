@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/plasma-wayland-protocols/plasma-wayland-protocols.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Plasma Wayland Protocols
+
+[T] Plasma-specific protocols for Wayland.
+
+[U] https://www.kde.org
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 1.21.0
+[P] X ?----5---9 162.799
+
+[D] 758c42770cb3e286b3ba0ae4738a48e268f7c963ab54d5fbd12c1052 plasma-wayland-protocols-1.21.0.tar.gz https://github.com/KDE/plasma-wayland-protocols/archive/v1.21.0/
+
+. $base/package/*/*/kde-conf.in

@@ -1,0 +1,27 @@
+[TIMESTAMP] 1748003413 Fri May 23 14:30:13 2025
+[BUILDTIME] 25 (9)
+[SIZE] 1.95 MB, 8 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cargo
+[DEP] clang
+[DEP] coreutils
+[DEP] diffutils
+[OPT] ffmpeg
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] lz4
+[DEP] mesa
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] rust-bindgen
+[DEP] rustc
+[OPT] scdoc
+[DEP] sed
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] zstd

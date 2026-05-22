@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-devel-stacktrace/perl-devel-stacktrace.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module - Stack trace and stack trace frame objects
+
+[T] The Devel::StackTrace module contains two classes, Devel::StackTrace
+[T] and Devel::StackTraceFrame. The goal of this object is to encapsulate
+[T] the information that can found through using the caller() function,
+[T] as well as providing a simple interface to this data.
+
+[U] https://search.cpan.org/~drolsky/Devel-StackTrace-1.12/
+
+[A] Dave Rolsky
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 2.05
+[P] X -----5---9 200.200
+
+[D] b15b92eb270d0a4efe6695494dea42e7d04fdaa4987efa5c903d0e68 Devel-StackTrace-2.05.tar.gz http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/

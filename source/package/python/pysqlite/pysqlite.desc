@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pysqlite/pysqlite.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Python DB-API 2.0 Compliant Interface Module for SQLite
+
+[T] PySQLite makes the SQLite database engine available to Python developers
+[T] via the Python Database API Specification 2.0. The ambition is to expose
+[T] all of SQLite's functionality in a pythonic way, and to offer additional
+[T] ease-of-use features.
+
+[U] https://pysqlite.org
+
+[A] Michael Owens
+[A] Gerhard Häring
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[E] add python
+
+[L] OpenSource
+
+[V] 2.8.3
+[P] X -----5---9 132.400
+
+[D] ea3e654534ce5a0fa67eb699d742f208e569870c0f484b50f67de532 pysqlite-2.8.3.tar.gz https://files.pythonhosted.org/packages/source/p/pysqlite/

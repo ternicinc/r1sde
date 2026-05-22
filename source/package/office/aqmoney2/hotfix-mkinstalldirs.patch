@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/aqmoney2/hotfix-mkinstalldirs.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- aqmoney2-1.9.5/po/Makefile.in.in.orig	2004-02-04 19:34:39.000000000 +0100
++++ aqmoney2-1.9.5/po/Makefile.in.in	2006-09-21 13:19:44.000000000 +0200
+@@ -27,7 +27,7 @@
+ INSTALL = @INSTALL@
+ INSTALL_DATA = @INSTALL_DATA@
+ MKINSTALLDIRS = @MKINSTALLDIRS@
+-mkinstalldirs = $(SHELL) $(MKINSTALLDIRS)
++mkinstalldirs = @mkdir_p@
+ 
+ GMSGFMT = @GMSGFMT@
+ MSGFMT = @MSGFMT@

@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/nethack/unixres.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./sys/unix/unixres.c	2003-02-23 15:43:39.000000000 +0100
++++ ./sys/unix/unixres.c	2003-06-08 13:45:58.000000000 +0200
+@@ -24,6 +24,7 @@
+ #endif
+ 
+ /* requires dynamic linking with libc */
++#define __USE_GNU
+ #include <dlfcn.h>
+ 
+ static int

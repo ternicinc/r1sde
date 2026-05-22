@@ -1,0 +1,20 @@
+[TIMESTAMP] 1748455503 Wed May 28 20:05:03 2025
+[BUILDTIME] 75 (5)
+[SIZE] 82.36 MB, 10 files
+
+[DEP] bash
+[DEP] containerd
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] go
+[DEP] grep
+[DEP] gzip
+[DEP] m4
+[DEP] pkgconfig
+[DEP] runc
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] tini

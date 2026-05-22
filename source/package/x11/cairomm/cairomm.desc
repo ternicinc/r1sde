@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cairomm/cairomm.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] C++ wrapper for cairo
+
+[T] This library provides a C++ interface to cairo.
+
+[U] https://cairographics.org/
+
+[A] Murray Cumming
+[A] Jonathon Jongsma
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/x11
+[F] CROSS
+
+[E] opt boost
+
+[L] LGPL
+[V] 1.19.0
+[P] X -----5---9 127.040
+
+[D] fc089c5528b53296beb9a3b13c029310e35ca54a336eca96cadc71c1 cairomm-1.19.0.tar.xz http://cairographics.org/releases/
+
+var_append mesonopt ' ' '-Dbuild-tests=false -Dbuild-examples=false'

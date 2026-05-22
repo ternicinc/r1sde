@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mdnsresponder/mdnsresponder.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Apple reference Zeroconf implementation
+
+[T] Zeroconf lets you create an instant network of computers and smart
+[T] devices just by getting them connected to each other.
+[T]
+[T] The computers and devices take over from there, automatically broadcasting
+[T] and discovering what services each is offering for the use of others.
+
+[U] https://developer.apple.com/opensource/internet/bonjour.html
+
+[A] Apple Computer, Inc.
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS
+[C] extra/network
+
+[L] APSL
+[V] 2881.100.56.0.1
+[P] X -----5---9 128.750
+
+[D] 52df5bb58b38cc0bc65e0b8deeeb082974a5eca33c7042d67ef2dc21 mDNSResponder-2881.100.56.0.1.tar.gz https://github.com/apple-oss-distributions/mDNSResponder/archive/
+
+hook_add preconf 3 "cd mDNSPosix"
+var_insert makeopt ' ' os=linux
+var_append CC_WRAPPER_APPEND ' ' -std=gnu17
+makeinstopt="$makeopt INSTBASE=$root/$prefix NSSINSTPATH=$root$libdir InstalledDaemon InstalledLib InstalledManPages InstalledNSS"

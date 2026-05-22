@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ristretto/ristretto.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Image Viewer for the Xfce desktop environment
+
+[T] The Ristretto Image Viewer is an application that can be used to view
+[T] and scroll through images, run a slideshow of images, open images with
+[T] other applications like an image-editor or configure an image as the
+[T] desktop wallpaper.
+
+[U] https://docs.xfce.org/apps/ristretto/start
+
+[A] Xfce Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/xfce
+[F] CROSS
+
+[L] GPL
+[V] 0.14.0
+
+[D] 83947d78723cd35ccf84f0fccb84619c73b88b3b909545530d3c8b0c ristretto-0.14.0.tar.xz https://archive.xfce.org/src/apps/ristretto/0.14/
+
+. $base/package/xfce4/*/xfce4-conf.in

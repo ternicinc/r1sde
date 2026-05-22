@@ -1,0 +1,18 @@
+
+[TIMESTAMP] 1279697864 Wed Jul 21 09:37:44 2010
+[BUILDTIME] 5 (5) ERROR
+[SIZE] 0.01 MB, 6 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] postgresql
+[DEP] python
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar

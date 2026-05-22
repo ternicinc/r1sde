@@ -1,0 +1,21 @@
+[TIMESTAMP] 1770142452 Tue Feb  3 19:14:12 2026
+[BUILDTIME] 980 (9)
+[SIZE] 145.10 MB, 7 files
+
+[DEP] bash
+[DEP] cargo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] llvm
+[DEP] make
+[DEP] ncurses
+[DEP] nodejs
+[DEP] openssl
+[DEP] rustc
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

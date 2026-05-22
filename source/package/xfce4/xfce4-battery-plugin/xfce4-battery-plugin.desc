@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfce4-battery-plugin/xfce4-battery-plugin.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Battery monitor panel plugin for Xfce4
+
+[T] A battery monitor panel plugin for Xfce4, compatible with APM and ACPI,
+[T] for Linux and *BSD.
+
+[U] http://xfce-goodies.berlios.de/
+
+[A] Nick Penwarden
+[A] Edscott Wilson Garcia
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/xfce
+[F] CROSS
+
+[L] BSD
+[V] 1.2.0
+
+[D] 4b4b2cee5d74c7d1553abb0a32876b4c9cdacb4f799a27e7d3478bd9 xfce4-battery-plugin-1.2.0.tar.xz https://archive.xfce.org/src/panel-plugins/xfce4-battery-plugin/1.2/
+
+. $base/package/xfce4/*/xfce4-conf.in

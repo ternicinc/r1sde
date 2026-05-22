@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-vfs-moniker/gnome-vfs-moniker.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome virtual file system monikers
+
+[T] Separate release of this gnome-vfs-module. This code was moved out
+[T] of the gnome-vfs source tree during the DBus-for-Bonobo update.
+[T] This module needs to be in the platform to be API/ABI stable.
+
+[A] Ettore Perazzoli <ettore@ximian.com> and others
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development extra/filesystem extra/desktop/gnome
+[F] CROSS
+[E] add gnome-mime-data
+
+[L] LGPL
+[V] 2.15.3
+
+[CV-URL] https://download.gnome.org/sources/gnome-vfs-moniker/cache.json
+[D] 72d3fe5fdf2a81e13f1f37abfa801032dc71a87b0660d8382978d023 gnome-vfs-monikers-2.15.3.tar.bz2 https://download.gnome.org/sources/gnome-vfs-monikers/2.15/
+
+. $base/package/*/*/gnome-conf.in

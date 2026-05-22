@@ -1,0 +1,23 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/musl/glob-onlydir.patch
+# Copyright (C) 2016 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+As this appears to be a pure optimization hint we should be save by ignoring it for now:
+
+"If the information about the type of the file is easily available non-directories will be rejected but no extra work will be done to determine the information for each file. I.e., the caller must still be able to filter directories out."
+
+  - René Rebe <rene@exactcode.de>
+
+--- musl-1.1.15/include/glob.h.vanilla	2016-12-18 22:56:25.587321296 +0000
++++ musl-1.1.15/include/glob.h	2016-12-18 22:57:37.859322537 +0000
+@@ -31,6 +31,8 @@
+ #define GLOB_NOESCAPE 0x40
+ #define	GLOB_PERIOD   0x80
+ 
++#define GLOB_ONLYDIR  0x00
++
+ #define GLOB_NOSPACE 1
+ #define GLOB_ABORTED 2
+ #define GLOB_NOMATCH 3

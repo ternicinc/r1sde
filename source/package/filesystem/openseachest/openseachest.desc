@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openseachest/openseachest.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Utilities for various operations on SATA, SAS, NVMe, and USB storage devices
+
+[T] openSeaChest is a collection of comprehensive, easy-to-use command line
+[T] diagnostic tools and programming libraries for storage devices that help
+[T] you quickly determine the health and status of your storage product.
+
+[U] https://github.com/Seagate/openSeaChest
+
+[A] Seagate Technology LLC
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+
+[L] MPL
+[V] 26.03.1
+
+[D] 1698248223c81aadcbe314dbd2cf29099d7c07bd1813ce4b53c6e149 openSeaChest-26.03.1.tar.xz !https://github.com/Seagate/openSeaChest/releases/download/v26.03.1/SourceCode_With_Submodules.tar.xz
+
+bindir=$sbindir

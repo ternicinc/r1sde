@@ -1,0 +1,17 @@
+[TIMESTAMP] 1737665643 Thu Jan 23 21:54:03 2025
+[BUILDTIME] 2 (9)
+[SIZE] 2.90 MB, 587 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[OPT] glib
+[DEP] grep
+[DEP] gzip
+[DEP] openssl
+[DEP] python
+[DEP] python-gpep517
+[DEP] python-poetry-core
+[DEP] sed
+[DEP] tar

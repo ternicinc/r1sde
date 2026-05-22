@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-video-freedreno/xf86-video-freedreno.desc
+[COPY] Copyright (C) 2013 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] X.Org driver for Adreno mobile GPUs
+
+[T] X.Org driver for Adreno mobile GPUs. Supported chipsets: z180, a22x, and
+[T] a3xx mobile GPUs (as found in APQ8060, APQ8060A, APQ8064, APQ8x74, etc.).
+
+[U] https://www.X.org
+
+[A] Rob Clark <robclark@freedesktop.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.4.0
+
+[R] + arm arm64
+
+[D] cc155c8eb839bfa5317c21c794719c11167271d4bf5ab0ac7d160f4d xf86-video-freedreno-1.4.0.tar.bz2 http://xorg.freedesktop.org/archive/individual/driver/
+
+. package/*/*/modular-x-conf.in

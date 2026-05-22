@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pyftdi/pyftdi.desc
+[COPY] Copyright (C) 2019 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A user-space driver for modern FTDI device
+
+[T] PyFtdi aims at providing a user-space driver for modern FTDI devices,
+
+[T] implemented in pure Python language.
+
+[U] https://eblot.github.io/pyftdi/
+
+[A] Emmanuel Blot
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[L] BSD
+
+[V] 0.57.1
+[P] X -----5---9 127.400
+
+[D] 50ff7c680734eaf40beb5d76602d7d0c05436c4588a56c1294e11076 pyftdi-0.57.1.tar.gz https://github.com/eblot/pyftdi/archive/v0.57.1/

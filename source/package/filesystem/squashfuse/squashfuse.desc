@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/squashfuse/squashfuse.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] FUSE filesystem to mount squashfs archives
+
+[T] Squashfuse lets you mount SquashFS archives in user-space. It supports
+[T] almost all features of the SquashFS format
+
+[U] https://github.com/vasi/squashfuse
+
+[A] Dave Vasilevsky <dave@vasilevsky.ca>
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/filesystem
+[F] CROSS
+
+[L] OpenSource
+[V] 0.6.1
+[P] X -----5---9 400.000
+
+[D] 83dcea2a3ef82c61006ca9fa5c3be0c703ebf4f3bfd1465f87751bd0 squashfuse-0.6.1.tar.gz https://github.com/vasi/squashfuse/archive/0.6.1/
+
+hook_add preconf 5 ./autogen.sh

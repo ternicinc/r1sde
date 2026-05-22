@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gtk-chtheme/gtk-chtheme.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Select GTK theme
+
+[T] Lets you change your gtk+ 2.0 theme. The aim is to make theme preview
+[T] and selection as slick as possible. Themes installed on the system are
+[T] presented for selection and previewed on the fly.
+
+[U] http://plasmasturm.org/code/gtk-chtheme/
+
+[A] Aristotle Pagaltzis
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/gnome
+
+[L] GPL
+[V] 0.3.1
+
+[D] 718fbd51d36e5ad91eabd00722ff5774846ecc6b2f93da0a202a8f94 gtk-chtheme-0.3.1.tar.bz2 http://plasmasturm.org/code/gtk-chtheme/
+
+runconf=0

@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libshout/libshout.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2005 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library for streaming to icecast
+
+[T] Libshout allows applications to easily communicate and broadcast to an
+[T] Icecast streaming media server. It handles the socket connections,
+[T] metadata communication, and data streaming for the calling application,
+[T] and lets developers focus on feature sets instead of implementation
+[T] details.
+
+[U] https://www.icecast.org/
+
+[A] Brendan Cully <brendan@kublai.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[E] opt libtheora
+[E] opt speex
+
+[L] GPL
+[V] 2.4.6
+
+[D] 83a2140f3a85461680efe32ff3d79b1de1af9462a7e6ae90854c8b2e libshout-2.4.6.tar.gz http://downloads.xiph.org/releases/libshout/

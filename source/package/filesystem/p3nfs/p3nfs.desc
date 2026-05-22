@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/p3nfs/p3nfs.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2005 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Tools for mounting a symbian phone over nfs
+
+[T] P3nfsd is a Symbian (Psion/Nokia/Sony-Ericsson/etc) to UNIX/Linux
+[T] communication program. It allows you to mount the file systems of the
+[T] Phone/PDA on your UNIX machine. This means that you see all the filesystems
+[T] of the Phone/PDA as a filesystem on your UNIX machine, and you can
+[T] copy/backup/edit any file on the Phone/PDA with your preferred tools on the
+[T] UNIX machine.
+
+[U] http://www.koeniglich.de/p3nfs.html
+
+[A] Rudolf Koenig <r.koenig@goeniglich.de>
+[M] René Rebe <rene@exactco.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 5.18
+
+[D] 7a9dd2e4cb50d18b929c1356463d46583b24a88b7c9a4898e9bb4bb8 p3nfs-5.18.tar.gz http://www.koeniglich.de/packages/
+
+autogen=1

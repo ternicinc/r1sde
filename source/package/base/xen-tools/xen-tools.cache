@@ -1,0 +1,37 @@
+[TIMESTAMP] 1774855935 Mon Mar 30 09:32:15 2026
+[BUILDTIME] 150 (9) ERROR
+[SIZE] 13.39 MB, 773 files
+
+[DEP] acpica
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] bison
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] dtc
+[DEP] e2fsprogs
+[DEP] findutils
+[DEP] flex
+[DEP] gawk
+[DEP] go
+[DEP] grep
+[DEP] gzip
+[DEP] json-c
+[DEP] libnl
+[DEP] linux-header
+[DEP] lzo
+[DEP] m4
+[DEP] make
+[DEP] ncurses
+[DEP] net-tools
+[DEP] ocaml
+[DEP] perl
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] xz
+[DEP] zlib

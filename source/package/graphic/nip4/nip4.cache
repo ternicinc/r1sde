@@ -1,0 +1,35 @@
+[TIMESTAMP] 1774556091 Thu Mar 26 21:14:51 2026
+[BUILDTIME] 45 (9)
+[SIZE] 12.64 MB, 454 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bison
+[DEP] cairo
+[DEP] colord
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] flex
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] graphene
+[DEP] grep
+[DEP] gsl
+[DEP] gtk
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] libxml
+[DEP] linux-header
+[DEP] m4
+[DEP] mate-wayland-session
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] vips

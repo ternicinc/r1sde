@@ -1,0 +1,42 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/glfw/glfw.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A multi-platform library for OpenGL, OpenGL ES and Vulkan
+
+[T] GLFW is an Open Source, multi-platform library for OpenGL, OpenGL ES and
+[T] Vulkan development on the desktop. It provides a simple API for creating
+[T] windows, contexts and surfaces, receiving input and events.
+[T]
+[T] GLFW is written in C and supports Windows, macOS, X11 and Wayland.
+
+[U] https://www.glfw.org/
+
+[A] Marcus Geelnard
+[A] Camilla Löwy
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] NO-LTO.gcc
+
+[E] opt doxygen
+
+[L] OpenSource
+[V] 3.4
+[P] X -----5---9 130.445
+
+[D] ee54eea993ff067d28495a3425e68633f15be71f178bb00349975129 glfw-3.4.tar.gz https://github.com/glfw/glfw/archive/3.4/
+
+pkginstalled wayland && var_append cmakeopt ' ' -DGLFW_BUILD_WAYLAND=ON
+var_append cmakeopt ' ' -DGLFW_BUILD_WAYLAND=ON
+[ "$SDECFG_STATIC" = 1 ] || var_append cmakeopt ' ' -DBUILD_SHARED_LIBS=ON
+var_append cmakeopt ' ' '-DGLFW_BUILD_EXAMPLES=OFF -DGLFW_BUILD_TESTS=OFF'
+
+glfw_pm() {
+	for x in $(find tests/ examples/ -type f -perm /u=x); do
+		install -m755 $x $root$bindir/glfw-${x##*/}
+	done
+}
+hook_add postmake 5 glfw_pm

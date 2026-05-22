@@ -1,0 +1,34 @@
+[TIMESTAMP] 1737931977 Sun Jan 26 23:52:57 2025
+[BUILDTIME] 165 (9)
+[SIZE] 10.40 MB, 138 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] cargo
+[DEP] cbindgen
+[DEP] coreutils
+[DEP] diffutils
+[DEP] file
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] hyperscan
+[DEP] jansson
+[DEP] libbpf
+[DEP] libcap-ng
+[DEP] libnet
+[DEP] libpcap
+[DEP] libxdp
+[DEP] libyaml
+[DEP] linux-header
+[DEP] lz4
+[DEP] make
+[DEP] openssl
+[DEP] pcre2
+[DEP] rustc
+[DEP] sed
+[DEP] tar
+[DEP] unwind
+[DEP] zlib

@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---.
+[COPY] t2/package/*/qps/qps.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---.
+
+[I] LXQt process manager
+
+[T] LXQt process manager.
+
+[U] https://github.com/lxqt/qps
+
+[A] Qps Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] OBJDIR
+
+[V] 2.13.0
+[L] LGPL
+
+[D] 4aa8a2caca7855004d44bb85fae030fd8dd0b3e3e0a2410390212aea qps-2.13.0.tar.xz https://github.com/lxqt/qps/releases/download/2.13.0/

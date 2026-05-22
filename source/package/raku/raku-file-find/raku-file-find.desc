@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/raku-file-find/raku-file-find.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Get a lazy list of a directory tree
+
+[T] Get a lazy list of a directory tree.
+
+[U] https://github.com/tadzik/File-Find
+
+[A] Tadeusz Sosnierz <tadzik@tadzik.net>
+[M] Tomas Glozar <tglozar@gmail.com>
+
+[C] extra/development
+[F] CROSS
+
+[L] MIT
+[V] 0.2.5
+[P] X -----5---9 209.701
+
+[D] 35745ca93aed08b5cb273652bc96f3af131d529c56301697ac12835e File-Find-0.2.5.tar.gz https://github.com/raku-community-modules/File-Find/archive/0.2.5/

@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libiconv/libiconv.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library converting between character encodings
+
+[T] This library provides an iconv() implementation, for use on systems
+[T] which don't have one, or whose implementation cannot convert from/to
+[T] Unicode.
+[T] This library is a drop-in soution for systems lacking a iconv()
+[T] implementation in the C library.
+
+[U] https://www.gnu.org/software/libiconv/
+
+[A] Bruno Haible <bruno@clisp.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+
+[L] GPL
+
+[V] 1.19
+[P] O --2--5---9 105.000
+
+[D] 4f13d3f022931530a240dfa0744c8b7f5c44b929a0a17844d40d316d libiconv-1.19.tar.gz http://ftp.gnu.org/pub/gnu/libiconv/

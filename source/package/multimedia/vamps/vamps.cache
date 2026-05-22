@@ -1,0 +1,16 @@
+[TIMESTAMP] 1737923534 Sun Jan 26 21:32:14 2025
+[BUILDTIME] 2 (9)
+[SIZE] 0.12 MB, 7 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libdvdread
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar

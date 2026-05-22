@@ -1,0 +1,21 @@
+[TIMESTAMP] 1737680046 Fri Jan 24 01:54:06 2025
+[BUILDTIME] 20 (9)
+[SIZE] 6.15 MB, 49 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] libdeflate
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] sed
+[DEP] tar
+[DEP] xz
+[DEP] zlib

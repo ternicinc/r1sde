@@ -1,0 +1,31 @@
+
+[TIMESTAMP] 1703618399 Tue Dec 26 19:19:59 2023
+[BUILDTIME] 3 (9)
+[SIZE] 0.84 MB, 57 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] cups
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[DEP] glib
+[DEP] grep
+[DEP] gtk+2
+[DEP] intltool
+[DEP] libdrm
+[DEP] libx11
+[DEP] libxcb
+[DEP] libxxf86vm
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] perl-xml-parser
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto
+[DEP] xz

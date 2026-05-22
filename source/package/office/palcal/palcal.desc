@@ -1,0 +1,41 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/palcal/palcal.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A CLI calendar
+
+[T] Features:
+[T] * A cal-like calendar that highlights days that have events.
+[T] * Assign different colors to different types of events.
+[T] * Search events with regular expressions (-s).
+[T] * Includes calendars for US holidays, Christian holidays, world
+[T] holidays, historical events and more.
+[T] * One-time events and a variety of recurring events are supported
+[T] (daily, weekly, monthly, yearly). Recurring events can have
+[T] start and end dates.
+[T] * Easy-to-use CLI interface for interactively
+[T] adding/editing/deleting events (-m).
+[T] * Automated deletion of old events (-x).
+[T] * Option to generate an HTML calendar (--html) (example).
+[T] * Option to generate a LaTeX calendar suitable for printing
+[T] (--latex) (source, example).
+
+[U] https://palcal.sourceforge.net/
+
+[A] Scott Kuhl <scott at kuhlweb.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office
+[F] CROSS
+
+[L] GPL
+[V] 0.4.3
+
+[D] bf77f75b0ac5d5e4439dd18febfce7faf81561671c5af439c1d2f8b4 pal-0.4.3.tgz https://prdownloads.sourceforge.net/sourceforge/palcal/
+
+srcdir="*/src"
+# prevent strip runs (mostly for cross builds anyway)
+var_append makeopt ' ' DEBUG=1

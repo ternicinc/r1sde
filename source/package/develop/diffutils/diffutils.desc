@@ -1,0 +1,44 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/diffutils/diffutils.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The GNU collection of diff utilities
+
+[T] You can use the 'diff' command to show differences between two
+[T] files, or each corresponding file in two directories.
+[T]
+[T] You can use the 'cmp' command to show the offsets and line numbers
+[T] where two files differ. 'cmp' can also show all the characters that
+[T] differ between the two files, side by side.
+[T]
+[T] You can use the set of differences produced by 'diff' to distribute
+[T] updates to text files (such as program source code) to other people.
+[T] This method is especially useful when the differences are small compared
+[T] to the complete files.
+[T]
+[T] You can use the 'diff3' command to show differences among three
+[T] files. When two people have made independent changes to a common
+[T] original, 'diff3' can report the differences between the original and
+[T] the two changed versions, and can produce a merged file that contains
+[T] both persons' changes together with warnings about conflicts.
+[T]
+[T] You can use the 'sdiff' command to merge two files interactively.
+
+[U] https://www.gnu.org/software/diffutils/diffutils.html
+
+[A] The GNU Project <gnu@gnu.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/development
+[F] CROSS DIETLIBC
+
+[L] GPL
+[V] 3.12
+[P] X --2--5---9 107.500
+
+[D] 78a8da4685150c8315b17f146cab451fda2b56b746179da440b210b2 diffutils-3.12.tar.xz http://ftp.gnu.org/pub/gnu/diffutils/
+
+var_append GCC_WRAPPER_APPEND ' ' -std=gnu99

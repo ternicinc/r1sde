@@ -1,0 +1,37 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kio-extras/kio-extras.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Additional components to increase the functionality of KIO
+
+[T] Additional components to increase the functionality of KIO.
+
+[U] https://www.kde.org
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[E] opt kdoctools docbook-xml docbook-xsl
+[E] opt iat
+[E] opt ilmbase openexr
+[E] opt libmtp
+[E] opt libssh
+[E] opt libimobiledevice
+[E] opt samba
+
+[L] GPL
+[V] 26.04.1
+
+[CV-GROUP] kde-gear
+[D] 30daafbcc61a408dd5c10d15c1e22d44e5099d2ad1bfa7696f37efe2 kio-extras-26.04.1.tar.xz https://download.kde.org/stable/release-service/26.04.1/src/
+
+. $base/package/*/*/kde-conf.in
+pkginstalled kdoctools || var_append cmakeopt ' ' -DBUILD_DOC=OFF
+
+[ "$SDECFG_LIBC" = musl ] && var_append GCC_WRAPPER_INSERT ' ' -D_GNU_SOURCE

@@ -1,0 +1,43 @@
+[TIMESTAMP] 1770546967 Sun Feb  8 11:36:07 2026
+[BUILDTIME] 110 (9)
+[SIZE] 3.59 MB, 211 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] freetype
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] kcmutils
+[DEP] kconfig
+[DEP] kcoreaddons
+[DEP] kcrash
+[DEP] kdbusaddons
+[DEP] ki18n
+[DEP] kwindowsystem
+[DEP] layer-shell-qt
+[DEP] libkscreen
+[DEP] libplasma
+[DEP] libx11
+[DEP] libxcb
+[DEP] libxext
+[DEP] libxfixes
+[DEP] libxi
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] procps
+[DEP] qt6base
+[DEP] qt6declarative
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] vulkan-headers
+[DEP] wayland
+[DEP] wayland-protocols
+[DEP] xorgproto
+[DEP] xz

@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dvd+rwtools/hotfix-glibc2.18.patch
+# Copyright (C) 2021 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- dvd+rw-tools-7.1/growisofs.c.vanilla	2021-02-24 16:44:27.540086741 +0100
++++ dvd+rw-tools-7.1/growisofs.c	2021-02-24 16:44:41.547087463 +0100
+@@ -453,6 +453,7 @@
+ # include <poll.h>
+ # include <sys/resource.h>
+ # include <sys/utsname.h>
++# include <sys/sysmacros.h>
+ 
+ # include <errno.h>
+ # define set_errno(e)	(errno=(e))

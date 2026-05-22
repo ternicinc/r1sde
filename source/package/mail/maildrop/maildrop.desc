@@ -1,0 +1,37 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/maildrop/maildrop.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Mail delivery agent with filtering abilities
+
+[T] Maildrop is the mail filter/mail delivery agent used by the Courier
+[T] mail server, but it can be used with other mail servers, too.
+
+[U] https://www.courier-mta.org/maildrop/
+
+[A] Sam Varshavchik <mrsam@courier-mta.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/server
+
+[F] FPIC
+
+[L] GPL
+[V] 3.3.0
+[P] X -----5---9 139.900
+
+[D] aadd60dee924ded5a9fbb20d3d565c342c6f9e3c9234c3affa889e60 maildrop-3.3.0.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/courier/
+
+var_append confopt ' ' --with-devel
+var_append confopt ' ' --enable-syslog=1
+
+var_append GCC_WRAPPER_APPEND ' ' -lpcre
+
+var_append INSTALL_WRAPPER_FILTER '|' \
+	   "sed -e 's,.*man.*/deliverquota.8,/tmp/,' \
+		-e 's,.*man.*/maildirmake.1,/tmp/,' \
+		-e 's,.*bin.*/deliverquota,/tmp/,' \
+		-e 's,.*bin.*/maildirmake,/tmp/,'"

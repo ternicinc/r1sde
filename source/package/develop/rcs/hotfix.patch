@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/rcs/hotfix.patch
+# Copyright (C) 2020 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- rcs-5.8.2/src/base.h.vanilla	2020-02-19 09:49:42.347776993 +0000
++++ rcs-5.8.2/src/base.h	2020-02-19 09:50:17.015776813 +0000
+@@ -40,7 +40,7 @@
+ #include <vfork.h>
+ #endif
+ 
+-#define exiting  _Noreturn
++#define exiting  // _Noreturn
+ 
+ /* GCC attributes  */
+ 

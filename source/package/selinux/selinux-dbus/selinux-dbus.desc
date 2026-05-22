@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/selinux-dbus/selinux-dbus.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] SELinux policy core DBUS api
+
+[T] Contains the management DBUS API use to manage a SELinux environment.
+
+[U] https://github.com/SELinuxProject/selinux
+
+[A] NSA SElinux Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+[F] CROSS
+
+[E] add libselinux
+
+[L] GPL
+[V] 3.10
+
+[CV-GROUP] selinux
+[D] c830d2de6ffeca3bd083c7e5ac941fc6c4bb9db4d9f5e96473a3bca5 selinux-dbus-3.10.tar.gz https://github.com/SELinuxProject/selinux/releases/download/3.10/

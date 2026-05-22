@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libgit2/libgit2.desc
+[COPY] Copyright (C) 2013 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A portable, pure C implementation of the Git core methods
+
+[T] libgit2 is a portable, pure C implementation of the Git core methods
+[T] provided as a re-entrant linkable library with a solid API, allowing
+[T] you to write native speed custom Git applications in any language that
+[T] supports C bindings.
+
+[U] https://libgit2.org/
+
+[A] The libgit2 contributors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+[F] CROSS
+
+[E] opt krb5
+[E] opt mbedtls
+
+[L] GPL
+[V] 1.9.3
+[P] X -----5---9 135.800
+
+[D] 8e76abc9cc755ed27b7639f93ccfac0fb45aab4652fef1032f0deb44 libgit2-1.9.3.tar.gz https://github.com/libgit2/libgit2/archive/v1.9.3/

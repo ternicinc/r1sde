@@ -1,0 +1,20 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-mail-sendmail/perl-mail-sendmail.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A module for platform independent mail
+
+[T] Simple platform independent e-mail from a perl script.
+
+[A] Milivoj Ivkovic <mi@alma.ch>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 0.82
+[P] X -----5---9 113.300
+
+[D] 4360f6eeb0598830810efd1b34f3d823b5729720185e6f19a17af72e Mail-Sendmail-0.82.tar.gz https://cpan.metacpan.org/authors/id/N/NE/NEILB/

@@ -1,0 +1,23 @@
+[TIMESTAMP] 1751059294 Fri Jun 27 23:21:34 2025
+[BUILDTIME] 165 (9)
+[SIZE] 111.18 MB, 216 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] cups
+[DEP] diffutils
+[DEP] findutils
+[DEP] fontconfig
+[DEP] gawk
+[DEP] grep
+[DEP] libice
+[DEP] libidn
+[DEP] libsm
+[DEP] libx11
+[DEP] libxt
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto
+[DEP] xz

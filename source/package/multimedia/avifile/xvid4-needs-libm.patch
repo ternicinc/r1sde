@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/avifile/xvid4-needs-libm.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+--- avifile-0.6/m4/xvid4.m4.orig        2000-01-01 00:00:00.000000000 +0100
++++ avifile-0.6/m4/xvid4.m4     2006-11-29 22:05:02.000000000 +0100
+@@ -35,7 +35,7 @@
+ dnl Now check if the installed XviD is sufficiently new.
+ dnl
+     AC_AVM_CHECK_LIB(xvid4, [for xvid_global in -lxvidcore (4)],
+-                     XVID4_CFLAGS, XVID4_LIBS, -lxvidcore, [
++                     XVID4_CFLAGS, XVID4_LIBS, -lxvidcore -lm, [
+ #include <stdio.h>
+ #include <string.h>
+ #include <xvid.h>], [

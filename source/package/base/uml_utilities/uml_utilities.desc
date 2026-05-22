@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/uml_utilities/uml_utilities.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Utilities for user-mode linux kernel
+
+[T] This package contains the utilities for user-mode linux for networking,
+[T] COW, etc.
+
+[A] Jeff Dike <jdike@karaya.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] DIETLIBC
+
+[L] GPL
+[V] 20070815
+
+[D] 1cb80594c86f312b9b4c08e7093ac8b3ce58648aca3297493f764c9c uml_utilities_20070815.tar.bz2 https://user-mode-linux.sourceforge.net/

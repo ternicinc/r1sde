@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/nvidia-vaapi-driver/nvidia-vaapi-driver.desc
+[COPY] Copyright (C) 2016 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An VA-API implementation that uses NVDEC
+
+[T] This is an VA-API implementation that uses NVDEC as a backend. This
+[T] implementation is specifically designed to be used by Firefox for a
+
+[U] https://github.com/elFarto/nvidia-vaapi-driver
+
+[A] Stephen elFarto
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] MIT
+[V] 0.0.17
+
+[D] b3648addd8592dc7ae9f64362990976f9933d2cfc9bcae4a704f3a5e nvidia-vaapi-driver-0,0,5.tar.gz https://github.com/elFarto/nvidia-vaapi-driver/archive/v0.0.17/

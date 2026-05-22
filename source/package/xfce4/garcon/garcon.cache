@@ -1,0 +1,34 @@
+
+[TIMESTAMP] 1736707762 Sun Jan 12 19:49:22 2025
+[BUILDTIME] 8 (9)
+[SIZE] 1.28 MB, 170 files
+
+[DEP] 00-dirtree
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[DEP] glib
+[DEP] gobject-introspection
+[DEP] grep
+[DEP] gtk+
+[DEP] gtk-doc
+[DEP] harfbuzz
+[DEP] libxfce4ui
+[DEP] libxfce4util
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] pango
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar

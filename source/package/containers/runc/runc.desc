@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/runc/runc.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] CLI tool for spawning and running containers according to the OCI specification
+
+[T] Runc is a CLI tool for spawning and running containers on Linux
+[T] according to the OCI specification.
+
+[U] https://www.opencontainers.org/
+
+[A] The runc contributors
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/emulator
+[F] CROSS
+
+[L] APL
+[V] 1.4.2
+
+[D] b283fdacd954a9cf50af07875523d754006121ceab64d47a3df13a57 runc-1.4.2.tar.gz https://github.com/opencontainers/runc/archive/v1.4.2/
+
+. $base/package/*/*/go-conf.in
+rungo=0
+GCC_WRAPPER_BYPASS=1

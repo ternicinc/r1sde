@@ -1,0 +1,15 @@
+
+[TIMESTAMP] 1257590354 Sat Nov  7 12:39:14 2009
+[BUILDTIME] 100 (9)
+[SIZE] 2.40 MB, 7 files
+
+[DEP] coreutils
+[DEP] diffutils
+[DEP] edje
+[DEP] embryo
+[DEP] findutils
+[DEP] grep
+[DEP] make
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar

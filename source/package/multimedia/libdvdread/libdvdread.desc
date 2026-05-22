@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libdvdread/libdvdread.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library for accessing DVD drives
+
+[T] Libdvdread lets application developers access DVD hardware nicely, and
+[T] uses libdl to probe for libcss at runtime, decrypting encrypted blocks
+[T] if found.
+
+[U] https://dvdnav.mplayerhq.hu
+
+[A] Bjoern Englund <d4bjorn@dtek.chalmers.se>
+[A] Hakan Hjort <d95hjort@dtek.chalmers.se>
+[A] Billy Biggs <vektor@dumbterm.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+[F] CROSS
+
+[L] GPL
+[V] 7.0.1
+[P] X -----5---9 121.900
+
+[D] 8fdd705b18f7007f4c0bb0ad1a764cfdd581be90cd7514f6be494874 libdvdread-7.0.1.tar.bz2 https://code.videolan.org/videolan/libdvdread/-/archive/7.0.1/

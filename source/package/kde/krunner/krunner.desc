@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/krunner/krunner.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Framework for providing different actions given a string query
+
+[T] The Plasma workspace provides an application called KRunner which, among
+[T] other things, allows one to type into a text area which causes various
+[T] actions and information that match the text appear as the text is being
+[T] typed.
+
+[U] https://invent.kde.org/frameworks/krunner
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[E] opt milou
+
+[L] GPL
+[V] 6.26.0
+[P] X -----5---9 162.920
+
+[CV-GROUP] kde-frameworks
+[D] 52b6ce475d9fd7499f7b81a05c7c6418e0209d842cd66d9ece512a11 krunner-6.26.0.tar.xz https://download.kde.org/stable/frameworks/6.26/
+
+. $base/package/*/*/kde-conf.in

@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kuserfeedback/kuserfeedback.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Collecting KDE feedback from application users
+
+[T] Framework for collecting feedback from application users via telemetry and targeted surveys.
+
+[U] https://invent.kde.org/frameworks/kuserfeedback
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/kde
+[F] CROSS OBJDIR
+
+[E] opt cups
+
+[L] GPL
+[V] 6.26.0
+[P] X -----5---9 300.000
+
+[CV-GROUP] kde-frameworks
+[D] 1dedfd55c94dd8eb844f4eb802f85f1d8921ea0927455df9990fed4d kuserfeedback-6.26.0.tar.xz https://download.kde.org/stable/frameworks/6.26/
+
+. $base/package/*/*/kde-conf.in
+
+var_append cmakeopt ' ' -DENABLE_DOCS=OFF

@@ -1,0 +1,10 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/postfix/postsysfiles.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+safe_groupadd postdrop 43
+safe_groupadd postfix 44
+
+safe_useradd postfix 44 44 "postfix" /var/empty /bin/false "*"

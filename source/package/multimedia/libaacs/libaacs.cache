@@ -1,0 +1,21 @@
+[TIMESTAMP] 1749745380 Thu Jun 12 18:23:00 2025
+[BUILDTIME] 4 (9)
+[SIZE] 1.08 MB, 16 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bison
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] flex
+[DEP] gawk
+[DEP] grep
+[DEP] libgcrypt
+[DEP] libgpg-error
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] sed
+[DEP] tar

@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/luarocks/luarocks.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The package manager for Lua modules
+
+[T] It allows you to create and install Lua modules as self-contained
+[T] packages called rocks.
+
+[U] https://luarocks.org
+
+[A] LuaRocks Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+
+[V] 3.13.0
+[L] MIT
+
+[D] 626ef4d4f46e49ff470c8acfb34a057de0566e8054d97e7e3defecd4 luarocks-3.13.0.tar.gz https://luarocks.org/releases/

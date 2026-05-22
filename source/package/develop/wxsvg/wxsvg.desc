@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/wxsvg/wxsvg.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] SVG renderer for WxWidgets
+
+[T] wxSVG is a WxWidgets extension originally written by Alex Thuering for the DVDStyler project
+[T] and that renders SVG through pixel backend such as Cairo, AGG or libart.
+
+[U] http://www.wxsvg.org/
+
+[A] Alex Thuering <alex.thuering@web.de>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/development
+
+[E] opt lame
+
+[L] LGPL
+[V] 1.5.25
+
+[D] 9b1bf208a4aa59cae64eafdb194c843bb298883cf0648bd558ab4e31 wxsvg-1.5.25.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/wxsvg/

@@ -1,0 +1,20 @@
+[TIMESTAMP] 1772839004 Sat Mar  7 00:16:44 2026
+[BUILDTIME] 30 (9)
+[SIZE] 7.63 MB, 16 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] readline
+[DEP] sed
+[DEP] tar
+[OPT] tcl
+[DEP] util-linux
+[DEP] zlib

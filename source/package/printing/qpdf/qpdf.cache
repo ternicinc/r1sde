@@ -1,0 +1,21 @@
+[TIMESTAMP] 1741401243 Fri Mar  7 18:34:03 2025
+[BUILDTIME] 135 (9)
+[SIZE] 12.36 MB, 120 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gnutls
+[DEP] grep
+[DEP] gzip
+[DEP] libjpeg
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] zlib

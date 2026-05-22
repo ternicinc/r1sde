@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libmpd/libmpd.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An abstraction around libmpdclient
+
+[T] libmpd is an abstraction around libmpdclient. It provides an easy and
+[T] reliable callback based interface to mpd.
+
+[U] http://cms.qballcow.nl/index.php?page=libmpd
+
+[A] Qball <Qball@qballcow.nl>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 11.8.17
+[P] X -----5---9 197.500
+
+[D] 0dcf75411585d52543fead1e8b8899bccaa9cd2ee8a52bd2246e2aef libmpd-11.8.17.tar.gz https://download.sarine.nl/Programs/gmpc/11.8/
+
+var_append GCC_WRAPPER_APPEND ' ' "-Wno-int-conversion -Wno-pointer-conversion"

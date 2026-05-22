@@ -1,0 +1,37 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xz/xz.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] XZ Utils
+
+[T] A free general-purpose data compression software with high
+[T] compression ratio. XZ Utils were written for POSIX-like systems
+[T] (GNU/Linux, *BSDs, etc.), but also work on some not-so-POSIX systems
+[T] like Windows. XZ Utils are the successor to LZMA Utils.
+[T] 
+[T] The core of the XZ Utils compression code is based on LZMA SDK, but it
+[T] has been modified quite a lot to be suitable for XZ Utils. The primary
+[T] compression algorithm is currently LZMA2, which is used inside the .xz
+[T] container format. With typical files, XZ Utils create 30 % smaller
+[T] output than gzip and 15 % smaller output than bzip2.
+
+[U] https://tukaani.org/xz/
+
+[A] Lasse Collin <lasse.collin@tukaani.org>
+[M] Roger Mason <rmason@mun.ca>
+
+[C] base/tool
+[F] CROSS
+[R] - microblaze
+
+[L] OpenSource
+[V] 5.8.3
+[P] X 0-2--5---9 108.600
+
+[D] b8427696e607ea0e6d20d49cf0f650a9c6cd3a2fff38d7548ccaf22f xz-5.8.3.tar.gz https://tukaani.org/xz/
+
+var_append confopt ' ' ' --disable-lzmadec --disable-lzmainfo --disable-lzma-links'
+var_append GCC_WRAPPER_APPEND ' ' -std=gnu99
+var_append SYSGCC_WRAPPER_APPEND ' ' -std=gnu99

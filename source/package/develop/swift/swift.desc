@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/swift/swift.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Swift Programming Language
+
+[T] Swift is a general-purpose programming language that’s approachable for
+[T] newcomers and powerful for experts.
+
+[U] https://www.swift.org/
+
+[A] Apple Inc.
+[A] Swift Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 6.3.1
+
+[D] 659e76852fb9daabf94f856b38dd1495218f8678c8d2e0b6467820c6 swift-6.3.1-RELEASE.tar.gz https://github.com/swiftlang/swift/archive/swift-6.3.1-RELEASE/
+
+var_append cmakeopt ' ' -DSWIFT_INCLUDE_TOOLS=NO

@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/acdctl/ids.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- acdctl-1.1/acdctl.c	2005-08-14 14:46:20.000000000 +0200
++++ acdctl-1.1-fixed/acdctl.c	2007-05-28 17:41:58.892612048 +0200
+@@ -80,6 +80,7 @@
+ struct display_dev displays[] = {
+   { APPLE_VENDOR, 0x9218, "Apple Cinema HD Display 23\"", 2002 },
+   { APPLE_VENDOR, 0x921d, "Apple Cinema Display 20\"", 0 },
++  { APPLE_VENDOR, 0x9222, "Apple Cinema Display 20\"", 2006 },
+   { 0, 0, "User Specified", 0 },
+   { 0, 0, NULL, 0 },
+ };

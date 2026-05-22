@@ -1,0 +1,32 @@
+[TIMESTAMP] 1760654731 Fri Oct 17 00:45:31 2025
+[BUILDTIME] 270 (9)
+[SIZE] 6.61 MB, 426 files
+
+[DEP] alsa-lib
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] gst-plugins-bad
+[DEP] gst-plugins-base
+[DEP] gstreamer
+[DEP] libglvnd
+[OPT] libxext
+[DEP] linux-header
+[DEP] make
+[DEP] pipewire
+[DEP] pkgconfig
+[DEP] pulseaudio
+[DEP] python
+[DEP] qt6base
+[DEP] qt6declarative
+[DEP] qt6shadertools
+[DEP] sed
+[DEP] spirv-tools
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] xz

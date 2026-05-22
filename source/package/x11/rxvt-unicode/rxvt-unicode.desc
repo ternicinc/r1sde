@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rxvt-unicode/rxvt-unicode.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An unicode improved version of rxvt
+
+[T] Rxvt-unicode is a unicode improved version of rxvt.
+
+[U] http://software.schmorp.de/pkg/rxvt-unicode
+
+[A] Marc Alexander Lehmann <pcg@goof.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell
+[F] CROSS
+
+[E] opt gdk-pixbuf glib
+[E] opt startup-notification glib
+
+[L] GPL
+[V] 9.31
+
+[D] 13de7c42dadc3b2838d7608044d774a2c4e64912a386f23e35059de2 rxvt-unicode-9.31.tar.bz2 http://rxvt-unicode-dist.plan9.de/
+
+var_append GCC_WRAPPER_APPEND ' ' -std=c++14
+var_append confopt ' ' --enable-everything
+atstage cross && var_append confopt ' ' '--disable-perl' && export TERMINFO=$root/usr/share/terminfo
+[ "$SDECFG_LIBC" = 'musl' ] && var_append confopt ' ' --disable-utmp

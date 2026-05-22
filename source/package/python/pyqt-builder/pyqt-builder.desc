@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pyqt-builder/pyqt-builder.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The PyQt build system
+
+[T] PyQt-builder is the PEP 517 compliant build system for PyQt and
+[T] projects that extend PyQt. It extends the SIP build system and
+[T] uses Qt's qmake to perform the actual compilation and
+[T] installation of extension modules.
+
+[U] https://github.com/Python-PyQt/PyQt-builder
+
+[A] Phil Thompson <phil@riverbankcomputing.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[E] python sip
+
+[L] BSD
+[V] 1.19.1
+[P] X -----5---9 210.000
+
+[D] 16a4c1ce3503f02bf46a0f8bb2f2b92612c539e51870662a773a1fad pyqt_builder-1.19.1.tar.gz https://pypi.python.org/packages/source/P/PyQt-builder/

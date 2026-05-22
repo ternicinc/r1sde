@@ -1,0 +1,38 @@
+[TIMESTAMP] 1743156233 Fri Mar 28 11:03:53 2025
+[BUILDTIME] 4 (9)
+[SIZE] 3.48 MB, 973 files
+
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] cmake
+[DEP] coreutils
+[DEP] desktop-file-utils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[DEP] glib
+[DEP] grep
+[DEP] gtk+
+[OPT] gtk-vnc
+[DEP] harfbuzz
+[OPT] libgovirt
+[OPT] librest
+[OPT] libsoup
+[DEP] libxml
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[DEP] perl
+[DEP] python
+[DEP] sed
+[DEP] shared-mime-info
+[OPT] spice-gtk
+[OPT] spice-protocol
+[DEP] tar
+[DEP] vte
+[DEP] xz

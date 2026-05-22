@@ -1,0 +1,41 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/bincimap/hotfix-uninitialized.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- bincimap-1.3.4/src/mime-parsefull.cc.orig	2006-01-04 22:50:25.000000000 +0100
++++ bincimap-1.3.4/src/mime-parsefull.cc	2006-01-04 22:53:31.000000000 +0100
+@@ -343,14 +343,14 @@
+ 
+   // Read two more characters. This may be CRLF, it may be "--" and
+   // it may be any other two characters.
+-  char a;
++  char a = 0;
+   if (!mimeSource->getChar(&a))
+     *eof = true;
+ 
+   if (a == '\n')
+     ++*nlines; 
+ 
+-  char b;
++  char b = 0;
+   if (!mimeSource->getChar(&b))
+     *eof = true;
+     
+@@ -560,13 +560,13 @@
+   delete [] boundaryqueue;
+ 
+   if (toboundary != "") {
+-    char a;
++    char a = 0;
+     if (!mimeSource->getChar(&a))
+       *eof = true;
+ 
+     if (a == '\n')
+       ++*nlines;
+-    char b;
++    char b = 0;
+     if (!mimeSource->getChar(&b))
+       *eof = true;
+ 

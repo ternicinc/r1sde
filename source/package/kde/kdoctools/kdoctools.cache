@@ -1,0 +1,28 @@
+[TIMESTAMP] 1737633153 Thu Jan 23 12:52:33 2025
+[BUILDTIME] 12 (9)
+[SIZE] 3.33 MB, 1357 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] docbook-xml
+[DEP] docbook-xsl
+[DEP] extra-cmake-modules
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] karchive
+[DEP] libxml
+[DEP] libxslt
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] perl-uri
+[DEP] pkgconfig
+[DEP] procps
+[DEP] qt6base
+[DEP] sed
+[DEP] tar
+[DEP] xz

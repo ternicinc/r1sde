@@ -1,0 +1,24 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/bincimap/hotfix-glibc2_10.patch
+# Copyright (C) 2010 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -ur bincimap-1.2.13final.orig/src/convert.h bincimap-1.2.13final/src/convert.h
+--- bincimap-1.2.13final.orig/src/convert.h	2005-02-08 22:30:22.000000000 +0200
++++ bincimap-1.2.13final/src/convert.h	2009-08-08 10:36:12.000000000 +0300
+@@ -112,12 +112,12 @@
+       unsigned char d = *(i + 1);
+       
+       char *t;
+-      if ((t = strchr(hexchars, c)) == 0)
++      if ((t = (char *) strchr(hexchars, c)) == 0)
+ 	return "out of range";
+       n = (t - hexchars) << 4;
+       
+       
+-      if ((t = strchr(hexchars, d)) == 0)
++      if ((t = (char *) strchr(hexchars, d)) == 0)
+ 	return "out of range";
+       n += (t - hexchars);
+

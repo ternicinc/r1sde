@@ -1,0 +1,15 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/wasi-libc/wasi.in
+# Copyright (C) 2024 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+var_remove_regex GCC_WRAPPER_INSERT ' ' '-march=.*'
+var_remove_regex GCC_WRAPPER_INSERT ' ' '-mcpu=.*'
+var_remove_regex GCC_WRAPPER_INSERT ' ' '-mtune=.*'
+var_remove_regex GCC_WRAPPER_APPEND ' ' '-march=.*'
+var_remove_regex GCC_WRAPPER_APPEND ' ' '-mcpu=.*'
+var_remove_regex GCC_WRAPPER_APPEND ' ' '-mtune=.*'
+var_remove_regex GCC_WRAPPER_INSERT ' ' '-mfpu=.*'
+
+var_remove_regex CLANG_WRAPPER_INSERT ' ' '-mcpu=.*'

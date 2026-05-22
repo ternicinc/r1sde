@@ -1,0 +1,39 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/greetd/greetd.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Minimal and flexible login manager daemon
+
+[T] Greetd is a minimal and flexible login manager daemon that
+[T] makes no assumptions about what you want to launch.
+
+[U] https://sr.ht/~kennylevinsen/greetd/
+
+[A] Kenny Levinsen
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/x11
+[F] CROSS
+
+[L] MIT
+[V] 0.10.3
+
+[CV-FLAGS] NO-PREFIX
+[CV-URL] https://git.sr.ht/~kennylevinsen/greetd/refs/
+[D] 22a47ca518581f5b851b70a9774c200ae45a4150005beebb06867a43 greetd-0.10.3.tar.gz !https://git.sr.ht/~kennylevinsen/greetd/archive/0.10.3.tar.gz
+
+cargoinstopt=
+
+greetd_pm() {
+	install target/*/{agreety,greetd} $root$bindir/
+
+	mkdir -pv $root$sysconfdir/$pkg
+	install config.toml $root$sysconfdir/$pkg/
+
+	cat <<-EOF > $root$sysconfdir/pam.d/greetd
+	auth include login
+	EOF
+}
+hook_add postmake 5 greetd_pm

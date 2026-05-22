@@ -1,0 +1,50 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libunwind/libunwind.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] LLVM Unwinder
+
+[T] libunwind is an implementation of the interface defined by the HP
+[T] libunwind project. It was contributed by Apple as a way to enable
+[T] clang++ to port to platforms that do not have a system unwinder. It
+[T] is intended to be a small and fast implementation of the ABI, leaving
+[T] off some features of HP’s libunwind that never materialized
+[T] (e.g. remote unwinding).
+
+[U] https://clang.llvm.org/docs/Toolchain.html#unwind-library
+
+[A] University of Illinois/NCSA
+[A] Chris Lattner <clattner@apple.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] OBJDIR CROSS
+
+[L] BSD
+[V] 22.1.5
+[P] O -1---5---9 102.350
+
+[CV-GROUP] llvm-project
+[D] 539b0fa857272b2b18ad9b9e58e11d4e48e0f1c807ec375d5ca91913 llvm-project-22.1.5.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-22.1.5/
+
+srcdir=*/libunwind
+
+cmake_mod() {
+	tar $taropt `match_source_file -p cmake` -C ..
+	mv -vf ../cmake-*src ../../cmake
+}
+hook_add preconf 5 cmake_mod
+
+var_append cmakeopt ' ' -DLIBCXX_USE_COMPILER_RT=YES
+
+if atstage cross; then
+	var_append GCC_WRAPPER_APPEND ' ' '-nodefaultlibs -lc -stdlib=libc++'
+fi
+
+[ "${libdir##*/lib}" ] && var_append cmakeopt ' ' "-DLLVM_LIBDIR_SUFFIX=${libdir##*/lib}"
+#var_append cmakeopt ' ' -DLLVM_BUILD_LLVM_DYLIB=ON
+[ "$SDECFG_STATIC" = 1 ] || var_append cmakeopt ' ' -DBUILD_SHARED_LIBS=ON
+
+#var_append confopt ' ' '--disable-bindings' # TODO: config option

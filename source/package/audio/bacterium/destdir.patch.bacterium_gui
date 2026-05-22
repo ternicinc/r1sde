@@ -1,0 +1,21 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/bacterium/destdir.patch.bacterium_gui
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- bacterium_gui-0.2/Makefile.vanilla	2007-06-19 15:17:47.753801893 +0200
++++ bacterium_gui-0.2/Makefile	2007-06-19 15:18:11.339145945 +0200
+@@ -16,9 +16,9 @@
+ 	chmod +x bacterium_gui
+ 
+ install:
+-	mkdir -p $(bindir)
+-	install bacterium_gui $(bindir)
+-	install bacterium_ffd $(bindir)
++	mkdir -p $(DESTDIR)$(bindir)
++	install bacterium_gui $(DESTDIR)$(bindir)
++	install bacterium_ffd $(DESTDIR)$(bindir)
+ 
+ clean:
+ 	rm -f bacgui_demo.wav core

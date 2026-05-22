@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gpsd/gpsd.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Listens to a GPS and provides clients with the data
+
+[T] Gpsd is a daemon that listens to a GPS or Loran receiver and translates
+[T] the positional data into a simplified format that can be more easily used
+[T] by other programs, like chart plotters. The package comes with a sample
+[T] client that plots the location of the currently visible GPS satellites
+[T] (if available) and a speedometer. It can also use DGPS/ip.
+
+[U] https://gpsd.gitlab.io/gpsd/index.html
+
+[A] Chris Kueth <chris.kuethe@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[E] opt asciidoctor
+
+[L] BSD
+[V] 3.27.5
+
+[D] 1c786ea2065fdb84c88a156e5c45d49da49a53f65d4d3e0cf3de7617 gpsd-3.27.5.tar.xz https://download-mirror.savannah.gnu.org/releases/gpsd/
+
+runpysetup=0
+atstage native || var_append confopt ' ' --disable-python
+pkginstalled python && var_append sconsinstopt ' ' python_libdir=$root$libdir/python/site-packages/
+var_append sconsinstopt ' ' prefix=$root/$prefix

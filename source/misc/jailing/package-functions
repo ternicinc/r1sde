@@ -1,0 +1,78 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/misc/jailing/package-functions
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+jail_pkg_apache_postmake() {
+	jail_ensure_users http
+
+	### Updates paths in $root/$jail/$datadir/build/config_vars.mk
+	
+	echo "Updateing paths in $root/$jail/$datadir/build/config_vars.mk"
+        tmp=`mktemp`
+
+	# A copy of original config_vars.mk is left for reference
+	cp $root/$jail/$datadir/build/config_vars.mk \
+		$root/$jail/$datadir/build/config_vars.mk.orig
+        
+	cp -f $root/$jail/$datadir/build/config_vars.mk $tmp
+
+	# s|$base/$builddir/httpd-$ver|/$jail/usr|; is repeated many times
+	# because it appear many times in same line ... probably there is
+	# a not so silly way but I can't find it :(
+	# Feel free of cleaning it
+        sed "   /^exp_.* = \/.*/ {s| = /*usr| = /$jail/usr|; \
+			s| = /*etc| = /$jail/etc|; s| = /*var| = /$jail/var|; \
+			p; d; }; \
+                /^rel_.* = \/.*/ {s| = /*usr/| = |; s| = /*usr| = |; \
+			s| = /*etc| = ../etc|; s| = /*var| = ../var|; p; d; }; \
+		/ = \/.*/ {s| = /*usr| = /$jail/usr|; \
+			s| = /*etc| = /$jail/etc|; s| = /*var| = /$jail/var|; \
+			p; d; }; \
+                " < $tmp > $root/$jail/$datadir/build/config_vars.mk
+
+	### END Updates paths in $root/$jail/$datadir/build/config_vars.mk
+
+	### Updates paths in $root/$jail/$sbindir/apxs
+        
+	echo "Updateing paths in $root/$jail/$sbindir/apxs"
+	cp -f $root/$jail/$sbindir/apxs $tmp
+	sed "s|/usr/share/build|/$jail/$datadir/build|" < $tmp \
+                                        > $root/$jail/$sbindir/apxs
+
+	### END Updates paths in $root/$jail/$sbindir/apxs
+
+	### Update apachectl
+
+	echo "Updateing paths in $root/$jail/$sbindir/apachectl"
+	cp -f $root/$jail/$sbindir/apachectl $tmp
+	sed "s|HTTPD=.*|HTTPD='chroot /$jail /$sbindir/httpd'|" \
+					< $tmp > $root/$jail/$sbindir/apachectl
+
+	### END Update apachectl
+
+	rm $tmp
+        unset tmp
+}
+
+jail_pkg_postfix_postmake() {
+	./postfix-install -non-interactive \
+		daemon_directory=/usr/libexec command_directory=/usr/bin \
+		sendmail_path=/usr/bin/sendmail \
+		newaliases_path=/usr/bin/newaliases \
+		mailq_path=/usr/bin/mailq manpage_directory=/man/ \
+		sample_directory=/usr/share/$pkg
+	jail_ensure_users postfix
+	jail_ensure_groups postdrop
+}
+
+jail_pkg_mysql_postmake() {
+	mv -f $libdir/mysql/* $libdir
+	rmdir $libdir/mysql
+	mkdir -p $docdir
+	cp support-files/my-*.cnf $docdir
+	chown $pkg.$pkg $localstatedir
+}
+

@@ -1,0 +1,24 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/avr32/package/*/no-install-libiberty.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- gcc-4.2.2.atmel.1.0.8/libiberty/Makefile.in.orig	2007-03-03 20:29:51.000000000 +0100
++++ gcc-4.2.2.atmel.1.0.8/libiberty/Makefile.in	2008-10-30 13:43:44.000000000 +0100
+@@ -342,10 +342,10 @@
+ # since it will be passed the multilib flags.
+ MULTIOSDIR = `$(CC) $(LIBCFLAGS) -print-multi-os-directory`
+ install_to_libdir: all
+-	${mkinstalldirs} $(DESTDIR)$(libdir)/$(MULTIOSDIR)
+-	$(INSTALL_DATA) $(TARGETLIB) $(DESTDIR)$(libdir)/$(MULTIOSDIR)/$(TARGETLIB)n
+-	( cd $(DESTDIR)$(libdir)/$(MULTIOSDIR) ; chmod 644 $(TARGETLIB)n ;$(RANLIB) $(TARGETLIB)n )
+-	mv -f $(DESTDIR)$(libdir)/$(MULTIOSDIR)/$(TARGETLIB)n $(DESTDIR)$(libdir)/$(MULTIOSDIR)/$(TARGETLIB)
++	#${mkinstalldirs} $(DESTDIR)$(libdir)/$(MULTIOSDIR)
++	#$(INSTALL_DATA) $(TARGETLIB) $(DESTDIR)$(libdir)/$(MULTIOSDIR)/$(TARGETLIB)n
++	#( cd $(DESTDIR)$(libdir)/$(MULTIOSDIR) ; chmod 644 $(TARGETLIB)n ;$(RANLIB) $(TARGETLIB)n )
++	#mv -f $(DESTDIR)$(libdir)/$(MULTIOSDIR)/$(TARGETLIB)n $(DESTDIR)$(libdir)/$(MULTIOSDIR)/$(TARGETLIB)
+ 	if test -n "${target_header_dir}"; then \
+ 	  case "${target_header_dir}" in \
+ 	    /*)    thd=${target_header_dir};; \

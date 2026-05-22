@@ -1,0 +1,53 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lld/lld.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The LLVM Linker
+
+[T] LLD is a linker from the LLVM project that is a drop-in replacement for
+[T] system linkers and runs much faster than them. It also provides features
+[T] that are useful for toolchain developers.
+[T]
+[T] The linker supports ELF (Unix), PE/COFF (Windows), Mach-O (macOS) and
+[T] WebAssembly in descending order of completeness.
+
+[U] https://lld.llvm.org
+
+[A] University of Illinois/NCSA
+[A] Chris Lattner <clattner@apple.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] OBJDIR CROSS LATOMIC.sparc LATOMIC.sparc64 NO-LTO.gcc
+[R] - alpha arc avr32 blackfin cris ia64 m68k microblaze nios2 openrisc
+
+[L] BSD
+[V] 22.1.5
+[P] X ?----5---9 102.620
+
+[CV-GROUP] llvm-project
+[D] 539b0fa857272b2b18ad9b9e58e11d4e48e0f1c807ec375d5ca91913 llvm-project-22.1.5.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-22.1.5/
+
+srcdir=*/lld
+
+var_append cmakeopt ' ' "-DLLVM_BUILD_LLVM_DYLIB=ON -DLLVM_LINK_LLVM_DYLIB=ON"
+[ "$SDECFG_STATIC" = 1 ] || var_append cmakeopt ' ' -DBUILD_SHARED_LIBS=ON
+
+#-DLLVM_BUILD_LLVM_DYLIB=ON -DLLVM_LINK_LLVM_DYLIB=ON
+
+if atstage toolchain; then
+	var_append cmakeopt ' ' -DLLVM_DEFAULT_TARGET_TRIPLE=$arch_target
+	var_append cmakeopt ' ' -DLLVM_LIBRARY_DIR=$root$libdir
+elif atstage cross; then
+	var_append cmakeopt ' ' -DLLVM_MAIN_INCLUDE_DIR=$root$includedir
+	#var_append cmakeopt ' ' -DLLVM_LIBRARY_DIR=$root$libdir
+
+	var_append GCC_WRAPPER_REMOVE ' ' -L$sysroot/TOOLCHAIN/cross/lib
+	var_append GCC_WRAPPER_FILTER '|' "sed 's,$root/TOOLCHAIN.*libLLVM\(.*\)\.[as].*,-lLLVM\1,g'"
+	var_append GCC_WRAPPER_FILTER '|' "sed 's,^/lib64/libcurses.so,-lcurses,'"
+	var_append GCC_WRAPPER_FILTER '|' "sed 's,$root/lib64/libcurses.so,-lcurses,'"
+fi
+
+[ "${libdir##*/lib}" ] && var_append cmakeopt ' ' "-DLLVM_LIBDIR_SUFFIX=${libdir##*/lib}"

@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libiriverdb/libiriverdb.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library for maintaining the database on iRiver jukeboxes
+
+[T] Libiriverdb is a library for iRiver jukeboxes, specifically the H300 and
+[T] H100 series Hard Disk-based models, that require a database of the audio
+[T] metadata to be created on the device before allowing it to be used for
+[T] selecting tracks to play.
+
+[U] http://www.bodgit-n-scarper.com/code.html
+
+[A] Matt Dainty <matt@bodgit-n-scarper.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 1.6
+
+[D] 8a2b8542a32365f1f058ce836cf7ede90c07b723c0435620c07e795c libiriverdb-1.6.tar.gz https://libiriverdb.s3.amazonaws.com/

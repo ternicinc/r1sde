@@ -1,0 +1,43 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gtkmm3/gtkmm3.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The C++ bindings for Gtk+
+
+[T] This package provides a C++ interface for GTK+ (the Gimp ToolKit) GUI
+[T] library. The interface provides a convenient interface for C++
+[T] programmers to create GUIs with GTK+'s flexible object-oriented framework.
+[T] Features include type safe callbacks, widgets that are extensible using
+[T] inheritance and over 110 classes that can be freely combined to quickly
+[T] create complex user interfaces.
+
+[U] https://www.gtkmm.org
+
+[A] Karl Nelson <kenelson@ece.ucdavis.edu>
+[A] Todd Dukes <tdukes@ibmoto.com>
+[A] Peter Lerner <peter.lerner@bnbt.de>
+[A] Herbert Valerio Riedel <hvr@gnu.org>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/development extra/desktop/gnome
+[F] CROSS
+
+[E] add mm-common
+
+[L] LGPL
+[V] 3.24.10
+[P] X -----5---9 153.500
+
+[CV-FLAGS] NO-MAJOR
+[D] 082f103ddfef413972747b99b9451bc19fe800c59878011d8c4b1bc1 gtkmm-3.24.10.tar.xz https://download.gnome.org/sources/gtkmm/3.24/
+
+. $base/package/*/*/gnome-conf.in
+
+var_append GCC_WRAPPER_INSERT ' ' "-c?:-L$(pkgprefix libdir glibmm2)"
+pkginstalled graphviz || var_append mesonopt ' ' -Dbuild-documentation=false
+pkginstalled doxygen || var_append mesonopt ' ' -Dbuild-documentation=false
+var_append mesonopt ' ' -Dbuild-tests=false
+var_append mesonopt ' ' -Dbuild-demos=false

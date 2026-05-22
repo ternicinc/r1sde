@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/commons-collections/commons-collections.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Jakarta Commons Collections
+
+[T] The Java Collections Framework was a major addition in JDK 1.2. It
+[T] added many powerful data structures that accelerate development of
+[T] most significant Java applications. Since that time it has become the
+[T] recognised standard for collection handling in Java.
+[T]
+[T] Commons-Collections seek to build upon the JDK classes by providing
+[T] new interfaces, implementations and utilities.
+
+[U] https://jakarta.apache.org/commons/collections/
+
+[A] Apache Jakarta Commons team
+[M] Minto van der Sluis <minto@multimach.com>
+
+[C] extra/development
+
+[L] OpenSource
+[V] 4.5.0
+
+[D] 846cfb5b318e2bda161d3ab05cbbec89fe91858444d3edfc265bf5a5 commons-collections4-4.5.0-src.tar.gz https://dlcdn.apache.org//commons/collections/source/
+
+. $base/package/*/*/java-conf.in BUILD_TYPE=ANT
+buildtarget="jar javadoc"
+buildjardir=build
+builddocdir=build/docs

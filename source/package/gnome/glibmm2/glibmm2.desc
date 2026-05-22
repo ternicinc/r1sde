@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/glibmm2/glibmm2.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The C++ bindings for the Glib
+
+[T] This package provides a C++ interface for Glib. The interface provides a
+[T] convenient interface for C++.
+
+[U] https://www.gtkmm.org
+
+[A] Todd Dukes <tdukes@ibmoto.com>
+[A] Peter Lerner <peter.lerner@bnbt.de>
+[A] Herbert Valerio Riedel <hvr@gnu.org>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/development extra/desktop/gnome
+[F] CROSS
+
+[L] LGPL
+[V] 2.64.5
+[P] X -----5---9 152.000
+
+[CV-FLAGS] NO-AUTO
+[D] 8a22f301593f98617facbd75003396da5febc225255e8452d628eebb glibmm-2.64.5.tar.xz https://download.gnome.org/sources/glibmm/2.64/
+
+. $base/package/*/*/gnome-conf.in

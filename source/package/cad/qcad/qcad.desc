@@ -1,0 +1,46 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/qcad/qcad.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Qt based 2D CAD application
+
+[T] QCad is an application for computer aided drafting in two dimensions.
+[T] With QCad you can create technical drawings such as plans for buildings,
+[T] interiors or mechanical parts. QCad works under Linux, Unix Systems,
+[T] Mac OS X and Windows.
+
+[U] https://www.qcad.org/
+
+[A] Ribbonsoft
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/cad
+
+[L] GPL
+[V] 3.32.9.0
+
+[D] 40e67a8f1798e6aa8bf1cc15719996bc14c79d3316d7639475a16971 qcad-community-3.32.9.0.tar.gz https://github.com/qcad/qcad/archive/refs/tags/v3.32.9.0/
+
+runmake=0
+
+[ $prefix_auto = 1 ] && prefix="opt/qcad" && set_confopt
+
+qcad_main() {
+	# build qcad, then change to result directory
+	libsuff=${libdir##*/lib}
+	export QMAKESPEC=$QTDIR/mkspecs/linux-g++${libsuff:+-}${libsuff}
+	cd scripts; sh ./build_qcad.sh notrans; cd ../qcad
+
+	# copy executable
+	cp -vf qcad $bindir/
+
+	# copy application files
+	mkdir -p $datadir/qcad
+	for d in  examples fonts patterns qm data library machines scripts doc; do
+		[ -d $d ] && cp -rvf $d $datadir/qcad
+	done
+}
+hook_add postmake 5 qcad_main

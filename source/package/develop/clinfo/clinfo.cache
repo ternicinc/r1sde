@@ -1,0 +1,16 @@
+[TIMESTAMP] 1739653106 Sat Feb 15 21:58:26 2025
+[BUILDTIME] 2 (5)
+[SIZE] 0.15 MB, 7 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] grep
+[DEP] gzip
+[DEP] make
+[DEP] opencl-headers
+[DEP] opencl-loader
+[DEP] sed
+[DEP] tar

@@ -1,0 +1,34 @@
+
+[TIMESTAMP] 1684803826 Tue May 23 01:03:46 2023
+[BUILDTIME] 0 (9)
+[SIZE] 3.85 MB, 105 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[DEP] gmp
+[DEP] gnutls
+[DEP] grep
+[DEP] groff
+[DEP] libproxy
+[DEP] libtasn1
+[DEP] libtool
+[DEP] libunistring
+[DEP] libxml
+[DEP] libxslt
+[DEP] linux-header
+[DEP] lz4
+[DEP] make
+[DEP] nettle
+[DEP] oath-toolkit
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] xmlsec
+[DEP] xz
+[DEP] zlib

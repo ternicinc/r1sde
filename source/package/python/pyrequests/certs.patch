@@ -1,0 +1,21 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/pyrequests/certs.patch
+# Copyright (C) 2022 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff --git a/src/requests/certs.py b/src/requests/certs.py
+index d1a378d7..4e0bffd4 100644
+--- a/src/requests/certs.py
++++ b/src/requests/certs.py
+@@ -12,7 +12,8 @@ If you are packaging Requests, e.g., for a Linux distribution or a managed
+ environment, you can change the definition of where() to return a separately
+ packaged CA bundle.
+ """
+ 
+-from certifi import where
++def where():
++    return "/etc/ssl/certs/ca-certificates.crt"
+ 
+ if __name__ == "__main__":
+     print(where())

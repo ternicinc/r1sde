@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/4dtris/4dtris.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Tetris game in 4 dimensions
+
+[T] 4D-TRIS is an alteration of the well-known Tetris game. The game field
+[T] is extended to a 4D field, which has to filled up by the gamer with 4D
+[T] hyper cubes. The software is written in C with OpenGL and GLUT.
+
+[U] https://github.com/simzer/4dtris
+
+[A] Laszlo Simon <laszlo.simon@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+
+[L] GPL
+[V] 0.4.3
+
+[D] 386d3b7f20b8422b2f3b13bf19768fd32b68cb31f5feb5a02500bb9a 4dtris_0.4.3.orig.tar.gz https://launchpad.net/4dtris/0.4/0.4.3/+download/
+
+var_append GCC_WRAPPER_INSERT ' ' -I/usr/X11/include
+
+chownsrcdir=0
+srcdir=.
+
+var_append makeopt ' ' '-f Makefile_linux'
+var_append GCC_WRAPPER_INSERT ' ' "-c?:-L`pkgprefix libdir libx11`"
+
+makeinstopt=
+hook_add postmake 5 "install 4DTRIS $root$bindir/4dtris"

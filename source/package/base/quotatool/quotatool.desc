@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/quotatool/quotatool.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A utility for setting filesystem quota from the command line
+
+[T] Quotatool is a utility for setting and manipulating filesystem quotas
+[T] from the command line. It supports quota on Linux (versions 2.6, 2.4,
+[T] and 2.2, with ext2, ext3, ReiserFS, and XFS), Solaris, and AIX.
+
+[U] https://quotatool.ekenberg.se
+
+[A] Mike Glover <mpg4-fm@duluoz.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+
+[L] GPL
+[V] 1.8.0
+
+[D] edcfc69e113ba924edd6785ff69dab17d02375194715929899437178 quotatool-1.8.0.tar.gz https://github.com/ekenberg/quotatool/archive/refs/tags/v1.8.0/
+
+# no DESTDIR
+var_append confopt ' ' '--bindir=\${DESTDIR}$bindir --datadir=\${DESTDIR}$datadir --mandir=\${DESTDIR}$mandir'

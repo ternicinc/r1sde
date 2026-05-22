@@ -1,0 +1,22 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/sysvinit/dev-initctl.patch
+# Copyright (C) 2018 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+The Debian folks changed the initctl from /dev to /run which does not
+just work, also not mounted write-able early enough, ...
+
+  - René Rebe <rene@exactcode.de>
+
+--- sysvinit-2.90/src/initreq.h.vanilla	2018-08-19 14:16:26.533756646 +0000
++++ sysvinit-2.90/src/initreq.h	2018-08-19 14:17:04.353756078 +0000
+@@ -26,7 +26,7 @@
+ #include <sys/param.h>
+ 
+ #ifndef INIT_FIFO
+-#define INIT_FIFO  "/run/initctl"
++#define INIT_FIFO  "/dev/initctl"
+ #endif
+ 
+ #define INIT_MAGIC 0x03091969

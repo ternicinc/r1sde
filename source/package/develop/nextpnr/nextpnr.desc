@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/nextpnr/nextpnr.desc
+[COPY] Copyright (C) 2018 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A portable FPGA place and route tool
+
+[T] Nextpnr aims to be a vendor neutral, timing driven, FOSS FPGA place and
+[T] route tool.
+
+[U] https://github.com/YosysHQ/nextpnr
+
+[A] Claire Xenia Wolf <claire@clairexen.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] OBJDIR
+
+[L] ISC
+[V] 0.10
+
+[D] b72b4bd389a2a63f5195d8f8eae2a793f9507c5c82ddd89f8bec86b4 nextpnr-0.10.tar.gz https://github.com/YosysHQ/nextpnr/archive/refs/tags/
+
+var_append cmakeopt ' ' -DARCH=all # stable - generic,ecp5,ice40
+var_append cmakeopt ' ' -DBUILD_TESTS=OFF
+#var_append cmakeopt ' ' -DICEBOX_ROOT=/usr/share/icebox
+#var_append cmakeopt ' ' '-DTRELLIS_ROOT=/usr/share/trellis -DTRELLIS_LIBDIR=$libdir/trellis'

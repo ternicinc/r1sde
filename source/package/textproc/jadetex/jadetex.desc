@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/jadetex/jadetex.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] TeX for Jade
+
+[T] TeX macros implementing the TeX output from the Jade/OpenJade
+[T] DSSSL processorMaint
+
+[U] https://jadetex.sourceforge.net/
+
+[A] Sebastian Rahtz <sebastian.rahtz@oucs.ox.ac.uk>
+[A] Ian Castle <ian.castle@openjade.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] OpenSource
+[V] 3.13
+
+[D] fbe89c4048603f5b8e6bd97eecd479d3fb49be6b95ebfb269807996c jadetex-3.13.tar.gz https://prdownloads.sourceforge.net/sourceforge/jadetex/

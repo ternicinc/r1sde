@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-session/gnome-session.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The GNOME Session manager
+
+[T] gnome-session contains the GNOME session manager, the GNOME session
+[T] manager configuation program and several other session manager related
+[T] utilities and the GNOME session manager proxy.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/base extra/desktop/gnome
+
+[L] LGPL
+[V] 50.0
+[P] X -----5---9 186.300
+
+[CV-URL] https://download.gnome.org/sources/gnome-session/cache.json
+[D] 94973828a8db4bf02ca324006c8b8fbc80de575c026e5569e61b9628 gnome-session-50.0.tar.xz https://download.gnome.org/sources/gnome-session/50/
+
+. $base/package/*/*/gnome-conf.in

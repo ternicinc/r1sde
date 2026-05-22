@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rendercheck/rendercheck.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A program to test a Render extension implementation
+
+[T] Rendercheck is a program to test a Render extension implementation
+[T] against separate calculations of expected output.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.6
+
+[D] 3d0a1f012f296060cc04d57d83cf9380c128d8951d09ad1aa6e37e04 rendercheck-1.6.tar.bz2 https://gitlab.freedesktop.org/xorg/test/rendercheck/-/archive/rendercheck-1.6/
+
+. package/*/*/modular-x-conf.in

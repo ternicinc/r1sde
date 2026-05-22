@@ -1,0 +1,15 @@
+[TIMESTAMP] 1760006359 Thu Oct  9 12:39:19 2025
+[BUILDTIME] 3 (9)
+[SIZE] 0.02 MB, 6 files
+
+[DEP] bash
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] libusb-compat
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar

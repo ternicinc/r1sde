@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-class-accessor/perl-class-accessor.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module Class-Accessor
+
+[T] Perl module Class-Accessor.
+
+[U] https://search.cpan.org/~kasei/Class-Accessor/
+
+[A] Marty Pauley <kasei@cpan.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] Artistic GPL
+[V] 0.51
+[P] X -----5---9 200.104
+
+[D] e910b0fb4ee15e8628b0a912d957aaf0758daf2d7a5ed7a06c67cc0c Class-Accessor-0.51.tar.gz http://search.cpan.org/CPAN/authors/id/K/KA/KASEI/

@@ -1,0 +1,48 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gstreamer/gstreamer.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Multi-media framework
+
+[T] GStreamer allows the construction of graphs of media-handling components,
+[T] ranging from simple mp3 playback to complex audio (mixing) and video
+[T] (non-linear editing) processing. Applications can take advantage of
+[T] advances in codec and filter technology transparently. Developers can
+[T] add new codecs and filters by writing a simple plugin with a clean,
+[T] generic interface. GStreamer is released under the LGPL, with many of
+[T] the included plugins retaining the license of the code they were derived
+[T] from, usually GPL or BSD.
+
+[U] https://gstreamer.freedesktop.org/
+
+[A] The GStreamer team
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/multimedia extra/desktop/gnome
+[F] CROSS NO-LTO LATOMIC.arch32
+
+[E] opt gtk+ pango cairo harfbuzz gdk-pixbuf at-spi2-core
+[E] opt rustc
+
+[L] LGPL
+[V] 1.28.3
+[P] X -----5---9 126.700
+
+[CV-GROUP] gst
+[CV-FLAGS] ODD-UNSTABLE
+[D] f2909269854a9893099c86953b530372a172dedc7508ecb2ea8e1a2c gstreamer-1.28.3.tar.xz https://gstreamer.freedesktop.org/src/gstreamer/
+
+#var_append flistrfilter '|' ".*: var/.*/gstreamer-.*/registry.xml"
+
+export GI_SCANNER_DISABLE_CACHE=1
+export PYTHONPYCACHEPREFIX=$builddir/cache
+
+var_append mesonopt ' ' '-Dbash-completion=disabled \
+		-Dpackage-name="GStreamer (T2)" \
+		-Dpackage-origin="https://t2sde.org"'
+
+pkginstalled gobject-introspection && var_append mesonopt ' ' -Dintrospection=enabled
+pkginstalled libcap && var_append mesonopt ' ' -Dptp-helper-permissions=capabilities

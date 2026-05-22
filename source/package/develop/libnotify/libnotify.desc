@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libnotify/libnotify.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Freedesktop Notifications Library
+
+[T] A Freedesktop notifications library.
+
+[U] http://www.galago-project.org
+
+[A] Christian Hammond <chipx86@chipx86.com>
+[A] Mike Hearn <mike@navi.cx>
+[A] John (J5) Palmieri <johnp@redhat.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[E] opt gtk-doc gi-docgen docbook-xml docbook-xsl libxml libxslt
+
+[L] GPL
+[V] 0.8.8
+[P] X -----5---9 150.100
+
+[D] ff821c59dda898edd248a1af7f9d9d2a31950cbb51a2778558a11be1 libnotify-0.8.8.tar.bz2 https://gitlab.gnome.org/GNOME/libnotify/-/archive/0.8.8/
+
+export GI_SCANNER_DISABLE_CACHE=1
+var_append mesonopt ' ' -Dtests=false
+
+pkginstalled gtk-doc gi-docgen docbook-xml docbook-xsl || var_append mesonopt ' ' -Dgtk_doc=false
+pkginstalled gobject-introspection || var_append mesonopt ' ' -Dintrospection=disabled
+pkginstalled libxslt docbook-xml docbook-xsl || var_append mesonopt ' ' -Dman=false
+pkginstalled gtk-doc || var_append mesonopt ' ' -Dgtk_doc=false
+pkginstalled xmlto || var_append mesonopt ' ' -Ddocbook_docs=disabled

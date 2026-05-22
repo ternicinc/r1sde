@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openjph/openjph.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A High-throughput JPEG2000 (JPH or HTJ2K) implementation
+
+[T] An Open-source implementation of High-throughput JPEG2000 Part-15,
+[T] ISO/IEC 15444-15, and ITU-T T.814 (also known as JPH or HTJ2K).
+[T] Only implementing the HTJ2K, supporting features that are defined
+[T] in JPEG2000 Part 1. For example, for wavelet transform, only
+[T] reversible 5/3 and irreversible 9/7 are supported.
+
+[U] https://openjph.org/
+
+[A] Aous Naman
+[A] Kakadu Software Pty Ltd, Australia
+[A] The University of New South Wales, Sydney, Australia
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] BSD
+[V] 0.27.2
+[P] X -----5---9 128.400
+
+[D] b735b51f7843118880020a2f7646740054185d33777269c390a00073 OpenJPH-0.27.2.tar.gz https://github.com/aous72/OpenJPH/archive/refs/tags/0.27.2/

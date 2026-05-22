@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pwndbg/pwndbg.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Exploit Development and Reverse Engineering with GDB
+
+[T] GDB plug-in that makes debugging with GDB suck less, with a focus on
+[T] features needed by low-level software developers, hardware hackers,
+[T] reverse-engineers and exploit developers.
+
+[U] https://github.com/pwndbg/pwndbg
+
+[A] Dominik Czarnota
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] MIT
+[V] 2026.02.18
+
+[D] a1c29876ceeedbd8abb15250a4d0f17f1c1ed6eebe2b1db23c062efb pwndbg-2026.02.18.tar.gz https://github.com/pwndbg/pwndbg/archive/refs/tags/2026.02.18/

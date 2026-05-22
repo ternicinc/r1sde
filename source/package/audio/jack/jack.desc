@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/jack/jack.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The audio connection kit
+
+[T] JACK is a low-latency audio server, written primarily for the
+[T] GNU/Linux operating system. It can connect a number of different
+[T] applications to an audio device, as well as allowing them to share
+[T] audio between themselves. Its clients can run in their own processes
+[T] (ie. as normal applications), or can they can run within the JACK
+[T] server (ie. as a "plugin").
+[T]
+[T] JACK is different from other audio server efforts in that it has been
+[T] designed from the ground up to be suitable for professional audio work.
+[T] This means that it focuses on two key areas: synchronous execution of
+[T] all clients, and low latency operation.
+
+[U] https://jackaudio.org
+
+[A] Paul Davis <pbd@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[E] opt doxygen
+
+[L] GPL
+[V] 0.126.0
+[P] O -----5---9 143.100
+
+[D] 01230f3ed0ae919129c1145068870b5b97eacfcb3398e6c664931c80 jack1-0.126.0.tar.gz https://github.com/jackaudio/jack1/releases/download/0.126.0/

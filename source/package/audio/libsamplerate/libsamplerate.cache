@@ -1,0 +1,21 @@
+[TIMESTAMP] 1768844176 Mon Jan 19 18:36:16 2026
+[BUILDTIME] 8 (9)
+[SIZE] 1.52 MB, 28 files
+
+[DEP] alsa-lib
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] libsndfile
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] xz

@@ -1,0 +1,31 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/ntp/rlimit-fix.patch.cross
+# Copyright (C) 2015 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ntp-4.2.8p11/ntpd/ntp_config.c.vanilla	2018-04-13 16:33:33.534136795 +0000
++++ ntp-4.2.8p11/ntpd/ntp_config.c	2018-04-13 16:37:44.442142018 +0000
+@@ -2860,7 +2860,7 @@
+ 				cur_memlock = 0;
+ # endif /* HAVE_MLOCKALL */
+ 			} else if (rlimit_av->value.i >= 0) {
+-#if defined(RLIMIT_MEMLOCK)
++#if defined(RLIMIT_MEMLOCK) && defined(HAVE_SETRLIMIT)
+ # if defined(HAVE_MLOCKALL)
+ 				if (cur_memlock != 1) {
+ 					if (-1 == mlockall(MCL_CURRENT|MCL_FUTURE)) {
+@@ -2627,5 +2629,5 @@
+ 
+ 		case T_Stacksize:
+-#if defined(RLIMIT_STACK)
++#if defined(RLIMIT_STACK) && defined(HAVE_SETRLIMIT)
+ 			ntp_rlimit(RLIMIT_STACK,
+ 				   (rlim_t)(rlimit_av->value.i * 4096),
+@@ -2639,5 +2643,5 @@
+ 
+ 		case T_Filenum:
+-#if defined(RLIMIT_NOFILE)
++#if defined(RLIMIT_NOFILE) && defined(HAVE_SETRLIMIT)
+ 			ntp_rlimit(RLIMIT_NOFILE,
+ 				  (rlim_t)(rlimit_av->value.i),

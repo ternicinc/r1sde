@@ -1,0 +1,23 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/wmint/prefix.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+...
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- wmint/Makefile	2000-01-08 21:25:18.000000000 +0100
++++ wmint/Makefile	2005-05-30 16:16:26.000000000 +0200
+@@ -20,7 +20,7 @@
+ 	rm wmint
+ 
+ install:: wmint
+-	cp -f wmint /usr/local/bin/
+-	chmod 755 /usr/local/bin/wmint
+-	chown root:root /usr/local/bin/wmint
++	cp -f wmint /usr/bin/
++	chmod 755 /usr/bin/wmint
++	chown root:root /usr/bin/wmint
+ 	@echo "wmint installation finished..."

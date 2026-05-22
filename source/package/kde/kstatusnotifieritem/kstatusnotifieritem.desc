@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kstatusnotifieritem/kstatusnotifieritem.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] KDE Frameworks solution with abstraction for system notifications
+
+[T] KDE Frameworks solution with abstraction for system notifications.
+
+[U] https://invent.kde.org/frameworks/kstatusnotifieritem
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 6.26.0
+[P] X -----5---9 162.905
+
+[CV-GROUP] kde-frameworks
+[D] 5982c30f066abcec6bf6c48e05ad3b8eaf9f000c2c36dfd3e7b59ec5 kstatusnotifieritem-6.26.0.tar.xz https://download.kde.org/stable/frameworks/6.26/
+
+. $base/package/*/*/kde-conf.in

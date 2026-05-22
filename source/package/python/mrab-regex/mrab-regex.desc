@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mrab-regex/mrab-regex.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Alternative regular expression module
+
+[T] This regex implementation is backwards-compatible with the standard 're'
+[T] module, but offers additional functionality.
+
+[U] https://github.com/mrabarnett/mrab-regex
+
+[A] Matthew Barnett <regex@mrabarnett.plus.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] APL
+[V] 2026.5.9
+[P] X -----5---9 109.800
+
+[D] 8b593b1acdd2f9164fbc1cce4c8e3d0b7b8feb4cf5b50f2145e86de8 mrab-regex-2026.5.9.tar.gz https://github.com/mrabarnett/mrab-regex/archive/refs/tags/2026.5.9/

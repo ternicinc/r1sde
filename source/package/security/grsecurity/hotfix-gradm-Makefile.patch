@@ -1,0 +1,32 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/grsecurity/hotfix-gradm-Makefile.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+diff -Nur gradm2.orig/Makefile gradm2/Makefile
+--- gradm2.orig/Makefile	2005-05-14 21:10:34.000000000 +0200
++++ gradm2/Makefile	2005-06-28 15:26:42.000000000 +0200
+@@ -123,21 +123,11 @@
+ 	@if [ ! -f $(DESTDIR)$(GRSEC_DIR)/learn_config ] ; then \
+ 		$(INSTALL) -m 0600 learn_config $(DESTDIR)$(GRSEC_DIR) ; \
+ 	fi
+-	@if [ -z "`cut -d" " -f3 /proc/mounts | grep "^devfs"`" ] ; then \
+-		rm -f $(DESTDIR)/dev/grsec ; \
+-		if [ ! -e $(DESTDIR)/dev/grsec ] ; then \
+-			mkdir -p $(DESTDIR)/dev ; \
+-			$(MKNOD) -m 0622 $(DESTDIR)/dev/grsec c 1 12 ; \
+-		fi \
+-	fi
++
+ 	@echo "Installing gradm manpage..."
+ 	@mkdir -p $(DESTDIR)$(MANDIR)/man8
+ 	@$(INSTALL) -m 0644 gradm.8 $(DESTDIR)$(MANDIR)/man8/$(GRADM_BIN).8
+-	@if [ -x /sbin/$(GRADM_BIN) ] ; then \
+-		if [ -z $(DESTDIR) ] && [ ! -f $(GRSEC_DIR)/pw ] ; then \
+-			/sbin/$(GRADM_BIN) -P ; \
+-		fi \
+-	fi
++
+ 	@true
+ 
+ clean:

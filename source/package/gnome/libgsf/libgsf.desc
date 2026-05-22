@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libgsf/libgsf.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The GNOME Structured File Library
+
+[T] The project aims to provide an efficient extensible i/o abstraction for
+[T] dealing with different structured file formats.
+
+[A] Jody Goldberg <jody@gnome.org>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/development extra/desktop/gnome
+[F] CROSS
+
+[L] GPL
+[V] 1.14.58
+[P] X -----5---9 149.300
+
+[CV-URL] https://download.gnome.org/sources/libgsf/cache.json
+[D] dc123cf33cd6d502a891a635a86cebc47bf8531ae6fcb63693ae1a1a libgsf-1.14.58.tar.xz https://download.gnome.org/sources/libgsf/1.14/
+
+. $base/package/*/*/gnome-conf.in

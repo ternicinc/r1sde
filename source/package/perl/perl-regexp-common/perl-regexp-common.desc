@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-regexp-common/perl-regexp-common.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Provide commonly requested regular expressions
+
+[T] Provide commonly requested regular expressions.
+
+[U] https://metacpan.org/pod/Regexp::Common
+
+[A] Abigail <abigail@cpan.org>
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 2024080801
+[P] X -----5---9 200.122
+
+[D] 9a25322aded4432f5fb602331606b95a5fa6175ae25a6ecd760d82cc Regexp-Common-2024080801.tar.gz https://cpan.metacpan.org/authors/id/A/AB/ABIGAIL/

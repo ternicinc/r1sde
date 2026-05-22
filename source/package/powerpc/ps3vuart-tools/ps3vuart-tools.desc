@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ps3vuart-tools/ps3vuart-tools.desc
+[COPY] Copyright (C) 2017 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] PS3 Linux VUART Tools
+
+[T] This package contains various utilities to communicate with
+[T] PlayStation 3's VUART interface.
+
+[U] https://github.com/sguerrini97/ps3linux-ps3vuart-tools
+
+[A] glevand <geoffrey.levand@mail.ru>
+[M] Samuele Guerrini <sguerrini97@gmail.com>
+
+[C] extra/tool
+[R] + powerpc powerpc64
+
+[L] GPL
+[V] af8af4c6d4bd47c8de5d3ab37d5bdb1e430d415e
+
+[CV-FLAGS] NO-PREFIX
+[D] 1d8f60730e6fd227b8c409bd4b4d4c7cb4844d583eb1b4cf4d871a2e ps3linux-ps3vuart-tools_af8a415e.tar.gz https://github.com/sguerrini97/ps3linux-ps3vuart-tools/archive/af8af4c6d4bd47c8de5d3ab37d5bdb1e430d415e/

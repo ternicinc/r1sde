@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-video-openchrome/xf86-video-openchrome.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The alternative Xorg Via video driver
+
+[T] This driver supports CLE266, KM400(A) / KN400(A) / P4M800, K8M800 / K8N800,
+[T] PM800 / PN800 / PM880 / CN333 / CN400, P4M800 Pro / VN800 / CN700, CX700 /
+[T] VX700, P4M890 / VN890 / CN800, K8M890 / K8N890, P4M900 / VN896 / CN896,
+[T] VX800 / VX820, VX855 / VX875, VX900. The driver includes 2D acceleration
+[T] and Xv video overlay extensions.
+
+[U] https://www.openchrome.org
+
+[A] Thomas Hellström
+[A] VIA Technologies, Inc.
+[A] S3 Graphics, Inc.
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS FCOMMON
+[R] + x86 x86-64
+
+[L] OpenSource
+[V] 0.6.225
+
+[D] 1f19531638d8a4ba94f326b08ae7fe97e9473be3e749939986027145 xf86-video-openchrome-0.6.225.tar.xz git+https://anongit.freedesktop.org/git/openchrome/xf86-video-openchrome.git ab03de7
+
+. package/*/*/modular-x-conf.in
+autogen=1

@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-clocks/gnome-clocks.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome gnome-clocks package
+
+[T] Core Gnome gnome-clocks package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 50.0
+
+[CV-URL] https://download.gnome.org/sources/gnome-clocks/cache.json
+[D] 641d31cf7b8fafaa26da48b938276f922f291aeee37048c53ea57a6c gnome-clocks-50.0.tar.xz https://download.gnome.org/sources/gnome-clocks/50/
+
+. $base/package/*/*/gnome-conf.in

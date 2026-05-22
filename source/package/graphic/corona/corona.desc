@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/corona/corona.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An image input/output library
+
+[T] Corona is an image input/output library that can read, write, and
+[T] manipulate image files in just a few lines of code. It can write PNG and
+[T] TGA files, and read PNG, JPEG, PCX, BMP, TGA, and GIF. Corona was designed
+[T] to be easy to use and exports a straightforward C++ API.
+
+[U] https://corona.sourceforge.net/
+
+[A] Chad Austin <aegisknight@livejournal.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+[F] CROSS
+
+[L] OpenSource
+[V] 1.0.2
+
+[D] 26608ffa9451e07ae48da426ec17dc2723b873e3204a2e359b4273d0 corona-1.0.2.tar.gz https://prdownloads.sourceforge.net/sourceforge/corona/

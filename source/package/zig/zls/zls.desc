@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/zls/zls.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Zig language server
+
+[T] The Zig Language Server (ZLS) is a tool that implements Microsoft's
+[T] Language Server Protocol for Zig in Zig. In simpler terms: it'll
+[T] provide you with completions, go-to definition, etc.
+[T] when you write Zig code!
+
+[U] https://github.com/zigtools/zls/
+
+[A] Auguste Rame <auguste.rame@gmail.com>
+[A] Alexandros Naskos <alex_naskos@hotmail.com>
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/development
+[F] CROSS
+
+[L] MIT
+[V] 0.16.0
+
+[D] 6c9cbbd789399ae5e77507219f4ad65b8088daf400ea87d7d3517ae7 zls-0.16.0.tar.gz https://github.com/zigtools/zls/archive/0.16.0/

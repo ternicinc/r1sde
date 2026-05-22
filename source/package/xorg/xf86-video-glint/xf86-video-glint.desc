@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-video-glint/xf86-video-glint.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Xorg GLINT/Permedia video driver
+
+[T] This driver supports 3Dlabs & Texas Instruments GLINT/Permedia based video
+[T] cards. Supported chipsets: 3Dlabs (GLINT MX, GLINT 500TX, GLINT 300SX,
+[T] GLINT GAMMA, GLINT DELTA, GLINT GAMMA2, Permedia, Permedia 2, Permedia 2v,
+[T] Permedia 3, R3, R4) and Texas Instruments (Permedia, Permedia 2) chips.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS FCOMMON.mips FCOMMON.mips64
+
+[L] OpenSource
+[V] 1.2.9
+
+[D] 94cabb64cf271372c8d01cda72d346e40c909453e61a66773ffe8d3e xf86-video-glint-1.2.9.tar.bz2 http://xorg.freedesktop.org/releases/individual/driver/
+
+. package/*/*/modular-x-conf.in
+var_append GCC_WRAPPER_APPEND ' ' -Wno-implicit-function-declaration

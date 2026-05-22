@@ -1,0 +1,28 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/grub2/dejavu-ttf.patch
+# Copyright (C) 2019 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- grub-2.14/configure.ac.orig	2026-01-14 15:30:04.000000000 +0100
++++ grub-2.14/configure.ac	2026-01-15 13:14:41.483116637 +0100
+@@ -2132,7 +2132,7 @@
+   # search in well-known directories
+   if test x"$starfield_excuse" = x; then
+      for ext in pcf pcf.gz bdf bdf.gz ttf ttf.gz; do
+-       for dir in . /usr/src /usr/share/fonts/X11/misc /usr/share/fonts/truetype/ttf-dejavu /usr/share/fonts/dejavu /usr/share/fonts/truetype /usr/pkg/share/fonts/X11/TTF /usr/local/share/fonts/dejavu /usr/X11R6/lib/X11/fonts/TTF /usr/share/fonts/dejavu-sans-fonts /usr/share/fonts/truetype/dejavu; do
++       for dir in . /usr/src /usr/share/fonts/X11/misc /usr/X11/share/fonts/TTF; do
+           if test -f "$dir/DejaVuSans.$ext"; then
+             DJVU_FONT_SOURCE="$dir/DejaVuSans.$ext"
+             break 2
+--- grub-2.14/configure.orig	2026-01-14 19:26:54.000000000 +0100
++++ grub-2.14/configure	2026-01-15 13:16:43.680000000 +0100
+@@ -42384,7 +42384,7 @@
+   # search in well-known directories
+   if test x"$starfield_excuse" = x; then
+      for ext in pcf pcf.gz bdf bdf.gz ttf ttf.gz; do
+-       for dir in . /usr/src /usr/share/fonts/X11/misc /usr/share/fonts/truetype/ttf-dejavu /usr/share/fonts/dejavu /usr/share/fonts/truetype /usr/pkg/share/fonts/X11/TTF /usr/local/share/fonts/dejavu /usr/X11R6/lib/X11/fonts/TTF /usr/share/fonts/dejavu-sans-fonts /usr/share/fonts/truetype/dejavu; do
++       for dir in . /usr/src /usr/share/fonts/X11/misc /usr/X11/share/fonts/TTF; do
+           if test -f "$dir/DejaVuSans.$ext"; then
+             DJVU_FONT_SOURCE="$dir/DejaVuSans.$ext"
+             break 2

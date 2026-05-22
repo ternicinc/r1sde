@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cbindgen/cbindgen.desc
+[COPY] Copyright (C) 2017 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Generate C bindings for Rust code
+
+[T] This project can be used to generate C bindings for Rust code. It is
+[T] currently being developed to support creating bindings for WebRender,
+[T] but has been designed to support any project.
+
+[U] https://github.com/eqrion/cbindgen
+
+[A] Ryan Hunt
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[R] - alpha hppa hppa64 ia64
+
+[L] GPL
+[V] 0.29.2
+[P] X ?----5---9 127.400
+
+[CV-FLAGS] NO-PREFIX
+[D] 44dacdc1eea8e2b0cf2aaccbb0c06b534b0fb62f30fa24249f26f67a cbindgen-0.29.2.tar.gz https://github.com/eqrion/cbindgen/archive/v0.29.2/

@@ -1,0 +1,23 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/nssdb/hotfix-set_errno.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./src/db-open.c.orig	Thu Nov  7 22:18:30 2002
++++ ./src/db-open.c	Thu Nov  7 22:19:23 2002
+@@ -22,6 +22,13 @@
+ #include <errno.h>
+ #include <fcntl.h>
+ 
++#ifndef errno
++extern int errno;
++#endif
++#ifndef __set_errno
++# define __set_errno(val) errno = (val)
++#endif
++
+ #include "db-compat.h"
+ 
+ #include "nss_db.h"

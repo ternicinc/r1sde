@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xanim/xanim.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Multiformat animation/video/audio viewer for X
+
+[T] XAnim is a program that can display animation/video/audio files of various
+[T] formats on systems running X11.
+
+[U] http://xanim.polter.net/
+
+[A] Mark Podlipec <podlipec@ici.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] Commercial
+[V] 2.92.0
+
+[CV-TR] s/\.//g
+[D] eaf4ff78b1ecf52c803afb5770fae80c0c01a2261a64f351f9a87bcc xanim2920.tar.gz https://people.freebsd.org/~dinoex/distfiles/
+
+var_append makeopt ' ' INCDIR=/usr/X11R6/include/X11
+[[ $libdir == *lib64 ]] && var_append GCC_WRAPPER_INSERT ' ' -L$root/usr/X11/lib64
+var_append GCC_WRAPPER_APPEND ' ' -std=gnu11
+
+makeinstopt=
+hook_add postmake 5 "cp -vf xanim $bindir; cp -vf docs/* $docdir/"
+hook_add postdoc 5 "mv $docdir/xanim.man $root/usr/share/man/man1/xanim.1"

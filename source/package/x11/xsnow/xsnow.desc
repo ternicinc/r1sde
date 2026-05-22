@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xsnow/xsnow.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A X-windows application that will let it snow on your desktop
+
+[T] Xsnow is the X-windows application that will let it snow on the root-
+[T] window, in between and on windows. Santa and his reindeer will complete
+[T] your festive-season feeling.
+
+[U] https://ratrabbit.nl/ratrabbit/xsnow/
+
+[A] Rick Jansen
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/toy
+[F] CROSS
+
+[L] Free-to-use
+[V] 3.9.0
+
+[D] 23e8877c7f68f8716ce12fcceaa66a85e06a90d08c93b316f4a9bc5c xsnow-3.9.0.tar.gz https://download.sourceforge.net/project/xsnow/

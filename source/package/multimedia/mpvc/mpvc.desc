@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mpvc/mpvc.desc
+[COPY] Copyright (C) 2021 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An mpc-like control interface for mpv
+
+[T] Music player in POSIX-sh interfacing mpv from the shell + extras/goodies. A
+[T] fork of lwillets/mpvc evolving on its own adding features like: improved
+[T] CLI, TUI, FZF, WEB, EQ, & play Invidious, YouTube & streaming services.
+
+[U] https://github.com/lwilletts/mpvc
+
+[A] Aurence Willetts <me@wildefyr.net>
+[A] Christian Heckendorf <heckendorfc@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] MIT
+[V] 1.7
+
+[D] a89fdf9a5d57f2b2efb73b5d67a76ff6839f5d2dbadb9a266e42d95b mpvc-1.7.tar.gz https://github.com/lwilletts/mpvc/archive/1.7/

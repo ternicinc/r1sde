@@ -1,0 +1,37 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/iputils/iputils.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A basic set of ipv4 and ipv6 networking tools
+
+[T] This utility set is not supposed to be a reference set or something like.
+[T] They are just utilities, which the author used to the date of snapshot
+[T]
+[T] Originally including forks from some orginals:
+[T]
+[T] ping - cloned of an ancient NetTools-B-xx.
+[T] ping6 - cloned of a very old Pedro's utility set.
+[T] traceroute6 - cloned of NRL Sep 96 distribution.
+[T] rdisc - cloned of SUN in.rdisc
+[T] clockdiff - broken out of some timed.
+[T] tftpd - it is clone of some ancient NetKit package.
+
+[U] http://www.skbuff.net/iputils/
+
+[A] Alexey Kuznetsov <kuznet@ms2.inr.ac.ru>
+[A] YOSHIFUJI Hideaki <netdev@vger.kernel.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+
+[L] BSD
+[V] 20250605
+
+[D] 94cf2bee596b8a7e36d89999eb416bcec6b16b2fa774e71b828640c9 iputils-20250605.tar.gz https://github.com/iputils/iputils/archive/20250605/
+
+runconf=0
+var_append mesonopt ' ' "-DNO_SETCAP_OR_SUID=true -DSKIP_TESTS=true"
+var_append mesonopt ' ' "-DBUILD_MANS=false -DUSE_IDN=false -DUSE_GETTEXT=false"

@@ -1,0 +1,47 @@
+[TIMESTAMP] 1773418566 Fri Mar 13 17:16:06 2026
+[BUILDTIME] 25 (9)
+[SIZE] 6.57 MB, 160 files
+
+[OPT] avahi
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] fuse
+[DEP] gawk
+[OPT] gcr
+[DEP] gettext
+[OPT] glib
+[DEP] grep
+[DEP] gudev
+[OPT] libarchive
+[OPT] libbluray
+[DEP] libcap
+[OPT] libcdio
+[OPT] libcdio-paranoia
+[DEP] libgcrypt
+[DEP] libgpg-error
+[DEP] libgphoto
+[OPT] libimobiledevice
+[OPT] libmtp
+[OPT] libnfs
+[OPT] libplist
+[DEP] libsecret
+[OPT] libsoup3
+[DEP] libusb
+[DEP] libxml
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] p11-kit
+[OPT] polkit
+[DEP] python
+[OPT] samba
+[DEP] sed
+[OPT] systemd
+[DEP] tar
+[OPT] udisks
+[DEP] util-linux
+[DEP] xz

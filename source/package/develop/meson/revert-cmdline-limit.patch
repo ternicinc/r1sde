@@ -1,0 +1,20 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/meson/revert-cmdline-limit.patch
+# Copyright (C) 2024 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- meson-1.8.0/mesonbuild/utils/universal.py.vanilla	2025-04-29 15:56:33.889673071 +0300
++++ meson-1.8.0/mesonbuild/utils/universal.py	2025-04-29 15:55:56.359260801 +0300
+@@ -2405,10 +2405,8 @@
+         # for example, this is limited by the kernel's MAX_ARG_STRLEN). However,
+         # some programs place much lower limits, notably Wine which enforces a
+         # 32k limit like Windows. Therefore, we limit the command line to 32k.
+-        limit = 32768
++        limit = 131072
+ 
+-    # Be conservative
+-    limit = limit // 2
+     return int(os.environ.get('MESON_RSP_THRESHOLD', limit))
+ 
+ 

@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-maturin/python-maturin.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Build crates with pyo3
+
+[T] Build and publish crates with pyo3, cffi and uniffi bindings as well as
+[T] rust binaries as python packages.
+
+[U] https://www.maturin.rs/
+
+[A] Messense Lv
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[E] add setuptools-rust
+[E] add python-semantic-version
+
+[L] MIT
+[V] 1.13.3
+[P] X -----5---9 110.260
+
+[D] d594003ccaccee4cc43df3ee0f3b03aa9900d03871b0277517da7374 maturin-1.13.3.tar.gz https://github.com/PyO3/maturin/archive/refs/tags/v1.13.3/
+
+var_append GCC_WRAPPER_APPEND ' ' -c?:-lbz2
+var_append GCC_WRAPPER_APPEND ' ' '-c?:-lzstd'

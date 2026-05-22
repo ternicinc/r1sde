@@ -1,0 +1,22 @@
+[TIMESTAMP] 1755082315 Wed Aug 13 12:51:55 2025
+[BUILDTIME] 2 (9)
+[SIZE] 0.04 MB, 8 files
+
+[DEP] autoconf
+[DEP] automake
+[DEP] bash
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] libx11
+[DEP] libxrender
+[DEP] m4
+[DEP] make
+[DEP] perl
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto
+[DEP] zstd

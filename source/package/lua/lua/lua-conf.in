@@ -1,0 +1,42 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/lua/lua-conf.in
+# Copyright (C) 2006 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+lua_pkg_confdir=$base/package/*/lua
+lua_pkg_ver=`sed -n 's,^\[V\] \(.*\),\1,p' ${lua_pkg_confdir}/lua.desc`
+
+myCFLAGS="-DLUA_USE_POSIX -DLUA_USE_READLINE"
+myLIBS="-lm -lreadline -lhistory -lncurses"
+if [ $SDECFG_KERNEL = linux ]; then
+	var_append myCFLAGS ' ' -DLUA_USE_DLOPEN
+	var_append myLIBS ' ' -ldl
+fi
+
+# just the major version for the modules
+luaver="`echo $lua_pkg_ver | sed -e 's,-.*,,' -e 's,\([^.]\.[^.]\).*,\1,' `"
+pkglibdir=$libdir/lua/$luaver
+pkgdatadir=$datadir/lua/$luaver
+
+# install function for installing lua modules sources
+install_lua_module_src() {
+	mkdir -p $root$pkgdatadir
+	cp -av $builddir/$xsrcdir/src/* $root$pkgdatadir/
+}
+
+# function to install documentation
+install_lua_module_doc() {
+	if [ -e $builddir/$xsrcdir/doc ]; then
+		mkdir -p $root$docdir
+		cp -av $builddir/$xsrcdir/doc/* $root$docdir
+	else
+		createdocs="0"
+	fi
+}
+
+# install function for installing lua modules
+install_lua_module() {
+	install_lua_module_src
+	install_lua_module_doc
+}

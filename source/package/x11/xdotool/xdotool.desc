@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xdotool/xdotool.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] X11 automation tool
+
+[T] xdotool lets you simulate keyboard input and mouse activity, move and
+[T] resize windows, etc. It does this using X11’s XTEST extension and other
+[T] Xlib functions.
+
+[U] https://github.com/jordansissel/xdotool
+
+[A] Jordan Sissel
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 4.20251130.1
+[P] X -----5---9 113.600
+
+[D] 8d799f7b2108199d853c34bc6a38b339bd25355730257e7d2d12fd79 xdotool-4.20251130.1.tar.gz https://github.com/jordansissel/xdotool/releases/download/v4.20251130.1/

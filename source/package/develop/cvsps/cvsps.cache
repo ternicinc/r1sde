@@ -1,0 +1,21 @@
+[TIMESTAMP] 1739053401 Sat Feb  8 23:23:21 2025
+[BUILDTIME] 1 (5)
+[SIZE] 0.10 MB, 8 files
+
+[DEP] 00-dirtree
+[DEP] asciidoc
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] docbook-xml
+[DEP] docbook-xsl
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libxml
+[DEP] libxslt
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] zlib

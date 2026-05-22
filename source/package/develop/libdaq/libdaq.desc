@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libdaq/libdaq.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Data AcQuisition Library
+
+[T] LibDAQ is a pluggable abstraction layer for interacting with a data source
+[T] (traditionally a network interface or network data plane).
+
+[U] https://github.com/snort3/libdaq/
+
+[A] Sourcefire, Inc.
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] NO-LTO.gcc
+
+[L] GPL
+[V] 3.0.27
+[P] X -----5---9 222.000
+
+[D] 0297758e8a22faaa1b21b9e3165b9deb91515aa4d47bf829f99a2bfc libdaq-3.0.27.tar.gz https://github.com/snort3/libdaq/archive/v3.0.27/
+
+autogen=2

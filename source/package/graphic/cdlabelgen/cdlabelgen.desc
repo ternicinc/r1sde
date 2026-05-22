@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cdlabelgen/cdlabelgen.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A program to create labels for cdroms
+
+[T] cdlabelgen is a Perl script that generates printouts suitable for use
+[T] as CD jewel case inserts or CD envelopes. Both normal sized cases and
+[T] slim cases are handled. cdlabelgen can be used to create table of
+[T] contents for music CDs, archival CDs, etc., with customizable logos
+[T] or background images, and it generates PostScript files as output.
+[T] The package also includes a Perl CGI Web script which accepts JPEG
+[T] images as logos or backgrounds, and can also create PDF output files.
+
+[U] https://www.aczoom.com/tools/cdinsert/
+
+[A] B W Fitzpatrick <fitz@red-bean.com> {origien author}
+[A] Avinash Chopde <avinash@aczone.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] BSD
+[V] 4.3.0
+
+[CV-URL] https://www.aczoom.com/tools/cdinsert/
+[D] 00077f1ab2d26a6758c2659bc034935613b644eb0a257e0db0314c84 cdlabelgen-4.3.0.tgz https://www.aczoom.com/pub/tools/
+
+# prevent make run since only a make install is available ...
+makeopt=
+var_append makeinstopt ' ' "BASE_DIR=$root/$prefix LIB_DIR=$root/$prefix/share/cdlabelgen"

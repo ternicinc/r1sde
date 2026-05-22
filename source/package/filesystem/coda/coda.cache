@@ -1,0 +1,30 @@
+[TIMESTAMP] 1746825512 Fri May  9 22:18:32 2025
+[BUILDTIME] 210 (9)
+[SIZE] 6.24 MB, 199 files
+
+[DEP] attrs
+[DEP] autoconf
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] bison
+[DEP] coreutils
+[DEP] findutils
+[DEP] flex
+[DEP] gawk
+[DEP] gnutls
+[DEP] grep
+[DEP] gzip
+[DEP] libtool
+[DEP] libuv
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] ncurses
+[DEP] openssl
+[DEP] perl
+[DEP] python
+[DEP] readline
+[DEP] sed
+[DEP] setuptools
+[DEP] tar

@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mcelog/mcelog.desc
+[COPY] Copyright (C) 2013 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A user space backend for logging machine check errors
+
+[T] mcelog is the user space backend for logging machine check errors
+[T] reported by the hardware to the kernel. The kernel does the immediate
+[T] actions (like killing processes etc.) and mcelog decodes the errors
+[T] and manages various other advanced error responses like
+[T] offlining memory, CPUs or triggering events.
+[T] 
+[T] It primarily handles machine checks and thermal events, which
+[T] are reported for errors detected by the CPU.
+
+[U] http://www.mcelog.org/download.html
+
+[A] Andi Kleen
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+[R] + x86 x86-64
+
+[L] GPL
+[V] 210
+
+[CV-FLAGS] NO-PREFIX
+[D] 99e363a17e7d8f1ab7a4895cd82d7e315a8a368cd8bc695085e9a663 mcelog-210.tar.gz https://github.com/andikleen/mcelog/archive/v210/

@@ -1,0 +1,25 @@
+[TIMESTAMP] 1738768175 Wed Feb  5 16:09:35 2025
+[BUILDTIME] 3 (9)
+[SIZE] 0.04 MB, 13 files
+
+[DEP] autoconf
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libtool
+[DEP] libx11
+[DEP] libxi
+[DEP] libxtst
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] perl
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

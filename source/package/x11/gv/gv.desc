@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gv/gv.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A PostScript and PDF previewer
+
+[T] Gv allows to view and navigate through PostScript and PDF documents
+[T] on an X display by providing a user interface for the ghostscript
+[T] interpreter.
+
+[U] https://www.gnu.org/software/gv/
+
+[A] Johannes Plass <plass@thep.physik.uni-mainz.de>
+[A] Josť E. Marchesi <jemarch@gnu.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office
+
+[L] GPL
+[V] 3.7.4
+
+[D] 0fbd9470ba724696b740a5279d8212b89f62e18fa76c0f45f271c9ef gv-3.7.4.tar.gz http://ftp.gnu.org/gnu/gv/

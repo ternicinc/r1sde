@@ -1,0 +1,26 @@
+
+[TIMESTAMP] 1133926483 Wed Dec  7 04:34:43 2005
+[BUILDTIME] 20 (9)
+[SIZE] 0.62 MB, 15 files
+
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] xorgproto
+[DEP] gawk
+[DEP] xorgproto
+[DEP] grep
+[DEP] libdrm
+[DEP] linux-header
+[DEP] make
+[DEP] mesa
+[DEP] pkgconfig
+[DEP] xorgproto
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] util-linux
+[DEP] xorgproto
+[DEP] xorg-server
+[DEP] xorgproto

@@ -1,0 +1,19 @@
+[TIMESTAMP] 1759613566 Sat Oct  4 23:32:46 2025
+[BUILDTIME] 3 (9)
+[SIZE] 0.10 MB, 13 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[OPT] ipvsadm2
+[DEP] libnl
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] popt
+[DEP] sed
+[DEP] tar
+[DEP] xz

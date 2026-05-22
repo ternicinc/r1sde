@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnustep-base/gnustep-base.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The base for a GNUstep system
+
+[T] The base for a GNUstep system.
+
+[U] https://www.gnustep.org/
+
+[A] The GNUstep Project
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/windowmanager
+
+[L] GPL
+[V] 1.31.1
+[P] X -----5---9 162.200
+
+[D] 6fab9d3012131c9938d4c994ae5815988ea1d0e1e37e8a456abbd806 gnustep-base-1.31.1.tar.gz https://github.com/gnustep/libs-base/releases/download/base-1_31_1/
+
+. $base/package/*/*/gnustep-conf.in

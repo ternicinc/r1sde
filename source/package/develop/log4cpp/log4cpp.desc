@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/log4cpp/log4cpp.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Log library for C++
+
+[T] A library of C++ classes for flexible logging to files, syslog, IDSA
+[T] and other destinations. It is modeled after the Log for Java library
+[T] (http://www.log4j.org), staying as close to their API as is reasonable.
+
+[U] https://sourceforge.net/projects/log4cpp/
+
+[A] Bastiaan Bakker <bastiaan@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[E] opt doxygen
+[E] opt graphviz
+
+[L] LGPL
+[V] 1.1.6
+
+[D] c2a419d65f2dc092d21e46aa78317cb97742eb97269e4b3947b84bb7 log4cpp-1.1.6.tar.gz https://prdownloads.sourceforge.net/sourceforge/log4cpp/REL_1.1.6_Mar_12_2026/
+

@@ -1,0 +1,38 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/mips64/boot/boot.in
+# Copyright (C) 2006 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+arch_boot_cd_pre() {
+	mkdir -p $isofsdir/boot
+	cp -f $build_root/boot/arcload $isofsdir/boot/arcload
+	cp -f $build_root/boot/arcload.ecoff $isofsdir/boot/arcload2
+	echo -n "" > $isofsdir/arc.cf
+}
+
+arch_boot_cd_add() {
+	local suffix=
+	[[ "$5" = *minird* ]] && suffix="-minird"
+
+	[ -s $isofsdir/arc.cf ] ||
+	sed "s/\$ver/${2//-*/}/g" $base/architecture/$arch/boot/arc.cf > $isofsdir/arc.cf
+
+	true || cat >> $isofsdir/arc.cf <<EOT
+
+install$suffix {
+	description	"$3";
+	image	system	"$4";
+	initrd	system	"$5";
+}
+EOT
+}
+
+arch_boot_cd_post() {
+	echo_status "Creating isofs_arch.txt file .."
+
+	cat > $build_toolchain/isofs_arch.txt <<- EOT
+BOOT    -mips-boot /boot/arcload -mips-boot /boot/arcload2
+DISK1   $isofsdir/ /
+EOT
+}

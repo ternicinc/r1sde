@@ -1,0 +1,36 @@
+[TIMESTAMP] 1770553657 Sun Feb  8 13:27:37 2026
+[BUILDTIME] 250 (9)
+[SIZE] 3.45 MB, 175 files
+
+[DEP] abseil-cpp
+[DEP] bash
+[DEP] binutils
+[DEP] bison
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] flex
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] kcoreaddons
+[DEP] ki18n
+[DEP] kopeninghours
+[DEP] kpublictransport
+[DEP] kservice
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] pkgconfig
+[DEP] procps
+[DEP] protobuf
+[DEP] python
+[DEP] qt6base
+[DEP] qt6declarative
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] vulkan-headers
+[DEP] xz
+[DEP] zlib

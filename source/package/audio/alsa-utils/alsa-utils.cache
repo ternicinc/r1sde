@@ -1,0 +1,22 @@
+[TIMESTAMP] 1737708054 Fri Jan 24 09:40:54 2025
+[BUILDTIME] 8 (9)
+[SIZE] 2.70 MB, 102 files
+
+[DEP] alsa-lib
+[DEP] bash
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] fftw3
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] libsamplerate
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] ncurses
+[DEP] sed
+[DEP] tar
+[OPT] xmlto

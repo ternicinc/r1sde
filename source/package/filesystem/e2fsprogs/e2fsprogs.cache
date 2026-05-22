@@ -1,0 +1,29 @@
+[TIMESTAMP] 1774281187 Mon Mar 23 16:53:07 2026
+[BUILDTIME] 30 (9)
+[SIZE] 9.26 MB, 151 files
+
+[DEP] 00-dirtree
+[OPT] acl
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] file
+[DEP] findutils
+[OPT] fuse
+[OPT] fuse2
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] gzip
+[OPT] libarchive
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] texinfo
+[OPT] util-linux
+[DEP] xz

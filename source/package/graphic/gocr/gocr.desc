@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gocr/gocr.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Open source Optical Character Recognition program
+
+[T] GOCR is an OCR (Optical Character Recognition) program, developed
+[T] under the GNU Public License. It converts scanned images of text back
+[T] to text files.
+
+[U] https://www-e.uni-magdeburg.de/jschulen/ocr/
+
+[A] Joerg Schulenburg
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+[F] CROSS
+
+[L] GPL
+[V] 0.52
+
+[D] c376e9e07424166265afb02cd2f4b3bc3eb878db20f81b1c7e6930d9 gocr-0.52.tar.gz http://www-e.uni-magdeburg.de/jschulen/ocr/
+
+var_remove_regex confopt " " "--.*dir=.*"
+# bizare Makefile w/ creative DESTDIR use and such
+var_append makeinstopt ' ' "DESTDIR=$root bindir=$bindir"

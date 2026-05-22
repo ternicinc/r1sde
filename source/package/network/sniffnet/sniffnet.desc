@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sniffnet/sniffnet.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Comfortably monitor your Internet traffic
+
+[T] Application to comfortably monitor your Internet traffic Cross-platform,
+[T] Intuitive, Reliable.
+
+[U] https://sniffnet.net/
+
+[A] Bellini Giuliano
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] MIT APL
+[V] 1.5.0
+
+[D] 42819de413a2a72c2fab5b62fc71c450e9f822715af5fd345c6fe6f8 sniffnet-1.5.0.tar.gz https://github.com/GyulyVGC/sniffnet/archive/refs/tags/v1.5.0/

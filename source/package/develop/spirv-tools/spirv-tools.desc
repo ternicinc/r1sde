@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---.
+[COPY] t2/package/*/spirv-tools/spirv-tools.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---.
+
+[I] An API and commands for processing SPIR-V modules
+
+[T] The SPIR-V Tools projec includes an assembler, binary module parser,
+[T] disassembler, validator, and optimizer for SPIR-V.
+
+[U] https://github.com/KhronosGroup/SPIRV-Tools
+
+[A] Spirv-Tools Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS OBJDIR
+
+[V] 1.4.328.1
+[L] GPL3
+[P] X ?----5---9 102.305
+
+[CV-GROUP] vulkan
+[D] d2d605efbf9efd0d3a888c9007d9b1ca1d7a98d445dd2095407ffc6f SPIRV-Tools-1.4.328.1.tar.gz https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.328.1/
+
+var_append cmakeopt ' ' "-DSPIRV-Headers_SOURCE_DIR=$root/$(pkgprefix spirv-headers)"
+var_append cmakeopt ' ' "-DSPIRV_TOOLS_BUILD_STATIC=OFF -DSPIRV_TOOLS_LIBRARY_TYPE=SHARED"
+
+# remove file check for installed library files, especially w/o $root cross prefix
+hook_add inmake 5 'sed -i "s/list(APPEND _cmake_import_check_files_/#&/" */{,*/}/CMakeFiles/Export/*/*.cmake'

@@ -1,0 +1,42 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/gpm/hotfix.patch.musl
+# Copyright (C) 2019 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- gpm-1.20.6/src/prog/display-buttons.c.vanilla	2019-02-07 08:52:43.740482433 +0000
++++ gpm-1.20.6/src/prog/display-buttons.c	2019-02-07 08:53:04.032482201 +0000
+@@ -36,6 +36,7 @@
+ #include <stdio.h>            /* printf()             */
+ #include <time.h>             /* time()               */
+ #include <errno.h>            /* errno                */
++#include <sys/select.h>
+ #include <gpm.h>              /* gpm information      */
+ 
+ /* display resulting data */
+--- gpm-1.20.6/src/prog/display-coords.c.vanilla	2019-02-07 08:53:16.444482060 +0000
++++ gpm-1.20.6/src/prog/display-coords.c	2019-02-07 08:53:24.320481970 +0000
+@@ -37,6 +37,7 @@
+ #include <stdio.h>            /* printf()             */
+ #include <time.h>             /* time()               */
+ #include <errno.h>            /* errno                */
++#include <sys/select.h>
+ #include <gpm.h>              /* gpm information      */
+ 
+ /* display resulting data */
+--- gpm-1.20.6/src/prog/gpm-root.y.vanilla	2019-02-07 08:54:55.056480936 +0000
++++ gpm-1.20.6/src/prog/gpm-root.y	2019-02-07 08:55:52.192480284 +0000
+@@ -1198,10 +1198,11 @@
+    childaction.sa_handler=reap_children;
+ #if defined(__GLIBC__)
+    sigemptyset(&childaction.sa_mask);
++   childaction.sa_flags=SA_INTERRUPT; /* need to break the select() call */
+ #else /* __GLIBC__ */
+-   childaction.sa_mask=0;
++   //childaction.sa_mask=0;
++   sigemptyset(&childaction.sa_mask);
+ #endif /* __GLIBC__ */
+-   childaction.sa_flags=SA_INTERRUPT; /* need to break the select() call */
+    sigaction(SIGCHLD,&childaction,NULL);
+ 
+    /*....................................... Connect and get your buffer */

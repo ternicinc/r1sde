@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/darkglass/icondir.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- darkglass-0.0.5/Makefile.orig	2008-04-17 00:54:53.000000000 +0200
++++ darkglass-0.0.5/Makefile	2008-04-17 00:54:59.000000000 +0200
+@@ -1,6 +1,6 @@
+ 
+ PREFIX=/usr/X11
+-ICONDIR=lib/X11/icons
++ICONDIR=share/icons
+ NAME=darkglass
+ 
+ CURSORS=xterm right_ptr basic_arrow hand1 hand2 pirate question_arrow right_side sizing

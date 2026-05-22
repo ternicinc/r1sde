@@ -1,0 +1,14 @@
+[TIMESTAMP] 1752092216 Wed Jul  9 22:16:56 2025
+[BUILDTIME] 1 (9)
+[SIZE] 0.18 MB, 50 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] make
+[DEP] perl
+[DEP] sed
+[DEP] tar

@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libxcursor/libxcursor.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] X11 Cursor management library
+
+[T] Xcursor is a simple library designed to help locate and load cursors.
+[T] Cursors can be loaded from files or memory.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.2.3
+[P] X ?----5---9 112.421
+
+[D] c58af0877d9251e55e22b54b7565d98a0b91459af4ebcbd46aad1cc0 libXcursor-1.2.3.tar.xz http://xorg.freedesktop.org/releases/individual/lib/
+
+. package/*/*/modular-x-conf.in

@@ -1,0 +1,20 @@
+[TIMESTAMP] 1739232672 Tue Feb 11 01:11:12 2025
+[BUILDTIME] 3 (5)
+[SIZE] 0.16 MB, 17 files
+
+[DEP] alsa-lib
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[OPT] jack
+[OPT] jack
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar

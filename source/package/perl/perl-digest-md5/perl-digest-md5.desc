@@ -1,0 +1,21 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-digest-md5/perl-digest-md5.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A module for MD5
+
+[T] The Digest::MD5 module allows you to use the MD5 lgorithm from within Perl
+[T] programs.
+
+[A] Gisle Aas
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 1.91
+[P] X -----5---9 113.300
+
+[D] b3c53165461a6870848dd00ead962dcf50ca3ddef155e7281fe8b2b2 Digest-Perl-MD5-1.91.tar.gz http://search.cpan.org/CPAN/authors/id/D/DE/DELTA/

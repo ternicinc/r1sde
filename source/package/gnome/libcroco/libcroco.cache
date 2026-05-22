@@ -1,0 +1,19 @@
+[TIMESTAMP] 1739135713 Sun Feb  9 22:15:13 2025
+[BUILDTIME] 6 (5)
+[SIZE] 1.71 MB, 81 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[OPT] glib
+[DEP] grep
+[DEP] gtk-doc
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] xz

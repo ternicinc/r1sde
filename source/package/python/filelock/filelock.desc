@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/filelock/filelock.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A platform-independent file lock for Python
+
+[T] This package contains a single module, which implements a platform
+[T] independent file lock in Python, which provides a simple way of
+[T] inter-process communication.
+
+[U] https://github.com/tox-dev/filelock
+
+[A] tox <gaborjbernat@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[E] add hatch-vcs
+[E] add hatchling
+
+[L] UNL
+[V] 3.18.0
+[P] X -----5---9 110.000
+
+[D] 02a989dd6516b278c8afd80978c4adc98d519167038c70c26d4869db filelock-3.18.0.tar.gz https://files.pythonhosted.org/packages/source/f/filelock/

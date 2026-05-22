@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dhcpclient/dhcpclient.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A DHCP client for Linux 2.6 using modern kernel features
+
+[T] Dhcpclient is an RFC 2131 compatible DHCP client for Linux 2. 6. It
+[T] uses netlink for interface configuration, acts on link state messages,
+[T] and is highly customizable by calling a script on every state change to
+[T] allow updating resolv. Conf. It is small, and compiles with uclibc in
+[T] addition to glibc.
+
+[U] https://www.flamewarmaster.de/software/dhcpclient/
+
+[A] Stefan Rompf <sux@loplof.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 20071104
+
+[D] 2a155cea629ce7336505a43ce5b993e7dd4470b14bccd9aa7287b85b dhcpclient-snap_20071104.tar.bz2 http://www.flamewarmaster.de/software/dhcpclient/

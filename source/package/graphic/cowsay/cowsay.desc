@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cowsay/cowsay.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A program to make speaking and thinking cow quotes
+
+[T] Cowsay is the easy way to add speaking and thinking cows (and a few other
+[T] creatures) to anything. Any message you like, even in large figlet letters,
+[T] can be rattled off by these ASCII critters. Cowsay comes with over 40
+[T] creatures that can be bent to your sick and twisted will. New "cows" can be
+[T] easily bred by those versed in the appropriate dark arts.
+
+[U] https://cowsay.diamonds/
+
+[A] Tony Monroe <tone@nog.net>
+[M] Miguel Bolanos <miguel@geekpreview.org>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 3.8.4
+
+[D] 41bf1d773f092f83ef8b7ff05ef39a316bde1e2318ebb4980f59a56a cowsay-3.8.4.tar.gz https://github.com/cowsay-org/cowsay/archive/refs/tags/v3.8.4/

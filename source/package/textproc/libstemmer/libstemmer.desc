@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libstemmer/libstemmer.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A small string processing language for creating stemming algorithms
+
+[T] Snowball is a small string processing language for creating stemming
+[T] algorithms for use in Information Retrieval:
+
+[U] https://snowballstem.org/
+
+[A] Dr Martin Porter
+[A] Richard Boulton
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[L] BSD
+[V] 3.0.1
+[P] X ?1---5---9 102.400
+
+[D] fe1a54ea36e6de06c933391252eb448f6c2b3e54e4a16d4fee17de51 libstemmer_c-3.0.1.tar.gz https://snowballstem.org/dist/
+
+makeinstopt=
+hook_add postmake 5 "install include/libstemmer.h $root$includedir/"
+hook_add postmake 5 "install libstemmer.a $root$libdir/"

@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/delta/delta.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A syntax-highlighting pager for git, diff, and grep output
+
+[T] A syntax-highlighting pager for git, diff, and grep output.
+
+[U] https://github.com/dandavison/delta
+
+[A] Dan Davison <dandavison7@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/development
+[F] CROSS NO-LTO.gcc
+
+[L] MIT
+[V] 0.19.2
+
+[D] 4caa9f584b5d9e0d8507383241580a3e6c9390880a3f4203506447a9 delta-0.19.2.tar.gz https://github.com/dandavison/delta/archive/0.19.2/

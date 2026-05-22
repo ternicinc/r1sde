@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/mutt/include_mapping.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+--- mutt-1.4.2.1/keymap.h.orig	2005-09-07 16:07:18.000000000 -0700
++++ mutt-1.4.2.1/keymap.h	2005-09-07 16:08:20.000000000 -0700
+@@ -19,6 +19,8 @@
+ #ifndef KEYMAP_H
+ #define KEYMAP_H
+ 
++#include "mapping.h"
++
+ /* maximal length of a key binding sequence used for buffer in km_bindkey */
+ #define MAX_SEQ 8
+ 

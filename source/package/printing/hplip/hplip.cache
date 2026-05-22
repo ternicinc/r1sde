@@ -1,0 +1,26 @@
+[TIMESTAMP] 1750452231 Fri Jun 20 16:43:51 2025
+[BUILDTIME] 30 (9)
+[SIZE] 36.73 MB, 2049 files
+
+[DEP] avahi
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] cups
+[DEP] dbus
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libjpeg
+[DEP] libusb
+[DEP] linux-header
+[DEP] make
+[OPT] net-snmp
+[DEP] openssl
+[DEP] python
+[DEP] sane-backends
+[DEP] sed
+[DEP] tar
+[DEP] zlib

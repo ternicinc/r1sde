@@ -1,0 +1,27 @@
+[TIMESTAMP] 1737979609 Mon Jan 27 13:06:49 2025
+[BUILDTIME] 160 (9)
+[SIZE] 8.34 MB, 39 files
+
+[DEP] autoconf
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libmaxminddb
+[DEP] libtool
+[DEP] libxml
+[DEP] linux-header
+[DEP] lua
+[DEP] m4
+[DEP] make
+[DEP] pcre
+[DEP] perl
+[DEP] sed
+[DEP] tar
+[DEP] yajl

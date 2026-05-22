@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/folks/folks.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome folks package
+
+[T] Core Gnome folks package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 0.15.12
+
+[CV-URL] https://download.gnome.org/sources/folks/cache.json
+[D] 4e8e37bc7d5fc3214605400536db9b970f0d21bfcd770fb0d91e8f64 folks-0.15.12.tar.xz https://download.gnome.org/sources/folks/0.15/
+
+. $base/package/*/*/gnome-conf.in

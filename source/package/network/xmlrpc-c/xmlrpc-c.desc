@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xmlrpc-c/xmlrpc-c.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An RPC library for C and C++ based on XML and HTTP
+
+[T] Xmlrpc-c includes an implementation of XML-RPC for C and C++. XML-RPC
+[T] is a lightweight communications protocol based on XML and HTTP. It
+[T] can be used to build scriptable websites, query remote servers,
+[T] or communicate between organizations. This package also includes
+[T] example programs (based on O'ReillyNet's Meerkat), which can be
+[T] used to perform regex searches of recent headlines and list recent
+[T] software releases for Linux.
+
+[U] https://xmlrpc-c.sourceforge.net/
+
+[A] Eric Kidd <eric.kidd@pobox.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] FPIC CROSS NOPARALLEL
+
+[L] BSD
+[V] 1.64.03
+
+[D] 67d68ca8000128523d12fc3afb9e43222c27610ba2c933181b0cc938 xmlrpc-1.64.03.tgz https://prdownloads.sourceforge.net/sourceforge/xmlrpc-c/
+
+var_append CC_WRAPPER_APPEND ' ' -std=gnu17

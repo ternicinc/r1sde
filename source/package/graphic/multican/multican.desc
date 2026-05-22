@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/multican/multican.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Canon EOS class camera remote control utility
+
+[T] Multican is a Canon EOS class camera remote control utility. It is able
+[T] to remote control 300D, 350D, 30D, 20D, and 5D cameras and can be scripted
+[T] to control up to six attached cameras.
+
+[U] https://multican.sourceforge.net/
+
+[A] Jindrich Novy <jnovy@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+[F] CROSS FPIC
+
+[L] GPL
+[V] 0.0.5
+
+[D] 1ce172f12d0b8bbcf1bd7a62c07042ccaf5db95e64b40d58f9b71b7c multican-0.0.5.tar.gz https://prdownloads.sourceforge.net/sourceforge/multican/
+
+var_append makeinstopt ' ' BINDIR=$bindir

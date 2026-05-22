@@ -1,0 +1,27 @@
+[TIMESTAMP] 1759873776 Tue Oct  7 23:49:36 2025
+[BUILDTIME] 40 (9)
+[SIZE] 5.94 MB, 103 files
+
+[OPT] asciidoctor
+[DEP] bash
+[DEP] binutils
+[DEP] bluez
+[DEP] coreutils
+[DEP] dbus
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] libcap
+[DEP] libusb
+[DEP] linux-header
+[DEP] matplotlib
+[DEP] ncurses
+[DEP] openssl
+[DEP] pkgconfig
+[OPT] python
+[DEP] scons
+[DEP] sed
+[DEP] swig
+[DEP] sysfiles
+[DEP] tar
+[DEP] xz

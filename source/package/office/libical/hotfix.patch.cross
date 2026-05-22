@@ -1,0 +1,19 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/libical/hotfix.patch.cross
+# Copyright (C) 2021 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- libical-3.0.10/src/libical-glib/CMakeLists.txt.vanilla	2021-07-20 18:08:31.970417802 +0200
++++ libical-3.0.10/src/libical-glib/CMakeLists.txt	2021-07-20 18:08:51.356418803 +0200
+@@ -78,8 +78,8 @@
+     CACHE FILEPATH
+     "Path to exported ical-glib-src-generator target from native build"
+   )
+-  include(${IMPORT_ICAL_GLIB_SRC_GENERATOR})
+-  set(ical-glib-src-generator_EXE native-ical-glib-src-generator)
++  #include(${IMPORT_ICAL_GLIB_SRC_GENERATOR})
++  #set(ical-glib-src-generator_EXE native-ical-glib-src-generator)
+ else()
+   set(ical-glib-src-generator_EXE ical-glib-src-generator)
+ endif()

@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/normalmap/normalmap.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GIMP normalmap plugin
+
+[T] This plugin allows you to convert images into RGB normal maps for use in
+[T] per-pixel lighting applications.
+
+[U] http://nifelheim.dyndns.org/~cocidius/normalmap/
+
+[A] Shawn Kirst <skirst@fuse.net>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/graphic
+
+[L] GPL
+[V] 1.2.2
+
+[D] eb461eb2214d9027ec8009d7acc11d8d936121eec70cd42a93076322 gimp-normalmap-1.2.2.tar.bz2 http://nifelheim.dyndns.org/~cocidius/files/

@@ -1,0 +1,22 @@
+[TIMESTAMP] 1737662213 Thu Jan 23 20:56:53 2025
+[BUILDTIME] 4 (9)
+[SIZE] 0.26 MB, 133 files
+
+[OPT] apache
+[DEP] bash
+[DEP] bdb
+[DEP] coreutils
+[DEP] diffutils
+[DEP] fastcgi
+[DEP] findutils
+[DEP] gawk
+[OPT] gettext
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[OPT] perl
+[OPT] python
+[DEP] sed
+[DEP] tar
+[OPT] zlib

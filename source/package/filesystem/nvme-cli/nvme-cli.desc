@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/nvme-cli/nvme-cli.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] NVM-Express user space tooling for Linux
+
+[T] NVM-Express user space tooling for Linux.
+
+[U] https://github.com/linux-nvme/nvme-cli
+
+[A] Nvme-cli Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+[R] - avr32 openrisc
+
+[V] 2.16
+[L] GPL
+
+[CV-FLAGS] NO-MAJOR
+[D] cf20000bca7375a409dbd8a96b2b710fb39e9469b73eca6f84ed558b nvme-cli-2.16.tar.gz https://github.com/linux-nvme/nvme-cli/archive/v2.16/
+
+rungpepinstall=0
+#var_append mesonopt ' ' -Dlibnvme=disabled

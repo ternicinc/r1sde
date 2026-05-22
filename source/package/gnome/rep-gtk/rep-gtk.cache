@@ -1,0 +1,34 @@
+
+[TIMESTAMP] 1715703794 Tue May 14 18:23:14 2024
+[BUILDTIME] 6 (9)
+[SIZE] 7.39 MB, 13 files
+
+[DEP] 00-dirtree
+[DEP] at-spi2-core
+[DEP] autoconf
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[OPT] glib
+[DEP] grep
+[DEP] gtk+2
+[DEP] harfbuzz
+[DEP] librep
+[DEP] libtool
+[DEP] libx11
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] pangomm
+[DEP] perl
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto
+[DEP] xz

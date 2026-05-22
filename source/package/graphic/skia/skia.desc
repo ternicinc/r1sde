@@ -1,0 +1,71 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/skia/skia.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] 2D graphics library whit common APIs for variety of platforms
+
+[T] Skia is an open source 2D graphics library which provides common APIs that
+[T] work across a variety of hardware and software platforms. It serves as the
+[T] graphics engine for Google Chrome and ChromeOS, Android, Flutter, and many
+[T] other products.
+
+[U] https://skia.org/
+
+[A] Google
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+[F] CROSS
+
+[E] opt libwebp
+
+[L] OpenSource
+[V] 148
+
+[D] f070aa91688be8f0099857cb457c50dbe752bb7f010dcadb52a1b7c7 skia.m148.tar.gz git+https://skia.googlesource.com/skia.git chrome/m148
+
+runcargo=0 rungo=0 runmake=0
+makeinstopt=
+
+var_append GCC_WRAPPER_APPEND ' ' "-I$root$(pkgprefix includedir libx11) -L$root$(pkgprefix libdir libx11)"
+[ "$arch" = arm64 ] && var_remove GCC_WRAPPER_REMOVE ' ' "-march*"
+
+retry_sync_deps() {
+	python tools/git-sync-deps
+	#build still fails but all the deps are downloaded idk how to unset the error
+}
+
+skia_prepare(){
+	trap retry_sync_deps ERR
+	python tools/git-sync-deps
+	trap - ERR
+	gn gen out/Shared --args='is_debug=false is_component_build=true skia_use_system_expat=true skia_use_system_freetype2=true skia_use_system_harfbuzz=true skia_use_system_icu=true skia_use_system_libjpeg_turbo=true skia_use_system_libpng=true skia_use_system_libwebp=true skia_use_system_zlib=true'
+}
+hook_add premake 3 skia_prepare
+
+hook_add inmake 5 "ninja -C out/Shared"
+
+hook_add postmake 5 "sed -i 's/include.//g2' include/*/{,*}/{,*}/*.h"
+hook_add postmake 5 "sed -i 's/modules.//g1' include/*/{,*}/*.h"
+hook_add postmake 5 "sed -i 's/src.//g1' modules/skcms/*.h"
+hook_add postmake 6 "install out/Shared/*.so $libdir; install out/Shared/*.a $libdir; mkdir -p $root$includedir/skia/skcms; cp -rv include/* $root$includedir/skia/"
+
+create_skia_pc_file() {
+    cat <<-EOT > $root$libdir/pkgconfig/skia.pc
+	prefix=/$prefix
+	exec_prefix=\${prefix}
+	libdir=\${prefix}/${libdir##*/}
+	includedir=\${prefix}/include/skia
+
+	Name: skia
+	Description: Skia Graphics Library
+	Version: $desc_V
+	Libs: -L\${libdir} -lskia
+	Cflags: -I\${includedir}
+EOT
+}
+hook_add postmake 7 create_skia_pc_file
+
+hook_add postinstall 8 "cp -rvf $builddir/skia.git/modules/skcms/{,src}/*.h $root$includedir/skia/skcms"

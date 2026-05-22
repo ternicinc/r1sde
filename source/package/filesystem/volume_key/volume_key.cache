@@ -1,0 +1,30 @@
+[TIMESTAMP] 1739215533 Mon Feb 10 20:25:33 2025
+[BUILDTIME] 12 (5)
+[SIZE] 0.81 MB, 52 files
+
+[DEP] autoconf
+[DEP] automake
+[DEP] bash
+[DEP] coreutils
+[DEP] cryptsetup
+[DEP] diffutils
+[DEP] gawk
+[DEP] gettext
+[DEP] glib
+[DEP] gpgme
+[DEP] grep
+[DEP] gzip
+[DEP] libgpg-error
+[DEP] libtool
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] nspr
+[DEP] nss
+[DEP] perl
+[DEP] python
+[DEP] sed
+[DEP] swig
+[DEP] tar
+[DEP] util-linux
+[DEP] xz

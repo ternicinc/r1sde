@@ -1,0 +1,23 @@
+[TIMESTAMP] 1770546910 Sun Feb  8 11:35:10 2026
+[BUILDTIME] 55 (9)
+[SIZE] 0.54 MB, 57 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] pulseaudio
+[DEP] qt6base
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] vulkan-headers
+[DEP] xz

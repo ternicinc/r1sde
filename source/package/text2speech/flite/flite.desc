@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/flite/flite.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A small run-time speech synthesis engine
+
+[T] Flite (festival-lite) is a small, fast run-time synthesis engine developed
+[T] at CMU and primarily designed for small embedded machines and/or large
+[T] servers. Flite is designed as an alternative synthesis engine to Festival
+[T] for voices built using the FestVox suite of voice building tools.
+
+[U] http://cmuflite.org
+
+[A] Alan W Black <awb@cs.cmu.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS NOPARALLEL
+
+[L] OpenSource
+[V] 2.2
+
+[D] 163a534a9a4d9e74008a5759555ce54f4e2c6b33fae9a3ac5bc6ddde flite-2.2-release.tar.gz https://github.com/festvox/flite/archive/v2.2/

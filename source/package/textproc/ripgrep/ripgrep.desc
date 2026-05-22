@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ripgrep/ripgrep.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A fast line-oriented search tool
+
+[T] Ripgrep recursively searches directories for a regex pattern while
+[T] respecting your gitignore.
+
+[U] https://github.com/BurntSushi/ripgrep
+
+[A] Andrew Gallant <jamslam@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/development
+[F] CROSS
+
+[L] MIT
+[V] 15.1.0
+
+[D] d2dbbe009f896c8412f7d3fdf5baa4b0b1ac86cfcad3f4d468afa09e ripgrep-15.1.0.tar.gz https://github.com/BurntSushi/ripgrep/archive/refs/tags/15.1.0/

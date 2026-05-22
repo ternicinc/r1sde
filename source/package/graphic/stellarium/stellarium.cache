@@ -1,0 +1,39 @@
+[TIMESTAMP] 1750845660 Wed Jun 25 12:01:00 2025
+[BUILDTIME] 1100 (5)
+[SIZE] 510.31 MB, 4029 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[OPT] doxygen
+[DEP] eigen
+[DEP] findutils
+[OPT] flac
+[DEP] gawk
+[DEP] gettext
+[DEP] glm
+[DEP] gpsd
+[DEP] grep
+[DEP] gzip
+[DEP] libglvnd
+[DEP] linux-header
+[DEP] make
+[DEP] md4c
+[DEP] nlopt
+[DEP] openssl
+[DEP] perl
+[DEP] pkgconfig
+[DEP] python
+[DEP] qt6base
+[DEP] qt6charts
+[DEP] qt6declarative
+[DEP] qt6multimedia
+[DEP] qt6positioning
+[DEP] qt6serialport
+[DEP] qt6tools
+[DEP] sed
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] zlib

@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/konversation/konversation.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An IRC client for KDE
+
+[T] Konversation is an IRC client for KDE. It is easy to use and has a nice
+[T] interface.
+
+[U] https://konversation.kde.org/
+
+[A] Dario Abatianni <eisfuchs@tigress.com>
+[M] Nagy Karoly Gabriel <karasz@x5.ro>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[E] opt kdoctools docbook-xml docbook-xsl
+
+[L] GPL
+[V] 26.04.1
+
+[CV-URL] http://konversation.kde.org/
+[CV-GROUP] kde-gear
+[D] c80b5edeb026ed063ccb1203cbe1a518353aace5008c8ab1bc9a6b12 konversation-26.04.1.tar.xz https://download.kde.org/stable/release-service/26.04.1/src/
+
+. $base/package/*/*/kde-conf.in

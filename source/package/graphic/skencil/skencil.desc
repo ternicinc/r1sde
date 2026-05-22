@@ -1,0 +1,42 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/skencil/skencil.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A vector drawing program implemented in Python
+
+[T] Sketch is a vector drawing program similar to CorelDraw or Adobe
+[T] Illustrator. It is written almost completely in Python with
+[T] some modules written in C, combining the flexibility and power
+[T] of Python with the speed of C. Advanced features include
+[T] gradient fills, clip masks, text along a path, blend groups,
+[T] convert text to curves, and more.
+
+[U] https://www.nongnu.org/skencil/
+
+[A] User Mailing List: http://lists.sourceforge.net/mailman/listinfo/sketch-list
+[A] Bugs and Patches: https://savannah.nongnu.org/projects/skencil/
+
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 0.6.17
+
+[D] a2dd5f03e5764969d3d303ebc4ea4033ef6bdfc64f36655ac9051263 skencil-0.6.17.tar.gz https://prdownloads.sourceforge.net/sourceforge/sketch/
+
+skencil_main() {
+	pyver=`python -c "import sys; print sys.version[:3]"`
+	pyinstalldir=`python -c "import sys; print sys.prefix"`
+
+	var_append pyconfopt ' ' --prefix=$root/$prefix
+	var_append pyconfopt ' ' --imaging-include=${pyinstalldir}/include/python${pyver}/
+
+	eval python setup.py configure $pyconfopt
+	eval python setup.py build $pyconfopt
+	eval python setup.py install $pyconfopt
+}
+runmake=0
+hook_add postmake 5 skencil_main

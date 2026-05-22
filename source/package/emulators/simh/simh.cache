@@ -1,0 +1,17 @@
+[TIMESTAMP] 1745097861 Sat Apr 19 22:24:21 2025
+[BUILDTIME] 35 (9)
+[SIZE] 7.00 MB, 44 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[OPT] libedit
+[OPT] libpcap
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] unzip

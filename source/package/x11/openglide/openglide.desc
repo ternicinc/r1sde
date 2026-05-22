@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openglide/openglide.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Glide 2 to OpenGL wrapper
+
+[T] Emulates a Voodoo board so you can run old Glide games by translating
+[T] glide calls to OpenGL.
+
+[U] https://github.com/voyageur/openglide/
+
+[A] Bernard Cafarelli <bernard.cafarelli@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/x11
+
+[L] LGPL
+[V] 0.09rc9
+
+[D] b7534bcecab76fe273619aeaefbc76dbb0ffcde6b2546867043bfd31 openglide-0.09rc9s2.tar.gz https://github.com/alex-s168/openglide/archive/0.09rc9s2/

@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-netaddr-ip/perl-netaddr-ip.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module for managing IPv4 and IPv6 addresses and subnets
+
+[T] This module provides an object-oriented abstraction on top of IP addresses
+[T] or IP subnets, that allows for easy manipulations.
+
+[U] https://metacpan.org/pod/NetAddr::IP
+
+[A] Luis E. Muņoz <luismunoz@cpan.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 4.079
+[P] X -----5---9 200.200
+
+[D] 4526562b839e63d53d1cefbe617b80a24ffece3192f9bddfbb2e49a4 NetAddr-IP-4.079.tar.gz https://cpan.metacpan.org/authors/id/M/MI/MIKER/

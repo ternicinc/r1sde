@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/metacity/metacity.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Yet another window manager for the GNOME project
+
+[T] Sun has decided to drop Sawfish in favour of Metacity for its release
+[T] of GNOME 2.
+[T]
+[T] This decision has been based on issues such as accessibility,
+[T] maintainability of the code, documentation, multi-head support and a
+[T] general eagerness from the community to commit to Metacity.
+
+[U] http://people.redhat.com/~hp/metacity/
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/windowmanager extra/desktop/gnome
+
+[L] LGPL
+[V] 3.58.1
+
+[CV-URL] https://download.gnome.org/sources/metacity/cache.json
+[D] d3b542bb9e0a20fff12cbe5525b7b884b99e62d578d7f43e0c36270a metacity-3.58.1.tar.xz https://download.gnome.org/sources/metacity/3.58/
+
+. $base/package/*/*/gnome-conf.in
+var_append GCC_WRAPPER_INSERT ' ' "-L$root$(pkgprefix libdir libx11)"
+hook_add postinstall 3 "register_wm metacity MetaCity $bindir/metacity"

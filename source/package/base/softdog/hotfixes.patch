@@ -1,0 +1,22 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/softdog/hotfixes.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./softdog.c~	Wed Jan  6 16:14:23 1999
++++ ./softdog.c	Sat Apr 29 08:28:22 2000
+@@ -26,6 +26,12 @@
+ #include <signal.h>
+ #include <errno.h>
+ #include <getopt.h>
++
++#define _LINUX_STRING_H_
++#define __KERNEL__
++#  include <linux/kdev_t.h>
++#  include <linux/list.h>
++#undef __KERNEL__
+ #include <linux/fs.h>
+ 
+ #define VERSION "1.21"

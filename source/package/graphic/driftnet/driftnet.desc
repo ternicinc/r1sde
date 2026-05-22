@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/driftnet/driftnet.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Capture images wandering by on the net
+
+[T] Driftnet is a program which listens to network traffic and picks out
+[T] images from TCP streams it observes. Fun to run on a host which sees lots
+[T] of web traffic.
+
+[U] https://www.ex-parrot.com/~chris/driftnet/
+
+[A] Chris Lightfoot <chris@ex-parrot.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] GPL
+[V] 1.6.0
+
+[D] b266d3c411ff4970f47e65048e1fca5abb4509452ba36cdf35c9bdcc driftnet-1.6.0.tar.gz https://github.com/deiv/driftnet/archive/refs/tags/v1.6.0/
+
+hook_add preconf 5 'autoreconf -fi'

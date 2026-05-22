@@ -1,0 +1,28 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/linux-igd/Makefile.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- linux-igd/Makefile.vanilla	2008-07-22 05:15:57.000000000 +0100
++++ linux-igd/Makefile	2008-07-22 05:18:11.000000000 +0100
+@@ -33,11 +33,11 @@
+ 	rm -f *.o upnpd
+ 
+ install: upnpd
+-	install -d /etc/linuxigd
+-	install etc/gatedesc.xml /etc/linuxigd
+-	install etc/gateconnSCPD.xml  /etc/linuxigd
+-	install etc/gateicfgSCPD.xml /etc/linuxigd
+-	install etc/dummy.xml /etc/linuxigd
+-	install upnpd $(PREFIX)/sbin
+-	install upnpd.8 $(PREFIX)/share/man/man8
+-	if [ ! -f /etc/upnpd.conf ]; then install etc/upnpd.conf /etc; fi
++	install -d $(DESTDIR)/etc/linuxigd
++	install etc/gatedesc.xml $(DESTDIR)/etc/linuxigd
++	install etc/gateconnSCPD.xml  $(DESTDIR)/etc/linuxigd
++	install etc/gateicfgSCPD.xml $(DESTDIR)/etc/linuxigd
++	install etc/dummy.xml $(DESTDIR)/etc/linuxigd
++	install upnpd $(DESTDIR)$(PREFIX)/sbin
++	install upnpd.8 $(DESTDIR)$(PREFIX)/share/man/man8
++	if [ ! -f $(DESTDIR)/etc/upnpd.conf ]; then install etc/upnpd.conf $(DESTDIR)/etc; fi

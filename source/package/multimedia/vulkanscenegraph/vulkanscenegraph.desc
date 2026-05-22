@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/vulkanscenegraph/vulkanscenegraph.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Vulkan & C++17 based Scene Graph Project
+
+[T] VulkanSceneGraph (VSG), is a modern, cross platform, high performance scene
+[T] graph library built upon Vulkan graphics/compute API.
+
+[U] https://www.vulkanscenegraph.org
+
+[A] Robert Osfield
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[E] opt doxygen
+[E] opt spirv-tools
+
+[L] MIT
+[V] 1.1.15
+
+[D] 2677b50142c73adb02fe74b923c5279d1e7cb7e1165a7f33667d5eb0 vulkanscenegraph-1.1.15.tar.gz https://github.com/vsg-dev/VulkanSceneGraph/archive/refs/tags/v1.1.15/

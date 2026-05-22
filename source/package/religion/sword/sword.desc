@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sword/sword.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Research and manipulation API for Biblical texts
+
+[T] The SWORD Engine is a software framework that allows research
+[T] manipulation of Biblical texts. There are a number of projects that
+[T] use The SWORD Engine, including Bibletime, GnomeSword, and The SWORD
+[T] Project for Windows. Many of these projects already include The SWORD
+[T] Engine in their distribution, so only download if you were instructed
+[T] to do so, or are a software developer wishing to develop Bible
+[T] software.
+
+[U] https://www.crosswire.org/sword/index.jsp
+
+[A] The SWORD team <sword-feedback@crosswire.org>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/religion
+
+[L] GPL
+[V] 1.9.0
+[P] X -----5---9 221.400
+
+[D] 0b84f631fc45ffc5588ea379edc17f8e78cb8799d11e7e9e52c22147 sword-1.9.0.tar.gz http://www.crosswire.org/ftpmirror/pub/sword/source/v1.9/
+
+var_append confopt ' ' --without-lucene
+hook_add postmake 3 "make install_config"

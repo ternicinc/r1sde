@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/felimagenoise/felimagenoise.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An advanced noise generation GIMP plugin
+
+[T] FelimageNoise is a GIMP plugin, originally developed, to generate noise
+[T] patterns, but with feature sizes larger than a single pixel. It can generate
+[T] tileable textures, textures for use in spherical mapping. It can use
+[T] foreground/background colors, gradients and independent RGBA channels or
+[T] warp an image. It implemens several noise functions, such as FBM (Fractal
+[T] Brownian Motion) and Multifractal textures, with complete control, to allow
+[T] for animation of noise (useful to generate animation frames), as well as
+[T] complete presets management.
+
+[U] https://fimg-gmplugins.sourceforge.net/
+
+[A] Guillermo Romero Franco <drirr_gato@users.sourceforge.net>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/graphic
+
+[L] GPL
+[V] 0.1.1
+
+[D] 232d8775f7f08bd864425aa67abc7b6da82e7ce889579d11a652d044 felimage-noise-0.1.1.tar.gz https://prdownloads.sourceforge.net/sourceforge/fimg-gmplugins/
+
+. $base/package/*/*/gnome-conf.in

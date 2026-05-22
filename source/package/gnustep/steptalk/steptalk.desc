@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/steptalk/steptalk.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Objective-C / GNUstep scripting support
+
+[T] Objective-C / GNUstep scripting support.
+
+[U] https://steptalk.blogspot.com/
+
+[A] Stefan Urbanek <urbanek@host.sk>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] LGPL
+[V] 0.10.0
+
+[D] 0d336a3fc149cb02349e63d9b00a3ff4ea32be22c3341f6ee5c8bf92 StepTalk-0.10.0.tar.gz https://ftp.gnustep.org/pub/gnustep/libs/
+
+. $base/package/*/*/gnustep-conf.in

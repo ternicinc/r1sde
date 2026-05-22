@@ -1,0 +1,51 @@
+[TIMESTAMP] 1759956325 Wed Oct  8 22:45:25 2025
+[BUILDTIME] 40 (9)
+[SIZE] 10.55 MB, 188 files
+
+[DEP] appstream
+[DEP] bash
+[DEP] binutils
+[DEP] bison
+[OPT] bubblewrap
+[DEP] cmake
+[DEP] coreutils
+[DEP] curl
+[DEP] dconf
+[DEP] diffutils
+[DEP] docbook-xml
+[DEP] docbook-xsl
+[DEP] fuse
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[DEP] glib
+[DEP] gobject-introspection
+[DEP] gpgme
+[DEP] grep
+[DEP] gtk-doc
+[DEP] gzip
+[DEP] json-glib
+[DEP] libarchive
+[DEP] libcap
+[DEP] libgpg-error
+[DEP] libostree
+[DEP] libseccomp
+[DEP] libxau
+[DEP] libxml
+[DEP] libxslt
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[OPT] polkit
+[DEP] pyparsing
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar
+[DEP] util-linux
+[DEP] wayland
+[DEP] wayland-protocols
+[DEP] xmlto
+[DEP] xorgproto
+[DEP] zstd

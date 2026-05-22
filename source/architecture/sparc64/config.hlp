@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/sparc64/config.hlp
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+SDECFG_SPARC64_OPT
+  Please select the CPU you want to optimize for.
+
+SDECFG_SPARC64_32BIT
+  Despie the instability of the pure 64bit user-space it also has a
+  performance hit, since the poor old Ultra SPARC CPUs have to suffle
+  even more data around ... This option - enabled by default - will
+  instruct the build system to default to 32bit for the user-space
+  applications. This is also the only way to run X on SPARC/Linux
+  right now. If unsure say yes.

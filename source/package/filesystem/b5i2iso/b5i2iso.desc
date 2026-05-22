@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/b5i2iso/b5i2iso.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Blindwrite to ISO converter
+
+[T] The command line program b5i2iso converts BlindWrite BIN image files to
+[T] standard ISO image files.
+
+[U] http://freshmeat.net/projects/b5i2iso/
+[U] http://b5i2iso.berlios.de/
+
+[A] Salvatore Santagati <salvatore.santagati@gmail.com>
+[M] Nagy Karoly Gabriel <karasz@x5.ro>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 0.2
+
+[D] 80d71ab19033a57fb19dee0b51bbed43bf9ceab016c2511658f88c47 b5i2iso-0.2-src.tar.bz2 https://download.sourceforge.net/project/b5i2iso.berlios/
+
+makeinstopt="all"
+hook_add postmake 4 'cp -v b5i2iso $root$bindir'

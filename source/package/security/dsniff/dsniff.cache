@@ -1,0 +1,21 @@
+
+[TIMESTAMP] 1171300978 Mon Feb 12 17:22:58 2007
+[BUILDTIME] 5 (5) ERROR
+[SIZE] 0.02 MB, 6 files
+
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] grep
+[DEP] libice
+[DEP] libnet
+[DEP] libx11
+[DEP] libxau
+[DEP] libxcb
+[DEP] libxdmcp
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar

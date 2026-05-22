@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/solid/solid.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Solid is a KDE base package
+
+[T] Solid is part of the KDE base packages. Solid is a device integration
+[T] framework. It provides a way of querying and interacting with hardware
+[T] independently of the underlying operating system.
+
+[U] https://invent.kde.org/frameworks/solid
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 6.26.0
+[P] X ?----5---9 162.800
+
+[CV-GROUP] kde-frameworks
+[D] 08abf93ca85a6503b265689b3459a73af50e77fb4e9e440ca17e5d29 solid-6.26.0.tar.xz https://download.kde.org/stable/frameworks/6.26/
+
+. $base/package/*/*/kde-conf.in

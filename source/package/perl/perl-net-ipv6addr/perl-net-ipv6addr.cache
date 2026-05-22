@@ -1,0 +1,15 @@
+[TIMESTAMP] 1739187668 Mon Feb 10 12:41:08 2025
+[BUILDTIME] 1 (5)
+[SIZE] 0.04 MB, 9 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] make
+[DEP] perl
+[DEP] perl-net-ipv4addr
+[DEP] sed
+[DEP] tar

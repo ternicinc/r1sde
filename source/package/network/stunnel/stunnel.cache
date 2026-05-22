@@ -1,0 +1,21 @@
+[TIMESTAMP] 1775818246 Fri Apr 10 12:50:46 2026
+[BUILDTIME] 12 (9)
+[SIZE] 0.72 MB, 41 files
+
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] tcp_wrappers
+[DEP] util-linux

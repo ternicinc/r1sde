@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libuninum/libuninum.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library for converting strings to numbers
+
+[T] Libuninum is a library for converting Unicode strings to numbers. Internal
+[T] computation is done using arbitrary precision arithmetic, so there is
+[T] no limit on the size of the integer that can be converted. The value is
+[T] returned as an ASCII decimal string, a GNU MP object, or an unsigned
+[T] long integer. Auto-detection of the number system is provided. The
+[T] number systems supported include Arabic, Armenian, Balinese, Bengali,
+[T] Burmese, Chinese, Cyrillic, Devanagari, Egyptian, Ethiopic, Glagolitic,
+[T] Greek, Gujarati, Gurmukhi, Hebrew, Kannada, Khmer, Klingon, Lao, Limbu,
+[T] Malayalam, Mongolian, New Tai Lue, Nko, Old Italic, Old Persian, Oriya,
+[T] Osmanya, Perso-Arabic, Phoenician, Roman Numerals, Tamil, Telugu, Tengwar,
+[T] Thai, and Tibetan.
+
+[U] https://billposer.org/Software/libuninum.html
+
+[A] Bill Poser <billposer@alum.mit.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[L] LGPL
+[V] 2.7
+[P] X -----5---9 201.000
+
+[D] 5882073fdcd66998a849f358dfa46d57ccbd5401772cbe3d760544ba libuninum-2.7.tar.bz2 http://billposer.org/Software/Downloads/
+
+atstage native || hook_add preconf 5 "echo 'ac_cv_func_malloc_0_nonnull=yes' >> config.cache"

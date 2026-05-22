@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/makebootfat/makebootfat.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Creates bootable FAT filesystem and populates it with files and boot tools
+
+[T] This utility creates a bootable FAT filesystem and populates it with files
+[T] and boot tools. It is mainly designed to create bootable USB and Fixed
+[T] disk for the AdvanceCD project.
+
+[U] https://advancemame.sourceforge.net/doc-makebootfat.html
+
+[A] Andrea Mazzoleni
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system extra/filesystem
+[F] CROSS
+
+[L] GPL
+[V] 1.6
+
+[D] c0eb1e91beb32cd793b16fa91c297e8e514d9bd0de5c351cef9e565f makebootfat-1.6.tar.gz https://github.com/amadvance/makebootfat/releases/download/v1.6/

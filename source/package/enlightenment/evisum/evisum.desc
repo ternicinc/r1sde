@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/evisum/evisum.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An E17 system monitor
+
+[T] Evisum is a system monitor using EFL. It's pretty and pays homage to FOSS
+[T] applications from the 90s. Support for processes, process, CPU, memory,
+[T] sensors and networking.
+
+[U] https://www.enlightenment.org
+
+[A] Alastair Roy Poole <netstar@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/enlightenment
+[C] extra/tool
+
+[L] OpenSource
+[V] 2.0.9
+
+[D] e3a8d5a1c818b0757c367aa09e57c4bafe81e371e29dc184762b0d4b evisum-2.0.9.tar.xz http://download.enlightenment.org/rel/apps/evisum/
+
+. $base/package/*/*/e17-conf.in

@@ -1,0 +1,24 @@
+[TIMESTAMP] 1769368646 Sun Jan 25 20:17:26 2026
+[BUILDTIME] 12 (9)
+[SIZE] 0.86 MB, 167 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gettext
+[DEP] glib
+[DEP] gobject-introspection
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[OPT] mate-desktop
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar
+[DEP] util-linux

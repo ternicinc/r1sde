@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dvd+rwtools/dvd+rwtools.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] DVD+RW/+R/-R[W] utility for Linux
+
+[T] This package contains GPL'ed utilities for formating, blanking and creating
+[T] dvd media.
+
+[U] https://www.linuxfromscratch.org/blfs/view/svn/multimedia/dvd-rw-tools.html
+
+[A] Andy Polyakov <appro@fy.chalmers.se>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 7.1
+
+[D] 3ed23be5ebb64b368d173f3476b1a1a03d8d66507b44032ed7bd8f27 dvd+rw-tools-7.1.tar.gz https://ftp2.osuosl.org/pub/blfs/conglomeration/dvd+rw-tools/
+
+# no DESTDIR
+var_append makeinstopt ' ' prefix=$root/$prefix

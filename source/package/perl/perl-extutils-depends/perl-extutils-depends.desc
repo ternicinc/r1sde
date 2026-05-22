@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-extutils-depends/perl-extutils-depends.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Easily build XS extensions that depend on XS extensions
+
+[T] This module tries to make it easy to build Perl extensions that use
+[T] functions and typemaps provided by other perl extensions. This means
+[T] that a perl extension is treated like a shared library that provides
+[T] also a C and an XS interface besides the perl one.
+
+[A] Paolo Molaro <lupus at debian dot org>
+[A] muppet <scott at asofyet dot org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 0.8002
+[P] X -----5---9 113.300
+
+[D] d59c4172aad800ac71a49fc2414f7576b1380dda25dd0ea9264ba08f ExtUtils-Depends-0.8002.tar.gz https://cpan.metacpan.org/authors/id/E/ET/ETJ/

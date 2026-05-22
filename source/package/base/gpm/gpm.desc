@@ -1,0 +1,50 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gpm/gpm.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] General Purpose Mouse Daemon
+
+[T] The gpm (general purpose mouse) daemon tries to be a useful mouse
+[T] server for applications running on the Linux console. Its roots are
+[T] in the "selection" package, by Andrew Haylett, and the original code
+[T] comes from selection itself. This package is intended as a replacement
+[T] for "selection", to provide additional facilities. From 0.18 onward
+[T] gpm supports xterm as well, so you can run mouse-sensitive
+[T] applications under X, and you can easily write curses applications
+[T] which support the mouse on both the Linux console and xterm. The xterm
+[T] code is portable to any U*x flavour (look at sample/README).
+
+[U] https://www.nico.schottelius.org/software/gpm/
+
+[A] Alessandro Rubini <rubini@linux.it>
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS FPIC FCOMMON
+[C] base/system
+
+[L] GPL
+[V] 1.20.7
+[P] X -----5---9 127.300
+
+[CV-FLAGS] ODD-UNSTABLE
+[D] 280144e3424140eaada081b56614b6b54b452cd9afea068e8f114498 gpm-1.20.7.tar.lzma https://www.nico.schottelius.org/software/gpm/archives/
+
+autogen=1
+
+export ac_cv_path_emacs=no
+
+var_append makeinstopt ' ' ROOT=$root
+
+gpm_pm() {
+	cat > $root/etc/conf/gpm << EOT
+GPM_ARGS="-t ps2 -3"
+GPM_MOUSE="/dev/psaux"
+if [ -e /dev/input/mice ]; then
+	GPM_MOUSE="/dev/input/mice"
+fi
+EOT
+}
+hook_add postmake 3 gpm_pm

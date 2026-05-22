@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/firacode-ttf-fonts/firacode-ttf-fonts.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Free monospaced font with programming ligatures
+
+[T] Fira Code is a free monospaced font containing ligatures for common
+[T] programming multi-character combinations. This is just a font rendering
+[T] feature: underlying code remains ASCII-compatible. This helps to read
+[T] and understand code faster.
+
+[U] https://github.com/tonsky/FiraCode
+
+[A] Nikita Prokopov <niki@tonsky.me>
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/font
+[F] CROSS
+
+[L] OFL
+[V] 6.2
+
+[D] c076bbc684c8d445395b611367aca9660e70961ac554122fe95ed4de Fira_Code_v6.2.zip https://github.com/tonsky/FiraCode/releases/download/6.2/
+
+runmake=0
+var_append zipopt ' ' '-d Fira_Code_v6'
+hook_add postmake 5 'cp -vf ttf/*.ttf $root$datadir/fonts/'

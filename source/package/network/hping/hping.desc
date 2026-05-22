@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/hping/hping.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A network auditing and testing tool
+
+[T] hping2 is a command-line oriented TCP/IP packet assembler/analyzer.
+[T] The interface is inspired to the ping(8) unix command, but hping2
+[T] isn't only able to send ICMP echo requests. It supports TCP, UDP,
+[T] ICMP and RAW-IP protocols, has a traceroute mode, the ability to
+[T] send files between a covered channel, and many other features.
+
+[U] https://www.hping.org/
+
+[A] Salvatore Sanfilippo <antirez@invece.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] GPL
+[V] 2.0.0-rc3
+
+[CV-URL] http://www.hping.org/download.html
+
+[D] c3a3560610b243e1f7e66c2901f660dba2fe8bf2b23265244ab618fe hping2.0.0-rc3.tar.gz http://www.hping.org/

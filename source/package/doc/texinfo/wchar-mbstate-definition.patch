@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/texinfo/wchar-mbstate-definition.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- texinfo-4.11/gnulib/lib/wchar.in.h.orig	2007-07-08 10:14:45.000000000 +0200
++++ texinfo-4.11/gnulib/lib/wchar.in.h	2007-09-21 11:08:02.000000000 +0200
+@@ -40,6 +40,7 @@
+    Some builds of uClibc lack it.  */
+ /* The include_next requires a split double-inclusion guard.  */
+ #if @HAVE_WCHAR_H@
++# undef __need_mbstate_t
+ # @INCLUDE_NEXT@ @NEXT_WCHAR_H@
+ #endif
+ 

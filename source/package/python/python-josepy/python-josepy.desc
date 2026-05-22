@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-josepy/python-josepy.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] JOSE protocol implementation in Python
+
+[T] JOSE protocol implementation in Python using cryptography originally
+[T] developed as part of the ACME protocol implementation.
+
+[U] https://github.com/certbot/josepy/
+
+[A] Let's Encrypt Project
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] APL
+[V] 2.2.0
+[P] X -----5---9 136.705
+
+[D] a89a4afe81603647e51e302e01de2098343bfdbab068877964b7cba9 python-josepy-2.2.0.tar.gz https://github.com/certbot/josepy/archive/v2.2.0/

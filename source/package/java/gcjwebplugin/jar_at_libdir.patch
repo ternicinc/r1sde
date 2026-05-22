@@ -1,0 +1,36 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/gcjwebplugin/jar_at_libdir.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+--- ./Makefile.in.orig	2005-11-29 17:04:18.000000000 -0300
++++ ./Makefile.in	2005-11-29 17:11:10.000000000 -0300
+@@ -335,7 +335,7 @@
+ @BUILD_NATIVE_VIEWER_TRUE@	src/gcjappletviewer.c
+ 
+ @BUILD_NATIVE_VIEWER_TRUE@gcjappletviewer_CFLAGS = \
+-@BUILD_NATIVE_VIEWER_TRUE@	-DGCJAPPLETVIEWER_CLASSPATH="\"$(datadir)/java/gcjappletviewer.jar\"" \
++@BUILD_NATIVE_VIEWER_TRUE@	-DGCJAPPLETVIEWER_CLASSPATH="\"$(libdir)/gcjappletviewer.jar\"" \
+ @BUILD_NATIVE_VIEWER_TRUE@	-Wall $(GLIB_CFLAGS)
+ 
+ @BUILD_NATIVE_VIEWER_TRUE@gcjappletviewer_LDFLAGS = $(GLIB_LIBS) -lgcj
+@@ -382,7 +382,7 @@
+ 	$(gcjwebplugin_built_java_source_files)
+ 
+ gcjappletviewer_jar_class_files = $(gcjappletviewer_jar_source_files:.java=.class)
+-gcjappletviewer_jardir = $(datadir)/java
++gcjappletviewer_jardir = $(libdir)
+ gcjappletviewer_jar_DATA = gcjappletviewer.jar
+ MOSTLYCLEANFILES = \
+ 	testsuite.dir/at-check-line \
+--- ./src/gcjappletviewer.in.orig	2005-11-29 17:31:39.000000000 -0300
++++ ./src/gcjappletviewer.in	2005-11-29 17:32:28.000000000 -0300
+@@ -5,7 +5,7 @@
+ my $JAVA = '@JAVA@';
+ my $MAINCLASS = 'gnu.gcjwebplugin.AppletViewer';
+ my $PREFIX = '@prefix@';
+-my $GCJAPPLETVIEWER_CLASSPATH = "$PREFIX/share/java/gcjappletviewer.jar";
++my $GCJAPPLETVIEWER_CLASSPATH = '@libdir@/gcjappletviewer.jar';
+ my $RUNTIME_ARGS = '';
+ my $VIEWER_ARGS = '';
+ my $COMMANDLINE;

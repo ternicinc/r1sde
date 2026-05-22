@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/fnott/fnott.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Notification daemon for wlroots-based compositors
+
+[T] Fnott is a keyboard driven and lightweight notification daemon for
+[T] wlroots-based Wayland compositors. It implements (parts of) the
+[T] Desktop Notifications Specification.
+
+[U] https://codeberg.org/dnkl/fnott/
+
+[A] Daniel Eklöf <daniel@ekloef.se>
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/x11
+[F] CROSS
+
+[L] MIT
+[V] 1.8.0
+
+[D] d0bed46b96331c0c7c0f4d396775a812828e7a11972574d14d7d88d2 fnott-1.8.0.tar.gz !https://codeberg.org/dnkl/fnott/archive/1.8.0.tar.gz
+
+var_append GCC_WRAPPER_INSERT ' ' "-I$root$(pkgprefix includedir pixman)"
+hook_add postmake 5 "cp $confdir/org.dnkl.fnott.service $root$datadir/dbus-1/services/"

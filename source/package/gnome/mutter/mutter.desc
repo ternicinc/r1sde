@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mutter/mutter.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome mutter package
+
+[T] Core Gnome mutter package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 50.1
+
+[CV-URL] https://download.gnome.org/sources/mutter/cache.json
+[D] 7e2ae4a3d852bbecc58344fcdf4256717428173cfdebb50e4f148b2a mutter-50.1.tar.xz https://download.gnome.org/sources/mutter/50/
+
+. $base/package/*/*/gnome-conf.in
+var_append mesonopt ' ' -Dbash_completion=false
+var_append mesonopt ' ' -Dtests=disabled

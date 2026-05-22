@@ -1,0 +1,18 @@
+
+[TIMESTAMP] 1710431294 Thu Mar 14 16:48:14 2024
+[BUILDTIME] 30 (9)
+[SIZE] 22.09 MB, 252 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] fpc
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] make
+[DEP] sed
+[DEP] tar

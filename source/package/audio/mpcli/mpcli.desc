@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mpcli/mpcli.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A command-line tool for interfacing Music Player Daemon (MPD)
+
+[T] Music Player Command is a command-line tool for interfacing Music Player
+[T] Daemon (MPD). Its features include bash tab completion and the ability to
+[T] use the output of other programs as input via piping.
+
+[U] https://www.musicpd.org/
+
+[A] Warren Dukes <shank@mercury.chem.pitt.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 0.35
+
+[CV-URL] http://www.musicpd.org/files.shtml
+[D] 0192c8eb56d76340c1eac2220e195ca43148eb9ea8fbb839d5c41ba9 mpc-0.35.tar.xz http://www.musicpd.org/download/mpc/0/
+
+var_append GCC_WRAPPER_APPEND ' ' -std=gnu99
+pkginstalled bashcompletion && hook_add postmake 3 "cp doc/mpc-bashrc $root/etc/bash_completion.d/mpc"

@@ -1,0 +1,25 @@
+
+[TIMESTAMP] 1280262384 Tue Jul 27 20:26:24 2010
+[BUILDTIME] 5 (5)
+[SIZE] 0.16 MB, 15 files
+
+[DEP] 00-dirtree
+[DEP] autoconf
+[DEP] automake
+[DEP] binutils
+[DEP] bison
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] ncurses
+[DEP] perl
+[DEP] perl-gettext
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] texinfo

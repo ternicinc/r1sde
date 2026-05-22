@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/socat/socat.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] "netcat++" (extended design, new implementation)
+
+[T] socat is a relay for bidirectional data transfer between two independent data
+[T] channels. Each of these data channels may be a file, pipe, device (serial line
+[T] etc. or a pseudo terminal), a socket (UNIX, IP4, IP6 - raw, UDP, TCP), an
+[T] SSL socket, proxy CONNECT connection, a file descriptor (stdin etc.), the GNU
+[T] line editor (readline), a program, or a combination of two of these.
+[T] These modes include generation of "listening" sockets, named pipes, and pseudo
+[T] terminals.
+
+[U] http://www.dest-unreach.org/socat/
+
+[A] Gerhard Rieger <rieger@dest-unreach.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] OpenSource
+[V] 1.8.1.1
+
+[CV-FLAGS] NO-MAJOR
+[D] 05073a1119e725b448d138e42f60fd26fadc3ec12ed8aab21ddeab1c socat-1.8.1.1.tar.bz2 http://www.dest-unreach.org/socat/download/

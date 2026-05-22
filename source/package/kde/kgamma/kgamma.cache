@@ -1,0 +1,34 @@
+[TIMESTAMP] 1739213892 Mon Feb 10 19:58:12 2025
+[BUILDTIME] 8 (5)
+[SIZE] 0.48 MB, 153 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[OPT] docbook-xml
+[OPT] docbook-xsl
+[DEP] extra-cmake-modules
+[DEP] freetype
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] kcmutils
+[DEP] kconfig
+[DEP] kcoreaddons
+[OPT] kdoctools
+[DEP] ki18n
+[DEP] libx11
+[DEP] libxml
+[DEP] libxxf86vm
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] procps
+[DEP] qt6base
+[DEP] sed
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] xorgproto
+[DEP] xz

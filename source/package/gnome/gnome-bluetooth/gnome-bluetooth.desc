@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-bluetooth/gnome-bluetooth.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] GNOME Bluetooth subsystem
+
+[T] The core of GNOME Bluetooth is two packages: gnome-bluetooth, which provides
+[T] desktop level support for Bluetooth devices, and libbtctl, which provides a
+[T] GLib style library of application support for accessing Bluetooth under Linux.
+
+[U] http://usefulinc.com/software/gnome-bluetooth
+
+[A] Edd Dumbill <edd@usefulinc.com>
+[A] Bastien Nocera <hadess@hadess.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool extra/office extra/desktop/gnome
+
+[L] GPL
+[V] 47.2
+[P] X -----5---9 156.900
+
+[CV-URL] http://ftp.gnome.org/pub/gnome/sources/gnome-bluetooth/cache.json
+[D] 60f6795017f1de8e91e4e17147b689b7b0830de836c8b0d51b19807d gnome-bluetooth-47.2.tar.xz http://ftp.gnome.org/pub/gnome/sources/gnome-bluetooth/47/
+
+. $base/package/*/*/gnome-conf.in

@@ -1,0 +1,19 @@
+[TIMESTAMP] 1737630507 Thu Jan 23 12:08:27 2025
+[BUILDTIME] 25 (9)
+[SIZE] 5.10 MB, 25 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[OPT] doxygen
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] sed
+[DEP] tar
+[DEP] yasm

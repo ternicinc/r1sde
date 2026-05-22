@@ -1,0 +1,43 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/glide3/glide3.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Glide for 3dfx hardware
+
+[T] Glide is a library for using 3dfx hardware. 
+
+[U] https://glide.sourceforge.net
+
+[A] 3dfx
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] OBJDIR
+#[R] + alpha x86 x86-64
+
+[L] Free-to-use
+[V] 3.10.00.30303 ca57c3b
+[P] X -----5---9 200.000
+
+[D] ed19cadee04f50cf09c1982f83bba36c21261a31e5158035bcf1079d glide-3.10.00.30303-ca57c3b.tar.gz https://github.com/Danaozhong/3dfx-Glide-API/archive/ca57c3b/
+
+srcdir=*/glide3x/cvg
+makeinstopt=
+hook_add postmake 5 "install *.so $root$libdir/"
+
+build_tools() {
+    (
+	mkdir -p ../glide3/src/fxgasm_tool/bin
+	cd ../glide3/src/fxgasm_tool/bin
+	cmake ..
+	cmake --build .
+
+	cd ../..
+	fxgasm_tool/bin/fxgasm -inline > fxinline.h
+	fxgasm_tool/bin/fxgasm -hex > fxgasm.h
+    )
+}
+hook_add preconf 5 build_tools

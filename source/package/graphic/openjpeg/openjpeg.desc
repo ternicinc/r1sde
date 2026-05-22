@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openjpeg/openjpeg.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An open-source JPEG 2000 codec
+
+[T] The OpenJPEG library is an open-source JPEG 2000 codec written in C
+[T] language. It has been developed in order to promote the use of JPEG 2000,
+[T] the new still-image compression standard from the Joint Photographic
+[T] Experts Group (JPEG).
+
+[U] https://www.openjpeg.org/
+
+[A] OpenJPEG Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS FPIC
+
+[L] BSD
+[V] 2.5.4
+[P] X -----5---9 124.600
+
+[D] 8c2bc9639a64e2fa6cba2eebbf2245d29e3ebeb6ed655b9f2b71c0e0 openjpeg-v2.5.4.tar.gz https://github.com/uclouvain/openjpeg/archive/v2.5.4/
+
+var_append cmakeopt ' ' -DOPENJPEG_INSTALL_LIB_DIR="${libdir##*/}"

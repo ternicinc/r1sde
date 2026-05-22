@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xmlstarlet/xmlstarlet.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A set of command line XML utilities
+
+[T] XMLStarlet is a set of command line XML utilities which can be used to
+[T] transform, query, validate, and edit XML documents and files using a
+[T] simple set of shell commands, similar to the way it is done for plain
+[T] text files using grep/sed/awk/tr/diff/patch.
+
+[U] https://xmlstar.sourceforge.net/
+
+[A] Mikhail Grushinskiy <mgrouch@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] MIT
+[V] 1.6.1
+
+[D] 04d81ec5da20dece943f50e19354f0fe458422a7ee188864fae634a8 xmlstarlet-1.6.1.tar.gz https://prdownloads.sourceforge.net/sourceforge/xmlstar/

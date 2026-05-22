@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sympy/sympy.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A computer algebra system written in pure Python
+
+[T] A computer algebra system written in pure Python.
+
+[U] https://github.com/sympy/sympy
+
+[A] SymPy development team <sympy@googlegroups.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/development
+[E] add mpmath
+
+[L] BSD
+[V] 1.14.0
+[P] X -----5---9 110.100
+
+[D] c773aa09ffa6fcdedb8cd544d80a9ba6e143fa64a78f58178c996bd3 sympy-1.14.0.tar.gz https://github.com/sympy/sympy/archive/1.14.0/

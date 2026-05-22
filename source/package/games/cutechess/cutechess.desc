@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cutechess/cutechess.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A GUI, CLI and library for playing chess
+
+[T] Cute Chess is a set of cross-platform tools for working with chess engines.
+[T] It consists of: cutechess - a graphical user interface, cutechess-cli - a
+[T] command line interface for automating chess engine matches and libcutechess
+[T] - a libraby providing an interface for working with chesss engines.
+
+[U] https://cutechess.com
+
+[A] The cutechess authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+[F] CROSS
+
+[L] GPL
+[V] 1.4.0
+
+[D] dda0f5e42b0773f59a838a302122aee66c61736b5ef0774168605811 cutechess-1.4.0.tar.gz https://github.com/cutechess/cutechess/archive/refs/tags/v1.4.0/

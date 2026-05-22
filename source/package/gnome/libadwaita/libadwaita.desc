@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libadwaita/libadwaita.desc
+[COPY] Copyright (C) 2021 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Building blocks for modern GNOME applications
+
+[T] Adwaita is the name of GNOME’s visual language and identity.
+[T] This new libadwaita library intends to extend that concept by being the
+[T] missing code part of Adwaita. The library will be implemented as a
+[T] direct GTK 4 continuation and replacement of libhandy.
+
+[U] https://gitlab.gnome.org/GNOME/libadwaita/
+
+[A] The GTK Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] LGPL
+[V] 1.9.0
+[P] X -----5---9 161.700
+
+[D] 3c90873b6556f2409c8f94642ab60a926f8ef1631bc00a61026e5a89 libadwaita-1.9.0.tar.xz https://download.gnome.org/sources/libadwaita/1.9/
+
+. $base/package/*/*/gnome-conf.in
+var_append mesonopt ' ' -Dtests=false
+
+# Prevent libadwaita from building deps behind our back
+hook_add preconf 5 "rm -rf subprojects/*"

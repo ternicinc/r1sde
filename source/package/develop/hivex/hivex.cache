@@ -1,0 +1,22 @@
+[TIMESTAMP] 1751313754 Mon Jun 30 22:02:34 2025
+[BUILDTIME] 4 (9)
+[SIZE] 0.53 MB, 57 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[OPT] ocaml
+[OPT] ocaml-findlib
+[DEP] perl
+[DEP] python
+[DEP] readline
+[DEP] sed
+[DEP] tar

@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/genius/genius.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An arbitrary precision integer and multiple precision floating point calculator
+
+[T] Genius is an arbitrary precision integer and multiple precision floating
+[T] point calculator. It includes its own programming language similar in
+[T] some aspects to C, bc, or Pascal. It can deal with rational numbers and
+[T] complex numbers. It has matrix support as well. It uses the gmp library so
+[T] it is very fast for calculations of large numbers. It has a command line
+[T] and a GNOME interface. The GNOME interface supports plotting functions
+[T] and 3D surfaces.
+
+[U] https://www.jirka.org/genius.html
+
+[A] Jiri (George) Lebl <jirka@5z.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/scientific
+
+[L] GPL
+[V] 1.0.29
+
+[CV-URL] https://download.gnome.org/sources/genius/cache.json
+[D] 617a3f28d911c8704aed78c4ebf224249ec9e55186dd98bf0c8be4d2 genius-1.0.29.tar.xz http://ftp.5z.com/pub/genius/
+
+var_append confopt ' ' --disable-update-mimedb

@@ -1,0 +1,12 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/mips64/config.hlp
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+SDECFG_MIPS64_ENDIANESS
+  Please select if you want to build for big-endian or little-endian
+  machines.
+
+SDECFG_MIPS64_OPT
+  Please select the CPU you want to optimize for.

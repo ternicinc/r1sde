@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-alien-libxml2/perl-alien-libxml2.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Install the C libxml2 library on your system
+
+[T] This module provides libxml2 for other modules to use.
+
+[U] https://metacpan.org/pod/Alien::Libxml2
+
+[A] Graham Ollis <plicease@cpan.org>
+[M] Tomas Glozar <tglozar@gmail.com>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 0.20
+[P] X -----5---9 140.600
+
+[D] b84e65a05b860c0a2fd7660dffb2bc219e017f32a7d27d0490512026 Alien-Libxml2-0.20.tar.gz https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/

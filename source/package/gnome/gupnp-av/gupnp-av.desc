@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gupnp-av/gupnp-av.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome gupnp-av package
+
+[T] Core Gnome gupnp-av package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 0.14.4
+[P] X -----5---9 179.200
+
+[CV-URL] https://download.gnome.org/sources/gupnp-av/cache.json
+[D] 9796adc4dbc1ea81e85b8771156e2ba37b59bd210adeff86c0e40741 gupnp-av-0.14.4.tar.xz https://download.gnome.org/sources/gupnp-av/0.14/
+
+. $base/package/*/*/gnome-conf.in

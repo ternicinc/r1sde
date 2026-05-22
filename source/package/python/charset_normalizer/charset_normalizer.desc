@@ -1,0 +1,26 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/charset_normalizer/charset_normalizer.desc
+# Copyright (C) 2025 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+[I] Universal Charset Detector in Python
+
+[T] A library that helps you read text from an unknown charset encoding.
+[T] All IANA character set names for which the Python core library provides
+[T] codecs are supported.
+
+[U] https://github.com/Ousret/charset_normalizer/
+
+[A] TAHRI Ahmed R.
+[M] René Rebe <rene@exactco.de>
+
+[C] base/development
+[F] CROSS
+[E] add setuptools-scm
+
+[L] MIT
+[V] 3.4.7
+[P] X -----5---9 109.101
+
+[D] 6a0468903b14dd064499dd67fd8a937b215eff7a1709d43bdf4ec5f2 charset_normalizer-3.4.7.tar.gz https://github.com/Ousret/charset_normalizer/archive/3.4.7/

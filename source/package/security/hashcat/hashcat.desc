@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/hashcat/hashcat.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] World's fastest and most advanced password recovery utility
+
+[T] hashcat is the world's fastest and most advanced password recovery utility,
+[T] supporting five unique modes of attack for over 300 highly-optimized hashing
+[T] algorithms. hashcat currently supports CPUs, GPUs, and other hardware
+[T] accelerators on Linux, Windows, and macOS, and has facilities to help
+[T] enable distributed password cracking.
+
+[U] https://hashcat.net/hashcat/
+
+[A] Hashcat contributors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+[F] CROSS
+
+[L] MIT
+[V] 7.1.2
+
+[D] c849cc9a8ad436ebfea4efdd24904c22f1917b40e4d76923c1f851af hashcat-7.1.2.tar.gz https://github.com/hashcat/hashcat/archive/v7.1.2/

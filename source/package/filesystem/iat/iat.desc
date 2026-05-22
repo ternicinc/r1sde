@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/iat/iat.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A tool for detecting the structure of a CD-ROM image
+
+[T] Iat (Iso9660 Analyzer Tool) is a tool for detecting the structure of
+[T] many types of CD-ROM image file formats, such as BIN, MDF, PDI, CDI,
+[T] NRG, and B5I, and converting them into ISO-9660.
+
+[U] https://developer.berlios.de/projects/iat/
+
+[A] Salvatore Santagati <salvatore.santagati@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+[F] CROSS
+
+[L] GPL
+[V] 0.1.7
+
+[D] 89509578e8227941c5d8f2c575b03dfef9d62a0bd43be77e985ff93b iat-0.1.7.tar.bz2 https://download.sourceforge.net/project/iat.berlios/

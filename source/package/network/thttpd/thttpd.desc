@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/thttpd/thttpd.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A simple, small, portable, fast, and secure HTTP server
+
+[T] Thttpd is a simple, small, fast and secure HTTP server. It doesn't have
+[T] a lot of special features but it suffices for most uses of the Web. It's
+[T] faster than Apache and it has one extremely useful feature that no other
+[T] server currently has - URL-traffic-based throttling.
+
+[U] https://www.acme.com/software/thttpd/
+
+[A] Jef Poskanzer <jef@acme.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/server
+
+[L] BSD
+[V] 2.29
+
+[D] 3b5549241e06848ced09fea67549cdb28aa1510bf0eea7cbcd66ba4d thttpd-2.29.tar.gz http://www.acme.com/software/thttpd/

@@ -1,0 +1,39 @@
+[TIMESTAMP] 1768866260 Tue Jan 20 00:44:20 2026
+[BUILDTIME] 410 (9)
+[SIZE] 87.77 MB, 228 files
+
+[DEP] at-spi2-core
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] cups
+[DEP] diffutils
+[DEP] findutils
+[DEP] fontconfig
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[OPT] glu
+[DEP] grep
+[DEP] gtk+
+[DEP] harfbuzz
+[OPT] libglvnd
+[OPT] libice
+[DEP] libidn
+[DEP] libjpeg
+[OPT] libsm
+[OPT] libx11
+[OPT] libxt
+[DEP] linux-header
+[DEP] make
+[DEP] pango
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[OPT] xorgproto
+[DEP] xz
+[DEP] zlib

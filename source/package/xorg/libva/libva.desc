@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libva/libva.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Video Acceleration (VA) API for Linux
+
+[T] The Video Acceleration (VA) API for Linux library.
+
+[U] https://freedesktop.org/wiki/Software/vaapi
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS NO-LTO.clang
+
+[E] opt libx11 libxcb libxext libxfixes
+
+[L] OpenSource
+[V] 2.23.0
+[P] X -----5---9 112.450
+
+[D] 62e61600b19aea459dff2546865806835d441af0afe2acf8ba05103d libva-2.23.0.tar.gz https://github.com/intel/libva/archive/2.23.0/

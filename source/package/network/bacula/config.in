@@ -1,0 +1,35 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/bacula/config.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+if pkgcheck bacula X
+then
+ 	menu_begin MENU_PKG_BACULA 'Bacula Package Options'
+	text 'Install prefix for bacula packages' \
+	     SDECFG_PKG_BACULA_PREFIX "opt/bacula"
+
+	pkgout
+	list="client Build_bacula_client_only" ;
+	default="client"
+	while read pkg ver; do
+		if [ "$pkg" = "mysql" ]; then
+			default="$pkg"
+		elif [ "$default" = "" ]; then
+			default="$pkg"
+		fi
+		list="$list $pkg Use_${pkg}_($ver)_as_DB"
+	done < <(grep \
+		-e "^X .* mysql " \
+		-e "^X .* postgresql " \
+		-e "^X .* sqlite " \
+		-e "^X .* sqlite2 " config/$config/packages | \
+	         cut -f5,6 -d' ' | sort)
+
+	if [ "$list" ]; then
+		choice SDECFG_PKG_BACULA_DB $default $list
+	fi
+
+	menu_end
+fi

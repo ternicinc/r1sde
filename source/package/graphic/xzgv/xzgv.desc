@@ -1,0 +1,40 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xzgv/xzgv.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gtk+ image viewer
+
+[T] xzgv is a picture viewer for X, with a thumbnail-based file selector.
+[T] It uses GTK+ and Imlib. Most file formats are supported, and the
+[T] thumbnails used are compatible with xv, zgv, and the Gimp. It can also
+[T] be used with `xzgv file(s)', to effectively bypass the file selector.
+[T] For more on how xzgv works and how to use it, do `info xzgv' or `man
+[T] xzgv' once it's installed.
+[T]
+[T] xzgv differs from other picture viewers for X in that it uses one
+[T] window for both the file selector and viewer, it (unlike xv) allows
+[T] both scrolling and fit-to-window methods of viewing large pictures,
+[T] and it (unlike xv and some others) doesn't ever mangle the picture's
+[T] aspect ratio without you telling it to.
+[T]
+[T] It also provides extensive keyboard support; if you prefer using the
+[T] keyboard, this is almost certainly the best viewer for you. But it
+[T] doesn't skimp on the mousey stuff, either.
+[T]
+[T] So anyway, it's just terribly great. :-)
+
+[A] Russel Marks <russel.marks@ntlworld.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 0.9.2
+
+[D] d7129e47038bc5aff3c5ed99784b888fa760ba7d7d0b28900356bdf7 xzgv-0.9.2.tar.gz https://prdownloads.sourceforge.net/sourceforge/xzgv/
+
+[ $arch != x86 ] && var_append CC_WRAPPER_REMOVE ' ' -DINTERP_MMX
+var_insert makeinstopt ' ' PREFIX=$root/$prefix

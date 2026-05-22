@@ -1,0 +1,11 @@
+
+[TIMESTAMP] 1227172980 Thu Nov 20 10:23:00 2008
+[BUILDTIME] 5 (5) ERROR
+[SIZE] 0.01 MB, 6 files
+
+[DEP] coreutils
+[DEP] diffutils
+[DEP] grep
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar

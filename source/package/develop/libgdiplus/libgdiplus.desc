@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libgdiplus/libgdiplus.desc
+[COPY] Copyright (C) 2005-2006 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library for using System.Drawing with Mono
+
+[T] An Open Source implementation of the GDI+ API.
+
+[U] http://go-mono.com/
+
+[A] Miguel de Icaza <miguel@ximian.com>
+[A] Duncan Mak <duncan@ximian.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[L] LGPL
+[V] 6.2
+
+[D] 204bd82e31c874f487437865613e4b581929df272783a314a7c4e2da libgdiplus-6.2.tar.gz https://dl.winehq.org/mono/sources/libgdiplus/

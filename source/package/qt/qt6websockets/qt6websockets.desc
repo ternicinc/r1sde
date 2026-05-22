@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/qt6websockets/qt6websockets.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A pure Qt6 implementation of WebSockets
+
+[T] QtWebSockets is a pure Qt implementation of WebSockets - both client and
+[T] server. It is implemented as a Qt add-on module that can easily be embedded
+[T] into existing Qt projects.
+
+[U] https://qt.io
+
+[A] Trolltech AS <www.trolltech.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS OBJDIR
+
+[L] LGPL
+[V] 6.11.1
+[P] X ?----5---9 140.000
+
+[CV-GROUP] qt6
+[D] b94c81aaf35107935c7978c690c0f2bd2253567f08872a9473340db5 qtwebsockets-everywhere-src-6.11.1.tar.xz http://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/
+
+. $base/package/*/*/qt6-conf.in

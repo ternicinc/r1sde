@@ -1,0 +1,22 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/target/embedded-minimal/pkgsel
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+# start with an empty package selection
+O *
+
+# toolchain
+X binutils
+X gmp
+X mpfr
+X gcc
+
+# payload
+X 00-dirtree
+X linux
+X linux-header
+X busybox
+X zlib
+X dropbear

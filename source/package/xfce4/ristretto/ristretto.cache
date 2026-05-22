@@ -1,0 +1,37 @@
+[TIMESTAMP] 1773043217 Mon Mar  9 09:00:17 2026
+[BUILDTIME] 8 (9)
+[SIZE] 1.15 MB, 73 files
+
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] file
+[DEP] findutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[DEP] glib
+[DEP] grep
+[DEP] gtk+
+[DEP] harfbuzz
+[DEP] libexif
+[DEP] libexo
+[DEP] libx11
+[DEP] libxfce4ui
+[DEP] libxfce4util
+[DEP] libxml
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] xfconf
+[DEP] xorgproto
+[DEP] xz

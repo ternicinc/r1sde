@@ -1,0 +1,13 @@
+
+[TIMESTAMP] 1172387752 Sun Feb 25 07:15:52 2007
+[BUILDTIME] 5 (5) ERROR
+[SIZE] 0.01 MB, 5 files
+
+[DEP] blackdown-jdk
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] grep
+[DEP] sed
+[DEP] sysfiles
+[DEP] unzip

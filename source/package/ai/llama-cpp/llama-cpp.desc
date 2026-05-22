@@ -1,0 +1,44 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/llama-cpp/llama-cpp.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] LLM inference in C/C++
+
+[T] The main goal of llama.cpp is to enable LLM inference with minimal setup
+[T] and state-of-the-art performance on a wide range of hardware - locally and
+[T] in the cloud.
+
+[U] https://github.com/ggerganov/llama.cpp
+
+[A] llama-cpp Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] OBJDIR
+
+[E] opt hip-rocclr hipblas hipblas-common hipcc rocblas rocm-device-libs rocm-llvm
+[E] opt vulkan-headers shaderc
+
+[V] b8996
+[L] MIT
+
+[D] d84f4a505bc09268ae8328e7cf71e546ddb1bc29287cc5f6fd249148 llama-cpp-b8996.tar.gz git+https://github.com/ggerganov/llama.cpp.git b8996
+
+[ $prefix_auto = 1 ] && prefix=opt/llama-cpp && set_confopt
+
+pkginstalled curl && var_append cmakeopt ' ' -DLLAMA_CURL=ON
+pkginstalled opencl-loader opencl-headers &&
+	var_append cmakeopt ' ' "-DGGML_OPENCL=ON -DGGML_OPENCL_USE_ADRENO_KERNELS=OFF"
+
+if pkginstalled hipcc; then
+	export HIPCXX="$(hipconfig -l)/clang" HIP_PATH="$(hipconfig -R)"
+	var_append cmakeopt ' ' "-DGGML_HIP=ON -DAMDGPU_TARGETS='$SDECFG_PKG_ROCM_ARCHS'"
+fi
+
+pkginstalled vulkan-headers && var_append cmakeopt ' ' -DGGML_VULKAN=ON
+
+pkginstalled blis && var_append cmakeopt ' ' '-DGGML_BLAS=ON -DGGML_BLAS_VENDOR=FLAME'
+
+#hook_add postmake 5 "cp -rvf ../{models,scripts,prompts,examples,docs} $root/$prefix/"

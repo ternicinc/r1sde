@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libotr/libotr.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] This is the portable OTR Messaging Library
+
+[T] You need this library in order to use the other OTR software, for example
+[T] the OTR plugin for gaim
+
+[U] https://www.cypherpunks.ca/otr/
+
+[A] Nikita Borisov and Ian Goldberg <otr@cypherpunks.ca>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 4.1.1
+
+[D] 34f83215ba124f72a8fc53af787532e66a7c70ecd329dba46dd2f2db libotr-4.1.1.tar.gz http://www.cypherpunks.ca/otr/

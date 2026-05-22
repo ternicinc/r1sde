@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dunst/dunst.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Customizable and lightweight notification-daemon
+
+[T] Dunst is a lightweight replacement for the notification daemons provided
+[T] by most desktop environments. It’s very customizable, isn’t dependent on
+[T] any toolkits, and therefore fits into those window manager centric
+[T] setups we all love to customize to perfection.
+
+[U] https://dunst-project.org/
+
+[A] Sascha Kruse <knopwob@knopwob.de>
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/x11
+
+[L] MIT
+[V] 1.13.2
+
+[D] 8cca489ed381956b76cb558afe49baecb385d6a1dd428224ee9003b2 dunst-1.13.2.tar.gz https://github.com/dunst-project/dunst/archive/refs/tags/v1.13.2/
+
+var_append makeinstopt ' ' SYSCONFDIR=$root$sysconfdir

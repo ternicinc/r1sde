@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---.
+[COPY] t2/package/*/xonsh/xonsh.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---.
+
+[I] Python-powered, cross-platform, Unix-gazing shell
+
+[T] Xonsh is a modern, full-featured and cross-platform python shell. The
+[T] language is a superset of Python 3.6+ with additional shell primitives that
+[T] you are used to from Bash and IPython. It works on all major systems
+[T] including Linux, OSX, and Windows. Xonsh is meant for the daily use of
+[T] experts and novices.
+
+[U] https://xon.sh
+
+[A] Xonsh Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+
+[V] 0.23.7
+[L] BSD
+
+[D] 5be8b21583a3289639d5328f73b07645ef3a55ba77360b58d4d0e5cd xonsh-0.23.7.tar.gz https://github.com/xonsh/xonsh/archive/0.23.7/

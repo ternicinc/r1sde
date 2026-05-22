@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ifplugd/ifplugd.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A daemon to automatically configure a ethernet device on state change
+
+[T] ifplugd is a Linux daemon which will automatically configure your
+[T] ethernet device when a cable is plugged in and automatically unconfigure
+[T] it if the cable is pulled. This is useful on laptops with onboard network
+[T] adapters, since it will only configure the interface when a cable is
+[T] really connected.
+
+[U] https://0pointer.de/lennart/projects/ifplugd/
+
+[A] Lennart Poettering <mzvscyhtq@0pointer.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] FCOMMON
+
+[L] GPL
+[V] 0.28
+
+[D] e61263cb2d35c57a964d162bb5cf5ec1d800bd5094734a54b9a4fec5 ifplugd-0.28.tar.gz http://0pointer.de/lennart/projects/ifplugd/
+
+pkginstalled lynx || var_append confopt ' ' --disable-lynx

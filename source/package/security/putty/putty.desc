@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/putty/putty.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Telnet and SSH client
+
+[T] PuTTY is a free implementation of Telnet and SSH for Win32 and Unix
+[T] platforms, along with an xterm terminal emulator.
+
+[U] https://www.chiark.greenend.org.uk/~sgtatham/putty/
+
+[A] Simon Tatham <anakin@pobox.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+[F] OBJDIR
+
+[L] MIT
+[V] 0.83
+
+[D] f86b79df5065c9a40c1f47b5e98e0e70b170307dc68fb33a8729c168 putty-0.83.tar.gz https://the.earth.li/~sgtatham/putty/latest/

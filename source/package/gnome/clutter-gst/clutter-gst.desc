@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/clutter-gst/clutter-gst.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome clutter-gst package
+
+[T] Core Gnome clutter-gst package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 3.0.27
+
+[CV-URL] https://download.gnome.org/sources/clutter-gst/cache.json
+[D] 82cc38d7ea79f28a200f412d3935e79ae4b8b66a0429bda45d085087 clutter-gst-3.0.27.tar.xz https://download.gnome.org/sources/clutter-gst/3.0/
+
+. $base/package/*/*/gnome-conf.in
+
+var_remove confopt ' ' --disable-debug

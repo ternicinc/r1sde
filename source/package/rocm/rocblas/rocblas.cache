@@ -1,0 +1,33 @@
+[TIMESTAMP] 1743527647 Tue Apr  1 19:14:07 2025
+[BUILDTIME] 3850 (9)
+[SIZE] 465.89 MB, 276 files
+
+[DEP] bash
+[DEP] boost
+[DEP] cmake
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[OPT] doxygen
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] gzip
+[DEP] hip-rocclr
+[DEP] hipblas-common
+[DEP] hipblaslt
+[DEP] hipcc
+[DEP] linux-header
+[DEP] make
+[DEP] msgpack-cxx
+[DEP] openssl
+[DEP] pciutils
+[DEP] python
+[DEP] rocm-cmake
+[DEP] rocm-device-libs
+[DEP] rocm-llvm
+[DEP] rustc
+[DEP] sed
+[DEP] setuptools
+[DEP] sysfiles
+[DEP] tar

@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pypanel/pypanel.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A lightweight panel/taskbar for X11 window managers
+
+[T] PyPanel is a lightweight panel/taskbar for X11 window managers that
+[T] can be easily customized to match any desktop theme or taste.
+[T] Some of the customizable features include:
+[T] * Transparency w/ shading
+[T] * Panel dimensions and location
+[T] * Font type and colors
+[T] * Button events/actions
+[T] * Clock and workspace name display
+
+[U] https://pypanel.sf.net/
+
+[A] Jon Gelo <ziljian@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] GPL
+[V] 2.4
+
+[D] c70ddf3b518cb902970c3c4cb8ba2ff56d9de92c28ba4e9dd2549b0e PyPanel-2.4.tar.gz https://download.sourceforge.net/pypanel/
+
+runmake=
+hook_add postmake 5 "python ./setup.py install"

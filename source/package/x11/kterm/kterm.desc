@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kterm/kterm.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Xterm with additional Japanese and Korean Support
+
+[T] kterm is an extended xterm and can easily display Japanese,
+[T] Chinese and Korean Characters.
+[T] xjdic needs it.
+
+[A] John Bradley <bradley@dccs.upenn.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell
+[F] CROSS
+
+[L] GPL
+[V] 6.2.0
+
+[D] 4461b3254cb5b4b5e9c9d02776864298a543d22c981c4eef7357d542 kterm-6.2.0.tar.gz ftp://ftp.iij.ad.jp/pub/X/contrib/applications/

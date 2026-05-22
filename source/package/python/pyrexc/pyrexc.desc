@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pyrexc/pyrexc.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A language for writing Python extension modules
+
+[T] Pyrex is a language specially designed for writing Python extension modules.
+[T] It's designed to bridge the gap between the nice, high-level, easy-to-use world of Python
+[T] and the messy, low-level world of C.
+
+[U] https://www.csse.canterbury.ac.nz/greg.ewing/python/Pyrex/
+
+[A] Greg Ewing <greg@cosc.canterbury.ac.nz>
+[M] Omer James Hickman <james_hickman@email.com>
+
+[C] base/tool
+
+[L] GPL
+[V] 0.9.9
+[P] X -----5---9 142.000
+
+[D] e968d23173c59cdb7c015f1e469ef21b754db4d1c1f8fcb70d02f0ac Pyrex-0.9.9.tar.gz https://www.csse.canterbury.ac.nz/greg.ewing/python/Pyrex/

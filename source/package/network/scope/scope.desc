@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/scope/scope.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A serial-line eavesdropping tool
+
+[T] Scope is a simple Linux program that allows you to capture data flowing between
+[T] two devices that communicate over a 7-wire (or fewer) RS232 serial connection.
+[T] To do this, it requires a special cable.
+
+[U] https://www.gumbley.me.uk/scope.html
+
+[A] Matt J Gumbley
+[M] Marian Aldenhövel <marian.aldenhoevel@mba-software.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 0.04
+
+[D] 8bc3aa639f922125487ed77cf0053b2f7f6b8108348a08c68ff900bd scope-0.04.tar.gz http://www.gumbley.me.uk/

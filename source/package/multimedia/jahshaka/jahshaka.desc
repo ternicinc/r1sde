@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/jahshaka/jahshaka.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Cross platform, Open Source, Realtime Editing and Effects System
+
+[T] Jahshaka is the worlds first Cross platform, Open Source, Realtime Editing
+[T] and Effects System. Jahshaka takes advantage of the power of OpenGL, OpenML
+[T] and GPGPU to give you exceptional levels of performance!
+
+[U] http://jahshaka.org/
+
+[A] Jah Shaka <jahshaka@users.sourceforge.net>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/multimedia
+
+[F] NOPARALLEL
+
+[E] opt lame
+
+[L] GPL
+[V] 2.0
+
+[D] f776f1522150d748e5a8746bbdccf413def6126edf50da4cb1746b94 jahshaka.tar.gz https://prdownloads.sourceforge.net/sourceforge/jahshakafx/

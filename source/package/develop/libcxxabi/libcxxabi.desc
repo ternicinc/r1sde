@@ -1,0 +1,42 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libcxxabi/libcxxabi.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] C++ Standard Library Support
+
+[T] libc++abi is a new implementation of low level support for a standard C++ library.
+
+[U] https://libcxxabi.llvm.org
+
+[A] University of Illinois/NCSA
+[A] Chris Lattner <clattner@apple.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] OBJDIR CROSS
+
+[L] BSD
+[V] 22.1.5
+[P] O -1---5---9 102.700
+
+[CV-GROUP] llvm-project
+[D] 539b0fa857272b2b18ad9b9e58e11d4e48e0f1c807ec375d5ca91913 llvm-project-22.1.5.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-22.1.5/
+
+srcdir=*/libcxxabi
+
+var_append cmakeopt ' ' "-DLIBCXXABI_USE_COMPILER_RT=YES -DLIBCXXABI_USE_LLVM_UNWINDER=1"
+var_append cmakeopt ' ' -DLIBCXXABI_LIBCXX_INCLUDES=$root$includedir/c++/v1/
+
+if atstage cross; then
+	var_append GCC_WRAPPER_APPEND ' ' "-lc -nodefaultlibs"
+	# includedir/c++/v1 not found automatically anymore?
+	#var_append GCC_WRAPPER_APPEND ' ' -I$root$includedir/c++/v1
+	:
+fi
+
+hook_add postmake 5 "install ../include/*.h $root$includedir/" # for libcxx
+
+[ "${libdir##*/lib}" ] && var_append cmakeopt ' ' "-DLLVM_LIBDIR_SUFFIX=${libdir##*/lib}"
+[ "$SDECFG_STATIC" = 1 ] || var_append cmakeopt ' ' -DBUILD_SHARED_LIBS=ON

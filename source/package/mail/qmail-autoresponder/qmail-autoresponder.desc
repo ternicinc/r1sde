@@ -1,0 +1,46 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/qmail-autoresponder/qmail-autoresponder.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Rate-limited autoresponder for qmail
+
+[T] This is a simple program to automatically respond to emails.
+[T]
+[T] It is based on some ideas (but little or no code) from a similar
+[T] autoresponder by Eric Huss, and ideas presented on the qmail mailing list.
+[T]
+[T] Features:
+[T] - Limits rate of automatic responses (defaults to a maximum of one
+[T] message every hour).
+[T] - Will not respond to nearly every type of mailing list or bulk email.
+[T] - Will not respond to bounce messages or MAILER-DAEMON.
+[T] - Bounces looping messages.
+[T] - Can insert the original subject into the response.
+[T] - Can copy original message into response.
+[T] - Can use links in the rate-limiting data directory to limit inode usage
+[T] to a single inode.
+
+[U] https://untroubled.org/qmail-autoresponder/
+
+[A] Bruce Guenter <bruceg@em.ca>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] GPL
+[V] 2.0
+[P] O
+
+[D] 49dec357d74b93694543bc248622c5051e865542d9d6ede62440d993 qmail-autoresponder-2.0.tar.gz http://untroubled.org/qmail-autoresponder/
+
+pkginstalled mysql || var_append patchfiles ' ' $confdir/without-mysql.diff
+
+pkg_qmailar_configure() {
+	echo $root/$(pkgprefix includedir bglibs) > conf-bgincs
+	echo $root/$(pkgprefix libdir bglibs) > conf-bglibs
+	echo $bindir > conf-bin
+	echo $mandir > conf-man
+}
+hook_add premake 5 pkg_qmailar_configure

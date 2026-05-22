@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lcms2/lcms2.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A little Color Management System
+
+[T] LCMS is the Little Color Management System, a Color Matching Method
+[T] (CMM) library which implements fast transforms between ICC profiles.
+[T] It is released under LGPL with source code and meant to be portable.
+[T]
+[T] Color management refers to techniques that ensure consistent color
+[T] as images are transferred from scanners or cameras to monitors and
+[T] printers.
+
+[U] https://www.littlecms.com/
+
+[A] Marti Maria <info@littlecms.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] MIT
+[V] 2.19.1
+[P] X -----5---9 123.300
+
+[CV-URL] http://sourceforge.net/projects/lcms/files/lcms/
+[D] 05b4e8a001702f5b88bfe6ca67b853c3302ef80686476f908100e94b lcms2-2.19.1.tar.gz https://download.sourceforge.net/project/lcms/lcms/2.19.1/
+
+runmeson=0

@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/luacurl/luacurl.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Lua binding providing Internet capabilities based on CURL
+
+[T] LuaCURL is Lua 5.x compatible module providing Internet browsing
+[T] capabilities based on the CURL library.
+
+[U] http://luacurl.luaforge.net/
+
+[A] Alexander Marinov
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS FPIC
+
+[L] MIT
+[V] 1.2.1
+
+[CV-URL] http://luaforge.net/frs/?group_id=117
+[D] f5c498d88507bf0c95486ff0c8e9ee098bdeffe8d075403167755245 luacurl-1.2.1.zip http://luaforge.net/frs/download.php/3342/
+
+. $base/package/*/*/lua-conf.in
+runmake=0
+hook_add inmake 5 "$CC -o luacurl.so -shared luacurl.c -llua -lcurl"
+hook_add postmake 5 "install luacurl.so $root$pkglibdir/"

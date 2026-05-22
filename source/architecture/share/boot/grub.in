@@ -1,0 +1,22 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/share/boot/grub.in
+# Copyright (C) 2021 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+grub_create_efi_img() {
+	dd if=/dev/zero bs=1024 count=1440 of=$isofsdir/efi.img
+	mkfs.vfat $isofsdir/efi.img
+	mmd -i $isofsdir/efi.img ::/EFI
+	mmd -i $isofsdir/efi.img ::/EFI/BOOT
+	mcopy -i $isofsdir/efi.img $1 ::/EFI/BOOT
+	[ "$2" = "" ] || mcopy -i $isofsdir/efi.img $2 ::/.VolumeIcon.icns
+}
+
+grub_create_boot_entry() {
+	cat <<- EOT
+BOOTx	-partition_offset 16 -append_partition 2 0xef $isofsdir/efi.img
+BOOTx	-e --interval:appended_partition_2:all::
+BOOTx	-iso_mbr_part_type 0x83
+EOT
+}

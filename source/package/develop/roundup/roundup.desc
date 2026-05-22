@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/roundup/roundup.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A simple-to-use and -install issue-tracking system
+
+[T] Roundup is a simple-to-use and -install issue-tracking
+[T] system with command-line, Web, and e-mail interfaces. It
+[T] manages a number of issues (with flexible properties such
+[T] as description, priority, and so on) and provides the
+[T] ability to
+[T] - submit new issues
+[T] - find and edit existing issues
+[T] - and discuss issues with other participants
+[T]
+[T] The system will facilitate communication among the
+[T] participants by managing discussions, and notifying
+[T] interested parties when issues are edited.
+
+[U] https://roundup.sourceforge.net/
+
+[A] Richard Jones <richard@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] OpenSource
+[V] 2.5.0
+
+[ $prefix_auto = 1 ] && prefix="opt/roundup" && set_confopt
+
+[D] 990b04fce32eaabfc1e4dbbc3d4454a1a3cbdfad030d3943a6d93dc5 roundup-2.5.0.tar.gz http://cheeseshop.python.org/packages/source/r/roundup/

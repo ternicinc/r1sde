@@ -1,0 +1,17 @@
+[TIMESTAMP] 1739227038 Mon Feb 10 23:37:18 2025
+[BUILDTIME] 3 (5)
+[SIZE] 0.16 MB, 9 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] neon
+[DEP] readline
+[DEP] sed
+[DEP] tar

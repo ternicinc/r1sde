@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rpcbind/rpcbind.desc
+[COPY] Copyright (C) 2011 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] RPC portmapper
+
+[T] The rpcbind utility is a server that converts RPC program numbers into universal addresses.
+
+[U] https://www.linux-nfs.org/
+
+[A] Gilles Quillard <gilles.quillard@bull.net>
+[A] Vincent ROQUETA <vincent.roqueta@ext.bull.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+
+[L] BSD
+[V] 1.2.8
+
+[D] d4fa87dd37dea2111a0b23aef130fd3582127e5fdff1bc81a9898eb7 rpcbind-1.2.8.tar.bz2 http://downloads.sourceforge.net/project/rpcbind/rpcbind/1.2.8/
+
+var_append confopt ' ' --with-systemdsystemunitdir=no
+hook_add preconf 5 "echo 'ac_cv_header_rpcsvc_mount_h=no' >> config.cache"

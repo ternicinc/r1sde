@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/scmxx/scmxx.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Console Tool for Siemens Mobile Phones
+
+[T] features include:
+[T]
+[T] * detect which phone is present and handle it properly
+[T] * send, get, and remove bitmap files (=logos)
+[T] * send, get, and remove midi file
+[T] * send, get, and remove vCalendars
+[T] * send, get, and remove vCards (only some phone types)
+[T] * send and get phonebook entries
+[T] * send and receive SMS through phone
+[T] * store and get received SMS
+
+[U] http://www.hendrik-sattler.de/scmxx/
+
+[A] Hendrik Sattler <webmaster@hendrik-sattler.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office
+[F] CROSS
+
+[L] GPL
+[V] 0.9.0
+
+[D] 2a4465a0a324be42c170db8d585536d9da149da504dea08800e454eb scmxx-0.9.0.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/scmxx/

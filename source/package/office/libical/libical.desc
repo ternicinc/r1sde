@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libical/libical.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A iCal standard (RFC 2445) implementation
+
+[T] An open source reference implementation of the icalendar data type
+[T] and serialization format. libical is used in dozens of calendaring
+[T] and scheduling products.
+
+[U] https://libical.github.io/libical/
+
+[A] Free Association
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS
+[C] extra/office
+
+[E] opt doxygen graphviz
+
+[L] LGPL MPL
+[V] 3.0.20
+[P] X ?----5---9 145.850
+
+[CV-FLAGS] NO-MAJOR
+[D] fa6ab06fc3f3d003e83dccf6bd526d595e2dada76c905c4fb31f0d88 libical-3.0.20.tar.gz https://github.com/libical/libical/releases/download/v3.0.20/
+
+atstage cross && var_append cmakeopt ' ' -Dical-glib-src-generator_EXE=$root/TOOLCHAIN/cross/usr/libexec/libical/ical-glib-src-generator
+#pkginstalled gtk-doc ||
+var_append cmakeopt ' ' -DENABLE_GTK_DOC=false
+var_append cmakeopt ' ' -DLIBICAL_BUILD_TESTING=false

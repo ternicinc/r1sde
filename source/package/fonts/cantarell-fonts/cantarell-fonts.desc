@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cantarell-fonts/cantarell-fonts.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome cantarell-fonts package
+
+[T] Core Gnome cantarell-fonts package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 0.311
+
+[CV-URL] https://download.gnome.org/sources/cantarell-fonts/cache.json
+[D] e33243bc02d20f6b4e72a583d46ec5384423264595dfe71a8c21d08b cantarell-fonts-0.311.tar.xz https://cantarell.gnome.org/releases/
+
+. $base/package/*/*/gnome-conf.in
+rungpepinstall=0

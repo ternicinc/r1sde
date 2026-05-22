@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/freevo/freevo.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A standalone Linux digital VCR/PVR
+
+[T] Freevo is a Linux application that turns a PC with a TV
+[T] capture card and/or TV-out into a standalone multimedia
+[T] jukebox/VCR/PVR/HTPC/DVR/set-top box. It uses MPlayer and other
+[T] applications to play and record audio and video. It is optimized for
+[T] use with a TV and remote, but can be used with a monitor and keyboard.
+
+[U] https://freevo.sourceforge.net/
+
+[A] Dirk Meyer <dischi@tzi.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 1.8.1
+
+[SRC] .
+
+[D] 2952122857 kaa-base-0.6.0.tar.gz https://prdownloads.sourceforge.net/sourceforge/freevo/
+[D] 1316202184 kaa-imlib2-0.2.3.tar.gz https://prdownloads.sourceforge.net/sourceforge/freevo/
+[D] 216756142 kaa-metadata-0.7.5.tar.gz https://prdownloads.sourceforge.net/sourceforge/freevo/
+[D] 3623278097 freevo-1.8.1.tar.gz https://prdownloads.sourceforge.net/sourceforge/freevo/

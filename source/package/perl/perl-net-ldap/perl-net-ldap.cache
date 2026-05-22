@@ -1,0 +1,22 @@
+[TIMESTAMP] 1753292740 Wed Jul 23 19:45:40 2025
+[BUILDTIME] 4 (9)
+[SIZE] 1.02 MB, 143 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] perl
+[DEP] perl-authen-sasl
+[DEP] perl-convert-asn1
+[DEP] perl-io-socket-ssl
+[DEP] perl-net-ssleay
+[DEP] perl-sax-exception
+[DEP] perl-uri
+[DEP] sed
+[DEP] tar

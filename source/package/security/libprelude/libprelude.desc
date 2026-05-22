@@ -1,0 +1,44 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libprelude/libprelude.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The central library for Prelude-IDS framework
+
+[T] Libprelude is the library that provide the framework used to access the
+[T] Prelude system. It handles secured communications with one or several
+[T] prelude-manager collector, and provide an API (Application Programming
+[T] Interface) to create IDMEF (Intrusion Detection Message Exchange Format)
+[T] based events.
+[T] It also provides important features like failover (saving to a local
+[T] file for later retransmission, usage of a fallback route), in case one
+[T] of the prelude-manager server used goes down.
+[T] Moreover, it gives you the ability to create sensor that read events
+[T] received by one or a set of prelude-manager.
+[T] You could for example write an interactive notification system using
+[T] this feature.
+
+[U] https://www.prelude-ids.org
+
+[A] Yoann Vandoorselaere <yoann@prelude-ids.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+[F] FPIC
+
+[L] OpenSource
+[V] 5.2.0
+[P] X -----5---9 178.600
+
+[D] 51a9a351828e149c53c57a30796ce4174e5e7bc6a2483419c5e094e6 libprelude-5.2.0.tar.gz https://github.com/Prelude-SIEM/libprelude/archive/5.2.0/
+
+autogen=1
+if [ $prefix_auto = 1 ]; then
+	if [ "$SDECFG_PKG_PRELUDE_PREFIX" ]; then
+	  prefix="$SDECFG_PKG_PRELUDE_PREFIX"
+	else
+	  prefix="opt/prelude"
+	fi
+	set_confopt
+fi

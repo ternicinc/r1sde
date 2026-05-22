@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-xml-libxslt/perl-xml-libxslt.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module XML-LibXSLT
+
+[T] This module is a fast XSLT library, based on the libxslt engine.
+
+[U] https://metacpan.org/release/XML-LibXSLT/
+
+[A] Matt Sergeant <matt@sergeant.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] Artistic GPL
+[V] 2.003000
+[P] X -----5---9 200.102
+
+[D] e9242f01aa322eb0434c9a4abd9d104c5006844cb134d659890b2562 XML-LibXSLT-2.003000.tar.gz https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/

@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libsass/libsass.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Sass compiler written in C++
+
+[T] LibSass is just a library! If you want to use LibSass to compile Sass, you need an implementer.
+
+[U] https://github.com/sass/libsass
+
+[A] Marcel Greter
+[A] Michael Mifsud
+[A] Aaron Leung
+[A] Hampton Catlin
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] MIT
+[V] 3.6.6
+[P] X -----5---9 161.500
+
+[D] 94ed49127f2f7ee14d410ba48654b91585f95bb9f7ec3bba7f6dbd59 libsass-3.6.6.tar.gz https://github.com/sass/libsass/archive/3.6.6/
+
+hook_add preconf 5 "autoreconf -fi"

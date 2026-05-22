@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rocm-device-libs/rocm-device-libs.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] ROCm device libs
+
+[T] ROCm device libs.
+
+[U] https://github.com/ROCm/llvm-project/
+
+[A] Advanced Micro Devices, Inc.
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS OBJDIR
+[C] extra/development
+
+[L] MIT
+[V] 7.2.3
+[P] X -----5---9 150.500
+
+[CV-GROUP] rocm
+[D] ef1afedc506c6865dd3d062dfd8c7d69bef921a3be1328d9f7bb8265 llvm-project-rocm-7.2.3.tar.gz https://github.com/ROCm/llvm-project/archive/rocm-7.2.3/
+
+. $base/package/*/*/rocm-conf.in
+srcdir=*/amd/device-libs
+hook_add postmake 5 'sed -i s,$PWD/amdgcn,/$prefix/amdgcn, $root$libdir/cmake/AMDDeviceLibs/AMDDeviceLibsConfig.cmake'

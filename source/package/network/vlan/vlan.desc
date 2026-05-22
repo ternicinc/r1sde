@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/vlan/vlan.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An implementation of the 802.1Q VLAN protocol for Linux
+
+[T] It allows one to have Virtual LANs on a single ethernet cable, giving
+[T] you the ability to segregate LANs efficiently. It should support up to
+[T] 4094 vlan interfaces per ethernet device.
+
+[U] https://www.candelatech.com/~greear/vlan.html
+
+[A] Ben Greear <greearb@candelatech.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS DIETLIBC
+
+[L] GPL
+[V] 1.9
+
+[CV-URL] http://www.candelatech.com/~greear/vlan.html
+
+[D] c5ecfc3fe9be8451afdae7f45c0c773ee3b0821474c18def81abf626 vlan.1.9.tar.gz http://www.candelatech.com/~greear/vlan/
+
+runconf=0 makeinstopt=
+hook_add premake 5 'make clean'
+hook_add postmake 5 'cp vconfig $root$bindir'

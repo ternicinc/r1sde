@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/zisofs-tools/zisofs-tools.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Tools for ISO filesystems with transparent compression
+
+[T] The user tools for zisofs come in two parts: a utility "mkzftree" and
+[T] a modification to mkisofs, which is part of the cdrtools package. The
+[T] mkisofs change has been integrated in the cdrtools distribution as of
+[T] cdrtools-1.11a20; a patch for cdrtools-1.11a09 which is also tested
+[T] and working on cdrtools-1.10 is included with this package if you
+[T] insist on running an older version.
+
+[U] https://www.kernel.org/pub/linux/utils/fs/zisofs-tools/
+
+[A] H. Peter Anvin <hpa@zytor.com>
+
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+[F] CROSS
+
+[L] GPL
+[V] 1.0.8
+
+[D] 70bf7a45a73e301022df1748253f005638f76b0d9e56cb3cbd8bf592 zisofs-tools-1.0.8.tar.bz2 https://src.fedoraproject.org/repo/pkgs/zisofs-tools/zisofs-tools-1.0.8.tar.bz2/2d0ed8c9a1f60b45f949b136f9be1f6c/
+
+var_append makeinstopt ' ' INSTALLROOT=$root

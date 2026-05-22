@@ -1,0 +1,47 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/less/less.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A paginator similar to "more" or "pg"
+
+[T] Less is a program similar to more(1), but which allows backward movement
+[T] in the file as well as forward movement. Also, less does not have to read
+[T] the entire input file before starting, so with large input files it starts
+[T] up faster than text editors like vi(1).
+
+[U] https://www.greenwoodsoftware.com/less/
+
+[A] Mark Nudelman <marknu@flash.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+
+[L] GPL
+[V] 692
+[P] X --2--5---9 108.800
+
+[CV-URL] http://www.greenwoodsoftware.com/less/download.html
+[D] e28812df6dcd222f8578ecc12c8a36990e7fc430bc4d86fb60ebceee less-692.tar.gz https://www.greenwoodsoftware.com/less/
+
+less_postmake() {
+	cp $confdir/lesspipe.sh $root$bindir/lesspipe
+	chmod +x $root$bindir/lesspipe
+	cat > $root/etc/profile.d/less <<-EOP
+
+export LESS="--ignore-case"
+export LESSOPEN="|lesspipe.sh %s"
+
+if [ -f "`which lesspipe.sh`" ]; then
+	LESSOPEN="|`which lesspipe.sh` %s"
+else
+	LESSOPEN="|lesspipe %s"
+fi
+	export LESSOPEN
+EOP
+}
+
+hook_add postmake 3 less_postmake

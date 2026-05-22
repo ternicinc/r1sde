@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/hiawatha/hiawatha.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A tiny secure HTTP web server
+
+[T] Hiawatha has been written with security in mind. This resulted in a highly
+[T] secure webserver in both code and features. Hiawatha can stop SQL
+[T] injections, XSS and CSRF attacks and exploit attempts.
+
+[U] https://hiawatha.leisink.net/
+
+[A] Hugo Leisink
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/server
+
+[L] GPL
+[V] 12.2
+
+[D] 4d241cc81d8e12d266cb70b10843eff86804e4e1a7427c96b45be42a hiawatha-12.2.tar.gz https://hiawatha.leisink.net/files/download/
+
+var_append configprefix ' ' 'webrootdir="/root/Web-Server"'
+
+pkginstalled libxml || var_append confopt ' ' --disable-xslt
+
+hook_add postmake 5 "chmod u+s $root/usr/sbin/hiawatha"

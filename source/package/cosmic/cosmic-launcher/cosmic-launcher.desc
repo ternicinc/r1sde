@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cosmic-launcher/cosmic-launcher.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Launcher for the COSMIC desktop environment
+
+[T] Launcher for the COSMIC desktop environment.
+
+[U] https://github.com/pop-os/cosmic-launcher/
+
+[A] System76 <info@system76.com>
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL3
+[V] 1.0.13
+
+[CV-GROUP] cosmic-desktop
+[D] 0ed624ba771b48e858d87653e059ae6fc1eb5809a48d3692814a88b0 cosmic-launcher-epoch-1.0.13.tar.gz https://github.com/pop-os/cosmic-launcher/archive/epoch-1.0.13/
+
+. $base/package/cosmic/*/cosmic-conf.in

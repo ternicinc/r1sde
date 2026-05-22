@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/vdr-vcd/hotfix-makefile-includedir.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- vcd-0.9/Makefile.orig	2008-03-07 21:30:09.000000000 +0100
++++ vcd-0.9/Makefile	2008-03-07 21:39:08.000000000 +0100
+@@ -47,7 +47,7 @@
+ 
+ ### Includes and Defines (add further entries here):
+ 
+-INCLUDES = -I$(VDRINC) -I$(DVBDIR)
++INCLUDES = -I$(VDRDIR)/include -I$(DVBDIR)
+ 
+ DEFINES += -DPLUGIN_NAME_I18N='"$(PLUGIN)"' -D_GNU_SOURCE
+ 

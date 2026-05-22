@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/hyprpaper/hyprpaper.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A blazing fast wayland wallpaper utility with IPC controls
+
+[T] Hyprpaper is a blazing fast wayland wallpaper utility with IPC controls.
+
+[U] https://hyprland.org/
+
+[A] vaxerski
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/x11
+[F] CROSS OBJDIR
+
+# enforce:
+[E] add libjpeg-turbo
+
+[L] BSD
+[V] 0.8.4
+
+[D] 636f399cfe0f3ae22ccb57f78849e1ae6ea4ea8f764a1490e9fb45bf hyprpaper-v0.8.4.tar.gz https://github.com/hyprwm/hyprpaper/archive/v0.8.4/

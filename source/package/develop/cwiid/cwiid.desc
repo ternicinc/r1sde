@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cwiid/cwiid.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] CWiid Wiimote Interface
+
+[T] CWiid is a collection of Linux tools written in C for interfacing to the
+[T] Nintendo Wiimote, including an event-based API, an event/mouse/joystick
+[T] driver, and GUI/control panel.
+
+[U] https://github.com/abstrakraft/cwiid/
+
+[A] L. Donnie Smith <cwiid@abstrakraft.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 0.6.91
+
+[D] ae2b54d9f4a13161add86e90f292e5aebec9407f1b2e6fb13d17e01a cwiid_0.6.91.orig.tar.xz https://deb.debian.org/debian/pool/main/c/cwiid/
+
+pkginstalled python2 || var_append confopt ' ' --without-python

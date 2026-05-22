@@ -1,0 +1,55 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/scummvm/scummvm.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A 'virtual machine' for several classic adventure games
+
+[T] ScummVM is a 'virtual machine' for several classic graphical
+[T] point-and-click adventure games. It is designed to run
+[T] Adventure Soft's Simon the Sorcerer 1 and 2,
+[T] Revolution's Beneath A Steel Sky, and games based on LucasArts' SCUMM
+[T] (Script Creation Utility for Maniac Mansion) system. SCUMM is used for
+[T] many games, including Monkey Island, Day of the Tentacle, Sam and Max
+[T] and more.
+
+[U] https://scummvm.org
+
+[A] James Brown <ender@users.sourceforge.net>
+[A] Max Horn <fingolfin@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+[F] CROSS
+
+[E] opt a52dec
+[E] opt alsa-lib
+[E] opt faad
+[E] opt flac
+[E] opt freetype
+[E] opt fribidi
+[E] opt libgif
+[E] opt libjpeg
+[E] opt libmad
+[E] opt libmikmod
+[E] opt libmpcdec
+[E] opt libmpeg2
+[E] opt libpng
+[E] opt libtheora libogg
+[E] opt libvorbis libogg
+[E] opt libvpx
+[E] opt gtk+ gdk-pixbuf cairo harfbuzz pango at-spi2-core glib
+[E] opt libx11 xorgproto
+
+[L] GPL
+[V] 2026.2.0
+
+[CV-URL] https://www.scummvm.org/downloads/
+[D] d684edb280a80192762c8127ca96bbef6d10d930c360a0fd79a962be scummvm-2026.2.0.tar.xz http://scummvm.org/frs/scummvm/2026.2.0/
+
+var_remove_regex confopt ' ' '--host=.*'
+var_append makeopt ' ' all
+makeinstopt=
+hook_add postmake 3 "install scummvm $root$bindir/"

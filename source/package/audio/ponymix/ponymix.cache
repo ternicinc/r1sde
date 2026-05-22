@@ -1,0 +1,19 @@
+[TIMESTAMP] 1737642649 Thu Jan 23 15:30:49 2025
+[BUILDTIME] 2 (9)
+[SIZE] 0.10 MB, 9 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] libnotify
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] pulseaudio
+[DEP] sed
+[DEP] tar

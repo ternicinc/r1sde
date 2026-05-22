@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/wlrobs/wlrobs.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An obs plugin to screen capture on wlroots based compositors
+
+[T] Wlrobs is an obs-studio plugin that allows you to screen capture on
+[T] wlroots based wayland compositors
+
+[U] https://hg.sr.ht/~scoopta/wlrobs
+
+[A] Scoopta
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL3
+[V] 1.2
+
+[D] 603fc48a8289050b073dbf76cad9fe3e9da3694b7520598a8571365f wlrobs-v1.2.tar.gz !https://hg.sr.ht/~scoopta/wlrobs/archive/v1.2.tar.gz

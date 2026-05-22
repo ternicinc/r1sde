@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfdesktop/xfdesktop.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Desktop manager for the Xfce Desktop Environment
+
+[T] A desktop manager for the Xfce Desktop Environment.
+
+[U] https://www.xfce.org/
+
+[A] Jasper Huijsmans <huysmans@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/xfce
+[F] CROSS
+
+[L] GPL
+[V] 4.20.2
+[P] X -----5---9 400.450
+
+[D] 62b9e697b0901ab1dd63447e295f31b232d7c977371258ed8008dea3 xfdesktop-4.20.2.tar.bz2 https://archive.xfce.org/src/xfce/xfdesktop/4.20/
+
+. $base/package/xfce4/*/xfce4-conf.in
+runmeson=0
+var_append confopt ' ' --with-default-backdrop-filename=$datadir/backgrounds/xfce/t2sde.svg
+var_append GCC_WRAPPER_INSERT ' ' "-c?:-L`pkgprefix libdir libx11` -lX11 -lXrender"
+hook_add postmake 5 "install $base/misc/artwork/t2sde.svg $root$datadir/backgrounds/xfce/"

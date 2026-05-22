@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/r/r.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Project for Statistical Computing
+
+[T] R is a language and environment for statistical computing and graphics.
+[T] It is a GNU project which is similar to the S language and environment
+[T] which was developed at Bell Laboratories (formerly AT&T, now Lucent
+[T] Technologies) by John Chambers and colleagues. R can be considered as a
+[T] different implementation of S. There are some important differences, but
+[T] much code written for S runs unaltered under R.
+
+[U] https://www.r-project.org/
+
+[A] Robert Gentleman
+[A] Ross Ihaka
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/scientific
+[F] NO-LTO.gcc
+
+[E] opt openjdk
+
+[L] GPL
+[V] 4.6.0
+
+[D] 2213be471e47af7cf06b9908a4f86676d07ae62a323eed0e9b006b64 R-4.6.0.tar.gz http://cran.r-project.org/src/base/R-4/
+
+var_append confopt ' ' "LDFLAGS=-L$root/$prefix/X11R7/${libdir##*/}"

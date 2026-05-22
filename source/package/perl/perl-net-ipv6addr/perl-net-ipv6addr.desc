@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-net-ipv6addr/perl-net-ipv6addr.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module for checking validity of IPv6 addresses
+
+[T] Net::IPv6Addr checks strings for valid IPv6 addresses, as specified in RFC1884.
+[T] You throw possible addresses at it, it either accepts them or throws an exception.
+
+[U] https://metacpan.org/dist/Net-IPv6Addr
+
+[A] Tony Monroe <tmonroe+perl@nog.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 1.02
+[P] X -----5---9 200.200
+
+[D] 2b79f38dc49f90f68015c68ff226bb3de9c9955e38b24829ec6a85fa Net-IPv6Addr-1.02.tar.gz https://cpan.metacpan.org/authors/id/B/BK/BKB/

@@ -1,0 +1,21 @@
+[TIMESTAMP] 1744731181 Tue Apr 15 17:33:01 2025
+[BUILDTIME] 35 (9)
+[SIZE] 17.53 MB, 94 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] ghostscript
+[DEP] grep
+[DEP] groff
+[DEP] libsigsegv
+[DEP] libxcrypt
+[DEP] linux-header
+[DEP] make
+[DEP] readline
+[DEP] sed
+[DEP] tar

@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/avview/avview.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An audio/video viewer program
+
+[T] AVview is a Tcl/Tk extension which provides interface to Audio/Video devices
+[T] on Linux. The goal is to have an efficient Audio/Video processing engine
+[T] which is controlled by Tcl/Tk interface.
+
+[U] https://gatos.sourceforge.net/avview.php
+
+[A] GATOS project developers { http://gatos.sourceforge.net/hall_of_fame.php }
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[E] opt lame
+
+[L] GPL
+[V] 0.80.7
+[P] O -----5---9 180.500
+
+[D] 3c1c691638e59fb0dca14194087f08cc503cd7ba521c08dc1dfebbdd avview-0.80.7.tar.gz https://prdownloads.sourceforge.net/sourceforge/gatos/
+
+pkgprefix -t ffmpeg
+var_append confopt ' ' "--with-ffmpeg=/`pkgprefix ffmpeg`"
+var_append confopt ' ' "--with-tcl=/`pkgprefix libdir tcl`"
+var_append confopt ' ' "--with-tk=/`pkgprefix libdir tk`"

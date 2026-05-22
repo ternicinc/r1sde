@@ -1,0 +1,11 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/xen-tools/config.hlp
+# Copyright (C) 2010 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+MENU_PKG_XEN
+  Here you'll find options for Xen.
+
+SDECFG_PKG_XEN_FULL
+  Whether to have basic tools support or full package.

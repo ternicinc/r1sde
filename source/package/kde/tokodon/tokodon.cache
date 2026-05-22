@@ -1,0 +1,46 @@
+[TIMESTAMP] 1770548199 Sun Feb  8 11:56:39 2026
+[BUILDTIME] 620 (9)
+[SIZE] 10.73 MB, 57 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] freetype
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] kcolorscheme
+[DEP] kconfig
+[DEP] kcoreaddons
+[DEP] kdbusaddons
+[DEP] ki18n
+[DEP] kio
+[DEP] kirigami
+[DEP] kirigami-addons
+[DEP] knotifications
+[DEP] kservice
+[DEP] kunifiedpush
+[DEP] kwindowsystem
+[DEP] libglvnd
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] procps
+[DEP] purpose
+[DEP] python
+[DEP] qcoro
+[DEP] qt6base
+[DEP] qt6declarative
+[DEP] qt6multimedia
+[DEP] qt6websockets
+[DEP] qt6webview
+[DEP] qtkeychain
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] vulkan-headers
+[DEP] xz

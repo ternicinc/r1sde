@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/diffstat/diffstat.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A histogram view for patches
+
+[T] diffstat reads the output of diff and displays a histogram of the
+[T] insertions, deletions, and modifications per-file. It is useful for
+[T] reviewing large, complex patch files.
+
+[U] https://invisible-island.net/diffstat/
+
+[A] Thomas E. Dickey <dickey@invisible-island.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/development
+[F] CROSS
+
+[L] MIT
+[V] 1.69
+
+[D] 300554b332f0bbb84f1dbfd30be70d934827f322eaf14b4fe7cfed26 diffstat-1.69.tgz https://invisible-mirror.net/archives/diffstat/

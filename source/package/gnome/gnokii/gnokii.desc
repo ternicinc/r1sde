@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnokii/gnokii.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Tools and a user space driver for use with Nokia phones under Linux
+
+[T] With gnokii you can do such things as make data calls, update your
+[T] address book, change calendar entires, send and receive SMS messages
+[T] and load ring tones depending on the phone you have.
+
+[U] https://www.gnokii.org
+
+[A] Pavel Janik <Pavel.Janik@suse.cz>
+[A] Hugh Blemings <hugh@blemings.org>
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS NOPARALLEL
+[C] extra/network
+
+[L] GPL
+[V] 0.6.31
+
+[CV-URL] https://download.gnome.org/sources/gnokii/cache.json
+[D] c89e146756ec8332babdadda1b79dedfae766534deb785e429fe5f39 gnokii-0.6.31.tar.bz2 http://www.gnokii.org/download/gnokii/
+
+hook_add postmake 3 "cp Docs/sample/gnokiirc $root$sysconfdir"

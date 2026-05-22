@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/atril/atril.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Simple document viewer
+
+[T] Atril is a simple multi-page document viewer. It can display and print
+[T] PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI, XPS and Portable
+[T] Document Format (PDF) files.
+
+[U] https://mate-desktop.org/
+
+[A] MATE developer
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/mate
+
+[L] GPL
+[V] 1.28.4
+
+[D] 7bbc7abe9f827e55aabe19617e678a8bbf4723753e0b392e78594c26 atril-1.28.4.tar.gz https://github.com/mate-desktop/atril/archive/v1.28.4/
+
+. $base/package/*/*/mate-conf.in

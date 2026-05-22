@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/bin86/hotfix.patch
+# Copyright (C) 2019 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- dev86-0.16.18/unproto/tok_io.c.vanilla	2019-04-09 13:11:43.944000000 +0200
++++ dev86-0.16.18/unproto/tok_io.c	2019-04-09 13:12:41.044000000 +0200
+@@ -189,7 +189,7 @@
+ 
+ /* do_control - parse control line */
+ 
+-static int do_control()
++static void do_control()
+ {
+     struct token *t;
+     int     line;

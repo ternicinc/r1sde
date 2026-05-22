@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-role-tiny/perl-role-tiny.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A minimalist role composition tool
+
+[T] ole::Tiny is a minimalist role composition tool.
+
+[U] https://metacpan.org/pod/Role::Tiny
+
+[A] Graham Knop <haarg@haarg.org>
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/network
+
+[L] Artistic GPL
+[V] 2.002005
+[P] X -----5---9 200.122
+
+[D] 93878f8cdb2a10b96c4fa7256422bfc7285121332398359b577682fd Role-Tiny-2.002005.tar.gz https://cpan.metacpan.org/authors/id/H/HA/HAARG/

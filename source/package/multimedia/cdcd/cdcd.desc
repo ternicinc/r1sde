@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cdcd/cdcd.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A console CD player
+
+[T] cdcd is a CD player which is usable from the command-line as
+[T] well as from its own prompt. It can manage track names, retrieve
+[T] them from the internet, do trackname completion, and more.
+
+[U] https://libcdaudio.sourceforge.net/
+
+[A] Tony Arcieri <tarcieri@gjhsnews.mesa.k12.co.us>
+[A] Fabrice Bauzac <noon@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] AUTOMAKE-QUIRK
+
+[L] GPL
+[V] 0.6.6
+
+[D] f20ef1733490a2b0008a880d5aeeb15ed26cd3038f959305536786ed cdcd-0.6.6.tar.gz https://download.sourceforge.net/libcdaudio/

@@ -1,0 +1,12 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/rakudo/parse-config
+# Copyright (C) 2021 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+# Lock is touched when building each package
+var_append flistdel '|' $prefix/share/perl6/site/repo.lock
+
+# Precomp files are grouped into directories which may be shared between
+# packages
+var_append flistdel '|' "$prefix/share/perl6/site/precomp/.*"

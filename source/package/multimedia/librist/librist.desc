@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/librist/librist.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Reliable Internet Stream Transport
+
+[T] Reliable Internet Stream Transport (RIST).
+
+[U] https://www.rist.tv/
+
+[A] Librist Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+
+[V] 0.2.15
+[L] BSD
+
+[D] f3928780fd8069a090b51223aa494ad8d65e288c414fafafece17f6c librist-v0.2.15.tar.gz https://code.videolan.org/rist/librist/-/archive/v0.2.15/

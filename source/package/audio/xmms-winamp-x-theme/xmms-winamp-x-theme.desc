@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xmms-winamp-x-theme/xmms-winamp-x-theme.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A nice replacement for the dark default XMMS skin
+
+[T] A nice replacement for the dark default XMMS skin.
+
+[U] http://www.xmms.org/skins.php
+
+[A] Deelight <deelight@flashmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 1.01
+
+[D] c9ca95d36ee760c53b3b9bd7ef81cabf91fd15cb4594623664e791cd Winamp_X_XMMS_1.01.tar.gz http://www.xmms.org/files/Skins/
+
+runmake=0
+hook_add postmake 5 "cd ..; cp -rfv Winamp_X_XMMS_* $root$datadir/xmms/Skins/"

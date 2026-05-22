@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/gconf110/hotfix-gcc4.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+--- GConf-1.0.9/backends/bdb.h.orig	2005-09-23 13:43:49.652304995 +0200
++++ GConf-1.0.9/backends/bdb.h	2005-09-23 13:45:02.675975860 +0200
+@@ -155,10 +155,8 @@
+ 
+ extern DBT *temp_string_key (const char *key);
+ extern DBT *temp_int_key (int akey);
+-extern guint32 get_dir_id (BDB_Store * bdb, const char *dir);
+ extern void add_key (BDB_Store * bdb, const char *dir, const char *keypath);
+ extern void bdb_set_sysname (const char *name);
+-extern guint32 get_or_create_dir (BDB_Store * bdb, const char *dir);
+ 
+ int bdb_create (BDB_Store * bdb, const char *dir);
+ int bdb_open (BDB_Store * bdb, const char *dir, int flags);

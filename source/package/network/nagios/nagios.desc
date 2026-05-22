@@ -1,0 +1,55 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/nagios/nagios.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Nagios host and service monitor
+
+[T] NagiosŪ is a host and service monitor designed to inform you of
+[T] network problems before your clients, end-users or managers do.
+[T] It has been designed to run under the Linux operating system,
+[T] but works fine under most *NIX variants as well.
+[T]
+[T] The monitoring daemon runs intermittent checks on hosts and services
+[T] you specify using external "plugins" which return status information
+[T] to Nagios. When problems are encountered, the daemon can send
+[T] notifications out to administrative contacts in a variety of different
+[T] ways (email, instant message, SMS, etc.).
+[T] Current status information, historical logs, and reports can all be
+[T] accessed via a web browser.
+
+[U] https://www.nagios.org
+
+[A] Ethan Galstad
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] OpenSource
+
+[V] 4.5.12
+[P] X -----5---9 200.400
+
+[D] 97e40aa3d0a48272f8097f33ba05ab28b6589f4af2883a3cad1c7c3a nagios-4.5.12.tar.gz https://prdownloads.sourceforge.net/sourceforge/nagios/
+
+if [ $prefix_auto = 1 ]; then
+	if [ "$SDECFG_PKG_NAGIOS_PREFIX" ]; then
+	  prefix="$SDECFG_PKG_NAGIOS_PREFIX"
+	else
+	  prefix="opt/nagios"
+	fi
+	set_confopt
+fi
+
+var_append makeopt ' ' all
+
+# This installs SysV init script
+#
+pkginstalled sysvinit && var_append makeinstopt ' ' install-init
+
+# This installs and configures permissions on the
+# directory for holding the external command file
+# and *SAMPLE* config files
+#
+var_append makeinstopt ' ' "install-commandmode install-config"

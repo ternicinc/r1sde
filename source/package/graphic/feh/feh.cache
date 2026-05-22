@@ -1,0 +1,21 @@
+[TIMESTAMP] 1739268459 Tue Feb 11 11:07:39 2025
+[BUILDTIME] 3 (5)
+[SIZE] 0.46 MB, 29 files
+
+[DEP] bash
+[DEP] bzip2
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] imlib2
+[DEP] libpng
+[DEP] libx11
+[DEP] libxinerama
+[DEP] libxt
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

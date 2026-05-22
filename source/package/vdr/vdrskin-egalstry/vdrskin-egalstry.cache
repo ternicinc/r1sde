@@ -1,0 +1,13 @@
+
+[TIMESTAMP] 1167838186 Wed Jan  3 16:29:46 2007
+[BUILDTIME] 5 (5)
+[SIZE] 1.59 MB, 701 files
+
+[DEP] 00-dirtree
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] grep
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar

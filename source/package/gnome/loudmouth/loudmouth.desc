@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/loudmouth/loudmouth.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Jabber client library
+
+[T] Loudmouth is a lightweight Jabber client library written in C/Glib.
+
+[U] http://www.imendio.com/projects/loudmouth
+
+[A] Mikael Hallendal <micke@imendio.com>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/network extra/office extra/desktop/gnome
+[F] CROSS
+
+[L] GPL
+[V] 1.5.4
+[P] X -----5---9 151.800
+
+[CV-URL] https://download.gnome.org/sources/loudmouth/cache.json
+[D] ad2f80a34880dfa8ab2daa26543a713728fea104aa401fce0ec5e916 loudmouth-1.5.4.tar.bz2 https://mcabber.com/files/loudmouth/
+
+. $base/package/*/*/gnome-conf.in
+var_append confopt ' ' --with-ssl=no # TODO doesn't compile with current gnutls

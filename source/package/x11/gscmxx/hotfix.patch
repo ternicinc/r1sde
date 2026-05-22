@@ -1,0 +1,26 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/gscmxx/hotfix.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -Nur gscmxx-0.4.1-orig/Makefile.PL gscmxx-0.4.1/Makefile.PL
+--- gscmxx-0.4.1-orig/Makefile.PL	2002-09-01 12:23:14.000000000 +0000
++++ gscmxx-0.4.1/Makefile.PL	2006-01-26 11:50:52.004011500 +0000
+@@ -197,12 +197,12 @@
+ sub postamble {
+ 	my $postamble = <<'END';
+ pixmaps ::
+-	$(MKPATH) $(PREFIX)/share/pixmaps/gscmxx
+-	@$(MOD_INSTALL) ./pixmaps/ $(PREFIX)/share/pixmaps/gscmxx/
++	$(MKPATH) $(DESTDIR)$(VENDORPREFIX)/share/pixmaps/gscmxx
++	@$(MOD_INSTALL) ./pixmaps/ $(DESTDIR)$(VENDORPREFIX)/share/pixmaps/gscmxx/
+ 
+ i18n ::
+-	$(MKPATH) $(PREFIX)/share/gscmxx/i18n
+-	@$(MOD_INSTALL) ./share/i18n/ $(PREFIX)/share/gscmxx/i18n/
++	$(MKPATH) $(DESTDIR)$(VENDORPREFIX)/share/gscmxx/i18n
++	@$(MOD_INSTALL) ./share/i18n/ $(DESTDIR)$(VENDORPREFIX)/share/gscmxx/i18n/
+ 
+ END
+ 	return $postamble;

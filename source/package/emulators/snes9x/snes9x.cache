@@ -1,0 +1,50 @@
+[TIMESTAMP] 1775754648 Thu Apr  9 19:10:48 2026
+[BUILDTIME] 100 (9)
+[SIZE] 12.98 MB, 28 files
+
+[DEP] alsa-lib
+[OPT] at-spi2-core
+[OPT] atkmm1
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[OPT] cairo
+[OPT] cairomm1
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[OPT] gdk-pixbuf
+[DEP] gettext
+[OPT] glib
+[OPT] glibmm2
+[DEP] grep
+[OPT] gtk+
+[OPT] gtkmm3
+[DEP] gzip
+[OPT] harfbuzz
+[DEP] libpng
+[DEP] libsdl2
+[OPT] libsigc++2
+[DEP] libx11
+[DEP] libxext
+[DEP] libxrandr
+[DEP] libxrender
+[DEP] libxv
+[DEP] linux-header
+[DEP] make
+[OPT] pango
+[OPT] pangomm1
+[DEP] pkgconfig
+[OPT] portaudio
+[OPT] pulseaudio
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[OPT] wayland
+[DEP] xorgproto
+[DEP] zlib

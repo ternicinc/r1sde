@@ -1,0 +1,22 @@
+[TIMESTAMP] 1775235375 Fri Apr  3 18:56:15 2026
+[BUILDTIME] 20 (9)
+[SIZE] 4.63 MB, 30 files
+
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libburn
+[DEP] libisofs
+[DEP] linux-header
+[DEP] make
+[DEP] readline
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] zlib

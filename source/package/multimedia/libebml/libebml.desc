@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libebml/libebml.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library for EBML
+
+[T] A library to read and write EBML files. Used by libmatroska.
+[T] EBML is a derivative of XML meaning Extensible Binary Markup Language.
+
+[U] https://www.matroska.org
+
+[A] Matroska Team <matroska-users@lists.matroska.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 1.4.5
+[P] X -----5---9 174.500
+
+[D] ec2b360cccbc214b1c1bdafc63d44607fbe5a4a491616e583c812274 libebml-1.4.5.tar.xz https://dl.matroska.org/downloads/libebml/
+
+var_append cmakeopt ' ' -DCMAKE_POLICY_VERSION_MINIMUM=3.5

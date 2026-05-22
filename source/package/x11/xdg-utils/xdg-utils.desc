@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xdg-utils/xdg-utils.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A set of cli-tools for desktop integration
+
+[T] Xdg-utils is a set of command line tools that assist applications with a
+[T] variety of desktop integration tasks. About half of the tools focus on
+[T] tasks commonly required during the installation of a desktop application
+[T] and the other half focuses on integration with the desktop environment
+[T] while the application is running. Even if the desktop components of your
+[T] application are limited to an installer, configuration or management
+[T] tool, Xdg-utils provides you with an easy way to enhance the usage
+[T] experience of your customers by improving the integration of these
+[T] components in the user's environment. Best of all, Xdg-utils is provided
+[T] as open source and free of charge.
+
+[U] http://portland.freedesktop.org/wiki/
+
+[A] Waldo Bastian <waldo.bastian@intel.com>
+[A] Kevin Krammer <kevin.krammer@gmx.at>
+[A] Bryce Harrington <bryce@osdl.org>
+[M] Gerhard Weis <gweis@gmx.at>
+
+[C] extra/x11
+[F] CROSS
+
+[E] opt docbook-xml docbook-xsl libxml libxslt lynx xmlto
+
+[L] MIT
+[V] 1.2.1
+
+[D] b4d46cd6d496e4637a3f4418162df69e1b33547ac2fa6ca43e3e998c xdg-utils-v1.2.1.tar.gz https://gitlab.freedesktop.org/xdg/xdg-utils/-/archive/v1.2.1/

@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/clinfo/clinfo.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A CLI app to enumerates all OpenCL properties and devices
+
+[T] Clinfo is a simple command-line application that enumerates all possible
+[T] (known) properties of the OpenCL platform and devices available on the
+[T] system. It tries to output all possible information, including those
+[T] provided by platform-specific extensions.
+
+[U] https://github.com/Oblomov/clinfo
+
+[A] clinfo developers
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] CC0
+[V] 3.0.25.02.14
+
+[E] add opencl-loader
+
+[D] f5e76ec852a56ea35e45cefa0af3d8d4e4cf1a6f36ee8f9203bd5c3a clinfo-3.0.25.02.14.tar.gz https://github.com/Oblomov/clinfo/archive/3.0.25.02.14/

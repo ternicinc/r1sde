@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dietlibc/x86_64-umount2.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -urN dietlibc-0.30/x86_64/dyn_syscalls.S dietlibc-0.30-t2/x86_64/dyn_syscalls.S
+--- dietlibc-0.30/x86_64/dyn_syscalls.S	2005-10-08 23:11:32.000000000 +0200
++++ dietlibc-0.30-t2/x86_64/dyn_syscalls.S	2006-10-02 11:06:30.000000000 +0200
+@@ -226,6 +226,7 @@
+ #include "../syscalls.s/write.S"
+ #include "../syscalls.s/writev.S"
+ #include "../syscalls.s/ustat.S"
++#include "../syscalls.s/umount2.S"
+ 
+ #include "../syscalls.s/clock_settime.S"
+ #include "../syscalls.s/clock_gettime.S"

@@ -1,0 +1,26 @@
+[TIMESTAMP] 1740702586 Fri Feb 28 01:29:46 2025
+[BUILDTIME] 4 (9)
+[SIZE] 13.31 MB, 799 files
+
+[DEP] alabaster
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] imagesize
+[DEP] openssl
+[DEP] pyidna
+[DEP] pyrequests
+[DEP] python
+[DEP] python-gpep517
+[DEP] roman-numerals-py
+[DEP] sed
+[DEP] snowballstemmer
+[DEP] sphinxcontrib-applehelp
+[DEP] sphinxcontrib-devhelp
+[DEP] sphinxcontrib-htmlhelp
+[DEP] sphinxcontrib-qthelp
+[DEP] sphinxcontrib-serializinghtml
+[DEP] tar

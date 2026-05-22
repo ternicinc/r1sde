@@ -1,0 +1,41 @@
+[TIMESTAMP] 1768854020 Mon Jan 19 21:20:20 2026
+[BUILDTIME] 40 (9)
+[SIZE] 3.69 MB, 86 files
+
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] freetype
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] grep
+[OPT] libgif
+[OPT] libheif
+[OPT] libid3tag
+[OPT] libjpeg
+[OPT] libjxl
+[OPT] libpng
+[DEP] libraw
+[OPT] librsvg
+[OPT] libtiff
+[OPT] libwebp
+[DEP] libx11
+[DEP] libxcb
+[DEP] libxext
+[OPT] libyuv
+[DEP] linux-header
+[DEP] make
+[OPT] openjpeg
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] xorgproto
+[DEP] xz
+[DEP] zlib

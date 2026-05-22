@@ -1,0 +1,27 @@
+[TIMESTAMP] 1766570839 Wed Dec 24 11:07:19 2025
+[BUILDTIME] 30 (9)
+[SIZE] 3.25 MB, 232 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[OPT] doxygen
+[DEP] gawk
+[DEP] gettext
+[DEP] glib
+[OPT] gobject-introspection
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[OPT] lua
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pipewire
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[OPT] systemd
+[DEP] tar

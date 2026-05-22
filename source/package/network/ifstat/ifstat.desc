@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ifstat/ifstat.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Console-based network statistics utility
+
+[T] ifstat is a tool to report network interfaces bandwith just like
+[T] vmstat/iostat do for other system counters.
+
+[U] https://github.com/matttbe/ifstat/
+
+[A] <gael.roualland@dial.oleane.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+
+[L] GPL
+[V] 1.1.1
+
+[D] bd2140b03d3a6bd596dbb53e5f1f0015d674df40d94c6f0faef69d69 ifstat-1.1.1.tar.gz https://github.com/matttbe/ifstat/archive/v1.1.1/

@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/giblib/giblib.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A simple imlib2 wrapper library with linked lists and fontstyles
+
+[T] Giblib is a simple library which wraps imlib2. It provides a wrapper
+[T] to imlib2's context API, avoiding all the context_get/set calls, adds
+[T] fontstyles to the truetype renderer and supplies a generic doubly-linked
+[T] list and some string functions.
+
+[U] http://linuxbrit.co.uk/giblib/
+
+[A] Tom <tom@linuxbrit.co.uk>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+
+[L] BSD
+[V] 1.2.4
+
+[D] 7fbbbf9679537af94d54203e72b5587b33e3eac1e121b6a0083181a8 giblib-1.2.4.tar.gz http://linuxbrit.co.uk/downloads/

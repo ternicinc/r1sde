@@ -1,0 +1,22 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/hfsplusutils/getloadavg.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -urN diskdev_cmds-332.14/newfs_hfs.tproj/makehfs.c diskdev_cmds-332.14-fixed/newfs_hfs.tproj/makehfs.c
+--- diskdev_cmds-332.14/newfs_hfs.tproj/makehfs.c	2007-11-18 10:52:40.000000000 +0100
++++ diskdev_cmds-332.14-fixed/newfs_hfs.tproj/makehfs.c	2007-11-18 10:54:31.000000000 +0100
+@@ -2120,10 +2120,11 @@
+ 		SHA1_Update(&context, sysctlstring, datalen);
+ #endif
+ 		/* The system's load average: */
++#if ! defined (__UCLIBC__) && ! defined (__dietlibc__)
+ 		datalen = sizeof(sysloadavg);
+ 		getloadavg(sysloadavg, 3);
+ 		SHA1_Update(&context, &sysloadavg, datalen);
+-
++#endif
+ 		/* The system's VM statistics: */
+ #if !LINUX
+ 		mib[0] = CTL_VM;

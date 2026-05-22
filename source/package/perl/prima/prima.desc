@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/prima/prima.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Perl GUI toolkit
+
+[T] Prima is an extensible Perl toolkit for multi-platform GUI
+[T] development. Supported platforms include Linux, Windows NT/9x/2K, OS/2,
+[T] and UNIX/X11 workstations (FreeBSD, IRIX, SunOS, Solaris, and others). The
+[T] toolkit contains a rich set of standard widgets and has emphasis on 2D
+[T] image processing tasks. A Perl program using Prima looks and behaves
+[T] identically on X, Win32, and OS/2 PM.
+
+[U] http://www.prima.eu.org
+
+[A] Dmitry Karasik <dmitry@karasik.eu.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+[F] FPIC
+
+[E] opt libheif
+[E] opt libwebp
+
+[L] BSD
+[V] 1.77
+
+[D] df9ca50a95811965d363def584e8aa063995d11410c149ce90ca9154 Prima-1.77.tar.gz https://cpan.metacpan.org/authors/id/K/KA/KARASIK/
+
+plconfopt="X11BASE=/`pkgprefix libx11`"

@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/obexd/obexd.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] OBEX Server and Client
+
+[T] OBEX Server and Client.
+
+[U] https://www.bluez.org/
+
+[A] Marcel Holtmann <marcel@holtmann.org>
+[A] Johan Hedberg <johan.hedberg@nokia.com>
+[A] Claudio Takahasi <claudio.takahasi@openbossa.org>
+[A] Luiz Augusto von Dentz <luiz.dentz@openbossa.org>
+[A] Vinicius Costa Gomes <vinicius.gomes@openbossa.org>
+[A] Forrest Zhao <forrest.zhao@intel.com>
+[A] Raymond Liu <raymond.liu@intel.com>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/filesystem
+
+[L] GPL
+[V] 0.48
+
+[D] 7a09ab8836c11fd455cad3517b69b4d2818128c447bd0e08d258ea05 obexd-0.48.tar.xz https://www.kernel.org/pub/linux/bluetooth/

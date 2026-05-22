@@ -1,0 +1,8 @@
+3449 var.c
+204 jobs.c
+108 expand.c
+98 exec.c
+94 parser.c
+49 memalloc.c
+40 eval.c
+25 input.c

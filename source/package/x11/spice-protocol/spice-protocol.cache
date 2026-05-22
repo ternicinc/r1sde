@@ -1,0 +1,15 @@
+[TIMESTAMP] 1737673684 Fri Jan 24 00:08:04 2025
+[BUILDTIME] 1 (9)
+[SIZE] 0.11 MB, 21 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] sed
+[DEP] tar
+[DEP] xz

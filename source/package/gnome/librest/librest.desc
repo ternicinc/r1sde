@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/librest/librest.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library to make it easier to access RESTful web services
+
+[T] This library has been designed to make it easier to access web services
+[T] that claim to be "RESTful".
+
+[U] https://wiki.gnome.org/Projects/Librest
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 0.10.2
+[P] X -----5---9 180.200
+
+[D] 1d3bfbf176a553ddd8dda919a54697fcce3d3a177f211c3c5c30c917 librest-0.10.2.tar.bz2 https://gitlab.gnome.org/GNOME/librest/-/archive/0.10.2/
+
+. $base/package/*/*/gnome-conf.in

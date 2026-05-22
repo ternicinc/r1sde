@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xapian-bindings/xapian-bindings.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Information retrieval library
+
+[T] Xapian is a Probabilistic Information Retrieval library. It is
+[T] written in C++ with bindings to Perl, Python, PHP, Java, Tcl, and
+[T] C#. It is an adaptable toolkit that allows developers to add advanced
+[T] indexing and search facilities to their own applications.
+
+[U] https://www.xapian.org/
+
+[A] Olly Betts <olly@survex.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[E] opt luajit
+[E] opt openjdk
+[E] opt perl
+[E] opt ruby
+[E] opt tcl
+
+[L] GPL
+[V] 2.0.0
+
+[D] 62100783a995fccd4c90f4f79b30141a7883ac104acf4958e8780751 xapian-bindings-2.0.0.tar.xz https://oligarchy.co.uk/xapian/2.0.0/
+
+var_remove confopt ' ' '--disable-debug' # unsupported

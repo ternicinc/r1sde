@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/leptonlib/leptonlib.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] C library for some basic image processing operations
+
+[T] C library for some basic image processing operations, along with a
+[T] description of the functions and some design methods. A full set of
+[T] affine transformations (translation, shear, rotation, scaling) on
+[T] images of all depths is included, with the exception that some of
+[T] the scaling methods do not work at all depths.
+
+[U] http://www.leptonica.com/
+
+[A] Dan Bloomberg
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+[F] CROSS
+
+[E] opt libwebp
+
+[L] APL
+[V] 1.87.0
+[P] X -----5---9 112.700
+
+[D] e5e3bc15044c778ec1cde3b1fef09961ebc5b0627c0ee64e5c46708f leptonica-1.87.0.tar.gz http://www.leptonica.org/source/

@@ -1,0 +1,18 @@
+
+[TIMESTAMP] 1611486508 Sun Jan 24 12:08:28 2021
+[BUILDTIME] 10 (9)
+[SIZE] 58.74 MB, 17 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] udev

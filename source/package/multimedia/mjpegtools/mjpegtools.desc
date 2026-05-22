@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mjpegtools/mjpegtools.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Programs for MJPEG recording and playback
+
+[T] The MJPEG-tools are a basic set of utilities for recording, editing,
+[T] playing back and encoding (to mpeg) video under linux. Recording can
+[T] be done with zoran-based MJPEG-boards (LML33, Iomega Buz, Pinnacle
+[T] DC10(+), Marvel G200/G400), these can also playback video using the
+[T] hardware. With the rest of the tools, this video can be edited and
+[T] encoded into mpeg1/2 or divx video.
+
+[U] https://mjpeg.sf.net/
+
+[A] Gernot Ziegler <madmac@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS FPIC
+
+[L] GPL
+[V] 2.2.1
+[P] X -----5---9 157.200
+
+[D] e2922f3ef72e7058b9a7b83e6b8a92841cff600a18c7c940c42d7ef6 mjpegtools-2.2.1.tar.gz https://prdownloads.sourceforge.net/sourceforge/mjpeg/

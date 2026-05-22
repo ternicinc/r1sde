@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/torcs/lz.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- torcs-1.2.4_orig/src/modules/graphic/ssggraph/Makefile	2005-08-24 21:19:47.000000000 +0200
++++ torcs-1.2.4/src/modules/graphic/ssggraph/Makefile	2005-08-27 10:25:10.428837008 +0200
+@@ -24,7 +24,7 @@
+ 
+ MODULEDIR = modules/graphic
+ 
+-LIBS      = -lplibsl -lplibsm -lplibsg -lplibssg -lplibul -lplibssgaux -lopenal
++LIBS      = -lplibsl -lplibsm -lplibsg -lplibssg -lplibul -lplibssgaux -lopenal -lz
+ 
+ SHIPDIR   = config
+ 

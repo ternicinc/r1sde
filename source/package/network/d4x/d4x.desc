@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/d4x/d4x.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Downloader for X
+
+[T] Downloader for X is a Linux/Unix userfriendly program with nice X interface
+[T] to download files from the Internet. It suppotrs both FTP and HTTP proto-
+[T] cols, supports resuming (of course if server side supports it) and makes
+[T] downloading files from internet easy. Downloader for X is an analogue for
+[T] Linux/Unix of such famous applications for Windows as ReGet, Go!Zilla
+[T] and GetRight.
+
+[U] http://www.krasu.ru/soft/chuchelo
+
+[A] Maxim Koshelev <chuchelo@krasu.ru>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/base
+
+[L] Artistic
+[V] 2.5.7.1
+
+[D] 035b2e9eceaedf2fd729076f078e5a7541cba9e85c5fdc18d274ec7f d4x-2.5.7.1.tar.bz2 http://d4x.krasu.ru/files/

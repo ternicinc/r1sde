@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pexpect/pexpect.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Pure Python Expect-like module
+
+[T] Pexpect is a pure Python module for spawning child applications;
+[T] controlling them; and responding to expected patterns in their output.
+
+[U] https://pexpect.readthedocs.io/en/stable/
+
+[A] Pexpect development team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+[L] ISC
+
+[V] 4.9
+[P] X -----5---9 127.440
+
+[E] add ptyprocess
+
+[D] be56d0ebb7ed210e9590ed385c320a5e814981e413a68e748131c4ff pexpect-4.9.tar.gz https://github.com/pexpect/pexpect/archive/4.9/

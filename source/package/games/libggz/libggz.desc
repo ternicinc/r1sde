@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libggz/libggz.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An online gaming center with multiple rooms and game modules
+
+[T] The GGZ Gaming Zone (GGZ) is an Internet gaming center. Players login
+[T] and sit at tables where they can play their favorite games and chat with
+[T] other players. GGZ can support multiple rooms with varying skill levels.
+
+[U] http://www.ggzgamingzone.org/
+
+[A] Josef Spillner <josef@coolprojects.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+[F] CROSS
+
+[L] GPL
+[V] 0.0.14.1
+[P] X -----5---9 400.000
+
+[D] cb69c06924581d0a6276b47933438079c9e03e69b6204ac56301d71c libggz-0.0.14.1.tar.gz http://ftp.ggzgamingzone.org/pub/ggz/0.0.14.1/

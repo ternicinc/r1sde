@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/idris/idris.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Language for Type-Driven Development
+
+[T] Idris is a programming language designed to encourage Type-Driven
+[T] Development.
+[T]
+[T] In type-driven development, types are tools for constructing programs. We
+[T] treat the type as the plan for a program, and use the compiler and type
+[T] checker as our assistant, guiding us to a complete program that satisfies
+[T] the type.
+
+[U] https://www.idris-lang.org
+
+[A] Edwin Brady
+[M] Tomas Glozar <tglozar@gmail.com>
+
+[C] base/development
+
+[L] BSD
+[V] 1.3.4
+
+[D] b7850275bdd5b5a9b5b42518db232fcb6fd4dfecba3441fd0f01df11 idris-1.3.4.tar.gz https://github.com/idris-lang/Idris-dev/archive/refs/tags/v1.3.4/
+
+var_append makeopt ' ' 'bootstrap SCHEME=scheme'
+var_append makeinstopt ' ' PREFIX=$root/$prefix

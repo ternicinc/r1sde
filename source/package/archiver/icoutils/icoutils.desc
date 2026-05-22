@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/icoutils/icoutils.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A set of programs to convert and create MS Windows icons and cursors
+
+[T] The icoutils are a set of programs for extracting and converting images
+[T] in Microsoft Windows icon and cursor files. These files usually have the
+[T] extension .ico or .cur, but they can also be embedded in executables and
+[T] libraries (.dll - files). Icoutils can also create icon and cursor files.
+
+[U] https://www.nongnu.org/icoutils/
+
+[A] Oskar Liljeblad <oskar@osk.mine.nu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 0.32.3
+
+[CV-URL] http://www.nongnu.org/icoutils/
+
+[D] 4e725f5a233cbe167dd34d0fce478432b84ed1b44887ce5aa61ff4ac icoutils-0.32.3.tar.bz2 http://savannah.nongnu.org/download/icoutils/

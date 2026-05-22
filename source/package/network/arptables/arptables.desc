@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/arptables/arptables.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] ARP packet filtering administration
+
+[T] arptables is used to set up and maintain the tables of ARP rules
+[T] in the Linux kernel. These rules inspect the ARP frames which
+[T] they see.
+[T] arptables is analogous to the iptables user space tool, but
+[T] arptables is less complicated.
+
+[U] https://ebtables.sf.net/
+
+[A] Bart De Schuymer <bdschuym@pandora.be>
+[A] Nick Fedchik <nick@fedchik.org.ua>
+[A] Grzegorz Borowiak <grzes@gnu.univ.gda.pl>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+[F] CROSS
+
+[L] GPL
+
+[V] 0.0.5
+
+[D] d1aca018738492a9e43e976afb34281d656592d90b6aeed5c7534def arptables-0.0.5.tar.gz https://ftp.netfilter.org/pub/arptables/

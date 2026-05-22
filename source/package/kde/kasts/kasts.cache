@@ -1,0 +1,42 @@
+[TIMESTAMP] 1759855600 Tue Oct  7 18:46:40 2025
+[BUILDTIME] 270 (9)
+[SIZE] 5.09 MB, 55 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] breeze-icons
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] freetype
+[DEP] gawk
+[DEP] gettext
+[DEP] glib
+[DEP] grep
+[DEP] gstreamer
+[DEP] kcolorscheme
+[DEP] kconfig
+[DEP] kcoreaddons
+[DEP] kcrash
+[DEP] kdbusaddons
+[DEP] ki18n
+[DEP] kiconthemes
+[DEP] kwindowsystem
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] procps
+[DEP] python
+[DEP] qt6base
+[DEP] qt6declarative
+[DEP] qt6multimedia
+[DEP] qt6svg
+[DEP] qtkeychain
+[DEP] sed
+[DEP] syndication
+[DEP] taglib
+[DEP] tar
+[DEP] threadweaver
+[DEP] vulkan-headers
+[DEP] xz

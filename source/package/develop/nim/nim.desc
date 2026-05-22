@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/nim/nim.desc
+[COPY] Copyright (C) 2021 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A statically typed compiled systems programming language
+
+[T] Nim is a statically typed compiled systems programming language. It
+[T] combines successful concepts from mature languages like Python, Ada
+[T] and Modula.
+
+[U] https://nim-lang.org
+
+[A] Andreas Rumpf
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] MIT
+[V] 2.2.10
+
+[D] 51b00b7014a1dc5c931528045eb44db7f2732725e70f48470aa46c03 nim-2.2.10.tar.xz https://nim-lang.org/download/
+
+# TODO: make it honor $prefix
+[ $prefix_auto = 1 ] && prefix=opt/nim && set_confopt
+hook_add postmake 5 "./install $root/${prefix%/*}"

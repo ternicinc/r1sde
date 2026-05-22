@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pygraphviz/pygraphviz.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Python interface to Graphviz graph drawing package
+
+[T] A Python interface to the Graphviz graph layout and visualization package.
+[T] With PyGraphviz you can create, edit, read, write, and draw graphs using
+[T] Python to access the Graphviz graph data structure and layout algorithms.
+
+[U] https://pygraphviz.github.io/
+
+[A] Aric Hagberg <aric.hagberg@gmail.gov>
+[A] Dan Schult <dschult@colgate.edu>
+[A] Manos Renieris
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 1.14
+
+[D] 7a088262ec16f46d775554872c6339c8e6affc55ce1b0a827d608444 pygraphviz-1.14.tar.gz https://files.pythonhosted.org/packages/source/p/pygraphviz/

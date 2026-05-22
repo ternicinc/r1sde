@@ -1,0 +1,16 @@
+
+[TIMESTAMP] 1171446639 Wed Feb 14 09:50:39 2007
+[BUILDTIME] 5 (5) ERROR
+[SIZE] 0.01 MB, 6 files
+
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] mysql
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar

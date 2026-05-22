@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mtr/mtr.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Matt's TraceRoute
+
+[T] Mtr combines the functionality of the traceroute and ping programs in a
+[T] single network diagnostic tool. It has a curses and a gtk+ based interface.
+[T]
+[T] As mtr starts, it investigates the network connection between the host
+[T] mtr runs on and a user-specified destination host. After it
+[T] determines the address of each network hop between the machines,
+[T] it sends a sequence ICMP ECHO requests to each one to determine the
+[T] quality of the link to each machine. As it does this, it prints
+[T] running statistics about each machine.
+
+[U] https://www.bitwizard.nl/mtr/
+
+[A] Matt Kimball <mkimball@xmission.com> {Original Author}
+[A] Roger Wolff <R.E.Wolff@BitWizard.nl> {Current Developer}
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 0.96
+
+[D] f5af7cdf39724a3622b60c07b51c8bc00853c07f22fc19848ead7c56 mtr-0.96.tar.gz http://ftp.bitwizard.nl/mtr/

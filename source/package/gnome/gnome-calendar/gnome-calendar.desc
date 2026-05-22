@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-calendar/gnome-calendar.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome gnome-calendar package
+
+[T] Core Gnome gnome-calendar package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 50.0
+
+[CV-URL] https://download.gnome.org/sources/gnome-calendar/cache.json
+[D] 1c5dc02a02da3b7e06bcd6e8a568744292a96512a4838ccf36595d69 gnome-calendar-50.0.tar.xz https://download.gnome.org/sources/gnome-calendar/50/
+
+. $base/package/*/*/gnome-conf.in

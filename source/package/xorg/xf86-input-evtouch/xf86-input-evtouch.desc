@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-input-evtouch/xf86-input-evtouch.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Pointer device support for X using the Linux kernel 2.6 event interface
+
+[T] Evtouch aims at integration of pointer support for the Linux 2. 6 event
+[T] interface to X.
+
+[U] http://www.conan.de/touchscreen/evtouch.html
+
+[A] Kenan Esau <kenan.esau@conan.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] MIT
+[V] 0.8.8
+[P] O
+
+[D] e0edb1a43604e9bed3c33918c4d774c014b0abcfb82f7be3b5de54ca xf86-input-evtouch-0.8.8.tar.bz2 http://www.conan.de/touchscreen/
+
+. package/*/*/modular-x-conf.in

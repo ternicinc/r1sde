@@ -1,0 +1,41 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sysvinit/sysvinit.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] This is the Linux System V init
+
+[T] The SysVinit package contains a group of processes that
+[T] control the very basic functions of your system. SysVinit includes
+[T] the init program, the first program started by the Linux
+[T] kernel when the system boots. Init then controls the startup,
+[T] running and shutdown of all other programs.
+
+[A] Miquel van Smoorenburg <miquels@cistron.nl>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS DIETLIBC INIT
+
+[L] GPL
+[V] 3.18
+[P] O --2--5---9 179.000
+
+[D] 858a18957dadceee10b1bc5ccfba2cf36e4b6d0ea3e8a4129782089a sysvinit-3.18.tar.gz !https://codeberg.org/thejessesmith/sysvinit/archive/3.18.tar.gz
+
+DISTRO="T2"
+
+# T2 that does not use the sysV Init system if it's not _the_ Init,
+# don't build init and runlevel, we only want the tools.
+if [ "$SDECFG_INIT" != "$pkg" ]; then
+	DISTRO="T2-no-init"
+else
+	hook_add postmake 5 "cp -vf $confdir/etc_inittab.txt $root/etc/inittab"
+fi
+
+var_append makeopt ' ' 'LCRYPT=-lcrypt LUTIL=-lutil ROOT=$root DISTRO=$DISTRO all'
+var_append makeinstopt ' ' 'LCRYPT=-lcrypt LUTIL=-lutil ROOT=$root DISTRO=$DISTRO install'
+
+hook_add postmake 5 '$CC -Wall $confdir/rc.c -o $root/sbin/rc'

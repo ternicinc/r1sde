@@ -1,0 +1,26 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dvbd/hotfix.patch
+# Copyright (C) 2020 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- dvbd-0.7.7/src/dvbcat.cpp.vanilla	2020-05-20 17:05:07.862211904 +0200
++++ dvbd-0.7.7/src/dvbcat.cpp	2020-05-20 17:05:44.806211922 +0200
+@@ -31,6 +31,7 @@
+ #include <cerrno>
+ #include <fstream>
+ #include <fcntl.h>
++#include <unistd.h>
+ 
+ void usage(const char *progname);
+ time_t convertTime(const char *theTime);
+--- dvbd-0.7.7/src/unixserversocket.cpp.vanilla	2020-05-20 17:06:16.662211938 +0200
++++ dvbd-0.7.7/src/unixserversocket.cpp	2020-05-20 17:07:09.406211963 +0200
+@@ -27,6 +27,7 @@
+ #include <sys/types.h>
+ #include <sys/socket.h>
+ #include <sys/un.h>
++#include <sys/stat.h>
+ #include <fcntl.h>
+ #include <pwd.h>
+ #include <grp.h>

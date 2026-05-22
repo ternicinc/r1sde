@@ -1,0 +1,19 @@
+[TIMESTAMP] 1737643149 Thu Jan 23 15:39:09 2025
+[BUILDTIME] 3 (9)
+[SIZE] 0.16 MB, 22 files
+
+[DEP] alsa-lib
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] ladspa
+[DEP] libsamplerate
+[DEP] libsndfile
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar

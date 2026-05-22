@@ -1,0 +1,24 @@
+
+[TIMESTAMP] 1718835678 Thu Jun 20 00:21:18 2024
+[BUILDTIME] 250 (9) ERROR
+[SIZE] 0.01 MB, 6 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] icu4c
+[DEP] libglvnd
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] pkgconfig
+[DEP] qt5base
+[DEP] qt5declarative
+[DEP] qt5serialport
+[DEP] sed
+[DEP] tar
+[DEP] xz

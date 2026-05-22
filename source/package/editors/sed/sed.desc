@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sed/sed.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] This is the GNU implementation of the POSIX stream editor
+
+[T] The sed (Stream EDitor) editor is a stream or batch
+[T] (non-interactive) editor. Sed takes text as input, performs an
+[T] operation or set of operations on the text and outputs the modified
+[T] text. The operations that sed performs (substitutions,
+[T] deletions, insertions, etc.) can be specified in a script file or
+[T] from the command line.
+
+[A] Jay Fenlason <hack@gnu.org> {Original Author}
+[A] Tom Lord <lord@gnu.org> {Maintainer in the middle}
+[A] Ken Pizzini <ken@gnu.org> {Current Maintainer}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/development
+[F] CROSS DIETLIBC
+
+[L] GPL
+[V] 4.10
+[P] X --2--5---9 108.000
+
+[D] 8fd56cc9e9488bf3cb270e19d9632f7052cfac778edb0655d368252a sed-4.10.tar.xz http://ftp.gnu.org/pub/gnu/sed/
+
+var_append GCC_WRAPPER_APPEND ' ' -std=c99
+# workaround for sed configure getline disabling in stage 1
+hook_add preconf 5 "echo am_cv_func_working_getline=yes >> config.cache"
+hook_add postmake 5 "mv -v $root/usr/bin/sed $root/bin/sed"

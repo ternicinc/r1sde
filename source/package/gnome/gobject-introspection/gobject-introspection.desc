@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gobject-introspection/gobject-introspection.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Introspection for GObject libraries
+
+[T] Introspection for GObject libraries.
+
+[U] https://live.gnome.org/GObjectIntrospection
+
+[A] Matthias Clasen <mclasen@redhat.com>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/base
+
+[L] LGPL
+[V] 1.86.0
+[P] X ?----5---9 110.899
+
+[CV-URL] https://download.gnome.org/sources/gobject-introspection/cache.json
+[D] d3d5079e78cc3dcc1e2a786260afb6c20a12772de5b847ad64c9cf3c gobject-introspection-1.86.0.tar.xz https://download.gnome.org/sources/gobject-introspection/1.86/
+
+. $base/package/*/*/gnome-conf.in
+hook_add preconf 1 "rm -rvf $builddir/$pkg-$ver/subprojects"
+atstage cross && hook_add premake 5 "sed -i 's/needs_exe_wrapper = true/needs_exe_wrapper = false/g' $builddir/$pkg-$ver/cross.ini"
+var_append mesonopt ' ' '-Dcairo=disabled -Ddoctool=disabled -Dtests=false' # no need to depend on cairo, ...

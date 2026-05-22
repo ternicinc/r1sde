@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/glibc/fl_wrapper_testfix.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./scripts/test-installation.pl.gv	Fri Nov 15 13:20:48 2002
++++ ./scripts/test-installation.pl	Fri Nov 15 13:21:07 2002
+@@ -156,6 +156,7 @@
+ open LDD, "ldd /tmp/test-prg$$ |"
+   or die ("Couldn't execute ldd");
+ while (<LDD>) {
++  next if (/fl_wrapper/);
+   if (/^\s*lib/) {
+     ($name, $version1, $version2) =
+       /^\s*lib(\w*)\.so\.([0-9\.]*)\s*=>.*\.so\.([0-9\.]*)/;

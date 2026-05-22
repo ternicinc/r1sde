@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/flexbackup/flexbackup.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A flexible backup tool
+
+[T] flexbackup is for you if you have a single or small number of machines,
+[T] amanda is "too much", and tarring things up by hand isn't nearly enough ...
+
+[U] http://www.edwinh.org/flexbackup/
+
+[A] Edwin Huffstutler <edwinh@computer.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+
+[L] GPL
+
+[V] 1.2.1
+
+[D] fa61e1740cbdfbc45fb5e2d2872edfb03492167fb08617b13333938a flexbackup-1.2.1.tar.gz http://www.edwinh.org/flexbackup/tarball/

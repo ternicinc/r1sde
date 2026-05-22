@@ -1,0 +1,39 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/mips64/config.in
+# Copyright (C) 2004 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+#Description: MIPS64
+
+choice SDECFG_MIPS64_ENDIANESS EB \
+	EB	"Build for big endian machines"	\
+	EL	"Build for little endian machines"
+
+SDECFG_ID="$SDECFG_ID-$SDECFG_MIPS64_ENDIANESS"
+
+bool 'Default to 32-bit (N32) for the user-space applications' SDECFG_MIPS64_N32 1
+
+if [ $SDECFG_MIPS64_N32 = 1 ]; then
+        SDECFG_ID="$SDECFG_ID-n32"
+fi
+
+choice SDECFG_MIPS64_OPT generic		\
+	generic "No special optimization"	\
+	r5000	"Build for R5000 CPU"		\
+	r6000	"Build for R6000 CPU"		\
+	r8000	"Build for R8000 CPU"		\
+	r10000	"Build for R10000 CPU"		\
+	r12000	"Build for R12000 CPU"		\
+	r14000	"Build for R14000 CPU"		\
+	r16000	"Build for R16000 CPU"		\
+	mips64	"Build for MIPS64 CPU"		\
+	octeon	"Build for Cavium Octeon"	\
+	octeon2	"Build for Cavium Octeon2"	\
+	octeon3	"Build for Cavium Octeon3"
+
+if [ $SDECFG_MIPS64_OPT != generic ]; then
+	SDECFG_ID="$SDECFG_ID-$SDECFG_MIPS64_OPT"
+fi
+
+SDECFGSET_MULTILIB=1

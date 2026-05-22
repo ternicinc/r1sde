@@ -1,0 +1,179 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/embutils/mount.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+Harden mount to not crash when the directory was not found in /etc/fstab and
+improved the tokenizing to strip white spaces, since the files are often
+indented in tabular form and fixed the entry parsing to not overwrite memory.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- embutils-0.19/mount.c	2006-11-05 20:10:18.000000000 +0000
++++ embutils-0.19-fixed/mount.c	2007-08-25 09:20:23.000000000 +0000
+@@ -148,6 +148,11 @@
+   char* tmp;
+   if(s)
+     buffer=s;
++
++  /* skip leading spaces */
++  while(*buffer && isspace(*buffer))
++    ++buffer;
++
+   tmp=buffer;
+   for(;*buffer;++buffer) {
+     if(isspace(*buffer)) {
+@@ -182,9 +187,10 @@
+     if(buffer[0]=='#')
+       continue;
+     i=0;
+-    entries[i]=spacetok(buffer);
+-    while((entries[++i]=spacetok(NULL)) &&
+-	  i<sizeof(entries));
++    entries[i++]=spacetok(buffer);
++
++    while((entries[i++]=spacetok(NULL)) &&
++	  i<(sizeof(entries)/sizeof(char*)));
+     break;
+   }
+ 
+@@ -463,13 +470,18 @@
+       if(fh) {
+ 	struct mntentry *mnt;
+ 	while((mnt=mnt_entry(fh)))
+-	  if(!strcmp(mnt->dir,device)) {
++	  if(mnt->dir && !strcmp(mnt->dir,device)) {
+ 	    device=mnt->device;
+ 	    dir=mnt->dir;
+ 	    fs_type=mnt->fs_type;
+ 	    parse_options(mnt->opts,&flags,data+data_size,DATA_BUFFER_SIZE-data_size);
+ 	    break;
+ 	  }
++        if (!dir) {
++          __write2(device);
++          write(2," no found in /etc/fstab\n",24);
++          return 1;
++        }
+       }
+ #ifdef CLEANUP
+       io_close(fh);
+
+Added bind mount and fixed the option_parser to be able to parse options
+with only one part and no , seperator ...
+
+  Rene Rebe <rene@exactcode.de>
+
+--- embutils-0.17/mount.c	2004-01-09 17:03:48.000000000 +0100
++++ embutils-0.17-mount/mount.c	2005-06-19 15:13:34.000000000 +0200
+@@ -26,6 +26,7 @@
+ #ifdef LINUX
+ #include <sys/mount.h>
+ #include <paths.h>
++#include <linux/fs.h> /* MS_MOVE */
+ #ifdef _PATH_MOUNTED
+ const char *const mtab=_PATH_MOUNTED;
+ #else
+@@ -227,6 +228,9 @@
+ 	{"suid", ~MS_NOSUID, 0},
+ 	{"sync", ~0, MS_SYNCHRONOUS},
+ 	{"bind", ~0, MS_BIND},
++#ifdef LINUX
++	{"move", ~0, MS_MOVE},
++#endif
+ 	{0, 0, 0}
+ };
+ /*
+@@ -240,10 +244,15 @@
+   size_t data_set=0;
+   for(;;) {
+     const struct mount_options *i;
+-    char *ptr=strchr(str,',');
+-    if(!ptr)
++    char *ptr;
++
++    if (!str || !*str)
+       break;
+-    *ptr=0;
++
++    ptr=strchr(str,',');
++    if(!ptr) ptr=(char*)str+strlen(str)-1;
++    else *ptr=0;
++
+     for(i=options; i->name; ++i)
+       if(!strcmp(str,i->name)) {
+ 	*flags&=i->and;
+
+Do not segfault by default when no type was give, also none might be needed
+due bind or move mounts.
+
+ - Rene Rebe <rene@exactcode.de>
+
+--- embutils-0.17/mount.c	2024-04-15 23:49:12.000000000 +0100
++++ embutils-0.17-patched/mount.c	2024-04-15 10:02:38.000000000 +0100
+@@ -494,7 +494,7 @@
+       io_close(fh);
+ #endif
+     }
+-    return mount_fs(device,dir,fs_type,flags,data,write_mtab);
++    return mount_fs(device,dir,fs_type?:"",flags,data,write_mtab);
+   }
+   return 0;
+ }
+
+The option code was relying on accidently zero initialization, although
+the code even had explicit zeroing later on. Depending on compiler,
+optimization and architecture coudl pass random data to the kernel, and
+also failed to parse more than one option.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- ./mount.c.vanilla	2016-06-25 03:10:40.130000362 +0000
++++ ./mount.c	2018-08-21 10:55:29.969876048 +0000
+@@ -267,12 +268,12 @@
+ 	break;
+       }
+     if(!i->name) { /*no options was found*/
+-      size_t option_length=strlen(str)+1;
++      size_t option_length=strlen(str);
+       if(data_set) {
+ 	*(data+data_set)=',';
+ 	++data_set;
+       }
+-      memcpy(data+data_set,str,option_length);
++      memcpy(data+data_set,str,option_length+1);/*incl 0*/
+       data_set+=option_length;
+       if(data_set>=data_size)
+ 	return; /*too many options*/
+@@ -419,6 +418,7 @@
+   const char *dir=NULL;
+   enum { DATA_BUFFER_SIZE=100 };
+   char data[DATA_BUFFER_SIZE];
++  *data = 0;
+   size_t data_size=0;
+   bool write_mtab=true;
+   bool all=false;
+@@ -466,9 +467,6 @@
+     }
+   }
+ 
+-  if(!data_size)
+-    memset(data,0,DATA_BUFFER_SIZE);
+-
+   if(!all && !device)
+     show_mounts(fs_type);
+   else if(all)
+
+100 char buffer is too little for modern, overly complex FS and Linux defaults.
+
+--- embutils-0.19/mount.c.vanilla	2024-04-15 13:59:49.940992891 +0200
++++ embutils-0.19/mount.c	2024-04-15 14:33:39.655983984 +0200
+@@ -177,7 +177,7 @@
+ 
+ /* reads next entry and returns it (not thread safe!) */
+ static struct mntentry *mnt_entry(struct io_file *fh) {
+-  static char buffer[100];
++  static char buffer[255];
+   static char *entries[4];
+   static struct mntentry entry;
+ 

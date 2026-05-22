@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-appconfig/perl-appconfig.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module AppConfig
+
+[T] AppConfig is a bundle of Perl5 modules for reading configuration files
+[T] and parsing command line arguments.
+
+[U] https://search.cpan.org/~abw/AppConfig/
+
+[A] Andy Wardley <cpan@wardley.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] Artistic GPL
+[V] 1.71
+[P] X -----5---9 200.123
+
+[D] b894c47b5b085886fafba52055a73611d4af7849942fba5538753588 AppConfig-1.71.tar.gz https://cpan.metacpan.org/authors/id/N/NE/NEILB/

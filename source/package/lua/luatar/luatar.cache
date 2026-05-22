@@ -1,0 +1,18 @@
+
+[TIMESTAMP] 1171441566 Wed Feb 14 08:26:06 2007
+[BUILDTIME] 10 (5)
+[SIZE] 0.17 MB, 7 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] grep
+[DEP] linux-header
+[DEP] lua
+[DEP] make
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] zlib

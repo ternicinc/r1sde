@@ -1,0 +1,27 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/bsd-finger/hotfix-glibc2.2.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./finger/lprint.c.orig	Tue Oct  9 14:58:18 2001
++++ ./finger/lprint.c	Tue Oct  9 14:58:50 2001
+@@ -49,6 +49,7 @@
+ #include <sys/file.h>
+ #include <sys/stat.h>
+ #include <sys/time.h>
++#include <time.h>
+ #include "finger.h"
+ 
+ static void lprint(PERSON *pn);
+--- ./finger/sprint.c.orig	Tue Oct  9 14:59:26 2001
++++ ./finger/sprint.c	Tue Oct  9 14:59:33 2001
+@@ -41,6 +41,7 @@
+ 
+ #include <sys/types.h>
+ #include <sys/time.h>
++#include <time.h>
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <string.h>

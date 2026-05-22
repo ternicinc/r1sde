@@ -1,0 +1,21 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rtorrent/rtorrent.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A BitTorrent client written in C++
+
+[T] rTorrent is a BitTorrent client written in C++.
+
+[U] http://rakshasa.github.io/rtorrent/
+
+[A] Jari Sundell <sundell.software@gmail.com>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/network
+
+[L] GPL
+[V] 0.16.12
+
+[D] 94be94df33e0f3b8f6e652df60a4e468821956a6bac68b773a80dd25 rtorrent-0.16.12.tar.gz https://github.com/rakshasa/rtorrent/releases/download/v0.16.12/

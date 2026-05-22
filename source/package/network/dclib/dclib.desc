@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dclib/dclib.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Direct Connect Filesharing library
+
+[T] Valknut needs this library.
+
+[U] http://dcgui.berlios.de/
+
+[A] Mathias Küster <mathen at users dot berlios dot de>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/network
+[F] NO-LIBTOOL-FIX
+
+[L] GPL
+[V] 0.3.23
+
+[D] 71e006a88b945d254e9d46a7d97f5125e22b0361daa2de290ac7360f dclib-0.3.23.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/wxdcgui/

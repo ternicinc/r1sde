@@ -1,0 +1,41 @@
+[TIMESTAMP] 1770545906 Sun Feb  8 11:18:26 2026
+[BUILDTIME] 370 (9)
+[SIZE] 13.98 MB, 990 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] cups
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] freetype
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] karchive
+[DEP] kcoreaddons
+[DEP] kcrash
+[DEP] kio
+[DEP] kjobwidgets
+[DEP] kwallet
+[DEP] libxcb
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] procps
+[DEP] purpose
+[OPT] pyside6
+[DEP] qt6base
+[DEP] qt6declarative
+[DEP] qt6tools
+[DEP] qt6translations
+[DEP] qt6webchannel
+[DEP] qt6webengine
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] vulkan-headers
+[DEP] xcb-util
+[DEP] xz

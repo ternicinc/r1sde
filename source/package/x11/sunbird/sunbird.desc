@@ -1,0 +1,42 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sunbird/sunbird.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Mozilla's stand-alone calendar client
+
+[T] A cross-platform fully standards based calendar client based on the open
+[T] iCal standard. The client is built using the XUL user interface language
+[T] and is targeted at Mozilla-based browsers, including the Mozilla
+[T] Application Suite, Mozilla Firefox and Mozilla Thunderbird browsers.
+
+[U] https://www.mozilla.org/projects/calendar/sunbird.html
+
+[A] The Mozilla Community <http://www.mozilla.org/about.html>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office
+[F] CROSS
+
+[L] MPL
+[V] 0.8
+
+[D] 77ec6b26bd1f9254d865fb3757ea860cf5db99f70bf42d5097a500ca lightning-sunbird-0.8-source.tar.bz2 https://releases.mozilla.org/pub/calendar/sunbird/releases/0.8/source/
+
+. $base/package/*/*/mozilla-conf.in
+
+[ $prefix_auto = 1 ] && prefix="$mozilla_prefix" && set_confopt
+
+sunbird_config() {
+	cat >> .mozconfig <<-EOT
+. \$topsrcdir/calendar/sunbird/config/mozconfig
+ac_add_options --disable-freetype2
+EOT
+}
+
+mozver="$ver"
+hook_add preconf 4 sunbird_config
+
+# work around for version 0.3a2 ... - from firefox
+var_append GCC_WRAPPER_INSERT ' ' "-c?:-L`pkgprefix libdir libx11` -lX11 -lXrender"

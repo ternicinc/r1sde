@@ -1,0 +1,23 @@
+[TIMESTAMP] 1737812007 Sat Jan 25 14:33:27 2025
+[BUILDTIME] 25 (9)
+[SIZE] 0.26 MB, 20 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[OPT] docbook-xml
+[OPT] docbook-xsl
+[DEP] file
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[OPT] libbsd
+[DEP] libxcrypt
+[DEP] libxslt
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] python
+[DEP] sed
+[DEP] tar

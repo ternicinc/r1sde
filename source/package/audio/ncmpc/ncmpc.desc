@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ncmpc/ncmpc.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A fully featured MPD client running in a text terminal
+
+[T] A fully featured MPD client, which runs in a terminal (using ncurses).
+[T] Its goal is to provide a keyboard oriented and consistent interface to
+[T] MPD, without wasting resources.
+
+[U] https://www.musicpd.org/clients/ncmpc/
+
+[A] Max Kellermann <max@duempel.org>
+[M] Koen Vervloesem <koen@vervloesem.eu>
+
+[C] extra/multimedia
+[F] CROSS
+
+[E] opt lirc
+
+[L] GPL
+[V] 0.52
+
+[D] 56beddf261375729f767b97927e979615d9821217f4bc773888e0674 ncmpc-0.52.tar.gz https://github.com/MusicPlayerDaemon/ncmpc/archive/refs/tags/v0.52/

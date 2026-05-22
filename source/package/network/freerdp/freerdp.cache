@@ -1,0 +1,50 @@
+[TIMESTAMP] 1773408250 Fri Mar 13 14:24:10 2026
+[BUILDTIME] 70 (9)
+[SIZE] 16.59 MB, 419 files
+
+[DEP] alsa-lib
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] cups
+[DEP] diffutils
+[DEP] ffmpeg
+[DEP] findutils
+[DEP] freetype
+[OPT] fuse
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] icu4c
+[DEP] jansson
+[OPT] krb5
+[OPT] libsdl2
+[OPT] libsdl2_ttf
+[OPT] libsdl3
+[OPT] libsdl3_ttf
+[DEP] libusb
+[DEP] libx11
+[DEP] libxcursor
+[DEP] libxdamage
+[DEP] libxext
+[DEP] libxfixes
+[DEP] libxi
+[DEP] libxinerama
+[DEP] libxkbfile
+[DEP] libxrandr
+[DEP] libxrender
+[DEP] libxtst
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] pam
+[DEP] pkgconfig
+[DEP] sed
+[OPT] systemd
+[DEP] tar
+[DEP] util-linux
+[DEP] wayland
+[DEP] xkbcommon
+[DEP] xorgproto
+[DEP] zlib

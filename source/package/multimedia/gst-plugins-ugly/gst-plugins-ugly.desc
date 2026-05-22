@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gst-plugins-ugly/gst-plugins-ugly.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Set of ugly GStreamer Plug-ins
+
+[T] This module contains a set of plug-ins that we consider to have bad
+[T] quality code and correct functionality.
+
+[U] https://gstreamer.freedesktop.org/
+
+[A] The GStreamer Project
+[M] Gerardo Di Iorio <arete74@gmail.com>
+
+[C] extra/multimedia extra/desktop/gnome
+[F] CROSS
+
+[L] LGPL
+[V] 1.28.3
+
+[CV-GROUP] gst
+[CV-FLAGS] ODD-UNSTABLE
+[D] b906234f68eaae8b0db799047a44bd7242c1ec589ced066738b5bfac gst-plugins-ugly-1.28.3.tar.xz https://gstreamer.freedesktop.org/src/gst-plugins-ugly/
+
+var_append GCC_WRAPPER_APPEND ' ' -c?:-lm

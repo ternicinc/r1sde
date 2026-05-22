@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/strace/mpers-wrapper-g.patch
+# Copyright (C) 2021 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- strace-5.12/src/mpers.sh.vanilla	2021-05-06 18:36:04.911571634 +0200
++++ strace-5.12/src/mpers.sh	2021-05-06 18:36:32.293570543 +0200
+@@ -6,6 +6,9 @@
+ #
+ # SPDX-License-Identifier: LGPL-2.1-or-later
+
++# our wrapper would remove -g* this scripts rely on
++export GCC_WRAPPER_BYPASS=1
++
+ [ "x${D:-0}" != x1 ] || set -x
+ 
+ export LC_ALL=C

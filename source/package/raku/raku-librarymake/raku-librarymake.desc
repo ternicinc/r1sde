@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/raku-librarymake/raku-librarymake.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An attempt to simplify building native code for a perl6 module
+
+[T] This is effectively a small configure script for a Makefile. It will allow
+[T] you to use the same tools to build your native code that were used to build
+[T] perl6 itself.
+
+[U] https://github.com/retupmoca/P6-LibraryMake
+
+[A] Andrew Egeler <andrew@egeler.us>
+[M] Tomas Glozar <tglozar@gmail.com>
+
+[C] extra/development
+[F] CROSS
+
+[L] MIT
+[V] 1.0.5
+[P] X -----5---9 209.701
+
+[D] 4b509abc0c4c3b259c3ae17eaaa4dcb4099fd1a1b5865d1c37e07a3b P6-LibraryMake-v1.0.5.tar.gz https://github.com/retupmoca/P6-LibraryMake/archive/refs/tags/v1.0.5/

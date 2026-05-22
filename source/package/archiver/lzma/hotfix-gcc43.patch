@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/lzma/hotfix-gcc43.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- lzma-4.32.4/src/lzma/lzmp.cpp.vanilla	2008-03-17 11:40:26.000000000 +0100
++++ lzma-4.32.4/src/lzma/lzmp.cpp	2008-03-17 11:41:11.000000000 +0100
+@@ -37,6 +37,7 @@
+ using std::vector;
+ typedef vector<string> stringVector;
+ 
++#include <stdlib.h> // exit()
+ #include <errno.h>
+ #include <fcntl.h>
+ #include <unistd.h>

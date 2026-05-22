@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/notification-daemon-xfce/notification-daemon-xfce.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Notification-daemon-xfce is a port of Gnome's notification-daemon
+
+[T] Notification-daemon-xfce is a port of Gnome's notification-daemon.
+
+[U] http://www.galago-project.org
+
+[A] Nick Schermer <nick@xfce.org>
+[M] Gerardo Di Iorio <arete74@gmail.com>
+
+[C] extra/desktop/xfce
+
+[L] GPL
+[V] 0.3.7
+
+[D] f8365a2bdf23ef06e4132c8122ecee67a7489e432750bed78a6e87f9 notification-daemon-xfce-0.3.7.tar.bz2 https://goodies.xfce.org/releases/notification-daemon-xfce/
+
+. $base/package/xfce4/*/xfce4-conf.in

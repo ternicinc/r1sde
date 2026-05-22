@@ -1,0 +1,77 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/net-tools/hotfix.patch.musl
+# Copyright (C) 2019 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- net-tools-1.60/lib/econet.c.vanilla	2019-02-06 19:47:27.629019566 +0000
++++ net-tools-1.60/lib/econet.c	2019-02-06 19:47:32.601019509 +0000
+@@ -23,7 +23,7 @@
+ #include <sys/types.h>
+ #include <sys/socket.h>
+ #include <stdio.h>
+-#include <neteconet/ec.h>
++//#include <neteconet/ec.h>
+ 
+ #include "version.h"
+ #include "net-support.h"
+--- net-tools-1.60/lib/inet_sr.c.vanilla	2019-02-06 19:51:56.245016504 +0000
++++ net-tools-1.60/lib/inet_sr.c	2019-02-06 19:52:38.117016027 +0000
+@@ -31,6 +31,7 @@
+ #include "intl.h"
+ #include "net-features.h"
+ #include "util.h"
++#include <asm-generic/param.h>
+ 
+ #if HAVE_NEW_ADDRT
+ #define mask_in_addr(x) (((struct sockaddr_in *)&((x).rt_genmask))->sin_addr.s_addr)
+--- net-tools-1.60/config.h.vanilla	2019-02-06 19:49:27.249018202 +0000
++++ net-tools-1.60/config.h	2019-02-06 19:53:47.813015232 +0000
+@@ -47,13 +47,13 @@
+  */
+ #define HAVE_AFUNIX 1
+ #define HAVE_AFINET 1
+-#define HAVE_AFINET6 1
++#define HAVE_AFINET6 0
+ #define HAVE_AFIPX 1
+ #define HAVE_AFATALK 1
+ #define HAVE_AFAX25 1
+ #define HAVE_AFNETROM 1
+ #define HAVE_AFROSE 1
+-#define HAVE_AFECONET 1
++#define HAVE_AFECONET 0
+ #define HAVE_AFDECnet 0
+ 
+ /* 
+@@ -63,10 +63,10 @@
+  */
+ #define HAVE_HWETHER 1
+ #define HAVE_HWARC 1
+-#define HAVE_HWSLIP 1
++#define HAVE_HWSLIP 0
+ #define HAVE_HWPPP 1
+ #define HAVE_HWTUNNEL 1
+-#define HAVE_HWTR 1
++#define HAVE_HWTR 0
+ #define HAVE_HWAX25 1
+ #define HAVE_HWROSE 1
+ #define HAVE_HWNETROM 1
+--- net-tools-1.60/netstat.c.vanilla	2019-02-06 19:53:16.953015584 +0000
++++ net-tools-1.60/netstat.c	2019-02-06 19:53:26.949015470 +0000
+@@ -85,6 +85,7 @@
+ #include <sys/ioctl.h>
+ #include <net/if.h>
+ #include <dirent.h>
++#include <asm-generic/param.h>
+ 
+ #include "net-support.h"
+ #include "pathnames.h"
+--- net-tools-2.10/config.in.vanilla	2025-07-24 16:55:34.562328259 +0200
++++ net-tools-2.10/config.in	2025-07-24 16:55:44.005354872 +0200
+@@ -96,5 +96,5 @@
+ bool 'Build iptunnel and ipmaddr' HAVE_IP_TOOLS y
+ bool 'Build mii-tool' HAVE_MII y
+ bool 'Build plipconfig' HAVE_PLIP_TOOLS y
+-bool 'Build slattach' HAVE_SERIAL_TOOLS y
++bool 'Build slattach' HAVE_SERIAL_TOOLS n
+ bool 'SELinux support' HAVE_SELINUX n

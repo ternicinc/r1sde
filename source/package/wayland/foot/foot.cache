@@ -1,0 +1,29 @@
+[TIMESTAMP] 1778842201 Fri May 15 12:50:01 2026
+[BUILDTIME] 8 (9)
+[SIZE] 1.02 MB, 116 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] fcft
+[DEP] findutils
+[DEP] fontconfig
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pixman
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] tllist
+[DEP] utf8proc
+[DEP] util-linux
+[DEP] wayland
+[DEP] wayland-protocols
+[DEP] xkbcommon

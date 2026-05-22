@@ -1,0 +1,40 @@
+[TIMESTAMP] 1770718348 Tue Feb 10 11:12:28 2026
+[BUILDTIME] 45 (9)
+[SIZE] 2.90 MB, 38 files
+
+[OPT] alsa-lib
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[OPT] fftw3
+[DEP] file
+[DEP] findutils
+[OPT] flac
+[DEP] gawk
+[DEP] grep
+[OPT] gsm
+[DEP] gzip
+[OPT] lame
+[OPT] libao
+[OPT] libid3tag
+[OPT] libmad
+[OPT] libogg
+[OPT] libopus
+[OPT] libpng
+[OPT] libsndfile
+[DEP] libtool
+[OPT] libvorbis
+[DEP] linux-header
+[DEP] make
+[OPT] opusfile
+[DEP] pkgconfig
+[OPT] pulseaudio
+[DEP] sed
+[OPT] speex
+[OPT] speexdsp
+[DEP] tar
+[OPT] twolame
+[DEP] util-linux
+[DEP] zlib

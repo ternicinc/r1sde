@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/foo2zjs/no-lp-user-group.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+--- foo2zjs/Makefile	2005-03-17 15:05:30.000000000 +0100
++++ foo2zjs-fixed/Makefile	2005-06-03 08:57:54.000000000 +0200
+@@ -20,8 +20,8 @@
+ FOODB=/usr/share/foomatic/db/source
+ 
+ # User ID's
+-LPuid=-olp
+-LPgid=-glp
++LPuid=-oroot
++LPgid=-groot
+ ifeq ($(UNAME),Darwin)
+     LPuid=-oroot
+     LPgid=-gwheel

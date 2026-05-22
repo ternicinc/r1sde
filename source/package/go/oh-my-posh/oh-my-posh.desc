@@ -1,0 +1,40 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/oh-my-posh/oh-my-posh.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Shell prompt theme engine
+
+[T] Oh-my-posh is a blazing fast cross platform/shell prompt theme engine.
+
+[U] https://ohmyposh.dev/
+
+[A] Jan De Dobbeleer <jan.de.dobbeleer@gmail.com>
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/shell
+[F] CROSS NO-LTO
+
+[L] MIT
+[V] 29.14.0
+
+[D] 15cf9abedc8b8ef1f623a64c3d6289bfca70922780a31d44e9646f02 oh-my-posh-29.14.0.tar.gz https://github.com/JanDeDobbeleer/oh-my-posh/archive/refs/tags/v29.14.0/
+
+. $base/package/*/*/go-conf.in
+export CGO_ENABLED=1
+var_append goconfopt ' ' "-o $pkg"
+var_remove GCC_WRAPPER_REMOVE ' ' '-gdwarf*'
+
+omp_conf() {
+	cd src
+	sed -i "s/= \"development\"/= \"${ver}\"/g" main.go
+}
+hook_add preconf 5 omp_conf
+
+omp_install() {
+	mkdir -pv $root$datadir/$pkg
+	cp -v $pkg $root$bindir/
+	cp -rv ../themes $root$datadir/$pkg/
+}
+hook_add postmake 5 omp_install

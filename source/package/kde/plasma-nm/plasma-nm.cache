@@ -1,0 +1,48 @@
+[TIMESTAMP] 1768927522 Tue Jan 20 17:45:22 2026
+[BUILDTIME] 290 (9)
+[SIZE] 11.46 MB, 1034 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] freetype
+[DEP] gawk
+[DEP] gettext
+[DEP] glib
+[DEP] grep
+[DEP] kcmutils
+[DEP] kcolorscheme
+[DEP] kcompletion
+[DEP] kconfig
+[DEP] kcoreaddons
+[DEP] kdbusaddons
+[DEP] ki18n
+[DEP] kio
+[DEP] knotifications
+[DEP] kservice
+[DEP] kwallet
+[DEP] kwidgetsaddons
+[DEP] kwindowsystem
+[DEP] libplasma
+[DEP] linux-header
+[DEP] make
+[DEP] modemmanager
+[DEP] modemmanager-qt
+[DEP] networkmanager
+[DEP] networkmanager-qt
+[DEP] pkgconfig
+[DEP] prison
+[DEP] procps
+[DEP] qca2
+[DEP] qcoro
+[DEP] qt6base
+[DEP] qt6declarative
+[DEP] sed
+[DEP] solid
+[DEP] tar
+[DEP] util-linux
+[DEP] vulkan-headers
+[DEP] xz

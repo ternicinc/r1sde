@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-wheel/python-wheel.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The official binary distribution format for Python
+
+[T] The official binary distribution format for Python.
+
+[U] https://github.com/pypa/wheel/
+
+[A] Python Packaging Authority
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[E] add python-flit-core
+
+[L] MIT
+[V] 0.45.1
+[P] X -----5---9 109.004
+
+[D] ee984e1baf9a8a7b9188859a05fc9e75305f216b24a1957e23a352c6 python-wheel-0.45.1.tar.gz !https://files.pythonhosted.org/packages/source/w/wheel/wheel-0.45.1.tar.gz
+
+hook_add prepatch 5 "rm -rf src/wheel/vendored"

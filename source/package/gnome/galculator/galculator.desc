@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/galculator/galculator.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A GTK2-based scientific calculator with algebraic, RPN, and formula entry modes
+
+[T] Galculator is a GTK 2 based scientific calculator supporting algebraic
+[T] mode, RPN, and formula entry mode. Features include arithmetic operations
+[T] plus precedence handling, full keypad support, trigonometric functions,
+[T] power, square root, natural and common logarithm, constants (e, PI),
+[T] and inverse and hyperbolic functions. It supports different number bases
+[T] (decimal, hexadecimal, octal, and binary) and angle bases (radiant,
+[T] degree, and grad).
+
+[U] https://galculator.sourceforge.net/
+
+[A] Simon Floery <chimaira_AT_users_D0T_sourceforge_D0T_net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 2.1.4
+
+[D] ff68c1d12d2997dc9c63d7353b684d61b1603cea28e70bd42da0b1c4 galculator-2.1.4.tar.gz https://github.com/galculator/galculator/archive/v2.1.4/
+
+. $base/package/*/*/gnome-conf.in

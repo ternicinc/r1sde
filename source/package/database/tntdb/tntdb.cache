@@ -1,0 +1,25 @@
+[TIMESTAMP] 1751664157 Fri Jul  4 23:22:37 2025
+[BUILDTIME] 20 (9)
+[SIZE] 0.95 MB, 68 files
+
+[DEP] autoconf
+[DEP] automake
+[DEP] bash
+[DEP] coreutils
+[DEP] cxxtools
+[DEP] diffutils
+[OPT] doxygen
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libtool
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[OPT] mysql
+[DEP] perl
+[OPT] postgresql
+[DEP] sed
+[DEP] sqlite
+[DEP] tar

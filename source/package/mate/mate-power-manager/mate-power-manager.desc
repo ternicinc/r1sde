@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mate-power-manager/mate-power-manager.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Power management tool for the MATE desktop
+
+[T] MATE Power Manager is a MATE session daemon that acts as a policy agent on
+[T] top of UPower. It listens to system events and responds with
+[T] user-configurable actions.
+
+[U] https://mate-desktop.org/
+
+[A] MATE developer
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/mate
+
+[L] GPL
+[V] 1.28.1
+
+[D] 101f4ccec11222ce1c5ab38400da24e126d172a0d3c6bb2960ab98b6 mate-power-manager-1.28.1.tar.xz https://pub.mate-desktop.org/releases/1.28/
+
+. $base/package/*/*/mate-conf.in
+var_append GCC_WRAPPER_APPEND ' ' "$(pkg-config --libs x11)"

@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/awesome/awesome.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A tiled window manager for X
+
+[T] Awesome is a window manager for X. It manages windows in several
+[T] layout modes, such as tiled or floating. Each layout can be applied
+[T] dynamically. Windows can be grouped by tags, and each window can be
+[T] tagged with one or multiple tags, and each tag can have its own layout.
+
+[U] https://awesomewm.org
+
+[A] Julien Danjou <julien@danjou.info>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/windowmanager
+[F] OBJDIR FCOMMON NO-LTO
+
+[L] GPL
+[V] 4.3
+
+[CV-URL] https://awesomewm.org/download/
+[D] 3282ecd32c255f06c4f68ba5012b2ddd083389f89fa7ed4257c38d94 awesome-4.3.tar.xz https://github.com/awesomeWM/awesome-releases/raw/master/
+
+var_append cmakeopt ' ' -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+export AWESOME_IGNORE_LGI=1 # TODO: might need a real fix

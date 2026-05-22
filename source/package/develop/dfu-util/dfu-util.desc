@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dfu-util/dfu-util.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An implementation of the host-side USB DFU protocol
+
+[T] Dfu-util is a program that implements the host side of the USB DFU
+[T] (Universal Serial Bus Device Firmware Upgrade) protocol and is based
+[T] on dfu-programmer-0.4.
+[T]
+[T] This version is specifically used to flash the FIC Neo 1973 mobile
+[T] phone.
+
+[U] https://wiki.openmoko.org/wiki/Dfu-util
+
+[A] Harald Welte <laforge@openmoko.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] LGPL
+[V] 0.11
+
+[D] d1b0e7d1cd3bd3ac90e300cf99f09538b2e8805bc537f874ed2910e8 dfu-util-0.11.tar.gz https://dfu-util.sourceforge.net/releases/

@@ -1,0 +1,47 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/automake/parse-config
+# Copyright (C) 2004 - 2025 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+# If an application is running automake, it includes all the stuff
+# from usr/share/aclocal/ and so depends on all packages placing
+# something there.
+#
+# We can savely ignore those dependencies, since a package which is really
+# using an others package aclocal file will also access other files related
+# to the package outside of usr/share/aclocal.
+#
+var_append flistrfilter '|' ".*:	.*/share/aclocal/.*"
+
+automake_fixup() {
+	# do not do anything if we're outside builddir (like sysfiles is)
+	[[ $PWD != ${builddir}* ]] && return
+
+	local pref=$root
+	if ! atstage native; then
+		pref=$base/build/$SDECFG_ID/TOOLCHAIN/cross
+	fi
+
+	if [ -d $pref/usr/share/automake ]; then
+		# search (recursively) for the files
+		find -name config.guess -o -name config.sub -o \
+		     -name configfsf.guess -o -name configfsf.sub |
+		while read file; do
+		  if grep -q Autoconf $file; then
+			echo "Updating $file"
+			local f=${file##*/}; f=${f/fsf/}
+			cp -fv $pref/usr/share/automake/$f $file
+		  fi
+		done
+	fi
+}
+
+# some packages do not include an up-to-date config.{sub,guess}
+if hasflag AUTOMAKE-QUIRK ||
+   [[ $arch = 'arm64' || $arch = 'avr32' || $arch = 'blackfin' || $arch = 'csky' || \
+      $arch = loongarch* || $arch = 'microblaze' || $arch = 'nios2' || $arch = 'openrisc' || $arch = riscv* ]]; then
+	# don't down-date our own file on a rebuild
+	[ $pkg != automake ] && hook_add preconf 2 automake_fixup
+fi

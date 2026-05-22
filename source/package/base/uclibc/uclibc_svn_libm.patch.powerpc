@@ -1,0 +1,49 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/uclibc/uclibc_svn_libm.patch.powerpc
+# Copyright (C) 2009 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -uNr uClibc-0.9.30.org/libm/ldouble_wrappers.c uClibc-0.9.30/libm/ldouble_wrappers.c
+--- uClibc-0.9.30.org/libm/ldouble_wrappers.c	2009-01-19 18:21:40.000000000 +0100
++++ uClibc-0.9.30/libm/ldouble_wrappers.c	2009-01-19 18:23:00.000000000 +0100
+@@ -544,7 +544,6 @@
+ {
+ 	return __fpclassify ( (double) x );
+ }
+-libm_hidden_def(__fpclassifyl)
+ #endif
+ 
+ #ifdef L_finitel
+@@ -552,7 +551,6 @@
+ {
+ 	return __finite ( (double)x );
+ }
+-libm_hidden_def(__finitel)
+ #endif
+ 
+ #ifdef L_signbitl
+@@ -560,7 +558,6 @@
+ {
+ 	return __signbitl ( (double)x );
+ }
+-libm_hidden_def(__signbitl)
+ #endif
+ 
+ #ifdef L_isnanl
+@@ -568,7 +565,6 @@
+ {
+ 	return __isnan ( (double)x );
+ }
+-libm_hidden_def(__isnanl)
+ #endif
+ 
+ #ifdef L_isinfl
+@@ -576,7 +572,6 @@
+ {
+ 	return __isinf ( (double)x );
+ }
+-libm_hidden_def(__isinfl)
+ #endif
+ 
+ #endif

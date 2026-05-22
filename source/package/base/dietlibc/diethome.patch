@@ -1,0 +1,27 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dietlibc/diethome.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+The embedded Linker script must not carry the sysroot prefix.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- ./diet.c.orig	2006-11-05 22:08:24.000000000 +0100
++++ ./diet.c	2006-11-05 22:18:03.000000000 +0100
+@@ -396,9 +396,12 @@
+       if (shared){ *dest++=c; }
+       f=alloca(strlen(platform)+100);
+       if (_link) {
++	int skip = 0;
++	if (getenv("DIETHOME"))
++	  skip = strlen(getenv("DIETHOME")) - strlen(DIETHOME);
+ 	strcpy(f,"-Wl,-dynamic-linker=");
+-	strcat(f,platform);
+-//	strcat(f,"/diet-linux.so");
++	fprintf(stderr, "env: %s build: %s skip: %d\n", getenv("DIETHOME"), DIETHOME, skip);
++	strcat(f,platform+skip);
+ 	strcat(f,"/libdl.so");
+ 	*dest++=f;
+       }

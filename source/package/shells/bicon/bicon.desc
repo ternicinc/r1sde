@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/bicon/bicon.desc
+[COPY] Copyright (C) 2018 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Bidirectional Console
+
+[T] Shell that give support for RTL text in languages such as Hebrew, Arabic,
+[T] Farsi etc.
+
+[U] https://github.com/behdad/bicon
+
+[A] Behdad Esfahbod <bicon@behdad.org>
+[A] Muhammad A. Alkarouri <malkarouri@yahoo.co.uk>
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] base/system
+
+[L] LGPL
+[V] 0.5
+
+[D] 4e5e2f8a2af53d1c4fff370aa772e5ba5fd66c043023eb8d6e79a5c6 bicon-0.5.tar.gz https://github.com/behdad/bicon/archive/0.5/
+
+autogen=1

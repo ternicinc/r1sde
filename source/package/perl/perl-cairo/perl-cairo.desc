@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-cairo/perl-cairo.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl interface for the cairo graphics library
+
+[T] Cairo provides Perl bindings for the vector graphics library cairo.
+[T] It supports multiple output targets, including the X Window Systems, PDF, and PNG.
+[T] Cairo produces identical output on all those targets and makes use of hardware acceleration wherever possible.
+
+[U] https://search.cpan.org/~tsch/Cairo-0.03/Cairo.pm
+
+[A] Ross McFarland <rwmcfa1@neces.com>
+[A] Torsten Schoenfeld <kaffeetisch@gmx.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 1.109
+[P] X -----5---9 127.699
+
+[D] 7a3db5a76f1faf0d63a8cd04e17ffeee56da51586f9f397c7e0956e1 Cairo-1.109.tar.gz https://cpan.metacpan.org/authors/id/X/XA/XAOC/

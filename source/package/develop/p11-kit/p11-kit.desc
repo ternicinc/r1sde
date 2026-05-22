@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/p11-kit/p11-kit.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Load and enumerate PKCS#11 modules
+
+[T] p11-kit provides a way to load and enumerate PKCS#11 modules.
+
+[U] https://p11-glue.github.io/p11-glue/p11-kit.html
+
+[A] Stef Walter <stefw@collabora.co.uk>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[F] CROSS NO-LTO.gcc
+
+[L] OpenSource
+[V] 0.26.2
+[P] X -----5---9 150.000
+
+[D] e29a58c8c4fcc9e9543a29482092634179f1e2d724f0902bb0fb1fda p11-kit-0.26.2.tar.xz https://github.com/p11-glue/p11-kit/releases/download/0.26.2/
+
+var_append confopt ' ' --with-trust-paths=/etc/ssl/certs/ca-certificates.crt

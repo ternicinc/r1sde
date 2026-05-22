@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cbase/cbase.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A C library for UNIX systems software development
+
+[T] Cbase is a C library that simplifies systems software development
+[T] on UNIX. The library includes functions for memory management, string
+[T] parsing, sub-process execution, filesystem traversal, I/O, interfaces to
+[T] IPC mechanisms including pseudo-terminals, shared memory, semaphores,
+[T] and other facilities. It also has implementations of common dynamic
+[T] data structures like linked lists, queues, stacks, and hash tables,
+[T] a real-time scheduler similar in functionality to the cron daemon, and
+[T] high-level APIs to Berkeley sockets and other networking functions. Full
+[T] API documentation is included.
+
+[U] https://hyperrealm.github.io/cbase
+
+[A] Mark Lindner <mark_a_lindner@yahoo.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] LGPL
+[V] 1.4
+[P] X -----5---9 200.000
+
+[D] b833fe2898786cf4ea99928bd472003bb3f155685e84ca2e90a1c2aa cbase-1.4.tar.gz https://github.com/hyperrealm/cbase/archive/1.4/
+
+autogen=1

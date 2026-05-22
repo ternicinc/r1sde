@@ -1,0 +1,20 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/liblockfile/hotfix-force-symlink.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- liblockfile/Makefile.in.vanilla	2019-10-25 20:52:54.907963111 +0000
++++ liblockfile/Makefile.in	2019-10-25 20:53:06.323962921 +0000
+@@ -56,8 +56,8 @@
+ 		install -d -m 755 -g root -p $(libdir)
+ 		install -m 755 liblockfile.so \
+ 			$(libdir)/liblockfile.so.$(SOVER)
+-		ln -s liblockfile.so.$(SOVER) $(libdir)/liblockfile.so.$(MAJOR)
+-		ln -s liblockfile.so.$(SOVER) $(libdir)/liblockfile.so
++		ln -sf liblockfile.so.$(SOVER) $(libdir)/liblockfile.so.$(MAJOR)
++		ln -sf liblockfile.so.$(SOVER) $(libdir)/liblockfile.so
+ 		if test "$(DESTDIR)" = ""; then @LDCONFIG@; fi
+ 
+ install_common:

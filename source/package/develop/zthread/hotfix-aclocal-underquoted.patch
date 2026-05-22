@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/zthread/hotfix-aclocal-underquoted.patch
+# Copyright (C) 2009 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./share/zthread.m4.orig	2008-12-16 14:10:28.000000000 +0100
++++ ./share/zthread.m4	2008-12-16 15:40:54.000000000 +0100
+@@ -31,7 +31,7 @@
+ dnl ZTHREAD_CXXFLAGS
+ dnl ZTHREAD_LIBS
+ dnl 
+-AC_DEFUN(AM_PATH_ZTHREAD,
++AC_DEFUN([AM_PATH_ZTHREAD],
+ [
+ 
+ 

@@ -1,0 +1,11 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/lxde-common/config.hlp
+# Copyright (C) 2009 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+MENU_PKG_LXDE
+  Here you'll find options for LXDE.
+
+SDECFG_PKG_LXDE_CORE_PREFIX
+  Please enter the prefix where you want LXDE to be installed.

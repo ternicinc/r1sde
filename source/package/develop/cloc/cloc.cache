@@ -1,0 +1,22 @@
+[TIMESTAMP] 1769338259 Sun Jan 25 11:50:59 2026
+[BUILDTIME] 6 (9)
+[SIZE] 0.70 MB, 8 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] make
+[DEP] perl
+[DEP] perl-algorithm-diff
+[DEP] perl-forkmanager
+[DEP] perl-moo
+[DEP] perl-regexp-common
+[DEP] perl-role-tiny
+[DEP] perl-sub-quote
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

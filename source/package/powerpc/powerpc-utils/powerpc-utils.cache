@@ -1,0 +1,24 @@
+
+[TIMESTAMP] 1736100213 Sun Jan  5 18:03:33 2025
+[BUILDTIME] 12 (9)
+[SIZE] 1.64 MB, 72 files
+
+[DEP] 00-dirtree
+[DEP] autoconf
+[DEP] automake
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[OPT] librtas
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] numactl
+[DEP] perl
+[DEP] sed
+[DEP] tar
+[DEP] zlib

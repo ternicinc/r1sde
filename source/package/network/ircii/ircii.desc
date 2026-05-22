@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ircii/ircii.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Internet Relay Chat system client
+
+[T] The ircII program is a full screen, termcap based interface to Internet
+[T] Relay Chat. It gives full access to all of the normal IRC functions, plus
+[T] a variety of additional options.
+
+[U] https://www.eterna.com.au/ircii/
+
+[A] Michael Sandrof, Troy Rollo, Matthew R. Green
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] OpenSource
+[V] 20260115
+
+[D] 0b7e07593c5122bfa434623e8ca7dec749ab201d4d45915a5b443f2f ircii-20260115.tar.gz http://ircii.warped.com/
+
+var_append GCC_WRAPPER_APPEND ' ' -Wno-int-conversion
+atstage cross && var_append makeinstopt ' ' PREFIX=$root/$prefix

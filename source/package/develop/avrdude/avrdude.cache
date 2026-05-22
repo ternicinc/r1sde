@@ -1,0 +1,27 @@
+[TIMESTAMP] 1750757133 Tue Jun 24 11:25:33 2025
+[BUILDTIME] 14 (9)
+[SIZE] 41.20 MB, 27 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bison
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] flex
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] hidapi
+[DEP] libelf
+[DEP] libftdi
+[DEP] libusb
+[DEP] libusb-compat
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] python
+[DEP] readline
+[DEP] sed
+[DEP] swig
+[DEP] tar

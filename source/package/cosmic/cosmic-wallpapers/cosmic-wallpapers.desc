@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cosmic-wallpapers/cosmic-wallpapers.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Wallpapers for the COSMIC Desktop Environment
+
+[T] Wallpapers for the COSMIC Desktop Environment.
+
+[U] https://github.com/pop-os/cosmic-wallpapers/
+
+[A] System76 <info@system76.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL3
+[V] 1.0.13
+
+[CV-GROUP] cosmic-desktop
+[D] 33fe5ececa9f963d53ecf9dc0850f4140547adf3b233a11930721065 cosmic-wallpapers-epoch-1.0.13.tar.gz https://github.com/pop-os/cosmic-wallpapers/archive/epoch-1.0.13/
+
+. $base/package/cosmic/*/cosmic-conf.in

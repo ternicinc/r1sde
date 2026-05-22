@@ -1,0 +1,67 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/microsoft-web-core-fonts/microsoft-web-core-fonts.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Freely available web core fonts from Microsoft(R)
+
+[T] This is a collection of freely available TrueType fonts from Microsoft(R):
+[T]
+[T] * Anyone can download and install these fonts for their own use.
+[T] * Designers can specify the fonts within their Web pages. Our guide to
+[T] specifying fonts in Web pages explains how to do this.
+[T] * You may only redistribute the fonts in their original form (.exe or
+[T] .sit.hqx) and with their original file name from your Web site or
+[T] intranet site.
+[T] * You must not supply the fonts, or any derivative fonts based on them,
+[T] in any form that adds value to commercial products, such as CD-ROM or
+[T] disk based multimedia programs, application software or utilities.
+[T]
+[T] So since we do not add value to a commercial product by supplying this
+[T] fonts, YOU download them for yourself - or unmodified from our mirror -
+[T] and we also state very clearly that this is a free product from
+[T] Microsoft(R) Corporation, we should not violate this "end user license
+[T] agreement". We will immediately remove all references and this positive
+[T] text about this very high quality fonts from this distribution if
+[T] Microsoft(R) tell us to!
+
+[U] https://sourceforge.net/projects/corefonts/
+
+[A] Microsoft(R) Corporation
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] Free-to-use
+[V] 0.1
+[P] O
+
+[D] 274f4c66d3d168dea116ab965ac0040fc81da3af013dec4ab8f8b39b andale32.exe https://prdownloads.sourceforge.net/sourceforge/corefonts/
+[D] 77da7a86843fe425af234389b293c47ade9ea909a641137ac32f0264 arial32.exe https://prdownloads.sourceforge.net/sourceforge/corefonts/
+[D] 89e621188ac25d579d5789236bd71a90c8e4048a591b848388ac2486 arialb32.exe https://prdownloads.sourceforge.net/sourceforge/corefonts/
+[D] 9debb14917ca20e495c881ebeec5b4dfb9ff43e3cfe77b04498b4888 comic32.exe https://prdownloads.sourceforge.net/sourceforge/corefonts/
+[D] 1021e7c37f3162b97200ba00f114c53ae46ed724831ccc64da8ebdcf courie32.exe https://prdownloads.sourceforge.net/sourceforge/corefonts/
+[D] 15766328083c53dd28993f0d37134907fae81d8395f2f8ecd7fb8b1e georgi32.exe https://prdownloads.sourceforge.net/sourceforge/corefonts/
+[D] 5eec011568d4f710c29ed677b66f1f7291a3285728b60d95a5cd0a75 impact32.exe https://prdownloads.sourceforge.net/sourceforge/corefonts/
+[D] c120614cd6563cbc6f22a5e5d0b04851085d29f912f47f2df3e1bdf5 times32.exe https://prdownloads.sourceforge.net/sourceforge/corefonts/
+[D] 950a7b9261e6bdc040bfd77b7a984660529e0b00804fa14ce1d9ff56 trebuc32.exe https://prdownloads.sourceforge.net/sourceforge/corefonts/
+[D] ba3c211bcdbd407f7f8148c5cb7a1218e52c91ce96f471f851439783 verdan32.exe https://prdownloads.sourceforge.net/sourceforge/corefonts/
+[D] 16289335758d1212bb61d9a680fa4101964b0cbe0cd268ce7c93560a webdin32.exe https://prdownloads.sourceforge.net/sourceforge/corefonts/
+
+autoextract=0 runmake=0
+
+ms_tt_inst() {
+	for x in `match_source_file -p .`; do
+		echo "${x##*/}"
+		case "$x" in
+			*.exe)	cabextract -L $x	;;
+			*)	yes | unzip -LL $x	;;
+		esac
+
+		# check for a way to lowercase all files?
+		mv -vf $(ls *.TTF *.ttf) $root$datadir/fonts/
+	done
+}
+hook_add inmake	5 ms_tt_inst

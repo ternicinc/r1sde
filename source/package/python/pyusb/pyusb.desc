@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pyusb/pyusb.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Easy USB access for Python
+
+[T] PyUSB provides for easy access to the host machine's Universal Serial Bus
+[T] (USB) system for Python.
+
+[U] https://github.com/pyusb/pyusb
+
+[A] Wander Lairson Costa
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[L] BSD
+
+[V] 1.3.1
+[P] X -----5---9 149.000
+
+[D] babdf1a384de02a605558b99a13fc24ae93c15d57e1198f107edfb55 pyusb-1.3.1.tar.gz https://github.com/pyusb/pyusb/releases/download/v1.3.1/

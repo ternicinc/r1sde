@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mkinitrd/mkinitrd.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] T2 initrd implementation
+
+[T] This package contains a clean and mean T2 mkinitrd implementation.
+
+[A] René Rebe <rene@exactco.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+[K] + linux
+
+[E] opt mksh
+
+[L] GPL
+[V] 2026-04-26
+[P] X --2------9 100.000
+
+srctar= runmake=0
+prefix= && set_confopt
+
+mkinitrd_install() {
+	install -v -m 755 $confdir/mkinitrd.sh $root$sbindir/mkinitrd
+	install -v -m 644 $confdir/initrdinit.sh $root$sbindir/initrdinit
+}
+hook_add postmake 5 mkinitrd_install

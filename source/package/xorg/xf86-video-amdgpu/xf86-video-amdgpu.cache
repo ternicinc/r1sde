@@ -1,0 +1,24 @@
+[TIMESTAMP] 1753820402 Tue Jul 29 23:20:02 2025
+[BUILDTIME] 2 (9)
+[SIZE] 0.16 MB, 9 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] libdrm
+[DEP] libpciaccess
+[DEP] linux-header
+[DEP] mesa
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pixman
+[DEP] sed
+[DEP] tar
+[DEP] udev
+[DEP] xorg-server
+[DEP] xorgproto
+[DEP] xz

@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/brotli/brotli.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A generic-purpose lossless compression algorithm
+
+[T] Brotli is a generic-purpose lossless compression algorithm that compresses
+[T] data using a combination of a modern variant of the LZ77 algorithm,
+[T] Huffman coding and 2nd order context modeling, with a compression ratio
+[T] comparable to the best currently available general-purpose compression
+[T] methods. It is similar in speed with deflate but offers more dense
+[T] compression.
+
+[U] https://github.com/google/brotli
+
+[A] Google
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+
+[L] MIT
+[V] 1.2.0
+[P] X -----5---9 100.698
+
+[D] 9670f4fbb7abc17629e08a88b8b470957878b4569786903c448f1f0d brotli-1.2.0.tar.gz https://github.com/google/brotli/archive/v1.2.0/
+
+runconf=0 runpysetup=0
+hook_add preconf 5 "rm -vf Makefile"

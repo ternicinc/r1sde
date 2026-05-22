@@ -1,0 +1,19 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/tar/compar_does_not_need_fd.h.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+--- ./src/compare.c.orig	2004-06-24 13:49:08.444825752 +0200
++++ ./src/compare.c	2004-06-24 13:47:15.575984424 +0200
+@@ -31,9 +31,11 @@
+   };
+ #endif
+ 
++#if 0
+ #if HAVE_LINUX_FD_H
+ # include <linux/fd.h>
+ #endif
++#endif
+ 
+ #include <quotearg.h>
+ 

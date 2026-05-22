@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/musicbrainz-trm/musicbrainz-trm.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] MusicBrainz TRM Generator
+
+[T] The TRM Generator is a small test application that generates
+[T] Relatable TRM acoustic fingerprints. This tool is mainly designed as a
+[T] test/debugging tool for software developers, and is both an
+[T] application and a developer library. The developer library provides
+[T] developers with the functionality to generate TRM ids from Wav, MP3,
+[T] and Ogg Vorbis files.
+
+[U] https://musicbrainz.org
+
+[A] many...
+[A] Requests go to <rob@musicbrainz.org>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/multimedia
+
+[L] LGPL
+[V] 0.2.1
+
+[D] 87c4a87b49587ff00941a14db3b0a39d1413bfdf8ce05c82066af446 trm-0.2.1.tar.gz http://ftp.musicbrainz.org/pub/musicbrainz/

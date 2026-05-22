@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/arkscript/arkscript.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Small functional scripting language
+
+[T] ArkScript is a small, fast, functional and scripting language for C++
+[T] projects.
+
+[U] https://arkscript-lang.dev
+
+[A] Alexandre Plateau
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] MIT
+[V] 4.0.0
+
+[D] 246599387b8a2fe81c8cf9f44be68af9ecc8ee14effdac811b602307 arkscript-4.0.0.tar.gz git+https://github.com/ArkScript-lang/Ark.git v4.0.0
+
+var_append cmakeopt ' ' -DARK_BUILD_EXE=ON

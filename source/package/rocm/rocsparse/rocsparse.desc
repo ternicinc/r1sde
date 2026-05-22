@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rocsparse/rocsparse.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A common interface that provides Basic Linear Algebra Subroutines (BLAS)
+
+[T] rocSPARSE exposes a common interface that provides Basic Linear Algebra
+[T] Subroutines (BLAS) for sparse computation. It's implemented on top of AMD
+[T] ROCm.
+
+[U] https://github.com/ROCm/rocSPARSE
+
+[A] Advanced Micro Devices, Inc.
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS
+[C] extra/development
+
+[L] MIT
+[V] 7.2.3
+[P] X -----5---9 300.200
+
+[CV-GROUP] rocm
+[D] 43882287e8f0a0c52d4bbb7a57a9e3ca8421f4b05a7a5987ba292a86 rocSPARSE-rocm-7.2.3.tar.gz https://github.com/ROCm/rocSPARSE/archive/rocm-7.2.3/
+
+. $base/package/*/*/rocm-conf.in
+var_append cmakeopt ' ' -DCMAKE_C_COMPILER=/$prefix/bin/clang
+var_append cmakeopt ' ' -DCMAKE_CXX_COMPILER=/$prefix/bin/clang++
+var_append cmakeopt ' ' "-DHIP_PLATFORM=amd -DHIP_COMPILER=clang"
+var_append cmakeopt ' ' "-DAMDGPU_TARGETS='$SDECFG_PKG_ROCM_ARCHS'"

@@ -1,0 +1,19 @@
+[TIMESTAMP] 1737845707 Sat Jan 25 23:55:07 2025
+[BUILDTIME] 50 (9)
+[SIZE] 21.38 MB, 457 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libgcrypt
+[DEP] libgpg-error
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar

@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mbedtls/mbedtls.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Light-weight cryptographic and SSL/TLS library
+
+[T] Light-weight cryptographic and SSL/TLS library.
+
+[U] https://tls.mbed.org/
+
+[A] Mbedtls Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] OBJDIR
+
+[V] 3.6.4
+[L] APL
+[P] X -----5---9 162.890
+
+[CV-FLAGS] NO-MAJOR
+[D] 75cfaf360f7ff54979e20557fc64dfc86ad0c09b5732647825e59156 mbedtls-3.6.4.tar.bz2 https://github.com/Mbed-TLS/mbedtls/releases/download/mbedtls-3.6.4/
+
+var_append cmakeopt ' ' '-DENABLE_TESTING=OFF -DENABLE_PROGRAMS=OFF'
+var_append cmakeopt ' ' -DLIB_INSTALL_DIR=$libdir

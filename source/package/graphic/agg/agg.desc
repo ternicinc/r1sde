@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/agg/agg.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A High Quality Rendering Engine for C++
+
+[T] Anti-Grain Geometry (AGG) is an Open Source, free of charge rendering
+[T] engine that produces in-memory pixel images of vectorial data and is
+[T] written in industrial standard C++.
+
+[U] https://sourceforge.net/projects/agg/
+
+[A] Maxim Shemanarev <mcseem@antigrain.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 2.8.42
+[P] X -----5---9 200.000
+
+[D] e380c1abb9a808837448e4a54cb9819dfabda52f1b21ee31c08d316b agg-2.8.42.tar.gz https://github.com/cppfw/agg/archive/2.8.42/
+
+srcdir=agg-$desc_V/src/agg
+autogen=1
+var_append confopt ' ' --disable-examples
+var_append GCC_WRAPPER_APPEND ' ' -I$builddir/$srcdir/include/agg
+var_append GCC_WRAPPER_INSERT ' ' -L$root$(pkgprefix libdir libx11)
+var_append CXX_WRAPPER_APPEND ' ' -fpermissive

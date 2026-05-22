@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ypserv/ypserv.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Simple network lookupservice consisting of databases and processes
+
+[T] The Network Information Service (NIS) provides a simple network lookup
+[T] service consisting of databases and processes. It was formerly known as
+[T] Sun Yellow Pages (YP). The functionality of the two remains the same, only
+[T] the name has changed. Its purpose is to provide information, that has to
+[T] be known throughout the network, to all machines on the network.
+
+[U] https://github.com/thkukuk/ypserv/
+
+[A] Thorsten Kukuk <kukuk@suse.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 4.2
+
+[D] f1bc7169a60b247a7e6d4369c990090a003402502f0d6eb08f84acfd ypserv-4.2.tar.xz https://github.com/thkukuk/ypserv/releases/download/v4.2/

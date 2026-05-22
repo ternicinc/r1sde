@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/moosefs/moosefs.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A unlimited and fault tolerant space for your files
+
+[T] Moosefs MFS is a proven foundation of highly reliable storage systems.
+[T] The file system designed for petabyte class clusters
+[T] crunching mission critical data 24/7.
+
+[U] https://www.moosefs.com/
+
+[A] Moosefs Developers <contact@moosefs.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+
+[L] GPL
+[V] 4.59.2
+
+[D] d3fa2d46528bed5a27a418ca117ffb57b2a0370b6059ae1e20163734 mfs-4.59.2.tar.gz https://github.com/moosefs/moosefs/archive/refs/tags/v4.59.2/

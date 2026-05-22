@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/vdr/vdr-conf.in
+# Copyright (C) 2007 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+prefix=opt/vdr
+set_confopt
+
+var_append CXXFLAGS ' ' -Woverloaded-virtual
+
+export VDRDIR="$root/$prefix"
+export VDRINCDIR="$root$includedir/vdr"
+export VDRPLUGINDB="$root$sysconfdir/plugins.d"
+export VDRPLUGINDIR="$root$libdir/vdr"
+export PLUGINDIR="$root$libdir/vdr/plugins"
+export DVBINCDIR="$root/usr/include/linux/dvb"
+export VIDEODIR="/video"

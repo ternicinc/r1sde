@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cryptcat/cryptcat.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Lightweight version of netcat with integrated transport encryption capabilities
+
+[T] Cryptcat is the standard netcat enhanced with twofish encryption with ports for
+[T] WIndows NT, BSD and Linux. Twofish is courtesy of counterpane, and cryptix.
+[T]
+[T] TCP/IP swiss army knife extended with twofish encryption - Cryptcat is a simple
+[T] Unix utility which reads and writes data across network connections, using TCP
+[T] or UDP protocol while encrypting the data being transmitted. It is designed to
+[T] be a reliable "back-end" tool that can be used directly or easily driven by
+[T] other programs and scripts. At the same time, it is a feature-rich network
+[T] debugging and exploration tool, since it can create almost any kind of
+[T] connection you would need and has several interesting built-in capabilities.
+
+[U] https://farm9.org/Cryptcat/
+
+[A] Farm9 <info@farm9.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 1.2.1
+
+[D] aa55964f08b786f7e2611e7476485f8226d0d220e97b240a84f61007 cryptcat-unix-1.2.1.tar https://prdownloads.sourceforge.net/sourceforge/cryptcat/
+
+var_append makeopt ' ' 'LD=$CC linux'
+makeinstopt=
+hook_add postmake 5 'install -m 755 cryptcat $root$bindir/'

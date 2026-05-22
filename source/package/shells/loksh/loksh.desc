@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/loksh/loksh.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Linux port of OpenBSD's ksh
+
+[T] Unlike other ports of ksh, loksh targets only one platform, follows
+[T] upstream closely and keeps changes to a minimum. loksh does not add any
+[T] extra features; this reduces the risk of introducing security
+[T] vulnerabilities and makes loksh a good fit for resource-constrained systems.
+
+[U] https://github.com/dimkr/loksh
+
+[A] Loksh Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+
+[V] 7.8
+[L] ISC
+
+[D] 3760df05316ab3b67097562f6b07e62063d3de876d07271f60466c5f loksh-7.8.tar.xz https://github.com/dimkr/loksh/releases/download/7.8/

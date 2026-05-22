@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xcb-util-errors/xcb-util-errors.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] XCB utility library that gives human readable names
+
+[T] XCB utility library that gives human readable names to error, event, & request codes.
+
+[U] https://gitlab.freedesktop.org/xorg/lib/libxcb-errors
+
+[A] The XCB developers
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.0.1
+[P] X -----5---9 112.500
+
+[D] 8aa1f40998c8e998730da1398a08806e712d9caa39edba91d35cefb5 xcb-util-errors-1.0.1.tar.xz https://xcb.freedesktop.org/dist/
+
+. package/*/*/modular-x-conf.in

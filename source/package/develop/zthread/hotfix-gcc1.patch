@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/zthread/hotfix-gcc1.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./include/zthread/Guard.h.orig	Wed Jul 30 00:40:13 2003
++++ ./include/zthread/Guard.h	Fri Dec 24 21:15:17 2004
+@@ -490,7 +490,7 @@
+     
+   try {
+     
+-    if(!isDisabled())
++    if(!this->isDisabled())
+       LockingPolicy::destroyScope(*this);
+     
+   } catch (...) { /* ignore */ }  

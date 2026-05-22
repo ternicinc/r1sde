@@ -1,0 +1,19 @@
+[TIMESTAMP] 1745226653 Mon Apr 21 11:10:53 2025
+[BUILDTIME] 2 (9)
+[SIZE] 9.70 MB, 472 files
+
+[DEP] appstream-glib
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] openssl
+[DEP] python
+[DEP] python-gpep517
+[DEP] sed
+[DEP] setuptools
+[DEP] tar

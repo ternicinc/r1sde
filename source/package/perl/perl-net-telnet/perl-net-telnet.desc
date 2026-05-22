@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-net-telnet/perl-net-telnet.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl library to make client connections to a TCP ports
+
+[T] Net::Telnet allows you to make client connections to a TCP port
+[T] and do network I/O, especially to a port using the TELNET
+[T] protocol. Simple I/O methods such as print, get, and getline are
+[T] provided. More sophisticated interactive features are provided
+[T] because connecting to a TELNET port ultimately means communicating
+[T] with a program designed for human interaction. These interactive
+[T] features include the ability to specify a timeout and to wait for
+[T] patterns to appear in the input stream, such as the prompt from a
+[T] shell.
+
+[A] Jay Rogers <jay@rgrs.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 3.05
+
+[D] cedbcd148279fc2e1b5194aedcc348cc4c85ea1fd4575599ce117b29 Net-Telnet-3.05.tar.gz http://search.cpan.org/CPAN/authors/id/J/JR/JROGERS/

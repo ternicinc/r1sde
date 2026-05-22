@@ -1,0 +1,19 @@
+[TIMESTAMP] 1777331395 Tue Apr 28 02:09:55 2026
+[BUILDTIME] 40 (9)
+[SIZE] 53.46 MB, 292 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] imagemagick
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

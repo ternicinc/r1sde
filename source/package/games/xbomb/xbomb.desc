@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xbomb/xbomb.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Minesweeper game with triangular, square and hexagonal grids
+
+[T] XBomb is a minsweeper game with a choice of three different grids. The
+[T] simplest is the hexagonal grid, next is the traditional square grid and
+[T] the most complex is the triangular grid. For each of the different grid
+[T] shapes there are three difficulty levels.
+
+[U] http://www.gedanken.demon.co.uk/xbomb/
+
+[A] amb <amb@gedanken.demon.co.uk>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+[F] CROSS
+
+[L] GPL
+[V] 2.2b
+
+[D] a456f5583dfcbe9af7cff55256b0289e323ce41f831f8098fe543fc6 xbomb-2.2b.tgz http://www.gedanken.org.uk/software/xbomb/download/
+
+var_append makeopt ' ' INSTDIR=/$prefix
+var_append makeinstopt ' ' INSTDIR=$root/$prefix

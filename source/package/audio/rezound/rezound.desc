@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rezound/rezound.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A sound wave editor
+
+[T] ReZound aims to be a stable, open source, and graphical audio file editor.
+
+[U] https://rezound.sourceforge.net/
+
+[A] David W. Durham <ddurham@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[E] opt flac
+
+[L] GPL
+[V] 0.13.1beta
+
+[D] 722ec3271778d52cdd9ce4702a440e8a34e6177a80a12e09df68c0b5 rezound-0.13.1beta.tar.gz https://prdownloads.sourceforge.net/sourceforge/rezound/
+
+var_append CXX_WRAPPER_APPEND ' ' -std=c++11

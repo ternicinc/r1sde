@@ -1,0 +1,19 @@
+[TIMESTAMP] 1739229653 Tue Feb 11 00:20:53 2025
+[BUILDTIME] 6 (5)
+[SIZE] 0.92 MB, 405 files
+
+[DEP] bash
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] libidn
+[DEP] linux-header
+[DEP] loudmouth
+[DEP] make
+[DEP] ncurses
+[DEP] openssl
+[DEP] sed
+[DEP] tar

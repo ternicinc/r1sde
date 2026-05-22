@@ -1,0 +1,25 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/postfix/uclibc.patch.uclibc
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+--- postfix-2.0.20/src/util/sys_defs.h.orig	2005-01-22 13:42:12.000000000 -0800
++++ postfix-2.0.20/src/util/sys_defs.h	2005-01-22 13:42:37.000000000 -0800
+@@ -494,7 +494,7 @@
+ #define HAS_DB
+ #define DEF_DB_TYPE	"hash"
+ #define ALIAS_DB_MAP	"hash:/etc/aliases"
+-#define HAS_NIS
++#undef HAS_NIS
+ #define GETTIMEOFDAY(t)	gettimeofday(t,(struct timezone *) 0)
+ #define ROOT_PATH	"/bin:/usr/bin:/sbin:/usr/sbin"
+ #define FIONREAD_IN_TERMIOS_H
+@@ -522,7 +522,7 @@
+ #define HAS_DB
+ #define DEF_DB_TYPE	"hash"
+ #define ALIAS_DB_MAP	"hash:/etc/aliases"
+-#define HAS_NIS
++#undef HAS_NIS
+ #define GETTIMEOFDAY(t)	gettimeofday(t,(struct timezone *) 0)
+ #define ROOT_PATH	"/bin:/usr/bin:/sbin:/usr/sbin"
+ #define FIONREAD_IN_TERMIOS_H		/* maybe unnecessary */

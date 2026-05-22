@@ -1,0 +1,22 @@
+
+[TIMESTAMP] 1691063269 Thu Aug  3 13:47:49 2023
+[BUILDTIME] 1 (9)
+[SIZE] 0.17 MB, 7 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] libx11
+[DEP] libxau
+[DEP] libxcb
+[DEP] libxext
+[DEP] libxpm
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

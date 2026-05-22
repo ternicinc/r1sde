@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/tomlkit/tomlkit.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Style preserving TOML library
+
+[T] TOML Kit is a 1.0.0-compliant TOML library. It includes a parser that
+[T] preserves all comments, indentations, whitespace and internal element
+[T] ordering, and makes them accessible and editable via an intuitive API. You
+[T] can also create new TOML documents from scratch using the provided helpers.
+[T] Part of the implementation has been adapted, improved and fixed from Molten.
+
+[U] https://github.com/python-poetry/tomlkit
+
+[A] Sébastien Eustace <sebastien@eustace.io>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] MIT
+[V] 1.5.0
+[P] X -----5---9 137.000
+
+[D] 72a3ec454adc635cd18721142d5c6d849f9484309a6ae5ac1adca428 tomlkit-1.5.0.tar.gz https://github.com/python-poetry/tomlkit/archive/1.5.0/

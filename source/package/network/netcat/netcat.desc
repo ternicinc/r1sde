@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/netcat/netcat.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A network piping program
+
+[T] Netcat is a simple Unix utility which reads and writes data across
+[T] network connections, using TCP or UDP protocol. It is designed to be a
+[T] reliable backend tool that can be used directly or easily driven by
+[T] other programs time, it is a feature-rich network debugging and
+[T] exploration tool, since it can create almost any kind of connection you
+[T] would need and has several interesting built-in capabilities.
+
+[U] https://netcat.sourceforge.net/
+
+[A] Giovanni Giacobbi <giovanni@giacobbi.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 0.7.1
+
+[D] b84b62ece0f3258d5493f18834c555a6e68a5264a06e5e9ddefed05d netcat-0.7.1.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/netcat/
+
+var_append makeinstopt ' ' netcat_nc=

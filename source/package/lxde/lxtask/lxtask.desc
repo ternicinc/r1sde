@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lxtask/lxtask.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Lightweight and desktop-independent task manager
+
+[T] LXTask - lightweight and desktop-independent task manager derived from
+[T] xfce4-taskmanager with all dependencies on xfce removed, new features,
+[T] and some improvement of the user interface.
+
+[U] https://lxde.org/
+
+[A] LXDE team http://lxde.org/
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/desktop/lxde
+
+[L] GPL
+[V] 0.1.12
+
+[D] ccf167c5fc10eb834f5f7ca7fba046c43f40d7943fab69cf42532c42 lxtask-0.1.12.tar.gz https://github.com/lxde/lxtask/archive/0.1.12/
+
+. $base/package/lxde/*/lxde-conf.in
+autogen=1

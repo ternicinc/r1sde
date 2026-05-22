@@ -1,0 +1,19 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/gpart/vfat.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+With cleanup from Debian.
+
+--- gpart-0.1h.orig/src/gm_fat.h
++++ gpart-0.1h/src/gm_fat.h
+@@ -60,6 +60,6 @@
+ 	__u16	info_sector;	/* filesystem info sector */
+ 	__u16	backup_boot;	/* backup boot sector */
+ 	__u16	reserved2[6];	/* Unused */
+-};
+-
++} __attribute__ ((packed));
++
+ #endif /* _GM_FAT_H */

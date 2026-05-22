@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/aqhbci-qt/aqhbci-qt.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Qt wizard for aqhbci
+
+[T] AqHBCI is a complete implementation of the HBCI network protocol
+[T] written in C. It works under POSIX systems (such as Linux, *BSD etc)
+[T] and on WIN32 platforms.
+
+[U] https://aqhbci.sourceforge.net
+
+[A] Martin Preuss <martin@libchipcard.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/development
+[F] NOPARALLEL
+[L] GPL
+[V] 1.0.7a
+[P] O -----5---9 207.520
+
+[D] 61a2a28092285247656ade49cfd050021ecf10de43551b881bf74722 aqhbci-qt-tools-1.0.7a.tar.gz !https://prdownloads.sourceforge.net/sourceforge/aqhbci/aqhbci-qt-tools-1.0.7.tar.gz

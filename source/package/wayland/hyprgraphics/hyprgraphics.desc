@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/hyprgraphics/hyprgraphics.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The hyprland graphics library and utilities
+
+[T] The hyprland graphics library and utilities.
+
+[U] https://hyprland.org/
+
+[A] vaxerski
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/x11
+[F] CROSS OBJDIR
+
+[E] add liberation-fonts
+[E] add libjpeg-turbo
+[E] opt libheif
+[E] opt libjxl
+
+[L] BSD
+[V] 0.5.1
+[P] X -----5---9 204.010
+
+[D] 9cb20186a3da9d4bdffc485b47ab28c5edb8d773c3204df38ae3fef3 hyprgraphics-0.5.1.tar.gz https://github.com/hyprwm/hyprgraphics/archive/refs/tags/v0.5.1/

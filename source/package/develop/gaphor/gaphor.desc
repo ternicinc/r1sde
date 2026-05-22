@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gaphor/gaphor.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] UML modeling tool for Gnome
+
+[T] Gaphor is an easy to use modeling environment. This means that you
+[T] are able to create nice UML diagrams for documentation and to assist
+[T] you with design decisions. Gaphor will help you create your applications.
+[T]
+[T] Gaphor has an UML 2.0 compliant data model.
+
+[U] https://gaphor.org/
+
+[A] Arjan Molenaar <arjanmol@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+
+[L] GPL
+[V] 3.3.2
+
+[D] 9b8d8ee5a44bec790c590edf1a55eedc635fbf7698425a63bb6912a3 gaphor-3.3.2.tar.gz https://github.com/gaphor/gaphor/archive/3.3.2/
+
+. $base/package/*/*/gnome-conf.in
+runpysetup=0

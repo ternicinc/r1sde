@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/iozone/iozone.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A filesystem benchmark tool
+
+[T] IOzone is a filesystem benchmark tool. The benchmark generates and
+[T] measures a variety of file operations.
+
+[U] https://www.iozone.org/
+
+[A] webmaster@iozone.org
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+
+[L] GPL
+[V] 3.510
+
+[CV-TR] s/\./_/
+[D] 896bda43cebea44584e067b484f88abb15efd5ff30e76235bf67b55a iozone3_510.tar https://www.iozone.org/src/current/
+
+srcdir="*/src/current"
+
+var_append makeopt ' ' linux
+var_append CC_WRAPPER_APPEND ' ' -DHAVE_ANSIC_C
+
+makeinstopt=
+hook_add postmake 5 "install iozone $root$bindir/"

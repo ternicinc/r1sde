@@ -1,0 +1,39 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libcxx/libcxx.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] C++ Standard Library
+
+[T] libc++ is an implementation of the C++ standard library, targeting C++11,
+[T] C++14 and above.
+
+[U] https://libcxx.llvm.org
+
+[A] University of Illinois/NCSA
+[A] Chris Lattner <clattner@apple.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] OBJDIR CROSS
+
+[L] BSD MIT
+[V] 22.1.5
+[P] O -1---5---9 102.700
+
+[CV-GROUP] llvm-project
+[D] 539b0fa857272b2b18ad9b9e58e11d4e48e0f1c807ec375d5ca91913 llvm-project-22.1.5.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-22.1.5/
+
+srcdir=*/libcxx
+
+var_append cmakeopt ' ' -DLIBCXX_USE_COMPILER_RT=YES
+var_append cmakeopt ' ' -DLIBCXX_HAS_MUSL_LIBC=ON
+
+if atstage cross; then
+	var_append GCC_WRAPPER_APPEND ' ' '-nodefaultlibs -lc' # only for stage 0 bootstrap
+	#var_append cmakeopt ' ' "-DLIBCXX_CXX_ABI=libcxxabi -DLIBCXX_CXX_ABI_INCLUDE_PATHS=$root$includedir/"
+fi
+
+[ "${libdir##*/lib}" ] && var_append cmakeopt ' ' "-DLLVM_LIBDIR_SUFFIX=${libdir##*/lib}"
+[ "$SDECFG_STATIC" = 1 ] || var_append cmakeopt ' ' -DBUILD_SHARED_LIBS=ON

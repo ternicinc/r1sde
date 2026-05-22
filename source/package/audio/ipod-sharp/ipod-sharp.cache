@@ -1,0 +1,22 @@
+
+[TIMESTAMP] 1213346189 Fri Jun 13 10:36:29 2008
+[BUILDTIME] 0 (5)
+[SIZE] 0.32 MB, 18 files
+
+[DEP] 00-dirtree
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] glib
+[DEP] grep
+[DEP] gtk-sharp2
+[DEP] make
+[DEP] mono
+[DEP] ndesk-dbus
+[DEP] ndesk-dbus-glib
+[DEP] pkgconfig
+[DEP] podsleuth
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] udev

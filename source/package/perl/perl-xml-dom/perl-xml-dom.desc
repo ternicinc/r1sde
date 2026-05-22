@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-xml-dom/perl-xml-dom.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module XML-DOM
+
+[T] A perl module for building DOM Level 1 compliant document structures.
+
+[U] https://search.cpan.org/~tjmather/XML-DOM/
+
+[A] T.J. Mather <tjmather@maxmind.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] Artistic GPL
+[V] 1.46
+[P] X -----5---9 200.119
+
+[D] 3126793bd2c89bd4e756f37367b38d07a35b510dcddb1cb71a87aca2 XML-DOM-1.46.tar.gz http://search.cpan.org/CPAN/authors/id/T/TJ/TJMATHER/

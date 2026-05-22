@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libsepol/libsepol.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] SELinux binary policy manipulation library
+
+[T] Security-enhanced Linux is a patch of the Linux® kernel and a number
+[T] of utilities with enhanced security functionality designed to add
+[T] mandatory access controls to Linux. The Security-enhanced Linux
+[T] kernel contains new architectural components originally developed to
+[T] improve the security of the Flask operating system. These
+[T] architectural components provide general support for the enforcement
+[T] of many kinds of mandatory access control policies, including those
+[T] based on the concepts of Type Enforcement®, Role-based Access
+[T] Control, and Multi-level Security.
+[T] libsepol provides an API for the manipulation of SELinux binary policies.
+[T] It is used by checkpolicy (the policy compiler) and similar tools, as well
+[T] as by programs like load_policy that need to perform specific
+[T] transformations on binary policies such as customizing policy boolean
+[T] settings.
+
+[A] NSA SElinux Team
+[M] Miguel Bolanos <miguel@geekpreview.org>
+
+[C] extra/security
+
+[L] LGPL
+[V] 3.10
+[P] O
+
+[CV-GROUP] selinux
+[D] 58d896bddbbdf8722a35b1122cb9b2f9d1563c4f39cf2139dcc9c7bc libsepol-3.10.tar.gz https://github.com/SELinuxProject/selinux/releases/download/3.10/

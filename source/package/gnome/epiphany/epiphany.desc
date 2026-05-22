@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/epiphany/epiphany.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A GNOME Web Browser and file navigator
+
+[T] Epiphany is a fast and lightweight gtk+ Web Browser and File Navigator
+[T] build around the Mozilla's Gecko rendering engine.
+[T]
+[T] The package seems to be a fork of galeon to rewrite it more cleanly
+[T] and to conform to the GNOME human interface guidelines.
+
+[U] https://apps.gnome.org/Epiphany/
+
+[A] Marco Pesenti Gritti <marco@it.gnome.org>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/office extra/desktop/gnome
+
+[L] GPL
+[V] 50.4
+[P] X -----5---9 210.500
+
+[CV-URL] https://download.gnome.org/sources/epiphany/cache.json
+[D] 44e2a8010bc7794cc43231801243c915d0069474da2124c6658ef72a epiphany-50.4.tar.xz https://download.gnome.org/sources/epiphany/50/
+
+. $base/package/*/*/gnome-conf.in

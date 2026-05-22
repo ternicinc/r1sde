@@ -1,0 +1,23 @@
+[TIMESTAMP] 1737653994 Thu Jan 23 18:39:54 2025
+[BUILDTIME] 14 (9)
+[SIZE] 4.08 MB, 128 files
+
+[DEP] bash
+[DEP] bdb
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[OPT] doxygen
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] icu4c
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar

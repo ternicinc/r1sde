@@ -1,0 +1,67 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/clockspeed/clockspeed.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] System clock synchronisation utilities
+
+[T] Clockspeed uses a hardware tick counter to compensate for a persistently
+[T] fast or slow system clock. Given a few time measurements from a reliable
+[T] source, it computes and then eliminates the clock skew.
+[T]
+[T] Sntpclock checks another system's NTP clock, and prints the results in a
+[T] format suitable for input to clockspeed. sntpclock is the simplest
+[T] available NTP/SNTP client.
+[T]
+[T] Taiclock and taiclockd form an even simpler alternative to SNTP.
+[T] They are suitable for precise time synchronization over a local area
+[T] network, without the hassles and potential security problems of an NTP
+[T] server.
+[T]
+[T] This version of clockspeed can use the Pentium RDTSC tick counter or the
+[T] Solaris gethrtime() nanosecond counter.
+
+[U] https://cr.yp.to/clockspeed.html
+
+[A] D.J. Bernstein <djb@cr.yp.to>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS DIETLIBC
+
+[L] OpenSource
+
+[V] 0.62
+
+[CV-URL] http://cr.yp.to/clockspeed.html
+
+[D] cb246e1bc348660172268b7e8a8a7e0c2f64d7b0f3560c22e58633ca clockspeed-0.62.tar.gz http://cr.yp.to/clockspeed/
+
+makeopt="$makeopt it leapsecs.dat"
+
+clockspeed_config() {
+	echo $CC > conf-cc
+	echo $CC > conf-ld
+	echo /$prefix > conf-home
+	# clockspeed is x86 / solaris only ...
+	[[ $arch = x86* ]] || sed -i 's/ clockspeed / /' Makefile
+}
+
+# the included install procedure is gather grave and not cross compile aware,
+# since it builds a custom install binary doing the work ...
+makeinstopt=
+clockspeed_install() {
+	while read dir file; do
+		# only available on x86*
+		[[ $arch != x86* && $file = clockspeed* ]] && continue
+		mkdir -p $root/$prefix/$dir
+		cp $file $root/$prefix/$dir/$file
+	done < <(grep "c(.*man\|c(.*bin" hier.c | cut -d \" --output-delimiter ' ' -f 2,4)
+
+	mkdir -p $root/var/state/clockspeed
+	cp leapsecs.dat $root/var/state/clockspeed/
+}
+
+hook_add premake 5 clockspeed_config
+hook_add postmake 5 clockspeed_install

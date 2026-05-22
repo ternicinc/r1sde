@@ -1,0 +1,41 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dia/dia.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Program for drawing structured diagrams
+
+[T] Dia is a GNU program designed to be much like the Windows
+[T] program 'Visio'. It can be used to draw different kind of diagrams.
+[T]
+[T] It can be used to draw a variety of diagram types, including UML, Network,
+[T] flowchart and others. The native file format for Dia is XML (optionally
+[T] gzip compressed). It has print support, and can export to a number of
+[T] formats such as EPS, SVG, CGM and PNG.
+
+[U] https://wiki.gnome.org/Apps/Dia
+
+[A] Alexander Larsson <alla@lysator.liu.se> {original author}
+[A] James Henstridge <james@daa.com.au> {current maintainer}
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/office extra/desktop/gnome
+[F] CROSS
+
+[L] GPL
+[V] 0.97.3
+
+[CV-URL] https://download.gnome.org/sources/dia/cache.json
+[D] ac55e7f70a59517861a42949a0012b8069033246cd8978f1477afbc2 dia-0.97.3.tar.xz https://download.gnome.org/sources/dia/0.97/
+
+. $base/package/*/*/gnome-conf.in
+
+if pkginstalled pygtk; then
+    var_append confopt ' ' --with-python
+fi
+
+if pkginstalled libgnome; then
+    var_append confopt ' ' --enable-gnome
+fi

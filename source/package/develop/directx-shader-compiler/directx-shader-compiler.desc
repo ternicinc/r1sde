@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/directx-shader-compiler/directx-shader-compiler.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A compiler for HLSL to DXIL (DirectX Intermediate Language)
+
+[T] The DirectX Shader Compiler (dxc) project includes a compiler and related
+[T] tools used to compile High-Level Shader Language (HLSL) programs into DirectX
+[T] Intermediate Language (DXIL) representation. Applications that make use of
+[T] DirectX for graphics, games, and computation can use it to generate shader
+[T] programs.
+
+[U] https://github.com/microsoft/DirectXShaderCompiler
+
+[A] Microsoft
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS OBJDIR
+
+[E] opt go
+
+[L] OpenSource
+[V] 1.10.2605.2
+[P] X -----5---9 127.443
+
+[D] 4aa8ac221c9ced83eddd0b37337c4ff0fed527e6921f56b2ca25d350 DirectXShaderCompiler-v1.10.2605.2.tar.gz git+https://github.com/microsoft/DirectXShaderCompiler v1.10.2605.2
+
+makeinstopt=
+var_append cmakeopt ' ' -C../cmake/caches/PredefinedParams.cmake
+
+hook_add postmake 5 "install bin/dxc $root$bindir/"
+hook_add postmake 5 "install lib/libdxcompiler.so* $root$libdir/"

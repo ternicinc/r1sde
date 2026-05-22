@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/matrixssl/matrixssl.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An embedded SSL implementation for small footprint devices
+
+[T] PeerSec MatrixSSL is an embedded SSL implementation designed for
+[T] small footprint devices and applications requiring low overhead per
+[T] connection. The library is less than 50K on disk with cipher suites. It
+[T] includes SSL client and SSL server support, session resumption, and
+[T] implementations of RSA, 3DES, ARC4, SHA1, and MD5. The source is well
+[T] documented and contains portability layers for additional operating
+[T] systems, cipher suites, and cryptography providers.
+
+[U] https://www.peersec.com/
+
+[A] PeerSec Networks <www.peersec.com@peersec.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[L] GPL
+[V] 1.8.3
+[P] X -----5---9 200.000
+
+[D] 10928b0de589c62ec1135df4c7b0739332dc9937c5ccfc7214d27d73 matrixssl-1-8-3-open.tar.gz http://www.las.ic.unicamp.br/pub/gentoo/distfiles/
+
+srcdir="*/src"
+makeinstopt=
+hook_add postmake 5 'install libmatrixssl.so $root$libdir/; install ../*.h $root$includedir/'

@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/tbb/tbb.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Intel Threading Building Blocks
+
+[T] Intel® Threading Building Blocks (Intel® TBB) makes parallel
+[T] performance and scalability accessible to software developers who are
+[T] writing loop- and task-based applications.
+
+[U] https://software.intel.com/content/www/us/en/develop/tools/threading-building-blocks.html
+
+[A] Intel Corp.
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] OBJDIR NO-LTO.clang
+
+[L] APL
+[V] 2023.0.0
+[P] X -----5---9 102.000
+
+[D] 9af99e122d644d4e1bc2c3701c6195e71f0db421906c49f69db95cdf oneTBB-2023.0.0.tar.gz https://github.com/oneapi-src/oneTBB/archive/v2023.0.0/
+
+var_append cmakeopt ' ' -DTBB_TEST=OFF
+var_append GCC_WRAPPER_REMOVE ' ' -fcf-protection=*
+[[ $arch == x86* ]] && var_append GCC_WRAPPER_INSERT ' ' -mwaitpkg

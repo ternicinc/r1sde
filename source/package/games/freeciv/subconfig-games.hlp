@@ -1,0 +1,25 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/freeciv/subconfig-games.hlp
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+MENU_PKG_GAMES_FREECIV
+  Here you'll find options for FreeCiv
+
+SDECFG_PKG_FREECIV_ESD
+  Try to enable Esound support
+
+SDECFG_PKG_FREECIV_SDLMIX
+  Try to enable SDL_mixer support
+
+SDECFG_PKG_FREECIV_READLINE
+  support fancy command line editing
+
+SDECFG_PKG_FREECIV_XAW
+  Please select the widget set to use.
+
+SDECFG_PKG_FREECIV_ZLIB
+  use zlib to (un)compress savegames transparently.
+
+SDECFG_PKG_FREECIV_EFENCE
+  use Electric Fence, malloc debugger

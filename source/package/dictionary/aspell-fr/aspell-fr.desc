@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/aspell-fr/aspell-fr.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The French dictonary for aspell
+
+[T] This package contains the French dictonary for aspell.
+
+[U] http://aspellfr.free.fr/aspell/
+
+[A] Remi Vanica
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office
+[F] CROSS
+
+[L] GPL
+[V] 0.50-3
+
+[D] a0fce5701bf6e23422ab3b41209de3036f23fdf8918fd08871464424 aspell-fr-0.50-3.tar.bz2 http://ftp.gnu.org/gnu/aspell/dict/fr/
+
+confopt=

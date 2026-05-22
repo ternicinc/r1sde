@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lxterminal/lxterminal.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A VTE-based terminal emulator with support for multiple tabs
+
+[T] LXterminal is a VTE-based terminal emulator with support for multiple tabs.
+[T] It is completely desktop-independent and does not have any unnecessary
+[T] dependencies. In order to reduce memory usage and increase the performance
+[T] all instances of the terminal are sharing a single process.
+
+[U] https://lxde.org/
+
+[A] LXDE team http://lxde.org/
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/desktop/lxde
+
+[L] GPL
+[V] 0.4.1
+
+[D] 76efc528c993c5130e3ba65f88e96c755ef229b7ef3069dbffc76189 lxterminal-0.4.1.tar.gz https://github.com/lxde/lxterminal/archive/0.4.1/
+
+. $base/package/lxde/*/lxde-conf.in
+autogen=1

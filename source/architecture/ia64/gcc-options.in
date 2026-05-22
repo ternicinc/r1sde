@@ -1,0 +1,15 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/ia64/gcc-options.in
+# Copyright (C) 2010 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+if [ $SDECFG_IA64_OPT != generic ]; then
+	var_append GCC_WRAPPER_INSERT " " "-mtune=$SDECFG_IA64_OPT"
+	var_append KCC_WRAPPER_APPEND " " "-mtune=$SDECFG_IA64_OPT"
+fi
+
+# stack protection is unsupported on ia64
+var_append GCC_WRAPPER_REMOVE ' ' '-fstack-protector'
+var_append GCC_WRAPPER_REMOVE ' ' '-fstack-protector-strong'
+var_append GCC_WRAPPER_REMOVE ' ' '-fstack-clash-protection'

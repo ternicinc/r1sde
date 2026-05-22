@@ -1,0 +1,32 @@
+[TIMESTAMP] 1744977601 Fri Apr 18 14:00:01 2025
+[BUILDTIME] 280 (9)
+[SIZE] 82.00 MB, 3761 files
+
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] cairo
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] grep
+[DEP] gtk+
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] icu4c
+[DEP] imagemagick
+[DEP] linux-header
+[DEP] make
+[DEP] pango
+[DEP] readline
+[DEP] sed
+[DEP] sqlite
+[DEP] tar
+[DEP] xz
+[DEP] zlib
+[DEP] zstd

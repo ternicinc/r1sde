@@ -1,0 +1,42 @@
+[TIMESTAMP] 1777312646 Mon Apr 27 19:57:26 2026
+[BUILDTIME] 18 (9)
+[SIZE] 11.01 MB, 848 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] docbook-xml
+[DEP] docbook-xsl
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[DEP] gi-docgen
+[OPT] glib
+[DEP] gobject-introspection
+[DEP] graphene
+[DEP] grep
+[DEP] gtk
+[DEP] harfbuzz
+[DEP] json-glib
+[OPT] krb5
+[DEP] libadwaita
+[DEP] libsecret
+[DEP] libsoup3
+[DEP] libxml
+[DEP] libxslt
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[DEP] pkgconfig
+[DEP] python
+[DEP] rest
+[DEP] sed
+[DEP] setuptools
+[DEP] tar
+[DEP] util-linux
+[DEP] vala
+[DEP] xz

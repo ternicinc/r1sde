@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libselinux/libselinux.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] SELinux library and simple utilities
+
+[T] Security-enhanced Linux is a patch of the Linux® kernel and a number
+[T] of utilities with enhanced security functionality designed to add
+[T] mandatory access controls to Linux. The Security-enhanced Linux
+[T] kernel contains new architectural components originally developed to
+[T] improve the security of the Flask operating system. These
+[T] architectural components provide general support for the enforcement
+[T] of many kinds of mandatory access control policies, including those
+[T] based on the concepts of Type Enforcement®, Role-based Access
+[T] Control, and Multi-level Security.
+[T] libselinux provides an API for SELinux applications to get and set
+[T] process and file security contexts and to obtain security policy
+[T] decisions. Required for any applications that use the SELinux API.
+
+[A] NSA SElinux Team
+[M] Miguel Bolanos <miguel@geekpreview.org>
+
+[C] extra/security
+
+[L] PublicDomain
+[V] 3.10
+[P] O
+
+[CV-GROUP] selinux
+[D] 00060a3a544d6ed989313530c60a94d00623678806da9475fc3fb074 libselinux-3.10.tar.gz https://github.com/SELinuxProject/selinux/releases/download/3.10/
+
+pkginstalled python && var_append makeinstopt ' ' install-pywrap
+pkginstalled ruby && var_append makeinstopt ' ' install-rubywrap

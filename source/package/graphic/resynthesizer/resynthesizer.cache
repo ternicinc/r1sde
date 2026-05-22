@@ -1,0 +1,28 @@
+[TIMESTAMP] 1768208918 Mon Jan 12 10:08:38 2026
+[BUILDTIME] 6 (9)
+[SIZE] 0.15 MB, 24 files
+
+[DEP] babl
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gegl
+[DEP] gexiv2
+[DEP] gimp
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[DEP] python
+[DEP] sed
+[DEP] tar

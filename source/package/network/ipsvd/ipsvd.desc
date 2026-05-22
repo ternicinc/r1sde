@@ -1,0 +1,41 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ipsvd/ipsvd.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Internet protocol service daemons
+
+[T] ipsvd is a set of internet protocol service daemons. It currently
+[T] includes a TCP/IP service daemon, and a UDP/IP service daemon.
+[T]
+[T] An internet protocol service (ipsv) daemon waits for incoming connections
+[T] on a local socket. On incoming connections, the ipsv daemon conditionally
+[T] runs an arbitrary program with standard input reading from the socket,
+[T] and standard output writing to the socket, that handles the connection.
+[T] Standard error is used for logging.
+[T]
+[T] ipsv daemons can be told to read and follow pre-defined instructions on
+[T] how to handle incoming connections. It's possible to run different
+[T] programs, or to set a different environment, or to deny a connection, or
+[T] to set a per host concurrency limit, depending on the client's address or
+[T] hostname.
+[T]
+[T] ipsvd can be used to run services normally run by inetd, xinetd, or
+[T] tcpserver.
+
+[U] https://smarden.org/ipsvd/
+
+[A] Gerrit Pape <pape@smarden.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] GPL
+[V] 1.1.1
+
+[CV-URL] https://smarden.org/ipsvd/install.html
+[D] 9c6cf39c11d65372be65b90ecb0093196888cb40836c2e5ab5c2d081 ipsvd-1.1.1.tar.gz https://smarden.org/ipsvd/
+
+. $base/package/*/runit/djb-config net $sbindir

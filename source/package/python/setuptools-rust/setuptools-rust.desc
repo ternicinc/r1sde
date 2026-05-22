@@ -1,0 +1,24 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/setuptools-rust/setuptools-rust.desc
+# Copyright (C) 2025 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+[I] Setuptools plugin for rust
+
+[T] setuptools-rust is a plugin for setuptools to build Rust Python extensions
+[T] implemented with PyO3 or rust-cpython.
+
+[U] https://pypi.org/project/setuptools-rust/
+
+[A] Nikolay Tim <fafhrd91@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[E] add python-semantic-version
+
+[L] MIT
+[V] 1.11.1
+[P] X -----5---9 110.250
+
+[D] 00b3744e816f037df4ba0312aa2390990a62d5b6e64d968cb861fcf3 setuptools_rust-1.11.1.tar.gz https://files.pythonhosted.org/packages/e0/92/bf8589b1a2b6107cf9ec8daa9954c0b7620643fe1f37d31d75e572d995f5/

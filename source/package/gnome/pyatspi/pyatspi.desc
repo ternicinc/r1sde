@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pyatspi/pyatspi.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome pyatspi package
+
+[T] Core Gnome pyatspi package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 2.58.2
+
+[CV-URL] https://download.gnome.org/sources/pyatspi/cache.json
+[D] 7c33c56e0b92c53707546c1ee0b282284671839ac91aaaa2c8c79447 pyatspi-2.58.2.tar.xz https://download.gnome.org/sources/pyatspi/2.58/
+
+. $base/package/*/*/gnome-conf.in

@@ -1,0 +1,44 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dvgrab/dvgrab.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Commandine tool for IEEE1394 Camcorders
+
+[T] dvgrab is part of kino, so here is kino's description:
+[T]
+[T] Kino is a non-linear DV editor for GNU/Linux. It features excellent
+[T] integration with IEEE-1394 for capture, VTR control, and recording back
+[T] to the camera. It captures video to disk in RawDV and AVI format, in
+[T] both type-1 DV and type-2 DV (separate audio stream) encodings.
+[T]
+[T] You can load multiple video clips, cut and paste portions of
+[T] video/audio, and save it to an edit decision list (SMIL XML format).
+[T] Most edit and navigation commands are mapped to equivalent vi key
+[T] commands. Also, Kino can load movies and export the composite movie in
+[T] a number of formats: DV over IEEE 1394, Raw DV, DV AVI, still frames,
+[T] WAV, MP3, Ogg Vorbis, MPEG-1, MPEG-2, and DivX. Still frame export uses
+[T] Imlib1, which has built-in support for PPM, JPEG, PNG, TIFF, GIF, and
+[T] whatever your ImageMagick installation supports. MP3 requires lame. Ogg
+[T] Vorbis requires oggenc. MPEG-1, MPEG-2, and DivX require mjpegtools
+[T] 2.0.0.
+
+[U] https://www.kinodv.org/
+
+[A] Arne Schirmacher <schirmacher@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[E] opt libquicktime
+
+[L] GPL
+[V] 3.5.2
+
+[D] 721841f81fbb3c02e75a9b23f5a55d73a395123ccb9fa3ac65b47e92 dvgrab-3.5.2.tar.gz https://github.com/ddennedy/dvgrab/archive/v3.5.2/
+
+var_append GCC_WRAPPER_APPEND ' ' -Wno-narrowing
+autogen=1

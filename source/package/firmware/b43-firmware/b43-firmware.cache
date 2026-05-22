@@ -1,0 +1,13 @@
+[TIMESTAMP] 1761995819 Sat Nov  1 12:16:59 2025
+[BUILDTIME] 3 (9)
+[SIZE] 0.79 MB, 160 files
+
+[DEP] b43-fwcutter
+[DEP] bash
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] sed
+[DEP] tar

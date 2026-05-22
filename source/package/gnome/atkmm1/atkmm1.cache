@@ -1,0 +1,22 @@
+[TIMESTAMP] 1737811978 Sat Jan 25 14:32:58 2025
+[BUILDTIME] 8 (9)
+[SIZE] 0.58 MB, 63 files
+
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[OPT] glib
+[DEP] glibmm2
+[DEP] grep
+[DEP] libsigc++2
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] xz

@@ -1,0 +1,45 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/glipper-lite/glipper-lite.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Glipper-Lite is a clipboard manager
+
+[T] Glipper-Lite is a clipboard manager similar to KDE's Klipper, or Ditto for
+[T] Windows. It is an old-fashioned system tray icon which provides a history
+[T] of text copied to the X11 clipboard and primary selection.
+[T] Glipper-Lite only depends on GTK+ 2 and NOT on GNOME libs, so you can also
+[T] use it with any other window manager or panel that supports tray icons.
+[T] This is a continuation of the classic C version of Glipper. The original
+[T] Glipper project moved to Python long ago
+
+[U] https://code.google.com/p/glipper-lite/
+
+[A] Sven Rech
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+
+[L] GPL
+#[V] 287-1
+[V] 2013-technosaurus
+
+#[D] 3946935554 glipper-lite-287-1.tar.bz2 http://distro.ibiblio.org/quirky/quirky6/sources/t2/april/
+# cannot get it to compile. using this special one:
+[D] 4159641166 glipper-lite-2013-technosaurus.tar.bz2 http://distro.ibiblio.org/quirky/quirky6/sources/t2/april/
+
+#trying source from technosaurus, refer:
+#http://www.murga-linux.com/puppy/viewtopic.php?t=52235&start=30
+
+glipper_build() {
+ if [[ $libdir == *lib64 ]]; then
+  sed -i -e 's%L/usr/X11R7/lib %L/usr/X11R7/lib64 %' build
+  sed -i -e 's%/usr/lib/%/usr/lib64/%g' build
+ fi
+ ./build
+ if [ -f glipper ];then
+  cp -a -f glipper $root/usr/bin/
+ fi
+}
+custmain=glipper_build

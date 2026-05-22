@@ -1,0 +1,15 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/heimdal/hack_krb5_flags.in
+# Copyright (C) 2004 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+if [ $stagelevel -ge 5 ]; then
+	KRB5LIBS="`krb5-config --libs gssapi` -lhdb -lkadm5clnt -lkadm5srv"
+	KRB5CFLAGS=`krb5-config --cflags gssapi`
+
+	var_append CPP_WRAPPER_APPEND ' ' "$KRB5CFLAGS"
+
+	var_append GCC_WRAPPER_APPEND ' ' "$KRB5CFLAGS"
+	var_append GCC_WRAPPER_APPEND ' ' "$KRB5LIBS"
+fi

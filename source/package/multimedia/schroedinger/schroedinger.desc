@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/schroedinger/schroedinger.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A fast implementation of the Dirac codec
+
+[T] Schrödinger is an implementation of the Dirac video codec,
+[T] a modern wavelet-based video codec. It features both an encoder and a
+[T] decoder and GStreamer plugins. Mappings have also been developed for
+[T] putting Dirac into both the Ogg container format and the MPEG Transport
+[T] stream container format.
+
+[U] https://github.com/codec-world/libschroedinger/
+
+[A] <ds@schleef.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[E] opt gtk-doc
+
+[L] MIT
+[V] 1.0.11
+
+[D] 36187d06591a15f285133c6db763ec4f3bf0ccb092d915f609fca9ac schroedinger-1.0.11.tar.gz https://github.com/codec-world/libschroedinger/releases/download/schroedinger-1.0.11/

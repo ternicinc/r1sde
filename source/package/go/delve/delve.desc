@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/delve/delve.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A debugger for the Go programming language
+
+[T] A debugger for the Go programming language.
+
+[U] https://github.com/go-delve/delve
+
+[A] Derek Parker
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/tool
+[F] CROSS
+
+[L] MIT
+[V] 1.26.3
+
+[D] 9c7797fb66b4b79d99eb374565eb15a9068faf16d708e5e0f598ef4c go-delve-v1.26.3.tar.gz https://github.com/go-delve/delve/archive/v1.26.3/
+
+. $base/package/*/*/go-conf.in
+export CGO_ENABLED=1
+GCC_WRAPPER_BYPASS=1
+xsrcdir=delve-$ver
+rungo=
+var_append makeopt ' ' build
+hook_add postmake 5 'install -Dvm 755 dlv $root$bindir/'

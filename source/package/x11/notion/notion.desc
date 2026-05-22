@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/notion/notion.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Tabbed tiling, window manager
+
+[T] Notion is a tiling, tabbed window manager for the X window system.
+[T] It has originally been forked from Ion3.
+
+[U] https://notionwm.net
+
+[A] Tuomo Valkonen (original author)
+[A] Arnout Engelen
+[A] Philipp Hartwig
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/windowmanager
+[F] NO-LTO.gcc
+
+[L] LGPL
+[V] 4.0.5
+
+[D] a1be514f78a142811266dc9d68db9b72021b0fdba17de4e95481fe75 notion-4.0.5.tar.gz https://github.com/raboof/notion/archive/4.0.5/
+
+hook_add postinstall 3 "register_wm notion Notion $bindir/notion"
+
+var_append makeopt ' ' ETCDIR=/etc/notion
+var_append makeopt ' ' LUA_VERSION=5.4
+var_append makeopt ' ' LUA=lua
+var_append makeopt ' ' LUAC=luac
+var_append makeopt ' ' 'LUA_INCLUDES="-DLUA_USE_POSIX -DLUA_USE_DLOPEN -DLUA_USE_READLINE"'
+var_append makeopt ' ' 'LUA_LIBS="-llua -lm -ldl -lreadline -lhistory -lncurses"'
+
+var_append makeinstopt ' ' ETCDIR=/etc/notion

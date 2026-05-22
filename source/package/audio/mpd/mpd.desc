@@ -1,0 +1,45 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mpd/mpd.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A jukebox server that controls music playback (MP3, Ogg and Flac)
+
+[T] Music Player Daemon (MPD) is a server that allows remote access for
+[T] playing music (MP3, Ogg Vorbis and Flac) and managing playlists.
+[T] The design focus is on integrating a computer into a stereo system
+[T] that provides control for music playback over a local network.
+[T] Currently, it includes a Web interface, phpMp, a GTK frontend,
+[T] gtk2mp, a command line tool, mpc, and a dock app, WMmp. The goals are
+[T] to be easy to install and use, to have minimal resource requirements,
+[T] and to be stable and flexible.
+
+[U] https://www.musicpd.org/
+
+[A] Warren Dukes <shank@mercury.chem.pitt.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[E] opt dbus
+[E] opt jack
+[E] opt libopus
+[E] opt libsndfile
+[E] opt libupnp
+[E] opt liburing
+[E] opt mpg123
+[E] opt pipewire
+[E] opt pulseaudio
+[E] opt twolame
+[E] opt flac
+[E] opt lame
+[E] del subversion
+
+[L] GPL
+[V] 0.24.12
+
+[D] dd916c02525bfa467d11021e1e26d0b8525bfc9d33d85ce635b7ac56 mpd-0.24.12.tar.xz https://www.musicpd.org/download/mpd/0.24/mpd-0.24.12.tar.xz
+
+var_append mesonopt ' ' -Dmpcdec=disabled

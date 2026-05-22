@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/recoverjpeg/recoverjpeg.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A tool which finds lost pictures in device images
+
+[T] Recoverjpeg tries to recover JFIF (JPEG) pictures from a peripheral. This
+[T] may be useful if you mistakenly overwrite a partition or if a device
+[T] such as a digital camera memory card is bogus.
+
+[U] https://www.rfc1149.net/devel/recoverjpeg
+
+[A] Samuel Tardieu <sam@rfc1149.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+[F] CROSS
+
+[L] GPL
+[V] 2.6.3
+
+[D] 2151050c373644794bdc3feb99266025dbac9cdd04ad6689cdb2f824 recoverjpeg-2.6.3.tar.gz http://www.rfc1149.net/download/recoverjpeg/

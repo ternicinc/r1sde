@@ -1,0 +1,28 @@
+
+[TIMESTAMP] 1280264947 Tue Jul 27 21:09:07 2010
+[BUILDTIME] 5 (5)
+[SIZE] 0.31 MB, 49 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] coreutils
+[DEP] dbus
+[DEP] dbus-glib
+[DEP] diffutils
+[DEP] docbook-xml
+[DEP] file
+[DEP] findutils
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] gtk-doc
+[DEP] libxml
+[DEP] libxslt
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] pkgconfig
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] udev

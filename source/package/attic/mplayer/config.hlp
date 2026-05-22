@@ -1,0 +1,21 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/mplayer/config.hlp
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+MENU_PKG_MPLAYER
+  Here you'll find options for MPlayer.
+
+SDECFG_PKG_MPLAYER_RUN_CPUDETECT
+  Check here if you want to have MPlayer detecting your CPU instruction
+  set at run time. By unchecking this option you will be able to gain
+  several percent (or more on slow machines) extra performance, but the
+  runtime CPU instruction set must match the build CPU's _exactly_. If
+  you don't know what to do, keep the option checked.
+
+SDECFG_PKG_MPLAYER_BLINKENLIGHTS
+  Check here if you want a driver capable of playback using the
+  Blinkenlights UDP protocol. If you don't know what Blinkenlights is,
+  you don't need this driver.

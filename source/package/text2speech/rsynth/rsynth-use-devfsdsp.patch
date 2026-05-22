@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/rsynth/rsynth-use-devfsdsp.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./config/linuxplay.c.orig	2003-07-25 11:47:04.710496048 +0200
++++ ./config/linuxplay.c	2003-07-25 11:29:16.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ static int dev_fd = -1;
+  /* file descriptor for audio device */
+-char *dev_file = "/dev/sbdsp";
++char *dev_file = "/dev/sound/dsp";
+ 
+ static int linear_fd = -1;
+ 

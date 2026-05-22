@@ -1,0 +1,71 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnupg/gnupg.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The GNU Privacy Guard
+
+[T] GnuPG is GNU's tool for secure communication and data storage.
+[T] It can be used to encrypt data and to create digital signatures.
+[T] It includes an advanced key management facility and is compliant
+[T] with the proposed OpenPGP Internet standard as described in RFC2440.
+[T]
+[T] Because GnuPG does not use use any patented algorithm it cannot be
+[T] compatible with PGP2 versions. PGP 2.x uses IDEA (which is patented
+[T] worldwide).
+[T]
+[T] The default algorithms are DSA and ElGamal. ElGamal for signing
+[T] is still available, but because of the larger size of such
+[T] signatures it is deprecated (Please note that the GnuPG
+[T] implementation of ElGamal signatures is *not* insecure). Symmetric
+[T] algorithms are: 3DES, Blowfish, CAST5 and Twofish (GnuPG does not
+[T] yet create Twofish encrypted messages because there is no agreement
+[T] in the OpenPGP WG on how to use it together with a MDC algorithm)
+[T] Digest algorithms available are MD5, RIPEMD160 and SHA1.
+
+[U] https://www.gnupg.org/
+
+[A] Werner Koch <wk@gnupg.org> {Maintainer}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS FCOMMON
+
+[E] opt libusb-compat libusb
+[E] opt openldap
+
+[L] GPL
+[V] 1.4.23
+[P] X ?----5---9 118.100
+
+[CV-FLAGS] NO-MAJOR
+[D] e58b6adaf596647cf4241c70a1280afa2a1ec05a02ba13a2f03bb681 gnupg-1.4.23.tar.gz https://gnupg.org/ftp/gcrypt/gnupg/
+
+pm_main() {
+	if [[ $xsrctar = *gnupg* ]]; then
+		chmod +s $root$bindir/gpg # Insecure mem waring
+		install doc/gpg.1 $root$mandir/man1/
+	else
+		ln -svf pgpgpg $root$bindir/pgp
+		cp -v ../pgpgpg-*/README $root$docdir/pgpgpg.txt
+	fi
+}
+
+gnupg_checkpatch() {
+	if [[ ${xsrctar} != *gnupg* ]]; then
+		unset patchfiles
+	fi
+}
+
+hook_add postmake 5 pm_main
+hook_add prepatch 9 gnupg_checkpatch
+
+if pkginstalled openldap; then
+	pkgprefix -t openldap
+	var_append configprefix ' ' 'CFLAGS="-I$(pkgprefix includedir openldap)"'
+	var_append configprefix ' ' 'LDFLAGS="-L$(pkgprefix libdir openldap)"'
+fi
+
+[ $arch = powerpc64 ] && var_append confopt ' ' --disable-asm

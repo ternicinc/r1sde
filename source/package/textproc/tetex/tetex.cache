@@ -1,0 +1,34 @@
+
+[TIMESTAMP] 1736941849 Wed Jan 15 12:50:49 2025
+[BUILDTIME] 5 (9)
+[SIZE] 355.69 MB, 19611 files
+
+[DEP] 00-dirtree
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] bison
+[DEP] coreutils
+[DEP] diffutils
+[DEP] ed
+[DEP] findutils
+[DEP] flex
+[DEP] gawk
+[DEP] gpm
+[DEP] grep
+[DEP] gzip
+[DEP] lesstif
+[DEP] libice
+[DEP] libsm
+[DEP] libx11
+[DEP] libxaw
+[DEP] libxmu
+[DEP] libxpm
+[DEP] libxt
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] texinfo
+[DEP] xorgproto

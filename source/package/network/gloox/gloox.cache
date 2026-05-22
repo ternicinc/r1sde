@@ -1,0 +1,22 @@
+[TIMESTAMP] 1771548931 Fri 20 Feb 2026 00:55:31 GMT
+[BUILDTIME] 145 (9)
+[SIZE] 39.79 MB, 163 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] file
+[DEP] findutils
+[DEP] gawk
+[DEP] gnutls
+[DEP] grep
+[DEP] libidn
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] zlib

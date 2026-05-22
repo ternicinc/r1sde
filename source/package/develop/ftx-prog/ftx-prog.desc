@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ftx-prog/ftx-prog.desc
+[COPY] Copyright (C) 2018 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A command-line alternative to the FTProg utility
+
+[T] ftx-prog is a Linux command-line alternative to the FTProg utility for
+[T] FTDI's FT-X series of USB interfaces.
+
+[U] https://github.com/richardeoin/ftx-prog
+
+[A] Richard Meadows
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 0.4
+
+[D] 648e8b31b550423ae1fda26b2b0cb36693c0f83d6ccd2b8648086f5a ftx-prog-0.4.tar.gz https://github.com/richardeoin/ftx-prog/archive/v0.4/
+
+makeinstopt=
+hook_add postmake 5 "install ftx_prog $root$sbindir/"

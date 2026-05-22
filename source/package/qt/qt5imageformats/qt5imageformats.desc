@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/qt5imageformats/qt5imageformats.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Additional Image Format plugins for Qt5
+
+[T] Additional Image Format plugins for Qt5.
+
+[U] https://qt.io
+
+[A] Trolltech AS <www.trolltech.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[E] opt jasper
+[E] opt libwebp
+
+[L] LGPL
+[V] 5.15.14
+
+[CV-GROUP] qt5
+[D] a073b09b5e4c279bb3e824b22b68b2344de361225b0ece2a43e09f2a qtimageformats-everywhere-opensource-src-5.15.14.tar.xz http://download.qt.io/official_releases/qt/5.15/5.15.14/submodules/
+
+. $base/package/*/*/qt5-conf.in

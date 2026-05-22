@@ -1,0 +1,21 @@
+[TIMESTAMP] 1737645176 Thu Jan 23 16:12:56 2025
+[BUILDTIME] 4 (9)
+[SIZE] 0.33 MB, 57 files
+
+[DEP] alsa-lib
+[DEP] bash
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] ffmpeg
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[OPT] jack
+[OPT] libsamplerate
+[DEP] linux-header
+[DEP] make
+[OPT] pulseaudio
+[DEP] sed
+[OPT] speexdsp
+[DEP] tar

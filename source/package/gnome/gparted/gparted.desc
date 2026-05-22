@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gparted/gparted.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome Partition Editor
+
+[T] GParted is a free partition editor for graphically managing your disk
+[T] partitions, for creating, destroying, resizing, checking and copying
+[T] partitions, and the file systems on them. This is useful for creating space
+[T] for new operating systems, reorganizing disk usage, copying data residing
+[T] on hard disks and mirroring one partition with another (disk imaging).
+
+[U] https://gparted.sourceforge.net
+
+[A] Bart Hakvoort <gparted@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem extra/desktop/gnome
+[F] CROSS
+
+[L] GPL
+[V] 1.8.1
+
+[D] ab775ec5b62f6595484e6c4b208eca31ce813f50c97b1a1d2909afa1 gparted-1.8.1.tar.gz https://prdownloads.sourceforge.net/sourceforge/gparted/
+
+. $base/package/*/*/gnome-conf.in

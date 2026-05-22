@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/slmodem/slmodem.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Driver for SmartLink modems
+
+[T] This is Smart Link Soft Modem for Linux version 2.X. It provides
+[T] full-featured 56K Voice Fax Modem.
+[T]
+[T] Smart link products supported
+[T] Riser: HAMR5600, SmartRiser56, SmartRiser561-CNR/ACR/MDC/MiniPCI
+[T] PCI: SmartPCI56, SmartPCI561, SmartPCI562, SmartPCI563, SmartLAN56
+[T] USB: SmartUSB56
+
+[U] http://www.smlink.com/content.aspx?id=105
+
+[A] SmartLink Ltd.
+[M] René Rebe <rene@exactco.de>
+
+[F] NOPARALLEL
+[C] base/system
+
+[R] + x86
+
+[L] OpenSource
+[V] 2.9.11-20061021
+[P] O
+
+[D] fb26780151e223ec05d556a524a1a1094cb809ad5347718004cc88d3 slmodem-2.9.11-20061021.tar.gz http://linmodems.technion.ac.il/packages/smartlink/
+
+var_append makeopt ' ' SUPPORT_ALSA=1
+var_append makeinstopt ' ' SUPPORT_ALSA=1

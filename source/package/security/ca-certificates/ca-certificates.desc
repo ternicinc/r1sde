@@ -1,0 +1,42 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ca-certificates/ca-certificates.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Common CA Certificates PEM files
+
+[T] update-ca-certificates is a program that updates /etc/ssl/certs directory
+[T] to hold SSL certificates and generates certificates.crt that is single-file
+[T] version of CA certificates.
+[T] It includes the followings PEM files of CA certificates
+[T] * spi-inc.org certificate
+[T] * db.debian.org certificate
+[T] * debconf.org certificate
+[T] * Mozilla builtin CA certificates
+[T] * CACert.org certificates
+[T] * Brazilian Government Certificate
+[T] * Signet CA certificates
+[T] * QuoVadis CA certificates
+[T] This is useful for any openssl applications to verify SSL connection.
+[T] Note that certificate authorities whose certificates are included in this
+[T] package are not in any way audited for trustworthiness and RFC 3647
+[T] compliance, and that full responsibility to assess them rests with the user.
+
+[U] https://packages.debian.org/stable/misc/ca-certificates
+
+[A] Fumitoshi UKAI <ukai@debian.or.jp>
+[M] Gerhard Weis <gweis@gmx.at>
+
+[C] base/library
+[F] CROSS
+
+[E] add python-cryptography
+
+[L] GPL MPL
+[V] 20260223
+
+[D] f4eb13c658b29527c60a9e42835b424fc873cddb2060eacd326ed928 ca-certificates_20260223.tar.xz http://ftp.debian.org/debian/pool/main/c/ca-certificates/
+
+hook_add postinstall 5 "find $root/usr/share/ca-certificates -name '*.crt' -printf '%P\n' | sort > $root/etc/ca-certificates.conf"
+hook_add postinstall 5 "install -m 755 $confdir//usr/sbin/update-ca-certificates $root$sbindir/"

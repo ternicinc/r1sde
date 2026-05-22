@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/venv/venv.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Lua Virtual Environment
+
+[T] Lua Virtual Environment is a simple library which provides a way
+[T] to execute a Lua function in a separate environment, protecting
+[T] the original one.
+
+[U] https://www.keplerproject.org/venv/
+
+[A] Roberto Ierusalimschy
+[A] Ana Lúcia de Moura
+[A] André Carregal
+[A] Tomás Guisasola
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] OpenSource
+
+[V] 1.1
+
+[CV-URL] http://luaforge.net/frs/?group_id=61
+[D] c246b13fad6a601f39dd9cf7f7a711da7a3f39b6e34157c8b63a0706 venv-1.1.tar.gz http://luaforge.net/frs/download.php/956/
+
+. $base/package/*/*/lua-conf.in
+runmake=0
+hook_add premake 5 install_lua_module

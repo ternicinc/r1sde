@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/raku-file-which/raku-file-which.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Raku Object-oriented port of File::Which (CPAN)
+
+[T] File::Which finds the full or relative paths to an executable program on the
+[T] system. This is normally the function of which utility which is typically
+[T] implemented as either a program or a built in shell command. On some
+[T] unfortunate platforms, such as Microsoft Windows it is not provided as part
+[T] of the core operating system.
+
+[U] https://github.com/azawawi/raku-file-which
+
+[A] Ahmad M. Zawawi
+[M] Tomas Glozar <tglozar@gmail.com>
+
+[C] extra/development
+[F] CROSS
+
+[L] MIT
+[V] 1.0.4
+[P] X -----5---9 209.701
+
+[D] 3410abb488fd3dd8f74bfc66865c75a128a0d52e9a9ca9981a20ca3d raku-file-which-1.0.4.tar.gz https://github.com/azawawi/raku-file-which/archive/refs/tags/1.0.4/

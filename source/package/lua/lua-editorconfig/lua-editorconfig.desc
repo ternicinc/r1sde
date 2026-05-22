@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lua-editorconfig/lua-editorconfig.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] EditorConfig Core bindings for Lua
+
+[T] EditorConfig Core bindings for Lua.
+
+[U] https://github.com/editorconfig/editorconfig-core-lua
+
+[A] Lua-editorconfig Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+
+[V] 0.3.0
+[L] BSD
+
+[D] 828543f0b4409f1531ffd6286b2d202a099a148a585afcbdf9d9cd91 editorconfig-core-lua-0.3.0.tar.gz https://github.com/editorconfig/editorconfig-core-lua/archive/v0.3.0/

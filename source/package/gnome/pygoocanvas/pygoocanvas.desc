@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pygoocanvas/pygoocanvas.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Python binding goocanvas a cairo-based canvas widget for GTK+
+
+[T] Python binding goocanvas a cairo-based canvas widget for GTK+.
+
+[U] https://live.gnome.org/GooCanvas
+
+[A] Gian Mario Tagliaretti <gianmt@gnome.org>
+[A] Gustavo J. A. M. Carneiro <gjc@inescporto.pt>
+[M] Gerardo Di Iorio <arete74@gmail.com>
+
+[C] extra/development extra/desktop/gnome
+
+[L] GPL
+[V] 0.14.1
+
+[CV-URL] https://download.gnome.org/sources/pygoocanvas/cache.json
+[D] b9c96f61a6c20d51e6637beed3d19ee15d7c67078670d5f40208e20e pygoocanvas-0.14.1.tar.bz2 https://download.gnome.org/sources/pygoocanvas/0.14/
+
+. $base/package/*/*/gnome-conf.in

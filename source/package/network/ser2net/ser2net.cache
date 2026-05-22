@@ -1,0 +1,21 @@
+[TIMESTAMP] 1770464667 Sat Feb  7 12:44:27 2026
+[BUILDTIME] 6 (9)
+[SIZE] 0.20 MB, 10 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] file
+[DEP] findutils
+[DEP] gawk
+[DEP] gensio
+[DEP] grep
+[DEP] gzip
+[DEP] libyaml
+[DEP] linux-header
+[DEP] make
+[DEP] pam
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

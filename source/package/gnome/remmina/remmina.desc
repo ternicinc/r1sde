@@ -1,0 +1,39 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/remmina/remmina.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A remote desktop client
+
+[T] Use other desktops remotely, from a tiny screen or large monitors. RDP,
+[T] VNC, SPICE, X2Go, SSH, WWW (HTTP protocol) and EXEC network protocols are
+[T] supported. Written in GTK, with a port to Qt underway.
+
+[U] https://gitlab.com/Remmina/Remmina
+
+[A] Allan Nordhøy <epost@anotheragency.no>
+[A] Antenore Gatta <antenore@simbiosi.org>
+[A] Denis Ollier <larchunix@users.noreply.github.com>
+[A] Daniel Teichmann <daniel.teichmann@das-netzwerkteam.de>
+[A] Giovanni Panozzo <giovanni@panozzo.it>
+[A] Johannes Weberhofer <jweberhofer@weberhofer.at>
+[A] Matteo F. Vescovi <mfv@debian.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 1.4.43
+
+[D] cf621edc51e722f85b9da2e5b84aa72f0add2bf1aae0774b38c7b269 Remmina-v1.4.43.tar.bz2 https://gitlab.com/Remmina/Remmina/-/archive/v1.4.43/
+
+. $base/package/*/*/gnome-conf.in
+
+atstage cross && var_append cmakeopt ' ' -DWITH_PYTHONLIBS=OFF
+var_append cmakeopt ' ' -DHAVE_LIBAPPINDICATOR=OFF
+pkginstalled vte || var_append cmakeopt ' ' -DWITH_VTE=OFF
+pkginstalled libvncserver || var_append cmakeopt ' ' -DWITH_LIBVNCSERVER=OFF
+pkginstalled webkitgtk || var_append cmakeopt ' ' -DWITH_WEBKIT2GTK=OFF
+pkginstalled freerdp && var_append cmakeopt ' ' -DWITH_FREERDP3=ON

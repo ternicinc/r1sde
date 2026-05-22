@@ -1,0 +1,16 @@
+
+[TIMESTAMP] 1279633806 Tue Jul 20 15:50:06 2010
+[BUILDTIME] 5 (5)
+[SIZE] 0.04 MB, 6 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] grep
+[DEP] ladspa
+[DEP] make
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar

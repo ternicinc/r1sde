@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/vulkan-headers/vulkan-headers.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Official Khronos Vulkan headers
+
+[T] Vulkan is an Explicit API, enabling direct control over how GPUs actually
+[T] work. No (or very little) validation or error checking is done inside a Vulkan driver.
+
+[A] Khronos Group
+[M] René Rebe <rene@exactco.de>
+
+[U] https://www.khronos.org/vulkan/
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.4.351
+[P] X -----5---9 127.400
+
+[CV-FLAGS] NO-PREFIX
+[CV-GROUP] vulkan
+[D] 6e260b304d0a080b01ab84076ec0354299b1f06558fbd13e4c09f47a Vulkan-Headers-1.4.351.tar.gz https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.4.351/
+
+var_append cmakeopt ' ' -GNinja

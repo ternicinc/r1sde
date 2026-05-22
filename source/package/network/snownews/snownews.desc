@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/snownews/snownews.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Text-Mode RSS Newsreader for Linux and Unix
+
+[T] Snownews is a RSS/RDF newsreader for the console. The program supports
+[T] RSS 1.0 feeds that apply the W3C RDF standard, and Radio Userland's RSS
+[T] 0.91 and 2.0 standards.
+[T] Other features are cookie and http-auth support.
+
+[U] http://home.kcore.de/~kiza/software/snownews/
+
+[A] Oliver Feiler <kiza@gmx.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office
+[F] CROSS
+
+[L] GPL
+[V] 1.11
+
+[D] 74365a57739199e90ec43190b7165ffae79b76915c116963ae620b63 snownews-1.11.tar.gz https://download.sourceforge.net/project/snownews/
+
+var_append makeopt ' ' "LDFLAGS='-L/lib -lncurses -lcrypto -lssl $(xml2-config --libs)'"
+makeinstopt="$makeopt PREFIX=$root/$prefix install"

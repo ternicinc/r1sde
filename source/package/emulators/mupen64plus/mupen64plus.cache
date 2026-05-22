@@ -1,0 +1,26 @@
+[TIMESTAMP] 1750598655 Sun Jun 22 15:24:15 2025
+[BUILDTIME] 12 (9)
+[SIZE] 2.38 MB, 19 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] freetype
+[DEP] gawk
+[DEP] glu
+[DEP] grep
+[DEP] gzip
+[DEP] libglvnd
+[DEP] libpng
+[DEP] libsdl2
+[DEP] libx11
+[DEP] linux-header
+[DEP] make
+[DEP] nasm
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] xorgproto
+[DEP] zlib

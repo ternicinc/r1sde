@@ -1,0 +1,28 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dbus-glib/non-native.patch.cross
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- dbus-glib-0.108/dbus/Makefile.in.vanilla	2018-01-02 05:29:08.292666431 +0000
++++ dbus-glib-0.108/dbus/Makefile.in	2018-01-02 05:29:18.812666046 +0000
+@@ -612,7 +612,7 @@
+ top_build_prefix = @top_build_prefix@
+ top_builddir = @top_builddir@
+ top_srcdir = @top_srcdir@
+-SUBDIRS = . examples
++SUBDIRS = .
+ AM_CPPFLAGS = \
+ 	-I$(top_srcdir)						\
+ 	-I$(top_builddir)					\
+--- dbus-glib-0.110/Makefile.in.vanilla	2020-04-29 12:42:55.978179644 +0200
++++ dbus-glib-0.110/Makefile.in	2020-04-29 12:43:02.978179806 +0200
+@@ -407,7 +407,7 @@
+ top_srcdir = @top_srcdir@
+ ACLOCAL_AMFLAGS = -I m4
+ GLIB_PC = dbus-glib-1.pc
+-SUBDIRS = dbus-gmain dbus tools test doc
++SUBDIRS = dbus-gmain dbus tools doc
+ DIST_SUBDIRS = dbus-gmain dbus tools test doc m4
+ pkgconfigdir = $(libdir)/pkgconfig
+ pkgconfig_DATA = $(GLIB_PC)

@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ncc/ncc.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A C flow analysis compiler
+
+[T] Ncc is a C source code analyzer which generates program flow and
+[T] variable usage information.
+
+[U] http://students.ceid.upatras.gr/~sxanth/ncc/index.html
+
+[A] Stelios Xanthakis <sxanth@ceid.upatras.gr>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic
+[V] 2.8
+
+[D] 7c43bf4632fd7ea86139fbf69709ab083e1ee114583a329eb7bea96e ncc-2.8.tar.gz http://students.ceid.upatras.gr/~sxanth/ncc/
+
+CC=$CXX # ncc does use CC for the C++ compiler :-(

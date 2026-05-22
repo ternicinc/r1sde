@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfce4-taskmanager/xfce4-taskmanager.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A task manager for the Xfce desktop
+
+[T] This is a task (system process) manager for Xfce.
+
+[U] https://www.xfce.org/
+
+[A] Johannes Zellner
+[M] <serwou@free.fr>
+
+[C] extra/desktop/xfce
+[F] CROSS
+
+[L] GPL
+[V] 1.6.0
+
+[D] 6cc7fb02bd3b0d08e31eff40121ec5400a9b0dca97c63110085c71b3 xfce4-taskmanager-1.6.0.tar.xz https://archive.xfce.org/src/apps/xfce4-taskmanager/1.6/
+
+. $base/package/xfce4/*/xfce4-conf.in

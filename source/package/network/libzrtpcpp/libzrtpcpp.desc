@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libzrtpcpp/libzrtpcpp.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A free implimentation of the ZRTP protocol
+
+[T] ZRTP Protocol Library is an implementation of Phil Zimmermann's ZRTP
+[T] protocol, created based on and interoperable with Zfone beta 2. Combined
+[T] with the GNU RTP Stack (ccrtp), this offers the ability to create
+[T] communication services that natively support the ZRTP protocol.
+
+[U] https://www.gnu.org/software/ccrtp/
+
+[A] Werner Dittman <Werner.Dittmann@t-online.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 4.7.0
+
+[D] 90055663978bf8ce97fc367bcfcf7ff73a37c98dac9e9b826a4b8f5c libzrtpcpp-4.7.0.tar.gz https://github.com/wernerd/ZRTPCPP/archive/4.7.0/
+
+var_append cmakeopt ' ' -DCMAKE_POLICY_VERSION_MINIMUM=3.5

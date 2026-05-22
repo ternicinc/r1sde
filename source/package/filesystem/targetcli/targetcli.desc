@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---.
+[COPY] t2/package/*/targetcli/targetcli.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---.
+
+[I] Administration shell for storage targets
+
+[T] Administration shell for storage targets.
+
+[U] https://github.com/open-iscsi/targetcli-fb
+
+[A] Targetcli Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+
+[V] 3.0.2
+[L] AGPL3
+
+[D] b77c684c912694e365dd3610a5ae8f98c1232b408fdd4cf4f214fbc3 targetcli-3.0.2.tar.gz https://github.com/open-iscsi/targetcli-fb/archive/v3.0.2/

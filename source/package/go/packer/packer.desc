@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/packer/packer.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Virtual machine creation tool
+
+[T] Packer is a tool for building identical machine images for multiple
+[T] platforms from a single source configuration.
+
+[U] https://packer.io
+
+[A] HashiCorp
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/tool
+[F] CROSS
+[R] + x86 x86-64 arm arm64 ppc64le mips mips64 mipsel
+
+[L] MPL
+[V] 1.15.3
+
+[D] a675e8595e0a9e244081f4047b76628d97b7e0bc9d0e6809e77efc30 packer-1.15.3.tar.gz https://github.com/hashicorp/packer/archive/v1.15.3/
+
+. $base/package/*/*/go-conf.in
+
+GOARCH=$TARGET_ARCH
+GOOS=$SDECFG_KERNEL
+
+var_append goconfopt ' ' '-o bin/packer'
+
+hook_add postmake 5 "cp bin/packer $root/$bindir"

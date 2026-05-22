@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lxqt-qtplugin/lxqt-qtplugin.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Qt-LXQt plugin integration
+
+[T] Qt-LXQt plugin integration.
+
+[U] https://github.com/lxqt/lxqt-qtplugin
+
+[A] Lxqt-qtplugin Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] OBJDIR
+
+[V] 2.4.0
+[L] LGPL
+
+[CV-GROUP] lxqt
+[D] b5a470cdd15c9611cc867ecc8ed62cd929f122f8b9c22678a1f06729 lxqt-qtplugin-2.4.0.tar.xz https://github.com/lxqt/lxqt-qtplugin/releases/download/2.4.0/

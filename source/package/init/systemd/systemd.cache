@@ -1,0 +1,55 @@
+[TIMESTAMP] 1760542440 Wed Oct 15 17:34:00 2025
+[BUILDTIME] 120 (9) ERROR
+[SIZE] 46.24 MB, 1077 files
+
+[DEP] 00-dirtree
+[DEP] acl
+[DEP] audit
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] clang
+[DEP] cmake
+[DEP] coreutils
+[DEP] cryptsetup
+[DEP] curl
+[DEP] diffutils
+[DEP] gawk
+[DEP] gettext
+[DEP] gperf
+[DEP] grep
+[DEP] gzip
+[DEP] iptables
+[DEP] kmod
+[DEP] libarchive
+[DEP] libbpf
+[DEP] libcap
+[DEP] libelf
+[DEP] libgcrypt
+[DEP] libgpg-error
+[DEP] libidn2
+[DEP] libmtp
+[DEP] libqrencode
+[DEP] libseccomp
+[DEP] libwacom
+[DEP] libxcrypt
+[DEP] linux-header
+[DEP] lz4
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] p11-kit
+[DEP] pam
+[DEP] pcre2
+[DEP] python
+[DEP] sed
+[DEP] shadow
+[DEP] systemtap
+[DEP] tar
+[DEP] udev
+[DEP] upower
+[DEP] util-linux
+[DEP] xkbcommon
+[DEP] xz
+[DEP] zlib
+[DEP] zstd

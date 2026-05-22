@@ -1,0 +1,20 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/gpm/compile.patch.dietlibc
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+--- gpm-1.20.1/src/synaptics.c.vanilla	2005-02-07 11:41:12.066500984 +0100
++++ gpm-1.20.1/src/synaptics.c	2005-02-07 11:41:56.014819824 +0100
+@@ -149,6 +149,12 @@
+ **                                                                                 
+ **/
+ 
++double ceil (double x) {
++	return x;
++}
++float ceilf (float x) {
++       return x;
++}
+ 
+ /*
+ ** TODO

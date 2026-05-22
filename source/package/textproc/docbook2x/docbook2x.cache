@@ -1,0 +1,19 @@
+[TIMESTAMP] 1737548678 Wed Jan 22 13:24:38 2025
+[BUILDTIME] 2 (9)
+[SIZE] 1.86 MB, 184 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libxslt
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] perl-sax-exception
+[DEP] perl-sax-parser
+[DEP] sed
+[DEP] tar

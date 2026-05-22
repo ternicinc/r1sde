@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/aqmoney2/aqmoney2.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A CLI homebanking program
+
+[T] AqMoney is a console tool for home banking using OpenHBCI and
+[T] Libchipcard. It supports all of the features offered by OpenHBCI.
+
+[U] https://aqmoney.sourceforge.net
+
+[A] Martin Preuss <martin@libchipcard.de>
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/tool extra/office extra/development
+
+[L] GPL
+[V] 1.9.5
+[P] X -----5---9 207.500
+
+[D] 5400e1fceae21619658926b7ee8206c11a937dbf8eb127f6509db1d2 aqmoney2-1.9.5.tar.gz https://prdownloads.sourceforge.net/sourceforge/aqmoney/

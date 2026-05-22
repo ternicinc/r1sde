@@ -1,0 +1,33 @@
+[TIMESTAMP] 1760538409 Wed Oct 15 16:26:49 2025
+[BUILDTIME] 12 (9)
+[SIZE] 16.53 MB, 935 files
+
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] fontconfig
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[DEP] glib
+[DEP] gmp
+[DEP] grep
+[DEP] gtk+
+[DEP] gtksourceview4
+[DEP] harfbuzz
+[DEP] intltool
+[DEP] linux-header
+[DEP] make
+[DEP] mpfr
+[DEP] ncurses
+[DEP] pango
+[DEP] perl
+[DEP] readline
+[DEP] sed
+[DEP] tar
+[DEP] vte
+[DEP] xz

@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/murrine-configurator/murrine-configurator.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Murrine Gtk+ theme configurator
+
+[T] Configurator for the flexible Murrine Gtk+ theme.
+
+[U] http://cimi.netsons.org/pages/murrine/configurator.php
+
+[A] Cimitan Andrea
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/gnome
+[F] CROSS
+
+[L] GPL
+[V] 0.5
+
+[D] d162651525ff2fe6bc730bc60ad9c906913661a4243b88c2dd7aece3 murrine-configurator-0.5.tar.bz2 http://cimi.netsons.org/media/download_gallery/murrine/
+
+. $base/package/*/*/gnome-conf.in
+runmake=0
+hook_add postmake 5 "./install.sh --prefix $root/$prefix"

@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/vtk/vtk.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Visualization Tool Kit
+
+[T] An open-source, freely available software system for 3D computer
+[T] graphics, image processing and visualization. VTK consists of a C++
+[T] class library and several interpreted interface layers including
+[T] Tcl/Tk, Java, and Python.
+
+[U] https://www.vtk.org/
+
+[A] Kitware, Inc
+[M] Roger Mason <rmason@mun.ca>
+
+[C] extra/scientific
+[F] OBJDIR
+[E] opt hdf5
+
+[L] BSD
+[V] 9.6.2
+[P] X -----5---9 142.700
+
+[CV-URL] https://vtk.org/download/
+[D] c11ee79bd299ccfe206d270de2b26913b3553302949125339f71298e VTK-9.6.2.tar.gz https://www.vtk.org/files/release/9.6/
+
+var_append cmakeopt ' ' -DCMAKE_INSTALL_LIBDIR=${libdir##*/}

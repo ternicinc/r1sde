@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfce4-calculator-plugin/xfce4-calculator-plugin.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Calculator plugin for the Xfce4 panel
+
+[T] The calculator plugin for Xfce is a lightweight panel plugin that
+[T] integrates basic calculator directly into the Xfce panel. It allows users
+[T] to quickly perform arithmetic operations without needing a separate
+[T] application.
+
+[U] https://docs.xfce.org/panel-plugins/xfce4-calculator-plugin/start
+
+[A] Xfce Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/xfce
+
+[L] GPL
+[V] 0.8.0
+
+[D] a151bf785a94514b634404909c193d1ac26a5215279bf6c3e980ea71 xfce4-calculator-plugin-0.8.0.tar.xz https://archive.xfce.org/src/panel-plugins/xfce4-calculator-plugin/0.8/
+
+. $base/package/xfce4/*/xfce4-conf.in

@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cgal/cgal.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Computational Geometry Algorithms Library
+
+[T] The goal of the CGAL Open Source Project is to provide easy access
+[T] to efficient and reliable geometric algorithms in the form of a
+[T] C++ library. CGAL is used in various areas needing geometric
+[T] computation, such as: computer graphics, scientific visualization,
+[T] computer aided design and modeling, geographic information
+[T] systems, molecular biology, medical imaging, robotics and motion
+[T] planning, mesh generation, numerical methods...
+
+[U] https://www.cgal.org/
+
+[A] The CGAL development team. See http://www.cgal.org/people.html
+[M] Roger Mason <rmason@mun.ca>
+
+[C] extra/scientific
+
+[L] LGPL QPL
+[V] 6.1.1
+[P] X -----5---9 144.700
+
+[CV-URL] https://www.cgal.org/releases.html
+[D] a0084569774753d7fb035d2505a1e33f49179d9441324fa55e5f2a40 CGAL-6.1.1.tar.xz https://github.com/CGAL/cgal/releases/download/v6.1.1/

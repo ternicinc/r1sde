@@ -1,0 +1,26 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/aboot/hotfix.patch
+# Copyright (C) 2021 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- aboot.git/Makefile.vanilla	2021-04-23 18:01:52.946523161 +0200
++++ aboot.git/Makefile	2021-04-23 18:02:03.416523107 +0200
+@@ -57,7 +57,7 @@
+ 	$(CC) $(ASFLAGS) -D__ASSEMBLY__ -c -o $*.o $<
+ 
+ NET_OBJS = net.o
+-DISK_OBJS = disk.o fs/ext2.o fs/ufs.o fs/dummy.o fs/iso.o
++DISK_OBJS = disk.o fs/ext2.o fs/ufs.o fs/dummy.o lib/isolib.o fs/iso.o
+ ifeq ($(TESTING),)
+ ABOOT_OBJS = \
+ 	head.o aboot.o cons.o utils.o \
+@@ -96,7 +96,7 @@
+ 	make -C doc/man install-gz
+ 
+ install: tools/abootconf tools/e2writeboot tools/isomarkboot \
+-	sdisklabel/swriteboot install-man
++	sdisklabel/swriteboot # install-man
+ 	install -d $(bindir) $(bootdir)
+ 	install -c tools/abootconf $(bindir)
+ 	install -c tools/e2writeboot $(bindir)

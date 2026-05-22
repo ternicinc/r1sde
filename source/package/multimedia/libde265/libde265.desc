@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libde265/libde265.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A free H.265 decoder
+
+[T] Libde265 is a free and open source H.265 decoder implementation.
+
+[U] https://www.libde265.org/
+
+[A] strukturag
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS OBJDIR
+
+[E] opt libsdl2
+
+[L] LGPL
+[V] 1.0.19
+[P] X -----5---9 124.500
+
+[D] e6c760c59479fc3fdb1e1324c1f39e7b26f3b3a60cacac74c6cfc469 libde265-1.0.19.tar.gz https://github.com/strukturag/libde265/archive/v1.0.19/
+
+pkginstalled qt5base || var_append confopt ' ' --disable-sherlock265

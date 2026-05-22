@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/netkit-ntalk/endwin.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./configure~	Wed Dec  9 17:50:24 1998
++++ ./configure	Sun Apr 18 12:31:41 1999
+@@ -423,7 +423,6 @@
+ syntax error. /* not ncurses */
+ #endif
+ int main() {
+-    endwin();
+     return 0;
+ }
+ EOF

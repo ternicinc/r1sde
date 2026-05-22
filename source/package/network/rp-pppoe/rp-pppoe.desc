@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rp-pppoe/rp-pppoe.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A PPPoE client. PPPoE is used by many ADSL Internet Service Providers
+
+[T] PPPoE (Point-to-Point Protocol over Ethernet) is a protocol used by many
+[T] ADSL Internet Service Providers. Roaring Penguin has a free PPPoE client
+[T] for Linux and Solaris systems to connect to PPPoE service providers
+
+[U] https://www.roaringpenguin.com/products/pppoe
+
+[A] Roaring Penguin Software Inc.
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 4.0
+
+[D] 1ee77b49c51c81aa05f46166cf6405925bbd3fb3922c16385bdb4d97 rp-pppoe-4.0.tar.gz https://dianne.skoll.ca/projects/rp-pppoe/download/
+
+rp_pppoe_pre() {
+    cd src
+}
+hook_add preconf 5 rp_pppoe_pre
+
+var_append confopt ' ' --disable-debugging
+
+rp_pppoe_wrapper() {
+    cd ../gui
+    make
+    install -m755 -s pppoe-wrapper $root/usr/sbin
+}
+hook_add postmake 6 rp_pppoe_wrapper

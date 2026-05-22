@@ -1,0 +1,23 @@
+[TIMESTAMP] 1737677497 Fri Jan 24 01:11:37 2025
+[BUILDTIME] 2 (9)
+[SIZE] 1.11 MB, 111 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bluez
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] docbook-xml
+[OPT] doxygen
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libusb
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[OPT] openjdk
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar

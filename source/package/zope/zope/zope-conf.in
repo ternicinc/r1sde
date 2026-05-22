@@ -1,0 +1,46 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/zope/zope-conf.in
+# Copyright (C) 2004 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+# Function for installing Zope Products
+prepare_product() {
+
+	# checking where to install the Zope Product
+	pkgprefix -t zope
+	if [ $prefix_auto = 1 ]; then
+       		if [ "$SDECFG_PKG_ZOPE_PRODDIR" ]; then
+       			prefix="$SDECFG_PKG_ZOPE_PRODDIR"
+       		else
+       			prefix="$(pkgprefix zope)/products"
+       		fi
+       		set_confopt
+	fi
+
+	# adding a version to Zope Product directory
+	if [ ${xsrcdir%%-*} == $xsrcdir ]; then
+		mv $builddir/$xsrcdir $builddir/$xsrcdir-$ver
+		xsrcdir=$xsrcdir-$ver
+	fi
+	# remove extra levels on srcdir
+	if [ ${xsrcdir##*/} != $xsrcdir ]; then
+		mv $builddir/$xsrcdir $builddir/${xsrcdir##*/}
+		xsrcdir=${xsrcdir##*/}
+	fi
+}
+
+install_product() {
+
+	# creating Zope Product directory and copying files
+	mkdir -pv $root/$prefix/$xsrcdir
+	cp -av $builddir/$xsrcdir/* $root/$prefix/$xsrcdir/
+
+}
+
+createdocs="0"
+makeopt=""
+makeinstopt=""
+
+hook_add postpatch 5 "prepare_product"
+hook_add postmake 5 "install_product"

@@ -1,0 +1,77 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/apr-util/apr-util.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] APR Utility library
+
+[T] The mission of the Apache Portable Runtime (APR) project is to create
+[T] and maintain software libraries that provide a predictable and
+[T] consistent interface to underlying platform-specific implementations.
+[T] The primary goal is to provide an API to which software developers
+[T] may code and be assured of predictable if not identical behaviour
+[T] regardless of the platform on which their software is built, relieving
+[T] them of the need to code special-case conditions to work around or
+[T] take advantage of platform-specific deficiencies or features.
+
+[U] https://apr.apache.org/
+
+[A] Apache Software Foundation
+[M] Minto van der Sluis <minto@multimach.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[E] opt postgresql
+[E] opt unixodbc
+
+[L] APL
+[V] 1.6.3
+[P] X -----5---9 118.100
+
+[D] b950dc1e8394f7135f1292e20f109c482947ffc498d8e3b1fde32926 apr-util-1.6.3.tar.bz2 http://www.apache.org/dist/apr/
+
+if atstage cross; then
+	var_append makeopt ' ' LIBTOOL=$root/TOOLCHAIN/cross/bin/libtool-x
+	var_append makeinstopt ' ' LIBTOOL=$root/TOOLCHAIN/cross/bin/libtool-x
+
+	# all tests have hardcoded to /lib
+	export LDFLAGS="-L$root${libdir##*/} -L$root/usr/${libdir##*/}"
+	export APRUTIL_LDFLAGS="-L$root${libdir##*/} -L$root/usr/${libdir##*/}"
+fi
+
+# APR is mandatory, so no additional test needed.
+pkgprefix -t apr
+var_append confopt ' ' "--with-apr=$root/$(pkgprefix apr)"
+
+# use glibc iconv instead of apriconv
+if pkginstalled -n glibc; then
+	var_append confopt ' ' --with-iconv=$root/usr
+fi
+
+# use expat when it is installed.
+if pkginstalled expat; then
+	pkgprefix -t expat
+	var_append confopt ' ' "--with-expat=$root/$(pkgprefix expat)"
+fi
+
+# use (open)ldap when installed.
+if pkginstalled openldap; then
+	pkgprefix -t openldap
+	var_append confopt ' ' --with-ldap
+	var_append confopt ' ' "--with-ldap-include=$root$(pkgprefix includedir openldap)"
+	var_append confopt ' ' "--with-ldap-lib=$root$(pkgprefix libdir openldap)"
+	if pkginstalled cyrus-sasl2; then
+		var_append GCC_WRAPPER_APPEND ' ' -lsasl2
+	fi
+fi
+
+if pkginstalled bdb; then
+	var_append confopt ' ' --with-dbm=db53
+	var_append confopt ' ' \
+	           "--with-berkeley-db=$root`pkgprefix includedir bdb`"
+else
+	var_append confopt ' ' --without-berkeley-db
+fi

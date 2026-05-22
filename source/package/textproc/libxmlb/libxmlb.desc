@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libxmlb/libxmlb.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library to help create and query binary XML blobs
+
+[T] A library to help create and query binary XML blobs.
+
+[U] https://github.com/hughsie/libxmlb/
+
+[A] Richard Hughes <richard@hughsie.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[L] LGPL
+[V] 0.3.27
+[P] X -----5---9 161.645
+
+[D] 5b699a23b2167f0bf922b7d453add66d5cab50e988f68f772be1ce7c libxmlb-0.3.27.tar.gz https://github.com/hughsie/libxmlb/archive/0.3.27/
+
+pkginstalled gobject-introspection || var_append mesonopt ' ' -Dintrospection=false
+pkginstalled gtk-doc docbook-xml docbook-xsl || var_append mesonopt ' ' -Dgtkdoc=false

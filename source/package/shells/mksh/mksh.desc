@@ -1,0 +1,41 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mksh/mksh.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] MirBSD Korn Shell
+
+[T] MirBSD Korn Shell, an actively developed free implementation
+[T] the Korn Shell programming language and a successor to the
+[T] Public Domain Korn Shell (pdksh).
+
+[U] https://www.mirbsd.org/mksh.htm
+
+[A] Thorsten Glaser <tg@mirbsd.org>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] base/system
+[F] CROSS NO-LTO DIETLIBC
+
+[L] BSD
+[V] R59c
+[P] X --2--5---9 106.600
+
+[D] 9a311c99eb9994f53a37921dac0f30c567fa4f8cc2ca0508db3a30db mksh-R59c.tgz https://www.mirbsd.org/MirOS/dist/mir/mksh/
+
+prefix=; set_confopt
+runmake=0
+
+# TODO: in gcc/parse-config
+[ $SDECFG_SSP = 0 ] && var_append GCC_WRAPPER_REMOVE ' ' -fstack-protector-strong
+
+mksh_build() {
+	sh Build.sh -r
+	install -c -s -o root -g bin -m 555 mksh $root$bindir/mksh
+	install -c -o root -g bin -m 644 ../mksh/dot.mkshrc $root$sysconfdir/skel/.mkshrc
+	install -c -o root -g root -m 644 ../mksh/mksh.1 $root$mandir/man1/
+}
+hook_add postmake 5 mksh_build
+
+hook_add postmake 7 "ln -sfv mksh $root/bin/sh"

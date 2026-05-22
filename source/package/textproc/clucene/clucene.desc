@@ -1,0 +1,45 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/clucene/clucene.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A high-performance, full-featured text search engine
+
+[T] CLucene is a high-performance, scalable, cross platform,
+[T] full-featured, open-source indexing and searching API. It
+[T] is written in C++.
+[T] CLucene is a port of the very popular Java Lucene text search
+[T] engine API. Specifically, CLucene is the guts of a search
+[T] engine, the hard stuff. You write the easy stuff, the UI
+[T] and the process of selecting and parsing your data files
+[T] to pump them into the search engine yourself.
+[T] CLucene aims to be a good alternative to Java Lucene when
+[T] performance really matters or if you want to stick to good
+[T] old C++.
+
+[U] https://clucene.sourceforge.net
+
+[A] klink1190 <ustramooner@hotmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/text
+[F] CROSS
+
+[L] GPL
+[V] 2.3.3.4
+[P] X -----5---9 128.000
+
+[D] 843d75ee3475c74891ce1f5b021d8d34bcc5052fa00cf51258bf03d6 clucene-core-2.3.3.4.tar.gz https://downloads.sourceforge.net/project/clucene/clucene-core-unstable/2.3/
+
+var_append cmakeopt ' ' -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+var_append cmakeopt ' ' -DBUILD_CONTRIBS_LIB=ON
+
+if atstage cross; then
+	var_append cmakeopt ' ' -D_CL_HAVE_PTHREAD_MUTEX_RECURSIVE_EXITCODE=1
+	var_append cmakeopt ' ' -D_CL_HAVE_GCC_ATOMIC_FUNCTIONS_EXITCODE=0
+	var_append cmakeopt ' ' -D_CL_HAVE_TRY_BLOCKS_EXITCODE=0
+	var_append cmakeopt ' ' -D_CL_HAVE_NAMESPACES_EXITCODE=0
+	var_append cmakeopt ' ' -D_CL_HAVE_NO_SNPRINTF_BUG_EXITCODE=0
+	var_append cmakeopt ' ' -DLUCENE_STATIC_CONSTANT_SYNTAX_EXITCODE=0
+fi

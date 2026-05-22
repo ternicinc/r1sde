@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfconf/xfconf.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Xfce configuration daemon and utilities
+
+[T] Xfce configuration daemon and utilities.
+
+[U] https://www.xfce.org/
+
+[A] Olivier Fourdan <fourdan@xfce.org>
+[A] Jasper Huijsmans <jasper@moongroup.com>
+[A] Benedikt Meurer <benedikt.meurer@unix-ag.uni-siegen.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/xfce
+[F] CROSS NO-LTO.clang
+
+[L] LGPL
+[V] 4.20.0
+
+[P] X -----5---9 222.400
+
+[D] 9c53cfad31ee73450cae2bb2e5d60655eaf48b898dcb8355994f376a xfconf-4.20.0.tar.bz2 https://archive.xfce.org/src/xfce/xfconf/4.20/
+
+. $base/package/xfce4/*/xfce4-conf.in

@@ -1,0 +1,40 @@
+[TIMESTAMP] 1777042876 Fri Apr 24 17:01:16 2026
+[BUILDTIME] 18 (9)
+[SIZE] 3.25 MB, 266 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] glslang
+[DEP] grep
+[DEP] gzip
+[DEP] hwdata
+[DEP] lcms2
+[DEP] libdisplay-info
+[DEP] libdrm
+[DEP] libglvnd
+[DEP] libinput
+[OPT] libliftoff
+[DEP] libxcb
+[DEP] linux-header
+[DEP] mesa
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pixman
+[DEP] python
+[DEP] seatd
+[DEP] sed
+[DEP] tar
+[DEP] udev
+[DEP] util-linux
+[DEP] vulkan-headers
+[DEP] wayland
+[DEP] wayland-protocols
+[DEP] xcb-util-renderutil
+[DEP] xkbcommon
+[OPT] xwayland

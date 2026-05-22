@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/linux-firmware/no-symlink-check.patch
+# Copyright (C) 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- linux-firmware-20250311/copy-firmware.sh.vanilla	2025-03-15 00:44:16.826997629 +0100
++++ linux-firmware-20250311/copy-firmware.sh	2025-03-15 00:45:04.388388334 +0100
+@@ -140,7 +140,7 @@
+ fi
+ 
+ # Verify no broken symlinks
+-if test "$(find "$destdir" -xtype l | wc -l)" -ne 0 ; then
++if false && test "$(find "$destdir" -xtype l | wc -l)" -ne 0 ; then
+     err "Broken symlinks found:\n$(find "$destdir" -xtype l)"
+ fi
+ 

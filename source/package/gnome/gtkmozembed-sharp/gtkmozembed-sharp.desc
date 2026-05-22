@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gtkmozembed-sharp/gtkmozembed-sharp.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gecko bindings for Mono
+
+[T] Gecko bindings for Mono
+
+[U] http://svn.myrealbox.com/source/trunk/gtkmozembed-sharp/
+
+[A] Mono Community
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/development
+
+[L] LGPL
+[V] 0.13
+[P] X -----5---9 209.450
+
+[CV-URL] http://go-mono.com/sources/
+[D] 3504921716 gecko-sharp-2.0-0.13.tar.xz http://go-mono.com/sources/gecko-sharp-2.0/
+#[D] X gtkmozembed-sharp-r43708.tar.xz svn+http://svn.myrealbox.com/source/trunk/gtkmozembed-sharp -r43708
+
+. $base/package/*/mono/mono.in

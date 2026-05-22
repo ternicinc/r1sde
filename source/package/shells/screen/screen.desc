@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/screen/screen.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Screen manager with VT100/ANSI terminal emulation
+
+[T] Screen is a full-screen window manager that multiplexes a physical terminal
+[T] between several processes (typically interactive shells). Each virtual
+[T] terminal provides the functions of a DEC VT100 terminal and, in addition,
+[T] several control functions from the ANSI X3.64 (ISO 6429) and ISO 2022
+[T] standards (e.g. insert/delete line and support for multiple character sets).
+[T] There is a scrollback history buffer for each virtual terminal and a
+[T] copy-and-paste mechanism that allows moving text regions between windows.
+
+[U] https://www.gnu.org/software/screen/
+
+[A] Oliver Laumann
+[A] Juergen Weigert <jnweiger@immd4.informatik.uni-erlangen.de>
+[A] Michael Schroeder <mlschroe@immd4.informatik.uni-erlangen.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+
+[L] GPL
+[V] 5.0.1
+
+[D] 40b190b90a74746bbf444039bfbc632ef7b14ee10e574620671db7be screen-5.0.1.tar.gz http://ftp.gnu.org/gnu/screen/
+
+pkginstalled pam && var_append CC_WRAPPER_APPEND ' ' "-lpam -lpam_misc"
+var_append confopt ' ' --with-sys-screenrc=/etc/screenrc
+hook_add postmake 5 "cp -v $confdir/screenrc $root/etc/"

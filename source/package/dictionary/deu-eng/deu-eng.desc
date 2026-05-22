@@ -1,0 +1,37 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/deu-eng/deu-eng.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] German->English dictionary
+
+[T] The freedict German to English dictionary - use it with dictd.
+[T] The Data was originally generated from Frank Richter's
+[T] "ding" Database. Phonetics was added through txt2pho
+[T] (a TTS front end for the German inventories of the MBROLA project).
+[T] Mr. Portele granted the right to distribute the result of the
+[T] phonetic conversion within this project - thanks.
+
+[U] http://www.freedict.de
+
+[A] freedict project <freedict-beta@lists.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/education
+[F] CROSS
+
+[L] GPL
+[V] 20030917
+[P] X -----5---9 663.000
+
+[D] 24d8b50e9d87fb6a97cbfb4fd1d98d456feac6a0afed9c8d18249b54 deu-eng-20030917.tar.gz !https://freedict.sourceforge.net/download/linux/deu-eng.tar.gz
+
+copy_dictionary() {
+	mkdir -p $root/$prefix/share/dictd
+	tar -v $taropt `match_source_file -p deu-eng`
+	cp -f $builddir/deu-eng.dict.dz $builddir/deu-eng.index $root/$prefix/share/dictd
+}
+runmake=0
+hook_add postmake 5 copy_dictionary

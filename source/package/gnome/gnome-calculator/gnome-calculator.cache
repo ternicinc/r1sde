@@ -1,0 +1,46 @@
+[TIMESTAMP] 1778650171 Wed May 13 08:29:31 2026
+[BUILDTIME] 35 (9)
+[SIZE] 11.14 MB, 1719 files
+
+[DEP] 00-dirtree
+[DEP] appstream-glib
+[DEP] bash
+[DEP] binutils
+[DEP] blueprint-compiler
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] font-util
+[DEP] fontconfig
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[OPT] glib
+[DEP] gmp
+[DEP] gobject-introspection
+[DEP] graphene
+[DEP] graphviz
+[DEP] grep
+[DEP] gtk
+[DEP] gtksourceview
+[DEP] harfbuzz
+[DEP] itstool
+[DEP] libadwaita
+[DEP] libgee
+[DEP] libsoup3
+[DEP] libxml
+[DEP] linux-header
+[DEP] meson
+[DEP] mpc
+[DEP] mpfr
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] vala
+[DEP] xorgproto
+[DEP] xz

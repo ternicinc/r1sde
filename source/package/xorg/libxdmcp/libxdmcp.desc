@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libxdmcp/libxdmcp.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] X11 authorization library
+
+[T] This package provides the main interface to the X11 display manager
+[T] control protocol library, which allows for remote logins to display
+[T] managers.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.1.5
+[P] X -----5---9 112.402
+
+[D] fb0b73f2d8dcf5f1746d98cb387450b91e2e077cfd522a0dd3248459 libXdmcp-1.1.5.tar.xz http://xorg.freedesktop.org/releases/individual/lib/
+
+. package/*/*/modular-x-conf.in

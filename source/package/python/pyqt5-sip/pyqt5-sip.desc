@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pyqt5-sip/pyqt5-sip.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Sip extension module for PyQt5
+
+[T] The sip extension module provides support for the PyQt5 package.
+
+[U] https://github.com/Python-SIP/sip
+
+[A] Phil Thompson <phil@riverbankcomputing.com
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[E] python sip
+
+[L] BSD
+[V] 12.18.0
+[P] X -----5---9 210.000
+
+[D] f6f417d48df909ebb22e3e4ec0aeebda261dc2b1a8ce169234e8eab7 pyqt5_sip-12.18.0.tar.gz https://pypi.python.org/packages/source/P/PyQt5-sip/

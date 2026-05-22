@@ -1,0 +1,22 @@
+
+[TIMESTAMP] 1695223589 Wed Sep 20 17:26:29 2023
+[BUILDTIME] 25 (9)
+[SIZE] 2.50 MB, 57 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] mesa
+[DEP] qt5base
+[DEP] qt5declarative
+[DEP] qt5quickcontrols2
+[DEP] sed
+[DEP] tar

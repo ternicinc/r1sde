@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/julia/julia.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Julia Language
+
+[T] Julia is a high-level, high-performance dynamic language for technical
+[T] computing. This is the GitHub repository of Julia source code, including
+[T] instructions for compiling and installing Julia, below.
+
+[U] https://julialang.org
+
+[A] Julia
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 1.12.6
+
+[D] 8d39aa5109d488039e91a923312db533576065340b19ee7a46b6b253 julia-1.12.6.tar.gz https://github.com/JuliaLang/julia/archive/v1.12.6/

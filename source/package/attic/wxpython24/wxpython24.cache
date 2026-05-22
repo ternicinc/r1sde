@@ -1,0 +1,24 @@
+[TIMESTAMP] 1087250059 Mon Jun 14 23:54:20 2004
+[CONFIG-ID] 2.1.0-DEV-x86-reference-expert
+[ROCKVER] 2.1.0-DEV
+
+[LOGS] 5-wxpython.log 9-wxpython.log
+
+[BUILDTIME] 51303 (9)
+[SIZE] 14.03 MB, 686 files
+
+
+[DEP] grep
+[DEP] gtk+12
+[DEP] libjpeg
+[DEP] libpng
+[DEP] libtiff
+[DEP] linux-header
+[DEP] numpy
+[DEP] python
+[DEP] sed
+
+[DEP] sysfiles
+[DEP] tar
+[DEP] wxwidgets
+[DEP] zlib

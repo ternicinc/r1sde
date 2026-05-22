@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/trickle/trickle.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A portable lightweight userspace bandwidth shaper
+
+[T] trickle is a portable lightweight userspace bandwidth shaper. It can run
+[T] in collaborative mode (together with trickled) or in stand alone mode.
+[T] trickle works by taking advantage of the unix loader preloading.
+[T] Essentially it provides, to the application, a new version of the
+[T] functionality that is required to send and receive data through sockets.
+[T] It then limits traffic based on delaying the sending and receiving of data
+[T] over a socket. trickle runs entirely in userspace and does not require root
+[T] privileges.
+
+[U] http://www.monkey.org/~marius/pages/?page=trickle
+
+[A] Marius Aamodt Eriksen <marius@monkey.org>
+[M] Leonel Iván Saafigueroa <leonel@saafigueroa.com.ar>
+
+[C] extra/network
+
+[L] BSD
+[V] 1.08
+
+[D] d488caa379f8baf49911207b9b989da08874fba53050b0181e95cc03 trickle-1.08.tar.gz https://download.sourceforge.net/project/trickled/

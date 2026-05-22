@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-video-rendition/xf86-video-rendition.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Xorg driver for Rendition/Micron based video cards
+
+[T] This driver supports Rendition/Micron based video cards. All cards based on
+[T] the V1000 or the V2x00 should be supported. The server was tested on a
+[T] miroCRYSTAL VRX (V1000), Intergraph Intense-100, 3D (V1000), Diamond
+[T] Stealth II S220 (V2100), Hercules Thriller3D, (V2200), Innovision Warrior3D
+[T] (V2200) and Genoa V-Raptor (v2200).
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[R] - arm arm64 hppa hppa64 ia64 riscv64
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 4.2.7
+
+[D] bd3e6ea045007c9b35aa44a6d41f36928e5c16a258b8eb907a7a94b8 xf86-video-rendition-4.2.7.tar.bz2 http://xorg.freedesktop.org/releases/individual/driver/
+
+. package/*/*/modular-x-conf.in
+autogen=2

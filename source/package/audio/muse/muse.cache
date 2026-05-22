@@ -1,0 +1,38 @@
+[TIMESTAMP] 1759857811 Tue Oct  7 19:23:31 2025
+[BUILDTIME] 580 (9)
+[SIZE] 20.13 MB, 402 files
+
+[DEP] alsa-lib
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] dssi
+[DEP] extra-cmake-modules
+[DEP] freetype
+[DEP] gawk
+[DEP] grep
+[DEP] gtk+2
+[DEP] gzip
+[DEP] jack
+[DEP] ladspa
+[DEP] libglvnd
+[DEP] liblrdf
+[DEP] libsamplerate
+[DEP] libsigc++2
+[DEP] libsndfile
+[DEP] lilv
+[DEP] linux-header
+[DEP] lv2
+[DEP] make
+[DEP] pkgconfig
+[DEP] python
+[DEP] qt5base
+[DEP] qt5tools
+[DEP] raptor
+[DEP] rubberband
+[DEP] sed
+[DEP] serd
+[DEP] sord
+[DEP] tar

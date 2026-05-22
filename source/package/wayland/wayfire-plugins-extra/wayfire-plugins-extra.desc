@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/wayfire-plugins-extra/wayfire-plugins-extra.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Additional plugins for Wayfire
+
+[T] Additional plugins for Wayfire like shadows, focus-request, pixdecor or
+[T] filters plugin.
+
+[U] https://wayfire.org/
+
+[A] Iliya Bozhinov
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/x11
+
+[L] MIT
+[V] 0.10.1
+
+[CV-GROUP] wayfire
+[D] 51680ffcd441c4d0a69236cb39d39f3bc3aadf8ce1a990f407e84fcd wayfire-plugins-extra-0.10.1.tar.gz git+https://github.com/WayfireWM/wayfire-plugins-extra.git v0.10.1

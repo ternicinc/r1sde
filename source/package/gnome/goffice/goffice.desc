@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/goffice/goffice.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library of document-centric objects and utilities
+
+[T] GOffice is a library of document-centric objects and utilities
+[T] building on top of GLib and Gtk+ and used by software such as
+[T] Gnumeric.
+
+[U] http://goffice.gnome.org
+
+[A] Jody Goldberg <jody [at] gnome [dot] org>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/office extra/desktop/gnome
+
+[L] GPL
+[V] 0.10.61
+[P] X -----5---9 154.000
+
+[CV-URL] https://download.gnome.org/sources/goffice/cache.json
+[D] e6956bafc91d62f81ccea5cf7ba2ce4e84c4dceec43eabb27c3217e8 goffice-0.10.61.tar.xz https://download.gnome.org/sources/goffice/0.10/
+
+. $base/package/*/*/gnome-conf.in
+pkginstalled gconf || var_append confopt ' ' --without-gconf

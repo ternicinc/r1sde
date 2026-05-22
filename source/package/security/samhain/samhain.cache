@@ -1,0 +1,22 @@
+[TIMESTAMP] 1752432447 Sun Jul 13 20:47:27 2025
+[BUILDTIME] 8 (9)
+[SIZE] 0.52 MB, 10 files
+
+[DEP] acl
+[DEP] audit
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] e2fsprogs
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[OPT] libprelude
+[DEP] linux-header
+[DEP] make
+[OPT] mysql
+[OPT] postgresql
+[DEP] sed
+[DEP] tar
+[DEP] zlib

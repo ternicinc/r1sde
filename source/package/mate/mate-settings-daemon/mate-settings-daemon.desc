@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mate-settings-daemon/mate-settings-daemon.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] MATE settings daemon
+
+[T] The MATE Settings Daemon is responsible for setting various parameters of a
+[T] MATE Session and the applications that run under it.
+
+[U] https://mate-desktop.org/
+
+[A] MATE developer
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/mate
+
+[L] GPL
+[V] 1.28.0
+[P] X -----5---9 220.600
+
+[D] 7a6f4049dbbf8bed615b2951966fa6904e8626fe2e55cb1c4add0050 mate-settings-daemon-1.28.0.tar.xz https://pub.mate-desktop.org/releases/1.28/
+
+. $base/package/*/*/mate-conf.in
+var_append GCC_WRAPPER_APPEND ' ' "$(pkg-config --libs x11 xext)"

@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/hedron/hedron.desc
+[COPY] Copyright (C) 2021 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Hedron Microhypervisor
+
+[T] The Hedron microhypervisor combines microkernel and hypervisor
+[T] functionality and provides an extremely small trusted computing base
+[T] for user applications and virtual machines running on top of it.
+
+[U] https://github.com/cyberus-technology/hedron
+
+[A] Cyberus Technology GmbH
+[M] René Rebe <rene@exactco.de>
+
+[C] base/kernel
+[F] CROSS NO-LTO.gcc OBJDIR
+
+[L] GPL
+[V] c8aaf76
+[P] O -----5---9 990.500
+
+[D] 7fe55f8f56e2e4e82525834d862a2b69d33610d5f2a11152bff4b210 hedron-c8aaf76.tar.gz git+https://github.com/cyberus-technology/hedron c8aaf76
+
+pkginstalled catch2 || var_append cmakeopt ' ' -DBUILD_TESTING=OFF
+makeinstopt=
+hook_add postmake 5 'install src/hypervisor $root/boot/'

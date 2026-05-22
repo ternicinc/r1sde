@@ -1,0 +1,28 @@
+[TIMESTAMP] 1739219065 Mon Feb 10 21:24:25 2025
+[BUILDTIME] 3 (5)
+[SIZE] 0.29 MB, 16 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] fcft
+[DEP] fontconfig
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libpng
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pixman
+[DEP] scdoc
+[DEP] sed
+[DEP] tar
+[DEP] tllist
+[DEP] wayland
+[DEP] wayland-protocols
+[DEP] xkbcommon

@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mate-backgrounds/mate-backgrounds.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Backgrounds for the MATE desktop
+
+[T] Background images and data for MATE. The MATE backgrounds are a fork of
+[T] GNOME backgrounds. This module contains a set of backgrounds packaged with
+[T] the MATE desktop.
+
+[U] https://mate-desktop.org/
+
+[A] MATE developer
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/mate
+
+[L] GPL
+[V] 1.28.0
+
+[D] c413948065a50f87d2f3042f3eed662f6fd1ea0893957c648f0cf8e6 mate-backgrounds-1.28.0.tar.xz https://pub.mate-desktop.org/releases/1.28/
+
+. $base/package/*/*/mate-conf.in

@@ -1,0 +1,39 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/zope/zope.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Zope application server
+
+[T] Zope is an open source application server for building content
+[T] management systems, intranets, portals, and custom applications.
+
+[U] https://www.zope.org
+
+[A] Zope Corporation <www.zope.com>
+[A] Zope Community <http://www.zope.org/>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/server
+
+[E] add python
+
+[L] OpenSource
+
+[V] 6.1
+[P] X -----5---9 300.000
+
+[D] d016e4d78ce6417c393eb2e95f26d67a0d0bc43fac985a21745428b6 zope-6.1.tar.gz https://github.com/zopefoundation/Zope/archive/6.1/
+
+if [ $prefix_auto = 1 ]; then
+	if [ "$SDECFG_PKG_ZOPE_PREFIX" ]; then
+		prefix="$SDECFG_PKG_ZOPE_PREFIX"
+	else
+		prefix="opt/zope"
+	fi
+	set_confopt
+fi
+
+var_append confopt ' ' --force
+runpysetup=0

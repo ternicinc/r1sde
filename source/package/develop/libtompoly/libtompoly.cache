@@ -1,0 +1,17 @@
+[TIMESTAMP] 1742922485 Tue Mar 25 18:08:05 2025
+[BUILDTIME] 2 (9)
+[SIZE] 0.07 MB, 7 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] libtommath
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar

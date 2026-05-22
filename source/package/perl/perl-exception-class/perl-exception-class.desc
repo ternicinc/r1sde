@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-exception-class/perl-exception-class.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module Exception-Class
+
+[T] This module allows you to declare hierarchies of exception classes for
+[T] use in your code. It also provides a simple exception class that it
+[T] uses as the default base class for all other exceptions.
+
+[U] https://search.cpan.org/~drolsky/Exception-Class-1.23/
+
+[A] Dave Rolsky
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 1.45
+[P] X -----5---9 200.200
+
+[D] 9e3b6a37b3b6686262ea483c220abda39ec53a8bb3bca5d4ff5f2384 Exception-Class-1.45.tar.gz http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/

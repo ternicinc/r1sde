@@ -1,0 +1,28 @@
+[TIMESTAMP] 1771066665 Sat Feb 14 11:57:45 2026
+[BUILDTIME] 12 (9)
+[SIZE] 0.92 MB, 11 files
+
+[DEP] audit
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] cunit
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libtraceevent
+[DEP] libtracefs
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] python
+[DEP] sed
+[DEP] swig
+[DEP] tar
+[DEP] util-linux
+[OPT] xmlto
+[DEP] zlib
+[DEP] zstd

@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ktextwidgets/ktextwidgets.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] KDE Frameworks addon with advanced text editing widgets
+
+[T] KTextWidgets provides widgets for displaying and editing text. It supports
+[T] rich text as well as plain text.
+
+[U] https://invent.kde.org/frameworks/ktextwidgets
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 6.26.0
+[P] X -----5---9 182.900
+
+[CV-GROUP] kde-frameworks
+[D] bef9c430a9e6dc1ebb4f602037953db5e9bc57eec4a748db05705f88 ktextwidgets-6.26.0.tar.xz https://download.kde.org/stable/frameworks/6.26/
+
+. $base/package/*/*/kde-conf.in

@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/vls/vls.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] VideoLAN Server
+
+[T] VideoLAN Server the streaming server counterpart to VLC - the VideoLAN
+[T] Client.
+
+[U] https://www.videolan.org/
+
+[A] many - see the AUTHORS file
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 0.5.6
+[P] O -----5---9 204.500
+
+[CV-URL] http://www.videolan.org/streaming/download-vls-sources.html
+
+[D] 7b46910c8fa22ea15a1c70bcf503b33fde204dca4855229ff8868677 vls-0.5.6.tar.bz2 http://download.videolan.org/pub/videolan/vls/0.5.6/

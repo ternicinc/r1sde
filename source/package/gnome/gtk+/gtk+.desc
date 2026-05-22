@@ -1,0 +1,40 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gtk+/gtk+.desc
+[COPY] Copyright (C) 2013 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Gimp ToolKit (GTK) v3
+
+[T] This is GTK+. GTK+, which stands for the Gimp ToolKit, is a library
+[T] for creating graphical user interfaces for the X Window System. It is
+[T] designed to be small, efficient, and flexible. GTK+ is written in C with
+[T] a very object-oriented approach.
+
+[U] https://www.gtk.org/
+
+[A] The GTK+ Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS NO-LTO.gcc
+
+[E] opt cups
+
+[L] LGPL
+[V] 3.24.52
+[P] X -----5---9 201.000
+
+[CV-FLAGS] NO-MAJOR
+[D] fc331df2b49f51464d321ab673693bf24420c663f78d38a529dad205 gtk-3.24.52.tar.xz https://download.gnome.org/sources/gtk/3.24/
+
+. $base/package/*/*/gnome-conf.in
+
+var_append mesonopt ' ' '-Dtests=false -Dexamples=false' # -Ddemos=false
+
+pkginstalled gobject-introspection || var_append mesonopt ' ' -Dintrospection=false
+pkginstalled wayland-protocols || var_append mesonopt ' ' -Dwayland_backend=false
+pkginstalled libx11 || var_append mesonopt ' ' -Dx11_backend=false
+pkginstalled cups || var_append mesonopt ' ' -Dprint_backends=file
+
+var_append INSTALL_WRAPPER_FILTER '|' 'sed s/gtk-update-icon-cache/gtk3-update-icon-cache/'

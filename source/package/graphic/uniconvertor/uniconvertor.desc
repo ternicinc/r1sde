@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/uniconvertor/uniconvertor.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A universal vector graphics translator
+
+[T] UniConvertor is a universal vector graphics translator. It uses the
+[T] sK1 engine to convert one format to another. There are import filters
+[T] for CorelDraw (CDR and CMX), Adobe Illustrator (AI), Scalable Vector
+[T] Graphics (SVG), and some other formats, and export filters for AI, SVG,
+[T] WMF, and sK1's own format.
+
+[U] https://www.sk1project.org/
+
+[A] Igor Novikov <igor.e.novikov@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+
+[L] LGPL
+[V] 1.1.5
+
+[D] b1b9717762936b93f45889ace15960e000b3117250438b0c43980a7c uniconvertor-1.1.5.tar.gz https://www.mirrorservice.org/sites/download.salixos.org/i486/14.0/source/ap/uniconvertor/

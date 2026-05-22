@@ -1,0 +1,22 @@
+[TIMESTAMP] 1737931708 Sun Jan 26 23:48:28 2025
+[BUILDTIME] 4 (9)
+[SIZE] 0.69 MB, 25 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] efivar
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] nspr
+[DEP] nss
+[DEP] pkgconfig
+[DEP] popt
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

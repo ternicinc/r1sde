@@ -1,0 +1,36 @@
+[TIMESTAMP] 1758007297 Tue Sep 16 09:21:37 2025
+[BUILDTIME] 430 (9)
+[SIZE] 202.44 MB, 2539 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[OPT] doxygen
+[DEP] freetype
+[DEP] gawk
+[DEP] graphviz
+[DEP] grep
+[DEP] gzip
+[DEP] libglvnd
+[DEP] libice
+[DEP] libsm
+[DEP] libx11
+[DEP] libxcursor
+[DEP] libxext
+[DEP] libxfixes
+[DEP] libxi
+[DEP] libxinerama
+[DEP] libxrandr
+[DEP] libxrender
+[DEP] libxt
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] pybind11
+[OPT] python
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

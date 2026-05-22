@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-anyevent/perl-anyevent.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Provide framework for multiple event loops
+
+[T] AnyEvent provides an identical interface to multiple event loops. This
+[T] allows module authors to utilizy an event loop without forcing module
+[T] users to use the same event loop (as only a single event loop can
+[T] coexist peacefully at any one time).
+
+[A] Marc Lehmann <pcg@goof.com>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 7.17
+[P] X -----5---9 176.000
+
+[D] ae06e6679979bbd9727b2b86c234e819ccf614a0b0768b8bad257b18 AnyEvent-7.17.tar.gz http://search.cpan.org/CPAN/authors/id/M/ML/MLEHMANN/

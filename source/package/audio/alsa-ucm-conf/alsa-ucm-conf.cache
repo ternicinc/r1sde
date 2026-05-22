@@ -1,0 +1,16 @@
+
+[TIMESTAMP] 1707068332 Sun Feb  4 17:38:52 2024
+[BUILDTIME] 1 (9)
+[SIZE] 0.32 MB, 522 files
+
+[DEP] 00-dirtree
+[DEP] alsa-lib
+[DEP] bash
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] sed
+[DEP] tar

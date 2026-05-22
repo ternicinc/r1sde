@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/jemalloc/jemalloc.desc
+[COPY] Copyright (C) 2020 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A malloc implementation
+
+[T] General purpose malloc(3) implementation that emphasizes
+[T] fragmentation avoidance and scalable concurrency support.
+
+[U] https://jemalloc.net/
+
+[A] Jemalloc Team
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 5.3.1
+[P] X -----5---9 200.000
+
+[D] f8f69f888e6776031b36bc608bb797a2bbd1ffffc83e38d8c6004b3d jemalloc-5.3.1.tar.gz https://github.com/jemalloc/jemalloc/tarball/5.3.1/
+
+autogen=1

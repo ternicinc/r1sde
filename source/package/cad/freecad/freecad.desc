@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/freecad/freecad.desc
+[COPY] Copyright (C) 2015 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A free and opensource multiplatform 3D parametric modeler
+
+[T] FreeCAD is an open-source parametric 3D modeler made primarily to design
+[T] real-life objects of any size. Parametric modeling allows you to easily
+[T] modify your design by going back into your model history and changing its
+[T] parameters.
+
+[U] https://www.freecad.org/
+
+[A] FreeCAD Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/cad
+[F] OBJDIR
+
+[E] opt doxygen
+
+[L] GPL
+[V] 1.1.1
+
+[D] 0d41b2a10ca692783deec4cb6f8ff154c73ed9d6b301dc08e9b0874f freecad_source_1.1.1.tar.gz https://github.com/FreeCAD/FreeCAD/releases/download/1.1.1/
+
+[ $prefix_auto = 1 ] && prefix="opt/freecad" && set_confopt
+
+srcdir=.
+
+var_append GCC_WRAPPER_INSERT ' ' "$(pkg-config --cflags --libs glu)"
+var_append cmakeopt ' ' "-DOPENGL_gl_LIBRARY=$(pkgprefix libdir glu)/libGLU.so"
+var_append cmakeopt ' ' -DFREECAD_QT_VERSION=6
+var_append cmakeopt ' ' -DENABLE_DEVELOPER_TESTS=OFF

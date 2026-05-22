@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/scale2x/scale2x.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Scale PNG images x2, x4
+
+[T] Scale2x, Scale3x and Scale4x are real-time graphics effects able to
+[T] increase the size of small bitmaps guessing the missing pixels without
+[T] blurring the images.
+
+[U] http://www.scale2x.it
+
+[A] Andrea Mazzoleni
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+[F] CROSS
+
+[L] GPL
+[V] 4.0
+
+[D] 922ea5d0e630b4ee15b57bfb5ea376a97bdf6de3eb460dc93c040e53 scale2x-4.0.tar.gz https://github.com/amadvance/scale2x/releases/download/v4.0/

@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/orsa/orsa.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Orbit reconstruction, simulation and analysis
+
+[T] Started in summer 2001 just as a simple collection of
+[T] celestial mechanics C++ classes, the ORSA project now
+[T] collects many general classes, a graphical interface
+[T] running under Linux/Unix, Mac OS X and Windows, and a
+[T] number of tutorial programs.
+
+[U] https://orsa.sourceforge.net/
+
+[A] Pasquale Tricarico <tricaric@wsu.edu>
+[M] Valentin Ziegler <valentin.ziegler@googlemail.com>
+
+[C] extra/scientific
+
+[L] GPL
+[V] 0.7.0
+[P] O -----5---9 205.500
+
+[D] 842c122f1439f03fcf1a589fb32c628bd4c622c7c472aa71fa8c3ff3 orsa-0.7.0.tar.gz https://prdownloads.sourceforge.net/sourceforge/orsa/

@@ -1,0 +1,31 @@
+[TIMESTAMP] 1759836741 Tue Oct  7 13:32:21 2025
+[BUILDTIME] 155 (9)
+[SIZE] 3.04 MB, 209 files
+
+[DEP] attica
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] karchive
+[DEP] kconfig
+[DEP] kcoreaddons
+[DEP] ki18n
+[DEP] kpackage
+[DEP] kwidgetsaddons
+[DEP] linux-header
+[DEP] make
+[DEP] procps
+[DEP] qt6base
+[DEP] qt6declarative
+[DEP] qt6tools
+[DEP] sed
+[DEP] syndication
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] xz

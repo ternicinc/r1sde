@@ -1,0 +1,26 @@
+[TIMESTAMP] 1746740245 Thu May  8 22:37:25 2025
+[BUILDTIME] 20 (9) ERROR
+[SIZE] 0.00 MB, 6 files
+
+[DEP] alsa-lib
+[DEP] bash
+[DEP] binutils
+[DEP] bison
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] flex
+[DEP] gawk
+[DEP] gpm
+[DEP] grep
+[DEP] gzip
+[DEP] libsdl
+[DEP] libsndfile
+[DEP] libx11
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] sed
+[DEP] slang
+[DEP] tar
+[DEP] xorgproto

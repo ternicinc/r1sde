@@ -1,0 +1,13 @@
+#!/bin/bash
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/automake/automake.postinstall
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+dirlist=/usr/share/aclocal/dirlist
+echo -n "Create aclocal dirlist..."
+for dir in {/usr/X11,/opt/*,/usr/local}/share/aclocal; do
+	[ -d $dir ] && echo $dir
+done > $dirlist
+echo " Done."

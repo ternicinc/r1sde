@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnue-common/gnue-common.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Common Library for the GNUe tools
+
+[T] GNUe Common Library is the basis for the GNUe tools, such as Forms,
+[T] Reports, Application Server, and Designer. It implements a
+[T] database-abstraction layer that provides support for most major databases.
+[T] A builtin XML-to-Object parser and Object-to-XML marshaller are used by
+[T] Forms, Reports, and Designer to save and read Forms/Report definitions to
+[T] and from an XML file. It also defines and implements an RPC abstraction
+[T] layer that will allow server processes to define their public methods once
+[T] and have them available to CORBA, XML-RPC, SOAP, and DCOM clients.
+
+[U] http://www.gnuenterprise.org/tools/common/
+
+[A] GNUe Project <gnue@gnu.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] GPL
+[V] 0.6.9
+[P] X -----5---9 790.000
+
+[D] 8fceda0c7e379cfd2759e7bb6ee5bd364f57b97c9277b04f2b4daa7d gnue-common-0.6.9.tar.gz http://www.gnuenterprise.org/downloads/releases/
+
+. $base/package/*/*/gnue-conf.in

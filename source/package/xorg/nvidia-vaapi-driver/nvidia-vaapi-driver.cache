@@ -1,0 +1,26 @@
+[TIMESTAMP] 1769767341 Fri Jan 30 11:02:21 2026
+[BUILDTIME] 8 (9)
+[SIZE] 0.45 MB, 14 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] gst-plugins-bad
+[DEP] gstreamer
+[DEP] gzip
+[DEP] libdrm
+[DEP] libglvnd
+[DEP] libva
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

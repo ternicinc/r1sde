@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/vips/vips.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] VIPS is an image processing suite designed for large images and colorimetry
+
+[T] VIPS is a free image processing system. It aims to be half-way between
+[T] Photoshop and Excel: it is very bad at retouching photographcs, but very
+[T] handy for the many other imaging tasks that programs like Photoshop get
+[T] used for. It is good with large images (images larger than the amount of
+[T] RAM in your machine), and for working with color. It comes in two main
+[T] parts. Libvips is the image processing library, and nip2 is the graphical
+[T] user interface.
+
+[U] http://www.vips.ecs.soton.ac.uk/
+
+[A] Nicos Dessipris
+[A] Kirk Martinez
+[A] John Cuppit
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/multimedia
+[F] CROSS FPIC
+
+[E] opt libjxl
+[E] opt libheif
+[E] opt libwebp
+
+[L] GPL
+[V] 8.18.2
+[P] X -----5---9 600.000
+
+[D] 1ca7ff4e5dd908f471c8f6975f666650b6cb71fde7f785ebedcf9dee vips-8.18.2.tar.gz https://github.com/libvips/libvips/archive/refs/tags/v8.18.2/

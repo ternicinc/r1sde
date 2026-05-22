@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/glchess/glchess.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A GNOME-based 2D/3D chess interface
+
+[T] GlChess is a 2D/3D chess interface for the GNOME desktop. It is designed
+[T] to be used by both beginner and experienced players. Games can be played
+[T] between a combination of local players and CECP compliant artificial
+[T] intelligences.
+
+[U] https://glchess.sourceforge.net/
+
+[A] Robert Ancell <bob27@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+[F] CROSS
+
+[L] GPL
+[V] 1.0.6
+
+[D] 557613f61b4ba5fa1b7f4616e1ec67d98b3e944230211cb004730384 glchess-1.0.6.tar.gz https://download.sourceforge.net/glchess/

@@ -1,0 +1,18 @@
+[TIMESTAMP] 1753114324 Mon Jul 21 18:12:04 2025
+[BUILDTIME] 2 (9)
+[SIZE] 0.30 MB, 16 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] mysql
+[DEP] perl
+[DEP] perl-dbi
+[DEP] perl-devel-checklib
+[DEP] sed
+[DEP] tar

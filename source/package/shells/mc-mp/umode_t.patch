@@ -1,0 +1,23 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/mc-mp/umode_t.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+On some architectures it just build accidently, however on e.g. powerpc64
+defining umode_t results in un-parse-able constructs in <asm/types.h>.
+Just include it to get the define.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- mc-4.1.40-pre9/config.h.in.vanilla	2008-08-23 12:13:57.000000000 +0200
++++ mc-4.1.40-pre9/config.h.in	2008-08-23 12:14:43.000000000 +0200
+@@ -141,7 +141,7 @@
+ #undef STAT_STATVFS
+ 
+ /* Define umode_t if your system does not provide it */
+-#undef umode_t
++#include <asm/types.h>
+ 
+ /* Define nlink_t if your system does not provide it */
+ #undef nlink_t

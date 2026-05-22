@@ -1,0 +1,44 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/breeze-icons/breeze-icons.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Breeze icon theme
+
+[T] Breeze Icons is a freedesktop.org compatible icon theme. It's developed by
+[T] the KDE Community as part of KDE Frameworks and it's used by default in KDE
+[T] Plasma and KDE Applications.
+
+[U] https://www.kde.org
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR NO-LTO.gcc
+
+[E] add python-lxml
+[E] add kiconthemes
+
+[L] GPL
+[V] 6.26.0
+[P] X ?----5---9 162.900
+
+[CV-GROUP] kde-frameworks
+[D] 6fbef30d5efc84741f12f8533f2a1b373da3bbea6daeb8a5bb80d0e3 breeze-icons-6.26.0.tar.xz https://download.kde.org/stable/frameworks/6.26/
+
+. $base/package/*/*/kde-conf.in
+
+atstage toolchain && # makeinstopt= &&
+	hook_add postmake 5 "install bin/{generate-symbolic-dark,qrcAlias} $root$bindir/"
+atstage cross && var_append PATH : $root/TOOLCHAIN/cross/qt/bin
+
+start_here_t2() {
+	for f in icons/places/*/*start-here-kde*.svg; do
+		ln -sfv ../32/start-here-kde.svg $f
+	done
+	cp -fv $base/misc/artwork/t2.svg icons/places/32/start-here-kde.svg
+}
+hook_add preconf 1 start_here_t2

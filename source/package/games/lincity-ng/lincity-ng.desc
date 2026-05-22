@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lincity-ng/lincity-ng.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A city simulation game
+
+[T] LinCity-NG is a city simulation game. It is a polished and improved
+[T] version of the classic LinCity game. In the game, you are required to
+[T] build and maintain a city. You can win the game either by building a
+[T] sustainable economy or by evacuating all citizens with spaceships.
+
+[U] https://github.com/lincity-ng/lincity-ng
+
+[A] Wolfgang Becker <wolfgangb@users.berlios.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+
+[L] GPL
+[V] 2.15.0
+
+[D] ff0e4cdfa24ccef890ac3f54e2c361b66f1442cd00fd528cf9485f99 lincity-ng-2.15.0-Source.tar.xz https://github.com/lincity-ng/lincity-ng/releases/download/lincity-ng-2.15.0/

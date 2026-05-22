@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/urlgrabber/urlgrabber.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Python module for downloading files
+
+[T] urlgrabber is a pure python package that drastically simplifies the
+[T] fetching of files. It is designed to be used in programs that need common
+[T] (but not necessarily simple) url-fetching features. It is extremely simple
+[T] to drop into an existing program and provides a clean interface to
+[T] protocol-independant file-access.
+
+[U] http://urlgrabber.baseurl.org/
+
+[A] Michael D. Stenner and Ryan Tomayko
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[E] add pycurl
+
+[L] LGPL
+[V] 4.1.0
+
+[D] 80e547f9c6d28a8a2d63e3215fe2c98efb488f132f57aff9a30a4b5a urlgrabber-4.1.0.tar.gz https://files.pythonhosted.org/packages/source/u/urlgrabber/

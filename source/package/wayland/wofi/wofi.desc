@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/wofi/wofi.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A launcher/menu program for wlroots based wayland compositors
+
+[T] A launcher/menu program for wlroots based wayland compositors.
+
+[U] https://hg.sr.ht/~scoopta/wofi/
+
+[A] Scoopta
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/x11
+[F] NO-LTO
+
+[L] GPL3
+[V] 1.5.3
+
+[D] 449ce351639614f6a9439d35916a5b6d8fef6bc4683a33b21322fbb5 wofi-1.5.3.tar.gz !https://hg.sr.ht/~scoopta/wofi/archive/v1.5.3.tar.gz

@@ -1,0 +1,54 @@
+[TIMESTAMP] 1765306769 Tue Dec  9 19:59:29 2025
+[BUILDTIME] 320 (9)
+[SIZE] 6.19 MB, 513 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[OPT] docbook-xml
+[OPT] docbook-xsl
+[DEP] extra-cmake-modules
+[DEP] freetype
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] kauth
+[DEP] kcmutils
+[DEP] kconfig
+[DEP] kconfigwidgets
+[DEP] kcoreaddons
+[DEP] kcrash
+[DEP] kdbusaddons
+[OPT] kdoctools
+[DEP] kglobalaccel
+[DEP] ki18n
+[DEP] kidletime
+[DEP] kirigami
+[DEP] knotifications
+[DEP] krunner
+[DEP] kservice
+[DEP] kwidgetsaddons
+[DEP] kxmlgui
+[DEP] libkscreen
+[DEP] libplasma
+[DEP] libxcb
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] plasma-activities
+[DEP] plasma-wayland-protocols
+[DEP] plasma-workspace
+[DEP] procps
+[DEP] qcoro
+[DEP] qt6base
+[DEP] qt6declarative
+[DEP] sed
+[DEP] solid
+[DEP] tar
+[DEP] udev
+[DEP] vulkan-headers
+[DEP] wayland
+[DEP] xz

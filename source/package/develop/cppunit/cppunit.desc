@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cppunit/cppunit.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A C++ unit testing framework
+
+[T] CppUnit is the C++ port of the famous JUnit framework for unit testing.
+
+[U] https://cppunit.sourceforge.net/
+
+[A] CppUnit team
+[M] Minto van der Sluis <minto@multimach.com>
+
+[C] extra/development
+[F] CROSS
+
+[E] opt graphviz
+[E] opt doxygen
+
+[L] LGPL
+[V] 1.15.1
+[P] X -----5---9 199.900
+
+[D] 10b48784be071d477601863a3056b028997cf1b6bd22ff14c0b38cd8 cppunit-1.15.1.tar.gz https://dev-www.libreoffice.org/src/

@@ -1,0 +1,55 @@
+[TIMESTAMP] 1742247856 Mon Mar 17 22:44:16 2025
+[BUILDTIME] 210 (9)
+[SIZE] 77.27 MB, 6986 files
+
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] cmake
+[DEP] cmark
+[DEP] coreutils
+[DEP] diffutils
+[DEP] enchant
+[DEP] evolution-data-server
+[OPT] evolution-exchange
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] geocode-glib
+[DEP] gettext
+[OPT] glib
+[DEP] gnome-autoar
+[DEP] gnome-desktop
+[DEP] grep
+[DEP] gsettings-desktop-schemas
+[DEP] gspell
+[DEP] gtk
+[DEP] gtk+
+[DEP] harfbuzz
+[DEP] intltool
+[DEP] itstool
+[DEP] json-glib
+[DEP] libarchive
+[DEP] libcanberra
+[DEP] libgweather
+[DEP] libical
+[DEP] libnotify
+[DEP] libsecret
+[DEP] libsoup3
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[DEP] nspr
+[OPT] nss
+[OPT] openldap
+[DEP] openssl
+[DEP] pango
+[DEP] perl
+[DEP] perl-xml-parser
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] sqlite
+[DEP] tar
+[DEP] webkitgtk41
+[DEP] xz

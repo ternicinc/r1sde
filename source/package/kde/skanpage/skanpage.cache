@@ -1,0 +1,38 @@
+[TIMESTAMP] 1759874040 Tue Oct  7 23:54:00 2025
+[BUILDTIME] 30 (9)
+[SIZE] 3.64 MB, 56 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] cups
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] freetype
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] kconfig
+[DEP] kconfigwidgets
+[DEP] kcoreaddons
+[DEP] kcrash
+[DEP] ki18n
+[DEP] kio
+[DEP] kjobwidgets
+[DEP] ksanecore
+[DEP] kwidgetsaddons
+[DEP] kxmlgui
+[DEP] leptonlib
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] procps
+[DEP] qt6base
+[DEP] qt6declarative
+[DEP] qt6webengine
+[DEP] sed
+[DEP] tar
+[DEP] tesseract
+[DEP] vulkan-headers
+[DEP] xz

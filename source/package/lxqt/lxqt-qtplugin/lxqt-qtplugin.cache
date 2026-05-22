@@ -1,0 +1,23 @@
+[TIMESTAMP] 1744913514 Thu Apr 17 20:11:54 2025
+[BUILDTIME] 8 (9)
+[SIZE] 0.14 MB, 7 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] libdbusmenu-lxqt
+[DEP] libfm-qt
+[DEP] libqtxdg
+[DEP] linux-header
+[DEP] lxqt-build-tools
+[DEP] make
+[DEP] pkgconfig
+[DEP] qt6base
+[DEP] sed
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] xz

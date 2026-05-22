@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/swtpm/swtpm.desc
+[COPY] Copyright (C) 2020 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Software TPM Emulator
+
+[T] The SWTPM package provides TPM emulators with different front-end
+[T] interfaces to libtpms. TPM emulators provide socket interfaces (TCP/IP
+[T] and Unix) and the Linux CUSE interface for the creation of multiple
+[T] native /dev/vtpm* devices.
+
+[U] https://github.com/stefanberger/swtpm
+
+[A] David Safford <safford@us.ibm.com>
+[A] Stefan Berger <stefanb@us.ibm.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/emulator
+[F] CROSS
+
+[E] add expect socat
+
+[L] BSD
+[V] 0.10.1
+
+[D] c49042d655df7dc74725ae1d1916fb4b5b3e66309a34a3e036d483d7 swtpm-0.10.1.tar.gz https://github.com/stefanberger/swtpm/archive/v0.10.1/
+
+autogen=1

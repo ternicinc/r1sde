@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libressl/libressl.desc
+[COPY] Copyright (C) 2016 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Open Source toolkit for Secure Sockets Layer and Transport Layer Security
+
+[T] The LibreSSL Project is a collaborative effort to develop a robust,
+[T] commercial-grade, fully featured, and Open Source toolkit implementing the
+[T] Secure Sockets Layer (SSL v2/v3) and Transport Layer Security (TLS v1)
+[T] protocols as well as a full-strength general purpose cryptography library.
+[T] The project is managed by a worldwide community of volunteers that use the
+[T] Internet to communicate, plan, and develop the LibreSSL toolkit and its
+[T] related documentation.
+
+[U] https://www.libressl.org/
+
+[A] The LibreSSL Project
+[A] Eric A. Young, Tim J. Hudson
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS DIETLIBC
+
+[L] OpenSource
+[V] 4.2.1
+[P] O --2--5---9 104.600
+
+[D] fa2ec86a128aa79f5dbc293be8607b1a8822d7ccd4252acc6069a9fb libressl-4.2.1.tar.gz http://ftp.openbsd.org/pub/OpenBSD/LibreSSL/
+
+runcmake=0

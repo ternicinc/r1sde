@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dmidecode/dmidecode.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Reports BIOS information according to the SMBIOS/DMI standard
+
+[T] Reports BIOS information according to the SMBIOS/DMI standard, typically
+[T] including system manufactor, model name, serial number and a lot of other
+[T] details of varying level of interest and reliability.
+
+[U] https://www.nongnu.org/dmidecode/
+
+[A] Jean Delvare
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+
+[R] + arm arm64 ia64 riscv64 x86 x86-64
+
+[L] GPL
+[V] 3.7
+
+[D] 95ccc7f0935e1927a286b5f27321ef7f4882d3b081163bc3eef9a1f0 dmidecode-3.7.tar.xz https://download.savannah.gnu.org/releases/dmidecode/

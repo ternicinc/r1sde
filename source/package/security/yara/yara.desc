@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/yara/yara.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The pattern matching swiss knife
+
+[T] YARA is a tool aimed at (but not limited to) helping malware researchers
+[T] to identify and classify malware samples. With YARA you can create
+[T] descriptions of malware families (or whatever you want to describe)
+[T] based on textual or binary patterns.
+
+[U] https://virustotal.github.io/yara/
+
+[A] Avast
+[A] Google Inc.
+[A] Hilko Bengen <bengen@hilluzination.de>
+[A] Joachim Metz <joachim.metz@gmail.com>
+[A] Stefan Buehlmann <stefan.buehlmann@joebox.org>
+[A] Victor M. Alvarez <plusvic@gmail.com>;<vmalvarez@virustotal.com>
+[A] Wesley Shields <wxs@atarininja.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+[F] CROSS
+
+[L] BSD
+[V] 4.5.6
+
+[D] 37e7fae8775e279004220bc3da5c5068805d4b3d9477ac303f2a4483 yara-4.5.6.tar.gz https://github.com/VirusTotal/yara/archive/v4.5.6/
+
+hook_add preconf 5 ./bootstrap.sh

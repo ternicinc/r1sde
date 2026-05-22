@@ -1,0 +1,28 @@
+[TIMESTAMP] 1753709362 Mon Jul 28 16:29:22 2025
+[BUILDTIME] 12 (9)
+[SIZE] 4.02 MB, 184 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[OPT] bdb
+[DEP] binutils
+[DEP] bison
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] flex
+[DEP] gawk
+[DEP] grep
+[DEP] iptables
+[OPT] libbpf
+[DEP] libcap
+[DEP] libelf
+[DEP] libmnl
+[DEP] libtirpc
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] xz

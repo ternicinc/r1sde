@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libftdi1/libftdi1.desc
+[COPY] Copyright (C) 2018 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] FTDI USB driver with bitbang mode
+
+[T] libFTDI is an open source library to talk to FTDI chips.
+
+[U] https://www.intra2net.com/en/developer/libftdi/
+
+[A] Intra2net AG <opensource@intra2net.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[E] add libconfuse
+
+[L] LGPL
+[V] 1.5
+[P] X -----5---9 126.800
+
+[D] 907413a985d825a163d2ef630c2b3a3e3cebf7788ca5d3ebea829b8e libftdi1-1.5.tar.bz2 https://www.intra2net.com/en/developer/libftdi/download/
+
+var_append cmakeopt ' ' -DCMAKE_POLICY_VERSION_MINIMUM=3.5

@@ -1,0 +1,46 @@
+[TIMESTAMP] 1768929363 Tue Jan 20 18:16:03 2026
+[BUILDTIME] 45 (9)
+[SIZE] 5.07 MB, 340 files
+
+[DEP] autoconf
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] gettext
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] harfbuzz
+[OPT] imagemagick
+[OPT] libexif
+[OPT] libgif
+[DEP] libjpeg
+[DEP] libpng
+[DEP] libtiff
+[DEP] libtool
+[OPT] libwebp
+[DEP] libx11
+[DEP] libxext
+[DEP] libxft
+[DEP] libxinerama
+[DEP] libxmu
+[DEP] libxpm
+[DEP] libxrender
+[DEP] libxres
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] pango
+[DEP] perl
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] xorgproto

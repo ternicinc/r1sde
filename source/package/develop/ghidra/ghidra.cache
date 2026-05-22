@@ -1,0 +1,19 @@
+
+[TIMESTAMP] 1722203570 Sun Jul 28 23:52:50 2024
+[BUILDTIME] 2000 (9)
+[SIZE] 395.94 MB, 4613 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gradle
+[DEP] grep
+[DEP] gzip
+[DEP] openjdk
+[DEP] pip
+[DEP] sed
+[DEP] tar
+[DEP] unzip

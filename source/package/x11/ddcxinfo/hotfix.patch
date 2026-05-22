@@ -1,0 +1,26 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/ddcxinfo/hotfix.patch
+# Copyright (C) 2009 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+Attention: same fix in base/suspend!
+
+diff -Nur ddcxinfo-kanotix-0.6.19-orig/lrmi.c ddcxinfo-kanotix-0.6.19/lrmi.c
+--- ddcxinfo-kanotix-0.6.19-orig/lrmi.c	2009-09-25 21:59:15.000000000 +0000
++++ ddcxinfo-kanotix-0.6.19/lrmi.c	2009-09-25 21:59:51.000000000 +0000
+@@ -28,6 +28,14 @@
+ 
+ #include "lrmi.h"
+ 
++#ifndef TF_MASK
++#define TF_MASK X86_EFLAGS_TF
++#define IF_MASK X86_EFLAGS_IF
++#define IOPL_MASK X86_EFLAGS_IOPL
++#define VIF_MASK X86_EFLAGS_VIF
++#define VIP_MASK X86_EFLAGS_VIP
++#endif
++
+ #define REAL_MEM_BASE 	((void *)0x10000)
+ #define REAL_MEM_SIZE 	0x10000
+ #define REAL_MEM_BLOCKS 	0x100

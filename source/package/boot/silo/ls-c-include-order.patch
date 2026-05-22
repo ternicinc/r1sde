@@ -1,0 +1,31 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/silo/ls-c-include-order.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./second/ls.c.orig	2004-06-28 21:28:22.725307784 +0200
++++ ./second/ls.c	2004-06-28 21:28:29.333303216 +0200
+@@ -19,10 +19,11 @@
+    USA.  */
+ 
+ #include <silo.h>
++#include <linux/types.h>
++#include <sys/types.h>
+ #include <stringops.h>
+ 
+ typedef int FILE;
+-#include <linux/types.h>
+ #include <ext2fs/ext2_fs.h>
+ #include <ext2fs/ext2fs.h>
+ 
+--- silo/second/file.h.vanilla	2009-10-18 22:02:34.000000000 +0200
++++ silo/second/file.h	2009-10-18 22:02:41.000000000 +0200
+@@ -19,6 +19,7 @@
+ 
+ typedef int FILE;
+ #include <linux/types.h>
++#include <sys/types.h> 
+ #include <ext2fs/ext2_fs.h>
+ #include <ext2fs/ext2fs.h>
+ 

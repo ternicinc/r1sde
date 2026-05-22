@@ -1,0 +1,71 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lvm2/lvm2.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Logical Volume Management (Version 2)
+
+[T] LVM includes all of the support for handling read/write operations on
+[T] physical volumes (hard disks, RAID-Systems, magneto optical, etc.,
+[T] multiple devices (MD), see mdadd(8) or even loop devices, see losetup(8)),
+[T] creating volume groups (kind of virtual disks) from one or more physical
+[T] volumes and creating one or more logical volumes (kind of logical
+[T] partitions) in volume groups.
+[T] This 2nd version is based on device-mapper available in linux-2.6.
+
+[U] http://sources.redhat.com/lvm2/
+
+[A] linux-lvm@redhat.com
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system extra/filesystem
+[F] CROSS NO-LTO.clang
+
+[E] opt xfsprogs
+
+[L] GPL
+[V] 2.03.41
+[P] X --2--5---9 179.000
+
+[D] 7d66817ae9583f3520f2cc6c8c6b76e1358b7abb1c2ad5e9daeb8486 LVM2.2.03.41.tgz http://sourceware.org/pub/lvm2/
+
+[ $prefix_auto = 1 ] && prefix= && set_confopt
+
+var_append flistroot ' ' 'libexec' # TODO: maybe always allow?
+
+var_append confopt ' ' --enable-pkgconfig
+var_append confopt ' ' --datarootdir=$datadir
+#var_append confopt ' ' '--enable-cmdlib --enable-dmeventd'
+
+#var_append confopt ' ' --enable-udev-rules
+#var_append confopt ' ' --enable-udev-sync
+var_append confopt ' ' --disable-systemd-journal
+
+[ "$arch" = powerpc64 ] && CC_WRAPPER_INSERT="${CC_WRAPPER_INSERT/-O1/-O2}"
+
+if [ "$SDECFG_STATIC" == 1 ]; then
+	var_append patchfiles ' ' $confdir/no_dynamic.diff
+	var_append confopt ' ' --enable-static_link=yes
+
+	# let it read lvm1 format metadata (via device-mapper)
+	var_append confopt ' ' --with-lvm1=internal
+else
+	var_append confopt ' ' --with-lvm1=shared
+fi
+
+[ "$arch" = "avr32" -o "$arch" = "microblaze" ] &&
+	var_append patchfiles ' ' $confdir/no-symver.diff
+
+if ! atstage native; then
+	hook_add preconf 5 "echo 'ac_cv_func_malloc_0_nonnull=yes
+ac_cv_func_realloc_0_nonnull=yes
+ac_cv_path_MODPROBE_CMD=/sbin/modprobe' >> config.cache"
+fi
+
+# defining STRIP conflicts with this package passing it as arg to install
+var_remove_regex makeinstopt ' ' 'STRIP=.*'
+
+pkginstalled systemd &&
+	hook_add postinstall 5 "pkg_systemd_install_service $confdir/lvm2-activate.service"

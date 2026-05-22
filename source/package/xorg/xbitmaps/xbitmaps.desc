@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xbitmaps/xbitmaps.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Bitmaps that are shared between X applications
+
+[T] Bitmaps that are shared between X applications.
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 1.1.4
+[P] X -----5---9 112.444
+
+[D] 8b5dc72058067da9d9e583b04c3145b5c05cc8410eac810e70273cc9 xbitmaps-1.1.4.tar.xz https://www.x.org/releases/individual/data/
+
+. package/*/*/modular-x-conf.in

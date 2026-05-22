@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/btpd/btpd.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A bittorrent client consisting of a daemon and client commands
+
+[T] BTPD is a bittorrent client consisting of a daemon and client commands,
+[T] which can be used to read and/or manipulate the daemon state. The daemon
+[T] is capable of running several torrents simultaneously and only uses one
+[T] tcp port. It's fairly low on resource usage and should be perfect for file
+[T] distribution sites. Efficient downloads and ease of use makes this client
+[T] a good choice for the casual user as well.
+
+[U] https://github.com/btpd/btpd/
+
+[A] Richard Nyberg <rnyberg@murmeldjur.se>
+[M] Vlad Glagolev <stelzy@gmail.com>
+
+[C] extra/network
+[F] CROSS
+
+[L] BSD
+[V] 0.16
+
+[D] ef2f0ca27af31f478050f3dacecd8597254b19a4be36b7904cb4118f btpd-0.16.tar.gz https://github.com/btpd/btpd/archive/refs/tags/v0.16/
+
+hook_add preconf 5 'autoreconf -fi'

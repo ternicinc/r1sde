@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/bat/bat.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] cat clone with additional features
+
+[T] bat is a cat clone with many additional features like syntax highlighting,
+[T] git integration, automatic paging, show of non-printable characters and
+[T] integrations with other tools.
+
+[U] https://github.com/sharkdp/bat
+
+[A] bat-developers
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] APL MIT
+[V] 0.26.1
+
+[D] a1217ce2885119cb18efa8a201a444bd9428c201910e9ff5ea9b245e bat-0.26.1.tar.gz https://github.com/sharkdp/bat/archive/refs/tags/v0.26.1/

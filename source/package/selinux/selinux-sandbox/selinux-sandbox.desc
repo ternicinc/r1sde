@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/selinux-sandbox/selinux-sandbox.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] SELinux core policy utilities
+
+[T] Contains the scripts to create graphical sandboxes.
+
+[U] https://github.com/SELinuxProject/selinux
+
+[A] NSA SElinux Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+[F] CROSS
+
+[L] GPL
+[V] 3.10
+
+[CV-GROUP] selinux
+[D] a65cdf3df63b2a65743d9fc94c4bb3f8f02e3d4f3b3d511887db47a6 selinux-sandbox-3.10.tar.gz https://github.com/SELinuxProject/selinux/releases/download/3.10/

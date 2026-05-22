@@ -1,0 +1,10 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/x86/boot-config.in
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+choice SDECFG_X86_CD_LOADER grub2			\
+	grub		"Use GRUB as ISO loader"	\
+	grub2		"Use GRUB2 as ISO loader"	\
+	isolinux	"Use Syslinux/isolinux as ISO loader"

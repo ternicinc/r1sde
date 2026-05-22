@@ -1,0 +1,14 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/freeradius/config.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+if pkgcheck freeradius X
+then
+ 	menu_begin MENU_PKG_FREERADIUS 'FreeRADIUS Package Options'
+	text 'Install prefix for freeradius packages' \
+	     SDECFG_PKG_FREERADIUS_PREFIX "opt/freeradius"
+
+	menu_end
+fi

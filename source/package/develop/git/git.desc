@@ -1,0 +1,43 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/git/git.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Linus Torvalds version control system for kernels
+
+[T] Yet another strange version control systems for Linux kernel use.
+
+[U] https://git-scm.com/
+
+[A] Linus Torvalds <torvalds@osdl.org>
+[A] Junio C Hamano <junkio@cox.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[E] opt tcl tk
+[E] opt xmlto asciidoc docbook2x docbook-xml docbook-xsl
+
+[L] GPL
+[V] 2.54.0
+[P] X -----5---9 127.440
+
+[D] 2e42b6cc68f84759f0d0c8ee8185db195d161039416d4edaef65d4a3 git-2.54.0.tar.xz https://www.kernel.org/pub/software/scm/git/
+
+runmeson=0 runcargo=0
+
+atstage cross &&
+	hook_add preconf 5 "echo 'ac_cv_fread_reads_directories=yes
+ac_cv_fread_reads_directories=yes
+ac_cv_snprintf_returns_bogus=yes
+ac_cv_iconv_omits_bom=yes' >> config.cache"
+
+var_append makeopt ' ' 'DEFAULT_UNIT_TEST_TARGET= all'
+var_insert makeinstopt ' ' DEFAULT_UNIT_TEST_TARGET=
+
+if pkginstalled asciidoc xmlto docbook2x; then
+	hook_add inmake 5 'eval $MAKE ${makeopt/ all/} -j1 doc info'
+	var_append makeinstopt ' ' 'install-doc install-html' # TODO: intall-info
+fi

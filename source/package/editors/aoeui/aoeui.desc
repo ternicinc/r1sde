@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/aoeui/aoeui.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A keyboard layout-optimized text editor for Dvorak and QWERTY
+
+[T] Aoeui is a lightweight unobtrusive text editor optimized for the Dvorak
+[T] keyboard layout. Its QWERTY variant, asdfg, supports the same optimized
+[T] command set. It interacts easily with the rich text processing environment
+[T] around it.
+
+[U] https://aoeui.sourceforge.net/
+
+[A] Peter Klausler <peter@klausler.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/editor
+[F] CROSS
+
+[L] GPL
+[V] 1.7
+
+[D] 22f9f5dd3e304319c2fcbb51b6f1687d152dc5acaa992785849efb8b aoeui-1.7.tar.gz https://github.com/pklausler/aoeui/archive/4e5dee9/
+
+# do not build TAGS
+var_append makeopt ' ' aoeui
+# no DESTDIR nor prefix
+var_append makeinstopt ' ' INST_DIR=$root/$prefix

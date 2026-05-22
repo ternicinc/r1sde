@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/thunar-volman/thunar-volman.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Automatic management of removable drives and media for XFCE
+
+[T] Thunar-volman is an extension for the Thunar File Manager, which enables
+[T] automatic management of removable drives and media. For example, if
+[T] thunar-volman is installed and configured properly, and you plug in your
+[T] digitcal camera, it will automatically spawn your preferred photo
+[T] application and import the new pictures from your camera.
+
+[U] https://docs.xfce.org/xfce/thunar/thunar-volman
+
+[A] Benedikt Meurer <benny@xfce.org>
+[M] Gerardo Di Iorio <arete74@gmail.com>
+
+[C] extra/desktop/xfce
+[F] CROSS
+
+[L] LGPL
+[V] 4.20.0
+
+[D] d2eb4fbd790a3a7585f54438feb4dd1c24f32fdfb8f46ee64d7cb3c2 thunar-volman-4.20.0.tar.bz2 https://archive.xfce.org/src/xfce/thunar-volman/4.20/
+
+. $base/package/xfce4/*/xfce4-conf.in

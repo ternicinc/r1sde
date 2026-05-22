@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/octave-forge/octave-forge.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Extensions to GNU Octave
+
+[T] This package includes several add-ons and extension for GNU Octave - a
+[T] high-level language, primarily intended for numerical computations.
+
+[U] https://octave.sourceforge.net/
+
+[A] Paul Kienzle et.al. <pkienzle@users.sf.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/scientific
+
+[L] GPL
+[V] 2006.07.10
+
+[D] 5e0d9d83e2f783d044ebc263b427cd6124756b496a1de593435c7d62 octave-forge-2006.07.09.tar.gz https://prdownloads.sourceforge.net/sourceforge/octave/

@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/procinfo/procinfo.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Procinfo, lsdev and socklist
+
+[T] Procinfo is a small program that gathers some system information from
+[T] diverse files under /proc and prints it to the screen. It duplicates some of
+[T] the functionality of free(1) and uptime(1). It should work with any kernel
+[T] release close to 1.0 or later up to the latest development kernel. (Well, I
+[T] haven't actually tried 1.0 for years, but you get the idea.)
+[T]
+[T] Lsdev is a Perl script that attempts to tabulate DMA, IRQ and I/O port
+[T] allocation per kernel driver.
+[T]
+[T] Socklist is a Perl script that gives you a list of all open sockets,
+[T] enumerating types, port, inode, uid, pid, fd and the program to which
+[T] it belongs. Contributed by Larry Doolittle <ldoolitt@jlab.org>.
+
+[A] Sander van Malssen <svm@kozmix.ow.nl>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+
+[L] GPL
+[V] 2.0.304
+
+[D] 7e14c72a52abd1fcc6cde905e0b8ab56d2050d9a94d1dbcd9322139c procinfo-ng-2.0.304.tar.bz2 https://downloads.sourceforge.net/project/procinfo-ng/procinfo-ng/2.0.304/

@@ -1,0 +1,40 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gens/gens.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A free GENESIS/MEGADRIVE emulator
+
+[T] Gens is a Genesis/Megadriveemulator.
+[T] gens is a SEGA Genesis/MegaDrive emulator.
+[T] It has the following features:
+[T] - Windowed / Fullscreen mode with scanline and severals graphics engines
+[T] - Joystick support
+[T] - Netplay
+[T] - Save / Load State support (10 slots at the same format as genecyst / Dgen)
+[T] - SRAM support (saved in .srm file)
+[T] - BRAM support (saved in .brm file)
+[T] - Complete sound support (YM2612, PCM, PGS 76489, DAC) in 16 bits stereo at
+[T] - 11025 / 22050 / 44100 Hz
+[T] - Configurations files support
+[T] - ZIP support
+[T] - And a lot of others nice features...
+
+[U] http://www.gens.me/index.shtml
+
+[A] Stèphane Dallongeville
+[M] René Rebe <rene@exactco.de>
+
+# at least cd emulation code contains x86 only assembly :-(
+[R] + x86
+
+[C] extra/game
+
+[L] GPL
+[V] 2.15.5
+
+[D] 7bfe5a01e460ce6c43e439e5c08c5f0dfc74ebdcf44fca754c8112f6 gens-2.15.5.tar.gz https://prdownloads.sourceforge.net/sourceforge/gens/
+
+var_append GCC_WRAPPER_REMOVE ' ' -DGTK_DISABLE_DEPRECATED

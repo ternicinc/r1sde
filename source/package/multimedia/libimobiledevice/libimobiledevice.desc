@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libimobiledevice/libimobiledevice.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library to communicate with services of Apple iOS devices
+
+[T] A library to communicate with services of Apple iOS devices using native
+[T] protocols.
+
+[U] https://www.libimobiledevice.org
+
+[A] info@libimobiledevice.org
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 1.4.0
+[P] X -----5---9 140.000
+
+[D] d4f51b0d4300b79f862e014c9839c33194fce076db9c6ce9b2e0f4ee libimobiledevice-1.4.0.tar.bz2 https://github.com/libimobiledevice/libimobiledevice/releases/download/1.4.0/
+
+pkginstalled cython || var_append confopt ' ' --without-cython

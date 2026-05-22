@@ -1,0 +1,25 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/libiax/hotfix-destdir.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- iax-0.2.2/src/Makefile.in.vanilla	2007-06-17 22:04:39.495943088 +0200
++++ iax-0.2.2/src/Makefile.in	2007-06-17 22:05:07.409533793 +0200
+@@ -304,11 +304,11 @@
+ 
+ 
+ install:
+-	mkdir -p $(includedir)/iax
+-	install -m 644 md5.h $(includedir)/iax
+-	install -m 644 frame.h $(includedir)/iax
+-	install -m 644 iax.h $(includedir)/iax
+-	install -m 644 iax-client.h $(includedir)/iax
++	mkdir -p $(DESTDIR)$(includedir)/iax
++	install -m 644 md5.h $(DESTDIR)$(includedir)/iax
++	install -m 644 frame.h $(DESTDIR)$(includedir)/iax
++	install -m 644 iax.h $(DESTDIR)$(includedir)/iax
++	install -m 644 iax-client.h $(DESTDIR)$(includedir)/iax
+ 	/sbin/ldconfig
+ 
+ # Tell versions [3.59,3.63) of GNU make to not export all variables.

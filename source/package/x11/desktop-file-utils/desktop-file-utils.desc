@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/desktop-file-utils/desktop-file-utils.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Utilities for working with desktop entries
+
+[T] Desktop-file-utils contains a couple of command line utilities for working
+[T] with desktop entries and .menu files, like update-desktop-database.
+
+[U] https://www.freedesktop.org/Software/desktop-file-utils
+
+[A] Havoc Pennington <hp@redhat.com>
+[A] Alex Larsson <alexl@redhat.com>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/tool extra/desktop/gnome
+[F] CROSS
+
+[L] GPL
+[V] 0.28
+[P] X -----5---9 179.200
+
+[D] 938f5cd62749fadd910132eeca7cc4aed8f5e1d0f75976779e09354e desktop-file-utils-0.28.tar.xz http://www.freedesktop.org/software/desktop-file-utils/releases/

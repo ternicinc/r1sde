@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/uxn/uxn.desc
+[COPY] Copyright (C) 2017 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A personal computing stack based on a small virtual machine
+
+[T] The Uxn/Varvara ecosystem is a personal computing stack based on a small
+[T] virtual machine.
+
+[U] https://100r.co/site/uxn.html
+
+[A] Hundred Rabbits
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/emulator
+[F] CROSS
+
+[L] MIT
+[V] 20250907
+
+[D] 7fa7e418cdb2cba40815eeb98b3c888be5fb3ae02cfc7811f1be1450 uxn-20250907.tar.xz git+https://git.sr.ht/~rabbits/uxn 20250907
+
+runmake=0
+hook_add inmake 5 "./build.sh --no-run"
+hook_add postmake 5 "install bin/uxn* $root$bindir/"

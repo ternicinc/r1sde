@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xine-ui/xine-ui.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A free Video Player
+
+[T] Xine is an open source media player for free OSs. Xine is capable of
+[T] playing mpeg and libavifile supported media natively. The integrated DVD
+[T] plugin plays unencrypted DVDs with full menu support. With the help of
+[T] libdvdcss encrypted DVDs can be played as well.
+[T] Other plugins for (S)VCD, CD-Audio and several streamed media available.
+[T] It's also possible to install Windows DLLs for RealPlayer, Windows Media
+[T] and QuickTime support on the x86 platform.
+[T] Other frontends and themes can be found on the project's page.
+
+[U] https://xine.sourceforge.net
+
+[A] Guenter Bartsch <bartscgr@t-online.de>
+[A] many more
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[E] opt aalib
+[E] opt htmldoc
+[E] opt libcaca
+
+[L] GPL
+[V] 0.99.14
+
+[D] a15ca83f67441578c59aa74322beaa692b233520f2765f80e528e900 xine-ui-0.99.14.tar.xz https://prdownloads.sourceforge.net/sourceforge/xine/

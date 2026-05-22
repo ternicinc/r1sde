@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/tumbler/tumbler.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A D-Bus thumbnailing service
+
+[T] A D-Bus thumbnailing service based on the thumbnail management D-Bus
+[T] specification.
+
+[U] https://www.xfce.org/projects/thunar
+
+[A] xfce team
+[M] Gerardo Di Iorio <arete74@gmail.com>
+
+[C] extra/desktop/xfce
+[F] CROSS
+
+[L] GPL
+[V] 4.20.1
+
+[D] d5e39baa0bbb09dc18abe5d429f2a7f685ba643539e75e147260b947 tumbler-4.20.1.tar.bz2 https://archive.xfce.org/src/xfce/tumbler/4.20/
+
+. $base/package/xfce4/*/xfce4-conf.in

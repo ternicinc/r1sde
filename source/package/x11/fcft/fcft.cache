@@ -1,0 +1,26 @@
+[TIMESTAMP] 1739456895 Thu Feb 13 15:28:15 2025
+[BUILDTIME] 2 (9)
+[SIZE] 0.34 MB, 32 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] check
+[DEP] coreutils
+[DEP] diffutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pixman
+[DEP] python
+[DEP] scdoc
+[DEP] sed
+[DEP] tar
+[DEP] tllist
+[DEP] utf8proc

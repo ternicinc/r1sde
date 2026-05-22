@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnonlin/gnonlin.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnonlin is a library for writing non-linear audio and video editing
+
+[T] Gnonlin is a library built on top of GStreamer which provides support for
+[T] writing non-linear audio e video editing applications.
+
+[U] https://gstreamer.freedesktop.org/
+
+[A] Wim Taymans <wim.taymans@chello.be>
+[A] Steve Baker <stevebaker_org@yahoo.co.uk>
+[A] Edward Hervey <bilboed@bilboed.com>
+[M] Gerardo Di Iorio <arete74@gmail.com>
+
+[C] extra/multimedia extra/desktop/gnome
+
+[L] GPL
+[V] 1.4.0
+
+[CV-URL] https://download.gnome.org/sources/gnonlin/cache.json
+[D] c00f4d7fd0fa2c8c3e6e00194d76bf6d6b9ee0e8738dd96d1f32bb4d gnonlin-1.4.0.tar.xz https://gstreamer.freedesktop.org/src/gnonlin/
+
+. $base/package/*/*/gnome-conf.in

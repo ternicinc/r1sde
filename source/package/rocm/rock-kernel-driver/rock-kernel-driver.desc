@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rock-kernel-driver/rock-kernel-driver.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] AMDGPU Driver with KFD used by the ROCm project
+
+[T] AMDGPU Driver with KFD (Fusion Kernel Driver) used by the ROCm project.
+
+[U] https://github.com/ROCm/ROCK-Kernel-Driver
+
+[A] Advanced Micro Devices, Inc.
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS
+[C] extra/development
+
+[L] MIT
+[V] 7.2.3
+[P] O
+
+[CV-GROUP] rocm
+[D] 1bec94f8b14d86aaa593c4352019c3b26f2430fdcff3f8adf8863c3b ROCK-Kernel-Driver-rocm-7.2.3.tar.gz https://github.com/ROCm/ROCK-Kernel-Driver/archive/rocm-7.2.3/

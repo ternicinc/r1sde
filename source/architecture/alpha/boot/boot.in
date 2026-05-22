@@ -1,0 +1,36 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/alpha/boot/boot.in
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+arch_boot_cd_pre() {
+	alpha_idx=0
+	mkdir -p $isofsdir/{boot,etc}
+	cp -af $build_root/boot/bootlx $isofsdir/boot/
+}
+
+arch_boot_cd_add() {
+	echo $*
+	cp -f $build_root/$4 $isofsdir/boot/
+	$build_root/TOOLCHAIN/cross/bin/netabootwrap -t $isofsdir/boot/bootlx-${5##*/} \
+		-k $build_root$4 -i $build_root$5
+
+	cat >> $1/etc/aboot.conf <<-EOT
+$alpha_idx:$4 initrd=$5
+EOT
+	: $((alpha_idx++))
+}
+
+arch_boot_cd_post() {
+	# footer
+	sed '1,/CUT/d' $base/architecture/alpha/boot/aboot.conf \
+		>> $1/etc/aboot.conf
+	echo_status "Creating isofs_arch.txt file .."
+
+	echo "DISK1	$isofsdir/ /" > $build_toolchain/isofs_arch.txt
+
+	cat >> $build_toolchain/isofs_arch.txt <<- EOT
+BOOT	-alpha-boot boot/bootlx
+EOT
+}

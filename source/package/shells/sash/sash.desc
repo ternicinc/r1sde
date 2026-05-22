@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sash/sash.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A stand-alone shell with many built-in commands
+
+[T] Sash is a statically linked shell intended for rescue purposes. It
+[T] includes many buildin commands as well.
+
+[U] https://www.tip.net.au/~dbell/
+
+[F] CROSS DIETLIBC
+
+[A] David Ingalls Bell <dbell@canb.auug.org.au>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+
+[L] OpenSource
+[V] 3.8
+
+[D] 94ee3c2004a50e7ea5e271185f2b38908315541bc2b537539b090679 sash-3.8.tar.gz http://www.tip.net.au/~dbell/programs/
+
+if [ "$SDECFG_MULTILIB" = 1 ]; then
+       var_append GCC_WRAPPER_APPEND ' ' " -L$root/${libdir##*/}"
+fi
+
+[ $prefix_auto = 1 ] && prefix= && set_confopt
+
+var_append makeopt ' ' HAVE_LINUX_ATTR=0

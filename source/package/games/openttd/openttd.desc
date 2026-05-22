@@ -1,0 +1,54 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openttd/openttd.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An open source simulation game
+
+[T] OpenTTD is an open source simulation game based upon Transport Tycoon
+[T] Deluxe.
+
+[U] https://www.openttd.org/
+
+[A] The OpenTTD developers
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+#[C] extra/game/strategy
+[F] CROSS
+
+[E] opt doxygen
+[E] opt fluidsynth
+
+[L] GPL
+[V] 15.3
+
+[D] 8084cb95732bb3d897a244b81a6b394a38d542ab1b97f61c9ef916df openttd-15.3-source.tar.xz https://cdn.openttd.org/openttd-releases/15.3/
+[D] 738660936f382bd27e48e5b7c0f7a472720ca0b038a525000a9906c5 opengfx-8.0-all.zip https://cdn.openttd.org/opengfx-releases/8.0/
+[D] 43b809fdcd094bcae220f47659d182469550c5dd9f85c11df9a37a60 opensfx-1.0.3-all.zip https://cdn.openttd.org/opensfx-releases/1.0.3/
+[D] 89c0cf48e44cf35658c34fd72b72a9db638c52e912c25665cd73ac2f openmsx-0.4.2-all.zip https://cdn.openttd.org/openmsx-releases/0.4.2/
+
+install_gfx() {
+	install -d $root$datadir/games/openttd/data
+	unzip -d $builddir $(match_source_file -p opengfx-8.0-all.zip)
+	tar -C $builddir -xvf $builddir/opengfx-8.0.tar
+	cp $builddir/opengfx-8.0/*.{grf,obg} $root$datadir/games/openttd/data
+}
+hook_add postinstall 5 install_gfx
+
+install_sfx() {
+	install -d $root$datadir/games/openttd/data
+	unzip -d $builddir $(match_source_file -p opensfx-1.0.3-all.zip)
+	tar -C $builddir -xvf $builddir/opensfx-1.0.3.tar
+	cp $builddir/opensfx-1.0.3/*.{cat,obs} $root$datadir/games/openttd/data
+}
+hook_add postinstall 5 install_sfx
+
+install_msx() {
+	install -d $root$datadir/games/openttd/data
+	unzip -d $builddir $(match_source_file -p openmsx-0.4.2-all.zip)
+	tar -C $builddir -xvf $builddir/openmsx-0.4.2.tar
+	cp $builddir/openmsx-0.4.2/*.{mid,obm} $root$datadir/games/openttd/data
+}
+hook_add postinstall 5 install_msx

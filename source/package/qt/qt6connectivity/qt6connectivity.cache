@@ -1,0 +1,22 @@
+[TIMESTAMP] 1760521017 Wed Oct 15 11:36:57 2025
+[BUILDTIME] 110 (9)
+[SIZE] 2.28 MB, 231 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bluez
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] pcsc-lite
+[DEP] pkgconfig
+[DEP] python
+[DEP] qt6base
+[DEP] sed
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] xz

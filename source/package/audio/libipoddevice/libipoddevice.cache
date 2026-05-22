@@ -1,0 +1,27 @@
+
+[TIMESTAMP] 1280263849 Tue Jul 27 20:50:49 2010
+[BUILDTIME] 5 (5)
+[SIZE] 0.16 MB, 18 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] coreutils
+[DEP] dbus
+[DEP] dbus-glib
+[DEP] diffutils
+[DEP] file
+[DEP] findutils
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] libgtop
+[DEP] libxau
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] sed
+[DEP] sgutils
+[DEP] sysfiles
+[DEP] tar
+[DEP] zlib

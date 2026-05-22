@@ -1,0 +1,15 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/zope/config.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+if pkgcheck zope X
+then
+	menu_begin MENU_PKG_ZOPE 'Zope Package Options'
+	text 'Install prefix for Zope application server' \
+		SDECFG_PKG_ZOPE_PREFIX "opt/zope"
+	text 'Zope Product Directory' \
+		SDECFG_PKG_ZOPE_PRODDIR "$SDECFG_PKG_ZOPE_PREFIX/products"
+	menu_end
+fi

@@ -1,0 +1,54 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/webkitgtk41/webkitgtk41.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A full-featured port of the WebKit rendering engine
+
+[T] WebKitGTK is a full-featured port of the WebKit rendering engine,
+[T] suitable for projects requiring any kind of web integration, from
+[T] hybrid HTML/CSS applications to full-fledged web browsers.
+
+[U] https://webkitgtk.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+[F] CROSS NO-LTO.gcc
+
+[R] - arm loongarch64 m68k mips mips64 nios2 superh riscv
+
+[E] opt libwebp
+
+[L] LGPL
+[V] 2.46.5
+[P] X -----5---9 209.800
+
+[CV-FLAGS] ODD-UNSTABLE NO-AUTO
+[D] 9d3cf96b17c34dfdfbd83a60e7fd9e43f3c4e0c229b8becfc74eb952 webkitgtk-2.46.5.tar.xz https://webkitgtk.org/releases/
+
+. $base/package/*/*/gnome-conf.in
+
+# webkit 4.1
+var_append cmakeopt ' ' "-DPORT=GTK -DUSE_GTK4=NO -DUSE_SOUP2=NO -DENABLE_WEBDRIVER=NO"
+
+var_append cmakeopt ' ' "-DENABLE_BUBBLEWRAP_SANDBOX=NO -DENABLE_JOURNALD_LOG=NO -DENABLE_MINIBROWSER=ON -DUSE_SYSTEM_MALLOC=YES"
+
+# TODO: Does not build when enabled and libsecret installed
+var_append cmakeopt ' ' -DUSE_LIBSECRET=NO
+
+# TODO: gi-docgen?
+var_append cmakeopt ' ' -DENABLE_DOCUMENTATION=NO
+
+# TODO: pkg libbacktrace
+var_append cmakeopt ' ' -DUSE_LIBBACKTRACE=NO
+
+pkginstalled gobject-introspection || var_append cmakeopt ' ' -DENABLE_INTROSPECTION=NO
+pkginstalled lcms2|| var_append cmakeopt ' ' -DUSE_LCMS=NO
+pkginstalled libavif || var_append cmakeopt ' ' -DUSE_AVIF=NO
+pkginstalled libjxl || var_append cmakeopt ' ' -DUSE_JPEGXL=NO
+pkginstalled openjpeg || var_append cmakeopt ' ' -DUSE_OPENJPEG=NO
+pkginstalled sysprof || var_append cmakeopt ' ' -DUSE_SYSTEM_SYSPROF_CAPTURE=NO

@@ -1,0 +1,49 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/unblob/unblob.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Extract files from any kind of container formats
+
+[T] Unblob is an accurate, fast, and easy-to-use extraction suite. It parses
+[T] unknown binary blobs for more than 30 different archive, compression, and
+[T] file-system formats, extracts their content recursively, and carves out
+[T] unknown chunks that have not been accounted for.
+
+[U] https://unblob.org/
+
+[A] ONEKEY GmbH
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[F] CROSS
+
+[E] add unblob-native
+[E] add python-click
+[E] add python-rich
+[E] add python-structlog
+[E] add attrs
+[E] add python-dissect-cstruct
+[E] add python-rarfile
+[E] add python-cryptography
+[E] add python-lz4
+[E] add pyfatfs
+[E] add python-plotext
+[E] add python-lark
+[E] add python-arpy
+[E] add python-magic
+[E] add python-lief
+[E] add python-treelib
+[E] add python-pyperscan
+[E] add python-maturin
+[E] add python-annotated-types
+[E] add python-typing-extensions
+[E] add python-jefferson
+[E] opt lziprecover
+
+[L] MIT
+[V] 26.3.30
+
+[D] 824b5712bd2a9f3ce0d2197ac7bb80ad90b7db40aa455f2ee86c617f unblob-26.3.30.tar.gz https://github.com/onekey-sec/unblob/archive/refs/tags/26.3.30/

@@ -1,0 +1,19 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/blingbling/hotfix-installdir.patch
+# Copyright (C) 2009 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- blingbling.orig/Makefile	2008-10-26 16:00:36.000000000 +0200
++++ blingbling/Makefile	2009-11-07 12:22:01.000000000 +0200
+@@ -12,8 +12,8 @@
+ 
+ install: all
+ 	for f in $(THEMES); do \
+-		rm -f ~/.e/e/themes/$$f; \
+-		cp $$f ~/.e/e/themes/$$f; \
++		rm -f $(INSTALLDIR)/$$f; \
++		cp $$f $(INSTALLDIR)/$$f; \
+ 	done
+ 
+ clean:

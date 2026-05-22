@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-pathspec/python-pathspec.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Utility library for pattern matching of file paths
+
+[T] utility library for pattern matching of file paths. So far this only
+[T] includes Git’s wildmatch pattern matching which itself is derived
+[T] from Rsync’s wildmatch. Git uses wildmatch for its gitignore files.
+
+[U] https://pypi.org/project/pathspec/
+
+[A] Caleb P. Burns
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[E] add python-flit-core
+
+[L] MPL
+[V] 1.1.1
+[P] X -----5---9 109.007
+
+[D] 551f9c46fbd017d65754d17cfd4db791619dbff4eb82afffb604d93a pathspec-1.1.1.tar.gz https://files.pythonhosted.org/packages/source/p/pathspec/

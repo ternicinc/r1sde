@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/multitail/multitail.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Lets you view several files at once in a window, with colors
+
+[T] MultiTail lets you view one or multiple files like the original tail
+[T] program. The difference is that it creates multiple windows on your
+[T] console (with ncurses). Merging of 2 or more log files is possible. It
+[T] can also use colors while displaying the log files (through regular
+[T] expressions) for faster recognition of what is important. It can also
+[T] filter lines (again with regular expressions). It has interactive
+[T] menus for editing given regular expressions and deleting and adding
+[T] windows. One can also have windows with the output of shell scripts and
+[T] other software. When viewing the output of external software, MultiTail
+[T] can mimic the functionality of tools like 'watch'.
+
+[U] https://www.vanheusden.com/multitail/
+
+[A] <folkert@vanheusden.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 7.1.5
+
+[D] 843c1c234c377ec5a1b2171cfcc73741e9fdbd4ff9cfb49ec86851c1 multitail-7.1.5.tar.gz !https://github.com/folkertvanheusden/multitail/archive/refs/tags/7.1.5.tar.gz

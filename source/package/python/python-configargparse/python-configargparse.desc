@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-configargparse/python-configargparse.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A drop-in replacement for argparse
+
+[T] A drop-in replacement for argparse that allows options to also be set
+[T] via config files and/or environment variables.
+
+[U] https://github.com/bw2/ConfigArgParse
+
+[A] Ben Weisburd
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] MIT
+[V] 1.7.1
+[P] X -----5---9 149.000
+
+[D] a83be8b17fb2e42219e9cd354a0b2d72d43fdb4c11e9260b2e1d1d8e configargparse-1.7.1.tar.gz https://github.com/bw2/ConfigArgParse/archive/1.7.1/

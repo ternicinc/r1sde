@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pocl/pocl.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Portable Computing Language
+
+[T] Portable Computing Language (pocl) aims to become a MIT-licensed
+[T] open source implementation of the OpenCL standard which can be easily
+[T] adapted for new targets and devices, both for homogeneous CPU and
+[T] heterogenous GPUs/accelerators.
+[T]
+[T] pocl uses Clang as an OpenCL C frontend and LLVM for the kernel
+[T] compiler implementation, and as a portability layer. Thus, if your
+[T] desired target has an LLVM backend, it should be able to get OpenCL
+[T] support easily by using pocl.
+
+[U] https://pocl.sourceforge.net/
+[U] https://portablecl.org
+
+[A] pocl developers
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[E] opt libjpeg
+[E] opt spirv-llvm-translator spirv-tools
+
+[L] MIT
+[V] 7.1
+
+[CV-FLAGS] NO-PREFIX
+[D] bc1f0180abf2c66a423ddef6c855897dd6ab7a972c4ec231cf99a06a pocl-v7.1.tar.gz https://github.com/pocl/pocl/archive/v7.1/
+
+pkginstalled opencl-loader || var_append cmakeopt ' ' -DENABLE_ICD=OFF
+pkginstalled opencl-loader && var_append cmakeopt ' ' "-DENABLE_ICD=ON -DINSTALL_OPENCL_HEADERS=OFF"
+pkginstalled opencv && var_append GCC_WRAPPER_APPEND ' ' -I$root/$(pkgprefix includedir opencv)/opencv4

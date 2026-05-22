@@ -1,0 +1,24 @@
+[TIMESTAMP] 1750933004 Thu Jun 26 12:16:44 2025
+[BUILDTIME] 30 (9)
+[SIZE] 7.88 MB, 313 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[DEP] gmp
+[DEP] grep
+[DEP] gwenhywfar
+[DEP] gzip
+[DEP] libxml
+[DEP] libxslt
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] xmlsec
+[DEP] zlib

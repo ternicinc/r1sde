@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/osmo/osmo.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Diary, organiser, planner
+
+[T] diary, organiser, planner.
+
+[U] https://clayo.org/osmo/
+
+[A] Tomasz Maka, Piotr Maka
+[M] Tomasz Maka, Piotr Maka
+
+[C] extra/office extra/desktop/gnome
+
+[L] GPL
+[V] 0.4.4
+[P] X -----5---9 208.900
+
+[CV-URL] https://download.gnome.org/sources/osmo/cache.json
+[D] 58330e7dd4a03e867c5f45d711bf491cf5542dbe5340cb2fb5fb2e25 osmo-0.4.4.tar.gz https://download.sourceforge.net/project/osmo-pim/osmo-pim/osmo-0.4.4/
+
+. $base/package/*/*/gnome-conf.in

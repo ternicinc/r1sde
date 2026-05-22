@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xsane/xsane.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A full SANE environment
+
+[T] XSane is a nice full featured frontend for the SANE (Scanner Access
+[T] Now Easy) library. It can fax, print or save the scanned image and
+[T] act as GIMP plugin.
+
+[U] http://www.xsane.org/
+
+[A] Oliver Rauch <oliver.rauch@rauch-domain.de>
+[M] René Rebe <rene@exactco.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office
+
+[L] GPL
+[V] 0.999
+
+[D] 94bbbc01f7e8df7b654d4c26dd4614abf9e4994c0372a7481a32faba xsane-0.999.tar.gz http://www.xsane.org/download/

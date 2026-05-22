@@ -1,0 +1,43 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/astguiclient/astguiclient.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Software which extends the functions of Asterisk with end-user Web clients
+
+[T] astGUIclient is part of a suite of programs that are designed to
+[T] interact with the Asterisk PBX Phone system at a client computer
+[T] level to extend the functionality of your phone and system. The
+[T] main GUI application, astGUIclient, is a set of PHP Web-based
+[T] scripts utilizing Javascript and XMLHTTPRequest functions
+[T] that work through a browser to give realtime information and
+[T] functionality with nothing more than an Internet browser on the
+[T] client computer. Another component included with the astGUIclient
+[T] package is the VICIDIAL auto-dialer, a list dialer which can
+[T] dial one-call-at-a-time or be put in auto-dial mode to act as
+[T] a predictive dialer. It can function as an ACD for inbound calls
+[T] or for Closer calls coming from VICIDIAL fronters, and allows
+[T] for remote agents that may only have a phone.
+
+[U] https://astguiclient.sourceforge.net/
+
+[A] eflonet <vicidial@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] GPL
+[V] 2.2.1
+
+[D] 53b03f16756d19ee2c4234ab46f066894cdbc3f041d5255abcb7a90f astguiclient_2.2.1.zip https://download.sourceforge.net/project/astguiclient/
+
+pkgprefix -t asterisk
+prefix=$(pkgprefix asterisk)
+
+set_confopt
+var_append zipopt ' ' "-d $pkg-$ver"
+
+runmake=0
+
+hook_add postmake 5 'perl install.pl'

@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/k9s/k9s.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Kubernetes TUI client
+
+[T] K9s provides a terminal UI to interact with your Kubernetes clusters. The
+[T] aim of this project is to make it easier to navigate, observe and manage
+[T] your applications in the wild. K9s continually watches Kubernetes for
+[T] changes and offers subsequent commands to interact with your observed
+[T] resources.
+
+[U] https://k9scli.io/
+
+[A] Kubernetes Team
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/base
+[F] CROSS
+
+[L] GPL
+[V] 0.50.18
+
+[D] a9d2293dfa9f6460dc5aebbb19cf703a24a6e0c7432f7815129ef082 k9s-v0.50.18.tar.gz https://github.com/derailed/k9s/archive/v0.50.18/
+
+hook_add postmake 0 'install -Dm755 k9s $root$bindir/k9s'

@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/igt-gpu-tools/igt-gpu-tools.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Collection of tools for development and testing of the DRM drivers
+
+[T] IGT GPU Tools is a collection of tools for development and testing of the
+[T] DRM drivers. There are many macro-level test suites that get used against
+[T] the drivers, including xtest, rendercheck, piglit, and oglconform, but
+[T] failures from those can be difficult to track down to kernel changes,
+[T] and many require complicated build procedures or specific testing
+[T] environments to get useful results. Therefore, IGT GPU Tools includes
+[T] low-level tools and tests specifically for development and testing of
+[T] the DRM Drivers.
+
+[U] https://gitlab.freedesktop.org/drm/igt-gpu-tools/
+
+[A] Freedesktop
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/x11
+[F] CROSS
+
+[L] MIT
+[V] 2.4
+
+[D] 9ff049c377db92451a2372206c157e3127415e44d4fe2d2bf47ef2d5 igt-gpu-tools-2.4.tar.gz https://gitlab.freedesktop.org/drm/igt-gpu-tools/-/archive/v2.4/
+
+var_append mesonopt ' ' '-Dvalgrind=disabled -Ddocs=disabled -Dtests=disabled'
+var_append GCC_WRAPPER_INSERT ' ' "-I$root`pkgprefix includedir libpciaccess`"

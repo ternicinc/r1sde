@@ -1,0 +1,12 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dbmail/config.hlp
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+MENU_PKG_DBMAIL
+  Here you will find options concerning DBMail
+
+SDECFG_PKG_DBMAIL_DB
+  Please check here which backend you want DBMail to use.

@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dnsa/dnsa.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Swiss knife tool for DNS auditing
+
+[T] DNS Auditor is a tool which checks for DNS security.
+[T] It looks for DNS cache poisoning (using additional RR), DNS ID Spoofing,
+[T] and more.
+[T] More information are available in a related paper of the author:
+[T] http://www.packetfactory.net/projects/dnsa/ArticleDNS.pdf
+
+[U] http://www.packetfactory.net/projects/dnsa/
+
+[A] Pierre Betouin <pierre.betouin@security-labs.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] GPL
+[V] 0.6
+
+[D] 68aa6dcfb8dbe6fc20262fa976ecefdfb80790f1fa2fe732316cd06e dnsa-current.tar.gz http://www.packetfactory.net/projects/dnsa/
+
+hook_add preconf 5 'cd sources'

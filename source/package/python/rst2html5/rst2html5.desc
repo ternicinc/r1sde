@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rst2html5/rst2html5.desc
+[COPY] Copyright (C) 2020 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Generates (X)HTML5 documents from standalone reStructuredText
+
+[T] Generates (X)HTML5 documents from standalone reStructuredText sources.
+
+[U] https://foss.heptapod.net/doc-utils/rst2html5/-/tree/branch/default
+
+[A] André Felipe Dias
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+[L] MIT
+
+[V] 2.0.1
+[P] X -----5---9 136.800
+
+[D] 500b1abf7b1549c53e9d2be40a01363723f3337c25fd8bb64aa2fba1 rst2html5-2.0.1.tar.gz https://files.pythonhosted.org/packages/source/r/rst2html5/

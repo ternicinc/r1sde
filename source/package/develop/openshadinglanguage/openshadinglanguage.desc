@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openshadinglanguage/openshadinglanguage.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Advanced shading language for production GI renderers
+
+[T] Open Shading Language (OSL) is a small but rich language for programmable
+[T] shading in advanced renderers and other applications, ideal for describing
+[T] materials, lights, displacement, and pattern generation.
+
+[A] Academy Software Foundation
+[M] Aleksi Venäläinen <aleksi.venalainen@outlook.com>
+
+[U] https://github.com/AcademySoftwareFoundation/OpenShadingLanguage
+
+[C] extra/development
+[F] OBJDIR
+
+[E] opt qt6base
+
+[L] BSD
+[V] 1.15.4.0
+[P] X -----5---9 400.000
+
+[D] c81583b4fa21a9cd99982a2d800adbcf68f40fd5f45fad8c95a6f126 OpenShadingLanguage-1.15.4.0.tar.gz https://github.com/AcademySoftwareFoundation/OpenShadingLanguage/archive/v1.15.4.0/
+
+var_append cmakeopt ' ' -DPYTHON_INCLUDE_DIR=$libdir
+var_append cmakeopt ' ' -DPYTHON_LIBRARY=$libdir
+var_append cmakeopt ' ' -DPYTHON_SITE_DIR=$libdir/python$(pkgprefix ver python| sed 's/\.[[:digit:]]*$//')/site-packages
+var_append cmakeopt ' ' -DPYTHON_EXECUTABLE:FILEPATH=$(which python3)

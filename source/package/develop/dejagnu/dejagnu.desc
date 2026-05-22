@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dejagnu/dejagnu.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A framework for testing other program
+
+[T] DejaGnu is a framework for testing other programs. Its purpose is
+[T] to provide a single front end for all tests.
+
+[U] https://www.gnu.org/software/dejagnu/
+
+[A] Rob Savoye
+[A] Ben Elliston
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 1.6.3
+
+[D] 8e42040d72bab162af455fcf6ac72445a7491644ffc4891105756ac6 dejagnu-1.6.3.tar.gz http://ftp.gnu.org/pub/gnu/dejagnu/

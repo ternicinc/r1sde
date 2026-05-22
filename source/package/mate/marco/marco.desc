@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/marco/marco.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] MATE default window manager
+
+[T] MATE Marco is a fork of GNOME Metacity. It is the default window manager
+[T] for MATE.
+
+[U] https://mate-desktop.org/
+
+[A] MATE developer
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/mate
+
+[E] add zenity
+
+[L] GPL
+[V] 1.29.1
+[P] X -----5---9 179.300
+
+[D] eab2a81b11bc027544dadd2226eeb1cd2cddf220609f181913bd18aa marco-1.29.1.tar.gz https://github.com/mate-desktop/marco/archive/v1.29.1/
+
+. $base/package/*/*/mate-conf.in
+var_append GCC_WRAPPER_APPEND ' ' "$(pkg-config --libs x11)"

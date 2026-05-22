@@ -1,0 +1,40 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/psutils/hotfix-destdir.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- psutils/Makefile.unix.orig	1997-03-11 23:52:59.000000000 +0100
++++ psutils/Makefile.unix	2007-08-17 16:50:30.000000000 +0200
+@@ -222,27 +222,27 @@
+ 	-mkdir $(BINDIR)
+ 	@for i in $(BIN); do \
+ 		echo Installing $$i; \
+-		$(INSTALL) $$i $(BINDIR); \
++		$(INSTALL) $$i $(DESTDIR)$(BINDIR); \
+ 	done
+ 
+ install.script: $(PERLSCRIPTS) $(SHELLSCRIPTS)
+ 	-mkdir $(SCRIPTDIR)
+ 	@for i in $(PERLSCRIPTS) $(SHELLSCRIPTS); do \
+ 		echo Installing $$i; \
+-		$(INSTALL) $$i $(SCRIPTDIR); \
++		$(INSTALL) $$i $(DESTDIR)$(SCRIPTDIR); \
+ 	done
+ 
+ install.include: $(INCLUDES)
+ 	-mkdir $(INCLUDEDIR)
+ 	@for i in $(INCLUDES); do \
+ 		echo Installing $$i; \
+-		$(INSTALLMAN) $$i $(INCLUDEDIR); \
++		$(INSTALLMAN) $$i $(DESTDIR)$(INCLUDEDIR); \
+ 	done
+ 
+ install.man: $(MANPAGES)
+ 	-mkdir $(MANDIR)
+ 	@for i in $(MANPAGES); do \
+ 		echo Installing manual page for $$i; \
+-		$(INSTALLMAN) $$i $(MANDIR)/$$i; \
++		$(INSTALLMAN) $$i $(DESTDIR)$(MANDIR)/$$i; \
+ 	done
+ 

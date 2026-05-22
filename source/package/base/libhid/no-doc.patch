@@ -1,0 +1,22 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/libhid/no-doc.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+Failed to load a DTD from the internet, which of course fails (intentionally)
+inside the T2 build chroot sandbox.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- trunk/Makefile.am.vanilla	2008-08-20 11:31:41.000000000 +0200
++++ trunk/Makefile.am	2008-08-20 11:31:44.000000000 +0200
+@@ -6,7 +6,7 @@
+ if HAVE_SWIG
+   MAYBE_PYTHONWRAPPER = swig
+ endif
+-SUBDIRS = hidparser src $(MAYBE_PYTHONWRAPPER) test doc
++SUBDIRS = hidparser src $(MAYBE_PYTHONWRAPPER) test
+ 
+ dist_noinst_HEADERS = \
+ 	include/assert.h \

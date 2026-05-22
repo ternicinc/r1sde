@@ -1,0 +1,36 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/exact-image/no-utf8-pdf.patch
+# Copyright (C) 2009 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+No half-way hocr 2 pdf writing in utf8, yet.
+
+Index: codecs/pdf.cc
+===================================================================
+--- ./codecs/pdf.cc	(revision 1516)
++++ ./codecs/pdf.cc	(revision 1515)
+@@ -711,12 +711,10 @@
+   c <<  "(";
+   
+   // parse string and use proper escape
++  // TODO: UTF-8 input parsing
+   // TODO: Unicode mappings
+   bool first_newline = true;
+-  
+-  // decode utf8, locally
+-  std::vector<uint32_t> utf8 = DecodeUtf8(text.c_str(), text.size());
+-  for (std::vector<uint32_t>::const_iterator it = utf8.begin(); it != utf8.end(); ++it)
++  for (std::string::const_iterator it = text.begin(); it != text.end(); ++it)
+     {
+       switch (*it)
+ 	{
+@@ -739,7 +737,7 @@
+ 	  
+ 	  // just copy by default:
+ 	default:
+-	  c << (char)*it;
++	  c << *it;
+ 	}
+     }
+   

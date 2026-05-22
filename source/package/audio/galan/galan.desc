@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/galan/galan.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Graphical Audio Language
+
+[T] gAlan is an audio-processing tool (both on-line and off-line)
+[T] for X windows and Win32. It allows you to build synthesisers,
+[T] effects chains, mixers, sequencers, drum-machines etc. etc. in a
+[T] modular fashion by linking together icons representing primitive
+[T] audio-processing components.
+
+[U] https://galan.sourceforge.net/
+
+[A] Tony Garnock-Jones <surazal@ihug.co.nz>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 0.3.0beta7
+
+[D] 0bd832df8b159a35d77d69d83739c14d9d8a4e365202390cc8fa2870 galan-0.3.0_beta7.tar.gz https://prdownloads.sourceforge.net/sourceforge/galan/
+
+# ALSA 1.0 API change workaround ... :-(
+var_append GCC_WRAPPER_APPEND ' ' "-DALSA_PCM_OLD_HW_PARAMS_API -DALSA_PCM_OLD_SW_PARAMS_API"

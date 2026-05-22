@@ -1,0 +1,69 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/phppgadmin/phppgadmin.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A PHP-based PostgreSQL administration utility
+
+[T] phpPgAdmin is a fully functional PHP-based administration package for
+[T] PostgreSQL. It has all the basic functionality you need to completely
+[T] administer a PosgreSQL server and/or database, including the ability to
+[T] administer views, sequences, stored procedures, and triggers. Features
+[T] include the ability to create and drop databases; create, copy, drop, and
+[T] alter tables/views/sequences/functions/triggers; edit and add fields (to
+[T] the extent Postgres allows); execute any SQL-statement, even
+[T] batch-queries; manage keys on fields; create and read dumps of database
+[T] and tables; and administer one single database, multiple servers, and
+[T] Postgres users/groups.
+
+[U] https://phppgadmin.sourceforge.net/
+
+[A] Christopher Kings-Lynne <chriskl@familyhealth.com.au>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/database
+
+[L] GPL
+[V] 7.14.7
+
+[D] 0ce3f54b86c8a993cd4e168be4b0c9f7ce57cb67c0195634616374fa phpPgAdmin-7.14.7-mod.tar.gz https://github.com/ReimuHakurei/phpPgAdmin/archive/v7.14.7-mod/
+
+# use the php prefix
+pkgprefix -t php
+prefix=$(pkgprefix php)
+set_confopt
+
+runmake=0
+
+hook_add postmake 5 phppgadmin_install
+hook_add postdoc  5 phppgadmin_installconf
+
+phppgadmin_install() {
+	local x="phpPgAdmin"
+
+	mkdir -vp $datadir/$x
+	mkdir -vp $sysconfdir/$x
+
+	# if $x/conf exists it's not overwritten, a new link is created
+	# inside, i.e. $x/conf/$x -> .
+	if [ ! -e $datadir/$x/conf ]; then
+		ln -vfs $sysconfdir/$x $datadir/$x/conf
+	fi
+
+	# phpPgAdmin/conf/config.inc.php excluded, template can be
+	# found at phpPgAdmin/conf/config.inc.php-dist
+	rm -f conf/config.inc.php
+	tar -c * | tar -x -v -C $datadir/$x
+}
+phppgadmin_installconf() {
+	local x="phpPgAdmin"
+
+	cat <<- EOT > $sysconfdir/$x.conf-dist
+		Alias /$x $datadir/$x
+		<Directory $datadir/$x>
+			DirectoryIndex index.php
+		</Directory>
+	EOT
+}

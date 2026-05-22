@@ -1,0 +1,34 @@
+[TIMESTAMP] 1745536212 Fri Apr 25 01:10:12 2025
+[BUILDTIME] 20 (9)
+[SIZE] 0.48 MB, 104 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] docbook-xml
+[DEP] docbook-xsl
+[DEP] extra-cmake-modules
+[DEP] freetype
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] kcoreaddons
+[DEP] kdoctools
+[DEP] ki18n
+[DEP] kio
+[DEP] kwidgetsaddons
+[DEP] libkgapi
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] procps
+[DEP] purpose
+[DEP] qt6base
+[DEP] qtkeychain
+[DEP] sed
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] xz

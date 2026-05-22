@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/hfsplusutils/hfsplusutils.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] HFS+ filesystem utilities
+
+[T] This package contains the Apple HFS+ filesystem utilities
+[T] ported to compile under Linux.
+
+[U] https://developer.apple.com/
+
+[A] Apple Inc.
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system extra/filesystem
+[F] CROSS
+
+[L] APSL
+[V] 757
+
+[D] 556eeea7b7d83949ea898ff59755ed5c5c8c6defea97ae1daf079c6a diskdev_cmds-757.tar.gz https://github.com/apple-oss-distributions/diskdev_cmds/archive/refs/tags/diskdev_cmds-757/
+
+[ $prefix_auto = 1 ] && prefix= && set_confopt
+
+var_insert makeopt ' ' '-f Makefile.lnx' # CFLAGS="-DDEBUG_BUILD=0 -D_FILE_OFFSET_BITS=64 -D LINUX=1 -D BSD=1 -I$PWD/../include"'
+makeinstopt=
+
+hook_add postmake 5 'install fsck_hfs.tproj/fsck_hfs $root$sbindir/fsck.hfsplus'
+hook_add postmake 5 'install newfs_hfs.tproj/newfs_hfs $root$sbindir/mkfs.hfsplus'

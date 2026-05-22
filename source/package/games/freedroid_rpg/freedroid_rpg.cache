@@ -1,0 +1,27 @@
+[TIMESTAMP] 1760017039 Thu Oct  9 15:37:19 2025
+[BUILDTIME] 55 (9)
+[SIZE] 242.12 MB, 6666 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[DEP] glew
+[DEP] glu
+[DEP] grep
+[DEP] gzip
+[DEP] libglvnd
+[DEP] libpng
+[DEP] libsdl
+[DEP] libsdl_gfx
+[DEP] libsdl_image
+[DEP] libsdl_mixer
+[DEP] linux-header
+[DEP] make
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] zlib

@@ -1,0 +1,13 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/lxde-common/config.in
+# Copyright (C) 2009 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+if pkgcheck lxde-common X
+then
+	menu_begin MENU_PKG_LXDE 'LXDE Package Options'
+		text 'Install prefix for LXDE Packages' \
+			SDECFG_PKG_LXDE_CORE_PREFIX "opt/lxde"
+	menu_end
+fi

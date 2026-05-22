@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rubygems/rubygems.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A package management framework for the Ruby programming language
+
+[T] Its a way to package Ruby libraries/applications for distribution, its a
+[T] distribution manager, its a package manager. RubyGems brings to the world
+[T] of Ruby a very valuable capability--the ability to manage concurrent
+[T] versions of libraries and dependencies between those libraries.
+
+[U] https://www.rubygems.org/
+
+[A] Jim Weirich, Richard Kilmer, Chad Fowler
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/development
+
+[L] OpenSource
+[V] 4.0.11
+
+[D] 05ba5ac4feca9f29cc499d99086acd00fa7396ecbc9c9343b39b1436 rubygems-4.0.11.tgz http://production.cf.rubygems.org/rubygems/
+
+custmain="ruby setup.rb"

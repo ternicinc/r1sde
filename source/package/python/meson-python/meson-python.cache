@@ -1,0 +1,19 @@
+[TIMESTAMP] 1765828219 Mon 15 Dec 2025 19:50:19 GMT
+[BUILDTIME] 2 (9)
+[SIZE] 0.09 MB, 21 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] packaging
+[DEP] pyproject-metadata
+[DEP] python
+[DEP] python-gpep517
+[DEP] sed
+[DEP] tar

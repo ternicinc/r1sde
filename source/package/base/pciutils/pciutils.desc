@@ -1,0 +1,57 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pciutils/pciutils.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Linux PCI Utilities
+
+[T] This package contains various utilities for inspecting and setting of
+[T] devices connected to the PCI bus and the PCI vendor/product ID database.
+
+[U] https://mj.ucw.cz/pciutils.shtml
+
+[A] Martin Mares <mj@suse.cz>
+[M] René Rebe <rene@exactco.de>
+
+[F] FPIC CROSS NO-LTO.clang
+[C] base/system
+
+[L] GPL
+[V] 3.15.0
+[P] X -----5---9 126.900
+
+[D] 2e1152e01e44ab9548ba32d723539c4313c2c16160dcc998a8c62d07 pciutils-3.15.0.tar.gz https://mj.ucw.cz/download/linux/pci/
+
+if [ "$SDECFG_STATIC" != 1 ]; then
+	var_append makeopt ' ' SHARED=yes
+	var_append makeinstopt ' ' SHARED=yes
+fi
+
+var_append makeopt ' ' "STRIP= LIBDIR=$libdir"
+var_append makeinstopt ' ' "STRIP= LIBDIR=$libdir install-lib"
+
+# build static flavour, likewise :-(
+if [ "$SDECFG_STATIC" != 1 ]; then
+	pciutils_static() {
+	    (
+		var_remove makeopt ' ' SHARED=yes
+		eval echo "Running $MAKE $makeopt"
+		eval $MAKE $makeopt
+		# TODO: fix this install-lib not symlink libpci.so to the .a
+		eval echo "Running $MAKE ${makeinstopt/ install / }"
+		eval $MAKE ${makeinstopt/ install / }
+		eval $MAKE clean
+	    )
+	}
+	hook_add premake 5 pciutils_static
+fi
+
+hook_add postmake 5 "ln -sfv hwdata/pci.ids $root$datadir/"
+
+pciutils_pm() {
+	mkdir -p $root$includedir/pci
+	cp -fv lib/{config,header,pci,types}.h $root$includedir/pci/
+}
+hook_add postmake 5 pciutils_pm

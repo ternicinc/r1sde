@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rav1e/rav1e.desc
+[COPY] Copyright (C) 2020 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The fastest and safest AV1 encoder
+
+[T] The fastest and safest AV1 encoder.
+
+[U] https://github.com/xiph/rav1e
+
+[A] Xiph.org
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+# TODO: check why nasm is not auto-detected
+[E] add nasm
+
+[L] BSD
+[V] 0.8.1
+[P] X -----5---9 140.100
+
+[D] 7c1df09171d233df3a22cb3d0810bb67f344025459b9a7b0785354da rav1e-0.8.1.tar.gz https://github.com/xiph/rav1e/archive/v0.8.1/
+
+hook_add postmake 5 "cargo cinstall ${root:+--destdir=$root} --prefix=/$prefix --libdir=$libdir"

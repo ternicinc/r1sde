@@ -1,0 +1,39 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rocknet/rocknet.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Network configuration
+
+[T] This package contains rocknet, the modular network configuration
+[T] engine, including the command line tools ifup, ifdown and ifswitch.
+
+[A] Claire Xenia Wolf <claire@clairexen.net>
+[A] René Rebe <rene@exactco.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+
+[L] GPL
+[V] 2024-09-19
+[P] X --2------9 111.000
+
+srctar= runmake=0
+
+sbindir=/sbin
+libdir=/lib/network
+
+pkg_rocknet_install() {
+	echo "Installing the rock-net files ..."
+	install -v -m 755 $confdir/rocknet.sh $root$sbindir/rocknet
+	install -v -m 755 $confdir/ifup.sh $root$sbindir/ifup
+	install -v -m 755 $confdir/ifswitch.sh $root$sbindir/ifswitch
+	install -v -m 755 $confdir/rocknet-getprofile $root/etc/conf/network-getprofile
+	ln -sf ifup $root$sbindir/ifdown
+}
+hook_add postmake 5 pkg_rocknet_install
+
+hook_add postdoc 5 'var_remove rmemptydir " " "$root$libdir"'

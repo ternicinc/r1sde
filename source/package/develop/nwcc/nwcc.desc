@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/nwcc/nwcc.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A small C compiler for Unix systems
+
+[T] Nwcc is a small C compiler for Unix systems targeting FreeBSD, OpenBSD,
+[T] Linux and Solaris on x86 (nasm/gas), FreeBSD and Linux on AMD64 (yasm/gas),
+[T] AIX on PPC and PPC64, and IRIX on MIPS64. Cross-compilation is supported.
+
+[U] https://nwcc.sourceforge.net/
+
+[A] Nils Weller <nils@gnulinux.nl>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/development
+
+[L] BSD
+[V] 0.8.3
+
+[D] 352664d003195f24b4011fadb7c9ddbb3688fdd9a6cb910a048e579b nwcc_0.8.3.tar.gz https://prdownloads.sourceforge.net/sourceforge/nwcc/
+
+# this configure does not take many more options
+cleanconfopt=0
+confopt="--installprefix=$root/$prefix"

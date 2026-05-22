@@ -1,0 +1,19 @@
+[TIMESTAMP] 1737557672 Wed Jan 22 15:54:32 2025
+[BUILDTIME] 60 (9)
+[SIZE] 0.84 MB, 86 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] gawk
+[DEP] grep
+[DEP] kcodecs
+[DEP] linux-header
+[DEP] make
+[DEP] qt6base
+[DEP] sed
+[DEP] tar
+[DEP] xz

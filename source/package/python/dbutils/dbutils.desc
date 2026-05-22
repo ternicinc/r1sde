@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dbutils/dbutils.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A suite of thread safe Python modules to connect to databases
+
+[T] DBUtils is a suite of Python modules allowing to connect in a safe and
+[T] efficient way between a threaded Python application and a database.
+[T] DBUtils has been written in view of Webware for Python as the application
+[T] and PyGreSQL as the adapter to a PostgreSQL database, but it can be used
+[T] for any other Python application and DB-API 2 conformant database adapter.
+
+[U] https://webwareforpython.github.io/DBUtils/
+
+[A] Christoph Zwerschke <cito@online.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] OpenSource
+
+[V] 3.1.2
+[P] X -----5---9 300.000
+
+[CV-TR] s/\./_/
+[D] cf0ca9974db2c7f4553cc70bdd75cdcd72c0e363fdaad93b72fae9d5 dbutils-3.1.2.tar.gz https://github.com/WebwareForPython/DBUtils/archive/Release-3_1_2/

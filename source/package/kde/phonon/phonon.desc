@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/phonon/phonon.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] KDE Media Framework
+
+[T] Phonon is the multimedia API for KDE. Phonon was created to allow
+[T] KDE to be independent of any single multimedia framework such as
+[T] GStreamer or Xine and to provide a stable API for KDE's lifetime.
+[T] It was done to fix problems of frameworks becoming unmaintained, API
+[T] instability, and to create a simple multimedia API.
+
+[U] https://invent.kde.org/libraries/phonon
+
+[A] Matthias Kretz
+[A] Helio Chissini de Castro
+[A] Nuno Pinheiro
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS OBJDIR
+
+[L] LGPL
+[V] 4.12.0
+[P] X -----5---9 162.911
+
+[D] 340628af68cc3fe8d9bccebb7efbee84f1811f767f1f604a1dac3b2a phonon-4.12.0.tar.xz https://download.kde.org/stable/phonon/4.12.0/
+
+. $base/package/*/*/kde-conf.in
+#pkginstalled gobject-introspection && var_append GCC_WRAPPER_INSERT ' ' "-L`pkgprefix libdir gobject-introspection`"
+var_append cmakeopt ' ' "-DPHONON_BUILD_QT5=OFF -DPHONON_BUILD_QT6=ON"

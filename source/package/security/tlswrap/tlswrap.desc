@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/tlswrap/tlswrap.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A TLS/SSL FTP wrapper/proxy for UNIX and Windows
+
+[T] TLSWrap is a TLS/SSL FTP wrapper/proxy for UNIX (including Linux, *BSD,
+[T] and Solaris) and Windows, allowing you to use your favourite FTP client
+[T] with any TLS/SSL-enabled FTP server. Features include full encryption of
+[T] both control and data connections, and support for X. 509 PKI certificate
+[T] handling and validation.
+
+[U] https://www.tlswrap.com/
+
+[A] Tomas Svensson <ts@unix1.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+[F] CROSS
+
+[L] BSD
+[V] 1.04
+
+[D] 72ecaad1a48a09c0beb733704ba42a2290c161b59d3d9cd7856cd123 tlswrap-1.04.tar.gz https://www.tlswrap.com/
+
+# no DESTDIR
+var_append confopt ' ' --bindir=\${DESTDIR}$bindir

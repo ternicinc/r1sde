@@ -1,0 +1,23 @@
+[TIMESTAMP] 1738086322 Tue Jan 28 18:45:22 2025
+[BUILDTIME] 155 (9)
+[SIZE] 13.36 MB, 300 files
+
+[DEP] alsa-lib
+[DEP] autoconf
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libtool
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] perl
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

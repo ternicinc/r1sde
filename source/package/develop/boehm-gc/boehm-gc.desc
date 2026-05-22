@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/boehm-gc/boehm-gc.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A garbage collector for C and C++
+
+[T] The Boehm-Demers-Weiser conservative C/C++ Garbage Collector (bdwgc, also
+[T] known as bdw-gc, boehm-gc, libgc) can be used as a garbage collecting
+[T] replacement for C malloc or C++ new. It is also used by a number of
+[T] programming language implementations that use C as intermediate code.
+
+[U] https://hboehm.info/gc/
+
+[A] Hans-J. Boehm <Hans_Boehm@hp.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+[R] - avr32 blackfin cris riscv
+
+[L] GPL
+[V] 8.2.12
+[P] X --2--5---9 101.800
+
+[D] 31e2bb41d03ff3c839892a7960abc9f7f70c7ddb01200ba590a347e8 gc-8.2.12.tar.gz https://github.com/bdwgc/bdwgc/releases/download/v8.2.12/
+
+var_append GCC_WRAPPER_INSERT ' ' -D_GNU_SOURCE=1

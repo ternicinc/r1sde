@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libliftoff/libliftoff.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Lightweight KMS plane library
+
+[T] Libliftoff eases the use of KMS planes from userspace without standing
+[T] in your way. Users create "virtual planes" called layers, set KMS
+[T] properties on them, and libliftoff will pick hardware planes for
+[T] these layers if possible.
+
+[U] https://gitlab.freedesktop.org/emersion/libliftoff
+
+[A] Libliftoff Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+
+[V] 0.5.0
+[L] MIT
+[P] X -----5---9 145.000
+
+[D] c6b9c2904c2fa71766d67862202893f264b583fcf1204b0679bb4466 libliftoff-v0.5.0.tar.gz https://gitlab.freedesktop.org/emersion/libliftoff/-/archive/v0.5.0/

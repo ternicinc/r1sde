@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/target/embedded-minimal/config.in
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+#Description: Embedded Minimal
+
+SDECFGSET_INIT='busybox'
+
+SDECFGSET_OPT='size'
+
+SDECFGSET_DO_REBUILD_STAGE=0
+SDECFGSET_CROSSBUILD=1
+SDECFGSET_DISABLE_NLS=1
+
+SDECFGSET_LIBC="uclibc"

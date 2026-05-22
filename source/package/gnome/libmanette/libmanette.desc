@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libmanette/libmanette.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The simple GObject game controller library
+
+[T] libmanette offers painless access to game controllers, from any programming
+[T] language and with little dependencies.
+[T] It supports the de-facto standard gamepad, as defined by the W3C standard
+[T] gamepad specification or as implemented by the SDL GameController.
+[T] Convertion of raw gamepad events into usable ones is handled transparently
+[T] using an embedded library of mappings in the popular SDL mapping string
+[T] format.
+
+[U] https://gitlab.gnome.org/GNOME/libmanette
+
+[A] The GNOME Developers
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] LGPL
+[V] 0.2.13
+[P] X -----5---9 209.700
+
+[D] 453efba87454545c88dfa645906cfcdebcaf0a36efd3a9a10e9766b0 libmanette-0.2.13.tar.xz https://download.gnome.org/sources/libmanette/0.2/
+
+. $base/package/*/*/gnome-conf.in
+pkginstalled gobject-introspection || var_append mesonopt ' ' -Dintrospection=false
+pkginstalled vala || var_append mesonopt ' ' -Dvapi=false

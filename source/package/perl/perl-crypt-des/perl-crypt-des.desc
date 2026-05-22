@@ -1,0 +1,20 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-crypt-des/perl-crypt-des.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl DES encryption module
+
+[T] The module implements the Crypt::CBC interface.
+
+[A] Dave Paris <amused@pobox.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 2.07
+[P] X -----5---9 113.300
+
+[D] be345a273fe301b509656d0f7423adfceefb7ce4108b3ceeff9fd4ad Crypt-DES-2.07.tar.gz http://search.cpan.org/CPAN/authors/id/D/DP/DPARIS/

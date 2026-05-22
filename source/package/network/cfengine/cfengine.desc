@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cfengine/cfengine.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A tool for administering Networks of Diverse Machines
+
+[T] Cfengine is a tool for setting up and maintaining BSD and System-5-like
+[T] operating system optionally attached to a TCP/IP network. You can think
+[T] of cfengine as a very high level language, much higher level than Perl
+[T] or shell: a single statement can result in many hundreds of operations
+[T] being performed on multiple hosts. Cfengine is good at performing a lot
+[T] of common system administration tasks, and allows you to build on its
+[T] strengths with your own scripts. You can also use it as a netwide
+[T] front-end for `cron'.
+
+[U] https://www.cfengine.org/
+
+[A] Mark Burgess <Mark.Burgess@iu.hio.no>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/configuration extra/network
+[F] NOPARALLEL
+
+[L] GPL
+[V] 3.27.0
+
+[D] ac503add0dd3e7352cf0195c782bb5b6e977f012073b64adeb7f20b5 cfengine-community-3.27.0.tar.gz https://cfengine-package-repos.s3.amazonaws.com/tarballs/
+
+confopt="$confopt --with-berkeleydb=$root/usr"

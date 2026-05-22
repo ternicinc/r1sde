@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pulseaudio/pulseaudio.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Yet another sound server for Unix
+
+[T] PulseAudio is a sound server for Linux and other Unix-like operating
+[T] systems. It is intended to be an improved drop-in replacement for the
+[T] Enlightened Sound Daemon (esound or esd). In addition to the features
+[T] esound provides, PulseAudio has an extensible plugin architecture,
+[T] support for more than one sink per source, better low-latency behavior,
+[T] the ability to be embedded into other software, a completely asynchronous
+[T] C API, a simple command line interface for reconfiguring the daemon while
+[T] running, flexible and implicit sample type conversion and resampling,
+[T] and a "Zero-Copy" architecture.
+
+[U] https://www.freedesktop.org/wiki/Software/PulseAudio/
+
+[A] Mezcalero <mzserfuzrng@0pointer.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS NO-LTO.clang
+
+[E] opt jack2
+
+[L] LGPL GPL
+[V] 17.0
+[P] X -----5---9 152.600
+
+[D] 5b17b94bb01fa44109e5ffd2e638d98ee801ccd3b4ef0bb903692618 pulseaudio-17.0.tar.xz http://www.freedesktop.org/software/pulseaudio/releases/
+
+pkginstalled doxygen || var_append mesonopt ' ' -Ddoxygen=false
+pkginstalled bluez && var_append mesonopt ' ' -Dbluez5=enabled
+pkginstalled pipewire && var_append mesonopt ' ' -Ddaemon=false
+var_append mesonopt ' ' '-Ddatabase=simple -Dtests=false'

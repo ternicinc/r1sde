@@ -1,0 +1,16 @@
+
+
+[TIMESTAMP] 1718830951 Wed Jun 19 23:02:31 2024
+[BUILDTIME] 6 (9)
+[SIZE] 10.17 MB, 528 files
+
+[DEP] 00-dirtree
+[DEP] coreutils
+[DEP] curl
+[DEP] libsdl2
+[DEP] libsdl2_gfx
+[DEP] libsdl2_image
+[DEP] libsdl2_ttf
+[DEP] tar
+[DEP] zenity
+[DEP] zig

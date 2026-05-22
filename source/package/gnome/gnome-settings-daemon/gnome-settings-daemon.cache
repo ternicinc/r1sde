@@ -1,0 +1,45 @@
+[TIMESTAMP] 1760444157 Tue Oct 14 14:15:57 2025
+[BUILDTIME] 12 (9)
+[SIZE] 5.93 MB, 147 files
+
+[DEP] alsa-lib
+[DEP] bash
+[DEP] binutils
+[DEP] colord
+[DEP] coreutils
+[DEP] cups
+[DEP] diffutils
+[DEP] fontconfig
+[DEP] gawk
+[DEP] gcr
+[DEP] gdk-pixbuf
+[DEP] geoclue
+[DEP] geocode-glib
+[DEP] gettext
+[OPT] glib
+[DEP] gnome-desktop
+[DEP] grep
+[DEP] gsettings-desktop-schemas
+[DEP] gudev
+[DEP] libcanberra
+[DEP] libgweather
+[DEP] libnotify
+[DEP] libx11
+[DEP] libxfixes
+[DEP] linux-header
+[DEP] meson
+[DEP] modemmanager
+[DEP] networkmanager
+[DEP] ninja
+[DEP] openssl
+[DEP] p11-kit
+[DEP] perl
+[DEP] polkit
+[DEP] pulseaudio
+[DEP] python
+[DEP] sed
+[OPT] systemd
+[DEP] tar
+[DEP] upower
+[DEP] xorgproto
+[DEP] xz

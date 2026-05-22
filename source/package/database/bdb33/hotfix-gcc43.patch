@@ -1,0 +1,24 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/bdb33/hotfix-gcc43.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- db-3.3.11/include/db_cxx.h.vanilla	2008-04-09 10:21:01.000000000 +0000
++++ db-3.3.11/include/db_cxx.h	2008-04-09 10:22:14.000000000 +0000
+@@ -49,12 +49,14 @@
+ // Forward declarations
+ //
+ 
+-#include <iostream.h>
++#include <iostream>
+ #include <stdarg.h>
+ #include "db.h"
+ #include "cxx_common.h"
+ #include "cxx_except.h"
+ 
++using namespace std; // evil, but this is aging code anyway ...
++
+ class Db;                                        // forward
+ class Dbc;                                       // forward
+ class DbEnv;                                     // forward

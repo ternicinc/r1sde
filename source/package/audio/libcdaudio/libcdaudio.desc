@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libcdaudio/libcdaudio.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A cddb and cd playing library
+
+[T] libcdaudio is used by mythmusic for cddb and cd audio grabbing.
+
+[U] https://libcdaudio.sf.net
+
+[A] Fabrice Bauzac <noon@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 0.99.12p2
+[P] X -----5---9 114.900
+
+[D] f402aca2dd24af97fff2a08d273cf3f8bb82fc196eafcef1d370800e libcdaudio-0.99.12p2.tar.gz https://prdownloads.sourceforge.net/sourceforge/libcdaudio/

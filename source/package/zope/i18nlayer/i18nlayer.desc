@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/i18nlayer/i18nlayer.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A fully transparent multilingual content solution for zope/plone
+
+[T] I18NLayer provides a fully transparent virtual layer above multiple content objects.
+[T] Each content object represents a special language translation. By use of automatic
+[T] or manual language negotiation the I18NLayer objects delivers the matching language
+[T] to the user.
+
+[U] https://cvs.sourceforge.net/viewcvs.py/collective/I18NLayer/
+
+[A] The Plone Collective
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[E] add zope
+
+[L] OpenSource
+
+[V] 0.7.0
+
+[D] 22c48aac163e3756d59be4e2ae0c57c54ae255a57f11c2b99d03442a I18NLayer-0.7.0.tar.gz https://download.sourceforge.net/collective/
+
+. $base/package/*/zope/zope-conf.in

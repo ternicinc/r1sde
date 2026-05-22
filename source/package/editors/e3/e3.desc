@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/e3/e3.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A mini text editor
+
+[T] e3 is a mini text editor written in assembler.
+
+[U] https://sites.google.com/site/e3editor/
+
+[A] Albrecht Kleine
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/editor
+[F] CROSS
+[R] + x86 x86-64
+
+[L] GPL
+[V] 2.82
+
+[D] 000c06e4328d1f1f5ff248e383cebf84ed4013de238801e6bba72cc9 e3-2.82.tgz !https://sites.google.com/site/e3editor/Home/e3-2.82.tgz?attredirects=0&d=1
+
+var_append makeinstopt ' ' PREFIX=$root/$prefix

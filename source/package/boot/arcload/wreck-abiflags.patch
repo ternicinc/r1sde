@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/arcload/wreck-abiflags.patch
+# Copyright (C) 2020 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- arcload-0.5/ecoff/wreckoff.c.vanilla	2020-08-13 20:39:40.001439263 +0000
++++ arcload-0.5/ecoff/wreckoff.c	2020-08-13 20:38:56.649439263 +0000
+@@ -402,7 +402,7 @@
+ 		shnames[i] = (strtabs[ehdr.e_shstrndx] + shdr.sh_name);
+ 
+ 		if((shdr.sh_flags & SHF_ALLOC)) {
+-			if(shdr.sh_type == SHT_REGINFO) {
++			if(shdr.sh_type == SHT_REGINFO || shdr.sh_type == 0x7000002A) {
+ 				fseek(f, shdr.sh_offset, SEEK_SET);
+ 				fread(&reginfo, sizeof(Elf32_RegInfo), 1, f);
+ 				swap_RegInfo(&reginfo);

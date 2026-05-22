@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libssh2/libssh2.desc
+[COPY] Copyright (C) 2013 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A client-side C library implementing the SSH2 protocol
+
+[T] libssh2 is a client-side C library implementing the SSH2 protocol
+
+[U] https://www.libssh2.org/
+
+[A] Daniel Stenberg <daniel@haxx.se>
+[M] Gerardo Di Iorio <arete74@gmail.com>
+
+[C] extra/security
+[F] CROSS NO-LTO.clang
+
+[L] OpenSource
+[V] 1.11.1
+[P] X -----5---9 135.800
+
+[D] 17e00a7b3852a74bee896066ee7758daed71ff4ea3fb5cd8b596962e libssh2-1.11.1.tar.xz http://www.libssh2.org/download/

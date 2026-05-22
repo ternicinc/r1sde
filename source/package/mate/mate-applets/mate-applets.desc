@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mate-applets/mate-applets.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Applets for use with the MATE panel
+
+[T] This package contains applets for use with the MATE panel. Therefore, it
+[T] requires mate-panel to be installed. To build all applets additional
+[T] libraries may be needed.
+
+[U] https://mate-desktop.org/
+
+[A] MATE developer
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/mate
+
+[L] GPL
+[V] 1.28.1
+[P] X -----5---9 700.000
+
+[D] 8932e4d032eba60016fc65273a4ad4b66a7d1e9ec3056508b5f9117c mate-applets-1.28.1.tar.xz https://pub.mate-desktop.org/releases/1.28/
+
+. $base/package/*/*/mate-conf.in
+var_append GCC_WRAPPER_APPEND ' ' "$(pkg-config --libs x11)"

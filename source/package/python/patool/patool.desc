@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/patool/patool.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Python archive file manager
+
+[T] Patool is an archive file manager written in python supporting many
+[T] formats. It can also be used in other programs as a library.
+
+[U] https://wummel.github.io/patool/
+
+[A] Bastian Kleineidam <bastian.kleineidam@web.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[E] add setuptools-reproducible
+
+[L] GPL3
+[V] 4.0.5
+
+[D] dec1c121875daa37838f3495f3397b8b58eaee4d31da4d4f62669488 patool-4.0.5.tar.gz https://files.pythonhosted.org/packages/source/p/patool/

@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libunique/libunique.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library for writing single instance application
+
+[T] Unique is a library for writing single instance application. If you
+[T] launch a single instance application twice, the second instance will
+[T] either just quit or will send a message to the running instance.
+
+[U] https://live.gnome.org/LibUnique
+
+[A] Emmanuele Bassi <ebassi@gnome.org>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/desktop/gnome
+[F] CROSS
+
+[L] LGPL
+[V] 3.0.2
+[P] X -----5---9 153.299
+
+[CV-URL] https://download.gnome.org/sources/libunique/cache.json
+[D] 118a9b907701d96a3bf25d6641a58b923915ea5e89af2b1cdbb6b188 libunique-3.0.2.tar.xz https://download.gnome.org/sources/libunique/3.0/
+
+. $base/package/*/*/gnome-conf.in

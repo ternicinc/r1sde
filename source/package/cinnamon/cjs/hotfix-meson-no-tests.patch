@@ -1,0 +1,155 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/cjs/hotfix-meson-no-tests.patch
+# Copyright (C) 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- cjs-128.0/meson.build.vanilla	2025-04-21 12:01:28.716209479 +0200
++++ cjs-128.0/meson.build	2025-04-21 12:03:54.578439071 +0200
+@@ -578,19 +578,6 @@
+ cjs_console = executable('cjs-console', cjs_console_srcs,
+     dependencies: libcjs_dep, install: true)
+ 
+-meson.add_install_script('build/symlink-cjs.py', bindir)
+-
+-### Install data files #########################################################
+-
+-install_data('installed-tests/extra/gjs.supp', install_dir: cjsjsdir / 'valgrind')
+-install_data('installed-tests/extra/lsan.supp', install_dir: cjsjsdir / 'lsan')
+-
+-if get_option('installed_tests')
+-    schemadir = datadir / 'glib-2.0' / 'schemas'
+-    install_data('installed-tests/js/org.cinnamon.CjsTest.gschema.xml', install_dir: schemadir)
+-    meson.add_install_script(glib_compile_schemas, prefix / schemadir, skip_if_destdir: true)
+-endif
+-
+ ### Generate pkg-config file ###################################################
+ 
+ pkg.generate(libcjs, name: api_name, description: 'JS bindings for GObjects',
+@@ -606,20 +593,12 @@
+ 
+ tests_environment = environment()
+ gi_tests_builddir = meson.project_build_root() / 'subprojects' / 'gobject-introspection-tests'
+-js_tests_builddir = meson.current_build_dir() / 'installed-tests' / 'js'
+-libcjs_test_tools_builddir = js_tests_builddir / 'libgjstesttools'
+ # GJS_PATH is empty here since we want to force the use of our own
+ # resources. G_FILENAME_ENCODING ensures filenames are not UTF-8
+ tests_environment.set('TOP_BUILDDIR', meson.project_build_root())
+ tests_environment.set('GJS_USE_UNINSTALLED_FILES', '1')
+ tests_environment.set('GJS_PATH', '')
+ tests_environment.set('GJS_DEBUG_OUTPUT', 'stderr')
+-tests_environment.prepend('GI_TYPELIB_PATH', meson.current_build_dir(),
+-    gi_tests_builddir, js_tests_builddir, libcjs_test_tools_builddir)
+-tests_environment.prepend('LD_LIBRARY_PATH', meson.current_build_dir(),
+-    gi_tests_builddir, js_tests_builddir, libcjs_test_tools_builddir)
+-tests_environment.prepend('DYLD_LIBRARY_PATH', meson.current_build_dir(),
+-    gi_tests_builddir, js_tests_builddir, libcjs_test_tools_builddir)
+ tests_environment.set('G_FILENAME_ENCODING', 'latin1')
+ # Workaround for https://github.com/google/sanitizers/issues/1322
+ tests_environment.set('ASAN_OPTIONS', 'intercept_tls_get_addr=0')
+@@ -631,22 +610,10 @@
+         meson.current_source_dir() / 'installed-tests' / 'extra' / 'tsan.supp'))
+ tests_environment.set('G_SLICE', 'always-malloc')
+ tests_environment.set('NO_AT_BRIDGE', '1')
+-tests_environment.set('GSETTINGS_SCHEMA_DIR', js_tests_builddir)
+ tests_environment.set('GSETTINGS_BACKEND', 'memory')
+ tests_environment.set('G_DEBUG', 'fatal-warnings,fatal-criticals')
+ 
+ tests_locale = 'N/A'
+-if cxx.get_argument_syntax() != 'msvc'
+-    result = run_command('build/choose-tests-locale.sh', check: false)
+-    if result.returncode() == 0
+-        tests_locale = result.stdout().strip()
+-        tests_environment.set('LC_ALL', tests_locale)
+-    endif
+-endif
+-
+-if not get_option('skip_gtk_tests')
+-    tests_environment.set('ENABLE_GTK', 'yes')
+-endif
+ 
+ if get_option('b_coverage')
+     tests_environment.set('GJS_UNIT_COVERAGE_OUTPUT', 'lcov')
+@@ -654,82 +621,6 @@
+         'resource:///org/cinnamon/cjs')
+ endif
+ 
+-### Tests and test setups ######################################################
+-
+-# External code should not error out even when building with -Werror
+-gi_tests = subproject('gobject-introspection-tests',
+-    default_options: ['werror=false', 'cairo=true',
+-        'install_dir=@0@'.format(installed_tests_execdir)])
+-
+-subdir('installed-tests')
+-
+-# Note: The test program in test/ needs to be ported
+-#       to Windows before we can build it on Windows.
+-if host_machine.system() != 'windows'
+-    subdir('test')
+-endif
+-
+-valgrind_environment = environment()
+-valgrind_environment.set('G_SLICE', 'always-malloc,debug-blocks')
+-valgrind_environment.set('G_DEBUG',
+-    'fatal-warnings,fatal-criticals,gc-friendly')
+-valgrind_environment.set('VALGRIND', 'valgrind')
+-
+-glib_prefix = glib.get_variable(pkgconfig: 'prefix', default_value: '/usr')
+-glib_suppresssions = (glib_prefix / 'share' / 'glib-2.0' / 'valgrind' /
+-    'glib.supp')
+-cjs_suppressions = (meson.current_source_dir() / 'installed-tests' / 'extra' /
+-    'cjs.supp')
+-valgrind_args = [
+-    '--suppressions=@0@'.format(glib_suppresssions),
+-    '--suppressions=@0@'.format(cjs_suppressions),
+-    '--leak-check=full',
+-    '--num-callers=15',
+-    '--trace-children=yes',
+-    '--trace-children-skip=*basename,*cat,*diff,*echo,*grep,*rm,*sed,*stat,*true',
+-    '--error-exitcode=1'
+-]
+-
+-add_test_setup('quiet', env: ['GJS_DEBUG_TOPICS='], is_default: true)
+-add_test_setup('verbose')
+-
+-add_test_setup('valgrind', timeout_multiplier: 40, env: valgrind_environment,
+-    exe_wrapper: ['valgrind'] + valgrind_args)
+-
+-zeal2_environment = environment()
+-zeal2_environment.set('JS_GC_ZEAL', '2,10')
+-add_test_setup('extra_gc', timeout_multiplier: 40, env: zeal2_environment)
+-
+-zeal4_environment = environment()
+-zeal4_environment.set('JS_GC_ZEAL', '4')
+-add_test_setup('pre_verify', timeout_multiplier: 40, env: zeal4_environment)
+-
+-zeal11_environment = environment()
+-zeal11_environment.set('JS_GC_ZEAL', '11')
+-add_test_setup('post_verify', timeout_multiplier: 2, env: zeal11_environment)
+-
+-### Warn about conditions that may affect runtime ##############################
+-
+-if tests_locale == 'C' or tests_locale == 'N/A'
+-    warning('''Your libc does not have the C.UTF-8 locale and no other
+-suitable UTF-8 fallback locale could be found. You can still build GJS, but
+-some tests will fail.''')
+-endif
+-
+-if get_option('buildtype').startswith('debug') and nondebug_spidermonkey
+-    warning('''Your copy of SpiderMonkey is not debug-enabled, but you are
+-building a debug or debugoptimized build. This will make development more
+-difficult. Consider reconfiguring SpiderMonkey with --enable-debug.''')
+-endif
+-
+-if get_option('skip_gtk_tests')
+-    warning('Not using GTK, not all tests will be run.')
+-endif
+-
+-if get_option('skip_dbus_tests')
+-    warning('Not using DBus, not all tests will be run.')
+-endif
+-
+ ### Summarize options ##########################################################
+ 
+ summary({

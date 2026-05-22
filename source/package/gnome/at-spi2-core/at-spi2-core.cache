@@ -1,0 +1,32 @@
+[TIMESTAMP] 1768841057 Mon Jan 19 17:44:17 2026
+[BUILDTIME] 18 (9)
+[SIZE] 4.29 MB, 242 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] dbus
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[OPT] glib
+[DEP] gobject-introspection
+[DEP] grep
+[DEP] libx11
+[DEP] libxext
+[DEP] libxfixes
+[DEP] libxi
+[DEP] libxml
+[DEP] libxtst
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar
+[DEP] util-linux
+[DEP] xorgproto
+[DEP] xz

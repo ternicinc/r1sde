@@ -1,0 +1,47 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sope/sope.desc
+[COPY] Copyright (C) 2005 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] SKYRiX (SOPE) Application Server
+
+[T] The SOPE package is an extensive set of frameworks (16 frameworks,
+[T] ~1500 classes) which form a complete Web application server
+[T] environment. Besides the Apple WebObjects compatible appserver
+[T] extended with Zope concepts, it contains a large set of reusable
+[T] classes: XML processing (SAX2, DOM, XML-RPC), MIME/IMAP4 processing,
+[T] LDAP connectivity, RDBMS connectivity, and iCalendar parsing.
+
+[U] http://sope.opengroupware.org/en/
+
+[A] SKYRIX Software AG <info@skyrix.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] LGPL
+[V] 4.6.0
+
+[D] 8383b7af2a59a1e1f306c7aa2b5602909f42ae49df0eb8ba94e5a8d3 sope-4.6.0.tar.zst svn+http://svn.opengroupware.org/SOPE/branches/sope-4.6/ SOPE-4.6
+
+. $base/package/*/*/gnustep-conf.in
+
+confopt="--with-gnustep --gsmake=$prefix/System"
+
+# to compile with apr*-1.x
+var_append GCC_WRAPPER_INSERT ' ' -D_LARGEFILE64_SOURCE
+
+for x in openldap postgresql; do
+	pkgprefix -t $x
+	var_append GCC_WRAPPER_APPEND ' ' "-I$(pkgprefix includedir $x)"
+	var_append GCC_WRAPPER_APPEND ' ' "-L$(pkgprefix libdir $x)"
+done
+
+if pkginstalled apache; then
+	pkgprefix -t apache
+	hook_add inmake 5 'eval $MAKE $makeopt -C ./sope-appserver/mod_ngobjweb/'
+	hook_add postmake 5 "cp -vf ./sope-appserver/mod_ngobjweb/mod_ngobjweb.so \
+		$root/$(pkgprefix prefix apache)/modules/"
+	hook_add postdoc 5 'cp -vf ./sope-appserver/mod_ngobjweb/README $docdir/README.mod_ngobjweb'
+fi

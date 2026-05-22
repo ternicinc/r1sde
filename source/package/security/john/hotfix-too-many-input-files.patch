@@ -1,0 +1,39 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/john/hotfix-too-many-input-files.patch
+# Copyright (C) 2023 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+Prevent the preprocessor from complaining about too many input files.
+
+  - NoTag <notag@maneto.fr>
+
+--- src/configure.vanilla	2023-01-21 23:43:36.716533433 +0100
++++ src/configure	2023-01-22 00:30:43.286679269 +0100
+@@ -17870,7 +17870,7 @@
+ fi
+ 
+ if test "`echo *_fmt_plug.c`" != "*_fmt_plug.c"; then
+-   $CPP -P -DAC_BUILT $CFLAGS_EX2 $CPPFLAGS $CPU_BEST_FLAGS $CFLAGS $HAVE_OPENCL $CFLAGS_EXTRA $OPENMP_CFLAGS $OPENSSL_CFLAGS -DFMT_EXTERNS_H *_fmt_plug.c | LC_ALL=C $GREP "extern struct fmt_main" | LC_ALL=C $SORT -f > fmt_externs.h
++   for x in *_fmt_plug.c; do $CPP -P -DAC_BUILT $CFLAGS_EX2 $CPPFLAGS $CPU_BEST_FLAGS $CFLAGS $HAVE_OPENCL $CFLAGS_EXTRA $OPENMP_CFLAGS $OPENSSL_CFLAGS -DFMT_EXTERNS_H $x | LC_ALL=C $GREP "extern struct fmt_main" | LC_ALL=C $SORT -f >> fmt_externs.h; done
+ fi
+ if test -f fmt_externs.h -a ! -s fmt_externs.h; then
+   cp Makefile.stub Makefile
+@@ -17883,7 +17883,7 @@
+ $as_echo "$as_me: creating ./fmt_registers.h" >&6;}
+ rm -f fmt_registers.h
+ if test "`echo *_fmt_plug.c`" != "*_fmt_plug.c"; then
+-   $CPP -P -DAC_BUILT $CFLAGS_EX2 $CPPFLAGS $CPU_BEST_FLAGS $CFLAGS $CFLAGS_EXTRA $OPENMP_CFLAGS $OPENSSL_CFLAGS -DFMT_REGISTERS_H *_fmt_plug.c | LC_ALL=C $GREP "john_register_one" | LC_ALL=C $SORT -f > fmt_registers.h
++   for x in *_fmt_plug.c; do $CPP -P -DAC_BUILT $CFLAGS_EX2 $CPPFLAGS $CPU_BEST_FLAGS $CFLAGS $CFLAGS_EXTRA $OPENMP_CFLAGS $OPENSSL_CFLAGS -DFMT_REGISTERS_H $x | LC_ALL=C $GREP "john_register_one" | LC_ALL=C $SORT -f >> fmt_registers.h; done
+ fi
+ if test -f fmt_registers.h -a ! -s fmt_registers.h; then
+   cp Makefile.stub Makefile
+@@ -17894,7 +17894,7 @@
+ fi
+ 
+ if test "`echo opencl_*_fmt_plug.c`" != "opencl_*_fmt_plug.c"; then
+-   $CPP -P -DAC_BUILT $CFLAGS_EX2 $CPPFLAGS $CPU_BEST_FLAGS $CFLAGS $HAVE_OPENCL $CFLAGS_EXTRA $OPENMP_CFLAGS $OPENSSL_CFLAGS -DFMT_REGISTERS_H opencl_*_fmt_plug.c | LC_ALL=C $GREP "john_register_one" | LC_ALL=C $SORT -f >> fmt_registers.h
++   for x in opencl_*_fmt_plug.c; do $CPP -P -DAC_BUILT $CFLAGS_EX2 $CPPFLAGS $CPU_BEST_FLAGS $CFLAGS $HAVE_OPENCL $CFLAGS_EXTRA $OPENMP_CFLAGS $OPENSSL_CFLAGS -DFMT_REGISTERS_H $x | LC_ALL=C $GREP "john_register_one" | LC_ALL=C $SORT -f >> fmt_registers.h; done
+ fi
+ 
+ 

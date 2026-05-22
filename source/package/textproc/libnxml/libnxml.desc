@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libnxml/libnxml.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A C library for parsing, writing, and creating XML 1.0 and 1.1 files
+
+[T] NXML is a C library for parsing, writing, and creating XML 1. 0 and 1. 1
+[T] files or streams. It supports UTF-8, UTF-16be and UTF-16le, UCS-4 (1234,
+[T] 4321, 2143, 2312).
+
+[U] https://www.autistici.org/bakunin/libnxml/doc/
+
+[A] Andrea Marchesini <bakunin@autistici.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[L] LGPL
+[V] 0.18.5
+[P] X -----5---9 300.000
+
+[D] e9c883f765ca36d36d61c6f2125aeba910189787e45914c202f55881 libnxml-0.18.5.tar.gz https://github.com/bakulf/libnxml/archive/0.18.5/
+
+autogen=1

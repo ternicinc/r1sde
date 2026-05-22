@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/qt6lottie/qt6lottie.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Qt6 Lottie
+
+[T] Lottie is a family of player software for a certain json-based file format
+[T] for describing 2d vector graphics animations. These files are
+[T] created/exported directly from After Effects by a plugin called Bodymovin.
+
+[U] https://qt.io
+
+[A] Trolltech AS <www.trolltech.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS OBJDIR
+
+[L] LGPL
+[V] 6.11.1
+[P] X -----5---9 140.000
+
+[CV-GROUP] qt6
+[D] 639c7deb77a21f004dfc4f966fa0e8645bfe68fac745f0ce66ecd3b6 qtlottie-everywhere-src-6.11.1.tar.xz http://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/
+
+. $base/package/*/*/qt6-conf.in

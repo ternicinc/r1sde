@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-carp-clan/perl-carp-clan.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module Carp-Clan
+
+[T] A perl module for error reporting and handling.
+
+[U] https://search.cpan.org/~stbey/Carp-Clan/
+
+[A] Steffen Beyer <sb@engelschall.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] GPL
+[V] 6.08
+[P] X -----5---9 200.111
+
+[D] e36ffb9ea30c3701c71f3c1b18185f0e68c938efe2cd5d0a77349545 Carp-Clan-6.08.tar.gz https://cpan.metacpan.org/authors/id/E/ET/ETHER/

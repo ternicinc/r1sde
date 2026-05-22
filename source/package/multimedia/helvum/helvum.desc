@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/helvum/helvum.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A GTK patchbay for pipewire
+
+[T] Helvum is a GTK-based patchbay for pipewire, inspired by the
+[T] JACK tool catia.
+
+[U] https://gitlab.freedesktop.org/pipewire/helvum/
+
+[A] Copyright 2021 Tom A. Wagner <tom.a.wagner@protonmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 0.6.1
+
+[D] 5693cd391d956cee520de0bdf35681b3773731641a9569748fa5c492 helvum-0.6.1.tar.gz https://gitlab.freedesktop.org/pipewire/helvum/-/archive/0.6.1/

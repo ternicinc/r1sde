@@ -1,0 +1,43 @@
+[TIMESTAMP] 1737756265 Fri Jan 24 23:04:25 2025
+[BUILDTIME] 25 (9)
+[SIZE] 8.29 MB, 511 files
+
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] fribidi
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] grep
+[DEP] gtk+
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] libgif
+[OPT] libheif
+[DEP] libjpeg
+[DEP] libpng
+[DEP] libthai
+[DEP] libtiff
+[OPT] libwebp
+[DEP] libx11
+[DEP] libxcomposite
+[DEP] libxcursor
+[DEP] libxext
+[DEP] libxfixes
+[DEP] libxft
+[DEP] libxpm
+[DEP] libxrandr
+[DEP] libxrender
+[DEP] linux-header
+[DEP] make
+[DEP] pango
+[DEP] perl
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

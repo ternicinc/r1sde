@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ksshaskpass/ksshaskpass.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A ssh-add helper that uses kwallet and kpassworddialog
+
+[T] Ksshaskpass is a front-end for ssh-add which stores the password of the
+[T] ssh key in KWallet.
+
+[U] https://invent.kde.org/plasma/ksshaskpass
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 6.6.5
+
+[CV-GROUP] kde-plasma
+[D] 2d972e1b35e19b38bc4d28b62bce23b40bf53e30b40a36574a0ffe6a ksshaskpass-6.6.5.tar.xz https://download.kde.org/stable/plasma/6.6.5/
+
+. $base/package/*/*/kde-conf.in

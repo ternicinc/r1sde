@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/nbtscan/nbtscan.desc
+[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Scans for open NETBIOS nameservers on a local or remote TCP/IP network
+
+[T] This is a command-line tool that scans for open NETBIOS nameservers on a
+[T] local or remote TCP/IP network, and this is a first step in finding of
+[T] open shares. It is based on the functionality of the standard Windows tool
+[T] nbtstat, but it operates on a range of addresses instead of just one.
+
+[U] http://www.unixwiz.net/tools/nbtscan.html
+
+[A] Stephen J. Friedl <steve@unixwiz.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 1.7.2
+
+[D] 226d9556a84ab85cd7bbdba79c0e16a333f4e7e4e9f9782899db9ba4 nbtscan-1.7.2.tar.gz https://github.com/resurrecting-open-source-projects/nbtscan/archive/refs/tags/1.7.2/
+
+autogen=1

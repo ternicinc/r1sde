@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/go-md2man/go-md2man.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Convert markdown into roff
+
+[T] go-md2man converts markdown into roff (man pages). Uses blackfriday to
+[T] process markdown into man pages.
+
+[U] https://github.com/cpuguy83/go-md2man
+
+[A] Brian Goff
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] MIT
+[V] 2.0.7
+
+[D] ec517095784e4dd95c8194ac2be101f4e82521afc569b30656226ed2 go-md2man-2.0.7.tar.gz https://github.com/cpuguy83/go-md2man/archive/refs/tags/v2.0.7/
+
+hook_add postmake 5 "cp -vf go-md2man $root$bindir"

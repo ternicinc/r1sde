@@ -1,0 +1,17 @@
+[TIMESTAMP] 1737734844 Fri Jan 24 17:07:24 2025
+[BUILDTIME] 430 (9)
+[SIZE] 40.62 MB, 16 files
+
+[DEP] bash
+[DEP] cargo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] flatpak
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] just
+[DEP] openssl
+[DEP] rustc
+[DEP] sed
+[DEP] tar

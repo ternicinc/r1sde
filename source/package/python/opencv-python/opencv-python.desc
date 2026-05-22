@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/opencv-python/opencv-python.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Wrapper package for OpenCV python bindings
+
+[T] Wrapper package for OpenCV python bindings.
+
+[U] https://pypi.org/project/opencv-python
+
+[A] andrey.senyaev
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[E] add pydistro
+[E] add scikit-build
+[E] opt libwebp
+
+[L] APL
+[V] 4.12.0.88
+[P] X -----5---9 420.000
+
+[D] 9cc696f150a783f86570d5c7e290ad9a1a6f420e2807e9117d1ce91e opencv-python-4.12.0.88.tar.gz https://files.pythonhosted.org/packages/source/o/opencv-python/

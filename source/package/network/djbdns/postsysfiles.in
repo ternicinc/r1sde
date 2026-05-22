@@ -1,0 +1,7 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/djbdns/postsysfiles.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+safe_useradd Gdnscache 64 100 "dnscache user" /etc/dnscache /bin/true "*"
+safe_useradd Gtinydns  65 100 "tinydns user"  /etc/tinydns  /bin/true "*"

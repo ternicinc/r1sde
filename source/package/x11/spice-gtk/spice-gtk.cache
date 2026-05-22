@@ -1,0 +1,56 @@
+[TIMESTAMP] 1748280963 Mon May 26 19:36:03 2025
+[BUILDTIME] 25 (9)
+[SIZE] 2.86 MB, 132 files
+
+[DEP] acl
+[OPT] asciidoc
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] cmake
+[DEP] coreutils
+[OPT] cyrus-sasl2
+[DEP] diffutils
+[OPT] docbook-xml
+[OPT] docbook-xsl
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[DEP] glib
+[DEP] gobject-introspection
+[DEP] grep
+[DEP] gst-plugins-base
+[DEP] gstreamer
+[DEP] gtk+
+[OPT] gtk-doc
+[DEP] harfbuzz
+[DEP] json-glib
+[DEP] libcap-ng
+[DEP] libjpeg
+[OPT] libopus
+[DEP] libva
+[DEP] libx11
+[DEP] libxslt
+[DEP] linux-header
+[DEP] lz4
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[DEP] perl
+[DEP] pixman
+[DEP] pkgconfig
+[DEP] polkit
+[DEP] pyparsing
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] six
+[DEP] spice-protocol
+[DEP] tar
+[OPT] vala
+[DEP] wayland
+[DEP] xorgproto
+[DEP] xz
+[DEP] zlib

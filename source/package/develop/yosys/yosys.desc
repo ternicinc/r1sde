@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/yosys/yosys.desc
+[COPY] Copyright (C) 2018 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Open Synthesis suite
+
+[T] Yosys is a framework for Verilog RTL synthesis. It currently has
+[T] extensive Verilog-2005 support and provides a basic set of synthesis
+[T] algorithms for various application domains
+
+[U] https://yosyshq.net/yosys/
+
+[A] Claire Xenia Wolf <claire@clairexen.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] ISC
+[V] 0.65
+
+[D] 0dd514290d9782566655ec2c511064ffff89c12d74bd5a9928f334a9 yosys-0.65.tar.gz !https://github.com/YosysHQ/yosys/releases/download/v0.65/yosys.tar.gz
+
+runpysetup=0 srcdir=.
+var_append makeopt ' ' CONFIG=gcc
+var_append makeinstopt ' ' CONFIG=gcc

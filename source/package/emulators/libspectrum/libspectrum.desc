@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libspectrum/libspectrum.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library used by FUSE to handle various file formats
+
+[T] Libspectrum is the library used by FUSE emulator to handle various file
+[T] formats.
+
+[U] https://fuse-emulator.sourceforge.net
+
+[A] Philip Kendall <pak21-fuse@srcf.ucam.org>
+[M] luisf <trb7@megamail.pt>
+
+[C] extra/emulator
+[F] CROSS
+
+[L] GPL
+[V] 1.6.1
+[P] X -----5---9 200.000
+
+[D] 5d3453463a77bdc719badfd72bdb879db02ca61782d97e345f8a979b libspectrum-1.6.1.tar.gz https://prdownloads.sourceforge.net/sourceforge/fuse-emulator/
+
+var_append GCC_WRAPPER ' ' -fpermissive

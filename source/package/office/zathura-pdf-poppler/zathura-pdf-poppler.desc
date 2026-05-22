@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/zathura-pdf-poppler/zathura-pdf-poppler.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] PDF support to zathura by using the poppler rendering engine
+
+[T] A plugin for PDF support to zathura by using the poppler rendering engine.
+
+[U] https://pwmt.org/projects/zathura-pdf-poppler/
+
+[A] pwmt
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/office
+[F] CROSS
+
+[L] ZLIB
+[V] 2026.05.10
+[P] X -----5---9 400.000
+
+[D] 3aa355b247261e6fdf648473f6982fc52d4ded3729ff7f46476de3e8 zathura-pdf-poppler-2026.05.10.tar.xz https://pwmt.org/projects/zathura-pdf-poppler/download/

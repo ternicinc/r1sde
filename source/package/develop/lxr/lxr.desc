@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lxr/lxr.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A versatile cross-referencing tool for relatively large code repositories
+
+[T] The Linux Cross-Reference project is the testbed application of a general
+[T] hypertext cross-referencing tool. Its main goal is to create a versatile
+[T] cross-referencing tool for relatively large code repositories. The main
+[T] feature of the indexer is the ability to jump easily to the declaration
+[T] of any global identifier. Quick access to function declarations, data
+[T] (type) definitions and preprocessor macros makes code browsing more
+[T] convenient. At-a-glance overview of which code areas will be affected
+[T] by changing a function or type definition should also come in useful
+[T] during development and debugging.
+
+[U] https://sourceforge.net/projects/lxr/
+
+[A] Bluezap <malcolm.box@gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 2.3.7
+
+[D] 68b2196b58d6a27fad76e0bfd016d8cd82edececbc5a07c56353348f lxr-2.3.7.tgz https://download.sourceforge.net/lxr/
+
+runmake=0
+hook_add postmake 5 'mkdir -p $root$datadir/lxr; cp -rvf * $root$datadir/lxr'

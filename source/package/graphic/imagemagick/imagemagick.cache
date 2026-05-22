@@ -1,0 +1,49 @@
+[TIMESTAMP] 1773347507 Thu Mar 12 21:31:47 2026
+[BUILDTIME] 385 (9)
+[SIZE] 36.73 MB, 841 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[OPT] djvulibre
+[DEP] findutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[OPT] ghostscript
+[DEP] glib
+[OPT] graphviz
+[DEP] grep
+[DEP] harfbuzz
+[OPT] ilmbase
+[OPT] jbigkit
+[OPT] lcms2
+[OPT] libheif
+[OPT] libjpeg
+[OPT] libjxl
+[DEP] libpng
+[OPT] libraw
+[OPT] libtiff
+[DEP] libtool
+[OPT] libwebp
+[OPT] libx11
+[OPT] libxext
+[DEP] libxml
+[OPT] libzip
+[DEP] linux-header
+[DEP] make
+[OPT] openexr
+[OPT] openjpeg
+[DEP] pango
+[OPT] perl
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[OPT] xorgproto
+[DEP] xz
+[DEP] zlib
+[DEP] zstd

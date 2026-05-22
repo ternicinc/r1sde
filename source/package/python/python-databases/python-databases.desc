@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-databases/python-databases.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Simple Python asyncio support for a range of databases
+
+[T] Databases gives you simple asyncio support for a range of databases. It
+[T] allows you to make queries using the powerful SQLAlchemy Core expression
+[T] language, and provides support for PostgreSQL, MySQL, and SQLite.
+
+[U] https://github.com/encode/databases
+
+[A] Tom Christie tom@tomchristie.com
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[L] MIT
+
+[V] 0.9.0
+[P] X -----5---9 127.440
+
+[D] 85a7cbde754155e134fc655a202aa7c859f7b5e40030f689c39e38d6 databases-0.9.0.tar.gz https://github.com/encode/databases/archive/0.9.0/

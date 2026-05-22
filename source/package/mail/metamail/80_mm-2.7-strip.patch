@@ -1,0 +1,19 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/metamail/80_mm-2.7-strip.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -Nur mm2.7.orig/src/Makefile mm2.7/src/Makefile
+--- mm2.7.orig/src/Makefile	2003-05-15 00:11:18.000000000 +0200
++++ mm2.7/src/Makefile	2003-05-15 00:19:21.000000000 +0200
+@@ -72,7 +72,7 @@
+ #	install -s -c $(LOCALBINDIR) $$file
+ #
+ #INSTALL = cp
+-INSTALL = install -c -s
++INSTALL = install -c
+ 
+ # Root of installation tree
+ INSTROOT = /usr

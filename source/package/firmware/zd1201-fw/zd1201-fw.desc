@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/zd1201-fw/zd1201-fw.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Firmware files for ZyDAS 1201
+
+[T] This package contains the firmwrae files for the ZyDAS 1201.
+
+[U] https://linux-lc100020.sourceforge.net/
+
+[A] Zydas
+[M] René Rebe <rene@exactco.de>
+
+[C] base/firmware
+[F] CROSS
+
+[L] Free-to-use
+[V] 0.14
+
+[D] e402bea325e07bbdb10764cfa4a72e7d6b47d13c28d061c58af59ea8 zd1201-0.14-fw.tar.gz https://prdownloads.sourceforge.net/sourceforge/linux-lc100020/
+
+runmake=0
+hook_add postmake 5 "cp *.fw $root/lib/firmware/"

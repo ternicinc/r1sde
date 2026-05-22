@@ -1,0 +1,23 @@
+[TIMESTAMP] 1750776445 Tue Jun 24 16:47:25 2025
+[BUILDTIME] 75 (9)
+[SIZE] 2.62 MB, 227 files
+
+[DEP] apr
+[DEP] apr-util
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[OPT] doxygen
+[DEP] findutils
+[DEP] fmt
+[DEP] gawk
+[OPT] graphviz
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar

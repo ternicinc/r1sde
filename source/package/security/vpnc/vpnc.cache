@@ -1,0 +1,20 @@
+
+[TIMESTAMP] 1690851326 Tue Aug  1 02:55:26 2023
+[BUILDTIME] 1 (9)
+[SIZE] 0.21 MB, 18 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] libgcrypt
+[DEP] libgpg-error
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] sed
+[DEP] tar

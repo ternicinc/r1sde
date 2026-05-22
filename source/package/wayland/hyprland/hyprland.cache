@@ -1,0 +1,52 @@
+[TIMESTAMP] 1758306759 Fri Sep 19 20:32:39 2025
+[BUILDTIME] 520 (9)
+[SIZE] 59.80 MB, 356 files
+
+[DEP] abseil-cpp
+[DEP] aquamarine
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] glaze
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] hyprcursor
+[DEP] hyprgraphics
+[DEP] hyprland-protocols
+[DEP] hyprlang
+[DEP] hyprutils
+[DEP] hyprwayland-scanner
+[DEP] hyprwire
+[DEP] libdrm
+[DEP] libglvnd
+[DEP] libinput
+[DEP] libx11
+[DEP] libxcb
+[DEP] libxcursor
+[DEP] linux-header
+[DEP] make
+[DEP] mesa
+[DEP] muparser
+[DEP] pango
+[DEP] pixman
+[DEP] pkgconfig
+[DEP] re2
+[DEP] sed
+[OPT] systemd
+[DEP] tar
+[DEP] tomlplusplus
+[DEP] udev
+[DEP] udis86
+[DEP] util-linux
+[DEP] wayland
+[DEP] wayland-protocols
+[DEP] xcb-util-errors
+[DEP] xcb-util-wm
+[DEP] xkbcommon
+[DEP] xorgproto

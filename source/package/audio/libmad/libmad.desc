@@ -1,0 +1,40 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libmad/libmad.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] MPEG Audio Decoder
+
+[T] MAD is a high-quality MPEG audio decoder. It currently supports MPEG-1
+[T] and the MPEG-2 extension to Lower Sampling Frequencies, as well as the
+[T] so-called MPEG 2.5 format. All three audio layers (Layer I, Layer II,
+[T] and Layer III a.k.a. MP3) are fully implemented.
+[T]
+[T] MAD has the following special features: 24-bit PCM output,
+[T] 100% fixed-point (integer) computation, completely new implementation
+[T] based on the ISO/IEC standards and it is distributed under the terms of
+[T] the GNU General Public License (GPL)
+[T]
+[T] The decoding funtionality is places in a library so that other programs
+[T] can use it easyly.
+[T]
+[T] It also comes with an mpg123 compatible CML tool.
+
+[U] https://www.underbit.com/products/mad/
+
+[A] Rob Leslie <rob@mars.org>
+[M] René Rebe <rene@exactco.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS FAT-LTO.mips FAT-LTO.mips64
+
+[L] GPL
+[V] 0.16.4
+[P] X -----5---9 122.300
+
+[D] ac071449533df439bf869dbb9b87a75eb3ca27f5ef582cb5dcd3ca23 libmad-0.16.4.tar.gz https://codeberg.org/tenacityteam/libmad/releases/download/0.16.4/
+
+var_append cmakeopt ' ' -DCMAKE_POLICY_VERSION_MINIMUM=3.5

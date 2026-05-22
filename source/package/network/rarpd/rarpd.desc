@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rarpd/rarpd.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Reverse Address Resolution Protocol daemon
+
+[T] RARP is a protocol which allows individual devices on an IP network to get
+[T] their own IP addresses from the RARP server.
+
+[A] Alexey Kuznetsov <kuznet@ms2.inr.ac.ru>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] ss981107
+
+[D] 89da8a6e9bcb7f3013526dd4f75948f55aa155a2087ae867ba2f20ab rarpd-ss981107.tar.gz ftp://ftp.inr.ac.ru/ip-routing/dhcp.bootp.rarp/
+
+var_append CC_WRAPPER_APPEND ' ' -std=gnu99
+makeinstopt=
+hook_add postmake 5 "install rarpd $root$sbindir/"

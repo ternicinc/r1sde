@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pixie/pixie.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Renderman(tm) like photorealistic renderer
+
+[T] Pixie is a photorealistic renderer that uses a RenderMan-like interface.
+[T] Features include programmable shading, motion blur, depth of field,
+[T] raytracing, scan-line rendering, occlusion culling, global illumination,
+[T] caustics ...
+
+[U] https://pixie.sourceforge.net/
+
+[A] Okan Arikan <okan@cs.berkeley.edu>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/graphic
+
+[L] GPL
+[V] 2.2.6
+
+[D] 283bddea637c155848e35c07db8b43d0ef131054b6bd31d03ea64934 Pixie-src-2.2.6.tgz https://prdownloads.sourceforge.net/sourceforge/pixie/
+
+hook_add postmake 5 "echo 'export PIXIEHOME=$libdir/Pixie' > $root/etc/profile.d/pixie"
+var_append confopt ' ' --with-docdir=$docdir

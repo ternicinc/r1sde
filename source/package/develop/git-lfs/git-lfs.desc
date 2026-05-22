@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/git-lfs/git-lfs.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Git extension for versioning large files
+
+[T] Git LFS is a command line extension and specification for managing large files with Git.
+[T] The client is written in Go, with pre-compiled binaries available for Mac,
+[T] Windows, Linux, and FreeBSD. Check out the website for an overview of features.
+
+[U] https://github.com/git-lfs/git-lfs
+
+[A] GitHub Inc
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] MIT
+[V] 3.7.1
+
+[D] 76ec40d8907c66d2bfe3b578f20ba013f0e74f30686f15f33c89635a git-lfs-3.7.1.tar.gz https://github.com/git-lfs/git-lfs/archive/v3.7.1/
+
+. $base/package/*/*/go-conf.in
+rungo=0 makeinstopt=
+var_append makeopt ' ' GIT_LFS_SHA=v$ver
+hook_add postinstall 5 "cp $builddir/$pkg-$ver/bin/$pkg $root$bindir/$pkg"

@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dvdrip/dvdrip.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A full featured DVD copy program written in Perl
+
+[T] dvd::rip is a full featured DVD copy program written in Perl. It
+[T] provides an easy to use but feature-rich Gtk+ GUI to control almost
+[T] all aspects of the ripping and transcoding process. It uses the widely
+[T] known video processing swissknife transcode and many other Open
+[T] Source tools. dvd::rip itself is licensed under GPL / Perl Artistic
+[T] License.
+
+[U] https://www.exit1.org/dvdrip
+
+[A] Joern Reder <joern@zyn.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[F] NOPARALLEL
+
+[L] GPL
+[V] 0.98.11
+
+[D] b897dccb6f152527c378e261f01009b2b74eaf39c0c17c5ffbfe116d dvdrip-0.98.11.tar.gz https://www.exit1.org/dvdrip/dist/

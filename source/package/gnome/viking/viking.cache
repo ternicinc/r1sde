@@ -1,0 +1,45 @@
+[TIMESTAMP] 1751568179 Thu Jul  3 20:42:59 2025
+[BUILDTIME] 25 (9)
+[SIZE] 5.70 MB, 105 files
+
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] cairo
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[OPT] docbook-xml
+[OPT] docbook-xsl
+[DEP] expat
+[DEP] file
+[DEP] findutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] geoclue
+[DEP] gettext
+[DEP] gexiv2
+[DEP] glib
+[DEP] grep
+[DEP] gtk+
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] intltool
+[DEP] json-glib
+[DEP] libx11
+[DEP] libxslt
+[DEP] libzip
+[DEP] linux-header
+[DEP] make
+[OPT] mapnik
+[DEP] nettle
+[DEP] pango
+[DEP] perl
+[DEP] python
+[DEP] sed
+[DEP] sqlite
+[DEP] tar
+[DEP] wayland
+[DEP] xorgproto
+[DEP] zlib

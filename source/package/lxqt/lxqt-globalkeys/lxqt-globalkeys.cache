@@ -1,0 +1,27 @@
+[TIMESTAMP] 1744892588 Thu Apr 17 14:23:08 2025
+[BUILDTIME] 40 (9)
+[SIZE] 0.90 MB, 92 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] freetype
+[DEP] gawk
+[DEP] grep
+[DEP] liblxqt
+[DEP] libqtxdg
+[DEP] libx11
+[DEP] linux-header
+[DEP] lxqt-build-tools
+[DEP] make
+[DEP] perl
+[DEP] pkgconfig
+[DEP] qt6base
+[DEP] qt6tools
+[DEP] sed
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] xorgproto
+[DEP] xz

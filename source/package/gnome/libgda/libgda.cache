@@ -1,0 +1,31 @@
+[TIMESTAMP] 1737678588 Fri Jan 24 01:29:48 2025
+[BUILDTIME] 40 (9)
+[SIZE] 10.41 MB, 183 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gettext
+[OPT] glib
+[DEP] gobject-introspection
+[DEP] grep
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[DEP] meson
+[OPT] mysql
+[DEP] ninja
+[OPT] openldap
+[DEP] openssl
+[DEP] pkgconfig
+[OPT] postgresql
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] sqlite
+[DEP] tar
+[DEP] vala
+[DEP] xz

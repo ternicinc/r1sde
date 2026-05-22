@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/tint/tint.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A photo editor for colour-select effects
+
+[T] Tint Photo Editor is a photo editor for colour-select effects. It
+[T] automatically clusters the colours of a photo into groups, and allows
+[T] each colour to be switched on or off to create the desired effect.
+
+[U] http://www.indii.org/software/tint
+
+[A] Lawrence Murray <lawrence@indii.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] BSD
+[V] 1.0.1
+
+[D] c6854be764081f61a899a5e7df4196e42bbed2c33bbb828eb36e9c3b tint-1.0.1.tar.gz http://www.indii.org/files/tint/releases/
+
+sconsintopt=
+hook_add postmake 5 "install tint $root$bindir/"

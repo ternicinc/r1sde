@@ -1,0 +1,19 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/misc/jailing/config.hlp
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+MENU_JAILING
+  Here you can set various options to run applications in a jail.
+
+SDECFG_JAILING
+  If selecetd Jailing support will be enabledl.
+
+SDECFG_BASEJAIL
+  The option specifies the base directory for jailing.
+
+SDECFG_JAILING_LIBSAFE
+  If selected libsafe support will be enabled for jails.
+  Libsafe is a library which is used te prevent buffor overflows.

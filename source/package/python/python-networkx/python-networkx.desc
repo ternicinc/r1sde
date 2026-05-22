@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-networkx/python-networkx.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Network Analysis in Python
+
+[T] A Python package for the creation, manipulation, and study of the
+[T] structure, dynamics, and functions of complex networks.
+
+[U] https://networkx.org/
+
+[A] Aric Hagberg <hagberg@lanl.gov>
+[A] Dan Schult <dschult@colgate.edu>
+[A] Pieter Swart <swart@lanl.gov>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 3.6.1
+[P] X -----5---9 400.000
+
+[D] bec91d9d5f4521fb16af61f17f461f703a972ab959c46a56562903e7 networkx-3.6.1.tar.gz https://files.pythonhosted.org/packages/source/n/networkx/

@@ -1,0 +1,23 @@
+[TIMESTAMP] 1745224266 Mon Apr 21 10:31:06 2025
+[BUILDTIME] 5 (9)
+[SIZE] 44.88 MB, 2198 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] filelock
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] huggingface_hub
+[DEP] mrab-regex
+[DEP] openssl
+[DEP] pyrequests
+[DEP] python
+[DEP] python-gpep517
+[DEP] safetensors
+[DEP] sed
+[DEP] setuptools
+[DEP] tar
+[DEP] tokenizers
+[DEP] tqdm

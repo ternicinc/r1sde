@@ -1,0 +1,22 @@
+[TIMESTAMP] 1737708426 Fri Jan 24 09:47:06 2025
+[BUILDTIME] 4 (9)
+[SIZE] 0.16 MB, 19 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] libx11
+[DEP] libxext
+[DEP] libxv
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto
+[DEP] xz

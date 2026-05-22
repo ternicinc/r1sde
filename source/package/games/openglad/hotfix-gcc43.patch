@@ -1,0 +1,19 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/openglad/hotfix-gcc43.patch
+# Copyright (C) 2009 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -Nur openglad-0.98/src/parser.cpp openglad-0.98.new/src/parser.cpp
+--- openglad-0.98/src/parser.cpp       2007-12-10 02:26:31.000000000 -0500
++++ openglad-0.98.new/src/parser.cpp   2007-12-10 02:27:17.000000000 -0500
+@@ -23,6 +23,8 @@
+ #include <iostream>
+ #include <fstream>
+ #include <string>
++#include <cstring>
++#include <cstdlib>
+ #include "parser.h"
+ 
+ using namespace std;
+

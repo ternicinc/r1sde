@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pydns/pydns.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A DNS module for Python
+
+[T] PyDNS provides a module for performing general DNS queries from
+[T] python applications. Applications can retrieve any kind of DNS
+[T] record, not just look up hostnames and IP addresses.
+
+[U] https://pydns.sourceforge.net
+
+[A] Guido van Rossum {original author}
+[A] Anthony Baxter <pydns-developer@sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] OpenSource
+[V] 4.0.2
+
+[D] 9fdb1c9a8108ebbb1ea7d93acc786061d24ab2e87042d4f6ab4265e1 py3dns-4.0.2.tar.gz https://files.pythonhosted.org/packages/76/67/d7e745a5248bd7ecf2b76d3a1c8280255cbbdcb21174b171cf3c87740836/py3dns-4.0.2.tar.gz

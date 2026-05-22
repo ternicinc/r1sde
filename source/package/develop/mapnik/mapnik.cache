@@ -1,0 +1,42 @@
+[TIMESTAMP] 1774907589 Mon Mar 30 23:53:09 2026
+[BUILDTIME] 640 (9)
+[SIZE] 38.22 MB, 593 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] boost
+[DEP] bzip2
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] grep
+[DEP] harfbuzz
+[DEP] icu4c
+[OPT] jasper
+[DEP] libavif
+[DEP] libjpeg
+[DEP] libpng
+[DEP] libtiff
+[DEP] liburing
+[DEP] libwebp
+[DEP] linux-header
+[DEP] ncurses
+[DEP] openssl
+[DEP] pkgconfig
+[DEP] postgresql
+[DEP] proj
+[DEP] python
+[DEP] scons
+[DEP] sed
+[DEP] setuptools
+[DEP] sqlite
+[DEP] swig
+[DEP] sysfiles
+[DEP] tar
+[DEP] util-linux
+[DEP] wolfssl
+[DEP] zlib

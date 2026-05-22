@@ -1,0 +1,20 @@
+
+[TIMESTAMP] 1731261981 Sun Nov 10 19:06:21 2024
+[BUILDTIME] 6 (9)
+[SIZE] 0.40 MB, 33 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] pixman
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar

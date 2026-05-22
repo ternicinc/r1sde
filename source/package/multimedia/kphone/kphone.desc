@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kphone/kphone.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An Internet Protocol phone using the SIP protocol
+
+[T] KPhone is an Internet Protocol phone based on the Qt toolkit, using
+[T] the SIP protocol. It supports Presence and Instant Messaging, and
+[T] to some extent also video calls between two hosts. Also supported
+[T] is STUN tunneling to work through NAT and firewalls.
+
+[U] http://www.wirlab.net/kphone/ KPhone homepage
+
+[A] Billy Biggs
+[A] Wirlab
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[L] GPL
+[V] 4.2
+[P] O -----5---9 199.400
+
+[D] 1d70973a2133f95d7ebbd743cfa9d02df916be8484c1595a2ffb2ab6 kphone-4.2.tar.gz http://www.wirlab.net/kphone/

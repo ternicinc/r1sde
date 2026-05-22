@@ -1,0 +1,24 @@
+[TIMESTAMP] 1740581571 Wed Feb 26 15:52:51 2025
+[BUILDTIME] 4 (9)
+[SIZE] 5.08 MB, 94 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[OPT] cups
+[DEP] diffutils
+[DEP] findutils
+[DEP] fltk
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libjpeg
+[DEP] libpng
+[DEP] libx11
+[DEP] libxpm
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto
+[DEP] zlib

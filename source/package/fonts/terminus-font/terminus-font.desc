@@ -1,0 +1,39 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/terminus-font/terminus-font.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A clean fixed width console and X11 font
+
+[T] Terminus Font is designed for long (8 and more hours per day) work with
+[T] computers. Version 4.09 contains 594 characters and covers code pages
+[T] ISO8859-1/2/5/9/13/15/16, Windows-1250/1251/1252/1254/1257, KOI8-R/U/E/F,
+[T] IBM-437/852/855/866, Paratype-PT154/PT254, Macintosh-Ukrainian,
+[T] Bulgarian-MIK and Esperanto, and also the vt100 and xterm pseudographic
+[T] characters.
+
+[U] https://terminus-font.sourceforge.net/
+
+[A] Dimitar Zhekov <jimmy@is-vn.bg>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office
+[F] CROSS
+
+[L] GPL
+[V] 4.49.1
+
+[D] 6a25bdc0315d120b5994582f87d4a7954107d2b9ad987845b88a53de terminus-font-4.49.1.tar.gz https://prdownloads.sourceforge.net/sourceforge/terminus-font/
+
+runmake=0
+
+terminus_font_main() {
+	./configure --psfdir=$datadir/kbd/consolefonts \
+		--unidir=$datadir/kbd/consoletrans \
+		--x11dir=/usr/X11/lib/X11/fonts/75dpi
+	$MAKE DESTDIR=$root install-psf install-psf-ref install-psf-vgaw
+	$MAKE DESTDIR=$root install-pcf || echo "X11 Portable Compiled Fonts not installed"
+}
+hook_add inmake	5 terminus_font_main

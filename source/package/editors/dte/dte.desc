@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dte/dte.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A small and easy to use console text editor
+
+[T] A small and easy to use console text editor.
+
+[U] https://craigbarnes.gitlab.io/dte/
+
+[A] Craig Barnes
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/text extra/editor
+[F] CROSS
+
+[L] GPL
+[V] 1.11.1
+[P] X -----5---9 116.300
+
+[D] 316ca4ef74538322237b744403842dcd7384918a999eead94cce81f9 dte-1.11.1.tar.gz https://craigbarnes.gitlab.io/dist/dte/

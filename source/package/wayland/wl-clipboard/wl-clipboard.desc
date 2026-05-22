@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/wl-clipboard/wl-clipboard.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Wayland clipboard utilities
+
+[T] This project implements two command-line Wayland clipboard utilities,
+[T] `wl-copy` and `wl-paste`, that let you easily copy data between the clipboard
+[T] and Unix pipes, sockets, files and so on.
+
+[U] https://github.com/bugaevc/wl-clipboard
+
+[A] Sergey Bugaev <bugaevc@gmail.com>
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/x11
+[F] CROSS NO-LTO.gcc
+
+[L] GPL
+[V] 2.3.0
+[P] X -----5---9 159.000
+
+[D] 3203c64020b50a2db9d827a87684633e1e4c9da8bab5d4f30e3e850c wl-clipboard-v2.3.0.tar.gz https://github.com/bugaevc/wl-clipboard/archive/v2.3.0/

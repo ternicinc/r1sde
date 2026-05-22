@@ -1,0 +1,29 @@
+[TIMESTAMP] 1743105366 Thu Mar 27 20:56:06 2025
+[BUILDTIME] 55 (9)
+[SIZE] 583.99 MB, 404 files
+
+[DEP] 00-dirtree
+[OPT] asciidoc
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[OPT] docbook-xml
+[OPT] docbook-xsl
+[OPT] docbook2x
+[DEP] expat
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] sed
+[DEP] tar
+[OPT] tcl
+[OPT] tk
+[OPT] xmlto
+[DEP] xz
+[DEP] zlib

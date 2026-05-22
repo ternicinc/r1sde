@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dolphin-emu/dolphin-emu.desc
+[COPY] Copyright (C) 2017 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A GameCube / Wii emulator
+
+[T] Dolphin is a GameCube / Wii emulator, allowing you to play games for
+[T] these two platforms on PC with improvements.
+
+[U] https://dolphin-emu.org
+
+[A] Dolphin Emulator Project
+[M] René Rebe <rene@exactco.de>
+
+# at least cd emulation code contains x86 only assembly :-(
+[R] + arm arm64 x86 x86-64
+
+[C] extra/game
+
+[L] GPL
+[V] 2603a
+
+[CV-FLAGS] NO-PREFIX
+[D] ff56953ddfe10ce1ea4397d6185883ae152bfa04a79e820fb11336fc dolphin-emu-2603a.tar.gz git+https://github.com/dolphin-emu/dolphin 2603a

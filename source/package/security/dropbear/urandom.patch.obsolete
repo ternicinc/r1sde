@@ -1,0 +1,22 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dropbear/urandom.patch.obsolete
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+/dev/random blocks on early boot and certain head-less machines due to
+too few data available.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- dropbear-0.46/options.h.vanilla	2005-11-13 17:43:12.000000000 +0100
++++ dropbear-0.46/options.h	2005-11-13 17:42:45.000000000 +0100
+@@ -148,7 +148,7 @@
+  * however significantly reduce the security of your ssh connections
+  * if the PRNG state becomes guessable - make sure you know what you are
+  * doing if you change this. */
+-#define DROPBEAR_RANDOM_DEV "/dev/random"
++#define DROPBEAR_RANDOM_DEV "/dev/urandom"
+ 
+ /* prngd must be manually set up to produce output */
+ /*#define DROPBEAR_PRNGD_SOCKET "/var/run/dropbear-rng"*/

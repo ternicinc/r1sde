@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gopls/gopls.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The official Go language server developed
+
+[T] The official Go language server developed by the Go team. It provides IDE
+[T] features to any LSP-compatible editor.
+
+[U] https://golang.org/x/tools
+
+[A] Google
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/tool
+[F] CROSS
+
+[L] MIT
+[V] 0.22.0
+
+[D] e6b4d01b737f18364e08f10c9ab7479e7297382427f6600fde0bdae3 gopls-v0.22.0.tar.gz https://github.com/golang/tools/archive/gopls/v0.22.0/
+
+. $base/package/*/*/go-conf.in
+
+export CGO_ENABLED=1
+GCC_WRAPPER_BYPASS=1
+
+hook_add premake 5 'cd gopls'
+hook_add postmake 5 'cp $pkg $root$bindir/'

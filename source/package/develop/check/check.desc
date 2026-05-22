@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/check/check.desc
+[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A unit testing framework for C
+
+[T] Check is a unit testing framework for C. It features a simple
+[T] interface for defining unit tests, putting little in the way of the
+[T] developer. Tests are run in a separate address space, so Check can
+[T] catch both assertion failures and code errors that cause segmentation
+[T] faults or other signals. The output from unit tests can be used within
+[T] source code editors and IDEs.
+
+[U] https://libcheck.github.io/check/
+
+[A] Chris Pickett <EMAIL>
+[M] Roger Mason <rmason@mun.ca>
+
+[C] extra/development
+[F] CROSS NO-LTO.gcc
+
+[L] LGPL
+[V] 0.15.2
+[P] X -----5---9 135.800
+
+[D] 9b9b62cd310c7a3d7a9804995a66c2f719ff97e1fef31cac97d90d9c check-0.15.2.tar.gz https://github.com/libcheck/check/releases/download/0.15.2/

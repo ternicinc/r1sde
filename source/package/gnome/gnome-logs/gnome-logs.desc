@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-logs/gnome-logs.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome gnome-logs package
+
+[T] Core Gnome gnome-logs package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 50.0
+
+[CV-URL] https://download.gnome.org/sources/gnome-logs/cache.json
+[D] c5edb99312d1a2f62008b27e612122c36c04bfbeb86bd8b20fe94813 gnome-logs-50.0.tar.xz https://download.gnome.org/sources/gnome-logs/50/
+
+. $base/package/*/*/gnome-conf.in

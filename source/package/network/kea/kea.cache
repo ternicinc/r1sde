@@ -1,0 +1,26 @@
+[TIMESTAMP] 1750958801 Thu Jun 26 19:26:41 2025
+[BUILDTIME] 860 (9)
+[SIZE] 33.40 MB, 999 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bison
+[DEP] boost
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] flex
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[DEP] log4cplus
+[DEP] m4
+[DEP] meson
+[OPT] mysql
+[DEP] ninja
+[DEP] openssl
+[OPT] postgresql
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] xz

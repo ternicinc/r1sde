@@ -1,0 +1,26 @@
+[TIMESTAMP] 1765362897 Wed Dec 10 11:34:57 2025
+[BUILDTIME] 10 (9)
+[SIZE] 1.16 MB, 111 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] dbus
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[OPT] glib
+[DEP] gobject-introspection
+[DEP] grep
+[DEP] gtk-doc
+[DEP] libgcrypt
+[DEP] libgpg-error
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar
+[DEP] xz

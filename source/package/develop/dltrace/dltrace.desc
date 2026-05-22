@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dltrace/dltrace.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Dynamic library call tracer
+
+[T] dltrace is a dynamic library call tracer which attempts to remain portable
+[T] to all x86 platforms that support ELF binaries and expose a debugging
+[T] interface via procfs or the ptrace() system call. The shared library call
+[T] tracing is done at a level which allows calls to all symbols exported by
+[T] loaded libraries to be traced. In addition, dltrace does not rely on rtld
+[T] symbols to retrieve library and symbol information and is capable of
+[T] determing function arguments dynamically via run-time disassembly.
+
+[U] http://labs.idefense.com/
+
+[A] Richard Johnson <rjohnson@idefense.com>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] base/development
+[R] + x86
+
+[L] GPL
+[V] 0.5
+
+[D] 19daae58bb3be542f34f96bf69eea079a3457bbd5a0033b55e5d8f80 dltrace-0.5.tar.bz2 http://labs.idefense.com/releases/

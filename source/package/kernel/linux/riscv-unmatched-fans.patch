@@ -1,0 +1,68 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/linux/riscv-unmatched-fans.patch
+# Copyright (C) 2021 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+Let's implement some minimal viable HiFive Unmatched PWM fan control.
+
+Signed-off-by: René Rebe <rene@exactcode.com>
+
+--- ./arch/riscv/boot/dts/sifive/hifive-unmatched-a00.dts.vanilla	2024-04-01 18:58:55.930393689 +0200
++++ ./arch/riscv/boot/dts/sifive/hifive-unmatched-a00.dts	2024-04-01 20:32:34.682852300 +0200
+@@ -47,6 +47,18 @@
+ 		gpios = <&gpio 2 GPIO_ACTIVE_LOW>;
+ 	};
+ 
++	fan1 {
++		compatible = "pwm-fan";
++		pwms = <&pwm1 2 7812500 PWM_POLARITY_INVERTED>;
++		active-low;
++	};
++
++	fan2 {
++		compatible = "pwm-fan";
++		pwms = <&pwm1 3 7812500 PWM_POLARITY_INVERTED>;
++		active-low;
++	};
++
+ 	led-controller-1 {
+ 		compatible = "pwm-leds";
+ 
+--- linux-6.13/drivers/hwmon/pwm-fan.c.vanilla	2025-02-03 11:42:43.909573585 +0100
++++ linux-6.13/drivers/hwmon/pwm-fan.c	2025-02-03 11:44:47.423592732 +0100
+@@ -45,6 +45,7 @@
+ 	enum pwm_fan_enable_mode enable_mode;
+ 	bool regulator_enabled;
+ 	bool enabled;
++	bool active_low;
+ 
+ 	int tach_count;
+ 	struct pwm_fan_tach *tachs;
+
+@@ -227,6 +227,9 @@
+ 		if (!ret && update) {
+ 			pwm = final_pwm;
+ 			state->duty_cycle = DIV_ROUND_UP(pwm * (period - 1), MAX_PWM);
++			if (ctx->active_low)
++				state->duty_cycle = state->period - state->duty_cycle;
++
+ 			usleep_range(ctx->pwm_usec_from_stopped,
+ 				     ctx->pwm_usec_from_stopped * 2);
+ 			ret = pwm_apply_might_sleep(ctx->pwm, state);
+@@ -476,6 +480,7 @@
+ {
+ 	struct thermal_cooling_device *cdev;
+ 	struct device *dev = &pdev->dev;
++	struct device_node *np = dev->of_node;
+ 	struct pwm_fan_ctx *ctx;
+ 	struct device *hwmon;
+ 	int ret;
+@@ -526,6 +532,7 @@
+ 	}
+ 
+ 	ctx->enable_mode = pwm_disable_reg_enable;
++	ctx->active_low = of_property_read_bool(np, "active-low");
+ 
+ 	/*
+ 	 * Set duty cycle to maximum allowed and enable PWM output as well as

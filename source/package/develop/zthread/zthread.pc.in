@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/zthread/zthread.pc.in
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: zthread
+Description: ZThread multi-threading and synchronization library for C++
+Version: @ZTHREAD_VER@
+Libs: -L${libdir} -lZThread
+Cflags: -I${includedir}

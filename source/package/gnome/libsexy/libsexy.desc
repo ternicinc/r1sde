@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libsexy/libsexy.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A collection of GTK+ widgets
+
+[T] libsexy is a collection of GTK+ widgets that extend the functionality
+[T] of such standard widgets as GtkEntry and GtkLabel by subclassing them
+[T] and working around the limitations of the widgets.
+
+[U] http://www.chipx86.com/wiki/Libsexy
+
+[A] Christian Hammond (ChipX86) <chipx86 at chipx86.com>
+[A] David Trowbridge (purple_cow) <trowbrds at gmail.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development extra/desktop/gnome
+
+[L] LGPL
+[V] 0.1.11
+[P] X -----5---9 151.000
+
+[CV-URL] https://download.gnome.org/sources/libsexy/cache.json
+[D] 83641479215538133f1d6c4a5eccc8e7039eff6b9de43cd38f275560 libsexy-0.1.11.tar.gz https://releases.chipx86.com/libsexy/libsexy/
+
+. $base/package/*/*/gnome-conf.in

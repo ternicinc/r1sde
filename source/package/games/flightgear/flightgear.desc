@@ -1,0 +1,44 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/flightgear/flightgear.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Flight Gear is a free flight simulator project
+
+[T] The idea for Flight Gear was born out of a dissatisfaction with current
+[T] commercial PC flight simulators. A big problem with these simulators is
+[T] their proprietariness and lack of extensibility. There are so many
+[T] people across the world with great ideas for enhancing the currently
+[T] available simulators who have the ability to write code, and who have a
+[T] desire to learn and contribute. Many people involved in education and
+[T] research could use a spiffy flight simulator frame work on which to
+[T] build their own projects; however, commercial simulators do not lend
+[T] themselves to modification and enhancement. The Flight Gear project is
+[T] striving to fill these gaps.
+[T]
+[T] Flight Gear requires a supported 3d video accelerator.
+
+[U] https://flightgear.org/
+
+[A] Curt Olson <curt@me.umn.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+#[C] extra/game/simulation
+
+[E] opt speex
+
+[L] GPL
+[V] 2024.1.5
+
+[D] 69c3ea798a253d6dcffb12660465c1c0979cd4a979178fa7087c2590 flightgear-v2024.1.5.tar.bz2 https://gitlab.com/flightgear/flightgear/-/archive/2024.1.5/
+
+bindir=$root/$SDECFG_PKG_GAMES_BINDIR
+datadir=$root/$SDECFG_PKG_GAMES_DATADIR
+
+var_append cmakeopt ' ' -DENABLE_QT=OFF
+
+var_append GCC_WRAPPER_INSERT ' ' "-I$root$(pkgprefix includedir glu)"
+var_append GCC_WRAPPER_INSERT ' ' "-L$root$(pkgprefix libdir glu)"

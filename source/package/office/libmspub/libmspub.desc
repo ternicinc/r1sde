@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libmspub/libmspub.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library that parses the file format of Microsoft Publisher documents
+
+[T] Libmspub is a library that parses the file format of Microsoft Publisher
+[T] documents. Currently supported are documents created by Publisher 2000 and
+[T] higher; import of documents created by Publisher 95-98 is rather limited.
+
+[U] https://wiki.documentfoundation.org/DLP/Libraries/libmspub
+
+[A] David Tardon (dtardon@redhat.com)
+[A] Fridrich Strba <fridrich.strba@bluewin.ch>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS NO-LTO.clang
+
+[E] opt doxygen
+
+[L] MPL
+[V] 0.1.4
+[P] X -----5---9 201.000
+
+[D] a0866f7b1627f4d3f676945ca999610c69a7942e2272438bd8b20854 libmspub-0.1.4.tar.xz https://dev-www.libreoffice.org/src/libmspub/

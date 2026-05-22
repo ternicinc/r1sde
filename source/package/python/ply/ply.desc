@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ply/ply.desc
+[COPY] Copyright (C) 2020 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Yet another implementation of lex and yacc for Python
+
+[T] Provides most of the standard lex/yacc features including support for empty
+[T] productions, precedence rules, error recovery, and support for ambiguous
+[T] grammars.
+
+[U] https://palletsprojects.com/p/jinja/
+
+[A] beazley
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/development
+[L] BSD
+
+[V] 3.11
+[P] X -----5---9 127.444
+
+[D] 75246a92fd6bf792e6d96a00904237a1268fdbcdbacf9010b8b98db4 ply-3.11.tar.gz https://github.com/dabeaz/ply/archive/3.11/

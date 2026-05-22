@@ -1,0 +1,25 @@
+[TIMESTAMP] 1770979710 Fri Feb 13 11:48:30 2026
+[BUILDTIME] 35 (9)
+[SIZE] 1.83 MB, 29 files
+
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[OPT] iproute2
+[DEP] libcap-ng
+[DEP] linux-header
+[DEP] lz4
+[OPT] lzo
+[DEP] make
+[DEP] openssl
+[DEP] pam
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

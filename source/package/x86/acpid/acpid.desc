@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/acpid/acpid.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A daemon for delivering ACPI events
+
+[T] ACPID is a completely flexible and expandable mechanism for delivering ACPI
+[T] events from the kernel to user-space. It can be configured to perform any
+[T] action at all when events occur, through regex matches and arbitrary action
+[T] rules.
+
+[U] https://acpid.sourceforge.net/
+
+[A] Tim Hockin <thockin@hockin.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] CROSS
+
+[R] + x86 x86-64
+
+[L] GPL
+[V] 2.0.34
+
+[D] 6210bb372cdc9e94454eea6e2b0ce3e3d41590a2cb277ac87f7de720 acpid-2.0.34.tar.xz https://download.sourceforge.net/project/acpid2/
+
+var_append makeinstopt ' ' INSTPREFIX=$root

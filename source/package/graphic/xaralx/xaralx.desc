@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xaralx/xaralx.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A vector drawing and manipulation program
+
+[T] Xara Lx, a vector drawing and manipulation program.
+
+[U] http://www.xaraxtreme.org/
+
+[A] Xara Group Ltd
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/graphic
+
+[L] GPL
+[V] 0.7r1750
+
+[D] 06d694449969858e4eb740be643374af6647bfac7265f8a2605487cc XaraLX-0.7r1750.tar.bz2 http://downloads.xara.com/opensource/
+
+var_append confopt ' ' --enable-filters
+hook_add makeinstopt ' ' prefix=$prefix

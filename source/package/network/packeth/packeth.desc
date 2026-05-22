@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/packeth/packeth.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An ethernet packet generator
+
+[T] PackETH is a Linux GUI packet generator tool for ethernet. It allows
+[T] you to create and send any possible packet or sequence of packets on
+[T] the ethernet.
+
+[U] https://packeth.sourceforge.net
+
+[A] Miha Jemec <m.jemec@iskratel.si>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS NO-LTO.gcc
+
+[L] GPL
+[V] 3.0
+
+[D] 3bebf74695cd5eb5a38d04e3d8732d0b437e46cce52b26c8b2fb371c packETH-3.0.tar.gz https://github.com/jemcek/packETH/archive/refs/tags/3.0/
+
+autogen=1
+var_append makeinstopt ' ' INSTALL_PREFIX=/$prefix

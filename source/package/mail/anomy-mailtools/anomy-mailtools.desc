@@ -1,0 +1,75 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/anomy-mailtools/anomy-mailtools.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An email vulnerability protector and sanitizer
+
+[T] The Anomy sanitizer is what most people would call "an email virus
+[T] scanner". That description is not totally accurate, but it does cover
+[T] one of the more important jobs that the sanitizer can do for you - it
+[T] can scan email attachments for viruses. Other things it can do:
+[T]
+[T] * Disable potentially dangerous HTML code, such as javascript,
+[T] within incoming email.
+[T]
+[T] * Protect you from email-based break-in attempts which exploit bugs
+[T] in common email programs (Outlook, Eudora, ..).
+[T]
+[T] * Block or "mangle" attachments based on their file names. This way
+[T] if you don't *need* to recieve e.g. visual basic scripts, then you
+[T] don't have to worry about the security risk they imply. This lets
+[T] you protect yourself and your users from whole classes of attacks,
+[T] without relying on complex, resource intensive and outdated virus
+[T] scanning solutions.
+
+[A] Bjarni R. Einarsson
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network extra/security
+[F] CROSS
+
+[L] GPL
+[V] 1.76
+
+[D] ad25d8c15e8205290eeb08bcbc40c3cd33b846ab72b59e2681756644 anomy-sanitizer-1.76.tar.gz http://mailtools.anomy.net/dist/
+
+[ $prefix_auto = 1 ] && prefix="opt/anomy-mailtools" && set_confopt
+
+anomy_custmain() {
+	# Create necessary directories
+	mkdir -p $root$bindir/Anomy/Sanitizer
+	mkdir -p $root$datadir/contrib
+	mkdir -p $root$datadir/testcases/results.def
+
+	# Install the executables
+	install -v -m 755 bin/*.pl contrib/check_for_virus $root$bindir
+	install -v -m 644 bin/Anomy/*.pm $root$bindir/Anomy
+	install -v -m 644 bin/Anomy/Sanitizer/*.pm $root$bindir/Anomy/Sanitizer
+
+	# Install the contributed files and testcases
+	install -v -m 644 contrib/* $root$datadir/contrib
+	install -v -m 644 testcases/* $root$datadir/testcases || true
+	install -v -m 644 testcases/results.def/* $root$datadir/testcases/results.def
+
+	# Install the docs
+	for I in CHANGELOG.sanitizer CREDITS README.sanitizer \
+		 sanitizer.html UNICODE.TXT
+	do
+		install -v -m 644 $I $root$docdir
+	done
+
+	# Install a sample config that uses ClamAV
+	install -v -m 644 $confdir/sanitizer.cfg $root$sysconfdir
+
+	# Set up the environment variable
+	echo "Creating /etc/profile.d/$pkg ..."
+	cat <<- EOT > $root/etc/profile.d/$pkg
+		export ANOMY=$root/opt/$pkg
+	EOT
+}
+runmake=0
+hook_add postmake 5 anomy_custmain
+createdocs=0

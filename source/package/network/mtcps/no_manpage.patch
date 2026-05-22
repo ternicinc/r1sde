@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/mtcps/no_manpage.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+diff -ruN mtcps-0.2.orig/Makefile mtcps-0.2/Makefile
+--- mtcps-0.2.orig/Makefile	2002-12-03 16:37:27.000000000 +0100
++++ mtcps-0.2/Makefile	2005-07-23 01:18:13.000000000 +0200
+@@ -19,7 +19,6 @@
+ 
+ install: mtcps
+ 	cp mtcps $(BINPATH)
+-	cp mtcps.8 $(MANPATH)/man8
+ 
+ clean:
+ 	rm -f *~ *.o mtcps

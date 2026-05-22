@@ -1,0 +1,30 @@
+[TIMESTAMP] 1743885592 Sat Apr  5 22:39:52 2025
+[BUILDTIME] 3 (9)
+[SIZE] 0.29 MB, 38 files
+
+[DEP] asciidoc
+[DEP] bash
+[DEP] binutils
+[DEP] bluez
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] docbook-xml
+[DEP] docbook-xsl
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] libxml
+[DEP] libxslt
+[DEP] linux-header
+[DEP] make
+[DEP] openobex
+[DEP] perl
+[DEP] pkgconfig
+[DEP] python
+[DEP] ruby
+[DEP] sed
+[DEP] swig
+[DEP] tar
+[DEP] util-linux
+[DEP] xmlto

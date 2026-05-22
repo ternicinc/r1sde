@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---.
+[COPY] t2/package/*/thermald/thermald.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---.
+
+[I] A thermal daemon
+
+[T] Linux thermal daemon, thermald, monitors and controls the system
+[T] temperature with latest Intel Sandy Bridge and later or recent AMD CPUs
+[T] Once the system temperature reaches a certain threshold, the daemon
+[T] activates various cooling methods to cool the system.
+
+[U] https://github.com/intel/thermal_daemon
+
+[A] Thermald Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+
+[V] 2.5.11
+[L] GPL
+
+[D] 43beb6b6581c488080315d550ffecd43d6dd4e17adf6d6eb69e9016c thermald-2.5.11.tar.gz https://github.com/intel/thermal_daemon/archive/v2.5.11/
+
+autogen=1

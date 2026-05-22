@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/wf-config/wf-config.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Configuration file management written for wayfire
+
+[T] This package is a library for managing configuration files, written for
+[T] wayfire.
+
+[U] https://wayfire.org/
+
+[A] Iliya Bozhinov
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/x11
+
+[L] MIT
+[V] 0.10.0
+[P] X -----5---9 300.000
+
+[D] 5b3db348f9b66731907183778d041ef6b24de3cf085d2b4029a31251 wf-config-0.10.0.tar.gz https://github.com/WayfireWM/wf-config/archive/refs/tags/v0.10.0/

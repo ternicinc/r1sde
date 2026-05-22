@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/minicom/dfl_port_cfg.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./configure.orig	Sat Nov 17 16:21:20 2001
++++ ./configure	Sat Nov 17 16:24:04 2001
+@@ -5115,7 +5115,7 @@
+ 
+ if test "x$DFL_PORT" != x
+ then
+-	if test -c $DFL_PORT
++	if test -c $DFL_PORT || true
+ 	then
+ 		echo "$ac_t""$DFL_PORT" 1>&6
+ 		cat >> confdefs.h <<EOF

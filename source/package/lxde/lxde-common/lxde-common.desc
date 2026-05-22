@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lxde-common/lxde-common.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A set of default configuration for LXDE
+
+[T] lxde-common package provides a set of default configuration for LXDE.
+
+[U] https://lxde.org/
+
+[A] LXDE team http://lxde.org/
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/desktop/lxde
+[F] CROSS
+[E] add openbox
+
+[L] GPL
+[V] 0.99.3
+[P] X -----5---9 220.000
+
+[D] 53ef35d93249191415bbec5535178b312945c4590de8c64882bd5cf9 lxde-common-0.99.3.tar.gz https://github.com/lxde/lxde-common/archive/0.99.3/
+
+. $base/package/lxde/*/lxde-conf.in NO_SANITY_CHECK
+hook_add postinstall 3 "register_wm lxde LXDE $bindir/startlxde"
+autogen=1

@@ -1,0 +1,40 @@
+[TIMESTAMP] 1746968046 Sun May 11 14:54:06 2025
+[BUILDTIME] 6 (9)
+[SIZE] 1.87 MB, 101 files
+
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[OPT] glib
+[DEP] gnutls
+[DEP] grep
+[DEP] gtk+
+[DEP] harfbuzz
+[DEP] intltool
+[DEP] libice
+[DEP] libjpeg
+[DEP] libnotify
+[DEP] libsm
+[DEP] libx11
+[DEP] libxdamage
+[DEP] libxext
+[DEP] libxfixes
+[DEP] libxi
+[DEP] libxtst
+[DEP] linux-header
+[DEP] make
+[DEP] pango
+[DEP] perl
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto
+[DEP] xz
+[DEP] zlib

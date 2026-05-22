@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ser2net/ser2net.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A proxy that allows telnet/tcp connections to serial ports on a machine
+
+[T] ser2net provides a way for a user to connect from a network connection
+[T] to a serial port. I tried all the other ones I could find and found them
+[T] lacking, so I wrote my own. It provides all the serial port setup, a
+[T] configuration file to configure the ports, a control login for modifying
+[T] port parameters, monitoring ports, and controlling ports.
+
+[U] https://ser2net.sourceforge.net/
+
+[A] Corey Minyard <cminyard@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 4.6.7
+
+[D] 06412329cec1c75882f779b841c6b997fe600c30f25baf9fdadcb679 ser2net-4.6.7.tar.gz https://prdownloads.sourceforge.net/sourceforge/ser2net/

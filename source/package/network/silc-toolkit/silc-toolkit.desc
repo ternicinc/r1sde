@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/silc-toolkit/silc-toolkit.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Secure Internet Live Conferencing
+
+[T] SILC (Secure Internet Live Conferencing) is a protocol which provides
+[T] secure conferencing services in the Internet. It can be used to send
+[T] any kind of messages, in addition to normal text messages. This includes
+[T] multimedia messages like images, video, and audio stream. All messages
+[T] in the SILC network are encrypted and authenticated, and messages can
+[T] also be digitally signed. SILC protocol supports AES, SHA-1, PKCS#1,
+[T] PKCS#3, X. 509, OpenPGP, and is being developed in the IETF. The
+[T] software is delivered as SILC Client for end users, SILC Server for
+[T] system administrators, and SILC Toolkit for application developers.
+
+[U] http://silcnet.org/
+
+[A] priikone <priikone@silcnet.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+
+[L] GPL
+[V] 1.1.12
+[P] X -----5---9 178.000
+
+[D] b9da73868117427a17ba8d762f07a5071ac7857bc0e171b26fc25579 silc-toolkit-1.1.12.tar.gz http://downloads.sourceforge.net/project/silc/silc/toolkit/sources/

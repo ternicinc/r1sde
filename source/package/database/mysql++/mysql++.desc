@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mysql++/mysql++.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A C++ wrapper for MySQL
+
+[T] MySQL++ is a C++ wrapper for MySQL's C API. It is built around
+[T] the same principles as the Standard C++ Library, to make dealing
+[T] with the database as easy as dealing with STL containers. In
+[T] addition, MySQL++ provides facilities that let you avoid the
+[T] most repetitive sorts of SQL within your own code, providing
+[T] native C++ interfaces for these common tasks
+
+[U] https://tangentsoft.net/mysql++
+
+[A] Kevin Atkinson
+[A] Sinisa Milivojevic <sinisa@mysql.com>
+[A] Warren Young <mysqlpp@etr-usa.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/database
+
+[L] LGPL
+[V] 3.3.0
+
+[D] 2fee37217626db8f4498d57195c77dd26deb9f088ef45fd575b36a95 mysql++-3.3.0.tar.gz https://tangentsoft.com/mysqlpp/releases/
+
+var_append confopt ' ' --enable-thread-check
+var_append confopt ' ' "--with-mysql-lib=$root/$(pkgprefix libdir mysql)/mysql"
+var_append confopt ' ' "--with-mysql-include=$root/$(pkgprefix includedir mysql)/mysql"

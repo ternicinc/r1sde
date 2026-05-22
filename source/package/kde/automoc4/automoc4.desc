@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/automoc4/automoc4.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] CMake automatic MOC Generation
+
+[T] Automoc4 is a tool to add rules for generating Qt moc files automatically
+[T] to projects that use CMake as the buildsystem.
+
+[U] https://www.kde.org
+
+[A] The KDE-Team
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 0.9.88
+[P] X -----5---9 128.800
+
+[D] f28f165c6d01f85d9863208ade1f955362e536b6ac016766ea2c342d automoc4-0.9.88.tar.bz2 ftp://ftp.kde.org/pub/kde/stable/automoc4/0.9.88/
+
+. $base/package/*/*/kde-conf.in NO_SANITY_CHECK

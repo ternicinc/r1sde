@@ -1,0 +1,18 @@
+
+[TIMESTAMP] 1690851279 Tue Aug  1 02:54:39 2023
+[BUILDTIME] 1 (9)
+[SIZE] 0.12 MB, 15 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] make
+[DEP] perl
+[DEP] perl-xml-dom
+[DEP] perl-xml-parser
+[DEP] sed
+[DEP] tar

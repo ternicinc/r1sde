@@ -1,0 +1,10 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/uclibc/subconfig-libc-300.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+# uclibc and glibc don't co-exist
+if [ "$SDECFG_LIBC" == "uclibc" ]; then
+	pkgremove glibc
+fi

@@ -1,0 +1,21 @@
+[TIMESTAMP] 1739026707 Sat Feb  8 15:58:27 2025
+[BUILDTIME] 85 (9)
+[SIZE] 128.91 MB, 8980 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] libsdl2
+[DEP] libsdl2_image
+[DEP] libsdl2_mixer
+[DEP] libx11
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto
+[DEP] zlib

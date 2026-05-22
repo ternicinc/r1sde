@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cgames/cgames.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Games for the Linux Console
+
+[T] The programs in this distribution are re-implementations of games
+[T] for the Linux console. Included please find three games:
+[T] * cblocks -- sliding-block puzzles
+[T] * cmines -- minesweeper
+[T] * csokoban -- sokoban
+[T] The games make use of the Linux console font and mouse support to
+[T] improve the user interface.
+
+[U] https://www.muppetlabs.com/~breadbox/software/cgames.html
+
+[A] Brian Raiter <breadbox@muppetlabs.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+#[C] extra/game/arcade
+
+[L] GPL
+[V] 2.2b
+
+[D] d162be802bf4c3278810c5f19578b3591172b60bc42ce74b3d0f1766 cgames-2.2b.tar.gz http://www.muppetlabs.com/~breadbox/pub/software/
+
+bindir=$root/$SDECFG_PKG_GAMES_BINDIR
+datadir=$root/$SDECFG_PKG_GAMES_DATADIR

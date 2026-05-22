@@ -1,0 +1,34 @@
+[TIMESTAMP] 1778017045 Wed May  6 00:37:25 2026
+[BUILDTIME] 840 (9)
+[SIZE] 47.23 MB, 476 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] expat
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] git
+[DEP] gn
+[DEP] grep
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] icu4c
+[DEP] libglvnd
+[DEP] libjpeg
+[DEP] libpng
+[OPT] libwebp
+[DEP] libx11
+[DEP] linux-header
+[DEP] ninja
+[DEP] openssl
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] xorgproto
+[DEP] xz
+[DEP] zlib

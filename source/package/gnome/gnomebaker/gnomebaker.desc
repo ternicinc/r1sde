@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnomebaker/gnomebaker.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A CD/DVD burning application for Gnome
+
+[T] GnomeBaker is a GTK2/Gnome CD/DVD burning application. I've been writing
+[T] it in my spare time so progress is fairly slow. It's more of a personal
+[T] project as I wanted to have a go at developing on Linux and I figured that
+[T] as I had got this far I may as well let it loose on the world. Maybe someone
+[T] will like it and use it.
+
+[U] https://www.biddell.co.uk/gnomebaker.php
+[U] https://gnomebaker.sourceforge.net/
+
+[A] Luke Biddell <luke.biddell@gmail.com>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/tool
+
+[L] LGPL
+[V] 0.6.4
+
+[CV-URL] https://download.gnome.org/sources/gnomebaker/cache.json
+[D] 721f0daee1cc31e5936dc070fb2d74a23983f9f3c1f2c2eb0f20716f gnomebaker-0.6.4.tar.gz https://prdownloads.sourceforge.net/sourceforge/gnomebaker/
+
+. $base/package/*/*/gnome-conf.in

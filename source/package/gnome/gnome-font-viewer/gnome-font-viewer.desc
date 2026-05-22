@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-font-viewer/gnome-font-viewer.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome gnome-font-viewer package
+
+[T] Core Gnome gnome-font-viewer package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 50.0
+
+[CV-URL] https://download.gnome.org/sources/gnome-font-viewer/cache.json
+[D] e6e30aa2322bc79dd82fb641e5c50aa400418de5b06ed5145209090b gnome-font-viewer-50.0.tar.xz https://download.gnome.org/sources/gnome-font-viewer/50/
+
+. $base/package/*/*/gnome-conf.in

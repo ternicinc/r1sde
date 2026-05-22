@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rosegarden/rosegarden.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] General-purpose music composition and editing environment
+
+[T] Rosegarden is a professional audio and MIDI sequencer, score editor and
+[T] general-purpose music composition and editing environment.
+
+[U] https://www.rosegardenmusic.com/
+
+[A] Chris Cannam <cannam@all-day-breakfast.com>
+[M] Valentin Ziegler <valentin.ziegler@googlemail.com>
+
+[C] extra/multimedia
+
+[E] opt lirc
+[E] opt jack
+
+[L] GPL
+[V] 25.12
+
+[D] 12b22527c16498916847f022a123705b16989153175bddb6bc709a50 rosegarden-25.12.tar.xz https://prdownloads.sourceforge.net/sourceforge/rosegarden/
+
+. $base/package/*/*/kde-conf.in
+var_append cmakeopt ' ' -DUSE_QT6=ON
+var_append CXX_WRAPPER_APPEND ' ' -lfftw3f

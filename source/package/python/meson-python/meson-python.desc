@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/meson-python/meson-python.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Python build back-end built on top of the Meson build system
+
+[T] It enables using Meson for the configuration and build steps of Python
+[T] packages.
+
+[U] https://mesonbuild.com/meson-python/
+
+[A] The Meson development team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[E] add packaging
+[E] add pyproject-metadata
+
+[L] MIT
+[V] 0.19.0
+[P] X -----5---9 110.005
+
+[D] f334125ba2f494ec2c4c16e65e073ff06457197e25f62f9141785dc4 meson_python-0.19.0.tar.gz https://files.pythonhosted.org/packages/source/m/meson-python/

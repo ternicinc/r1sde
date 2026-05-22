@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/texi2html/texi2html.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Texinfo to HTML Conversion Script
+
+[T] Texi2HTML is a Perl script which converts Texinfo source files to HTML
+[T] output.
+[T]
+[T] This is an evolving version of the script originally developed by Lionel
+[T] Cons and later maintained for a time by Olaf Bachmann. It now supports
+[T] many advanced features, such as internationalization and extremely
+[T] configurable output formats. It is still in development despite the fact
+[T] that GNU makeinfo now supports HTML output because it still supports many
+[T] features beyond those supported by makeinfo.
+
+[U] https://www.nongnu.org/texi2html/
+
+[A] Lionel Cons
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] GPL
+[V] 5.0
+[P] O -----5---9 200.000
+
+[D] 98e7fd7709e2019cd5f72557e44680d5c4631c70c23a3291ee16b9f1 texi2html-5.0.tar.gz http://download.savannah.gnu.org/releases/texi2html/

@@ -1,0 +1,54 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/iproute2/iproute2.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Tools for advanced Linux IP Configuration
+
+[T] The standard UNIX commands ifconfig, route and arp don't give the
+[T] administrator full control of all features of the Linux IP stack.
+[T]
+[T] In order to configure IP Tunnels, QoS, Policy Routing, etc. you need
+[T] the tools 'ip' and 'tc' from this package. Read the "Linux 2.4 Routing
+[T] and Traffic Control HOWTO" first!
+
+[U] http://linux-net.osdl.org/index.php/Iproute2
+[U] https://lartc.org/howto {Linux 2.4 Routing & Traffic Control HOWTO}
+
+[A] Alexey Kuznetsov <kuznet@ms2.inr.ac.ru>
+[A] Bert Hubert <ahu@ds9a.nl>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+# LTO breaks looking up internal symbols, like vlan_link_util
+[F] CROSS DIETLIBC NO-LTO
+[K] + linux
+
+[E] opt bdb
+[E] opt libbpf
+
+[L] GPL
+[V] 7.0.0
+[P] X -----5---9 190.000
+
+[D] 15cf7cdcb6aaec5b43eeefadd5d4e67fbe7022c99cad5f0b646c6635 iproute2-7.0.0.tar.xz https://www.kernel.org/pub/linux/utils/net/iproute2/
+
+[ $prefix_auto = 1 ] && prefix= && set_confopt
+
+cleanconfopt=0
+
+hook_add preconf 5 "sed -i s/gcc/$CC/ configure"
+var_remove_regex makeinstopt ' ' 'PREFIX=.*'
+
+var_append makeopt ' ' KERNEL_INCLUDE=$root/usr/include
+var_append makeopt ' ' LIBC_INCLUDE=$root/usr/include
+var_append makeinstopt ' ' "DESTDIR=$root/$prefix SBINDIR=$sbindir MANDIR=$mandir DOCDIR=$infodir"
+
+ipr2_pm() {
+	$CC $base/package/*/iproute2/ipnm2nwbc.c -o $root$sbindir/ipnm2nwbc
+	cp $base/package/*/iproute2/dumpnetcfg.sh $root$sbindir/dumpnetcfg
+	chmod +x $root$sbindir/dumpnetcfg
+}
+hook_add postmake 5 ipr2_pm

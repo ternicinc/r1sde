@@ -1,0 +1,45 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/coda/coda.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Advanced networked filesystem
+
+[T] Coda is a distributed filesystem with its origin in AFS2. It has
+[T] many features that are very desirable for network filesystems.
+[T] Currently, Coda has several features not found elsewhere.
+[T]
+[T] 1. disconnected operation for mobile computing
+[T] 2. is freely available under a liberal license
+[T] 3. high performance through client side persistent caching
+[T] 4. server replication
+[T] 5. security model for authentication, encryption and access control
+[T] 6. continued operation during partial network failures in server network
+[T] 7. network bandwith adaptation
+[T] 8. good scalability
+[T] 9. well defined semantics of sharing, even in the presence of network
+[T] failures
+
+[U] http://www.coda.cs.cmu.edu
+
+[A] Carnegie Mellon University, USA
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/server
+[F] CROSS
+
+[E] add attrs
+
+[L] GPL
+[V] 8.1.6
+
+[SRC] .
+
+[D] a49f17eadd45e8d255f583055131a87f2edf7da17e6387e7626126d0 lwp-2.17.tar.gz https://github.com/cmusatyalab/coda/archive/
+[D] a474720955600528ce6ed361a1b5a8cd8f457b2cb5573ff559f5a1db rvm-1.28.tar.gz https://github.com/cmusatyalab/coda/archive/
+[D] 3269abfd642b9d95b64ee22acc9a4e1719b440f467c5d7d8c335e2db rpc2-2.37.tar.gz https://github.com/cmusatyalab/coda/archive/
+[D] 0e746c35e5c187f4e076bfcc1c9b380d684e3acfa94516b404ef5e76 coda-8.1.6.tar.gz http://coda.cs.cmu.edu/coda/source/
+
+[ $prefix_auto = 1 ] && prefix="opt/coda" && set_confopt

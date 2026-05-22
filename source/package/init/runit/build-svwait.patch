@@ -1,0 +1,23 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/runit/build-svwait.patch
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./package/commands.orig	2008-06-15 22:53:26.000000000 +0200
++++ ./package/commands	2008-08-08 08:28:20.000000000 +0200
+@@ -6,4 +6,6 @@
+ runsvdir
+ sv
+ svlogd
++svwaitdown
++svwaitup
+ utmpset
+--- ./src/Makefile.orig	2008-06-15 22:53:26.000000000 +0200
++++ ./src/Makefile	2008-08-08 08:33:11.000000000 +0200
+@@ -1,4 +1,4 @@
+-IT=chpst runit runit-init runsv runsvchdir runsvdir sv svlogd utmpset
++IT=chpst runit runit-init runsv runsvchdir runsvdir sv svlogd svwaitup svwaitdown utmpset
+ 
+ default: sysdeps $(IT)
+ 

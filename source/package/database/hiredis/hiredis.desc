@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/hiredis/hiredis.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Minimalistic C client for Redis >= 1.2
+
+[T] Hiredis is a minimalistic C client library for the Redis database. It is
+[T] minimalistic because it just adds minimal support for the protocol, but at
+[T] the same time it uses a high level printf-alike API in order to make it
+[T] much higher level than otherwise suggested by its minimal code base and the
+[T] lack of explicit bindings for every Redis command.
+
+[U] https://github.com/redis/hiredis
+
+[A] Redis Ltd.
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/database
+
+[L] BSD
+[V] 1.3.0
+[P] X -----5---9 117.600
+
+[D] 13ae4f9aaf91a497fe29c42544c1766c098f4e232a78cb204bacbabc hiredis-v1.3.0.tar.gz https://github.com/redis/hiredis/archive/refs/tags/v1.3.0/

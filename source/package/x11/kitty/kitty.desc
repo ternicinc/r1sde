@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kitty/kitty.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Cross-platform, fast, feature-rich, GPU based terminal
+
+[T] Kitty ia a fast, feature-rich, cross-platform, GPU based terminal.
+
+[U] https://github.com/kovidgoyal/kitty
+
+[A] Kovid Goyal
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell
+
+[L] GPL3
+[V] 0.47.0
+
+[D] 8664d95a72b3b07bb0c3134b45d5f6fb363e2ffe97e50bc41ec5b3f3 kitty-v0.47.0.tar.gz https://github.com/kovidgoyal/kitty/archive/v0.47.0/
+
+rungpepinstall=0 rungo=0 runmake=0
+
+pyconfopt="build"
+
+makeinstopt=
+hook_add postmake 5 "install kitty/launcher/kitty $root$bindir/"

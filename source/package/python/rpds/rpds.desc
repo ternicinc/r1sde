@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rpds/rpds.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Python bindings to Rust's persistent data structures (rpds)
+
+[T] Python bindings to Rust's persistent data structures (rpds).
+
+[U] https://github.com/crate-py/rpds
+
+[A] Julian Berman <Julian+rpds@GrayVines.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] MIT
+[V] 0.30.0
+[P] X -----5---9 110.265
+
+[D] 34bad4f251a2f4487c364d30883467c19690a12d30639aecbc306dd0 rpds-0.30.0.tar.gz https://github.com/crate-py/rpds/archive/v0.30.0/

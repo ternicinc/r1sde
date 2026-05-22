@@ -1,0 +1,27 @@
+[TIMESTAMP] 1768852563 Mon Jan 19 20:56:03 2026
+[BUILDTIME] 8 (9)
+[SIZE] 0.94 MB, 85 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[OPT] glib
+[DEP] gnutls
+[DEP] grep
+[DEP] gsettings-desktop-schemas
+[DEP] jinja2
+[DEP] libproxy
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[OPT] openssl
+[DEP] python
+[DEP] sed
+[DEP] tar
+[DEP] typogrify
+[DEP] util-linux
+[DEP] xz

@@ -1,0 +1,37 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/keynote/keynote.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] KeyNote trust management library
+
+[T] This package contains the KeyNote trust management library reference
+[T] implementation - RFC 2704.
+
+[U] http://www.cis.upenn.edu/~keynote
+
+[A] Angelos D. Keromytis <angelos@dsl.cis.upenn.edu>
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS NOPARALLEL
+[C] extra/security
+
+[L] BSD
+[V] 2.3
+[P] X -----5---9 186.700
+
+[D] 088e670c0aad48b1e3f7f48e6b21f7da1f611c6d0b375699216095b8 keynote_2.3.orig.tar.gz http://ftp.debian.org/debian/pool/main/k/keynote/
+
+makeinstopt=
+keynote_pm() {
+	cp -fv keynote.h $root$includedir/
+	cp -fv libkeynote.a $root$libdir/
+	cp -fv keynote $root$sbindir/
+
+	cp -fv man/keynote.1 $root$mandir/man1/
+	cp -fv man/keynote.3 $root$mandir/man3/
+	cp -fv man/keynote.4 $root$mandir/man4/
+	cp -fv man/keynote.5 $root$mandir/man5/
+}
+hook_add postmake 3 keynote_pm

@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/synergy/synergy.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Cross-platform mouse/keyboard/clipboard sharing
+
+[T] Synergy lets you easily share a single mouse and keyboard between
+[T] multiple computers with different operating systems without special
+[T] hardware. It's intended for users with multiple computers on their desk
+[T] since each system uses its own monitor(s). Just move the mouse off the
+[T] edge of a screen to move to another screen; keyboard and mouse input is
+[T] then redirected to the other screen. Synergy also lets you cut and paste
+[T] between systems and it makes screen savers activate/deactivate in concert.
+
+[U] https://symless.com/synergy
+
+[A] Chris Schoeneman <crs23@bigfoot.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] GPL
+[V] 1.20.2
+
+[D] 07b80371c6b9690d80f39b8ed4081334dba252c7052c3c0f43bdcc28 synergy-1.20.2.tar.gz https://github.com/symless/synergy/archive/v1.20.2/

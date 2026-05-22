@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/devhelp/devhelp.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A developer's help program for GNOME
+
+[T] DevHelp is a developer's help program for GNOME.
+
+[U] https://wiki.gnome.org/Apps/Devhelp
+
+[A] Johan Dahlin <zilch.am@home.se>
+[A] Mikael Hallendal <micke@imendio.com>
+[A] Richard Hult <richard@imendio.com>
+[A] Ross Burton <ross@burtonini.com>
+
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/development extra/desktop/gnome
+
+[L] GPL
+[V] 43.0
+[P] X -----5---9 154.800
+
+[CV-URL] https://download.gnome.org/sources/devhelp/cache.json
+[D] 3ade5c9bc4e2cceac4a26c7770687f4f30b95747080db7ea1b805a42 devhelp-43.0.tar.xz https://download.gnome.org/sources/devhelp/43/
+
+. $base/package/*/*/gnome-conf.in

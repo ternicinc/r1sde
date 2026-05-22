@@ -1,0 +1,17 @@
+[TIMESTAMP] 1744892370 Thu Apr 17 14:19:30 2025
+[BUILDTIME] 1 (9)
+[SIZE] 0.17 MB, 39 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] lxqt-build-tools
+[DEP] make
+[DEP] perl
+[DEP] sed
+[DEP] tar
+[DEP] xz

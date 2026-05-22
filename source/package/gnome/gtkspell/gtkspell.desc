@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gtkspell/gtkspell.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A spell checker for GtkTextView widgets
+
+[T] GtkSpell provides word-processor-style highlighting and replacement of
+[T] misspelled words in a GtkTextView widget. Right-clicking a misspelled
+[T] word pops up a menu of suggested replacements.
+
+[U] https://gtkspell.sourceforge.net/
+
+[A] Evan Martin <martine@cs.washington.edu>
+[A] Nathan Fredrickson <nathan@silverorange.com>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 3.0.10
+[P] X -----5---9 153.901
+
+[D] dfc2ee7a9f6e877d6f68a8004f489d450814aec21ba124447ff0668d gtkspell3-3.0.10.tar.xz https://download.sourceforge.net/gtkspell/
+
+. $base/package/*/*/gnome-conf.in

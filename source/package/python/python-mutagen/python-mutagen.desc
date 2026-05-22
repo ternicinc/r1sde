@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/python-mutagen/python-mutagen.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Audio tagger implemented in Python
+
+[T] Audio tagger implemented in Python.
+
+[U] https://github.com/quodlibet/mutagen
+
+[A] Mutagen Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+
+[V] 1.47.0
+[L] GPL
+[P] X -----5---9 700.000
+
+[D] bf13d2f05f931924ba11dc70d4ab61399de5bad378d047afba66b1e4 mutagen-1.47.0.tar.gz https://github.com/quodlibet/mutagen/archive/release-1.47.0/

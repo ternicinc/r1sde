@@ -1,0 +1,20 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-gd-graph/perl-gd-graph.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Graph Plotting Module for Perl 5
+
+[T] GD::Graph is a perl5 module to create charts using the GD module.
+
+[A] Martien Verbruggen <mgjv@tradingpost.com.au>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 1.56
+[P] X -----5---9 150.100
+
+[D] 735edd97a696b27462ae86f04b30bd3cb97e08db25dff3866e8bd89d GDGraph-1.56.tar.gz https://cpan.metacpan.org/authors/id/B/BP/BPS/

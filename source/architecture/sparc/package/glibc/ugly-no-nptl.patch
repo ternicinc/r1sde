@@ -1,0 +1,30 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/sparc/package/*/ugly-no-nptl.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+--- glibc-20050919/nscd/nscd.h.vanilla	2005-11-05 14:47:31.000000000 +0100
++++ glibc-20050919/nscd/nscd.h	2005-11-05 14:47:17.000000000 +0100
+@@ -25,6 +25,7 @@
+ #include <stdbool.h>
+ #include <time.h>
+ #include <sys/uio.h>
++#include <sys/socket.h>
+ 
+ /* The declarations for the request and response types are in the file
+    "nscd-client.h", which should contain everything needed by client
+--- glibc-20050919/malloc/memusage.c.vanilla	2005-11-05 13:54:54.000000000 +0100
++++ glibc-20050919/malloc/memusage.c	2005-11-05 13:56:00.000000000 +0100
+@@ -83,7 +83,12 @@
+ static memusage_cntr_t decreasing_mremap;
+ static memusage_size_t current_heap;
+ static memusage_size_t peak_use[3];
++
++#ifdef HAVE___THREAD
+ static __thread uintptr_t start_sp;
++#else
++static uintptr_t start_sp;
++#endif
+ 
+ /* A few macros to make the source more readable.  */
+ #define peak_heap	peak_use[0]

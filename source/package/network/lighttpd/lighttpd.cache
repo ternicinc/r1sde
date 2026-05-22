@@ -1,0 +1,29 @@
+[TIMESTAMP] 1755422536 Sun Aug 17 11:22:16 2025
+[BUILDTIME] 20 (9) ERROR
+[SIZE] 0.01 MB, 15 files
+
+[DEP] autoconf
+[DEP] automake
+[DEP] bash
+[OPT] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[OPT] fam
+[DEP] gawk
+[OPT] gdbm
+[DEP] grep
+[OPT] libmemcache
+[DEP] libtool
+[DEP] libxcrypt
+[DEP] linux-header
+[OPT] lua
+[DEP] m4
+[DEP] make
+[OPT] openldap
+[OPT] openssl
+[OPT] pcre
+[DEP] perl
+[DEP] sed
+[DEP] tar
+[DEP] xz
+[DEP] zlib

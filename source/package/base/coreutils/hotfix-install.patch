@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/coreutils/hotfix-install.patch
+# Copyright (C) 2017 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+Makefile:3418: *** Recursive variable 'INSTALL' references itself (eventually).  Stop.
+
+--- coreutils-8.26/src/local.mk.vanilla	2017-03-12 17:38:03.094758381 +0000
++++ coreutils-8.26/src/local.mk	2017-03-12 17:38:30.682758855 +0000
+@@ -649,4 +649,4 @@
+ else
+ cu_install_program = src/ginstall
+ endif
+-INSTALL = $(cu_install_program) -c
++INSTALL_PROGRAM = $(cu_install_program) -c

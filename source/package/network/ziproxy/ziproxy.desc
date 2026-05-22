@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ziproxy/ziproxy.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A gzipping, Image compressing, forwarding HTTP Proxy
+
+[T] Ziproxy is a forwarding (non-caching) proxy that gzips text and HTML
+[T] files, and reduces the size of images by converting them to lower
+[T] quality JPEGs. It is intended to increase the speed for low-speed
+[T] Internet connections and it's suitable for both home and professional
+[T] usage. Ziproxy is fully configurable and also features transparent proxy
+[T] mode, preemptive name resolution, operation in either daemon mode or
+[T] (x)inetd mode, a detailed access log with compression statistics, basic
+[T] authentication, and more.
+
+[U] https://ziproxy.sourceforge.net/
+
+[A] Daniel Mealha Cabrita
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[E] opt jasper
+
+[L] GPL
+[V] 3.3.2
+
+[D] a130920bc8a149d16ca50fda33572e2f212e0f1a634f25b0f2d5f05e ziproxy-3.3.2.tar.xz http://downloads.sourceforge.net/ziproxy/
+
+pkginstalled jasper || var_append confopt ' ' --without-jasper
+var_append CC_WRAPPER_APPEND ' ' -std=gnu17

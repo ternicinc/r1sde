@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/nspr/nspr.pc.in
+# Copyright (C) 2008 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: NSPR
+Description: Netscape Portable Runtime
+Version: @NSPR_VER@
+Libs: -lpthread -L${libdir} -lplds4 -lplc4 -lnspr4 -ldl -Wl,-R${libdir}
+Cflags: -I${includedir}

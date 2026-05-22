@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/sshfs/sshfs.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A filesystem client based on the SSH File Transfer Protocol
+
+[T] This is a filesystem client based on the SSH File Transfer Protocol.
+[T] Since most SSH servers already support this protocol it is very easy to
+[T] set up: i.e. on the server side there's nothing to do. On the client
+[T] side mounting the filesystem is as easy as logging into the server with
+[T] ssh.
+
+[U] https://github.com/libfuse/sshfs
+
+[A] Nikolaus Rath <Nikolaus@rath.org>
+[A] Miklos Szeredi <mszeredi@inf.bme.hu>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/filesystem
+[F] CROSS
+
+[E] opt docutils
+
+[L] GPL
+[V] 3.7.5
+
+[D] 2bf55627595f7f9052312a1f16e6e9831dbea3c7eb9dfe9a5539babb sshfs-3.7.5.tar.gz https://github.com/libfuse/sshfs/archive/sshfs-3.7.5/

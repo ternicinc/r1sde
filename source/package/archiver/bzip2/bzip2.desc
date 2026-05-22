@@ -1,0 +1,45 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/bzip2/bzip2.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A file compression utility
+
+[T] bzip2 compresses files using the Burrows-Wheeler blocksorting text
+[T] compression algorithm, and Huffman coding. Compression is generally
+[T] considerably better than that achieved by more conventional LZ77/LZ78-based
+[T] compressors, and approaches the performance of the PPM family of
+[T] statistical compressors.
+
+[U] http://www.bzip.org/
+
+[A] Julian Seward <jseward@acm.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS DIETLIBC FPIC NO-LTO.gcc
+
+[L] GPL
+[V] 1.0.8
+[P] X --2--5---9 108.600
+
+[CV-URL] http://www.bzip.org/downloads.html
+
+[D] 30a282080bd2e44ead83b404f6f8a29ff14c0b81062d1983aaa2862f bzip2-1.0.8.tar.gz https://sourceware.org/pub/bzip2/
+
+var_append makeopt ' ' "AR=$AR RANLIB=$RANLIB"
+var_append makeinstopt ' ' "LIBDIR=${libdir##*/}"
+
+if [ "$SDECFG_STATIC" != 1 -a "$SDECFG_DIETLIBC_bzip2" != 1 ]; then
+	hook_add inmake 5 "$MAKE $makeopt -f Makefile-libbz2_so"
+	hook_add postmake 5 "install libbz2.so.?.?.* $root$libdir"
+	hook_add postmake 5 "cp -arv libbz2.so.?.? $root$libdir"
+fi
+
+# translate some stuff from usr/bin to just bin/ ...
+var_append INSTALL_WRAPPER_FILTER '|' \
+	   "sed -e 's,usr/bin/\(bunzip2\|bzcat\|bzip2\)$,bin/\1,'"
+
+hook_add postmake  5 "cp -v manual* bzip2.txt $root$docdir"

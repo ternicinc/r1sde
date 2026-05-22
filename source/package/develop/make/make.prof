@@ -1,0 +1,12 @@
+441 hash.c
+101 implicit.c
+72 rule.c
+64 read.c
+36 dir.c
+35 file.c
+30 job.c
+26 variable.c
+14 misc.c
+12 remake.c
+12 expand.c
+10 strcache.c

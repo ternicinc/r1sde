@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lzma/lzma.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A file compression utility using the LZMA algorithm
+
+[T] LZMA utils in a nutshell. Average compression ratio of LZMA is about
+[T] 30% better than that of gzip, and 15% better than that of bzip2.
+[T] Decompression speed is only little slower than that of gzip, being two
+[T] to five times faster than bzip2. In fast mode, compresses faster than
+[T] bzip2 with a comparable compression ratio. However achieving the best
+[T] compression ratios takes four to even twelve times longer than with bzip2.
+[T] However, this doesn't affect decompressing speed.
+
+[U] https://tukaani.org/lzma/
+
+[A] Igor Pavlov
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+
+[L] LGPL
+[V] 4.32.7
+[P] X 0----5---9 102.500
+
+[CV-URL] http://tukaani.org/lzma/download
+
+[D] 55b62cb3f38add954ce68b4b99755001c4d9f32003195187334a5b72 lzma-4.32.7.tar.xz https://tukaani.org/lzma/

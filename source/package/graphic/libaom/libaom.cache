@@ -1,0 +1,22 @@
+[TIMESTAMP] 1768928916 Tue Jan 20 18:08:36 2026
+[BUILDTIME] 180 (9)
+[SIZE] 11.45 MB, 30 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[OPT] doxygen
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] procps
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] yasm

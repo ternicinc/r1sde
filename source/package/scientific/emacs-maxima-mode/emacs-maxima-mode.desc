@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/emacs-maxima-mode/emacs-maxima-mode.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Maxima mode for (X)Emacs
+
+[T] Maxima-mode for (X)Emacs
+
+[U] http://www.ifa.au.dk/~harder/imaxima.html
+
+[A] Jesper Harder
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/scientific extra/editor
+
+[L] GPL
+[V] 0.9
+
+# FIXME also install xemacs files
+
+[D] a3d02e764497d891c2861774f85bb8959346213d9c54dbe0bec3d3c2 imaxima-0.9.tar.gz http://www.ifa.au.dk/~harder/

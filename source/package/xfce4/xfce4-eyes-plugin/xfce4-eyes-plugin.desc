@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfce4-eyes-plugin/xfce4-eyes-plugin.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A XFCE eyes panel plugin
+
+[T] Eyes is a xfce4 panel plugin that adds eyes which watch your every step.
+
+[U] http://xfce-goodies.berlios.de/
+
+[A] Benedikt Meurer <benedikt.meurer@unix-ag.uni-siegen.de>
+[A] Danny Milosavljevic <danny_milo@yahoo.com>
+[A] Nick Schermer <nick@xfce.org>
+[M] Johan Boyé <linuxmasterjedi@free.fr>
+
+[C] extra/desktop/xfce
+[F] CROSS
+[L] BSD
+[V] 4.7.0
+
+[D] f4d4f20268440e352369c332b0d74072fda2177468b4a3387275493c xfce4-eyes-plugin-4.7.0.tar.xz https://archive.xfce.org/src/panel-plugins/xfce4-eyes-plugin/4.7/
+
+. $base/package/xfce4/*/xfce4-conf.in

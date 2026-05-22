@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/x11perf/x11perf.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A X11 performance test tool
+
+[T] X11perf is a X.Org, X11 graphics performance testing and benchmark tool.
+[T] I can help to determine the quality of the hardware accelerated
+[T] X driver (if any), including GPU or CPU blitting performance and the
+[T] resulting frames-per-second (FPS).
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[E] add xorg-util-macros
+
+[L] OpenSource
+[V] 1.7.0
+
+[D] 4ff8a8ba6ada6f881af3b9ecd9574671293eee36627d00ddbbc120fc x11perf-x11perf-1.7.0.tar.gz https://gitlab.freedesktop.org/xorg/test/x11perf/-/archive/x11perf-1.7.0/
+
+. package/*/*/modular-x-conf.in
+autogen=1

@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libvolk/libvolk.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Vector Optimized Library of Kernels
+
+[T] VOLK is the Vector-Optimized Library of Kernels. It is a library that
+[T] contains kernels of hand-written SIMD code for different mathematical
+[T] operations.
+
+[U] https://www.libvolk.org/
+
+[A] libvolk Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[E] opt doxygen
+
+[L] LGPL
+[V] 3.3.0
+
+[D] 23c765a958a04208c45d59718cc5d08a8163975871f094654cd2aeca libvolk-3.3.0.tar.gz https://github.com/gnuradio/volk/archive/refs/tags/v3.3.0/
+
+var_append cmakeopt ' ' -DENABLE_TESTING=OFF

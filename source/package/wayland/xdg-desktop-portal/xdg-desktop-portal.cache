@@ -1,0 +1,36 @@
+[TIMESTAMP] 1775644552 Wed Apr  8 12:35:52 2026
+[BUILDTIME] 20 (9)
+[SIZE] 1.73 MB, 114 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] binutils
+[OPT] bubblewrap
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] docutils
+[OPT] flatpak
+[DEP] fontconfig
+[DEP] fuse
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[DEP] glib
+[DEP] grep
+[DEP] gst-plugins-base
+[DEP] gstreamer
+[DEP] gudev
+[DEP] gzip
+[DEP] json-glib
+[DEP] linux-header
+[DEP] mesa
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pipewire
+[DEP] python
+[DEP] sed
+[OPT] systemd
+[DEP] tar
+[DEP] util-linux

@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/slat/slat.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Security-Enhanced Linux Analysis Tools
+
+[T] Security-Enhanced Linux Analysis Tools (slat) provide a systematic way
+[T] to determine if security goals are achieved by a given SELinux policy
+[T] configuration. In particular, slat is concerned with information flow
+[T] security goals, which describe desired paths by which information
+[T] moves throughout a system. We provide a simple syntax in which to
+[T] express these goals, and tools that check a policy configuration
+[T] against the goals.
+
+[A] The MITRE Corporation
+[M] Miguel Bolanos <miguel@geekpreview.org>
+
+[C] extra/security
+
+[L] GPL
+[V] 2.0
+[P] O
+
+[D] 867383b00746c784a461e0d826d3b883d0cefe7d86661d785d8d6995 slat-2.0.tar.gz http://www.mitre.org/tech/selinux/

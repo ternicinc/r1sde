@@ -1,0 +1,16 @@
+[TIMESTAMP] 1766944693 Sun 28 Dec 2025 17:58:13 GMT
+[BUILDTIME] 1 (9)
+[SIZE] 0.09 MB, 12 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] openssl
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar

@@ -1,0 +1,23 @@
+[TIMESTAMP] 1759848536 Tue Oct  7 16:48:56 2025
+[BUILDTIME] 620 (9)
+[SIZE] 2.63 MB, 279 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] cups
+[DEP] diffutils
+[DEP] extra-cmake-modules
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] qt6base
+[DEP] qt6svg
+[DEP] qt6tools
+[DEP] qt6translations
+[DEP] sed
+[DEP] tar
+[DEP] vulkan-headers
+[DEP] xz

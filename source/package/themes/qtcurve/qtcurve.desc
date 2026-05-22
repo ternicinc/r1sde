@@ -1,0 +1,46 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/qtcurve/qtcurve.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A KDE theme engine based on RedHat's BlueCurve
+
+[T] This is a set of widget styles for KDE, GTK1, and GTK2 based apps. The
+[T] underlying code is based upon Blue/FreeCurve - however, *extensive*
+[T] modifications have been made.
+[T]
+[T] The following is a list of some of the changes in this theme:
+[T]
+[T] * Use KDE colours/fonts - read in via ~/.qt/qtrc, a la Geramik
+[T] * Better check and radio buttons - consistant between Qt, Gtk1, and
+[T] Gtk2
+[T] * Pushbuttons now depress
+[T] * Comboboxes - fixed arrow size, and remove line from underneath arrow
+[T] * New sliders
+[T] * Draw box around splitter
+[T] * Better KDE progress bar
+[T] * More consistent spinboxes
+[T] * Removed slashes - replaced with horiz/vert lines
+[T] * New toolbar/menu bar handles
+[T] * Shading of objects is now consistent between KDE and GTK apps -
+[T] things like 3d frames, and pushbuttons, should now be exactly the
+[T] same.
+
+[U] https://github.com/KDE/qtcurve
+
+[A] Craig Drummond
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/theme extra/desktop/kde extra/desktop/gnome
+
+[L] GPL
+[V] 1.9.1
+
+[D] 72f7a1c5f3c1a4cac0b5133d3ab4d6ad138f4879aa77b17417699336 qtcurve-1.9.1.tar.gz https://github.com/KDE/qtcurve/archive/1.9.1/
+
+. $base/package/*/*/kde-conf.in
+var_append cmakeopt ' ' -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+var_append GCC_WRAPPER_APPEND ' ' -L$root$(pkgprefix libdir libxcb)
+var_append GCC_WRAPPER_APPEND ' ' -L$root$(pkgprefix libdir pango)

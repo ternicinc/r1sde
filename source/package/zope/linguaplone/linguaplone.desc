@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/linguaplone/linguaplone.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An easy-to-use, powerful add-on for multilingual content management in PLone
+
+[T] LinguaPlone is a 3rd generation multilingual/translation solution for Plone.
+[T] It attempts to be as transparent as possible and minimize the impact for
+[T] existing applications and Plone itself.
+
+[U] https://www.plone.org
+
+[A] Plone Solutions <http://www.plonesolutions.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[E] add zope
+
+[L] OpenSource
+
+[V] 0.8.5
+
+#[D] 620176809 LinguaPlone-0.7.2.tar.gz !http://www.plonesolutions.com/products/linguaplone/0.7.2/core/downloadableFile/at_download
+[D] 3251063899 LinguaPlone-0.8.5.tar.gz http://plone.org/products/linguaplone/releases/0.8.5/
+
+. $base/package/*/zope/zope-conf.in

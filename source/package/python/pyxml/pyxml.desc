@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pyxml/pyxml.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A collection of libraries to process XML with Python
+
+[T] A collection of libraries to process XML with Python.
+
+[U] https://pyxml.sourceforge.net/
+
+[A] PyXML Team
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/development
+
+[E] add python
+
+[L] OpenSource
+
+[V] 0.8.4
+[P] X -----5---9 149.000
+
+[D] 0848916a0027554ffe3e5e56d314b8ecff2be7e33f2d55dd45854aab PyXML-0.8.4.tar.gz https://prdownloads.sourceforge.net/sourceforge/pyxml/

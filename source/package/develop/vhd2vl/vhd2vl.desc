@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/vhd2vl/vhd2vl.desc
+[COPY] Copyright (C) 2018 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Translate synthesizable VHDL into Verilog
+
+[T] Vhd2vl is designed to translate synthesizable VHDL into Verilog 1995 or 2001.
+
+[U] https://github.com/ldoolitt/vhd2vl
+
+[A] Vincenzo Liguori - Ocean Logic Pty Ltd
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] bbe3198
+
+[D] b8e1aad0a2ea5ddae726ef4750e494183c70a4946ec22d892edca59e vhd2vl-bbe3198.tar.zst git+https://github.com/ldoolitt/vhd2vl bbe3198
+
+var_append makeopt ' ' '-C src'
+makeinstopt=
+hook_add postmake 5 "install src/vhd2vl $root$bindir/"

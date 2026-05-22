@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libei/libei.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library for Emulated Input
+
+[T] libei is a library for Emulated Input, primarily aimed at the Wayland
+[T] stack.
+
+[U] https://gitlab.freedesktop.org/libinput/libei
+
+[A] Red Hat, Inc.
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/library
+[F] CROSS
+
+[E] add jinja2
+[E] opt systemd
+
+[L] MIT
+[V] 1.6.0
+[P] X -----5---9 201.000
+
+[D] b0e596247f7b2d9d2bee4ea539c5e55d531da7ee3ef01a49e2a4b8fd libei-1.6.0.tar.bz2 https://gitlab.freedesktop.org/libinput/libei/-/archive/1.6.0/

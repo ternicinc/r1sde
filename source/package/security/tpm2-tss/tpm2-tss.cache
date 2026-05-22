@@ -1,0 +1,25 @@
+[TIMESTAMP] 1760295559 Sun Oct 12 20:59:19 2025
+[BUILDTIME] 80 (9)
+[SIZE] 12.16 MB, 299 files
+
+[OPT] acl
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[OPT] doxygen
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] json-c
+[DEP] libtpms
+[DEP] libusb
+[DEP] linux-header
+[DEP] make
+[DEP] openssl
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] util-linux

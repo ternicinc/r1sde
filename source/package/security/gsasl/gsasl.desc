@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gsasl/gsasl.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Simple Authentication and Security Layer library
+
+[T] GNU SASL is an implementation of the Simple Authentication and Security
+[T] Layer framework and a few common SASL mechanisms. SASL is used by network
+[T] servers such as IMAP and SMTP to request authentication from clients, and
+[T] in clients to authenticate against servers. The library includes support
+[T] for the SASL framework (with authentication functions and application
+[T] data privacy and integrity functions) and at least partial support for
+[T] the CRAM-MD5, EXTERNAL, GSSAPI, ANONYMOUS, PLAIN, SECURID, DIGEST-MD5,
+[T] LOGIN, NTLM, and KERBEROS_V5 mechanisms.
+
+[U] https://www.gnu.org/software/gsasl/
+
+[A] Simon Josefsson <simon@josefsson.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+[F] CROSS
+
+[L] LGPL
+[V] 2.2.3
+[P] X -----5---9 660.000
+
+[D] f7fe4c2b33d35dd287c868a9f907313f985d3b37949f998a09c62068 gsasl-2.2.3.tar.gz http://ftp.gnu.org/gnu/gsasl/

@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libsigrok/libsigrok.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library providing basic hardware access drivers for logic analyzers
+
+[T] libsigrok (sometimes abbreviated as "sr") is a shared library written in
+[T] C, which provides the basic hardware access drivers for logic analyzers.
+
+[U] https://sigrok.org/wiki/Libsigrok
+
+[A] Uwe Hermann
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[E] opt doxygen
+[E] opt graphviz
+
+[L] GPL3
+[V] 0.5.2
+[P] X -----5---9 205.000
+
+[D] ac4bd71a1e69328708663040593c5c94b2c7dd7cd61179e21fd922b9 libsigrok-0.5.2.tar.gz http://sigrok.org/download/source/libsigrok/

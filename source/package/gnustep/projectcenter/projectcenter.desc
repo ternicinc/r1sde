@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/projectcenter/projectcenter.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] ProjectCenter is GNUstep IDE
+
+[T] ProjectCenter is GNUstep IDE(Intergated Development Environment)
+[T] application. It is a clone of the OPENSTEP ProjectBuilder application
+[T] for GNUstep.
+
+[U] https://www.gnustep.org/experience/ProjectCenter.html
+
+[A] The GNUstep Project
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/windowmanager
+
+[L] LGPL
+[V] 0.7.0
+
+[D] 2ead92ecb6e793d42954b4a2f1146217c2321b09579cac7e2c576b21 ProjectCenter-0.7.0.tar.gz https//ftpmain.gnustep.org/pub/gnustep/dev-apps/
+
+. $base/package/*/*/gnustep-conf.in

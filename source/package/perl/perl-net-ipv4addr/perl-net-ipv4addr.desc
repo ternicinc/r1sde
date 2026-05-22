@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-net-ipv4addr/perl-net-ipv4addr.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Perl module for manipulating IPv4 addresses
+
+[T] Net::IPv4Addr provides functions for parsing IPv4 addresses both in traditional
+[T] address/netmask format and in the new CIDR format. There are also methods for
+[T] calculating the network and broadcast address and also to see check if a given
+[T] address is in a specific network.
+
+[U] https://search.cpan.org/~frajulac/Net-IPv4Addr-0.10/
+
+[A] Francis J. Lacoste <francis.lacoste@iNsu.COM>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 0.10
+[P] X -----5---9 200.200
+
+[D] 238e48afcf2db061d431d618bddea20f39b6b700bacd8ef8ffd26a1b Net-IPv4Addr-0.10.tar.gz http://search.cpan.org/CPAN/authors/id/F/FR/FRAJULAC/

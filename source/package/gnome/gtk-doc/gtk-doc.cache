@@ -1,0 +1,24 @@
+[TIMESTAMP] 1776128950 Tue Apr 14 04:09:10 2026
+[BUILDTIME] 5 (9)
+[SIZE] 3.47 MB, 144 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gettext
+[OPT] glib
+[DEP] grep
+[DEP] itstool
+[DEP] libxml
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] parameterized
+[DEP] pygments
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] xz

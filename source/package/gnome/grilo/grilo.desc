@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/grilo/grilo.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Gnome grilo package
+
+[T] Core Gnome grilo package.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[L] LGPL
+[V] 0.3.19
+
+[CV-URL] https://download.gnome.org/sources/grilo/cache.json
+[D] d405607097a2083830de50b4e238cb29a657efda316fc7822e179920 grilo-0.3.19.tar.xz https://download.gnome.org/sources/grilo/0.3/
+
+. $base/package/*/*/gnome-conf.in

@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/tcptrace/tcptrace.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A TCP connection analysis tool
+
+[T] tcptrace is a tool for the analysis of TCP packet dumps. It
+[T] produces several different kinds of graphs, and detailed
+[T] textual output.
+
+[U] http://www.tcptrace.org/
+
+[A] Shawn Ostermann <ostermann@eecs.ohiou.edu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+
+[L] BSD
+[V] 6.6.7
+
+[D] 593469641e38c812209ba0135f181edd8aca4bb684d9cda1802c80b9 tcptrace-6.6.7.tar.gz http://www.tcptrace.org/download/
+
+var_append makeinstopt ' ' BINDIR=$root$bindir
+var_append makeinstopt ' ' MANDIR=$root$mandir

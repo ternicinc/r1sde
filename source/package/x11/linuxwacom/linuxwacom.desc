@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/linuxwacom/linuxwacom.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Replacement driver for wacom tablets
+
+[T] The Linux Wacom Project manages the drivers, libraries, and documentation
+[T] for configuring and running Wacom tablets under the Linux operating system
+[T] It contains diagnostic applications as well as updated kernel drivers and
+[T] XFree86 XInput drivers.
+
+[U] https://linuxwacom.sf.net/
+
+[A] Ping Cheng <pingc@wacom.com>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/base
+[F] CROSS
+
+[L] GPL
+[V] 0.7.6-4
+
+[D] c8fa7316b91c93da2af1f8c1b3e996cb6dfb6c01f5140f613f9c2b06 linuxwacom-0.7.6-4.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/linuxwacom/
+
+hook_add preconf 3 ./bootstrap
+var_append confopt ' ' "--with-xlib=$(pkgprefix libdir xorg-server)"
+var_append confopt ' ' "--with-xorg-sdk=/usr/X11 --enable-dlloader"

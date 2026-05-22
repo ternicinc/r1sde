@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/crash/crash.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Core analysis suite
+
+[T] This package contains the core analysis suite crash.
+
+[A] David Anderson
+[M] René Rebe <rene@exactco.de>
+
+[U] https://crash-utility.github.io/
+
+[C] base/tool
+[F] CROSS
+
+[R] + powerpc64 x86 x86-64
+
+[L] GPL
+[V] 9.0.2
+
+[D] d058b3a16e9aea8ea0b5250450c9f252b386bc44532b8c0816fc4c87 crash-9.0.2.tar.gz https://github.com/crash-utility/crash/archive/9.0.2/

@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/eog/eog.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The GNOME image viewing and catalogin program
+
+[T] The Eye of Gnome is an image viewing and cataloging program. It
+[T] does proper handling of large images and images with full opacity
+[T] information, and can zoom and scroll images quickly while keeping
+[T] memory usage constant.
+
+[A] Federico Mena-Quintero <federico@gimp.org>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/multimedia extra/desktop/gnome
+
+[L] GPL
+[V] 50.1
+[P] X -----5---9 152.100
+
+[CV-URL] https://download.gnome.org/sources/eog/cache.json
+[D] 51bf76ed699e1555dd9d30544b82b5fae84e9cece31db2930d52730a eog-50.1.tar.xz https://download.gnome.org/sources/eog/50/
+
+. $base/package/*/*/gnome-conf.in

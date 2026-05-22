@@ -1,0 +1,16 @@
+
+[TIMESTAMP] 1690847583 Tue Aug  1 01:53:03 2023
+[BUILDTIME] 0 (9)
+[SIZE] 2.31 MB, 76 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] blueglass
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

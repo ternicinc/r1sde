@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libportal/libportal.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Flatpak portal library
+
+[T] libportal provides GIO-style async APIs for most Flatpak portals.
+[T] You can find the documentation here.
+
+[U] https://libportal.org/
+
+[A] Matthias Clasen
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[E] add jinja2 markupsafe typogrify smartypants
+[E] qt5base qt5x11extras
+
+[L] LGPL
+[V] 0.9.1
+[P] X -----5---9 109.300
+
+[D] 7ac8801ff135abfc7af05d9480237e87d4cc3df7d4682668a8f0e39d libportal-0.9.1.tar.xz https://github.com/flatpak/libportal/releases/download/0.9.1/
+
+var_append mesonopt ' ' -Dtests=false
+pkginstalled gtk+ || var_append mesonopt ' ' -Dbackend-gtk3=disabled
+pkginstalled gtk || var_append mesonopt ' ' -Dbackend-gtk4=disabled
+pkginstalled qt5base || var_append mesonopt ' ' -Dbackend-qt5=disabled
+pkginstalled qt6base || var_append mesonopt ' ' -Dbackend-qt6=disabled
+
+var_append GCC_WRAPPER_APPEND ' ' -I$root/$(pkgprefix includedir libxcb)

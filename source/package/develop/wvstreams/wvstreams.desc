@@ -1,0 +1,45 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/wvstreams/wvstreams.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A C++ network communications layer for rapid application development
+
+[T] WvStreams is a library set composed of a number of parts. Among
+[T] them are WvIPStreams (WvTCPStream and WvUDPStream), WvStrings (yet
+[T] another C++ String class), WvCrypto Streams (including an easy way
+[T] to add SSL support to applications), WvConf (a configuration file
+[T] handler), WvLog (nice, simple handling of log files), and a whole
+[T] host of other goodness. These are the base classes used to build
+[T] programs such as the ever popular WvDial, TunnelVision, FastForward,
+[T] KWvDial, and retchmail.
+
+[U] https://alumnit.ca/wiki/?page=WvStreams
+
+[A] <wvstreams-dev@nit.ca>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/development
+[F] NOPARALLEL
+
+[L] LGPL
+[V] 4.6.1
+[P] X -----5---9 173.200
+
+[D] d50aeac6f341d72871499fcab1f5a2bcaa1411b3c6b74b61b4460762 wvstreams-4.6.1.tar.gz http://wvstreams.googlecode.com/files/
+
+# Wvdial crashes. Actually, the fault is in wvstreams. The bug is in
+# both my i686 and x86_64 builds:
+# https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=674006
+# https://bugzilla.redhat.com/show_bug.cgi?id=812651
+
+var_append GCC_WRAPPER_APPEND ' ' '-fno-tree-dce -fno-optimize-sibling-calls'
+
+# generate CC and CXX for parallel make
+hook_add premake 5 "eval $MAKE $makeopt CC CXX"
+
+# strangely missing install target?
+hook_add inmake 5 "touch install-xplc"
+
+var_append confopt ' ' --without-qt

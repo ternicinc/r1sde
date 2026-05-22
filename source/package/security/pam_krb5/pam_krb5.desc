@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pam_krb5/pam_krb5.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A PAM module for authenticating against a Kerberos 5 server
+
+[T] pam_krb5 is designed to allow smooth integration of Kerberos 5
+[T] passwordchecking with applications built using PAM. It also supports
+[T] session-specific ticket files (which are neater), Kerberos IV ticket
+[T] file grabbing, and AFS token-grabbing.
+
+[U] https://pam-krb5.sourceforge.net/
+
+[A] Balazs GAL <balsa@rit.bme.hu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+
+[L] GPL
+[V] 4.11
+
+[D] 14569ec793a13d24aee68514bca54285226f2efe97fe41cef79db137 pam-krb5-4.11.tar.gz https://archives.eyrie.org/software/kerberos/
+
+[ $prefix_auto = 1 ] && prefix= && set_confopt

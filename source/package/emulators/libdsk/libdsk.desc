@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libdsk/libdsk.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] LibDSK is a library for accessing discs and disc image files
+
+[T] Libdsk is a library for accessing discs and disc image files. It is intended
+[T] for use in emulator tools, converting between real floppy discs and disc
+[T] images, as CPCTRANS/PCWTRANS do under DOS. Filesystems utilities, such as
+[T] CPMTOOLS, allowing the use of CPMTOOLS on emulator .dsk images, and, it's
+[T] also possible to use libdsk as part of an emulator's floppy controller, thus
+[T] giving the emulator, transparent access to .dsk files or real discs.
+
+[U] https://www.seasip.info/Unix/LibDsk/
+
+[A] John Elliot <jce@seasip.demon.co.uk>
+[M] luisf <trb7@megamail.pt>
+
+[C] extra/emulator
+[F] CROSS
+
+[L] GPL
+[V] 1.4.2
+
+[CV-FLAGS] ODD-UNSTABLE
+[D] ef32047e77cc6940175c8e592cb777e544bd2c99d3f5b80918ec1cd9 libdsk-1.4.2.tar.gz https://www.seasip.info/Unix/LibDsk/

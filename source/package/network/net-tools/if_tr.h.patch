@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/net-tools/if_tr.h.patch
+# Copyright (C) 2014 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- net-tools-1.60/lib/tr.c.vanilla	2014-06-17 15:21:20.000000000 +0200
++++ net-tools-1.60/lib/tr.c	2014-06-17 15:22:04.000000000 +0200
+@@ -20,7 +20,7 @@
+ #include <sys/types.h>
+ #include <sys/socket.h>
+ #include <net/if_arp.h>
+-#include <linux/if_tr.h>
++#include <netinet/if_tr.h>
+ #include <stdlib.h>
+ #include <stdio.h>
+ #include <errno.h>

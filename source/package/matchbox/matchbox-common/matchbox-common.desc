@@ -1,0 +1,22 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/matchbox-common/matchbox-common.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Common confiuguration and tools for the Matchbox WM
+
+[T] Common confiuguration and tools for the Matchbox WM.
+
+[U] http://projects.o-hand.com/matchbox/
+
+[A] Matthew Allum <mallum@o-hand.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/x11
+[F] CROSS
+
+[L] GPL
+[V] 0.9.1
+
+[D] 44cc6b845686cd54754244578eb34877fe447b206d11c94bccd520b3 matchbox-common-0.9.1.tar.bz2 http://projects.o-hand.com/matchbox/sources/matchbox-common/0.9/

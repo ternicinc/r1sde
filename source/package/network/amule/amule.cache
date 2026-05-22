@@ -1,0 +1,25 @@
+[TIMESTAMP] 1759940355 Wed Oct  8 18:19:15 2025
+[BUILDTIME] 470 (9)
+[SIZE] 22.08 MB, 257 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] coreutils
+[DEP] crypto++
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] libgd
+[DEP] libpng
+[DEP] libupnp
+[DEP] linux-header
+[DEP] make
+[DEP] perl
+[DEP] readline
+[DEP] sed
+[DEP] tar
+[DEP] wxwidgets
+[DEP] xz
+[DEP] zlib

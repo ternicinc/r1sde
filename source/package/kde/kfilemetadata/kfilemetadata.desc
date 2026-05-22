@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kfilemetadata/kfilemetadata.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A library for extracting file metadata
+
+[T] KFileMetaData provides a simple library for extracting the text and
+[T] metadata from a number of different files. This library is typically used
+[T] by file indexers to retrieve the metadata.
+
+[U] https://www.kde.org
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[E] add attr
+[E] opt ebook-tools
+[E] opt ffmpeg
+
+[L] GPL
+[V] 6.26.0
+[P] X -----5---9 162.900
+
+[CV-GROUP] kde-frameworks
+[D] ecc26b31ab59ce585dfc0d411befc8cb86f557393bb31a5fbcefacc4 kfilemetadata-6.26.0.tar.xz https://download.kde.org/stable/frameworks/6.26/
+
+. $base/package/*/*/kde-conf.in
+
+var_append GCC_WRAPPER_APPEND ' ' -c?:-lz
+var_append CXX_WRAPPER_APPEND ' ' '-DEXIV2API=__attribute__((visibility("default")))'

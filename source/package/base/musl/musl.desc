@@ -1,0 +1,77 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/musl/musl.desc
+[COPY] Copyright (C) 2013- 2014 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A new standard library to power a new generation of Linux-based devices
+
+[T] Musl is lightweight, fast, simple, free, and strives to be correct in the
+[T] sense of standards-conformance and safety.
+
+[U] https://musl.libc.org/
+
+[A] Rich Felker, et al.
+[M] René Rebe <rene@exactco.de>
+
+[F] CROSS LIBC NO-LTO
+[C] base/library
+[R] + arm arm64 m68k loongarch64 mips mips64 microblaze openrisc powerpc powerpc64 riscv riscv32 riscv64 s390x superh x86 x86-64
+[K] + linux
+
+[L] MIT
+[V] 1.2.6
+[P] O 01---5---9 101.700
+
+[D] 5eb250060567e305b547c0071a3acc8a6c1acc6410508b0a8cd66851 musl-1.2.6.tar.gz http://www.musl-libc.org/releases/
+
+if atstage toolchain; then
+	var_append confopt ' ' '--prefix=$sysroot --includedir=$sysroot$includedir'
+	var_remove_regex confopt ' ' '--host=.*' # overrides --target=, ..!
+	makeopt=
+	var_remove makeinstopt ' ' install
+	var_append makeinstopt ' ' install-headers
+fi
+
+musl_postinstall() {
+	# Musl's dynamic linker comes with ldd functionality built in
+	# so just create a symlink from ld-musl-...
+	# TODO: fix linker to use $libdir (lib64)
+	local cpu=`echo $arch | arch2uname`
+	[ "$SDECFG_X8664_X32" = 1 ] && cpu=x32
+	ln -sfv ../../lib/ld-musl-$cpu.so.1 $root$bindir/ldd
+
+	# Install ld.so.conf
+	#
+	local slibdir="${libdir##*/}"
+	if [ $slibdir != lib ]; then
+		cat > ld-musl.path <<-EOT
+		/$slibdir
+		/lib
+		/usr/$slibdir
+		/usr/lib
+		/usr/X11/$slibdir
+		/usr/X11/lib
+		/opt/*/$slibdir
+		/opt/*/lib
+		/usr/local/$slibdir
+		/usr/local/lib
+EOT
+	else
+		cat > ld-musl.path <<-EOT
+		/lib
+		/usr/lib
+		/usr/X11/lib
+		/opt/*/lib
+		/usr/local/lib
+EOT
+	fi
+	mv -vf ld-musl.path $root/etc/ld-musl-$cpu.path
+
+	# for binutils to find the non /usr paths, TODO: patch binutils!
+	ln -svf ld-musl-$cpu.path $root/etc/ld.so.conf
+}
+
+# musl is using make rules to install, make sure we really re-install all headers
+hook_add premake 5 'touch include/{*/,}* arch/*/bits/*.h'
+hook_add postinstall 5 musl_postinstall

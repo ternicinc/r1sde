@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/rte/rte.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Zapzilla rte library
+
+[T] The video recording plugin of zapzilla needs the rte library, also
+[T] available from the Zapping dowload page. You need not download mp1e,
+[T] this codec is already included in the rte library.
+
+[U] https://zapping.sf.net/
+
+[A] Iñaki García Etxebarria
+[A] Michael H. Schimek
+[A] based on AleVT by Edgar Toernig
+
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[E] opt doxygen
+
+[L] GPL
+[V] 0.5.6
+
+[D] 9fd0476e8b1310cc1ca5de257fa7b1761acd4bd7c66b1dcbf6ee4b25 rte-0.5.6.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/zapping/

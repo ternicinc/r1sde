@@ -1,0 +1,38 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/prelude-manager/prelude-manager.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Collects and normalize events from Prelude sensors
+
+[T] The PreludeManager is a high-availability server which collect and normalize
+[T] information from distributed sensors and store them into a database (or any
+[T] kind of user provided media). It also provide the ability to relay received
+[T] events to one or several other prelude-manager servers. It also provide you
+[T] the ability to filter received events so that you can provide specific action
+[T] for specific event.
+
+[U] https://www.prelude-ids.org
+
+[A] Yoann Vandoorselaere <yoann@prelude-ids.org>
+[A] The Prelude-IDS Project <http://www.prelude-ids.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+
+[E] add libprelude libpreludedb
+
+[L] OpenSource
+[V] 5.2.0
+
+[D] dee61ef40c648d98d8c00727e67327b297eb1195955e1e992787d8f6 prelude-manager-5.2.0.tar.gz https://github.com/Prelude-SIEM/prelude-manager/archive/5.2.0/
+
+if [ $prefix_auto = 1 ]; then
+	if [ "$SDECFG_PKG_PRELUDE_PREFIX" ]; then
+	  prefix="$SDECFG_PKG_PRELUDE_PREFIX"
+	else
+	  prefix="opt/prelude"
+	fi
+	set_confopt
+fi

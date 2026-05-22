@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libdeflate/libdeflate.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Fast, whole-buffer DEFLATE-based compression and decompression
+
+[T] libdeflate is heavily optimized. It is significantly faster than the zlib
+[T] library, both for compression and decompression, and especially on x86
+[T] processors. In addition, libdeflate provides optional high compression
+[T] modes that provide a better compression ratio than the zlib's "level 9".
+
+[U] https://github.com/ebiggers/libdeflate
+
+[A] Eric Biggers
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[L] OpenSource
+[V] 1.25
+[P] X -----5---9 102.400
+
+[D] c345920743ce7851143d57426956d55e5e141c47f872bc68382ba8fd libdeflate-1.25.tar.gz https://github.com/ebiggers/libdeflate/archive/v1.25/
+
+var_append makeinstopt ' ' LIBDIR=$libdir

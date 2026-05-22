@@ -1,0 +1,48 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kaffe/kaffe.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Clean room implementation of the Java virtual machine
+
+[T] Kaffe is a clean room implementation of the Java virtual machine,
+[T] plus the associated class libraries needed to provide a Java
+[T] runtime environment. The Kaffe virtual machine is free software,
+[T] licensed under the terms of the GNU General Public License.
+[T]
+[T] Kaffe is a great choice as a base for virtual machine education
+[T] and/or research, or if you need a virtual machine as an integral
+[T] component of an open source or free software Java distribution.
+
+[U] http://www.kaffe.org/
+
+[A] The Kaffe Team <kaffe@kaffe.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] GPL
+[V] 1.1.7
+[P] O -----5---9 150.000
+[R] - powerpc64
+
+[D] 2982117461 kaffe-1.1.7.tar.gz ftp://ftp.kaffe.org/pub/kaffe/v1.1.x-development/
+#[D] X kaffe-2005-12-23.tar.bz2 cvs://:pserver:readonly:readonly@cvs.kaffe.org:/cvs/kaffe kaffe -D 2005-12-23
+#[D] 39758106 kaffe-1.1.7-rc1.tar.gz http://www.kaffe.org/~robilad/
+
+. $base/package/*/*/java-jdk-conf.in
+
+if ! pkginstalled gmp; then
+	var_append confopt ' ' --enable-pure-java-math
+fi
+if pkginstalled jikes; then
+	var_append confopt ' ' --with-jikes
+fi
+if ! pkginstalled gtk+2; then
+	var_append confopt ' ' --disable-gtk-peer
+fi
+
+var_append confopt ' ' --with-system-zlib
+var_append confopt ' ' --with-fastjar
+var_append confopt ' ' --enable-jvmpi

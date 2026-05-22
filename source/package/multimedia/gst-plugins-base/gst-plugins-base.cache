@@ -1,0 +1,50 @@
+[TIMESTAMP] 1778594756 Tue May 12 17:05:56 2026
+[BUILDTIME] 105 (9)
+[SIZE] 16.96 MB, 404 files
+
+[OPT] alsa-lib
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[OPT] cdparanoia
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gettext
+[DEP] glib
+[OPT] gobject-introspection
+[OPT] graphene
+[DEP] grep
+[DEP] gstreamer
+[DEP] harfbuzz
+[DEP] libdrm
+[DEP] libglvnd
+[DEP] libjpeg
+[DEP] libogg
+[OPT] libopus
+[DEP] libpng
+[OPT] libtheora
+[DEP] libvorbis
+[DEP] libx11
+[DEP] libxcb
+[DEP] libxext
+[DEP] libxfixes
+[DEP] libxi
+[DEP] libxv
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[OPT] orc
+[DEP] pango
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar
+[DEP] util-linux
+[OPT] wayland
+[OPT] wayland-protocols
+[DEP] xorgproto
+[DEP] xz
+[DEP] zlib

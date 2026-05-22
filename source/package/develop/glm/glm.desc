@@ -1,0 +1,41 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/glm/glm.desc
+[COPY] Copyright (C) 2016 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] OpenGL Mathematics
+
+[T] OpenGL Mathematics (GLM) is a C++ mathematics library for 3D software
+[T] based on the OpenGL Shading Language (GLSL) specification.
+
+[U] https://glm.g-truc.net/
+
+[A] G-Truc Creation
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS OBJDIR
+
+[L] MIT
+[V] 1.0.3
+[P] X -----5---9 144.600
+
+[D] 4ec541ad0c95317dbe9e0eeab0b9ff2c46f14f1bede1c6d0226f5cba glm-1.0.3.tar.gz https://github.com/g-truc/glm/archive/1.0.3/
+
+makeinstopt=
+var_append cmakeopt ' ' '-G Ninja -W no-dev'
+hook_add postmake 5 "cp -arv glm $root$includedir/"
+
+glm_pc_file() {
+	cat <<-EOT > $root$libdir/pkgconfig/glm.pc
+	prefix=/$prefix
+	includedir=$includedir/glm
+
+	Name: glm
+	Description: OpenGL Mathematics
+	Version: $ver
+	Cflags: -I\${includedir}
+EOT
+}
+hook_add postmake 5 glm_pc_file

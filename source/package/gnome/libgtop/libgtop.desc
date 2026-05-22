@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libgtop/libgtop.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] CPU and memory usage library
+
+[T] A library that fetches information about the running system such as
+[T] cpu and memory usage, active processes etc.
+[T]
+[T] On Linux systems, these information are taken directly from the /proc
+[T] filesystem while on other systems a server is used to read those
+[T] information from /dev/kmem or whatever.
+
+[A] Martin Baulig <martin@home-of-linux.org>
+[A] Drazen Kacar <dave@srce.hr>
+
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/development extra/desktop/gnome
+[F] CROSS
+
+[L] GPL
+[V] 2.41.3
+[P] X -----5---9 139.800
+
+[CV-URL] https://download.gnome.org/sources/libgtop/cache.json
+[D] ca8c8307e6e8369d1b51ae6fae7436f4d07eb29a6e7f39a0b79735ca libgtop-2.41.3.tar.xz https://download.gnome.org/sources/libgtop/2.41/
+
+. $base/package/*/*/gnome-conf.in

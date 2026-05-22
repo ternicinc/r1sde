@@ -1,0 +1,18 @@
+
+[TIMESTAMP] 1280325589 Wed Jul 28 13:59:49 2010
+[BUILDTIME] 10 (5)
+[SIZE] 23.01 MB, 1495 files
+
+[DEP] 00-dirtree
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] grep
+[DEP] linux-header
+[DEP] pyrexc
+[DEP] python
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] zlib

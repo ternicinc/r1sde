@@ -1,0 +1,19 @@
+[TIMESTAMP] 1737548487 Wed Jan 22 13:21:27 2025
+[BUILDTIME] 6 (9)
+[SIZE] 0.45 MB, 39 files
+
+[DEP] alsa-lib
+[DEP] audiofile
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] tcp_wrappers

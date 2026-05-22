@@ -1,0 +1,22 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/bdb33/transform-name.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- db-3.3.11/dist/Makefile.in.orig	2001-07-06 22:53:16.000000000 +0200
++++ db-3.3.11/dist/Makefile.in	2003-02-06 10:28:11.000000000 +0100
+@@ -454,9 +454,9 @@
+ 	@test -d $(bindir) || \
+ 	    ($(mkdir) -p $(bindir) && $(chmod) $(dmode) $(bindir))
+ 	@cd $(bindir) && $(rm) -f $(UTIL_PROGS)
+-	@$(INSTALLER) -fp $(UTIL_PROGS) $(bindir)
+-	@cd $(bindir) && (test ! -f $(strip) || $(strip) $(UTIL_PROGS))
+-	@cd $(bindir) && $(chmod) $(emode) $(UTIL_PROGS)
++	@for i in $(UTIL_PROGS); do \
++		cp .libs/$$i $(bindir)/`basename $$i | sed $(transform)`; \
++	done
+ 
+ uninstall_utilities:
+ 	-cd $(bindir) && $(rm) -f $(UTIL_PROGS)

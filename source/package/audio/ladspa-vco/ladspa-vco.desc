@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ladspa-vco/ladspa-vco.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Anti-aliased oscillator plugins for LADSPA
+
+[T] This plugin contains two anti-aliased oscillators, both based on the
+[T] concept of using precomputed bandlimited Dirac pulses to construct the
+[T] classical waveforms. They are both memory and CPU efficient. The first
+[T] one produces a flat spectrum (impulses) and the second generates a
+[T] sawtooth waveform.
+
+[U] http://users.skynet.be/solaris/linuxaudio/
+
+[A] Fons Adriaensen
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 0.3.0
+
+[CV-URL] http://users.skynet.be/solaris/linuxaudio/
+[D] 577553d5089f7080dad51735e9bf4d0c55d90689f3ae5cdb01b5416f VCO-plugins-0.3.0.tar.bz2 http://users.skynet.be/solaris/linuxaudio/downloads/
+
+. $base/package/*/ladspa/ladspa.in
+hook_add premake 5 "sed -e '13d' -i -e 's,/usr/lib/ladspa,$libdir/ladspa,g' Makefile"

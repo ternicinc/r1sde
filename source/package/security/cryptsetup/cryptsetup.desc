@@ -1,0 +1,43 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cryptsetup/cryptsetup.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A LUKS aware cryptsetup replacement for dm-crypt
+
+[T] LUKS for dm-crypt is implemented in cryptsetup. cryptsetup-luks is intended
+[T] as a complete replacement for the original cryptsetup. It provides all the
+[T] functionally of the original version plus all LUKS features, that are
+[T] accessable by luks* action.
+[T] LUKS is the upcoming standard for Linux hard disk encryption. By providing
+[T] a standard on-disk-format, it does not only facilitate compatibility among
+[T] distributions, but also provide secure management of multiple user
+[T] passwords. In contrast to existing solution, LUKS stores all setup necessary
+[T] setup information in the partition header, enabling the user to transport
+[T] or migrate his data seamlessly.
+
+[U] https://gitlab.com/cryptsetup/cryptsetup
+
+[A] Clemens Fruhwirth <http://clemens.endorphin.org/>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+[R] - microblaze
+
+[L] GPL
+[V] 2.8.6
+[P] X -----5---9 180.000
+
+[D] 87fb8127c65ef57952a895f583ee3b38d4cd8a6f978ec05556317945 cryptsetup-2.8.6.tar.xz https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/
+
+runmeson=0
+
+[ "$SDECFG_LIBC" = musl ] && var_append GCC_WRAPPER_INSERT ' ' -D_LARGEFILE64_SOURCE=1
+
+pkginstalled libssh || var_append confopt ' ' --disable-ssh-token
+pkginstalled asciidoctor || var_append confopt ' ' --disable-asciidoc
+
+var_append confopt ' ' --with-luks2-lock-path=/var/run/cryptsetup
+atstage cross && var_append confopt ' ' --with-libgcrypt-prefix=$root/$prefix

@@ -1,0 +1,51 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/amule/amule.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An "all-platform" eMule client
+
+[T] The "all-platform eMule", it is a eMule-like client for ed2k
+[T] network, supporting Linux, *BSD platforms, Solaris, *MacOSX
+[T] and *Win32 (*soon). It was forked from xMule project back in
+[T] september 2003 (not related to it anymore, except little bits
+[T] of old code), to drive it to a brand new direction and quality.
+[T] Uses wxWidgets (formely known as wxWindows) for multiplatform
+[T] support.
+
+[U] https://www.amule.org/
+
+[A] Kry <kry@amule.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 2.3.3
+[P] X -----5---9 131.700
+
+[D] d73eaa3d6776551c36b8726513cfcada91d8f789c32205f98b1178f7 aMule-2.3.3.tar.xz https://prdownloads.sourceforge.net/sourceforge/amule/
+
+[ "$SDECFG_PKG_AMULE_DAEMON" != 0 ] &&
+	var_append confopt ' ' --enable-amule-daemon
+
+[ "$SDECFG_PKG_AMULE_CMD" != 0 ] &&
+	var_append confopt ' ' '--enable-amulecmd --enable-amulecmdgui'
+
+[ "$SDECFG_PKG_AMULE_WEBSERVER" != 0 ] &&
+	var_append confopt ' ' '--enable-webserver --enable-webservergui'
+
+[ "$SDECFG_PKG_AMULE_REMOTEGUI" != 0 ] &&
+	var_append confopt ' ' --enable-amule-gui
+
+[ "$SDECFG_PKG_AMULE_CAS" != 0 ] &&
+	var_append confopt ' ' '--enable-cas --enable-wxcas'
+
+[ "$SDECFG_PKG_AMULE_ALC" != 0 ] &&
+	var_append confopt ' ' '--enable-alc --enable-alcc'
+
+[ "$SDECFG_PKG_AMULE_UTF8SYSTRAY" != 0 ] &&
+	var_append confopt ' ' --enable-utf8-systray
+
+var_append INSTALL_WRAPPER_FILTER '|' 'sed -e s,ed2k,ed2k_amule,'

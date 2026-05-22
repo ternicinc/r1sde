@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kompare/kompare.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Diff tool
+
+[T] Kompare is a GUI front-end program that enables differences between source
+[T] files to be viewed and merged. It can be used to compare differences on
+[T] files or the contents of folders, and it supports a variety of diff formats
+[T] and provide many options to customize the information level displayed.
+
+[U] https://apps.kde.org/kompare/
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[E] opt kdoctools docbook-xml docbook-xsl
+
+[L] GPL
+[V] 26.04.1
+[P] X -----5---9 179.300
+
+[CV-GROUP] kde-gear
+[D] 7d60c856e4c07d5dfd53dc2f64abf49550df1900daaba5db6c03b08c kompare-26.04.1.tar.xz https://download.kde.org/stable/release-service/26.04.1/src/
+
+. $base/package/*/*/kde-conf.in
+var_append cmakeopt ' ' -DQT_MAJOR_VERSION=6

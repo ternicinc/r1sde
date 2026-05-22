@@ -1,0 +1,25 @@
+
+[TIMESTAMP] 1134038761 Thu Dec  8 11:46:01 2005
+[BUILDTIME] 15 (9)
+[SIZE] 1.04 MB, 19 files
+
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] libice
+[DEP] libjpeg
+[DEP] libpng
+[DEP] libx11
+[DEP] libxau
+[DEP] libxdmcp
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar
+[DEP] util-linux
+[DEP] xorgproto
+[DEP] zlib

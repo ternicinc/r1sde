@@ -1,0 +1,17 @@
+[TIMESTAMP] 1741811918 Wed Mar 12 21:38:38 2025
+[BUILDTIME] 2 (5)
+[SIZE] 0.15 MB, 8 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] linux-header
+[DEP] luajit
+[DEP] make
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar

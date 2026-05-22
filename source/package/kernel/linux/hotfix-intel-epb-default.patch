@@ -1,0 +1,78 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/linux/hotfix-intel-epb-default.patch
+# Copyright (C) 2024 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- linux-6.19/arch/x86/kernel/cpu/intel_epb.c.orig	2026-02-08 22:03:27.000000000 +0100
++++ linux-6.19/arch/x86/kernel/cpu/intel_epb.c	2026-02-16 19:54:31.548279033 +0100
+@@ -67,7 +67,7 @@
+ 	EPB_INDEX_POWERSAVE,
+ };
+ 
+-static u8 energ_perf_values[] = {
++static u8 energy_perf_values[] = {
+ 	[EPB_INDEX_PERFORMANCE] = ENERGY_PERF_BIAS_PERFORMANCE,
+ 	[EPB_INDEX_BALANCE_PERFORMANCE] = ENERGY_PERF_BIAS_BALANCE_PERFORMANCE,
+ 	[EPB_INDEX_NORMAL] = ENERGY_PERF_BIAS_NORMAL,
+@@ -75,6 +75,15 @@
+ 	[EPB_INDEX_POWERSAVE] = ENERGY_PERF_BIAS_POWERSAVE,
+ };
+ 
++
++static const char * const energy_perf_strings[] = {
++	[EPB_INDEX_PERFORMANCE] = "performance",
++	[EPB_INDEX_BALANCE_PERFORMANCE] = "balance-performance",
++	[EPB_INDEX_NORMAL] = "normal",
++	[EPB_INDEX_BALANCE_POWERSAVE] = "balance-power",
++	[EPB_INDEX_POWERSAVE] = "power",
++};
++
+ static int intel_epb_save(void *data)
+ {
+ 	u64 epb;
+@@ -107,8 +116,9 @@
+ 		 */
+ 		val = epb & EPB_MASK;
+ 		if (val == ENERGY_PERF_BIAS_PERFORMANCE) {
+-			val = energ_perf_values[EPB_INDEX_NORMAL];
+-			pr_warn_once("ENERGY_PERF_BIAS: Set to 'normal', was 'performance'\n");
++			val = energy_perf_values[EPB_INDEX_BALANCE_PERFORMANCE];
++			pr_warn_once("ENERGY_PERF_BIAS: Set to '%s', was 'performance'\n",
++			             energy_perf_strings[EPB_INDEX_BALANCE_PERFORMANCE]);
+ 		}
+ 	}
+ 	wrmsrq(MSR_IA32_ENERGY_PERF_BIAS, (epb & ~EPB_MASK) | val);
+@@ -123,14 +133,6 @@
+ 	.ops = &intel_epb_syscore_ops,
+ };
+ 
+-static const char * const energy_perf_strings[] = {
+-	[EPB_INDEX_PERFORMANCE] = "performance",
+-	[EPB_INDEX_BALANCE_PERFORMANCE] = "balance-performance",
+-	[EPB_INDEX_NORMAL] = "normal",
+-	[EPB_INDEX_BALANCE_POWERSAVE] = "balance-power",
+-	[EPB_INDEX_POWERSAVE] = "power",
+-};
+-
+ static ssize_t energy_perf_bias_show(struct device *dev,
+ 				     struct device_attribute *attr,
+ 				     char *buf)
+@@ -157,7 +159,7 @@
+ 	ret = __sysfs_match_string(energy_perf_strings,
+ 				   ARRAY_SIZE(energy_perf_strings), buf);
+ 	if (ret >= 0)
+-		val = energ_perf_values[ret];
++		val = energy_perf_values[ret];
+ 	else if (kstrtou64(buf, 0, &val) || val > MAX_EPB)
+ 		return -EINVAL;
+ 
+@@ -226,7 +228,7 @@
+ 		return -ENODEV;
+ 
+ 	if (id)
+-		energ_perf_values[EPB_INDEX_NORMAL] = id->driver_data;
++		energy_perf_values[EPB_INDEX_NORMAL] = id->driver_data;
+ 
+ 	ret = cpuhp_setup_state(CPUHP_AP_X86_INTEL_EPB_ONLINE,
+ 				"x86/intel/epb:online", intel_epb_online,

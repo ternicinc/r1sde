@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/suspend/suspend.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Some userland tools to suspend a Linux system
+
+[T] This package contains some userland tools allowing you to suspend a Linux
+[T] system either to RAM (s2ram) disk (s2disk). These tools provide some
+[T] capabilities that are not available in the vanilla Linux kernel.
+
+[U] https://suspend.sourceforge.net/download.shtml
+
+[A] Pavel Machek <pavel@suse.cz>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] CROSS
+
+[R] + x86 x86-64
+
+[L] GPL
+[V] 2007-02-23
+
+[D] cde69c4906740163ab4f3c9132f681d9926d83a8d7ca5a78157d823a suspend-2007-02-23.tar.bz2 cvs://:pserver:anonymous@suspend.cvs.sourceforge.net:/cvsroot/suspend suspend -D 2007-02-23
+
+prefix= && set_confopt
+makeinstopt=
+hook_add postmake 5 'install resume s2both s2disk s2ram $root$sbindir'

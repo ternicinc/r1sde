@@ -1,0 +1,17 @@
+[TIMESTAMP] 1737642514 Thu Jan 23 15:28:34 2025
+[BUILDTIME] 3 (9)
+[SIZE] 3.50 MB, 87 files
+
+[DEP] bash
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[OPT] glib
+[DEP] grep
+[DEP] make
+[DEP] perl
+[DEP] sed
+[DEP] tar

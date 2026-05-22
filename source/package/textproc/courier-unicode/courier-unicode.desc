@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/courier-unicode/courier-unicode.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Unicode Library
+
+[T] This library implements several algorithms related to the Unicode Standard.
+
+[U] https://www.courier-mta.org/unicode/
+
+[A] Sam Varshavchik <mrsam@courier-mta.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 2.5.0
+[P] X -----5---9 139.000
+
+[D] 2b6bbbf5aea5652d98c1f700cd29876740915236b24dcda84312370f courier-unicode-2.5.0.tar.bz2 https://download.sourceforge.net/project/courier/courier-unicode/2.5.0/

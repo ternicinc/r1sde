@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dvdstyler/dvdstyler.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Cross-platform DVD menu creation GUI
+
+[T] DvdStyler is a cross-platform DVD menu creation GUI that allows
+[T] the user to create DVD navigation menus similar to those found
+[T] on most commercial DVDs.
+
+[U] https://dvdstyler.sourceforge.net/
+
+[A] Alex Thuering <ntalex@sourceforge.net>
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/multimedia
+
+[L] GPL
+[V] 3.2.1
+
+[D] d6e2613f1e3a641fe9c079b9990f1d1d536e341dfcc84f0f37dfe727 DVDStyler-3.2.1.tar.bz2 https://prdownloads.sourceforge.net/sourceforge/dvdstyler/

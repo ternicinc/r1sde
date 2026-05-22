@@ -1,0 +1,46 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gn/gn.desc
+[COPY] Copyright (C) 2021 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Meta-build system that generates build ninja files
+
+[T] GN is currently used as the build system for Chromium, Fuchsia,
+[T] and related projects.
+
+[U] https://gn.googlesource.com/
+
+[A] Google
+[M] René Rebe <rene@exactco.de>
+
+[C] base/development
+
+[L] OpenSource
+[V] 2374
+[P] X -1---5---9 109.500
+
+# Remember to update last_commit_position.h on update, sigh
+# version number is derived from "git describe HEAD --abbrev=12"
+[D] 6e8a46877d6b1b2e2e09586cb7c5167dd6925272465aaa641b97e3ca gn-2374.tar.gz git+https://gn.googlesource.com/gn dcc5e98
+
+runmake=0
+
+hook_add premake 5 gn_premake
+hook_add inmake 5 gn_inmake
+hook_add postmake 5 gn_postmake
+
+gn_premake() {
+	mkdir $builddir/$pkg/out/
+	cp $confdir/last_commit_position.h $builddir/$pkg/out/
+}
+
+gn_inmake() {
+	./build/gen.py
+	ninja -C out/ -j$SDECFG_PARALLEL
+}
+
+gn_postmake() {
+	install -D -m755 out/gn $root/$bindir
+	install -D -m644 docs/* $root/$docdir
+}

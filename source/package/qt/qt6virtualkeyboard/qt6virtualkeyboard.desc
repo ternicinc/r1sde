@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/qt6virtualkeyboard/qt6virtualkeyboard.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Qt6 Quick virtual keyboard
+
+[T] Qt6 Quick virtual keyboard.
+
+[U] https://qt.io
+
+[A] Trolltech AS <www.trolltech.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS OBJDIR
+
+[E] opt hunspell
+
+[L] LGPL
+[V] 6.11.1
+[P] X -----5---9 140.110
+
+[CV-GROUP] qt6
+[D] b66af676fa71c97d37e5f07ce1aa8aa28e6dea2bd28536bee63b5d43 qtvirtualkeyboard-everywhere-src-6.11.1.tar.xz http://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/
+
+. $base/package/*/*/qt6-conf.in

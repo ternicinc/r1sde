@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/unfs3/unfs3.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A user-space implementation of an NFSv3 server
+
+[T] UNFS3 is a user-space implementation of the NFSv3 server specification. It
+[T] is designed to be portable to different operating systems, with built-in
+[T] Linux and Solaris support.
+
+[U] https://unfs3.github.io
+
+[A] Pascal Schmidt <pascal.schmidt@ewetel.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+[F] NOPARALLEL
+
+[L] BSD
+[V] 0.11.0
+
+[D] a234d6aa8fd9ab7a65aee5a9751655eeb221117d2ac1d261381e0274 unfs3-0.11.0.tar.gz https://github.com/unfs3/unfs3/releases/download/unfs3-0.11.0/

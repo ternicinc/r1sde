@@ -1,0 +1,12 @@
+[TIMESTAMP] 1739232687 Tue Feb 11 01:11:27 2025
+[BUILDTIME] 1 (5)
+[SIZE] 0.01 MB, 5 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] grep
+[DEP] make
+[DEP] sed
+[DEP] tar
+[DEP] xz

@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pan/pan.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A newsreader for GNOME
+
+[T] Pan is a newsreader which attempts to be pleasing to both new and
+[T] experienced users. In addition to the standard newsreader features,
+[T] Pan also supports yEnc, offline newsreading, article filtering, multiple
+[T] connections, and more features for power users and alt.binaries fans.
+
+[U] https://gitlab.gnome.org/GNOME/pan
+
+[A] PAN Authors <pan@rebelbase.com>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+
+[C] extra/network extra/desktop/gnome
+[F] OBJDIR
+
+[L] GPL
+[V] 0.165
+
+[D] f8dff62c8e1fc59132c136c9b05cb57f40d705fade02616b4f5e1cfe pan-v0.165.tar.gz https://gitlab.gnome.org/GNOME/pan/-/archive/v0.165/
+
+. $base/package/*/*/gnome-conf.in

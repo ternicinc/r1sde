@@ -1,0 +1,24 @@
+[TIMESTAMP] 1771372800 Wed 18 Feb 2026 01:00:00 AM CET
+[BUILDTIME] 16 (9)
+[SIZE] 8.02 MB, 726 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] docbook-xml
+[DEP] docbook-xsl
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] gzip
+[DEP] help2man
+[DEP] libxml
+[DEP] libxslt
+[DEP] perl
+[DEP] perl-gettext
+[DEP] perl-html-parser
+[DEP] perl-module-build
+[DEP] sed
+[DEP] tar
+[DEP] util-linux
+[DEP] xz

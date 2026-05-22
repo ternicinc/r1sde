@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/zathura/zathura.desc
+[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A highly customizable and functional document viewer
+
+[T] A highly customizable and functional document viewer based on the girara
+[T] user interface library and several document libraries.
+
+[U] https://pwmt.org/projects/zathura
+
+[A] Pwmt
+[M] Daniel Ashkenazi <daniel.ashkenazi@gmail.com>
+
+[C] extra/office
+[F] CROSS
+
+[L] ZLIB
+[V] 2026.05.20
+[P] X -----5---9 400.000
+
+[D] 702a41bbd3e4efe96b1abfaaf52dabb656af4453b1e1a55db86d23ec zathura-2026.05.20.tar.xz https://pwmt.org/projects/zathura/download/

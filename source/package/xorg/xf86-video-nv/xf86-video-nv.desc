@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xf86-video-nv/xf86-video-nv.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Xorg driver for nVidia video chips
+
+[T] The Xorg driver for nVidia video chips, though 2D is fully accelerated, no
+[T] open source 3D acceleration is included. The driver supports PCI,
+[T] PCI-Express and AGP video cards based on the following NVIDIA chips: RIVA
+[T] 128 (NV3), RIVA TNT (NV4), RIVA TNT2 (NV5), GeForce 256, Quadro (NV10),
+[T] GeForce2, Quadro2 (NV11 & NV15), GeForce3, Quadro DCC (NV20), nForce,
+[T] nForce2 (NV1A, NV1F), GeForce4, Quadro4 (NV17, NV18, NV25, NV28), GeForce
+[T] FX, Quadro FX (NV30, NV31, NV34, NV35, NV36, NV37, NV38), GeForce 6XXX
+[T] (NV40, NV41, NV43, NV44, NV45, C51), GeForce 7XXX (G70, G71, G72, G73,
+[T] MCP6x), GeForce 8XXX, GeForce 9XXX, nForce 7, GeForce G, ION (G8x, G9x,
+[T] GT21x, MCP7x), GeForce GTX (GT200).
+
+[U] https://www.X.org
+
+[A] X.org Foundation {http://www.X.org}
+[M] René Rebe <rene@exactco.de>
+
+[C] base/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 2.1.24
+
+[D] 3c146b5fb2490a0643075962d17d33b37fec05f03528b6f7f56a9600 xf86-video-nv-2.1.24.tar.xz http://xorg.freedesktop.org/releases/individual/driver/
+
+. package/*/*/modular-x-conf.in

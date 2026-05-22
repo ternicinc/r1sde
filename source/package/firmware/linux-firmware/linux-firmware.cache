@@ -1,0 +1,17 @@
+[TIMESTAMP] 1768125011 Sun Jan 11 10:50:11 2026
+[BUILDTIME] 55 (9)
+[SIZE] 587.03 MB, 2821 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] kmod
+[DEP] linux
+[DEP] make
+[DEP] sed
+[DEP] tar

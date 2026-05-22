@@ -1,0 +1,20 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/pbbuttonsd/hotfix-x86-64.patch
+# Copyright (C) 2007 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+What a reliable laptop type detection ...
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- pbbuttonsd-0.8.0/configure.vanilla	2007-02-11 22:14:47.438738512 +0100
++++ pbbuttonsd-0.8.0/configure	2007-02-11 22:15:05.687778466 +0100
+@@ -5381,6 +5381,7 @@
+ 	case $host in
+ 		powerpc*)	ac_laptop=powerbook;;
+ 		i686*)		ac_laptop=macbook;;
++		x86_64*)	ac_laptop=macbook;;
+ 		i?86*)		ac_laptop=i386acpi;;
+ 		*)			{ { echo "$as_me:$LINENO: error: Unknown system, please set LAPTOP environment variable." >&5
+ echo "$as_me: error: Unknown system, please set LAPTOP environment variable." >&2;}

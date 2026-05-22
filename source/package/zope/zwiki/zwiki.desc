@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/zwiki/zwiki.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A powerful wiki engine for Zope
+
+[T] Wikis are editable websites, useful for documentation and collaboration.
+[T] Zwiki is an easy-to-use, fun, and powerful wiki engine based on the Zope
+[T] web application server.
+
+[U] https://www.zwiki.org
+
+[A] Simon Michael <simon@joyful.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/server
+
+[E] add zope
+
+[L] OpenSource
+[V] 0.61.0
+
+[D] 12ce55b8183406c313cfded5d14e21fc108016116f881e9ec76c1d4f ZWiki-0.61.0.tgz http://zwiki.org/releases/
+
+. $base/package/*/zope/zope-conf.in

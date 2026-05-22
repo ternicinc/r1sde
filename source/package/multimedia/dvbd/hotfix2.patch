@@ -1,0 +1,16 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dvbd/hotfix2.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+--- dvbd-0.7.6/src/outputbuffer.cpp.vanilla	2005-04-15 17:38:50.000000000 +0200
++++ dvbd-0.7.6/src/outputbuffer.cpp	2005-04-15 17:38:42.000000000 +0200
+@@ -26,6 +26,8 @@
+ #include <sys/socket.h>
+ #include <sys/un.h>
+ 
++#include <errno.h>
++
+ OutputBuffer::OutputBuffer(int fd, int initSize, int maxSize)
+   : CircularBuffer(initSize, maxSize), fd(fd)
+ {

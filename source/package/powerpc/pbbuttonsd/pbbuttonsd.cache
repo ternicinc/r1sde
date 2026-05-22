@@ -1,0 +1,26 @@
+
+[TIMESTAMP] 1143563646 Tue Mar 28 18:34:06 2006
+[BUILDTIME] 10 (5)
+[SIZE] 0.37 MB, 53 files
+
+[DEP] 00-dirtree
+[DEP] alsa-lib
+[DEP] autoconf
+[DEP] binutils
+[DEP] bison
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gettext
+[DEP] grep
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] perl
+[DEP] sed
+[DEP] sysfiles
+[DEP] sysvinit
+[DEP] tar
+[DEP] texinfo
+[DEP] util-linux

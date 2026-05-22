@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/scponly/scponly.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A user shell for restricting remote access to scp and sftp
+
+[T] scponly is an alternative &amp;quot;shell&amp;quot; of sorts for
+[T] system administrators who would like to provide access to remote
+[T] users to both read and write local files without providing any
+[T] remote execution priviledges. Functionally, it is a wrapper around
+[T] the ssh suite of applications. It is typically used by creating
+[T] a user whose shell is set to scponly. This user can neither login
+[T] interactively nor execute commands remotely, but it can use scp and
+[T] sftp to download and upload files to the computer, governed by the
+[T] usual Unix file permissions.
+
+[U] http://www.sublimation.org/scponly/
+
+[A] kowalski <blah@blah.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/shell
+[F] CROSS
+
+[L] BSD
+[V] 4.8
+
+[D] 27c9e008dfa632a4715e2646320415f1ec57a995480534ee0654f13d scponly-4.8.tgz https://prdownloads.sourceforge.net/scponly/

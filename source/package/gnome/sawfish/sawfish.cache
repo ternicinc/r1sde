@@ -1,0 +1,46 @@
+
+[TIMESTAMP] 1715704060 Tue May 14 18:27:40 2024
+[BUILDTIME] 10 (9)
+[SIZE] 12.73 MB, 2276 files
+
+[DEP] 00-dirtree
+[DEP] at-spi2-core
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gdk-pixbuf-xlib
+[DEP] gettext
+[OPT] glib
+[DEP] grep
+[DEP] gtk+2
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] libice
+[DEP] librep
+[DEP] libsm
+[DEP] libx11
+[DEP] libxext
+[DEP] libxft
+[DEP] libxi
+[DEP] libxinerama
+[DEP] libxrandr
+[DEP] libxrender
+[DEP] libxtst
+[DEP] linux-header
+[DEP] make
+[DEP] net-tools
+[DEP] pangomm
+[DEP] perl
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] texinfo
+[DEP] xorgproto
+[DEP] xz

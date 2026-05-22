@@ -1,0 +1,17 @@
+[TIMESTAMP] 1769863561 Sat 31 Jan 2026 12:46:01 GMT
+[BUILDTIME] 2 (9)
+[SIZE] 0.04 MB, 24 files
+
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] hatchling
+[DEP] openssl
+[DEP] python
+[DEP] python-gpep517
+[DEP] sed
+[DEP] tar
+[DEP] util-linux

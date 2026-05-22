@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libvpl/libvpl.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Frontend library for intel onevpl
+
+[T] Frontend dispatcher to use for intel-onevpl.
+
+[U] https://github.com/intel/libvpl/
+
+[A] Intel
+[M] NoTag <notag@t2sde.org>
+
+[C] base/x11
+[F] CROSS OBJDIR NO-LTO.gcc
+
+[L] MIT
+[V] 2.16.0
+[P] X -----5---9 127.600
+
+[D] 89bf947e7640b5cc28c3f5dd95d72e2f045f4e230e65f74712b5c393 libvpl-2.16.0.tar.gz https://github.com/intel/libvpl/archive/v2.16.0/

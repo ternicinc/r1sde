@@ -1,0 +1,14 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/mysql/config.in
+# Copyright (C) 2004 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+if pkgcheck mysql X; then
+	menu_begin MENU_PKG_MYSQL 'MySQL Package Options'
+		bool 'Client only, no server' \
+			SDECFG_PKG_MYSQL_CLIENTONLY 0
+		bool 'Integrate Sphinx full text search' \
+			SDECFG_PKG_MYSQL_SPHINX 0
+	menu_end
+fi

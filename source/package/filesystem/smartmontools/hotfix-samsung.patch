@@ -1,0 +1,21 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/smartmontools/hotfix-samsung.patch
+# Copyright (C) 2022 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- smartmontools-7.5/drivedb.h.vanilla	2025-06-22 14:55:16.538952432 +0200
++++ smartmontools-7.5/drivedb.h	2025-06-22 14:57:08.868542826 +0200
+@@ -5594,6 +5594,12 @@
+     "",
+     "-d usbjmicron"
+   },
++  { "USB: Portable SSD T3; ",
++    "0x04e8:0x61f3",
++    "", // 0x0100
++    "",
++    "-d sat"
++  },
+   { "USB: Samsung Portable SSD T7; ASMedia ASM2362",
+     "0x04e8:0x(4001|61fb)", // 0x61fb: T7 Shield
+     "", // 0x0100

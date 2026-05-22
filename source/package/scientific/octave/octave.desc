@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/octave/octave.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] High-level language based on LAPACK Fortran libraries
+
+[T] GNU Octave is a high-level language, primarily intended for numerical
+[T] computations. It provides a convenient command line interface for solving
+[T] linear and nonlinear problems numerically, and for performing other
+[T] numerical experiments using a language that is mostly compatible with
+[T] Matlab. It may also be used as a batch-oriented language.
+
+[U] https://www.gnu.org/software/octave/
+
+[A] John W. Eaton <jwe@bevo.che.wisc.edu> {Author}
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/scientific
+[F] NO-LTO.gcc
+
+[E] opt hdf5
+[E] opt openjdk
+[E] opt portaudio
+
+[L] GPL
+[V] 11.1.0
+[P] X -----5---9 217.000
+
+[D] fa9ffde14d6b6ab7e5e8866a2c381d95b3f24e829cf0860b7d988167 octave-11.1.0.tar.xz http://ftp.gnu.org/gnu/octave/
+
+var_append confopt ' ' "--enable-shared --enable-dl"

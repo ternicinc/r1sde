@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/jwm/jwm.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Joe's Window Manager
+
+[T] JWM is a window manager for the X11 Window System. JWM is written in C
+[T] and uses only Xlib at a minimum.
+
+[U] https://joewing.net/projects/jwm/
+
+[A] Joe Wingbermuehle <joewing@joewing.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/x11
+[F] CROSS
+
+[L] MIT
+[V] 2.4.6
+
+[D] 735a48768d029f5fbdc12dae938d7e6b3dfdc221834f331eb8f0ae68 jwm-2.4.6.tar.xz https://github.com/joewing/jwm/releases/download/v2.4.6/
+
+# no DESTDIR
+var_append makeinstopt ' ' 'BINDIR=$root$bindir MANDIR=$root$mandir SYSCONF=$root$sysconfdir'

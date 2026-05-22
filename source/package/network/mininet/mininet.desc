@@ -1,0 +1,35 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/mininet/mininet.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Very small network utilities
+
+[T] Very small network utilities.
+
+[U] https://www.fefe.de/mininet/
+
+[A] Felix von Leitner
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+
+[F] CROSS DIETLIBC NOPARALLEL
+
+[L] GPL
+[V] 2005-12-26
+
+[D] e13bfacf39291c9a095602b574b7f2c60fe781eac5a0289145b4160c mininet-2005-12-26.tar.bz2 cvs://:pserver:cvs@cvs.fefe.de:/cvs mininet -D 2005-12-26
+
+[ $prefix_auto = 1 ] && bindir=/$prefix/embutils
+
+[ "$pkg_dietlibc_useit" = 1 ] ||
+	var_append GCC_WRAPPER_APPEND ' ' -lresolv
+
+var_append makeopt ' ' "DIET= CFLAGS=-I$root/`pkgprefix includedir libowfat`/libowfat"
+makeinstopt=
+
+hook_add postmake 5 \
+	 'mkdir -p $root$bindir; \
+	  cp `sed -n "/^ALL/{ s/ALL.*=//p;q}" Makefile` $root$bindir/'

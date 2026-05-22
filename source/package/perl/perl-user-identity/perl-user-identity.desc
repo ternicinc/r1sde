@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-user-identity/perl-user-identity.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Perl module that maintains info about a physical person
+
+[T] The User::Identity object is created to maintain a set of informational
+[T] objects which are related to one user. The User::Identity module tries to
+[T] be smart providing defaults, conversions and often required combinations.
+
+[U] https://search.cpan.org/~markov/User-Identity/
+
+[A] Mark Overmeer
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 4.00
+[P] X -----5---9 113.300
+
+[D] c8d9cf59b8d838995abe150ec1714e8d0de3731cb323da422207d694 User-Identity-4.00.tar.gz http://search.cpan.org/CPAN/authors/id/M/MA/MARKOV/

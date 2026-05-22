@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/swatch/swatch.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A simple syslog monitoring utility/daemon watchdog
+
+[T] Swatch was originally written to actively monitor messages as they were
+[T] written to a log file via the UNIX syslog utility. It has multiple methods
+[T] of alarming, both visually and by triggering events. The perfect tools
+[T] for a master loghost. It is known to work flawlessly on Linux (RH5),
+[T] BSDI, and Solaris 2. 6 (patched).
+
+[U] https://swatch.sourceforge.net/
+
+[A] E. Todd Atkins <Todd.Atkins@StanfordAlumni.ORG>
+[M] Johan Boyé <linuxmasterjedi@free.fr>
+
+[C] extra/security
+[F] CROSS
+
+[L] GPL
+[V] 3.2.4
+
+[D] fabf144397bd105ea540e0d9661c2b04af2fe78a3b2a16db4b94dd56 swatchdog-3.2.4.tar.gz https://downloads.sourceforge.net/swatch/
+
+hook_add postmake 5 'mkdir -p $root/etc/swatch'

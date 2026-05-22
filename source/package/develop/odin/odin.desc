@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/odin/odin.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Odin Programming Language
+
+[T] Odin is a general-purpose programming language with distinct typing, built
+[T] for high performance, modern systems, and built-in data-oriented data
+[T] types. The Odin Programming Language, the C alternative for the joy of
+[T] programming.
+
+[U] https://odin-lang.org/
+
+[A] Ginger Bill
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] BSD
+[V] 2026-03
+
+[D] 82e10695726550847944e9fd16377bf1a73339bae2a35e31b90141f7 odin-dev-2026-03.tar.gz https://github.com/odin-lang/Odin/archive/refs/tags/dev-2026-03/
+
+var_append makeopt ' ' release-native
+makeinstopt=
+hook_add postmake 5 'find {odin,base,core,vendor} -type f -exec install -Dm 755 "{}" "$root/opt/odin/bin/{}" \;'

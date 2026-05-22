@@ -1,0 +1,46 @@
+[TIMESTAMP] 1760363685 Mon Oct 13 15:54:45 2025
+[BUILDTIME] 115 (9)
+[SIZE] 21.30 MB, 903 files
+
+[DEP] babl
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] ffmpeg
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[OPT] gexiv2
+[OPT] gi-docgen
+[DEP] glib
+[OPT] gobject-introspection
+[DEP] grep
+[DEP] harfbuzz
+[OPT] ilmbase
+[OPT] jasper
+[DEP] json-glib
+[DEP] lcms2
+[DEP] libjpeg
+[DEP] libpng
+[DEP] libraw
+[OPT] librsvg
+[DEP] libsdl2
+[DEP] libtiff
+[OPT] libwebp
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[OPT] openexr
+[DEP] openssl
+[DEP] pango
+[DEP] pkgconfig
+[OPT] poppler
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[DEP] tar
+[OPT] vala
+[DEP] xz

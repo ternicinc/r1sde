@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libdecor/libdecor.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A client side decoration library for Wayland
+
+[T] Libdecor is a library that can help Wayland clients draw window
+[T] decorations for them. It aims to provide multiple backends that implements
+[T] the decoration drawing.
+
+[A] Jonas Adahl
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/x11
+[F] CROSS
+
+[L] MIT
+[V] 0.2.5
+[P] X -----5---9 202.000
+
+[D] 56102c04e0a92b9b9ae38a639842ed0996cb0217db20d4022ce37d74 libdecor-0.2.5.tar.gz https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.5/
+
+var_append mesonopt ' ' -Ddemo=false

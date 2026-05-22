@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gyrus/gyrus.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A small IMAP/Cyrus administration tool
+
+[T] Gyrus is a small tool for the administration of mailboxes in
+[T] IMAP/Cyrus servers. The main idea behind it, is to provide mail
+[T] server administrators with a better way to do the daily maintenance
+[T] than a command line or a plain and boring telnet client.
+
+[U] https://gitlab.com/wvdakker/gyrus
+
+[A] Jorge Bustos Bustos <jbustos@utalca.cl>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/desktop/gnome
+
+[L] GPL
+[V] 0.4.2
+
+[D] f2b89ea83c9d10ec73262a914e7f1d8fb1bcda76157b739a4088c00a gyrus-0.4.2.tar.gz https://gitlab.com/wvdakker/gyrus/-/archive/0.4.2/

@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-backgrounds/gnome-backgrounds.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Backgrounds for the GNOME desktop
+
+[T] This package contains a set of backgrounds as shipped with the GNOME desktop.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] Susanne Klaus <vadja@gmx.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base extra/desktop/gnome
+[F] CROSS
+
+[L] GPL
+[V] 50.0
+
+[CV-URL] https://download.gnome.org/sources/gnome-backgrounds/cache.json
+[D] ae3f3c85b88a2c267ac67aea1d686d339033acaf3e3833c06ed89c5a gnome-backgrounds-50.0.tar.xz https://download.gnome.org/sources/gnome-backgrounds/50/
+
+. $base/package/*/*/gnome-conf.in

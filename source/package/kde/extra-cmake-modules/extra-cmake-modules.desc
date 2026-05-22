@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/extra-cmake-modules/extra-cmake-modules.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Extra KDE modules and scripts for CMake
+
+[T] Extra KDE modules and scripts for CMake (ECM).
+
+[U] https://www.kde.org
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 6.26.0
+[P] X ?----5---9 130.100
+
+[CV-GROUP] kde-frameworks
+[D] 8f44db6f351ad58bd4cb425921efc4613b7b9946f98ce7cc87c5ec0d extra-cmake-modules-6.26.0.tar.xz https://download.kde.org/stable/frameworks/6.26/

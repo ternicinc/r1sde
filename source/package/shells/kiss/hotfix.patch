@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/kiss/hotfix.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- ./src/doprintenv.c.old    Fri Oct 24 20:39:28 1997
++++ ./src/doprintenv.c        Tue May 26 09:49:34 1998
+@@ -1,5 +1,7 @@
+ #include "kiss.h"
+
++extern char ** environ;
++
+ int doprintenv (Stringstack s)
+ {
+     register int
+

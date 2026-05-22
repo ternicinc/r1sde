@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lcap/lcap.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Linux Kernel Capability Bounding Set Editor
+
+[T] LCAP allows a system administrator to remove specific capabilities from
+[T] the kernel in order to make the system more secure. LCAP modifies the
+[T] value in the sysctl file /proc/sys/kernel/cap-bound. "Capabilities" are
+[T] a form of kernel-based access control. Linux kernel versions 2.2.11 and
+[T] greater include the idea of a "capability bounding set," a list of
+[T] capabilities that can be held by any process on the system.
+
+[U] http://home.netcom.com/~spoon/lcap/
+
+[A] spoon <spoon@ix.netcom.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS
+
+[L] GPL
+[V] 0.0.6
+
+[D] 886e70e284253cf91997a7d1d7e2e6729cb21ea520c1af8f03c22c05 lcap-0.0.6.tar.bz2 http://zed.terrainfo.ru/soft/install/util/

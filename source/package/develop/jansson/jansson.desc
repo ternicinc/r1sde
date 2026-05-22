@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/jansson/jansson.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] C library for encoding, decoding and manipulating JSON data
+
+[T] Jansson is a C library for encoding, decoding and manipulating JSON data.
+[T] Its main features and design principles are a simple and intuitive API and
+[T] data model, comprehensive documentation, no dependencies on other libraries,
+[T] full Unicode support (UTF-8) and an extensive test suite.
+
+[U] https://github.com/akheron/jansson
+
+[A] Petri Lehtinen <petri@digip.org>
+[M] Tomas Glozar <tglozar@gmail.com>
+
+[C] extra/development
+[F] CROSS NO-LTO.clang
+
+[L] MIT
+[V] 2.15.0
+[P] X -----5---9 127.190
+
+[CV-URL] https://github.com/akheron/jansson/releases
+[D] ddb1b7301c962f4c346a7b5c7ff22a8f1045277427d8f658c5b3141a jansson-2.15.0.tar.gz https://github.com/akheron/jansson/releases/download/v2.15.0/
+
+runconf=0
+[ "$SDECFG_STATIC" = 0 ] && var_append cmakeopt ' ' -DJANSSON_BUILD_SHARED_LIBS=ON

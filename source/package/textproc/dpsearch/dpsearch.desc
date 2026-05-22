@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/dpsearch/dpsearch.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A full-featured open sources web-based search engin
+
+[T] DataparkSearch Engine is a full-featured open sources web-based search
+[T] engine released under the GNU General Public License and designed to
+[T] organize search within a website, group of websites, intranet or local
+[T] system.
+
+[U] http://www.dataparksearch.org/
+
+[A] Maxim Zakharov <maxime@sochi.net.ru>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/documentation
+[F] CROSS
+
+[L] GPL
+[V] 4.46
+
+[D] 6cb004b395da8b8f2b515a093715cad2c27b71e731f21979f9c2338e dpsearch-4.46.tar.gz http://www.dataparksearch.org/

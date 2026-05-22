@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/p0f/p0f.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A passive OS fingerprinting tool
+
+[T] p0f is a versatile passive OS fingerprinting and masquerade
+[T] detection utility, to be used for evidence or information
+[T] gathering on servers, firewalls, IDSes, and honeypots, for
+[T] pen-testing, or just for the fun of it. It is a complete rewrite
+[T] of p0f version 1 that used to be maintained by William Stearns.
+
+[U] https://lcamtuf.coredump.cx/p0f.shtml
+
+[A] Michal Zalewski "The Evil Twin" <lcamtuf@coredump.cx>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] GPL
+[V] 3.09b
+
+[D] f48e7665c040927c9c8c6dc7f73ffd385ca953413264b5f1f23d27d1 p0f-3.09b.tgz https://lcamtuf.coredump.cx/p0f3/releases/

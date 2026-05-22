@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/autofs/autofs.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A tool for automatically mounting and unmounting filesystems
+
+[T] autofs is a kernel-based automounter for Linux. It performs a job
+[T] similar to amd(8) but relies on a small stub of kernel code instead
+[T] of pretending to be an NFS server. The result is simpler code, better
+[T] reliability, and much faster operation in the common case (everything
+[T] already mounted).
+
+[A] Autofs Programmers <autofs@linux.kernel.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+
+[L] GPL
+[V] 5.1.9
+
+[D] 4d18350d614d3e02673bafb00367e6a65e289da9c4678be26b5fc1f1 autofs-5.1.9.tar.xz https://www.kernel.org/pub/linux/daemons/autofs/v5/

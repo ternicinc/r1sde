@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/epeg/epeg.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An IMMENSELY FAST JPEG thumbnailer library
+
+[T] It makes use of libjpeg features of being able to load an image by only
+[T] decoding the DCT coefficients needed to reconstruct an image of the size
+[T] desired. This gives a massive speedup. If you do not try and access the
+[T] pixels in a format other than YUV (or GRAY8 if the source is grascale)
+[T] then it also avoids colorspace conversions as well.
+
+[U] https://www.enlightenment.org
+
+[A] Rasterman <raster@rasterman.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/enlightenment
+[C] extra/database
+[F] CROSS
+
+[L] GPL
+[V] 0.9.3
+
+[D] 6164562a321a17277d34ddd593b14e375cca1b45d9256018db30d067 epeg-0.9.3.tar.gz https://github.com/mattes/epeg/archive/v0.9.3/
+
+. $base/package/*/*/e17-conf.in

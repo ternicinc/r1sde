@@ -1,0 +1,52 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pound/pound.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Reverse-Proxy and Loadbalancer
+
+[T] The Pound program is a reverse proxy, load balancer and HTTPS front-end
+[T] for Web server(s). Pound was developed to enable distributing the load
+[T] among several Web-servers and to allow for a convenient SSL wrapper for
+[T] those Web servers that do not offer it natively.
+
+[U] https://github.com/graygnuorg/pound
+
+[A] Robert Segall <roseg@apsis.ch>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/network
+[F] CROSS
+[L] OpenSource
+
+[V] 4.22
+
+[D] b0af3ae5f047f9ba6417242437f59ce2c285e0d5a4599088b51c97ea pound-4.22.tar.gz https://github.com/graygnuorg/pound/releases/download/v4.22/
+
+if [ $prefix_auto = 1 ]; then
+	if [ "$SDECFG_PKG_POUND_PREFIX" ]; then
+	  prefix="$SDECFG_PKG_POUND_PREFIX"
+	else
+	  prefix="opt/pound"
+	fi
+	set_confopt
+fi
+
+atstage native || hook_add preconf 5 "echo 'ac_cv_func_malloc_0_nonnull=yes' >> config.cache"
+
+if [ $pkg = "pound" ]; then
+	# by default enabled options
+	[ "$SDECFG_PKG_POUND_DAEMON" == 0 ] &&
+		var_append confopt ' ' --disable-daemon
+
+	[ "$SDECFG_PKG_POUND_SUPER" == 0 ] &&
+		var_append confopt ' ' --disable-super
+
+	# by default disabled options
+	[ "$SDECFG_PKG_POUND_MSWEBDAV" == 1 ] &&
+		var_append confopt ' ' --enable-msdav
+
+	[ "$SDECFG_PKG_POUND_UNSAFE" == 1 ] &&
+		var_append confopt ' ' --enable-unsafe
+fi

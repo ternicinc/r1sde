@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/vbindiff/vbindiff.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A visual binary diff
+
+[T] Visual Binary Diff displays files in hexadecimal and ASCII (or EBCDIC).
+[T] It can also display two files at once, and highlight the differences
+[T] between them and works well with large files.
+
+[U] https://www.cjmweb.net/vbindiff/
+
+[A] Christopher J Madsen <vbindiff@cjmweb.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 3.0_beta5
+
+[D] 9454505c874532cafef056f1cd726f57898c3b171dc89f03a779e2d3 vbindiff-3.0_beta5.tar.gz https://www.cjmweb.net/vbindiff/

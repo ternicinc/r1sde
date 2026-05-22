@@ -1,0 +1,55 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/sparc64/pkg_binutils.diff
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+As GCC, we want the the linker to use elf32 by default, otherwise we would
+have to patch packages like mozilla* or exact-image (and potentially other
+exact-build based packages) that assume they can "pre"-link objects using
+"ld -r". Of course the linker should accept the the default compiler output,
+by default as well.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- binutils-with-gold-2.46/ld/configure.tgt.orig	2026-02-24 14:34:48.464225886 +0100
++++ binutils-with-gold-2.46/ld/configure.tgt	2026-02-24 14:37:02.693533773 +0100
+@@ -874,9 +874,9 @@
+ 			targ_extra_libpath="elf64_sparc elf32_sparc"
+ 			tdir_elf32_sparc=`echo ${targ_alias} | sed -e 's/64//'`
+ 			;;
+-sparc64-*-linux-*)	targ_emul=elf64_sparc
+-			targ_extra_libpath=elf32_sparc
+-			tdir_elf32_sparc=`echo ${targ_alias} | sed -e 's/64//'`
++sparc64-*-linux-*)	targ_emul=elf32_sparc
++			targ_extra_libpath=elf64_sparc
++			tdir_elf32_sparc=`echo ${targ_alias} | sed -e 's/32//'`
+ 			;;
+ sparc64-*-*bsd*)	targ_emul=elf64_sparc
+ 			targ_extra_emuls="elf32_sparc"
+--- binutils-2.34/gas/configure.tgt.vanilla	2020-06-30 12:06:38.560577820 +0200
++++ binutils-2.34/gas/configure.tgt	2020-06-30 12:06:52.316577827 +0200
+@@ -100,7 +100,7 @@
+   score*)		cpu_type=score endian=big ;;
+   sh*le)		cpu_type=sh endian=little ;;
+   sh*)			cpu_type=sh endian=big ;;
+-  sparc64* | sparcv9*)	cpu_type=sparc arch=v9-64 ;;
++  sparc64* | sparcv9*)	cpu_type=sparc arch=v8a ;;
+   sparc86x*)		cpu_type=sparc arch=sparc86x  ;;
+   sparclet*)		cpu_type=sparc arch=sparclet ;;
+   sparclite*)		cpu_type=sparc arch=sparclite ;;
+--- binutils-2.41/bfd/configure.vanilla	2023-08-31 16:24:04.067767492 +0200
++++ binutils-2.41/bfd/configure	2023-08-31 16:36:31.601695464 +0200
+@@ -14050,9 +14050,9 @@
+     sparc_elf32_vec)		 tb="$tb elf32-sparc.lo elfxx-sparc.lo elf-vxworks.lo elf32.lo $elf" ;;
+     sparc_elf32_sol2_vec)	 tb="$tb elf32-sparc.lo elfxx-sparc.lo elf-vxworks.lo elf32.lo $elf" ;;
+     sparc_elf32_vxworks_vec)	 tb="$tb elf32-sparc.lo elfxx-sparc.lo elf-vxworks.lo elf32.lo $elf" ;;
+-    sparc_elf64_vec)		 tb="$tb elf64-sparc.lo elfxx-sparc.lo elf-vxworks.lo elf64.lo $elf"; target_size=64 ;;
+-    sparc_elf64_fbsd_vec)	 tb="$tb elf64-sparc.lo elfxx-sparc.lo elf-vxworks.lo elf64.lo $elf"; target_size=64 ;;
+-    sparc_elf64_sol2_vec)	 tb="$tb elf64-sparc.lo elfxx-sparc.lo elf-vxworks.lo elf64.lo $elf"; target_size=64 ;;
++    sparc_elf64_vec)		 tb="$tb elf64-sparc.lo elfxx-sparc.lo elf-vxworks.lo elf64.lo $elf" ;;
++    sparc_elf64_fbsd_vec)	 tb="$tb elf64-sparc.lo elfxx-sparc.lo elf-vxworks.lo elf64.lo $elf" ;;
++    sparc_elf64_sol2_vec)	 tb="$tb elf64-sparc.lo elfxx-sparc.lo elf-vxworks.lo elf64.lo $elf" ;;
+     spu_elf32_vec)		 tb="$tb elf32-spu.lo elf32.lo $elf" ;;
+     sym_vec)			 tb="$tb xsym.lo" ;;
+     tic30_coff_vec)		 tb="$tb coff-tic30.lo $coffgen" ;;

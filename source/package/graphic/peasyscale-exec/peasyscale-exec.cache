@@ -1,0 +1,24 @@
+[TIMESTAMP] 1739219593 Mon Feb 10 21:33:13 2025
+[BUILDTIME] 1 (5)
+[SIZE] 0.03 MB, 6 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] grep
+[DEP] gtk+2
+[DEP] harfbuzz
+[DEP] libx11
+[DEP] linux-header
+[DEP] make
+[DEP] pango
+[DEP] pkgconfig
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

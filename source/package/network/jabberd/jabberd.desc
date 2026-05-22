@@ -1,0 +1,95 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/jabberd/jabberd.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Jabber server
+
+[T] The jabberd project aims to provide an open-source server
+[T] implementation of the Jabber protocols for instant messaging
+[T] and XML routing. The goal of this project is to provide a
+[T] scalable, reliable, efficient and extensible server that
+[T] provides a complete set of features and is up to date with
+[T] the latest protocol revisions.
+
+[U] http://jabberd.jabberstudio.org/2/
+
+[A] Rob <rob@cataclysm.cx>
+[M] Minto van der Sluis <minto@multimach.com>
+
+[C] extra/server
+
+[L] GPL
+[V] 2.7.0
+
+[D] 66de61e02a4d5d0400fa56e8b59b0011720ca892172b6d1ad11760e2 jabberd-2.7.0.tar.gz https://github.com/jabberd2/jabberd2/releases/download/jabberd-2.7.0/
+
+# Unfortunately jabberd uses different package names for the same
+# packages. So we need a way to convert T2 package names to jabberd
+# package names. Just pass the T2 package name and the jabberd
+# packaage name will be returned.
+get_jabberd_package_name() {
+	case "$1" in
+		postgresql)	echo "pgsql" ;;
+		bdb)		echo "db" ;;
+		openldap)	echo "ldap" ;;
+		openssl)	echo "ssl" ;;
+		libidn)		echo "idn" ;;
+		*)		echo "$1" ;;
+	esac
+}
+
+# Jabber wants its own directory with the proper group rights.
+prefix=opt/jabber
+set_confopt
+
+extraincdir="$(pkgprefix includedir glibc)"
+extralibdir="$(pkgprefix libdir glibc)"
+
+# Add support for the following packages if they are available.
+for pkgname in openssl libidn postgresql mysql bdb pam openldap; do
+	# unfortunately the configure option sometimes uses different names.
+	confpkgname=$(get_jabberd_package_name $pkgname)
+	# Is this package available?
+	if pkginstalled $pkgname; then
+		# Yuck, mysql header files and libs can not be found in the
+		# normal include and lib dir, but in include dir / mysql.
+		include_dir=$(pkgprefix includedir $pkgname)
+		library_dir=$(pkgprefix libdir $pkgname)
+		if [ "$pkgname" == mysql ]; then
+			include_dir="$include_dir/mysql"
+			library_dir="$library_dir/mysql"
+		fi
+
+		# Include this package properly in the configure options.
+		var_append confopt ' ' --enable-$confpkgname
+		var_append extraincdir ':' $include_dir
+		var_append extralibdir ':' $library_dir
+	else
+		var_append confopt ' ' --disable-$confpkgname
+	fi
+done
+
+# Add additional include dirs if available.
+if [ -n $extraincdir ]; then
+	# Now add the extra include dirs to the configure options.
+	var_append confopt ' ' --with-extra_include_path=$extraincdir
+fi
+
+# Same for additional library dirs.
+if [ -n $extralibdir ]; then
+	# Now add the extra library dirs to the configure options.
+	var_append confopt ' ' --with-extra_library_path=$extralibdir
+fi
+
+jabber_preconf() {
+	# Make sure the prefix directory has the proper access rights.
+	chgrp jabber $root/$prefix
+	chmod a+rx,g+ws $root/$prefix
+
+	# Also ensure the state dir has the proper access rights.
+	chgrp jabber $localstatedir
+	chmod a+rx,g+ws $localstatedir
+}
+hook_add preconf 5 jabber_preconf

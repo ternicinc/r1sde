@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/timidity++/timidity++.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A software synthesizer
+
+[T] TiMidity++ can play MIDI files by converting them into PCM waveform
+[T] data; give it a MIDI data along with digital instrument data files, then it
+[T] synthesizes them in real-time, and plays. It can not only play sounds, but
+[T] also can save the generated waveforms into hard disks as various audio file
+[T] formats.
+
+[U] https://timidity.sourceforge.net/
+
+[A] Masanao Izumo
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] NO-LTO.gcc
+
+[L] GPL
+[V] 2.15.0
+
+[D] b24f890a9e24301e634091a8054e2e9905faabd330f6873cb558c08c TiMidity++-2.15.0.tar.xz https://prdownloads.sourceforge.net/sourceforge/timidity/
+
+var_append confopt ' ' "--enable-audio=alsa --enable-server --enable-alsaseq"

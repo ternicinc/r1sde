@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gle-graphics/gle-graphics.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Graphics Layout Engine / Professional Graphics Language
+
+[T] GLE is a graphics language that produces postscript, EPS, PDF, PNG, or
+[T] JPG ouput from a simple script file. The GLE scripting language is full
+[T] featured with variables, subroutines, logic control, looping, and
+[T] graphing tools. It is great for plotting and charting data.
+
+[U] https://www.gle-graphics.org/
+
+[A] Chris Pugmire {original program creation and design}
+[A] Vincent LaBella {4.0 C++ code base}
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/graphic
+
+[L] BSD
+[V] 4.3.9
+
+[D] 38840d5a88efdf1e2cee9979e06037a97ecd71b239d2fb2f17b611af gle-graphics-4.3.9-src.tar.gz https://github.com/vlabella/GLE/archive/v4.3.9/
+
+srcdir=GLE-$ver/src
+hook_add preconf 5 "export GLE_TOP=$builddir/$srcdir"
+
+var_append GCC_WRAPPER_APPEND ' ' -L$root$(pkgprefix libdir libx11)
+var_append GCC_WRAPPER_APPEND ' ' -L$root$(pkgprefix libdir glu)
+var_append GCC_WRAPPER_APPEND ' ' -I$root$(pkgprefix includedir glu)
+var_append cmakeopt ' ' -DPIXMAN_INCLUDE_DIRS=$root$(pkgprefix includedir pixman)/pixman-1

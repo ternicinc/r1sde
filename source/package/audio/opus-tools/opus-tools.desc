@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/opus-tools/opus-tools.desc
+[COPY] Copyright (C) 2012 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Opus Audio Tools
+
+[T] This is opus-tools, a set of tools to encode, inspect, and decode audio
+[T] in the Opus format.
+
+[U] https://www.opus-codec.org/
+
+[A] Xiphorus <team@xiph.org>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 0.2
+
+[D] 591066db57803dcb4c5981157737721ec6e7784cce7549f3b040bc96 opus-tools-0.2.tar.gz http://downloads.xiph.org/releases/opus/

@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/garcon/garcon.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Various gtk widgets for xfce
+
+[T] Various gtk widgets for xfce.
+
+[U] https://www.xfce.org/
+
+[A] Olivier Fourdan <fourdan@xfce.org>
+[A] Jasper Huijsmans <huysmans@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/desktop/xfce
+[F] CROSS NO-LTO.clang
+
+[L] LGPL
+[V] 4.20.0
+[P] X -----5---9 223.000
+
+[D] 0073a522648e8329cef994afaa77e64c3981b382b53081d434de68ce garcon-4.20.0.tar.bz2 https://archive.xfce.org/src/xfce/garcon/4.20/
+
+. $base/package/xfce4/*/xfce4-conf.in

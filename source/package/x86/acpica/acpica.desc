@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/acpica/acpica.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] ACPI Component Architecture ASL Optimizing Compiler and AML Disassembler
+
+[T] Advanced Configuration & Power Interface Component Architecture (ACPI CA)
+[T] provides a reference implementation of software components that enable OS
+[T] support for interfaces defined in the ACPI 1.0b specification. This includes:
+[T] AML interpreter and debugger, Namespace Management, ACPI hardware support, and
+[T] basic OSPM, including a device power management framework.
+
+[U] https://www.acpica.org/
+
+[A] Intel Corp.
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] Free-to-use
+[V] 20260408
+[P] X -----5---9 179.200
+
+[D] 8b80e03f48b69103d0aef41c58e1507b9d75386166592733776df1ab acpica-20260408.tar.gz https://github.com/acpica/acpica/archive/20260408/
+
+hook_add postmake 5 "install -v -m 644 $confdir/LICENSE $root$docdir/"

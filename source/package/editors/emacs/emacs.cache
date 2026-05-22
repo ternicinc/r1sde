@@ -1,0 +1,57 @@
+[TIMESTAMP] 1773871209 Wed Mar 18 22:00:09 2026
+[BUILDTIME] 25 (9)
+[SIZE] 139.91 MB, 4461 files
+
+[DEP] 00-dirtree
+[OPT] acl
+[OPT] alsa-lib
+[DEP] at-spi2-core
+[OPT] attr
+[DEP] bash
+[DEP] binutils
+[OPT] cairo
+[DEP] coreutils
+[OPT] dbus
+[DEP] diffutils
+[DEP] findutils
+[OPT] fontconfig
+[OPT] freetype
+[DEP] gawk
+[OPT] gconf
+[DEP] gdk-pixbuf
+[OPT] glib
+[DEP] gmp
+[OPT] gnutls
+[OPT] gpm
+[DEP] grep
+[OPT] gtk+
+[DEP] gzip
+[OPT] harfbuzz
+[OPT] lcms2
+[OPT] libgif
+[OPT] libjpeg
+[OPT] libpng
+[DEP] librsvg
+[OPT] libseccomp
+[OPT] libtiff
+[OPT] libwebp
+[OPT] libx11
+[DEP] libxml
+[DEP] linux-header
+[DEP] make
+[DEP] ncurses
+[OPT] openssh
+[DEP] pango
+[DEP] perl
+[DEP] pkgconfig
+[DEP] sed
+[OPT] sqlite
+[OPT] systemd
+[DEP] tar
+[DEP] texinfo
+[OPT] tree-sitter
+[DEP] util-linux
+[OPT] wayland
+[DEP] xorgproto
+[DEP] xz
+[DEP] zlib

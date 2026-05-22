@@ -1,0 +1,32 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ntfs-3g/ntfs-3g.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] NTFS-3G Read/Write userspace driver
+
+[T] The NTFS-3G driver is an open source, freely available NTFS driver for
+[T] Linux with read and write support. It provides safe and fast handling
+[T] of the Windows XP, Windows Server 2003, Windows 2000 and Windows Vista
+[T] file systems.
+
+[U] http://www.ntfs-3g.org/
+
+[A] Szabolcs Szakacsits <szaka@sienet.hu>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/filesystem
+[F] CROSS
+
+[L] GPL
+[V] 2026.2.25
+[P] X -----5---9 400.000
+
+[D] 9a8870d606ecde16cf8d2fd97a008f6b974dd4f8c7d8c5da8b803b41 ntfs-3g_ntfsprogs-2026.2.25.tgz https://tuxera.com/opensource/
+
+var_append confopt ' ' --disable-ntfsprogs
+var_append confopt ' ' --disable-ldconfig
+pkginstalled fuse2 &&
+	var_append confopt ' ' --with-fuse=external ||
+	var_append confopt ' ' --disable-ntfs-3g

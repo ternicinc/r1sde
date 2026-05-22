@@ -1,0 +1,37 @@
+[TIMESTAMP] 1751151109 Sun Jun 29 00:51:49 2025
+[BUILDTIME] 4 (9)
+[SIZE] 0.10 MB, 11 files
+
+[DEP] at-spi2-core
+[DEP] autoconf
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] glib
+[DEP] grep
+[DEP] gtk+
+[DEP] gzip
+[DEP] harfbuzz
+[DEP] libcap
+[DEP] libgif
+[DEP] libjpeg
+[DEP] libpcap
+[DEP] libpng
+[DEP] libwebp
+[DEP] libwebsockets
+[DEP] libx11
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] openssl
+[DEP] pango
+[DEP] perl
+[DEP] sed
+[DEP] tar
+[DEP] xorgproto

@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/darling/darling.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Run macOS software on Linux
+
+[T] Darling is a translation layer that lets you run macOS software on Linux.
+
+[U] https://www.darlinghq.org/
+
+[A] Darling Contributors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/emulator
+[F] NO-PIE NO-SSP NO-LTO OBJDIR
+
+[R] + x86 x86-64
+
+[L] GPL3
+[V] 0.1.20251023
+
+[D] 6750c748f1f12450c53897eef1dc8a9d5a93ca77e46ff78a65551738 darling-0.1.20251023.tar.gz git+https://github.com/darlinghq/darling v0.1.20251023
+
+[ $arch = x86 ] && var_append cmakeopt ' ' -DTARGET_x86_64=OFF
+[ $arch = x86-64 ] && var_append cmakeopt ' ' -DTARGET_i386=OFF
+var_append cmakeopt ' ' -DJSC_UNIFIED_BUILD=ON

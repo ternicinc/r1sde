@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/beecrypt/beecrypt.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A cryptographic toolkit
+
+[T] BeeCrypt is an ongoing project to provide strong and fast cryptography in the form
+[T] of a toolkit usable by commercial and open source projects.
+[T] Included in the library are entropy sources, random generators, block ciphers,
+[T] hash functions, message authentication codes, multiprecision integer routines,
+[T] and public key primitives.
+
+[U] https://beecrypt.sourceforge.net/
+
+[A] Bob Deblier <bob.deblier@pandora.be>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/crypto
+
+[L] GPL
+[V] 4.2.1
+
+[D] 4bcd01dd0c1b925b3d6f774a9fcd97e770f0665b60979c3318733613 beecrypt-4.2.1.tar.gz https://prdownloads.sourceforge.net/sourceforge/beecrypt/
+
+var_append GCC_WRAPPER_APPEND ' ' -fpermissive
+
+# checking if we've Java support for enabling beecrypt's Java API
+if [ "$JAVAHOME" ]; then
+	var_append confopt ' ' --with-java
+else
+	var_append confopt ' ' --without-java
+fi

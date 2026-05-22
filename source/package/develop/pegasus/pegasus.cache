@@ -1,0 +1,15 @@
+
+[TIMESTAMP] 1171363642 Tue Feb 13 10:47:22 2007
+[BUILDTIME] 5 (5) ERROR
+[SIZE] 0.39 MB, 35 files
+
+[DEP] binutils
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] grep
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar

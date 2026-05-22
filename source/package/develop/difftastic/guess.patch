@@ -1,0 +1,35 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/difftastic/guess.patch
+# Copyright (C) 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- difftastic-0.62.0/src/parse/guess_language.rs.vanilla	2025-02-01 02:22:05.586664267 +0100
++++ difftastic-0.62.0/src/parse/guess_language.rs	2025-02-01 02:23:29.366664266 +0100
+@@ -194,7 +194,7 @@
+             "*.fcgi",
+             "*.ksh",
+             "*.sh",
+-            "*.sh.in",
++            "*.in",
+             "*.tmux",
+             "*.tool",
+             "*.zsh",
+@@ -246,7 +246,7 @@
+         // https://madnight.github.io/githut/
+         // Also, treating CUDA as C++
+         CPlusPlus => &[
+-            "*.cc", "*.cpp", "*.h", "*.hh", "*.hpp", "*.ino", "*.cxx", "*.cu",
++            "*.cc", "*.cpp", "*.h", "*.hh", "*.hpp", "*.ino", "*.cxx", "*.cu", "*.tcc",
+         ],
+         CSharp => &["*.cs"],
+         Css => &["*.css"],
+@@ -310,7 +310,7 @@
+         Julia => &["*.jl"],
+         Kotlin => &["*.kt", "*.ktm", "*.kts"],
+         LaTeX => &["*.aux", "*.cls", "*.sty", "*.tex"],
+-        Lua => &["*.lua"],
++        Lua => &["*.lua", "*.els"],
+         Make => &[
+             "*.mak",
+             "*.d",

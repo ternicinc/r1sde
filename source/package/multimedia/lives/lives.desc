@@ -1,0 +1,28 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/lives/lives.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The Linux Video Editing System
+
+[T] LiVES is the Linux Video Editing System. It is designed to be simple to
+[T] use, yet powerful. It is small in size - the stripped binary is under 500K,
+[T] yet it has many advanced features. LiVES is part editor, part VJ tool.
+
+[U] http://lives-video.com/
+
+[A] G. Finch <gfinch@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[F] NOPARALLEL FPIC
+[C] extra/multimedia
+
+[E] opt libtheora
+[E] opt libraw1394
+
+[L] GPL
+[V] 3.2.0
+
+[D] 90448b83feb4deebded5882395f02ca0d1569030ea6cc1f3e43745e9 LiVES-3.2.0.tar.bz2 http://lives-video.com/releases/

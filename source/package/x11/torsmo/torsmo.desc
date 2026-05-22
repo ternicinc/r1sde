@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/torsmo/torsmo.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Displays many system related stats
+
+[T] Torsmo is a system monitor that sits in the corner of your desktop. It's
+[T] very simple, customizable and it renders only text on the desktop (and
+[T] percentagebars if you want it to ;) and the only lib it uses is Xlib.
+
+[U] https://torsmo.sourceforge.net/
+
+[A] Hannu Saransaari <hipo@users.sourceforge.net>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/tool
+[F] CROSS
+
+[L] BSD
+[V] 0.18
+
+[D] 5c19fb87adbdd9bea6c6aa02061d5cdcc3e9fd824eb273b1caf2e130 torsmo-0.18.tar.gz https://prdownloads.sourceforge.net/sourceforge/torsmo/

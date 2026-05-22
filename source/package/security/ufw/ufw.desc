@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/ufw/ufw.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An uncomplicated cli firewall frontend
+
+[T] UFW, Uncomplicated Firewall is a frontend to netfilter. It provides a
+[T] command-line interface aiming to be simple and easy to use.
+
+[U] https://launchpad.net/ufw/
+
+[A] Jamie·Strandboge <jamie@canonical.com>
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/security
+[F] CROSS
+
+[L] GPL3
+[V] 0.36.2
+
+[D] 6f7f4ae8eb0b0c19a42cd7159c72dbe237483df5deb7990b3aff9fa2 ufw-0.36.2.tar.gz https://launchpad.net/ufw/0.36/0.36.2/+download/ufw-0.36.2.tar.gz

@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/swappy/swappy.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Wayland native snapshot editing tool
+
+[T] A Wayland native snapshot and editor tool, inspired by Snappy on macOS.
+[T] Works great with grim, slurp and sway. But can easily work with other
+[T] screen copy tools that can output a final image to stdout.
+
+[U] https://github.com/jtheoof/swappy/
+
+[A] Jeremy Attali <jeremy.attali@gmail.com>
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/x11
+
+[L] GPL3
+[V] 1.8.0
+
+[D] ef019e2ec8fa68de40cf18646bf7df27a260294958fb37a4e4129dd2 swappy-1.8.0.tar.gz https://github.com/jtheoof/swappy/releases/download/v1.8.0/

@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libarchive/libarchive.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library for several streaming archive formats
+
+[T] Libarchive is a programming library that can create and read several
+[T] different streaming archive formats, including most popular tar variants,
+[T] several cpio formats, and both BSD and GNU ar variants. It can also write
+[T] shar archives and read ISO9660 CDROM images and ZIP archives. The bsdtar
+[T] program is an implementation of tar(1) that is built on top of libarchive.
+[T] It started as a test harness, but has grown into a feature-competitive
+[T] replacement for GNU tar. The bsdcpio program is an implementation of
+[T] cpio(1) that is built on top of libarchive
+
+[U] https://www.libarchive.org/
+
+[A] Tim Kientzle <kientzle@freebsd.org>
+[M] Gerhard Weis <gweis@gmx.at>
+
+[C] extra/archive
+[F] CROSS
+[E] opt acl
+
+[L] BSD
+[V] 3.8.7
+[P] X -----5---9 127.440
+
+[D] e4e2a54499aaf9d5291c26ecfeecc83823cf4fea7ed2b3e18eb71ae2 libarchive-3.8.7.tar.xz https://www.libarchive.org/downloads/

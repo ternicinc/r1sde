@@ -1,0 +1,47 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/doxygen/doxygen.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Documentation system for C++, Java, IDL and C
+
+[T] Doxygen is a documentation system for C++, Java, IDL (Corba, Microsofti
+[T] and KDE-DCOP flavors) and C.
+[T]
+[T] It can generate an on-line documentation browser (in HTML) and/or an
+[T] off-line reference manual (in) from a set of documented source files.
+[T] There is also support for generating output in RTF (MS-Word), PostScript,
+[T] hyperlinked PDF, compressed HTML, and Unix man pages. The documentation
+[T] is extracted directly from the sources, which makes it much easier to
+[T] keep the documentation consistent with the source code.
+[T]
+[T] Doxygen can be configured to extract the code structure from undocumented
+[T] source files. This can be very useful to quickly find your way in large
+[T] source distributions. The relations between the various elements are be
+[T] visualized by means of include dependency graphs, inheritance diagrams,
+[T] and collaboration diagrams, which are all generated automatically.
+[T]
+[T] You can even `abuse' doxygen for creating normal documentation.
+
+[U] https://www.doxygen.org/
+
+[A] Dimitri van Heesch <dimitri@stack.nl>
+[M] René Rebe <rene@exactco.de>
+
+[U] https://doxygen.nl/
+
+[C] extra/development
+[F] CROSS NO-LTO.gcc
+
+[L] GPL
+[V] 1.17.0
+[P] X -----5---9 102.390
+
+[CV-URL] http://www.doxygen.nl/download.html
+[D] d3bb86d0bdfb9461bd9da174246575785d1064bef48263f6cf21d231 doxygen-1.17.0.src.tar.gz https://doxygen.nl/files/
+
+confopt= cleanconfopt=0
+var_append confopt ' ' "--prefix $root/$prefix"
+[[ $libdir = *lib64 ]] && var_append GCC_WRAPPER_INSERT ' ' "-L/opt/qt4/lib64 -L/usr/X11/lib64"

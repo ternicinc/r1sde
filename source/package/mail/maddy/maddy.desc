@@ -1,0 +1,40 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/maddy/maddy.desc
+[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Composable all-in-one mail server
+
+[T] Maddy Mail Server implements all functionality required to run a e-mail
+[T] server. It can send messages via SMTP (works as MTA), accept messages via
+[T] SMTP (works as MX) and store messages while providing access to them via
+[T] IMAP. In addition to that it implements auxiliary protocols that are
+[T] mandatory to keep email reasonably secure (DKIM, SPF, DMARC, DANE,
+[T] MTA-STS).
+
+[U] https://maddy.email/
+
+[A] Max Mazurov <fox.cpp@disroot.org>
+[M] NoTag <notag@t2sde.org>
+
+[C] extra/server
+[F] CROSS
+
+[L] GPL3
+[V] 0.9.4
+
+[D] e04ff918b82ad09541020c582339a32d6e2d92f08ca441d193fc246c maddy-0.9.4.tar.gz https://github.com/foxcpp/maddy/archive/v0.9.4/
+
+. $base/package/*/*/go-conf.in
+
+var_append goconfopt ' ' "-v -o bin/$pkg ./cmd/maddy"
+
+hook_add inmake 5 "scdoc <docs/man/maddy.1.scd >maddy.1"
+
+hook_add postmake 5 maddy_pm
+maddy_pm() {
+	install -Dm755 bin/maddy $root$bindir
+	install -Dm644 maddy.conf $root$sysconfdir/$pkg/$pkg.conf
+	install -Dm644 maddy.1 $root$mandir/man1/
+}

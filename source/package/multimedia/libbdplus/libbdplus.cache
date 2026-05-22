@@ -1,0 +1,20 @@
+[TIMESTAMP] 1749580703 Tue Jun 10 20:38:23 2025
+[BUILDTIME] 6 (9)
+[SIZE] 0.62 MB, 14 files
+
+[DEP] automake
+[DEP] bash
+[DEP] binutils
+[DEP] bzip2
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] libaacs
+[DEP] libgcrypt
+[DEP] libgpg-error
+[DEP] linux-header
+[DEP] make
+[DEP] sed
+[DEP] tar

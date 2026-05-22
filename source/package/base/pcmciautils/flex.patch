@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/pcmciautils/flex.patch
+# Copyright (C) 2017 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- pcmciautils-018/Makefile.vanilla	2017-04-19 08:53:50.638588260 +0000
++++ pcmciautils-018/Makefile	2017-04-19 08:55:23.742589858 +0000
+@@ -243,7 +243,7 @@
+ 	$(QUIET) $(STRIPCMD) $@
+ 
+ $(PCMCIA_SOCKET_STARTUP): $(LIBC) src/startup.o src/yacc_config.o src/lex_config.o $(OBJS) $(HEADERS)
+-	$(QUIET) $(LD) $(LDFLAGS) -o $@ $(CRT0) src/startup.o src/yacc_config.o src/lex_config.o $(LIB_OBJS) $(ARCH_LIB_OBJS)
++	$(QUIET) $(LD) $(LDFLAGS) -o $@ $(CRT0) src/startup.o src/yacc_config.o src/lex_config.o $(LIB_OBJS) $(ARCH_LIB_OBJS) -lfl
+ 	$(QUIET) $(STRIPCMD) $@
+ 
+ yacc_config.o lex_config.o: %.o: %.c

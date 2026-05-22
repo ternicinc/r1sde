@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/grzip/grzip.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A high-performance and fast general purpose file compressor
+
+[T] Grzip is a high-performance file compressor based on Burrows-Wheeler
+[T] Transform, Schindler Transform, Move-To-Front, and Weighted Frequency
+[T] Counting. It uses the Block-Sorting Lossless Data Compression Algorithm,
+[T] which has received considerable attention in recent years for both its
+[T] simplicity and effectiveness. This implementation has a compression rate
+[T] of 2. 234 bps on the Calgary Corpus (14 files) without preprocessing
+[T] filters. This is essentially an adaptation/extension of GRZipII by
+[T] Ilya Grebnov.
+
+[U] https://codeberg.org/BSDforge/grzip
+
+[A] Jean-Pierre Demailly <demailly@fourier.ujf-grenoble.fr>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/tool
+[F] FPIC
+
+[L] LGPL
+[V] 0.3.1
+
+[D] d83e16eb0a8168d76dbcc0ec6fa823279059d513ae5913717354ec43 grzip-0.3.1.tar.gz !https://codeberg.org/BSDforge/grzip/archive/0.3.1.tar.gz

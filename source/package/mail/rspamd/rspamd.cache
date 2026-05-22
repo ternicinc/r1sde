@@ -1,0 +1,29 @@
+[TIMESTAMP] 1748812113 Sun Jun  1 23:08:33 2025
+[BUILDTIME] 95 (9)
+[SIZE] 13.13 MB, 429 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cmake
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] glib
+[DEP] grep
+[DEP] gzip
+[DEP] icu4c
+[DEP] libarchive
+[DEP] libelf
+[DEP] libsodium
+[DEP] linux-header
+[DEP] luajit
+[DEP] make
+[DEP] openssl
+[DEP] pcre2
+[DEP] perl
+[DEP] pkgconfig
+[DEP] ragel
+[DEP] sed
+[DEP] sqlite
+[DEP] tar
+[DEP] zlib

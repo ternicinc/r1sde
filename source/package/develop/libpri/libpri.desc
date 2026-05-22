@@ -1,0 +1,33 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libpri/libpri.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Primary Rate ISDN (PRI) library for the Asterisk PBX
+
+[T] Asterisk Primary Rate ISDN (PRI) library for T1/E1/J1 interfaces.
+
+[U] https://www.asterisk.org
+
+[A] The Asterisk Project
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 1.6.1
+
+[D] 6cabc553808c98eca9218be466421820cf54f7ec6bc8a2d18c91ae8e libpri-1.6.1.tar.gz https://downloads.asterisk.org/pub/telephony/libpri/libpri-1.6.1.tar.gz
+
+pkgprefix -t asterisk
+
+#var_append makeinstopt ' ' INSTALL_PREFIX=$root
+
+prefix="$(pkgprefix asterisk)"
+set_confopt
+
+var_append makeinstopt ' ' INSTALL_BASE=/$prefix
+
+#makeinstopt="$makeopt install"

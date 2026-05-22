@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/liblo/liblo.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An implementation of the Open Sound Control protocol
+
+[T] An implementation of the Open Sound Control protocol for POSIX systems.
+
+[U] https://liblo.sourceforge.net/
+
+[A] Steve Harris <steve@plugin.org.uk>
+[M] Sebastian Czech <t2_@arcor.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 0.35
+[P] X -----5---9 182.300
+
+[D] 777ed195df820d080dc853bdff7fa62d5fde437db243ce74ec88c027 liblo-0.35.tar.gz https://prdownloads.sourceforge.net/sourceforge/liblo/
+
+pkgiknstalled doxygen || var_append confopt ' ' --disable-doc

@@ -1,0 +1,74 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/strongswan/strongswan.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An IPsec implementation for Linux
+
+[T] strongSwan is an OpenSource IPsec implementation for the Linux operating
+[T] system.
+[T] It is based on the discontinued FreeS/WAN project and the X.509 patch which
+[T] we developped over the last three years. In order to have a stable IPsec
+[T] platform to base our future extensions of the X.509 capability on, we
+[T] decided to lauch the strongSwan project.
+[T]
+[T] The focus is on:
+[T] - simplicity of configuration
+[T] - strong encryption and authentication methods
+[T] - powerful IPsec policies supporting large and complex VPN networks
+[T]
+[T] strongSwan features includes:
+[T] - both on Linux 2.4 (KLIPS) and Linux 2.6 (native IPsec) kernels.
+[T] - Fast connection startup and periodic update using ipsec starter
+[T] - Automatic insertion and deletion of IPsec policy based firewall rules
+[T] - strong 3DES, AES, Serpent, Twofish, or Blowfish encryption
+[T] - NAT-Traversal (RFC 3947) and support of virtual IPs and IKE Mode Config
+[T] - Dead Peer Detection (DPD, RFC 3706) takes care of dangling tunnels
+[T] - Authentication based on X.509 certificates or preshared keys
+[T] - Authentication based on X.509 certificates or preshared keys
+[T] - Generation of a default self-signed certificate during first strongSwan startup
+[T] - Retrieval and local caching of Certificate Revocation Lists via HTTP or LDAP
+[T] - Full support of the Online Certificate Status Protocol (OCSP, RCF 2560)
+[T] - CA management (OCSP and CRL URIs, default LDAP server)
+[T] - Powerful IPsec policies based on wildcards or intermediate CAs
+[T] - Group policies based on X.509 attribute certificates (RFC 3281)
+[T] - Optional storage of RSA private keys and certificates on a smartcard
+[T] - Smartcard access via standardized PKCS #11 interface
+[T] - PKCS #11 proxy function offering RSA decryption services via whack
+
+[U] https://www.strongswan.org/
+
+[A] Andreas Steffen <andreas.steffen@zhwin.ch>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/security
+[F] CROSS
+
+[L] GPL
+
+[V] 6.0.6
+
+[CV-URL] https://www.strongswan.org/download.html
+[D] e7bd7090a2dcaeddf1e4163a86427000bfe28533b57d6b15ffb366a0 strongswan-6.0.6.tar.bz2 https://download.strongswan.org/
+
+pkginstalled openssl && var_append confopt ' ' --enable-openssl
+pkginstalled wolfssl && var_append confopt ' ' --enable-wolfssl
+
+var_append confopt ' ' '--enable-eap-sim
+	--enable-eap-sim-file \
+	--enable-eap-aka \
+	--enable-eap-aka-3gpp2 \
+	--enable-eap-simaka-pseudonym \
+	--enable-eap-simaka-reauth \
+	--enable-eap-identity \
+	--enable-eap-md5 \
+	--enable-eap-tls'
+
+# checking if we can enable CRL fetching using LDAP
+if pkginstalled openldap; then
+	pkgprefix -t openldap
+	var_append confopt ' ' --enable-ldap
+	var_append GCC_WRAPPER_INSERT ' ' "-I$(pkgprefix includedir openldap)"
+	var_append GCC_WRAPPER_INSERT ' ' "-L$(pkgprefix libdir openldap)"
+fi

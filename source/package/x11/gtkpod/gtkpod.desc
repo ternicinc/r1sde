@@ -1,0 +1,39 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gtkpod/gtkpod.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A graphical utility using gtk2 for managing your iPod
+
+[T] gtkpod allows you to
+[T] * Read your existing iTunesDB (i.e. import the existing contents of
+[T] your iPod including playcounts and ratings).
+[T] * Add mp3 and m4a (non-protected AAC) files (single files, directories
+[T] or existing playlists) to the iPod. You can choose the charset the
+[T] ID3 tags are encoded in from within gtkpod.
+[T] * Extract tag information (artist, album, title...) from the filename
+[T] if you supply a template.
+[T] * Detect duplicates when adding songs (optional).
+[T] * Remove songs from your iPod.
+[T] * Create and modify playlists.
+[T] * Modify ID3 tags -- changes are also updated in the original file
+[T] * Refresh ID3 tags from file
+[T] * Sync directories.
+[T] * Normalize the volume of your tracks (uses mp3gain)
+[T] * Write the updated iTunesDB and added songs to your iPod.
+[T] * Work offline and synchronize your new playlists / songs with the iPod
+
+[U] https://gtkpod.sourceforge.net
+
+[A] Jorg Schuler <jcsjcs@users.sourceforge.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] CROSS
+
+[L] GPL
+[V] 2.1.5
+
+[D] 11762956cd43dc5545291fc5b3eccc149cefca26b750e2010e69cdcf gtkpod-2.1.5.tar.gz https://download.sourceforge.net/gtkpod/

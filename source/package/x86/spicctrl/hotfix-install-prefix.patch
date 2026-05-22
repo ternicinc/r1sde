@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/spicctrl/hotfix-install-prefix.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+diff -Naur spicctrl-1.8-orig/Makefile spicctrl-1.8/Makefile
+--- spicctrl-1.9-orig/Makefile	2005-02-10 17:21:47.000000000 +0200
++++ spicctrl-1.9/Makefile	2005-05-28 18:35:46.718907544 +0300
+@@ -6,7 +6,7 @@
+ LIBS =
+ DOCS = AUTHORS CHANGES LICENSE
+ VERSION = 1.9
+-PREFIX = /usr/local
++PREFIX = /usr
+ DESTBIN = $(PREFIX)/bin
+ DESTMAN = $(PREFIX)/man/man1
+ DESTDOC = $(PREFIX)/share/doc/spicctrl-$(VERSION)

@@ -1,0 +1,43 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/minit/minit.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A very small replacement for SysVinit
+
+[T] Minit can replace SysVinit completly and is daemontools-alike.
+[T] Some advantages of minit:
+[T] - Can respawn processes
+[T] - Can take dependecies into account automatically
+[T] - Is very small (linked against dietlibc)
+[T] - Is quite fast
+[T] - Can control daemons with a utility named pidfilehack
+
+[U] https://www.fefe.de/minit/
+
+[A] Felix von Leitner <web@fefe.de>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/system
+[F] CROSS DIETLIBC INIT
+
+[L] OpenSource
+[V] 0.10
+[P] O -----5---9 127.000
+
+[D] 4bdb20932b854d152349dd17685c68c52519ea47dcd6fe2ef382b47b minit-0.10.tar.bz2 http://dl.fefe.de/
+
+. $base/package/*/minit/functions
+
+minit_pm() {
+	for x in cleanup hostname ifconfiglo remount sleep default hwclock \
+		mountall sh; do
+		install_minit $x
+	done
+}
+hook_add postmake 5 minit_pm
+
+var_append makeopt ' ' "CROSS= DIET="
+var_append GCC_WRAPPER_INSERT ' ' \
+	   "-I$root`pkgprefix includedir libowfat`/libowfat"

@@ -1,0 +1,31 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/openimageio/openimageio.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Reading, writing, and processing images in a wide variety of file formats
+
+[T] OpenImageIO is a toolset for reading, writing, and manipulating image
+[T] files of any image file format relevant to VFX / animation via a
+[T] format-agnostic API with a feature set, scalability, and robustness needed
+[T] for feature film production.
+
+[U] https://openimageio.readthedocs.io/
+
+[A] Academy Software Foundation
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[F] OBJDIR NO-LTO
+
+[E] opt libheif
+[E] opt libraw
+[E] opt libwebp
+[E] opt openexr
+
+[L] APL
+[V] 3.1.13.1
+[P] X -----5---9 300.900
+
+[D] 78455f7c67d49e638c53d5ee7d12a46d5e2e035f91b42c9864296170 openimageio-v3.1.13.1.tar.gz https://github.com/AcademySoftwareFoundation/OpenImageIO/archive/v3.1.13.1/

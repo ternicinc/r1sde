@@ -1,0 +1,37 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/xfig/xfig.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An interactive drawing tool
+
+[T] XFig is an interactive drawing tool which runs under X Window System
+[T] Version 11 Release 4 (X11R4) or later, on most UNIX-compatible platforms.
+[T]
+[T] In xfig, figures may be drawn using objects such as circles, boxes, lines,
+[T] spline curves, text, etc. It is also possible to import images in formats
+[T] such as GIF, JPEG, EPSF (PostScript), etc. Those objects can be created,
+[T] deleted, moved or modified. Attributes such as colors or line styles can
+[T] be selected from various options. For text, various fonts are available.
+[T] Text can also include Latin-1 characters.
+
+[U] https://www.xfig.org/
+[U] https://www.xfig.org/userman/
+
+[A] Supoj Sutanthavibul <nwg.nectec.or.th>
+[A] Brian V. Smith <BVSmith@lbl.gov>
+[A] Paul King <king@dstc.edu.au>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office
+[F] CROSS
+
+[L] OpenSource
+[V] 3.2.9a
+
+[D] b4a873fc7f0a43f33cb024a720f562ec2e3cbfbd5d8df58f2fc5aba8 xfig-3.2.9a.tar.xz https://download.sourceforge.net/mcj/
+
+var_append CC_WRAPPER_APPEND ' ' -std=gnu17
+var_append CC_WRAPPER_APPEND ' ' -L$root$(pkgprefix libdir libx11)

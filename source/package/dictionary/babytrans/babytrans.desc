@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/babytrans/babytrans.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Graphical front-end for Babylon Translator dictonaries
+
+[T] Babytrans is a graphical front-end for GTK+/Gnome that allows you to use
+[T] the dictionaries from Babylon Translator software available under Windows,
+[T] on the Linux/X platform. It use only the old dictionnary format (.dic)
+[T] and do not handle (yet) the new format (.bgl/.dat).
+
+[U] http://fjolliton.free.fr/babytrans/
+
+[A] Frederic Jolliton <fred@jolliton.com>
+[M] Leonel Iván Saafigueroa <leonel@saafigueroa.com.ar>
+
+[C] extra/office
+
+[L] GPL
+[V] 0.9.1
+
+[D] 81e6e52c239f908473f1b7d8a15350e5672cdeb51e955cd452aabeb0 babytrans-0.9.1.tar.bz2 http://fjolliton.free.fr/babytrans/

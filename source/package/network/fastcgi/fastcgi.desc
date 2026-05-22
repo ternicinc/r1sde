@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/fastcgi/fastcgi.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A FastCGI Development Kit
+
+[T] FastCGI is a language independent, scalable, open extension to CGI that
+[T] provides high performance without the limitations of server specific APIs.
+
+[U] https://fastcgi-archives.github.io/
+
+[A] Open Market, Inc
+[M] Michael Tross <michael@tross.org>
+
+[C] extra/network
+[F] CROSS NOPARALLEL
+
+[L] PublicDomain
+[V] 2.4.7
+[P] X -----5---9 134.600
+
+[D] 6bbc8efaddd0838ecd6a088216ce06ac542f36b188f003780e41ceb2 fcgi-2.4.7.tar.gz https://github.com/FastCGI-Archives/fcgi2/archive/2.4.7/
+
+autogen=1

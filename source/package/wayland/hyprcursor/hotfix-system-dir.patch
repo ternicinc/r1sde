@@ -1,0 +1,17 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/hyprcursor/hotfix-system-dir.patch
+# Copyright (C) 2024 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+--- hyprcursor-0.1.11/libhyprcursor/hyprcursor.cpp.vanilla	2025-03-05 07:03:28.983842608 -0800
++++ hyprcursor-0.1.11/libhyprcursor/hyprcursor.cpp	2025-03-05 07:03:43.153333387 -0800
+@@ -26,7 +26,7 @@
+         while (getline(envXdgStream, tmpStr, ':'))
+             result.push_back((tmpStr + "/icons"));
+     } else
+-        result = {"/usr/share/icons"};
++        result = {"/usr/X11/share/icons", "/usr/share/icons"};
+ 
+     return result;
+ }

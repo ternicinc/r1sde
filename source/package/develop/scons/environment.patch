@@ -1,0 +1,23 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/scons/environment.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+We must inherit the build environment to have the PATH to the wrappers as well
+as their configuration.
+
+  - Rene Rebe <rene@exactcode.de>
+
+diff -Nur scons-1.2.0-orig/engine/SCons/Action.py scons-1.2.0/engine/SCons/Action.py
+--- scons-1.2.0-orig/SCons/Action.py	2009-02-09 06:48:11.000000000 +0000
++++ scons-1.2.0/SCons/Action.py	2009-02-09 06:48:59.000000000 +0000
+@@ -561,7 +561,7 @@
+ def get_default_ENV(env):
+     global default_ENV
+     try:
+-        return env['ENV']
++        return os.environ
+     except KeyError:
+         if not default_ENV:
+             import SCons.Environment

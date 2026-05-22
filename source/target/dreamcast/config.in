@@ -1,0 +1,59 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/target/dreamcast/config.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+#Description: Sega Dreamcast console
+
+pkgfilter sed '
+
+# mangle all packages to only build them in the cross stage (1)
+s,^. \(.\)[^ ]*,X \11--------,;
+
+# select some packages (and repositories) explicitely
+
+/ 00-dirtree /		{ p; d; };
+/ linux-header /	{ p; d; };
+/ binutils /		{ s,^. [^ ]*,X 0---------,; p; d; }
+/ gcc /			{ s,^. [^ ]*,X 0---------,; p; d; }
+
+/ uclibc /		{ p; d; };
+/ linux26sh /		{ p; d; };
+
+/ minit /		{ p; d; };
+/ fgetty /		{ p; d; };
+
+/ libowfat /		{ p; d; };
+/ busybox /		{ p; d; };
+
+/ zlib /		{ p; d; };
+
+/ ncurses /		{ p; d; };
+
+# / iptables /		{ p; d; };
+/ dropbear /		{ p; d; };
+/ rsync /		{ p; d; };
+
+# / gpm /			{ p; d; };
+
+/ strace /		{ p; d; };
+# disable the rest
+/.*/			{ s/^X /O / ; p; d; };'
+
+
+SDECFGSET_PKGFILE_TYPE='none'
+SDECFGSET_PKGFILE_VER=0
+
+SDECFGSET_LIBC='uclibc'
+SDECFGSET_DIETLIBC_DYN=0
+# SDECFGSET_STATIC=0
+SDECFGSET_INIT='minit'
+
+SDECFGSET_OPT='size'
+
+SDECFGSET_DO_REBUILD_STAGE=0
+SDECFGSET_DISABLE_NLS=1
+
+SDECFGSET_PKG_BUSYBOX_SYMLINKS=1
+

@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/bakery/bakery.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A C++ Framework for creating GNOME apps
+
+[T] Bakery is a C++ Framework for creating GNOME apps using gtkmm. It
+[T] provides a Document/View architecture, but it doesn't force you to use
+[T] the whole architecture. It can use XML as a Document storage format and
+[T] provides default functionality, which can be easily customized.
+[T] Bakery makes it easy to start developing GNOME applications and gives
+[T] your application structure and contains a few utility classes.
+
+[U] https://bakery.sourceforge.net
+
+[A] Murray Cumming <murrayc@usa.net>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/desktop/gnome
+
+[L] GPL
+[V] 2.6.3
+
+[CV-URL] https://download.gnome.org/sources/bakery/cache.json
+[D] f8fd9d7decb7712d224b37de07baf34b87a6c24319e5d235d7ab0b61 bakery-2.6.3.tar.gz https://download.gnome.org/sources/bakery/2.6/
+
+. $base/package/*/*/gnome-conf.in

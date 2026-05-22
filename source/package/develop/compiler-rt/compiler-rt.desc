@@ -1,0 +1,69 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/compiler-rt/compiler-rt.desc
+[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Compiler runtime libraries
+
+[T] A simple library that provides an implementation of the low-level
+[T] target-specific hooks required by code generation and other runtime
+[T] components. For example, when compiling for a 32-bit target, converting
+[T] a double to a 64-bit unsigned integer is compiling into a runtime call
+[T] to the "__fixunsdfdi" function.
+
+[U] https://compiler-rt.llvm.org
+
+[A] University of Illinois/NCSA
+[A] Chris Lattner <clattner@apple.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] OBJDIR CROSS
+
+[L] BSD
+[V] 22.1.5
+[P] X -1---5---9 102.390
+
+[CV-GROUP] llvm-project
+[D] 539b0fa857272b2b18ad9b9e58e11d4e48e0f1c807ec375d5ca91913 llvm-project-22.1.5.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-22.1.5/
+
+srcdir=*/compiler-rt
+
+atstage native || export DESTDIR="$root"
+
+build_minimal_cross() {
+	${arch_target}-clang -c ../lib/builtins/{muldc3,muldi3,mulsc3,mulxc3,mulsi3}.c
+	${arch_target}-ar r builtins.a *.o
+	${arch_target}-clang -fPIC -c ../lib/crt/crt{begin,end}.c
+	mkdir -p $sysroot/usr/lib/linux/
+	install builtins.a $sysroot/usr/lib/linux/libclang_rt.builtins-$arch.a
+	install crt*.o $sysroot/usr/libx32/
+}
+if atstage toolchain; then
+	runmake=0 runcmake=0
+	hook_add inmake 5 "build_minimal_cross" # -DCOMPILER_RT_BAREMETAL_BUILD=ON ?
+fi
+
+if [ $SDECFG_LIBC == "musl" ]; then
+	var_append cmakeopt ' ' "-DCOMPILER_RT_BUILD_SANITIZERS=OFF -DCOMPILER_RT_BUILD_XRAY=OFF"
+	var_append cmakeopt ' ' -DCOMPILER_RT_BUILD_PROFILER=OFF
+fi
+
+#var_append cmakeopt ' ' -DCOMPILER_RT_STANDALONE_BUILD=ON
+var_append cmakeopt ' ' -DCOMPILER_RT_BUILD_LIBFUZZER=OFF
+
+if [ $stagelevel = 1 ]; then
+	# during initial bootstarp we don't have libcxx* yet
+	var_append GCC_WRAPPER_APPEND ' ' '-nostdlib -lc'
+	#var_append cmakeopt ' ' "-DCMAKE_C_COMPILER_WORKS=ON -DCMAKE_CXX_COMPILER_WORKS=ON"
+	var_append cmakeopt ' ' "-DCOMPILER_RT_BUILD_SANITIZERS=OFF -DCOMPILER_RT_BUILD_XRAY=OFF"
+	var_append cmakeopt ' ' "-DCOMPILER_RT_BUILD_MEMPROF=OFF -DCOMPILER_RT_BUILD_ORC=OFF"
+fi
+
+# currently fails even with gcc/glibc
+var_append cmakeopt ' ' -DCOMPILER_RT_BUILD_SANITIZERS=OFF
+
+[ "${libdir##*/lib}" ] && var_append cmakeopt ' ' "-DLLVM_LIBDIR_SUFFIX=${libdir##*/lib}"
+[ "$SDECFG_STATIC" = 1 ] || var_append cmakeopt ' ' -DBUILD_SHARED_LIBS=ON
+var_append cmakeopt ' ' ..

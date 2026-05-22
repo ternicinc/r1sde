@@ -1,0 +1,36 @@
+[TIMESTAMP] 1761924268 Fri Oct 31 16:24:28 2025
+[BUILDTIME] 30 (9)
+[SIZE] 3.15 MB, 155 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] diffutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[OPT] glib
+[DEP] gnupg2
+[DEP] gobject-introspection
+[DEP] graphene
+[DEP] grep
+[DEP] gtk
+[DEP] harfbuzz
+[DEP] libgcrypt
+[DEP] libgpg-error
+[DEP] libsecret
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] p11-kit
+[DEP] pango
+[DEP] pkgconfig
+[DEP] python
+[DEP] sed
+[DEP] setuptools
+[OPT] systemd
+[DEP] tar
+[DEP] vala
+[DEP] xz

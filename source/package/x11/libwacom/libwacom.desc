@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libwacom/libwacom.desc
+[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Tablet description library
+
+[T] libwacom is a library to identify graphics tablets and their model-specific
+[T] features. It provides easy access to information such as "is this a
+[T] built-in on-screen tablet", "what is the size of this model", etc.
+
+[U] https://github.com/linuxwacom/libwacom
+
+[A] Red Hat Inc.
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/x11
+[F] CROSS
+
+[L] OpenSource
+[V] 2.18.0
+[P] X -----5---9 200.000
+
+[D] 5fab4e39ae02923637ef979993ba07a831b688ed176bceb73287bf9d libwacom-2.18.0.tar.gz https://github.com/linuxwacom/libwacom/archive/refs/tags/
+
+var_append mesonopt ' ' -Dtests=disabled

@@ -1,0 +1,15 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/architecture/riscv64/config.in
+# Copyright (C) 2016 - 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+#Description: RISC-V 64
+
+choice SDECFG_RISCV64_OPT generic \
+	generic		"No special optimization (rv64gc)"	\
+	rva20		"Optimized for RVA20 (fence.tso, ...)"	\
+	rva22		"Optimized for RVA22 (Zbb, ...)"	\
+	rva23		"Optimized for RVA23 (Vector, ...)"	\
+
+SDECFG_ID="$SDECFG_ID-$SDECFG_RISCV64_OPT"

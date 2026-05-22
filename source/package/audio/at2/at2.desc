@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/at2/at2.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A userfriendly tracker aimed for the OPL3 FM-chip
+
+[T] Adlib Tracker II is a userfriendly tracker aimed for the OPL3 FM-chip,
+[T] and is full of advanced features to simplify your task of making the
+[T] most of your Adlib-tunes.
+
+[U] http://www.adlibtracker.net/
+
+[A] AT2 Devs
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/multimedia
+[R] + x86
+
+[L] GPL
+[V] 2.4.24
+
+[CV-URL] http://www.adlibtracker.net/downloads.php
+[D] c194b7e6ef24983044cea24b8d612969413db38a513c4e847f1a509f at2_sourcecode_09-09-2019.zip http://www.adlibtracker.net/files/

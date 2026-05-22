@@ -1,0 +1,27 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/kcalendarcore/kcalendarcore.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The KDE calendar access library
+
+[T] KCalendarCore supports the standard formats iCalendar and vCalendar and the
+[T] group scheduling standard iTIP.
+
+[U] https://www.kde.org
+
+[A] The KDE-Team
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/office extra/desktop/kde
+[F] CROSS OBJDIR
+
+[L] GPL
+[V] 6.26.0
+[P] X -----5---9 162.420
+
+[CV-GROUP] kde-frameworks
+[D] 7df1d056b1afb48e6b3450c0db3187a10ba43d0bb581e67fdcee564b kcalendarcore-6.26.0.tar.xz https://download.kde.org/stable/frameworks/6.26/
+
+. $base/package/*/*/kde-conf.in

@@ -1,0 +1,31 @@
+[TIMESTAMP] 1759943348 Wed Oct  8 19:09:08 2025
+[BUILDTIME] 6 (9)
+[SIZE] 1.16 MB, 115 files
+
+[DEP] appstream-glib
+[DEP] bash
+[DEP] binutils
+[DEP] cairo
+[DEP] coreutils
+[DEP] desktop-file-utils
+[DEP] diffutils
+[DEP] fontconfig
+[DEP] freetype
+[DEP] fribidi
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[OPT] glib
+[DEP] graphene
+[DEP] grep
+[DEP] gtk
+[DEP] harfbuzz
+[DEP] libadwaita
+[DEP] linux-header
+[DEP] meson
+[DEP] ninja
+[DEP] openssl
+[DEP] pango
+[DEP] sed
+[DEP] tar
+[DEP] xz

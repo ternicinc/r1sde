@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/curlpp/curlpp.desc
+[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] CURLpp is a C++ wrapper for libcURL
+
+[T] cURLpp is a C++ wrapper for libcURL. libcURL is described as:
+[T] a free and easy-to-use client-side URL transfer library, supporting FTP,
+[T] FTPS, HTTP, HTTPS, GOPHER, TELNET, DICT, FILE and LDAP. libcurl
+[T] supports HTTPS certificates, HTTP POST, HTTP PUT, FTP uploading,
+[T] kerberos, HTTP form based upload, proxies, cookies, user+password
+[T] authentication, file transfer resume, http proxy tunneling and more!
+
+[U] https://www.curlpp.org
+
+[A] Jean-Philippe Barrette-LaPierre <jpb@rrette.com>
+[M] Marian Aldenhövel <marian.aldenhoevel@mba-software.de>
+
+[C] base/tool
+[F] CROSS
+
+[L] MIT
+[V] 0.8.1
+
+[D] ff3157c1ace5756586681b54c4e70edb22586ef4ecad7a529c3d115a curlpp-0.8.1.tar.gz https://github.com/jpbarrette/curlpp/archive/v0.8.1/
+
+var_append CXX_WRAPPER_APPEND ' ' -fpermissive

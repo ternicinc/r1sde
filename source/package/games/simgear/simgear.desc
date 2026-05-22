@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/simgear/simgear.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Library for quickly assembling 3d simulations, games, and visualization applications
+
+[T] SimGear is a set of open-source libraries designed to be used as
+[T] building blocks for quickly assembling 3d simulations, games, and
+[T] visualization applications.
+[T]
+[T] SimGear is a relatively new project, and while quite a bit of code
+[T] has been written in conjunction with the FlightGear project, the
+[T] final interface and arrangements are still evolving.
+
+[U] http://www.simgear.org/
+
+[A] Curtis Olsen
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/scientific
+
+[L] GPL
+[V] 2024.1.5
+[P] X -----5---9 211.300
+
+[D] f42609e1752a204ecf448e8549a6feffda7a9572ebd4bd415996e437 simgear-v2024.1.5.tar.bz2 https://gitlab.com/flightgear/simgear/-/archive/2024.1.5/

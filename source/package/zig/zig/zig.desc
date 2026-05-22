@@ -1,0 +1,37 @@
+# --- R1-COPYRIGHT-BEGIN ---
+# r1/package/*/zig/zig.
+# Copyright (C) 2026 The R1 SDE Project
+# Copyright (C) 2004-2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- R1-COPYRIGHT-END ------
+
+[I] General-purpose programming language and toolchain
+
+[T] General-purpose programming language and toolchain for maintaining
+[T] robust, optimal, and reusable software.
+
+[U] https://ziglang.org
+
+[A] Andrew Kelley
+[M] Allexander Bergmans <abm@libregrad.pp.ua>
+
+[C] extra/development
+[F] CROSS OBJDIR NO-LTO
+
+[L] MIT
+[V] 0.17.0-dev.314+eae06cf5
+[P] X ?----5---9 109.300
+
+[D] 263345fc6b28a27d5446e188d6d5d78cd5cd3e3823123626fa374c1c4146c202 zig-0.17.0-dev.314+eae06cf5c.tar.xz  https://ziglang.org/builds/
+
+export ZIG_LOCAL_CACHE_DIR=$builddir/$pkg-$ver/.cache
+export ZIG_GLOBAL_CACHE_DIR=$builddir/$pkg-$ver/.cache
+
+var_append cmakeopt ' ' "-DCMAKE_PREFIX_PATH=/$prefix -DCMAKE_BUILD_TYPE=None"
+
+var_append cmakeopt ' ' -DZIG_VERSION=$ver
+[ "$SDECFG_STATIC" = 1 ] || var_append cmakeopt ' ' -DZIG_SHARED_LLVM=ON
+var_append cmakeopt ' ' "-DZIG_STATIC=OFF -DZIG_STATIC_ZLIB=OFF -DZIG_STATIC_LLVM=OFF"
+
+var_append cmakeopt ' ' -DZIG_HOST_TARGET_TRIPLE=${arch_build/-t2-/-}
+var_append cmakeopt ' ' -DZIG_TARGET_MCPU=baseline

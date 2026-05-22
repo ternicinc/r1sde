@@ -1,0 +1,44 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/tomcat/tomcat.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2005 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Servlet Container
+
+[T] Tomcat is the servlet container that is used in the official Reference
+[T] Implementation for the Java Servlet and JavaServer Pages technologies.
+
+[U] https://jakarta.apache.org/tomcat/
+
+[A] The Apache Software Foundation
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/server
+[F] BINARY CROSS
+
+[L] APL
+[V] 11.0.21
+
+[D] d6b58b92af3d064602c2e1a821b7216619a6ef6bba567022c0ac6472 apache-tomcat-11.0.21.tar.gz https://dlcdn.apache.org/tomcat/tomcat-11/v11.0.21/bin/
+
+autoextract=0
+runmake=0
+
+prefix=opt/$pkg
+set_confopt
+
+tomcat_extract() {
+	for file in `match_source_file -p . `; do
+		echo "extracting ${file##*/}..."
+		tar -v $taropt $file
+	done
+}
+
+tomcat_install() {
+	(cd $builddir/apache-tomcat-$ver; tar -c * | tar -x -C $root/$prefix)
+}
+
+hook_add premake 5 tomcat_extract
+hook_add postmake 5 tomcat_install

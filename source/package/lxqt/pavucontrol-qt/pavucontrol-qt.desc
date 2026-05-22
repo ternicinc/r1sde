@@ -1,0 +1,23 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/pavucontrol-qt/pavucontrol-qt.desc
+[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Pulseaudio mixer in Qt
+
+[T] Pulseaudio mixer in Qt (port of pavucontrol).
+
+[U] https://github.com/lxqt/pavucontrol-qt
+
+[A] Pavucontrol-qt Authors
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/base
+[F] OBJDIR
+
+[V] 2.4.0
+[L] LGPL
+
+[CV-GROUP] lxqt
+[D] ad435e758786508948221503fbcd8b5504c757e6e453cff44a0b7044 pavucontrol-qt-2.4.0.tar.xz https://github.com/lxqt/pavucontrol-qt/releases/download/2.4.0/

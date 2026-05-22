@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/notcurses/notcurses.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Blingful TUIs and character graphics
+
+[T] A library facilitating complex TUIs on modern terminal emulators,
+[T] supporting vivid colors, multimedia, threads, and Unicode to the
+[T] maximum degree possible. Things can be done with Notcurses that
+[T] simply can't be done with NCURSES. It is furthermore fast as shit.
+
+[U] https://nick-black.com/dankwiki/index.php/Notcurses
+
+[A] nick black
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[F] CROSS
+
+[E] opt ffmpeg
+
+[L] APL
+[V] 3.0.17
+
+[D] bb12b2d80f4a0ce7230fa05bc5e2fcb04305648bde1bb6456d7574e8 notcurses-3.0.17.tar.gz https://github.com/dankamongmen/notcurses/archive/v3.0.17/
+
+pkginstalled doctest || var_append cmakeopt ' ' -DUSE_DOCTEST=OFF
+pkginstalled pandoc || var_append cmakeopt ' ' -DUSE_PANDOC=OFF

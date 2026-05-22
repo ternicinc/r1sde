@@ -1,0 +1,25 @@
+
+[TIMESTAMP] 1280335480 Wed Jul 28 16:44:40 2010
+[BUILDTIME] 5 (5)
+[SIZE] 0.09 MB, 38 files
+
+[DEP] 00-dirtree
+[DEP] autoconf
+[DEP] automake
+[DEP] binutils
+[DEP] coreutils
+[DEP] cyrus-sasl2
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] linux-header
+[DEP] m4
+[DEP] make
+[DEP] openldap
+[DEP] openssl
+[DEP] pam
+[DEP] perl
+[DEP] sed
+[DEP] sysfiles
+[DEP] tar

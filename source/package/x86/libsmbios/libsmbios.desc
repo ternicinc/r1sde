@@ -1,0 +1,36 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/libsmbios/libsmbios.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A cross-platform library to access SMBIOS/DMI information
+
+[T] Libsmbios is a cross-platform library intended to be used to obtain common
+[T] information available in a BIOS. Major features include the ability to
+[T] update the BIOS on Dell systems (in conjunction with the Dell RBU Linux
+[T] kernel driver), programmatic access to information in SMBIOS tables,
+[T] and the ability to obtain Dell system-specific information such as the
+[T] Dell System ID number, service tag, and asset tag. Future plans include
+[T] APIs for $PIR and mptable mapping. There is a C API for some of the
+[T] more commonly used functions, and example binaries to show off most of
+[T] the facilities.
+
+[U] http://linux.dell.com/libsmbios/main/index.html
+
+[A] Michael Brown <Michael_E_Brown@dell.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] base/library
+[R] + x86 x86-64
+
+[E] opt doxygen
+[E] opt graphviz
+
+[L] OpenSource
+[V] 2.4.3
+[P] X -----5---9 181.000
+
+[D] 9468c5cecb241f295cb12d12cfe7c3611a428e73b09fab72290684c2 libsmbios-2.4.3.tar.gz https://github.com/dell/libsmbios/archive/v2.4.3/
+
+autogen=1

@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gnome-control-center/gnome-control-center.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] The GNOME Control Center
+
+[T] Control-center is a configuration tool for easily setting up your GNOME
+[T] environment. All facilities of your system - the input devices, the
+[T] window-manager, window-background, screensavers, MIME associations,
+[T] sound-effetcs, and much more can be configured.
+[T]
+[T] It also provides hooks for external programs that can insert controls.
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/base extra/desktop/gnome
+
+[L] GPL
+[V] 50.1
+[P] X -----5---9 210.600
+
+[CV-URL] https://download.gnome.org/sources/gnome-control-center/cache.json
+[D] 9f47627e971e295bc522b9abd5135443a573ec5675d12c3cdc817426 gnome-control-center-50.1.tar.xz https://download.gnome.org/sources/gnome-control-center/50/
+
+. $base/package/*/*/gnome-conf.in
+var_append GCC_WRAPPER_APPEND ' ' "`pkg-config libxklavier --cflags`"

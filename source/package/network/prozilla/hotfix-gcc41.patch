@@ -1,0 +1,18 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/prozilla/hotfix-gcc41.patch
+# Copyright (C) 2006 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -Nur prozilla-2.0.4-orig/src/download_win.h prozilla-2.0.4/src/download_win.h
+--- prozilla-2.0.4-orig/src/download_win.h	2006-02-08 17:18:59.000000000 +0000
++++ prozilla-2.0.4/src/download_win.h	2006-04-23 18:38:08.229462500 +0000
+@@ -52,7 +52,7 @@
+   void handle_joining_thread();
+   void handle_dl_fatal_error();
+   void cleanup(boolean erase_dlparts);
+-  void DL_Window::print_status(download_t * download, int quiet_mode);
++  void print_status(download_t * download, int quiet_mode);
+ 
+   connection_t *connection;
+   download_t *download;

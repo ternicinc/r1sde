@@ -1,0 +1,21 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/opensp/hotfix-gcc34.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+The usual gcc-3.4 fixes.
+
+  - Rene Rebe <rene@exactcode.de>
+
+--- OpenSP-1.5.1/include/RangeMap.h.orig	2004-05-05 19:37:38.126740944 +0200
++++ OpenSP-1.5.1/include/RangeMap.h	2004-05-05 19:38:13.464368808 +0200
+@@ -8,6 +8,8 @@
+ #include "Boolean.h"
+ #include "ISet.h"
+ #include "types.h"
++#include "constant.h"
++
+ #include <stddef.h>
+ 
+ #ifdef SP_NAMESPACE

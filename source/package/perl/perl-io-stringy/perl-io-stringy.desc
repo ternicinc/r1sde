@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/perl-io-stringy/perl-io-stringy.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] I/O on in-core objects like strings and arrays
+
+[T] This toolkit primarily provides modules for performing both traditional
+[T] and object-oriented i/o) on things other than normal filehandles; in
+[T] particular, IO::Scalar, IO::ScalarArray, and IO::Lines.
+
+[U] https://metacpan.org/pod/IO::Stringy
+
+[A] David F. Skoll
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] Artistic GPL
+[V] 2.113
+[P] X -----5---9 113.300
+
+[D] c55ad8ba75ffa73201f35e71b30c8454491fe889fc50653fb078b7f5 IO-Stringy-2.113.tar.gz https://cpan.metacpan.org/authors/id/C/CA/CAPOEIRAB/

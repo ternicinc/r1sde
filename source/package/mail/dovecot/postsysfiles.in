@@ -1,0 +1,10 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/dovecot/postsysfiles.in
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+safe_groupadd dovecot 76
+safe_groupadd dovenull 77
+safe_useradd dovecot 76 76 "Dovecot" /var/empty /bin/false "*"
+safe_useradd dovenull 77 77 "Dovecot login" /var/empty /bin/false "*"

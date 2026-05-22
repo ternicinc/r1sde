@@ -1,0 +1,26 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/cflow/cflow.desc
+[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Analyzes C source files and prints the control flow graph
+
+[T] GNU cflow analyzes a collection of C source files and prints a graph
+[T] charting control flow within the program.
+[T]
+[T] GNU cflow is able to produce both direct and inverted flowgraphs for C
+[T] sources. Optionally a cross-reference listing can be generated.
+
+[U] https://www.gnu.org/software/cflow/
+
+[A] Sergey Poznyakoff
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+[F] CROSS
+
+[L] GPL
+[V] 1.8
+
+[D] 3d11b7fcae51427439825b50ad338818427fbdf3155a5fb9292f0f48 cflow-1.8.tar.xz http://ftp.gnu.org/gnu/cflow/

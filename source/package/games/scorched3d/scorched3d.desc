@@ -1,0 +1,25 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/scorched3d/scorched3d.desc
+[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A 3D remake of the popular 2D artillery game Scorched Earth
+
+[T] Scorched3D is a cross-platform 3D remake of the popular 2D artillery
+[T] game Scorched Earth. Scorched3D can be played against the computer,
+[T] other players, and remotely across the Internet or LAN.
+
+[U] http://www.scorched3d.co.uk/
+
+[A] Gavin Camp <gcamp@cisco.com>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/game
+
+[L] GPL
+[V] 44
+
+[D] 22317d597138fefec57cada14c876b3880ebc036107be4b484c5a334 Scorched3D-44-src.tar.gz https://prdownloads.sourceforge.net/sourceforge/scorched3d/
+
+srcdir=scorched

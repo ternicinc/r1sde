@@ -1,0 +1,8 @@
+# HFS type filename mapping file
+#
+# EXTN		XLate	CREATOR	TYPE	Comment
+.b		Raw	'UNIX'	'tbxi'	"bootstrap"
+grub		Raw	'UNIX'	'boot'	"bootstrap"
+yaboot		Raw	'UNIX'	'boot'	"bootstrap"
+*.conf		Raw	'UNIX'	'conf'	"bootstrap"
+*        	Raw	'????'  '????'  "Unknown"

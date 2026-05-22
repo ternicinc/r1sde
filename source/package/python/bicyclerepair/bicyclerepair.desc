@@ -1,0 +1,24 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/bicyclerepair/bicyclerepair.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] A Refactoring Browser for Python
+
+[T] The Python Refactoring Browser, helping Pythonistas everywhere glide over
+[T] the gory details of refactoring their code. Watch him extract jumbled code
+[T] into well ordered classes. Gasp, as he renames all occurrences of a method.
+[T] Thank You Bicycle Repair Man!
+
+[U] https://bicyclerepair.sourceforge.net/
+
+[A] Phil Dawes <pdawes@users.sf.net>
+[M] René Rebe <rene@exactco.de>
+
+[C] extra/development
+
+[L] BSD
+[V] 0.9
+
+[D] c01e7381378f6b14f271de1947750dc01db4db412866632010533c1e bicyclerepair-0.9.tar.gz https://prdownloads.sourceforge.net/sourceforge/bicyclerepair/

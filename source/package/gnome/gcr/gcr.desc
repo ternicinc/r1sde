@@ -1,0 +1,34 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/gcr/gcr.desc
+[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Displaying certificates and accessing key store
+
+[T] The Gcr package contains libraries used for displaying certificates
+[T] and accessing key stores. It also provides the viewer for crypto files
+[T] on the GNOME Desktop.
+
+[U] https://www.gnome.org
+
+[A] The GNOME Project <gnome-devel-list@gnome.org>
+[M] Juergen "George" Sawinski <jsaw@gmx.net>
+[M] Susanne Klaus <vadja@gmx.de>
+
+[C] extra/shell extra/desktop/gnome
+
+[E] opt systemd
+# TODO: opt gnupg || gnugp2
+[E] add gnupg2
+
+[L] LGPL
+[V] 4.4.0.1
+[P] X -----5---9 185.500
+
+[CV-URL] https://download.gnome.org/sources/gcr/cache.json
+[D] fccd36071aee66c341134281e54c22f9bbdad6fe4ebfc5b5d276739b gcr-4.4.0.1.tar.xz http://ftp.gnome.org/pub/gnome/sources/gcr/4.4/
+
+. $base/package/*/*/gnome-conf.in
+var_append mesonopt ' ' -Dgtk_doc=false

@@ -1,0 +1,65 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/hexedit/00-hexedit-vi-keys.patch
+# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 1998 - 2003 ROCK Linux Project
+# SPDX-License-Identifier: GPL-2.0 or patched project license
+# --- T2-COPYRIGHT-END ---
+
+diff -u hexedit/interact.c hexedit-hacked/interact.c
+--- hexedit/interact.c	Wed Jun 19 13:55:40 2002
++++ hexedit-hacked/interact.c	Wed Oct  9 12:04:18 2002
+@@ -360,6 +360,39 @@
+       next_line();
+       break;
+ 
++      /* VI keys */
++    case 'h': 
++      if (!hexOrAscii) {
++	      setTo(key);
++	      break;
++      }
++      backward_char();
++      break;
++
++    case 'l': 
++      if (!hexOrAscii) {
++	      setTo(key);
++	      break;
++      }
++      forward_char();
++      break;
++
++    case 'k': 
++      if (!hexOrAscii) {
++	      setTo(key);
++	      break;
++      }
++      previous_line();
++      break;
++
++    case 'j': 
++      if (!hexOrAscii) {
++	      setTo(key);
++	      break;
++      }
++      next_line();
++      break;
++
+     case KEY_UP:
+     case CTRL('P'):
+       previous_line();
+@@ -443,6 +476,14 @@
+ 
+     case CTRL('G'):
+     case KEY_F(4):
++      goto_char();
++      break;
++
++    case 'g':
++      if (!hexOrAscii) {
++	      setTo(key);
++	      break;
++      }
+       goto_char();
+       break;
+ 
