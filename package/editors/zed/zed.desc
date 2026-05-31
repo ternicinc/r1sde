@@ -19,9 +19,9 @@
 [R] - alpha arc avr32 blackfin cris hppa hppa64 m68k microblaze nios2 openrisc superh
 
 [L] AGPL GPL3
-[V] 1.3.5
+[V] 1.4.4
 
-[D] e002f89057abc507ffca858e2767465a807e3077228f61aee4125185 zed-1.3.5.tar.gz https://github.com/zed-industries/zed/archive/refs/tags/v1.3.5/
+[D] 24b6a64a682305ec662fab691cc075ed119cfefebdb937bf8b0f0b37 zed-1.4.4.tar.gz https://github.com/zed-industries/zed/archive/refs/tags/v1.4.4/
 
 cargoinstopt=
 
